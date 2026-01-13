@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The automated agent (ATLAS) produced repeated non-informative responses (\u201cSkipping ticket due to tags\u201d) rather than helpful guidance or handoff, indicating generic filler or failure to progress the ticket.",
+    "evidence": [
+      "[2025-03-27T14:52:54+00:00] (AI) ATLAS: ... Skipping ticket due to tags",
+      "[2025-03-26T14:32:04+00:00] (AI) ATLAS: ... Skipping ticket due to tags",
+      "[2025-03-26T10:58:34+00:00] (AI) ATLAS: ... Skipping ticket due to tags",
+      "[2025-03-25T13:00:41+00:00] (AI) ATLAS: ... Skipping ticket due to tags",
+      "[2025-03-24T12:22:15+00:00] (AI) ATLAS: ... Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although ATLAS produced several skipping messages, the ticket shows multiple human agent interventions and private/public comments from employees. There is no clear evidence the customer was repeatedly bounced between AI and the AI kept asking the same thing or preventing human access.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear instance where support explicitly asked the customer to re-submit information or repeated requests for the same logs/data despite it being provided. The thread shows progression toward RMA coordination rather than repeated identical requests.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between activity and several escalation nudges from staff asking for updates/ETA, indicating significant delays in resolving the RMA request.",
+    "evidence": [
+      "Initial AI/chat entries and L1 actions around 2025-03-21",
+      "Multiple follow-ups from Kris on 2025-03-24 through 2025-03-26 asking for ETA and contact details",
+      "Final coordinating/closure notes on 2025-03-28"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "An employee privately commented that the ticket 'can be closed' because Apligo is handling the RMA directly. This indicates the support ticket was closed while the customer and internal stakeholders were still seeking an ETA and updates, suggesting closure before the requester received a final resolution within this ticket.",
+    "evidence": [
+      "[2025-03-28T12:59:34+00:00] (Employee) Jozef Kacala: \"this can be closed, we are in contact with Kris and Apligo and Apligo is dealing with RMA directly as its DOA.\"",
+      "[2025-03-27T14:20:47+00:00] (Employee) Kris Cardona: \"It's becoming a bit ridiculous at this stage, the client needs an answer for this.\"",
+      "[2025-03-26T14:31:43+00:00] (Employee) Kris Cardona: \"I need an ETA for this to be resolved, this is not normal to process an RMA.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue involved a hardware DOA and urgency was expressed by the customer/agent, the record shows actions toward RMA (coordination with Apligo) rather than generic troubleshooting being applied to a clearly high-severity incident. There is no clear evidence of inappropriate generic troubleshooting in lieu of escalation.",
+    "evidence": []
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60005331
+}

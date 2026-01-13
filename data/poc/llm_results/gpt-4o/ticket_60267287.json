@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI responses that provide wrong information or unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was stuck in an AI loop or hindered from reaching a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support interactions do not show clear repetition of requests for information already provided by the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant delays are present, with a maximum gap of nearly 5 days between responses.",
+    "evidence": [
+      "Max gap between responses (hours): 119.8"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is still pending and there is no indication of closure while the customer was expecting further information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of improper handling of a high-priority issue; the responses provided are specific to the problem.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI responses that provide wrong information or unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was stuck in an AI loop or hindered from reaching a human agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support interactions do not show clear repetition of requests for information already provided by the customer.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant delays are present, with a maximum gap of nearly 5 days between responses.\",\n    \"evidence\": [\"Max gap between responses (hours): 119.8\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is still pending and there is no indication of closure while the customer was expecting further information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of improper handling of a high-priority issue; the responses provided are specific to the problem.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60267287
+}

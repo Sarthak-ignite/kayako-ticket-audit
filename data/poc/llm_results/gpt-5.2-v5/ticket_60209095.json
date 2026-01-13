@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS told the customer the blank/\u201cData not available\u201d reports were normal behavior due to no traffic and said there was no evidence of a malfunction. Later, support analyzed diagnostics and identified an actual monitoring/collector failure causing aggregation/reporting problems, which contradicts ATLAS\u2019s earlier conclusion.",
+    "evidence": [
+      "ATLAS (public, 2025-11-04): \"The \u201cData not available for selected period\u201d message occurs when no traffic has been recorded for the selected subnet or network object during the specified time range. This is a normal behavior in Exinda reporting. It does not indicate a malfunction of the firmware, the reporting mechanism, or a global issue with application recognition.\"",
+      "ATLAS (public, 2025-11-09): \"This behavior is in line with normal Exinda operation; there is no evidence of a firmware or reporting engine malfunction.\"",
+      "Syed Haider (public, 2025-11-27): \"The logs indicate that the `collectord` process is failing to process network traffic due to a buffer overflow error (`No buffer space available`)... This prevents data from being aggregated for the \"Last 24 Hours\" reports.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although the customer requested a call, subsequent customer-facing replies were from named human agents (e.g., Rishi Singh, Randall Shawver, Syed Haider), not repeated AI-only interactions after the request.",
+    "evidence": [
+      "Sajeedali Kazi (private, 2025-11-14): \"can you schedule a call\"",
+      "Rishi Singh (public, 2025-11-14): \"we need a closer look at the appliance\u2019s internal logs.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer indicated they had already been providing the requested data repeatedly, and support again requested the same diagnostics/PDF, showing the customer was forced to repeat or re-provide information.",
+    "evidence": [
+      "Sajeedali Kazi (private, 2025-11-19): \"can you tell us that how many times you need same data. Have you checked previous update on this ticket provides by us?\"",
+      "Randall Shawver (public, 2025-11-20): \"To do so, we must have the diagnostics file and pdf report. Did you previously upload these, as I do not see them attached to this ticket? If not, please provide these so we can continue the investigation.\"",
+      "Rishi Singh (public, 2025-11-14): \"Generate a diagnostics file (sysdump) and PDF report... Attach both files to this ticket.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer repeatedly stated they had been waiting days to weeks with no updates, and the timeline shows long gaps before a meaningful public response (first public reply appears over a month after ticket creation).",
+    "evidence": [
+      "Sajeedali Kazi (private, 2025-10-06): \"As we are waiting from last 6 days still, we have not received any updates regarding the same.\"",
+      "Sajeedali Kazi (private, 2025-11-04): \"It has been now a month ago but still we haven't received any solution regarding the issue.\"",
+      "Ticket timeline: initial ticket 2025-09-29; first staff public response 2025-11-04 (\"We have received your escalation and we are currently working on it.\")"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While support included a standard warning about the ticket staying open for one week unless the customer replies, there is no explicit closure/auto-closure notice shown in the provided text.",
+    "evidence": [
+      "Rishi Singh (public, 2025-11-14): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer described missing reports and asked for priority updates, but there is no explicit customer-facing P1/SEV1/critical outage language in public messages. Support ultimately requested diagnostics and provided remediation steps; the internal '[customer_escalation]' severity tag alone is not sufficient per the criteria.",
+    "evidence": [
+      "Customer issue description (private, 2025-09-29): \"we are not able to get subnet reports after firmware upgradation\"",
+      "Priyanka Bhotika (public, 2025-11-04): \"We have received your escalation and we are currently working on it.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60209095
+}

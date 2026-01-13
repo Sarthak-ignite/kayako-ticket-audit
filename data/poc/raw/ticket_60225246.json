@@ -1,0 +1,145 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_faxmaker",
+        "requester": {
+          "id": 20,
+          "uuid": "3f05d15a-ef5a-5618-9495-3d8af469bfb5",
+          "full_name": "Xavier A Villarroel",
+          "legacy_id": null,
+          "designation": "L3 Customer Support Architecht",
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 1,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/3f05d15a-ef5a-5618-9495-3d8af469bfb5?1767781798",
+          "agent_case_access": "ALL",
+          "organization_case_access": null,
+          "organization": {
+            "id": 3,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 1,
+              "resource_type": "team"
+            },
+            {
+              "id": 3,
+              "resource_type": "team"
+            },
+            {
+              "id": 4,
+              "resource_type": "team"
+            },
+            {
+              "id": 5,
+              "resource_type": "team"
+            },
+            {
+              "id": 6,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 21,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 57966,
+              "resource_type": "identity_phone"
+            },
+            {
+              "id": 57967,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "7360,7361,7362,7368,7371,7374,7376,7438,7435,7393,7411,7442,7404,7449,7454,7430,7413,7417,7441,7409,7410,7427,7439,7432,7391,7428,7389,7418,7375,7425,7426",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "UTC",
+          "time_zone_offset": 0,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "node",
+          "last_seen_ip": "52.55.67.254",
+          "last_seen_at": "2026-01-07T10:29:58+00:00",
+          "last_active_at": "2026-01-07T10:29:58+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_20",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@a923b2e76d26488418939ee5843a60053a4b5757",
+          "password_updated_at": "2025-02-14T10:54:03+00:00",
+          "avatar_updated_at": "2025-02-13T11:47:07+00:00",
+          "last_logged_in_at": "2026-01-07T10:16:30+00:00",
+          "last_activity_at": "2026-01-07T10:16:30+00:00",
+          "created_at": "2024-12-02T21:12:05+00:00",
+          "updated_at": "2026-01-07T10:29:58+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/20"
+        },
+        "ticket_idt": 60225246
+      },
+      "interactions": [
+        [
+          "2025-10-20T19:34:58+00:00",
+          "Kayako - ticket id 60225246 // Xavier A Villarroel commented privately: -------------------------\nCall Metadata\n[ SESSION ] : CA68fa681bbc3b4cbcd11bf0ab63b1361a\n[ RECORDING URL ] : [ SERVER-B 10/20/2025 19:32:48:263 - https://api.twilio.com/2010-04-01/Accounts/ACf33c6408e11631f6a111cfc6923b084e/Recordings/REf099a04c70760144bdb83fbdfc5b0c6c ]\n\n-------------------------\n [ DATE ] : 10/20/2025 19:32:15.580\n[ MESSAGE ] : (Machine to +15705844508) Thank you for calling GFI Support Line.... If you are calling to get support on Archiver, Press 1. For Exinda Network, Press 2. For FaxMaker, Press 3. For FaxMaker Online, Press 4. For Kerio Connect, Press 5. For Kerio Control, Press 6. For LanGuard, Press 7. For MailEssentials, Press 8. To repeat this message, Press 9.... \n-------------------------\n [ DATE ] : 10/20/2025 19:32:48.187\n[ MESSAGE ] : (+15705844508) \n-------------------------\n [ DATE ] : 10/20/2025 19:32:48.773\n[ MESSAGE ] : (Machine to +15705844508) You can only press numbers from 1 to 9.... Let me repeat the options.... If you are calling to get support on Archiver, Press 1. For Exinda Network, Press 2. For FaxMaker, Press 3. For FaxMaker Online, Press 4. For Kerio Connect, Press 5. For Kerio Control, Press 6. For LanGuard, Press 7. For MailEssentials, Press 8. To repeat this message, Press 9.... \n-------------------------\n [ DATE ] : 10/20/2025 19:33:23.819\n[ MESSAGE ] : (+15705844508) \n-------------------------\n [ DATE ] : 10/20/2025 19:33:24.358\n[ MESSAGE ] : (Machine to +15705844508) You can only press numbers from 1 to 9.... Let me repeat the options.... If you are calling to get support on Archiver, Press 1. For Exinda Network, Press 2. For FaxMaker, Press 3. For FaxMaker Online, Press 4. For Kerio Connect, Press 5. For Kerio Control, Press 6. For LanGuard, Press 7. For MailEssentials, Press 8. To repeat this message, Press 9.... \n-------------------------\n [ DATE ] : 10/20/2025 19:33:59.230\n[ MESSAGE ] : (+15705844508) \n-------------------------\n [ DATE ] : 10/20/2025 19:33:59.923\n[ MESSAGE ] : (Machine to +15705844508) You can only press numbers from 1 to 9.... Let me repeat the options.... If you are calling to get support on Archiver, Press 1. For Exinda Network, Press 2. For FaxMaker, Press 3. For FaxMaker Online, Press 4. For Kerio Connect, Press 5. For Kerio Control, Press 6. For LanGuard, Press 7. For MailEssentials, Press 8. To repeat this message, Press 9.... \n-------------------------\n [ DATE ] : 10/20/2025 19:34:34.959\n[ MESSAGE ] : (+15705844508) \n-------------------------\n [ DATE ] : 10/20/2025 19:34:35.430\n[ MESSAGE ] : (Machine to +15705844508) \n-------------------------\n"
+        ],
+        [
+          "2025-10-20T19:34:48+00:00",
+          "Kayako - ticket id 60225246 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-10-20T19:34:39+00:00",
+          "Kayako - ticket id 60225246 // Xavier A Villarroel commented privately: Full conversation with customer 15705844508\nThe complete conversation with this customer will be uploaded to this ticket shortly.\n\nThis ticket was created for logging purposes.\n"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 3,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

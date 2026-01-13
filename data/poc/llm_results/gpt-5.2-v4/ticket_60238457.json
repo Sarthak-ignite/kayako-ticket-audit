@@ -1,0 +1,61 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Early ATLAS responses strongly asserted a likely root cause (3rd-party telemetry/trackers causing browser congestion) and recommended reducing scripts, but later Infra/DevOps concluded a different root cause (corporate VPN/proxy JavaScript injection interfering with widget XHR). This mismatch likely misled the customer and delayed correct escalation. ATLAS also referenced an unrelated SEO/page experience article as justification rather than focusing on the P1 production chat outage.",
+    "evidence": [
+      "[2025-11-07T15:54:15+00:00] ATLAS: 'multiple telemetry and tracking requests\u2014primarily from monitoring scripts like New Relic ... are creating frequent background XHR and image beacon requests... can contribute to client-side congestion and UI lag for interactive elements like chatbots.'",
+      "[2025-11-07T15:54:15+00:00] ATLAS: 'This aligns with best practices ... Community SEO: Preparing for Google's Page Experience Improvements... third-party scripts ... can degrade ... performance.'",
+      "[2025-11-07T16:05:32+00:00] ATLAS repeats conclusion: 'evidence points to significant browser resource usage resulting from telemetry and monitoring scripts... impacting chatbot responsiveness.'",
+      "[2025-11-07T23:15:39+00:00] Xavier (DevOPS finding): 'Root cause confirmed: Corporate VPN/proxy JavaScript injection interfering with widget XHR. Successfully reproduced - works without VPN, fails with VPN.'",
+      "[2025-11-08T01:38:57+00:00] Harry Tasker: 'Root cause as Corporate VPN/proxy JavaScript injection interfering with widget... reproduced ... with VPN active.'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested stopping AI responses, indicating dissatisfaction with the AI-driven loop. Also, multiple ATLAS responses were issued in sequence before a clear human-led ownership/plan was communicated, while the incident was escalating.",
+    "evidence": [
+      "[2025-11-08T00:22:26+00:00] Monica Botey (private): 'stop the AI responses for this case.'",
+      "[2025-11-07T15:54:15+00:00] ATLAS public response (long recommendations) followed by [2025-11-07T16:05:32+00:00] ATLAS public response (repeats same theory) before meaningful infra escalation was communicated to customer."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Customer repeatedly stated this was the same issue as an earlier August case and that it was reproducible from customer side; support continued focusing on customer-side trackers/extensions/incognito/script auditing rather than acknowledging the recurrence and escalating immediately. Customer also stated incognito/extension disabling had no effect, but earlier guidance emphasized auditing/limiting scripts and testing minimal setups.",
+    "evidence": [
+      "[2025-11-07T16:41:02+00:00] Monica Botey: 'This is being experienced from the customer side, same issue as we had in August (case 60164225)...'",
+      "[2025-11-07T17:35:48+00:00] Monica Botey: 'THIS IS THE SAME ISSUE WE HAD IN AUGUST... (THE ONE STILL PENDING RCA). THIS NEEDS TO BE ESCALATED... ASAP.'",
+      "[2025-11-07T20:58:02+00:00] Don Kempt: 'disabling extensions and running incognito locally has no effect. The issue persists' + 'your support team said the same thing before... upon pressing it turned out to be an issue on the Khoros side.'",
+      "[2025-11-07T16:05:32+00:00] ATLAS: 'Audit your site\u2019s active scripts... Consider temporarily disabling or limiting these monitoring integrations and test whether chatbot responsiveness improves' (despite later context that issue replicates broadly / incognito doesn't help)."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "For a declared P1/complete outage, there were material gaps and insufficiently frequent updates. The customer explicitly complained about hours without a working chat and lack of meaningful status beyond 'investigating'. While not a 3+ day gap, it is a significant delay relative to P1 expectations and triggered repeated follow-ups/escalations.",
+    "evidence": [
+      "[2025-11-07T20:58:02+00:00] Don Kempt: 'This case was opened as a P1 at 11am EST. This is 5hrs with out a working chat.'",
+      "[2025-11-07T22:36:59+00:00] Monica Botey (private): 'checking again, it has been 2h since the last update.'",
+      "[2025-11-07T22:56:47+00:00] Warren Cook (private): 'That is unacceptable for a P1 case... What tests have been performed... What is the next step?'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows ongoing customer follow-up after the proposed workaround (whitelisting) and does not show the support ticket being closed while the customer still had open questions. A JIRA item was closed, but the support conversation continued with unresolved customer concerns.",
+    "evidence": [
+      "[2025-11-10T14:26:45+00:00] Customer (via Balaji): 'I am not convinced that this will resolve the issue... If I access the webchat widget from my home network, I run into the exact same issue.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite the customer declaring P1 and later being marked 'complete_outage' affecting all customers, initial handling centered on generic performance advice and customer-side script/extension theories, with limited urgency/structured P1 comms (bridge details, ETAs, concrete investigative steps). Escalation to infrastructure appears to occur only after repeated customer pressure and multiple escalations, and customer feedback indicates a similar prior incident with pending RCA was not immediately leveraged.",
+    "evidence": [
+      "[2025-11-07T15:53:05+00:00] Customer: 'Please treat this as a P1 situation.'",
+      "[2025-11-07T16:42:51+00:00] System escalation: 'severity is: complete_outage' + message 'affecting all customers'",
+      "[2025-11-07T15:54:15+00:00] ATLAS response focuses on third-party telemetry and SEO article rather than immediate P1 incident process/infra escalation.",
+      "[2025-11-07T19:03:02+00:00] System escalation: 'All customers affected - no response from Infrastructure Team' (indicates perceived lack of urgent engagement).",
+      "[2025-11-07T20:11:31+00:00] Denis Spirin: 'We are investigating the issue with the Infrastructure team. We will update you once there is information available.' (generic P1 update; customer later demands specifics/next steps).",
+      "[2025-11-07T22:56:47+00:00] Warren Cook: 'That is unacceptable for a P1 case... What tests have been performed... What is the next step?'"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60238457
+}

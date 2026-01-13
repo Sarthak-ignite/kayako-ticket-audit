@@ -1,0 +1,172 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "streetsmart",
+        "requester": {
+          "id": 60212336,
+          "uuid": "26a159cd-21cd-478f-89fa-02fba534e0e4",
+          "full_name": "Daniel Soler",
+          "legacy_id": "375545703300",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/26a159cd-21cd-478f-89fa-02fba534e0e4?1761913134",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60002290,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 213871,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 53099,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-10-31T12:18:54+00:00",
+          "last_active_at": "2025-10-31T12:18:54+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60212336",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@17debd9a57631739dc1ff55d1a6b4035715beb48",
+          "password_updated_at": "2025-08-15T18:24:18+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2020-11-23T23:40:24+00:00",
+          "updated_at": "2025-10-31T12:18:54+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60212336"
+        },
+        "ticket_idt": 60211680
+      },
+      "interactions": [
+        [
+          "2025-10-10T15:48:46+00:00",
+          "Kayako - ticket id 60211680 // Daniel Soler commented publicly:  \n\nThis ticket can be closed\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-10-09T15:02:06+00:00",
+          "Kayako - ticket id 60211680 // Ibiso Barimalaa commented publicly: Dear Daniel,\n\nThank you for your patience on this request.\n\u00a0\nWe have processed your request, and you should also now be able to see it when you navigate to Administration > Devices on the Web Portal [https://www.streetsmartmobile.com/adapter/guest/login.page] (If you can't see it, then please try selecting ALL Groups in the left pane [https://support.streetsmartmobile.com/article/63376-device-is-missing-on-account]).\n\nIt is currently linked to a placeholder user named e.g \".7868153707\" and PIN the same as the number.\n\nYou can Edit this User [https://support.streetsmartmobile.com/article/63285-moving-user-to-another-group] to change their group, or Security Role [https://support.streetsmartmobile.com/article/63248-changing-role-of-user]\u00a0 [https://support.fieldforcemanager.com/hc/en-us/articles/360017178940-Changing-the-Role-of-a-User?source=search&auth_token=eyJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lkIjoyMjA4MDQ4LCJ1c2VyX2lkIjozNzc2MTIwMjM0NjAsInRpY2tldF9pZCI6MzU1ODkyMSwiY2hhbm5lbF9pZCI6NjMsInR5cGUiOiJTRUFSQ0giLCJleHAiOjE2NDQ3MzM0ODJ9.451MbCJqmlyYAV080rDMosmX0OvSw777uRC-x7ARU3w]or add the details of the person to whom you would allocate this device. You can also Create a New User [https://support.streetsmartmobile.com/article/63312-creating-user-accounts] and Assign this Phone Number [https://support.streetsmartmobile.com/article/63113-assigning-phone-number-to-another-worker] to them. \u00a0If you create a new user and reassign the line, you would have to Retrieve the PIN [https://support.streetsmartmobile.com/article/63086-retrieving-pin-for-mobile-worker] and ask them to Activate the Mobile Application [https://support.streetsmartmobile.com/article/62617-activating-mobile-application] to link it to their user.\n\nBest regards,\nIbiso Barimalaa\nStreetSmart Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-09T15:00:15+00:00",
+          "Kayako - ticket id 60211680 // Ibiso Barimalaa commented privately:  http://csu.xoraint.com/NTTProdSupportTools/default.asp is currently not loading \nimage \n\n Working in incognito mode - moved the number \nimage"
+        ],
+        [
+          "2025-10-09T14:01:39+00:00",
+          "Kayako - ticket id 60211680 // Mohammed Amer commented publicly: Dear Daniel Soler,\n\nWe have received your escalation and we are currently working on it.\n\nPlease be assured that our team is reviewing the details of your request related to adding the phone number to your company ID. We appreciate your patience as we assess the situation and work towards a resolution.\n\nBest regards,\nMohammed Amer\nStreetSmart Support Team"
+        ],
+        [
+          "2025-10-09T13:12:00+00:00",
+          "Kayako - ticket id 60211680 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:Request has been opened over a week\n\nThe severity is: core_functionality_defect\n\n"
+        ],
+        [
+          "2025-10-03T09:34:36+00:00",
+          "Kayako - ticket id 60211680 // Daniel Soler commented publicly:  \n\nGood morning Alexandr,\n\n\u00a0\n\n102817 is not our company ID so I do not have the login for it.\u00a0 7868153707 is our number which needs to be added to 104983.\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-10-03T04:04:35+00:00",
+          "Kayako - ticket id 60211680 // Alexandr Oliynyk commented publicly: Dear Daniel,\n\nThank you for your patience.\n\nWe have checked and found that the number 7868153707 is assigned to the 102817 COID, which has not been transitioned to StreetSmart yet.\u00a0\nCould you please login to COID 102817 and transition it to StreetSmart and then we will be able to move the number to another COID 104983 (as currently this number has an FFM package).\n\nBest regards,\nAlexandr Oliynyk\nStreetSmart Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-03T03:58:52+00:00",
+          "Kayako - ticket id 60211680 // Alexandr Oliynyk commented privately: image \n The number has old package, they need to transition the COID with this number first\u00a0 "
+        ],
+        [
+          "2025-10-03T03:54:30+00:00",
+          "Kayako - ticket id 60211680 // Alexandr Oliynyk commented privately:  Oh, the number is under 102817 (same company). just need to move it\u00a0 "
+        ],
+        [
+          "2025-10-03T03:52:31+00:00",
+          "Kayako - ticket id 60211680 // Alexandr Oliynyk commented privately: 104983 has a lot of devices. they moved from FFM. Saurish also approved adding new devices and have the users be billed later (as there is no defined process yet) :\nimage \n\n"
+        ],
+        [
+          "2025-10-02T14:05:20+00:00",
+          "Kayako - ticket id 60211680 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-10-01T16:52:02+00:00",
+          "Kayako - ticket id 60211680 // Daniel Soler commented privately: [CHAT-END] Customer has ended the chat session"
+        ],
+        [
+          "2025-10-01T16:36:19+00:00",
+          "Kayako - ticket id 60211680 // Daniel Soler commented privately: Please add 7868153707 to Company ID 104983"
+        ],
+        [
+          "2025-10-01T16:36:08+00:00",
+          "Kayako - ticket id 60211680 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-10-01T16:35:37+00:00",
+          "Kayako - ticket id 60211680 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, Daniel Soler ! \ud83d\udc4b\n\nThis is the StreetSmart ATLAS support chat.\n\n\u2757 IMPORTANT NOTICE \u2757\n\ud83d\udcc5 Effective Date: July 22, 2025\n\n\ud83d\udeab White-labeled versions of StreetSmart will no longer function after this date.\n\u2705 If the version you're using is called StreetSmart, no action is needed.\n\n\ud83d\udd0d Not using StreetSmart?\n\ud83d\udc49 Click here for your options and next steps. \n\n--- AI Assistant ---\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \n\n--- AI Assistant ---\n\n We have validated that you are a SuperUser for Company 104983 and have access to a wide range of actions.\nPlease select one from the following list: \n\n--- Customer (Daniel Soler) ---\n\n Button selection: [\u2795 Add New Device] \n\n--- AI Assistant ---\n\n Certainly. I will add a new Device to your Account. \n\n--- AI Assistant ---\n\n It seems your company is already using all of the licensed seats.\nActive Devices: 0\nTotal Licenses: 0 \n\n--- AI Assistant ---\n\n Our recommendation is for you to contact your account manager to purchase more licenses.\n\nAlternatively, we could remove an active device from your account to make room for the new one. Would you like me to help you with this? \n\n--- Customer (Daniel Soler) ---\n\n Button selection: [No, don't remove any device. I'll purchase more licenses.] \n\n--- AI Assistant ---\n\n Do you need to perform further Admin Actions? \n\n--- Customer (Daniel Soler) ---\n\n representative \n\n--- AI Assistant ---\n\n Sorry, I didn\u2019t get that. Please try again. \n\n--- Customer (Daniel Soler) ---\n\n Button selection: [\ud83d\udc4d Yes!] \n\n--- AI Assistant ---\n\n We have validated that you are a SuperUser for Company 104983 and have access to a wide range of actions.\nPlease select one from the following list: \n\n--- Customer (Daniel Soler) ---\n\n Button selection: [\ud83d\udde8\ufe0f Contact an Agent] \n\n--- Customer (Daniel Soler) ---\n\n Button selection: [\ud83d\udcac Chat with live agent] \n"
+        ],
+        [
+          "2025-10-01T16:35:30+00:00",
+          "Kayako - ticket id 60211680 // Daniel Soler commented privately: Hello, I needed further assistance than StreetSmart ATLAS could provide. Could you assist me?\n\nUser Queries\n- \u2795 Add New Device\n- No, don't remove any device. I'll purchase more licenses.\n- representative\n- \ud83d\udc4d Yes!\n- \ud83d\udde8\ufe0f Contact an Agent"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 16,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

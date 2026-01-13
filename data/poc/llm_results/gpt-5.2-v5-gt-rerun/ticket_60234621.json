@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no customer-facing AI (ATLAS/Hermes) replies in the thread, and the public responses are coherent and relevant status updates with escalation and resolution. No customer complaint indicates AI was wrong or unhelpful.",
+    "evidence": [
+      "Priyanka Bhotika commented publicly: \"We have received your escalation, and our team is currently reviewing the issue.\"",
+      "Pavly Nashed commented publicly: \"We have done a preliminary investigation to determine the root cause, and have escalated this to our infrastructure team with the highest priority.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer is not shown being stuck in an AI loop; public replies come from named agents and progress toward escalation and fix. The customer does not request a human agent or express frustration with AI interactions in this ticket.",
+    "evidence": [
+      "Priyanka Bhotika commented publicly: \"We have received your escalation, and our team is currently reviewing the issue.\"",
+      "Chintan Parekh commented publicly: \"We have identified the cause of the chat widget outage and implemented a fix.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not ask the customer to re-provide already-shared recordings/logs, and there is no customer complaint that provided information was ignored. The support responses acknowledge the issue and communicate investigation and resolution.",
+    "evidence": [
+      "Customer (Jayashree Shetty) commented publicly: \"Please find the recording attached for your reference.\"",
+      "Pavly Nashed commented publicly: \"Thank you for your patience. We have done a preliminary investigation to determine the root cause...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket shows same-day public acknowledgements and a same-day public resolution update, and there is no customer-facing follow-up indicating they were waiting days without updates. Although the CSV resolutionTime is large, there is no accompanying customer-facing sign of delay as required by the rubric.",
+    "evidence": [
+      "CSV: initialResponseTime=772",
+      "Chintan Parekh commented publicly (same day): \"We have identified the cause of the chat widget outage and implemented a fix.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed in the CSV, there is no customer-facing evidence that the customer was still waiting on an unresolved request at the time of closure, and no closure warning/notice appears in the public thread.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Chintan Parekh commented publicly: \"We have identified the cause of the chat widget outage and implemented a fix.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reported a SEV1/outage scenario, and support handled it as an incident by escalating with highest priority and delivering a fix update the same day, rather than prolonged generic troubleshooting. The only generic browser note is private and is not the main customer-facing handling.",
+    "evidence": [
+      "Meaghan Mcclure commented publicly (forwarded email subject): \"Subject: Severity 1- Fortinet-Khoros Outage\"",
+      "Pavly Nashed commented publicly: \"We have done a preliminary investigation to determine the root cause, and have escalated this to our infrastructure team with the highest priority.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60234621
+}

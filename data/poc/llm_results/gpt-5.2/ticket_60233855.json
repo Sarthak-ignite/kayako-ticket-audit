@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI posts vague, templated updates and references a fix/release inclusion without providing concrete details (e.g., version/date/links), and internal automation logs show process failures/termination, suggesting unreliable or low-quality handling.",
+    "evidence": [
+      "[2025-11-02T08:31:34+00:00] (AI) Cu Chulainn AI Manager: \"I wanted to provide you with a quick update on your escalation: the solution is planned to be included in the Kh\"",
+      "[2025-11-02T09:42:05+00:00] (AI) Cu Chulainn AI Manager: \"Thank you for your continued patience. We are delighted to inform you that our Development team has addressed\"",
+      "[2025-11-02T10:22:50+00:00] (AI) Cu Chulainn AI Manager: \"The process has failed and andon cord has been pulled for the following reason: **Terminating\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI repeatedly asked the customer for the same information or prevented escalation to a human; the thread mainly shows internal automation logs and the customer providing different test links.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer provided multiple GitHub issue links and the AI appears to run lookups against those issues; there is no direct evidence of the AI asking again for the same logs/screenshots or ignoring already-provided info.",
+    "evidence": [
+      "[2025-11-01T17:38:35+00:00] (Customer) Andriy Rybalchenko: \"Testing https://github.com/trilogy-group/eng-maintenance/issues/13743 - no release\"",
+      "[2025-11-01T17:40:49+00:00] (AI) Cu Chulainn AI Manager: \"GHI lookup complete for issue 13743.\"",
+      "[2025-11-01T17:41:32+00:00] (Customer) Andriy Rybalchenko: \"Testing https://github.com/trilogy-group/eng-maintenance/issues/13742 - status not Done\"",
+      "[2025-11-01T17:43:11+00:00] (AI) Cu Chulainn AI Manager: \"GHI lookup complete for issue 13742.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket metadata shows extremely long delays to first human response and long gaps between responses (on the order of weeks), which qualifies as significant response delays.",
+    "evidence": [
+      "Ticket Context: \"Time to first human (hours): 1588.5\"",
+      "Ticket Context: \"Max gap between responses (hours): 1025.8\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, the provided timeline does not show an explicit closure action or a customer waiting on promised follow-up when it was closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/Sev1), and there is no evidence of outage-level mishandling or generic cache/VPN/firewall troubleshooting in the interaction excerpts.",
+    "evidence": [
+      "Ticket Context: \"Priority: normal\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI posts vague, templated updates and references a fix/release inclusion without providing concrete details (e.g., version/date/links), and internal automation logs show process failures/termination, suggesting unreliable or low-quality handling.\",\n    \"evidence\": [\n      \"[2025-11-02T08:31:34+00:00] (AI) Cu Chulainn AI Manager: \\\"I wanted to provide you with a quick update on your escalation: the solution is planned to be included in the Kh\\\"\",\n      \"[2025-11-02T09:42:05+00:00] (AI) Cu Chulainn AI Manager: \\\"Thank you for your continued patience. We are delighted to inform you that our Development team has addressed\\\"\",\n      \"[2025-11-02T10:22:50+00:00] (AI) Cu Chulainn AI Manager: \\\"The process has failed and andon cord has been pulled for the following reason: **Terminating\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI repeatedly asked the customer for the same information or prevented escalation to a human; the thread mainly shows internal automation logs and the customer providing different test links.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer provided multiple GitHub issue links and the AI appears to run lookups against those issues; there is no direct evidence of the AI asking again for the same logs/screenshots or ignoring already-provided info.\",\n    \"evidence\": [\n      \"[2025-11-01T17:38:35+00:00] (Customer) Andriy Rybalchenko: \\\"Testing https://github.com/trilogy-group/eng-maintenance/issues/13743 - no release\\\"\",\n      \"[2025-11-01T17:40:49+00:00] (AI) Cu Chulainn AI Manager: \\\"GHI lookup complete for issue 13743.\\\"\",\n      \"[2025-11-01T17:41:32+00:00] (Customer) Andriy Rybalchenko: \\\"Testing https://github.com/trilogy-group/eng-maintenance/issues/13742 - status not Done\\\"\",\n      \"[2025-11-01T17:43:11+00:00] (AI) Cu Chulainn AI Manager: \\\"GHI lookup complete for issue 13742.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket metadata shows extremely long delays to first human response and long gaps between responses (on the order of weeks), which qualifies as significant response delays.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Time to first human (hours): 1588.5\\\"\",\n      \"Ticket Context: \\\"Max gap between responses (hours): 1025.8\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, the provided timeline does not show an explicit closure action or a customer waiting on promised follow-up when it was closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/Sev1), and there is no evidence of outage-level mishandling or generic cache/VPN/firewall troubleshooting in the interaction excerpts.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Priority: normal\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60233855
+}

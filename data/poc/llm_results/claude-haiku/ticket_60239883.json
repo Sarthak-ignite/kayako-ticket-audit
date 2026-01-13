@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are overly generic and make vague promises without substantive information.",
+    "evidence": [
+      "[2025-11-10T18:02:54+00:00] We have contacted the Engineering team and will provide you with an update as soon as we receive more information",
+      "[2025-11-13T13:02:20+00:00] We are pleased to inform you that our Engineering team has successfully upgraded the Apache version in the GFI La..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer was able to reach human interaction and the ticket progressed normally.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support team acknowledged and acted on the customer's initial context about Apache version.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap between the customer's initial report and the first substantive response.",
+    "evidence": [
+      "Customer initial report: [2025-11-10T18:00:48+00:00]",
+      "First substantial response: [2025-11-10T18:02:54+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been resolved with the Apache version upgrade.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "For a high-priority ticket about a version upgrade, the team engaged engineering directly and resolved the specific technical issue.",
+    "evidence": []
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are overly generic and make vague promises without substantive information.\",\n    \"evidence\": [\n      \"[2025-11-10T18:02:54+00:00] We have contacted the Engineering team and will provide you with an update as soon as we receive more information\",\n      \"[2025-11-13T13:02:20+00:00] We are pleased to inform you that our Engineering team has successfully upgraded the Apache version in the GFI La...\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer was able to reach human interaction and the ticket progressed normally.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support team acknowledged and acted on the customer's initial context about Apache version.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant gap between the customer's initial report and the first substantive response.\",\n    \"evidence\": [\n      \"Customer initial report: [2025-11-10T18:00:48+00:00]\",\n      \"First substantial response: [2025-11-10T18:02:54+00:00]\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to have been resolved with the Apache version upgrade.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"For a high-priority ticket about a version upgrade, the team engaged engineering directly and resolved the specific technical issue.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The AI responses are somewhat generic but do eventually address the specific technical issue\n- There's a notable delay of about 67 hours to first human response\n- The ticket was ultimately resolved by upgrading the Apache version as requested\n- The high priority was taken seriously with direct engineering engagement",
+  "_model": "claude-haiku",
+  "_ticket_id": 60239883
+}

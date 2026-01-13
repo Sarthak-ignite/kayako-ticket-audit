@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic filler responses, wrong information, or unkept promises in the provided interaction.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interaction does not indicate that the customer was stuck in a loop or unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that the AI ignored prior context or asked for duplicate information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between interactions was 0.0 hours, indicating no delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed, but there is no evidence suggesting the customer was waiting for promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The priority of the ticket was low, not high, so there is no concern regarding mishandling for high-priority issues.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic filler responses, wrong information, or unkept promises in the provided interaction.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction does not indicate that the customer was stuck in a loop or unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the AI ignored prior context or asked for duplicate information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between interactions was 0.0 hours, indicating no delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed, but there is no evidence suggesting the customer was waiting for promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The priority of the ticket was low, not high, so there is no concern regarding mishandling for high-priority issues.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60264386
+}

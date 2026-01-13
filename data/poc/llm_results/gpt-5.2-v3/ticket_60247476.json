@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided a specific workaround (keyboard shortcut to send) as a way to bypass the missing Send button, but the customer explicitly tested it and confirmed it does not work, meaning the AI\u2019s suggested workaround was ineffective/incorrect for their scenario.",
+    "evidence": [
+      "[2025-11-20T15:32:34+00:00] ATLAS (public): \"In the Response editor, agents can use the Ctrl + Enter (or Cmd + Return on Mac) keyboard shortcut to send a reply. This shortcut may function even if the 'Send' button is not visible.\"",
+      "[2025-11-20T15:55:31+00:00] Meaghan Mcclure (public): \"We have tested using Ctrl + Enter to send the message when the send button disappears, and there is no change. It does not send the message, and a refresh is still required.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While the customer expresses frustration about repeating troubleshooting, the ticket does not show the AI repeatedly asking for the exact same specific information 2+ times, nor does the customer request a human and get stuck with only AI responses. Multiple human agents are actively involved.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly states that support is re-asking already-covered questions/tests and instructs support to review the ticket and previous tickets, indicating support is not incorporating already-provided context.",
+    "evidence": [
+      "[2025-11-21T12:54:15+00:00] Don Kempt (public): \"Most of these questions were already asked by the previous engineer on this case.\"",
+      "[2025-11-21T12:54:15+00:00] Don Kempt (public): \"Please review the ticket\u2026 review previous tickets.\"",
+      "[2025-11-21T12:54:15+00:00] Don Kempt (public): \"We have provided HAR\u2019s, we have checked with agents wfh and in office, used different browsers etc.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No gap of 3+ calendar days between customer messages and support responses is visible in the provided timeline, and there is no explicit complaint about waiting multiple days.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication the ticket was closed (auto-closed or manually) while the customer was awaiting an answer; the conversation continues with active investigation.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the issue impacts operations and causes delays, the ticket is not explicitly marked P1/SEV1/Critical, and there is no explicit 'production down/complete outage' statement that would meet the strict detection criteria for Sev1 mishandling.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60247476
+}

@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible ATLAS content is a brief intake flow requesting uploads; there\u2019s no clear incorrect/misleading guidance shown, and the human team took over afterward.",
+    "evidence": [
+      "ATLAS: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer was not stuck in an AI-only loop; a human agent responded and progressed troubleshooting.",
+    "evidence": [
+      "2025-10-22: Human agent (Randall) provides specific findings and commands to run"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support requested shell commands without first ensuring the customer had the required shell unlock key/licensing to execute them, causing avoidable back-and-forth and delays. This indicates the support flow did not account for a common access prerequisite in this environment.",
+    "evidence": [
+      "Randall (2025-10-22): \"I need you to run the following commands and provide the output\" (followed by multiple shell commands).",
+      "Customer (2025-10-23): \"Please provide us with the shell license key to execute these commands.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple gaps exceed 3 calendar days, and the customer/partner explicitly chased for updates. Support also apologized for the delay.",
+    "evidence": [
+      "Gap: 2025-10-14 (ticket created) to 2025-10-22 (first substantive human response).",
+      "Gap: Customer request for shell key on 2025-10-23 to key provided on 2025-10-27.",
+      "Customer follow-ups during wait: 2025-10-26 \"Please any update here? ... ASAP.\" and 2025-10-27 \"Please need your support here urgently.\"",
+      "Gap: Customer requests Webex again on 2025-10-30 and follow-up 2025-11-02; meeting scheduler only sent 2025-11-03.",
+      "Syed (2025-11-04): \"I sincerely apologize for the delayed response on this ticket.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows continued engagement (meeting scheduled/held and remediation steps taken). No evidence is shown that the case was closed while a customer request was pending.",
+    "evidence": [
+      "2025-11-04: Meeting held and actions performed; follow-up guidance provided"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "While the customer didn\u2019t explicitly state a full outage, they reported a recurring disk-full/performance issue and repeatedly emphasized urgency/criticality. Handling did not reflect urgency (multi-day delays and slow scheduling of the requested live session).",
+    "evidence": [
+      "Initial issue: \"Exinda Network Orchestrator Performance Issue and the disk space is full... issue reoccurs and persists.\"",
+      "Partner/customer escalation (2025-10-26): \"We are at critical stage and must expediate all the tasks...\" and request \"ASAP\" for the shell key.",
+      "Customer/partner chase for meeting (2025-11-02): \"Please can you get back to us ASAP on the requested Webex call?\"",
+      "Multi-day response gaps documented under RESPONSE_DELAYS."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60220701
+}

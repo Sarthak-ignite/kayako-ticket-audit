@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI response appears appropriate and directly addresses the customer's reported certificate issue.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one interaction, and the AI response seems responsive to the customer's initial message.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI response acknowledges the specific URL and certificate issue mentioned by the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interactions appear to be very close together with minimal time gap.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked as closed with only a minimal interaction, potentially before the customer's issue was fully resolved.",
+    "evidence": [
+      "Ticket Status: closed",
+      "No further customer confirmation of resolution"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as a P1/Sev1 ticket, and the priority is listed as normal.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI response appears appropriate and directly addresses the customer's reported certificate issue.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one interaction, and the AI response seems responsive to the customer's initial message.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI response acknowledges the specific URL and certificate issue mentioned by the customer.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions appear to be very close together with minimal time gap.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked as closed with only a minimal interaction, potentially before the customer's issue was fully resolved.\",\n    \"evidence\": [\n      \"Ticket Status: closed\",\n      \"No further customer confirmation of resolution\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as a P1/Sev1 ticket, and the priority is listed as normal.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket appears to be about a certificate expiration/change\n- There's minimal interaction between customer and support\n- The ticket was quickly closed without clear evidence of resolution\n- The main potential issue is premature closure, as the customer may not have confirmed the problem was solved",
+  "_model": "claude-haiku",
+  "_ticket_id": 60231299
+}

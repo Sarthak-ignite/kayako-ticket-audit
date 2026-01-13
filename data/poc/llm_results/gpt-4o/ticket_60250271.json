@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no indication that AI responses are providing wrong information or making unkept promises; the AI is skipping tickets based on tags.",
+    "evidence": [
+      "2025-12-03T16:42:38+00:00 - ATLAS commented privately: Skipping ticket due to tags",
+      "2025-11-27T14:24:09+00:00 - ATLAS commented privately: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customers are interacting with human agents, and there is no indication they are stuck in loops or only interacting with AI.",
+    "evidence": [
+      "2025-11-26T17:19:35+00:00 - Pavly Nashed commented publicly: Dear Briamel, Thank you for following the steps and your confirmation."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence that support is ignoring provided information or asking for repeat submissions.",
+    "evidence": [
+      "2025-11-26T17:19:35+00:00 - Pavly Nashed commented publicly: Thank you for following the steps and your confirmation."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays between responses, notably a gap of 146.2 hours between interactions.",
+    "evidence": [
+      "Time to first human (hours): 2.8",
+      "Max gap between responses (hours): 146.2"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The closure of the ticket appears to occur after customer confirmation that the issue is resolved.",
+    "evidence": [
+      "2025-12-03T16:42:39+00:00 - Phronesis commented publicly: Thank you for your message and for confirming that the issue is resolved. As requested, we are closing this ticket."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication this ticket was high-priority or mishandled in terms of priority response.",
+    "evidence": [
+      "Ticket priority is marked as normal."
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that AI responses are providing wrong information or making unkept promises; the AI is skipping tickets based on tags.\",\n    \"evidence\": [\"2025-12-03T16:42:38+00:00 - ATLAS commented privately: Skipping ticket due to tags\", \"2025-11-27T14:24:09+00:00 - ATLAS commented privately: Skipping ticket due to tags\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customers are interacting with human agents, and there is no indication they are stuck in loops or only interacting with AI.\",\n    \"evidence\": [\"2025-11-26T17:19:35+00:00 - Pavly Nashed commented publicly: Dear Briamel, Thank you for following the steps and your confirmation.\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that support is ignoring provided information or asking for repeat submissions.\",\n    \"evidence\": [\"2025-11-26T17:19:35+00:00 - Pavly Nashed commented publicly: Thank you for following the steps and your confirmation.\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays between responses, notably a gap of 146.2 hours between interactions.\",\n    \"evidence\": [\"Time to first human (hours): 2.8\", \"Max gap between responses (hours): 146.2\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The closure of the ticket appears to occur after customer confirmation that the issue is resolved.\",\n    \"evidence\": [\"2025-12-03T16:42:39+00:00 - Phronesis commented publicly: Thank you for your message and for confirming that the issue is resolved. As requested, we are closing this ticket.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication this ticket was high-priority or mishandled in terms of priority response.\",\n    \"evidence\": [\"Ticket priority is marked as normal.\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60250271
+}

@@ -1,0 +1,172 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_control",
+        "requester": {
+          "id": 60104892,
+          "uuid": "a1b05edc-bfe1-46d0-a2be-3681825b092b",
+          "full_name": "Ashraaz Nadeem Yusuf",
+          "legacy_id": "380915747013",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/a1b05edc-bfe1-46d0-a2be-3681825b092b?1764596147",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60035931,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 106427,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 24520,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Pacific/Fiji",
+          "time_zone_offset": 46800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-11-30T22:40:13+00:00",
+          "last_active_at": "2025-12-01T13:35:47+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60104892",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@278c347e4cc23863ec54fe2c15a45f660606e214",
+          "password_updated_at": "2025-06-24T04:25:54+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2019-05-29T23:08:43+00:00",
+          "updated_at": "2025-12-01T13:35:47+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60104892"
+        },
+        "ticket_idt": 60252864
+      },
+      "interactions": [
+        [
+          "2025-11-30T13:19:12+00:00",
+          "Kayako - ticket id 60252864 // Mike Kebede commented publicly: Dear Ashraaz,\n\nThank you for contacting us regarding the expired Kerio Control license for Rooster Poultry. I understand the impact this is having on your services, and I appreciate your patience while we review your request.\n\nI would like to clarify that Kerio Support does not have the ability to issue temporary licenses or extend expired licenses. All licensing actions, including renewals and any exceptions, must be handled strictly through our Sales and Licensing channels.\n\nNEXT STEP REQUIRED\n\nSince you have not been able to reach your reseller and your renewal has been delayed, please submit your request directly to GFI Sales using the Customer Care form below:\n\nhttps://customercare.gfi.com/hc/en-us/requests/new\n\nWhen submitting your request, please include:\n\n\t*\nYour Kerio Control license key: 20339-Z6JHP-2QUX8\n\n\t*\nYour company name: Rooster Poultry\n\n\t*\nA summary explaining that the reseller has not responded to your renewal attempts\n\n\t*\nYour preferred contact details\n\nWHAT WILL HAPPEN NEXT\n\nOnce GFI Sales receives your request, they will:\n\n\t*\nContact your reseller on your behalf\n\n\t*\nInvestigate the delay\n\n\t*\nAssist in moving your license renewal forward as quickly as possible\n\nPlease let me know if you need help preparing any of the information for the submission or if there is anything else I can assist you with while this is being addressed.\n\nBest regards,\nMike Kebede\nGFI - Kerio Control Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-30T05:38:34+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: we require your assistance"
+        ],
+        [
+          "2025-11-30T02:29:28+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: [CHAT-END] Customer has ended the chat session"
+        ],
+        [
+          "2025-11-30T01:01:22+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: Hi"
+        ],
+        [
+          "2025-11-30T00:53:20+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: Hi"
+        ],
+        [
+          "2025-11-30T00:52:41+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: Hi"
+        ],
+        [
+          "2025-11-30T00:33:44+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: Hello"
+        ],
+        [
+          "2025-11-29T23:34:53+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: We are facing total outage. Your assistance will be highly appreciated"
+        ],
+        [
+          "2025-11-29T23:15:34+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: Hi"
+        ],
+        [
+          "2025-11-29T21:52:20+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: 20339-z6jhp-2qux8"
+        ],
+        [
+          "2025-11-29T21:42:34+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: Anyone there"
+        ],
+        [
+          "2025-11-29T21:05:32+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: Please extend and allow us to renew in few days"
+        ],
+        [
+          "2025-11-29T21:03:39+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: Hi. Iam the Manager IT from Rooster Poultry. Our license expired. Please issue us a temporary extension. Our services are down."
+        ],
+        [
+          "2025-11-29T21:03:14+00:00",
+          "Kayako - ticket id 60252864 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-11-29T21:02:45+00:00",
+          "Kayako - ticket id 60252864 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, Ashraaz Nadeem Yusuf ! \ud83d\udc4b\n\nThis is the Kerio Control ATLAS support chat. \n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \n\n--- AI Assistant ---\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of Kerio Control ATLAS Support Chat [https://support.keriocontrol.gfi.com/article/117054]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \n\n--- Customer (Ashraaz Nadeem Yusuf) ---\n\n Expired license \n\n--- AI Assistant ---\n\n Since it's a delicate topic, I want to make extra sure: are you seeking assistance with renewing/modifying/cancelling an existing license, or purchasing a new license and not for technical issues related to a license that is already renewed, correct?\n\n\u2139\ufe0f Note: you can use the below buttons or type in \n\n--- Customer (Ashraaz Nadeem Yusuf) ---\n\n Need tech support \n\n--- AI Assistant ---\n\n \ud83d\ude33 Sorry about the misunderstanding, let's try again. \n\n--- AI Assistant ---\n\n Got it! So you're experiencing a technical issue related to an expired license in Kerio Control. Let me help you with that.\n\nCould you tell me a bit more about what's happening? For example:\n\n \t* What specific error message or behavior are you seeing related to the expired license?\n \t* When did the license expire, or when did you first notice this issue?\n \t* Have you already renewed the license and are having trouble applying it, or is the license still expired?\n\nThis will help me understand exactly what's going on and get you the right solution! \ud83d\udd0d \n\n--- Customer (Ashraaz Nadeem Yusuf) ---\n\n Today \n\n--- AI Assistant ---\n\n Thanks for that! Just to clarify a bit more so I can help you effectively:\n\nIs the license still expired and needs to be renewed, or have you already renewed/obtained a new license but are having trouble applying it to Kerio Control?\n\nThis will help me point you in the right direction! \ud83d\ude0a \n\n--- Customer (Ashraaz Nadeem Yusuf) ---\n\n Needs to be renewed \n\n--- AI Assistant ---\n\n Perfect, thanks for clarifying! So you need to renew your Kerio Control license subscription. Let me explain how that works.\n\nLicense renewals are handled through sales channels, not through technical support. Here are your options:\n\nOPTION 1: CONTACT YOUR RESELLER (RECOMMENDED)\n\nIf you purchased Kerio Control through a reseller, reach out to them directly to renew your license subscription.\n\nOPTION 2: FIND A NEW RESELLER\n\nIf you can't reach your original reseller, you can find a new one in your area through the GFI reseller network.\n\nOPTION 3: CONTACT GFI SALES DIRECTLY\n\nIf you're unable to contact a reseller, you can reach out to the GFI Sales Team through the GFI Customer Care Center [https://customercare.gfi.com/hc/en-us/requests/new]. When you contact them, please provide:\n\n \t* Your current license number\n \t* Your organization/company name\n \t* Your previous invoice (if you have it)\n\nAFTER YOUR LICENSE IS RENEWED\n\nOnce the renewal is complete, you'll need to register or update the license in Kerio Control using the Configuration Assistant (either Register Product or Update license info options).\n\nMore details can be found in this article: Renewing Kerio Control license [https://support.keriocontrol.gfi.com/article/120204]\n\nIs there anything else I can help clarify about the renewal process? \ud83d\ude0a \n\n--- Customer (Ashraaz Nadeem Yusuf) ---\n\n Seeking temporary extensionSupport ticket pleae \n\n--- AI Assistant ---\n\n I understand you're looking for a temporary license extension while you work on the renewal. Unfortunately, temporary license extensions are not something that technical support can provide - these would need to be handled through the sales/licensing channels I mentioned earlier (reseller or GFI Sales team via the GFI Customer Care Center [https://customercare.gfi.com/hc/en-us/requests/new]).\n\nHowever, I can connect you with a support agent who can create a ticket to document your situation and potentially explore if there are any options available. They'll have all the context from our conversation.\n\nBefore I transfer you, could you please provide:\n\n \t* Your current license number (if you have it handy)\n \t* Your company/organization name\n\nThis will help the agent assist you more quickly. Would you like me to connect you now? \ud83d\ude42 \n\n--- Customer (Ashraaz Nadeem Yusuf) ---\n\n Rooster Poultry \n\n--- AI Assistant ---\n\n Thank you for sharing your company name, Rooster Poultry. A human colleague is available to assist you further with your license extension request\u2014please feel free to choose from the handover options below to continue. \ud83d\ude0a \n\n--- Customer (Ashraaz Nadeem Yusuf) ---\n\n Button selection: [\ud83d\udcac Chat with live agent] \n"
+        ],
+        [
+          "2025-11-29T21:02:32+00:00",
+          "Kayako - ticket id 60252864 // Ashraaz Nadeem Yusuf commented privately: Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\n\nUser Queries\n- Expired license\n- Need tech support\n- Today\n- Needs to be renewed\n- Seeking temporary extensionSupport ticket pleae\n- Rooster Poultry"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 16,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

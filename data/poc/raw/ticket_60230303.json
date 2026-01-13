@@ -1,0 +1,143 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_aurora",
+        "requester": {
+          "id": 60532349,
+          "uuid": "15fc2beb-1985-5d2b-a961-cd3c8d150310",
+          "full_name": "Lucy Liu",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/15fc2beb-1985-5d2b-a961-cd3c8d150310?1765654572",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60064933,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 533890,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-12-02T07:00:03+00:00",
+          "last_active_at": "2025-12-13T19:36:12+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60532349",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@98cd6998850d1901ab7bc53a1b1117c277648787",
+          "password_updated_at": "2025-08-05T17:21:13+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-08-05T17:20:44+00:00",
+          "updated_at": "2025-12-13T19:36:12+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60532349"
+        },
+        "ticket_idt": 60230303
+      },
+      "interactions": [
+        [
+          "2025-11-05T21:25:04+00:00",
+          "Kayako - ticket id 60230303 // Fang Ying Liu commented publicly: Hi!\n\nThe overall forum speed has greatly improved. Thank you for that.\u00a0\nHowever the moderation tab takes a long while to load or not load at all.\nhttps://community.khoros.com/managecontent?tab=moderation\n\nimageimage\n\nIs there any solution to this?\nThank you,\nLucy\n\n\n\n---\nLucy\u00a0Liu\u00a0 |\u00a0\u00a0AI First - Events and Community Specialist\n\n\t\t\u00a0\n\n\t\tignitetech.ai [http://ignitetech.ai]\u00a0\n\n\t\t\u00a0\n\n\t\t\u00a0image [http://www.gfi.ai]\n\n\t\t\u00a0\n\n\u00a0\u00a0\u00a0\u00a0\u00a0"
+        ],
+        [
+          "2025-11-03T13:36:55+00:00",
+          "Kayako - ticket id 60230303 // Santhosh M commented publicly: Hi Lucy,\n\nI hope you are doing great.\nI\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins. Please check and let us know if you\u2019re still able to reproduce the issue.\n\nBest regards,\nSanthosh M\nKhoros Community Aurora Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-03T13:22:26+00:00",
+          "Kayako - ticket id 60230303 // AI-CS Integration commented privately: (Lachesis): JIRA PDR-151323 is Closed, reopening ticket."
+        ],
+        [
+          "2025-11-03T13:05:17+00:00",
+          "Kayako - ticket id 60230303 // Centralsupport-ai-acc commented privately: Placing on hold for 999 hour(s)"
+        ],
+        [
+          "2025-11-03T13:05:08+00:00",
+          "Kayako - ticket id 60230303 // Santhosh M commented privately:  Initiated a restart as a part of https://jira.dev.lithium.com/browse/PDR-151323. Once done, will cleare the backend cache and reload the plugins. Placing on hold until the restart is complete. "
+        ],
+        [
+          "2025-10-28T01:07:57+00:00",
+          "Kayako - ticket id 60230303 // Lucy Liu commented privately: Added files/screenshots"
+        ],
+        [
+          "2025-10-28T01:07:12+00:00",
+          "Kayako - ticket id 60230303 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-10-28T01:06:41+00:00",
+          "Kayako - ticket id 60230303 // Centralsupport-ai-acc commented privately: [Org context]: Case Org 'Khoros' allowed repos are []. Requester Org 'Khoros' allowed repos are []."
+        ],
+        [
+          "2025-10-28T01:06:40+00:00",
+          "Kayako - ticket id 60230303 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, Lucy Liu ! \ud83d\udc4b\n\nThis is the Khoros Aurora AI Support Agent \ud83e\udd16. \n-------------------------\n\n Please note: The AI Support Agent is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \n\n--- AI Assistant ---\n\n Welcome to the menu for internal employees.\n\nHow can I help? \n\n--- Customer (Lucy Liu) ---\n\n Button selection: [\ud83d\udce9 Raise a Ticket] \n\n--- AI Assistant ---\n\n What's the priority of the issue? \n\n--- Customer (Lucy Liu) ---\n\n Button selection: [\ud83d\udfe0 High] \n\n--- AI Assistant ---\n\n Could you please provide the Khoros instance URL where the issue is occurring? This URL is necessary to properly route and troubleshoot your ticket. The URL usually starts with https:// and includes your community or platform domain. \n\n--- Customer (Lucy Liu) ---\n\n https://community.khoros.com/ \n\n--- AI Assistant ---\n\n I've noted down your base instance URL\ud83d\udd17: https://community.khoros.com \n\n--- AI Assistant ---\n\n Thanks! To create the ticket, I\u2019ll need a few more details:\n\n \t* Are you raising this for yourself (c-fang.liu@khoros.com) or on behalf of a customer?\n \t* Brief subject for the issue (one line).\n \t* Full description of the problem, including:\n\n- What you were trying to do\n- What happened instead (error messages, unexpected behavior)\n- When it started and how often it occurs\n- Recent changes, if any\n\n \t* Is this impacting production users or a specific feature/area?\n \t* Any relevant screenshots, error IDs, or links (optional)\n\nOnce you share these, I\u2019ll confirm everything with you before submitting the ticket. \n\n--- Customer (Lucy Liu) ---\n\n I noted that one of our customers have been having issues with pages not loading properly until reloaded (raised in ticket #60217229) and I've been having the same issue (not as severe) with Khoros Atlas. \n\n--- AI Assistant ---\n\n Thanks for flagging this. I\u2019ll get a ticket drafted. I just need a few specifics to proceed:\n\n \t* Requester: Are you raising this for yourself (c-fang.liu@khoros.com), or on behalf of a customer? If on behalf of a customer, please share their email.\n \t* Subject (one line): I can suggest \u201cIntermittent page load issues on Khoros Atlas requiring manual reload\u201d \u2014 would you like to use this or provide your own?\n \t* Description details:\n\n- What pages or areas in Atlas are affected (e.g., topics, search, PMs, admin)?\n- What exactly happens on first load vs after reload?\n- Any error messages, console errors, or network failures observed?\n- When did you first notice this on Atlas? How often does it occur?\n- Are others internally seeing it too, or only you?\n- Any recent changes to your browser, extensions, SSO, or network/VPN?\n\n \t* Impact: Is this affecting production usability for you or broader users?\n \t* References: You mentioned customer ticket #60217229\u2014should we link this as a related case?\n\nFeel free to reply in bullet points. I\u2019ll summarize and confirm before submitting. \n\n--- Customer (Lucy Liu) ---\n\n On behalf of myself but to also escalate this issue for the customer as well as I'm experiencing the need to reload to fully load pages.\n\nIf i click into any blog on atlas and i click back into the home page, either using the top home buttom or the back button, the home page doesn't load properly \n\n--- AI Assistant ---\n\n Thanks, that helps. Let me confirm a few details so I can draft the ticket for you and reference the customer\u2019s case.\n\n \t* Requester: You (c-fang.liu@khoros.com), and you\u2019d like this tied to/escalated alongside customer ticket #60217229 [https://khoros-aurora.kayako.com/conversation/view/60217229]. Confirm? \n \t* Suggested subject: \u201cAtlas: Home page fails to load properly after navigating back from blog; requires reload\u201d \u2014 okay to use?\n\nPlease provide a bit more detail for the description:\n\n \t* Scope: Is it specifically the Atlas home page after viewing any blog post? Any other areas affected?\n \t* Behavior: What exactly doesn\u2019t load (modules/widgets missing, styling broken, content placeholders, blank sections)?\n \t* Frequency: Does it happen every time or intermittently? Since when did you start noticing it?\n \t* Repro steps (draft\u2014please confirm or adjust):\n\n1) Open a blog post on Atlas\n2) Navigate back to the home page (top Home button or browser Back)\n3) Observe home page content not fully loading until a manual reload\n\n \t* Environment: Which browsers and versions have you tried? Any extensions, VPN, or ad/script blockers enabled?\n \t* Impact: Does this block your workflow or is it a workaround with reload? Are other internal users seeing it?\n \t* Any console or network errors when the bad load happens? If available, please share a snippet or screenshot.\n \t* Instance URL: Confirming https://community.khoros.com\n\nOnce you share these, I\u2019ll compile and read back the full ticket for your approval before submitting. \n\n--- Customer (Lucy Liu) ---\n\n It's happened consistently on pc and on mobile whenever i click into any blog category page - for exmaple the recent posts is completely blank when i click the home page, like that section doesn't exist and wouldn't appear until i reload the page.\nWhen i try to load more comments on a blog on mobile, it sometimes also blanks the comments and makes the blog appear as having no comments.\n\nRepro steps correct\n\nI've tried both chrome on pc and on mobile. The reload is a workaround but it is extremely taxing when you're trying to click into different forums and having to reload to see anything. \n\n--- AI Assistant ---\n\n Thank you\u2014this is very helpful. Here\u2019s a draft of the ticket based on what you shared. Please review and confirm or provide any corrections/additions.\n\n \t* Requester: c-fang.liu@khoros.com (you)\n \t* Link to related customer case: #60217229 [https://khoros-aurora.kayako.com/conversation/view/60217229] (please confirm linking) \n \t* Instance URL: https://community.khoros.com\n\nProposed subject:\nAtlas: Home page and blog comments fail to load after navigating back; requires manual reload\n\nDraft description:\n\n \t* Summary:\n\n- On Khoros Atlas, pages intermittently fail to render content until a manual reload, especially after navigating back from blog/category pages. This mirrors behavior reported by a customer in case #60217229 [https://khoros-aurora.kayako.com/conversation/view/60217229].\n\n \t* Affected areas:\n\n- Atlas home page after visiting any blog or blog category page: sections such as \u201cRecent Posts\u201d render blank, as if the module does not exist, until the page is manually reloaded.\n- Blog comments on mobile: tapping \u201cLoad more comments\u201d sometimes clears the existing comments and makes the blog appear to have no comments, until a reload.\n\n \t* Reproduction steps:\n\n1) Open any blog or blog category page on Atlas.\n2) Navigate back to the home page via the top Home button or the browser Back button.\n3) Observe that home page sections (e.g., Recent Posts) are missing/blank until manually reloading the page.\n4) On mobile, in a blog post, tap \u201cLoad more comments\u201d and observe that comments may disappear until reload.\n\n \t* Frequency:\n\n- Consistent on both desktop and mobile.\n\n \t* Browsers/Devices:\n\n- Chrome on PC and Chrome on mobile (Android/iOS?).\n\n \t* Impact:\n\n- Reload works as a temporary workaround, but it significantly impacts navigation and usability when moving across forums/blogs.\n\n \t* Additional notes:\n\n- This appears similar to the customer\u2019s issue (#60217229) and may warrant escalation/investigation for a broader platform impact.\n\nOpen questions to finalize:\n\n \t* Should I explicitly link and escalate alongside customer ticket #60217229?\n \t* Do you see this on any other pages besides home/blog/blog category (e.g., forums, search, PMs)?\n \t* When did you first notice this on Atlas?\n \t* Are other internal users experiencing the same behavior?\n \t* Any console or network errors visible when the blank state occurs? If so, can you share a snippet or screenshot?\n \t* Mobile OS used (Android/iOS) and version, if available.\n\nIf everything above looks good, please confirm the subject and whether to link to #60217229 [https://khoros-aurora.kayako.com/conversation/view/60217229]. Once confirmed, I\u2019ll submit the ticket on your behalf. \n\n--- Customer (Lucy Liu) ---\n\n You can link and escalate as long as the customer doesn't see this attached to their ticket and it's only internal.\n\n--- AI Assistant ---\n\n Understood\u2014I\u2019ll link your new ticket internally to customer case #60217229 [https://khoros-aurora.kayako.com/conversation/view/60217229] and request escalation without exposing your ticket on the customer\u2019s thread.\n\nTo finalize, please confirm or fill in the last few details:\n\n \t* Requester: c-fang.liu@khoros.com (you) \u2014 confirm?\n \t* Subject: \u201cAtlas: Home page and blog comments fail to load after navigating back; requires manual reload\u201d \u2014 okay to use?\n \t* Environment details:\n\n- Mobile OS/version (iOS/Android and version)?\n- Chrome versions on desktop and mobile (if handy)?\n- Any extensions, VPN, or content blockers in use?\n\n \t* Scope:\n\n- Do you notice this on any pages beyond home/blog/blog category (e.g., forums listing, search)?\n- Are other internal users experiencing it?\n\n \t* Timing:\n\n- When did you first notice it?\n\n \t* Errors:\n\n- Any console or network errors visible when the blank state occurs? If yes, a brief snippet or screenshot would help.\n\nOnce you confirm the above (even roughly), I\u2019ll read back the final ticket details and submit it with an internal link to #60217229 [https://khoros-aurora.kayako.com/conversation/view/60217229]. \n\n--- Customer (Lucy Liu) ---\n\n yes i'm the requester. Subject is ok. Mobile is android. Up to date chrome browsers. No vpns. I noticed it's pretty much everything but the blog posts themselves that don't load properly without a reload. I noticed it at least last week if not earlier. I can attach screenshots once you create the issue \n\n--- AI Assistant ---\n\n Great, thanks for confirming. Here\u2019s the final ticket summary for your approval. Please review and let me know if everything looks correct. I\u2019ll submit it and internally link/escalate with customer case #60217229 [https://khoros-aurora.kayako.com/conversation/view/60217229].\n\n \t* Requester: c-fang.liu@khoros.com\n \t* Instance URL: https://community.khoros.com\n \t* Linkage: Internally link and escalate alongside customer ticket #60217229 [https://khoros-aurora.kayako.com/conversation/view/60217229] (do not expose to customer) \n\nSubject:\nAtlas: Home page and blog comments fail to load after navigating back; requires manual reload\n\nDescription:\n\n \t* Summary:\n\n- On Khoros Atlas, multiple pages fail to render content until a manual reload, especially after navigating back from blog/category pages. Behavior aligns with customer case #60217229 [https://khoros-aurora.kayako.com/conversation/view/60217229] and appears broader in scope.\n\n \t* Affected areas:\n\n- Atlas home page after visiting any blog or blog category page: sections such as \u201cRecent Posts\u201d render blank/missing until a manual reload.\n- Blog comments on mobile: tapping \u201cLoad more comments\u201d sometimes clears/empties the comments, making it appear as if there are none until reload.\n- Scope seems to affect \u201cpretty much everything but the blog posts themselves\u201d without a reload.\n\n \t* Reproduction steps:\n\n1) Open any blog or blog category page on Atlas.\n2) Navigate back to the home page via the Home button or browser Back.\n3) Observe home page sections (e.g., Recent Posts) missing/blank until reload.\n4) On mobile, open a blog post and tap \u201cLoad more comments\u201d; comments may disappear until reload.\n\n \t* Frequency:\n\n- Consistent on both desktop and mobile.\n\n \t* Environment:\n\n- Browsers: Chrome (desktop and mobile), both up to date.\n- Mobile OS: Android.\n- Network/Tools: No VPN in use; no known blockers/extensions impacting behavior.\n\n \t* Impact:\n\n- Reload is a workaround but significantly hinders navigation and usability across Atlas.\n\n \t* Attachments:\n\n- User will provide screenshots once the ticket is created.\n\nBefore I submit:\n\n \t* Would you like me to note that others internally may be impacted, or keep it scoped to your experience for now?\n \t* Anything else you\u2019d like to add or adjust?\n\nIf all good, I\u2019ll proceed to create the ticket and internally link it to #60217229 [https://khoros-aurora.kayako.com/conversation/view/60217229]. \n\n--- Customer (Lucy Liu) ---\n\n create ticket please. And i dont know if others are impacted \n\n--- AI Assistant ---\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \n"
+        ],
+        [
+          "2025-10-28T01:06:35+00:00",
+          "Kayako - ticket id 60230303 // Lucy Liu commented privately: --- Ticket generated by Khoros Aurora AI chat on behalf of Lucy Liu - <a href=\"mailto:c-fang.liu@khoros.com\" rel=\"nofollow\">c-fang.liu@khoros.com</a> ---<br>\n  <br>\n  <b>Issue/request description:</b>\n  <ul>\n    <li>https://community.khoros.com/</li>\n    <li>I noted that one of our customers have been having issues with pages not loading properly until reloaded (raised in ticket #60217229) and I've been having the same issue (not as severe) with Khoros Atlas.</li>\n    <li>On behalf of myself but to also escalate this issue for the customer as well as I'm experiencing the need to reload to fully load pages.<br>\n    <br>\n    If i click into any blog on atlas and i click back into the home page, either using the top home buttom or the back button, the home page doesn't load properly</li>\n    <li>It's happened consistently on pc and on mobile whenever i click into any blog category page - for exmaple the recent posts is completely blank when i click the home page, like that section doesn't exist and wouldn't appear until i reload the page.<br>\n    When i try to load more comments on a blog on mobile, it sometimes also blanks the comments and makes the blog appear as having no comments.<br>\n    <br>\n    Repro steps correct<br>\n    <br>\n    I've tried both chrome on pc and on mobile. The reload is a workaround but it is extremely taxing when you're trying to click into different forums and having to reload to see anything.</li>\n    <li>You can link and escalate as long as the customer doesn't see this attached to their ticket and it's only internal.</li>\n    <li>yes i'm the requester. Subject is ok. Mobile is android. Up to date chrome browsers. No vpns. I noticed it's pretty much everything but the blog posts themselves that don't load properly without a reload. I noticed it at least last week if not earlier. I can attach screenshots once you create the issue</li>\n    <li>create ticket please. And i dont know if others are impacted</li>\n  </ul><br>\n  <br>\n  <b>Khoros Instance Details:</b><br>\n  <ul>\n    <li>\n      <b>Instance URL:</b> <a href=\"https://community.khoros.com\" rel=\"nofollow\">https://community.khoros.com</a>\n    </li>\n    <li><b>Internal Instance ID:</b> lithosphere.prod</li>\n    <li><b>Instance Maintenance Window:</b> AMER</li>\n  </ul><br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 10,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": true,
+          "link_value": "PDR-151323"
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

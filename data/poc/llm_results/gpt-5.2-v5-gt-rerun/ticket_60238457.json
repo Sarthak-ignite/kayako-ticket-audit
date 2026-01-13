@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Early AI (ATLAS) guidance attributed the chatbot delays mainly to third\u2011party telemetry scripts (New Relic / tracking beacons) and recommended reducing/defering those scripts. Later, a named agent communicated Infrastructure\u2019s root cause as corporate VPN/proxy JavaScript injection interfering with widget XHR, which contradicts the earlier AI diagnosis and remediation path.",
+    "evidence": [
+      "ATLAS commented publicly: \"we observed multiple telemetry and tracking requests\u2014primarily from monitoring scripts like New Relic (js-agent.newrelic.com) and other services (such as b.6sc.co)... their frequency and cumulative overhead can impact browser responsiveness.\"",
+      "ATLAS commented publicly: \"Recommended Steps to Mitigate: * Reduce the number of simultaneous third-party scripts loaded on your Care instance...\"",
+      "Harry Tasker commented publicly: \"Our infrastructure team have thoroughly investigated this issue and identified the Root cause as Corporate VPN/proxy JavaScript injection interfering with widget.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although ATLAS provided multiple early responses, humans also engaged publicly (e.g., Denis and Harry). There is no customer-facing request for a human followed by continued AI-only replies, and no clear repetitive AI loop after the customer said they already provided/tried something."
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledged the customer\u2019s details (HAR files, incognito testing, and the claim that only BrandMessenger JS was used) and did not clearly ask the customer to re-provide the same information after it was already supplied."
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The thread shows customer dissatisfaction with the cadence of updates during a P1, but the provided criteria for this pattern emphasize multi-day gaps or explicit apologies for long delays. The visible conversation does not show the required 3\u20135 day response gaps."
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed in the CSV, the interaction text provided does not include a customer-facing statement near closure time showing an unresolved request or that the customer was still waiting when the ticket was closed. The closure status alone is not sufficient under the rules.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-22 17:35:41"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer explicitly declared a P1 outage affecting customers, but the initial response focused on generic client-side/script optimization guidance rather than immediately escalating to Infrastructure/incident response. Escalation to Infrastructure is only confirmed later after customer pressure.",
+    "evidence": [
+      "Customer commented publicly: \"Please treat this as a P1 situation.\"",
+      "ATLAS commented publicly: \"Recommended Steps to Mitigate: * Reduce the number of simultaneous third-party scripts loaded... * Where feasible, defer or asynchronously load non-critical third-party scripts...\"",
+      "Don Kempt commented publicly: \"Please note this case was opened as a P1 at 11am EST. This is 5hrs with out a working chat.\"",
+      "Denis Spirin commented publicly: \"We are investigating the issue with the Infrastructure team.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60238457
+}

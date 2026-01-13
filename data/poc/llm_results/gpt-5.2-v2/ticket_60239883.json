@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support provided generic filler updates and then made a likely incorrect/overconfident claim that the issue was \"fully resolved\" even though engineering notes indicate the change still required review/build/test/deploy.",
+    "evidence": [
+      "\u201cWe have contacted the Engineering team and will provide you with an update as soon as we receive more information from them.\u201d",
+      "\u201cWe are pleased to inform you that our Engineering team has successfully upgraded the Apache version in the GFI LanGuard agent to 2.4.65, effectively resolving the reported security vulnerability. This matter has been fully resolved.\u201d",
+      "\u201cEngineering has created pull request #3499 with updated Apache 2.4.65 binaries and OpenSSL 3.5.1, but the Development team needs to review, build, test, and deploy the changes before the security vulnerability is fully resolved.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in an AI loop, asking to reach a human, or being repeatedly asked for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to repeat details or provide redundant logs; they escalated to engineering immediately based on the initial context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The first support response came within minutes of the customer\u2019s report, and the ticket does not show the customer waiting on an unanswered message.",
+    "evidence": [
+      "[2025-11-10T18:00:48+00:00] Customer reported issue",
+      "[2025-11-10T18:02:54+00:00] Support replied: \u201cWe have contacted the Engineering team\u2026\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support declared the vulnerability \u201cfully resolved\u201d without customer confirmation and despite engineering indicating the fix still needed review/testing/deployment, suggesting premature resolution/closure behavior.",
+    "evidence": [
+      "\u201cThis matter has been fully resolved.\u201d",
+      "\u201cEngineering has created pull request #3499\u2026 but the Development team needs to review, build, test, and deploy the changes before the security vulnerability is fully resolved.\u201d",
+      "\u201cThis isn't part of maintenance, version upgrades always require a spec.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer described a high security concern, support escalated to engineering immediately rather than performing irrelevant troubleshooting or delaying escalation.",
+    "evidence": [
+      "\u201cOpened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15431\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60239883
+}

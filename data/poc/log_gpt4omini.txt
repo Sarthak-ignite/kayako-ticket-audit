@@ -1,0 +1,131 @@
+============================================================
+Phase 0.5-0.6: LLM Pattern Detection
+============================================================
+
+API Key Status:
+  ANTHROPIC_API_KEY: ✓ Found
+  OPENAI_API_KEY: ✓ Found
+  GEMINI_API_KEY: ✓ Found
+
+Loading metrics...
+  CSV metrics: 99 tickets
+  Ticket metrics: 99 tickets
+
+Available models: ['claude-sonnet', 'claude-haiku', 'gpt-4o', 'gpt-4o-mini', 'gemini-pro', 'gemini-flash']
+
+Running models: ['gpt-4o-mini']
+Limit: all tickets
+
+Running gpt-4o-mini on 99 tickets...
+  [1/99] Ticket 60270630: CACHED
+  [2/99] Ticket 60269018: CACHED
+  [3/99] Processing ticket 60269002... OK
+  [4/99] Processing ticket 60268699... OK
+  [5/99] Processing ticket 60267393... OK
+  [6/99] Processing ticket 60267287... OK
+  [7/99] Processing ticket 60264368... OK
+  [8/99] Processing ticket 60264386... OK
+  [9/99] Processing ticket 60264202... OK
+  [10/99] Processing ticket 60264009... OK
+  [11/99] Processing ticket 60261219... OK
+  [12/99] Processing ticket 60260239... OK
+  [13/99] Processing ticket 60259640... OK
+  [14/99] Processing ticket 60258962... OK
+  [15/99] Processing ticket 60258751... OK
+  [16/99] Processing ticket 60258400... OK
+  [17/99] Processing ticket 60256854... OK
+  [18/99] Processing ticket 60256250... OK
+  [19/99] Processing ticket 60256173... OK
+  [20/99] Processing ticket 60254579... OK
+  [21/99] Processing ticket 60253689... OK
+  [22/99] Processing ticket 60252864... OK
+  [23/99] Processing ticket 60252140... OK
+  [24/99] Processing ticket 60251281... OK
+  [25/99] Processing ticket 60250996... OK
+  [26/99] Processing ticket 60250793... OK
+  [27/99] Processing ticket 60250271... OK
+  [28/99] Processing ticket 60250122... OK
+  [29/99] Processing ticket 60248266... OK
+  [30/99] Processing ticket 60248265... OK
+  [31/99] Processing ticket 60247476... OK
+  [32/99] Processing ticket 60247413... OK
+  [33/99] Processing ticket 60246498... OK
+  [34/99] Processing ticket 60243765... OK
+  [35/99] Processing ticket 60243726... OK
+  [36/99] Processing ticket 60243347... OK
+  [37/99] Processing ticket 60243234... OK
+  [38/99] Processing ticket 60242868... OK
+  [39/99] Processing ticket 60242814... OK
+  [40/99] Processing ticket 60241518... OK
+  [41/99] Processing ticket 60241392... OK
+  [42/99] Processing ticket 60240989... OK
+  [43/99] Processing ticket 60239883... OK
+  [44/99] Processing ticket 60239472... OK
+  [45/99] Processing ticket 60238514... OK
+  [46/99] Processing ticket 60238457... OK
+  [47/99] Processing ticket 60238295... OK
+  [48/99] Processing ticket 60237327... OK
+  [49/99] Processing ticket 60237213... OK
+  [50/99] Processing ticket 60236962... OK
+  [51/99] Processing ticket 60235310... OK
+  [52/99] Processing ticket 60234884... OK
+  [53/99] Processing ticket 60234621... OK
+  [54/99] Processing ticket 60233855... OK
+  [55/99] Processing ticket 60233341... OK
+  [56/99] Processing ticket 60233405... OK
+  [57/99] Processing ticket 60233211... OK
+  [58/99] Processing ticket 60232940... OK
+  [59/99] Processing ticket 60232130... OK
+  [60/99] Processing ticket 60231851... OK
+  [61/99] Processing ticket 60231535... OK
+  [62/99] Processing ticket 60231299... OK
+  [63/99] Processing ticket 60230887... OK
+  [64/99] Processing ticket 60230438... OK
+  [65/99] Processing ticket 60230303... OK
+  [66/99] Processing ticket 60230003... OK
+  [67/99] Processing ticket 60229854... OK
+  [68/99] Processing ticket 60227783... OK
+  [69/99] Processing ticket 60227322... OK
+  [70/99] Processing ticket 60226631... OK
+  [71/99] Processing ticket 60225246... OK
+  [72/99] Processing ticket 60225231... OK
+  [73/99] Processing ticket 60224885... OK
+  [74/99] Processing ticket 60224201... OK
+  [75/99] Processing ticket 60223404... OK
+  [76/99] Processing ticket 60223073... OK
+  [77/99] Processing ticket 60222887... OK
+  [78/99] Processing ticket 60222765... OK
+  [79/99] Processing ticket 60222138... OK
+  [80/99] Processing ticket 60221483... OK
+  [81/99] Processing ticket 60220701... OK
+  [82/99] Processing ticket 60220499... OK
+  [83/99] Processing ticket 60219661... OK
+  [84/99] Processing ticket 60219657... OK
+  [85/99] Processing ticket 60218865... OK
+  [86/99] Processing ticket 60218313... OK
+  [87/99] Processing ticket 60218070... OK
+  [88/99] Processing ticket 60214613... OK
+  [89/99] Processing ticket 60214082... OK
+  [90/99] Processing ticket 60212784... OK
+  [91/99] Processing ticket 60212281... OK
+  [92/99] Processing ticket 60211680... OK
+  [93/99] Processing ticket 60211226... OK
+  [94/99] Processing ticket 60210541... OK
+  [95/99] Processing ticket 60210131... OK
+  [96/99] Processing ticket 60209553... OK
+  [97/99] Processing ticket 60209192... OK
+  [98/99] Processing ticket 60209095... OK
+  [99/99] Processing ticket 60208754... OK
+
+============================================================
+DETECTION SUMMARY
+============================================================
+
+Pattern                  gpt-4o-mini    
+----------------------------------------
+AI_QUALITY_FAILURES      20 (20.2%)     
+AI_WALL_LOOPING          6 (6.1%)       
+IGNORING_CONTEXT         36 (36.4%)     
+RESPONSE_DELAYS          50 (50.5%)     
+PREMATURE_CLOSURE        26 (26.3%)     
+P1_SEV1_MISHANDLING      23 (23.2%)     

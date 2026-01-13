@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only AI message provides no actionable help and appears to be a generic/internal note rather than support, failing to progress the ticket.",
+    "evidence": [
+      "[2025-10-18T21:59:59+00:00] (AI) ATLAS: \"Component could not be determined\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated AI prompts or the customer being repeatedly asked for the same information in a loop; only one AI message is present.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI did not ask for logs/screenshots or repeat requests; it only posted a brief internal note, so there isn't clear evidence of ignoring provided context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All logged interactions occur within the same minute, and there is no multi-day gap shown.",
+    "evidence": [
+      "[2025-10-18T21:59:37+00:00] (Customer) \"The complete conversation with this customer will be uploaded to this ticket shortly\"",
+      "[2025-10-18T21:59:59+00:00] (AI) \"Component could not be determined\"",
+      "[2025-10-18T22:00:01+00:00] (Customer) \"Call Metadata\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed while the customer indicated additional information (full conversation upload) would be added shortly, suggesting closure before follow-up content was provided/processed.",
+    "evidence": [
+      "[2025-10-18T21:59:37+00:00] (Customer) \"The complete conversation with this customer will be uploaded to this ticket shortly\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket priority is urgent, there is no evidence of generic troubleshooting steps or failure to escalate; the interaction log contains no troubleshooting guidance at all.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The only AI message provides no actionable help and appears to be a generic/internal note rather than support, failing to progress the ticket.\",\n    \"evidence\": [\n      \"[2025-10-18T21:59:59+00:00] (AI) ATLAS: \\\"Component could not be determined\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repeated AI prompts or the customer being repeatedly asked for the same information in a loop; only one AI message is present.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not ask for logs/screenshots or repeat requests; it only posted a brief internal note, so there isn't clear evidence of ignoring provided context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All logged interactions occur within the same minute, and there is no multi-day gap shown.\",\n    \"evidence\": [\n      \"[2025-10-18T21:59:37+00:00] (Customer) \\\"The complete conversation with this customer will be uploaded to this ticket shortly\\\"\",\n      \"[2025-10-18T21:59:59+00:00] (AI) \\\"Component could not be determined\\\"\",\n      \"[2025-10-18T22:00:01+00:00] (Customer) \\\"Call Metadata\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked closed while the customer indicated additional information (full conversation upload) would be added shortly, suggesting closure before follow-up content was provided/processed.\",\n    \"evidence\": [\n      \"[2025-10-18T21:59:37+00:00] (Customer) \\\"The complete conversation with this customer will be uploaded to this ticket shortly\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket priority is urgent, there is no evidence of generic troubleshooting steps or failure to escalate; the interaction log contains no troubleshooting guidance at all.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60224201
+}

@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No clear, unambiguous examples of the AI providing factually incorrect product information, irrelevant troubleshooting, or promising deliverables that were not sent. The customer\u2019s dissatisfaction is about the process/effort required, not about incorrect technical facts.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Support repeatedly requests the same RMA information (especially the serial number and video) multiple times, even after the customer states it was already provided via attachment. This creates a loop where progress is blocked on repeatedly re-asking for the same items.",
+    "evidence": [
+      "Support (2025-12-04T07:58:05Z): \"To proceed, we kindly ask you to provide... Serial Number ... A short video demonstrating the behavior\"",
+      "Support (2025-12-04T08:05:36Z): \"To proceed with warranty verification and a potential RMA, we kindly request... Serial number ... A video recording\"",
+      "Customer (2025-12-04T08:52:52Z): \"SN is in attachment.\"",
+      "Support (2025-12-04T08:59:43Z): \"Serial Number ... the two SN photos were unreadable, so please either type the Serial Number...\"",
+      "Customer (2025-12-04T09:11:03Z): \"SN is cleary readable from the photo - green sticker. Do you mean something else?\"",
+      "Support (2025-12-04T09:14:22Z): \"Serial Number (please ensure it is typed exactly as printed on the device label; our system was unable to read it from the photos)\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly indicates the serial number is already provided in an attachment, but support continues requesting it again (typed), indicating the provided attachment information was not effectively used/acknowledged for progress.",
+    "evidence": [
+      "Customer (2025-12-04T08:52:52Z): \"SN is in attachment.\"",
+      "Support (2025-12-04T08:59:43Z): \"Serial Number ... the two SN photos were unreadable, so please either type the Serial Number in your message or send a close-up photo\"",
+      "Customer (2025-12-04T09:11:03Z): \"SN is cleary readable from the photo - green sticker.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All customer messages shown receive responses within minutes/hours; no 3+ day gaps and no customer complaints about waiting.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication the ticket was closed, auto-closed, or ended while the customer still had unanswered questions.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the issue is marked URGENT and involves WAN/VPN outage, support requests targeted diagnostics (hardware diagnostic tool, system recovery, Firebird DB repair) rather than irrelevant/generic steps (e.g., browser cache). No clear evidence of required escalation being missed per the provided criteria.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60256173
+}

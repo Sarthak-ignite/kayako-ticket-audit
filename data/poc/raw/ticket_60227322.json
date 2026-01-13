@@ -1,0 +1,107 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_connect",
+        "requester": {
+          "id": 60210646,
+          "uuid": "d4c8eb4e-6df4-425f-bc95-cfc6bc87a935",
+          "full_name": "Infrastructure",
+          "legacy_id": "21890363300242",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/d4c8eb4e-6df4-425f-bc95-cfc6bc87a935?1761637263",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60042149,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 212181,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-10-28T07:41:03+00:00",
+          "last_active_at": "2025-10-28T07:41:03+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60210646",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@14ac75ed72729a850d67c58ca804365ed18b6cfc",
+          "password_updated_at": "2025-05-04T07:02:35+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2024-10-10T06:07:17+00:00",
+          "updated_at": "2025-10-28T07:41:03+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60210646"
+        },
+        "ticket_idt": 60227322
+      },
+      "interactions": [
+        [
+          "2025-10-23T08:03:34+00:00",
+          "Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Hi, Infrastructure ! \ud83d\udc4b</p>\n      <p>This is the Kerio Connect ATLAS support chat.</p>\n      <hr>\n      <div style=\"line-height: 1.3; margin-top: 8px; font-size: 0.9rem; color: #666666;\">\n        <b>Please note:</b> ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" rel=\"nofollow\">these terms and conditions</a>. If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.\n      </div>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.</p>\n      <p>\ud83d\udca1<a href=\"https://support.kerioconnect.gfi.com/article/112513\" rel=\"nofollow\">Getting the most out of Kerio Connect ATLAS Support Chat</a></p>\n      <p>\ud83d\udca1Tip: Aim to give us a bit more context than just a quick \"It's not working.\" The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f</p>\n      <p>If I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa</p>\n    </div><br>\n    <p><strong>--- Customer (Infrastructure) ---</strong></p>\n    <div>\n      <p><em>Button selection:</em> [\ud83d\udd04I want to renew/adjust/cancel my existing license]</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Since it's a delicate topic, I want to make extra sure: are you seeking assistance with renewing/modifying/cancelling an existing license, or purchasing a new license and not for technical issues related to a license that is already renewed, correct?</p>\n      <p>\u2139\ufe0f Note: you can use the below buttons or type in</p>\n    </div><br>\n    <p><strong>--- Customer (Infrastructure) ---</strong></p>\n    <div>\n      <p><em>Button selection:</em> [\ud83d\udd27 I actually need tech support]</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>\ud83d\ude33 Sorry about the misunderstanding, let's try again.</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Could you tell me a bit more about what's happening with your Kerio Connect? Any specific error messages, symptoms, or issues you're experiencing would be really helpful for me to assist you properly.</p>\n    </div><br>\n    <p><strong>--- Customer (Infrastructure) ---</strong></p>\n    <div>\n      <p>I have been informed from the partner team, that they have purchased/renewed the license for KiroConnect, now I want to know how to export and install the license key to extend my expiry date</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Thanks for clarifying! So you've received a new/renewed license from your partner, and you need help with installing it to extend your expiry date. Let me walk you through this process.</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Perfect! I found the information you need. There are actually <strong>two methods</strong> to install your renewed license key:</p>\n      <h2><strong>Method 1: Update Registration Info (Recommended)</strong></h2>\n      <p>This is the easiest method if your Kerio Connect server has a working Internet connection:</p>\n      <ol>\n        <li>Open the <strong>Kerio Connect Administration</strong> console</li>\n        <li>Select <strong>Dashboard</strong>, and click on <strong>Update registration info</strong></li>\n        <li>Enter your license key code when prompted</li>\n        <li>Follow the on-screen instructions to complete the registration</li>\n      </ol>\n      <p><strong>Note:</strong> Your server needs unrestricted HTTPS traffic on port 443 for this method to work.</p>\n      <hr>\n      <h2><strong>Method 2: Manually Install License Key File</strong></h2>\n      <p>If Method 1 doesn't work or you prefer a manual approach:</p>\n      <ol>\n        <li>Open the <a href=\"https://www.kerio.com/support/kerio-connect/license-registration\" rel=\"nofollow\">Kerio Product registration page</a>\n        </li>\n        <li>Enter your license key and the captcha code, then click <strong>NEXT</strong></li>\n        <li>The next screen will display a summary of your license details - verify they're correct and click <strong>NEXT</strong></li>\n        <li>Download the license file</li>\n        <li>Import this file into your Kerio Connect Administration console</li>\n      </ol>\n      <hr>\n      <p>For more detailed step-by-step instructions, you can check out these articles:</p>\n      <ul>\n        <li>\n          <a href=\"https://support.kerioconnect.gfi.com/article/115512\" rel=\"nofollow\">Kerio Connect Licensing Issues</a>\n        </li>\n        <li>\n          <a href=\"https://support.kerioconnect.gfi.com/article/116211\" rel=\"nofollow\">Modifying or Extending a Kerio Connect License Key</a>\n        </li>\n      </ul>\n      <p><strong>Have you received the license key from your partner yet?</strong> If so, which method would you like to try first?</p>\n    </div><br>\n  </div>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

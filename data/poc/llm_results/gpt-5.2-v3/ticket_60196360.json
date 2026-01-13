@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided information that was not relevant to the customer\u2019s reported issue (lost handovers Flow \u2192 Care). The customer explicitly indicated the AI response did not help and was unrelated.",
+    "evidence": [
+      "Chat Support: \"### \ud83d\udd25 Active Incidents for Khoros Classic\\n\\n1. Missing Community Analytics data since August 29\"",
+      "Carsten Schmitt-Hoeppner: \"\ud83d\udc4e No. My issue is not related\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence the customer was trapped in an AI loop (no repeated requests for the same info, no explicit request for a human with denial, and no long AI-only back-and-forth shown).",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The human agent acknowledged the prior ticket and stated the issue was already escalated, and did not re-request logs/details already provided in this ticket.",
+    "evidence": [
+      "Carlo Koh: \"Please be advised that ticket 60195591 is still open and we are actively working on resolving the issue through the said ticket.\"",
+      "Carlo Koh: \"In the meantime, I have shared the additional information provided here to the original ticket.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Support responded within ~1 day in this ticket (Sep 12 to Sep 13). While the customer expresses frustration about lack of feedback, there is no clear 3+ day gap evidenced in this specific ticket timeline.",
+    "evidence": [
+      "Customer timestamp: [2025-09-12T12:42:03+00:00]",
+      "Support timestamp: [2025-09-13T03:52:11+00:00]",
+      "Customer: \"I have reproted this issue but not received any feedback yet!\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence the ticket was closed; the agent explicitly states it will remain open for a week unless the customer requests closure.",
+    "evidence": [
+      "Carlo Koh: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer indicates urgency/critical impact, and support shows appropriate prioritization by noting escalation to Engineering/Development rather than providing irrelevant basic troubleshooting.",
+    "evidence": [
+      "Customer: \"This situation is slowly becoming critical! We are losing customers and our reputation.\"",
+      "Carlo Koh (internal): \"...is on hold as the issue was escalated to Engineering.\"",
+      "Carlo Koh (public): \"The issue has already been escalated to our Development team and they are investigating the problem at this time.\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60196360
+}

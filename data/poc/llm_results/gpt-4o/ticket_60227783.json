@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic filler responses or incorrect information from the AI interactions documented.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interactions do not show repeated requests for the same information or inability to reach a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that the support team ignored prior information provided by the customer or asked for repeated information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays between interactions, including an 83.3-hour delay in time to first human response and a 74-hour maximum gap between responses.",
+    "evidence": [
+      "[2025-10-23T18:45:42+00:00] - [2025-10-27T06:05:46+00:00]",
+      "[2025-10-24T04:04:01+00:00] - [2025-10-27T06:05:46+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The evidence does not indicate that the ticket was closed prematurely while the customer was awaiting a follow-up or additional information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic troubleshooting instead of appropriate escalation given the ticket priority.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic filler responses or incorrect information from the AI interactions documented.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions do not show repeated requests for the same information or inability to reach a human agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the support team ignored prior information provided by the customer or asked for repeated information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays between interactions, including an 83.3-hour delay in time to first human response and a 74-hour maximum gap between responses.\",\n    \"evidence\": [\n      \"[2025-10-23T18:45:42+00:00] - [2025-10-27T06:05:46+00:00]\",\n      \"[2025-10-24T04:04:01+00:00] - [2025-10-27T06:05:46+00:00]\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The evidence does not indicate that the ticket was closed prematurely while the customer was awaiting a follow-up or additional information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic troubleshooting instead of appropriate escalation given the ticket priority.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60227783
+}

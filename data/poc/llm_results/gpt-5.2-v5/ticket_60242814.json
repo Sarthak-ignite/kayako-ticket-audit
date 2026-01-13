@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only AI content is in private/internal notes, and there\u2019s no customer-facing evidence that ATLAS provided incorrect, misleading, or broken guidance. The customer\u2019s complaint is about not receiving an answer, not that the AI answer was wrong.",
+    "evidence": [
+      "Hello, I still have not received an answer to my question.",
+      "Thank you for your patience, and I apologize for the delay in providing a clear answer to your question."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer-facing loop of AI responses preventing access to a human. The substantive replies in the thread are from human agents (e.g., Carlos, Syed).",
+    "evidence": [
+      "Hello, I still have not received an answer to my question.",
+      "Dear Michael,\n\nThank you for your patience, and I apologize for the delay in providing a clear answer to your question."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to repeat previously provided details, and the agent\u2019s response explicitly references the customer\u2019s context (numbers were ported in and the plan to move in early summer 2026). No explicit customer complaint about being ignored/repeating information appears.",
+    "evidence": [
+      "During the original installation we ported some of our numbers over to GFI... we will be migrating over to a new Zoom Phone phone system.",
+      "Yes \u2014 it is possible to port your fax numbers away from FaxMaker Online to your new carrier when you transition to Zoom Phone in early summer 2026, provided that these numbers were originally ported into FaxMaker Online by your organization."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly followed up that they had not received an answer, and the agent apologized for the delay. This indicates a meaningful response gap before a clear reply was provided.",
+    "evidence": [
+      "Hello, I still have not received an answer to my question.",
+      "Thank you for your patience, and I apologize for the delay in providing a clear answer to your question."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Auto-closure language is present, but it appears after the core question was answered (port-out is possible; no GFI fee). There is no explicit notice that the ticket was actually closed while an unresolved request remained.",
+    "evidence": [
+      "Yes \u2014 it is possible to port your fax numbers away from FaxMaker Online to your new carrier when you transition to Zoom Phone in early summer 2026...",
+      "This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket concerns a planned future port-out and fee question, not an outage/critical production-down scenario. No P1/SEV1/urgent outage language or multi-user downtime is present.",
+    "evidence": [
+      "We would not need to port them over until early summer 2026.",
+      "My question: Is it possible to please port our numbers back to us. If there is a fee, how much would that be?"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60242814
+}

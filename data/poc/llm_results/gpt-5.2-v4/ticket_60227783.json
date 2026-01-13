@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer explicitly requested a detailed, customer-facing RCA with specific required elements (root cause confirmation, incident linkage, timeline, components, preventive actions). ATLAS replied with a generic template pointing to a status page link rather than addressing the RCA request in-ticket or confirming the requested specifics, creating a deflection experience and not meeting the stated deliverable.",
+    "evidence": [
+      "Customer request: \"has requested a detailed RCA... Please include in the RCA: \u2022 Confirmation of the technical root cause and whether both incidents are connected. \u2022 A detailed event timeline... \u2022 The affected system components... \u2022 Preventive actions...\"",
+      "ATLAS response: \"For the most up-to-date information, including the root cause analysis, event timelines, affected system components, and implemented preventive measures, we kindly ask you to refer to our official status page\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single ATLAS public response and no evidence the customer was stuck repeating information or requesting a human while only receiving AI replies.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer provided key context (two specific incident windows, suspected relation, linked primary ticket/JIRA, required RCA content). The ATLAS response did not acknowledge or engage with those specifics (e.g., whether the two incidents were connected) and redirected to a general status page, effectively bypassing the detailed context provided.",
+    "evidence": [
+      "Customer context: \"same issue occurred on October 18th... and again on October 22nd... They believe the outages are related\"",
+      "Customer context: \"Linked JIRA: CARESMM-9351 Primary Ticket: 60226631\"",
+      "ATLAS response omits incident linkage confirmation and timeline discussion, instead: \"refer to our official status page\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer asked for a detailed RCA on 2025-10-23; the ticket shows the customer-facing RCA was not provided until 2025-10-29 (6 calendar days). Additionally, the ticket was placed on hold for an extremely long duration, signaling low urgency handling for an urgent/incident-related request.",
+    "evidence": [
+      "Initial request timestamp: \"[2025-10-23T18:45:42+00:00] ... requested a detailed RCA\"",
+      "RCA delivered: \"[2025-10-29T11:35:33+00:00] ... Please find attached the customer-facing RCA\"",
+      "Internal action: \"[2025-10-24T04:04:01+00:00] ... Placing on hold for 9999 hour(s)\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed without resolution; the RCA appears to have been delivered on 2025-10-29.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The request was submitted as Urgent and relates to production-impacting incident behavior (chat delays/latency, chats not visible/claimable). Instead of treating the urgent request with clear ownership/escalation and committing to RCA delivery, support immediately redirected to a status page and then placed the case on an extended hold, which is misaligned with urgent incident communications expectations.",
+    "evidence": [
+      "Urgency: \"Button selection: [\ud83d\udd34 Urgent]\"",
+      "Production impact: \"system latency... chats were not visible or claimable... new chats were delayed by more than 10 minutes\"",
+      "ATLAS handling: \"refer to our official status page\" (no committed RCA ETA/ownership in-ticket)",
+      "Workflow signal: \"Placing on hold for 9999 hour(s)\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60227783
+}

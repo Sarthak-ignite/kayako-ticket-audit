@@ -1,0 +1,139 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_control",
+        "requester": {
+          "id": 60533964,
+          "uuid": "8381f85a-7b36-5a1f-a7a3-4691d52f11ce",
+          "full_name": "servis.prerov@comit.cz",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/8381f85a-7b36-5a1f-a7a3-4691d52f11ce?1758818273",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60070089,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 535511,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-09-04T12:59:31+00:00",
+          "last_active_at": "2025-09-25T16:37:53+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60533964",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@f95fd70087793e1ea986d00185a736aee602ebb1",
+          "password_updated_at": "2025-08-15T09:30:53+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-08-15T09:30:29+00:00",
+          "updated_at": "2025-09-25T16:37:53+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60533964"
+        },
+        "ticket_idt": 60185126
+      },
+      "interactions": [
+        [
+          "2025-09-24T16:18:51+00:00",
+          "Kayako - ticket id 60185126 // ATLAS commented publicly: Dear servis.prerov@comit.cz,\n\nThank you for your follow-up and for sharing detailed feedback regarding your expectations on the analysis of the crash dump and logs from the previous Kerio Control service interruptions.\n\nBased on your description, you have implemented a sequence of troubleshooting steps including hardware replacement and a series of patch installations (patch 1, patch 2, and most recently patch 3), as well as enabling the Watchdog feature. The system continues to report automatic service restarts as shown in your logs, despite these interventions.\n\nAccording to the Kerio Control knowledge base regarding crash analysis (Analyzing Kerio Control crashes [https://support.keriocontrol.gfi.com/article/116226]), crash dumps and support information are used to diagnose the underlying software or configuration issues that may result in service failure. The introduction of the Watchdog feature (as described here: Watchdog Features in Kerio Control [https://support.keriocontrol.gfi.com/article/123562]) is specifically designed to detect service irregularities, automatically restart affected services, and generate crash dumps for further review. This automated recovery helps minimize downtime but does not always address the root cause if it is unresolved at the software or configuration level.\n\nIn circumstances like yours, where several patches have been applied and system configuration is stable, but periodic service restarts persist, the most probable explanations are either an unaddressed software defect (which patches may eventually resolve) or site-specific configuration or environmental factors that differ from your other installations. Patch 3 includes multiple stability improvements and bug fixes\u2014if your logs and dumps correspond to an issue directly addressed by the latest patch, then further incidents should be mitigated post-update. If the problem recurs with patch 3 in place, it would indicate either an unresolved defect or an external factor not covered by those updates.\n\nFor communicating with your customer, you may state:\n\n \t* All Kerio Control crash dumps and logs you provided have been processed according to published diagnostic procedures.\n \t* Previous watchdog-triggered restarts and logs captured issues which the latest available patches address, especially patch 3, which introduces additional stability improvements.\n \t* If the service continues to exhibit instability after the application of patch 3, this will confirm that a new, unresolved issue may be present or that further site-specific analysis is needed. At this point, continued monitoring is recommended as per standard practice outlined for crash diagnostics.\n\nFor full background or further troubleshooting steps, I recommend referencing the official crash analysis article [https://support.keriocontrol.gfi.com/article/116226] and the Watchdog feature overview [https://support.keriocontrol.gfi.com/article/123562]. Both outline the diagnostic approach and the effect of recent patches and recovery mechanisms.\n\nIf patch 3 resolves the instability, no further customer action should be required. Otherwise, persistence of the problem would indicate a defect or condition that may need to be escalated through your Kerio Control provider for engineering investigation, using the evidence and logs gathered so far.\n\nI hope this summary provides you with a clear message for your end customer and assists with internal communication on the case history and current state. Please feel free to share any new observations, and continue monitoring the system following the latest patch installation.\n\nSincerely,\nAtlas\nGFI - Kerio Control Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-04T12:14:51+00:00",
+          "Kayako - ticket id 60185126 // servis.prerov@comit.cz commented privately: Hello.\nWe are very dissatisfied with your answer. Did you analyze the dump and logs from previous crashes? If you wrote, yes, we had a bug there that was resolved with patch 3, that is also an answer.\nBut like this? What should we give the customer in response? That GFI is not able to analyze anything from the logs and dump?\n\nIt took you 2 days to even answer! And you only thanked us for uploading patch 3 there...\nPrikryl"
+        ],
+        [
+          "2025-09-04T12:04:05+00:00",
+          "Kayako - ticket id 60185126 // Mike Kebede commented publicly: Dear Customer,\n\nThank you for the detailed information and for confirming that you have installed patch 3 (on Sep 3). At this stage, it will be important to monitor the system closely to see whether the crashes continue under this latest update.\n\nIf you experience any further crashes or unexpected restarts, please collect and upload the following so we can proceed with deeper analysis:\n\n\t* The watchdog dump from /var/crash/winroute/\n\t* The Support Information file from Webadmin (Status \u2192 System Health \u2192 Export)\n\t* The output of dmesg -T\n\nThese files will allow us to investigate effectively and determine whether the issue persists beyond patch 3.\n\nWe understand how critical stability is for your environment and will continue to prioritize this case. Please keep us updated on the system\u2019s behavior following the update.\n\nBest regards,\nMike Kebede\nGFI - Kerio Control Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-02T21:21:42+00:00",
+          "Kayako - ticket id 60185126 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-09-02T21:17:02+00:00",
+          "Kayako - ticket id 60185126 // servis.prerov@comit.cz commented privately: Kerio v. 9.5.0\nThe whole problem started (approximately 14 days ago) when Kerio firewall stopped communicating and providing its services. It had to be restarted manually every time. All hardware was replaced. After that:\n- patch 1 installation\n- GFI agent was turned off (on GFI's recommendation)\n- number of connections from one IP address was increased - it appeared regularly in logs\n\nThe problem continued to appear\nSo GFI and the distributor recommended:\n- patch 2 installation\n- watchdog activation\nYesterday and today, according to the logs, the service was restarted:\n[01/Sep/2025 13:59:56] Automatic recovery has been triggered. Winroute is going down...\n[02/Sep/2025 14:13:41] Automatic recovery has been triggered. Winroute is going down...\nThe internet was unavailable for approx. 4 minutes.\nBut we already have a dump created by the watchdog.\n\nTonight we installed patch 3.\n\nPlease analyze it, because the customer is already talking about replacing the technology.\n\nOtherwise, this customer, compared to our other Kerio Control installations, is distinguished only by the fact that it has configured:\n- 1x external interface - internet\n- 3x trusted local interfaces\n- 6x other interfaces\nAccording to the graph, the system utilization is minimal."
+        ],
+        [
+          "2025-09-02T19:13:32+00:00",
+          "Kayako - ticket id 60185126 // ATLAS commented publicly: Dear servis.prerov@comit.cz,\n\nThank you for reaching out. I understand Kerio Control has been repeatedly crashing and that you\u2019ve already collected logs and a watchdog dump.\n\nTo help us proceed, could you please let us know:\n- What troubleshooting steps you have already tried (for example: reboots, updates, disabling specific modules, configuration changes, hardware checks)?\n- Any other actions you attempted since the crashes began.\n\nIf you need more time to gather this information, the ticket will remain open for one additional week.\n\nSincerely,\nATLAS\nGFI - Kerio Control Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-02T19:13:12+00:00",
+          "Kayako - ticket id 60185126 // ATLAS commented privately: Requesting more information"
+        ],
+        [
+          "2025-09-02T19:12:19+00:00",
+          "Kayako - ticket id 60185126 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, servis.prerov@comit.cz ! \ud83d\udc4b\n\nThis is the Kerio Control ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nservis.prerov@comit.cz:\n\n undefined \nChat Support:\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of Kerio Control ATLAS Support Chat [https://support.keriocontrol.gfi.com/article/117054]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nservis.prerov@comit.cz:\n\n Re: ticket 60169335:\nKerio Control repeately crashed.\nNow I have Dump by Watchdog: https://prerov.comit.cz/files/Netopil/KerioFW/VHS/ \nChat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI1NjA1OGM5YS03ODM2LTQzMDItYWFiMS1hOWU5MzU4ZDk1OGUiLCJzZXNzaW9uX3VpZCI6IjU2MDU4YzlhLTc4MzYtNDMwMi1hYWIxLWE5ZTkzNThkOTU4ZSIsImVtYWlsIjoic2VydmlzLnByZXJvdkBjb21pdC5jeiIsImN1c3RvbV9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoiYXVyZWFfa2VyaW9fY29udHJvbCIsInF1ZXJ5IjoiIiwiZXhwIjoxNzU2ODQ3MjA3fQ.s_4VhSohCUCB9b_iLb0-lRzYaCbMvqQ7qiGxCdIOWOY]\n\nYou should see the following:\n- User: servis.prerov@comit.cz\n- Session ID: 56058c9a-7836-4302-aab1-a9e9358d958e \nChat Support:\n\n Thank you for providing the details and the link to the dump file. Since Kerio Control is repeatedly crashing and you have a Watchdog dump, here\u2019s what you should do next:\n\n1. GATHER CRASH DATA\n\n- Access the terminal on your Kerio Control device (via serial port or VGA, usually Ctrl+Alt+F2).\n- Run the following command to generate a crash snapshot:\n``\nwinroute-trouble\n `\n- This will create a snapshot in /var/crash/winroute/.\n\n2. COLLECT ADDITIONAL INFORMATION\n\n- Download the crash snapshot from /var/crash/winroute/.\n- Also, collect the Support Information file from Webadmin:\nGo to Status \u2192 System Health and export the file.\n- Run the following command to get kernel messages:\n `\ndmesg -T\n `\nSave the output.\n\n3. PROVIDE FILES TO SUPPORT\n\n- Please upload the following files:\n- The crash snapshot from /var/crash/winroute/\n- The Support Information file\n- The dmesg -T` output\n\nYou can use our Secure File Upload Portal [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI1NjA1OGM5YS03ODM2LTQzMDItYWFiMS1hOWU5MzU4ZDk1OGUiLCJzZXNzaW9uX3VpZCI6IjU2MDU4YzlhLTc4MzYtNDMwMi1hYWIxLWE5ZTkzNThkOTU4ZSIsImVtYWlsIjoic2VydmlzLnByZXJvdkBjb21pdC5jeiIsImN1c3RvbV9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoiYXVyZWFfa2VyaW9fY29udHJvbCIsInF1ZXJ5IjoiIiwiZXhwIjoxNzU2ODQ3MjA3fQ.s_4VhSohCUCB9b_iLb0-lRzYaCbMvqQ7qiGxCdIOWOY] to send these files securely.\n\n4. NEXT STEPS\n\nOnce you\u2019ve uploaded the files, let me know here. I\u2019ll check the analysis and guide you further.\n\nREFERENCE ARTICLES:\n\n- Analyzing Kerio Control crashes [https://support.keriocontrol.gfi.com/article/116226]\n- Troubleshooting Repeated Crashes of Kerio Control Appliance on NG500 Platform [https://support.keriocontrol.gfi.com/article/116285]\n\nCould you also let me know:\n- When did the crashing start (e.g., after an upgrade or config change)?\n- What hardware model and Kerio Control version are you running?\n- Have you noticed any patterns or specific actions that trigger the crash?\n\nThis info will help narrow down the root cause. \nChat Support:\n\n Just to confirm... you are asking for information or an update on a previous ticket you raised with us, correct? \nservis.prerov@comit.cz:\n\n \u2705 Yes, correct \nChat Support:\n\n Here is a link for you:\n\n\ud83d\udc4960169335 [https://support.keriocontrol.gfi.com/conversation/view/60169335]\n\nThere you can check its status, follow up on it, and escalate it if its not closed.\n\nAlso, you can see all your Kerio Control tickets here [https://support.keriocontrol.gfi.com/conversations].\n\nAre you able to open the above link? \nservis.prerov@comit.cz:\n\n \ud83d\udc4d Yes. I see the ticket \nChat Support:\n\n Do you need anything else about ticket 60169335?\n\nNOTE: if the ticket is already closed, you can only create a follow-up ticket.\n\nUse one of the below options \ud83d\udc47 \nservis.prerov@comit.cz:\n\n \ud83c\udfab I need to create a follow-up ticket \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nservis.prerov@comit.cz:\n\n Logs collected \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nservis.prerov@comit.cz:\n\n No additional email addresses required in CC \nChat Support:\n\n I'm creating a ticket for you with the information you've provided.\n\nTicket subject: Kerio Control repeatedly crashed with dump logs\n\nAllow me a few moments while I work on this \u23f3 \nChat Support:\n\n \ud83d\ude80 I've successfully created a ticket for you.\n\nYour ticket number is: 60185126\n\nYou can see it and update it in this link [https://support.keriocontrol.gfi.com/conversation/view/60185126]\n\nFor a faster resolution, please be sure to include and attach to the ticket all relevant context such as screenshots, recordings, and logs.\n\nOur agents will work on it and you will receive a response in your email \ud83d\udce8: servis.prerov@comit.cz "
+        ],
+        [
+          "2025-09-02T19:12:07+00:00",
+          "Kayako - ticket id 60185126 // ATLAS commented privately: --- Ticket generated by Kerio Control AI chat on behalf of servis.prerov@comit.cz ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * Re: ticket 60169335:<br>\n  Kerio Control repeately crashed.<br>\n  Now I have Dump by Watchdog: https://prerov.comit.cz/files/Netopil/KerioFW/VHS/<br>\n  * Please create ticket<br>\n  * Please create ticket<br>\n  * Logs collected<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 9,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

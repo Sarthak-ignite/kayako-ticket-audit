@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence provided that indicates the AI gave generic responses or incorrect information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was stuck in an AI loop or unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The information provided does not show any instance of the support ignoring customer-provided context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The max gap between responses is indicated as 0.0 hours, suggesting there were no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence that the ticket was closed prematurely while the customer was awaiting further information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is marked with normal priority, not P1, indicating there was no mishandling of a high-priority ticket.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence provided that indicates the AI gave generic responses or incorrect information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was stuck in an AI loop or unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The information provided does not show any instance of the support ignoring customer-provided context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The max gap between responses is indicated as 0.0 hours, suggesting there were no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the ticket was closed prematurely while the customer was awaiting further information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is marked with normal priority, not P1, indicating there was no mishandling of a high-priority ticket.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60224885
+}

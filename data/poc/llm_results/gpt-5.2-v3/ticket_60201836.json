@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The initial AI (ATLAS) response appears misleading/unhelpful in two ways supported by the thread: (1) it frames the problem as a simple \u201cdisplay issue\u201d even though later analysis ties the offline state to missing/delayed health metrics ingestion; and (2) it directs the customer to the public status page for \u201clatest updates\u201d even though the customer states the incident is not posted there, making that guidance ineffective for this case.",
+    "evidence": [
+      "ATLAS: \"this is a known display issue impacting status visibility within AppManager\"",
+      "ATLAS: \"For the latest updates and information regarding this situation, we recommend following our status page at https://status.gfi.com/.\"",
+      "Customer: \"also, Atlas should know if this incident is not on status.gfi.com it pointless to refer to this.\"",
+      "Garima (later RCA): \"if the Health value recorded in the database is more than 10 minutes older its treated as offline... the problem here actually is why were the metrics not sent or not synced.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single customer-facing AI response and no repeated requests for the same information, nor a customer request to reach a human that was ignored.",
+    "evidence": [
+      "Only one AI public reply is present: \"Kayako - ticket id 60201836 // ATLAS commented publicly\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not clearly ask for information already provided or repeat the same troubleshooting after the customer said it was already done. While the AI response may be generic, there is no unambiguous instance of support ignoring previously provided artifacts/logs within the ticket.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap (>3 days) between the customer's message and the next support response. The customer explicitly complains about the long wait.",
+    "evidence": [
+      "Customer (2025-09-30T11:41:07+00:00): \"can we ensure it will be stable? what else is influencing status update?\"",
+      "Next support response (2025-10-23T07:22:56+00:00): \"We have raised this issue with the Development Team.\"",
+      "Customer complaint (2025-10-23T07:26:33+00:00): \"23 days response time is not great.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer\u2019s final message is an acknowledgement (\u201cthank you\u201d), and support had already explained there were no immediate actions available besides waiting for product work. Closure does not occur while an explicit unanswered question is pending in the last customer message.",
+    "evidence": [
+      "Customer (2025-10-23T13:50:06+00:00): \"thank you\"",
+      "Support (2025-10-27T06:04:54+00:00): \"I will close this ticket then, as there are no actions left on the Support team side at the moment.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not explicitly indicate P1/SEV1/Critical, production down, or an urgent SLA/timeline requirement. The issue described is a false offline display/telemetry delay rather than a stated outage.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60201836
+}

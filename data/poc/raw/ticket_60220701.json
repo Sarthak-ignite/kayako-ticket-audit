@@ -1,0 +1,200 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_exinda_network_orchestrator",
+        "requester": {
+          "id": 60319459,
+          "uuid": "d4299068-da05-4441-b25b-4c79e1fd72b0",
+          "full_name": "Eswaramoorthy P",
+          "legacy_id": "25212284497938",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/d4299068-da05-4441-b25b-4c79e1fd72b0?1766428612",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 320997,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+          "last_seen_ip": "93.112.17.12",
+          "last_seen_at": "2025-12-21T06:26:58+00:00",
+          "last_active_at": "2025-12-22T18:36:52+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60319459",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@694fdf96e1e881152482daf00ce612ca142b1fad",
+          "password_updated_at": "2025-04-20T05:25:45+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2025-12-21T06:26:58+00:00",
+          "last_activity_at": "2025-12-21T06:26:58+00:00",
+          "created_at": "2025-03-10T10:26:19+00:00",
+          "updated_at": "2025-12-22T18:36:52+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60319459"
+        },
+        "ticket_idt": 60220701
+      },
+      "interactions": [
+        [
+          "2025-11-04T11:38:33+00:00",
+          "Kayako - ticket id 60220701 // Syed Haider commented privately:  I had timed out on the first unit, so I claimed it again. However, I noticed that the unit just dropped before I could deliver it. Therefore, I am claiming it and self-assigning it once more so I can deliver it and get credit for handling this ticket. "
+        ],
+        [
+          "2025-11-04T11:35:20+00:00",
+          "Kayako - ticket id 60220701 // Syed Haider commented publicly: Dear Eshwar,\n\nThank you for joining me on the call today, and I sincerely apologize for the delayed response on this ticket.\n\nDuring our session, we observed that the appliance was running slowly, and on reviewing the Status page, we noted a disk usage warning. To address this, we performed the following actions:\n\n\t*\nCleared excess snapshots and logs to free up disk space.\n\n\t*\nUpdated log rotation settings to retain only two log files instead of the default higher number.\n\n\t*\nReduced the disk usage threshold for logs under the /var partition.\n\nAfter applying these configuration changes and deleting the unnecessary log files, we observed a significant improvement in appliance performance, resolving the lag that was present earlier. We also noted that the system health warning disappeared.\n\nimage\n\nUpon inspecting your disk partitions, we noted that the log partition had very limited space available, while other partitions had unused disk space. I recommended resizing the log partition to a larger size. You can follow these instructions as referenced from https://support.exinda.gfi.com/article/121027-edge-cache-crash-not-enough-disk-space:\u00a0\n\n\t* \nGo to Configuration > System > Setup > Storage.\n\t* \nFind an underused partition.\n\t* \nRemove the encryption on the partition and put the appliance into Bypass mode [https://192.168.206.189/admin/launch?script=rh&template=sys-network&tabsel=nics].\n\t* \nChange the size of the partition to a value that is greater than the 'Used' value, but reduce the size by a good amount, and click on \"Resize\".\n\t* \nAfter the status of the partition changes back to \"Available\" you should be able to see how much space was removed from the partition to show up in 'unallocated storage'.\n\t* \nChange the size of the logs partition adding that unallocated storage space, click on \"Resize\" and wait.\n\t* \nIt is recommended to wait at least 5 minutes for the graphs to show up. If the graphs are not back, we recommend a reboot of the Exinda appliance.\n\n-------------------------\n\nRegarding the slowness issue you experienced (which is currently no longer occurring):\n\nIf this problem reappears, please raise a new ticket and include a system dump from your appliance, along with relevant context. We are eager to investigate any version-related performance issues. Having the system dump will allow us to engage our development team effectively with concrete evidence.\n\n-------------------------\n\nOnce again, I apologize for the delay in our initial response. I have flagged this for our management team to ensure you receive faster support in the future. Your feedback is greatly appreciated and helps us improve.\n\nPlease feel free to reach out if you have any further questions or concerns.\n\nBest regards,\nSyed Haider\nGFI - Exinda Network Orchestrator Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-04T11:27:02+00:00",
+          "Kayako - ticket id 60220701 // Syed Haider commented privately:  The customer did not allow recording the meeting. "
+        ],
+        [
+          "2025-11-04T11:00:06+00:00",
+          "Kayako - ticket id 60220701 // Syed Haider commented publicly: Dear Eswaramoorthy,\n\n\u00a0\n\nPlease join me for your scheduled meeting using this link, which was also sent to you via our scheduling automation:\u00a0https://meet.google.com/zga-xtoc-son. [https://meet.google.com/zga-xtoc-son]\n\n\u00a0\n\nWe are looking forward to seeing you.\n\nBest regards,\nSyed Haider\nGFI - Exinda Network Orchestrator Support Team\n\n"
+        ],
+        [
+          "2025-11-04T10:55:43+00:00",
+          "Kayako - ticket id 60220701 // Syed Haider commented privately:  agenda: \n\n \t* Check UI, delete extra stuff\n \t* Check log rotation settings\n \t* in cmd try df -h to check disk usage\n \t* Check sys dump files via rm -rf /var/tmp/sysdump* as per\u00a0https://support.exinda.gfi.com/article/117221-system-disk-full-for-var-folder \n \t* disable auto support notifications\n \t* review shorlisted kbs\n\n"
+        ],
+        [
+          "2025-11-03T19:12:25+00:00",
+          "Kayako - ticket id 60220701 // Randall Shawver commented publicly: Dear Eswaramoorthy,\n\nIt appears the logs are being created automatically. I am sending a meeting scheduler link. When you schedule a meeting, you may send a WebEx link if you prefer to use WebEx.\n\nYou can schedule a meeting for ticket 60220701 on the following booking page:\n\nBook 60220701 meeting [https://central-supportdesk.setmore.com/services/4c574787-e13e-4c72-a761-8ccbb9ac8e79?source=KA-60220701]\n\nJust navigate to the page and pick up a timeslot that suits you.\n\nBest regards,\nRandall Shawver\nGFI - Exinda Network Orchestrator Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-03T19:12:01+00:00",
+          "Kayako - ticket id 60220701 // Randall Shawver commented privately:  What is your proposed action?\n(required: select one, delete the rest) \n\n \t* Send to customer meeting\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Eswaramoorthy,\u00a0 \n\n It appears the logs are being createdautomatically. I am sending a meeting scheduler link. When you schedule a meeting, you may send a WebEx link if you prefer to use WebEx. \n\n Best regards, \n Randall Shawver \n GFI - Exinda Network Orchestrator Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n Offer meeting "
+        ],
+        [
+          "2025-11-02T11:12:25+00:00",
+          "Kayako - ticket id 60220701 // Monyah Aladeli commented publicly:  \n\nHi @customersupport-exinda,\n\n\u00a0\n\nPlease can you get back to us ASAP on the requested Webex call?\n\n\u00a0\n\nRegards,\n\nSensitivity Label: General\n\n \n"
+        ],
+        [
+          "2025-10-30T21:14:34+00:00",
+          "Kayako - ticket id 60220701 // Eswaramoorthy P commented publicly:  \n\nHi Randall,\n\nWe can see that the multiple diagnostic & snapshot files are automatically getting generated. PFB snapshot. Please let us know if we can have a Webex to check further.\n\n\u00a0\n\nimage\n\n\u00a0\n\nRegards,\n\nEswar Ps\n\nPublic\n\n \n"
+        ],
+        [
+          "2025-10-29T20:25:20+00:00",
+          "Kayako - ticket id 60220701 // Randall Shawver commented publicly: Dear Eswaramoorthy,\n\nThank you for providing the logs. You can delete all of the diagnostic files that appear in your screenshot. You can also delete old snapshot files. Just keep 1-2 of the most recent snapshots. Can you do so and inform us how muchspace is freed up on the unit?\n\nBest regards,\nRandall Shawver\nGFI - Exinda Network Orchestrator Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-29T20:23:32+00:00",
+          "Kayako - ticket id 60220701 // Randall Shawver commented privately:  What is your proposed action?\n(required: select one, delete the rest) \n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Eswaramoorthy,\u00a0 \n\n Thank you for providing the logs. You can delete all of the diagnostic files that appear in your screenshot. You can also delete old snapshot files. Just keep 1-2 of the most recent. Can you do so and inform us if the issue persists? \n\n Best regards, \n Randall Shawver \n GFI - Exinda Network Orchestrator Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n Cursor and VS Code are throwing errors. \n Pending. "
+        ],
+        [
+          "2025-10-29T05:37:50+00:00",
+          "Kayako - ticket id 60220701 // Eswaramoorthy P commented publicly:  \n\nHi Randall,\n\nThanks for the key. Requested logs and diagnostic files attached to the case.\n\n\u00a0\n\nAble to see many diagnostic files auto created, not sure how and why. Are they crash logs? PFB snapshot.\n\n\u00a0\n\nWe are available for a Webex tomorrow 10AM to 2PM GMT+3. Please check and update if this works for you.\n\n\u00a0\n\nimage\n\n\u00a0\n\nRegards,\n\nEswar Ps\n\n+966 545370086\n\nPublic\n\n \n"
+        ],
+        [
+          "2025-10-29T05:36:48+00:00",
+          "Kayako - ticket id 60220701 // Eswaramoorthy P commented privately: Logs uploaded"
+        ],
+        [
+          "2025-10-27T13:59:45+00:00",
+          "Kayako - ticket id 60220701 // Randall Shawver commented publicly: Dear Eswaramoorthy,\n\nI am resending this last response, which did include the shell unlock key. I am sending a new key.\n\nPlease review the below instructions and articles and inform us if you are able to clear up space.\n\nLK2-RESTRICTED_CMDS-45A0-86MQ-JP7C-F423-KWB8-6GT6-11UP-6B5Y-C0TG-1Q77-TCPP-K3N7-L\n\nThank you for the follow-up. I can see from your previous diagnostics that this is a recurring issue that requires deeper investigation beyond the standard cleanup procedures.\n\n#60192334 [https://support.exinda.gfi.com/conversation/view/60192334], I've identified some specific concerns:*\" data-section-index=\"27\">From the diagnostic output you provided in ticket #60192334 [https://support.exinda.gfi.com/conversation/view/60192334], I've\u00a0identified some specific concerns: 1.\u00a0The\u00a0/var/home/root/dead.letters\u00a0directory is consuming 8.5GB\u00a0- This is abnormal and suggests a mail/notification configuration issue that needs to be addressed at the root\u00a0cause level. 2.\u00a0TMS snapshot staging files\u00a0(2.9GB)\u00a0are not being cleaned up properly.\nTo properly resolve this recurring issue, I need you to run the following commands and provide the output:\nls -lh /var/home/root/dead.letters | head -20\n\nfind /var/opt/tms/snapshots/.staging -type f -mtime +7 -ls\n\ncat /var/log/messages | grep -i \"mail\\|dead.letter\" | tail -50\n\nTo ensure there are no further underlying issues, please follow Gathering Files for Troubleshooting (Diagnostics/Sysdump and PDF Report) - Exinda [https://support.exinda.gfi.com/article/117237-gathering-files-for-troubleshooting-diagnostics-sysdump-and-pdf-report] to provide the sysdump and PDF report.\n\nAdditionally, given the recurring nature of this issue and your previous request, I'd like to schedule a WebEx session to investigate this in real-time and ensure we address the root cause, not just the symptoms.\n\nPlease provide:\n\n\t* The command outputs above\n\t* Your availability for a WebEx session this\u00a0week\n\t* Any changes made to mail/notification settings or TMS configurations*\n\nExinda - System Disk Full alert or not enough disk space available - Exinda [https://support.exinda.gfi.com/article/121300-exinda-system-disk-full-alert-or-not-enough-disk-space-available]Exinda System Temporarily Unavailable with No space left on device error - Exinda [https://support.exinda.gfi.com/article/119080-exinda-system-temporarily-unavailable-with-no-space-left-on-device-error]\n\nBest regards,\nRandall Shawver\nGFI - Exinda Network Orchestrator Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-27T13:59:08+00:00",
+          "Kayako - ticket id 60220701 // Randall Shawver commented privately:  What is your proposed action?\n(required: select one, delete the rest) \n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Eswaramoorthy,\u00a0 \n\n I am resending this last response, which did include the shell unlock key. I am sending a new key. \n\n Please review the below instructions and articles and inform us if you are able to clear up space. \n\n LK2-RESTRICTED_CMDS-45A0-86MQ-JP7C-F423-KWB8-6GT6-11UP-6B5Y-C0TG-1Q77-TCPP-K3N7-L \n\n Thank you for the follow-up. I can see from your previous diagnostics that this is a recurring issue that requires deeper investigation beyond the standard cleanup procedures. \n\n #60192334 [https://support.exinda.gfi.com/conversation/view/60192334], I've identified some specific concerns:* data-section-index=27>From the diagnostic output you provided in ticket #60192334 [https://support.exinda.gfi.com/conversation/view/60192334], I've\u00a0identified some specific concerns: 1.\u00a0The\u00a0/var/home/root/dead.letters\u00a0directory is consuming 8.5GB\u00a0- This is abnormal and suggests a mail/notification configuration issue that needs to be addressed at the root\u00a0cause level. 2.\u00a0TMS snapshot staging files\u00a0(2.9GB)\u00a0are not being cleaned up properly. \n To properly resolve this recurring issue, I need you to run the following commands and provide the output: \n ls -lh /var/home/root/dead.letters | head -20 \n\n find /var/opt/tms/snapshots/.staging -type f -mtime +7 -ls \n\n cat /var/log/messages | grep -i mail\\|dead.letter | tail -50 \n\n To ensure there are no further underlying issues, please follow Gathering Files for Troubleshooting (Diagnostics/Sysdump and PDF Report) - Exinda [https://support.exinda.gfi.com/article/117237-gathering-files-for-troubleshooting-diagnostics-sysdump-and-pdf-report] to provide the sysdump and PDF report. \n\n Additionally, given the recurring nature of this issue and your previous request, I'd like to schedule a WebEx session to investigate this in real-time and ensure we address the root cause, not just the symptoms. \n\n Please provide: \n\n \t* The command outputs above\n \t* Your availability for a WebEx session this\u00a0week\n \t* Any changes made to mail/notification settings or TMS configurations*\n\n Exinda - System Disk Full alert or not enough disk space available - Exinda [https://support.exinda.gfi.com/article/121300-exinda-system-disk-full-alert-or-not-enough-disk-space-available]Exinda System Temporarily Unavailable with No space left on device error - Exinda [https://support.exinda.gfi.com/article/119080-exinda-system-temporarily-unavailable-with-no-space-left-on-device-error] \n\n Best regards, \n Randall Shawver \n GFI - Exinda Network Orchestrator Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n I provided the shell unlock key. Did they not see it? "
+        ],
+        [
+          "2025-10-27T07:06:23+00:00",
+          "Kayako - ticket id 60220701 // Monyah Aladeli commented publicly:  \n\nDear @Vineeth Nair,\n\nGreetings,\n\n\u00a0\n\nPlease need your support here urgently.\n\n\u00a0\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nSensitivity Label: General\n\n \n"
+        ],
+        [
+          "2025-10-26T12:35:40+00:00",
+          "Kayako - ticket id 60220701 // Monyah Aladeli commented publicly:  \n\nHi @customersupport-exinda@gfi.com,\n\n\u00a0\n\nPlease any update here? Can you provide the below request ASAP.\n\n\u00a0\n\nPlease provide us with the shell license key to execute these commands.\n\n\u00a0\n\n\u00a0\n\nHi @Vinay BM,\n\n\u00a0\n\nAs communicated before we need your support here, we need to get feedback on our communication more effectively. We are at critical stage and must expediate all the tasks and activities along with closing this project within this month itself.\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nSensitivity Label: General\n\n \n"
+        ],
+        [
+          "2025-10-23T11:32:52+00:00",
+          "Kayako - ticket id 60220701 // Zaigham Abbas commented publicly:  \n\n ++ @Monyah\u00a0for visibility \n\nKind Regards,\n\n\u00a0\n\n-------------------------\n\n \n"
+        ],
+        [
+          "2025-10-23T08:30:51+00:00",
+          "Kayako - ticket id 60220701 // Eswaramoorthy P commented publicly:  \n\nHi Randall,\n\nPlease provide us with the shell license key to execute these commands. \n\n\u00a0\n\nRegards,\n\nEswar Ps\n\nPublic\n\n \n"
+        ],
+        [
+          "2025-10-22T16:05:35+00:00",
+          "Kayako - ticket id 60220701 // Randall Shawver commented publicly: Dear Eswaramoorthy,\n\nThank you for the follow-up. I can see from your previous diagnostics that this\u00a0is a recurring issue that requires deeper\u00a0investigation beyond the standard cleanup procedures.\n\n#60192334 [https://support.exinda.gfi.com/conversation/view/60192334], I've identified some specific concerns:*\" data-section-index=\"27\">From the diagnostic output you provided in ticket #60192334 [https://support.exinda.gfi.com/conversation/view/60192334], I've\u00a0identified some specific concerns: 1.\u00a0The\u00a0/var/home/root/dead.letters\u00a0directory is consuming 8.5GB\u00a0- This is abnormal and suggests a mail/notification configuration issue that needs to be addressed at the root\u00a0cause level. 2.\u00a0TMS snapshot staging files\u00a0(2.9GB)\u00a0are not being cleaned up properly.\nTo properly resolve this recurring issue, I need you to run the following commands and provide the output:\nls -lh /var/home/root/dead.letters | head -20\n\nfind /var/opt/tms/snapshots/.staging -type f -mtime +7 -ls\n\ncat /var/log/messages | grep -i \"mail\\|dead.letter\" | tail -50\n\nTo ensure there are no further underlying issues, please follow Gathering Files for Troubleshooting (Diagnostics/Sysdump and PDF Report) - Exinda [https://support.exinda.gfi.com/article/117237-gathering-files-for-troubleshooting-diagnostics-sysdump-and-pdf-report] to provide the sysdump and PDF report.\n\nAdditionally, given the recurring nature of this issue and your previous request, I'd like to schedule a WebEx session to investigate this in real-time and ensure we address the root cause, not just the symptoms.\n\nPlease provide:\n\n\t* The command outputs above\n\t* Your availability for a WebEx session this\u00a0week\n\t* Any changes made to mail/notification settings or TMS configurations*\n\nI created the shell unlock key. Please review the below articles and inform us if you are able to clear up space.\n\u00a0\nLK2-RESTRICTED_CMDS-45A0-86MQ-JP7C-F423-KW68-6GT3-0HJX-90PK-R151-LQDM-W747-PTWV-6\n\nExinda - System Disk Full alert or not enough disk space available - Exinda [https://support.exinda.gfi.com/article/121300-exinda-system-disk-full-alert-or-not-enough-disk-space-available]Exinda System Temporarily Unavailable with No space left on device error - Exinda [https://support.exinda.gfi.com/article/119080-exinda-system-temporarily-unavailable-with-no-space-left-on-device-error]\n\nBest regards,\nRandall Shawver\nGFI - Exinda Network Orchestrator Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-22T16:04:46+00:00",
+          "Kayako - ticket id 60220701 // Randall Shawver commented privately:  What is your proposed action?\n(required: select one, delete the rest) \n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Eswaramoorthy, \n\n Thank you for the follow-up. I can see from your previous diagnostics that this\u00a0is a recurring issue that requires deeper\u00a0investigation beyond the standard cleanup procedures. \n\n #60192334, I've identified some specific concerns:* data-section-index=27>From\u00a0the diagnostic output you provided in ticket #60192334 [https://support.exinda.gfi.com/conversation/view/60192334], I've\u00a0identified some specific concerns: 1.\u00a0The\u00a0/var/home/root/dead.letters\u00a0directory is consuming 8.5GB\u00a0- This is abnormal and suggests a mail/notification configuration issue that needs to be addressed at the root\u00a0cause level. 2.\u00a0TMS snapshot staging files\u00a0(2.9GB)\u00a0are not being cleaned up properly. \n To properly resolve this recurring issue, I need you to run the following commands and provide the output: \n\n ls -lh /var/home/root/dead.letters | head -20\nfind /var/opt/tms/snapshots/.staging -type f -mtime +7 -ls\ncat /var/log/messages | grep -i mail\\|dead.letter | tail -50 \n\n To ensure there are no further underlying issues, please follow Gathering Files for Troubleshooting (Diagnostics/Sysdump and PDF Report) - Exinda [https://support.exinda.gfi.com/article/117237-gathering-files-for-troubleshooting-diagnostics-sysdump-and-pdf-report] to provide the sysdump and PDF report. \n\n Additionally, given the recurring nature of this issue and your previous request, I'd like to schedule a WebEx session to investigate this in real-time and ensure we address the root cause, not just the symptoms. \n\n Please provide: \n\n \t* The command outputs above\n \t* Your availability for a WebEx session this\u00a0week\n \t* Any changes made to mail/notification settings or TMS configurations*\n\n I created the shell unlock key. Please review the below articles and inform us if you are able to clear up space. \n \u00a0 \n LK2-RESTRICTED_CMDS-45A0-86MQ-JP7C-F423-KW68-6GT3-0HJX-90PK-R151-LQDM-W747-PTWV-6 \n\n Exinda - System Disk Full alert or not enough disk space available - Exinda [https://support.exinda.gfi.com/article/121300-exinda-system-disk-full-alert-or-not-enough-disk-space-available] \n Exinda System Temporarily Unavailable with No space left on device error - Exinda [https://support.exinda.gfi.com/article/119080-exinda-system-temporarily-unavailable-with-no-space-left-on-device-error] \n\n Best regards, \n Randall Shawver \n GFI - Exinda Network Orchestrator Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n Host ID: 0835712b9d8f LK2-RESTRICTED_CMDS-45A0-86MQ-JP7C-F423-KW68-6GT3-0HJX-90PK-R151-LQDM-W747-PTWV-6 \n Exinda - System Disk Full alert or not enough disk space available - Exinda [https://support.exinda.gfi.com/article/121300-exinda-system-disk-full-alert-or-not-enough-disk-space-available] \n Exinda System Temporarily Unavailable with No space left on device error - Exinda [https://support.exinda.gfi.com/article/119080-exinda-system-temporarily-unavailable-with-no-space-left-on-device-error] \n\nIMMEDIATE NEXT STEPS:\n\n1.\u00a0ACKNOWLEDGE THE RECURRING NATURE\n\n The customer has already followed the standard article and the issue persists. The support team needs to move beyond the standard troubleshooting steps. \n\n2.\u00a0INVESTIGATE ROOT CAUSE - NOT JUST SYMPTOMS\n\n Based on the diagnostic output from the previous ticket, there are specific areas that need attention: Critical Finding:\u00a0/var/home/root/dead.letters\u00a0is consuming\u00a08.5GB\u00a0- this is abnormal and indicates: \n\n \t* Email/notification delivery failures\n \t* Possible\u00a0mail configuration issues\n \t* Potential system misconfigurations\n\n Actions\u00a0needed: -\u00a0Investigate\u00a0what's\u00a0causing\u00a0files\u00a0to\u00a0accumulate\u00a0in\u00a0dead.letters-\u00a0Check\u00a0mail/notification\u00a0configuration-\u00a0Examine\u00a0why\u00a0TMS\u00a0snapshots\u00a0are\u00a0staging\u00a0and\u00a0not\u00a0completing\u00a0(2.9GB\u00a0in\u00a0.staging)-\u00a0Review\u00a0snapshot\u00a0retention\u00a0policies \n\n3.\u00a0SPECIFIC TECHNICAL STEPS TO REQUEST:\n\n Phase 1: Immediate Investigation \n\n \t* Run\u00a0ls -lh /var/home/root/dead.letters | head -20\u00a0to see what type\u00a0of files are accumulating\n \t* Check TMS snapshot configuration and why staging files aren't being\u00a0cleaned\n \t* Review system logs for mail delivery errors\u00a0or notification failures\n \t* Check if there are any scheduled jobs failing\n\n Phase 2: Remediation \n\n \t* Safely remove dead.letters content\u00a0(after backing up a sample for analysis)\n \t* Clean up old TMS snapshots and adjust\u00a0retention settings\n \t* Fix any mail/notification configuration issues\n \t* Implement\u00a0proper log rotation if not configured\n\n4.\u00a0ADDRESS\u00a0PERFORMANCE ISSUES SEPARATELY\n\n The disk space issue may\u00a0be contributing to performance problems, but there could be other factors\u00a0related to the v7.6.0 upgrade that\u00a0need investigation. \n\n5.\u00a0RECOMMENDED RESPONSE:\n\n The support team should send a message like: \n-------------------------\n\n"
+        ],
+        [
+          "2025-10-14T12:33:30+00:00",
+          "Kayako - ticket id 60220701 // Eswaramoorthy P commented privately: Previous ticket#60192334\n\nArticle provided in the previous ticket.\nhttps://support.exinda.gfi.com/article/117221-system-disk-full-for-var-folder"
+        ],
+        [
+          "2025-10-14T12:31:15+00:00",
+          "Kayako - ticket id 60220701 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-10-14T12:30:43+00:00",
+          "Kayako - ticket id 60220701 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, Eswaramoorthy P ! \ud83d\udc4b\n\nThis is the GFI Exinda ATLAS support chat. \n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \n\n--- AI Assistant ---\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of GFI Exinda ATLAS Support Chat [https://support.exinda.gfi.com/article/117917]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \n\n--- Customer (Eswaramoorthy P) ---\n\n Exinda Network Orchestrator Performance Issue \n\n--- AI Assistant ---\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiJlYThjMWM3YS01ZWM4LTQyOTgtODQ4Zi01OTExN2JhNWQ1M2YiLCJzZXNzaW9uX3VpZCI6ImVhOGMxYzdhLTVlYzgtNDI5OC04NDhmLTU5MTE3YmE1ZDUzZiIsImVtYWlsIjoiZXN3YXJhbW9vcnRoeS5wQGthcHNhcmMub3JnIiwiY3VzdG9tX3BhcnNlciI6e30sImNhbGxiYWNrIjp7ImNhbGxiYWNrX3VybCI6bnVsbCwiY2FsbGJhY2tfZW1haWwiOiJjaXByaWFuLm5hc3Rhc2VAdHJpbG9neS5jb20ifSwicHJvZHVjdF90YWciOiJhdXJlYV9leGluZGFfbmV0d29ya19vcmNoZXN0cmF0b3IiLCJxdWVyeSI6IiIsImV4cCI6MTc2MDQ1MjAyNH0.u6T70ZPxcSnrrzYI7OTcKko9gLTv2FOic8usJxoH7LM]\n\nYou should see the following:\n\n \t* User: eswaramoorthy.p@kapsarc.org\n \t* Session ID: ea8c1c7a-5ec8-4298-848f-59117ba5d53f\n\n--- Customer (Eswaramoorthy P) ---\n\n Button selection: [\ud83d\udd19 Continue without file upload ] \n\n--- AI Assistant ---\n\n Thanks for letting me know you\u2019re experiencing a performance issue with Exinda Network Orchestrator. Let\u2019s get this sorted out!\n\nTo help pinpoint the cause, could you tell me a bit more about what you\u2019re seeing? For example:\n\n \t* Is the device running slow overall, or are specific features (like reporting, traffic shaping, or the web UI) affected?\n \t* Have you noticed high CPU or memory usage, or any error messages?\n \t* When did the performance issue start, and has anything changed in your network or configuration recently?\n\nOnce I have a bit more detail, I can guide you through some targeted troubleshooting steps. \n\n--- Customer (Eswaramoorthy P) ---\n\n Exinda Network Orchestrator Performance Issue and the disk space is full. \n\n--- AI Assistant ---\n\n Thanks for sharing those details! When the disk space is full on Exinda Network Orchestrator, it can definitely cause performance issues, prevent upgrades, and even make monitoring data unavailable. Here\u2019s what you can do to resolve this:\n\nSTEP-BY-STEP: FREE UP DISK SPACE\n\n \t* Delete Unnecessary Files via Web UI\n\n- Go to Configuration > Diagnostics > Diagnostics.\n- In the Diagnostic Files table, select all files you don\u2019t need (like old sysdumps).\n- Click \u201cRemove Files.\u201d\n- Repeat for the System Snapshot Files and TCP Dump Files tables.\n- Also check Configuration > Diagnostics > TCP Dump for any old TCP dump files to remove.\n- For more details, see: 'No policy' Shown in Real-Time Monitoring and Optimizer Not Capturing Traffic [https://support.exinda.gfi.com/article/119390]\n\n \t* Check Which Partition is Full\n\n- If you\u2019re comfortable with the CLI, log in via SSH and run:\n\n\u00a0\u00a0\u00a0\u00a0\u00a0df\u00a0-h\n\u00a0\u00a0\u00a0\u00a0\u00a0\n\n- This will show which partition (often /var) is full.\n- For more info on diagnosing and solving disk space issues, check: Exinda - System Disk Full alert or not enough disk space available [https://support.exinda.gfi.com/article/121300]\n\n \t* Format the Full Partition (if needed)\n\n- Go to System > Setup > Storage in the Web UI.\n- Format the partition that\u2019s full (only if you\u2019re sure you don\u2019t need the data).\n- If you can\u2019t find the partition under warning, or if you\u2019re unsure, please contact Exinda support.\n- More details here: Disk Usage High [https://support.exinda.gfi.com/article/117230]\n\n \t* Restart the Optimizer or Reboot\n\n- After clearing space, restart the optimizer.\n- If issues persist, try rebooting the Exinda: Configuration > Maintenance > Reboot / Shutdown. \n-------------------------\n If you follow these steps and the disk is still full or the system remains slow, let me know! I can guide you through more advanced troubleshooting or help you get in touch with a live support agent if needed.\n\nWould you like to start with the Web UI cleanup, or do you need help with the CLI commands? \n\n--- Customer (Eswaramoorthy P) ---\n\n all these action were done. We need to raise a ticket and check with the engineer \n\n--- AI Assistant ---\n\n I understand your need to escalate this issue further. \ud83d\ude0a A human colleague will be available to assist you with raising a ticket and connecting you to an engineer\u2014please feel free to choose from the handover options when you're ready. \n\n--- Customer (Eswaramoorthy P) ---\n\n Button selection: [\ud83d\udce9 Raise a ticket] \n\n--- AI Assistant ---\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \n\n--- Customer (Eswaramoorthy P) ---\n\n Exinda Network Orchestrator Performance Issue and the disk space is full. We raised a ticket earlier and they provided us with an article. We have followed the same but the issue reoccurs and persists. \n\n--- AI Assistant ---\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \n"
+        ],
+        [
+          "2025-10-14T12:30:37+00:00",
+          "Kayako - ticket id 60220701 // Eswaramoorthy P commented privately: --- Ticket generated by GFI Exinda AI chat on behalf of Eswaramoorthy P - <a href=\"mailto:eswaramoorthy.p@kapsarc.org\" rel=\"nofollow\">eswaramoorthy.p@kapsarc.org</a> ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * Exinda Network Orchestrator Performance Issue<br>\n  * Exinda Network Orchestrator Performance Issue and the disk space is full.<br>\n  * all these action were done. We need to raise a ticket and check with the engineer<br>\n  * Exinda Network Orchestrator Performance Issue and the disk space is full. We raised a ticket earlier and they provided us with an article. We have followed the same but the issue reoccurs and persists.<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 25,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

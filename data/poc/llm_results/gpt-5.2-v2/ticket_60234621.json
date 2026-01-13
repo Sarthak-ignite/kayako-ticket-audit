@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No clear customer-facing ATLAS/Hermes AI reply is present; the visible public responses appear to be from named human agents and are not demonstrably AI-generated.",
+    "evidence": [
+      "Kayako - ticket id 60234621 // ATLAS commented privately: Action: l1",
+      "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not report being stuck with AI, ask for a human, or show repeated AI requests for the same information; the issue proceeds to human updates and engineering escalation.",
+    "evidence": [
+      "Hello Team, We have not received any chat for the past 35minutes, Unable to create a chat via Fortinet.com or Support.fortinet.com as well.",
+      "Dear Jayashree, We have done a preliminary investigation to determine the root cause, and have escalated this to our infrastructure team with the highest priority."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly asked for the ticket number and to keep everyone looped for visibility; support did not directly respond publicly to that request (ticket number was provided only in a private note), and the initial public response did not acknowledge the provided recording/screenshots.",
+    "evidence": [
+      "Please share the ticket number and please keep everyone in the initial email in loop for visibility.",
+      "Kayako - ticket id 60234621 // Aamir Merchant commented privately: Here is the ticket number:  60234621",
+      "Please find the recording attached for your reference.",
+      "Dear Customer, We have received your escalation, and our team is currently reviewing the issue. We will share an update with you shortly."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions and the fix occurred within the same day and within hours; no multi-day gaps or 'still waiting' follow-ups due to silence are present.",
+    "evidence": [
+      "[2025-11-03T13:22:34+00:00] Customer initial report",
+      "[2025-11-03T13:53:23+00:00] Public support response",
+      "[2025-11-03T15:50:44+00:00] Public 'implemented a fix' update"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The customer never explicitly confirms restoration from their side, yet the underlying incident/Jira is closed and the ticket is put on an extremely long hold, which risks effectively ending active engagement without customer validation.",
+    "evidence": [
+      "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "SaaS Jira - issue key CARESMM-9956 // status is changed from In Progress to Closed",
+      "Dear Customer, We have identified the cause of the chat widget outage and implemented a fix."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is explicitly raised as a Severity 1 outage affecting chat creation; despite escalation occurring, the customer-facing communication remains largely generic ('reviewing', 'update shortly') with no immediate mitigation/workaround guidance, and internal actions (e.g., 9999-hour hold) are not aligned with SEV1 rigor.",
+    "evidence": [
+      "Subject: Severity 1- Fortinet-Khoros Outage",
+      "We have not received any chat for the past 35minutes, Unable to create a chat via Fortinet.com or Support.fortinet.com as well.",
+      "Dear Customer, We have received your escalation, and our team is currently reviewing the issue. We will share an update with you shortly.",
+      "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60234621
+}

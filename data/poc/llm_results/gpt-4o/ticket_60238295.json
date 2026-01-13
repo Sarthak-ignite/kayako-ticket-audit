@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses are generic and do not provide helpful feedback or solutions to the customer's issue.",
+    "evidence": [
+      "[2025-11-11T13:25:41+00:00] Hi support, I have not received a licence or any helpful feedback. Are you actually working on this?\u200b",
+      "[2025-11-07T12:48:27+00:00] Hi support, I did as asked, but I can't track the message I've sent properly. Would you mind keeping us posted?\u200b"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer expresses frustration at not receiving helpful feedback, indicating they are struggling to get past unhelpful AI responses to reach a resolution.",
+    "evidence": [
+      "[2025-11-11T13:25:41+00:00] I have not received a licence or any helpful feedback.",
+      "[2025-11-07T12:48:27+00:00] I did as asked, but I can't track the message I've sent properly."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence of support ignoring provided information or asking for the same data multiple times.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays between interactions, including a gap of more than two weeks without response.",
+    "evidence": [
+      "Time to first human (hours): 407.4",
+      "Max gap between responses (hours): 310.8"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is closed, but there is no evidence provided that shows the customer was still waiting for promised information at the time of closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as high-priority or an outage, thus handling as such does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses are generic and do not provide helpful feedback or solutions to the customer's issue.\",\n    \"evidence\": [\n      \"[2025-11-11T13:25:41+00:00] Hi support, I have not received a licence or any helpful feedback. Are you actually working on this?\u200b\",\n      \"[2025-11-07T12:48:27+00:00] Hi support, I did as asked, but I can't track the message I've sent properly. Would you mind keeping us posted?\u200b\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer expresses frustration at not receiving helpful feedback, indicating they are struggling to get past unhelpful AI responses to reach a resolution.\",\n    \"evidence\": [\n      \"[2025-11-11T13:25:41+00:00] I have not received a licence or any helpful feedback.\",\n      \"[2025-11-07T12:48:27+00:00] I did as asked, but I can't track the message I've sent properly.\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of support ignoring provided information or asking for the same data multiple times.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays between interactions, including a gap of more than two weeks without response.\",\n    \"evidence\": [\n      \"Time to first human (hours): 407.4\",\n      \"Max gap between responses (hours): 310.8\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is closed, but there is no evidence provided that shows the customer was still waiting for promised information at the time of closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as high-priority or an outage, thus handling as such does not apply.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60238295
+}

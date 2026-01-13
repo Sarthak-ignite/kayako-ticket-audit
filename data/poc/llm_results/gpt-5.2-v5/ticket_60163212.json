@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS clearly misinterprets the customer\u2019s script error text as a license key and proceeds with an irrelevant license-validation flow, which is misleading and not responsive to the described Outlook Connector restore error.",
+    "evidence": [
+      "Daniel Riek: \"using the outlook connector and trying to restore an email I get a script error. Line :15 Char: 16485 Error: sys.webforms.pagerequestmanagerservererrorexception.\"",
+      "Chat Support: \"Checking the validity of this license key: <strong>pagerequestmanagerservererrorexception</strong> ...\"",
+      "Chat Support: \"I was unable to verify the validity of the provided license key. Remember that this is a pre-requisite for moving forward.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The provided excerpt shows only a short sequence of AI messages and does not show the customer asking for a human or evidence of a repetitive loop preventing escalation.",
+    "evidence": [
+      "Chat Support: \"Please select from the below or give me a detailed description of what\u2019s happening.\"",
+      "Chat Support: \"Checking the validity of this license key: <strong>pagerequestmanagerservererrorexception</strong> ...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence that support asked the customer to repeat information they already provided, or that the customer complained about having already shared details.",
+    "evidence": [
+      "Daniel Riek: \"using the outlook connector and trying to restore an email I get a script error.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps or delay acknowledgements are visible in the provided interaction excerpt.",
+    "evidence": [
+      "Customer: Daniel Riek [2025-08-07T13:09:02+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no text indicating the ticket was closed or would be auto-closed while the issue was unresolved.",
+    "evidence": [
+      "Kayako - ticket id 60163212 // ATLAS commented publicly: \"Thanks for chatting earlier with our AI Support!\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reports an Outlook Connector restore script error, but there is no explicit outage/SEV1 language (e.g., production down, critical, all users) that would require P1 handling based on the provided text.",
+    "evidence": [
+      "Daniel Riek: \"using the outlook connector and trying to restore an email I get a script error.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60163212
+}

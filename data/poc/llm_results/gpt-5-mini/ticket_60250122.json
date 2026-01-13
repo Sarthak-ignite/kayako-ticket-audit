@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI-generated comments include inappropriate/meaningless actions (placing ticket on hold for an extreme duration) and non-actionable system messages, indicating low-quality or filler responses.",
+    "evidence": [
+      "[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "[2025-12-01T04:38:30+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "[2025-12-27T02:38:34+00:00] (AI) ATLAS: Kayako - ticket id 60250122 // ATLAS commented privately: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI repeatedly requested the same information or trapped the customer; the customer provided details and AI responded but did not ask for the same info multiple times.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Customer provided environment details and that incognito/cookies were checked, and there is no explicit AI request in the log asking the customer to repeat those same checks or re-upload logs.",
+    "evidence": [
+      "[2025-11-25T15:27:36+00:00] (Customer) Sheena Kenny: Kayako - ticket id 60250122 // Sheena Kenny commented privately: Hi, the same issue occurs using incognito mode, cookies are enabled, and confirmed that multiple users are experiencing the same issue,"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Long gaps and slow human response times are present \u2014 first human response and large gaps exceed multiple days.",
+    "evidence": [
+      "Ticket metadata: Time to first human (hours): 763.9",
+      "Ticket metadata: Max gap between responses (hours): 613.5",
+      "[2025-11-25T11:29:01+00:00] (Customer) Sheena Kenny: ...",
+      "[2025-12-27T07:23:12+00:00] (Employee) Santhosh M: Kayako - ticket id 60250122 // Santhosh M commented privately:  The clone https://trilogy-eng.atlassian.net/browse/AURORA-872 seems to have been closed. Will link ticket with the correct LIA: https://"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence the ticket was closed while the customer awaited promised information or that the customer abandoned due to closure; JIRA clones changed status but the support ticket remains on hold.",
+    "evidence": [
+      "[2025-12-27T02:38:25+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: JIRA Issue AURORA-872 is changed to 'Closed' , block reason: -",
+      "[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is not marked as a P1/SEV1 incident and there is no evidence of high-priority outage handling; messages show Jira status updates and routine comments rather than generic troubleshooting for a critical outage.",
+    "evidence": [
+      "Ticket metadata: Priority: normal",
+      "[2025-12-26T18:09:45+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: JIRA Issue AURORA-840 is changed to 'In Progress' , block reason: -"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI-generated comments include inappropriate/meaningless actions (placing ticket on hold for an extreme duration) and non-actionable system messages, indicating low-quality or filler responses.\",\n    \"evidence\": [\n      \"[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)\",\n      \"[2025-12-01T04:38:30+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)\",\n      \"[2025-12-27T02:38:34+00:00] (AI) ATLAS: Kayako - ticket id 60250122 // ATLAS commented privately: Skipping ticket due to tags\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI repeatedly requested the same information or trapped the customer; the customer provided details and AI responded but did not ask for the same info multiple times.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer provided environment details and that incognito/cookies were checked, and there is no explicit AI request in the log asking the customer to repeat those same checks or re-upload logs.\",\n    \"evidence\": [\n      \"[2025-11-25T15:27:36+00:00] (Customer) Sheena Kenny: Kayako - ticket id 60250122 // Sheena Kenny commented privately: Hi, the same issue occurs using incognito mode, cookies are enabled, and confirmed that multiple users are experiencing the same issue,\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Long gaps and slow human response times are present \u2014 first human response and large gaps exceed multiple days.\",\n    \"evidence\": [\n      \"Ticket metadata: Time to first human (hours): 763.9\",\n      \"Ticket metadata: Max gap between responses (hours): 613.5\",\n      \"[2025-11-25T11:29:01+00:00] (Customer) Sheena Kenny: ...\",\n      \"[2025-12-27T07:23:12+00:00] (Employee) Santhosh M: Kayako - ticket id 60250122 // Santhosh M commented privately:  The clone https://trilogy-eng.atlassian.net/browse/AURORA-872 seems to have been closed. Will link ticket with the correct LIA: https://\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the ticket was closed while the customer awaited promised information or that the customer abandoned due to closure; JIRA clones changed status but the support ticket remains on hold.\",\n    \"evidence\": [\n      \"[2025-12-27T02:38:25+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: JIRA Issue AURORA-872 is changed to 'Closed' , block reason: -\",\n      \"[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is not marked as a P1/SEV1 incident and there is no evidence of high-priority outage handling; messages show Jira status updates and routine comments rather than generic troubleshooting for a critical outage.\",\n    \"evidence\": [\n      \"Ticket metadata: Priority: normal\",\n      \"[2025-12-26T18:09:45+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: JIRA Issue AURORA-840 is changed to 'In Progress' , block reason: -\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60250122
+}

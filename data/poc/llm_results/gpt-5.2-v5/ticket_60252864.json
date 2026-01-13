@@ -1,0 +1,52 @@
+{
+  "1_AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS shows a brief misunderstanding (\u201crenewing/modifying... correct?\u201d), but it immediately acknowledges the mistake and pivots to ask for more details. There is no customer-facing statement that the AI was wrong/useless, and no clearly incorrect guidance is demonstrated in the ticket text.",
+    "evidence": [
+      "AI Assistant: \"Since it's a delicate topic, I want to make extra sure: are you seeking assistance with renewing/modifying/cancelling an existing license...\"",
+      "AI Assistant: \"\ud83d\ude33 Sorry about the misunderstanding, let's try again.\""
+    ]
+  },
+  "2_AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence of the customer being trapped in an AI loop or repeatedly requesting a human while continuing to receive AI responses. The visible sequence transitions to a human reply later without showing repeated AI interactions after a human request.",
+    "evidence": [
+      "Customer: \"Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\"",
+      "Mike Kebede (public): \"Dear Ashraaz, Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry.\""
+    ]
+  },
+  "3_IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support agent\u2019s public reply acknowledges key context (expired license, company name, license key, reseller delay) and does not ask the customer to repeat information they already provided. No customer complaint about having to restate details is present.",
+    "evidence": [
+      "Mike Kebede (public): \"Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry.\"",
+      "Mike Kebede (public): \"please include: Your Kerio Control license key: 20339-Z6JHP-2QUX8\""
+    ]
+  },
+  "4_RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket shows multiple customer follow-ups within hours, and a first public staff response the next day; however, the criteria require multi-day gaps (>=3 days twice, or >=5 days once) or explicit acknowledgment/apology for delay. Neither condition is met in the provided text.",
+    "evidence": [
+      "Customer: \"Anyone there\"",
+      "Mike Kebede (public): \"Dear Ashraaz, Thank you for contacting us...\""
+    ]
+  },
+  "5_PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support introduces an auto-closure condition (\u201cstay open for one week unless...\u201d), while the customer\u2019s core issue (service outage and request for a temporary extension) is not resolved within the ticket and is redirected elsewhere. This is closure language tied to an unresolved request.",
+    "evidence": [
+      "Mike Kebede (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Customer: \"We are facing total outage. Your assistance will be highly appreciated\""
+    ]
+  },
+  "6_P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer reports an outage, the support response does not perform generic low-level troubleshooting; it explains a licensing limitation and directs the customer to the correct Sales/Licensing channel. The text does not show the issue being mishandled as routine troubleshooting or prolonged without escalation steps.",
+    "evidence": [
+      "Customer: \"Our services are down.\"",
+      "Mike Kebede (public): \"Kerio Support does not have the ability to issue temporary licenses or extend expired licenses. All licensing actions... must be handled strictly through our Sales and Licensing channels.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60252864
+}

@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are generic, repetitive, and do not provide meaningful solutions to the customer's specific licensing issue.",
+    "evidence": [
+      "[2025-10-10T16:46:45+00:00] Dear Matthew, Thank you for drawing our attention to the broken links and the confusion surrounding the various portals.",
+      "[2025-10-10T06:16:24+00:00] Dear Matthew, Thank you for confirming that the Emergency License Activation article results in a 404 error..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer is repeatedly stuck with AI interactions that do not resolve the core licensing issue, with multiple AI manager interventions that add no substantive value.",
+    "evidence": [
+      "[2025-10-10T18:03:35+00:00] ===== Operation Summary =====",
+      "[2025-10-10T16:44:26+00:00] <CC Log> Cu Chulainn has been initiated for this ticket",
+      "[2025-10-10T06:12:11+00:00] <CC Log> Cu Chulainn has been initiated for this ticket"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support representatives appear to be tracking the customer's context and previous communications.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant gaps between customer inquiries and support responses, with some interactions separated by multiple days.",
+    "evidence": [
+      "Time to first human (hours): 50.7",
+      "Max gap between responses (hours): 171.4"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been resolved with the customer expressing satisfaction at the end.",
+    "evidence": [
+      "[2025-10-22T17:34:06+00:00] Thank you, you guys were great! -Matt"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority ticket with urgent licensing deadline was not immediately escalated to human support, instead routed through AI systems.",
+    "evidence": [
+      "[2025-10-11T06:07:24+00:00] When can expect actual help with this issue? We know the deadline.",
+      "[2025-10-11T05:48:47+00:00] Our current DNN licenses expire on Tuesday night at 11 pm, October 14, 2025."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are generic, repetitive, and do not provide meaningful solutions to the customer's specific licensing issue.\",\n    \"evidence\": [\n      \"[2025-10-10T16:46:45+00:00] Dear Matthew, Thank you for drawing our attention to the broken links and the confusion surrounding the various portals.\",\n      \"[2025-10-10T06:16:24+00:00] Dear Matthew, Thank you for confirming that the Emergency License Activation article results in a 404 error...\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer is repeatedly stuck with AI interactions that do not resolve the core licensing issue, with multiple AI manager interventions that add no substantive value.\",\n    \"evidence\": [\n      \"[2025-10-10T18:03:35+00:00] ===== Operation Summary =====\",\n      \"[2025-10-10T16:44:26+00:00] <CC Log> Cu Chulainn has been initiated for this ticket\",\n      \"[2025-10-10T06:12:11+00:00] <CC Log> Cu Chulainn has been initiated for this ticket\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support representatives appear to be tracking the customer's context and previous communications.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant gaps between customer inquiries and support responses, with some interactions separated by multiple days.\",\n    \"evidence\": [\n      \"Time to first human (hours): 50.7\",\n      \"Max gap between responses (hours): 171.4\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to have been resolved with the customer expressing satisfaction at the end.\",\n    \"evidence\": [\n      \"[2025-10-22T17:34:06+00:00] Thank you, you guys were great! -Matt\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority ticket with urgent licensing deadline was not immediately escalated to human support, instead routed through AI systems.\",\n    \"evidence\": [\n      \"[2025-10-11T06:07:24+00:00] When can expect actual help with this issue? We know the deadline.\",\n      \"[2025-10-11T05:48:47+00:00] Our current DNN licenses expire on Tuesday night at 11 pm, October 14, 2025.\"\n    ]\n  }\n}",
+  "_model": "claude-haiku",
+  "_ticket_id": 60218070
+}

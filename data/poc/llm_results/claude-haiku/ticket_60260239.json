@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS AI provides a generic, templated response that doesn't directly address the customer's specific license transfer request.",
+    "evidence": [
+      "[2025-12-10T06:21:44+00:00] ATLAS: Dear Kyoko, Thank you for reaching out regarding your request for a new G2 license. To process your request efficiently, we kindly ask you to..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The AI system keeps requesting more information and creating loops without directly resolving the customer's license transfer request.",
+    "evidence": [
+      "[2025-12-10T06:21:34+00:00] ATLAS: Requesting more information",
+      "[2025-12-25T13:50:09+00:00] Centralsupport-ai-acc: Placing on hold for 72 hour(s)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No clear evidence of ignoring previous context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant delays between customer request and final resolution, with multiple days between interactions.",
+    "evidence": [
+      "Time to first human response: 454.6 hours",
+      "Max gap between responses: 367.4 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket appears to be resolved with license being attached by Muhammad Rizwan.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is not a P1/Sev1 ticket, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"ATLAS AI provides a generic, templated response that doesn't directly address the customer's specific license transfer request.\",\n    \"evidence\": [\n      \"[2025-12-10T06:21:44+00:00] ATLAS: Dear Kyoko, Thank you for reaching out regarding your request for a new G2 license. To process your request efficiently, we kindly ask you to...\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI system keeps requesting more information and creating loops without directly resolving the customer's license transfer request.\",\n    \"evidence\": [\n      \"[2025-12-10T06:21:34+00:00] ATLAS: Requesting more information\",\n      \"[2025-12-25T13:50:09+00:00] Centralsupport-ai-acc: Placing on hold for 72 hour(s)\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence of ignoring previous context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant delays between customer request and final resolution, with multiple days between interactions.\",\n    \"evidence\": [\n      \"Time to first human response: 454.6 hours\",\n      \"Max gap between responses: 367.4 hours\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket appears to be resolved with license being attached by Muhammad Rizwan.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is not a P1/Sev1 ticket, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket shows significant AI interaction issues\n- Long response times (454.6 hours to first human response)\n- AI repeatedly asks for information and puts ticket on hold\n- Eventually, a human (Muhammad Rizwan) resolves the ticket by attaching the license\n- The customer's original request (license transfer by January 7, 2026) seems to have been delayed by AI processing",
+  "_model": "claude-haiku",
+  "_ticket_id": 60260239
+}

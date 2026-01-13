@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only customer-facing AI message (12/16) is broadly consistent with the engineering update (fix planned for next release). No clear factual errors, broken templates, irrelevant troubleshooting, or unmet promises are evidenced in the ticket transcript.",
+    "evidence": [
+      "[2025-12-16T11:23:02+00:00] AI to customer: \"...issue...has successfully addressed... This fix is slated for release next weekend.\"",
+      "Engineering issue closure note: \"We have made fixes in the agent... The fixed agent will be released next weekend. No changes in exinda are required.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence the customer requested a human and was denied, nor repeated requests for the same information. The customer had two short messages, then the case was escalated and later updated.",
+    "evidence": [
+      "Customer: \"please pass this to engineering\" (no request for a human beyond escalation)."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask for already-provided artifacts or repeat the same troubleshooting after the customer said it was done. The customer provided context and requested escalation; support ultimately escalated and communicated status.",
+    "evidence": [
+      "Support escalation confirmation: \"We have escalated this to our Engineering team for review.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a clear gap of more than 3 calendar days between the customer's messages requesting engineering escalation and the first support response confirming escalation.",
+    "evidence": [
+      "[2025-11-12T15:24:17+00:00] Customer: \"Please move this ticket to Engineering for fixing.\"",
+      "[2025-11-12T19:07:57+00:00] Customer: \"please pass this to engineering\"",
+      "[2025-11-30T14:53:32+00:00] Support (Randall Shawver): \"We have escalated this to our Engineering team for review.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer explicitly requested closure and support closed accordingly. No pending unanswered question/request remained at closure.",
+    "evidence": [
+      "[2025-12-17T15:02:18+00:00] Customer: \"thanks, we can close this ticket\"",
+      "[2025-12-17T15:02:30+00:00] Support: \"...we are closing this ticket as requested.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not explicitly indicate P1/SEV1/Critical status, outage, or SLA/time-critical language. While the issue could block upgrades due to disk space, there is no explicit high-severity designation meeting the detection criteria.",
+    "evidence": [
+      "Customer describes impact: \"...occupy too much space and block Exinda from successful update...\" but does not mark it as P1/SEV1/Critical or report an outage."
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60241518
+}

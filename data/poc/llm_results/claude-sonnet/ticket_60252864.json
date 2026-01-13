@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI (ATLAS) interaction content is truncated and not fully visible in the transcript. There is insufficient evidence to determine if the AI provided generic filler or wrong information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer clearly stated they needed assistance beyond what ATLAS could provide and wanted human help, but continued sending multiple messages over hours without receiving human response, indicating they couldn't get past the AI barrier.",
+    "evidence": [
+      "[2025-11-29T21:02:32+00:00] Ashraaz Nadeem Yusuf: 'Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?'",
+      "[2025-11-29T21:42:34+00:00] Ashraaz Nadeem Yusuf: 'Anyone there'",
+      "[2025-11-29T23:15:34+00:00] Ashraaz Nadeem Yusuf: 'Hi'",
+      "[2025-11-30T00:33:44+00:00] Ashraaz Nadeem Yusuf: 'Hello'",
+      "[2025-11-30T00:52:41+00:00] Ashraaz Nadeem Yusuf: 'Hi'"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The first human response acknowledges the customer's issue about the expired Kerio Control license for Rooster Poultry, showing context was understood. No evidence of asking for already-provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a 16.3-hour delay from initial customer contact to first human response, which is significant especially given the urgent nature of the ticket involving a total outage.",
+    "evidence": [
+      "[2025-11-29T21:03:39+00:00] Ashraaz Nadeem Yusuf: 'Hi. Iam the Manager IT from Rooster Poultry. Our license expired. Please issue us a temporary extension. Our services are down.'",
+      "[2025-11-30T13:19:12+00:00] Mike Kebede: 'Dear Ashraaz, Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry.'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket shows status as closed, but Mike Kebede's response appears incomplete ('I understand the impact this') suggesting the message was cut off. The customer's last substantive message indicated they still required assistance, and there's no evidence of resolution.",
+    "evidence": [
+      "[2025-11-30T05:38:34+00:00] Ashraaz Nadeem Yusuf: 'we require your assistance'",
+      "[2025-11-30T13:19:12+00:00] Mike Kebede: 'Dear Ashraaz, Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry. I understand the impact this'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer explicitly stated 'total outage' and 'Our services are down' for an urgent priority ticket, yet waited over 16 hours for first human response with no evidence of immediate escalation or emergency handling procedures.",
+    "evidence": [
+      "[2025-11-29T21:03:39+00:00] Ashraaz Nadeem Yusuf: 'Our license expired. Please issue us a temporary extension. Our services are down.'",
+      "[2025-11-29T23:34:53+00:00] Ashraaz Nadeem Yusuf: 'We are facing total outage. Your assistance will be highly appreciated'",
+      "Time to first human response: 16.3 hours for urgent priority ticket"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI (ATLAS) interaction content is truncated and not fully visible in the transcript. There is insufficient evidence to determine if the AI provided generic filler or wrong information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer clearly stated they needed assistance beyond what ATLAS could provide and wanted human help, but continued sending multiple messages over hours without receiving human response, indicating they couldn't get past the AI barrier.\",\n    \"evidence\": [\n      \"[2025-11-29T21:02:32+00:00] Ashraaz Nadeem Yusuf: 'Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?'\",\n      \"[2025-11-29T21:42:34+00:00] Ashraaz Nadeem Yusuf: 'Anyone there'\",\n      \"[2025-11-29T23:15:34+00:00] Ashraaz Nadeem Yusuf: 'Hi'\",\n      \"[2025-11-30T00:33:44+00:00] Ashraaz Nadeem Yusuf: 'Hello'\",\n      \"[2025-11-30T00:52:41+00:00] Ashraaz Nadeem Yusuf: 'Hi'\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The first human response acknowledges the customer's issue about the expired Kerio Control license for Rooster Poultry, showing context was understood. No evidence of asking for already-provided information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a 16.3-hour delay from initial customer contact to first human response, which is significant especially given the urgent nature of the ticket involving a total outage.\",\n    \"evidence\": [\n      \"[2025-11-29T21:03:39+00:00] Ashraaz Nadeem Yusuf: 'Hi. Iam the Manager IT from Rooster Poultry. Our license expired. Please issue us a temporary extension. Our services are down.'\",\n      \"[2025-11-30T13:19:12+00:00] Mike Kebede: 'Dear Ashraaz, Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry.'\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket shows status as closed, but Mike Kebede's response appears incomplete ('I understand the impact this') suggesting the message was cut off. The customer's last substantive message indicated they still required assistance, and there's no evidence of resolution.\",\n    \"evidence\": [\n      \"[2025-11-30T05:38:34+00:00] Ashraaz Nadeem Yusuf: 'we require your assistance'\",\n      \"[2025-11-30T13:19:12+00:00] Mike Kebede: 'Dear Ashraaz, Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry. I understand the impact this'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer explicitly stated 'total outage' and 'Our services are down' for an urgent priority ticket, yet waited over 16 hours for first human response with no evidence of immediate escalation or emergency handling procedures.\",\n    \"evidence\": [\n      \"[2025-11-29T21:03:39+00:00] Ashraaz Nadeem Yusuf: 'Our license expired. Please issue us a temporary extension. Our services are down.'\",\n      \"[2025-11-29T23:34:53+00:00] Ashraaz Nadeem Yusuf: 'We are facing total outage. Your assistance will be highly appreciated'\",\n      \"Time to first human response: 16.3 hours for urgent priority ticket\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60252864
+}

@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI responses being generic, incorrect, or making unfulfilled promises within the provided interaction.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The provided interaction does not show any evidence of the customer being stuck in an AI loop or repetitively providing the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication from the interaction that the AI ignored the customer's prior context or requested the same information multiple times.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The 'Max gap between responses' indicates zero-hour delay, so there were no significant response delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed and there is no indication that the customer was waiting for further information or gave up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is of normal priority and not categorized as a high-priority or outage issue, so there is no mishandling in terms of escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI responses being generic, incorrect, or making unfulfilled promises within the provided interaction.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided interaction does not show any evidence of the customer being stuck in an AI loop or repetitively providing the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication from the interaction that the AI ignored the customer's prior context or requested the same information multiple times.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The 'Max gap between responses' indicates zero-hour delay, so there were no significant response delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed and there is no indication that the customer was waiting for further information or gave up.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is of normal priority and not categorized as a high-priority or outage issue, so there is no mishandling in terms of escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60212281
+}

@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The interaction shown is only a generic transcript header and does not contain any substantive AI support guidance, claims, or promises that could be evaluated as wrong or unkept.",
+    "evidence": [
+      "[2025-10-27T16:22:12+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no back-and-forth shown and no repeated requests for the same information; only a single AI note referencing a prior chat transcript.",
+    "evidence": [
+      "[2025-10-27T16:22:12+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer-provided details, logs, or prior ticket references are present in the provided timeline, so there is no evidence support ignored context or re-asked for the same items.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The provided timeline contains only one interaction, and the metadata shows a max gap of 0.0 hours; there is no evidence of multi-day delays between interactions.",
+    "evidence": [
+      "[2025-10-27T16:22:12+00:00] (AI) ATLAS: \"Kayako - ticket id 60230003 // ATLAS commented privately:\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, the interaction log provided does not show any unresolved customer request, promised follow-up, or customer waiting when the ticket was closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/Sev1), and there is no troubleshooting content shown that would indicate mishandling of an outage-level incident.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction shown is only a generic transcript header and does not contain any substantive AI support guidance, claims, or promises that could be evaluated as wrong or unkept.\",\n    \"evidence\": [\n      \"[2025-10-27T16:22:12+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no back-and-forth shown and no repeated requests for the same information; only a single AI note referencing a prior chat transcript.\",\n    \"evidence\": [\n      \"[2025-10-27T16:22:12+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer-provided details, logs, or prior ticket references are present in the provided timeline, so there is no evidence support ignored context or re-asked for the same items.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided timeline contains only one interaction, and the metadata shows a max gap of 0.0 hours; there is no evidence of multi-day delays between interactions.\",\n    \"evidence\": [\n      \"[2025-10-27T16:22:12+00:00] (AI) ATLAS: \\\"Kayako - ticket id 60230003 // ATLAS commented privately:\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, the interaction log provided does not show any unresolved customer request, promised follow-up, or customer waiting when the ticket was closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/Sev1), and there is no troubleshooting content shown that would indicate mishandling of an outage-level incident.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60230003
+}

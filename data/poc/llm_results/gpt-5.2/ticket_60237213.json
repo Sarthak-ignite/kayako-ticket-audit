@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI/support-agent responses shown in the timeline, so there is no evidence of generic filler, incorrect info, or unkept promises by AI.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interaction log only includes a single customer message and no AI replies repeatedly requesting the same information or blocking human access.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support responses are present, so there is no evidence of the agent ignoring previously provided information or requesting the same logs/screenshots again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The provided timeline contains only one customer entry and no subsequent support replies to measure a multi-day gap; the metadata also indicates a 0.0-hour max gap between responses.",
+    "evidence": [
+      "[2025-11-06T08:30:23+00:00] (Customer) Emily: \"We had tried to reach out a few times now without a reply.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is marked closed, there is no evidence in the interaction timeline that support promised follow-up information or that closure happened while awaiting a promised response.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is normal priority (not P1/SEV1), and there are no support troubleshooting steps shown that would indicate mishandling of a high-severity outage.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI/support-agent responses shown in the timeline, so there is no evidence of generic filler, incorrect info, or unkept promises by AI.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction log only includes a single customer message and no AI replies repeatedly requesting the same information or blocking human access.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support responses are present, so there is no evidence of the agent ignoring previously provided information or requesting the same logs/screenshots again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided timeline contains only one customer entry and no subsequent support replies to measure a multi-day gap; the metadata also indicates a 0.0-hour max gap between responses.\",\n    \"evidence\": [\n      \"[2025-11-06T08:30:23+00:00] (Customer) Emily: \\\"We had tried to reach out a few times now without a reply.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is marked closed, there is no evidence in the interaction timeline that support promised follow-up information or that closure happened while awaiting a promised response.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is normal priority (not P1/SEV1), and there are no support troubleshooting steps shown that would indicate mishandling of a high-severity outage.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60237213
+}

@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI (ATLAS) response is an extremely generic action without addressing the customer's specific issue.",
+    "evidence": [
+      "[2025-10-13T08:47:26+00:00] ATLAS commented privately: Action: l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of AI repeatedly asking for the same information or preventing human interaction.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support representatives seem to be addressing the customer's specific image/URL issue and checking the referenced link.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer and support interactions, with multiple days passing between responses.",
+    "evidence": [
+      "Customer initial request: [2025-10-13T08:46:51+00:00]",
+      "Next support response: [2025-10-13T14:38:33+00:00]",
+      "Final customer follow-up: [2025-10-16T08:28:05+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been resolved with the customer acknowledging the support team's response.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is not a high-priority or severity 1 ticket, and the support team investigated the specific URL issue.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI (ATLAS) response is an extremely generic action without addressing the customer's specific issue.\",\n    \"evidence\": [\"[2025-10-13T08:47:26+00:00] ATLAS commented privately: Action: l1\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of AI repeatedly asking for the same information or preventing human interaction.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support representatives seem to be addressing the customer's specific image/URL issue and checking the referenced link.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer and support interactions, with multiple days passing between responses.\",\n    \"evidence\": [\n      \"Customer initial request: [2025-10-13T08:46:51+00:00]\",\n      \"Next support response: [2025-10-13T14:38:33+00:00]\",\n      \"Final customer follow-up: [2025-10-16T08:28:05+00:00]\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to have been resolved with the customer acknowledging the support team's response.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is not a high-priority or severity 1 ticket, and the support team investigated the specific URL issue.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The AI response is extremely minimal and unhelpful\n- There are noticeable delays between interactions (up to several days)\n- The support team did attempt to investigate the specific image/URL issue\n- The ticket was eventually closed with the customer's acknowledgment\n\nThe most prominent issues are the AI's poor quality response and the significant response delays.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60219661
+}

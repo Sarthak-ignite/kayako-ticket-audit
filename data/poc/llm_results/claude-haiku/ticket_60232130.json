@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are generic and non-substantive, repeatedly placing the ticket 'on hold' without adding value to the resolution process.",
+    "evidence": [
+      "[2025-12-17T09:02:25+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-12-16T13:25:13+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-12-16T01:54:05+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Multiple AI interactions are blocking human support, with repetitive 'on hold' actions preventing ticket progression.",
+    "evidence": [
+      "[2025-12-16T02:12:07+00:00] Cu Chulainn AI Manager: Playbook halted at Step 3",
+      "[2025-12-16T01:53:53+00:00] Carlos Encalada: We are still awaiting formal confirmation from the development team"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support team repeatedly discusses downgrade options without fully understanding the customer's current situation or actual needs.",
+    "evidence": [
+      "[2025-12-17T07:17:54+00:00] Udai Narayan Singh: Customer did downgrade on 7.5.4 that was saved",
+      "[2025-12-16T13:15:05+00:00] Randall Shawver: Thank you for confirming that you have downgraded to version 7.5.7",
+      "[2025-12-17T04:15:39+00:00] Santosh Shinde: Who said we have downgraded to version 7.5.7? No, we have not."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Large gaps between support interactions, with multiple days passing without substantive updates or resolution.",
+    "evidence": [
+      "Time between first and last interaction spans from 2025-12-15 to 2025-12-24",
+      "Max gap between responses: 174.0 hours",
+      "Time to first human response: 30.4 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket appears closed while customer is still seeking a resolution, with unaddressed concerns about system functionality.",
+    "evidence": [
+      "[2025-12-16T02:09:53+00:00] Udai Narayan Singh: This patience waiting time is getting over now and you are not ready to understand",
+      "[2025-12-16T01:44:38+00:00] Udai Narayan Singh: Customer already now not having trust"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "For an urgent ticket, support is not providing immediate, decisive action and is instead engaging in prolonged discussions about version downgrades.",
+    "evidence": [
+      "Ticket priority: urgent",
+      "[2025-12-15T13:22:46+00:00] Randall Shawver: We have requested an update from the development team",
+      "[2025-12-15T13:17:47Z] daniel-wachira: Heavy testing and validation is still ongoing for all 7.6"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are generic and non-substantive, repeatedly placing the ticket 'on hold' without adding value to the resolution process.\",\n    \"evidence\": [\n      \"[2025-12-17T09:02:25+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-12-16T13:25:13+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-12-16T01:54:05+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple AI interactions are blocking human support, with repetitive 'on hold' actions preventing ticket progression.\",\n    \"evidence\": [\n      \"[2025-12-16T02:12:07+00:00] Cu Chulainn AI Manager: Playbook halted at Step 3\",\n      \"[2025-12-16T01:53:53+00:00] Carlos Encalada: We are still awaiting formal confirmation from the development team\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support team repeatedly discusses downgrade options without fully understanding the customer's current situation or actual needs.\",\n    \"evidence\": [\n      \"[2025-12-17T07:17:54+00:00] Udai Narayan Singh: Customer did downgrade on 7.5.4 that was saved\",\n      \"[2025-12-16T13:15:05+00:00] Randall Shawver: Thank you for confirming that you have downgraded to version 7.5.7\",\n      \"[2025-12-17T04:15:39+00:00] Santosh Shinde: Who said we have downgraded to version 7.5.7? No, we have not.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Large gaps between support interactions, with multiple days passing without substantive updates or resolution.\",\n    \"evidence\": [\n      \"Time between first and last interaction spans from 2025-12-15 to 2025-12-24\",\n      \"Max gap between responses: 174.0 hours\",\n      \"Time to first human response: 30.4 hours\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket appears closed while customer is still seeking a resolution, with unaddressed concerns about system functionality.\",\n    \"evidence\": [\n      \"[2025-12-16T02:09:53+00:00] Udai Narayan Singh: This patience waiting time is getting over now and you are not ready to understand\",\n      \"[2025-12-16T01:44:38+00:00] Udai Narayan Singh: Customer already now not having trust\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"For an urgent ticket, support is not providing immediate, decisive action and is instead engaging in prolonged discussions about version downgrades.\",\n    \"evidence\": [\n      \"Ticket priority: urgent\",\n      \"[2025-12-15T13:22:46+00:00] Randall Shawver: We have requested an update from the development team\",\n      \"[2025-12-15T13:17:47Z] daniel-wachira: Heavy testing and validation is still ongoing for all 7.6\"\n    ]\n  }\n}\n```\n\nKey observations:\n1. The ticket demonstrates multiple support quality failures\n2. AI and human support seem disconnected and ineffective\n3. Customer's urgency and frustration are not being adequately addressed\n4. Significant communication gaps and misunderstandings exist\n5. The ticket lacks clear ownership and a concrete resolution path",
+  "_model": "claude-haiku",
+  "_ticket_id": 60232130
+}

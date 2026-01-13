@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses appear to be unhelpful filler that don't address the customer's piracy warning issue. Customer explicitly states they received no helpful feedback or license after following instructions.",
+    "evidence": [
+      "[2025-11-07T12:48:27+00:00] ADN Support: 'I did as asked, but I can't track the message I've sent properly. Would you mind keeping us posted?'",
+      "[2025-11-11T13:25:41+00:00] ADN Support: 'I have not received a licence or any helpful feedback. Are you actually working on this?'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer was stuck interacting with AI (ADN Support/ATLAS) for over 13 days before reaching a human, with no resolution provided. The 407.4 hours to first human response indicates a significant AI wall.",
+    "evidence": [
+      "[2025-11-07T12:48:27+00:00] ADN Support: 'I did as asked, but I can't track the message I've sent properly.'",
+      "[2025-11-11T13:25:41+00:00] ADN Support: 'I have not received a licence or any helpful feedback. Are you actually working on this?'",
+      "[2025-11-24T12:12:20+00:00] Ciprian Nastase: First human interaction after 407.4 hours"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is insufficient evidence in the visible interactions to determine if context was ignored. The earlier AI interactions are not shown in full to assess if information was repeated.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Massive delays between responses: 310.8 hours maximum gap, 407.4 hours to first human response. Customer waited 4 days between Nov 7 and Nov 11, then 13 more days until Nov 24 for human response.",
+    "evidence": [
+      "[2025-11-07T12:48:27+00:00] ADN Support interaction",
+      "[2025-11-11T13:25:41+00:00] ADN Support: 4-day gap - 'I have not received a licence or any helpful feedback.'",
+      "[2025-11-24T12:12:20+00:00] Ciprian Nastase: 13-day gap from previous customer message"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket is closed despite customer's last message expressing frustration about lack of progress and asking if anyone is working on it. Customer never received confirmation of resolution.",
+    "evidence": [
+      "[2025-11-11T13:25:41+00:00] ADN Support: 'I have not received a licence or any helpful feedback. Are you actually working on this?'",
+      "Status: closed - ticket closed without visible customer confirmation of resolution"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not P1/SEV1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses appear to be unhelpful filler that don't address the customer's piracy warning issue. Customer explicitly states they received no helpful feedback or license after following instructions.\",\n    \"evidence\": [\n      \"[2025-11-07T12:48:27+00:00] ADN Support: 'I did as asked, but I can't track the message I've sent properly. Would you mind keeping us posted?'\",\n      \"[2025-11-11T13:25:41+00:00] ADN Support: 'I have not received a licence or any helpful feedback. Are you actually working on this?'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer was stuck interacting with AI (ADN Support/ATLAS) for over 13 days before reaching a human, with no resolution provided. The 407.4 hours to first human response indicates a significant AI wall.\",\n    \"evidence\": [\n      \"[2025-11-07T12:48:27+00:00] ADN Support: 'I did as asked, but I can't track the message I've sent properly.'\",\n      \"[2025-11-11T13:25:41+00:00] ADN Support: 'I have not received a licence or any helpful feedback. Are you actually working on this?'\",\n      \"[2025-11-24T12:12:20+00:00] Ciprian Nastase: First human interaction after 407.4 hours\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient evidence in the visible interactions to determine if context was ignored. The earlier AI interactions are not shown in full to assess if information was repeated.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Massive delays between responses: 310.8 hours maximum gap, 407.4 hours to first human response. Customer waited 4 days between Nov 7 and Nov 11, then 13 more days until Nov 24 for human response.\",\n    \"evidence\": [\n      \"[2025-11-07T12:48:27+00:00] ADN Support interaction\",\n      \"[2025-11-11T13:25:41+00:00] ADN Support: 4-day gap - 'I have not received a licence or any helpful feedback.'\",\n      \"[2025-11-24T12:12:20+00:00] Ciprian Nastase: 13-day gap from previous customer message\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is closed despite customer's last message expressing frustration about lack of progress and asking if anyone is working on it. Customer never received confirmation of resolution.\",\n    \"evidence\": [\n      \"[2025-11-11T13:25:41+00:00] ADN Support: 'I have not received a licence or any helpful feedback. Are you actually working on this?'\",\n      \"Status: closed - ticket closed without visible customer confirmation of resolution\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not P1/SEV1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60238295
+}

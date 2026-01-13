@@ -1,0 +1,143 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_exinda_network_orchestrator",
+        "requester": {
+          "id": 60195788,
+          "uuid": "18686346-61d5-44ef-a61f-8f398d55f3dc",
+          "full_name": "Ian DeMoss",
+          "legacy_id": "13007975630738",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/18686346-61d5-44ef-a61f-8f398d55f3dc?1766943473",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60033857,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 197323,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "136.226.20.206",
+          "last_seen_at": "2025-12-15T21:34:36+00:00",
+          "last_active_at": "2025-12-28T17:37:53+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60195788",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@738c8fcd675bb04846a543dca8245ab421182553",
+          "password_updated_at": "2025-03-20T14:49:49+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2025-12-15T21:34:36+00:00",
+          "last_activity_at": "2025-12-15T21:34:36+00:00",
+          "created_at": "2023-08-10T19:52:04+00:00",
+          "updated_at": "2025-12-28T17:37:53+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60195788"
+        },
+        "ticket_idt": 60073150
+      },
+      "interactions": [
+        [
+          "2025-06-17T11:24:22+00:00",
+          "Kayako - ticket id 60073150 // Jozef Kacala commented privately:  hi guys, \n\n here https://github.com/trilogy-group/eng-maintenance/issues/9208 \n\n Daniel was providing a build with fix - was that ever shared with them? It is likely that that fix never got released\u00a0 as it was not confirmed. Please can you let me know? "
+        ],
+        [
+          "2025-06-15T12:05:35+00:00",
+          "Kayako - ticket id 60073150 // Keyur Saxena commented publicly: Hello Ian,\n\nThe only clustering-related bugfix I see in the release notes (Product Releases [https://gfi.ai/products-and-solutions/network-management-solutions/exinda-networkorchestrator/resources/documentation/product-releases]) is in 7.5.7:\n\"A bug was fixed where data could get corrupted when exindas were operating in High Availability mode, causing garbled records to appear in charts and reports.\"\n\nThere is no mention of a specific \"no policy\" bugfix.\n\nBest regards,\nKeyur Saxena\nGFI - Exinda Network Orchestrator Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-06-13T13:31:11+00:00",
+          "Kayako - ticket id 60073150 // Raditya Perdhevi commented privately: ITAR : Attachment not found"
+        ],
+        [
+          "2025-06-13T13:30:57+00:00",
+          "Kayako - ticket id 60073150 // Ian DeMoss commented publicly:  \n\nMarcio\n\n\u00a0\n\nCan you confirm that the 7.6.0 version fixes the \u2018no policy\u2019 bug that is shown when clustering is enabled between a pair of Exinda\u2019s?\n\n\u00a0\n\nThanks\n\n\u00a0\n\nIan DeMoss\n\nNetwork Engineer\n\nCell Phone (918) 931-8782\n\n\u00a0\n\nimage\n\n\u00a0\n\nCONFIDENTIALITY NOTICE:\u00a0 This e-mail message, including any attachments, is for the sole use of the intended recipient(s) and may contain Perspecta\u00a0 Internal or Perspecta\u00a0 Confidential information.\u00a0 Any unauthorized review, use, disclosure or distribution is prohibited.\u00a0 If you are not the intended recipient, please contact the sender by reply e-mail and destroy all copies of the original message.\n\n\u00a0\n\nPTO Days Planned: \n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-06-13T13:18:30+00:00",
+          "Kayako - ticket id 60073150 // Marcio Zimerman commented publicly: Hi Ian,\n\nThank you for contacting the Exinda Support Team.\n\nExinda version 7.6.0 is now available and includes a range of fixes and enhancements compared to version 7.5.5. We recommend reviewing the update details and considering the upgrade if it suits your environment.\nYou can find more information by visiting the following page:\u00a0https://upgrade.gfi.com/\n\nJust select Exinda as the product and 7.5.5 as the version to view the release details.\n\nLet us know if you have any questions or need assistance with the upgrade process.\n\nBest regards,\nMarcio Zimerman\nGFI - Exinda Network Orchestrator Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-06-10T20:59:39+00:00",
+          "Kayako - ticket id 60073150 // Raditya Perdhevi commented privately: ITAR : Attachment not found"
+        ],
+        [
+          "2025-06-10T20:59:29+00:00",
+          "Kayako - ticket id 60073150 // Ian DeMoss commented privately: Has there been any movement on generating an updated Exinda code version; where it resolves the 'no policy' bug that is currently affecting the 7.5.5 release?"
+        ],
+        [
+          "2025-06-10T14:35:55+00:00",
+          "Kayako - ticket id 60073150 // ATLAS commented privately: Action: Send to engineering"
+        ],
+        [
+          "2025-06-10T14:35:36+00:00",
+          "Kayako - ticket id 60073150 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Ian DeMoss ! \ud83d\udc4b\n\nThis is the GFI Exinda ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nIan DeMoss:\n\n undefined \nChat Support:\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of GFI Exinda ATLAS Support Chat [https://support.exinda.gfi.com/article/117917]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nIan DeMoss:\n\n raise a ticket \nChat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI4MTAzMThmMS04ZDFjLTQwMmItOTkxYS1jM2IyOTQ4OTcxNGEiLCJzZXNzaW9uX3VpZCI6IjgxMDMxOGYxLThkMWMtNDAyYi05OTFhLWMzYjI5NDg5NzE0YSIsImVtYWlsIjoiaWFuLmRlbW9zc0BwZXJhdG9uLmNvbSIsImN1c3RvbV9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoiYXVyZWFfZXhpbmRhX25ldHdvcmtfb3JjaGVzdHJhdG9yIiwicXVlcnkiOiIiLCJleHAiOjE3NDk1NzMxODd9.K9gd6-U2hRxCrCeCy16noxTg7ESSC_ubUQP_rZMQ6gQ]\n\nYou should see the following:\n- User: ian.demoss@peraton.com\n- Session ID: 810318f1-8d1c-402b-991a-c3b29489714a \nIan DeMoss:\n\n \ud83d\udd19 Continue without file upload \nChat Support:\n\n No problem, we can continue without any file uploads.\n\nTo raise a ticket and make sure our support team can help you as quickly as possible, could you please tell me a bit more about the issue you're experiencing with GFI Exinda? For example:\n- What specific problem or error are you seeing?\n- When did this start happening?\n- Have you tried any troubleshooting steps already?\n\nThe more details you can provide, the better! \nIan DeMoss:\n\n when will the no policy bug on the 7.5.5 exinda release be fixed \nChat Support:\n\n Thanks for your question! I checked the available release notes and documentation for Exinda 7.5.5, but I couldn't find any specific information about a fix or ETA for the no policy bug in this version.\n\nYou can review the official release notes here for more details: Exinda 7.5.5 Release Notes [https://support.exinda.gfi.com/article/121868] and Release Notes & Known Issues - Exinda [https://support.exinda.gfi.com/article/121879].\n\nIt seems I don't have enough information to address your concern accurately regarding when this particular bug will be fixed. Would you like me to connect you with a live support agent who can provide more up-to-date details or escalate your request to the product team? \nIan DeMoss:\n\n ticket \nChat Support:\n\n Absolutely, I can help get a ticket started for you!\n\nTo make sure our support team has all the details they need, could you please provide a bit more information about the no policy bug you're experiencing in Exinda 7.5.5? For example:\n- What exactly happens when you encounter the bug? (Any error messages or symptoms?)\n- When did you first notice this issue?\n- Are there any specific steps or actions that trigger the problem?\n- Have you tried any troubleshooting steps so far?\n\nThe more details you can share, the faster our team can investigate and assist you! \nIan DeMoss:\n\n ticket \nChat Support:\n\n Thanks for your request! A human colleague will be happy to assist you further\u2014please feel free to choose from the available options to connect with them. \ud83d\ude0a \nIan DeMoss:\n\n \ud83d\udce9 Raise a ticket \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nIan DeMoss:\n\n ticket \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nIan DeMoss:\n\n No additional email addresses required in CC \nChat Support:\n\n I'm creating a ticket for you with the information you've provided.\n\nTicket subject: No policy bug in Exinda 7.5.5 release\n\nAllow me a few moments while I work on this \u23f3 \nChat Support:\n\n \ud83d\ude80 I've successfully created a ticket for you.\n\nYour ticket number is: 60073150\n\nYou can see it and update it in this link [https://support.exinda.gfi.com/conversation/view/60073150]\n\nFor a faster resolution, please be sure to include and attach to the ticket all relevant context such as screenshots, recordings, and logs.\n\nOur agents will work on it and you will receive a response in your email \ud83d\udce8: ian.demoss@peraton.com "
+        ],
+        [
+          "2025-06-10T14:35:27+00:00",
+          "Kayako - ticket id 60073150 // ATLAS commented privately: --- Ticket generated by GFI Exinda AI chat on behalf of Ian DeMoss ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * raise a ticket<br>\n  * when will the no policy bug on the 7.5.5 exinda release be fixed<br>\n  * ticket<br>\n  * ticket<br>\n  * ticket<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 10,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

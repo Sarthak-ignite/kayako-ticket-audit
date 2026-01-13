@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only AI entry is a brief summary/record of the chat and does not contain incorrect facts, filler troubleshooting, or unfulfilled promises.",
+    "evidence": [
+      "[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI message and no repeated requests for the same information, so there is no evidence of the customer being stuck in an AI loop.",
+    "evidence": [
+      "[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No subsequent messages or follow-ups are present that would show the agent ignored previously provided information.",
+    "evidence": [
+      "[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Timeline shows only one AI entry with no gaps between responses (max gap reported as 0.0 hours), so there is no evidence of multi-day delays.",
+    "evidence": [
+      "[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is marked closed, there is no evidence in the interaction log that the customer was awaiting promised information or that they abandoned the ticket.",
+    "evidence": [
+      "[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication this was a P1/SEV1 outage ticket or that generic troubleshooting was applied; only a single AI summary message appears.",
+    "evidence": [
+      "[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only AI entry is a brief summary/record of the chat and does not contain incorrect facts, filler troubleshooting, or unfulfilled promises.\",\n    \"evidence\": [\n      \"[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\\n  <div>\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI message and no repeated requests for the same information, so there is no evidence of the customer being stuck in an AI loop.\",\n    \"evidence\": [\n      \"[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\\n  <div>\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No subsequent messages or follow-ups are present that would show the agent ignored previously provided information.\",\n    \"evidence\": [\n      \"[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\\n  <div>\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Timeline shows only one AI entry with no gaps between responses (max gap reported as 0.0 hours), so there is no evidence of multi-day delays.\",\n    \"evidence\": [\n      \"[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\\n  <div>\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked closed, there is no evidence in the interaction log that the customer was awaiting promised information or that they abandoned the ticket.\",\n    \"evidence\": [\n      \"[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\\n  <div>\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication this was a P1/SEV1 outage ticket or that generic troubleshooting was applied; only a single AI summary message appears.\",\n    \"evidence\": [\n      \"[2025-12-09T15:41:54+00:00] (AI) ATLAS: Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\\n  <div>\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60259640
+}

@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI response is somewhat generic and does not clearly commit to an internal fix/escalation, but there is no clear, unambiguous factual error, broken template, irrelevant troubleshooting, or an unfulfilled promise visible in the provided excerpt.",
+    "evidence": [
+      "AI provides general explanation of certificate warnings: \"This type of warning typically appears when a client detects that an SSL/TLS certificate is either expired or does not match expectations.\"",
+      "AI references a related KB article and suggests general guidance rather than making a specific promise or giving clearly incorrect product instructions."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only a single AI reply is shown. The customer does not ask for a human, and there is no repeated request for the same information or repeated AI loops.",
+    "evidence": [
+      "Only one ATLAS public response is present in the interaction log."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI does not ask the customer to re-provide information already given, and the customer does not state that support ignored prior details. The response addresses the certificate-warning context (even if broadly).",
+    "evidence": [
+      "Customer states: \"today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed?\"",
+      "AI responds on that topic: \"issue regarding the expired or changed certificate at https://redirects.gfikerioconnect.com/ and the resulting security warning\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The AI responded within the same minute; there is no 3+ day gap and no complaint about waiting.",
+    "evidence": [
+      "Customer timestamp: \"2025-10-29T08:27:13+00:00\"",
+      "ATLAS timestamp: \"2025-10-29T08:27:55+00:00\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication the ticket was closed, auto-closed, or closed while a request remained unanswered in the provided excerpt.",
+    "evidence": [
+      "No closure event or closing statement is shown in the interaction log."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer requests urgency (\"please fix this quickly!\") and mentions multiple users seeing warnings, but the ticket is not explicitly marked P1/SEV1/Critical and there is no explicit statement of outage/production down. The provided excerpt also does not show whether escalation occurred later.",
+    "evidence": [
+      "Customer urgency: \"please fix this quickly!\"",
+      "Impact described but not as an outage: \"This leads to a security message for users of the Kerio Connect Desktop Mail Client\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60231299
+}

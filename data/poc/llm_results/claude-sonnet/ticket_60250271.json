@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI (ATLAS and Cu Chulainn) only made procedural comments about skipping tickets due to tags or logging package operations, not substantive responses to customers that could be evaluated for quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The AI did not interact directly with the customer or create any barrier to reaching human support. Customer reached human support (Pavly Nashed) within 2.8 hours of ticket creation.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledged previous context appropriately. Pavly referenced the prior case (#60237228) and provided relevant troubleshooting based on the reported issue without asking for already-provided information.",
+    "evidence": [
+      "[2025-11-25T17:57:34+00:00] Pavly Nashed: 'I can confirm that the issue was previously resolved under case #60237228'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant 6-day delay (approximately 146 hours) between the final resolution on November 27th and the customer's response on December 3rd confirming closure, matching the max gap metric of 146.2 hours.",
+    "evidence": [
+      "[2025-11-27T14:32:53+00:00] Pavly Nashed: 'We remain at your disposal should you encounter any further issues.'",
+      "[2025-12-03T16:42:28+00:00] Erika Heredia: 'Hello, We can close this ticket.'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed only after the customer explicitly requested closure, stating 'We can close this ticket. Thank you for all your help!' No premature closure occurred.",
+    "evidence": [
+      "[2025-12-03T16:42:28+00:00] Erika Heredia: 'We can close this ticket. Thank you for all your help!'",
+      "[2025-12-03T16:42:39+00:00] Phronesis: 'As requested, we are closing this ticket.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This was a normal priority ticket, not P1/SEV1. The troubleshooting steps provided (clearing cache/cookies, incognito mode) were appropriate for a login access issue.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI (ATLAS and Cu Chulainn) only made procedural comments about skipping tickets due to tags or logging package operations, not substantive responses to customers that could be evaluated for quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not interact directly with the customer or create any barrier to reaching human support. Customer reached human support (Pavly Nashed) within 2.8 hours of ticket creation.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support acknowledged previous context appropriately. Pavly referenced the prior case (#60237228) and provided relevant troubleshooting based on the reported issue without asking for already-provided information.\",\n    \"evidence\": [\"[2025-11-25T17:57:34+00:00] Pavly Nashed: 'I can confirm that the issue was previously resolved under case #60237228'\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant 6-day delay (approximately 146 hours) between the final resolution on November 27th and the customer's response on December 3rd confirming closure, matching the max gap metric of 146.2 hours.\",\n    \"evidence\": [\"[2025-11-27T14:32:53+00:00] Pavly Nashed: 'We remain at your disposal should you encounter any further issues.'\", \"[2025-12-03T16:42:28+00:00] Erika Heredia: 'Hello, We can close this ticket.'\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed only after the customer explicitly requested closure, stating 'We can close this ticket. Thank you for all your help!' No premature closure occurred.\",\n    \"evidence\": [\"[2025-12-03T16:42:28+00:00] Erika Heredia: 'We can close this ticket. Thank you for all your help!'\", \"[2025-12-03T16:42:39+00:00] Phronesis: 'As requested, we are closing this ticket.'\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This was a normal priority ticket, not P1/SEV1. The troubleshooting steps provided (clearing cache/cookies, incognito mode) were appropriate for a login access issue.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60250271
+}

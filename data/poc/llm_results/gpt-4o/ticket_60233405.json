@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The interactions don't provide enough information to determine if the AI provided generic filler or incorrect information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer getting stuck in a loop with the AI, as there is only one recorded interaction.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no information indicating that previously provided context or information is being ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no indication of response delays as the max gap between responses is 0 hours.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence that the ticket was closed prematurely as there is no indication of pending customer requests.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is marked as low priority, hence does not qualify for a P1/SEV1 mishandling analysis.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions don't provide enough information to determine if the AI provided generic filler or incorrect information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer getting stuck in a loop with the AI, as there is only one recorded interaction.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no information indicating that previously provided context or information is being ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication of response delays as the max gap between responses is 0 hours.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the ticket was closed prematurely as there is no indication of pending customer requests.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is marked as low priority, hence does not qualify for a P1/SEV1 mishandling analysis.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60233405
+}

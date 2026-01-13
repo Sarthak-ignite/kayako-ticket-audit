@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI only performed administrative actions (placing ticket on hold and splitting the ticket). No evidence of AI providing incorrect information or making unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was not stuck in an AI loop. The ticket was handled by a human (Andriy) from the beginning, and the customer reached a human without any AI-imposed barriers.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support agent acknowledged this was related to a previous ticket and actively referenced it. No evidence of asking for already-provided information.",
+    "evidence": [
+      "[2025-11-24T10:19:33+00:00] Andriy Rybalchenko: Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a 67.5-hour delay before the first human response to the ticket (which was split on Nov 21 but first human response was Nov 24). Additionally, there was a gap from Nov 24 to Nov 26 with customer follow-up needed.",
+    "evidence": [
+      "Time to first human: 67.5 hours",
+      "[2025-11-21T14:50:44+00:00] Ticket split",
+      "[2025-11-24T10:19:33+00:00] First human response from Andriy",
+      "[2025-11-25T22:24:20+00:00] Antonio: Would like to follow-up this request"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket shows as closed status, but the last message from the agent appears incomplete/truncated and directs customer to sales without confirming resolution. The customer was waiting for information from the Product VP.",
+    "evidence": [
+      "[2025-11-26T09:56:08+00:00] Andriy: We've received an update from the Product VP. Please reach out directly to sales@ignitetech.com to proceed with the [message appears cut off]",
+      "Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket about migration information, not a P1/SEV1 outage scenario. The pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI only performed administrative actions (placing ticket on hold and splitting the ticket). No evidence of AI providing incorrect information or making unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer was not stuck in an AI loop. The ticket was handled by a human (Andriy) from the beginning, and the customer reached a human without any AI-imposed barriers.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support agent acknowledged this was related to a previous ticket and actively referenced it. No evidence of asking for already-provided information.\",\n    \"evidence\": [\"[2025-11-24T10:19:33+00:00] Andriy Rybalchenko: Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a 67.5-hour delay before the first human response to the ticket (which was split on Nov 21 but first human response was Nov 24). Additionally, there was a gap from Nov 24 to Nov 26 with customer follow-up needed.\",\n    \"evidence\": [\"Time to first human: 67.5 hours\", \"[2025-11-21T14:50:44+00:00] Ticket split\", \"[2025-11-24T10:19:33+00:00] First human response from Andriy\", \"[2025-11-25T22:24:20+00:00] Antonio: Would like to follow-up this request\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket shows as closed status, but the last message from the agent appears incomplete/truncated and directs customer to sales without confirming resolution. The customer was waiting for information from the Product VP.\",\n    \"evidence\": [\"[2025-11-26T09:56:08+00:00] Andriy: We've received an update from the Product VP. Please reach out directly to sales@ignitetech.com to proceed with the [message appears cut off]\", \"Status: closed\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket about migration information, not a P1/SEV1 outage scenario. The pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60248265
+}

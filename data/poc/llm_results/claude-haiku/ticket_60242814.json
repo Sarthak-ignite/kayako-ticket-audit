@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI interaction appears incomplete and truncated, with a generic initial greeting that doesn't resolve the customer's specific issue about porting phone numbers.",
+    "evidence": [
+      "[2025-11-13T22:15:08+00:00] Hi, Michael Healy ! \ud83d\udc4b This is the GFI FaxM..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There's no evidence of the customer being trapped in a repetitive AI interaction.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support representatives do not consistently acknowledge the customer's previous context about porting numbers and retirement.",
+    "evidence": [
+      "[2025-11-18T21:45:39+00:00] Michael Healy: Hello, I still have not received an answer to my question.",
+      "[2025-11-30T22:38:09+00:00] Carlos Encalada: Thank you for your patience, and I apologize for the delay in providing a clear answer to your question."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer inquiries and support responses, with delays of several days to over a week.",
+    "evidence": [
+      "Time between [2025-11-13T22:15:08+00:00] and [2025-11-30T22:38:09+00:00] is approximately 17 days",
+      "Customer repeatedly asks: '[2025-11-18T21:45:39+00:00] Hello, I still have not received an answer to my question.'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed without fully addressing the customer's original question about porting numbers, and the customer had to repeatedly follow up.",
+    "evidence": [
+      "[2025-12-09T19:20:09+00:00] Carlos Encalada: 'Thank you for the update. We wish you all the best in your retirement and future endeavors.'",
+      "Ticket status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not appear to be a P1/Severity 1 issue related to an outage or critical system failure.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI interaction appears incomplete and truncated, with a generic initial greeting that doesn't resolve the customer's specific issue about porting phone numbers.\",\n    \"evidence\": [\n      \"[2025-11-13T22:15:08+00:00] Hi, Michael Healy ! \ud83d\udc4b This is the GFI FaxM...\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There's no evidence of the customer being trapped in a repetitive AI interaction.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support representatives do not consistently acknowledge the customer's previous context about porting numbers and retirement.\",\n    \"evidence\": [\n      \"[2025-11-18T21:45:39+00:00] Michael Healy: Hello, I still have not received an answer to my question.\",\n      \"[2025-11-30T22:38:09+00:00] Carlos Encalada: Thank you for your patience, and I apologize for the delay in providing a clear answer to your question.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer inquiries and support responses, with delays of several days to over a week.\",\n    \"evidence\": [\n      \"Time between [2025-11-13T22:15:08+00:00] and [2025-11-30T22:38:09+00:00] is approximately 17 days\",\n      \"Customer repeatedly asks: '[2025-11-18T21:45:39+00:00] Hello, I still have not received an answer to my question.'\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed without fully addressing the customer's original question about porting numbers, and the customer had to repeatedly follow up.\",\n    \"evidence\": [\n      \"[2025-12-09T19:20:09+00:00] Carlos Encalada: 'Thank you for the update. We wish you all the best in your retirement and future endeavors.'\",\n      \"Ticket status: closed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not appear to be a P1/Severity 1 issue related to an outage or critical system failure.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- Significant response delays (17 days between initial inquiry and substantive response)\n- Incomplete AI and human support interactions\n- Ticket prematurely closed without resolving customer's specific request about number porting\n- Lack of consistent context tracking across interactions",
+  "_model": "claude-haiku",
+  "_ticket_id": 60242814
+}

@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The automated agent repeatedly used generic/placeholder actions (placing the ticket on hold for an absurd duration) and playbook halt messages instead of providing useful, actionable updates.",
+    "evidence": [
+      "\"Placing on hold for 9999 hour(s)\" [2025-12-17T09:02:25+00:00]",
+      "\"Placing on hold for 9999 hour(s)\" [2025-12-16T13:25:13+00:00]",
+      "\"===== Operation Summary ===== 1. Playbook halted at Step 3. DS for Escalated Issue (only GHI!) is valid: ...\" [2025-12-16T02:12:07+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI repeatedly requested the same information or prevented escalation \u2014 the interactions show human agents engaging and engineering involvement rather than the customer being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support staff repeatedly acted as if the customer had downgraded to 7.5.7 despite the customer explicitly denying that, indicating they ignored or misread the customer's statement.",
+    "evidence": [
+      "\"Thank you for confirming that you have downgraded to version 7.5.7.\" [2025-12-16T13:25:03+00:00]",
+      "\"Who said we have downgraded to version 7.5.7 ? No, we have not.\" [2025-12-16T04:15:39+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows long response gaps and metrics indicating slow handling (time to first human > 30 hours and a max gap of several days), which is significant for an urgent ticket.",
+    "evidence": [
+      "Time to first human (hours): 30.4",
+      "Max gap between responses (hours): 174.0",
+      "Long gap between interactions: message at [2025-12-17T09:02:25+00:00] and a later human comment at [2025-12-24T15:01:08+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no clear evidence in the log that the ticket was closed while the customer was explicitly still awaiting promised information or that the customer gave up; closure is noted but no direct quoting shows the customer complaining about premature closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket was marked urgent, agents engaged engineering and suggested downgrades/release notes rather than only offering superficial troubleshooting; there is no clear evidence they limited responses to generic end-user steps instead of escalating.",
+    "evidence": [
+      "\"I spoke with engineering team and we are suggesting to downgrade to version 7.5.7...\" [2025-12-16T13:01:50+00:00]",
+      "\"Engineering has provided an experimental test build that includes additional...\" [2025-12-24T15:01:08+00:00]"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The automated agent repeatedly used generic/placeholder actions (placing the ticket on hold for an absurd duration) and playbook halt messages instead of providing useful, actionable updates.\",\n    \"evidence\": [\n      \"\\\"Placing on hold for 9999 hour(s)\\\" [2025-12-17T09:02:25+00:00]\",\n      \"\\\"Placing on hold for 9999 hour(s)\\\" [2025-12-16T13:25:13+00:00]\",\n      \"\\\"===== Operation Summary ===== 1. Playbook halted at Step 3. DS for Escalated Issue (only GHI!) is valid: ...\\\" [2025-12-16T02:12:07+00:00]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI repeatedly requested the same information or prevented escalation \u2014 the interactions show human agents engaging and engineering involvement rather than the customer being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support staff repeatedly acted as if the customer had downgraded to 7.5.7 despite the customer explicitly denying that, indicating they ignored or misread the customer's statement.\",\n    \"evidence\": [\n      \"\\\"Thank you for confirming that you have downgraded to version 7.5.7.\\\" [2025-12-16T13:25:03+00:00]\",\n      \"\\\"Who said we have downgraded to version 7.5.7 ? No, we have not.\\\" [2025-12-16T04:15:39+00:00]\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket shows long response gaps and metrics indicating slow handling (time to first human > 30 hours and a max gap of several days), which is significant for an urgent ticket.\",\n    \"evidence\": [\n      \"Time to first human (hours): 30.4\",\n      \"Max gap between responses (hours): 174.0\",\n      \"Long gap between interactions: message at [2025-12-17T09:02:25+00:00] and a later human comment at [2025-12-24T15:01:08+00:00]\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence in the log that the ticket was closed while the customer was explicitly still awaiting promised information or that the customer gave up; closure is noted but no direct quoting shows the customer complaining about premature closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket was marked urgent, agents engaged engineering and suggested downgrades/release notes rather than only offering superficial troubleshooting; there is no clear evidence they limited responses to generic end-user steps instead of escalating.\",\n    \"evidence\": [\n      \"\\\"I spoke with engineering team and we are suggesting to downgrade to version 7.5.7...\\\" [2025-12-16T13:01:50+00:00]\",\n      \"\\\"Engineering has provided an experimental test build that includes additional...\\\" [2025-12-24T15:01:08+00:00]\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60232130
+}

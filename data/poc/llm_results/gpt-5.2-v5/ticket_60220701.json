@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ATLAS interaction shown is limited to requesting more detail/log uploads and does not contain clear incorrect guidance, broken templates, or customer complaints about AI quality.",
+    "evidence": [
+      "ATLAS: \"Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\"",
+      "ATLAS: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer was stuck in an AI loop or unable to reach a human; subsequent handling and troubleshooting is done by human agents in public replies.",
+    "evidence": [
+      "Randall Shawver (public): \"To properly resolve this recurring issue, I need you to run the following commands and provide the output:\"",
+      "Syed Haider (public): \"Please join me for your scheduled meeting using this link\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledges the issue is recurring and references the prior ticket. While the customer requested a shell key after one was previously included, support resent a new key rather than repeatedly asking for already-provided information.",
+    "evidence": [
+      "Randall Shawver (public): \"Thank you for the follow-up. I can see from your previous diagnostics that this is a recurring issue\"",
+      "Randall Shawver (public): \"I am resending this last response, which did include the shell unlock key. I am sending a new key.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple customer-facing signals of delayed response, including customer follow-ups asking for updates and an explicit support apology for delayed response. There are also multi-day gaps between customer requests and staff replies.",
+    "evidence": [
+      "Monyah Aladeli (public, 2025-10-26): \"Please any update here? Can you provide the below request ASAP.\"",
+      "Syed Haider (public, 2025-11-04): \"I sincerely apologize for the delayed response on this ticket.\"",
+      "Customer (public, 2025-10-23): \"Please provide us with the shell license key to execute these commands.\"",
+      "Randall Shawver (public, 2025-10-27): \"I am resending this last response, which did include the shell unlock key. I am sending a new key.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket includes an auto-closure warning ('stay open for one week unless...'), the text does not show the ticket actually being closed while the customer still had unresolved requests.",
+    "evidence": [
+      "Randall Shawver (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Randall Shawver (public): \"We will write to you again to remind you.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer expresses urgency, but there is no explicit P1/SEV1/outage/production-down statement. Support engaged with troubleshooting and scheduled a live session; the record does not clearly show a high-severity process being mishandled.",
+    "evidence": [
+      "Monyah Aladeli (public): \"We are at critical stage and must expediate all the tasks and activities\"",
+      "Syed Haider (public): \"During our session, we observed that the appliance was running slowly... we performed the following actions\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60220701
+}

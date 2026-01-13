@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI response appears appropriate - it confirms that a requested report has been attached and provided a professional closing. No evidence of generic filler or incorrect information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only two interactions exist and they are initial automation messages. No evidence of repetitive requests or customer being trapped in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Insufficient interaction history to assess whether context was ignored. The public response appropriately addresses what appears to be a report request.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The two interactions occur within seconds of each other (2025-12-16T08:00:55 and 08:00:53). No delays between interactions are present.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket is marked as closed with no human interaction ever occurring (time to first human is 'nan'). The only interactions are automated responses, and the ticket was closed without any actual support agent engagement or customer confirmation that the issue was resolved.",
+    "evidence": [
+      "Status: closed",
+      "Time to first human (hours): nan",
+      "All interactions are from 'Kayako Automations' with no human agent responses"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is marked as 'normal' priority, not P1/SEV1. This pattern does not apply to normal priority tickets.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI response appears appropriate - it confirms that a requested report has been attached and provided a professional closing. No evidence of generic filler or incorrect information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Only two interactions exist and they are initial automation messages. No evidence of repetitive requests or customer being trapped in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction history to assess whether context was ignored. The public response appropriately addresses what appears to be a report request.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The two interactions occur within seconds of each other (2025-12-16T08:00:55 and 08:00:53). No delays between interactions are present.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is marked as closed with no human interaction ever occurring (time to first human is 'nan'). The only interactions are automated responses, and the ticket was closed without any actual support agent engagement or customer confirmation that the issue was resolved.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"Time to first human (hours): nan\",\n      \"All interactions are from 'Kayako Automations' with no human agent responses\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is marked as 'normal' priority, not P1/SEV1. This pattern does not apply to normal priority tickets.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60264202
+}

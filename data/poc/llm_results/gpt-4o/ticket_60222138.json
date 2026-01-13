@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no mention of AI responses being used or their quality being questioned.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not mention issues getting stuck in an AI loop or difficulty reaching a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence that the support team ignored the context provided by the customer as there is limited interaction data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The provided interaction does not indicate a delay, as there is only a single message from the customer.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed despite the customer requesting it to be reopened.",
+    "evidence": [
+      "[2025-10-15T21:23:16+00:00] (Customer) Need this ticket reopened."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication that this was a high-priority or outage ticket.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no mention of AI responses being used or their quality being questioned.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer does not mention issues getting stuck in an AI loop or difficulty reaching a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the support team ignored the context provided by the customer as there is limited interaction data.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided interaction does not indicate a delay, as there is only a single message from the customer.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed despite the customer requesting it to be reopened.\",\n    \"evidence\": [\"[2025-10-15T21:23:16+00:00] (Customer) Need this ticket reopened.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that this was a high-priority or outage ticket.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60222138
+}

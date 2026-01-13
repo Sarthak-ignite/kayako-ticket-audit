@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS interaction is only a transcript of the initial intake and contains no specific guidance or promises that can be evaluated as incorrect or unfulfilled. No customer statement indicates AI was wrong/unhelpful.",
+    "evidence": [
+      "\u201cHere is a transcript of the customer's recent interaction with ATLAS chat:\u201d (shows only intake context; no solution provided)",
+      "\u201c--- Customer (Michael Healy) --- ... My question: Is it possible to please port our numbers back to us...\u201d (no AI answer shown)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence the customer requested a human and was refused, no repeated AI requests for the same information, and no multiple consecutive AI turns trapping the customer.",
+    "evidence": [
+      "ATLAS transcript shows a single customer description followed by \u201cAction: l1\u201d (handoff), with no looping questions visible."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support\u2019s response on 2025-11-30 directly addresses the customer\u2019s port-out question, eligibility, timing, initiation process, and fees. No clear instance of support asking for already-provided info or repeating steps after the customer said they already did them.",
+    "evidence": [
+      "Customer: \u201cIs it possible to please port our numbers back to us. If there is a fee, how much would that be?\u201d",
+      "Support: \u201cYes \u2014 it is possible to port your fax numbers away... Port-outs... are always initiated by your new carrier... There is no fee from GFI/FaxMaker Online to port your numbers out.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps (3+ days) between customer messages and support responses, and the customer explicitly complains about waiting. Support also apologizes for the delay.",
+    "evidence": [
+      "Customer initial request: [2025-11-13T22:15:03+00:00] asking about porting numbers out and fees",
+      "Customer follow-up complaint: [2025-11-18T21:45:39+00:00] \u201cHello, I still have not received an answer to my question.\u201d",
+      "Support response much later: [2025-11-30T22:38:09+00:00] (first substantive answer) including \u201cI apologize for the delay in providing a clear answer to your question.\u201d",
+      "Additional delay: [2025-12-01T19:55:51+00:00] Darrell asks how to see the ticket; support replies [2025-12-07T22:09:33+00:00] (6+ days later)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence the ticket was closed while an unanswered question was pending. Agent messages mention an auto-closure timeline, but the thread continues and no closure event is shown. The customer\u2019s main question was answered on 2025-11-30.",
+    "evidence": [
+      "Support provided the requested answer on porting and fees on [2025-11-30T22:38:09+00:00].",
+      "Agents state: \u201cThis ticket will stay open for one week unless you reply with 'This ticket can be closed'...\u201d (no explicit closure shown afterward)."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is an administrative/porting inquiry for a future migration (early summer 2026). No explicit P1/SEV1/Critical marker, outage, or production-down impact is described.",
+    "evidence": [
+      "Customer: \u201cIn the early summer 2026... we will be migrating... we will not need the GFI service once we cut over.\u201d (future planning, not an outage)"
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60242814
+}

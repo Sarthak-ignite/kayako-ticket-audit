@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI responses visible in the ticket interactions to evaluate for quality issues.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI interaction or looping. The single message is from the customer requesting ticket reopening.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support responses are present in the visible interactions to evaluate whether context was ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is only one customer message with no subsequent interactions shown, so delays cannot be assessed from the available data.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket status is 'closed' but the customer's last message explicitly requests the ticket be reopened, indicating the ticket was closed before addressing the customer's needs.",
+    "evidence": [
+      "[2025-10-15T21:23:16+00:00] Brandon Heugly: 'Need this ticket reopened.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is marked as 'normal', not P1/Sev1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI responses visible in the ticket interactions to evaluate for quality issues.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI interaction or looping. The single message is from the customer requesting ticket reopening.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support responses are present in the visible interactions to evaluate whether context was ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one customer message with no subsequent interactions shown, so delays cannot be assessed from the available data.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket status is 'closed' but the customer's last message explicitly requests the ticket be reopened, indicating the ticket was closed before addressing the customer's needs.\",\n    \"evidence\": [\"[2025-10-15T21:23:16+00:00] Brandon Heugly: 'Need this ticket reopened.'\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is marked as 'normal', not P1/Sev1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60222138
+}

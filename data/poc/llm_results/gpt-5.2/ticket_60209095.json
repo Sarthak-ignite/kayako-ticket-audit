@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI automation repeatedly places the ticket on hold for an extreme duration (9999 hours), which is non-actionable and contributes to the lack of progress/updates.",
+    "evidence": [
+      "[2026-01-05T10:55:52+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2026-01-05T10:39:47+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2026-01-03T19:43:33+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2026-01-02T23:20:26+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-12-31T11:23:50+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence of the AI repeatedly asking the customer for the same information or preventing escalation to a human; humans are responding in the thread.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The provided excerpts do not show support asking again for the same logs/screenshots or ignoring specific information already shared; much of the human replies are truncated, limiting confirmation.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows extremely long response delays consistent with the metadata (time to first human ~864.8 hours; max gap ~657 hours), indicating multi-day/week gaps between interactions.",
+    "evidence": [
+      "Time to first human (hours): 864.8",
+      "Max gap between responses (hours): 657.0",
+      "[2025-12-31T11:23:39+00:00] (Employee) Syed Haider: \"Dear Sajeedali and Vaibhav, Thank you for your patience. We are still reviewing...\"",
+      "[2026-01-02T10:56:22+00:00] (Customer) Sajeedali Kazi: \"Kindly proceed with this history only...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket status is 'hold' and there is no evidence in the timeline that it was closed/resolved while the customer was waiting.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket is high priority, the visible responses indicate escalation to development rather than generic end-user troubleshooting; no clear 'cache/VPN/firewall' style guidance is shown.",
+    "evidence": [
+      "[2026-01-03T19:43:22+00:00] (Employee) Carlos Encalada: \"We want to let you know that this issue has now been escalated and is actively being investigated by our development\"",
+      "[2026-01-05T10:39:28+00:00] (Employee) Andriy Rybalchenko: \"The issue is still with the Development team.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI automation repeatedly places the ticket on hold for an extreme duration (9999 hours), which is non-actionable and contributes to the lack of progress/updates.\",\n    \"evidence\": [\n      \"[2026-01-05T10:55:52+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2026-01-05T10:39:47+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2026-01-03T19:43:33+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2026-01-02T23:20:26+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-12-31T11:23:50+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence of the AI repeatedly asking the customer for the same information or preventing escalation to a human; humans are responding in the thread.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided excerpts do not show support asking again for the same logs/screenshots or ignoring specific information already shared; much of the human replies are truncated, limiting confirmation.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket shows extremely long response delays consistent with the metadata (time to first human ~864.8 hours; max gap ~657 hours), indicating multi-day/week gaps between interactions.\",\n    \"evidence\": [\n      \"Time to first human (hours): 864.8\",\n      \"Max gap between responses (hours): 657.0\",\n      \"[2025-12-31T11:23:39+00:00] (Employee) Syed Haider: \\\"Dear Sajeedali and Vaibhav, Thank you for your patience. We are still reviewing...\\\"\",\n      \"[2026-01-02T10:56:22+00:00] (Customer) Sajeedali Kazi: \\\"Kindly proceed with this history only...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket status is 'hold' and there is no evidence in the timeline that it was closed/resolved while the customer was waiting.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is high priority, the visible responses indicate escalation to development rather than generic end-user troubleshooting; no clear 'cache/VPN/firewall' style guidance is shown.\",\n    \"evidence\": [\n      \"[2026-01-03T19:43:22+00:00] (Employee) Carlos Encalada: \\\"We want to let you know that this issue has now been escalated and is actively being investigated by our development\\\"\",\n      \"[2026-01-05T10:39:28+00:00] (Employee) Andriy Rybalchenko: \\\"The issue is still with the Development team.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60209095
+}

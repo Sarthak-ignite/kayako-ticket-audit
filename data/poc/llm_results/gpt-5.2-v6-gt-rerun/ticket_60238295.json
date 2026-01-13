@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is an internal note from \u201cATLAS\u201d but no visible AI-generated customer-facing content, nor clear evidence of incorrect or misleading AI responses. The main problem appears to be response delay and process/ownership, not AI response quality.",
+    "evidence": [
+      "Kayako - ticket id 60238295 // ATLAS commented privately: Action: l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer expresses frustration and asks if support is working on the case, but there is no explicit indication they were trapped in an AI loop, repeatedly receiving automated replies, or requesting a human agent.",
+    "evidence": [
+      "Customer: \"Are you actually working on this?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly states they cannot properly track the message they sent, but the eventual response focuses on license procurement steps and does not address the tracking/conversation issue. This suggests at least partial non-acknowledgment of the specific problem raised in this ticket thread.",
+    "evidence": [
+      "Customer: \"I did as asked, but I can't track the message I've sent properly.\"",
+      "Agent: \"As previously indicated, the support team is unable to help with obtaining new licenses or adjusting any other license...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a very large gap between the customer's messages (Nov 7 and Nov 11) and the first substantive agent reply (Nov 24). The customer also complains about not receiving feedback, and the agent apologizes for the delay; CSV timings support long response and resolution times.",
+    "evidence": [
+      "Customer (2025-11-11): \"I have not received a licence or any helpful feedback.\"",
+      "Customer (2025-11-11): \"Are you actually working on this?\"",
+      "Agent (2025-11-24): \"Please accept my sincere apologies for the delay in getting back to you\"",
+      "Agent (2025-11-24): \"since the ticket was raised via email follow-up, it attained a low priority.\"",
+      "CSV: initialResponseTime=85320",
+      "CSV: resolutionTime=1466833"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed shortly after the agent\u2019s message that mainly redirects the customer to another team/portal and suggests trying a different email, without confirmation that the customer\u2019s issue is resolved. This closure may therefore have occurred while the customer still needed help (some uncertainty because no post-response customer update is shown).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-27 12:35:32",
+      "Agent: \"the correct avenue for solving this would be contacting the GFI Customer Care team here: https://customercare.gfi.com/hc/en-us/requests/new.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The described issue concerns a trial license piracy warning and trial re-issuance steps, which does not indicate an outage or severe service impact requiring P1/Sev1 handling. No evidence of urgent business-critical impact or missed emergency escalation is present.",
+    "evidence": [
+      "Private note: \"so the issue is a piracy warning that the customer is getting for trial license  10512-Z56RC-71G7M\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60238295
+}

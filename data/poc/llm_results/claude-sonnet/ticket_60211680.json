@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI (ATLAS) appropriately recognized its limitations and escalated to human support. No evidence of wrong information or unkept promises from AI.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer was able to bypass ATLAS immediately after one interaction, stating they needed further assistance. The escalation to human support happened without looping or repeated information requests.",
+    "evidence": [
+      "[2025-10-01T16:35:30] Customer: Hello, I needed further assistance than StreetSmart ATLAS could provide. Could you assist me?"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Alexandr asked customer to access a Company ID (102817) that was not theirs, despite customer having already specified their Company ID (104983) in the original request. This shows lack of attention to customer-provided context.",
+    "evidence": [
+      "[2025-10-01T16:36:19] Customer: Please add 7868153707 to Company ID 104983",
+      "[2025-10-03T04:04:35] Alexandr: We have checked and found that the number 7868153707 is assigned to the 102817 COID, which you can access at...",
+      "[2025-10-03T09:34:36] Customer: 102817 is not our company ID so I do not have the login for it. 7868153707 is our number which needs to b"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple significant delays: 35.3 hours to first human response, 147.6 hour maximum gap, and 6+ days from escalation (Oct 9) to customer closing ticket (Oct 10). Customer also escalated after waiting over a week.",
+    "evidence": [
+      "Time to first human: 35.3 hours",
+      "Max gap between responses: 147.6 hours",
+      "[2025-10-09T13:12:00] AI: The customer escalated the Case. The customer message is: Request has been opened over a week"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer explicitly requested closure after the issue was resolved. The resolution was confirmed and customer initiated the closure themselves.",
+    "evidence": [
+      "[2025-10-10T15:48:46] Customer: This ticket can be closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While this is a high-priority ticket, it involves a device configuration request (adding a phone number to a company ID), not an outage requiring immediate escalation. The handling approach appears appropriate for the issue type.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI (ATLAS) appropriately recognized its limitations and escalated to human support. No evidence of wrong information or unkept promises from AI.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer was able to bypass ATLAS immediately after one interaction, stating they needed further assistance. The escalation to human support happened without looping or repeated information requests.\",\n    \"evidence\": [\"[2025-10-01T16:35:30] Customer: Hello, I needed further assistance than StreetSmart ATLAS could provide. Could you assist me?\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Alexandr asked customer to access a Company ID (102817) that was not theirs, despite customer having already specified their Company ID (104983) in the original request. This shows lack of attention to customer-provided context.\",\n    \"evidence\": [\"[2025-10-01T16:36:19] Customer: Please add 7868153707 to Company ID 104983\", \"[2025-10-03T04:04:35] Alexandr: We have checked and found that the number 7868153707 is assigned to the 102817 COID, which you can access at...\", \"[2025-10-03T09:34:36] Customer: 102817 is not our company ID so I do not have the login for it. 7868153707 is our number which needs to b\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple significant delays: 35.3 hours to first human response, 147.6 hour maximum gap, and 6+ days from escalation (Oct 9) to customer closing ticket (Oct 10). Customer also escalated after waiting over a week.\",\n    \"evidence\": [\"Time to first human: 35.3 hours\", \"Max gap between responses: 147.6 hours\", \"[2025-10-09T13:12:00] AI: The customer escalated the Case. The customer message is: Request has been opened over a week\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer explicitly requested closure after the issue was resolved. The resolution was confirmed and customer initiated the closure themselves.\",\n    \"evidence\": [\"[2025-10-10T15:48:46] Customer: This ticket can be closed\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"While this is a high-priority ticket, it involves a device configuration request (adding a phone number to a company ID), not an outage requiring immediate escalation. The handling approach appears appropriate for the issue type.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60211680
+}

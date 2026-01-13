@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided largely generic handoff messaging and then repeatedly posted non-actionable internal notes (\u201cSkipping ticket due to tags\u201d) instead of helping progress the urgent RMA scenario.",
+    "evidence": [
+      "Chat Support: Please select an option below or give me a detailed description of what\u2019s happening.",
+      "Chat Support: Of course! I do understand some things are better handled by my human colleagues. Let me get some further help for you!",
+      "Kayako - ticket id 60005331 // ATLAS commented privately: Skipping ticket due to tags",
+      "Kayako - ticket id 60005331 // ATLAS commented privately: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested a human, and thereafter the workflow shows repeated AI \u201cskipping\u201d entries with no visible progress while the customer kept chasing updates\u2014creating the appearance of being stuck without effective assistance.",
+    "evidence": [
+      "Kris Cardona: human",
+      "Kayako - ticket id 60005331 // ATLAS commented privately: Skipping ticket due to tags",
+      "Kris Cardona commented privately: Hi Hermes, any updates ? It's becoming a bit ridiculous at this stage, the client needs an answer for this."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support did not act on key context already provided (the initial link was broken; the customer supplied full RMA details), and later asked for additional requirements (video) after days of back-and-forth without acknowledging earlier blockers or providing an alternate path promptly.",
+    "evidence": [
+      "Kris Cardona commented privately: Hi Jan, the link you sent isn't working. Can you send me another one ?",
+      "Kris Cardona commented privately: RMA request: ... Kerio Control Box NG510 Series ... LNKR24070037",
+      "Kris Cardona commented privately: Hi Hermes, i'm not sure what is it to review ? The hardware failed ... i need to RMA it"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps and repeated customer follow-ups with no timely agent response; the agent also explicitly apologized for the delay.",
+    "evidence": [
+      "[2025-03-21T15:08:34+00:00] (customer issue) ... -> [2025-03-23T10:29:42+00:00] (first public support reply)",
+      "Kris Cardona commented privately: Hi Hermes, any updates ?",
+      "Kris Cardona commented privately: I need an ETA for this to be resolved, this is not normal to process an RMA.",
+      "Ciprian Nastase commented publicly: Please accept my sincere apologies for the delay in getting back to you"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed without the customer confirming resolution, shortly after support requested a required video and while the customer had been asking for ETA/contact methods\u2014leaving open questions unanswered in the ticket record.",
+    "evidence": [
+      "Ciprian Nastase commented publicly: ... we will also need a video showcasing the issue ... Once you get back to us, we will be able to continue working on the ticket.",
+      "Kris Cardona commented privately: I need an ETA for this to be resolved... Can i have a phone number or an email to contact and cc the client accordingly.",
+      "Ciprian Nastase commented publicly: ... we will proceed to close the ticket."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer clearly flagged urgency and business impact (failed HA unit, urgent replacement needed), yet the case experienced slow handling and procedural back-and-forth rather than immediate, expedited RMA escalation/communication.",
+    "evidence": [
+      "Issue description: 1 of the 2 units in HA failed and no power, no lights tried different power ports / cords",
+      "Kris Cardona commented privately: This is URGENT !",
+      "Kris Cardona commented privately: I need an ETA for this to be resolved, this is not normal to process an RMA."
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60005331
+}

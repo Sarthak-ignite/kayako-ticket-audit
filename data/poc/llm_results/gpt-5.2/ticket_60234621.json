@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI activity in this ticket is limited to internal/status automation comments and does not show generic filler directed at the customer, incorrect guidance, or unkept promises.",
+    "evidence": [
+      "[2025-11-03T14:17:02+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-11-03T15:53:07+00:00] (AI) Centralsupport-ai-acc: \"JIRA Issue CARESMM-9956 is changed to 'Closed' , block reason: -\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer interacting with an AI that repeatedly requests the same information or blocks access to a human; human agents posted public updates quickly.",
+    "evidence": [
+      "[2025-11-03T13:53:23+00:00] (Employee) Priyanka Bhotika: \"We have received your escalation, and our team is currently reviewing the issue.\"",
+      "[2025-11-03T14:16:53+00:00] (Employee) Pavly Nashed: \"We have done a preliminary investigation to determine the root cause, and have escalated\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Agents do not ask for repeated logs/screenshots or ignore previously provided details; the thread shows investigation, escalation, and resolution updates rather than redundant requests.",
+    "evidence": [
+      "[2025-11-03T14:12:50.310+0000] (General) None: \"Issue is created ... with description: Multiple reports of not being able to raise chats on the customer-side widgets\"",
+      "[2025-11-03T15:50:40+00:00] (Employee) Chintan Parekh: \"An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occur within the same day and within short intervals; there are no multi-day gaps.",
+    "evidence": [
+      "[2025-11-03T13:53:23+00:00] (Employee) Priyanka Bhotika: \"We have received your escalation...\"",
+      "[2025-11-03T15:50:44+00:00] (Employee) Chintan Parekh: \"We have identified the cause of the chat widget outage and implemented a fix.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the team communicated that the cause was identified and a fix was implemented; there is no evidence the customer was waiting on a promised follow-up or that they objected before closure.",
+    "evidence": [
+      "[2025-11-03T15:50:44+00:00] (Employee) Chintan Parekh: \"We have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor\"",
+      "[2025-11-03T15:53:00.789+0000] (General) None: \"status is changed from In Progress to Closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "For an urgent/outage scenario, the team escalated promptly, investigated root cause, and deployed a targeted fix (SSL certificate renewal) rather than providing generic end-user troubleshooting steps.",
+    "evidence": [
+      "[2025-11-03T14:16:53+00:00] (Employee) Pavly Nashed: \"We have done a preliminary investigation to determine the root cause, and have escalated\"",
+      "[2025-11-03T14:55:30.614+0000] (Employee) Muhammad Waqar: \"Renewed certificate for https://brandmessenger.usw2.khoros.com/\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI activity in this ticket is limited to internal/status automation comments and does not show generic filler directed at the customer, incorrect guidance, or unkept promises.\",\n    \"evidence\": [\n      \"[2025-11-03T14:17:02+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-11-03T15:53:07+00:00] (AI) Centralsupport-ai-acc: \\\"JIRA Issue CARESMM-9956 is changed to 'Closed' , block reason: -\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer interacting with an AI that repeatedly requests the same information or blocks access to a human; human agents posted public updates quickly.\",\n    \"evidence\": [\n      \"[2025-11-03T13:53:23+00:00] (Employee) Priyanka Bhotika: \\\"We have received your escalation, and our team is currently reviewing the issue.\\\"\",\n      \"[2025-11-03T14:16:53+00:00] (Employee) Pavly Nashed: \\\"We have done a preliminary investigation to determine the root cause, and have escalated\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Agents do not ask for repeated logs/screenshots or ignore previously provided details; the thread shows investigation, escalation, and resolution updates rather than redundant requests.\",\n    \"evidence\": [\n      \"[2025-11-03T14:12:50.310+0000] (General) None: \\\"Issue is created ... with description: Multiple reports of not being able to raise chats on the customer-side widgets\\\"\",\n      \"[2025-11-03T15:50:40+00:00] (Employee) Chintan Parekh: \\\"An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate...\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occur within the same day and within short intervals; there are no multi-day gaps.\",\n    \"evidence\": [\n      \"[2025-11-03T13:53:23+00:00] (Employee) Priyanka Bhotika: \\\"We have received your escalation...\\\"\",\n      \"[2025-11-03T15:50:44+00:00] (Employee) Chintan Parekh: \\\"We have identified the cause of the chat widget outage and implemented a fix.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the team communicated that the cause was identified and a fix was implemented; there is no evidence the customer was waiting on a promised follow-up or that they objected before closure.\",\n    \"evidence\": [\n      \"[2025-11-03T15:50:44+00:00] (Employee) Chintan Parekh: \\\"We have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor\\\"\",\n      \"[2025-11-03T15:53:00.789+0000] (General) None: \\\"status is changed from In Progress to Closed\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"For an urgent/outage scenario, the team escalated promptly, investigated root cause, and deployed a targeted fix (SSL certificate renewal) rather than providing generic end-user troubleshooting steps.\",\n    \"evidence\": [\n      \"[2025-11-03T14:16:53+00:00] (Employee) Pavly Nashed: \\\"We have done a preliminary investigation to determine the root cause, and have escalated\\\"\",\n      \"[2025-11-03T14:55:30.614+0000] (Employee) Muhammad Waqar: \\\"Renewed certificate for https://brandmessenger.usw2.khoros.com/\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60234621
+}

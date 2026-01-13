@@ -1,0 +1,124 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "fogbugz",
+        "requester": {
+          "id": 60187115,
+          "uuid": "2977ffd4-792f-4f8f-aba9-15527846754b",
+          "full_name": "Cedric Dubie",
+          "legacy_id": "11980820748434",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/2977ffd4-792f-4f8f-aba9-15527846754b?1761741481",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 188650,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-10-01T06:06:13+00:00",
+          "last_active_at": "2025-10-29T12:38:01+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60187115",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@5e40aa6a95d4ca1cb1fe108e2ed26add186a4f2f",
+          "password_updated_at": "2025-09-30T08:32:55+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2023-06-14T13:07:20+00:00",
+          "updated_at": "2025-10-29T12:38:01+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60187115"
+        },
+        "ticket_idt": 60210131
+      },
+      "interactions": [
+        [
+          "2025-10-28T12:04:02+00:00",
+          "Kayako - ticket id 60210131 // Randall Shawver commented publicly: Dear Cedric,\n\nThank you for reaching out to us regarding this issue. We can confirm that the payment has been received and you have no pending invoices from us. We apologize for the system error. In case there are any further questions or concerns, please let us know. We are always happy to help.\u00a0\n\nBest regards,\nRandall Shawver\nFogBugz Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-28T05:13:06+00:00",
+          "Kayako - ticket id 60210131 // Astha Kapoor commented privately:  What is your proposed action?\nSend to customer \n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Cedric,\n\nThank you for reaching out to us regarding this issue. We can confirm that the payment has been received and you have no pending invoices from us. We hope this helps. In case there are any further questions or concerns, please let us know. We are always happy to help. \n\n Best regards, \n Astha Kapoor \n FogBugz Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n Need QC help for this. I am not sure why we sent out an email from Netsuite asking for a payment. \n https://controlpanel.fogbugz.com/default.aspx?string=137033167 \nimage \n\nimage \n\nOn Netsuite as well, I am seeing the account balance as -450.00 and a payment reminder email sent out for $540? Not sure where the email originated from\nimage \n\nimage \n\n"
+        ],
+        [
+          "2025-10-02T14:03:12+00:00",
+          "Kayako - ticket id 60210131 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-09-30T08:49:23+00:00",
+          "Kayako - ticket id 60210131 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-09-30T08:48:26+00:00",
+          "Kayako - ticket id 60210131 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, Cedric Dubie ! \ud83d\udc4b\n\nThis is the FogBugz ATLAS support chat. \n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \n\n--- AI Assistant ---\n\n Walk me through what's happening or select from the below options.\n\nDon't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you. \ud83d\udcaa\n\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\n\n\ud83d\udca1Getting the most out of FogBugz ATLAS Support Chat [https://support.fogbugz.com/article/105199]\n\nIf I'm unable to help you, I can patch you through to a Live agent, along with the information you supply to me during this session, so that our team has something to work with from the get-go. \n\n--- Customer (Cedric Dubie) ---\n\n received a mail about billing not being received \n\n--- AI Assistant ---\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 wO8tEvvTueLUq-e4eQwdanHvfXWsp3AczA target=blank>Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI1MDg1NzM2Mi1kMDNkLTQ4NTUtYTBmYi0zZjRhZDFjNGRhZDYiLCJzZXNzaW9uX3VpZCI6IjUwODU3MzYyLWQwM2QtNDg1NS1hMGZiLTNmNGFkMWM0ZGFkNiIsImVtYWlsIjoiY2VkcmljLmR1YmllQHBhbm9yYW1hOS5jb20iLCJjdXN0b21fcGFyc2VyIjp7fSwiY2FsbGJhY2siOnsiY2FsbGJhY2tfdXJsIjpudWxsLCJjYWxsYmFja19lbWFpbCI6ImNpcHJpYW4ubmFzdGFzZUB0cmlsb2d5LmNvbSJ9LCJwcm9kdWN0X3RhZyI6ImZvZ2J1Z3oiLCJxdWVyeSI6IiIsImV4cCI6MTc1OTIyODQ2Mn0.VF8p1Ghd]\n\nYou should see the following:\n\n \t* User: cedric.dubie@panorama9.com\n \t* Session ID: 50857362-d03d-4855-a0fb-3f4ad1c4dad6\n\n--- Customer (Cedric Dubie) ---\n\n Button selection: [\ud83d\udd19 Continue without file upload ] \n\n--- AI Assistant ---\n\n Thanks for letting me know! Just to clarify, did you receive an email saying that your FogBugz billing or payment hasn't been received, or is there an issue with an invoice or payment method on your account?\n\nTo help you further, could you provide a bit more detail:\n\n \t* Are you seeing any error messages or payment failure notifications?\n \t* Is this about a specific invoice or your overall subscription?\n \t* Have you recently updated your payment method or credit card?\n\nIn the meantime, here are a couple of helpful articles that might address your situation:\n\n \t* Billing Statements and Invoices [https://support.fogbugz.com/article/54074] \n \t* Unable to Make Payment with Credit Card for FogBugz Renewal [https://support.fogbugz.com/article/53281] \n\nIf your payment is failing, sometimes banks block transactions for various reasons (like location, fraud rules, or insufficient funds). It\u2019s a good idea to check with your bank to see if they\u2019re blocking the payment to FogBugz (the merchant is Braintree). If you\u2019ve already done that and the issue persists for more than a couple of days, let me know and I can guide you on the next steps!\n\nCould you share a bit more about what you\u2019re seeing or what the email said? That\u2019ll help me point you in the right direction. \n\n--- Customer (Cedric Dubie) ---\n\n receive an email saying that your FogBugz billing hasn't been received \n\n--- AI Assistant ---\n\n Thanks for clarifying! If you received an email saying your FogBugz billing hasn't been received, it usually means there was an issue processing your payment for your subscription.\n\nHere are some common reasons this can happen (from the article Unable to Make Payment with Credit Card for FogBugz Renewal [https://support.fogbugz.com/article/53281]):\n\n \t* Incorrect credit card number or expiration date\n \t* Insufficient funds\n \t* The bank declined the transaction based on location or fraud rules\n \t* The bank is blocking the merchant (Braintree, which processes FogBugz payments)\n\nHere\u2019s what you can do next:\n\n \t* Check your payment method: Make sure your credit card details are up to date in your FogBugz account.\n \t* Contact your bank: Ask if they are blocking payments to Braintree or if there are any restrictions on your card.\n \t* Wait a bit: Sometimes, after resolving an issue with your bank, it can take a couple of days for the payment to go through.\n \t* Check for error messages: If you see any specific error messages in your account or in the email, let me know what they say.\n\nIf you\u2019ve already checked these and the payment still isn\u2019t going through after a few days, I can help escalate this to our billing team for further assistance.\n\nCould you let me know:\n\n \t* Have you recently updated your payment method?\n \t* Did your bank confirm if there\u2019s a block or issue?\n \t* Is this about a specific invoice or your overall subscription?\n\nOnce I have a bit more detail, I can guide you on the best next steps! \n\n--- Customer (Cedric Dubie) ---\n\n need to get in touch with sales or finance to validate \n\n--- AI Assistant ---\n\n Got it! If you need to get in touch with our sales or finance team to validate your billing or payment status, I can help guide you on the best way to do that.\n\nBefore I connect you, could you please provide a bit more information? This will help our finance team assist you faster:\n\n \t* Your FogBugz account email or Account ID (if available)\n \t* The company name on the account\n \t* Any invoice or order number related to the billing issue\n \t* A brief description of what you need to validate (for example, confirming payment receipt, updating billing info, etc.)\n\nOnce you provide these details, I\u2019ll make sure your request is routed to the right team for follow-up. If you prefer, I can also arrange for a support agent to reach out to you directly\u2014just let me know! \n\n--- Customer (Cedric Dubie) ---\n\n email : cedric.dubie@panorama9.com\nCompany: Panorama9 Inc.\nInvoice: INV-137033167-20250913\nconfirming payment \n\n--- AI Assistant ---\n\n Thanks for providing the details! A human colleague will assist you further with your payment confirmation. Please feel free to choose from the available options to connect with the right team. \ud83d\ude0a \n\n--- Customer (Cedric Dubie) ---\n\n Button selection: [\ud83d\udcac Chat with live agent] \n\n--- AI Assistant ---\n\n Our agents are currently busy assisting other customers at the time, so we'll proceed with ticket creation \n\n--- AI Assistant ---\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \n\n--- AI Assistant ---\n\n It looks like you might not have anything to add?\nJust a reminder a ticket will be automatically created in 3 minutes, I'll proceed with the information I already have \ud83d\ude03 \n\n--- Customer (Cedric Dubie) ---\n\n Email received on 28the september from IgniteTech \n\n--- AI Assistant ---\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \n\n--- Customer (Cedric Dubie) ---\n\n Button selection: [No additional email addresses required in CC] \n\n--- AI Assistant ---\n\n I've automatically set the ticket subject to: Billing Confirmation Request for Invoice INV-137033167\n\nDoes that work for you?\n\n \t* If it does, simply say YES or use the below button to confirm \ud83d\udc47\n \t* If not, please directly type in the ticket subject of your choosing below \ud83d\ude09\n\n"
+        ],
+        [
+          "2025-09-30T08:48:23+00:00",
+          "Kayako - ticket id 60210131 // ATLAS commented privately: --- Ticket generated by FogBugz AI chat on behalf of Cedric Dubie ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * received a mail about billing not being received<br>\n  * receive an email saying that your FogBugz billing hasn't been received<br>\n  * need to get in touch with sales or finance to validate<br>\n  * email : cedric.dubie@panorama9.com<br>\n  Company: Panorama9 Inc.<br>\n  Invoice: INV-137033167-20250913<br>\n  confirming payment<br>\n  * Email received on 28the september from IgniteTech<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 6,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

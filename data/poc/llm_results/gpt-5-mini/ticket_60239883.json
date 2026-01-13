@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI messages describe creation of an engineering issue and later report the Apache upgrade; there is no clear evidence of generic filler, wrong facts, or unkept promises in the provided logs.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no sign the AI repeatedly requested the same information or prevented escalation to a human; the conversation shows the AI opening an engineering issue and later reporting resolution.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI acknowledged the customer report and created/linked an engineering issue rather than asking for the same information again; no repeats of requests for the same logs/screenshots are present.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between interactions and metadata indicates a long time to first human response (67 hours).",
+    "evidence": [
+      "Customer initial report: \"[2025-11-10T18:00:48+00:00] (Customer) Jozef Kacala: Hi Team, GFI Langard is using Apache...\"",
+      "Follow-up/AI entry after ~67 hours: \"[2025-11-13T13:02:20+00:00] (AI) Cu Chulainn AI Manager: Dear Jozef, We are pleased to inform you that our Engineering team has successfully upgraded the Apache version...\"",
+      "Metadata: \"Time to first human (hours): 67.0\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket status is closed and logs show the engineering upgrade was reported; there is no evidence the customer was left waiting for promised information or explicitly escalated/complained before closure.",
+    "evidence": [
+      "\"[2025-11-13T13:02:20+00:00] (AI) Cu Chulainn AI Manager: ...successfully upgraded the Apache version in the GFI La\"",
+      "\"Status: closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket (high priority) was routed to Engineering and an engineering issue was opened and later resolved; there is no evidence of generic end-user troubleshooting being presented in lieu of escalation.",
+    "evidence": [
+      "\"[2025-11-10T18:02:48+00:00] (AI) CE Maintenance Bot: Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15431\"",
+      "\"[2025-11-10T18:02:54+00:00] (AI) Cu Chulainn AI Manager: ...GHI created and linked: https://github.com/trilogy-group/eng-maintenance/issues/15431.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI messages describe creation of an engineering issue and later report the Apache upgrade; there is no clear evidence of generic filler, wrong facts, or unkept promises in the provided logs.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no sign the AI repeatedly requested the same information or prevented escalation to a human; the conversation shows the AI opening an engineering issue and later reporting resolution.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI acknowledged the customer report and created/linked an engineering issue rather than asking for the same information again; no repeats of requests for the same logs/screenshots are present.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between interactions and metadata indicates a long time to first human response (67 hours).\",\n    \"evidence\": [\n      \"Customer initial report: \\\"[2025-11-10T18:00:48+00:00] (Customer) Jozef Kacala: Hi Team, GFI Langard is using Apache...\\\"\",\n      \"Follow-up/AI entry after ~67 hours: \\\"[2025-11-13T13:02:20+00:00] (AI) Cu Chulainn AI Manager: Dear Jozef, We are pleased to inform you that our Engineering team has successfully upgraded the Apache version...\\\"\",\n      \"Metadata: \\\"Time to first human (hours): 67.0\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket status is closed and logs show the engineering upgrade was reported; there is no evidence the customer was left waiting for promised information or explicitly escalated/complained before closure.\",\n    \"evidence\": [\n      \"\\\"[2025-11-13T13:02:20+00:00] (AI) Cu Chulainn AI Manager: ...successfully upgraded the Apache version in the GFI La\\\"\",\n      \"\\\"Status: closed\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket (high priority) was routed to Engineering and an engineering issue was opened and later resolved; there is no evidence of generic end-user troubleshooting being presented in lieu of escalation.\",\n    \"evidence\": [\n      \"\\\"[2025-11-10T18:02:48+00:00] (AI) CE Maintenance Bot: Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15431\\\"\",\n      \"\\\"[2025-11-10T18:02:54+00:00] (AI) Cu Chulainn AI Manager: ...GHI created and linked: https://github.com/trilogy-group/eng-maintenance/issues/15431.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60239883
+}

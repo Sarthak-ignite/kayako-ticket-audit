@@ -1,0 +1,67 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS/Hermes responses are largely generic, link-heavy, and contain questionable/incorrect assertions about rule evaluation/override behavior; customer explicitly calls out wrong/unhelpful AI behavior and asks to stop AI replies.",
+    "evidence": [
+      "Customer: \"Please, I want to talk to a human, not an AI! ... This is a waste of time.\"",
+      "ATLAS: \"If a message is already rejected by the spam filter ... subsequent rules \u2013 including those set to 'Treat as non-spam' further down \u2013 will not be evaluated.\"",
+      "Customer: \"First, it is your task to clarify that, and secondly the score does not matter regardless of its value because it should be overridden by my rules.\"",
+      "Customer: \"In the mean time, 'Hermes' has answered, too. I assume that Hermes is a bot, because it only produces very general and not helpful text.\"",
+      "ATLAS: multiple responses primarily citing KB links rather than directly proving/validating the customer\u2019s configuration (e.g., repeated references to https://support.kerioconnect.gfi.com/article/115424 and /115460)."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly requests a human and expresses being stuck with bot responses; long stretches show AI replies and the customer repeating the same request for escalation/real person.",
+    "evidence": [
+      "Customer: \"Please, I want to talk to a human, not an AI! Please, I want to talk to a human, not an AI! Please, I want to talk to a human, not an AI!\"",
+      "Customer: \"for two weeks again I have not received any answer from a human.\"",
+      "Customer: \"Hello Hermes, your reply is just the same as the one from 19. september.\"",
+      "Customer: \"I do not want to get any more responses from an AI Bot in #60198743 ... Why does the Hermes bot then still answer?\"",
+      "Customer: \"I want this to be escalated to the team lead, please.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/AI repeatedly reverts to generic explanations (rule order, whitelist limitations) despite the customer stating they've already removed deny rules, provided screenshots, and cannot generate special test emails; UUID question is initially missed.",
+    "evidence": [
+      "Customer: \"I have already, in the very beginning of this conversation, shown that all our custom spam rules with 'Deny' action have the value 'Unused'\"",
+      "Customer: \"To make clear that there is no second bug involved I have now removed all action=Deny rules... -> Same effect.\"",
+      "Customer: \"I have already provided a screenshot of an example of my custom 'Received'-header line rule, and I do it again here\"",
+      "Customer: \"Sorry, I cannot, this is a task for your team... I do not have the means to create handcrafted emails with specific spam scores.\"",
+      "Customer: \"You seem to have missed that I have asked a second question in the beginning of this ticket: There is a UUID for every rule... How can I treat this UUID when I edit the XML\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day to multi-week gaps and repeated customer follow-ups complaining about no human response.",
+    "evidence": [
+      "Customer (2025-10-02): \"for two weeks again I have not received any answer from a human.\"",
+      "Customer (2025-10-06): \"another afternoon has passed, and I still have not received a reply.\"",
+      "Gap: 2025-10-06 customer follow-ups to 2025-10-22 first substantive human/internal activity (16 days).",
+      "Customer (2025-10-31): \"I have not gotten a reply for more than one week from a human\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support posts auto-closure warnings ('stay open for one week unless...') while the customer\u2019s issue has been unresolved for weeks and they explicitly want ongoing human engagement; this creates a strong risk of closing without confirmed resolution.",
+    "evidence": [
+      "Zubair: \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Completed\"",
+      "Atilla: \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Completed\"",
+      "Customer (2025-10-29): \"The problem remains unsolved so far.\"",
+      "Customer (2025-10-31): \"Can you confirm the problem?\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer frames the issue as business-critical (needs phishing simulation email delivery) and requests higher priority/escalation, but support response is slow and initially stays in AI loops instead of prompt escalation/engineering engagement.",
+    "evidence": [
+      "Customer: \"Please, we need a way to allow emails sent by an external phishing simulation tool!\"",
+      "Customer (2025-10-02): \"Please continue on this ticket, with a higher priority. I need a solution, to be able to allow external phishing simulation.\"",
+      "Customer (2025-10-06): \"I want this to be escalated to the team lead, please.\"",
+      "Timeline evidence: prolonged delays before L2 engages substantively (e.g., 2025-10-06 to 2025-10-22)."
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60198743
+}

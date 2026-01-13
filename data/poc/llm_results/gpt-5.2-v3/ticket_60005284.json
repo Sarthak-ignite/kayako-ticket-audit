@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No clear, customer-facing AI (ATLAS/Hermes) incorrect guidance, broken templates, irrelevant troubleshooting, or unfulfilled promises are visible in the provided transcript. The later ATLAS entries are internal workflow notes (e.g., routing/skipping) rather than customer-facing responses.",
+    "evidence": [
+      "ATLAS internal notes only: \"Action: Send to l1\"",
+      "ATLAS internal notes only: \"Skipping ticket due to tags\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although the customer requested a human agent for RMA, the record does not show repeated AI back-and-forth, repeated questions, or 3+ consecutive customer-facing AI interactions that trap the customer. The visible AI events after ticket creation are internal notes rather than customer-facing chat messages.",
+    "evidence": [
+      "Issue description includes: \"I NEED SUPPORT AGENT FOR RMA\"",
+      "Subsequent ATLAS entries are internal: \"Action: Send to l1\" and \"Skipping ticket due to tags\" (not shown as replies to the customer)."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No instances are shown where support asked for information already provided/attached in the same ticket or repeated the same troubleshooting steps after the customer indicated they had already done them. The eventual human response acknowledges the status (reseller already submitted RMA) rather than ignoring context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay (3+ calendar days) between customer follow-ups and a substantive human response, and both the customer complained about waiting and the agent apologized for the delay.",
+    "evidence": [
+      "Customer follow-up with urgency: [2025-03-22T11:23:44+00:00] \"Please anyone assist\"",
+      "Customer follow-up: [2025-03-26T12:07:11+00:00] \"any updates\"",
+      "Customer complaint: [2025-03-27T08:25:39+00:00] \"this is so unproffesional from the GFI side\"",
+      "First substantive human public response comes later: [2025-03-28T14:26:04+00:00] (Ciprian's reply)",
+      "Agent acknowledgement/apology: \"Please accept my sincere apologies for the delay in handling this! The ticket was incorrectly prioritized\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The closure message provides a rationale (duplicate RMA already submitted by reseller and being handled). The agent addresses the core request (RMA initiation/status) rather than closing without addressing a pending question.",
+    "evidence": [
+      "Closure rationale: \"your reseller has submitted an RMA request for this same appliance, and that is already being handled. In light of this, I will proceed to close this ticket.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reported a complete outage/high-impact situation (firewall dead) with explicit time sensitivity, and the agent later confirmed the ticket was incorrectly prioritized\u2014indicating mishandling of a high-severity scenario.",
+    "evidence": [
+      "Customer reports outage/critical impact: [2025-03-25T11:22:03+00:00] \"We are vessel and our firewall is dead.\"",
+      "Customer time sensitivity: \"This is high priority to us... I cnat wait such long time we need solution asap.\"",
+      "Support admission of prioritization failure: [2025-03-28T14:26:04+00:00] \"The ticket was incorrectly prioritized\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60005284
+}

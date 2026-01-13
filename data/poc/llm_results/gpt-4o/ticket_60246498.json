@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is insufficient evidence of the AI providing generic filler, wrong information, or making unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence indicating that the customer was unable to progress past the AI or was stuck in a loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interaction does not provide any context to evaluate whether any provided information was ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There were no significant delays in the responses, as indicated by a max gap of 0.0 hours.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not appear to have been closed prematurely since there is no indication of the customer's pending request.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of mishandling a high-priority or outage ticket with generic troubleshooting advice.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient evidence of the AI providing generic filler, wrong information, or making unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence indicating that the customer was unable to progress past the AI or was stuck in a loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction does not provide any context to evaluate whether any provided information was ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There were no significant delays in the responses, as indicated by a max gap of 0.0 hours.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not appear to have been closed prematurely since there is no indication of the customer's pending request.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of mishandling a high-priority or outage ticket with generic troubleshooting advice.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60246498
+}

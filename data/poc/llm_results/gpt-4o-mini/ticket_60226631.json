@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no clear instances of AI responses providing generic filler or incorrect information in the interaction timeline.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not appear to be stuck in an AI loop, as there are timely responses from human agents throughout the ticket.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The agent, Balaji Jayaraman, fails to acknowledge the ongoing issues reported by the customer and does not reference previous tickets as suggested by the customer.",
+    "evidence": [
+      "[2025-10-23T08:36:12+00:00] (Employee) Balaji Jayaraman: Dear Jayashree, The disruption was triggered by background data processing placing unexpected load on our search infrastructure..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay of 9.4 hours between responses from agents within the timeline, which could contribute to customer frustration.",
+    "evidence": [
+      "[2025-10-22T10:26:48+00:00] (Employee) Deepanshu Dewan: Dear Manju, Thank you for calling Khoros Care Support.",
+      "[2025-10-23T08:36:12+00:00] (Employee) Balaji Jayaraman: Dear Jayashree, The disruption was triggered..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been resolved and closed based on feedback and acknowledgment from multiple agents before closure; thus, the customer was not left awaiting information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "For a high-priority ticket concerning a service disruption, there were indications of delays and inadequate escalation responses, with a lack of immediate prioritization evident in the comments.",
+    "evidence": [
+      "[2025-10-22T10:13:07+00:00] (Customer) Manju Srinivasan: We are unable to view or claim any new incoming chats...",
+      "[2025-10-22T12:49:02+00:00] (Employee) Chintan Parekh: We\u2019re pleased to inform you that the recent service disruption affecting the Khoros Care platform has been resolved."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no clear instances of AI responses providing generic filler or incorrect information in the interaction timeline.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer does not appear to be stuck in an AI loop, as there are timely responses from human agents throughout the ticket.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The agent, Balaji Jayaraman, fails to acknowledge the ongoing issues reported by the customer and does not reference previous tickets as suggested by the customer.\",\n    \"evidence\": [\n      \"[2025-10-23T08:36:12+00:00] (Employee) Balaji Jayaraman: Dear Jayashree, The disruption was triggered by background data processing placing unexpected load on our search infrastructure...\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay of 9.4 hours between responses from agents within the timeline, which could contribute to customer frustration.\",\n    \"evidence\": [\n      \"[2025-10-22T10:26:48+00:00] (Employee) Deepanshu Dewan: Dear Manju, Thank you for calling Khoros Care Support.\",\n      \"[2025-10-23T08:36:12+00:00] (Employee) Balaji Jayaraman: Dear Jayashree, The disruption was triggered...\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to have been resolved and closed based on feedback and acknowledgment from multiple agents before closure; thus, the customer was not left awaiting information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"For a high-priority ticket concerning a service disruption, there were indications of delays and inadequate escalation responses, with a lack of immediate prioritization evident in the comments.\",\n    \"evidence\": [\n      \"[2025-10-22T10:13:07+00:00] (Customer) Manju Srinivasan: We are unable to view or claim any new incoming chats...\",\n      \"[2025-10-22T12:49:02+00:00] (Employee) Chintan Parekh: We\u2019re pleased to inform you that the recent service disruption affecting the Khoros Care platform has been resolved.\"\n    ]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60226631
+}

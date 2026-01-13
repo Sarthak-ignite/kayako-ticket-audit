@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS interaction is largely generic/templated (prompting for uploads/logs without understanding the specific ask) and contains broken/low-signal content, then escalates with no meaningful triage or answer to the customer\u2019s release/bug question.",
+    "evidence": [
+      "Issue description: * raise a ticket * when will the no policy bug on the 7.5.5 exinda release be fixed * ticket * ticket * ticket",
+      "Ian DeMoss:\n\n undefined",
+      "Chat Support:\n\n Please select from the below or give me a detailed description of what\u2019s happening...",
+      "Chat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it",
+      "Action: Send to engineering"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The transcript shows only a brief AI exchange and immediate escalation; there is no clear looping behavior or customer frustration about being unable to reach a human.",
+    "evidence": [
+      "Ian DeMoss:\n\n raise a ticket",
+      "Action: Send to engineering"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support does not directly address the customer\u2019s specific question about the 'no policy' clustering bug fix timeline/confirmation, instead providing upgrade guidance and later stating they only checked release notes without confirming the bug status or next steps.",
+    "evidence": [
+      "Has there been any movement on generating an updated Exinda code version; where it resolves the 'no policy' bug that is currently affecting the 7.5.5 release?",
+      "Exinda version 7.6.0 is now available... We recommend reviewing the update details and considering the upgrade",
+      "Can you confirm that the 7.6.0 version fixes the \u2018no policy\u2019 bug that is shown when clustering is enabled between a pair of Exinda\u2019s?",
+      "There is no mention of a specific \"no policy\" bugfix."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap (>2 calendar days) between the customer follow-up and the first meaningful public support response.",
+    "evidence": [
+      "[2025-06-10T20:59:29+00:00] ... Has there been any movement...",
+      "[2025-06-13T13:18:30+00:00] ... Exinda version 7.6.0 is now available..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed, and while auto-close language is present, the conversation continues and there is no evidence the ticket was closed while the customer awaited an answer.",
+    "evidence": [
+      "This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reports a bug impacting clustering, but there is no explicit indication of outage/critical business impact (P1/SEV1 language) that would require emergency handling based on the provided text.",
+    "evidence": [
+      "when will the no policy bug on the 7.5.5 exinda release be fixed",
+      "\u2018no policy\u2019 bug that is shown when clustering is enabled between a pair of Exinda\u2019s"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60073150
+}

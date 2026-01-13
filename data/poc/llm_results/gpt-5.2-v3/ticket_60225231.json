@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer-facing guidance incorrectly diagnosed the problem as a license-binding/migration issue and redirected the customer to Customer Care, but the later (correct) resolution states the license was valid and the fix was to reset the AppManager agent after restoring config to new hardware/VM. The incorrect message also included an obviously wrong/fake email address for the customer, indicating low-quality/AI-templated content.",
+    "evidence": [
+      "2025-10-27T14:59:02+00:00 (Mike): \"The issue is clearly with the license registration itself.\"",
+      "2025-10-27T14:59:02+00:00 (Mike): \"The Root Cause: The license file information is incorrect or incompatible with your new Proxmox virtual environment... the license file is still bound to the old hardware box's serial number and won't work\"",
+      "2025-10-27T14:59:02+00:00 (Mike): \"Email address: hofman.500dced1d06a4f7aaba14e85e503de34@gfi.fake.ziva.cz\" (customer\u2019s actual email in ticket is hofman@ziva.cz)",
+      "2025-10-28T12:54:08+00:00 (Mike): \"is not related to the validity of your license. This issue occurs when a configuration is restored to new hardware or a virtual environment.\"",
+      "2025-10-28T12:54:08+00:00 (Mike): \"To resolve this, it is necessary to reset the AppManager agent. This is the only valid solution.\"",
+      "2025-10-28T17:58:27+00:00 (Customer): \"your colleague solve this problem... https://support.keriocontrol.gfi.com/article/117310-resetting-keriocontrol-s-connection-to-gfi-appmanager\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was not trapped in repeated AI loops. After the initial ATLAS interaction, human agents responded and progressed troubleshooting; there are no 3+ consecutive AI interactions blocking access to a human, nor repeated AI requests for the same info.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While there was an incorrect diagnosis, there is not clear, unambiguous evidence that support repeatedly asked for the same exact information/files after the customer already provided them, or explicitly ignored a stated prior step in a way that meets the pattern\u2019s criteria.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No gap of 3+ calendar days between a customer message and a support response is shown. The customer did ask for an update, but the response came within ~1 day.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket narrative ends with the customer confirming the issue was solved. There is no evidence the ticket was closed while an open customer request remained unanswered.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although there is an internal severity label (\"core_functionality_defect\"), the conversation does not explicitly state SEV1/P1/Critical, \u201cproduction down,\u201d or similar, so high-severity mishandling cannot be concluded under the provided criteria.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60225231
+}

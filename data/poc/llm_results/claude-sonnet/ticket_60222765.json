@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses appropriately escalated to engineering and provided relevant updates. The AI correctly identified the issue needed engineering attention and created a GHI ticket.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer requested human assistance from ATLAS and was immediately escalated to Cu Chulainn AI Manager which created an engineering ticket. No evidence of repeated information requests or loops.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support team acknowledged the customer's add-on webhook issue and properly escalated to engineering without requesting redundant information. The GHI ticket captured the technical details appropriately.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a massive 674.4 hour (28 day) gap between the engineering escalation and the final resolution update, which is excessive even for complex engineering issues.",
+    "evidence": [
+      "[2025-10-16T14:55:41+00:00] Cu Chulainn AI Manager commented publicly: Dear Hemant, We have contacted the Engineering team and will keep you informed",
+      "[2025-11-25T14:53:13+00:00] Cu Chulainn AI Manager commented publicly: Dear Hemant, We're pleased to inform you that the issue with webhook creation leading to reconnection failures in Jive Cloud"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the fix was released in Jive 12.7 and the customer was informed. Customer had previously thanked support, indicating satisfaction with the escalation.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although marked urgent, the ticket was properly escalated to engineering within hours of customer contact. No generic troubleshooting was attempted; the technical issue was recognized and escalated appropriately.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses appropriately escalated to engineering and provided relevant updates. The AI correctly identified the issue needed engineering attention and created a GHI ticket.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer requested human assistance from ATLAS and was immediately escalated to Cu Chulainn AI Manager which created an engineering ticket. No evidence of repeated information requests or loops.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support team acknowledged the customer's add-on webhook issue and properly escalated to engineering without requesting redundant information. The GHI ticket captured the technical details appropriately.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a massive 674.4 hour (28 day) gap between the engineering escalation and the final resolution update, which is excessive even for complex engineering issues.\",\n    \"evidence\": [\n      \"[2025-10-16T14:55:41+00:00] Cu Chulainn AI Manager commented publicly: Dear Hemant, We have contacted the Engineering team and will keep you informed\",\n      \"[2025-11-25T14:53:13+00:00] Cu Chulainn AI Manager commented publicly: Dear Hemant, We're pleased to inform you that the issue with webhook creation leading to reconnection failures in Jive Cloud\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the fix was released in Jive 12.7 and the customer was informed. Customer had previously thanked support, indicating satisfaction with the escalation.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although marked urgent, the ticket was properly escalated to engineering within hours of customer contact. No generic troubleshooting was attempted; the technical issue was recognized and escalated appropriately.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60222765
+}

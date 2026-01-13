@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The recorded AI interaction consists of generic comments without specific assistance or tailored information.",
+    "evidence": [
+      "[2025-10-31T12:23:53+00:00] Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated requests for the same information or inability of the customer to progress to human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interaction provided does not show any requests for information that the customer had previously provided or any ignorance of past interactions.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no indication of significant response delays; the interaction shows immediate AI engagement.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed, but there is no indication within the logs that the customer was waiting for more information or that closure was inappropriate.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is labeled as normal priority, and there is no evidence of mishandling related to high-priority issues.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The recorded AI interaction consists of generic comments without specific assistance or tailored information.\",\n    \"evidence\": [\"[2025-10-31T12:23:53+00:00] Thanks for chatting earlier with our AI Support!\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repeated requests for the same information or inability of the customer to progress to human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction provided does not show any requests for information that the customer had previously provided or any ignorance of past interactions.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication of significant response delays; the interaction shows immediate AI engagement.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed, but there is no indication within the logs that the customer was waiting for more information or that closure was inappropriate.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is labeled as normal priority, and there is no evidence of mishandling related to high-priority issues.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60233211
+}

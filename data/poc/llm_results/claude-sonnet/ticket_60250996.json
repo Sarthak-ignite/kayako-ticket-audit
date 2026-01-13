@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is insufficient interaction data to evaluate AI response quality. The ticket only contains a single automated message acknowledging an AI chat occurred, with no visible AI responses or outcomes to assess.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of looping behavior. The ticket shows only one automated acknowledgment message after an AI chat, with no indication the customer was stuck or unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no support interactions where context could be ignored. The ticket contains only an automated notification about a prior AI chat with no subsequent support exchanges.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket metadata shows max gap between responses as 0.0 hours, and there is only one interaction visible, so no delays can be assessed.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed, there is insufficient information to determine if closure was premature. No customer follow-up questions or unresolved issues are visible in the provided interaction data.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not P1/SEV1. The pattern criteria do not apply to this ticket.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient interaction data to evaluate AI response quality. The ticket only contains a single automated message acknowledging an AI chat occurred, with no visible AI responses or outcomes to assess.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of looping behavior. The ticket shows only one automated acknowledgment message after an AI chat, with no indication the customer was stuck or unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no support interactions where context could be ignored. The ticket contains only an automated notification about a prior AI chat with no subsequent support exchanges.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket metadata shows max gap between responses as 0.0 hours, and there is only one interaction visible, so no delays can be assessed.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed, there is insufficient information to determine if closure was premature. No customer follow-up questions or unresolved issues are visible in the provided interaction data.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not P1/SEV1. The pattern criteria do not apply to this ticket.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60250996
+}

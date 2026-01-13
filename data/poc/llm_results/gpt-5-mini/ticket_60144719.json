@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There are AI-generated public messages that are generic, contain broken text, and appear to be filler. One AI reply is truncated and unhelpful, and automated reminders are generic rather than addressing issue specifics.",
+    "evidence": [
+      "[2025-07-17T14:29:34+00:00] (AI) ATLAS: \"Dear Customer, As part of our enhanced Khoros Care Support Portal launch, we are excited to let you know that your ticket has been successfull\" \u2014 truncated/poorly formed.",
+      "Multiple automated reminder messages (e.g. 2025-07-02, 2025-07-01, 2025-06-27, 2025-06-26, 2025-06-20, 2025-06-19) that are generic and do not address specific troubleshooting or status details."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although there are automated reminders from AI, the thread contains human employee responses and specific internal notes. There is no clear evidence the customer is trapped answering the AI repeatedly with no human escalation or that the AI repeatedly asks the exact same question without progress.",
+    "evidence": [
+      "Human employee interactions present (e.g. multiple Khoros TechSupport and employee comments such as 2025-06-12 and 2025-07-23).",
+      "Automated reminders exist but are interleaved with human activity rather than showing a pure AI loop preventing human access."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The log shows the team asked for credentials and noted they are awaiting Bharath to provide them (internal note). There is no clear instance where support repeatedly asks for the same logs or explicitly ignores submitted information.",
+    "evidence": [
+      "[2025-06-12T11:33:12+00:00] Khoros TechSupport (private): \"we have asked for the credentials in the slack thread awaiting for Bharath to provide them so the we can test this further\" \u2014 indicates the team is aware and waiting for customer-provided credentials.",
+      "No explicit repeated requests for the same logs or data visible in the provided interactions."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple multi-day gaps and repeated automated reminders over several weeks (June through July) indicating slow progress and significant delays in resolution activity.",
+    "evidence": [
+      "Sequence of automated reminders spanning 2025-06-19 through 2025-07-02, showing repeated follow-ups across days.",
+      "Human employee activity spread out across June 10 to July 23 with notable gaps (e.g. initial June messages, then recurring reminders, with follow-up employee private note on 2025-07-23)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "An automated message marks the case as resolved based on previous information, while subsequent reminders and later human activity indicate the issue was still active and the customer/AM continued engagement \u2014 suggesting a premature closure and reopening flow.",
+    "evidence": [
+      "[2025-06-24T17:30:11+00:00] AI-CS Integration (public): \"Based on previous information received, your case has been marked as resolved.\"",
+      "Subsequent automated reminders (dates after 2025-06-24) and later human notes and outreach (e.g. 2025-07-23 employee private comment: \"I've reached out to the customer. I'll let you know once I hear back.\") show the case remained active after the resolved notice."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no explicit indication this ticket was a P1/SEV1 incident. No evidence of high-priority handling requirements being ignored or replaced by generic troubleshooting steps.",
+    "evidence": [
+      "No severity label or urgent escalation language present in the provided interactions.",
+      "Support actions are routine (credential request, reminders, communications) rather than evidence of mis-handling of a declared P1/SEV1 incident."
+    ]
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60144719
+}

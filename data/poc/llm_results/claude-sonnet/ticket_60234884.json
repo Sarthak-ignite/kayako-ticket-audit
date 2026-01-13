@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The ATLAS AI chatbot failed to find the license information that was actually available in the system, as confirmed by the employee who later found it easily.",
+    "evidence": [
+      "[2025-11-11T08:07:47+00:00] Matthew Mrosko: So this is for a change in Hardware ID. No idea why the ATLAS chat one couldn't find it. It's there.",
+      "[2025-11-03T16:40:58+00:00] ATLAS: Issue description: * Why can i not generate an [emergency license] - AI failed to resolve what should have been a straightforward license generation"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer provided all necessary information (serial number, hardwareID, users, version) to the AI initially, but the AI couldn't resolve the issue and routed to L1, forcing the customer to wait and re-request multiple times.",
+    "evidence": [
+      "[2025-11-03T16:40:58+00:00] ATLAS: Issue description: * Why can i not generate an [emergency license]",
+      "[2025-11-07T17:16:38+00:00] John Kingsbury: Can we please get an emergency license cut for CGX with serial number 45873 and hardwareID XgIUlSoAqbLA with 10 users on version 2023",
+      "[2025-11-10T15:25:47+00:00] John Kingsbury: Please, Please, Please can we get an emergency license for CGX with serial number 45873 and hardwareID XgIUlSoAqbLA with 10 users"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While there were delays, there's no evidence that support asked for information the customer already provided or ignored previously stated details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple significant delays occurred: 48 hours to first human response, 70.2 hour max gap, and a 4-day gap between the initial ticket and any human acknowledgment despite urgent priority.",
+    "evidence": [
+      "Time to first human (hours): 48.0",
+      "Max gap between responses (hours): 70.2",
+      "[2025-11-03T16:41:03+00:00] ATLAS initial ticket creation to [2025-11-05T16:42:10+00:00] Dave Lawrence: What is the holdup? - 2 day delay",
+      "[2025-11-07T17:16:38+00:00] Customer repeated request to [2025-11-10T15:37:21+00:00] Xavier response - 2.9 day delay"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was eventually resolved with a license generated, and the customer's issue was addressed before closure.",
+    "evidence": [
+      "[2025-11-11T08:07:47+00:00] Matthew Mrosko: License Generated successf"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This urgent priority ticket involved a customer escalation reporting 'complete_outage' severity, yet it took 48 hours for first human response and 7+ days total to resolve a license issue that should have been straightforward.",
+    "evidence": [
+      "Priority: urgent",
+      "[2025-11-10T15:26:35+00:00] Centralsupport-ai-acc: The customer escalated the Case. The severity is: complete_outage",
+      "[2025-11-10T15:25:47+00:00] John Kingsbury: Please, Please, Please can we get an emergency license",
+      "Time to first human (hours): 48.0 - unacceptable delay for urgent/outage severity"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The ATLAS AI chatbot failed to find the license information that was actually available in the system, as confirmed by the employee who later found it easily.\",\n    \"evidence\": [\n      \"[2025-11-11T08:07:47+00:00] Matthew Mrosko: So this is for a change in Hardware ID. No idea why the ATLAS chat one couldn't find it. It's there.\",\n      \"[2025-11-03T16:40:58+00:00] ATLAS: Issue description: * Why can i not generate an [emergency license] - AI failed to resolve what should have been a straightforward license generation\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer provided all necessary information (serial number, hardwareID, users, version) to the AI initially, but the AI couldn't resolve the issue and routed to L1, forcing the customer to wait and re-request multiple times.\",\n    \"evidence\": [\n      \"[2025-11-03T16:40:58+00:00] ATLAS: Issue description: * Why can i not generate an [emergency license]\",\n      \"[2025-11-07T17:16:38+00:00] John Kingsbury: Can we please get an emergency license cut for CGX with serial number 45873 and hardwareID XgIUlSoAqbLA with 10 users on version 2023\",\n      \"[2025-11-10T15:25:47+00:00] John Kingsbury: Please, Please, Please can we get an emergency license for CGX with serial number 45873 and hardwareID XgIUlSoAqbLA with 10 users\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"While there were delays, there's no evidence that support asked for information the customer already provided or ignored previously stated details.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple significant delays occurred: 48 hours to first human response, 70.2 hour max gap, and a 4-day gap between the initial ticket and any human acknowledgment despite urgent priority.\",\n    \"evidence\": [\n      \"Time to first human (hours): 48.0\",\n      \"Max gap between responses (hours): 70.2\",\n      \"[2025-11-03T16:41:03+00:00] ATLAS initial ticket creation to [2025-11-05T16:42:10+00:00] Dave Lawrence: What is the holdup? - 2 day delay\",\n      \"[2025-11-07T17:16:38+00:00] Customer repeated request to [2025-11-10T15:37:21+00:00] Xavier response - 2.9 day delay\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was eventually resolved with a license generated, and the customer's issue was addressed before closure.\",\n    \"evidence\": [\n      \"[2025-11-11T08:07:47+00:00] Matthew Mrosko: License Generated successf\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This urgent priority ticket involved a customer escalation reporting 'complete_outage' severity, yet it took 48 hours for first human response and 7+ days total to resolve a license issue that should have been straightforward.\",\n    \"evidence\": [\n      \"Priority: urgent\",\n      \"[2025-11-10T15:26:35+00:00] Centralsupport-ai-acc: The customer escalated the Case. The severity is: complete_outage\",\n      \"[2025-11-10T15:25:47+00:00] John Kingsbury: Please, Please, Please can we get an emergency license\",\n      \"Time to first human (hours): 48.0 - unacceptable delay for urgent/outage severity\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60234884
+}

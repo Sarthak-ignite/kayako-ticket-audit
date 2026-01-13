@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is only one short AI system message about ticket hold; no AI responses in the thread that are generic filler, incorrect, or making unkept promises.",
+    "evidence": [
+      "\"[2025-12-29T15:16:56+00:00] (AI) Centralsupport-ai-acc: ticket was set to hold until 2025-12-29T15:15:17.000Z. Placing ticket back to open\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence the AI repeatedly requested the same information or trapped the customer; the customer interacted with human agents and provided logs/registry info.",
+    "evidence": [
+      "\"[2025-12-29T15:29:23+00:00] (Customer) Kevin Gragert: - HKEY_LOCAL_MACHINE\\Software\\Clients\\Mail\\Microsoft Outlook\"",
+      "\"[2025-12-31T17:43:09+00:00] (Employee) Qasim Ali: Dear Kevin, Thank you for your patience. We've completed a full review of your logs and environment setup. We can confirm that all requir\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Agents referenced logs and registry exports from the customer and responded accordingly; there is no clear instance of repeated requests for information already supplied.",
+    "evidence": [
+      "\"[2025-12-29T21:13:44+00:00] (Employee) Randall Shawver: Hello Kevin, Thank you for the updated logs and the Outlook registry exports.\"",
+      "\"[2025-12-31T17:42:09+00:00] (Employee) Qasim Ali: * Customer tested on fresh Windows Server 2019 with Outlook 2019 x64.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between messages and the ticket metadata indicates long delays to first human response and large max response gaps.",
+    "evidence": [
+      "\"Time to first human (hours): 32.2\"",
+      "\"Max gap between responses (hours): 119.8\"",
+      "\"[2026-01-06T09:18:28+00:00] (Employee) Sandeep Gajula: ...\"",
+      "\"[2025-12-31T17:43:09+00:00] (Employee) Qasim Ali: Dear Kevin,...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket status is pending and there is no message indicating the ticket was closed while the customer awaited promised information.",
+    "evidence": [
+      "\"Status: pending\"",
+      "\"[2026-01-05T17:30:17+00:00] (Customer) Kevin Gragert: the bitness reg key resolved the issue with gettng to the pst file. i am running some imports now over the next few days\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although priority is high, the support messages reference log review and registry/Outlook troubleshooting rather than generic one-size-fits-all steps; no evidence of superficial escalation avoidance.",
+    "evidence": [
+      "\"[2025-12-31T17:42:09+00:00] (Employee) Qasim Ali: * Customer tested on fresh Windows Server 2019 with Outlook 2019 x64.\"",
+      "\"[2025-12-29T21:13:44+00:00] (Employee) Randall Shawver: ...Thank you for the updated logs and the Outlook registry exports. From your Import/Export Tool logs, we can see two sep\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one short AI system message about ticket hold; no AI responses in the thread that are generic filler, incorrect, or making unkept promises.\",\n    \"evidence\": [\n      \"\\\"[2025-12-29T15:16:56+00:00] (AI) Centralsupport-ai-acc: ticket was set to hold until 2025-12-29T15:15:17.000Z. Placing ticket back to open\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence the AI repeatedly requested the same information or trapped the customer; the customer interacted with human agents and provided logs/registry info.\",\n    \"evidence\": [\n      \"\\\"[2025-12-29T15:29:23+00:00] (Customer) Kevin Gragert: - HKEY_LOCAL_MACHINE\\\\Software\\\\Clients\\\\Mail\\\\Microsoft Outlook\\\"\",\n      \"\\\"[2025-12-31T17:43:09+00:00] (Employee) Qasim Ali: Dear Kevin, Thank you for your patience. We've completed a full review of your logs and environment setup. We can confirm that all requir\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Agents referenced logs and registry exports from the customer and responded accordingly; there is no clear instance of repeated requests for information already supplied.\",\n    \"evidence\": [\n      \"\\\"[2025-12-29T21:13:44+00:00] (Employee) Randall Shawver: Hello Kevin, Thank you for the updated logs and the Outlook registry exports.\\\"\",\n      \"\\\"[2025-12-31T17:42:09+00:00] (Employee) Qasim Ali: * Customer tested on fresh Windows Server 2019 with Outlook 2019 x64.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between messages and the ticket metadata indicates long delays to first human response and large max response gaps.\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 32.2\\\"\",\n      \"\\\"Max gap between responses (hours): 119.8\\\"\",\n      \"\\\"[2026-01-06T09:18:28+00:00] (Employee) Sandeep Gajula: ...\\\"\",\n      \"\\\"[2025-12-31T17:43:09+00:00] (Employee) Qasim Ali: Dear Kevin,...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket status is pending and there is no message indicating the ticket was closed while the customer awaited promised information.\",\n    \"evidence\": [\n      \"\\\"Status: pending\\\"\",\n      \"\\\"[2026-01-05T17:30:17+00:00] (Customer) Kevin Gragert: the bitness reg key resolved the issue with gettng to the pst file. i am running some imports now over the next few days\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although priority is high, the support messages reference log review and registry/Outlook troubleshooting rather than generic one-size-fits-all steps; no evidence of superficial escalation avoidance.\",\n    \"evidence\": [\n      \"\\\"[2025-12-31T17:42:09+00:00] (Employee) Qasim Ali: * Customer tested on fresh Windows Server 2019 with Outlook 2019 x64.\\\"\",\n      \"\\\"[2025-12-29T21:13:44+00:00] (Employee) Randall Shawver: ...Thank you for the updated logs and the Outlook registry exports. From your Import/Export Tool logs, we can see two sep\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60267287
+}

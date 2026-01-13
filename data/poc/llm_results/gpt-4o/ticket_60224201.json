@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response was non-informative, indicating a component could not be determined without further engagement.",
+    "evidence": [
+      "[2025-10-18T21:59:59+00:00] (AI) ATLAS: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was stuck in a loop with AI requests; there was only a single AI interaction documented.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that the support overlooked prior information provided by the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occurred in a short period, with no significant delays between them.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence that the ticket was closed while awaiting further information from support.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of mishandling specific to high-priority issues based on the provided interaction logs.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response was non-informative, indicating a component could not be determined without further engagement.\",\n    \"evidence\": [\"[2025-10-18T21:59:59+00:00] (AI) ATLAS: Component could not be determined\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the customer was stuck in a loop with AI requests; there was only a single AI interaction documented.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the support overlooked prior information provided by the customer.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occurred in a short period, with no significant delays between them.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the ticket was closed while awaiting further information from support.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of mishandling specific to high-priority issues based on the provided interaction logs.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60224201
+}

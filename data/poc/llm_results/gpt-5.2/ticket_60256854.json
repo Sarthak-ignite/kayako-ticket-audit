@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible content is an AI-generated private note stating it is a record of a prior conversation; there is no substantive AI troubleshooting content to evaluate for correctness, generic filler, or broken promises.",
+    "evidence": [
+      "[2025-12-04T22:59:16+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated AI prompts, repeated requests for the same info, or customer being blocked from reaching a human; the timeline contains only a single AI note.",
+    "evidence": [
+      "[2025-12-04T22:59:16+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No agent/customer exchange is shown where prior-provided information is ignored or re-requested, and no references to past tickets or logs/screenshots appear in the visible content.",
+    "evidence": [
+      "[2025-12-04T22:59:16+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interaction timeline shows only one timestamped entry; there is no multi-day gap (or any gap) observable between interactions.",
+    "evidence": [
+      "[2025-12-04T22:59:16+00:00] (AI) ATLAS: \"Kayako - ticket id 60256854\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, there is no evidence in the interaction content that the customer was awaiting promised information or that the ticket was closed mid-resolution; only a single AI private comment is present.",
+    "evidence": [
+      "[2025-12-04T22:59:16+00:00] (AI) ATLAS: \"ATLAS commented privately\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is listed as normal (not P1/Sev1), and there is no troubleshooting content indicating mishandling of an outage scenario.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only visible content is an AI-generated private note stating it is a record of a prior conversation; there is no substantive AI troubleshooting content to evaluate for correctness, generic filler, or broken promises.\",\n    \"evidence\": [\"[2025-12-04T22:59:16+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:\\\"\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repeated AI prompts, repeated requests for the same info, or customer being blocked from reaching a human; the timeline contains only a single AI note.\",\n    \"evidence\": [\"[2025-12-04T22:59:16+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No agent/customer exchange is shown where prior-provided information is ignored or re-requested, and no references to past tickets or logs/screenshots appear in the visible content.\",\n    \"evidence\": [\"[2025-12-04T22:59:16+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction timeline shows only one timestamped entry; there is no multi-day gap (or any gap) observable between interactions.\",\n    \"evidence\": [\"[2025-12-04T22:59:16+00:00] (AI) ATLAS: \\\"Kayako - ticket id 60256854\\\"\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, there is no evidence in the interaction content that the customer was awaiting promised information or that the ticket was closed mid-resolution; only a single AI private comment is present.\",\n    \"evidence\": [\"[2025-12-04T22:59:16+00:00] (AI) ATLAS: \\\"ATLAS commented privately\\\"\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is listed as normal (not P1/Sev1), and there is no troubleshooting content indicating mishandling of an outage scenario.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60256854
+}

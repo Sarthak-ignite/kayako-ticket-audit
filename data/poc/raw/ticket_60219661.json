@@ -1,0 +1,139 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_classic",
+        "requester": {
+          "id": 60513652,
+          "uuid": "ba557434-8adb-5789-a964-f0e548e3b2b9",
+          "full_name": "Daniel An",
+          "legacy_id": "003Uv0000043OmgIAE",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/ba557434-8adb-5789-a964-f0e548e3b2b9?1765825496",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60068927,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 515183,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-11-25T09:45:09+00:00",
+          "last_active_at": "2025-12-15T19:04:56+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60513652",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@1508dd5dc43955947ed71f98a5c943fcc9a21fa4",
+          "password_updated_at": "2025-11-19T06:56:29+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-07-09T16:51:36+00:00",
+          "updated_at": "2025-12-15T19:04:56+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60513652"
+        },
+        "ticket_idt": 60219661
+      },
+      "interactions": [
+        [
+          "2025-10-16T12:31:05+00:00",
+          "Kayako - ticket id 60219661 // Balaji Jayaraman commented publicly: Dear Daniel,\n\nThanks for the update. Please let us know if you still see issues.\n\nBest regards,\nKhoros Community Classic Support Team\n\n"
+        ],
+        [
+          "2025-10-16T08:28:05+00:00",
+          "Kayako - ticket id 60219661 // Daniel An commented publicly:  \nHi\u00a0Keyur\n\nThanks a lot for the notice.\u00a0\n\nYesterday, it showed the 404 error message.\u00a0\n\nSo wired but thanks a lot to hear from you about this.\u00a0\n\nThanks.\u00a0\n\n\n"
+        ],
+        [
+          "2025-10-15T17:01:18+00:00",
+          "Kayako - ticket id 60219661 // Keyur Saxena commented publicly: Hello Daniel,\n\nI can see that https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg is not returning 404. Can you clarify exactly what is pending for this request? We will proceed once we have more details.\n\nBest regards,\nKeyur Saxena\nKhoros Community Classic Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-15T11:00:31+00:00",
+          "Kayako - ticket id 60219661 // Daniel An commented publicly: Sent with Kayako [https://kayako.com]\n\nimage\n\n\u00a0\n\nimage\n\n\t\timage"
+        ],
+        [
+          "2025-10-13T14:39:38+00:00",
+          "Kayako - ticket id 60219661 // Keyur Saxena commented privately:  I made 0 changes here, just checked the URL to see if it 404'd and it didn't "
+        ],
+        [
+          "2025-10-13T14:39:02+00:00",
+          "Kayako - ticket id 60219661 // Keyur Saxena commented privately: image"
+        ],
+        [
+          "2025-10-13T14:38:33+00:00",
+          "Kayako - ticket id 60219661 // Keyur Saxena commented publicly: Hello Daniel,\n\nI can see that https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg now loads up fine. Let us know if any additional changes are needed.\n\nBest regards,\nKeyur Saxena\nKhoros Support Team"
+        ],
+        [
+          "2025-10-13T08:47:26+00:00",
+          "Kayako - ticket id 60219661 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-10-13T08:46:51+00:00",
+          "Kayako - ticket id 60219661 // Daniel An commented publicly:  \nDears,\u00a0\n\nMay I request publishing the following image in R1?\n\n6746575 is\u00a0the version number.\n\nFYI, I uploaded it on Stg as follows.\u00a0\n\nhttps://stg-r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg?version=preview\n\nBut it shows \"HTTP Status 404-\" in https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg\n\nI uploaded the following version numbers altogether but strangely only\u00a06746575 is not published in PRD.\u00a0\n\nCould you check this and make it published?\u00a0\n\nBest,\n\nyh\u00a0\n\n\u00a0\n\nimage\n\n"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 9,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

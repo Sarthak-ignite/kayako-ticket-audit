@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses are largely generic/speculative (links + broad suggestions) and include at least one configuration claim that conflicts with later evidence. This likely sent the customer toward ineffective rule changes rather than isolating the real bottleneck (later suspected GRO).",
+    "evidence": [
+      "ATLAS: \u201cKerio Control is designed as a UTM firewall, and some features\u2014even when disabled\u2014can interact with specific CDN behaviors (like those used by Apple). Below are steps and references\u2026\u201d (generic, speculative framing rather than targeted diagnosis)",
+      "ATLAS: \u201cThe absence of a blanket *.apple.com entry in your Apple Updates or HTTPS exclusion groups\u2026\u201d (later screenshot analysis shows \u201c*.apple.com\u201d present in the HTTPS exclusions group: \u201cMultiple Apple-related domains are included\u2026 appldnld.apple.com, *.apple.com, apple.com\u2026\u201d)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There are only a couple of ATLAS replies early on, and the customer is not trapped in repeated AI-only cycles. Humans eventually engage (Zubair/Jozef/Mike).",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support actions did not adequately account for key customer constraints and prior attempts: (1) ticket closed as duplicate even though the requester could not access the referenced ticket; (2) GRO recommendation repeated after customer stated they already tried it; (3) earlier troubleshooting (inspectors disabled, allow rules, etc.) didn\u2019t materially change the next steps until much later.",
+    "evidence": [
+      "Customer: \u201cIt looks like a reply was sent to the ticket I unfortunately don\u2019t have access to. Could you please close that ticket and continue the communication using Ticket #60220499\u2026\u201d (support had already redirected/closed as duplicate)",
+      "Zubair: \u201cThis ticket is a duplicate of ticket# 60216786\u2026 We will close this ticket\u2026\u201d (closure/redirect without ensuring the customer can access the other ticket)",
+      "Jozef: \u201c...recommend ... disable GRO ... Apple devices do not 'understand' GRO...\u201d followed by Customer: \u201cwe already tried that. Unfortunately, it didn\u2019t work.\u201d (suggestion repeated despite customer feedback)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple gaps exceed 3 calendar days, including a ~12-day silence after the customer requested deeper technical review, plus explicit follow-ups complaining about lack of feedback.",
+    "evidence": [
+      "Customer requested deeper technical review on 2025-10-15T15:07:29Z: \u201cCould a technician from your team please take a closer look at this issue?\u201d then no meaningful support response until 2025-10-29 (duplicate closure) / 2025-10-29 (Jozef message) (~14 days).",
+      "Customer follow-up on 2025-10-27T13:00:03Z: \u201cIt has now been two weeks since our last communication, and unfortunately, we have not received any concrete feedback\u2026\u201d",
+      "Customer provided config on 2025-10-23T06:39:25Z and still had to chase on 2025-10-27T13:00:03Z without an intervening technical update."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket closure occurred without demonstrated resolution. The customer ultimately asked to close, but the context indicates they were still blocked and had not received a working fix; this reads like abandonment/fatigue rather than confirmed success.",
+    "evidence": [
+      "Customer (earlier): \u201cthe issue still persists\u2026 Several additional tests\u2026 clearly indicate that the problem originates on the GFI side.\u201d",
+      "Customer escalation (2025-11-04): \u201cit is currently not possible to work with this product.\u201d",
+      "Support (2025-11-04): requests extensive new diagnostics; no solution provided in-ticket afterward.",
+      "Customer (2025-11-05): \u201cTicket can be closed\u201d (no confirmation of fix; appears to be giving up/closing despite unresolved symptoms)."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue impacted core functionality (updates/downloads) and was described as blocking usage, yet escalation and high-priority handling happened late (weeks after initial report). The case also suffered long silences and administrative duplicate-closure friction.",
+    "evidence": [
+      "Customer (2025-10-23): \u201cThe customer is currently unable to perform updates\u2026\u201d",
+      "Customer (2025-11-04): \u201cit is currently not possible to work with this product.\u201d / escalation tagged \u201cseverity\u2026 core_functionality_defect\u201d",
+      "Escalation to L2 + priority High only on 2025-11-04, despite initial report on 2025-10-14 and repeated \u201cstill persists\u201d messages on 10-15 and 10-17.",
+      "Administrative handling: ticket closed as duplicate (2025-10-29) while customer lacked access to the other ticket, adding delay/friction instead of urgent progression."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60220499
+}

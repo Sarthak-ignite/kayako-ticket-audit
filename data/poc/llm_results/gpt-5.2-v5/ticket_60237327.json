@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The visible content is mostly standard AI introduction and a prompt for more details. There is no customer-facing indication the AI gave incorrect/misleading guidance, and the transcript is truncated before any substantive AI answer can be evaluated.",
+    "evidence": [
+      "Walk me through what's happening or select from the below frequent requests.",
+      "One member has access to start an article on a blog that he has no permissions for"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer asked for a human agent or that the AI kept looping after such a request. The provided excerpt shows initial AI prompts and one customer statement only (with the remainder truncated).",
+    "evidence": [
+      "If I'm unable to help you, I can patch you through to a Live agent...",
+      "One member has access to start an article on a blog that he has no permissions for"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support agent follow-up is visible that repeats requests or ignores previously provided details. The excerpt contains only the initial customer problem statement and generic AI prompting.",
+    "evidence": [
+      "Don't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you.",
+      "One member has access to start an article on a blog that he has no permissions for"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interaction history shown includes a single timestamped entry and does not show subsequent staff responses or time gaps. There is also no customer complaint about waiting or an apology for delay.",
+    "evidence": [
+      "[2025-11-06T11:06:38+00:00]",
+      "Kayako - ticket id 60237327 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No closure/auto-closure language is present in the provided text. The excerpt does not indicate the ticket was closed while the issue remained unresolved.",
+    "evidence": [
+      "Thanks for chatting earlier with our AI Support!",
+      "Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer describes a permissions/access anomaly for one member, but there is no explicit P1/SEV1/outage/critical language or broad production impact described. No support handling beyond the initial AI prompt is visible.",
+    "evidence": [
+      "One member has access to start an article on a blog that he has no permissions for"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60237327
+}

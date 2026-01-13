@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI providing generic filler, wrong information, or making unkept promises in the available interactions.",
+    "evidence": [
+      "No specific evidence from the provided interactions indicates AI quality failures."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interactions show that a human picked up the ticket manually, and there is no indication of the customer being stuck in an AI loop.",
+    "evidence": [
+      "2025-11-25T07:42:16+00:00 - Matthew Mrosko picks up the ticket manually."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Evidence does not suggest that support ignored any context or repeated requests were made for the same information.",
+    "evidence": [
+      "Support acknowledges customer's approval and updates the main ticket - 2025-11-25T07:43:00+00:00."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay of 88.8 hours to first human response and a maximum gap of 79 hours between responses.",
+    "evidence": [
+      "Time to first human (hours): 88.8",
+      "Max gap between responses (hours): 79.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not appear to have been closed prematurely as the response from support seems to align with resolving the issue.",
+    "evidence": [
+      "Support updates the case based on customer's approval - 2025-11-25T07:43:00+00:00."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of mishandling as the interactions do not reflect inappropriate troubleshooting or the need for escalation.",
+    "evidence": [
+      "The handling does not involve any improper troubleshooting - 2025-11-25T07:42:16+00:00."
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI providing generic filler, wrong information, or making unkept promises in the available interactions.\",\n    \"evidence\": [\"No specific evidence from the provided interactions indicates AI quality failures.\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions show that a human picked up the ticket manually, and there is no indication of the customer being stuck in an AI loop.\",\n    \"evidence\": [\"2025-11-25T07:42:16+00:00 - Matthew Mrosko picks up the ticket manually.\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Evidence does not suggest that support ignored any context or repeated requests were made for the same information.\",\n    \"evidence\": [\"Support acknowledges customer's approval and updates the main ticket - 2025-11-25T07:43:00+00:00.\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay of 88.8 hours to first human response and a maximum gap of 79 hours between responses.\",\n    \"evidence\": [\"Time to first human (hours): 88.8\", \"Max gap between responses (hours): 79.0\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not appear to have been closed prematurely as the response from support seems to align with resolving the issue.\",\n    \"evidence\": [\"Support updates the case based on customer's approval - 2025-11-25T07:43:00+00:00.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of mishandling as the interactions do not reflect inappropriate troubleshooting or the need for escalation.\",\n    \"evidence\": [\"The handling does not involve any improper troubleshooting - 2025-11-25T07:42:16+00:00.\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60248266
+}

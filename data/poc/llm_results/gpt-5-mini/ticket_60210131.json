@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses are minimal/repetitive and provide no useful resolution (repeated 'Action: l1' and truncated transcript), indicating generic filler rather than substantive help.",
+    "evidence": [
+      "\"[2025-10-02T14:03:12+00:00] (AI) ATLAS: ... ATLAS commented privately: Action: l1\"",
+      "\"[2025-09-30T08:49:23+00:00] (AI) ATLAS: ... ATLAS commented privately: Action: l1\"",
+      "\"[2025-09-30T08:48:26+00:00] (AI) ATLAS: ... ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat: --- AI Assistant --- Hi, Cedric Dubie ! \ud83d\udc4b This is the FogBugz A\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI repeatedly requested the same information or prevented escalation; interactions show short AI notes and later human involvement rather than a loop of repeated requests.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no explicit example of the agent or AI asking for information the customer already provided or ignoring prior details in the transcript snippets shown.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Long gaps between AI and human interactions and a very long time-to-first-human indicate significant delay in handling the ticket.",
+    "evidence": [
+      "\"Time to first human (hours): 668.4\"",
+      "\"Max gap between responses (hours): 615.2\"",
+      "\"[2025-09-30T08:49:23+00:00] (AI) ATLAS: ...\"",
+      "\"[2025-10-28T12:04:02+00:00] (Employee) Randall Shawver: Kayako - ticket id 60210131 // Randall Shawver commented publicly: Dear Cedric, Thank you for reaching out to us regarding this issue. We can confirm that the payment has been received and you have n\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is closed but there is no clear evidence the customer was still waiting for promised information or that closure occurred while the customer was expecting further action.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal and there is no indication of a P1/SEV1 outage or related generic troubleshooting instead of escalation.",
+    "evidence": [
+      "\"Priority: normal\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses are minimal/repetitive and provide no useful resolution (repeated 'Action: l1' and truncated transcript), indicating generic filler rather than substantive help.\",\n    \"evidence\": [\n      \"\\\"[2025-10-02T14:03:12+00:00] (AI) ATLAS: ... ATLAS commented privately: Action: l1\\\"\",\n      \"\\\"[2025-09-30T08:49:23+00:00] (AI) ATLAS: ... ATLAS commented privately: Action: l1\\\"\",\n      \"\\\"[2025-09-30T08:48:26+00:00] (AI) ATLAS: ... ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat: --- AI Assistant --- Hi, Cedric Dubie ! \ud83d\udc4b This is the FogBugz A\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI repeatedly requested the same information or prevented escalation; interactions show short AI notes and later human involvement rather than a loop of repeated requests.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no explicit example of the agent or AI asking for information the customer already provided or ignoring prior details in the transcript snippets shown.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Long gaps between AI and human interactions and a very long time-to-first-human indicate significant delay in handling the ticket.\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 668.4\\\"\",\n      \"\\\"Max gap between responses (hours): 615.2\\\"\",\n      \"\\\"[2025-09-30T08:49:23+00:00] (AI) ATLAS: ...\\\"\",\n      \"\\\"[2025-10-28T12:04:02+00:00] (Employee) Randall Shawver: Kayako - ticket id 60210131 // Randall Shawver commented publicly: Dear Cedric, Thank you for reaching out to us regarding this issue. We can confirm that the payment has been received and you have n\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is closed but there is no clear evidence the customer was still waiting for promised information or that closure occurred while the customer was expecting further action.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal and there is no indication of a P1/SEV1 outage or related generic troubleshooting instead of escalation.\",\n    \"evidence\": [\n      \"\\\"Priority: normal\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60210131
+}

@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence provided that indicates AI responses were generic, incorrect, or made unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interaction data does not show that the customer was stuck in an AI loop; there is no mention of repetitive requests for information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that the support team ignored previously provided information or asked for the same logs/screenshots again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between responses is zero hours, indicating that there were no delays in responses.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while the customer, Brandon Heugly, was still waiting for the ticket to be reopened as requested.",
+    "evidence": [
+      "Need this ticket reopened.",
+      "Brandon Heugly commented publicly: 2025-10-15T21:23:16+00:00"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket's priority is marked as normal and does not relate to a high-priority situation that would require immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence provided that indicates AI responses were generic, incorrect, or made unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction data does not show that the customer was stuck in an AI loop; there is no mention of repetitive requests for information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the support team ignored previously provided information or asked for the same logs/screenshots again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between responses is zero hours, indicating that there were no delays in responses.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while the customer, Brandon Heugly, was still waiting for the ticket to be reopened as requested.\",\n    \"evidence\": [\"Need this ticket reopened.\", \"Brandon Heugly commented publicly: 2025-10-15T21:23:16+00:00\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket's priority is marked as normal and does not relate to a high-priority situation that would require immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60222138
+}

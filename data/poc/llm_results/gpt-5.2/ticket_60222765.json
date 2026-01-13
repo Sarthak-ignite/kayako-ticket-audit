@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI placed the ticket on hold for an extremely long duration (9999 hours), which effectively blocks timely follow-up and is inconsistent with an urgent ticket; it also made a broad promise to keep the customer informed without evidence of interim updates.",
+    "evidence": [
+      "[2025-10-17T05:15:18+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-10-16T14:55:41+00:00] (AI) Cu Chulainn AI Manager: \"We have contacted the Engineering team and will keep you informed as soon as we receive additional information\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence of the AI repeatedly asking for the same information or preventing access to a human; the flow shows escalation to Engineering rather than an information-collection loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The provided excerpts do not show support asking again for logs/screenshots already provided or ignoring specific details the customer shared; instead, the ticket was escalated to Engineering.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-week gap between the customer\u2019s request/escalation and the final resolution update, indicating significant response delay (multiple days).",
+    "evidence": [
+      "[2025-10-16T14:55:41+00:00] (AI) Cu Chulainn AI Manager: \"We have contacted the Engineering team and will keep you informed...\"",
+      "[2025-11-25T14:50:26Z] (Employee) leonhardholz: \"The fix is now released in Jive 12.7.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The closure is not shown occurring while the customer was awaiting promised information; the timeline indicates a fix release was communicated before closure, and there is no customer follow-up being ignored at the end.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "For this urgent ticket, support escalated to Engineering rather than providing generic troubleshooting steps (e.g., cache/VPN/firewall), so P1 mishandling is not evident in the excerpts.",
+    "evidence": [
+      "[2025-10-16T14:55:41+00:00] (AI) Cu Chulainn AI Manager: \"We have contacted the Engineering team\"",
+      "[2025-10-17T05:15:03+00:00] (Employee) Alexandr Oliynyk: \"I agree that we need ENG to investigate this issue.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI placed the ticket on hold for an extremely long duration (9999 hours), which effectively blocks timely follow-up and is inconsistent with an urgent ticket; it also made a broad promise to keep the customer informed without evidence of interim updates.\",\n    \"evidence\": [\n      \"[2025-10-17T05:15:18+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-10-16T14:55:41+00:00] (AI) Cu Chulainn AI Manager: \\\"We have contacted the Engineering team and will keep you informed as soon as we receive additional information\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence of the AI repeatedly asking for the same information or preventing access to a human; the flow shows escalation to Engineering rather than an information-collection loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided excerpts do not show support asking again for logs/screenshots already provided or ignoring specific details the customer shared; instead, the ticket was escalated to Engineering.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a multi-week gap between the customer\u2019s request/escalation and the final resolution update, indicating significant response delay (multiple days).\",\n    \"evidence\": [\n      \"[2025-10-16T14:55:41+00:00] (AI) Cu Chulainn AI Manager: \\\"We have contacted the Engineering team and will keep you informed...\\\"\",\n      \"[2025-11-25T14:50:26Z] (Employee) leonhardholz: \\\"The fix is now released in Jive 12.7.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The closure is not shown occurring while the customer was awaiting promised information; the timeline indicates a fix release was communicated before closure, and there is no customer follow-up being ignored at the end.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"For this urgent ticket, support escalated to Engineering rather than providing generic troubleshooting steps (e.g., cache/VPN/firewall), so P1 mishandling is not evident in the excerpts.\",\n    \"evidence\": [\n      \"[2025-10-16T14:55:41+00:00] (AI) Cu Chulainn AI Manager: \\\"We have contacted the Engineering team\\\"\",\n      \"[2025-10-17T05:15:03+00:00] (Employee) Alexandr Oliynyk: \\\"I agree that we need ENG to investigate this issue.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60222765
+}

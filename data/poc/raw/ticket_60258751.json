@@ -1,0 +1,112 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_flow",
+        "requester": {
+          "id": 60343213,
+          "uuid": "02b47a25-8700-5c23-994b-ff5f9abced96",
+          "full_name": "Mousa Abu Maizer",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 3,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/02b47a25-8700-5c23-994b-ff5f9abced96?1767660221",
+          "agent_case_access": "ALL",
+          "organization_case_access": null,
+          "organization": {
+            "id": 60058483,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 60000239,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 344814,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Asia/Baghdad",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "92.253.55.186",
+          "last_seen_at": "2026-01-06T00:43:41+00:00",
+          "last_active_at": "2026-01-06T00:43:41+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60343213",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@9dbfee41ddddb991ebf01571a04e7e633684c6a3",
+          "password_updated_at": "2025-06-16T15:44:43+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-05T13:30:51+00:00",
+          "last_activity_at": "2026-01-05T13:30:51+00:00",
+          "created_at": "2025-06-16T15:44:43+00:00",
+          "updated_at": "2026-01-06T00:43:41+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60343213"
+        },
+        "ticket_idt": 60258751
+      },
+      "interactions": [
+        [
+          "2025-12-08T15:42:47+00:00",
+          "Kayako - ticket id 60258751 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Hi, Mousa Abu Maizer ! \ud83d\udc4b</p>\n      <p>This is the <strong>Khoros Flow</strong> AI Support Agent \ud83e\udd16.</p>\n      <hr>\n      <div style=\"line-height: 1.3; margin-top: 8px; font-size: 0.9rem; color: #666666;\">\n        <b>Please note:</b> The AI Support Agent is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" rel=\"nofollow\">these terms and conditions</a>. If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.\n      </div>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Walk me through what's happening or select from the below frequent requests.</p>\n      <p>Don't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you. \ud83d\udcaa</p>\n      <p>\ud83d\udca1Tip: Aim to give us a bit more context than just a quick \"It's not working.\" The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f</p>\n      <p>\ud83d\udca1<a href=\"https://khoros-flow.kayako.com/article/128090\" rel=\"nofollow\">Getting the most out of Khoros Flow AI Support Agent</a></p>\n      <p>If I'm unable to help you, I can patch you through to a Live agent, along with the information you supply to me during this session, so that our team has something to work with from the get-go.</p>\n    </div><br>\n  </div>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

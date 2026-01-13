@@ -1,0 +1,3248 @@
+{
+  "available_versions": [
+    "v1",
+    "v2",
+    "v3",
+    "v4",
+    "v5"
+  ],
+  "notes": {
+    "definition": "per-ticket aggregates across available gpt-5.2 prompt versions; expected labels from Patterns.csv collapsed into 6 categories; fp/fn computed per version from detected vs expected",
+    "our_patterns": [
+      "AI_QUALITY_FAILURES",
+      "AI_WALL_LOOPING",
+      "IGNORING_CONTEXT",
+      "RESPONSE_DELAYS",
+      "PREMATURE_CLOSURE",
+      "P1_SEV1_MISHANDLING"
+    ]
+  },
+  "tickets": {
+    "60005284": {
+      "tid": 60005284,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 10,
+      "fn_total": 2,
+      "errors_total": 12,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE",
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "IGNORING_CONTEXT"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v4": [
+          "AI_WALL_LOOPING",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 2,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.4
+    },
+    "60005331": {
+      "tid": 60005331,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 7,
+      "fn_total": 3,
+      "errors_total": 10,
+      "exact_match": 1,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 2,
+      "any_fn_versions": 3,
+      "any_fp_rate": 0.4,
+      "any_fn_rate": 0.6
+    },
+    "60011782": {
+      "tid": 60011782,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 14,
+      "fn_total": 3,
+      "errors_total": 17,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v3": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": []
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 3,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.6
+    },
+    "60018792": {
+      "tid": 60018792,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 1,
+      "fn_total": 0,
+      "errors_total": 1,
+      "exact_match": 4,
+      "exp": [
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 1,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.2,
+      "any_fn_rate": 0.0
+    },
+    "60069509": {
+      "tid": 60069509,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 14,
+      "fn_total": 1,
+      "errors_total": 15,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING",
+        "IGNORING_CONTEXT",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "AI_WALL_LOOPING",
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": [
+          "AI_WALL_LOOPING",
+          "PREMATURE_CLOSURE",
+          "RESPONSE_DELAYS"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 1,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.2
+    },
+    "60073150": {
+      "tid": 60073150,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 4,
+      "fn_total": 3,
+      "errors_total": 7,
+      "exact_match": 1,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "IGNORING_CONTEXT",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 3,
+      "any_fn_versions": 3,
+      "any_fp_rate": 0.6,
+      "any_fn_rate": 0.6
+    },
+    "60073892": {
+      "tid": 60073892,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 9,
+      "fn_total": 1,
+      "errors_total": 10,
+      "exact_match": 1,
+      "exp": [
+        "IGNORING_CONTEXT"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE",
+        "AI_QUALITY_FAILURES"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [],
+        "v4": [
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE",
+          "RESPONSE_DELAYS"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT"
+        ],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 1,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.2
+    },
+    "60078199": {
+      "tid": 60078199,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 12,
+      "fn_total": 4,
+      "errors_total": 16,
+      "exact_match": 0,
+      "exp": [
+        "AI_WALL_LOOPING"
+      ],
+      "common_detected": [
+        "IGNORING_CONTEXT",
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT",
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_WALL_LOOPING"
+        ],
+        "v2": [],
+        "v3": [
+          "AI_WALL_LOOPING"
+        ],
+        "v4": [
+          "AI_WALL_LOOPING"
+        ],
+        "v5": [
+          "AI_WALL_LOOPING"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.8
+    },
+    "60082637": {
+      "tid": 60082637,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 5,
+      "fn_total": 4,
+      "errors_total": 9,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE",
+        "IGNORING_CONTEXT"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "any_fp_versions": 2,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.4,
+      "any_fn_rate": 0.8
+    },
+    "60094192": {
+      "tid": 60094192,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 13,
+      "fn_total": 1,
+      "errors_total": 14,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "PREMATURE_CLOSURE",
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "AI_QUALITY_FAILURES",
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 1,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.2
+    },
+    "60098171": {
+      "tid": 60098171,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 13,
+      "fn_total": 6,
+      "errors_total": 19,
+      "exact_match": 0,
+      "exp": [
+        "AI_WALL_LOOPING",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING",
+        "IGNORING_CONTEXT",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "RESPONSE_DELAYS"
+        ],
+        "v5": [
+          "AI_WALL_LOOPING",
+          "RESPONSE_DELAYS"
+        ]
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 5,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 1.0
+    },
+    "60098583": {
+      "tid": 60098583,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 5,
+      "fn_total": 4,
+      "errors_total": 9,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v3": [],
+        "v4": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "any_fp_versions": 3,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.6,
+      "any_fn_rate": 0.8
+    },
+    "60100448": {
+      "tid": 60100448,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 3,
+      "fn_total": 0,
+      "errors_total": 3,
+      "exact_match": 3,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT"
+        ],
+        "v3": [],
+        "v4": [
+          "IGNORING_CONTEXT"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 2,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.4,
+      "any_fn_rate": 0.0
+    },
+    "60101543": {
+      "tid": 60101543,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 9,
+      "fn_total": 2,
+      "errors_total": 11,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "PREMATURE_CLOSURE",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT"
+        ],
+        "v3": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 2,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.4
+    },
+    "60163212": {
+      "tid": 60163212,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 3,
+      "fn_total": 0,
+      "errors_total": 3,
+      "exact_match": 3,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "IGNORING_CONTEXT",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [],
+        "v4": [
+          "IGNORING_CONTEXT"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 2,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.4,
+      "any_fn_rate": 0.0
+    },
+    "60164071": {
+      "tid": 60164071,
+      "versions": [
+        "v1",
+        "v2",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 4,
+      "fp_total": 6,
+      "fn_total": 4,
+      "errors_total": 10,
+      "exact_match": 0,
+      "exp": [
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "P1_SEV1_MISHANDLING",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES",
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v2": [],
+        "v4": [],
+        "v5": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ]
+      },
+      "any_fp_versions": 3,
+      "any_fn_versions": 2,
+      "any_fp_rate": 0.75,
+      "any_fn_rate": 0.5
+    },
+    "60166415": {
+      "tid": 60166415,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 12,
+      "fn_total": 5,
+      "errors_total": 17,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "P1_SEV1_MISHANDLING",
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": [
+          "RESPONSE_DELAYS"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 5,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 1.0
+    },
+    "60169826": {
+      "tid": 60169826,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 2,
+      "fn_total": 4,
+      "errors_total": 6,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "any_fp_versions": 2,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.4,
+      "any_fn_rate": 0.8
+    },
+    "60177804": {
+      "tid": 60177804,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 9,
+      "fn_total": 4,
+      "errors_total": 13,
+      "exact_match": 0,
+      "exp": [
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE",
+        "IGNORING_CONTEXT",
+        "RESPONSE_DELAYS",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "RESPONSE_DELAYS"
+        ],
+        "v5": [
+          "RESPONSE_DELAYS"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.8
+    },
+    "60185126": {
+      "tid": 60185126,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 13,
+      "fn_total": 1,
+      "errors_total": 14,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "IGNORING_CONTEXT",
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT",
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "IGNORING_CONTEXT",
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": [
+          "IGNORING_CONTEXT",
+          "RESPONSE_DELAYS"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 1,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.2
+    },
+    "60185905": {
+      "tid": 60185905,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 4,
+      "fn_total": 1,
+      "errors_total": 5,
+      "exact_match": 1,
+      "exp": [
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v3": [],
+        "v4": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": [
+          "RESPONSE_DELAYS"
+        ]
+      },
+      "any_fp_versions": 3,
+      "any_fn_versions": 1,
+      "any_fp_rate": 0.6,
+      "any_fn_rate": 0.2
+    },
+    "60190547": {
+      "tid": 60190547,
+      "versions": [
+        "v1",
+        "v2",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 4,
+      "fp_total": 7,
+      "fn_total": 0,
+      "errors_total": 7,
+      "exact_match": 2,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING",
+        "IGNORING_CONTEXT",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 2,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.5,
+      "any_fn_rate": 0.0
+    },
+    "60193443": {
+      "tid": 60193443,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 7,
+      "fn_total": 8,
+      "errors_total": 15,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "AI_WALL_LOOPING",
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "RESPONSE_DELAYS"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT",
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v3": [
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [
+          "AI_QUALITY_FAILURES",
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 5,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 1.0
+    },
+    "60195349": {
+      "tid": 60195349,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 5,
+      "fn_total": 4,
+      "errors_total": 9,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "IGNORING_CONTEXT",
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT"
+        ],
+        "v3": [
+          "IGNORING_CONTEXT"
+        ],
+        "v4": [
+          "IGNORING_CONTEXT"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.8
+    },
+    "60196166": {
+      "tid": 60196166,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 7,
+      "fn_total": 3,
+      "errors_total": 10,
+      "exact_match": 0,
+      "exp": [
+        "IGNORING_CONTEXT",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v3": [],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT"
+        ],
+        "v2": [],
+        "v3": [
+          "IGNORING_CONTEXT"
+        ],
+        "v4": [],
+        "v5": [
+          "IGNORING_CONTEXT"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 3,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.6
+    },
+    "60196360": {
+      "tid": 60196360,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 8,
+      "fn_total": 4,
+      "errors_total": 12,
+      "exact_match": 0,
+      "exp": [
+        "AI_WALL_LOOPING"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING",
+        "AI_WALL_LOOPING",
+        "PREMATURE_CLOSURE",
+        "IGNORING_CONTEXT",
+        "RESPONSE_DELAYS"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": [
+          "RESPONSE_DELAYS"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_WALL_LOOPING"
+        ],
+        "v2": [],
+        "v3": [
+          "AI_WALL_LOOPING"
+        ],
+        "v4": [
+          "AI_WALL_LOOPING"
+        ],
+        "v5": [
+          "AI_WALL_LOOPING"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.8
+    },
+    "60198743": {
+      "tid": 60198743,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 7,
+      "fn_total": 0,
+      "errors_total": 7,
+      "exact_match": 1,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "RESPONSE_DELAYS",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT"
+        ],
+        "v2": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [
+          "IGNORING_CONTEXT"
+        ],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.0
+    },
+    "60201836": {
+      "tid": 60201836,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 5,
+      "fn_total": 0,
+      "errors_total": 5,
+      "exact_match": 3,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "PREMATURE_CLOSURE",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING",
+        "IGNORING_CONTEXT"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [],
+        "v4": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 2,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.4,
+      "any_fn_rate": 0.0
+    },
+    "60209095": {
+      "tid": 60209095,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 7,
+      "fn_total": 0,
+      "errors_total": 7,
+      "exact_match": 2,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v3": [],
+        "v4": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": [
+          "IGNORING_CONTEXT"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 3,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.6,
+      "any_fn_rate": 0.0
+    },
+    "60209553": {
+      "tid": 60209553,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 14,
+      "fn_total": 2,
+      "errors_total": 16,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "P1_SEV1_MISHANDLING",
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "RESPONSE_DELAYS",
+        "AI_WALL_LOOPING",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "AI_WALL_LOOPING",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v4": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": [
+          "RESPONSE_DELAYS"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 2,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.4
+    },
+    "60210541": {
+      "tid": 60210541,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 11,
+      "fn_total": 2,
+      "errors_total": 13,
+      "exact_match": 0,
+      "exp": [
+        "IGNORING_CONTEXT"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES",
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "AI_QUALITY_FAILURES",
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "IGNORING_CONTEXT"
+        ],
+        "v4": [],
+        "v5": [
+          "IGNORING_CONTEXT"
+        ]
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 2,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.4
+    },
+    "60218313": {
+      "tid": 60218313,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 9,
+      "fn_total": 5,
+      "errors_total": 14,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "P1_SEV1_MISHANDLING",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_WALL_LOOPING"
+        ],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING"
+        ],
+        "v4": [
+          "AI_WALL_LOOPING"
+        ],
+        "v5": [
+          "AI_WALL_LOOPING"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.8
+    },
+    "60220499": {
+      "tid": 60220499,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 11,
+      "fn_total": 1,
+      "errors_total": 12,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "PREMATURE_CLOSURE",
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [
+          "IGNORING_CONTEXT",
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 1,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.2
+    },
+    "60220701": {
+      "tid": 60220701,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 5,
+      "fn_total": 0,
+      "errors_total": 5,
+      "exact_match": 3,
+      "exp": [
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "AI_QUALITY_FAILURES"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v3": [],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 2,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.4,
+      "any_fn_rate": 0.0
+    },
+    "60225231": {
+      "tid": 60225231,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 6,
+      "fn_total": 1,
+      "errors_total": 7,
+      "exact_match": 2,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [],
+        "v4": [
+          "IGNORING_CONTEXT"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 3,
+      "any_fn_versions": 1,
+      "any_fp_rate": 0.6,
+      "any_fn_rate": 0.2
+    },
+    "60226631": {
+      "tid": 60226631,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 4,
+      "fn_total": 2,
+      "errors_total": 6,
+      "exact_match": 1,
+      "exp": [
+        "IGNORING_CONTEXT"
+      ],
+      "common_detected": [
+        "IGNORING_CONTEXT",
+        "PREMATURE_CLOSURE",
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "IGNORING_CONTEXT"
+        ],
+        "v4": [],
+        "v5": [
+          "IGNORING_CONTEXT"
+        ]
+      },
+      "any_fp_versions": 2,
+      "any_fn_versions": 2,
+      "any_fp_rate": 0.4,
+      "any_fn_rate": 0.4
+    },
+    "60227783": {
+      "tid": 60227783,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 4,
+      "fn_total": 6,
+      "errors_total": 10,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING",
+        "IGNORING_CONTEXT"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v4": [],
+        "v5": [
+          "AI_QUALITY_FAILURES",
+          "P1_SEV1_MISHANDLING"
+        ]
+      },
+      "any_fp_versions": 3,
+      "any_fn_versions": 3,
+      "any_fp_rate": 0.6,
+      "any_fn_rate": 0.6
+    },
+    "60230003": {
+      "tid": 60230003,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 1,
+      "fn_total": 5,
+      "errors_total": 6,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "any_fp_versions": 1,
+      "any_fn_versions": 5,
+      "any_fp_rate": 0.2,
+      "any_fn_rate": 1.0
+    },
+    "60230438": {
+      "tid": 60230438,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 1,
+      "fn_total": 4,
+      "errors_total": 5,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "any_fp_versions": 1,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.2,
+      "any_fn_rate": 0.8
+    },
+    "60231299": {
+      "tid": 60231299,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 4,
+      "fn_total": 2,
+      "errors_total": 6,
+      "exact_match": 1,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "P1_SEV1_MISHANDLING",
+        "IGNORING_CONTEXT",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [],
+        "v4": [
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 2,
+      "any_fn_versions": 2,
+      "any_fp_rate": 0.4,
+      "any_fn_rate": 0.4
+    },
+    "60231851": {
+      "tid": 60231851,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 5,
+      "fn_total": 0,
+      "errors_total": 5,
+      "exact_match": 1,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "RESPONSE_DELAYS",
+        "AI_WALL_LOOPING",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_WALL_LOOPING"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [
+          "AI_WALL_LOOPING"
+        ],
+        "v4": [
+          "AI_WALL_LOOPING"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.0
+    },
+    "60232130": {
+      "tid": 60232130,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 12,
+      "fn_total": 0,
+      "errors_total": 12,
+      "exact_match": 1,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "AI_WALL_LOOPING",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT",
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.0
+    },
+    "60234621": {
+      "tid": 60234621,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 1,
+      "fn_total": 8,
+      "errors_total": 9,
+      "exact_match": 0,
+      "exp": [
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "common_detected": [
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v2": [],
+        "v3": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v4": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ]
+      },
+      "any_fp_versions": 1,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.2,
+      "any_fn_rate": 0.8
+    },
+    "60237327": {
+      "tid": 60237327,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 2,
+      "fn_total": 5,
+      "errors_total": 7,
+      "exact_match": 0,
+      "exp": [
+        "AI_WALL_LOOPING"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_WALL_LOOPING"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING"
+        ],
+        "v3": [
+          "AI_WALL_LOOPING"
+        ],
+        "v4": [
+          "AI_WALL_LOOPING"
+        ],
+        "v5": [
+          "AI_WALL_LOOPING"
+        ]
+      },
+      "any_fp_versions": 1,
+      "any_fn_versions": 5,
+      "any_fp_rate": 0.2,
+      "any_fn_rate": 1.0
+    },
+    "60238295": {
+      "tid": 60238295,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 5,
+      "fn_total": 4,
+      "errors_total": 9,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "IGNORING_CONTEXT",
+        "PREMATURE_CLOSURE",
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT"
+        ],
+        "v3": [
+          "IGNORING_CONTEXT"
+        ],
+        "v4": [
+          "IGNORING_CONTEXT"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.8
+    },
+    "60238457": {
+      "tid": 60238457,
+      "versions": [
+        "v1",
+        "v2",
+        "v4"
+      ],
+      "n_versions": 3,
+      "fp_total": 1,
+      "fn_total": 4,
+      "errors_total": 5,
+      "exact_match": 1,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING",
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v2": [],
+        "v4": []
+      },
+      "any_fp_versions": 1,
+      "any_fn_versions": 1,
+      "any_fp_rate": 0.3333333333333333,
+      "any_fn_rate": 0.3333333333333333
+    },
+    "60239883": {
+      "tid": 60239883,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 7,
+      "fn_total": 3,
+      "errors_total": 10,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES",
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 3,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.6
+    },
+    "60240989": {
+      "tid": 60240989,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 2,
+      "fn_total": 2,
+      "errors_total": 4,
+      "exact_match": 2,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [],
+        "v2": [
+          "IGNORING_CONTEXT",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 1,
+      "any_fn_versions": 2,
+      "any_fp_rate": 0.2,
+      "any_fn_rate": 0.4
+    },
+    "60241392": {
+      "tid": 60241392,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 9,
+      "fn_total": 0,
+      "errors_total": 9,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING",
+        "RESPONSE_DELAYS"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v3": [
+          "AI_WALL_LOOPING"
+        ],
+        "v4": [
+          "AI_WALL_LOOPING",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v5": [
+          "AI_WALL_LOOPING"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 0,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.0
+    },
+    "60241518": {
+      "tid": 60241518,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 4,
+      "fn_total": 0,
+      "errors_total": 4,
+      "exact_match": 2,
+      "exp": [
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES",
+        "IGNORING_CONTEXT"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT"
+        ],
+        "v3": [],
+        "v4": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 3,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.6,
+      "any_fn_rate": 0.0
+    },
+    "60242814": {
+      "tid": 60242814,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 5,
+      "fn_total": 3,
+      "errors_total": 8,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "AI_QUALITY_FAILURES"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "RESPONSE_DELAYS"
+        ],
+        "v5": [
+          "RESPONSE_DELAYS"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 5,
+      "any_fn_versions": 3,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.6
+    },
+    "60247476": {
+      "tid": 60247476,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 3,
+      "fn_total": 7,
+      "errors_total": 10,
+      "exact_match": 1,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "IGNORING_CONTEXT",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "common_detected": [
+        "IGNORING_CONTEXT",
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE",
+        "RESPONSE_DELAYS"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [],
+        "v4": [],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v2": [],
+        "v3": [
+          "AI_WALL_LOOPING",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v4": [],
+        "v5": [
+          "AI_WALL_LOOPING",
+          "P1_SEV1_MISHANDLING"
+        ]
+      },
+      "any_fp_versions": 3,
+      "any_fn_versions": 3,
+      "any_fp_rate": 0.6,
+      "any_fn_rate": 0.6
+    },
+    "60252140": {
+      "tid": 60252140,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 4,
+      "fn_total": 0,
+      "errors_total": 4,
+      "exact_match": 2,
+      "exp": [
+        "RESPONSE_DELAYS"
+      ],
+      "common_detected": [
+        "RESPONSE_DELAYS",
+        "IGNORING_CONTEXT",
+        "AI_QUALITY_FAILURES"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "IGNORING_CONTEXT"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT"
+        ],
+        "v3": [],
+        "v4": [
+          "IGNORING_CONTEXT"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [],
+        "v2": [],
+        "v3": [],
+        "v4": [],
+        "v5": []
+      },
+      "any_fp_versions": 3,
+      "any_fn_versions": 0,
+      "any_fp_rate": 0.6,
+      "any_fn_rate": 0.0
+    },
+    "60252864": {
+      "tid": 60252864,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5"
+      ],
+      "n_versions": 5,
+      "fp_total": 10,
+      "fn_total": 4,
+      "errors_total": 14,
+      "exact_match": 0,
+      "exp": [
+        "PREMATURE_CLOSURE"
+      ],
+      "common_detected": [
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING",
+        "PREMATURE_CLOSURE"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "AI_WALL_LOOPING",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v3": [
+          "RESPONSE_DELAYS"
+        ],
+        "v4": [
+          "AI_QUALITY_FAILURES",
+          "P1_SEV1_MISHANDLING",
+          "RESPONSE_DELAYS"
+        ],
+        "v5": []
+      },
+      "fn_by_ver": {
+        "v1": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v2": [],
+        "v3": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v4": [
+          "PREMATURE_CLOSURE"
+        ],
+        "v5": [
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 4,
+      "any_fp_rate": 0.8,
+      "any_fn_rate": 0.8
+    },
+    "60256173": {
+      "tid": 60256173,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v5"
+      ],
+      "n_versions": 4,
+      "fp_total": 5,
+      "fn_total": 3,
+      "errors_total": 8,
+      "exact_match": 0,
+      "exp": [
+        "AI_QUALITY_FAILURES",
+        "AI_WALL_LOOPING"
+      ],
+      "common_detected": [
+        "IGNORING_CONTEXT",
+        "AI_WALL_LOOPING",
+        "AI_QUALITY_FAILURES",
+        "RESPONSE_DELAYS",
+        "P1_SEV1_MISHANDLING"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING"
+        ],
+        "v3": [
+          "IGNORING_CONTEXT"
+        ],
+        "v5": [
+          "IGNORING_CONTEXT"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_WALL_LOOPING"
+        ],
+        "v2": [],
+        "v3": [
+          "AI_QUALITY_FAILURES"
+        ],
+        "v5": [
+          "AI_QUALITY_FAILURES"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 3,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.75
+    },
+    "60258400": {
+      "tid": 60258400,
+      "versions": [
+        "v1",
+        "v2",
+        "v3",
+        "v5"
+      ],
+      "n_versions": 4,
+      "fp_total": 8,
+      "fn_total": 3,
+      "errors_total": 11,
+      "exact_match": 0,
+      "exp": [
+        "AI_WALL_LOOPING"
+      ],
+      "common_detected": [
+        "IGNORING_CONTEXT",
+        "PREMATURE_CLOSURE",
+        "RESPONSE_DELAYS",
+        "AI_WALL_LOOPING",
+        "P1_SEV1_MISHANDLING",
+        "AI_QUALITY_FAILURES"
+      ],
+      "fp_by_ver": {
+        "v1": [
+          "RESPONSE_DELAYS"
+        ],
+        "v2": [
+          "AI_QUALITY_FAILURES",
+          "IGNORING_CONTEXT",
+          "P1_SEV1_MISHANDLING",
+          "PREMATURE_CLOSURE"
+        ],
+        "v3": [
+          "IGNORING_CONTEXT"
+        ],
+        "v5": [
+          "IGNORING_CONTEXT",
+          "PREMATURE_CLOSURE"
+        ]
+      },
+      "fn_by_ver": {
+        "v1": [
+          "AI_WALL_LOOPING"
+        ],
+        "v2": [],
+        "v3": [
+          "AI_WALL_LOOPING"
+        ],
+        "v5": [
+          "AI_WALL_LOOPING"
+        ]
+      },
+      "any_fp_versions": 4,
+      "any_fn_versions": 3,
+      "any_fp_rate": 1.0,
+      "any_fn_rate": 0.75
+    }
+  }
+}

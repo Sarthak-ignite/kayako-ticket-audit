@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided potentially incorrect account/license data (showing 0 devices/0 licenses) and an unhelpful generic recommendation (contact account manager) rather than progressing the requested device/number add. This suggests low-quality or inaccurate automation output.",
+    "evidence": [
+      "\u201cIt seems your company is already using all of the licensed seats. Active Devices: 0 Total Licenses: 0\u201d",
+      "\u201cOur recommendation is for you to contact your account manager to purchase more licenses.\u201d",
+      "Customer: \u201cPlease add 7868153707 to Company ID 104983\u201d (AI flow did not actually complete this request)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly attempted to reach a human/agent after the AI interaction was insufficient, indicating they hit an AI wall before getting effective help.",
+    "evidence": [
+      "Customer: \u201cHello, I needed further assistance than StreetSmart ATLAS could provide. Could you assist me?\u201d",
+      "User Queries: \u201crepresentative\u201d",
+      "User Queries: \u201c\ud83d\udde8\ufe0f Contact an Agent\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support provided instructions requiring access to an account (COID 102817) that the customer then stated they do not control; the prior guidance did not anticipate/validate ownership/admin access for that COID, effectively blocking resolution and not aligning with the customer's stated goal (add number to 104983).",
+    "evidence": [
+      "Support: \u201cCould you please login to COID 102817 and transition it to StreetSmart...\u201d",
+      "Customer: \u201c102817 is not our company ID so I do not have the login for it. 7868153707 is our number which needs to be added to 104983.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap between the customer's reply and the next meaningful support response, and the customer escalated citing the request had been open over a week.",
+    "evidence": [
+      "Customer (2025-10-03T09:34:36+00:00): \u201c102817 is not our company ID...\u201d",
+      "Next public support response (2025-10-09T14:01:39+00:00): \u201cWe have received your escalation and we are currently working on it.\u201d",
+      "Escalation note: \u201cRequest has been opened over a week\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed at the customer\u2019s request after support indicated the number move was completed; there is no evidence it was closed while the customer was still awaiting a promised action.",
+    "evidence": [
+      "Support: \u201cWe have processed your request, and you should also now be able to see it...\u201d",
+      "Customer: \u201cThis ticket can be closed\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although an escalation tagged severity as a core functionality defect, the customer did not describe a platform-wide outage/SEV1 scenario, and support acknowledged the escalation relatively quickly without inappropriate generic outage troubleshooting.",
+    "evidence": [
+      "Escalation metadata: \u201cThe severity is: core_functionality_defect\u201d",
+      "Support response within ~1 hour of escalation: \u201cWe have received your escalation and we are currently working on it.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60211680
+}

@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are repetitive and incomplete, cutting off mid-sentence without providing substantive assistance.",
+    "evidence": [
+      "[2025-12-05T06:15:08+00:00] Dear Karuna, Thank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoro [cut off]",
+      "[2025-12-05T06:13:52+00:00] Dear Karuna, Thank you for providing the additional details regarding the issue where users must refresh the page to reply to a post within yo [cut off]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "AI repeatedly asks for information and seems to be cycling through generic response templates without progressing the ticket.",
+    "evidence": [
+      "[2025-12-04T09:52:33+00:00] Dear Karuna, Thank you for reaching out to us. To ensure that we address your query efficiently, could you kindly specify whi [cut off]"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI appears to be tracking the context of the Khoros community issue and referencing the customer's provided details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interactions appear to be relatively quick, with responses within the same day.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There's no clear evidence of the ticket being closed before resolution.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as a high-priority or severity 1 issue.",
+    "evidence": []
+  },
+  "_raw_response": "Here's the analysis of the support ticket for the specified quality issues:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are repetitive and incomplete, cutting off mid-sentence without providing substantive assistance.\",\n    \"evidence\": [\n      \"[2025-12-05T06:15:08+00:00] Dear Karuna, Thank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoro [cut off]\",\n      \"[2025-12-05T06:13:52+00:00] Dear Karuna, Thank you for providing the additional details regarding the issue where users must refresh the page to reply to a post within yo [cut off]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"AI repeatedly asks for information and seems to be cycling through generic response templates without progressing the ticket.\",\n    \"evidence\": [\n      \"[2025-12-04T09:52:33+00:00] Dear Karuna, Thank you for reaching out to us. To ensure that we address your query efficiently, could you kindly specify whi [cut off]\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI appears to be tracking the context of the Khoros community issue and referencing the customer's provided details.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions appear to be relatively quick, with responses within the same day.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There's no clear evidence of the ticket being closed before resolution.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as a high-priority or severity 1 issue.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n1. The AI responses are particularly problematic, with truncated messages and repetitive language.\n2. There's a clear AI wall where the system seems to be stuck in a loop of asking for clarification.\n3. Despite these issues, the ticket appears to be tracking a specific technical issue about page refreshing in the Khoros community platform.\n4. The ticket does not show signs of critical mishandling, but the AI interaction quality is notably poor.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60256250
+}

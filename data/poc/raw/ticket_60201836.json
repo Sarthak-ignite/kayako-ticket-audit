@@ -1,0 +1,216 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_appmanager",
+        "requester": {
+          "id": 60097605,
+          "uuid": "bd0c14cb-b566-43c8-a889-f5249d9b07e3",
+          "full_name": "Jozef Kacala",
+          "legacy_id": "362560551334",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 2,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/bd0c14cb-b566-43c8-a889-f5249d9b07e3?1767784256",
+          "agent_case_access": "ALL",
+          "organization_case_access": null,
+          "organization": {
+            "id": 60000041,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 2,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000013,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000100,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000239,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 99140,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "87.197.108.82",
+          "last_seen_at": "2026-01-07T11:10:56+00:00",
+          "last_active_at": "2026-01-07T11:10:56+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60097605",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@6be1f0586d640835e3b2bdea9a799cfbbb5f9164",
+          "password_updated_at": "2025-03-21T15:19:15+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-07T09:37:49+00:00",
+          "last_activity_at": "2026-01-07T11:10:56+00:00",
+          "created_at": "2018-05-17T11:56:45+00:00",
+          "updated_at": "2026-01-07T11:10:56+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60097605"
+        },
+        "ticket_idt": 60201836
+      },
+      "interactions": [
+        [
+          "2025-10-27T06:04:54+00:00",
+          "Kayako - ticket id 60201836 // Andriy Rybalchenko commented publicly: No problem!\n\nI will close this ticket then, as there are no actions left on the Support team side at the moment. Have a good day!\n\nBest regards,\nAndriy Rybalchenko\nGFI - AppManager Support Team\n\n"
+        ],
+        [
+          "2025-10-23T13:50:06+00:00",
+          "Kayako - ticket id 60201836 // Jozef Kacala commented publicly: thank you \n\n\n"
+        ],
+        [
+          "2025-10-23T13:07:49+00:00",
+          "Kayako - ticket id 60201836 // Andriy Rybalchenko commented publicly: Hi Jozef,\n\nEngineering responded that this has been a known issue in the current architecture, and no amount of band-aids will fix it. Re-architecting the agent will resolve this issue - a spec is currently in progress via feature pipeline. There isn't anything we can do atm, just wait for TPM to work on the spec and then Engineering to implement it.\n\nBest regards,\nAndriy Rybalchenko\nGFI - AppManager Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-23T13:05:22+00:00",
+          "Kayako - ticket id 60201836 // Andriy Rybalchenko commented privately: image"
+        ],
+        [
+          "2025-10-23T12:32:31Z",
+          "GHI Engineering - 15018 // trilogy-eng-standards removed_from_project_v2"
+        ],
+        [
+          "2025-10-23T12:09:29Z",
+          "GHI Engineering - 15018 // trilogy-taro[bot] commented: > #taro-issue-summary\n\nGFI AppManager incorrectly flags active units as offline when health metrics from the GFI Agent experience ingestion delays exceeding 10 minutes through the Kinesis \u2192 OpenSearch \u2192 Database pipeline, even though the agent remains operational and connected. The root cause is an overly aggressive 10-minute threshold in the offline detection logic within serializer.py that doesn't account for transient pipeline delays. Engineering has implemented a temporary fix by increasing the threshold from 10 minutes to 60 minutes via pull request #1104, but Customer Support should note that a permanent solution requires the agent re-architecture currently in progress through the feature pipeline.\n\n\n> Created with [Taro](https://github.com/trilogy-group/taro/tree/shell). Like this comment if it was helpful.\n"
+        ],
+        [
+          "2025-10-23T12:08:35Z",
+          "GHI Engineering - 15018 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-10-23T12:08:33Z",
+          "GHI Engineering - 15018 // anujkumar-df commented: Re-architecting of agent will resolve this issue, which is currently in progress. This has been a known issue in the current architecture, and no amount of band-aids will fix it. A spec is currently in progress via feature pipeline."
+        ],
+        [
+          "2025-10-23T07:32:43Z",
+          "GHI Engineering - 15018 // trilogy-taro[bot] commented: # Engineering Issue Bot\n\n## Issue Reproduction\n- **Issue**: Units incorrectly reported as offline despite GFI Agent being operational\n- **Observed behavior**: Units appear offline in AppManager dashboard when health metrics are delayed by > 10 minutes\n- **Impact**: False offline status persists for extended periods, causing confusion for customers and internal teams\n- **Key finding**: The issue occurs when metric transmission through the GFI Agent \u2192 Kinesis \u2192 OpenSearch \u2192 Database pipeline experiences delays exceeding 10 minutes\n\n## Root Cause Analysis\n\n### Trace through the system:\n1. **Data Flow**: Health metrics flow from GFI Agent \u2192 Kinesis \u2192 OpenSearch \u2192 Database\n2. **UI Layer**: AppManager dashboard queries the database for unit status\n3. **Logic Layer**: The offline detection logic in `serializer.py` determines offline status based on:\n   - Health value is False, OR\n   - Health record is missing (None), OR\n   - Health record's `modified_on` timestamp is older than threshold\n4. **Persistence Layer**: Health records are stored with `modified_on` timestamp tracking last update\n\n### Key Evidence:\n- **Repository**: `trilogy-group/gfi-app-manager-backend`\n- **File**: `/gfi_app_manager/app_manager/serializer.py`\n- **Methods affected**:\n  - `AccountReadSerializer._get_offline_appliance_query()` (line 352-357)\n  - `AccountBulkSerializer.get_offline_appliances_response()` (line 514-522)\n- **Current logic**: Uses 600 seconds (10 minutes) as the threshold for marking units offline\n- **Problem**: This 10-minute threshold is too aggressive for transient delays in the metric pipeline\n\n### Not a regression:\n- Reviewed recent commits - no recent changes to the offline detection threshold\n- This appears to be a long-standing configuration issue that becomes problematic when pipeline delays occur\n\n## Test Plan\n\u2705 **Unit Tests Added**:\n- Test appliances with recent health metrics (< 60 min) are NOT marked offline\n- Test appliances with delayed metrics under 60 minutes are NOT marked offline\n- Test appliances with stale metrics over 60 minutes ARE marked offline\n- Test appliances with health value=False are marked offline regardless of time\n- Test appliances with no health record are marked offline\n- Test bulk offline detection respects the 60-minute threshold\n\n## Fix Implementation\n**Code changes**:\n- Increased health metric staleness threshold from 600 seconds (10 minutes) to 3600 seconds (60 minutes)\n- Added comprehensive unit tests in `test_offline_detection.py`\n- Changes are minimal and focused on the threshold value only\n\n**Configuration change rationale**:\n- 60 minutes provides sufficient buffer for transient pipeline delays\n- Still detects genuinely offline units within a reasonable timeframe\n- Aligns with industry standards for health check timeouts in distributed systems\n\n## Test Results\n- Created comprehensive unit test suite covering all offline detection scenarios\n- Tests verify the new 60-minute threshold works correctly for various cases\n- No existing tests required modification (no tests existed for offline detection logic)\n\n## Deliverables\n- **Pull Request**: https://github.com/trilogy-group/gfi-app-manager-backend/pull/1104\n- **Branch**: `issue-bot/fix-offline-status-delay-15018`\n- **Files Modified**:\n  - `gfi_app_manager/app_manager/serializer.py` (2 lines changed)\n  - `gfi_app_manager/app_manager/tests/test_offline_detection.py` (237 lines added)\n\n## Resolution Verdict\n**Confidence: HIGH (90%)**\n\nThe fix directly addresses the root cause by increasing the offline detection threshold to accommodate pipeline delays. This is a low-risk configuration change that maintains system functionality while eliminating false positives.\n\n## Alternative Solutions Considered\n1. **Implement separate \"stale\" vs \"offline\" states** (30% likely correct)\n   - More complex but provides granular status information\n   - Would require UI changes and additional database fields\n\n2. **Add configurable threshold per account/organization** (20% likely correct)\n   - Provides flexibility but adds complexity\n   - May be over-engineering for this specific issue\n\n3. **Implement health metric buffering/caching** (10% likely correct)\n   - Could smooth out transient delays\n   - Adds significant complexity to the data pipeline\n\n## Next Steps\nThe pull request has been created and is ready for review. Once merged, monitor the production environment to ensure false offline alerts are eliminated while genuine offline detection continues to function correctly."
+        ],
+        [
+          "2025-10-23T07:29:02+00:00",
+          "Kayako - ticket id 60201836 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-10-23T07:28:02+00:00",
+          "Kayako - ticket id 60201836 // Andriy Rybalchenko commented publicly: You are welcome!"
+        ],
+        [
+          "2025-10-23T07:26:33+00:00",
+          "Kayako - ticket id 60201836 // Jozef Kacala commented publicly: thank you,\n\n23 days response time is not great.\n\n\n"
+        ],
+        [
+          "2025-10-23T07:23:02+00:00",
+          "Kayako - ticket id 60201836 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-10-23T07:22:56+00:00",
+          "Kayako - ticket id 60201836 // Arafat Bakhsh commented publicly: Dear Jozef,\n\nThank you for reaching out to the AppManager Support Team.\n\nWe have raised this issue with the Development Team.\n\nSincerely,\nArafat Bakhsh\nGFI AppManager Support Team"
+        ],
+        [
+          "2025-10-23T07:20:54Z",
+          "GHI Engineering - 15018 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-10-23T07:20:53Z",
+          "GHI Engineering - 15018 // trilogy-eng-standards added_to_project_v2"
+        ],
+        [
+          "2025-10-23T07:20:46Z",
+          "GHI Engineering - 15018 // trilogy-taro[bot] labeled as Product:GFI AppManager"
+        ],
+        [
+          "2025-10-23T07:20:44+00:00",
+          "Kayako - ticket id 60201836 // CE Maintenance Bot commented privately: Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15018"
+        ],
+        [
+          "2025-10-23T07:20:17Z",
+          "GHI Engineering - 15018 // arafatb labeled as Eng-Maintenance"
+        ],
+        [
+          "2025-09-30T11:41:07+00:00",
+          "Kayako - ticket id 60201836 // Jozef Kacala commented publicly: Thanks Garima,\n\nI do understand this.,\n\nother aspect is that this is frequent problem. while we can always understand and explain - customer is seeing this as issue and inconsistency.\n\ncan we ensure it will be stable?\n\nwhat else is influencing status update? I can imagine there can be agent issues as well.\n\n\n"
+        ],
+        [
+          "2025-09-29T23:39:40+00:00",
+          "Kayako - ticket id 60201836 // Garima Agrawal commented publicly: Jozef,\n\nHow it works : The health status shown on the Account Page depends on the \"Health\" registered in the database, which in turn depends on the Health metric sent on Kinesis/OpenSearch which is sent via GFI Agent. Now, if the Health value recorded in the database is more than 10 minutes older its treated as offline.\n\nRCA: As you mentioned metrics were absent for past 3 hours, thats the reason it was showing offline. So, \u00a0the problem here actually is why were the metrics not sent or not synced.\nI checked the Opensearch records and on 19th September I do see that for time being there was some issue which got resolved after few hours. If you still are observing this please? \n\nimage"
+        ],
+        [
+          "2025-09-22T10:16:14+00:00",
+          "Kayako - ticket id 60201836 // Jozef Kacala commented publicly: Hi,\n\nand what should I reply? you stated it is known issue so I am expecting resolution or steps to follow to resolve.\u00f4\n\nalso, Atlas should know if this incident is not on status.gfi.com [http://status.gfi.com] it pointless to refer to this.\n\n\n"
+        ],
+        [
+          "2025-09-19T09:11:08+00:00",
+          "Kayako - ticket id 60201836 // ATLAS commented publicly: Dear Jozef,\n\nThank you for reaching out and providing detailed information, including the video, regarding the issue with your unit showing as offline in AppManager.\n\nWe understand how concerning it can be when a unit appears offline, even though it\u2019s operational, and we appreciate you bringing this to our attention. Based on your description and our current knowledge, this is a known display issue impacting status visibility within AppManager \u2013 particularly for Kerio Connect units. While the unit appears offline (red status), it continues to function correctly, and you can still configure it and view metrics (though there may be a delay in metrics reporting).\n\nWe are actively monitoring and addressing this incident. For the latest updates and information regarding this situation, we recommend following our status page at https://status.gfi.com/.\n\nIf you experience any issues beyond the display error or if you need further assistance, please let us know. We're here to help.\n\nSincerely,\nATLAS\nGFI AppManager Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-19T09:10:42+00:00",
+          "Kayako - ticket id 60201836 // Jozef Kacala commented publicly: Hi team,\n\nMy unit in AppManager is reporting as offline while it is online. The agent is healthy. The unit could be configured. Metrics are also present but 3 hours back. The unit has been flagged as offline by AppManager for days. Please also review the video with evidence.\n\nhttps://www.loom.com/share/5f75babb4b4a40bfb4c71099eace346f?sid=3332c439-a661-4574-b279-cc2a010f21f3\n\nthank you"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 15,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": true,
+          "link_value": "https://github.com/trilogy-group/eng-maintenance/issues/15018"
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

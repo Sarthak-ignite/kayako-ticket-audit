@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is a public AI message that appears to be generic/templated and incomplete, with a broken sentence that does not provide actionable information to the customer.",
+    "evidence": [
+      "[2025-07-17T14:29:34+00:00] (AI) ATLAS (public): \"Dear Customer, As part of our enhanced Khoros Care Support Portal launch, we are excited to let you know that your ticket has been successfull\" (message is cut off/incomplete and non-actionable)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket shows automated reminders and system updates, but there is not clear evidence that the customer was trapped in an AI-only loop or prevented from reaching a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The visible excerpts do not clearly show support repeatedly asking for the same information/logs after the customer already provided them. Much of the human email content is truncated, so this cannot be confirmed.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple multi-day gaps between updates/responses on the case timeline, suggesting slow progression and delayed follow-up.",
+    "evidence": [
+      "Gap from [2025-06-12T11:33:12+00:00] to [2025-06-16T13:10:22+00:00] (~4 days)",
+      "Gap from [2025-06-25T14:31:10+00:00] to [2025-06-26T15:30:07+00:00] (~1 day) followed by repeated reminder cycles and later activity in July, indicating prolonged back-and-forth without clear resolution",
+      "Gap from [2025-07-08T13:20:02+00:00] to [2025-07-16T13:52:55+00:00] (~8 days)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The system marked the case as resolved based on previous information, then multiple automated reminders were sent afterward, and the case later appears to continue with additional activity\u2014consistent with a closure/resolution step occurring without confirmed customer resolution.",
+    "evidence": [
+      "[2025-06-24T17:30:11+00:00] (Employee) AI-CS Integration (public): \"Based on previous information received, your case has been marked as resolved.\"",
+      "Subsequent reminder sequence after the 'resolved' action: [2025-06-26], [2025-06-27], [2025-07-01], [2025-07-02] (automated reminders sent after marking resolved)",
+      "Later continued activity: [2025-07-07], [2025-07-08], [2025-07-16], [2025-07-17], [2025-07-23]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit severity/priority (P1/Sev1) indicators or urgency cues are visible in the provided excerpts, so mishandling of a high-priority incident cannot be determined.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60144719
+}

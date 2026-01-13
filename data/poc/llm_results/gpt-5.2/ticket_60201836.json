@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is at least one AI-generated public response that appears to be largely templated/boilerplate (\u201cthank you for reaching out\u2026\u201d) and does not clearly advance diagnosis or provide concrete next steps, despite the customer already describing the symptoms. This fits a generic filler quality issue, though there is no clear evidence of outright wrong technical information.",
+    "evidence": [
+      "[2025-09-19T09:11:08+00:00] (AI) ATLAS commented publicly: \"Dear Jozef, Thank you for reaching out and providing detailed information...\" (generic intro; no clear actionable content shown)",
+      "[2025-10-23T07:22:56+00:00] (Employee) Arafat Bakhsh commented publicly: \"Thank you for reaching out... We have raised this issue with the Development Team.\" (generic status update; no timeframe/next steps)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No clear evidence the customer was trapped in an AI-only loop or repeatedly asked the same questions by AI without access to a human. Humans did respond (e.g., Garima, Arafat, Andriy).",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The thread does not clearly show support asking for the same logs/info repeatedly after the customer already provided them. The customer mentions providing a video, but the visible replies do not clearly re-request the same materials.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer updates and subsequent substantive responses, and the customer explicitly calls out a long response time. This indicates significant response delays.",
+    "evidence": [
+      "[2025-09-19T09:10:42+00:00] Customer reports issue; next visible detailed response from support appears on [2025-09-29T23:39:40+00:00] (gap ~10 days).",
+      "[2025-10-23T07:26:33+00:00] Customer: \"23 days response time is not great.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket was closed, the final customer messages shown are acknowledgements/thanks, and there is no clear evidence the customer was still waiting on promised follow-up at the moment of closure. Earlier dissatisfaction about resolution exists, but closure occurs after customer thanks.",
+    "evidence": [
+      "[2025-10-23T13:50:06+00:00] (Employee) Jozef Kacala: \"thank you\"",
+      "[2025-10-27T06:04:54+00:00] (Employee) Andriy Rybalchenko: \"I will close this ticket then, as there are no actions left...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No severity/priority indicators (P1/Sev1) are present in the ticket text, and the workflow shows escalation to engineering rather than only generic troubleshooting. Without explicit evidence of high severity, this pattern cannot be confidently marked.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60201836
+}

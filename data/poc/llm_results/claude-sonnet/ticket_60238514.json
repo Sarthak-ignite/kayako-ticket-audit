@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI (Cu Chulainn) failed to complete the process and pulled an 'andon cord' due to an 'Unexpected b[ehavior]', indicating the AI couldn't handle the customer's request properly and had to escalate to human support.",
+    "evidence": [
+      "[2025-11-07T16:52:54+00:00] Cu Chulainn AI Manager: The process has failed and andon cord has been pulled for the following reason: **Unexpected b"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While the AI failed initially, the customer was not stuck in a loop. The AI escalated to human support appropriately after failure, and there's no evidence of repeated requests for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer clearly stated the phone number 5512175899 on Nov 9th, but the agent responded on Nov 10th asking about a 'very similar number' (implying confusion), leading the customer to re-confirm the correct number was 5512175999 twice in succession.",
+    "evidence": [
+      "[2025-11-09T20:44:55+00:00] David OBrien: I still need number 5512175899 reactivated and connected to Winston hosang",
+      "[2025-11-10T14:26:44+00:00] Shaquille De Lancy: We've noticed that there is already a very similar number on your account:",
+      "[2025-11-10T14:30:09+00:00] David OBrien: the correct number is 5512175999",
+      "[2025-11-10T14:31:39+00:00] David OBrien: 5512175999 is the correct number"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant 18+ hour gap between the customer's follow-up on Nov 9th at 20:44 and the agent's response on Nov 10th at 14:26, which matches the reported max gap of 26.4 hours.",
+    "evidence": [
+      "[2025-11-09T20:44:55+00:00] David OBrien: I still need number 5512175899 reactivated and connected to Winston hosang",
+      "[2025-11-10T14:26:44+00:00] Shaquille De Lancy: Dear David, Thank you for following up on this issue."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket was closed, the final agent message indicates they were providing instructions to the customer ('kindly direct the user to Activate Their Mobile Application'), and there's no evidence the customer responded after that with unresolved issues.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket involving device activation, not a P1/Sev1 outage scenario requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI (Cu Chulainn) failed to complete the process and pulled an 'andon cord' due to an 'Unexpected b[ehavior]', indicating the AI couldn't handle the customer's request properly and had to escalate to human support.\",\n    \"evidence\": [\n      \"[2025-11-07T16:52:54+00:00] Cu Chulainn AI Manager: The process has failed and andon cord has been pulled for the following reason: **Unexpected b\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While the AI failed initially, the customer was not stuck in a loop. The AI escalated to human support appropriately after failure, and there's no evidence of repeated requests for the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer clearly stated the phone number 5512175899 on Nov 9th, but the agent responded on Nov 10th asking about a 'very similar number' (implying confusion), leading the customer to re-confirm the correct number was 5512175999 twice in succession.\",\n    \"evidence\": [\n      \"[2025-11-09T20:44:55+00:00] David OBrien: I still need number 5512175899 reactivated and connected to Winston hosang\",\n      \"[2025-11-10T14:26:44+00:00] Shaquille De Lancy: We've noticed that there is already a very similar number on your account:\",\n      \"[2025-11-10T14:30:09+00:00] David OBrien: the correct number is 5512175999\",\n      \"[2025-11-10T14:31:39+00:00] David OBrien: 5512175999 is the correct number\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant 18+ hour gap between the customer's follow-up on Nov 9th at 20:44 and the agent's response on Nov 10th at 14:26, which matches the reported max gap of 26.4 hours.\",\n    \"evidence\": [\n      \"[2025-11-09T20:44:55+00:00] David OBrien: I still need number 5512175899 reactivated and connected to Winston hosang\",\n      \"[2025-11-10T14:26:44+00:00] Shaquille De Lancy: Dear David, Thank you for following up on this issue.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket was closed, the final agent message indicates they were providing instructions to the customer ('kindly direct the user to Activate Their Mobile Application'), and there's no evidence the customer responded after that with unresolved issues.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket involving device activation, not a P1/Sev1 outage scenario requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60238514
+}

@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no indications that the AI responses were generic fillers or provided wrong information; no specific quotes were available showing such issues.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The timeline does not show the customer being stuck in a loop or unable to reach a human representative; they interacted with the AI without repeated requests for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence that the AI support ignored any information provided by the customer or requested the same details again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There were no significant delays in responses, as indicated by a maximum gap of 0.0 hours between interactions.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to be closed without indications that the customer was left waiting for information or support.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket Priority is marked as low, not high; therefore, P1_SEV1_MISHANDLING is not applicable.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no indications that the AI responses were generic fillers or provided wrong information; no specific quotes were available showing such issues.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline does not show the customer being stuck in a loop or unable to reach a human representative; they interacted with the AI without repeated requests for the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the AI support ignored any information provided by the customer or requested the same details again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There were no significant delays in responses, as indicated by a maximum gap of 0.0 hours between interactions.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to be closed without indications that the customer was left waiting for information or support.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket Priority is marked as low, not high; therefore, P1_SEV1_MISHANDLING is not applicable.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60261219
+}

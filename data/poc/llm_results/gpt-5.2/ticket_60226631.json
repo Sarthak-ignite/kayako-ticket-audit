@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI entries are system/status updates and do not show generic filler directed at the customer, incorrect troubleshooting, or unkept promises. No customer-facing AI response content is present that can be evaluated as misleading or low quality.",
+    "evidence": [
+      "[2025-10-22T10:37:17+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-10-23T04:36:35+00:00] (AI) Centralsupport-ai-acc: \"JIRA Issue CARESMM-9351 is changed to 'Closed' , block reason: -\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer receives a human response within minutes and the thread does not show repeated AI requests for the same information or the customer being prevented from reaching a human.",
+    "evidence": [
+      "[2025-10-22T10:26:48+00:00] (Employee) Deepanshu Dewan: \"Thank you for calling Khoros Care Support. As discussed, your ticket has been assigned to an agent.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly asks support to review history of prior tickets due to recurrence; there is no clear evidence in subsequent responses that support acknowledged reviewing prior tickets, and responses proceed with generic resolution messaging.",
+    "evidence": [
+      "[2025-10-23T07:56:23+00:00] (Employee) Jayashree Shetty: \"We have been encountering this issue repeatedly. Please review the history of previously raised tickets...\"",
+      "[2025-10-22T12:49:34+00:00] (Employee) Chintan Parekh: \"We\u2019re pleased to inform you that the recent service disruption affecting the Khoros Care platform has been resolved.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no multi-day gaps in the provided timeline; interactions occur within the same day or within ~1 day. The stated max gap is 9.4 hours, which is not a multi-day delay.",
+    "evidence": [
+      "[2025-10-22T12:49:34+00:00] (Employee) Chintan Parekh: \"We\u2019re pleased to inform you... has been resolved.\"",
+      "[2025-10-23T07:56:23+00:00] (Employee) Jayashree Shetty: \"We have been encountering this issue repeatedly...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The internal incident/Jira was closed while team members were still requesting follow-up deliverables (runbook/playbook), indicating closure without completing promised/needed next steps for recurrence handling.",
+    "evidence": [
+      "[2025-10-22T11:47:54.076+0000] (Employee) Deniz Yavas: \"please prepare a playbook on how to fix this issue for any further occurences.\"",
+      "[2025-10-22T22:13:02.111+0000] (Employee) Muhammad Umer: \"could you please share the runbook to cater this kind of issue in future.\"",
+      "[2025-10-23T04:36:31.968+0000] (General) None: \"status is changed from In Progress to Closed\"",
+      "[2025-10-23T04:36:06.199+0000] (Employee) Quang Vo: \"Closing this ticket as the issue was resolved.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "For this urgent/outage scenario, the thread shows investigation and operational remediation (Elasticsearch restart) rather than generic end-user troubleshooting (cache/VPN/firewall). No evidence of inappropriate generic troubleshooting instead of escalation is present.",
+    "evidence": [
+      "[2025-10-22T11:39:07.819+0000] (Employee) Muhammad Waqar: \"Elasticsearch service was restarted on the following nodes...\"",
+      "[2025-10-22T10:36:18.164+0000] (General) None: \"status is changed from In Queue to In Progress\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI entries are system/status updates and do not show generic filler directed at the customer, incorrect troubleshooting, or unkept promises. No customer-facing AI response content is present that can be evaluated as misleading or low quality.\",\n    \"evidence\": [\n      \"[2025-10-22T10:37:17+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-10-23T04:36:35+00:00] (AI) Centralsupport-ai-acc: \\\"JIRA Issue CARESMM-9351 is changed to 'Closed' , block reason: -\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer receives a human response within minutes and the thread does not show repeated AI requests for the same information or the customer being prevented from reaching a human.\",\n    \"evidence\": [\n      \"[2025-10-22T10:26:48+00:00] (Employee) Deepanshu Dewan: \\\"Thank you for calling Khoros Care Support. As discussed, your ticket has been assigned to an agent.\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer explicitly asks support to review history of prior tickets due to recurrence; there is no clear evidence in subsequent responses that support acknowledged reviewing prior tickets, and responses proceed with generic resolution messaging.\",\n    \"evidence\": [\n      \"[2025-10-23T07:56:23+00:00] (Employee) Jayashree Shetty: \\\"We have been encountering this issue repeatedly. Please review the history of previously raised tickets...\\\"\",\n      \"[2025-10-22T12:49:34+00:00] (Employee) Chintan Parekh: \\\"We\u2019re pleased to inform you that the recent service disruption affecting the Khoros Care platform has been resolved.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no multi-day gaps in the provided timeline; interactions occur within the same day or within ~1 day. The stated max gap is 9.4 hours, which is not a multi-day delay.\",\n    \"evidence\": [\n      \"[2025-10-22T12:49:34+00:00] (Employee) Chintan Parekh: \\\"We\u2019re pleased to inform you... has been resolved.\\\"\",\n      \"[2025-10-23T07:56:23+00:00] (Employee) Jayashree Shetty: \\\"We have been encountering this issue repeatedly...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The internal incident/Jira was closed while team members were still requesting follow-up deliverables (runbook/playbook), indicating closure without completing promised/needed next steps for recurrence handling.\",\n    \"evidence\": [\n      \"[2025-10-22T11:47:54.076+0000] (Employee) Deniz Yavas: \\\"please prepare a playbook on how to fix this issue for any further occurences.\\\"\",\n      \"[2025-10-22T22:13:02.111+0000] (Employee) Muhammad Umer: \\\"could you please share the runbook to cater this kind of issue in future.\\\"\",\n      \"[2025-10-23T04:36:31.968+0000] (General) None: \\\"status is changed from In Progress to Closed\\\"\",\n      \"[2025-10-23T04:36:06.199+0000] (Employee) Quang Vo: \\\"Closing this ticket as the issue was resolved.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"For this urgent/outage scenario, the thread shows investigation and operational remediation (Elasticsearch restart) rather than generic end-user troubleshooting (cache/VPN/firewall). No evidence of inappropriate generic troubleshooting instead of escalation is present.\",\n    \"evidence\": [\n      \"[2025-10-22T11:39:07.819+0000] (Employee) Muhammad Waqar: \\\"Elasticsearch service was restarted on the following nodes...\\\"\",\n      \"[2025-10-22T10:36:18.164+0000] (General) None: \\\"status is changed from In Queue to In Progress\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60226631
+}

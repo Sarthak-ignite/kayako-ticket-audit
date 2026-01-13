@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only interaction provided is an AI post-conversation summary comment. Without access to the actual AI conversation content (the message appears truncated), no quality issues can be identified in the available evidence.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient interaction data to detect looping. Only one timestamp visible with incomplete conversation content.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Cannot assess context handling with only a summary comment visible and no substantive interaction details provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one interaction timestamp is visible (2025-12-22T17:00:55+00:00), and the max gap between responses is 0.0 hours, indicating no significant delays.",
+    "evidence": [
+      "Max gap between responses: 0.0 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is closed but marked as low priority. Without visibility into whether the customer had outstanding requests or promises unfulfilled, no premature closure can be confirmed from the available data.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is marked as low priority, not P1/SEV1. This pattern is not applicable.",
+    "evidence": [
+      "Priority: low"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only interaction provided is an AI post-conversation summary comment. Without access to the actual AI conversation content (the message appears truncated), no quality issues can be identified in the available evidence.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction data to detect looping. Only one timestamp visible with incomplete conversation content.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot assess context handling with only a summary comment visible and no substantive interaction details provided.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one interaction timestamp is visible (2025-12-22T17:00:55+00:00), and the max gap between responses is 0.0 hours, indicating no significant delays.\",\n    \"evidence\": [\n      \"Max gap between responses: 0.0 hours\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is closed but marked as low priority. Without visibility into whether the customer had outstanding requests or promises unfulfilled, no premature closure can be confirmed from the available data.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is marked as low priority, not P1/SEV1. This pattern is not applicable.\",\n    \"evidence\": [\n      \"Priority: low\"\n    ]\n  }\n}\n```\n\n**Note**: The ticket data is severely incomplete. The actual AI conversation content is truncated after \"Here is a record of your conversation for easy reference:\" making substantive quality analysis impossible. For proper analysis, the complete interaction timeline including all customer messages and full AI responses would be required.",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60268699
+}

@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS mostly provided a standard prompt to upload logs/screenshots and then routed the case to L1. There isn\u2019t enough customer-facing evidence that ATLAS gave wrong/misleading guidance or got stuck in broken content beyond one odd \u201cundefined\u201d entry.",
+    "evidence": [
+      "Chat Support: \"Please select from the below or give me a detailed description of what\u2019s happening.\"",
+      "Chat Support: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence of the customer being stuck in an AI loop or being unable to reach a human after requesting one. The AI interaction shown is brief and does not show repeated back-and-forth without escalation.",
+    "evidence": [
+      "Kayako - ticket id 60073892 // ATLAS commented privately: \"Action: Send to l1\"",
+      "Chat Support: \"If I'm not able to resolve your issue, I can connect you with one of our support specialists\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer raised two separate issues (browser blocking behavior and AD sync/IP update behavior) and referenced a prior case, but the only public agent reply addresses only IPOQUE library release notes and does not acknowledge the second issue or the prior case context.",
+    "evidence": [
+      "Customer (private): \"i cam facing two issues with exinda appliance\\n  1- blocking issue... last case opened for this issue case#60020917\\n  2- issue in synch with AD, if the users ip changed the exinda database not updated the ip\"",
+      "Agent (public): \"An IPOQUE library definitions upgrade will be documented in the release notes... Please keep an eye out for the next release.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a ~7-day gap between the initial ticket creation (June 11) and the next customer follow-up asking for an update (June 18), indicating the customer experienced a meaningful silence before a public response.",
+    "evidence": [
+      "Customer (private) [2025-06-11T07:36:41+00:00]: \"i have two issues with exinda appliance... i need to open case for this issue please\"",
+      "Customer (private) [2025-06-18T05:04:24+00:00]: \"any update\"",
+      "Agent (public) [2025-06-18T05:11:22+00:00]: \"Hello Weissa, An IPOQUE library definitions upgrade will be documented in the release notes...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The agent\u2019s public response includes an auto-closure warning (\u201cstay open for one week unless\u2026\u201d) even though the underlying issues are not shown as resolved in the conversation.",
+    "evidence": [
+      "Agent (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Customer (private): \"i cam facing two issues with exinda appliance... 2- issue in synch with AD, if the users ip changed the exinda database not updated the ip\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer mentions the issue affects \"all users,\" there is no explicit P1/SEV1/outage/critical language or urgency indicators, so there isn\u2019t sufficient evidence to classify this as high-severity mishandling based on the provided text.",
+    "evidence": [
+      "Customer (private): \"2- all users\"",
+      "Customer (private): \"blocking issue for all application i tried to block\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60073892
+}

@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided excerpt only shows ATLAS\u2019s standard chat greeting/intake prompt and the beginning of the customer\u2019s question. There is no visible AI answer to evaluate for correctness/helpfulness.",
+    "evidence": [
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of repeated AI prompts, repeated requests for the same info, or customer asking for a human and being blocked. The log is truncated before any back-and-forth occurs.",
+    "evidence": [
+      "Conversation excerpt ends right after the customer\u2019s first message begins: \u201cWhy is chat Ticket ID: #60230003 marked as closed w...[truncated]...\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is not enough interaction shown to demonstrate support ignored previously provided information. The only visible support content is the generic intake prompt.",
+    "evidence": [
+      "Only initial ATLAS intake message is shown; no follow-up/support response is visible."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No timestamps showing a multi-day gap between customer message and support response are visible in the excerpt. The ticket content is truncated and does not include later responses.",
+    "evidence": [
+      "Only one timestamped interaction block is shown: \u201c[2025-10-28T08:40:01+00:00] \u2026 Here is a record of your conversation\u2026\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the customer appears to be asking why another chat ticket (#60230003) was marked closed, this ticket\u2019s excerpt does not show that Ticket ID 60230438 itself was closed without resolution, nor does it show an unanswered last message followed by closure.",
+    "evidence": [
+      "Customer message begins: \u201cWhy is chat Ticket ID: #60230003 marked as closed w...[truncated]...\u201d (refers to a different ticket)",
+      "No closure event/status change for 60230438 is shown in the provided content."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No indication of a high-severity outage/production impact or urgency handling is present in the visible excerpt.",
+    "evidence": [
+      "No statements like \u201cproduction down,\u201d \u201call users impacted,\u201d or urgent/SLA language are visible in the provided text."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60230438
+}

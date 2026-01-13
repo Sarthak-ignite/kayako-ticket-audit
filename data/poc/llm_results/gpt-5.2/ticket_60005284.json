@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI repeatedly posted a non-helpful internal note (\u201cSkipping ticket due to tags\u201d) instead of progressing the case, despite the customer reporting urgent downtime. This is effectively filler/deflection and contributes no actionable guidance or routing transparency to the customer.",
+    "evidence": [
+      "[2025-03-25T11:34:33+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-03-26T12:07:29+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-03-27T08:51:48+00:00] (AI) ATLAS: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is evidence of repeated AI 'skipping' notes, but no clear evidence that the customer was forced to interact with the AI repeatedly or that the AI asked the same questions over and over while blocking access to a human.",
+    "evidence": [
+      "[2025-03-25T11:34:33+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-03-26T12:07:29+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-03-22T11:24:25+00:00] (AI) ATLAS: Action: Send to l1"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer provided context (device not starting, photos attached, urgent RMA), but the log does not show agents asking for the same information again or ignoring provided details in a reply. The only visible public agent response is an apology snippet, not a troubleshooting exchange.",
+    "evidence": [
+      "[2025-03-21T14:08:30+00:00] (Employee) Danijel Knezic: Kerio NG510 is fautly and not stqrting. You have photos attached. I need urgent creation of RMA...",
+      "[2025-03-28T14:26:04+00:00] (Employee) Ciprian Nastase: Please accept my sincere apologies for the delay in handling this! The ticket was incorrectly prioritized..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer reports an urgent outage starting 2025-03-21, but there is no substantive human handling visible until 2025-03-28, with the customer repeatedly asking for updates in between\u2014indicating multi-day response delay.",
+    "evidence": [
+      "[2025-03-21T14:08:30+00:00] (Employee) Danijel Knezic: ...not starting... urgent creation of RMA...",
+      "[2025-03-22T11:23:44+00:00] (Employee) Danijel Knezic: Please anyone assist",
+      "[2025-03-25T11:22:03+00:00] (Employee) Danijel Knezic: This is high priority to us... our firewall is dead... need solution asap.",
+      "[2025-03-26T12:07:11+00:00] (Employee) Danijel Knezic: any updates",
+      "[2025-03-28T14:26:04+00:00] (Employee) Ciprian Nastase: ...apologies for the delay... incorrectly prioritized..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "An agent notes privately that the ticket is being closed because it matches another ticket\u2019s S/N, but there is no clear evidence in this ticket\u2019s timeline that the customer received resolution or confirmation before closure\u2014suggesting closure while the customer was still waiting.",
+    "evidence": [
+      "[2025-03-28T14:22:14+00:00] (Employee) Ciprian Nastase (private): This is the same S/N as in https://.../60005331 - closing",
+      "[2025-03-26T12:07:11+00:00] (Employee) Danijel Knezic: any updates"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer indicates a business-critical outage (\u201cfirewall is dead\u201d, vessel) and requests urgent RMA, but the ticket appears to be incorrectly prioritized and repeatedly skipped by AI, with multi-day delay before acknowledgement\u2014consistent with mishandling of a high-severity case.",
+    "evidence": [
+      "[2025-03-25T11:22:03+00:00] (Employee) Danijel Knezic: This is high priority to us. We are vessel and our firewall is dead... need solution asap.",
+      "[2025-03-21T14:08:30+00:00] (Employee) Danijel Knezic: ...not starting... urgent creation of RMA...",
+      "[2025-03-28T14:26:04+00:00] (Employee) Ciprian Nastase: ...ticket was incorrectly prioritized...",
+      "[2025-03-25T11:34:33+00:00] (AI) ATLAS: Skipping ticket due to tags"
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60005284
+}

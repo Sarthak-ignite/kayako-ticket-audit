@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI or support responses in the ticket to evaluate for quality issues; only a single customer comment is present.",
+    "evidence": [
+      "[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No AI agent interactions or repeated requests are present; the timeline shows only the customer's single comment.",
+    "evidence": [
+      "[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no follow-up support messages that ignore or repeat customer-provided context; only the initial customer comment exists.",
+    "evidence": [
+      "[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline contains only one customer entry and no subsequent responses, so there is no measurable delay between support replies.",
+    "evidence": [
+      "[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, there is no evidence in the interactions that the customer was awaiting a promised response or that an agent closed the ticket while the customer was waiting.",
+    "evidence": [
+      "[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is 'normal' and there are no support responses to evaluate for inappropriate handling of a critical outage.",
+    "evidence": [
+      "[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI or support responses in the ticket to evaluate for quality issues; only a single customer comment is present.\",\n    \"evidence\": [\n      \"[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No AI agent interactions or repeated requests are present; the timeline shows only the customer's single comment.\",\n    \"evidence\": [\n      \"[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no follow-up support messages that ignore or repeat customer-provided context; only the initial customer comment exists.\",\n    \"evidence\": [\n      \"[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline contains only one customer entry and no subsequent responses, so there is no measurable delay between support replies.\",\n    \"evidence\": [\n      \"[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, there is no evidence in the interactions that the customer was awaiting a promised response or that an agent closed the ticket while the customer was waiting.\",\n    \"evidence\": [\n      \"[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is 'normal' and there are no support responses to evaluate for inappropriate handling of a critical outage.\",\n    \"evidence\": [\n      \"[2025-12-16T12:03:53+00:00] (Customer) A, Anitha: Kayako - ticket id 60264368 // A, Anitha commented publicly:  ++++ From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60264368
+}

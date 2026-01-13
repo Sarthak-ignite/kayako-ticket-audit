@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The single interaction provided is an AI closing comment that summarizes a conversation. While generic in nature, there is insufficient evidence of wrong information or broken promises from the limited data available.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only one AI interaction is visible in the timeline. No evidence of repetitive requests or customer being stuck in a loop, though the incomplete interaction text makes full assessment difficult.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Insufficient interaction data to determine if context was ignored. The single visible message is a closing summary, not a substantive support response.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The max gap between responses is 0.0 hours, indicating no significant delays. The ticket was handled promptly.",
+    "evidence": [
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is marked as closed with low priority status. No evidence that the customer was waiting for promised information or that closure was premature, though the incomplete interaction text limits full assessment.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is marked as low priority, not P1/SEV1. This pattern is not applicable to low-priority tickets.",
+    "evidence": [
+      "Priority: low"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The single interaction provided is an AI closing comment that summarizes a conversation. While generic in nature, there is insufficient evidence of wrong information or broken promises from the limited data available.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one AI interaction is visible in the timeline. No evidence of repetitive requests or customer being stuck in a loop, though the incomplete interaction text makes full assessment difficult.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction data to determine if context was ignored. The single visible message is a closing summary, not a substantive support response.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The max gap between responses is 0.0 hours, indicating no significant delays. The ticket was handled promptly.\",\n    \"evidence\": [\"Max gap between responses (hours): 0.0\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is marked as closed with low priority status. No evidence that the customer was waiting for promised information or that closure was premature, though the incomplete interaction text limits full assessment.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is marked as low priority, not P1/SEV1. This pattern is not applicable to low-priority tickets.\",\n    \"evidence\": [\"Priority: low\"]\n  }\n}\n```\n\n**Note**: Analysis is limited by incomplete interaction data - the AI response text is truncated (\"--- AI Assistant -\"). A complete transcript would allow for more thorough assessment of quality issues.",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60264386
+}

@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient information to determine AI quality. The interaction shown is only a record of a previous AI chat conversation being posted, with the actual conversation content truncated.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of looping behavior. Only a single message is visible that references a completed AI chat conversation, with no indicators of repeated requests or inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of context being ignored. The interaction timeline is too limited to assess whether information was requested multiple times.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No delays detected. The ticket shows a max gap of 0.0 hours between responses, indicating no significant delays occurred.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Cannot determine if closure was premature. The ticket is closed, but there's insufficient information about whether the customer's issue was resolved or if they were waiting for additional information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Not applicable. This is a low priority ticket, not a P1/Sev1 outage situation requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to determine AI quality. The interaction shown is only a record of a previous AI chat conversation being posted, with the actual conversation content truncated.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of looping behavior. Only a single message is visible that references a completed AI chat conversation, with no indicators of repeated requests or inability to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of context being ignored. The interaction timeline is too limited to assess whether information was requested multiple times.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No delays detected. The ticket shows a max gap of 0.0 hours between responses, indicating no significant delays occurred.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if closure was premature. The ticket is closed, but there's insufficient information about whether the customer's issue was resolved or if they were waiting for additional information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Not applicable. This is a low priority ticket, not a P1/Sev1 outage situation requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60243765
+}

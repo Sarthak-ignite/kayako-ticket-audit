@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI-generated comments are present but do not contain obvious generic filler, incorrect facts, or unkept promises in the provided transcript.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear pattern of an AI repeatedly requesting the same information or preventing escalation to a human in the interaction log.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support agents ask for confirmation of resolution but there is no clear instance of repeated requests for the same logs/screenshots or ignoring customer-provided details in the excerpts given.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap between responses despite the ticket being marked urgent; the timeline shows several days between agent messages.",
+    "evidence": [
+      "2025-11-22T00:11:53+00:00 (Employee) Harry Tasker: \"Dear Meaghan, Thank you for your response. Please let us know if the issue is resolved on your end.\"",
+      "2025-11-26T14:31:55+00:00 (Employee) Ciprian Nastase: \"Can you please let us know if the issue is resolved on your end? We would really appreciate a hard confirmation from y\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Jira/ticket status was changed to Closed before agents later requested customer confirmation and before an explicit final close confirmation in the thread, indicating the ticket may have been closed prematurely.",
+    "evidence": [
+      "2025-11-22T03:21:04.606+0000 (General) None: \"SaaS Jira - issue key CARESMM-10815 // status is changed from In Progress to Closed\"",
+      "2025-11-26T14:31:55+00:00 (Employee) Ciprian Nastase: \"Can you please let us know if the issue is resolved on your end? We would really appreciate a hard confirmation from y\"",
+      "2025-11-26T14:33:53+00:00 (Employee) Don Kempt: \"We have not received any further complaints. Please go ahead and close this this case.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence in the provided interactions of generic low-value troubleshooting for a high-severity incident or failure to escalate; conversations are about confirmation and workflow/status changes.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI-generated comments are present but do not contain obvious generic filler, incorrect facts, or unkept promises in the provided transcript.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear pattern of an AI repeatedly requesting the same information or preventing escalation to a human in the interaction log.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support agents ask for confirmation of resolution but there is no clear instance of repeated requests for the same logs/screenshots or ignoring customer-provided details in the excerpts given.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a multi-day gap between responses despite the ticket being marked urgent; the timeline shows several days between agent messages.\",\n    \"evidence\": [\n      \"2025-11-22T00:11:53+00:00 (Employee) Harry Tasker: \\\"Dear Meaghan, Thank you for your response. Please let us know if the issue is resolved on your end.\\\"\",\n      \"2025-11-26T14:31:55+00:00 (Employee) Ciprian Nastase: \\\"Can you please let us know if the issue is resolved on your end? We would really appreciate a hard confirmation from y\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Jira/ticket status was changed to Closed before agents later requested customer confirmation and before an explicit final close confirmation in the thread, indicating the ticket may have been closed prematurely.\",\n    \"evidence\": [\n      \"2025-11-22T03:21:04.606+0000 (General) None: \\\"SaaS Jira - issue key CARESMM-10815 // status is changed from In Progress to Closed\\\"\",\n      \"2025-11-26T14:31:55+00:00 (Employee) Ciprian Nastase: \\\"Can you please let us know if the issue is resolved on your end? We would really appreciate a hard confirmation from y\\\"\",\n      \"2025-11-26T14:33:53+00:00 (Employee) Don Kempt: \\\"We have not received any further complaints. Please go ahead and close this this case.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence in the provided interactions of generic low-value troubleshooting for a high-severity incident or failure to escalate; conversations are about confirmation and workflow/status changes.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60247476
+}

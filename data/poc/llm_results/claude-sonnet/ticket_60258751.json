@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is insufficient information to evaluate AI response quality. The only visible interaction is a system-generated message referencing a prior AI chat conversation, but the actual conversation content is not provided.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of looping behavior is present in the provided transcript. The ticket shows only a single system message about a previous AI chat, with no indication of repeated requests or inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no interactions showing support staff ignoring previously provided information or requesting duplicate information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket metadata shows 'Max gap between responses (hours): 0.0', indicating no significant delays. Only one timestamp is visible in the transcript.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed, there is no evidence in the provided transcript that shows the customer was waiting for promised information or expressing unresolved issues. The conversation content that would reveal this is not included.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket (not P1/Sev1), so this quality issue category does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient information to evaluate AI response quality. The only visible interaction is a system-generated message referencing a prior AI chat conversation, but the actual conversation content is not provided.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of looping behavior is present in the provided transcript. The ticket shows only a single system message about a previous AI chat, with no indication of repeated requests or inability to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no interactions showing support staff ignoring previously provided information or requesting duplicate information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket metadata shows 'Max gap between responses (hours): 0.0', indicating no significant delays. Only one timestamp is visible in the transcript.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed, there is no evidence in the provided transcript that shows the customer was waiting for promised information or expressing unresolved issues. The conversation content that would reveal this is not included.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket (not P1/Sev1), so this quality issue category does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60258751
+}

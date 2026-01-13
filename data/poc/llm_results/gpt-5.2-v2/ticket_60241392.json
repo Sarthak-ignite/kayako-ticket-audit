@@ -1,0 +1,61 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI/automation prematurely concluded \u201clikely hardware/storage failure\u201d and drove an RMA path, but internal team later stated the issue is a known driver problem resolved by a specific build (v10:9072), making the earlier analysis and RMA push factually wrong/misleading. The customer was also given a broken/placeholder upload link.",
+    "evidence": [
+      "\u201cBehavior consistent with storage/boot media failure.\u201d",
+      "\u201cThis qualifies as an obvious hardware/storage failure in the context of our workflow, so we skip additional diagnostics.\u201d",
+      "\u201cRMA is NOT approved. ... stems from driver issues and was resolved in v10:9072\u201d",
+      "\u201cshare a direct downloadable link [/URL_FOR_VIDEO]\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly pushed to get a ticket/RMA while AI kept gating progress on additional artifacts (video/serial photo) and re-asking despite the customer stating the data was already provided/uploaded, creating a loop/friction before action.",
+    "evidence": [
+      "Customer: \u201cPlease create me a ticket\u201d",
+      "Customer: \u201cCreate me a ticket we aleready have all data you need\u201d",
+      "Customer: \u201cVideo uploaded\u201d",
+      "Support: \u201cTo proceed further, we require... 1) A video recording...\u201d",
+      "Customer: \u201cWe aleready tried it and it dosent work\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asked for diagnostics/logs even though the device is non-booting and the customer already said recovery attempts failed; also re-requested video after the customer indicated it was uploaded (suggesting failure to recognize/locate provided info).",
+    "evidence": [
+      "Customer: \u201cThe firewall dosent boot i get a error message from ubuntu\u201d",
+      "Customer: \u201cWe aleready tried it and it dosent work\u201d",
+      "Support: \u201cAdditionally, if your unit manages to boot sufficiently, please provide the diagnostic logs...\u201d",
+      "Customer: \u201cVideo uploaded\u201d",
+      "Support: \u201cwe require... 1) A video recording demonstrating the boot process...\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions shown occur within the same day and within minutes/hours; no >2-day customer-to-support gap is visible.",
+    "evidence": [
+      "[2025-11-12T13:43:24+00:00] ...",
+      "[2025-11-12T14:34:27+00:00] ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed; instead it is placed on hold awaiting warranty/RMA approval, and no closure occurs while the customer is waiting in the provided excerpt.",
+    "evidence": [
+      "\u201cPlacing on hold for 48 hour(s)\u201d",
+      "\u201cWe will update you as soon as we receive their confirmation...\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is a critical outage (firewall won\u2019t boot; ticket set to URGENT), yet the handling defaulted into an RMA workflow and assumptions of hardware failure without first aligning to known/communicated software fix guidance; internal team explicitly notes this was a known driver issue and that CS should have had this in process.",
+    "evidence": [
+      "\u201cSet priority to URGENT as this is a hardware outage preventing the firewall from booting.\u201d",
+      "Customer: \u201cMy Kerio NG120 wont start any more it crashes while booting\u201d",
+      "\u201cRMA is NOT approved... stems from driver issues and was resolved in v10:9072 ... I have informed about this fact in CS-BU g-chat on NOV 4th - can you please confirm this info has made it to your processes?\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60241392
+}

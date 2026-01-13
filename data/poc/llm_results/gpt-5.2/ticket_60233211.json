@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible content is a private AI note indicating a chat transcript record; there is no substantive AI troubleshooting or promises to evaluate for accuracy or fulfillment.",
+    "evidence": [
+      "[2025-10-31T12:23:53+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated AI requests or an inability for the customer to reach a human; only a single AI transcript/record note is present.",
+    "evidence": [
+      "[2025-10-31T12:23:53+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer-provided details, logs, screenshots, or references to prior tickets are included in the visible interaction, so ignoring previously provided context cannot be established.",
+    "evidence": [
+      "[2025-10-31T12:23:53+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline shows only one interaction, and the metadata indicates a max gap between responses of 0.0 hours; there is no multi-day delay evidenced.",
+    "evidence": [
+      "[2025-10-31T12:23:53+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, there is no evidence in the interaction that the customer was awaiting promised information or that the closure occurred after an unresolved back-and-forth.",
+    "evidence": [
+      "[2025-10-31T12:23:53+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/Sev1), and there is no outage/escalation context in the visible content to assess mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only visible content is a private AI note indicating a chat transcript record; there is no substantive AI troubleshooting or promises to evaluate for accuracy or fulfillment.\",\n    \"evidence\": [\n      \"[2025-10-31T12:23:53+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repeated AI requests or an inability for the customer to reach a human; only a single AI transcript/record note is present.\",\n    \"evidence\": [\n      \"[2025-10-31T12:23:53+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer-provided details, logs, screenshots, or references to prior tickets are included in the visible interaction, so ignoring previously provided context cannot be established.\",\n    \"evidence\": [\n      \"[2025-10-31T12:23:53+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline shows only one interaction, and the metadata indicates a max gap between responses of 0.0 hours; there is no multi-day delay evidenced.\",\n    \"evidence\": [\n      \"[2025-10-31T12:23:53+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, there is no evidence in the interaction that the customer was awaiting promised information or that the closure occurred after an unresolved back-and-forth.\",\n    \"evidence\": [\n      \"[2025-10-31T12:23:53+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/Sev1), and there is no outage/escalation context in the visible content to assess mishandling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60233211
+}

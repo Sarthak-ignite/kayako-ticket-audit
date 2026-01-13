@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI responses in the public interactions that provided incorrect or generic information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in an AI loop or unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support team does not appear to have ignored any information provided by the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays between responses, specifically a 44.3-hour gap between interactions.",
+    "evidence": [
+      "[2025-10-13T14:38:33+00:00] - [2025-10-15T17:01:18+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not appear to have been closed while the customer was awaiting further information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal and not P1/SEV1, so mishandling of high-priority/errors is not applicable.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI responses in the public interactions that provided incorrect or generic information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in an AI loop or unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support team does not appear to have ignored any information provided by the customer.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays between responses, specifically a 44.3-hour gap between interactions.\",\n    \"evidence\": [\"[2025-10-13T14:38:33+00:00] - [2025-10-15T17:01:18+00:00]\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not appear to have been closed while the customer was awaiting further information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal and not P1/SEV1, so mishandling of high-priority/errors is not applicable.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60219661
+}

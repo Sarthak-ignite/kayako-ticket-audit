@@ -1,0 +1,107 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_classic",
+        "requester": {
+          "id": 60488488,
+          "uuid": "d57a64a6-2959-5263-8e3a-6889d0e82479",
+          "full_name": "Tudor Raduta",
+          "legacy_id": "003Uv00000Gnp5DIAR",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/d57a64a6-2959-5263-8e3a-6889d0e82479?1767781206",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60067791,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 490017,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "82.76.86.189",
+          "last_seen_at": "2026-01-07T10:20:06+00:00",
+          "last_active_at": "2026-01-07T10:20:06+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60488488",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@7c0ad5c733155b5476622a2628ca7a3d0bb1174d",
+          "password_updated_at": "2025-07-17T17:35:11+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T14:28:51+00:00",
+          "last_activity_at": "2026-01-07T10:20:06+00:00",
+          "created_at": "2025-07-07T21:23:41+00:00",
+          "updated_at": "2026-01-07T10:20:06+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60488488"
+        },
+        "ticket_idt": 60264386
+      },
+      "interactions": [
+        [
+          "2025-12-16T11:13:24+00:00",
+          "Kayako - ticket id 60264386 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant ---</b><br>Hi, Tudor Raduta ! \ud83d\udc4b<br><br>This is the <strong>Khoros Classic</strong> AI Support Agent \ud83e\udd16.<br><br><hr><br><div style=\"line-height: 1.3; margin-top: 8px; font-size: 0.9rem; color: #666666;\"><b>Please note:</b> The AI Support Agent is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" target=\"_blank\">these terms and conditions</a>. <br>If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.</div><br/><br><br><b>--- AI Assistant ---</b><br>Walk me through what's happening or select from the below frequent requests. <br><br>Don't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you. \ud83d\udcaa <br><br>\ud83d\udca1Tip: Aim to give us a bit more context than just a quick \"It's not working.\" The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f<br><br>\ud83d\udca1<a href=\"https://khoros-classic.kayako.com/article/128087 \" target=\"_blank\">Getting the most out of Khoros Classic AI Support Agent</a><br><br>If I'm unable to help you, I can patch you through to a Live agent, along with the information you supply to me during this session, so that our team has something to work with from the get-go.<br/><br><br><b>--- Customer (Tudor Raduta) ---</b><br><em>Button selection:</em> [\ud83d\udd27 I need Technical Support]<br/><br><br><b>--- AI Assistant ---</b><br>If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa<br><br>\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.<br><br>\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.<br><br>\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it: <br>\ud83d\udc49 <a href=\"https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiJlY2JiYmQ5Yi1mMjE3LTQ1MmUtYjljMS04OTA0NDQ4YTkxZDIiLCJzZXNzaW9uX3VpZCI6ImVjYmJiZDliLWYyMTctNDUyZS1iOWMxLTg5MDQ0NDhhOTFkMiIsImVtYWlsIjoidHJhZHV0YUByZWRoYXQuY29tIiwiY3VzdG9tX3BhcnNlciI6e30sImNhbGxiYWNrIjp7ImNhbGxiYWNrX3VybCI6bnVsbCwiY2FsbGJhY2tfZW1haWwiOiJjaXByaWFuLm5hc3Rhc2VAdHJpbG9neS5jb20ifSwicHJvZHVjdF90YWciOiJraG9yb3NfY2xhc3NpYyIsInF1ZXJ5IjoiIiwiZXhwIjoxNzY1ODkwODI5fQ.1fX6Btqc5y9YhO_WnVjk_vBq8dq1Dul8pcaKT648xW0  \" target=\"_blank\">Secure File Upload</a><br><br>You should see the following:<br>- User: traduta@redhat.com <br>- Session ID: ecbbbd9b-f217-452e-b9c1-8904448a91d2<br/><br><br><b>--- Customer (Tudor Raduta) ---</b><br><em>Button selection:</em> [\ud83d\udd19 Continue without file upload ]<br/><br><br><b>--- AI Assistant ---</b><br>Perfect! Let's get started. Could you tell me a bit more about what's happening with your Khoros Classic community? <br><br>For example:<br>- What specific issue are you experiencing?<br>- When did you first notice this problem?<br>- Are there any error messages you're seeing?<br><br>The more details you can share, the better I can help you troubleshoot! \ud83d\udd0d<br/><br><br><b>--- Customer (Tudor Raduta) ---</b><br>is it possible to export content via API?<br/><br><br><b>--- AI Assistant ---</b><br>Great question! Yes, you can export content from Khoros Classic, and there are a few different methods available depending on what you need:<br><br><strong>Export Options:</strong><br><br>1. <strong>Community Search Results Export</strong> - You can export search results directly to a CSV file through the community interface. This is useful for exporting specific content based on search criteria. Check out the details here: <a href=\"https://khoros-classic.kayako.com/article/125140\" target=\"_blank\">Export community search results to a CSV file</a><br><br>2. <strong>Custom Data Export</strong> - For more comprehensive or customized data exports, you can request a custom data export. This would be handled through the support team. More information: <a href=\"https://khoros-classic.kayako.com/article/126448\" target=\"_blank\">How to get a Custom Data Export</a><br><br>3. <strong>Community Data Export FAQs</strong> - For general information about data export capabilities and common questions, you can review: <a href=\"https://khoros-classic.kayako.com/article/125169\" target=\"_blank\">Community data export FAQs</a><br><br><strong>Regarding API specifically:</strong> While Khoros Classic does have API capabilities, the knowledge base articles I found focus more on the export features through the UI and custom export requests. If you're looking to programmatically export content via API calls, I'd recommend checking the Khoros Developer documentation or I can connect you with our support team who can provide more specific guidance on API endpoints for content export.<br><br>What type of content are you looking to export, and would one of these methods work for your use case?<br/><br><br><b>--- Customer (Tudor Raduta) ---</b><br>how would you approach content export via API?<br/><br><br><b>--- AI Assistant ---</b><br>Excellent question! Based on the available resources, here's how I'd approach content export via API in Khoros Classic:<br><br><strong>API-Based Export Approaches:</strong><br><br>1. <strong>Community API v2</strong> - This is the primary REST API for accessing community content programmatically. You can use various endpoints to retrieve messages, users, boards, and other content. Check out the full endpoint index here: <a href=\"https://khoros-classic.kayako.com/article/124747\" target=\"_blank\">Community API v2 endpoint index</a><br><br>2. <strong>Khoros Bulk Data API</strong> - This is specifically designed for bulk data extraction and provides daily extracts of event logs in JSON or CSV format. It's particularly useful if you need to export analytics data, page views, posts, and kudos counts. More details: <a href=\"https://khoros-classic.kayako.com/article/125952\" target=\"_blank\">Using the Khoros Bulk Data API</a><br><br>3. <strong>API Examples</strong> - There's a collection of practical API examples that can help you get started with implementation: <a href=\"https://khoros-classic.kayako.com/article/126246\" target=\"_blank\">API examples</a><br><br><strong>My Recommended Approach:</strong><br><br>For content export specifically, I'd suggest:<br>- Use the <strong>Community API v2</strong> endpoints to query and retrieve specific content (messages, topics, boards, etc.)<br>- If you need bulk analytics/event data, the <strong>Bulk Data API</strong> would be more efficient<br>- Reference the API examples to see practical implementations<br><br><strong>Important Note:</strong> The detailed API documentation, including authentication methods, specific endpoint parameters, and code examples, is available in the Khoros Developer Documentation Portal. <br><br>Are you looking to export specific types of content (like messages, user data, or analytics), or do you need a complete community backup?<br/>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

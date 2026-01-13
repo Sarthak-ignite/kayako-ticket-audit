@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI interactions visible are only automated hold management actions (placing on hold, reopening after hold expires). No substantive AI responses that could be evaluated for quality failures.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The AI only performed automated ticket management actions. The customer interacted directly with human agents throughout the ticket without being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Multiple agents provided different or conflicting solutions without acknowledging previous troubleshooting steps. The customer stated 'did not work' after testing, but agents continued with similar registry-based solutions.",
+    "evidence": [
+      "[2025-12-26T15:12:34+00:00] (Customer) Kevin Gragert: did not work, is there a way to import from an O365 account.",
+      "[2025-12-26T15:13:43+00:00] (Employee) Zubair Farooq: You can test and let us know if you have any more questions.",
+      "[2025-12-26T16:29:38+00:00] (Employee) Amir Khan: Howcome reply of this can be this, maybe Zubair didn't see the latest reply."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple significant delays occurred throughout the ticket. The time to first human was 32.2 hours, and the max gap between responses was 119.8 hours (nearly 5 days). There was a 5-day gap between December 31st responses and January 5th customer update.",
+    "evidence": [
+      "Time to first human (hours): 32.2",
+      "Max gap between responses (hours): 119.8",
+      "[2025-12-31T17:30:17+00:00] (Customer) Kevin Gragert: the bitness reg key resolved the issue",
+      "[2026-01-06T09:18:28+00:00] (Employee) Sandeep Gajula: commented privately"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket status is 'pending' and the customer's last update indicates the issue was resolved ('the bitness reg key resolved the issue with getting to the pst file'). No evidence of premature closure while awaiting information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the ticket is marked high priority, it appears to be a technical configuration issue with PST imports rather than a service outage. The troubleshooting approach (registry keys, Outlook configuration) is appropriate for this type of issue.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI interactions visible are only automated hold management actions (placing on hold, reopening after hold expires). No substantive AI responses that could be evaluated for quality failures.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI only performed automated ticket management actions. The customer interacted directly with human agents throughout the ticket without being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple agents provided different or conflicting solutions without acknowledging previous troubleshooting steps. The customer stated 'did not work' after testing, but agents continued with similar registry-based solutions.\",\n    \"evidence\": [\n      \"[2025-12-26T15:12:34+00:00] (Customer) Kevin Gragert: did not work, is there a way to import from an O365 account.\",\n      \"[2025-12-26T15:13:43+00:00] (Employee) Zubair Farooq: You can test and let us know if you have any more questions.\",\n      \"[2025-12-26T16:29:38+00:00] (Employee) Amir Khan: Howcome reply of this can be this, maybe Zubair didn't see the latest reply.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple significant delays occurred throughout the ticket. The time to first human was 32.2 hours, and the max gap between responses was 119.8 hours (nearly 5 days). There was a 5-day gap between December 31st responses and January 5th customer update.\",\n    \"evidence\": [\n      \"Time to first human (hours): 32.2\",\n      \"Max gap between responses (hours): 119.8\",\n      \"[2025-12-31T17:30:17+00:00] (Customer) Kevin Gragert: the bitness reg key resolved the issue\",\n      \"[2026-01-06T09:18:28+00:00] (Employee) Sandeep Gajula: commented privately\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket status is 'pending' and the customer's last update indicates the issue was resolved ('the bitness reg key resolved the issue with getting to the pst file'). No evidence of premature closure while awaiting information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked high priority, it appears to be a technical configuration issue with PST imports rather than a service outage. The troubleshooting approach (registry keys, Outlook configuration) is appropriate for this type of issue.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60267287
+}

@@ -1,0 +1,65 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Multiple AI-generated/template updates (case creation, reminders, \u201cmarked as resolved\u201d) did not address the reported analytics access problem and created misleading status signals (e.g., \u201cresolved\u201d without a fix).",
+    "evidence": [
+      "\u201cThank you for reaching out to Khoros Customer Support... we have created the case 00447584.\u201d",
+      "\u201cAn automated reminder was sent on 28 May 2025...\u201d",
+      "\u201cBased on previous information received, your case has been marked as resolved.\u201d",
+      "\u201cA final automated reminder was sent on 6 June 2025... If your issue has been resolved, please feel free to close the case...\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The flow shows repeated automated AI reminders/auto-status changes that pressured closure while the requester was still trying to gather information, contributing to a \u201cloop\u201d of reminders rather than progress.",
+    "evidence": [
+      "\u201cAn automated reminder was sent on 5 June 2025... A further automated reminder will be sent...\u201d",
+      "\u201cA final automated reminder was sent on 6 June 2025...\u201d",
+      "\u201cBased on previous information received, your case has been marked as resolved... Otherwise this case will be automatically closed for you after 3 business days.\u201d",
+      "\u201cPlease reopen this case. The issue is yet to be resolved.\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeatedly asked for information that was already provided or already answered (e.g., \u201cwhen did it start\u201d, roles/permissions, screenshots), and continued insisting on a test admin account despite the constraints explained.",
+    "evidence": [
+      "Support: \u201cCan you please tell when the customer started facing this issue? Also, could be please share the steps to reproduce and a screen recording...\u201d",
+      "Customer: \u201cThis has never worked for the customer... In my previous email, I've attached the necessary screenshots showing the error...\u201d",
+      "Support: \u201c1. What role does Marcus have in the native community? ... 4. When did this issue first occur?\u201d",
+      "Customer: \u201cMarcus has the Community Manager role. Please feel free to refer to the screenshots of the Community settings in the initial email.\u201d",
+      "Support: \u201cwe will need a community test account with administrator role...\u201d",
+      "Customer: \u201cIt's inconvenient for them to create a test account in the PROD community environment... As I've already shared the steps and the error, have you had a chance to replicate this in internal test instances?\u201d",
+      "Support (after objection): \u201cAs we discussed, we will need a community test account with administrator role...\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer updates and meaningful support progress/next steps, including a ~5-day gap between 2025-06-11 and the next human update on 2025-06-16.",
+    "evidence": [
+      "Customer: [2025-06-11T16:59:20+00:00] \u201cMark updated the Kh-Naresh profile to include admin access...\u201d",
+      "Support: [2025-06-16T13:10:22+00:00] \u201cThis is Dereck Clark, and I'll be assisting you with this case going forward. I'm currently reviewing...\u201d",
+      "Automations during wait: \u201cAn automated reminder was sent on 19 June 2025...\u201d / \u201cA final automated reminder was sent on 20 June 2025...\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The case was closed/marked resolved without customer confirmation and while the issue remained unresolved, forcing the requester to ask for reopening; later it was again \u201cmarked as resolved\u201d while waiting for logs.",
+    "evidence": [
+      "Support: [2025-06-10T09:02:20+00:00] \u201cThis case has now been closed.\u201d",
+      "Customer: [2025-06-10T12:46:38+00:00] \u201cPlease reopen this case. The issue is yet to be resolved.\u201d",
+      "AI: [2025-06-24T17:30:11+00:00] \u201cBased on previous information received, your case has been marked as resolved.\u201d",
+      "Customer: [2025-06-25T10:31:00+00:00] \u201cPlease keep this ticket open for now. I'll share the logs as soon as possible.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "While not explicitly labeled Sev1, the reporter indicated the behavior may affect multiple customers (\u201csame with others I've worked with\u201d), yet the case proceeded with standard back-and-forth and auto-closure/resolution rather than visible escalation/engineering engagement.",
+    "evidence": [
+      "Customer: \u201cIt's not only this customer, I'm afraid it's the same with others I've worked with.\u201d",
+      "Customer: \u201cCould anyone please investigate this issue further and help with the solution? I'd appreciate it if you could prioritize this.\u201d",
+      "Auto-closure/standard handling signals: \u201cA final automated reminder was sent...\u201d and \u201cThis case has now been closed.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60144719
+}

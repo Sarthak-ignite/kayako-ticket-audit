@@ -1,0 +1,63 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses appear low-quality and not well-tailored to the reported issue (Information Store Protection page crash), initially steering toward whitelist/blocklist guidance and repeating generic remediation. The customer explicitly states the bot was not helping and that they had already gone through the suggested steps, indicating the AI output was ineffective and/or misaligned.",
+    "evidence": [
+      "ATLAS (public): \"As referenced in the article 'Error: ... when accessing the whitelist or blocklist' ...\"",
+      "Customer (public): \"My issues is not with the whitelist but with the Information Store Protection.\"",
+      "Customer (public): \"The BOT AI is not helping\u2026\"",
+      "Customer (public): \"We been though all these steps already with the AI bot?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly requested a human and expressed frustration at being routed back to AI instead of a support representative, indicating an AI wall/looping experience and difficulty reaching a person.",
+    "evidence": [
+      "Customer (public): \"So once again, CAN I SPEAK TO A HUMAN\u2026.\"",
+      "Customer (public): \"I was suppose to be in contact with a support representative on this request ... not AI again\u2026\"",
+      "Customer (public): \"Where is my support representative who was suppose to contact me as AI said so\u2026.\"",
+      "Customer (public): \"STILL WAITING\u2026\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The interaction shows the customer having to restate that the problem was not whitelist-related and that prior steps had already been completed, suggesting prior context was not absorbed. The customer also reports receiving the same automated message again, implying repetition rather than contextual handling.",
+    "evidence": [
+      "Customer (public): \"My issues is not with the whitelist but with the Information Store Protection.\"",
+      "Customer (public): \"We been though all these steps already with the AI bot?\"",
+      "Customer (public): \"Like I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026 Not helpful\u2026\"",
+      "Customer (public): \"Same automated message as the one below. Scroll down, exact same one and from same person\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are clear customer complaints about extended waiting and lack of human follow-up, and the timeline shows a long gap between the customer\u2019s escalation (Oct 31) and a meaningful human response (Nov 17). The CSV resolution time is also very large, supporting prolonged handling.",
+    "evidence": [
+      "Customer (public): \"I\u2019ve been waiting for a support representative to reach out..\"",
+      "Customer (public): \"STILL WAITING FOR SUPPORT..\"",
+      "Agent (public, 2025-11-17): \"We apologize for the delay on this\"",
+      "CSV: resolutionTime=2493766",
+      "CSV: Ticket Created=2025-10-29 19:57:36",
+      "CSV: Ticket Solved=2025-11-27 16:40:22"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket ultimately closed, but the customer\u2019s last updates indicate they were still monitoring and hoping the fix would not break after installing 22.3, without an explicit confirmation of full resolution. This makes closure potentially premature (uncertain, but plausible given the lack of explicit customer sign-off).",
+    "evidence": [
+      "Customer (private): \"Hopefully it works as expected and doesn't break what was fixed.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-30 17:34:19",
+      "Agent (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue was frustrating and impacted access to a configuration page, the customer stated email was flowing properly, and there is no clear indication of a production outage or urgent P1/Sev1 business impact that was mishandled as routine.",
+    "evidence": [
+      "Customer (initial private summary): \"Email seem to be flowing properly\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60231851
+}

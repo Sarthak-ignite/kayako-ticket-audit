@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI entries shown are internal status changes/transcript excerpt and do not clearly contain generic filler, wrong guidance, or unkept promises within the provided text.",
+    "evidence": [
+      "[2025-10-06T10:43:36+00:00] (AI) ATLAS: \"Here is a transcript of the customer's recent interaction with ATLAS chat:\"",
+      "[2025-10-07T02:42:42+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 12 hour(s)\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There\u2019s no clear evidence the customer was repeatedly blocked by AI or asked for the same information by AI; humans engaged publicly multiple times throughout the ticket.",
+    "evidence": [
+      "[2025-10-06T15:48:04+00:00] (Employee) Shaquille De Lancy: \"Dear Andrew, Thank you for contacting the StreetSmart Support Team.\"",
+      "[2025-10-07T08:55:52+00:00] (Employee) Raymond Guirguis: \"Dear Andrew, The ATLAS automation for this customer is currently not functioning...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support appears to reference prior context (prior ticket and existing company record) and does not clearly re-request the same screenshots/logs already provided in the excerpts.",
+    "evidence": [
+      "[2025-10-06T15:26:57+00:00] (Employee) Shaquille De Lancy: \"Following up after 60214607.\"",
+      "[2025-10-06T15:26:57+00:00] (Employee) Shaquille De Lancy: \"Florida Department of Health exists under 104983 already. Is this the same customer or different\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap (>24 hours) between a customer update and the next human public response, consistent with the reported max gap of 25.5 hours.",
+    "evidence": [
+      "[2025-10-09T13:30:55+00:00] (Customer) Andrew Mugisha: \"The customer reports still seeing the following error:\"",
+      "[2025-10-10T03:21:05+00:00] (Employee) Alexandr Oliynyk: \"We were unable to reproduce the issue...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is marked closed, the provided timeline does not show a closure message or a situation where the customer was awaiting promised follow-up at the time of closure.",
+    "evidence": [
+      "[2025-10-11T12:08:50+00:00] (Employee) Raymond Guirguis: \"This is resolved and deployed now\"",
+      "[2025-10-11T12:22:00+00:00] (Employee) Raymond Guirguis: \"We identified that the issue was related to case sensitivity...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although priority is urgent, the visible interactions show investigation and backend fixes rather than generic end-user troubleshooting; no clear evidence of missing escalation for a P1/SEV1 is present.",
+    "evidence": [
+      "[2025-10-08T12:01:58+00:00] (Employee) Raymond Guirguis: \"We have updated the automation backend on our end to onboard the company: 104983\"",
+      "[2025-10-11T11:05:06+00:00] (Employee) Raymond Guirguis: \"im working on this.. it is a case sensitivity issue with the automation. will fix it in few minutes.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI entries shown are internal status changes/transcript excerpt and do not clearly contain generic filler, wrong guidance, or unkept promises within the provided text.\",\n    \"evidence\": [\n      \"[2025-10-06T10:43:36+00:00] (AI) ATLAS: \\\"Here is a transcript of the customer's recent interaction with ATLAS chat:\\\"\",\n      \"[2025-10-07T02:42:42+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 12 hour(s)\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There\u2019s no clear evidence the customer was repeatedly blocked by AI or asked for the same information by AI; humans engaged publicly multiple times throughout the ticket.\",\n    \"evidence\": [\n      \"[2025-10-06T15:48:04+00:00] (Employee) Shaquille De Lancy: \\\"Dear Andrew, Thank you for contacting the StreetSmart Support Team.\\\"\",\n      \"[2025-10-07T08:55:52+00:00] (Employee) Raymond Guirguis: \\\"Dear Andrew, The ATLAS automation for this customer is currently not functioning...\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support appears to reference prior context (prior ticket and existing company record) and does not clearly re-request the same screenshots/logs already provided in the excerpts.\",\n    \"evidence\": [\n      \"[2025-10-06T15:26:57+00:00] (Employee) Shaquille De Lancy: \\\"Following up after 60214607.\\\"\",\n      \"[2025-10-06T15:26:57+00:00] (Employee) Shaquille De Lancy: \\\"Florida Department of Health exists under 104983 already. Is this the same customer or different\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant gap (>24 hours) between a customer update and the next human public response, consistent with the reported max gap of 25.5 hours.\",\n    \"evidence\": [\n      \"[2025-10-09T13:30:55+00:00] (Customer) Andrew Mugisha: \\\"The customer reports still seeing the following error:\\\"\",\n      \"[2025-10-10T03:21:05+00:00] (Employee) Alexandr Oliynyk: \\\"We were unable to reproduce the issue...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked closed, the provided timeline does not show a closure message or a situation where the customer was awaiting promised follow-up at the time of closure.\",\n    \"evidence\": [\n      \"[2025-10-11T12:08:50+00:00] (Employee) Raymond Guirguis: \\\"This is resolved and deployed now\\\"\",\n      \"[2025-10-11T12:22:00+00:00] (Employee) Raymond Guirguis: \\\"We identified that the issue was related to case sensitivity...\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although priority is urgent, the visible interactions show investigation and backend fixes rather than generic end-user troubleshooting; no clear evidence of missing escalation for a P1/SEV1 is present.\",\n    \"evidence\": [\n      \"[2025-10-08T12:01:58+00:00] (Employee) Raymond Guirguis: \\\"We have updated the automation backend on our end to onboard the company: 104983\\\"\",\n      \"[2025-10-11T11:05:06+00:00] (Employee) Raymond Guirguis: \\\"im working on this.. it is a case sensitivity issue with the automation. will fix it in few minutes.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60214613
+}

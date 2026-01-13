@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ATLAS content is truncated and does not clearly show generic filler, incorrect guidance, or a broken promise. The visible human responses are specific (license downgrade and key).",
+    "evidence": [
+      "[2025-04-10T14:00:39+00:00] (AI) ATLAS: ... transcript ... (truncated)",
+      "[2025-10-08T10:52:05+00:00] (Employee) Aditi Garg: License has been downgraded ... New key is 6E1f-HU"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear indication the customer was stuck interacting with AI repeatedly or prevented from reaching a human; the ticket shows internal routing to BU and later a human response.",
+    "evidence": [
+      "[2025-04-10T14:00:50+00:00] (AI) ATLAS: Sending to BU",
+      "[2025-10-08T10:52:05+00:00] (Employee) Aditi Garg: ... License has been downgraded ..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The log does not show support requesting information the customer already provided (e.g., asking again for the license key). The customer provided the license key once, and later support issued a downgraded key.",
+    "evidence": [
+      "[2025-04-10T14:00:58+00:00] (Employee) Alperia: License Key: QjcmHQpCsc0-zdMys0gYs6BVdL4wa-cEBF8-790951",
+      "[2025-10-08T10:52:05+00:00] (Employee) Aditi Garg: ... New key is 6E1f-HU"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between the customer providing key info / following up and a resolution response. The customer explicitly reports waiting 22 days, and the timeline shows long delays (April/May to October).",
+    "evidence": [
+      "[2025-04-10T14:00:58+00:00] (Employee) Alperia: License Key: ...",
+      "[2025-05-02T13:10:11+00:00] (Employee) Alperia: Hello, we are now waiting 22 days...",
+      "[2025-10-08T10:52:05+00:00] (Employee) Aditi Garg: ... License has been downgraded ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The request to close occurs after the downgrade/key was provided, and there is no visible evidence the customer was still waiting for promised information at the time of closure.",
+    "evidence": [
+      "[2025-10-08T10:52:05+00:00] (Employee) Aditi Garg: ... License has been downgraded ... New key is 6E1f-HU",
+      "[2025-10-09T14:01:35+00:00] (Employee) Alperia (private): you can close the ticket"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No priority/severity indicators (P1/Sev1), outage/critical impact statements, or evidence of required immediate escalation are present in the excerpt.",
+    "evidence": [
+      "No explicit P1/Sev1 or critical-impact markers shown in the provided interactions."
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60018792
+}

@@ -1,0 +1,176 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "placeable",
+        "requester": {
+          "id": 60000722,
+          "uuid": "f8e84d09-7a74-47ab-af0d-36f18d18d5cb",
+          "full_name": "Syed Haider",
+          "legacy_id": "372891716839",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 1,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/f8e84d09-7a74-47ab-af0d-36f18d18d5cb?1767781831",
+          "agent_case_access": "ALL",
+          "organization_case_access": null,
+          "organization": {
+            "id": 3,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 3,
+              "resource_type": "team"
+            },
+            {
+              "id": 4,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000003,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000004,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000009,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000011,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000135,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000136,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000137,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000138,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000140,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000142,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000146,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000184,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000197,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000207,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 2257,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "7354,7355,7356,7365,7367,7368,7369,7370,7372,7383,7399,7435,7411,7390,7424,7420,7404,7448,7449,7454,7413,7417,7402,7405,7407,7427,7428,7374",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Asia/Karachi",
+          "time_zone_offset": 18000,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "python-requests/2.32.5",
+          "last_seen_ip": "18.210.160.89",
+          "last_seen_at": "2026-01-07T10:30:31+00:00",
+          "last_active_at": "2026-01-07T10:30:31+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60000722",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@a518650ac6d454f78cab76b2156b4b98a293fbff",
+          "password_updated_at": "2025-12-29T10:01:59+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-07T09:23:08+00:00",
+          "last_activity_at": "2026-01-07T09:23:08+00:00",
+          "created_at": "2020-09-04T19:47:29+00:00",
+          "updated_at": "2026-01-07T10:30:31+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60000722"
+        },
+        "ticket_idt": 60269002
+      },
+      "interactions": [
+        [
+          "2025-12-23T08:00:56+00:00",
+          "Kayako - ticket id 60269002 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation"
+        ],
+        [
+          "2025-12-23T08:00:53+00:00",
+          "Kayako - ticket id 60269002 // Kayako Automations commented privately: Initial ticket creation."
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 2,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

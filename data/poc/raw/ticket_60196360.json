@@ -1,0 +1,123 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_classic",
+        "requester": {
+          "id": 60454232,
+          "uuid": "557ed236-85a5-566a-a566-537af734f1de",
+          "full_name": "Carsten Schmitt-Hoeppner",
+          "legacy_id": null,
+          "designation": "Senior Product & Innovation Manager",
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/557ed236-85a5-566a-a566-537af734f1de?1767715232",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60067712,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 455761,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Paris",
+          "time_zone_offset": 3600,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+          "last_seen_ip": "80.146.191.211",
+          "last_seen_at": "2026-01-06T12:20:27+00:00",
+          "last_active_at": "2026-01-06T16:00:32+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60454232",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@b071e4d039692d6c5d8113fbd7c8bbd6eb0e38f2",
+          "password_updated_at": "2025-08-12T11:04:42+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T12:21:23+00:00",
+          "last_activity_at": "2026-01-06T12:21:23+00:00",
+          "created_at": "2025-07-07T07:29:04+00:00",
+          "updated_at": "2026-01-06T16:00:32+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60454232"
+        },
+        "ticket_idt": 60196360
+      },
+      "interactions": [
+        [
+          "2025-09-13T03:52:11+00:00",
+          "Kayako - ticket id 60196360 // Carlo Koh commented publicly: Hi Carsten,\n\nThank you for reaching out.\n\nPlease be advised that ticket 60195591 is still open and we are actively working on resolving the issue through the said ticket.\n\nYou are likely having issues accessing the ticket because it is assigned to a different email address of yours (carsten@schmitt-hoeppner.de). Kindly use that email address to log in to the support portal and access the ticket.\n\nIn the meantime, I have shared the additional information provided here to the original ticket. Just to give you an update: The issue has already been escalated to our Development team and they are investigating the problem at this time. Further updates will be provided to you through the said ticket.\n\nLet us know if you are still unable to access the ticket after using the correct email address so we can make the necessary adjustments to the ticket or your support portal account. Otherwise, we can close this new ticket as a duplicate.\n\nBest regards,\nCarlo Koh\nKhoros Community Classic Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-13T03:42:00+00:00",
+          "Kayako - ticket id 60196360 // Carlo Koh commented privately:  https://central-supportdesk.kayako.com/agent/conversations/60195591 is on hold as the issue was escalated to Engineering. \n The customer is unable to access because it is assigned to a different email address: carsten@schmitt-hoeppner.de \n\n We want to keep everything in one place so I'll try to guide the customer on how to access their original ticket. If they are able to access it, we can close this as a duplicate. "
+        ],
+        [
+          "2025-09-12T12:43:37+00:00",
+          "Kayako - ticket id 60196360 // Carsten Schmitt-Hoeppner commented privately: the original auto reply was naming a ticket #60195591\nbecause this is not available here, I have now created a new ticket and added all known logs\nhttps://khoros-classic.kayako.com/conversation/view/60195591"
+        ],
+        [
+          "2025-09-12T12:42:10+00:00",
+          "Kayako - ticket id 60196360 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Carsten Schmitt-Hoeppner ! \ud83d\udc4b\n\nThis is the Khoros Classic AI Support Agent \ud83e\udd16.\n\n-------------------------\n\n Please note: The AI Support Agent is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nCarsten Schmitt-Hoeppner:\n\n undefined \nChat Support:\n\n ### \ud83d\udd25 Active Incidents for Khoros Classic\n\n1. Missing Community Analytics data since August 29\n- Status: identified\n- URL: https://stspg.io/0bff6bzclrg3\n\n\u2139\ufe0f You can click the incident URL in order to view the full details\n\n\ud83d\udca1 We recommend that you click the Subscribe to updates button to receive real-time status updates on this incident and future ones.\n\nDid this help? \nCarsten Schmitt-Hoeppner:\n\n \ud83d\udc4e No. My issue is not related \nChat Support:\n\n Walk me through what's happening or select from the below options.\n\nDon't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you. \ud83d\udcaa\n\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\n\n\ud83d\udca1Getting the most out of Khoros Classic AI Support Agent [https://khoros-classic.kayako.com/article/128087]\n\nIf I'm unable to help you, I can patch you through to a Live agent, along with the information you supply to me during this session, so that our team has something to work with from the get-go. \nCarsten Schmitt-Hoeppner:\n\n we see lots of lost handovers for conversations from Khoros Flow to Care. I have reproted this issue but not received any feedback yet! \nChat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiJkNDVmNzVlMC03NzhiLTRkYjEtOGVlMC02NjE5NmMwOGY0ZDciLCJzZXNzaW9uX3VpZCI6ImQ0NWY3NWUwLTc3OGItNGRiMS04ZWUwLTY2MTk2YzA4ZjRkNyIsImVtYWlsIjoiY2Fyc3Rlbi5zY2htaXR0LWhvZXBwbmVyQHRlbGVrb20uZGUiLCJjdXN0b21fcGFyc2VyIjp7fSwiY2FsbGJhY2siOnsiY2FsbGJhY2tfdXJsIjpudWxsLCJjYWxsYmFja19lbWFpbCI6ImNpcHJpYW4ubmFzdGFzZUB0cmlsb2d5LmNvbSJ9LCJwcm9kdWN0X3RhZyI6Imtob3Jvc19jbGFzc2ljIiwicXVlcnkiOiIiLCJleHAiOjE3NTc2ODc3NzV9.0mKD9bdj0nBdypv36Tna0zJz6QrdVjbv_kcHrCPFYhc]\n\nYou should see the following:\n- User: carsten.schmitt-hoeppner@telekom.de\n- Session ID: d45f75e0-778b-4db1-8ee0-66196c08f4d7 \nCarsten Schmitt-Hoeppner:\n\n \ud83d\udd19 Continue without file upload \nChat Support:\n\n Thanks for letting me know! Let's dig into your issue with lost handovers from Khoros Flow to Care.\n\nJust to confirm, when you say lost handovers, do you mean that conversations initiated in Flow are not appearing in Care at all, or are they showing up with missing information or delays? Also, is this happening for all conversations or only certain types/channels?\n\nCould you share:\n- When did you first notice this issue?\n- Does it happen consistently, or only at certain times?\n- Are there any error messages or logs visible in either Flow or Care?\n\nThis info will help me narrow down the possible causes and guide you more effectively! \nCarsten Schmitt-Hoeppner:\n\n we see this since a few days, it is not sonsistently nor in specific flows, it happens randomly. there are no errors in flow, we have analyzed the logs and can not see any reason why the convo is not appearing in flow \nChat Support:\n\n Thanks for the details! It sounds like the handover issue is intermittent, not tied to specific flows, and there are no errors in your Flow logs. Since this started a few days ago and you\u2019ve already checked the logs, let\u2019s consider a few possibilities:\n\n1. Integration/Configuration Delays or Filters: Sometimes, delays or specific configuration settings between Flow and Care can cause content to not appear as expected. For example, there might be per-board delays or routing rules that could impact when or if a conversation appears in Care. You can review more about these settings in this article: Configure your community to escalate content to Khoros Care [https://khoros-classic.kayako.com/article/125064].\n\n2. Content Moderation or Filtering: In some cases, content may be filtered out or held for moderation, which could explain why it doesn\u2019t show up in Care. This is more common in communities with spam management or moderation tools enabled. For more on this, see: Community members have reported posts missing after posting. Where have these posts gone? [https://khoros-classic.kayako.com/article/125829].\n\nSince you\u2019ve already analyzed the logs and haven\u2019t found errors, and because this is a random/intermittent issue, it may require deeper investigation by our technical team.\n\nWould you like me to escalate this to a live support agent for further analysis? If so, could you please confirm:\n- The approximate date/time of the most recent lost handover\n- Any specific conversation IDs (if available) that failed to appear in Care\n\nThis info will help our team investigate more efficiently! \nChat Support:\n\n Just to confirm... you are saying that you are currently facing an outage, correct? \nCarsten Schmitt-Hoeppner:\n\n \u2705 Yes, correct \nChat Support:\n\n I'm sorry to hear about that!\nLet's get you some help straight away! \ud83d\udea8 \nCarsten Schmitt-Hoeppner:\n\n \ud83d\udce9 Raise a ticket \nChat Support:\n\n Thank you for confirming the outage and providing those Flow log links. Before I escalate this as an urgent ticket, I need to confirm one key detail:\n\nCould you please provide your Khoros instance URL? This is required for our support team to properly investigate and resolve the issue. The instance URL typically looks like:\n- yourcompany.community.com\n- yourcompany.khoros.com\n- or a similar format specific to your Khoros environment.\n\nIf you\u2019re unsure where to find it, it\u2019s usually the address you use to log in to your Khoros Community or Care portal.\n\nOnce you provide this, I\u2019ll immediately raise your urgent support ticket. Thank you! \nCarsten Schmitt-Hoeppner:\n\n https://telekom.response.lithium.com/ \nChat Support:\n\n I've noted down your instance URL\ud83d\udd17: https://telekom.response.lithium.com/ \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nCarsten Schmitt-Hoeppner:\n\n here are some logs from flow where we are missing the convos: \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nCarsten Schmitt-Hoeppner:\n\nhttps://app.flow.ai/a-2ioQPpQ/logs/details/%2B4915208872109%7C8e7e2a13-b87a-430a-a179-8f8e93e5fa9e/a8c023d8-7076-4e8a-a5c0-6c58c4d7cde1/activity/1757626596073_8d8d8ac6-47d0-444d-b1af-cd8f50298a7d_Creating%20internal%20note%20in%20care?channelId=8e7e2a13-b87a-430a-a179-8f8e93e5fa9e&createdAt=1757590574121\n\nhttps://app.flow.ai/a-2ioQPpQ/logs/details/%2B4915222092919%7C8e7e2a13-b87a-430a-a179-8f8e93e5fa9e/ce30a2ae-1bdc-49b1-b495-9628ca3df13a?channelId=8e7e2a13-b87a-430a-a179-8f8e93e5fa9e&createdAt=1757590605635\n\nChat Support:\n\n It doesn't seem like you provided valid email addresses to add to the ticket CC... \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nCarsten Schmitt-Hoeppner:\n\n No additional email addresses required in CC \nChat Support:\n\n I've automatically set the ticket subject to: Missing Conversations from Flow to Care\n\nDoes that work for you?\n- If it does, simply say YES or use the below button to confirm \ud83d\udc47\n- If not, please directly type in the ticket subject of your choosing below \ud83d\ude09 "
+        ],
+        [
+          "2025-09-12T12:42:03+00:00",
+          "Kayako - ticket id 60196360 // ATLAS commented privately: --- Ticket generated by Khoros Classic AI chat on behalf of Carsten Schmitt-Hoeppner ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * we see lots of lost handovers for conversations from Khoros Flow to Care. I have reproted this issue but not received any feedback yet!<br>\n  * we see this since a few days, it is not sonsistently nor in specific flows, it happens randomly. there are no errors in flow, we have analyzed the logs and can not see any reason why the convo is not appearing in flow<br>\n  * i ahve already send email to support: One more !<br>\n  <br>\n  https://app.flow.ai/a-2ioQPpQ/logs/details/%2B4915125633441%7C8e7e2a13-b87a-430a-a179-8f8e93e5fa9e/2c896002-0411-431f-8b2f-5675189c93c1?channelId=8e7e2a13-b87a-430a-a179-8f8e93e5fa9e&createdAt=1757597223942<br>\n  <br>\n  This situation is slowly becoming critical! We are losing customers and our reputation.<br>\n  In addition, we are unable to comply with legal requirements and may become liable for damages.<br>\n  <br>\n  An urgent analysis and troubleshooting is therefore imperative!<br>\n  <br>\n  <br>\n  Von: carsten@schmitt-hoeppner.de<br>\n  Gesendet: Freitag, 12. September 2025 13:23<br>\n  An: 'support@khoros-classic.kayako.com'<br>\n  Cc: 'carla.hanses@telekom.de' ; 'joerg.kleser@telekom.de' ; 'Andrew Mugisha'<br>\n  Betreff: UPDATE URGENT !!!! Missing Handover Flow > Care<br>\n  Priorit\u00e4t: Hoch<br>\n  <br>\n  URGENT !!!!<br>\n  <br>\n  Unfortunately, I\u2019m unable to find this case in the HELP CENTER (404)<br>\n  <br>\n  UPDATE to the Bug report from yesterday! We see more and more Conversations getting lost between FLOW and CARE!<br>\n  <br>\n  <br>\n  https://app.flow.ai/a-2ioQPpQ/logs/details/%2B4915208872109%7C8e7e2a13-b87a-430a-a179-8f8e93e5fa9e/a8c023d8-7076-4e8a-a5c0-6c58c4d7cde1/activity/1757626596073_8d8d8ac6-47d0-444d-b1af-cd8f50298a7d_Creating%20internal%20note%20in%20care?channelId=8e7e2a13-b87a-430a-a179-8f8e93e5fa9e&createdAt=1757590574121<br>\n  <br>\n  https://app.flow.ai/a-2ioQPpQ/logs/details/%2B4915222092919%7C8e7e2a13-b87a-430a-a179-8f8e93e5fa9e/ce30a2ae-1bdc-49b1-b495-9628ca3df13a?channelId=8e7e2a13-b87a-430a-a179-8f8e93e5fa9e&createdAt=1757590605635<br>\n  <br>\n  <br>\n  <br>\n  Please reply asap!<br>\n  <br>\n  Best,<br>\n  /C<br>\n  <br>\n  * i ahve already send email to support: One more !<br>\n  <br>\n  https://app.flow.ai/a-2ioQPpQ/logs/details/%2B4915125633441%7C8e7e2a13-b87a-430a-a179-8f8e93e5fa9e/2c896002-0411-431f-8b2f-5675189c93c1?channelId=8e7e2a13-b87a-430a-a179-8f8e93e5fa9e&createdAt=1757597223942<br>\n  <br>\n  This situation is slowly becoming critical! We are losing customers and our reputation.<br>\n  In addition, we are unable to comply with legal requirements and may become liable for damages.<br>\n  <br>\n  An urgent analysis and troubleshooting is therefore imperative!<br>\n  <br>\n  <br>\n  Von: carsten@schmitt-hoeppner.de<br>\n  Gesendet: Freitag, 12. September 2025 13:23<br>\n  An: 'support@khoros-classic.kayako.com'<br>\n  Cc: 'carla.hanses@telekom.de' ; 'joerg.kleser@telekom.de' ; 'Andrew Mugisha'<br>\n  Betreff: UPDATE URGENT !!!! Missing Handover Flow > Care<br>\n  Priorit\u00e4t: Hoch<br>\n  <br>\n  URGENT !!!!<br>\n  <br>\n  Unfortunately, I\u2019m unable to find this case in the HELP CENTER (404)<br>\n  <br>\n  UPDATE to the Bug report from yesterday! We see more and more Conversations getting lost between FLOW and CARE!<br>\n  <br>\n  <br>\n  https://app.flow.ai/a-2ioQPpQ/logs/details/%2B4915208872109%7C8e7e2a13-b87a-430a-a179-8f8e93e5fa9e/a8c023d8-7076-4e8a-a5c0-6c58c4d7cde1/activity/1757626596073_8d8d8ac6-47d0-444d-b1af-cd8f50298a7d_Creating%20internal%20note%20in%20care?channelId=8e7e2a13-b87a-430a-a179-8f8e93e5fa9e&createdAt=1757590574121<br>\n  <br>\n  https://app.flow.ai/a-2ioQPpQ/logs/details/%2B4915222092919%7C8e7e2a13-b87a-430a-a179-8f8e93e5fa9e/ce30a2ae-1bdc-49b1-b495-9628ca3df13a?channelId=8e7e2a13-b87a-430a-a179-8f8e93e5fa9e&createdAt=1757590605635<br>\n  <br>\n  <br>\n  <br>\n  Please reply asap!<br>\n  <br>\n  Best,<br>\n  /C<br>\n  <br>\n  * https://telekom.response.lithium.com/<br>\n  * here are some logs from flow where we are missing the convos:<br>\n  <br>\n  <b>Khoros Instance URL:</b> <a href=\"https://telekom.response.lithium.com/\" rel=\"nofollow\">https://telekom.response.lithium.com/</a>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 5,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI placed the ticket on hold for an excessive duration which does not provide useful information to the customer.",
+    "evidence": [
+      "[2025-12-03T19:08:19+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-12-02T20:21:22+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the AI repeatedly requesting information or creating a loop preventing customer access to a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No instances were found where the support team requested the same information multiple times or ignored what was previously provided by the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays in responses, notably the 477.5 hours gap between interactions.",
+    "evidence": [
+      "Max gap between responses (hours): 477.5"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not appear to have been closed prematurely as the necessary information and licenses were provided before closure.",
+    "evidence": [
+      "[2025-12-05T10:16:54+00:00] (Employee) Roger King: Please find attached the remaining 3 subscription G2 licenses"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of mishandling; the issue was escalated and handled with appropriate actions such as creating licenses.",
+    "evidence": [
+      "[2025-12-01T18:13:28+00:00] (Employee) Roger King: This ticket is set as Urgent and the Sales team has approved the request..."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI placed the ticket on hold for an excessive duration which does not provide useful information to the customer.\",\n    \"evidence\": [\"[2025-12-03T19:08:19+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\", \"[2025-12-02T20:21:22+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the AI repeatedly requesting information or creating a loop preventing customer access to a human agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No instances were found where the support team requested the same information multiple times or ignored what was previously provided by the customer.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays in responses, notably the 477.5 hours gap between interactions.\",\n    \"evidence\": [\"Max gap between responses (hours): 477.5\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not appear to have been closed prematurely as the necessary information and licenses were provided before closure.\",\n    \"evidence\": [\"[2025-12-05T10:16:54+00:00] (Employee) Roger King: Please find attached the remaining 3 subscription G2 licenses\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication of mishandling; the issue was escalated and handled with appropriate actions such as creating licenses.\",\n    \"evidence\": [\"[2025-12-01T18:13:28+00:00] (Employee) Roger King: This ticket is set as Urgent and the Sales team has approved the request...\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60251281
+}

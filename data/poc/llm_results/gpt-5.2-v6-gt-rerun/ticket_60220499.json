@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided recommendations that appear generic and at least partially inconsistent with the configuration evidence in the same ticket, which risks misleading troubleshooting. In particular, ATLAS claimed an absence of a broad *.apple.com entry, while the later file analysis shows *.apple.com already present in the HTTPS exclusions group.",
+    "evidence": [
+      "ATLAS (public): \"Most relevant Apple CDN and update domains are included ... but there is no broad *.apple.com entry.\"",
+      "ATLAS FILE ANALYSIS (private): \"Multiple Apple-related domains are included in the HTTPS exclusions IP address group: appldnld.apple.com, *.apple.com, apple.com, *.cdn-apple.com...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested a technician to take a closer look and later escalated, indicating difficulty getting appropriate human/technical engagement. There is also evidence of prolonged back-and-forth with automated/templated guidance before L2 engagement.",
+    "evidence": [
+      "Customer (private): \"Could a technician from your team please take a closer look at this issue?\"",
+      "Customer (private): \"Given that the customer has been experiencing this problem for over a week now, could someone from your technical team please take a closer look at this case?\"",
+      "Internal note (private): \"[customer_escalation] ... severity is: core_functionality_defect\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support guidance appears to repeat or contradict already-provided context/testing. The customer stated they already disabled HTTPS/HTTP inspection and later that they already tried the GRO change, yet the discussion continued to center on those suggestions without acknowledging that they had been attempted and failed.",
+    "evidence": [
+      "Customer (private): \"We have already disabled both the HTTPS Inspector and HTTP Inspector under Services, but unfortunately, that did not make any difference.\"",
+      "Jozef Kacala (public): \"... disable GRO ... Apple devices do not 'understand' GRO ...\"",
+      "Customer (private): \"we already tried that. Unfortunately, it didn\u2019t work.\"",
+      "ATLAS (public): \"Action: Add *.apple.com to both your 'HTTPS exclusions'...\"",
+      "ATLAS FILE ANALYSIS (private): \"... HTTPS exclusions ... includes ... *.apple.com ...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are clear customer complaints about waiting with no concrete feedback, and the structured timeline indicates a very long resolution window. The ticket spans from mid-October to early November, with the customer explicitly noting a two-week gap.",
+    "evidence": [
+      "Customer (private): \"It has now been two weeks since our last communication, and unfortunately, we have not received any concrete feedback on the issue.\"",
+      "CSV: Ticket Created=2025-10-14 08:44:24",
+      "CSV: Ticket Solved=2025-11-05 19:10:29",
+      "CSV: resolutionTime=1938365"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed as a duplicate while the customer indicated they could not access the referenced ticket, which is a form of premature/incorrect closure attempt. Although it was later reopened/continued, the initial duplicate-closure action occurred before resolving the customer\u2019s access and issue.",
+    "evidence": [
+      "Zubair Farooq (public): \"This ticket is a duplicate of ticket# 60216786... We will close this ticket\"",
+      "Customer (public): \"It looks like a reply was sent to the ticket I unfortunately don\u2019t have access to. Could you please close that ticket and continue the communication using Ticket #60220499\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-08 19:35:45"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer described the situation as severely impacting usability (\"not possible to work with this product\") and the internal escalation labeled it \"core_functionality_defect,\" yet the case experienced long delays and was even closed as a duplicate during the escalation period. This suggests the urgency may not have been handled with appropriate speed/ownership.",
+    "evidence": [
+      "Customer (private): \"According to the partner, it is currently not possible to work with this product.\"",
+      "Internal note (private): \"[customer_escalation] ... severity is: core_functionality_defect\"",
+      "Customer (private): \"The customer is currently unable to perform updates\"",
+      "Customer (private): \"It has now been two weeks since our last communication\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60220499
+}

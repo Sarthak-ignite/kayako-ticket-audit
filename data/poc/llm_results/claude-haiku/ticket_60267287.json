@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI system appears to make generic comments without substantial content and performs mechanical actions like placing tickets on hold.",
+    "evidence": [
+      "[2025-12-27T15:07:01+00:00] Placing on hold for 48 hour(s)",
+      "[2025-12-29T15:16:56+00:00] ticket was set to hold until 2025-12-29T15:15:17.000Z. Placing ticket back to open"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There's no evidence of repeated AI requests or customer being unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support agents seem to be referencing previous logs and customer's specific context in their responses.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer and support interactions, with some delays extending over multiple days.",
+    "evidence": [
+      "First customer interaction [2025-12-29T15:29:23+00:00]",
+      "Last customer interaction [2026-01-05T17:30:17+00:00]",
+      "Time to first human response was 32.2 hours",
+      "Max gap between responses was 119.8 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket remains open and agents are continuing to troubleshoot the customer's issue.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Support appears to be providing specific technical guidance related to the import/export tool and Outlook configuration.",
+    "evidence": [
+      "[2025-12-29T21:13:44+00:00] Randall Shawver: detailed analysis of Import/Export Tool logs",
+      "[2025-12-27T14:52:13+00:00] Amir Khan: thorough analysis of logs and Import/Export Tool code"
+    ]
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI system appears to make generic comments without substantial content and performs mechanical actions like placing tickets on hold.\",\n    \"evidence\": [\n      \"[2025-12-27T15:07:01+00:00] Placing on hold for 48 hour(s)\",\n      \"[2025-12-29T15:16:56+00:00] ticket was set to hold until 2025-12-29T15:15:17.000Z. Placing ticket back to open\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There's no evidence of repeated AI requests or customer being unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support agents seem to be referencing previous logs and customer's specific context in their responses.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer and support interactions, with some delays extending over multiple days.\",\n    \"evidence\": [\n      \"First customer interaction [2025-12-29T15:29:23+00:00]\",\n      \"Last customer interaction [2026-01-05T17:30:17+00:00]\",\n      \"Time to first human response was 32.2 hours\",\n      \"Max gap between responses was 119.8 hours\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket remains open and agents are continuing to troubleshoot the customer's issue.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Support appears to be providing specific technical guidance related to the import/export tool and Outlook configuration.\",\n    \"evidence\": [\n      \"[2025-12-29T21:13:44+00:00] Randall Shawver: detailed analysis of Import/Export Tool logs\",\n      \"[2025-12-27T14:52:13+00:00] Amir Khan: thorough analysis of logs and Import/Export Tool code\"\n    ]\n  }\n}\n```\n\nKey observations:\n- The ticket shows significant response delays\n- AI interactions are mechanical and not particularly helpful\n- Support is technically engaged but slow to respond\n- The priority seems high, but response times are not matching the priority level",
+  "_model": "claude-haiku",
+  "_ticket_id": 60267287
+}

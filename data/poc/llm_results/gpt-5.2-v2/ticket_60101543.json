@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS sent a generic incident/link response that did not address the customer\u2019s actual question (why the prior ticket was closed) and even used a broken template salutation (\u201cDear ATLAS\u201d). It also implied the incident may be related despite the customer explicitly saying it isn\u2019t.",
+    "evidence": [
+      "Customer: \"Why is ticket #60094199 closed? The problem has not been solved by GFI.\"",
+      "ATLAS: \"Please refer to our status page for the latest updates on the current incident affecting the Avira Virus Scanner Engine, which may be related to your case.\"",
+      "ATLAS: \"Dear ATLAS,\"",
+      "Chat Support: \"\ud83d\udc4e No. My issue is not related\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer indicates the AI\u2019s incident guidance was not relevant, yet ATLAS still responded by pushing the incident/status page rather than routing immediately to a human or addressing the closure question, creating an AI \u201cwall\u201d moment.",
+    "evidence": [
+      "Christian Schmidt: \"\ud83d\udc4e No. My issue is not related\"",
+      "ATLAS: \"Please refer to our status page... incident affecting the Avira Virus Scanner Engine, which may be related to your case.\"",
+      "Customer (repeats): \"Why is ticket #60094199 closed? The problem has not been solved by GFI.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support (ATLAS) ignored key context: the customer\u2019s core request was about a previous ticket being closed, and the customer explicitly said the issue was not related to the Avira incident, but ATLAS responded as if it was incident-related.",
+    "evidence": [
+      "Customer: \"Why is ticket #60094199 closed? The problem has not been solved by GFI.\"",
+      "Chat Support: \"\ud83d\udc4e No. My issue is not related\"",
+      "ATLAS: \"...incident affecting the Avira Virus Scanner Engine, which may be related to your case.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "A human agent responded within ~24 hours of ticket creation, and there are no multi-day gaps or customer complaints about waiting.",
+    "evidence": [
+      "[2025-07-12T18:59:16+00:00] Christian Schmidt commented privately",
+      "[2025-07-13T19:11:48+00:00] Randall Shawver commented publicly"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket includes auto-closure language (\u201cstay open for one week unless\u2026\u201d) even though the customer is explicitly stating the issue is not solved and is disputing a previous closure\u2014this is a strong risk/pattern of premature closure behavior.",
+    "evidence": [
+      "Customer: \"The problem has not been solved by GFI. The ticket remains open until the problem is solved.\"",
+      "ATLAS: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Closed in the portal.\"",
+      "Randall: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer did not describe a confirmed P1/SEV1 outage (no \u2018critical/outage/production down/urgent\u2019 signals). While an incident banner exists, the customer explicitly said it was not related.",
+    "evidence": [
+      "Chat Support: \"\u26a0\ufe0f There is currently an active incident... Mail Processing Impact \u2013 Avira Virus Scanner Engine\"",
+      "Christian Schmidt: \"\ud83d\udc4e No. My issue is not related\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60101543
+}

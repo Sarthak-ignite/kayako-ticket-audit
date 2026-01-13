@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only AI content is a brief transcript notification and does not contain incorrect instructions, unkept promises, or substantive troubleshooting errors.",
+    "evidence": [
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI message and no repeated requests or back-and-forth that would indicate the customer was trapped in a loop.",
+    "evidence": [
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer-provided context or prior messages appear in the timeline that could have been ignored; only the AI transcript note is present.",
+    "evidence": [
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Timeline shows a single interaction and ticket metadata indicates no multi-day gaps (Max gap between responses: 0.0), so there is no evidence of significant response delays.",
+    "evidence": [
+      "Max gap between responses (hours): 0.0",
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no visible customer follow-up or outstanding request in the timeline to indicate the ticket was closed prematurely.",
+    "evidence": [
+      "Status: closed",
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is 'normal' and there is no troubleshooting content; therefore there is no evidence of mishandling a P1/SEV1 incident.",
+    "evidence": [
+      "Priority: normal",
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only AI content is a brief transcript notification and does not contain incorrect instructions, unkept promises, or substantive troubleshooting errors.\",\n    \"evidence\": [\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI message and no repeated requests or back-and-forth that would indicate the customer was trapped in a loop.\",\n    \"evidence\": [\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer-provided context or prior messages appear in the timeline that could have been ignored; only the AI transcript note is present.\",\n    \"evidence\": [\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Timeline shows a single interaction and ticket metadata indicates no multi-day gaps (Max gap between responses: 0.0), so there is no evidence of significant response delays.\",\n    \"evidence\": [\n      \"Max gap between responses (hours): 0.0\",\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no visible customer follow-up or outstanding request in the timeline to indicate the ticket was closed prematurely.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is 'normal' and there is no troubleshooting content; therefore there is no evidence of mishandling a P1/SEV1 incident.\",\n    \"evidence\": [\n      \"Priority: normal\",\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60221483
+}

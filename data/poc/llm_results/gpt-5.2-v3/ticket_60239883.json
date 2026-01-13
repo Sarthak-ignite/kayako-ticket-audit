@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support communicated to the customer that the Apache upgrade was completed and the vulnerability was \"fully resolved,\" but Engineering\u2019s own update indicates the change was only in a pull request and still required review/build/test/deployment before it could be considered fully resolved. This is a clear factual inconsistency in the customer-facing update.",
+    "evidence": [
+      "[2025-11-13T13:02:20+00:00] Cu Chulainn AI Manager (public): \"Engineering team has successfully upgraded the Apache version in the GFI LanGuard agent to 2.4.65... This matter has been fully resolved.\"",
+      "[2025-11-13T13:00:18Z] trilogy-taro[bot] (Engineering): \"Engineering has created pull request #3499 ... but the Development team needs to review, build, test, and deploy the changes before the security vulnerability is fully resolved.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence the customer asked for a human, no repeated requests for the same information, and no looping AI exchanges trapping the customer.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to re-provide already-shared details and did not repeat the same troubleshooting steps; the ticket was escalated to Engineering promptly.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Support responded within minutes of the initial customer message; there is no 3+ day gap between a customer message and a support response.",
+    "evidence": [
+      "[2025-11-10T18:00:48+00:00] Customer message",
+      "[2025-11-10T18:02:54+00:00] Support (public): \"We have contacted the Engineering team...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The record shows a statement that the issue was resolved, but it does not show the ticket being closed or auto-closed while the customer was awaiting follow-up. Without an explicit closure event, premature closure is not provable here.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Customer stated it was a \"high security concern\" and wanted it fixed ASAP, but there is no explicit SEV1/P1/Critical marker or outage/production-down scenario. Additionally, support did escalate to Engineering immediately rather than providing irrelevant generic troubleshooting.",
+    "evidence": [
+      "[2025-11-10T18:00:48+00:00] Customer: \"This is a high security concern and we need to fix this as soon as possible.\"",
+      "[2025-11-10T18:02:48+00:00] CE Maintenance Bot (private): \"Opened engineering issue ...\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60239883
+}

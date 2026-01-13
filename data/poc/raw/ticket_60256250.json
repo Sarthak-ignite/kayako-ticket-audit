@@ -1,0 +1,139 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_classic",
+        "requester": {
+          "id": 60522480,
+          "uuid": "fae3104d-e376-5ee4-97e5-ffe5ecdce8c4",
+          "full_name": "Karuna Sharma",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/fae3104d-e376-5ee4-97e5-ffe5ecdce8c4?1767778886",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60068628,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 524010,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36",
+          "last_seen_ip": "165.225.124.80",
+          "last_seen_at": "2026-01-07T09:41:26+00:00",
+          "last_active_at": "2026-01-07T09:41:26+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60522480",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@6675cf4c73ba38a204630f7307f1bde600ebfc47",
+          "password_updated_at": "2025-07-18T13:46:12+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-07T09:41:26+00:00",
+          "last_activity_at": "2026-01-07T09:41:26+00:00",
+          "created_at": "2025-07-18T03:49:13+00:00",
+          "updated_at": "2026-01-07T09:41:26+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60522480"
+        },
+        "ticket_idt": 60256250
+      },
+      "interactions": [
+        [
+          "2025-12-05T06:15:08+00:00",
+          "Kayako - ticket id 60256250 // ATLAS commented publicly: Dear Karuna,\n\nThank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoros Classic Community at https://community.se.com. Based on the information provided and standard Khoros Community behavior, the reply box should open immediately beneath a post when clicking Reply, allowing the user to respond inline\u2014no page refresh should be necessary under normal circumstances.\n\nThis behavior can be disrupted by several factors. Below are troubleshooting steps and technical explanations based on documented platform usage:\n\n \t* Session Token Expiry: Khoros Communities rely on an active session for posting replies. If there is a significant delay between opening the reply box and submitting the reply, the user\u2019s session or post token may expire, causing the reply button to fail until the page is refreshed and a new token is generated. Users should post replies soon after opening the reply box.\n \t* Browser Caching or Extensions: Cached scripts or conflicts from browser extensions can interfere with core functionalities like inline replies. The issue may be isolated by clearing the browser cache, disabling extensions, or using an incognito/private window. Switching browsers or devices can also help determine if the issue is environment-specific.\n \t* Expected Workflow: Standard functionality for replying is detailed here: Replying in a Forum with threaded inline replies [https://khoros-classic.kayako.com/article/125575]. If users are consistently required to refresh\u2014even in clean browser sessions\u2014it is not the intended Khoros behavior. Normally, users should see their reply immediately posted inline with the topic.\n \t* Customization Conflicts: If the community instance uses custom scripts or browser plugins, these could potentially interfere with post actions. Temporarily disabling these customizations can assist in isolating any related issues.\n \t* Error Observation: If any error messages are presented in the browser console during failed reply attempts, these can be critical in further pinpointing the source of the problem.\n\nFor best results, users encountering this issue should:\n\n \t* Post replies soon after opening the reply box to avoid session timeout.\n \t* Use an updated browser, clear cached data, and disable browser add-ons to rule out local interference.\n \t* Consult the documentation on expected reply functionality: Replying in a Forum with threaded inline replies [https://khoros-classic.kayako.com/article/125575].\n \t* If possible, check for errors in the browser\u2019s console, which can provide more technical clues if the issue persists despite the above steps.\n\nIf after following these practices the issue remains consistent across multiple users and browsers, it may indicate a more systemic technical condition within the community instance, such as a persistent script or session misconfiguration. In such cases, continued technical review is advised to ensure the base configuration and any customizations align with documented Khoros Classic Community behaviors.\n\nFor your reference, additional information on how threaded inline replies should function is provided here: Replying in a Forum with threaded inline replies [https://khoros-classic.kayako.com/article/125575]. This includes information on layout, inline posting, and feature expectations.\n\nIf you observe any recurring error messages or other patterns during failed reply attempts, those technical details would be valuable for further analysis. Please consult the aforementioned guidelines to mitigate the issue and use the documentation to compare with the intended platform behavior.\n\nSincerely,\nAtlas\nKhoros Community Classic Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-12-05T06:14:15+00:00",
+          "Kayako - ticket id 60256250 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Brand set to Khoros Classic. Reasoning: Customer explicitly wrote 'Community Classic' and provided URLs under https://community.se.com using the /t5/ path without '/s/' (e.g., https://community.se.com/t5/user/viewprofilepage/user-id/27891), which matches the Classic pattern per special instructions. Added tag 'atlas-ticket-backlog'\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-12-05T06:13:52+00:00",
+          "Kayako - ticket id 60256250 // ATLAS commented publicly: Dear Karuna,\n\nThank you for providing the additional details regarding the issue where users must refresh the page to reply to a post within your Khoros Classic Community at https://community.se.com.\n\nBased on the description, it appears that affected users are encountering a problem where the reply function does not immediately allow posting, and in some cases, requires repeated refreshing. This is not the expected behavior in Khoros Communities. Normally, when a user clicks Reply, the reply box should open directly below the post for inline response, and subsequent replies should post without requiring a page refresh. Additional features such as dragging or browsing to attach files are also supported in this interface (see details here [https://khoros-classic.kayako.com/article/125575]).\n\nThis issue could be caused by several factors, including browser caching, script conflicts, or session timeouts. Here are some ways users can attempt to resolve or further narrow down the issue:\n\n \t* Browser/Device: Please verify if the issue occurs across multiple browsers (Chrome, Firefox, Edge, Safari) and whether it persists in private/incognito mode. Sometimes browser extensions or cached data can interfere with reply functionality.\n \t* Session Timing: Khoros Communities may require an active session to reply. If a user takes too long before submitting a reply, the session or post token may expire, causing issues with posting. Advise users to reply within a reasonable time after opening the reply box.\n \t* Error Messages: If there is a specific error displayed in the browser console, it might provide additional clues. Users can press F12 (or Option+Cmd+I on Mac) to open the console, attempt to reply, and check for errors.\n\nSteps to help mitigate and test this behavior:\n\n \t* Clear browser cache and cookies for the site.\n \t* Disable any ad blockers or browser extensions and try again.\n \t* Attempt to reply in an incognito/private window.\n \t* Ensure the browser is updated to the latest version.\n \t* Try using a different device or network to rule out environmental factors.\n\nIf your community uses custom scripts or plugins, temporarily disabling them can help determine if a customization may be interfering with core functionality.\n\nFor more information on how inline replies are intended to function, please see the official documentation: Replying in a Forum with threaded inline replies [https://khoros-classic.kayako.com/article/125575].\n\nIf this issue happens consistently even after these steps, and no errors are observed in the browser console, it may indicate a deeper technical issue with the community instance beyond normal configuration and usage. In such cases, ensuring all community admin settings align with expected defaults may help further isolate the root cause.\n\nLet us know if you have any additional details from the browser console or further observations, and we will continue to help diagnose the problem.\n\nSincerely,\nAtlas\nKhoros Community Classic Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-12-05T06:11:02+00:00",
+          "Kayako - ticket id 60256250 // Cu Chulainn AI Manager commented privately: <CC Log>\n\nPackage URL: https://cs.cu-chulainn.csaiautomations.com/marketplace/packages/edit/PACKAGE-b076d16e-40d5-4397-87c7-25b52aca9e5b\nPackage Name: KhorosGenericRouter\n\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60256250/kayako_central-supportdesk_60256250_20251205_061102_7fba.txt]\n\n</CC Log>\n"
+        ],
+        [
+          "2025-12-05T06:10:37+00:00",
+          "Kayako - ticket id 60256250 // Karuna Sharma commented privately: Hi team,\n\nCommunity URL:https://community.se.com\nUser Affected: https://community.se.com/t5/user/viewprofilepage/user-id/27891\nCommunity Classic\n\nThis is his query:\nI am unable to reply to the post unless I refresh the page. I need to write my reply, copy the text to clipboard, refresh the page, paste my reply before I get the message again. If I take too long between pasting my replay and clicking reply button, I get the message again and must refresh the page again."
+        ],
+        [
+          "2025-12-04T09:52:33+00:00",
+          "Kayako - ticket id 60256250 // Cu Chulainn AI Manager commented publicly: Dear Karuna,\n\nThank you for reaching out to us. To ensure that we address your query efficiently, could you kindly specify which Khoros product you are referencing: Khoros Aurora Community or Khoros Classic Community? Additionally, please provide the exact community or instance URL where the issue is occurring, such as a sample topic or reply URL.\n\nIf you can, please also include:\n- 1\u20132 examples of affected user profiles.\n- Steps to reproduce the issue along with the approximate time and timezone.\n- Details about the browser/device used and whether using incognito mode or clearing the cache affects the behavior.\n- Any errors that may be visible in the browser console.\n\nWith this information, we can proceed promptly with your request.\n\nBest regards,\nCentral Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-12-04T09:52:27+00:00",
+          "Kayako - ticket id 60256250 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Cu Chulainn triage: The issue described (users needing to refresh to post a reply) clearly relates to the Community product, but there\u2019s no instance URL or indicators to distinguish Khoros Aurora vs Khoros Classic. No /t5/s/ pattern or other Aurora-specific keywords present. Per process, requested product confirmation and instance URL; set ticket to Pending. Will set brand accordingly and add the 'atlas-ticket-backlog' tag once confirmed.\n===== End of Summary =====\n"
+        ],
+        [
+          "2025-12-04T09:51:37+00:00",
+          "Kayako - ticket id 60256250 // Cu Chulainn AI Manager commented privately: <CC Log>\n\nPackage URL: https://cs.cu-chulainn.csaiautomations.com/marketplace/packages/edit/PACKAGE-b076d16e-40d5-4397-87c7-25b52aca9e5b\nPackage Name: KhorosGenericRouter\n\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60256250/kayako_central-supportdesk_60256250_20251204_095137_616d.txt]\n\n</CC Log>\n"
+        ],
+        [
+          "2025-12-04T09:51:12+00:00",
+          "Kayako - ticket id 60256250 // Karuna Sharma commented publicly: As a case was not created before for this I am adding another support email.\u00a0\n\nRegards,\n\nKaruna Sharma\nTechnical Lead\u00a0\u00a0\n\nT: +91 8894391313\n\nSkype:\u00a0karunas@grazitti.com\u00a0\nE:\u00a0karunas@grazitti.com\nwww.grazitti.com [http://www.grazitti.com/]\n\n\u00a0\n\nimage\n\nOn Thu, Dec 4, 2025 at 3:00\u202fPM Karuna Sharma <karunas@grazitti.com> wrote:\n\n>\u00a0Hi\u00a0Team,\u00a0\n>\u00a0\n>\u00a0Some\u00a0of\u00a0the\u00a0users\u00a0are\u00a0facing\u00a0issues\u00a0white\u00a0replying\u00a0to\u00a0the\u00a0post\u00a0and\u00a0they\u00a0are\u00a0blocked\u00a0to\u00a0reply\u00a0on\u00a0a\u00a0single\u00a0click\u00a0and\u00a0they\u00a0need\u00a0to\u00a0refresh\u00a0and\u00a0then\u00a0post\u00a0the\u00a0reply.\u00a0Kidly\u00a0check\u00a0this\u00a0asap.\u00a0\n>\u00a0\n>\u00a0[img\u00a0src=\"https://khoros-classic.kayako.com/media/url/QCQ8OmO4sceHB3kpz801igA3ds4LfKf9\"\u00a0alt=\"Screenshot\u00a02025-12-04\u00a0at\u00a02.06.12\u202fPM.png\"\u00a0width=\"542\"\u00a0height=\"203\"]\n>\u00a0\n>\u00a0Regards,\n>\u00a0\n>\u00a0Karuna\u00a0Sharma\n>\u00a0Technical\u00a0Lead\u00a0\u00a0\n>\u00a0\n>\u00a0T:\u00a0+91\u00a08894391313\n>\u00a0\n>\u00a0Skype:\u00a0karunas@grazitti.com\u00a0\n>\u00a0E:\u00a0karunas@grazitti.com\n>\u00a0www.grazitti.com\u00a0[http://www.grazitti.com/]\n>\u00a0\n>\u00a0\u00a0\n>\u00a0\n>\u00a0[img\u00a0src=\"https://ci3.googleusercontent.com/mail-sig/AIorK4zqA7uayiPApeSp-FVOYkWcvD6XvRNjbKVsfb9HrDqdFWXwJjhl3HMTfqQdPHdqugrnL-SkjXk\"]\n\nDisclaimer:- This email and any files transmitted with it are confidential and intended to be received only by individual or entity to whom they are addressed. If you are not the intended recipient, you are hereby cautioned that any dissemination, disclosure, copying, distribution or taking any action in reliance on the contents of this message or any accompanying attachment is strictly prohibited and is unlawful, Please notify the sender immediately if you have received this email in error then delete this email from your system.\n\nTo unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.\n"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 9,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

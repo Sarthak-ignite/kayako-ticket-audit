@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses appear to be templated and lack substantive information about the actual service disruption.",
+    "evidence": [
+      "[2025-10-23T18:46:04+00:00] Thank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform",
+      "[2025-10-23T18:45:45+00:00] Here is a transcript of the customer's recent interaction with ATLAS chat: Hi, Brad Gerard ! \ud83d\udc4b"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of repeated AI interactions or inability to escalate to human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support appears to be tracking the incident and referencing previous communications.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant gaps between interactions, with over 6 days between initial customer contact and first substantive response.",
+    "evidence": [
+      "First customer interaction: [2025-10-23T18:45:42+00:00]",
+      "First full employee response: [2025-10-27T06:05:46+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No clear evidence of premature closure, as ticket includes final RCA document.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket appears to be for a platform outage with appropriate escalation and root cause analysis.",
+    "evidence": [
+      "[2025-10-29T11:35:33+00:00] Dear Brad, Please find attached the customer-facing RCA for the Khoros Care incident."
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses appear to be templated and lack substantive information about the actual service disruption.\",\n    \"evidence\": [\n      \"[2025-10-23T18:46:04+00:00] Thank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform\",\n      \"[2025-10-23T18:45:45+00:00] Here is a transcript of the customer's recent interaction with ATLAS chat: Hi, Brad Gerard ! \ud83d\udc4b\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of repeated AI interactions or inability to escalate to human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support appears to be tracking the incident and referencing previous communications.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant gaps between interactions, with over 6 days between initial customer contact and first substantive response.\",\n    \"evidence\": [\n      \"First customer interaction: [2025-10-23T18:45:42+00:00]\",\n      \"First full employee response: [2025-10-27T06:05:46+00:00]\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence of premature closure, as ticket includes final RCA document.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket appears to be for a platform outage with appropriate escalation and root cause analysis.\",\n    \"evidence\": [\n      \"[2025-10-29T11:35:33+00:00] Dear Brad, Please find attached the customer-facing RCA for the Khoros Care incident.\"\n    ]\n  }\n}\n```\n\nKey observations:\n- Significant response delays (83.3 hours to first human response)\n- AI responses are generic and lack meaningful information\n- Ultimately, a root cause analysis (RCA) was provided\n- High-priority ticket with extended response time",
+  "_model": "claude-haiku",
+  "_ticket_id": 60227783
+}

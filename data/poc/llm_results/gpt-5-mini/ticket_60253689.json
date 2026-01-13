@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI made a single, concise private comment to close the ticket as non-billable; there is no clear generic filler, incorrect information, or unkept promises in the interaction.",
+    "evidence": [
+      "[2025-12-01T14:44:29+00:00] (AI) ATLAS: Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no repeated asking for the same information or multiple AI prompts \u2014 only one AI message appears, so no loop is present.",
+    "evidence": [
+      "[2025-12-01T14:44:29+00:00] (AI) ATLAS: Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer provided unsubscribe instructions and the AI closed the ticket; there is no evidence the agent asked for already-provided information or ignored explicit details in a way that caused repeated requests.",
+    "evidence": [
+      "[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: Kayako - ticket id 60253689 // Aven Saren commented publicly: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.",
+      "[2025-12-01T14:44:29+00:00] (AI) ATLAS: Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The customer and AI responses occurred within seconds of each other (no multi-day gaps), so there are no significant response delays in the interaction timeline.",
+    "evidence": [
+      "[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: ...",
+      "[2025-12-01T14:44:29+00:00] (AI) ATLAS: ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the AI closed the ticket as non-billable shortly after the customer's message, there is no evidence the customer was awaiting promised information or had indicated unresolved issues; the closure appears to follow the provided unsubscribe instruction.",
+    "evidence": [
+      "[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.",
+      "[2025-12-01T14:44:29+00:00] (AI) ATLAS: Closing as non-billable"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is not a P1/SEV1 incident and the AI did not perform or recommend generic high-priority troubleshooting steps; the interaction contains only an unsubscribe instruction and a closure comment.",
+    "evidence": [
+      "[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.",
+      "[2025-12-01T14:44:29+00:00] (AI) ATLAS: Closing as non-billable"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI made a single, concise private comment to close the ticket as non-billable; there is no clear generic filler, incorrect information, or unkept promises in the interaction.\",\n    \"evidence\": [\n      \"[2025-12-01T14:44:29+00:00] (AI) ATLAS: Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no repeated asking for the same information or multiple AI prompts \u2014 only one AI message appears, so no loop is present.\",\n    \"evidence\": [\n      \"[2025-12-01T14:44:29+00:00] (AI) ATLAS: Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer provided unsubscribe instructions and the AI closed the ticket; there is no evidence the agent asked for already-provided information or ignored explicit details in a way that caused repeated requests.\",\n    \"evidence\": [\n      \"[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: Kayako - ticket id 60253689 // Aven Saren commented publicly: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.\",\n      \"[2025-12-01T14:44:29+00:00] (AI) ATLAS: Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer and AI responses occurred within seconds of each other (no multi-day gaps), so there are no significant response delays in the interaction timeline.\",\n    \"evidence\": [\n      \"[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: ...\",\n      \"[2025-12-01T14:44:29+00:00] (AI) ATLAS: ...\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the AI closed the ticket as non-billable shortly after the customer's message, there is no evidence the customer was awaiting promised information or had indicated unresolved issues; the closure appears to follow the provided unsubscribe instruction.\",\n    \"evidence\": [\n      \"[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.\",\n      \"[2025-12-01T14:44:29+00:00] (AI) ATLAS: Closing as non-billable\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is not a P1/SEV1 incident and the AI did not perform or recommend generic high-priority troubleshooting steps; the interaction contains only an unsubscribe instruction and a closure comment.\",\n    \"evidence\": [\n      \"[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.\",\n      \"[2025-12-01T14:44:29+00:00] (AI) ATLAS: Closing as non-billable\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60253689
+}

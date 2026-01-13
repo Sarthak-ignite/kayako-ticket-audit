@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI provided generic troubleshooting steps that the customer had already attempted, as confirmed by customer stating 'Those steps are basically what was recommended in articles before' and 'none of the proposed solutions worked so far.'",
+    "evidence": [
+      "[2025-12-08T11:24:19+00:00] Ond\u0159ej \u0160abata: 'Those steps are basically what was recommended in articles before. Please have someone look at the logs'",
+      "[2025-12-08T11:15:34+00:00] Ond\u0159ej \u0160abata: 'none of the proposed solutions worked so far, here are the logs from both server and agent'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer was stuck interacting with AI, explicitly requesting human help ('Please have someone look at the logs'), and had to wait 29.1 hours for first human response after multiple AI interactions.",
+    "evidence": [
+      "[2025-12-08T11:24:19+00:00] Ond\u0159ej \u0160abata: 'Please have someone look at the logs, otherwise, there's a high ris'",
+      "[2025-12-08T11:24:37+00:00] ATLAS commented privately: 'Action: l1'",
+      "Time to first human: 29.1 hours"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Customer provided logs on 2025-12-08T11:15:34, explicitly stated they already tried recommended solutions, but AI continued with generic troubleshooting rather than acknowledging the customer's specific situation.",
+    "evidence": [
+      "[2025-12-08T11:15:34+00:00] Ond\u0159ej \u0160abata: 'none of the proposed solutions worked so far, here are the logs from both server and agent'",
+      "[2025-12-08T11:24:19+00:00] Ond\u0159ej \u0160abata: 'Those steps are basically what was recommended in articles before'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a 26.1-hour maximum gap between responses and 29.1 hours to reach first human response for a high-priority ticket.",
+    "evidence": [
+      "Time to first human (hours): 29.1",
+      "Max gap between responses (hours): 26.1",
+      "Ticket Priority: high"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket was closed, there is no evidence the customer was still waiting for information or that they gave up. The human response on 2025-12-09 provided instructions to force updates.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is a high-priority ticket where customer explicitly requested human assistance to review logs, but was forced through 29+ hours of generic AI troubleshooting instead of prompt escalation.",
+    "evidence": [
+      "Priority: high",
+      "[2025-12-08T11:24:19+00:00] Ond\u0159ej \u0160abata: 'Please have someone look at the logs'",
+      "Time to first human (hours): 29.1"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI provided generic troubleshooting steps that the customer had already attempted, as confirmed by customer stating 'Those steps are basically what was recommended in articles before' and 'none of the proposed solutions worked so far.'\",\n    \"evidence\": [\n      \"[2025-12-08T11:24:19+00:00] Ond\u0159ej \u0160abata: 'Those steps are basically what was recommended in articles before. Please have someone look at the logs'\",\n      \"[2025-12-08T11:15:34+00:00] Ond\u0159ej \u0160abata: 'none of the proposed solutions worked so far, here are the logs from both server and agent'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer was stuck interacting with AI, explicitly requesting human help ('Please have someone look at the logs'), and had to wait 29.1 hours for first human response after multiple AI interactions.\",\n    \"evidence\": [\n      \"[2025-12-08T11:24:19+00:00] Ond\u0159ej \u0160abata: 'Please have someone look at the logs, otherwise, there's a high ris'\",\n      \"[2025-12-08T11:24:37+00:00] ATLAS commented privately: 'Action: l1'\",\n      \"Time to first human: 29.1 hours\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer provided logs on 2025-12-08T11:15:34, explicitly stated they already tried recommended solutions, but AI continued with generic troubleshooting rather than acknowledging the customer's specific situation.\",\n    \"evidence\": [\n      \"[2025-12-08T11:15:34+00:00] Ond\u0159ej \u0160abata: 'none of the proposed solutions worked so far, here are the logs from both server and agent'\",\n      \"[2025-12-08T11:24:19+00:00] Ond\u0159ej \u0160abata: 'Those steps are basically what was recommended in articles before'\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a 26.1-hour maximum gap between responses and 29.1 hours to reach first human response for a high-priority ticket.\",\n    \"evidence\": [\n      \"Time to first human (hours): 29.1\",\n      \"Max gap between responses (hours): 26.1\",\n      \"Ticket Priority: high\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket was closed, there is no evidence the customer was still waiting for information or that they gave up. The human response on 2025-12-09 provided instructions to force updates.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This is a high-priority ticket where customer explicitly requested human assistance to review logs, but was forced through 29+ hours of generic AI troubleshooting instead of prompt escalation.\",\n    \"evidence\": [\n      \"Priority: high\",\n      \"[2025-12-08T11:24:19+00:00] Ond\u0159ej \u0160abata: 'Please have someone look at the logs'\",\n      \"Time to first human (hours): 29.1\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60258400
+}

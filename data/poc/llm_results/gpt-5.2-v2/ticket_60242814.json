@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responds with generic templated prompts and does not address the customer\u2019s specific port-out/fees question, effectively providing no actionable answer before escalating to L1.",
+    "evidence": [
+      "--- AI Assistant ---\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.",
+      "Kayako - ticket id 60242814 // ATLAS commented privately: Action: l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no sign the customer was trapped in an AI loop or repeatedly asked for the same information; the AI interaction is brief and the case proceeds to a human response later.",
+    "evidence": [
+      "Kayako - ticket id 60242814 // ATLAS commented privately: Action: l1"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not repeatedly ask for the same info or ignore provided details; once Carlos responds, he directly addresses porting out and fees and provides a relevant KB link.",
+    "evidence": [
+      "Yes \u2014 it is possible to port your fax numbers away from FaxMaker Online to your new carrier when you transition to Zoom Phone in early summer 2026",
+      "There is no fee from GFI/FaxMaker Online to port your numbers out. Any porting-related charges\u2014if applicable\u2014would come from your new carrier, not from GFI."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap (over two weeks) between the initial request and the first substantive support answer, prompting the customer to follow up and support to apologize for delay.",
+    "evidence": [
+      "[2025-11-13T22:15:03+00:00] ... My question: Is it possible to please port our numbers back to us. If there is a fee, how much would that be?",
+      "[2025-11-18T21:45:39+00:00] Hello, I still have not received an answer to my question.",
+      "[2025-11-30T22:38:09+00:00] Thank you for your patience, and I apologize for the delay in providing a clear answer to your question."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While agents mention auto-closure timelines, the ticket does not appear to be closed while an unanswered question is pending; the main porting/fee question and Darrell\u2019s portal access question were answered.",
+    "evidence": [
+      "This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.",
+      "You can access the support case by authenticating in our helpcenter at  https://support.faxmakeronline.gfi.com/"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The request is informational (future number port-out planning) and not a critical outage/production-down incident requiring emergency escalation.",
+    "evidence": [
+      "we would not need the GFI service once we cut over... We would not need to port them over until early summer 2026."
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60242814
+}

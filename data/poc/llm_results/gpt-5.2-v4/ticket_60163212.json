@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS clearly misunderstood the customer's issue (a script error while restoring an email via Outlook Connector) and responded as if the user had provided a license key to validate. This is incorrect, irrelevant to the reported error, and likely derailed troubleshooting.",
+    "evidence": [
+      "Customer: \"using the outlook connector and trying to restore an email I get a script error. Line :15 Char: 16485 Error: sys.webforms.pagerequestmanagerservererrorexception.\"",
+      "ATLAS: \"Checking the validity of this license key: pagerequestmanagerservererrorexception ...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only a single AI misresponse is shown; there is no evidence of repeated loops, repeated questions, or inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI ignored the context provided (Outlook Connector restore action + script error details) and treated the provided error text as a license key. This indicates failure to use the customer\u2019s provided details to progress troubleshooting.",
+    "evidence": [
+      "Customer: \"using the outlook connector and trying to restore an email I get a script error...\"",
+      "ATLAS: \"Checking the validity of this license key...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps or delayed responses are visible in the provided snippet.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The interaction log provided does not show ticket status, closure, or an unanswered final customer request followed by closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Customer reports a functional issue but does not indicate business-wide outage/critical severity (e.g., production down, all users impacted). No evidence of a P1/S1 scenario in the text shown.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60163212
+}

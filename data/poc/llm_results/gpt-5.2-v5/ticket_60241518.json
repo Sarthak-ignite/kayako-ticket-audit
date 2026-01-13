@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The customer-facing AI message communicates an engineering fix and next steps without obvious template breakage, contradiction, or customer complaint about wrong/irrelevant guidance. No evidence that AI promised something specific that was later shown to be undelivered in the ticket text.",
+    "evidence": [
+      "Cu Chulainn AI Manager commented publicly: Dear Jozef,\n\nWe are pleased to inform you that our Development Team has successfully addressed the issue concerning the GFI AppManager agent files accumulating under /var on Exinda 7.6.x. This fix is slated for release next weekend.",
+      "We kindly ask you to update to the latest version once it becomes available and check if the issue has been resolved."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no pattern of the customer being stuck in repeated AI replies after requesting a human; the ticket was escalated and a human (Randall) posted a public update. Only one AI public message appears, not a multi-message loop.",
+    "evidence": [
+      "Jozef Kacala commented publicly: please pass this to engineering",
+      "Randall Shawver commented publicly: Dear Jozef,\n\nThank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to re-provide information already shared, and there is no customer complaint that their screenshot/details were ignored. The responses acknowledge the reported issue and escalation request.",
+    "evidence": [
+      "Jozef Kacala commented publicly: As seen on the screenshot, GFI App Manager agents are piling up in the Exinda var folder.",
+      "Randall Shawver commented publicly: We have escalated this to our Engineering team for review."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays between the customer\u2019s public requests (Nov 12) and the first staff public response (Nov 30). This creates at least two separate >=3-day gaps (each customer message waited ~18 days for a staff reply).",
+    "evidence": [
+      "[2025-11-12T15:24:17+00:00] Jozef Kacala commented publicly: Hi team,\n\nAs seen on the screenshot, GFI App Manager agents are piling up in the Exinda var folder.",
+      "[2025-11-12T19:07:57+00:00] Jozef Kacala commented publicly: please pass this to engineering",
+      "[2025-11-30T14:53:32+00:00] Randall Shawver commented publicly: Dear Jozef,\n\nThank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket closure was explicitly requested by the customer, and support closed it accordingly. No closure/auto-closure occurred while the customer was still waiting for resolution.",
+    "evidence": [
+      "Jozef Kacala commented publicly: thanks, we can close this ticket",
+      "Phronesis commented publicly: Thank you for your update; we are closing this ticket as requested."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer described an upgrade-blocking disk space risk, there is no explicit P1/SEV1/outage language or multi-user production-down impact stated. Support escalated to engineering rather than keeping it in generic troubleshooting.",
+    "evidence": [
+      "Jozef Kacala commented publicly: As a result, they will occupy too much space and block Exinda from successful update to the newer version.",
+      "Randall Shawver commented publicly: We have escalated this to our Engineering team for review."
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60241518
+}

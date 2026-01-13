@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are repetitive and generic, primarily logging JIRA status changes without adding substantive value to the ticket.",
+    "evidence": [
+      "[2025-12-25T07:45:13+00:00] JIRA Issue GENSYMBSE-28 is changed to 'Done'",
+      "[2025-12-03T19:08:19+00:00] Placing on hold for 9999 hour(s)",
+      "[2025-12-03T06:17:13+00:00] Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer successfully reached human support and the ticket progressed through multiple human interactions.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support team appears to be tracking the context of license requests and following up appropriately.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between interactions, with some delays spanning multiple weeks.",
+    "evidence": [
+      "First interaction on 2025-11-28, final interaction on 2025-12-25",
+      "Max gap between responses: 477.5 hours (nearly 20 days)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been resolved with licenses being provided to the customer.",
+    "evidence": [
+      "[2025-12-05T10:16:54+00:00] Roger King: Please find attached the remaining 3 subscription G2 licenses"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Despite being an urgent ticket, the support team engaged with the specific license request and worked to resolve it.",
+    "evidence": []
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are repetitive and generic, primarily logging JIRA status changes without adding substantive value to the ticket.\",\n    \"evidence\": [\n      \"[2025-12-25T07:45:13+00:00] JIRA Issue GENSYMBSE-28 is changed to 'Done'\",\n      \"[2025-12-03T19:08:19+00:00] Placing on hold for 9999 hour(s)\",\n      \"[2025-12-03T06:17:13+00:00] Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer successfully reached human support and the ticket progressed through multiple human interactions.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support team appears to be tracking the context of license requests and following up appropriately.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between interactions, with some delays spanning multiple weeks.\",\n    \"evidence\": [\n      \"First interaction on 2025-11-28, final interaction on 2025-12-25\",\n      \"Max gap between responses: 477.5 hours (nearly 20 days)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to have been resolved with licenses being provided to the customer.\",\n    \"evidence\": [\n      \"[2025-12-05T10:16:54+00:00] Roger King: Please find attached the remaining 3 subscription G2 licenses\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Despite being an urgent ticket, the support team engaged with the specific license request and worked to resolve it.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket has significant response delays\n- AI interactions are low-value and repetitive\n- Despite delays, the ticket was ultimately resolved with license provision\n- The ticket involved multiple support team members and progressed through different stages",
+  "_model": "claude-haiku",
+  "_ticket_id": 60251281
+}

@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI automation produced incomplete/errored outputs and generic hold actions rather than resolving the request, indicating quality failures.",
+    "evidence": [
+      "\"===== Operation Summary =====\\n1. Received response from compliance_documents_provider: \\\"Execution completed. Error: This is a\" [2025-12-08T22:36:14+00:00]",
+      "\"===== Operation Summary =====\\n1. Attempted to run compliance_documents_provider for this ticket. Received response: \\\"Executio\" [2025-12-03T08:34:08+00:00]",
+      "\"Placing on hold for 168 hour(s)\" [2025-12-08T22:31:58+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI repeatedly requested the same information from the customer or prevented escalation \u2014 interactions show automation notes and hold actions but not repetitive asks to the customer.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Customer provided the list of required documents and staff forwarded/queued the request to specialized teams; there is no clear instance of agents asking for the same information again.",
+    "evidence": [
+      "\"Below is a list of the documents we are needing.\\nSecurity review (ex. SOC1 SOC2/SSAE 16 report) and/or Gap Letter\" [2025-12-08T17:20:21+00:00]",
+      "\"This request has been forwarded to our specialized team, and we will be promptly inform\" [2025-12-08T22:31:50+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Long gaps between human responses and very long time-to-first-human indicate significant delays.",
+    "evidence": [
+      "\"Time to first human (hours): 384.9\"",
+      "\"Max gap between responses (hours): 151.9\"",
+      "\"Ben Smith commented privately: Good afternoon Atlas,...\" [2025-12-08T17:20:21+00:00] and next public human reply by Aditi Garg at [2025-12-09T08:19:39+00:00] (over 14 hours) and first human overall many days after ticket creation as indicated by time-to-first-human metric."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer explicitly asked to close the ticket and the agent acknowledged closing it, so closure was per customer request rather than premature.",
+    "evidence": [
+      "\"Ben Smith commented privately: Thank you. You can close out this ticket.\" [2025-12-09T15:49:39+00:00]",
+      "\"Dear Ben,\\n\\nThank you for your update; we are closing this ticket as requested.\" [2025-12-09T15:49:49+00:00]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No evidence in the transcript of generic end-user troubleshooting (cache/VPN/firewall) for a critical outage nor of failure to escalate an actual outage; requests were forwarded to specialized teams.",
+    "evidence": [
+      "\"This request has been forwarded to our specialized team, and we will be promptly inform\" [2025-12-08T22:31:50+00:00]",
+      "\"Use send to External Team.\" [2025-12-08T22:33:15+00:00]"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI automation produced incomplete/errored outputs and generic hold actions rather than resolving the request, indicating quality failures.\",\n    \"evidence\": [\n      \"\\\"===== Operation Summary =====\\\\n1. Received response from compliance_documents_provider: \\\\\\\"Execution completed. Error: This is a\\\" [2025-12-08T22:36:14+00:00]\",\n      \"\\\"===== Operation Summary =====\\\\n1. Attempted to run compliance_documents_provider for this ticket. Received response: \\\\\\\"Executio\\\" [2025-12-03T08:34:08+00:00]\",\n      \"\\\"Placing on hold for 168 hour(s)\\\" [2025-12-08T22:31:58+00:00]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI repeatedly requested the same information from the customer or prevented escalation \u2014 interactions show automation notes and hold actions but not repetitive asks to the customer.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer provided the list of required documents and staff forwarded/queued the request to specialized teams; there is no clear instance of agents asking for the same information again.\",\n    \"evidence\": [\n      \"\\\"Below is a list of the documents we are needing.\\\\nSecurity review (ex. SOC1 SOC2/SSAE 16 report) and/or Gap Letter\\\" [2025-12-08T17:20:21+00:00]\",\n      \"\\\"This request has been forwarded to our specialized team, and we will be promptly inform\\\" [2025-12-08T22:31:50+00:00]\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Long gaps between human responses and very long time-to-first-human indicate significant delays.\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 384.9\\\"\",\n      \"\\\"Max gap between responses (hours): 151.9\\\"\",\n      \"\\\"Ben Smith commented privately: Good afternoon Atlas,...\\\" [2025-12-08T17:20:21+00:00] and next public human reply by Aditi Garg at [2025-12-09T08:19:39+00:00] (over 14 hours) and first human overall many days after ticket creation as indicated by time-to-first-human metric.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer explicitly asked to close the ticket and the agent acknowledged closing it, so closure was per customer request rather than premature.\",\n    \"evidence\": [\n      \"\\\"Ben Smith commented privately: Thank you. You can close out this ticket.\\\" [2025-12-09T15:49:39+00:00]\",\n      \"\\\"Dear Ben,\\\\n\\\\nThank you for your update; we are closing this ticket as requested.\\\" [2025-12-09T15:49:49+00:00]\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence in the transcript of generic end-user troubleshooting (cache/VPN/firewall) for a critical outage nor of failure to escalate an actual outage; requests were forwarded to specialized teams.\",\n    \"evidence\": [\n      \"\\\"This request has been forwarded to our specialized team, and we will be promptly inform\\\" [2025-12-08T22:31:50+00:00]\",\n      \"\\\"Use send to External Team.\\\" [2025-12-08T22:33:15+00:00]\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60243726
+}

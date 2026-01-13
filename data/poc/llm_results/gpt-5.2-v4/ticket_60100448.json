@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided incorrect/misleading product compatibility guidance (stating NG110 is not supported for 9.5.0) which the customer later disproved by successfully installing 9.5.0. This directly harmed customer trust and delayed resolution. ATLAS also initially offered speculative causes (disk space/corrupt download/hardware incompatibility) without concrete diagnostic steps or logs available on the appliance, and did not provide a clear path to obtain the missing Patch 2 image that the customer needed.",
+    "evidence": [
+      "ATLAS: \"Kerio Control Box NG110 appliances are supported up to version 9.4.x. The 9.5.0 release is not offered via automatic updates for NG110 hardware because this model is not officially supported for 9.5.0 and later versions.\"",
+      "ATLAS: \"As of the latest available information, the Kerio Control Box NG110 series is not supported for Kerio Control version 9.5.0 or later.\"",
+      "Customer: \"Zebra Systems... claimed that informations given by your support (AI - below in this conversation) are totally wrong. Version 9.5.0 IS supported on NG110 units and CAN be installed... it is working !\"",
+      "Customer: \"...upgrade IS offered by GFI for installation on NG110 unit, but upgrade is failing. There is no new (patch 2) image on download page available so we cannot try it.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer requested escalation to a human and the ticket shows an escalation action shortly after. While there were multiple ATLAS replies, the customer was not kept in an extended AI-only loop after requesting a human.",
+    "evidence": [
+      "Customer: \"Please pass this ticket to human.\"",
+      "ATLAS (private): \"Action: Send to l1\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS did not fully incorporate the customer\u2019s core constraint: Patch 2 is offered by the appliance but the Patch 2 image is not available for manual download, blocking the suggested manual-upgrade path. ATLAS continued to focus on manual upgrade concepts (and version matching) without directly addressing how to obtain/apply Patch 2 for NG110 when it isn\u2019t published in the archive, which was the key practical blocker the customer highlighted.",
+    "evidence": [
+      "Customer: \"...it still offers new version - 9.4.5 patch 2 of which intsallation is failing - this is what this ticket is about.\"",
+      "Customer: \"There is no new (patch 2) image on download page available so we cannot try it.\"",
+      "ATLAS: \"Manual Upgrade Attempt... manually download the 9.4.5 Patch 2 firmware from the official Kerio archive...\" (customer later indicates that patch image is not available)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No 3+ day gaps are shown. Responses occurred within minutes/hours on the same day.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence the ticket was closed. Escalation to L1 is shown, and the customer later added information; closure/resolution status is not present in the transcript.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue concerns upgrade/compatibility and failed patch install, but the customer did not indicate an outage/production-down or urgent P1/Sev1 impact requiring emergency handling.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60100448
+}

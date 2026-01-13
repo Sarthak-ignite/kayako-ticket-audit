@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response is truncated and appears incomplete, suggesting a low-quality interaction that does not address the customer's core issue.",
+    "evidence": [
+      "[2025-11-29T21:02:45+00:00] Here is a transcript of the customer's recent interaction with ATLAS chat: --- AI Assistant --- Hi, Ashraaz Nadeem Yusuf ! \ud83d\udc4b This is the K"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly states they need help beyond the AI, and multiple attempts to contact support are made without a timely human response.",
+    "evidence": [
+      "[2025-11-29T21:02:32+00:00] Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?",
+      "[2025-11-29T21:42:34+00:00] Anyone there",
+      "[2025-11-29T23:15:34+00:00] Hi",
+      "[2025-11-30T00:33:44+00:00] Hello"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There's insufficient evidence of the support team ignoring previously provided context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays between customer interactions and the first human response, with the first human response coming 16.3 hours after initial contact.",
+    "evidence": [
+      "Time to first human (hours): 16.3",
+      "[2025-11-29T21:03:39+00:00] Customer first reports urgent issue",
+      "[2025-11-30T13:19:12+00:00] First human response from Mike Kebede"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears to be closed quickly without fully resolving the customer's urgent license expiration issue.",
+    "evidence": [
+      "Status: closed",
+      "[2025-11-29T21:03:39+00:00] Hi. Iam the Manager IT from Rooster Poultry. Our license expired. Please issue us a temporary extension. Our services are down."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reported a total outage with critical services down, but received a delayed and seemingly generic response without immediate escalation.",
+    "evidence": [
+      "[2025-11-29T23:34:53+00:00] We are facing total outage. Your assistance will be highly appreciated",
+      "Priority: urgent",
+      "Time to first human (hours): 16.3"
+    ]
+  },
+  "_raw_response": "Here's the analysis in the specified JSON format:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response is truncated and appears incomplete, suggesting a low-quality interaction that does not address the customer's core issue.\",\n    \"evidence\": [\n      \"[2025-11-29T21:02:45+00:00] Here is a transcript of the customer's recent interaction with ATLAS chat: --- AI Assistant --- Hi, Ashraaz Nadeem Yusuf ! \ud83d\udc4b This is the K\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer explicitly states they need help beyond the AI, and multiple attempts to contact support are made without a timely human response.\",\n    \"evidence\": [\n      \"[2025-11-29T21:02:32+00:00] Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\",\n      \"[2025-11-29T21:42:34+00:00] Anyone there\",\n      \"[2025-11-29T23:15:34+00:00] Hi\",\n      \"[2025-11-30T00:33:44+00:00] Hello\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There's insufficient evidence of the support team ignoring previously provided context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays between customer interactions and the first human response, with the first human response coming 16.3 hours after initial contact.\",\n    \"evidence\": [\n      \"Time to first human (hours): 16.3\",\n      \"[2025-11-29T21:03:39+00:00] Customer first reports urgent issue\",\n      \"[2025-11-30T13:19:12+00:00] First human response from Mike Kebede\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket appears to be closed quickly without fully resolving the customer's urgent license expiration issue.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"[2025-11-29T21:03:39+00:00] Hi. Iam the Manager IT from Rooster Poultry. Our license expired. Please issue us a temporary extension. Our services are down.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer reported a total outage with critical services down, but received a delayed and seemingly generic response without immediate escalation.\",\n    \"evidence\": [\n      \"[2025-11-29T23:34:53+00:00] We are facing total outage. Your assistance will be highly appreciated\",\n      \"Priority: urgent\",\n      \"Time to first human (hours): 16.3\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku",
+  "_ticket_id": 60252864
+}

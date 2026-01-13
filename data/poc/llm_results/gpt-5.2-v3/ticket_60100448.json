@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided product-compatibility guidance that the customer later demonstrated was incorrect (and explicitly called out as wrong). ATLAS repeatedly stated NG110 is not supported for 9.5.0 and advised staying on 9.4.x; the customer reports 9.5.0 installs and works on NG110.",
+    "evidence": [
+      "ATLAS: \"Kerio Control Box NG110 appliances are supported up to version 9.4.x. The 9.5.0 release is not offered via automatic updates for NG110 hardware because this model is not officially supported for 9.5.0 and later versions.\" (2025-07-11T07:15:35+00:00)",
+      "ATLAS: \"the Kerio Control Box NG110 series is not supported for Kerio Control version 9.5.0 or later... you should plan for the NG110 to remain on the 9.4.x branch.\" (2025-07-11T07:56:50+00:00)",
+      "Customer: \"They claimed that informations given by your support (AI - below in this conversation) are totally wrong. Version 9.5.0 IS supported on NG110 units and CAN be installed... installed it on NG110 and it is working !\" (2025-07-11T11:17:08+00:00)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer requested a human and the system shows an escalation action immediately afterward (\u201cSend to l1\u201d). There is no clear evidence of the customer being forced to continue with AI after requesting a human (no 3+ consecutive AI replies after the request).",
+    "evidence": [
+      "Customer: \"Please pass this ticket to human.\" (2025-07-11T08:11:18+00:00)",
+      "ATLAS internal action: \"Action: Send to l1\" (2025-07-11T08:11:46+00:00)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "ATLAS does not clearly ignore provided information or repeatedly request the same step after the customer said it was already done. While the customer had already tried a manual upload, ATLAS responded by pointing out the uploaded image matched the currently installed build (a plausible explanation rather than ignoring context).",
+    "evidence": [
+      "Customer: \"I have tested manual update (uploaded kerio-control-upgrade-9.4.5-8629-linux.img) but after restart there is still version 9.4.5 build 8629.\" (2025-07-11T07:56:00+00:00)",
+      "ATLAS: \"The file kerio-control-upgrade-9.4.5-8629-linux.img matches the version already installed (9.4.5 build 8629). If you are attempting to upgrade to 9.4.5 Patch 2, please ensure you are using the correct patch file...\" (2025-07-11T07:56:50+00:00)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions shown occur within the same day with minutes-to-hours gaps; no 3+ calendar-day support delay is evidenced, and the customer does not complain about waiting.",
+    "evidence": [
+      "Timeline shows messages between 2025-07-11T07:14:40+00:00 and 2025-07-11T11:17:08+00:00."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication the ticket was closed, auto-closed, or otherwise ended by support while pending questions remained.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit P1/SEV1/Critical severity, outage, or time-sensitive SLA language is present. The issue is an upgrade/compatibility question and a failed patch installation, not clearly a production-down event requiring SEV1 handling.",
+    "evidence": [
+      "Customer describes upgrade failure and compatibility questions, but does not state outage/production down or a severity level. (Initial description, 2025-07-11T07:14:40+00:00)"
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60100448
+}

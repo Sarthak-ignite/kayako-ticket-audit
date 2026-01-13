@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic filler responses, wrong information, or unkept promises in the AI's responses.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was stuck in a loop, repeatedly providing the same information without resolution.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that the AI or agents ignored previously provided customer information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The maximum gap between responses is over 1000 hours, indicating significant delays in response time.",
+    "evidence": [
+      "Time to first human (hours): 1588.5",
+      "Max gap between responses (hours): 1025.8"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not seem to have been closed prematurely while the customer was waiting for information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as high-priority or outage, and there is no evidence of mishandling such scenarios.",
+    "evidence": [
+      "GHI Engineering - 13744 // not-lmrlima labeled as Priority:Normal"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic filler responses, wrong information, or unkept promises in the AI's responses.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer was stuck in a loop, repeatedly providing the same information without resolution.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the AI or agents ignored previously provided customer information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The maximum gap between responses is over 1000 hours, indicating significant delays in response time.\",\n    \"evidence\": [\n      \"Time to first human (hours): 1588.5\",\n      \"Max gap between responses (hours): 1025.8\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not seem to have been closed prematurely while the customer was waiting for information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as high-priority or outage, and there is no evidence of mishandling such scenarios.\",\n    \"evidence\": [\n      \"GHI Engineering - 13744 // not-lmrlima labeled as Priority:Normal\"\n    ]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60233855
+}

@@ -1,0 +1,352 @@
+[
+  {
+    "index": 0,
+    "actor_name": "Service Sfit",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 15:53:40.754000",
+    "timestamp_str": "2025-11-03T15:53:40.754+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // Service Sfit commented: \u2705 QC PASSED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis SummaryThe incident involved multiple reports of customers being unable to initiate ",
+    "text_length": 2536
+  },
+  {
+    "index": 1,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 15:53:07",
+    "timestamp_str": "2025-11-03T15:53:07+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9956 is changed to 'Closed' , block reason: -",
+    "text_length": 138
+  },
+  {
+    "index": 2,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 15:53:00.789000",
+    "timestamp_str": "2025-11-03T15:53:00.789+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // status is changed from In Progress to Closed",
+    "text_length": 82
+  },
+  {
+    "index": 3,
+    "actor_name": "Chintan Parekh",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 15:50:44",
+    "timestamp_str": "2025-11-03T15:50:44+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Chintan Parekh commented publicly: Dear Customer,\n\nWe have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor the sy",
+    "text_length": 365
+  },
+  {
+    "index": 4,
+    "actor_name": "Chintan Parekh",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 15:50:40",
+    "timestamp_str": "2025-11-03T15:50:40+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Chintan Parekh commented privately: An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate on brandmessenger.usw2.khoros.com,",
+    "text_length": 859
+  },
+  {
+    "index": 5,
+    "actor_name": "Muhammad Waqar",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 15:47:54.923000",
+    "timestamp_str": "2025-11-03T15:47:54.923+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // Muhammad Waqar commented: An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate on brandmessenger.usw2.khoros.com, re",
+    "text_length": 856
+  },
+  {
+    "index": 6,
+    "actor_name": "Muhammad Waqar",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 15:46:19.971000",
+    "timestamp_str": "2025-11-03T15:46:19.971+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // Muhammad Waqar commented: bash-4.2$ \nbash-4.2$ # For euw1\nbash-4.2$ export NEW_CERT=brandmessenger.euw1.khoros.com.06f1b\nbash-4.2$ git mv ${NEW_CERT}.crt ${NEW_CE",
+    "text_length": 1771
+  },
+  {
+    "index": 7,
+    "actor_name": "Pavly Nashed",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 15:38:45.905000",
+    "timestamp_str": "2025-11-03T15:38:45.905+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // Pavly Nashed commented: Confirmed fixed on one of the reported customers' websites:",
+    "text_length": 121
+  },
+  {
+    "index": 8,
+    "actor_name": "Muhammad Waqar",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:55:30.614000",
+    "timestamp_str": "2025-11-03T14:55:30.614+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // Muhammad Waqar commented: Renewed certificate for https://brandmessenger.usw2.khoros.com/",
+    "text_length": 127
+  },
+  {
+    "index": 9,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:21:47",
+    "timestamp_str": "2025-11-03T14:21:47+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9956 is changed to 'In Progress' , block reason: -",
+    "text_length": 143
+  },
+  {
+    "index": 10,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:17:02",
+    "timestamp_str": "2025-11-03T14:17:02+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+    "text_length": 106
+  },
+  {
+    "index": 11,
+    "actor_name": "Pavly Nashed",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:16:53",
+    "timestamp_str": "2025-11-03T14:16:53+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Pavly Nashed commented publicly: Dear Jayashree,\n\nThank you for your patience.\n\nWe have done a preliminary investigation to determine the root cause, and have escalated ",
+    "text_length": 374
+  },
+  {
+    "index": 12,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:24",
+    "timestamp_str": "2025-11-03T14:15:24+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9956 is changed to 'In Progress' , block reason: -",
+    "text_length": 143
+  },
+  {
+    "index": 13,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:18.466000",
+    "timestamp_str": "2025-11-03T14:15:18.466+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com",
+    "text_length": 122
+  },
+  {
+    "index": 14,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:18.163000",
+    "timestamp_str": "2025-11-03T14:15:18.163+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - ticket status changed to In Progress",
+    "text_length": 115
+  },
+  {
+    "index": 15,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:18.157000",
+    "timestamp_str": "2025-11-03T14:15:18.157+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - ticket status changed to In Progress",
+    "text_length": 115
+  },
+  {
+    "index": 16,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:17.919000",
+    "timestamp_str": "2025-11-03T14:15:17.919+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com",
+    "text_length": 122
+  },
+  {
+    "index": 17,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:17.862000",
+    "timestamp_str": "2025-11-03T14:15:17.862+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - Assigned from Jira: muhammad.waqar@trilogy.com",
+    "text_length": 125
+  },
+  {
+    "index": 18,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:17.394000",
+    "timestamp_str": "2025-11-03T14:15:17.394+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - ticket status changed to In Progress",
+    "text_length": 115
+  },
+  {
+    "index": 19,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:17.290000",
+    "timestamp_str": "2025-11-03T14:15:17.290+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - Assigned from Jira: muhammad.waqar@trilogy.com",
+    "text_length": 125
+  },
+  {
+    "index": 20,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:17.229000",
+    "timestamp_str": "2025-11-03T14:15:17.229+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com",
+    "text_length": 122
+  },
+  {
+    "index": 21,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:16.917000",
+    "timestamp_str": "2025-11-03T14:15:16.917+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - Assigned from Jira: muhammad.waqar@trilogy.com",
+    "text_length": 125
+  },
+  {
+    "index": 22,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:16.830000",
+    "timestamp_str": "2025-11-03T14:15:16.830+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // status is changed from In Queue to In Progress",
+    "text_length": 84
+  },
+  {
+    "index": 23,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:16.761000",
+    "timestamp_str": "2025-11-03T14:15:16.761+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com",
+    "text_length": 122
+  },
+  {
+    "index": 24,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:15:16.220000",
+    "timestamp_str": "2025-11-03T14:15:16.220+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com",
+    "text_length": 122
+  },
+  {
+    "index": 25,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:13:02",
+    "timestamp_str": "2025-11-03T14:13:02+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9956 is changed to 'In Queue' , block reason: -",
+    "text_length": 140
+  },
+  {
+    "index": 26,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:12:50.310000",
+    "timestamp_str": "2025-11-03T14:12:50.310+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9956 // Issue is created by Pavly Nashed with description: Multiple reports of not being able to raise chats on the customer-side widgets (on their websites).Example:Cons",
+    "text_length": 947
+  },
+  {
+    "index": 27,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "Atlas",
+    "timestamp": "2025-11-03 13:55:50",
+    "timestamp_str": "2025-11-03T13:55:50+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // ATLAS commented privately: Action: l1",
+    "text_length": 68
+  },
+  {
+    "index": 28,
+    "actor_name": "Meaghan Mcclure",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 13:55:16",
+    "timestamp_str": "2025-11-03T13:55:16+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Meaghan Mcclure commented publicly:  \n Adding ISE alias for leadership visibility. \n\n Khoros ticket number 60234621. \n ISE FortiCare Ticket number 11241084\u00a0 \n\nBest Regar",
+    "text_length": 2267
+  },
+  {
+    "index": 29,
+    "actor_name": "Priyanka Bhotika",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 13:53:23",
+    "timestamp_str": "2025-11-03T13:53:23+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Priyanka Bhotika commented publicly: Dear Customer,\n\nWe have received your escalation, and our team is currently reviewing the issue.\n\nWe will share an update with you s",
+    "text_length": 228
+  },
+  {
+    "index": 30,
+    "actor_name": "Aamir Merchant",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 13:44:48",
+    "timestamp_str": "2025-11-03T13:44:48+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Aamir Merchant commented privately:  Here is the ticket number:\u00a0 60234621 [https://central-supportdesk.kayako.com/agent/conversations/60234621]\u00a0 ",
+    "text_length": 176
+  },
+  {
+    "index": 31,
+    "actor_name": "Jayashree Shetty",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 13:37:55",
+    "timestamp_str": "2025-11-03T13:37:55+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Jayashree Shetty commented publicly:  \n\n\u00a0\n\nHello Team,\n\n\u00a0\n\nPlease share the ticket number and please keep everyone in the initial email in loop for visibility.\n\n\u00a0\n\n\u00a0\n\nRe",
+    "text_length": 230
+  },
+  {
+    "index": 32,
+    "actor_name": "Warren Cook",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 13:28:21",
+    "timestamp_str": "2025-11-03T13:28:21+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Warren Cook commented privately: this is across all browsers: chrome, firefox, edge, bravo, safari",
+    "text_length": 129
+  },
+  {
+    "index": 33,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "Atlas",
+    "timestamp": "2025-11-03 13:23:12",
+    "timestamp_str": "2025-11-03T13:23:12+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // ATLAS commented privately: Action: l1",
+    "text_length": 68
+  },
+  {
+    "index": 34,
+    "actor_name": "Jayashree Shetty",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 13:22:34",
+    "timestamp_str": "2025-11-03T13:22:34+00:00",
+    "text_preview": "Kayako - ticket id 60234621 // Jayashree Shetty commented publicly:  \n\nHello Team,\n\n\u00a0\n\nWe have not received any chat for the past 35minutes, Unable to create a chat via Fortinet.com or Support.fortine",
+    "text_length": 1412
+  }
+]

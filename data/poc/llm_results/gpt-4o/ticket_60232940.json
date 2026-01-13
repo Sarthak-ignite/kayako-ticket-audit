@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI responses that seem to provide inaccurate information or false promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer eventually reached a human agent despite initial interactions involving AI automations.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team ignores the customer's mention of past requests for ticket restoration and previous difficulties accessing the ticket.",
+    "evidence": [
+      "\"This is not first time that I have requested restoration of past tickets.\" [2025-12-23T04:43:40+00:00]",
+      "\"I can't view Ticket #4389067 now.\" [2025-12-23T00:58:06+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant time gap between the initial inquiry on December 18 and the next human response on December 23.",
+    "evidence": [
+      "\"Thank you for your follow-up and for sharing your thoughts with us.\" [2025-12-18T09:27:03+00:00]",
+      "\"I can't view Ticket #4389067 now.\" [2025-12-23T00:58:06+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed following the customer's explicit request after confirming they reviewed the attachments.",
+    "evidence": [
+      "\"I have checked the attachments. Please close this ticket.\" [2025-12-26T00:03:31+00:00]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication that this ticket was a high-priority or outage ticket requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI responses that seem to provide inaccurate information or false promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer eventually reached a human agent despite initial interactions involving AI automations.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team ignores the customer's mention of past requests for ticket restoration and previous difficulties accessing the ticket.\",\n    \"evidence\": [\"\\\"This is not first time that I have requested restoration of past tickets.\\\" [2025-12-23T04:43:40+00:00]\", \"\\\"I can't view Ticket #4389067 now.\\\" [2025-12-23T00:58:06+00:00]\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant time gap between the initial inquiry on December 18 and the next human response on December 23.\",\n    \"evidence\": [\"\\\"Thank you for your follow-up and for sharing your thoughts with us.\\\" [2025-12-18T09:27:03+00:00]\", \"\\\"I can't view Ticket #4389067 now.\\\" [2025-12-23T00:58:06+00:00]\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed following the customer's explicit request after confirming they reviewed the attachments.\",\n    \"evidence\": [\"\\\"I have checked the attachments. Please close this ticket.\\\" [2025-12-26T00:03:31+00:00]\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that this ticket was a high-priority or outage ticket requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60232940
+}

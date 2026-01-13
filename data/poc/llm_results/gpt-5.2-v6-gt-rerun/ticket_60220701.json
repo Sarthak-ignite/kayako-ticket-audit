@@ -1,0 +1,61 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The ATLAS interaction shown is largely boilerplate (generic prompts, file-upload push) and does not demonstrate meaningful troubleshooting or adaptation to the stated issue. There\u2019s no clear incorrect technical advice, but the AI content appears low-value and filler-heavy, so quality concerns are plausible (uncertain).",
+    "evidence": [
+      "Here is a transcript of the customer's recent interaction with ATLAS chat:",
+      "AI Assistant -- Please select from the below or give me a detailed description of what\u2019s happening.",
+      "AI Assistant -- If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to get human-agent responses and schedule a meeting; the thread does not show the customer being trapped in an AI loop or repeatedly blocked from reaching a person. The main friction points relate to delays and a missing/resent shell key, not AI gatekeeping.",
+    "evidence": [
+      "Kayako - ticket id 60220701 // Randall Shawver commented publicly: Dear Eswaramoorthy, ...",
+      "Kayako - ticket id 60220701 // Syed Haider commented publicly: Please join me for your scheduled meeting using this link ..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "There are signs the support flow did not fully incorporate the customer's context about recurring auto-generated diagnostics/snapshots: after the customer flagged automatic creation multiple times and requested deeper investigation/WebEx, the agent response focused on manual deletion rather than addressing the root cause until later. This is a mild/partial context-miss (some uncertainty).",
+    "evidence": [
+      "Customer: We can see that the multiple diagnostic & snapshot files are automatically getting generated. ... Please let us know if we can have a Webex to check further.",
+      "Agent: You can delete all of the diagnostic files that appear in your screenshot. You can also delete old snapshot files. Just keep 1-2 of the most recent snapshots."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long gap between ticket creation (Oct 14) and the first substantive agent response (Oct 22). The customer also explicitly requested urgent updates, and the agent later apologized for delayed response; overall handling stretched across weeks, supported by CSV timing fields.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-14 12:30:37",
+      "[2025-10-22T16:05:35+00:00] ... Randall Shawver commented publicly: Dear Eswaramoorthy,",
+      "Customer-side escalation: Please any update here? Can you provide the below request ASAP.",
+      "Agent: Thank you for joining me on the call today, and I sincerely apologize for the delayed response on this ticket.",
+      "CSV: initialResponseTime=14388",
+      "CSV: resolutionTime=2419698"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the agent used a standard \u201cticket will stay open for one week unless\u2026\u201d message, the ticket appears to have proceeded to a live session and documented remediation steps before being solved/closed. There is no clear evidence the ticket was closed while the customer was still actively requesting help.",
+    "evidence": [
+      "This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.",
+      "CSV: Ticket Solved=2025-11-11 12:38:55",
+      "CSV: Ticket Closed=2025-11-14 13:39:29"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue involved performance degradation and a full disk (potentially service-impacting), and the customer described the situation as urgent/critical for a project timeline. Given the multi-day response gaps and repeated urgent follow-ups, this may indicate high-severity handling was not sufficiently expedited (severity not explicitly labeled, so some uncertainty).",
+    "evidence": [
+      "Issue description: Exinda Network Orchestrator Performance Issue and the disk space is full.",
+      "Customer escalation: We are at critical stage and must expediate all the tasks and activities along with closing this project within this month itself.",
+      "Customer escalation: Please need your support here urgently.",
+      "CSV: Ticket Created=2025-10-14 12:30:37",
+      "[2025-10-22T16:05:35+00:00] ... Randall Shawver commented publicly ..."
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60220701
+}

@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses were not helpful and provided generic information without addressing the customer's request.",
+    "evidence": [
+      "2025-12-03T08:02:08+00:00 - ATLAS commented privately: Requesting more information",
+      "2025-12-03T08:17:10+00:00 - ATLAS commented privately: Requesting more information"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being repeatedly asked for the same information or being unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that support ignored the information previously provided by the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays between responses, indicating poor response times.",
+    "evidence": [
+      "Time to first human (hours): 384.9",
+      "Max gap between responses (hours): 151.9"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed at the customer's request and there is no evidence of outstanding issues.",
+    "evidence": [
+      "2025-12-09T15:49:39+00:00 - Customer: Thank you. You can close out this ticket."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of mishandling a high-priority or outage ticket as the issue did not seem to require escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses were not helpful and provided generic information without addressing the customer's request.\",\n    \"evidence\": [\n      \"2025-12-03T08:02:08+00:00 - ATLAS commented privately: Requesting more information\",\n      \"2025-12-03T08:17:10+00:00 - ATLAS commented privately: Requesting more information\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being repeatedly asked for the same information or being unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that support ignored the information previously provided by the customer.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays between responses, indicating poor response times.\",\n    \"evidence\": [\n      \"Time to first human (hours): 384.9\",\n      \"Max gap between responses (hours): 151.9\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed at the customer's request and there is no evidence of outstanding issues.\",\n    \"evidence\": [\n      \"2025-12-09T15:49:39+00:00 - Customer: Thank you. You can close out this ticket.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of mishandling a high-priority or outage ticket as the issue did not seem to require escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60243726
+}

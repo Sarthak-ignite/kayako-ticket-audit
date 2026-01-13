@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI (ATLAS) generated a generic ticket and provided minimal context, showing low-quality interaction.",
+    "evidence": [
+      "[2025-11-28T05:10:37+00:00] ATLAS commented: 'Here is a transcript of the customer's recent interaction with ATLAS chat:'",
+      "[2025-11-28T05:11:11+00:00] ATLAS action: 'l1' - a vague and meaningless response"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While AI was involved, there's no evidence of repeated loops or inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support representatives repeatedly ask for information or logs that were already provided, showing lack of context review.",
+    "evidence": [
+      "[2025-12-10T07:14:25+00:00] Keyur Saxena asks to upload logs to SFTP, despite logs already being uploaded",
+      "[2025-12-15T05:05:16+00:00] Customer asks 'any update on this', suggesting previous context was not addressed"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer follow-ups and support responses, with delays spanning multiple days.",
+    "evidence": [
+      "From [2025-12-03T08:56:57+00:00] to [2025-12-10T07:14:25+00:00]: 7-day gap",
+      "From [2025-12-05T02:49:18+00:00] to [2025-12-10T07:14:25+00:00]: 5-day gap"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been actively worked on, with multiple interactions before closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite being an urgent ticket, support provided generic troubleshooting steps instead of immediate resolution.",
+    "evidence": [
+      "[2025-12-10T09:11:47+00:00] Keyur Saxena suggests it's a 'corporate firewall blocking connection'",
+      "[2025-11-28T19:19:08+00:00] Randall Shawver provides generic advice to 'check remote computers'"
+    ]
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI (ATLAS) generated a generic ticket and provided minimal context, showing low-quality interaction.\",\n    \"evidence\": [\n      \"[2025-11-28T05:10:37+00:00] ATLAS commented: 'Here is a transcript of the customer's recent interaction with ATLAS chat:'\",\n      \"[2025-11-28T05:11:11+00:00] ATLAS action: 'l1' - a vague and meaningless response\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI was involved, there's no evidence of repeated loops or inability to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support representatives repeatedly ask for information or logs that were already provided, showing lack of context review.\",\n    \"evidence\": [\n      \"[2025-12-10T07:14:25+00:00] Keyur Saxena asks to upload logs to SFTP, despite logs already being uploaded\",\n      \"[2025-12-15T05:05:16+00:00] Customer asks 'any update on this', suggesting previous context was not addressed\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer follow-ups and support responses, with delays spanning multiple days.\",\n    \"evidence\": [\n      \"From [2025-12-03T08:56:57+00:00] to [2025-12-10T07:14:25+00:00]: 7-day gap\",\n      \"From [2025-12-05T02:49:18+00:00] to [2025-12-10T07:14:25+00:00]: 5-day gap\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to have been actively worked on, with multiple interactions before closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite being an urgent ticket, support provided generic troubleshooting steps instead of immediate resolution.\",\n    \"evidence\": [\n      \"[2025-12-10T09:11:47+00:00] Keyur Saxena suggests it's a 'corporate firewall blocking connection'\",\n      \"[2025-11-28T19:19:08+00:00] Randall Shawver provides generic advice to 'check remote computers'\"\n    ]\n  }\n}\n```\n\nKey observations:\n- The ticket shows multiple quality issues, particularly around response delays and context ignorance\n- AI interaction was low-quality and added little value\n- Support team provided generic troubleshooting for an urgent ticket\n- Multiple days passed between meaningful interactions",
+  "_model": "claude-haiku",
+  "_ticket_id": 60252140
+}

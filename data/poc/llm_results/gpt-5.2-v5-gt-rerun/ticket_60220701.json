@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS only collected initial context and suggested uploading files; there is no customer-facing evidence that the AI provided incorrect/misleading guidance or a broken/garbled template that impacted resolution.",
+    "evidence": [
+      "ATLAS (private transcript): \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\"",
+      "Customer (public): \"Thanks for the key. Requested logs and diagnostic files attached to the case.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "After ticket creation, humans engaged and responded publicly; there is no evidence the customer was stuck in an AI-only loop after requesting a human.",
+    "evidence": [
+      "Randall Shawver (public): \"To properly resolve this recurring issue, I need you to run the following commands and provide the output\"",
+      "Syed Haider (public): \"Please join me for your scheduled meeting using this link\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledged the prior ticket and used details from previous diagnostics; there is no customer-facing evidence that the customer was forced to repeat already-provided information after stating it was already shared.",
+    "evidence": [
+      "Randall Shawver (public): \"#60192334 ... From the diagnostic output you provided in ticket #60192334, I've identified some specific concerns\"",
+      "Customer (public): \"Thanks for the key. Requested logs and diagnostic files attached to the case.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were customer follow-ups asking for updates/ASAP responses and support later apologized for delayed response, indicating meaningful response delays. The overall resolution time was also very long per CSV, aligning with the customer\u2019s repeated chasers.",
+    "evidence": [
+      "Customer (public, 2025-10-26): \"Please any update here? Can you provide the below request ASAP.\"",
+      "Customer (public, 2025-11-02): \"Please can you get back to us ASAP on the requested Webex call?\"",
+      "Syed Haider (public, 2025-11-04): \"I sincerely apologize for the delayed response on this ticket.\"",
+      "CSV: resolutionTime=2419698"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket contains auto-closure warning language and the CSV shows the ticket was closed, there is no customer-facing evidence after the solution steps/call indicating an unresolved request at the time of closure.",
+    "evidence": [
+      "Randall Shawver (public): \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Completed in the portal.\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer expressed urgency, but there is no explicit P1/SEV1/outage language; support engaged with technical remediation steps and scheduled a live session rather than treating it purely as routine generic troubleshooting.",
+    "evidence": [
+      "Customer (public): \"We are at critical stage and must expediate all the tasks and activities\"",
+      "Syed Haider (public): \"Cleared excess snapshots and logs to free up disk space... Updated log rotation settings...\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60220701
+}

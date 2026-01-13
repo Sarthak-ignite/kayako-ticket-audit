@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The visible ATLAS content is limited to intake/triage (requesting uploads and then routing to L1). There is no clear incorrect product guidance, broken template behavior, or unfulfilled promise shown in the transcript.",
+    "evidence": [
+      "Chat Support: If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa",
+      "ATLAS commented privately: Action: Send to l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer requesting a human and being denied, nor repeated requests for the same info across multiple AI turns. The AI interaction appears to end with escalation to L1.",
+    "evidence": [
+      "ATLAS commented privately: Action: Send to l1"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer reported two distinct issues (browser-specific blocking behavior and AD sync/IP update), and referenced a prior case. The only public agent response addresses IPOQUE library updates / next release, and does not acknowledge or troubleshoot the AD sync/IP update issue at all, nor does it explicitly engage with the prior case reference in the customer\u2019s description.",
+    "evidence": [
+      "Customer: i cam facing two issues with exinda appliance\n1- blocking issue ... last case opened for this issue case#60020917\n2- issue in synch with AD, if the users ip changed the exinda database not updated the ip",
+      "Support (public): An IPOQUE library definitions upgrade will be documented in the release notes... Please keep an eye out for the next release."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "When the customer asked for an update, support responded within minutes. No 3+ day gap is shown between a customer message and the next support response.",
+    "evidence": [
+      "Customer: [2025-06-18T05:04:24+00:00] any update",
+      "Support: [2025-06-18T05:11:22+00:00] ... Please keep an eye out for the next release."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication the ticket was closed. The agent notes an auto-close policy, but the ticket remains open in the provided interactions.",
+    "evidence": [
+      "Support: This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit P1/SEV1/critical labeling or outage/production-down language is present. The issues described are functional defects but not clearly framed as an urgent/critical outage requiring escalation per the criteria.",
+    "evidence": [
+      "Customer: blocking issue ... only in Firefox ... edge and chrome not working as expected",
+      "Customer: issue in synch with AD, if the users ip changed the exinda database not updated the ip"
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60073892
+}

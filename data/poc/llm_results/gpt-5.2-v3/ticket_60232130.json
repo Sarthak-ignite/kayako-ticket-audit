@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support provided a concrete, technical root-cause claim to the customer (thousands of segfaults in collectord) and used it to justify rollback/escalation, but engineering later stated there was zero evidence for segfaults and explicitly called the statement a hallucination. The agent then corrected the diagnosis, admitting the initial analysis was wrong and was based on data not present in the logs. This is a clear, high-impact incorrect diagnosis consistent with AI-assisted failure.",
+    "evidence": [
+      "[2025-10-31T14:34:16+00:00] Randall (public): \"The sysdump shows 3,851 segmentation faults where collectord repeatedly crashes and restarts, consuming excessive CPU resources.\"",
+      "[2025-11-02T15:39:08Z] Engineering (daniel-wachira): \"The above statement appears to be a hallucination. There is 0 evidence of any crashes in the log analysis output from what I can tell.\"",
+      "[2025-11-02T16:33:43Z] rshawver (engineering): \"I should have double checked before escalating... somehow it pulled information that was not in this set of logs.\"",
+      "[2025-11-02T17:01:49+00:00] Randall (public): \"After reviewing the logs again, the initial diagnosis was incorrect.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer requested a live agent transfer and a ticket was created; there is no clear evidence of repeated AI questioning or 3+ consecutive customer-facing AI-only replies trapping the customer in a loop.",
+    "evidence": [
+      "[2025-10-30T08:06:05+00:00] ATLAS transcript: Customer: \"Yes, I request a live agent transfer in this chat,\"",
+      "[2025-10-30T08:06:38+00:00] ATLAS: \"Action: l1\" (handoff/triage action recorded)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support asked follow-up questions (why upgraded, any errors during upgrade) that were not previously answered in the ticket; there is no unambiguous repetition of the same request after the customer stated it was already provided/done.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly complained about lack of response for ~24 hours on a critical case. The first substantive public agent response appears ~30+ hours after ticket creation, supporting the delay complaint.",
+    "evidence": [
+      "[2025-10-31T05:02:41+00:00] Customer: \"The case was raised in Critical Priority, and no show for 24 hours.\"",
+      "[2025-10-30T08:06:00+00:00] Ticket created / issue logged",
+      "[2025-10-31T14:34:16+00:00] First substantial public response from support (Randall) with diagnosis/next steps"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence in the provided timeline that the ticket was closed or auto-closed while an open customer request/question was pending.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was explicitly described as business critical/critical priority with CPU pegged at ~100%, and the customer reported no support response for 24 hours, indicating prioritization/SLA handling problems for a P1/Critical scenario.",
+    "evidence": [
+      "[2025-10-30T08:06:05+00:00] ATLAS transcript (customer context): \"It's business critical & needs human support intervention\"",
+      "[2025-10-31T05:02:41+00:00] Customer: \"The case was raised in Critical Priority, and no show for 24 hours.\"",
+      "[2025-10-31T07:58:01+00:00] Customer: \"Description: CPU 2 utilization threshold exceeded\" / \"Detected Value: 99\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60232130
+}

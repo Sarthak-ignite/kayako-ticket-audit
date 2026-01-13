@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible content is the ATLAS chat welcome/consent and an initial prompt asking the customer to describe the issue. There is no customer-described problem and no attempted solution or guidance that could be evaluated as wrong/misleading.",
+    "evidence": [
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI greeting and intake prompt shown. No repeated requests, no customer frustration, and no request for a human is present in the provided log.",
+    "evidence": [
+      "\u201cIf I'm not able to resolve your issue, I can connect you with one of our support specialists\u2026\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer context/issue details are present in the ticket excerpt, so there is nothing for support to ignore.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamped interaction is shown; there is no back-and-forth to measure response gaps or waiting time.",
+    "evidence": [
+      "[2025-08-15T19:52:10+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The excerpt does not show the ticket being closed/resolved, nor any unanswered customer request followed by closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No issue description or severity/impact indicators (outage, all users affected, business blocked, etc.) are present, so mishandling of a P1/SEV1 cannot be assessed.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60169826
+}

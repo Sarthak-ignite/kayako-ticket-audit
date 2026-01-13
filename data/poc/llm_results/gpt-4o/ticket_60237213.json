@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI quality failures as the interaction only includes a request from a customer.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There are no instances of AI repeatedly asking for the same information or preventing access to a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interaction does not contain any responses from support, so it's impossible to determine if the context was ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer indicates they have attempted to reach out multiple times without receiving a response.",
+    "evidence": [
+      "[2025-11-06T08:30:23+00:00] Emily: 'We had tried to reach out a few times now without a reply.'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Without further interaction data, it's unclear if the closure was premature or if further communication occurred.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is marked as normal priority, not high-priority or outage, so no mishandling of P1/SEV1 issues can be determined.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI quality failures as the interaction only includes a request from a customer.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no instances of AI repeatedly asking for the same information or preventing access to a human agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction does not contain any responses from support, so it's impossible to determine if the context was ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer indicates they have attempted to reach out multiple times without receiving a response.\",\n    \"evidence\": [\"[2025-11-06T08:30:23+00:00] Emily: 'We had tried to reach out a few times now without a reply.'\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Without further interaction data, it's unclear if the closure was premature or if further communication occurred.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is marked as normal priority, not high-priority or outage, so no mishandling of P1/SEV1 issues can be determined.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60237213
+}

@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No clear evidence of AI response quality issues exists in the provided snippet.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient interaction details to determine AI looping behavior.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer interactions or support responses are visible to assess context ignorance.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The max gap between responses is 0.0 hours, suggesting immediate or no substantial delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "With no visible customer communication, cannot determine if closure was premature.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, and no severity 1 context is provided.",
+    "evidence": []
+  },
+  "_raw_response": "After carefully analyzing the provided ticket context, I notice a critical issue: there's insufficient interaction details to fully evaluate all patterns. However, I'll provide an analysis based on the available information:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence of AI response quality issues exists in the provided snippet.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction details to determine AI looping behavior.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer interactions or support responses are visible to assess context ignorance.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The max gap between responses is 0.0 hours, suggesting immediate or no substantial delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"With no visible customer communication, cannot determine if closure was premature.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, and no severity 1 context is provided.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket appears to be an AI-generated summary log\n- No actual customer or support interactions are visible\n- Cannot definitively assess quality issues without more context\n\nRecommendation: Request the full ticket conversation details for a comprehensive quality analysis.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60230438
+}

@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The interaction is dominated by templated AI chat framing and a generic acknowledgment, with no visible concrete troubleshooting tailored to the customer\u2019s already-performed steps (the substantive AI answer is truncated/absent in the record). This strongly suggests low-quality/non-actionable AI assistance in the captured transcript.",
+    "evidence": [
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d",
+      "\u201cGot it! \ud83d\udc4c\u201d",
+      "\u201cBased on your stated intent, it is ...[truncated]...\u201d",
+      "Customer already provided specific steps: \u201cI have restarted all services, excluded GFI folders from scanning by the anti-virus, manually forced update by clicking download update to no avail.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The ticket record shows only AI-led interaction and no handoff to a human specialist, which is a core signal of customers being stuck behind the AI wall (even if the customer did not explicitly request a human in the visible excerpt).",
+    "evidence": [
+      "\u201cThanks for chatting earlier with our AI Support!\u201d",
+      "\u201cThis is the GFI MailEssentials ATLAS support chat.\u201d",
+      "No human agent messages are present in the provided interaction log."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI requests a detailed description and steps tried, despite the customer immediately providing multiple concrete remediation actions already taken; this indicates the AI is not leveraging the context already supplied.",
+    "evidence": [
+      "AI prompt: \u201cAny error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d",
+      "Customer: \u201cGfi instance is not scanning emails. I have restarted all services, excluded GFI folders from scanning by the anti-virus, manually forced update by clicking download update to no avail.\u201d",
+      "AI response begins generically without acknowledging specifics: \u201cGot it! \ud83d\udc4c\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only a single timestamped customer entry is visible and there are no multi-day gaps shown between customer and support responses in the provided excerpt.",
+    "evidence": [
+      "[2025-06-20T08:54:12+00:00] (only timestamp shown in the provided log)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The provided ticket content contains only the AI chat transcript and does not show any human follow-up or resolution; per the detection rules, \u2018only AI interactions exist (no human ever engaged)\u2019 is a signal for premature/insufficient closure handling risk.",
+    "evidence": [
+      "\u201cThanks for chatting earlier with our AI Support! \u2026 Here is a record of your conversation for easy reference:\u201d",
+      "No subsequent human-agent reply or confirmed resolution is included after: \u201cBased on your stated intent, it is ...[truncated]...\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Email security scanning not working can represent a business-critical protection outage; the captured exchange shows no urgency framing, escalation, or immediate operational containment guidance\u2014only AI templating and an incomplete/truncated response.",
+    "evidence": [
+      "Customer: \u201cGfi instance is not scanning emails.\u201d",
+      "Customer indicates attempted recovery steps already taken: \u201crestarted all services\u2026 excluded GFI folders\u2026 manually forced update\u2026 to no avail.\u201d",
+      "No evidence of escalation/priority handling in the visible support response: \u201cGot it! \ud83d\udc4c \u2026 [truncated]\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60082637
+}

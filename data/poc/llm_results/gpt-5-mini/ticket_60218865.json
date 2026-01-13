@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI responses in the transcript to evaluate for generic, incorrect, or unkept promises.",
+    "evidence": [
+      "[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No repeated AI prompts or cyclical requests are present; only a single customer message is shown.",
+    "evidence": [
+      "[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The transcript does not contain any support replies that ignore prior customer information or request repeated artifacts.",
+    "evidence": [
+      "[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only a single timestamped interaction is available and Max gap between responses is 0.0 hours, so there is no evidence of multi-day delays.",
+    "evidence": [
+      "[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence in the interaction that the customer was waiting for promised information or that the ticket was closed while they were unresolved.",
+    "evidence": [
+      "[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is marked normal priority and there are no high-severity troubleshooting exchanges to evaluate for improper handling or lack of escalation.",
+    "evidence": [
+      "[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI responses in the transcript to evaluate for generic, incorrect, or unkept promises.\",\n    \"evidence\": [\n      \"[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No repeated AI prompts or cyclical requests are present; only a single customer message is shown.\",\n    \"evidence\": [\n      \"[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The transcript does not contain any support replies that ignore prior customer information or request repeated artifacts.\",\n    \"evidence\": [\n      \"[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only a single timestamped interaction is available and Max gap between responses is 0.0 hours, so there is no evidence of multi-day delays.\",\n    \"evidence\": [\n      \"[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence in the interaction that the customer was waiting for promised information or that the ticket was closed while they were unresolved.\",\n    \"evidence\": [\n      \"[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is marked normal priority and there are no high-severity troubleshooting exchanges to evaluate for improper handling or lack of escalation.\",\n    \"evidence\": [\n      \"[2025-10-11T07:48:43+00:00] (Customer) Ebenezer Lah Ampene: Kayako - ticket id 60218865 // Ebenezer Lah Ampene commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <b\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60218865
+}

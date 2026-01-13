@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS primarily requested relevant logs and acknowledged urgency. The subsequent troubleshooting and fix attempts were driven by human agents, and there is no customer-facing evidence that ATLAS provided clearly incorrect/misleading guidance or failed to deliver a promised follow-up.",
+    "evidence": [
+      "ATLAS (public): \"To investigate and resolve this quickly, please provide the following: - A LanGuard Console support log bundle... - Support log bundles from at least two affected agents...\"",
+      "Keyur Saxena (public): \"We currently suspect corrupted date data in toolcfg_agent.xml on the agent. Please share the complete troubleshooter archive containing the logs from the agent\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer received multiple human responses (Keyur, Marcio, Andriy, Matthew) and was not trapped in an AI-only loop after requesting help. There is no customer-facing pattern of repeated AI replies preventing access to a human.",
+    "evidence": [
+      "Keyur Saxena (public): \"We currently suspect corrupted date data in toolcfg_agent.xml on the agent.\"",
+      "Marcio Zimerman (public): \"We cannot offer a meeting on this issue, but the steps to resolve it are straightforward...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did ask for additional/different artifacts (agent logs and a specific XML file) after the customer provided server logs, but they explicitly clarified the mismatch rather than asking for the same item again after the customer stated it was already provided.",
+    "evidence": [
+      "Adam Bangash (private): \"Please find attached logs of server\"",
+      "Keyur Saxena (public): \"I requested the logs from the agent in my previous message - please confirm if it is the agent of the server itself... Additionally, from the affected agent, provide the \\\"C:\\\\ProgramData\\\\GFI\\\\LanGuard 12\\\\Servers\\\\<random_id>\\\\toolcfg_agentrecurrence.xml\\\" file\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly reported waiting multiple days without a response, which is a strong signal of delay. This complaint appears in customer-facing ticket content as frustration about elapsed time without an update.",
+    "evidence": [
+      "Adam Bangash (private): \"Its been 4 days and no response on this.\"",
+      "Adam Bangash (private): \"Any update on this please? Client is waiting for the response\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While support repeatedly used auto-closure warning language (\"This ticket will stay open for one week unless...\") there is no explicit indication in the ticket text that the case was actually closed/auto-closed while the issue was unresolved.",
+    "evidence": [
+      "Keyur Saxena (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Adam Bangash (private): \"Keep this ticket open\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer described urgent, multi-endpoint impact, support involved Development/Engineering, provided workarounds, and later provided a build to test. Customer-facing messages indicate escalation occurred rather than being handled purely as routine generic troubleshooting.",
+    "evidence": [
+      "ATLAS (public): \"We recognize the urgency and have flagged your case as a priority.\"",
+      "Keyur Saxena (public): \"We have already asked the Development team to investigate this to determine and fix the root cause.\"",
+      "Keyur Saxena (public): \"The Development team has provided a potential fix with this build: https://drive.google.com/...\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60166415
+}

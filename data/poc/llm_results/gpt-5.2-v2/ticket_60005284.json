@@ -1,0 +1,63 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provides low-value/generic gating behavior (license confirmation and then truncated/non-actionable content), and later repeatedly \u201cskips\u201d the ticket instead of progressing the RMA request or driving a clear next step.",
+    "evidence": [
+      "Chat Support: I have this license key on record... Just to make sure we're on the same page - is this the same system you're reaching out about today?",
+      "Chat Support: Thank you for confirming the license key. I understand you're looking to start the RMA (Return Merch\n...[truncated]...",
+      "Kayako - ticket id 60005284 // ATLAS commented privately: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer explicitly asks for a human/support agent for RMA and the interaction shows the case bouncing with automation actions (\u201cSend to l1\u201d, \u201cSkipping\u201d) while the customer keeps following up without meaningful engagement.",
+    "evidence": [
+      "Issue description: I NEED SUPPORT AGENT FOR RMA",
+      "Kayako - ticket id 60005284 // Danijel Knezic commented privately: Please anyone assist",
+      "Kayako - ticket id 60005284 // ATLAS commented privately: Action: Send to l1",
+      "Kayako - ticket id 60005284 // ATLAS commented privately: Skipping ticket due to tags",
+      "Kayako - ticket id 60005284 // Danijel Knezic commented privately: any updates",
+      "Kayako - ticket id 60005284 // Danijel Knezic commented privately: this is so unproffesional from the GFI side"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Customer states the device is faulty/not starting and that photos are attached, but there\u2019s no acknowledgement or use of those attachments/information; instead the flow stalls with automation \u2018skipping\u2019 and no targeted RMA data collection.",
+    "evidence": [
+      "Kerio NG510 is fautly and not stqrting. You have photos attached. I need urgent creation of RMA so I can get new one.",
+      "Please let me know what I need to send you more.",
+      "Kayako - ticket id 60005284 // ATLAS commented privately: Skipping ticket due to tags"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps with repeated customer follow-ups (\u201cPlease anyone assist\u201d, \u201cany updates\u201d), and support ultimately apologizes for delay and incorrect prioritization.",
+    "evidence": [
+      "[2025-03-21T14:08:30+00:00] Kerio NG510 is fautly... I need urgent creation of RMA...",
+      "[2025-03-22T11:23:44+00:00] Please anyone assist",
+      "[2025-03-25T11:22:03+00:00] This is high priority to us... our firewall is dead. I cnat wait such long time we need solution asap.",
+      "[2025-03-26T12:07:11+00:00] any updates",
+      "[2025-03-28T14:26:04+00:00] Please accept my sincere apologies for the delay in handling this! The ticket was incorrectly prioritized"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is closed without the customer confirming resolution; the customer\u2019s core need (urgent replacement) was not addressed directly in this thread, and closure is based on an external/duplicate RMA claim rather than ensuring the customer is unblocked.",
+    "evidence": [
+      "I need urgent creation of RMA so I can get new one. Please let me know what I need to send you more.",
+      "Hi Hermes, This is high priority to us... our firewall is dead... How we can get new device.",
+      "Kayako - ticket id 60005284 // Ciprian Nastase commented publicly: ...your reseller has submitted an RMA request for this same appliance... In light of this, I will proceed to close this ticket."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer describes an urgent, business-blocking outage (firewall dead on a vessel) but support response is delayed for days with no clear immediate escalation/ownership; the ticket was even \u2018incorrectly prioritized\u2019 per support.",
+    "evidence": [
+      "I need urgent creation of RMA so I can get new one.",
+      "This is high priority to us. We are vessel and our firewall is dead. I cnat wait such long time we need solution asap.",
+      "Kayako - ticket id 60005284 // Ciprian Nastase commented publicly: The ticket was incorrectly prioritized, which led to this issue."
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60005284
+}

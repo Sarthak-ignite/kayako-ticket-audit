@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI provides generic filler text and does not include any actual conversation record or actionable support content despite claiming it will.",
+    "evidence": [
+      "[2025-11-14T14:07:25+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\n\n\n---\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI message and no evidence of repeated requests for the same information or inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interaction log does not show the customer providing context, nor the AI asking again for previously provided logs/screenshots.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one interaction is shown; there is no multi-day gap or delay evidenced in the timeline.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket status is closed, the timeline does not show the customer waiting on promised follow-up or any closure message indicating the case was closed despite pending actions.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is low and there is no outage/P1 context or generic troubleshooting in the provided interaction.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI provides generic filler text and does not include any actual conversation record or actionable support content despite claiming it will.\",\n    \"evidence\": [\n      \"[2025-11-14T14:07:25+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\\n\\n\\n---\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI message and no evidence of repeated requests for the same information or inability to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction log does not show the customer providing context, nor the AI asking again for previously provided logs/screenshots.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one interaction is shown; there is no multi-day gap or delay evidenced in the timeline.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket status is closed, the timeline does not show the customer waiting on promised follow-up or any closure message indicating the case was closed despite pending actions.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is low and there is no outage/P1 context or generic troubleshooting in the provided interaction.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60243347
+}

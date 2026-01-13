@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses were appropriate for the situation - acknowledgment of issue, escalation to engineering, and proper closure notification. No generic filler or broken promises detected.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer successfully escalated to human support (AlterPKC) and received resolution. No evidence of repeated AI requests or looping behavior.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support team properly acknowledged customer's specific issue (unable to download December patches from GFI console with network connectivity verified) and escalated appropriately.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Time to first human response was 0.0 hours, and maximum gap between responses was 3.4 hours. Response times were appropriate for a normal priority ticket.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed immediately after identifying it was test-triggered, but customer had not been given a clear resolution path. The AI promised 'we will inform you as soon as we receive fu[rther information]' at 08:19:50Z, but closure occurred within minutes at 08:20:34Z without resolution.",
+    "evidence": [
+      "AI response at 2025-12-23T08:19:50+00:00: 'Thank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive fu[rther information]'",
+      "Closure at 2025-12-23T08:20:34Z: 'AlterPKC commented: Triggered from a test ticket. Closing'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket was priority 'normal' (not P1/SEV1), so this pattern is not applicable. However, the issue was appropriately escalated to engineering rather than generic troubleshooting.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses were appropriate for the situation - acknowledgment of issue, escalation to engineering, and proper closure notification. No generic filler or broken promises detected.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer successfully escalated to human support (AlterPKC) and received resolution. No evidence of repeated AI requests or looping behavior.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support team properly acknowledged customer's specific issue (unable to download December patches from GFI console with network connectivity verified) and escalated appropriately.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Time to first human response was 0.0 hours, and maximum gap between responses was 3.4 hours. Response times were appropriate for a normal priority ticket.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was closed immediately after identifying it was test-triggered, but customer had not been given a clear resolution path. The AI promised 'we will inform you as soon as we receive fu[rther information]' at 08:19:50Z, but closure occurred within minutes at 08:20:34Z without resolution.\",\n    \"evidence\": [\n      \"AI response at 2025-12-23T08:19:50+00:00: 'Thank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive fu[rther information]'\",\n      \"Closure at 2025-12-23T08:20:34Z: 'AlterPKC commented: Triggered from a test ticket. Closing'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket was priority 'normal' (not P1/SEV1), so this pattern is not applicable. However, the issue was appropriately escalated to engineering rather than generic troubleshooting.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60269018
+}

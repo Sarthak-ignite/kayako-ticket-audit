@@ -1,0 +1,112 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_connect",
+        "requester": {
+          "id": 60081493,
+          "uuid": "0533f946-f6e9-43c0-bdcb-573149322d15",
+          "full_name": "Kjell Skoglund",
+          "legacy_id": "369925521993",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/0533f946-f6e9-43c0-bdcb-573149322d15?1767706486",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60028811,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 83028,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 14000,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Stockholm",
+          "time_zone_offset": 3600,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "83.249.245.142",
+          "last_seen_at": "2026-01-04T13:59:19+00:00",
+          "last_active_at": "2026-01-06T13:34:46+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60081493",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@e0e866309cbcf3aca27e902235420084bcb4e899",
+          "password_updated_at": "2025-03-25T16:35:24+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-04T13:59:19+00:00",
+          "last_activity_at": "2026-01-04T13:59:19+00:00",
+          "created_at": "2018-12-01T11:35:56+00:00",
+          "updated_at": "2026-01-06T13:34:46+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60081493"
+        },
+        "ticket_idt": 60224885
+      },
+      "interactions": [
+        [
+          "2025-10-20T13:34:14+00:00",
+          "Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      Hi, Kjell Skoglund ! \ud83d\udc4b<br>\n      <br>\n      This is the Kerio Connect ATLAS support chat.\n      <hr>\n      <div style=\"line-height:\">\n        <b>Please note:</b> ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" rel=\"nofollow\">these terms and conditions</a>.<br>\n        If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.\n      </div>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      ### \ud83d\udd25 Active Incidents for <strong>Kerio Connect</strong><br>\n      <br>\n      <strong>1. AWS Degraded \u2013 Multiple Services in US-East-1 Region</strong><br>\n      <ul>\n        <li><strong>Status:</strong> <code>identified</code></li>\n        <li>\n          <strong>URL:</strong> <a href=\"https://stspg.io/w5y2n2bnylfj\" rel=\"nofollow\">https://stspg.io/w5y2n2bnylfj</a>\n        </li>\n      </ul><br>\n      <br>\n      <br>\n      <br>\n      \u2139\ufe0f You can click the incident URL in order to view the full details<br>\n      <br>\n      \ud83d\udca1 We recommend that you click the Subscribe to updates button to receive real-time status updates on this incident and future ones.<br>\n      <br>\n      Did this help?\n    </div><br>\n    <p><strong>--- Customer (Kjell Skoglund) ---</strong></p>\n    <div>\n      .\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.<br>\n      \ud83d\udca1<a href=\"https://support.kerioconnect.gfi.com/article/112513\" rel=\"nofollow\">Getting the most out of Kerio Connect ATLAS Support Chat</a><br>\n      \ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f<br>\n      If I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa\n    </div><br>\n    <p><strong>--- Customer (Kjell Skoglund) ---</strong></p>\n    <div>\n      /\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      Kjell Skoglund , I see that you are an active GFI reseller/distributor.<br>\n      While not mandatory, it may be useful for troubleshooting if you provide me with the <strong>Kerio Connect license key</strong> for which you are contacting us. \ud83d\ude0a.<br>\n      Please select the option that applies below \ud83d\udc47\n    </div><br>\n    <p><strong>--- Customer (Kjell Skoglund) ---</strong></p>\n    <div>\n      <em>Button selection:</em> [I don't have the license key handy]\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      Given your reseller/distributor status, that's alright, so let's get down to business! \ud83d\udedf\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa<br>\n      <br>\n      \u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.<br>\n      <br>\n      \u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.<br>\n      <br>\n      \ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.<br>\n      <br>\n      \u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:<br>\n      \ud83d\udc49 <a href=\"https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiJhMTg2MGYwYy1lN2Y3LTRlYTItOTdmMy02M2QxNGE3NmJiNjciLCJzZXNzaW9uX3VpZCI6ImExODYwZjBjLWU3ZjctNGVhMi05N2YzLTYzZDE0YTc2YmI2NyIsImVtYWlsIjoia2plbGxAZGF0YWZpeC5zZSIsImN1c3RvbV9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoiYXVyZWFfa2VyaW9fY29ubmVjdCIsInF1ZXJ5IjoiIiwiZXhwIjoxNzYwOTc0Mjg4fQ.t0GgwKtPQc2NGi3K2bXTh-Icns8LRiaWvAP9zj6ZbM8\" rel=\"nofollow\">Secure File Upload</a><br>\n      <br>\n      You should see the following:<br>\n      <ul>\n        <li>User: kjell@datafix.se</li>\n        <li>Session ID: a1860f0c-e7f7-4ea2-97f3-63d14a76bb67</li>\n      </ul>\n    </div><br>\n    <p><strong>--- Customer (Kjell Skoglund) ---</strong></p>\n    <div>\n      <em>Button selection:</em> [\ud83d\udd19 Continue without file upload ]\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      No problem! We can always add files later if needed.<br>\n      <br>\n      Now, <strong>how can I help you today?</strong> \ud83d\ude0a<br>\n      <br>\n      Could you tell me a bit more about what's happening with your Kerio Connect? For example:<br>\n      <ul>\n        <li>Are you experiencing a specific issue or error?</li>\n        <li>Do you have questions about a feature or configuration?</li>\n        <li>Is there something not working as expected?</li>\n      </ul><br>\n      <br>\n      The more details you can share, the better I can assist you!\n    </div><br>\n    <p><strong>--- Customer (Kjell Skoglund) ---</strong></p>\n    <div>\n      Is there a faster way to delete users than thru the admin webinterface\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      Great question! Yes, there are definitely faster ways to delete users in bulk rather than going through the web admin interface one by one. Let me get you the best information on this.\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      Based on the knowledge base, I can see information about deleting users through the web interface, but let me check if there are any API or command-line options available for bulk operations:\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      Perfect! Yes, there are actually <strong>faster alternatives</strong> to deleting users through the web interface:<br>\n      <br>\n      <h2><strong>Option 1: Using the Kerio Connect API</strong> \u2728</h2><br>\n      <br>\n      Kerio Connect offers APIs that allow you to automate user management tasks, including bulk user deletion. You can use the <strong>Administration API</strong> to programmatically remove multiple users through scripting.<br>\n      <br>\n      <ul>\n        <li>\n          <strong>Administration API documentation</strong>: <a href=\"https://manuals.gfi.com/en/kerio/api/connect/admin/\" rel=\"nofollow\">Administration API for Kerio Connect</a>\n        </li>\n        <li>\n          <strong>Client API documentation</strong>: <a href=\"https://manuals.gfi.com/en/kerio/api/connect/client/\" rel=\"nofollow\">Client API for Kerio Connect</a>\n        </li>\n        <li>\n          <strong>Developer resources</strong>: Check out the <a href=\"http://www.kerio.com/developers\" rel=\"nofollow\">Kerio Developer Zone</a> for client libraries and sample code\n        </li>\n      </ul><br>\n      <br>\n      You can write a script (for example, in PHP or Python) that connects to the API and loops through a list of users to delete them in bulk. This is much faster than clicking through the web interface for each user.<br>\n      <br>\n      For more details, see: <a href=\"https://support.kerioconnect.gfi.com/article/112058\" rel=\"nofollow\">Using Kerio Connect API</a>\n      <hr>\n      <h2><strong>Option 2: Multi-Select in Web Interface</strong></h2><br>\n      <br>\n      While not as automated as the API approach, you can select <strong>multiple users at once</strong> in the web admin interface:<br>\n      <br>\n      <ol>\n        <li>Log in to the Kerio Connect administration console</li>\n        <li>Navigate to <strong>Accounts > Users</strong></li>\n        <li>Hold <strong>Ctrl</strong> (Windows/Linux) or <strong>Cmd</strong> (Mac) and click to select multiple users</li>\n        <li>Click <strong>Remove</strong> to delete them all at once</li>\n      </ol><br>\n      <br>\n      This is faster than deleting one by one, though still manual.\n      <hr>\n      <strong>Which approach sounds better for your situation?</strong> Are you looking to delete a large number of users regularly (where API scripting would be ideal), or is this a one-time cleanup where multi-select might be sufficient?\n    </div><br>\n    <p><strong>--- Customer (Kjell Skoglund) ---</strong></p>\n    <div>\n      I\u00b4ll go for thr multiple in the webinterface\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      Perfect! That's definitely the quickest manual approach. \ud83d\udc4d<br>\n      <br>\n      Just to make sure you have all the steps clear:<br>\n      <br>\n      <h2><strong>Deleting Multiple Users in the Web Interface:</strong></h2><br>\n      <br>\n      <ol>\n        <li><strong>Log in</strong> to the Kerio Connect administration console</li>\n        <li>Navigate to <strong>Accounts > Users</strong></li>\n        <li><strong>Select your domain</strong> from the dropdown (if you have multiple domains)</li>\n        <li>Hold down <strong>Ctrl</strong> (on Windows/Linux) or <strong>Cmd</strong> (on Mac) while clicking each user you want to delete</li>\n        <li>Once you've selected all the users, click the <strong>Remove</strong> button</li>\n        <li>You'll get a confirmation window with options for what to do with the user's data</li>\n      </ol><br>\n      <br>\n      <strong>Important note:</strong> When you delete users, you'll be prompted to choose what happens to their messages and data, so just make sure you select the appropriate option based on your needs.\n      <hr>\n      Is there anything else you'd like help with regarding user management in Kerio Connect, or does this cover what you needed? \ud83d\ude0a\n    </div><br>\n  </div>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

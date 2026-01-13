@@ -1,0 +1,64 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS repeatedly framed the blank/empty graphs as \u201cnormal behavior\u201d due to no traffic, despite the customer later stating there was traffic during the missing periods and internal analysis suggesting a roll-up/data aggregation issue. This is potentially misleading and shows weak adaptation to new info. Some responses also appear repetitive/filler-heavy rather than moving troubleshooting forward.",
+    "evidence": [
+      "ATLAS (public, 2025-11-04): \"The \u201cData not available for selected period\u201d message occurs when no traffic has been recorded for the selected subnet or network object during the specified time range. This is a normal behavior in Exinda reporting. It does not indicate a malfunction...\"",
+      "Customer (private, 2025-11-07): \"there was traffic over the link on the mentioned period, but it was not present on exinda subnet report.\"",
+      "ATLAS (public, 2025-11-09): \"This behavior is in line with normal Exinda operation; there is no evidence of a firmware or reporting engine malfunction.\"",
+      "Rishi Singh (private, 2025-11-14): \"Because traffic is visible for certain periods but rolled-up time ranges (Last 24 Hours) are empty, the problem is almost certainly in the data-roll-up chain (datad / monitor / statisticsd) rather than capture.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested a call and expressed frustration that they are repeatedly asked to provide information without receiving corrective action, suggesting a loop-like experience and difficulty getting effective human-driven troubleshooting. While humans did respond, the customer experience still reflects \u201cstuck in the process\u201d dynamics.",
+    "evidence": [
+      "Customer (private, 2025-11-14): \"can you schedule a call because from last 1 month we are only sharing data for verification .\"",
+      "Customer (private, 2025-11-19): \"Kindly confirm are you able to initiate a call for troubleshooting or not ... we have not received a single recommendation / corrective action from your side.\"",
+      "Customer (private, 2025-11-19): \"can you tell us that how many times you need same data. Have you checked previous update on this ticket provides by us?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "There are clear signals that support requested the same artifacts again or did not leverage what the customer believed was already provided, forcing repetition. The customer directly calls out repeated requests and lack of review of prior updates, indicating context may not have been consumed or acknowledged.",
+    "evidence": [
+      "Customer (private, 2025-11-19): \"can you tell us that how many times you need same data. Have you checked previous update on this ticket provides by us?\"",
+      "Randall Shawver (public, 2025-11-20): \"Did you previously upload these, as I do not see them attached to this ticket? If not, please provide these...\"",
+      "Customer (private, 2025-11-14): \"We have verified all the parameters and also observed that there is traffic on particular time period, but it is not showing on last 24 hours in exinda\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The timeline shows prolonged gaps and repeated customer follow-ups over days and then a month without meaningful progress. The customer explicitly complains about waiting 6 days and then 1 month, and the case even triggers escalation events due to delay.",
+    "evidence": [
+      "Customer (private, 2025-09-30): \"kindly share update on the reported issue on priority basis.\"",
+      "Customer (private, 2025-10-06): \"As we are waiting from last 6 days still, we have not received any updates regarding the same.\"",
+      "Customer (private, 2025-11-04): \"It has been now a month ago but still we haven't received any solution...\"",
+      "Private escalation note (2025-11-04): \"Issue is dragging from 1 month but we have not received any update and solutions.\"",
+      "CSV: Status=hold",
+      "CSV: Ticket Created=2025-09-29 12:54:05; CSV: Ticket Updated=2026-01-05 10:55:52"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support repeatedly states the ticket will remain open only one week unless the customer responds/requests closure, even while the customer is actively struggling and requesting live troubleshooting. This is a closure-pressure/auto-close warning that can be premature given the unresolved nature of the issue at those points.",
+    "evidence": [
+      "Rishi Singh (public, 2025-11-14): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed\"",
+      "Syed Haider (public, 2025-11-27): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed\"",
+      "Customer (private, 2025-11-19): \"Please clarify because from last 1 month we are just providing updates...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The case was escalated with severity marked as data_loss, yet it experienced long delays (days to a month) and early responses minimized the issue as \u201cnormal behavior\u201d instead of rapid escalation/structured incident handling. This pattern suggests high-severity handling may have been insufficient or slow.",
+    "evidence": [
+      "Private escalation note (2025-11-04): \"The severity is: data_loss\"",
+      "Private escalation note (2025-11-14): \"The severity is: data_loss\"",
+      "Customer (private, 2025-10-06): \"waiting from last 6 days still, we have not received any updates\"",
+      "Customer (private, 2025-11-04): \"It has been now a month ago but still we haven't received any solution\"",
+      "ATLAS (public, 2025-11-09): \"there is no evidence of a firmware or reporting engine malfunction.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60209095
+}

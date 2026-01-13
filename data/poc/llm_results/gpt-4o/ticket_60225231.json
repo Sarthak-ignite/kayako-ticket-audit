@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear evidence of AI responses being generic, incorrect, or making unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in an AI loop or unable to reach human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support seems to overlook previous customer input regarding DNS and connectivity, leading to repetitive checks.",
+    "evidence": [
+      "[2025-10-23T18:58:03+00:00] (Customer) Milos Hofman: ... test DNS, ok ... outbound access is ok...",
+      "[2025-10-27T14:59:02+00:00] (Employee) Mike Kebede: ... confirmed that DNS, outbound connectivity, and network access are all working properly."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple days of delay between customer inquiries and employee responses.",
+    "evidence": [
+      "[2025-10-21T03:11:27+00:00] (Employee) Carlo Koh: Thank you for contacting the Kerio Control Support Team...",
+      "[2025-10-21T05:34:22+00:00] (Customer) Milos Hofman: The problem still persist.",
+      "[2025-10-22T18:41:38+00:00] (Customer) Milos Hofman: Hello, do you have some solution for me?"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after resolving the issue and receiving confirmation from the customer.",
+    "evidence": [
+      "[2025-10-28T17:58:27+00:00] (Customer) Milos Hofman: your colleague solve this problem..."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of mishandling or lack of escalation given the provided context; the issue appeared resolved.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence of AI responses being generic, incorrect, or making unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in an AI loop or unable to reach human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support seems to overlook previous customer input regarding DNS and connectivity, leading to repetitive checks.\",\n    \"evidence\": [\n      \"[2025-10-23T18:58:03+00:00] (Customer) Milos Hofman: ... test DNS, ok ... outbound access is ok...\",\n      \"[2025-10-27T14:59:02+00:00] (Employee) Mike Kebede: ... confirmed that DNS, outbound connectivity, and network access are all working properly.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multiple days of delay between customer inquiries and employee responses.\",\n    \"evidence\": [\n      \"[2025-10-21T03:11:27+00:00] (Employee) Carlo Koh: Thank you for contacting the Kerio Control Support Team...\",\n      \"[2025-10-21T05:34:22+00:00] (Customer) Milos Hofman: The problem still persist.\",\n      \"[2025-10-22T18:41:38+00:00] (Customer) Milos Hofman: Hello, do you have some solution for me?\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after resolving the issue and receiving confirmation from the customer.\",\n    \"evidence\": [\n      \"[2025-10-28T17:58:27+00:00] (Customer) Milos Hofman: your colleague solve this problem...\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of mishandling or lack of escalation given the provided context; the issue appeared resolved.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60225231
+}

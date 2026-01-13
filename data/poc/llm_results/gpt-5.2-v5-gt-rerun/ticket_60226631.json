@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No customer-facing AI responses are present that are broken, misleading, or contradicted. The public replies are from named support staff and are coherent updates/escalations.",
+    "evidence": [
+      "Deepanshu Dewan commented publicly: \"As discussed, your ticket has been assigned to an agent. You will receive an update soon with the preliminary analysis completed so far.\"",
+      "Pavly Nashed commented publicly: \"We have investigated the root cause of the issue, and this has been escalated to our infrastructure team with the highest priority...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was not kept in an AI loop; a human responded promptly after the customer\u2019s urgent follow-up and continued human communication followed.",
+    "evidence": [
+      "Customer: \"Issue is happening again now. Can you look into this on priority.\"",
+      "Deepanshu Dewan commented publicly: \"your ticket has been assigned to an agent. You will receive an update soon\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to re-provide the same information or ignore previously provided details; instead they acknowledged impact and provided an outage explanation and next steps.",
+    "evidence": [
+      "Customer: \"We are unable to view or claim any new incoming chats... a manual refresh is required... taking over 10 minutes to appear\"",
+      "Balaji Jayaraman commented publicly: \"The disruption was triggered by background data processing placing unexpected load on our search infrastructure... no data loss occurred.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Public responses occurred quickly the same day as reporting, and there is no customer-facing complaint about prolonged waiting. CSV shows no L1/L2 open time accumulation.",
+    "evidence": [
+      "CSV: initialResponseTime=442",
+      "Deepanshu Dewan commented publicly (same day): \"Thank you for calling Khoros Care Support... You will receive an update soon\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket ultimately closed (per CSV), the last customer question about preventing recurrence received a direct reply; there is no later customer message indicating an unresolved request at the time of closure.",
+    "evidence": [
+      "Customer: \"Kindly confirm whether the fix you have implemented will prevent this issue from recurring in the future.\"",
+      "Balaji Jayaraman commented publicly: \"We\u2019re strengthening monitoring and controls to catch similar performance issues earlier... to prevent recurrence.\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue described production-impacting chat disruption, and support treated it as high priority (ticket assignment, escalation, and infra involvement) rather than generic end-user troubleshooting.",
+    "evidence": [
+      "Customer: \"We are unable to view or claim any new incoming chats in Khoros Care Production.\"",
+      "Pavly Nashed commented publicly: \"this has been escalated to our infrastructure team with the highest priority\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60226631
+}

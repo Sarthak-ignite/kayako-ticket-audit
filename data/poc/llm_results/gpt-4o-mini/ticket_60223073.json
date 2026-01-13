@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence in the provided interaction that indicates the AI provided generic filler, incorrect information, or made unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not appear to be caught in an AI loop, as there is no mention of repeated requests for the same information or indication that they are unable to connect with a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence suggesting that the AI or support staff ignored previous information provided by the customer or requested the same logs/screenshots multiple times.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between responses was noted as 0.0 hours, indicating that there were no significant delays in responses.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication that the ticket was closed while the customer was awaiting further information or had given up, as the conversation log does not show any outstanding queries from the customer.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The incident does not appear to involve a high-priority or severity 1 issue that was mishandled with generic troubleshooting instead of escalation, as the ticket itself is marked with normal priority.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence in the provided interaction that indicates the AI provided generic filler, incorrect information, or made unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer does not appear to be caught in an AI loop, as there is no mention of repeated requests for the same information or indication that they are unable to connect with a human agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence suggesting that the AI or support staff ignored previous information provided by the customer or requested the same logs/screenshots multiple times.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between responses was noted as 0.0 hours, indicating that there were no significant delays in responses.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the ticket was closed while the customer was awaiting further information or had given up, as the conversation log does not show any outstanding queries from the customer.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The incident does not appear to involve a high-priority or severity 1 issue that was mishandled with generic troubleshooting instead of escalation, as the ticket itself is marked with normal priority.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60223073
+}

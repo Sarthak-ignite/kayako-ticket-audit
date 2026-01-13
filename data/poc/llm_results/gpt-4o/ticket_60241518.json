@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response provides a summary that doesn't directly address the customer's issue and uses generic language.",
+    "evidence": [
+      "[2025-12-16T11:23:02+00:00] \"We are pleased to inform you that our Development Team has successfully addressed the issue concerning the GFI Ap\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was repeatedly asked for the same information or couldn't reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interactions do not indicate that the support team ignored or asked for already provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays exceeding multiple days between customer and support responses.",
+    "evidence": [
+      "Time to first human was 431.5 hours",
+      "Max gap between responses was 427.7 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed with the customer's consent and request.",
+    "evidence": [
+      "[2025-12-17T15:02:18+00:00] \"thanks, we can close this ticket\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket was escalated to engineering, which is appropriate for a high priority GFI issue.",
+    "evidence": [
+      "[2025-11-30T14:53:32+00:00] \"We have escalated this to our Engineering team for review.\""
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response provides a summary that doesn't directly address the customer's issue and uses generic language.\",\n    \"evidence\": [\"[2025-12-16T11:23:02+00:00] \\\"We are pleased to inform you that our Development Team has successfully addressed the issue concerning the GFI Ap\\\"\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the customer was repeatedly asked for the same information or couldn't reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions do not indicate that the support team ignored or asked for already provided information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays exceeding multiple days between customer and support responses.\",\n    \"evidence\": [\"Time to first human was 431.5 hours\", \"Max gap between responses was 427.7 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed with the customer's consent and request.\",\n    \"evidence\": [\"[2025-12-17T15:02:18+00:00] \\\"thanks, we can close this ticket\\\"\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was escalated to engineering, which is appropriate for a high priority GFI issue.\",\n    \"evidence\": [\"[2025-11-30T14:53:32+00:00] \\\"We have escalated this to our Engineering team for review.\\\"\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60241518
+}

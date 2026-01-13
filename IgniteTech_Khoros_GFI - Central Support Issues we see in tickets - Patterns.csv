@@ -1,0 +1,40 @@
+Pattern,Examples (comma sep list of ticket Ids),,
+,IgniteTech,Khoros,GFI
+"Hermes answers are just a filler to meet SLAs, do not add value and generates customer frustation",,"60247476, 60238457,","60185126, 60073150, 60005331, 60005284, 60209553, 60238295, 60231851, 60195349, 60190547,60218313, 60220499, 60193443, 60198743, 60232130, 60209095"
+AI resolution is high because customer give up ticket is maked as closed and counts towards AI resolution,,,"60011782, 60082637, 60098583, 60166415, 60193443, 60230003, 60230438, 60239883, 60101543, 60094192, 60252864 "
+Support agents are not checking past similar tickets where customer already provided information they are asking for or did the same troubleshooting steps,,60247476,60196166
+"Customer get's locked in an ""AI Wall"" and can't get past it to actually have their problem solved","60196360, 60237327",,"60193443, 60256173"
+"Ai is requesting same information  customer has already provided within the ticket -  ""Ai looped requests""",,"60247476, 60238457","60218313, 60193443, 60198743, 60098171, 60258400, 60078199"
+Ticket automation malfunctioning  - BU reported issues are stuck in CS for weeks (3 weeks inthe example).  While CE requests BU to create a ticket for issue BU discovered and was able to reproduce with all the steps.,,,"60241518,"
+"After customer provided all the information (logs, screenshots etc) - Hermes keeps sending updates support team is analyzing those files while noone is",,60186930,"60231851,"
+Tickets being closed  after 7 days of no customer response while customer is waiting for information we promissed but never sent,"60144719, 60211680,
+60149875, 
+60214613 ","60227783, 60238457","60196166,"
+Feedback on shared patch (which does not fix the problem) was not processed between CS in direction to CE,,,"60196166, 60210541,"
+Chat conversations are closed prematuraly  ,,,60169826
+Ai (Atlas/Hermes) provides wrong information or does not understand the problem described by the customer,,"60227783, 60247476","60242814, 60240989, 60231299, 60225231, 60163212, 60100448, 60231851, 60201836, 60069509"
+"With multiple issue reported in single ticket,  other issues are ignored ",,,60073892
+Slow Ai/agent resposnes with gaps measured in days,,"60186930, 60238457","60196166, 
+60185905,
+60005331, 
+60005284,
+60220701,
+60177804,
+60238295,
+60231851,
+60018792,
+60195349,
+60190547,
+60220499,
+60201836,
+60252140,
+60198743,
+60098171,
+60209095,
+"
+"Ai is promissing ""something"" to be sent or done while it does not send or provide anything",,60227783,"60241392, 60163212, 60256173"
+Customer is expressing frustation with support (AI or Agent) responses (quality),,"60247476, 60238457, 60186930",
+"AI/ATLAS responds to SEV1/P1 outages with generic troubleshooting (browser extensions, firewall, cache clearing) instead of immediate engineering escalation",,"60227783, 60247476, 60238457, 60234621",
+"Support consistently begins with customer environment investigation (firewall, VPN, network, browser) before platform-side analysis, causing 1-4 day delays even when issue recurs or affects multiple environments",,"60164071, 60238457, 60247476, 60234621",
+"SEV1/P1 platform issues spend multiple days in standard support troubleshooting (environment checks, generic AI responses) before being escalated to engineering; engineering involvement delayed 1-4 days from initial report",,"60238457, 60247476, 60234621",
+"Support does not recognize recurring issue patterns across multiple tickets; each occurrence is treated as isolated/new rather than escalated as systemic pattern with full historical context, resulting in repeated troubleshooting cycles",,"60164071, 60238457, 60247476, 60226631, 60234621",

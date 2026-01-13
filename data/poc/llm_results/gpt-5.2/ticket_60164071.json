@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "An AI actor performed an abnormal/low-quality action that effectively stalls the ticket for an excessive period, which is indicative of poor AI support behavior rather than helpful case handling.",
+    "evidence": [
+      "[2025-08-22T15:02:25+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60164071 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was trapped in an AI-only loop, repeatedly blocked from reaching a human, or repeatedly asked the same questions by an AI agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While additional HAR files and examples are discussed, there is no clear instance where support ignores already-provided materials and explicitly asks for the same logs again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The timeline shows multi-day gaps between meaningful updates, consistent with significant response delays.",
+    "evidence": [
+      "Gap between [2025-08-25T18:50:10+00:00] (Employee) Aamir Merchant private comment and next visible update [2025-08-28T06:46:30Z] (Employee) AlterPKC comment (~2+ days)",
+      "Gap between [2025-08-28T06:46:30Z] and [2025-09-01T05:55:31Z] (~4 days) before next customer-case/log-related update",
+      "Gap between [2025-09-01T10:37:01Z] and [2025-09-03T06:56:03Z] (~2 days)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although a related JIRA item was closed, there is no clear evidence in the provided ticket transcript that the support ticket itself was closed while the customer was still waiting for promised information (e.g., an RCA).",
+    "evidence": [
+      "[2025-08-22T12:51:02+00:00] (AI) Centralsupport-ai-acc: JIRA Issue CARESMM-285 is changed to 'Closed' (this references JIRA, not explicit closure of the Kayako ticket)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket shows it was labeled high priority, but the thread includes substantive engineering investigation and logging improvements rather than purely generic troubleshooting; there is not clear evidence of failure to escalate a true Sev-1/P1 incident.",
+    "evidence": [
+      "[2025-09-01T10:37:01Z] (General) None: ... labeled as Priority:High",
+      "[2025-08-20T07:57:43Z] (Employee) caleb015: # Root Cause Investigation Report",
+      "[2025-08-21T14:27:46Z] (Employee) caleb015: # Error Logging Implementation Plan"
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60164071
+}

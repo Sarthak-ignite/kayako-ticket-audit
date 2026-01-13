@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Private AI comments are generic, non-informative 'Skipping ticket due to tags' notes repeated multiple times, indicating filler AI responses rather than useful action or triage.",
+    "evidence": [
+      "[2025-12-03T16:42:38+00:00] (AI) ATLAS: Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags",
+      "[2025-11-27T14:24:09+00:00] (AI) ATLAS: Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags",
+      "[2025-11-26T17:13:31+00:00] (AI) ATLAS: Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information nor that the customer was trapped behind AI-only interactions; humans are responding to the customer.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support references a prior case (#60237228) and the thread shows agents following the customer's updates (e.g., access in incognito then confirmation), so there is no clear re-requesting of already-provided info.",
+    "evidence": [
+      "[2025-11-25T17:57:34+00:00] (Employee) Pavly Nashed: Kayako - ticket id 60250271 // Pavly Nashed commented publicly: Dear Erika, Thank you for reaching out and reporting this. I can confirm that the issue was previously resolved under case #60237228,"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between interactions (several days pass between the last human reply and the customer's final message), consistent with the reported max gap of ~146 hours.",
+    "evidence": [
+      "[2025-11-27T14:32:53+00:00] (Employee) Pavly Nashed: Kayako - ticket id 60250271 // Pavly Nashed commented publicly: Dear Briamel, Thank you for your email.",
+      "[2025-12-03T16:42:28+00:00] (Customer) Erika Heredia: Kayako - ticket id 60250271 // Erika Heredia commented privately: Hello, We can close this ticket. Thank you for all your help!"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the customer explicitly stated they were ready to close; closure appears to follow customer instruction rather than being premature.",
+    "evidence": [
+      "[2025-12-03T16:42:28+00:00] (Customer) Erika Heredia: Kayako - ticket id 60250271 // Erika Heredia commented privately: Hello, We can close this ticket. Thank you for all your help!",
+      "[2025-12-03T16:42:39+00:00] (Employee) Phronesis: Kayako - ticket id 60250271 // Phronesis commented publicly: Dear Erika, Thank you for your message and for confirming that the issue is resolved. As requested, we are closing this ticket."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is marked normal priority and there is no indication of a P1/SEV1 outage or that high-severity escalation was mishandled.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"Private AI comments are generic, non-informative 'Skipping ticket due to tags' notes repeated multiple times, indicating filler AI responses rather than useful action or triage.\",\n    \"evidence\": [\n      \"[2025-12-03T16:42:38+00:00] (AI) ATLAS: Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags\",\n      \"[2025-11-27T14:24:09+00:00] (AI) ATLAS: Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags\",\n      \"[2025-11-26T17:13:31+00:00] (AI) ATLAS: Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information nor that the customer was trapped behind AI-only interactions; humans are responding to the customer.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support references a prior case (#60237228) and the thread shows agents following the customer's updates (e.g., access in incognito then confirmation), so there is no clear re-requesting of already-provided info.\",\n    \"evidence\": [\n      \"[2025-11-25T17:57:34+00:00] (Employee) Pavly Nashed: Kayako - ticket id 60250271 // Pavly Nashed commented publicly: Dear Erika, Thank you for reaching out and reporting this. I can confirm that the issue was previously resolved under case #60237228,\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between interactions (several days pass between the last human reply and the customer's final message), consistent with the reported max gap of ~146 hours.\",\n    \"evidence\": [\n      \"[2025-11-27T14:32:53+00:00] (Employee) Pavly Nashed: Kayako - ticket id 60250271 // Pavly Nashed commented publicly: Dear Briamel, Thank you for your email.\",\n      \"[2025-12-03T16:42:28+00:00] (Customer) Erika Heredia: Kayako - ticket id 60250271 // Erika Heredia commented privately: Hello, We can close this ticket. Thank you for all your help!\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the customer explicitly stated they were ready to close; closure appears to follow customer instruction rather than being premature.\",\n    \"evidence\": [\n      \"[2025-12-03T16:42:28+00:00] (Customer) Erika Heredia: Kayako - ticket id 60250271 // Erika Heredia commented privately: Hello, We can close this ticket. Thank you for all your help!\",\n      \"[2025-12-03T16:42:39+00:00] (Employee) Phronesis: Kayako - ticket id 60250271 // Phronesis commented publicly: Dear Erika, Thank you for your message and for confirming that the issue is resolved. As requested, we are closing this ticket.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is marked normal priority and there is no indication of a P1/SEV1 outage or that high-severity escalation was mishandled.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60250271
+}

@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI-generated messages in this case are limited to case creation/acknowledgement, automated reminders, and an automated 'marked as resolved' notice. There is no clear evidence of factually incorrect product guidance, broken templates, irrelevant troubleshooting, or unfulfilled AI promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped in an AI loop. The repeated requests are coming from human agents (TechSupport), not the AI bot. The AI messages are primarily reminders/status updates, and the customer did not explicitly request a human due to AI interaction.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support requested the same key detail (when the issue started/first occurred) multiple times after the customer already provided it, indicating prior context was not used.",
+    "evidence": [
+      "[2025-05-27T11:54:57+00:00] TechSupport: \"Can you please tell when the customer started facing this issue?\"",
+      "[2025-05-28T13:15:34+00:00] Bharath: \"This has never worked for the customer.\"",
+      "[2025-05-29T18:15:39+00:00] TechSupport: \"When did this issue first occur? Was it when Marcus's account was created in Care?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No clear 3+ calendar day gap is shown where the customer asked for something and Support failed to respond within 3 days. Several waits are attributable to awaiting customer-provided artifacts (test account/credentials/logs).",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The case was closed/marked resolved without confirmation of resolution and while the core issue was still outstanding (Support was awaiting additional data rather than having delivered a fix). The customer explicitly stated the issue was not resolved after closure. Additionally, the case was later 'marked as resolved' again while Support was waiting for logs requested for investigation.",
+    "evidence": [
+      "[2025-06-10T09:02:20+00:00] TechSupport: \"This case has now been closed.\" (no resolution summary provided; most recent update referenced is an automated reminder)",
+      "[2025-06-10T12:46:38+00:00] Bharath: \"Please reopen this case. The issue is yet to be resolved.\"",
+      "[2025-06-18T13:48:16+00:00] TechSupport: requested artifacts: \"a screenshot from Mark of their browser console... Alternatively, a HAR file\"",
+      "[2025-06-24T17:30:11+00:00] AI-CS Integration: \"Based on previous information received, your case has been marked as resolved.\" (despite pending request for logs/HAR)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not have an explicit SEV1/P1/Critical designation, and the described impact appears limited to one user\u2019s access to a specific analytics widget/workspace view rather than a broad production outage.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60144719
+}

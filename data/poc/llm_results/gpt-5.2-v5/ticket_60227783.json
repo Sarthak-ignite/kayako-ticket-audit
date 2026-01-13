@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only customer-facing ATLAS reply is generic and primarily redirects to the status page, but it is not clearly broken, incorrect, or contradicted by later messages. The ticket later includes a customer-facing RCA being provided, so there is no clear missed promise or misinformation.",
+    "evidence": [
+      "\u201cFor the most up-to-date information, including the root cause analysis, event timelines, affected system components, and implemented preventive measures, we kindly ask you to refer to our official status page: Khoros Platform Service Disruption [https://stspg.io/yd97f1j9hvh7].\u201d",
+      "\u201cPlease find attached the customer-facing RCA for the Khoros Care incident.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence the customer requested a human and was kept in an AI loop, nor are there multiple consecutive AI public messages without human follow-up. Only one public ATLAS message appears before a later human public update.",
+    "evidence": [
+      "\u201cATLAS commented publicly: Dear Brad,\u201d",
+      "\u201cBalaji Jayaraman commented publicly: Dear Brad, Please find attached the customer-facing RCA\u2026\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not ask the customer to repeat already-provided details or ignore previously shared context; the public response acknowledges the reported disruption and directs the customer to the incident status page. No customer-facing message indicates the customer had to restate information.",
+    "evidence": [
+      "\u201cThank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform (https://fortinet.response.lithium.com).\u201d",
+      "\u201cFor the most up-to-date information, including the root cause analysis\u2026 we kindly ask you to refer to our official status page\u2026\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "ATLAS responds publicly within seconds of ticket creation, and there is no customer-facing complaint about waiting. The later gap until the RCA delivery is not a documented delay from a customer message (the customer does not post follow-ups in the interim).",
+    "evidence": [
+      "[2025-10-23T18:45:42+00:00] \u201cTicket generated\u2026\u201d",
+      "[2025-10-23T18:46:04+00:00] \u201cATLAS commented publicly: Dear Brad,\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket includes closure-warning language, but there is no visible closure/auto-closure notice and the requested RCA is later provided publicly. Based on the text, the ticket was not effectively closed before resolution.",
+    "evidence": [
+      "\u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal.\u201d",
+      "\u201cPlease find attached the customer-facing RCA for the Khoros Care incident.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the request is marked urgent and describes production-impacting chat delays/latency, the support response treats it as an incident and directs to the official incident communication channel rather than providing low-level generic troubleshooting. There is no customer-facing evidence of inappropriate \u201cnormal\u201d troubleshooting for a potential outage.",
+    "evidence": [
+      "\u201cWhat's the priority of the issue? \u2026 [\ud83d\udd34 Urgent]\u201d",
+      "\u201cFor the most up-to-date information\u2026 refer to our official status page: Khoros Platform Service Disruption\u2026\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60227783
+}

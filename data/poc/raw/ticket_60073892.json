@@ -1,0 +1,132 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_exinda_network_orchestrator",
+        "requester": {
+          "id": 60189897,
+          "uuid": "fb2a2f3b-b53d-47d8-8b09-9c93704d802d",
+          "full_name": "Wasim Eissa",
+          "legacy_id": "12928351140626",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/fb2a2f3b-b53d-47d8-8b09-9c93704d802d?1767292518",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60051484,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 191432,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 50449,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+          "last_seen_ip": "91.140.224.2",
+          "last_seen_at": "2025-12-31T09:53:11+00:00",
+          "last_active_at": "2026-01-01T18:35:18+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60189897",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@f88e4e40d8080e1ca53853682b15ccbae6c3727d",
+          "password_updated_at": "2025-04-06T09:49:43+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2025-12-31T08:43:21+00:00",
+          "last_activity_at": "2025-12-31T09:53:11+00:00",
+          "created_at": "2023-08-07T06:38:07+00:00",
+          "updated_at": "2026-01-01T18:35:18+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60189897"
+        },
+        "ticket_idt": 60073892
+      },
+      "interactions": [
+        [
+          "2025-06-18T05:11:22+00:00",
+          "Kayako - ticket id 60073892 // Keyur Saxena commented publicly: Hello Weissa,\n\nAn IPOQUE library definitions upgrade will be documented in the release notes, which can be seen here: Product Releases [https://gfi.ai/products-and-solutions/network-management-solutions/exinda-networkorchestrator/resources/documentation/product-releases].\n\nPlease keep an eye out for the next release.\n\nBest regards,\nKeyur Saxena\nGFI - Exinda Network Orchestrator Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-06-18T05:04:24+00:00",
+          "Kayako - ticket id 60073892 // Wasim Eissa commented privately: any update"
+        ],
+        [
+          "2025-06-11T07:53:11+00:00",
+          "Kayako - ticket id 60073892 // Marcio Zimerman commented privately:  Latest version of Exinda, 7.5.7, didn't have an ipoque library update. \n Our last response on the other ticket \n\nimage"
+        ],
+        [
+          "2025-06-11T07:37:14+00:00",
+          "Kayako - ticket id 60073892 // ATLAS commented privately: Action: Send to l1"
+        ],
+        [
+          "2025-06-11T07:36:52+00:00",
+          "Kayako - ticket id 60073892 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Weissa ! \ud83d\udc4b\n\nThis is the GFI Exinda ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nWeissa:\n\n undefined \nChat Support:\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of GFI Exinda ATLAS Support Chat [https://support.exinda.gfi.com/article/117917]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nWeissa:\n\n i have two issues with exinda appliance, blocking feature are not working with edge and chrome browser \nChat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiJhMDUwNDZmMy04MWZiLTRmMzktYWU5NS01MGI4YmUzN2YxNWMiLCJzZXNzaW9uX3VpZCI6ImEwNTA0NmYzLTgxZmItNGYzOS1hZTk1LTUwYjhiZTM3ZjE1YyIsImVtYWlsIjoid2Vpc3NhQGtnb2MuY29tIiwiY3VzdG9tX3BhcnNlciI6e30sImNhbGxiYWNrIjp7ImNhbGxiYWNrX3VybCI6bnVsbCwiY2FsbGJhY2tfZW1haWwiOiJjaXByaWFuLm5hc3Rhc2VAdHJpbG9neS5jb20ifSwicHJvZHVjdF90YWciOiJhdXJlYV9leGluZGFfbmV0d29ya19vcmNoZXN0cmF0b3IiLCJxdWVyeSI6IiIsImV4cCI6MTc0OTYzMzU4M30.d_5e18qKnDQulYJNL2nHgM1akmQd2N0pxDPkyHDlq9M]\n\nYou should see the following:\n- User: weissa@kgoc.com\n- Session ID: a05046f3-81fb-4f39-ae95-50b8be37f15c \nWeissa:\n\n \ud83d\udd19 Continue without file upload \nChat Support:\n\n Thanks for letting me know! Let's dig into your issue with the Exinda appliance's blocking feature not working in Edge and Chrome browsers.\n\nCould you tell me a bit more about what's happening? For example:\n- Are specific websites or categories not being blocked, or is all blocking not working in those browsers?\n- Does the blocking feature work as expected in other browsers (like Firefox or Internet Explorer)?\n- When did you first notice this problem?\n- Have there been any recent changes to your Exinda configuration or network environment?\n\nThe more details you can provide, the better I can help pinpoint the cause! \nWeissa:\n\n for all sites and it is working in firefox \nChat Support:\n\n Thanks for clarifying! So, if I understand correctly, the blocking feature on your Exinda appliance works in Firefox, but it doesn't block any sites at all in Edge or Chrome. Is that right?\n\nA few more questions to help narrow this down:\n1. When you try to access a blocked site in Edge or Chrome, do you see any kind of block page or error message, or does the site just load as if nothing is blocked?\n2. Are all users affected, or just certain computers or accounts?\n3. Have you recently updated Edge or Chrome, or made any changes to their settings (like enabling extensions or using incognito/private mode)?\n4. Are you using HTTPS filtering or SSL inspection on your Exinda appliance?\n\nLet me know about these points, and we\u2019ll get started with some targeted troubleshooting! \nWeissa:\n\n 1- no the websites are open 2- all users 3- yes still same issue \nChat Support:\n\n Thanks for the details! So, to recap:\n- In Edge and Chrome, blocked websites open normally\u2014no block page or error message.\n- This affects all users.\n- Updating the browsers or changing their settings hasn\u2019t helped.\n\nLet me ask a couple more things to get a clearer picture:\n1. Are you using HTTPS filtering or SSL inspection on your Exinda appliance? (Blocking for modern browsers often requires this, since most sites use HTTPS.)\n2. Are you running the latest firmware/software version on your Exinda appliance?\n3. Have you noticed if the issue is only with HTTPS sites, or does it also happen with HTTP sites?\n\nKnowing this will help me guide you to the right solution! \nWeissa:\n\n 1- not sure, how i can use it 2- yes 3- most of the sites we are using https \nChat Support:\n\n Thanks for your answers! Based on what you\u2019ve shared, it sounds like the issue is likely related to HTTPS filtering (also known as SSL inspection). Modern browsers like Edge and Chrome use HTTPS for most sites, and without HTTPS filtering enabled on Exinda, the appliance can\u2019t see or block the encrypted traffic\u2014while Firefox may behave differently due to its own certificate handling.\n\nLet\u2019s check if HTTPS filtering is enabled and, if not, I can guide you through setting it up. Here\u2019s what I need to know:\n- Are you familiar with configuring policies or filters on your Exinda appliance?\n- Do you have access to the Exinda web interface (admin dashboard)?\n- Would you like step-by-step instructions on how to enable HTTPS filtering/SSL inspection?\n\nOnce I know your comfort level and access, I\u2019ll walk you through the next steps! \nWeissa:\n\n 1- yes 2- yes 3- yes \nChat Support:\n\n Great, since you\u2019re comfortable with the Exinda web interface and want to enable HTTPS filtering (SSL inspection), here\u2019s how you can block HTTPS sites in browsers like Edge and Chrome:\n\nSTEP-BY-STEP: BLOCKING HTTPS SITES ON EXINDA\n\n1. Identify the HTTPS Site\u2019s Certificate Common Name\n- Go to Monitor > Real Time in the Exinda WebUI.\n- Filter by the IP address involved and look for flows at the start of the conversation.\n- You should see an entry like HTTPS [URL]\u2014the URL in brackets is the certificate\u2019s common name.\n\n2. Create an Application Object\n- Navigate to Configuration > Objects > Applications.\n- Create a new application object:\n- Set the L7 signature to SSL.\n- For the common name, use the root domain or a key part of the URL you found earlier.\n- Example: If the common name is facebook.com, just use that.\n\n3. Create a Discard Policy\n- Go to the Optimizer.\n- Create a new policy using the application object you just made.\n- Set the action to Discard.\n- Apply this policy to the relevant virtual circuit.\n\n4. Restart the Optimizer\n- After making these changes, restart the Optimizer to apply the new policy.\n\nFor more detailed instructions, you can check out this article: Discarding HTTPS Specific Traffic [https://support.exinda.gfi.com/article/120513].\n\nIf you want to block adult content or other categories, you can follow a similar process, as described here: Blocking Adult Content Sites on a Virtual Circuit [https://support.exinda.gfi.com/article/119349].\n\nLet me know if you\u2019d like a more detailed walkthrough for any of these steps, or if you run into any issues! \nWeissa:\n\n i checked and i am using L7 defined application in exinda itself \nChat Support:\n\n Thanks for checking! If you\u2019re already using an L7-defined application in Exinda, but HTTPS sites are still not being blocked in Edge and Chrome, there are a couple of important things to consider:\n\nWHY L7 SIGNATURES ALONE MAY NOT BLOCK HTTPS IN MODERN BROWSERS\n\n- L7 (Layer 7) signatures can identify and block unencrypted (HTTP) traffic or some basic HTTPS patterns, but they often can\u2019t see inside encrypted HTTPS traffic unless SSL inspection (HTTPS filtering) is specifically configured.\n- Modern browsers encrypt almost all traffic, so Exinda can only see that it\u2019s HTTPS traffic\u2014not the specific site\u2014unless you use the \u201ccommon name\u201d method described earlier.\n\nWHAT YOU CAN DO NEXT\n\n1. Double-Check Application Object Settings\n- Is your L7 application object using \u201cSSL\u201d as the signature and specifying the common name (domain) of the site you want to block?\n- If it\u2019s just set to \u201cHTTPS\u201d or a generic signature, it may not match specific sites.\n\n2. Try the Common Name Method\n- As described in the article Discarding HTTPS Specific Traffic [https://support.exinda.gfi.com/article/120513], create an application object with:\n- L7 Signature: SSL\n- Common Name: (e.g., facebook.com)\n- Then, apply a discard policy for this object.\n\n3. Test with a New Policy\n- After creating the new application object and discard policy, restart the Optimizer.\n- Test in Edge and Chrome to see if the block page or error appears.\n\nQUICK CHECKLIST\n\n- Are you using \u201cSSL\u201d as the L7 signature, not just \u201cHTTPS\u201d?\n- Did you specify the domain (common name) in the application object?\n- Did you restart the Optimizer after making changes?\n\nIf you\u2019ve done all of the above and it\u2019s still not working, let me know exactly how your application object is configured (what signature and values you\u2019re using), and I can help you fine-tune it!\n\nWould you like to share a screenshot or the details of your current application object setup? Or, if you want, I can walk you through creating a new one step-by-step. \nWeissa:\n\n i need to open case for this issue please \nChat Support:\n\n Absolutely, I can help you with that! Before I hand this over to a live support agent, could you please provide a bit more detail so they can assist you efficiently:\n\n- Which specific HTTPS sites are not being blocked as expected?\n- How is your current L7 application object configured (for example, what signature and common name/domain are you using)?\n- Have you already tried the \u201ccommon name\u201d method as described in the article?\n- Are all browsers affected, or just Edge and Chrome?\n\nAny extra details you can provide will help our support team troubleshoot faster. If you\u2019d prefer not to share more, just let me know and I\u2019ll proceed with opening the case right away. \nWeissa:\n\n 1- i tried instigaram , facebook, youtube and gamil with same result 2- application configured in exinda like facebook, inistigaram and youtube 4- check only edge and chrome not working and firefox which is working \nChat Support:\n\n Thanks for sharing those details! \ud83d\ude0a A human colleague will be happy to assist you further\u2014please feel free to choose from the available options to connect with them. \nWeissa:\n\n \ud83d\udce9 Raise a ticket \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nWeissa:\n\n undefined \nChat Support:\n\n It looks like you might not have anything to add?\nJust a reminder a ticket will be automatically created in 3 minutes, I'll proceed with the information I already have \ud83d\ude03 \nWeissa:\n\n i cam facing two issues with exinda appliance\n1- blocking issue for all application i tried to block working only in Firefox but we checked in edge and chrome not working as expected and the traffic allowed, last case opened for this issue case#60020917\n2- issue in synch with AD, if the users ip changed the exinda database not updated the ip \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nWeissa:\n\n a.elnajjar@diyarme.com, issa.kassab@ingrammicro.com \nChat Support:\n\n \ud83d\udc4c Got it!\n\nThese email addresses will be added to the ticket CC: a.elnajjar@diyarme.com, issa.kassab@ingrammicro.com \nChat Support:\n\n I'm creating a ticket for you with the information you've provided.\n\nTicket subject: Exinda appliance blocking and AD sync issues\n\nAllow me a few moments while I work on this \u23f3 \nChat Support:\n\n \ud83d\ude80 I've successfully created a ticket for you.\n\nYour ticket number is: 60073892\n\nYou can see it and update it in this link [https://support.exinda.gfi.com/conversation/view/60073892]\n\nFor a faster resolution, please be sure to include and attach to the ticket all relevant context such as screenshots, recordings, and logs.\n\nOur agents will work on it and you will receive a response in your email \ud83d\udce8: weissa@kgoc.com "
+        ],
+        [
+          "2025-06-11T07:36:41+00:00",
+          "Kayako - ticket id 60073892 // ATLAS commented privately: --- Ticket generated by GFI Exinda AI chat on behalf of Weissa ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * i have two issues with exinda appliance, blocking feature are not working with edge and chrome browser<br>\n  * for all sites and it is working in firefox<br>\n  * 1- no the websites are open 2- all users 3- yes still same issue<br>\n  * 1- not sure, how i can use it 2- yes 3- most of the sites we are using https<br>\n  * 1- yes 2- yes 3- yes<br>\n  * i checked and i am using L7 defined application in exinda itself<br>\n  * i need to open case for this issue please<br>\n  * 1- i tried instigaram , facebook, youtube and gamil with same result 2- application configured in exinda like facebook, inistigaram and youtube 4- check only edge and chrome not working and firefox which is working<br>\n  * i cam facing two issues with exinda appliance<br>\n  1- blocking issue for all application i tried to block working only in Firefox but we checked in edge and chrome not working as expected and the traffic allowed, last case opened for this issue case#60020917<br>\n  2- issue in synch with AD, if the users ip changed the exinda database not updated the ip<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 6,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only AI message is a non-actionable internal note (\u201cSkipping ticket due to tags\u201d), which does not help progress the urgent ticket and functions as filler rather than support.",
+    "evidence": [
+      "[2025-12-15T23:49:47+00:00] (AI) ATLAS: \"Skipping ticket due to tags\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated AI prompts for the same information or the customer being cycled through automated responses; only a single AI note appears.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support agent requests or responses are present that ignore provided information; the timeline contains only customer notes and a single AI internal comment.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All logged interactions occur within the same minute; there is no multi-day gap shown in the timeline.",
+    "evidence": [
+      "[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: \"The complete conversation with this customer will be uploaded to this ticket shortly\"",
+      "[2025-12-15T23:49:47+00:00] (AI) ATLAS: \"Skipping ticket due to tags\"",
+      "[2025-12-15T23:49:59+00:00] (Customer) Xavier A Villarroel: \"Call Metadata\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is listed as closed, the provided interaction content does not show who closed it or that it was closed while awaiting promised follow-up.",
+    "evidence": [
+      "[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: \"The complete conversation with this customer will be uploaded to this ticket shortly\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No troubleshooting steps (generic or otherwise) or escalation decisions are present in the transcript; only an AI skip note is shown, which is insufficient to label as P1/SEV1 mishandling under the defined pattern.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The only AI message is a non-actionable internal note (\u201cSkipping ticket due to tags\u201d), which does not help progress the urgent ticket and functions as filler rather than support.\",\n    \"evidence\": [\n      \"[2025-12-15T23:49:47+00:00] (AI) ATLAS: \\\"Skipping ticket due to tags\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repeated AI prompts for the same information or the customer being cycled through automated responses; only a single AI note appears.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support agent requests or responses are present that ignore provided information; the timeline contains only customer notes and a single AI internal comment.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All logged interactions occur within the same minute; there is no multi-day gap shown in the timeline.\",\n    \"evidence\": [\n      \"[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: \\\"The complete conversation with this customer will be uploaded to this ticket shortly\\\"\",\n      \"[2025-12-15T23:49:47+00:00] (AI) ATLAS: \\\"Skipping ticket due to tags\\\"\",\n      \"[2025-12-15T23:49:59+00:00] (Customer) Xavier A Villarroel: \\\"Call Metadata\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is listed as closed, the provided interaction content does not show who closed it or that it was closed while awaiting promised follow-up.\",\n    \"evidence\": [\n      \"[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: \\\"The complete conversation with this customer will be uploaded to this ticket shortly\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"No troubleshooting steps (generic or otherwise) or escalation decisions are present in the transcript; only an AI skip note is shown, which is insufficient to label as P1/SEV1 mishandling under the defined pattern.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60264009
+}

@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI messages shown are from the customer side (ADN Support) and do not contain generic filler, wrong guidance, or unkept promises from the AI acting as support. The only employee response is incomplete, so there is no clear evidence of AI support quality failures.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of an AI agent repeatedly requesting the same information or blocking access to a human; the customer is asking for updates, and a human employee eventually responds.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The visible interactions do not show support asking again for the same logs/screenshots or ignoring previously provided details; the employee\u2019s notes reference the issue and license, but there is no back-and-forth showing repeated requests.",
+    "evidence": [
+      "[2025-11-24T12:12:20+00:00] (Employee) Ciprian Nastase: \"so the issue is a piracy warning that the customer is getting for trial license  10512-Z56RC-71G7M\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long gap (over two weeks) between the customer\u2019s last public follow-up and the next human response, consistent with significant multi-day delays (also supported by the ticket metrics).",
+    "evidence": [
+      "[2025-11-11T13:25:41+00:00] (AI) ADN Support: \"I have not received a licence or any helpful feedback. Are you actually working on this?\"",
+      "[2025-11-24T12:15:38+00:00] (Employee) Ciprian Nastase: \"Thank you for contacting GFI - Kerio Connect Support, I understand that a prospect customer is facing issues with the tria\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed, while the last visible employee message is truncated/incomplete and does not show the customer receiving the requested license/help, after the customer explicitly stated they had not received it.",
+    "evidence": [
+      "[2025-11-11T13:25:41+00:00] (AI) ADN Support: \"I have not received a licence or any helpful feedback.\"",
+      "[2025-11-24T12:15:38+00:00] (Employee) Ciprian Nastase: \"Thank you for contacting GFI - Kerio Connect Support, I understand that a prospect customer is facing issues with the tria\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/Sev1), and there is no evidence of outage-level impact or inappropriate generic troubleshooting in lieu of escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI messages shown are from the customer side (ADN Support) and do not contain generic filler, wrong guidance, or unkept promises from the AI acting as support. The only employee response is incomplete, so there is no clear evidence of AI support quality failures.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of an AI agent repeatedly requesting the same information or blocking access to a human; the customer is asking for updates, and a human employee eventually responds.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The visible interactions do not show support asking again for the same logs/screenshots or ignoring previously provided details; the employee\u2019s notes reference the issue and license, but there is no back-and-forth showing repeated requests.\",\n    \"evidence\": [\n      \"[2025-11-24T12:12:20+00:00] (Employee) Ciprian Nastase: \\\"so the issue is a piracy warning that the customer is getting for trial license  10512-Z56RC-71G7M\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a long gap (over two weeks) between the customer\u2019s last public follow-up and the next human response, consistent with significant multi-day delays (also supported by the ticket metrics).\",\n    \"evidence\": [\n      \"[2025-11-11T13:25:41+00:00] (AI) ADN Support: \\\"I have not received a licence or any helpful feedback. Are you actually working on this?\\\"\",\n      \"[2025-11-24T12:15:38+00:00] (Employee) Ciprian Nastase: \\\"Thank you for contacting GFI - Kerio Connect Support, I understand that a prospect customer is facing issues with the tria\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked closed, while the last visible employee message is truncated/incomplete and does not show the customer receiving the requested license/help, after the customer explicitly stated they had not received it.\",\n    \"evidence\": [\n      \"[2025-11-11T13:25:41+00:00] (AI) ADN Support: \\\"I have not received a licence or any helpful feedback.\\\"\",\n      \"[2025-11-24T12:15:38+00:00] (Employee) Ciprian Nastase: \\\"Thank you for contacting GFI - Kerio Connect Support, I understand that a prospect customer is facing issues with the tria\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/Sev1), and there is no evidence of outage-level impact or inappropriate generic troubleshooting in lieu of escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60238295
+}

@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The initial ATLAS reply was largely a generic \u201cknown issue\u201d deflection with no concrete mitigation, no verification steps, and it pointed the customer to a status page that did not reflect the incident. It also asserted specificity (\u201cparticularly for Kerio Connect units\u201d) without evidence in the ticket and did not address the customer\u2019s core concern (unit flagged offline for days while healthy). The customer explicitly called out the unhelpfulness of the status-page referral and lack of actionable guidance.",
+    "evidence": [
+      "[2025-09-19T09:11:08+00:00] ATLAS: \"this is a known display issue impacting status visibility... For the latest updates... follow our status page at https://status.gfi.com/.\"",
+      "[2025-09-22T10:16:14+00:00] Customer: \"you stated it is known issue so I am expecting resolution or steps to follow to resolve.\"",
+      "[2025-09-22T10:16:14+00:00] Customer: \"also, Atlas should know if this incident is not on status.gfi.com it pointless to refer to this.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There was a single AI response and then the ticket eventually received human replies. No repeated AI back-and-forth loop or repeated requests for the same info.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the ATLAS reply was not very actionable, the later human responses did engage with the described symptom (metrics delay causing offline status). There is no clear instance of support repeatedly asking for already-provided info or explicitly ignoring provided artifacts beyond the general lack of engagement with the video.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were multiple long gaps (well beyond 3 calendar days) between customer messages and support responses, including a ~7-day gap and then a ~23-day gap. The customer explicitly complained about the delay.",
+    "evidence": [
+      "[2025-09-22T10:16:14+00:00] Customer follow-up; next support response is [2025-09-29T23:39:40+00:00] (~7+ days).",
+      "[2025-09-30T11:41:07+00:00] Customer asks about stability/other influencing factors; next substantive support update is [2025-10-23T07:22:56+00:00] (~23 days).",
+      "[2025-10-23T07:26:33+00:00] Customer: \"23 days response time is not great.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed despite no resolution or workaround being delivered; support stated \u201cthere isn't anything we can do\u201d and asked the customer to wait for a future re-architecture/spec. The customer never confirmed the issue was resolved\u2014only said \u201cthank you\u201d\u2014yet support closed the case while the underlying product behavior remained unresolved.",
+    "evidence": [
+      "[2025-10-23T13:07:49+00:00] Support: \"There isn't anything we can do atm, just wait for TPM to work on the spec and then Engineering to implement it.\"",
+      "[2025-10-23T13:50:06+00:00] Customer: \"thank you\" (no confirmation of resolution).",
+      "[2025-10-27T06:04:54+00:00] Support: \"I will close this ticket then, as there are no actions left on the Support team side at the moment.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue is impactful (false offline status) but the customer did not indicate a production outage/business-blocking severity (e.g., \u201cdown,\u201d \u201call users impacted,\u201d urgent SLA). Escalation to engineering did occur eventually, so there\u2019s insufficient evidence of Sev1/P1 mishandling specifically.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60201836
+}

@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There are AI messages that appear to be internal notes or incomplete/generic fragments rather than actionable support communication, and the AI initiates/advocates closure without showing customer confirmation of resolution.",
+    "evidence": [
+      "[2025-11-05T15:43:09+00:00] (AI) ADN Support: \"Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed\"",
+      "[2025-11-04T11:02:04+00:00] (AI) ADN Support: \"Dear Support Team\n\nThe partner has asked me to strongly request that this ticket be escalated.\nAccording to the partner, it is currently\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The timeline does not show the AI repeatedly requesting the same information from the customer or preventing access to a human; multiple human agents responded (Zubair, Jozef, Mike).",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While there is a duplicate-ticket situation, the provided excerpts do not clearly show support asking again for the same logs/screenshots already provided or explicitly ignoring referenced prior ticket details beyond redirecting to the duplicate.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows multi-day gaps between interactions, including a long stretch from mid-October to late October and additional multi-day gaps afterward; the ticket metadata also indicates very long first human response and maximum response gaps.",
+    "evidence": [
+      "Time gap implied by timestamps: last message on [2025-10-17T12:09:00+00:00] and next interaction on [2025-10-23T06:39:25+00:00].",
+      "Time gap implied by timestamps: [2025-10-29T08:41:15+00:00] to [2025-10-31T12:08:58+00:00].",
+      "Ticket context: \"Time to first human (hours): 359.9\"",
+      "Ticket context: \"Max gap between responses (hours): 138.5\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is closed via an internal AI note without any explicit customer confirmation of resolution in the provided interactions, and shortly before that there was an escalation request indicating the issue was still active.",
+    "evidence": [
+      "[2025-11-04T11:00:02+00:00] (AI) Centralsupport-ai-acc: \"[customer_escalation]\n\nThe customer escalated the Case.\"",
+      "[2025-11-05T15:43:09+00:00] (AI) ADN Support: \"Ticket can be closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked high priority, the excerpts show escalation to L2 and priority raised; the provided text does not clearly show inappropriate generic troubleshooting in lieu of escalation for a high-priority/outage scenario.",
+    "evidence": [
+      "[2025-11-04T11:43:01+00:00] (Employee) Mike Kebede: \"We\u2019ve escalated this case to the L2 team and raised the priority to High.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"There are AI messages that appear to be internal notes or incomplete/generic fragments rather than actionable support communication, and the AI initiates/advocates closure without showing customer confirmation of resolution.\",\n    \"evidence\": [\n      \"[2025-11-05T15:43:09+00:00] (AI) ADN Support: \\\"Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed\\\"\",\n      \"[2025-11-04T11:02:04+00:00] (AI) ADN Support: \\\"Dear Support Team\\n\\nThe partner has asked me to strongly request that this ticket be escalated.\\nAccording to the partner, it is currently\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline does not show the AI repeatedly requesting the same information from the customer or preventing access to a human; multiple human agents responded (Zubair, Jozef, Mike).\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"While there is a duplicate-ticket situation, the provided excerpts do not clearly show support asking again for the same logs/screenshots already provided or explicitly ignoring referenced prior ticket details beyond redirecting to the duplicate.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket shows multi-day gaps between interactions, including a long stretch from mid-October to late October and additional multi-day gaps afterward; the ticket metadata also indicates very long first human response and maximum response gaps.\",\n    \"evidence\": [\n      \"Time gap implied by timestamps: last message on [2025-10-17T12:09:00+00:00] and next interaction on [2025-10-23T06:39:25+00:00].\",\n      \"Time gap implied by timestamps: [2025-10-29T08:41:15+00:00] to [2025-10-31T12:08:58+00:00].\",\n      \"Ticket context: \\\"Time to first human (hours): 359.9\\\"\",\n      \"Ticket context: \\\"Max gap between responses (hours): 138.5\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is closed via an internal AI note without any explicit customer confirmation of resolution in the provided interactions, and shortly before that there was an escalation request indicating the issue was still active.\",\n    \"evidence\": [\n      \"[2025-11-04T11:00:02+00:00] (AI) Centralsupport-ai-acc: \\\"[customer_escalation]\\n\\nThe customer escalated the Case.\\\"\",\n      \"[2025-11-05T15:43:09+00:00] (AI) ADN Support: \\\"Ticket can be closed\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked high priority, the excerpts show escalation to L2 and priority raised; the provided text does not clearly show inappropriate generic troubleshooting in lieu of escalation for a high-priority/outage scenario.\",\n    \"evidence\": [\n      \"[2025-11-04T11:43:01+00:00] (Employee) Mike Kebede: \\\"We\u2019ve escalated this case to the L2 team and raised the priority to High.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60220499
+}

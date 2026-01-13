@@ -1,0 +1,183 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_control",
+        "requester": {
+          "id": 60341018,
+          "uuid": "0ce05e1b-cb3c-5fa9-8033-3bab873c9461",
+          "full_name": "ADN Support",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/0ce05e1b-cb3c-5fa9-8033-3bab873c9461?1767715363",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60057846,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 342616,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "89.245.183.229",
+          "last_seen_at": "2026-01-06T08:47:21+00:00",
+          "last_active_at": "2026-01-06T16:02:43+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60341018",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@86485c7d9ef439f1b6d9db93932bb69c5563ed91",
+          "password_updated_at": "2025-08-27T12:56:22+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T08:47:21+00:00",
+          "last_activity_at": "2026-01-06T08:47:21+00:00",
+          "created_at": "2025-06-05T09:00:05+00:00",
+          "updated_at": "2026-01-06T16:02:43+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60341018"
+        },
+        "ticket_idt": 60220499
+      },
+      "interactions": [
+        [
+          "2025-11-05T15:43:09+00:00",
+          "Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed"
+        ],
+        [
+          "2025-11-04T11:43:01+00:00",
+          "Kayako - ticket id 60220499 // Mike Kebede commented publicly: Dear Carlos,\n\nWe\u2019ve escalated this case to the L2 team and raised the priority to High.\n\nTo assist their analysis, please provide the following:\n\n\t*\nSpeed test results before and after the GRO modification, including:\n\n\t*\nApple download (App Store, iOS/macOS updates) speed.\n\n\t*\nNon-Apple download speed (e.g., Microsoft or large file tests).\n\n\t*\nRelevant log data and diagnostics captured during both tests:\n\n\t*\nTraffic Chart (showing interface throughput during download).\n\n\t*\nActive Connections log (filtered for Apple CDN hosts such as *.apple.com, *.cdn-apple.com, appldnld.apple.com).\n\n\t*\nFilter log (any entries showing Apple connections or drops).\n\n\t*\nDebug log (if enabled, include the last ~1000 lines during the test).\n\n\t*\nSystem Health data from the Dashboard: CPU, memory, and interface load levels during the download.\n\nIf possible, please also generate and attach the Support Information File (Status > System Health > Support > Download Support Information) \u2014 this includes network interface and driver details that are essential for the GRO analysis.\n\nThank you for your cooperation.\n\nBest regards,\nMike Kebede\nGFI - Kerio Control Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-04T11:02:04+00:00",
+          "Kayako - ticket id 60220499 // ADN Support commented privately: Dear Support Team\n\nThe partner has asked me to strongly request that this ticket be escalated.\nAccording to the partner, it is currently not possible to work with this product."
+        ],
+        [
+          "2025-11-04T11:00:02+00:00",
+          "Kayako - ticket id 60220499 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:Slow Downloads Apple\n\nThe severity is: core_functionality_defect\n\n"
+        ],
+        [
+          "2025-10-31T12:08:58+00:00",
+          "Kayako - ticket id 60220499 // ADN Support commented privately: Hi Jozef,\n\nwe already tried that. Unfortunately, it didn\u2019t work.\nDo you or the Technical Team have any more ideas?"
+        ],
+        [
+          "2025-10-29T15:40:40+00:00",
+          "Kayako - ticket id 60220499 // Jozef Kacala commented publicly: Hi Carlos,\n\nAs I am sure you know, I am not part of GFI technical support team. As such, I do not manage tickets created with technical support team.\n\nin other ticket \u00a060216786 I see Zubair exactly replied what I would recommend and that is to disable GRO https://support.keriocontrol.gfi.com/article/116160-configuring-gro-setting-for-maximum-bandwidth-in-kerio-control \n\nApple devices do not \"understand\" GRO and that is the reason of slow traffic as basically it is caused by retransitions.\n\nGRO is feature of the HW it self, specifically of physical ports where it is aggregating packets to larger which is then faster to be processed. So for normal (non apple) traffic it is actually increasing the speed. however Apple can not co-op. As we know many times Apple is behind of certain technology.\n\nSo this is not issue of the product or a bug, its question of settings and devices used in LAN.\n\nthank you\n\n\n"
+        ],
+        [
+          "2025-10-29T13:46:26+00:00",
+          "Kayako - ticket id 60220499 // ADN Support commented publicly: \u200bHi Jozef,\n\nIt looks like a reply was sent to the ticket I unfortunately don\u2019t have access to.\nCould you please close that ticket and continue the communication using Ticket #60220499, which contains the latest information?\n\nThank you!\n\nMit freundlichen Gr\u00fc\u00dfen \n\nCarlos Andrade\n\n\n"
+        ],
+        [
+          "2025-10-29T08:41:15+00:00",
+          "Kayako - ticket id 60220499 // Zubair Farooq commented publicly: Dear Team,\n\nThank you for contacting the Kerio Control Support Team.\n\nThis ticket is a duplicate of ticket# 60216786, and we have replied on that ticket. We will close this ticket and if you have any more questions, kindly reply on ticket# 60216786 \u00a0 and we will be happy to assist.\n\nBest Regards,\nZubair Farooq\nGFI - Kerio Control Support Team"
+        ],
+        [
+          "2025-10-29T08:35:53+00:00",
+          "Kayako - ticket id 60220499 // Zubair Farooq commented privately:  Duplicate of ticket# 60216786\u00a0 "
+        ],
+        [
+          "2025-10-27T13:00:03+00:00",
+          "Kayako - ticket id 60220499 // ADN Support commented privately: Dear GFI Support Team,\n\nWe wanted to follow up regarding our open case. It has now been two weeks since our last communication, and unfortunately, we have not received any concrete feedback on the issue.\n\nWe would appreciate an update on the current status or any information regarding the next steps.\n\nKind regards"
+        ],
+        [
+          "2025-10-23T06:39:25+00:00",
+          "Kayako - ticket id 60220499 // ADN Support commented privately: Dear GFI Team,\n\nI\u2019m forwarding the config file from Mr. Engelke for your review.\nThe customer is currently unable to perform updates and would greatly appreciate your assistance in resolving this issue.\nKindly review and provide feedback as soon as possible.\n\nThank you and best regards,"
+        ],
+        [
+          "2025-10-17T12:09:00+00:00",
+          "Kayako - ticket id 60220499 // ADN Support commented privately: Hi GFI Support,\n\nI just spoke again with our partner, and unfortunately the issue still persists.\nSeveral additional tests have been carried out, and the results clearly indicate that the problem originates on the GFI side.\n\nTo verify this, a separate test environment was set up a firewall with an access point running in parallel.\nThrough this setup, the Apple devices were able to communicate with Apple\u2019s update servers without any issues or drops in speed or bandwidth.\n\nGiven that the customer has been experiencing this problem for over a week now, could someone from your technical team please take a closer look at this case?\n\nThank you in advance for your support."
+        ],
+        [
+          "2025-10-15T15:07:50+00:00",
+          "Kayako - ticket id 60220499 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-10-15T15:07:29+00:00",
+          "Kayako - ticket id 60220499 // ADN Support commented privately: Dear GFI Support,\n\nwe are still experiencing the issue where Apple devices (iPhones, iPads, Macs) can only connect to Apple\u2019s update and download servers at a very limited speed, around 300 KB/s.\n\nInterestingly, when accessing regular Apple websites such as apple.com, everything works smoothly.\nThe problem occurs only during downloads or updates from Apple\u2019s servers.\n\nOur partner also tested the same Apple devices outside of the Kerio Control environment, and in that case, the download speeds return to normal.\n\nWe have already disabled both the HTTPS Inspector and HTTP Inspector under Services, but unfortunately, that did not make any difference.\n\nCould a technician from your team please take a closer look at this issue?\nIt seems to be specifically related to how Kerio Control handles Apple\u2019s CDN or update traffic.\n\nThank you very much for your assistance.\n\nBest regards,"
+        ],
+        [
+          "2025-10-15T10:32:12+00:00",
+          "Kayako - ticket id 60220499 // ATLAS commented publicly: Dear Support,\n\nThank you for your detailed follow-up, the updated screenshots, and confirmation that the dedicated Allow rule did not resolve the slow Apple-related download speeds through Kerio Control. Based on your configuration screenshots and file analysis, here are further insights and recommendations to help address the persistent issue:\n\nKey Observations from Your Configuration:\n\n \t* Your firewall rules correctly aim to exempt Apple domains via the \"HTTPS exclusions\" group and an Allow rule with NAT per host.\n \t* Most relevant Apple CDN and update domains are included (appldnld.apple.com, *.cdn-apple.com, mesu.apple.com, swcdn.apple.com, etc.), but there is no broad *.apple.com entry. Recent changes to Apple\u2019s CDN infrastructure may require even wider coverage.\n \t* No filtering, bandwidth limiting, or explicit traffic inspection is visible for Apple traffic.\n \t* The symptoms are consistent across LAN and Wi-Fi, with hardware resources not being saturated.\n\nRecommendations and Next Steps:\n\n\t* Broaden the Allow/Exclusion Rules for Apple: \nApple regularly adds new CDN endpoints and may route update/download traffic through domains not yet in your exclusion lists. The absence of a blanket *.apple.com entry in your Apple Updates or HTTPS exclusion groups means some traffic could still be routed through default firewall handling, resulting in inspection or fallback to slower servers.\n\nAction: Add *.apple.com to both your \"HTTPS exclusions\" IP address group and your update-related URL groups. This will catch any unenumerated Apple subdomains and ensure all Apple CDN traffic bypasses filtering or inspection. Example entries to add: \n\n \t* *.apple.com\n \t* *.cdn-apple.com\n\n\t* Verifying HTTP & HTTPS Handling: \nEnsure your exclusion rules apply to both HTTP and HTTPS traffic by using wildcard entries and confirming that there are no higher-priority rules that might inspect or restrict Apple domains. According to Apple\u2019s documentation and GFI\u2019s knowledge base, wide exceptions are needed due to Apple\u2019s dynamic CDN behavior.\n\nReference articles: \n\n \t* Improving Speed performance [https://support.keriocontrol.gfi.com/article/116215] \n \t* Apple devices to get through the authentication page [https://support.keriocontrol.gfi.com/article/120298] \n\n \t* Re-Test After Expanding Exclusions: \nAfter fully whitelisting *.apple.com and *.cdn-apple.com, retest downloads from the App Store, software update, and iOS update functions using a device on both LAN and Wi-Fi. This will ensure all possible Apple update endpoints are allowed as Apple frequently rotates subdomains and CDN paths for different services/devices. \n \t* AppManager Service Check (if not already Disabled): \nIf the GFI AppManager (GFI Agent) service is active on your Kerio Control 9.5.x server, disable it as described in the article Troubleshooting Kerio Control 9.5.0 Performance Degradation [https://support.keriocontrol.gfi.com/article/126211]. In some cases, even when general performance seems unaffected, this service can cause application-specific throughput issues. \n\nAdditional Notes:\n\n \t* Apple\u2019s CDN coverage evolves constantly. Periodically review and update your exclusion groups to cover new subdomains or endpoints as needed.\n \t* If possible, confirm there are no additional security or parental control applications between Kerio Control and your endpoint devices that could also be inspecting Apple traffic.\n \t* For long-term stability, consider scripting a regular review of Apple's published IP ranges for automated updates to your exclusion group if feasible in your environment.\n\nExpanding your exclusion rules as described above resolves Apple download speed issues in most environments where general throughput is otherwise unaffected by Kerio Control. Should the issue persist after applying these steps, continue to check for further CDN changes by Apple or investigate any network pathing changes specific to your ISP and their upstream Apple CDN peering.\n\nSincerely,\nAtlas\nGFI - Kerio Control Support Team.\n\n-------------------------\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-15T10:31:44+00:00",
+          "Kayako - ticket id 60220499 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\tRule.jpeg_1583971\n\n-\u00a0There\u00a0is\u00a0a\u00a0dedicated\u00a0firewall\u00a0rule\u00a0named\u00a0Apple\u00a0targeting\u00a0trusted/local\u00a0sources\u00a0and\u00a0HTTPS\u00a0exclusions\u00a0as\u00a0the\u00a0destination.\n-\u00a0The\u00a0rule\u00a0applies\u00a0to\u00a0any\u00a0service\u00a0(Beliebig)\u00a0and\u00a0any\u00a0IP\u00a0version\u00a0(Beliebig).\n-\u00a0The\u00a0action\u00a0for\u00a0this\u00a0rule\u00a0is\u00a0set\u00a0to\u00a0Allow\u00a0(Zulassen).\n-\u00a0NAT\u00a0is\u00a0enabled\u00a0with\u00a0load\u00a0distribution\u00a0per\u00a0host\u00a0(Lastverteilung\u00a0pro\u00a0Host).\n-\u00a0The\u00a0rule\u00a0is\u00a0currently\u00a0active\u00a0and\u00a0being\u00a0used\u00a0(Zuletzt\u00a0verwendet:\u00a0Jetzt).\n-\u00a0The\u00a0destination\u00a0group\u00a0HTTPS\u00a0exclusions\u00a0is\u00a0being\u00a0used,\u00a0which\u00a0may\u00a0not\u00a0include\u00a0or\u00a0map\u00a0directly\u00a0to\u00a0all\u00a0required\u00a0Apple\u00a0CDN\u00a0domains\u00a0or\u00a0endpoints.\n-\u00a0No\u00a0explicit\u00a0bandwidth\u00a0limit,\u00a0prioritization,\u00a0or\u00a0restriction\u00a0is\u00a0set\u00a0for\u00a0Apple\u00a0traffic\u00a0in\u00a0this\u00a0rule.\n\n \t\tAdressgroup.jpeg_1583972\n\n-\u00a0Multiple\u00a0Apple-related\u00a0domains\u00a0are\u00a0included\u00a0in\u00a0the\u00a0HTTPS\u00a0exclusions\u00a0IP\u00a0address\u00a0group:\u00a0appldnld.apple.com,\u00a0*.apple.com,\u00a0apple.com,\u00a0*.cdn-apple.com,\u00a0mesu.apple.com,\u00a0oscdn.apple.com,\u00a0swcdn.apple.com,\u00a0swdist.apple.com,\u00a0swdownload.apple.com.\n-\u00a0The\u00a0exclusions\u00a0cover\u00a0most\u00a0standard\u00a0Apple\u00a0CDN\u00a0and\u00a0update\u00a0distribution\u00a0endpoints,\u00a0but\u00a0may\u00a0not\u00a0comprehensively\u00a0account\u00a0for\u00a0all\u00a0current\u00a0or\u00a0newly\u00a0introduced\u00a0Apple\u00a0CDN\u00a0domains.\n-\u00a0All\u00a0listed\u00a0Apple-related\u00a0domains\u00a0have\u00a0the\u00a0checked\u00a0status,\u00a0indicating\u00a0they\u00a0are\u00a0actively\u00a0being\u00a0excluded\u00a0according\u00a0to\u00a0this\u00a0group's\u00a0configuration.\n-\u00a0Exclusion\u00a0rules\u00a0also\u00a0cover\u00a0major\u00a0update\u00a0and\u00a0download\u00a0domains\u00a0for\u00a0other\u00a0vendors\u00a0(Microsoft,\u00a0Mozilla,\u00a0Dropbox).\n-\u00a0No\u00a0visible\u00a0exclusion\u00a0or\u00a0mention\u00a0of\u00a0any\u00a0additional,\u00a0recently\u00a0announced\u00a0Apple\u00a0CDN\u00a0domains\u00a0that\u00a0could\u00a0impact\u00a0the\u00a0completeness\u00a0of\u00a0Apple\u00a0update\u00a0coverage.\n-\u00a0All\u00a0exclusions\u00a0show\u00a0Lokal\u00a0as\u00a0the\u00a0source,\u00a0consistent\u00a0with\u00a0local\u00a0configuration\u00a0rather\u00a0than\u00a0from\u00a0a\u00a0central\u00a0or\u00a0cloud-synced\u00a0policy.\n\n \t\turl-list.jpeg_1583973\n\n-\u00a0The\u00a0\u201cApple\u00a0Updates\u201d\u00a0URL\u00a0group\u00a0includes\u00a0the\u00a0following\u00a0domains:\u00a0source.akaquill.net,\u00a0*.amazonaws.com,\u00a0amazonaws.com,\u00a0appldnld.apple.com,\u00a0*.cdn.apple.com,\u00a0mesu.apple.com,\u00a0oscdn.apple.com,\u00a0sw*.apple.com,\u00a0swcdn.apple.com,\u00a0swdist.apple.com,\u00a0svdownload.apple.com,\u00a0svdownload.apple.com.\n-\u00a0Several\u00a0Apple\u00a0CDN\u00a0and\u00a0update-related\u00a0domains\u00a0are\u00a0present,\u00a0but\u00a0no\u00a0generic\u00a0*.apple.com\u00a0entry\u00a0is\u00a0included,\u00a0and\u00a0there\u00a0could\u00a0be\u00a0missing\u00a0or\u00a0newly\u00a0introduced\u00a0Apple\u00a0CDN\u00a0endpoints\u00a0not\u00a0covered\u00a0by\u00a0this\u00a0list.\n-\u00a0The\u00a0group\u00a0relies\u00a0on\u00a0specific\u00a0hostnames\u00a0and\u00a0wildcard\u00a0subdomains\u00a0but\u00a0may\u00a0not\u00a0fully\u00a0capture\u00a0all\u00a0required\u00a0Apple\u00a0update\u00a0servers\u00a0if\u00a0Apple\u00a0has\u00a0added\u00a0or\u00a0changed\u00a0CDN\u00a0endpoints.\n-\u00a0No\u00a0explicit\u00a0filtering,\u00a0blocking,\u00a0or\u00a0throttling\u00a0appears\u00a0to\u00a0be\u00a0set\u00a0for\u00a0these\u00a0URLs\u00a0based\u00a0on\u00a0the\u00a0visible\u00a0configuration.\n-\u00a0The\u00a0\u201cAutomatic\u00a0Updates\u201d\u00a0group\u00a0includes\u00a0\u201cApple\u00a0Updates\u201d\u00a0and\u00a0\u201cAdobe\u00a0Updates\u201d\u00a0as\u00a0member\u00a0groups.\n-\u00a0The\u00a0domains\u00a0swcdn.apple.com,\u00a0swdist.apple.com,\u00a0svdownload.apple.com,\u00a0and\u00a0appldnld.apple.com\u00a0are\u00a0specifically\u00a0listed,\u00a0which\u00a0are\u00a0commonly\u00a0used\u00a0for\u00a0Apple\u00a0software\u00a0and\u00a0OS\u00a0updates.\n-\u00a0The\u00a0domain\u00a0*.apple.com\u00a0as\u00a0a\u00a0blanket\u00a0rule\u00a0is\u00a0absent,\u00a0which\u00a0may\u00a0cause\u00a0some\u00a0Apple\u00a0traffic\u00a0to\u00a0bypass\u00a0the\u00a0configured\u00a0accept\u00a0rules\u00a0and\u00a0possibly\u00a0be\u00a0subject\u00a0to\u00a0default\u00a0firewall\u00a0handling\u00a0or\u00a0inspection.\n\n"
+        ],
+        [
+          "2025-10-15T10:31:09+00:00",
+          "Kayako - ticket id 60220499 // ADN Support commented privately: Hi Support Team,\n\nunfortunately, the Allow rule didn\u2019t resolve the issue. [See fotos.]\nApple devices are still experiencing very slow download speeds for Apple-related traffic such as App Store, iOS updates, and general Apple downloads averaging around 300 KB/s.\n\nCould you please advise on the next steps or any additional troubleshooting we should perform?\n\nThanks in advance for your support."
+        ],
+        [
+          "2025-10-14T08:45:32+00:00",
+          "Kayako - ticket id 60220499 // ATLAS commented publicly: Dear Support,\n\nThank you for describing the troubleshooting already performed and providing the screenshot for context regarding slow Apple-related downloads through Kerio Control.\n\nSummary of Findings\n\nYour diagnostic steps and screenshot show:\n\n \t* The affected traffic is isolated to Apple update and download endpoints; Microsoft and general downloads are unaffected.\n \t* Features that commonly impact throughput (Content Filter, IPS, Antivirus, Geo-blocking, Shield Matrix, Bandwidth Management/QoS) are disabled or not in use.\n \t* No active filtering or throttling seems present in the Apple-related URL groups based on your screenshot.\n \t* Traffic persists as slow (~300 KB/s) on both LAN and Wi-Fi, and system resources appear sufficient.\n\nPossible Causes and Solutions\n\nKerio Control is designed as a UTM firewall, and some features\u2014even when disabled\u2014can interact with specific CDN behaviors (like those used by Apple). Below are steps and references that may help further isolate or mitigate the issue:\n\n \t* Hardware and Network Considerations\nAlthough your i7 hardware is not overloaded, ensure that all Apple update streams are genuinely passing uninspected through the firewall. Sometimes hidden deep-packet inspection or transparent proxy mechanisms can cause this type of unique slowdown for specific CDNs. \nFull Speed Performance Article [https://support.keriocontrol.gfi.com/article/116215] \n \t* Apple CDN Endpoint Coverage\nThe list shown in your screenshot covers major Apple update endpoints (appldnld.apple.com, *.cdn.apple.com, mesu.apple.com, sw*.apple.com, updates.cdn-apple.com). However, Apple frequently updates and expands its CDN domains.\nRecommendation: Occasionally review and update these lists to ensure new endpoints are not missed\u2014which could cause traffic to take slower fallback routes. \n \t* VM/Hypervisor Settings (if applicable)\nIf Kerio Control is virtualized, ensure that CPU and memory resources are allocated sufficiently and with high priority, as covered in the Improving Speed performance [https://support.keriocontrol.gfi.com/article/116215] article. \n \t* Apple Device Connectivity Exception Rules\nWhile your current setup does not use web authentication, Apple devices can sometimes perform background connectivity checks to other Apple endpoints. If any authentication or inspection was enforced for *.apple.com traffic, it could disrupt these background checks or slow downloads.\nReference: Apple devices to get through the authentication page [https://support.keriocontrol.gfi.com/article/120298] \n \t* Test with Additional Known Apple CDN URLs\nConsider temporarily adding a rule to explicitly allow all traffic to *.apple.com and *.cdn-apple.com without inspection or filtering (even if no rules currently restrict this), to rule out hidden filtering effects. \n \t* Application Layer Features and Version-Specific Issues\nThe Troubleshooting Kerio Control 9.5.0 Performance Degradation [https://support.keriocontrol.gfi.com/article/126211] article addresses a known issue with Kerio Control 9.5.0 involving the GFI AppManager service causing severe throughput degradation for some traffic types. While this issue usually manifests globally, if AppManager (labeled \u201cGFI Agent\u201d) is enabled, consider disabling it and observing any impact\u2014even though you report general performance is otherwise unaffected. \n\nFurther Notes\n\n \t* Your current configuration and diagnostic approach align with our best practices for isolating throughput issues.\n \t* This issue appears to be unique to how Apple\u2019s CDN interacts with some firewall engines and may require continuous adjustment of whitelist domains as Apple evolves their infrastructure.\n \t* Test download speed both via browser and direct Apple device update (iPhone/iPad), as Apple may use different servers depending on the method.\n\nReference Articles:\n\n \t* Improving Speed performance [https://support.keriocontrol.gfi.com/article/116215]\n \t* Apple devices to get through the authentication page [https://support.keriocontrol.gfi.com/article/120298]\n \t* Troubleshooting Kerio Control 9.5.0 Performance Degradation [https://support.keriocontrol.gfi.com/article/126211]\n\nIf the above checks do not resolve the issue and all other bandwidth management, filtering, and AV/QoS components are verified as off or bypassed, continuing to expand the explicit \u201cAllow\u201d rules for Apple endpoints may further help. Apple frequently adds or changes CDN URLs, and traffic could be slow if hitting fallback or non-primary nodes due to incomplete access lists.\n\nIf you have further questions or observe new behaviors, please let us know.\n\nSincerely,\nAtlas\nGFI - Kerio Control Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-14T08:44:56+00:00",
+          "Kayako - ticket id 60220499 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\tBildschirmfoto_2025-10-07_um_14.10.25.jpeg_1582656\n\n-\u00a0There\u00a0is\u00a0an\u00a0\u201cApple\u00a0Updates\u201d\u00a0URL\u00a0group\u00a0configured,\u00a0listing\u00a0the\u00a0following\u00a0domains:\u00a0appldnld.apple.com,\u00a0*.cdn.apple.com,\u00a0mesu.apple.com,\u00a0sw*.apple.com,\u00a0updates.cdn-apple.com.\n-\u00a0The\u00a0\u201cApple\u00a0Updates\u201d\u00a0group\u00a0is\u00a0described\u00a0as\u00a0\u201cApple\u00a0servers\u00a0for\u00a0update\u00a0downloading\u201d\u00a0or\u00a0\u201cApple\u00a02.\u201d\n-\u00a0The\u00a0\u201cAutomatic\u00a0Updates\u201d\u00a0group\u00a0includes\u00a0\u201cApple\u00a0Updates\u201d\u00a0alongside\u00a0other\u00a0vendors\u00a0(Adobe,\u00a0Java,\u00a0Microsoft).\n-\u00a0No\u00a0URL\u00a0filtering,\u00a0blocking,\u00a0or\u00a0exception\u00a0rules\u00a0are\u00a0visible;\u00a0only\u00a0grouping\u00a0of\u00a0update-related\u00a0URLs\u00a0is\u00a0shown.\n-\u00a0The\u00a0domains\u00a0listed\u00a0cover\u00a0most\u00a0standard\u00a0Apple\u00a0update\u00a0URLs,\u00a0but\u00a0there\u00a0may\u00a0be\u00a0additional\u00a0or\u00a0updated\u00a0Apple\u00a0CDN\u00a0endpoints\u00a0not\u00a0included.\n-\u00a0There\u00a0is\u00a0no\u00a0evidence\u00a0of\u00a0bandwidth\u00a0limiting\u00a0or\u00a0prioritization\u00a0settings\u00a0applied\u00a0to\u00a0the\u00a0Apple\u00a0Updates\u00a0group\u00a0as\u00a0shown\u00a0in\u00a0this\u00a0view.\n\n"
+        ],
+        [
+          "2025-10-14T08:44:24+00:00",
+          "Kayako - ticket id 60220499 // ADN Support commented privately: Dear GFI Support,\none of our partners is experiencing an issue with Kerio Control 9.5p3, the problem started around version 9.4.\n\nIssue description:\n\n- Microsoft downloads (e.g. Windows Updates) run at full speed \u2014 no issues there.\n- Apple downloads (App Store, iOS updates, downloads on iPhones/iPads, etc.) are extremely slow, around 300 KB/s.\n- The internet connection is a 1 Gbit/s symmetrical fiber line, and the slowdown only affects Apple-related downloads.\n\nTroubleshooting already done:\n\n- Content filtering: disabled\n- Intrusion Prevention (IPS): disabled\n- Shield Matrix: disabled\n- Antivirus and Geo-Blocking: disabled\n- Bandwidth Management (QoS): not in use\n- Same result over both LAN and Wi-Fi\n- System load stays below 50% (Firewall runs on an i7 with 6 cores and 8 GB RAM)\n\nThe issue persists regardless of these settings.\n\nAre you aware of similar cases, or is there a known workaround or configuration change to improve Apple download speeds?\n\nThanks in advance for your help"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 20,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

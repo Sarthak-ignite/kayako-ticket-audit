@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The interaction shows only a customer acknowledgment message referencing a prior conversation with an ATLAS User manager. No AI responses are present to evaluate for generic, incorrect, or unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only a single customer message is provided, which references a completed conversation. There is no evidence of repetitive AI requests or customer inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The ticket shows only a brief customer acknowledgment with no support responses visible that could demonstrate context-ignoring behavior.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamp is available (2025-12-26T13:36:38+00:00), which is a customer message, not a support response. The 'max gap between responses' is recorded as 0.0 hours, indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is closed with the customer's final message being a thank you for a completed conversation. No evidence of closure during an active wait or unresolved request.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is 'normal', not P1/Sev1. No high-priority outage indicators are present, and no generic troubleshooting is visible in the provided interaction.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction shows only a customer acknowledgment message referencing a prior conversation with an ATLAS User manager. No AI responses are present to evaluate for generic, incorrect, or unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Only a single customer message is provided, which references a completed conversation. There is no evidence of repetitive AI requests or customer inability to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows only a brief customer acknowledgment with no support responses visible that could demonstrate context-ignoring behavior.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one timestamp is available (2025-12-26T13:36:38+00:00), which is a customer message, not a support response. The 'max gap between responses' is recorded as 0.0 hours, indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is closed with the customer's final message being a thank you for a completed conversation. No evidence of closure during an active wait or unresolved request.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is 'normal', not P1/Sev1. No high-priority outage indicators are present, and no generic troubleshooting is visible in the provided interaction.\",\n    \"evidence\": []\n  }\n}\n```\n\n**Summary**: This ticket contains insufficient interaction data to detect quality issues. Only a single customer acknowledgment message is visible, referencing a prior conversation that is not included in the provided timeline. No support responses or problematic patterns are evident from the available information.",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60270630
+}

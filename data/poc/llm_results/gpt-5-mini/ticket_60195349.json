@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear evidence in the provided transcript that AI responses were generic filler, contained wrong information, or made broken promises. While an AI (ATLAS) appears in the private comments, the content shown does not demonstrate low-quality or incorrect responses.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear sign the customer was stuck in a loop with the AI or repeatedly asked the same questions without escalation to a human. The ticket shows multiple human agent interactions and no repeated AI prompts trapping the customer.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The transcript does not explicitly show agents asking for the same logs or information the customer already provided. While there are multiple follow-ups, there is no direct instance of an agent requesting previously supplied data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple multi-day gaps between interactions, indicating delayed responses from support over the life of the ticket.",
+    "evidence": [
+      "2025-09-11T07:12:27+00:00 (AI/private) \u2192 next public customer message 2025-09-12T02:19:22+00:00 (about ~19 hours gap)",
+      "2025-09-12T02:19:22+00:00 \u2192 2025-09-15T08:29:49+00:00 (3+ days gap)",
+      "2025-09-15T08:29:49+00:00 \u2192 2025-09-17T06:43:56+00:00 (nearly 2 days gap)",
+      "2025-09-17T06:43:56+00:00 \u2192 2025-09-18T03:18:23+00:00 (~21 hours gap)",
+      "2025-09-18T09:37:53+00:00 (agent) \u2192 2025-09-19T09:12:52+00:00 (customer) (almost 24 hours gap)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence the ticket was closed while the customer was waiting or that the customer explicitly gave up. The transcript shows ongoing exchanges through the latest timestamp.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No indication that this was a declared P1 / Sev1 incident nor that a high-priority issue was handled with only generic troubleshooting instead of escalation. The thread appears to be standard troubleshooting and clarification about versions and prerequisites.",
+    "evidence": []
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60195349
+}

@@ -1,0 +1,136 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_mailessentials",
+        "requester": {
+          "id": 60213519,
+          "uuid": "9707fa9a-075a-4fcd-b92f-473a20f18606",
+          "full_name": "Christian Schmidt",
+          "legacy_id": "23347079500178",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/9707fa9a-075a-4fcd-b92f-473a20f18606?1752521699",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 215054,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-07-12T18:58:59+00:00",
+          "last_active_at": "2025-07-14T19:34:59+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60213519",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@07026b23264aa2202ef2edaf6488f02200ce8720",
+          "password_updated_at": "2025-05-19T07:41:16+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2024-12-17T09:33:56+00:00",
+          "updated_at": "2025-07-14T19:34:59+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60213519"
+        },
+        "ticket_idt": 60101543
+      },
+      "interactions": [
+        [
+          "2025-07-13T19:11:48+00:00",
+          "Kayako - ticket id 60101543 // Randall Shawver commented publicly: Dear Christian,\n\nMy apologies. This ticket will stay open. Is the only issue that the duplicate emails are occurring when downloading via Pop3? Or are you experiencing the current Avira issue where the updates fail?\n\nI checked your last logs and I could not locate the sample email. Did you compare the headers of the duplicates to see if they have a different message id? If they are different, then the mail system would consider them to be unique emails and not duplicates.\n\nBest regards,\nRandall Shawver\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-07-13T19:11:31+00:00",
+          "Kayako - ticket id 60101543 // Randall Shawver commented privately:  What is your proposed action?\n(required: select one, delete the rest) \n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Christian, \n\n My apologies. This ticket will stay open. Is the only issue that the duplicate emails are occurring when downloading via Pop3? Or are you experiencing the current Avira issue where the updates fail? \n\n I checked your last logs and I could not locate the sample email. Did you compare the headers of the duplicates to see if they have a different message id? If they are different, then the mail system would consider them to be unique emails and not duplicates. \n\n Best regards, \n Randall Shawver \n Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n They reported a duplicate email issue when downloading via POP3. "
+        ],
+        [
+          "2025-07-12T18:59:55+00:00",
+          "Kayako - ticket id 60101543 // ATLAS commented privately: Action: Send to l1"
+        ],
+        [
+          "2025-07-12T18:59:16+00:00",
+          "Kayako - ticket id 60101543 // Christian Schmidt commented privately: Why is ticket #60094199 closed? The problem has not been solved by GFI.\n\nThe ticket remains open until the problem is solved."
+        ],
+        [
+          "2025-07-12T18:59:02+00:00",
+          "Kayako - ticket id 60101543 // ATLAS commented publicly: Dear ATLAS,\n\nThank you for reaching out regarding your concerns about ticket #60094199. We understand the importance of keeping you informed about ongoing issues. Please refer to our status page for the latest updates on the current incident affecting the Avira Virus Scanner Engine, which may be related to your case. You can find detailed information and ongoing updates here: Mail Processing Impact \u2013 Avira Virus Scanner Engine [https://stspg.io/f5wj71cnsb2z].\n\nIf you continue to experience any issues after the incident has been resolved, please do not hesitate to contact us again. We are here to assist you.\n\nSincerely,\n\nATLAS\n\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-07-12T18:58:55+00:00",
+          "Kayako - ticket id 60101543 // ATLAS commented privately: Responding to active incident"
+        ],
+        [
+          "2025-07-12T18:58:46+00:00",
+          "Kayako - ticket id 60101543 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Christian Schmidt ! \ud83d\udc4b\n\nThis is the GFI MailEssentials ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nChristian Schmidt:\n\n undefined \nChat Support:\n\n \u26a0\ufe0f There is currently an active incident in the GFI MailEssentials status page.\n\nActive incident: Mail Processing Impact \u2013 Avira Virus Scanner Engine\n\nIncident Status: identified\n\nYou can see all incident details here: https://stspg.io/f5wj71cnsb2z\n\nWe recommend that you click the Subscribe to updates button to receive real-time status updates on this incident and future ones.\n\nDid this help? \nChristian Schmidt:\n\n \ud83d\udc4e No. My issue is not related \nChat Support:\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of GFI MailEssentials ATLAS Support Chat [https://support.mailessentials.gfi.com/article/120018]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nChristian Schmidt:\n\n \ud83d\udd04I want to renew/adjust/cancel my existing license \nChat Support:\n\n Since it's a delicate topic, I want to make extra sure: are you seeking assistance with renewing/modifying/cancelling an existing license, or purchasing a new license and not for technical issues related to a license that is already renewed, correct?\n\n\u2139\ufe0f Note: you can use the below buttons or type in \nChristian Schmidt:\n\n \ud83d\udd27 I actually need tech support \nChat Support:\n\n \ud83d\ude33 Sorry about the misunderstanding, let's try again. \nChat Support:\n\n \ud83d\ude33 Sorry about the misunderstanding, let's try again. \nChat Support:\n\n Thanks for clarifying! Could you tell me a bit more about the technical issue you're experiencing with your GFI MailEssentials license? For example, are you seeing any error messages, or is there a problem with activation or functionality after renewal? The more details you can share, the better I can assist you! \nChristian Schmidt:\n\n Why is ticket #60094199 closed? The problem has not been solved by GFI.\n\nThe ticket remains open until the problem is solved. \nChat Support:\n\n Just to confirm... you are asking for information or an update on a previous ticket you raised with us, correct? \nChristian Schmidt:\n\n \u2705 Yes, correct \nChat Support:\n\n Here is a link for you:\n\n\ud83d\udc4960094199 [https://support.mailessentials.gfi.com/conversation/view/60094199]\n\nThere you can check its status, follow up on it, and escalate it if its not closed.\n\nAlso, you can see all your GFI MailEssentials tickets here [https://support.mailessentials.gfi.com/conversations].\n\nAre you able to open the above link? \nChristian Schmidt:\n\n no the ticket ist closed \nChat Support:\n\n Thank you for confirming. I understand how frustrating it is when a ticket is closed before your issue is resolved.\n\nUnfortunately, I don't have access to the internal notes or reasons for why ticket #60094199 was closed. Sometimes, tickets may be closed automatically after a period of inactivity, or if the support team believes the issue has been resolved based on the last communication.\n\nHere\u2019s what you can do next:\n- You can reopen or follow up on your ticket directly through the GFI Support Portal. Here\u2019s a helpful article on how to do that: Opening a New GFI Support Ticket [https://support.mailessentials.gfi.com/article/120990].\n- If you\u2019d like, I can help you summarize your ongoing issue so it\u2019s clear for the support team when you follow up.\n\nWould you like help drafting a follow-up message, or do you want to describe the unresolved problem here so I can assist further? \nChristian Schmidt:\n\n Why is ticket #60094199 closed? The problem has not been solved by GFI.\n\nThe ticket remains open until the problem is solved. \nChat Support:\n\n I completely understand your concern\u2014having a ticket closed before your problem is solved is definitely frustrating. While I don\u2019t have access to the internal notes or the specific actions taken on ticket #60094199, I can explain how the process usually works:\n\n- Sometimes, tickets are closed automatically after a period of inactivity or if the support team believes the issue has been resolved based on the last update.\n- If you feel your issue is still unresolved, you absolutely have the right to request that the ticket be reopened or to open a new ticket referencing the previous one.\n\nYou can find more details about ticket management in this article: Opening a New GFI Support Ticket [https://support.mailessentials.gfi.com/article/120990].\n\nTo move forward, I recommend either:\n1. Reopening the ticket through the Support Portal and clearly stating that the problem is not resolved.\n2. Opening a new ticket and referencing #60094199, explaining that the issue persists.\n\nIf you\u2019d like, I can help you draft a message to make sure your concern is clearly communicated to the support team. Would you like to do that, or is there anything else about your issue that you\u2019d like to discuss here so I can assist further? \nChristian Schmidt:\n\n 1 \nChat Support:\n\n Thank you for letting me know your preference! \ud83d\ude0a A human colleague will be happy to assist you further\u2014please feel free to choose from the available options to continue. \nChristian Schmidt:\n\n \ud83d\udce9 Raise a ticket \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nChristian Schmidt:\n\n Why is ticket #60094199 closed? The problem has not been solved by GFI.\n\nThe ticket remains open until the problem is solved. \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nChristian Schmidt:\n\n No additional email addresses required in CC \nChat Support:\n\n I'm creating a ticket for you with the information you've provided.\n\nTicket subject: GFI MailEssentials issue\n\nAllow me a few moments while I work on this \u23f3 \nChat Support:\n\n \ud83d\ude80 I've successfully created a ticket for you.\n\nYour ticket number is: 60101543\n\nYou can see it and update it in this link [https://support.mailessentials.gfi.com/conversation/view/60101543]\n\nFor a faster resolution, please be sure to include and attach to the ticket all relevant context such as screenshots, recordings, and logs.\n\nOur agents will work on it and you will receive a response in your email \ud83d\udce8: it@uweelectronic.de "
+        ],
+        [
+          "2025-07-12T18:58:42+00:00",
+          "Kayako - ticket id 60101543 // ATLAS commented privately: **Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction, which means that they may have uploaded some files for AI analysis.** Please login to UPLOAD using your Devfactory AD credentials to verify: https://files.eswsecuretransfers.com/agents/?user_id=it@uweelectronic.de&session_uuid=26a8494f-1193-4708-95d1-e7218a046c5e"
+        ],
+        [
+          "2025-07-12T18:58:39+00:00",
+          "Kayako - ticket id 60101543 // ATLAS commented privately: --- Ticket generated by GFI MailEssentials AI chat on behalf of Christian Schmidt ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * Why is ticket #60094199 closed? The problem has not been solved by GFI.<br>\n  <br>\n  The ticket remains open until the problem is solved.<br>\n  * Why is ticket #60094199 closed? The problem has not been solved by GFI.<br>\n  <br>\n  The ticket remains open until the problem is solved.<br>\n  * Why is ticket #60094199 closed? The problem has not been solved by GFI.<br>\n  <br>\n  The ticket remains open until the problem is solved.<br>\n  * 1<br>\n  * Why is ticket #60094199 closed? The problem has not been solved by GFI.<br>\n  <br>\n  The ticket remains open until the problem is solved.<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 9,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

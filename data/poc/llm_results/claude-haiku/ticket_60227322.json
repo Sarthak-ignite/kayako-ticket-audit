@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient evidence due to incomplete ticket log.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Cannot determine due to truncated interaction log.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No complete context available to assess context ignorance.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, suggesting immediate response.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket status is closed, but insufficient context to determine if prematurely closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, not a P1/Sev1 case.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the provided ticket context, I'll analyze the quality issues. However, there are significant limitations in the data - the interaction log appears truncated, and critical details are missing.\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient evidence due to incomplete ticket log.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine due to truncated interaction log.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No complete context available to assess context ignorance.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, suggesting immediate response.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket status is closed, but insufficient context to determine if prematurely closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, not a P1/Sev1 case.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The interaction log is critically incomplete\n- Only an AI summary message is visible\n- Cannot make definitive quality assessments without full interaction details\n- Recommendation: Request full ticket transcript for comprehensive analysis",
+  "_model": "claude-haiku",
+  "_ticket_id": 60227322
+}

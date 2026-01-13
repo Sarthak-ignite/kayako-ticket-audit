@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI responses in the ticket. Only one customer interaction is visible, which appears to be an email forward.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI interaction or looping. The ticket shows only a single customer message.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no support responses visible in the interaction timeline to evaluate whether context was ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket metadata shows 'Max gap between responses (hours): 0.0', and there is insufficient interaction data to detect delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked as closed, but the interaction timeline shows only an incomplete customer message (appears to be cut off mid-email) with no support response or resolution visible.",
+    "evidence": [
+      "[2025-12-16T12:03:53+00:00] Customer message appears incomplete, ending abruptly with 'Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N' followed by '---', yet ticket status shows 'closed'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not P1/Sev1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI responses in the ticket. Only one customer interaction is visible, which appears to be an email forward.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI interaction or looping. The ticket shows only a single customer message.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no support responses visible in the interaction timeline to evaluate whether context was ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket metadata shows 'Max gap between responses (hours): 0.0', and there is insufficient interaction data to detect delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked as closed, but the interaction timeline shows only an incomplete customer message (appears to be cut off mid-email) with no support response or resolution visible.\",\n    \"evidence\": [\"[2025-12-16T12:03:53+00:00] Customer message appears incomplete, ending abruptly with 'Sent: Tuesday, December 16, 2025 6:56 AM To: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, N' followed by '---', yet ticket status shows 'closed'\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not P1/Sev1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60264368
+}

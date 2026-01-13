@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses appear to acknowledge the customer's issue appropriately and the file analysis shows ATLAS analyzed the screenshots. While responses are truncated, there's no evidence of wrong information or broken promises in the visible content.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer submitted their issue with screenshots on Dec 19, received an AI response immediately, and then proactively notified about PTO on Dec 22. There's no evidence of the customer being stuck or unable to progress - they haven't attempted to escalate or expressed frustration with AI handling.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "ATLAS performed file analysis on the provided screenshots and acknowledged the queue discrepancy issue. The AI's response references the specific problem the customer described, showing context was understood.",
+    "evidence": [
+      "[2025-12-19T17:29:10+00:00] ATLAS commented privately: :: FILE ANALYSIS RESULTS :: ...The Agent view in the Khoros Care dashboa",
+      "[2025-12-19T17:29:37+00:00] ATLAS commented publicly: Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The max gap between responses is 72.9 hours (approximately 3 days), which represents a significant delay. This occurred between the AI's response on Dec 19 and the customer's update on Dec 22.",
+    "evidence": [
+      "Max gap between responses (hours): 72.9",
+      "[2025-12-19T17:29:37+00:00] ATLAS response followed by [2025-12-22T18:22:29+00:00] Customer response - 3+ day gap"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket status is 'closed' even though the customer stated they were unable to troubleshoot due to PTO and would review suggestions after January 6th. The ticket was closed while the customer explicitly indicated they hadn't yet attempted the troubleshooting steps.",
+    "evidence": [
+      "[2025-12-22T18:22:29+00:00] Liz Mech: Right now, due to PTO, we are unable to troubleshoot. We will be able t",
+      "Status: closed - ticket closed despite customer indicating they need time to troubleshoot after their PTO"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket (Priority: normal), not a P1/Sev1 issue, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses appear to acknowledge the customer's issue appropriately and the file analysis shows ATLAS analyzed the screenshots. While responses are truncated, there's no evidence of wrong information or broken promises in the visible content.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer submitted their issue with screenshots on Dec 19, received an AI response immediately, and then proactively notified about PTO on Dec 22. There's no evidence of the customer being stuck or unable to progress - they haven't attempted to escalate or expressed frustration with AI handling.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"ATLAS performed file analysis on the provided screenshots and acknowledged the queue discrepancy issue. The AI's response references the specific problem the customer described, showing context was understood.\",\n    \"evidence\": [\n      \"[2025-12-19T17:29:10+00:00] ATLAS commented privately: :: FILE ANALYSIS RESULTS :: ...The Agent view in the Khoros Care dashboa\",\n      \"[2025-12-19T17:29:37+00:00] ATLAS commented publicly: Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The max gap between responses is 72.9 hours (approximately 3 days), which represents a significant delay. This occurred between the AI's response on Dec 19 and the customer's update on Dec 22.\",\n    \"evidence\": [\n      \"Max gap between responses (hours): 72.9\",\n      \"[2025-12-19T17:29:37+00:00] ATLAS response followed by [2025-12-22T18:22:29+00:00] Customer response - 3+ day gap\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket status is 'closed' even though the customer stated they were unable to troubleshoot due to PTO and would review suggestions after January 6th. The ticket was closed while the customer explicitly indicated they hadn't yet attempted the troubleshooting steps.\",\n    \"evidence\": [\n      \"[2025-12-22T18:22:29+00:00] Liz Mech: Right now, due to PTO, we are unable to troubleshoot. We will be able t\",\n      \"Status: closed - ticket closed despite customer indicating they need time to troubleshoot after their PTO\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket (Priority: normal), not a P1/Sev1 issue, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60267393
+}

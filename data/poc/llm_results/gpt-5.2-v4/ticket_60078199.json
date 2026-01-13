@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The ATLAS chat response did not address the customer's question (asking for the last chat history) and instead pivoted to unrelated license details, indicating low-quality/irrelevant AI assistance.",
+    "evidence": [
+      "Customer: \"Hast Du den Letzten chatverlauf\"",
+      "ATLAS: \"I have this license key on record: - License: ... - Expiry date: 2028-01-09. Just to make sure we're on the same page...\"",
+      "Chat transcript shows \"Christian Schmidt: undefined\" and then \"...[truncated]...\", suggesting a degraded/buggy AI interaction quality."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket was routed to L1 quickly and subsequent interactions were with human agents. There is no clear evidence the customer was trapped in an AI-only loop or repeatedly blocked from reaching a human.",
+    "evidence": [
+      "ATLAS: \"Action: Send to l1\" (2025-06-16T10:39:05+00:00)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly stated logs and screenshots were already provided, yet support continued to request them without acknowledging what was already attached/available, creating repetition and frustration.",
+    "evidence": [
+      "Customer: \"The logs and screenshots are already in the ticket!\" (2025-06-23T11:54:39+00:00)",
+      "Agent: \"To help us investigate this further, please provide... A screenshot of your POP3 connector configuration... The ME logs...\" (2025-06-23T03:38:59+00:00)",
+      "Agent: \"We will require the complete set of logs... gather the logs as per the article... Please also provide us with the sample .eml files...\" (2025-06-24T06:39:42+00:00)",
+      "Customer: \"I created the logs... and sent them. And the screenshots.\" (2025-06-24T11:21:55+00:00)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant gap between the customer's initial report and the first substantive support response (about 7 days).",
+    "evidence": [
+      "Customer issue provided/logs mentioned on 2025-06-16 (e.g., \"Bug in MailEsstainels in the Pop3 conector...\")",
+      "First public agent response requesting artifacts is on 2025-06-23T03:38:59+00:00"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed/resolved in the provided transcript; the last agent message indicates awaiting reproduction/logs after upgrade.",
+    "evidence": [
+      "Agent: \"We look forward to the logs once the issue is reproduced with the new version.\" (2025-06-25T10:09:39+00:00)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although duplicate emails can be impactful, the customer did not indicate a production outage/urgent business stoppage or explicit severity/SLA urgency. The handling appears like standard troubleshooting rather than a clearly mishandled P1.",
+    "evidence": [
+      "Customer describes duplication behavior but does not state \"production down\" / outage / urgent SLA breach in the transcript."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60078199
+}

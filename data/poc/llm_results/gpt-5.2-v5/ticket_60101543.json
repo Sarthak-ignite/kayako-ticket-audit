@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS produced a broken/garbled customer-facing template by addressing itself (\u201cDear ATLAS\u201d). It also failed to directly answer the customer\u2019s question about why the prior ticket was closed, instead sending a generic incident/status-page response.",
+    "evidence": [
+      "ATLAS commented publicly: \"Dear ATLAS,\"",
+      "ATLAS commented publicly: \"Please refer to our status page for the latest updates on the current incident affecting the Avira Virus Scanner Engine, which may be related to your case.\"",
+      "ATLAS commented publicly: \"If you continue to experience any issues after the incident has been resolved, please do not hesitate to contact us again.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer requested a human and was kept in an AI loop; after the initial ATLAS public reply, a human agent (Randall) responded publicly the next day.",
+    "evidence": [
+      "Randall Shawver commented publicly: \"Dear Christian, My apologies. This ticket will stay open.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While ATLAS did not address the specific question about ticket #60094199 being closed, the clearest repetition/complaint from the customer is in a private comment, and the human agent subsequently engaged with the underlying issue and confirmed the ticket would stay open.",
+    "evidence": [
+      "Randall Shawver commented publicly: \"My apologies. This ticket will stay open.\"",
+      "Randall Shawver commented publicly: \"Is the only issue that the duplicate emails are occurring when downloading via Pop3?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The only staff-to-customer gap shown is under 1 day (ATLAS on 2025-07-12 to human reply on 2025-07-13), and there are no customer complaints about waiting or apologies specifically for delay.",
+    "evidence": [
+      "ATLAS commented publicly: \"2025-07-12T18:59:02+00:00\"",
+      "Randall Shawver commented publicly: \"2025-07-13T19:11:48+00:00\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket includes an auto-close warning clause, but there is no message indicating the ticket was actually closed or that closure occurred while a pending request was unresolved within this ticket\u2019s timeline.",
+    "evidence": [
+      "ATLAS commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Closed in the portal.\"",
+      "Randall Shawver commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit P1/SEV1/critical outage language or business-blocking impact is present in the customer-facing messages for this ticket, so severity mishandling cannot be concluded from the text.",
+    "evidence": [
+      "Randall Shawver commented publicly: \"Is the only issue that the duplicate emails are occurring when downloading via Pop3?\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60101543
+}

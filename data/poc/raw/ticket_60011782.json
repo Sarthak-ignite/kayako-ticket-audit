@@ -1,0 +1,116 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_archiver",
+        "requester": {
+          "id": 60193828,
+          "uuid": "f6230c58-6725-42f9-89d9-be4181205ec6",
+          "full_name": "Michelle Donnelly",
+          "legacy_id": "17158271571602",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/f6230c58-6725-42f9-89d9-be4181205ec6?1747142126",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 195363,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/London",
+          "time_zone_offset": 0,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-05-06T10:36:33+00:00",
+          "last_active_at": "2025-05-13T13:15:26+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60193828",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@62224063ab8884647e717c607bb7eafe3e5e6887",
+          "password_updated_at": "2025-05-06T10:09:25+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2024-02-20T11:41:44+00:00",
+          "updated_at": "2025-05-13T13:15:26+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60193828"
+        },
+        "ticket_idt": 60011782
+      },
+      "interactions": [
+        [
+          "2025-04-02T09:08:03+00:00",
+          "Kayako - ticket id 60011782 // ATLAS commented publicly: Dear ATLAS,\n\nThank you for reaching out regarding the issue with the journaling mailbox not connecting and emails not archiving. We understand the urgency of the situation and are here to assist you.\n\nTo help us resolve this issue more efficiently, could you please provide the following information:\n\n- Have you attempted to connect the journal mailbox as per the instructions in this article: Configuring a Journaling Mailbox [https://gfi-archiver-supportdesk.kayako.com/article/106317-configuring-a-journaling-mailbox]?\n- If you are using Office 365, did you follow the steps outlined in this article: Configuring EWS OAuth Authentication with GFI Archiver [https://gfi-archiver-supportdesk.kayako.com/article/106310-configuring-ews-oauth-authentication-with-gfi-archiver]?\n- If the journal mailbox connection shows no error in Archiver, please refer to this article: Archiver Not Consuming Emails from the Journal Mailbox on Exchange Online [https://gfi-archiver-supportdesk.kayako.com/article/105303-archiver-not-consuming-emails-from-the-journal-mailbox-on-exchange-online].\n- Have you shared the server logs as per the instructions in this article: Gathering Troubleshooter Logs for Archiver [https://gfi-archiver-supportdesk.kayako.com/article/106126-gathering-troubleshooter-logs-for-archiver]?\n- What is the specific error message displayed when attempting to connect the journaling mailbox?\n\nPlease provide this information at your earliest convenience. If you need more time, rest assured that the ticket will remain open for one additional week.\n\nSincerely,\nATLAS\nGFI - Archiver Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-04-02T09:07:52+00:00",
+          "Kayako - ticket id 60011782 // ATLAS commented privately: Requesting more information"
+        ],
+        [
+          "2025-04-02T09:07:37+00:00",
+          "Kayako - ticket id 60011782 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Michelle Donnelly ! \ud83d\udc4b\n\nThis is the GFI Archiver ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nMichelle Donnelly:\n\n undefined \nChat Support:\n\n Please select an option below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of GFI Archiver ATLAS Support Chat [https://support.archiver.gfi.com/article/105227]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nMichelle Donnelly:\n\n Speak to support team please \nChat Support:\n\n I have this license key on record:\n- License: 0TPnrqfFFsAv78cdFHh9-8fWmfG-SmUtceK-751962\n- Expiry date: 2025-06-29.\n\nJust to make sure we're on the same page - is this the same system you're reaching out about today?\n\n\ud83d\udca1It's important to have to correct license file, as it could influence the resolution. \nMichelle Donnelly:\n\n Yes, 0TPnrqfFFsAv78cdFHh9-8fWmfG-SmUtceK-751962 is correct \nChat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI5MzM4ZTQxMS0yYjg3LTQzNjUtOWQ5Zi1lNjk5ZDA0MWNlMmMiLCJzZXNzaW9uX3VpZCI6IjkzMzhlNDExLTJiODctNDM2NS05ZDlmLWU2OTlkMDQxY2UyYyIsImVtYWlsIjoibWRvbm5lbGx5QGtlcnJoZW5kZXJzb24uY29tIiwiY3VzdG9tX3BhcnNlciI6e30sImNhbGxiYWNrIjp7ImNhbGxiYWNrX3VybCI6bnVsbCwiY2FsbGJhY2tfZW1haWwiOiJjaXByaWFuLm5hc3Rhc2VAdHJpbG9neS5jb20ifSwicHJvZHVjdF90YWciOiJhdXJlYV9hcmNoaXZlciIsInF1ZXJ5IjoiIiwiZXhwIjoxNzQzNTkxNzEyfQ.Orn6qxlZV8-c474dkFFNoyj3bNCL-Jam27Y3jfY3ilQ]\n\nYou should see the following:\n- User: mdonnelly@kerrhenderson.com\n- Session ID: 9338e411-2b87-4365-9d9f-e699d041ce2c \nMichelle Donnelly:\n\n \ud83d\udd19 Continue without file upload \nChat Support:\n\n Sure thing! Let's continue without files \nChat Support:\n\n Could you please describe the specific issue you're experiencing with GFI Archiver? For example, are you having trouble with email archiving, searching archived emails, or accessing the web interface? Any details about error messages or unexpected behavior would be helpful. \nMichelle Donnelly:\n\n ticket open - #60010193 update on case \nChat Support:\n\n Could you please provide more details about the original issue related to ticket #60010193? What specific problem with GFI Archiver were you experiencing when you opened this ticket? \nMichelle Donnelly:\n\n The journaling mailbox is not connecting and emails are not archiving \nChat Support:\n\n Thank you for providing more information about your issue with ticket #60010193. I understand that the journaling mailbox is not connecting and emails are not being archived. This is a serious concern, and I'll be happy to guide you through some troubleshooting steps.\n\nFirst, let's verify a few important settings:\n\n1. Journal Mailbox Connection:\n- Navigate to Configuration > Mail Servers to Archive\n- Select the Journal Mailbox and click Edit\n- Complete the wizard and verify that the connection test is successful\n- Ensure the journal mailbox is set to Active\n\n2. Journaling Configuration:\n- Confirm that journaling is enabled for all Microsoft Exchange databases and working correctly in Microsoft Exchange\n\n3. Archive Store Summary:\n- Go to Configuration > Archive Stores\n- Click Summary of the active archive store\n- Check the Last Email Archived On date and time\n\nIf you've already checked these settings and the issue persists, we can try the following:\n\n1. Restart GFI Services:\n- Open services.msc and restart all GFI-related services\n\n2. Journal Mailbox Access:\n- Confirm you can access the journal mailbox through OWA or Outlook\n- If you can't access it, the account might be locked out in Active Directory or the credentials may be incorrect\n\n3. Check Journal Mailbox Content:\n- If no emails are in the journal mailbox, verify that journaling is enabled for the appropriate mailbox type\n- If emails are stuck in the journal mailbox, check the total size of emails and attachments\n\nIf these steps don't resolve the issue, we may need to gather more information:\n\n1. Collect troubleshooting logs\n2. Provide information on the type of Journal Mailbox configured\n3. Specify the type of database in use\n\nIf you've already tried these steps or need further assistance, please let me know, and we can escalate this to our support team for a more in-depth investigation.\n\n-------------------------\n\nFor more details check:\n\ud83d\udc49 Archiver not archiving emails [https://support.archiver.gfi.com/article/106311] \nChat Support:\n\n Take all the time you need to read through the provided resources \u261d\ufe0f\nI'll stay here in case you need anything else \ud83d\ude00\n\n-------------------------\n\nWas this helpful? \nMichelle Donnelly:\n\n emails are not archiving since Monday and i need to speak to someone \nChat Support:\n\n Of course! I do understand some things are better handled by my human colleagues.\n\nLet me get some further help for you! \nMichelle Donnelly:\n\n \ud83d\udcac Chat with live agent \nChat Support:\n\n Our agents are currently busy assisting other customers at the time, so we'll proceed with ticket creation \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nMichelle Donnelly:\n\n I have a ticket open already \nChat Support:\n\n I'm creating a ticket for you with the information you've provided, allow me a few moments while I work on this \u23f3 \nChat Support:\n\n I've automatically set the ticket subject to: Journaling mailbox not connecting and archiving issue\n\nDoes that work for you?\n- If it does, simply say YES or use the below button to confirm \ud83d\udc47\n- If not, please directly type in the ticket subject of your choosing below \ud83d\ude09 \nMichelle Donnelly:\n\n undefined \nChat Support:\n\n Are you still \u270d\ufe0f typing? If you are, then that's ok. If not, after 2 minutes, I'll proceed with creating the ticket using the aforementioned subject. \nMichelle Donnelly:\n\n undefined \nChat Support:\n\n Are you still \u270d\ufe0f typing? If you are, then that's ok. If not, after 2 minutes, I'll proceed with creating the ticket using the aforementioned subject. "
+        ],
+        [
+          "2025-04-02T09:07:30+00:00",
+          "Kayako - ticket id 60011782 // ATLAS commented privately: --- Ticket generated by GFI Archiver AI chat on behalf of Michelle Donnelly ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * Speak to support team please<br>\n  * ticket open - #60010193 update on case<br>\n  * The journaling mailbox is not connecting and emails are not archiving<br>\n  * emails are not archiving since Monday and i need to speak to someone<br>\n  * I have a ticket open already<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 4,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

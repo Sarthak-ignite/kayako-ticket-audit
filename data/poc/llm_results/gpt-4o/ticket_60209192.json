@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response was unhelpful and generic as it simply stated that the component could not be determined without providing any guidance or further actions.",
+    "evidence": [
+      "2025-09-29T14:02:50+00:00 (AI) ATLAS: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The AI did not repeatedly ask for the same information or prevent the customer from reaching a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support agent asked for error details already implied in customer\u2019s message, which indicated creating new locations was the issue.",
+    "evidence": [
+      "2025-09-30T06:53:48+00:00 (Employee) Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?",
+      "2025-09-29T14:02:55+00:00 (Customer) Anthony Marlow: I am having an issue creating new locations"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay of 16.9 hours between the customer's first message and the human response.",
+    "evidence": [
+      "Time to first human (hours): 16.9"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not show evidence of being closed prematurely as there is no indication that the customer was left waiting for an answer when it was closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the ticket being mishandled with generic troubleshooting, and the ticket was not escalated improperly.",
+    "evidence": []
+  },
+  "_raw_response": "{\"AI_QUALITY_FAILURES\": {\"detected\": true, \"reasoning\": \"The AI response was unhelpful and generic as it simply stated that the component could not be determined without providing any guidance or further actions.\", \"evidence\": [\"2025-09-29T14:02:50+00:00 (AI) ATLAS: Component could not be determined\"]}, \"AI_WALL_LOOPING\": {\"detected\": false, \"reasoning\": \"The AI did not repeatedly ask for the same information or prevent the customer from reaching a human agent.\", \"evidence\": []}, \"IGNORING_CONTEXT\": {\"detected\": true, \"reasoning\": \"The support agent asked for error details already implied in customer\u2019s message, which indicated creating new locations was the issue.\", \"evidence\": [\"2025-09-30T06:53:48+00:00 (Employee) Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?\", \"2025-09-29T14:02:55+00:00 (Customer) Anthony Marlow: I am having an issue creating new locations\"]}, \"RESPONSE_DELAYS\": {\"detected\": true, \"reasoning\": \"There was a significant delay of 16.9 hours between the customer's first message and the human response.\", \"evidence\": [\"Time to first human (hours): 16.9\"]}, \"PREMATURE_CLOSURE\": {\"detected\": false, \"reasoning\": \"The ticket does not show evidence of being closed prematurely as there is no indication that the customer was left waiting for an answer when it was closed.\", \"evidence\": []}, \"P1_SEV1_MISHANDLING\": {\"detected\": false, \"reasoning\": \"There is no evidence of the ticket being mishandled with generic troubleshooting, and the ticket was not escalated improperly.\", \"evidence\": []}}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60209192
+}

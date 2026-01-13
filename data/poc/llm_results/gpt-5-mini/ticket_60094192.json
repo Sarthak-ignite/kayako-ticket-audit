@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ATLAS AI entries in the thread show automated transcripts and notes about uploads and generated ticket content, but there is no clear evidence in the provided interactions that the AI gave generic filler, provided wrong factual information, or made broken promises to the customer.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The thread shows several human employee interactions (Andriy, Randall, Qasim, Christian) in addition to ATLAS entries. There is no clear evidence the customer was stuck repeatedly interacting with AI and unable to reach a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no explicit example in the provided interactions of support asking the customer to re-provide information or logs the customer had already submitted. The excerpted comments do not show repeated requests for the same data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer and employee interactions indicating delays in the exchange. Several messages are spaced days apart, suggesting slow ongoing responsiveness.",
+    "evidence": [
+      "2025-07-03T15:16:37+00:00 (AI) ATLAS entries, then next employee public reply 2025-07-04T05:27:06+00:00 (Andriy Rybalchenko) \u2014 ~14 hours gap",
+      "2025-07-04T16:36:54+00:00 (Randall private) / 2025-07-04T16:37:28+00:00 (Randall public) then 2025-07-07T14:35:11+00:00 (Christian private) \u2014 ~3 days gap",
+      "2025-07-07T14:35:11+00:00 (Christian) then 2025-07-10T13:02:58+00:00 (Qasim) \u2014 ~3 days gap"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is a mention that ticket 60078199 was closed by automation for no response, but that refers to a different ticket number. The provided interaction log for ticket 60094192 does not show the ticket being closed while the customer was waiting or having given up.",
+    "evidence": [
+      "2025-07-04T05:27:06+00:00 (Andriy Rybalchenko) comment: 'Ticket 60078199 was closed by automation due to no response for more than a week.' (different ticket)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no explicit indication this is a P1/SEV1 incident in the provided interactions, nor is there evidence of inappropriate generic troubleshooting instead of immediate escalation.",
+    "evidence": []
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60094192
+}

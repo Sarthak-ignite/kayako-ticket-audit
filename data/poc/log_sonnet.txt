@@ -1,0 +1,131 @@
+============================================================
+Phase 0.5-0.6: LLM Pattern Detection
+============================================================
+
+API Key Status:
+  ANTHROPIC_API_KEY: ✓ Found
+  OPENAI_API_KEY: ✓ Found
+  GEMINI_API_KEY: ✓ Found
+
+Loading metrics...
+  CSV metrics: 99 tickets
+  Ticket metrics: 99 tickets
+
+Available models: ['claude-sonnet', 'claude-haiku', 'gpt-4o', 'gpt-4o-mini', 'gemini-pro', 'gemini-flash']
+
+Running models: ['claude-sonnet']
+Limit: all tickets
+
+Running claude-sonnet on 99 tickets...
+  [1/99] Ticket 60270630: CACHED
+  [2/99] Ticket 60269018: CACHED
+  [3/99] Ticket 60269002: CACHED
+  [4/99] Ticket 60268699: CACHED
+  [5/99] Ticket 60267393: CACHED
+  [6/99] Ticket 60267287: CACHED
+  [7/99] Ticket 60264368: CACHED
+  [8/99] Ticket 60264386: CACHED
+  [9/99] Ticket 60264202: CACHED
+  [10/99] Ticket 60264009: CACHED
+  [11/99] Ticket 60261219: CACHED
+  [12/99] Ticket 60260239: CACHED
+  [13/99] Ticket 60259640: CACHED
+  [14/99] Ticket 60258962: CACHED
+  [15/99] Ticket 60258751: CACHED
+  [16/99] Ticket 60258400: CACHED
+  [17/99] Ticket 60256854: CACHED
+  [18/99] Ticket 60256250: CACHED
+  [19/99] Ticket 60256173: CACHED
+  [20/99] Ticket 60254579: CACHED
+  [21/99] Ticket 60253689: CACHED
+  [22/99] Ticket 60252864: CACHED
+  [23/99] Ticket 60252140: CACHED
+  [24/99] Ticket 60251281: CACHED
+  [25/99] Ticket 60250996: CACHED
+  [26/99] Ticket 60250793: CACHED
+  [27/99] Ticket 60250271: CACHED
+  [28/99] Ticket 60250122: CACHED
+  [29/99] Ticket 60248266: CACHED
+  [30/99] Ticket 60248265: CACHED
+  [31/99] Ticket 60247476: CACHED
+  [32/99] Ticket 60247413: CACHED
+  [33/99] Ticket 60246498: CACHED
+  [34/99] Ticket 60243765: CACHED
+  [35/99] Ticket 60243726: CACHED
+  [36/99] Ticket 60243347: CACHED
+  [37/99] Ticket 60243234: CACHED
+  [38/99] Processing ticket 60242868... OK
+  [39/99] Ticket 60242814: CACHED
+  [40/99] Ticket 60241518: CACHED
+  [41/99] Ticket 60241392: CACHED
+  [42/99] Ticket 60240989: CACHED
+  [43/99] Ticket 60239883: CACHED
+  [44/99] Ticket 60239472: CACHED
+  [45/99] Ticket 60238514: CACHED
+  [46/99] Ticket 60238457: CACHED
+  [47/99] Ticket 60238295: CACHED
+  [48/99] Ticket 60237327: CACHED
+  [49/99] Ticket 60237213: CACHED
+  [50/99] Processing ticket 60236962... OK
+  [51/99] Processing ticket 60235310... OK
+  [52/99] Processing ticket 60234884... OK
+  [53/99] Processing ticket 60234621... OK
+  [54/99] Processing ticket 60233855... OK
+  [55/99] Processing ticket 60233341... OK
+  [56/99] Processing ticket 60233405... OK
+  [57/99] Processing ticket 60233211... OK
+  [58/99] Processing ticket 60232940... OK
+  [59/99] Processing ticket 60232130... OK
+  [60/99] Processing ticket 60231851... OK
+  [61/99] Processing ticket 60231535... OK
+  [62/99] Processing ticket 60231299... OK
+  [63/99] Processing ticket 60230887... OK
+  [64/99] Processing ticket 60230438... OK
+  [65/99] Processing ticket 60230303... OK
+  [66/99] Processing ticket 60230003... OK
+  [67/99] Processing ticket 60229854... OK
+  [68/99] Processing ticket 60227783... OK
+  [69/99] Processing ticket 60227322... OK
+  [70/99] Processing ticket 60226631... OK
+  [71/99] Processing ticket 60225246... OK
+  [72/99] Processing ticket 60225231... OK
+  [73/99] Processing ticket 60224885... OK
+  [74/99] Processing ticket 60224201... OK
+  [75/99] Processing ticket 60223404... OK
+  [76/99] Processing ticket 60223073... OK
+  [77/99] Processing ticket 60222887... OK
+  [78/99] Processing ticket 60222765... OK
+  [79/99] Processing ticket 60222138... OK
+  [80/99] Processing ticket 60221483... OK
+  [81/99] Processing ticket 60220701... OK
+  [82/99] Processing ticket 60220499... OK
+  [83/99] Processing ticket 60219661... OK
+  [84/99] Processing ticket 60219657... OK
+  [85/99] Processing ticket 60218865... OK
+  [86/99] Processing ticket 60218313... OK
+  [87/99] Processing ticket 60218070... OK
+  [88/99] Processing ticket 60214613... OK
+  [89/99] Processing ticket 60214082... OK
+  [90/99] Processing ticket 60212784... OK
+  [91/99] Processing ticket 60212281... OK
+  [92/99] Processing ticket 60211680... OK
+  [93/99] Processing ticket 60211226... OK
+  [94/99] Processing ticket 60210541... OK
+  [95/99] Processing ticket 60210131... OK
+  [96/99] Processing ticket 60209553... OK
+  [97/99] Processing ticket 60209192... OK
+  [98/99] Processing ticket 60209095... OK
+  [99/99] Processing ticket 60208754... OK
+
+============================================================
+DETECTION SUMMARY
+============================================================
+
+Pattern                  claude-sonnet  
+----------------------------------------
+AI_QUALITY_FAILURES      22 (22.2%)     
+AI_WALL_LOOPING          14 (14.1%)     
+IGNORING_CONTEXT         22 (22.2%)     
+RESPONSE_DELAYS          50 (50.5%)     
+PREMATURE_CLOSURE        28 (28.3%)     
+P1_SEV1_MISHANDLING      29 (29.3%)     

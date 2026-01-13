@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear customer-facing evidence that an AI response was wrong, broken, or misleading. The customer expresses lack of progress, but does not attribute it to AI output or identify incorrect guidance.",
+    "evidence": [
+      "Customer: \"I have not received a licence or any helpful feedback.\"",
+      "Agent (public): \"As previously indicated, the support team is unable to help with obtaining new licenses or adjusting any other license, and the correct avenue for solving this would be contacting the GFI Customer Care team...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not ask to reach a human or complain about being stuck with an AI, and there are not multiple consecutive AI public replies. The only visible staff public reply is from a named agent.",
+    "evidence": [
+      "Agent (public): \"Best regards, Ciprian Nastase\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer references prior steps and prior ticket context, there is no customer-facing evidence that support asked them to repeat the same information or steps after they said it was already provided.",
+    "evidence": [
+      "Customer: \"I did as asked, but I can't track the message I've sent properly.\"",
+      "Customer: \"Are you actually working on this?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly follows up saying they have not received helpful feedback, and the agent apologizes for a delay. There is also a long gap between the customer's 2025-11-11 message and the next public staff reply on 2025-11-24.",
+    "evidence": [
+      "Customer (2025-11-11): \"I have not received a licence or any helpful feedback.\"",
+      "Customer (2025-11-11): \"Are you actually working on this?\"",
+      "Agent (2025-11-24): \"Please accept my sincere apologies for the delay in getting back to you; since the ticket was raised via email follow-up, it attained a low priority.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No message indicates the case was closed, would be closed, or was auto-closed while the customer still needed help.",
+    "evidence": [
+      "Agent (public): \"Should you have further questions related to GFI - Kerio Connect, please do not hesitate to submit an additional support request and we will be happy to assist!\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket content does not describe an outage/critical production impact or use P1/SEV1 language. It concerns a trial license/piracy warning and request for licensing help.",
+    "evidence": [
+      "Agent (public): \"I understand that a prospect customer is facing issues with the trial license they were issued: 10512-Z56RC-71G7M.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60238295
+}

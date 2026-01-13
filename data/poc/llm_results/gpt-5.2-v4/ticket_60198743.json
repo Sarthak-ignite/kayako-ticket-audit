@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI agents (ATLAS/Hermes) provided responses that were perceived as incorrect/misleading and/or overly generic, repeatedly linking KB articles without resolving the specific behavior. Customer explicitly stated the AI responses were wrong/unhelpful and requested a human multiple times.",
+    "evidence": [
+      "[2025-09-16T12:57:48+00:00] ATLAS: \"If a message is already rejected by the spam filter ... subsequent rules \u2013 including those set to 'Treat as non-spam' further down \u2013 will not be evaluated.\" (customer disputes this because the UI says it overrides score)",
+      "[2025-09-16T12:53:34+00:00] Customer: \"First, it is your task to clarify that, and secondly the score does not matter regardless of its value because it should be overridden by my rules.\"",
+      "[2025-09-16T12:53:34+00:00] Customer: \"And also you are wrong that 'Custom whitelists are not overriding the Spam Filter' is consistent with the behaviour discussed here in this ticket.\"",
+      "[2025-10-29T07:52:13+00:00] Customer: \"In the mean time, 'Hermes' has answered, too. I assume that Hermes is a bot, because it only produces very general and not helpful text.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly asked to speak to a human and to stop bot responses, but continued receiving AI/bot interactions and templated updates. Human engagement occurred much later, after prolonged frustration.",
+    "evidence": [
+      "[2025-09-16T12:53:34+00:00] Customer: \"Please, I want to talk to a human, not an AI! ... This is a waste of time.\"",
+      "[2025-10-02T07:30:42+00:00] Customer: \"for two weeks again I have not received any answer from a human.\"",
+      "[2025-10-31T13:24:34+00:00] Customer: \"I do not want to get any more responses from an AI Bot ... Why does the Hermes bot then still answer?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/AI repeatedly suggested steps or framing that did not incorporate customer-provided context (screenshots, removal of Deny rules, inability to craft emails, already being on 10.0.8 patch 1). Customer had to restate key facts multiple times, and one of their core questions (UUID/GUID handling for bulk rule creation) was initially not addressed by the AI.",
+    "evidence": [
+      "[2025-09-16T12:12:32+00:00] Customer: \"I have already... shown that all our custom spam rules with 'Deny' action have the value 'Unused'... I have now removed all action=Deny rules... -> Same effect.\"",
+      "[2025-09-16T12:12:32+00:00] Customer: \"You seem to have missed that I have asked a second question... There is a UUID for every rule... How can I treat this UUID when I edit the XML...?\"",
+      "[2025-10-23T10:32:00+00:00] Customer: \"Our Kerio Connect server version has been 10.0.8 patch 1 for several weeks or months already.\" contrasted with [2025-10-22T14:23:50+00:00] Ciprian asking: \"Please proceed with Upgrading Kerio Connect Server to the Latest Version...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant gaps (weeks) with the customer explicitly following up due to lack of human response. The customer reports waiting two weeks without a human reply, and later another week without a human reply after sending additional logs.",
+    "evidence": [
+      "[2025-10-02T07:30:42+00:00] Customer: \"for two weeks again I have not received any answer from a human.\"",
+      "[2025-10-22T14:23:50+00:00] First clear human public response from Ciprian comes ~20 days after the 2025-10-02 follow-up and ~36 days after 2025-09-16 AI exchange.",
+      "[2025-10-31T13:24:34+00:00] Customer: \"I have not gotten a reply for more than one week from a human, on this, after sending additional logs.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript does not show the ticket actually being closed while unresolved. There are auto-close warnings ('stay open for one week unless...'), but no evidence of closure occurring in the provided interactions.",
+    "evidence": [
+      "[2025-11-03T09:45:29+00:00] Support: \"This ticket will stay open for one week unless you reply with 'This ticket can be closed'...\" (warning only; no closure event shown)",
+      "[2025-11-04T13:16:06+00:00] Support repeats the same 'stay open for one week' notice; still no closure shown."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "While not a full production outage, the customer repeatedly signaled urgency and business need (phishing simulation emails must be allowed). Despite this, the case lingered with bot responses and long delays before L2 engagement and actionable troubleshooting (remote session). This indicates urgency not being handled with appropriate prioritization/escalation early.",
+    "evidence": [
+      "[2025-09-16T12:12:32+00:00] Customer: \"Please, we need a way to allow emails sent by an external phishing simulation tool!\"",
+      "[2025-10-02T07:30:42+00:00] Customer: \"Please continue on this ticket, with a higher priority. I need a solution...\"",
+      "[2025-10-06T15:05:27+00:00] Customer: \"I want this to be escalated to the team lead, please.\"",
+      "Escalation/human troubleshooting meaningfully begins much later (Ciprian response on 2025-10-22; remote session arranged on 2025-11-03)."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60198743
+}

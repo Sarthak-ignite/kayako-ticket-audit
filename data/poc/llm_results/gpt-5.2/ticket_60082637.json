@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only visible AI message is generic boilerplate and appears malformed/truncated (broken HTML / cut-off transcript), which is a clear quality failure in the response content.",
+    "evidence": [
+      "AI public comment: \"Thanks for chatting earlier with our AI Support! ... Here is a record of your conversation for easy reference:\" (generic filler, no actionable content shown)",
+      "Message ends abruptly: \"<b>Chat Support:</b><\" (truncated / broken formatting)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated questioning, looping behavior, or prevention of reaching a human\u2014only a single AI transcript/header is shown.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The provided snippet does not include any customer-provided details or subsequent AI replies that ignore previously provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamped interaction is present, so delays between responses cannot be assessed.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication the ticket was closed or that the customer was waiting on promised follow-up when closure occurred.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No severity/priority indicators or urgent-impact context are present, and no troubleshooting/escalation handling can be evaluated from the snippet.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60082637
+}

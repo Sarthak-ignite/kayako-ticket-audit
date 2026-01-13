@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No AI or agent responses are present in the provided interaction, so there is no evidence of generic filler, incorrect info, or unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single customer message and no back-and-forth showing repeated AI requests or inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support replies are shown, so there is no evidence that support ignored provided context or asked for the same information again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline contains only one customer entry and no subsequent responses to measure any delay between interactions.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is listed as closed, the interaction log does not show any closure message, promises, or an unresolved customer wait state that would support a premature-closure determination.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/SEV1), and there are no support responses indicating inappropriate low-level troubleshooting versus escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No AI or agent responses are present in the provided interaction, so there is no evidence of generic filler, incorrect info, or unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single customer message and no back-and-forth showing repeated AI requests or inability to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support replies are shown, so there is no evidence that support ignored provided context or asked for the same information again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline contains only one customer entry and no subsequent responses to measure any delay between interactions.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is listed as closed, the interaction log does not show any closure message, promises, or an unresolved customer wait state that would support a premature-closure determination.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/SEV1), and there are no support responses indicating inappropriate low-level troubleshooting versus escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60264368
+}

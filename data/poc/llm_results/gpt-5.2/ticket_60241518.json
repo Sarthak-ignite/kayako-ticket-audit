@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI provides a generic, incomplete public update (\u201cWe are pleased to inform you\u2026\u201d) without specific actionable details (version, ETA, workaround), which reads like filler rather than a clear resolution communication.",
+    "evidence": [
+      "[2025-12-16T11:23:02+00:00] (AI) Cu Chulainn AI Manager: \"We are pleased to inform you that our Development Team has successfully addressed the issue concerning the GFI Ap\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the AI repeatedly asking for the same information or preventing access to a human; a human agent escalated the issue to Engineering and the ticket progressed.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The timeline does not show support asking again for the screenshot/logs already mentioned, nor does it show repeated requests for the same data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket exhibits multi-day gaps between customer and support responses (and the provided metrics confirm extremely long delays).",
+    "evidence": [
+      "Time to first human (hours): 431.5",
+      "Max gap between responses (hours): 427.7",
+      "[2025-11-12T19:07:57+00:00] (Customer) Jozef Kacala: \"please pass this to engineering\"",
+      "[2025-11-30T14:53:32+00:00] (Employee) Randall Shawver: \"Thank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer explicitly requested closure, and support closed the ticket accordingly; there\u2019s no clear evidence the customer was still waiting for promised information when it was closed.",
+    "evidence": [
+      "[2025-12-17T15:02:18+00:00] (Customer) Jozef Kacala: \"thanks, we can close this ticket\"",
+      "[2025-12-17T15:02:30+00:00] (Employee) Phronesis: \"Thank you for your update; we are closing this ticket as requested.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked high priority, the interaction shown does not include generic troubleshooting (cache/firewall/VPN) and instead shows escalation to Engineering.",
+    "evidence": [
+      "[2025-11-30T14:53:32+00:00] (Employee) Randall Shawver: \"We have escalated this to our Engineering team for review.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI provides a generic, incomplete public update (\u201cWe are pleased to inform you\u2026\u201d) without specific actionable details (version, ETA, workaround), which reads like filler rather than a clear resolution communication.\",\n    \"evidence\": [\n      \"[2025-12-16T11:23:02+00:00] (AI) Cu Chulainn AI Manager: \\\"We are pleased to inform you that our Development Team has successfully addressed the issue concerning the GFI Ap\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the AI repeatedly asking for the same information or preventing access to a human; a human agent escalated the issue to Engineering and the ticket progressed.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline does not show support asking again for the screenshot/logs already mentioned, nor does it show repeated requests for the same data.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket exhibits multi-day gaps between customer and support responses (and the provided metrics confirm extremely long delays).\",\n    \"evidence\": [\n      \"Time to first human (hours): 431.5\",\n      \"Max gap between responses (hours): 427.7\",\n      \"[2025-11-12T19:07:57+00:00] (Customer) Jozef Kacala: \\\"please pass this to engineering\\\"\",\n      \"[2025-11-30T14:53:32+00:00] (Employee) Randall Shawver: \\\"Thank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer explicitly requested closure, and support closed the ticket accordingly; there\u2019s no clear evidence the customer was still waiting for promised information when it was closed.\",\n    \"evidence\": [\n      \"[2025-12-17T15:02:18+00:00] (Customer) Jozef Kacala: \\\"thanks, we can close this ticket\\\"\",\n      \"[2025-12-17T15:02:30+00:00] (Employee) Phronesis: \\\"Thank you for your update; we are closing this ticket as requested.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked high priority, the interaction shown does not include generic troubleshooting (cache/firewall/VPN) and instead shows escalation to Engineering.\",\n    \"evidence\": [\n      \"[2025-11-30T14:53:32+00:00] (Employee) Randall Shawver: \\\"We have escalated this to our Engineering team for review.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60241518
+}

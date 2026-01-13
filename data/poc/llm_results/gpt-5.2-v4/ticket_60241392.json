@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support (AI-driven workflow) prematurely concluded a hardware/storage failure and pushed an RMA path, but internal BU feedback later states the symptom is a known driver/software issue resolved by a specific build (v10:9072) and explicitly says RMA is NOT approved. This indicates incorrect diagnosis/triage that likely delayed resolution. Customer also reports the chatbot \u201ccrashes\u201d.",
+    "evidence": [
+      "Cu Chulainn public message: \u201cGiven that the system recovery attempt ... was unsuccessful, once we receive the video and the label photo, we can proceed with the warranty verification and RMA approval.\u201d",
+      "Cu Chulainn internal summary: \u201cBehavior consistent with storage/boot media failure.\u201d",
+      "Internal/BU message (side convo 4694): \u201cRMA is NOT approved. ... stems from driver issues and was resolved in v10:9072\u201d",
+      "Customer: \u201cHello the chatbot crashes because he cant check the serial number from my kerio ng120\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly asked to \u2018create a ticket\u2019/proceed with RMA and stated data was already provided, while the AI kept gating progress behind the same evidence request (video) and generated repetitive near-duplicate public replies. The customer also explicitly complained the chatbot crashed, indicating a stuck/self-service loop before reaching effective human handling.",
+    "evidence": [
+      "Customer: \u201cPlease create me a ticket\u201d / \u201cCreate me a ticket we aleready have all data you need\u201d",
+      "Customer: \u201cYou have aleready all data you need\u201d",
+      "Two highly similar public replies sent minutes apart requesting the same video requirement (13:45:51 and 13:47:23).",
+      "Customer: \u201cthe chatbot crashes because he cant check the serial number...\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer stated \u2018Video uploaded\u2019 and that support already had all needed data, but support continued to request the video again (and also requested serial label proof despite already having the serial), creating unnecessary back-and-forth. While support later explained attachments were missing, the interaction still reflects repeated requests after the customer indicated completion.",
+    "evidence": [
+      "Customer in ATLAS transcript: \u201cVideo uploaded\u201d",
+      "Customer: \u201cCreate me a ticket we aleready have all data you need\u201d / \u201cYou have aleready all data you need\u201d",
+      "Support: \u201cTo proceed further, we require... 1) A video recording...\u201d and later again: \u201cThe remaining requirement for the RMA is a video showing the boot failure...\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions and follow-ups occur within the same day and generally within minutes/hours; no 3+ day gaps are present in the provided timeline.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed/resolved in the excerpt; it remains in progress/on hold awaiting internal confirmation/approval.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is a firewall that \u201cwon\u2019t start\u201d (likely outage). Although priority was set to URGENT, the handling focused on RMA workflow and 48-hour holds rather than attempting/communicating a rapid workaround. BU later indicated it\u2019s a known driver issue fixed in a specific build and questioned whether that information made it into CS processes, suggesting the team missed a known, faster remediation path for an outage situation.",
+    "evidence": [
+      "Customer: \u201cMy Kerio NG120 wont start any more it crashes while booting\u201d",
+      "Support placed: \u201cPlacing on hold for 48 hour(s)\u201d while awaiting warranty/RMA approval steps.",
+      "BU message: \u201cRMA is NOT approved... resolved in v10:9072... I have informed about this fact in CS-BU g-chat on NOV 4th - can you please confirm this info has made it to your processes?\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60241392
+}

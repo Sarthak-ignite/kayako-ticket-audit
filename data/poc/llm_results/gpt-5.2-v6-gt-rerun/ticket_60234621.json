@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There are signs of low-quality/odd automation behavior: the AI system placed the ticket \u201con hold for 9999 hours,\u201d which is not a realistic or customer-meaningful action and suggests misconfigured or careless automation. Additionally, multiple automated/private status updates add noise without adding substantive guidance to the customer.",
+    "evidence": [
+      "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9956 is changed to 'In Progress' , block reason: -",
+      "Kayako - ticket id 60234621 // ATLAS commented privately: Action: l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer reports inability to access chat widgets, but there is no indication they were trapped in an AI chatbot loop or repeatedly blocked from reaching a human agent within this ticket. The customer does not request a human or complain about AI interactions specifically.",
+    "evidence": [
+      "We have not received any chat for the past 35minutes, Unable to create a chat via Fortinet.com or Support.fortinet.com as well."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support appears to acknowledge the escalation and provides the ticket number when requested. There is no clear evidence of agents ignoring information already provided or forcing the customer to repeat details.",
+    "evidence": [
+      "Customer: Please share the ticket number and please keep everyone in the initial email in loop for visibility.",
+      "Aamir Merchant (private): Here is the ticket number:  60234621",
+      "Priyanka Bhotika (public): We have received your escalation, and our team is currently reviewing the issue."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly complains about waiting (no chat for 35 minutes). Also, the structured metrics show a very long resolution time and several days between fix communications (Nov 3) and ticket being marked solved/closed (Nov 10/13), which suggests significant lifecycle delay even if service recovery happened earlier.",
+    "evidence": [
+      "We have not received any chat for the past 35minutes",
+      "CSV: initialResponseTime=772",
+      "CSV: resolutionTime=616652",
+      "CSV: Ticket Solved=2025-11-10 16:40:05",
+      "CSV: Ticket Closed=2025-11-13 17:37:20"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is closed without any explicit customer confirmation in the provided conversation that service was restored on their side, so there is a risk it was closed administratively/automatically after internal resolution. Evidence is indirect because the thread shows no post-fix customer reply either way.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-13 17:37:20",
+      "Chintan Parekh (public): We have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor the system closely..."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This was explicitly raised as a Severity 1 outage. While engineering work appears fast, the support workflow shows concerning signals for a Sev1 (e.g., placing the case on hold for an extreme duration, and the ticket not being marked solved/closed until a week later per CSV). This suggests potential process mishandling even though the technical fix was timely.",
+    "evidence": [
+      "Subject: Severity 1- Fortinet-Khoros Outage",
+      "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "CSV: resolutionTime=616652",
+      "CSV: Ticket Solved=2025-11-10 16:40:05"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60234621
+}

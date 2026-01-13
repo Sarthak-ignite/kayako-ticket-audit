@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only AI message is a brief generic summary but does not contain incorrect information, misleading promises, or substantive filler beyond a short transcript header.",
+    "evidence": [
+      "[2025-11-14T12:23:22+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no sequence of repeated AI requests or interaction loop \u2014 only a single AI comment is present in the timeline.",
+    "evidence": [
+      "[2025-11-14T12:23:22+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No follow-up questions or requests for previously provided information appear; only one AI message exists so there is no evidence the agent ignored prior context.",
+    "evidence": [
+      "[2025-11-14T12:23:22+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Ticket data shows no multi-day gaps (Max gap between responses is 0.0 hours) and only a single timestamped AI interaction, so no significant response delays are evident.",
+    "evidence": [
+      "Max gap between responses (hours): 0.0",
+      "[2025-11-14T12:23:22+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is closed, there is no evidence the customer was awaiting promised information or that the customer abandoned the ticket; only an AI summary message is present.",
+    "evidence": [
+      "Status: closed",
+      "[2025-11-14T12:23:22+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is marked low priority, not a P1/SEV1 incident, and there is no troubleshooting content to evaluate for inappropriate generic responses.",
+    "evidence": [
+      "Priority: low",
+      "[2025-11-14T12:23:22+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only AI message is a brief generic summary but does not contain incorrect information, misleading promises, or substantive filler beyond a short transcript header.\",\n    \"evidence\": [\"[2025-11-14T12:23:22+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\\\"\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no sequence of repeated AI requests or interaction loop \u2014 only a single AI comment is present in the timeline.\",\n    \"evidence\": [\"[2025-11-14T12:23:22+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\\\"\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No follow-up questions or requests for previously provided information appear; only one AI message exists so there is no evidence the agent ignored prior context.\",\n    \"evidence\": [\"[2025-11-14T12:23:22+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\\\"\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket data shows no multi-day gaps (Max gap between responses is 0.0 hours) and only a single timestamped AI interaction, so no significant response delays are evident.\",\n    \"evidence\": [\"Max gap between responses (hours): 0.0\", \"[2025-11-14T12:23:22+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\\\"\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is closed, there is no evidence the customer was awaiting promised information or that the customer abandoned the ticket; only an AI summary message is present.\",\n    \"evidence\": [\"Status: closed\", \"[2025-11-14T12:23:22+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\\\"\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is marked low priority, not a P1/SEV1 incident, and there is no troubleshooting content to evaluate for inappropriate generic responses.\",\n    \"evidence\": [\"Priority: low\", \"[2025-11-14T12:23:22+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\\\"\"]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60243234
+}

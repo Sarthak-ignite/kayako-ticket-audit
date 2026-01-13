@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no indications that the AI provided wrong information or made unmet promises within the available context.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was stuck in an AI loop or unable to interact with a human, as the response indicates a record of prior conversation.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interaction data does not show any instances of information that the support ignored or repeated requests for the same information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no significant delays in responses as indicated by the maximum gap being 0.0 hours.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket closure does not indicate any wait for promised information, as there is no evidence of unmet commitments.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There are no indications of mishandling of high-priority issues, as the ticket does not categorize as high-priority or present mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no indications that the AI provided wrong information or made unmet promises within the available context.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer was stuck in an AI loop or unable to interact with a human, as the response indicates a record of prior conversation.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction data does not show any instances of information that the support ignored or repeated requests for the same information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no significant delays in responses as indicated by the maximum gap being 0.0 hours.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket closure does not indicate any wait for promised information, as there is no evidence of unmet commitments.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no indications of mishandling of high-priority issues, as the ticket does not categorize as high-priority or present mishandling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60233211
+}

@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible AI (ATLAS) content is partial/truncated and does not show any clearly incorrect product info, broken templates, unfulfilled promises, or irrelevant troubleshooting. The later customer-facing responses are from human agents.",
+    "evidence": [
+      "[2025-09-11T07:12:35+00:00] ATLAS chat transcript is truncated (\"...[truncated]...\") so no clear failure can be proven from the provided text."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer asked for a human and was refused, nor that ATLAS repeatedly requested the same specific info 2+ times. After the initial ATLAS interaction, humans responded later in the ticket.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer indicates they already provided installation logs, but support later requests installation logs again without acknowledging the existing logs in the ticket.",
+    "evidence": [
+      "[2025-09-11T07:14:59+00:00] Customer: \"This is log install GFI MailEssential 21.6 on Exchange 2019. Also I can not install GFI MailEssential version 22.0 on Exchange 2019\"",
+      "[2025-09-18T10:26:33+00:00] Support (Qasim Ali): \"In case of issues, please share Windows Event logs, Installation logs, and a Screenshot of the issue.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a >3-day gap between the customer providing key info/follow-ups and the first substantive support response. The customer explicitly follows up multiple times and asks for a projected deadline due to the wait.",
+    "evidence": [
+      "[2025-09-11T07:14:59+00:00] Customer provides logs/info: \"This is log install...\"",
+      "[2025-09-12T02:19:22+00:00] Customer follow-up: \"I look forward to hearing from you and the team with your findings.\"",
+      "[2025-09-15T08:29:49+00:00] Customer follow-up: \"I look forward to hearing from you and the team with your findings.\"",
+      "[2025-09-17T06:43:56+00:00] Customer follow-up: \"I look forward to hearing from you and the team with your findings.\"",
+      "[2025-09-18T03:18:23+00:00] Customer escalation on delay: \"we need a projected deadline from your end... could you please let us know when we can expect a resolution or a more detailed update?\"",
+      "[2025-09-18T09:37:53+00:00] First substantive support response appears: Arafat provides KBAs and guidance."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed. Support messages mention an auto-close policy, but the conversation continues and the customer\u2019s questions receive further replies.",
+    "evidence": [
+      "[2025-09-19T09:30:19+00:00] Support: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\" (policy statement; no actual closure shown)."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not indicate P1/SEV1/Critical status, production outage, or SLA/time-critical impact requiring escalation. It appears to be an installation/troubleshooting request.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60195349
+}

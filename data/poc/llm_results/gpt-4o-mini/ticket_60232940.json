@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no clear AI responses in the interactions provided that indicate poor quality, filler information, or broken promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to escalate their issue without repeated queries from AI; interactions show a direct communication with employees.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer repeatedly indicated that they had previously requested information regarding past tickets but received minimal acknowledgment, suggesting a lack of contextual awareness.",
+    "evidence": [
+      "[2025-12-23T04:43:40+00:00] (Customer) Shingo Ohkubo: This is not first time that I have requested restoration of past tickets."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant response delays evident, with the time to first human being over 667 hours and gaps between responses also reaching similar lengths.",
+    "evidence": [
+      "[2025-12-26T00:03:44+00:00] (Employee) Phronesis: As requested, we are closing this ticket",
+      "[2025-12-24T08:22:10+00:00] (Employee) Muhammad Rizwan: As requested, please find all the attachments related to ticket #4389067."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed after the customer's request without confirming if all their concerns were adequately addressed.",
+    "evidence": [
+      "[2025-12-26T00:03:44+00:00] (Employee) Phronesis: Thank you for your update and for confirming that you have checked the attachments. As requested, we are closing this ticket."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication in the interactions that any high-priority or severe outage issues were mishandled.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no clear AI responses in the interactions provided that indicate poor quality, filler information, or broken promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer was able to escalate their issue without repeated queries from AI; interactions show a direct communication with employees.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer repeatedly indicated that they had previously requested information regarding past tickets but received minimal acknowledgment, suggesting a lack of contextual awareness.\",\n    \"evidence\": [\n      \"[2025-12-23T04:43:40+00:00] (Customer) Shingo Ohkubo: This is not first time that I have requested restoration of past tickets.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant response delays evident, with the time to first human being over 667 hours and gaps between responses also reaching similar lengths.\",\n    \"evidence\": [\n      \"[2025-12-26T00:03:44+00:00] (Employee) Phronesis: As requested, we are closing this ticket\",\n      \"[2025-12-24T08:22:10+00:00] (Employee) Muhammad Rizwan: As requested, please find all the attachments related to ticket #4389067.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed after the customer's request without confirming if all their concerns were adequately addressed.\",\n    \"evidence\": [\n      \"[2025-12-26T00:03:44+00:00] (Employee) Phronesis: Thank you for your update and for confirming that you have checked the attachments. As requested, we are closing this ticket.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication in the interactions that any high-priority or severe outage issues were mishandled.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60232940
+}

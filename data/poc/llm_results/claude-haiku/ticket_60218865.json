@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient context to evaluate AI response quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of AI interaction loop or repetitive requests.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Insufficient interaction details to determine context ignorance.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No clear indication of significant response delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Limited information prevents assessment of premature closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, and no severity details are provided.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the limited information provided, I'll analyze the ticket with the available data:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient context to evaluate AI response quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of AI interaction loop or repetitive requests.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction details to determine context ignorance.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear indication of significant response delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Limited information prevents assessment of premature closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, and no severity details are provided.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The provided interaction is extremely minimal\n- It appears to be a summary/record of a previous AI support conversation\n- Insufficient context exists to make definitive quality assessments\n- More ticket details or full conversation transcript would be needed for comprehensive analysis",
+  "_model": "claude-haiku",
+  "_ticket_id": 60218865
+}

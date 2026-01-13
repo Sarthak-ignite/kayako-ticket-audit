@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible message is a meta note stating a transcript exists, but the actual AI conversation content is not present, so quality failures cannot be verified.",
+    "evidence": [
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated AI prompts or the customer being prevented from reaching a human because the interaction content is not shown.",
+    "evidence": [
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The ticket does not include any customer-provided details or agent follow-ups that could show repeated requests or missed context.",
+    "evidence": [
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamped interaction is provided, so there is no measurable delay between responses.",
+    "evidence": [
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, the timeline does not show any unresolved customer request, promised follow-up, or customer waiting state\u2014only a single AI transcript note.",
+    "evidence": [
+      "[2025-10-15T07:53:24+00:00] (AI) ATLAS: \"ATLAS commented privately: Thanks for chatting earlier with our AI Support!\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Priority is normal (not P1/Sev1), and there is no troubleshooting content shown that would indicate mishandling of an outage/high-severity incident.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only visible message is a meta note stating a transcript exists, but the actual AI conversation content is not present, so quality failures cannot be verified.\",\n    \"evidence\": [\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repeated AI prompts or the customer being prevented from reaching a human because the interaction content is not shown.\",\n    \"evidence\": [\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not include any customer-provided details or agent follow-ups that could show repeated requests or missed context.\",\n    \"evidence\": [\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one timestamped interaction is provided, so there is no measurable delay between responses.\",\n    \"evidence\": [\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, the timeline does not show any unresolved customer request, promised follow-up, or customer waiting state\u2014only a single AI transcript note.\",\n    \"evidence\": [\n      \"[2025-10-15T07:53:24+00:00] (AI) ATLAS: \\\"ATLAS commented privately: Thanks for chatting earlier with our AI Support!\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Priority is normal (not P1/Sev1), and there is no troubleshooting content shown that would indicate mishandling of an outage/high-severity incident.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60221483
+}

@@ -1,0 +1,63 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI (ATLAS) appears to have provided a confident but likely incorrect initial diagnosis attributing the issue to third\u2011party telemetry/tracking overhead, while later internal investigation concluded the root cause was corporate VPN/proxy JavaScript injection. The customer also explicitly requested AI responses be stopped, suggesting perceived poor quality/fit of AI output for this P1 situation.",
+    "evidence": [
+      "Kayako - ticket id 60238457 // ATLAS commented publicly: \"Based on our analysis of the HAR file you attached, we observed multiple telemetry and tracking requests\u2014primarily from monitoring scripts like New Relic ... which are creating frequent background XHR and image beacon requests... [and] can contribute to client-side congestion and UI lag\"",
+      "Kayako - ticket id 60238457 // Xavier A Villarroel commented privately: \"Root cause confirmed: Corporate VPN/proxy JavaScript injection interfering with widget XHR.\"",
+      "Kayako - ticket id 60238457 // Monica Botey commented privately: \"stop the AI responses for this case.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "There are signals the customer experience was not getting adequate human engagement and wanted a named individual/phone call, plus an explicit request to stop AI responses. While not an explicit 'can I talk to a human' statement, these are consistent with AI gating or perceived AI-driven loop in a high-severity incident.",
+    "evidence": [
+      "Kayako - ticket id 60238457 // Warren Cook commented privately: \"I would like to see a response in this case from a named individual from Khoros ASAP. We will make people available for a phone call to get this resolved.\"",
+      "Kayako - ticket id 60238457 // Monica Botey commented privately: \"stop the AI responses for this case.\"",
+      "Kayako - ticket id 60238457 // Harry Tasker commented publicly: \"We\u2019ve received your escalation regarding ticket 60238457 and will be actively working on it. You can expect an update from us soon.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/AI repeatedly focused on third-party trackers despite the customer stating they only run the Khoros-provided BrandMessenger script and later emphasizing incognito/extension disabling did not help and that similar prior incidents were ultimately on Khoros. This suggests the response path did not fully adapt to or incorporate the customer\u2019s stated constraints and prior-case context.",
+    "evidence": [
+      "Kayako - ticket id 60238457 // Don Kempt commented publicly: \"Aamir, we only run the javascript provided from brandmessanger, please advise\"",
+      "Kayako - ticket id 60238457 // ATLAS commented publicly: \"Even if your direct integration is only with BrandMessenger, these monitoring scripts ... may be loaded indirectly\"",
+      "Kayako - ticket id 60238457 // Don Kempt commented publicly: \"disabling extensions and running incognito locally has no effect. The issue persists\"",
+      "Kayako - ticket id 60238457 // Monica Botey commented publicly: \"THIS IS THE SAME ISSUE WE HAD IN AUGUST ... (THE ONE STILL PENDING RCA). THIS NEEDS TO BE ESCALATED\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured metrics show a very slow initial response time, and the customer repeatedly complained about waiting and lack of substantive updates during a declared P1/complete outage. There were also explicit complaints about multi-hour gaps between updates.",
+    "evidence": [
+      "CSV: initialResponseTime=72",
+      "Kayako - ticket id 60238457 // Don Kempt commented publicly: \"Please note this case was opened as a P1 at 11am EST. This is 5hrs with out a working chat.\"",
+      "Kayako - ticket id 60238457 // Monica Botey commented privately: \"Hello, checking again, it has been 2h since the last update.\"",
+      "Kayako - ticket id 60238457 // Warren Cook commented privately: \"That is unacceptable for a P1 case where our chat has been non functional for the majority of the US business day.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The agent message set an auto-close expectation (\u201cstay open for one week unless...\u201d), which functions as a closure threat even though the customer continued expressing unresolved impact. The ticket is ultimately marked closed in CSV; given subsequent messages indicating ongoing issues/uncertainty, this raises risk of closure before confirmed resolution (some uncertainty because full end-of-ticket conversation is truncated).",
+    "evidence": [
+      "Kayako - ticket id 60238457 // Harry Tasker commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Kayako - ticket id 60238457 // Warren Cook commented privately: \"We are still waiting for confirmation from IT if this can be done\"",
+      "Kayako - ticket id 60238457 // Balaji Jayaraman commented privately: \"I am not convinced that this will resolve the issue... If I access the webchat widget from my home network, I run into the exact same issue. No vpn, no proxy\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer declared a P1 and the case was escalated as a complete outage affecting all customers, yet updates were minimal and the customer reported long periods with non-functional chat and insufficient communication. The combination of slow initial response, generic status updates, and customer dissatisfaction suggests the incident handling did not meet P1/SEV1 expectations.",
+    "evidence": [
+      "Kayako - ticket id 60238457 // Meaghan Mcclure commented publicly: \"Please treat this as a P1 situation.\"",
+      "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: \"The severity is: complete_outage\"",
+      "Kayako - ticket id 60238457 // Denis Spirin commented publicly: \"We are investigating the issue with the Infrastructure team. We will update you once there is information available.\"",
+      "Kayako - ticket id 60238457 // Warren Cook commented privately: \"That is unacceptable for a P1 case where our chat has been non functional for the majority of the US business day.\"",
+      "CSV: initialResponseTime=72"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60238457
+}

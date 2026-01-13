@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS content is only shown in private transcript logs, and there is no customer-facing complaint that the AI was wrong or misleading. The customer ultimately received a clear human resolution with actionable steps.",
+    "evidence": [
+      "Dear Daniel,\n\nThank you for your patience on this request.\n\nWe have processed your request, and you should also now be able to see it when you navigate to Administration > Devices on the Web Portal..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence that the customer was trapped in an AI loop or unable to reach a human; a human agent engaged publicly and resolved the request. Any AI loop indicators are only present in private chat transcript text.",
+    "evidence": [
+      "Kayako - ticket id 60211680 // Alexandr Oliynyk commented publicly: Dear Daniel,",
+      "Kayako - ticket id 60211680 // Mohammed Amer commented publicly: Dear Daniel Soler,\n\nWe have received your escalation and we are currently working on it."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not repeatedly ask for information the customer already provided, and the ticket progressed from identification of the number\u2019s current COID to completing the move. The customer corrected an assumption about COID ownership, and the request was later processed rather than ignored.",
+    "evidence": [
+      "We have checked and found that the number 7868153707 is assigned to the 102817 COID, which has not been transitioned to StreetSmart yet.",
+      "102817 is not our company ID so I do not have the login for it.  7868153707 is our number which needs to be added to 104983.",
+      "We have processed your request, and you should also now be able to see it when you navigate to Administration > Devices on the Web Portal..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a long wait from the customer\u2019s public reply (Oct 3) to the next staff public update (Oct 9), and the case was explicitly escalated. The overall resolution time in CSV is also ~9 days, aligning with the customer-facing escalation/patience language.",
+    "evidence": [
+      "Kayako - ticket id 60211680 // Mohammed Amer commented publicly: Dear Daniel Soler,\n\nWe have received your escalation and we are currently working on it.",
+      "Kayako - ticket id 60211680 // Ibiso Barimalaa commented publicly: Dear Daniel,\n\nThank you for your patience on this request.",
+      "CSV: Ticket Created=2025-10-01 16:35:30",
+      "CSV: Ticket Solved=2025-10-10 15:48:48"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket closure was initiated by the customer after the agent stated the request had been processed. There is no evidence the ticket was closed while the customer was still awaiting resolution.",
+    "evidence": [
+      "We have processed your request, and you should also now be able to see it when you navigate to Administration > Devices on the Web Portal...",
+      "This ticket can be closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Customer-facing messages do not indicate an outage/production-down or SEV1/P1 scenario, and the handling focused on completing an account/device-number move. The only severity label appears in an internal note, which is insufficient by itself.",
+    "evidence": [
+      "We have processed your request, and you should also now be able to see it when you navigate to Administration > Devices on the Web Portal..."
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60211680
+}

@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are repetitive and generic, primarily logging system actions without providing meaningful customer support.",
+    "evidence": [
+      "[2025-12-09T04:46:13+00:00] Placing on hold for 9999 hour(s)",
+      "[2025-11-14T05:01:53+00:00] Placing on hold for 8888 hour(s)",
+      "[2025-11-07T03:49:26+00:00] Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly asks for updates, but AI responses are mechanical and do not facilitate human intervention.",
+    "evidence": [
+      "[2025-12-08T18:04:24+00:00] Varun Venkat: 'Any eta on this request, it's been a while since we opened this ticket.'",
+      "[2025-11-13T19:22:32+00:00] Varun Venkat: 'Any update on the issue, on when we will have a resolution ??'"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No clear evidence of support team ignoring previous context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant gaps between customer inquiries and support responses, with some interactions separated by weeks.",
+    "evidence": [
+      "Time between first customer escalation [2025-10-30] and last response [2025-12-24] is approximately 2 months",
+      "Max gap between responses noted as 589.0 hours in ticket metadata"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed without clear resolution, with the customer still seeking updates.",
+    "evidence": [
+      "[2025-12-24T06:55:48.001-0300] Abhishek Chandel: 'Data file has been provided in the given location and kayako ticket (60230887) is also completed.so closing this ticket.'",
+      "Customer had multiple unaddressed inquiries before closure"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Insufficient evidence of inappropriate handling for a high-priority ticket.",
+    "evidence": []
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are repetitive and generic, primarily logging system actions without providing meaningful customer support.\",\n    \"evidence\": [\n      \"[2025-12-09T04:46:13+00:00] Placing on hold for 9999 hour(s)\",\n      \"[2025-11-14T05:01:53+00:00] Placing on hold for 8888 hour(s)\",\n      \"[2025-11-07T03:49:26+00:00] Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer repeatedly asks for updates, but AI responses are mechanical and do not facilitate human intervention.\",\n    \"evidence\": [\n      \"[2025-12-08T18:04:24+00:00] Varun Venkat: 'Any eta on this request, it's been a while since we opened this ticket.'\",\n      \"[2025-11-13T19:22:32+00:00] Varun Venkat: 'Any update on the issue, on when we will have a resolution ??'\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence of support team ignoring previous context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant gaps between customer inquiries and support responses, with some interactions separated by weeks.\",\n    \"evidence\": [\n      \"Time between first customer escalation [2025-10-30] and last response [2025-12-24] is approximately 2 months\",\n      \"Max gap between responses noted as 589.0 hours in ticket metadata\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was closed without clear resolution, with the customer still seeking updates.\",\n    \"evidence\": [\n      \"[2025-12-24T06:55:48.001-0300] Abhishek Chandel: 'Data file has been provided in the given location and kayako ticket (60230887) is also completed.so closing this ticket.'\",\n      \"Customer had multiple unaddressed inquiries before closure\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient evidence of inappropriate handling for a high-priority ticket.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- High priority ticket (38.9 hours to first human response)\n- Multiple AI-driven hold periods\n- Significant response delays\n- Closure without clear customer satisfaction\n- Repeated customer follow-ups ignored\n\nThe ticket demonstrates multiple support quality issues, particularly around AI interaction, response delays, and premature closure.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60230887
+}

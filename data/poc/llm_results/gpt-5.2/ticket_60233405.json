@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible message is a generic post-chat transcript note, but the actual AI conversation content is truncated, so there isn\u2019t clear evidence of wrong info, unkept promises, or low-quality generic troubleshooting within the interaction itself.",
+    "evidence": [
+      "[2025-10-31T14:37:09+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no readable back-and-forth showing repeated AI prompts or the customer being blocked from reaching a human; the transcript is not included beyond the header.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interaction content does not show the customer providing details nor the AI/agent asking for the same information again; the conversation record is truncated.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamped interaction is provided, and the metadata indicates a 0.0 hour max gap, so there\u2019s no evidence of multi-day response delays.",
+    "evidence": [
+      "[2025-10-31T14:37:09+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, there is no evidence in the provided interaction that the customer was awaiting promised follow-up or that closure happened while an action was pending.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a low-priority ticket (not P1/SEV1), and there is no evidence of outage handling or escalation needs from the provided content.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only visible message is a generic post-chat transcript note, but the actual AI conversation content is truncated, so there isn\u2019t clear evidence of wrong info, unkept promises, or low-quality generic troubleshooting within the interaction itself.\",\n    \"evidence\": [\n      \"[2025-10-31T14:37:09+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no readable back-and-forth showing repeated AI prompts or the customer being blocked from reaching a human; the transcript is not included beyond the header.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction content does not show the customer providing details nor the AI/agent asking for the same information again; the conversation record is truncated.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one timestamped interaction is provided, and the metadata indicates a 0.0 hour max gap, so there\u2019s no evidence of multi-day response delays.\",\n    \"evidence\": [\n      \"[2025-10-31T14:37:09+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, there is no evidence in the provided interaction that the customer was awaiting promised follow-up or that closure happened while an action was pending.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a low-priority ticket (not P1/SEV1), and there is no evidence of outage handling or escalation needs from the provided content.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60233405
+}

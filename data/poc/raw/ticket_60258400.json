@@ -1,0 +1,144 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_languard",
+        "requester": {
+          "id": 60081788,
+          "uuid": "36b7873b-37bb-4699-9cfe-abc262c01adf",
+          "full_name": "Ond\u0159ej \u0160abata",
+          "legacy_id": "369938318174",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/36b7873b-37bb-4699-9cfe-abc262c01adf?1767774746",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60000044,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 83323,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 14144,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Prague",
+          "time_zone_offset": 3600,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15",
+          "last_seen_ip": "93.99.100.210",
+          "last_seen_at": "2026-01-07T08:32:26+00:00",
+          "last_active_at": "2026-01-07T08:32:26+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60081788",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@29a72e4cd7311259a46bbbc310dbbed9610d2fb0",
+          "password_updated_at": "2025-07-14T10:14:36+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T14:36:15+00:00",
+          "last_activity_at": "2026-01-06T14:36:15+00:00",
+          "created_at": "2018-12-01T11:36:13+00:00",
+          "updated_at": "2026-01-07T08:32:26+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60081788"
+        },
+        "ticket_idt": 60258400
+      },
+      "interactions": [
+        [
+          "2025-12-09T13:32:09+00:00",
+          "Kayako - ticket id 60258400 // Keyur Saxena commented publicly: Hello Ond\u0159ej,\n\nPlease force the updates: Forcing an update for the patch definitions on the LanGuard server and connected Agents - GFI LanGuard [https://support.languard.gfi.com/article/123074-forcing-an-update-for-the-patch-definitions-on-the-languard-server-and-connected-agents]\n\nThen, apply this fix on any new/existing agents: Fixing the \"You are no longer entitled to product updates\" error in program updates for agents - GFI LanGuard [https://support.languard.gfi.com/article/128478-fixing-the-you-are-no-longer-entitled-to-product-updates-error-in-program-updates-for-agents]\n\nIf the issue persists after the fix, please provide the agent logs for review:\u00a0Providing Troubleshooter Logs from GFI LanGuard Agent - GFI LanGuard [https://support.languard.gfi.com/article/123171-providing-troubleshooter-logs-from-gfi-languard-agent]\n\nYou may pick a batch of a few computers to test these steps with and let us know if you are blocked during any step.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-12-08T11:24:37+00:00",
+          "Kayako - ticket id 60258400 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-12-08T11:24:19+00:00",
+          "Kayako - ticket id 60258400 // Ond\u0159ej \u0160abata commented privately: Those steps are basically what was recommended in articles before.\nPlease have someone look at the logs, otherwise, there's a high risk of losing the customer's renewal, which is in two weeks."
+        ],
+        [
+          "2025-12-08T11:16:26+00:00",
+          "Kayako - ticket id 60258400 // ATLAS commented publicly: Dear Ond\u0159ej,\n\nThank you for sharing the log files and confirming that you have already attempted all the previously suggested solutions regarding the persistent \"The patch detection data package is unavailable\" error in GFI LanGuard.\n\nBased on the information provided and the relevant knowledge base articles, here are the most targeted next steps and root causes to review when the patch management database or update definitions remain persistently unavailable despite following standard procedures:\n\n1. Patch Management Database Integrity and Propagation\n\n \t* Ensure that lanss_xx_patchmngmt.mdb exists and is not corrupted on both the LanGuard server and the affected agent (C:\\ProgramData\\GFI\\LanGuard 12\\PatchManagement\\).\n \t* If you have previously copied a clean database to either location, verify that the timestamp is recent and that it is not immediately being deleted or replaced after a scan attempt, which could indicate an environmental or permission issue.\n\nReference: Handling 'The patch management database is unavailable' Error [https://support.languard.gfi.com/article/122919]\n\n2. Required Permissions and Security Interference\n\n \t* Both the LanGuard server and agent need full access permissions to the program data and update folders. Restricted NTFS permissions or security policies may prevent the creation or update of required files.\n \t* Temporarily disable any third-party antivirus, endpoint protection, or Windows Defender on both systems and verify if the problem is resolved after doing so and running a fresh scan. If so, implement long-term exclusions for the entire LanGuard data folders.\n\n3. Explicit Patch Definitions Synchronization\n\n\t* Use the manual force-update process (see manual update article [https://support.languard.gfi.com/article/123069-updating-languard-server-manually-when-unable-to-get-current-updates-or-agents-do-not-pull-latest-definitions-from-server] and Forcing an update for the patch definitions [https://support.languard.gfi.com/article/123074])\u2014but pay special attention to the additional step: \n\n \t* After updating the server, deploy the current lanss_12_patchmngmt.mdb and wsusscn2.cab files to all agents missing definitions directly using the Deploy Custom Software job from the Remediation Center, as instructed in the article.\n \t* Verify after deployment that these files are present on the client machine and that scans subsequently complete with accurate patch status.\n\n4. Connectivity and DNS Resolution\n\n \t* Both LAN and agent systems must perform both forward and reverse DNS lookups for each other and connect via the correct IP and port (typically TCP 1072 for v12+).\n \t* On the client, open Internet Explorer and download http://<LanGuardServerIP>:1072/files/update/wsusscn2.cab to check direct file access. If this fails, address underlying DNS or firewall issues.\n\n5. Additional Edge Cases\n\n \t* If you are running any custom scanning profiles, ensure patch scanning is enabled in the profile settings.\n \t* On older Windows OS (such as Windows 7/2008), verify all SHA-2 and ESU updates are present if scanning those systems, per the Supported Security Patch article [https://support.languard.gfi.com/article/122467].\n \t* Check the log files you provided for errors related to the Patch Management Database (such as missing file, permission denied, or I/O errors) or failed attempts to connect to the update site or GFI update servers.\n\nKey references for these troubleshooting steps:\n\n \t* Handling 'The patch management database is unavailable' Error [https://support.languard.gfi.com/article/122919]\n \t* Forcing an update for the patch definitions on the LanGuard server and connected Agents [https://support.languard.gfi.com/article/123074]\n \t* Why LanGuard Is Not Detecting All Missing Patches? [https://support.languard.gfi.com/article/122467]\n\nAfter performing these targeted steps\u2014especially the explicit redeployment of the database and definitions to affected agents\u2014initiate a scan and review the agent's debug logs for improvement or changes in error messages. These will often point directly to permission, connectivity, or integrity issues as remaining blockers.\n\nIf the issue remains after the above, review any recent real-time protection, permission, or system policy changes that might be reverting or blocking access to C:\\ProgramData\\GFI\\LanGuard 12\\PatchManagement\\ on either the server or agent. Pay close attention to any log entries about access denied or file deletion events following patch definition deployments.\n\nShould you need further insight, reviewing specific error patterns or file access failures in the uploaded logs may reveal the root cause preventing the patch detection files from being created, distributed, or used on affected endpoints.\n\nSincerely,\nAtlas\nGFI - LanGuard Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-12-08T11:15:34+00:00",
+          "Kayako - ticket id 60258400 // Ond\u0159ej \u0160abata commented privately: Hello,\n\nnone of the proposed solutions worked so far, here are the logs from both server and agent:\nhttps://cidemcz-my.sharepoint.com/:u:/g/personal/zapletal_cidem_cz/IQDCzh775vihQY6eYKzob_U2AS6bwBp_rG9VEq8ta0c8d7Y\nhttps://cidemcz-my.sharepoint.com/:u:/g/personal/zapletal_cidem_cz/IQDdbPu1TjHYTqLCXrhCcTupAdzGDsQoOHhjueUQ8KTkzrg\n\nBest regards"
+        ],
+        [
+          "2025-12-08T08:25:20+00:00",
+          "Kayako - ticket id 60258400 // ATLAS commented publicly: Dear Ond\u0159ej,\n\nThank you for providing additional details and the diagnostic screenshot regarding the error: \"The patch detection data package is unavailable\" during missing patches scans on your customer's endpoint.\n\nSince the standard manual update process did not resolve the issue, here are further troubleshooting steps and verifications based on the most common root causes identified in the GFI LanGuard knowledge base:\n\n1. Verify Patch Management Database File Presence and Health:\n\n \t* On both the LanGuard server and affected agent machine (e.g., ZM-DOCHAZKA), navigate to C:\\ProgramData\\GFI\\LanGuard 12\\PatchManagement\\.\n \t* Ensure the file lanss_xx_patchmngmt.mdb exists. If it is missing or corrupt, this will cause the reported error.\n \t* Check that the drive is not full or nearly full, as insufficient disk space can prevent the patch database from being created or updated.\n\nReference: Handling 'The patch management database is unavailable' Error [https://support.languard.gfi.com/article/122919]\n\n2. Confirm Proper DNS and Network Connectivity:\n\n \t* Both the server and agent must resolve each other's IP addresses and hostnames correctly, enabling forward and reverse DNS lookups.\n \t* Test access by downloading the patch file from the agent or relay using Internet Explorer (it uses the same engine as LanGuard) with the address format: \nhttp://<LanGuardServerIP>:<Port>/files/update/wsusscn2.cab \n(Replace LanGuardServerIP and Port with actual values, typically port 1072 for v12+) \n \t* If the download does not complete, there is likely a networking or DNS issue affecting connectivity.\n\nReference: Handling 'The patch management database is unavailable' Error [https://support.languard.gfi.com/article/122919]\n\n3. Check for VPN/Firewall Interference:\n\n \t* Temporarily disable any VPN or third-party firewall/cybersecurity software on the affected systems and re-run the scan. If this resolves the issue, address the necessary exclusions in your security products.\n\nReference: Resolving \"Failed to install patch scan pre-requisite\" scanning issue [https://support.languard.gfi.com/article/122407]\n\n4. Confirm Required Patch Management and Scanning Settings:\n\n \t* Ensure all required configuration settings for successful scan and patch installation are in place, as described in the following article: Required Settings to Scan a Machine and Successfully Install Missing Patches [https://support.languard.gfi.com/article/122407].\n\n5. Validate LanGuard Services:\n\n \t* Ensure that all LanGuard services are running on the server (especially the GFI LanGuard Attendant Service). A restart of these services may sometimes resolve issues caused by temporary lockups or resource glitches.\n\nAfter completing the above steps, perform a new scan on the previously affected client(s) to check if the error is resolved.\n\nIf you continue to experience issues after these checks, please gather: \n\n \t* The LanGuard debug logs from C:\\ProgramData\\GFI\\LanGuard 12\\DebugLogs\\ on both the server and the affected agent.\n \t* The scan results for the problematic machines.\n\n You may analyze these logs to help pinpoint whether the database file is missing/corrupt, if network connectivity issues are present, or if there are errors communicating with the update sites.\n\nFor in-depth references and examples, please see:\n\n \t* Handling 'The patch management database is unavailable' Error [https://support.languard.gfi.com/article/122919]\n \t* Resolving \"Failed to install patch scan pre-requisite\" scanning issue [https://support.languard.gfi.com/article/122407]\n \t* Why LanGuard Is Not Detecting All Missing Patches? [https://support.languard.gfi.com/article/122467]\n\nIf the issue persists after these steps, continued log analysis as indicated above may uncover the exact root cause, such as database corruption or environmental/networking issues.\n\nSincerely,\nAtlas\nGFI - LanGuard Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-12-08T08:24:32+00:00",
+          "Kayako - ticket id 60258400 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- Customer (Ond\u0159ej \u0160abata) ---\n\n NeY273-L-n3TC17jL9tuNarF6K2PqBWa4uq-1011364 \n\n--- AI Assistant ---\n\n Checking the validity of this license key: NeY273-L-n3TC17jL9tuNarF6K2PqBWa4uq-1011364 ... \n\n--- AI Assistant ---\n\n \u2728 Good news, you've got a valid license, which is due to expire at: 2025-12-18.\n\nNow that we're done with the formalities, let's start troubleshooting! \n\n--- AI Assistant ---\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiIzYzUxYzdjYS1kNGFjLTQ5YmEtOWVlZS1iYmU1MzlhNDQzYTciLCJzZXNzaW9uX3VpZCI6IjNjNTFjN2NhLWQ0YWMtNDliYS05ZWVlLWJiZTUzOWE0NDNhNyIsImVtYWlsIjoib25kcmVqLnNhYmF0YUB6ZWJyYS5jeiIsImN1c3RvbV9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoiYXVyZWFfbGFuZ3VhcmQiLCJxdWVyeSI6IiIsImV4cCI6MTc2NTE4OTI1Mn0.UHB2RHWQ1m9mqdAQ-mM_r1hazbemboEebVpVMyXY9zU]\n\nYou should see the following:\n\n \t* User: ondrej.sabata@zebra.cz\n \t* Session ID: 3c51c7ca-d4ac-49ba-9eee-bbe539a443a7\n\n--- Customer (Ond\u0159ej \u0160abata) ---\n\n Button selection: [\ud83d\udcce I want to upload files] \n\n--- Customer (Ond\u0159ej \u0160abata) ---\n\n Button selection: [\u2705 I'm done uploading] \n\n--- AI Assistant ---\n\n Thanks for uploading that screenshot! I can see the error clearly: The patch detection data package is unavailable during a missing patches scan on the ZM-DOCHAZKA computer.\n\nSince the manual update procedure from the article you mentioned didn't resolve this, let me help you dig deeper into what might be causing this issue.\n\nBased on the knowledge base, this type of error is typically related to Program Update issues or missing requirements for scanning operations. Here are some additional troubleshooting steps to try:\n\nADDITIONAL TROUBLESHOOTING STEPS:\n\n \t* Verify the Patch Repository:\n\n- Check if the patch detection data files are actually present on the LanGuard server\n- Navigate to the LanGuard data folder (typically C:ProgramDataGFILanGuard 12) and verify the presence of patch definition files\n\n \t* Check for VPN/Firewall interference:\n\n- Is the customer using any VPN or Firewall software that might be blocking access to the patch data?\n- If so, temporarily disable them and rerun the scan to see if that's the root cause\n\n \t* Verify Required Settings:\n\n- Ensure all Required Settings to Scan a Machine and Successfully Install Missing Patches [https://support.languard.gfi.com/article/122407] are properly configured\n\n \t* Check LanGuard Services:\n\n- Verify that all LanGuard services are running properly on the server\n- Restart the GFI LanGuard Attendant Service if needed\n\nBefore we proceed further, could you tell me:\n\n \t* What version/build of LanGuard is the customer running?\n\nThis will help me provide more specific guidance for their situation. \n\n--- Customer (Ond\u0159ej \u0160abata) ---\n\n ok, let me check with them. In the meantime, please convert this into a ticket so we can continue where we left off. \n\n--- AI Assistant ---\n\n Thanks for letting me know! A human colleague will be happy to assist you further\u2014please feel free to choose from the available options to continue the conversation. \ud83d\ude0a \n\n--- Customer (Ond\u0159ej \u0160abata) ---\n\n Button selection: [\ud83d\udce9 Raise a ticket] \n\n--- AI Assistant ---\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n \ud83d\udccc Important: Your ticket will be created in one of two ways:\n\n\t* Immediately after you provide the requested information above, or\n\n\t* Automatically after 5 minutes if no response is received\n\nPlease keep this browser/chat window open until you receive your ticket number as confirmation. \n\n--- Customer (Ond\u0159ej \u0160abata) ---\n\n I already provided all the relevant details I have right now \n\n--- AI Assistant ---\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \n"
+        ],
+        [
+          "2025-12-08T08:24:29+00:00",
+          "Kayako - ticket id 60258400 // ATLAS commented privately: Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction, which means that they may have uploaded some files for AI analysis.\n\nPlease login to UPLOAD using your Devfactory AD credentials to verify:\n\nhttps://files.eswsecuretransfers.com/agents/?user_id=ondrej.sabata@zebra.cz&session_uuid=3c51c7ca-d4ac-49ba-9eee-bbe539a443a7\n"
+        ],
+        [
+          "2025-12-08T08:24:24+00:00",
+          "Kayako - ticket id 60258400 // Ond\u0159ej \u0160abata commented privately: --- Ticket generated by GFI LanGuard AI chat on behalf of Ond\u0159ej \u0160abata - <a href=\"mailto:ondrej.sabata@zebra.cz\" rel=\"nofollow\">ondrej.sabata@zebra.cz</a> ---<br>\n  <br>\n  <b>Issue description:</b>\n  <ul>\n    <li>Hello, one of our customers has issues with their LanGuard - they are consistently getting the error The patch detection data package is unavailable while performing missing patches scan. I have already sent them the article here: https://support.languard.gfi.com/article/123069-updating-languard-server-manually-when-unable-to-get-current-updates-or-agents-do-not-pull-latest-definitions-from-server but performing the actions there has not resulted in any change. Any ideas what might be causing this issue?</li>\n    <li>ok, let me check with them. In the meantime, please convert this into a ticket so we can continue where we left off.</li>\n    <li>I already provided all the relevant details I have right now</li>\n  </ul><br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 9,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

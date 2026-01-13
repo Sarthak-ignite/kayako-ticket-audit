@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI automation comments are repetitive and do not add substantive value to the ticket resolution process.",
+    "evidence": [
+      "[2025-12-17T15:11:52+00:00] SC Automan: I noticed we have the following open SC/s. I'm going to take a closer look...",
+      "[2025-12-15T15:02:14+00:00] SC Automan: I noticed we have the following open SC/s. I'm going to take a closer look..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of customer being stuck in an AI loop or unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support team appears to not fully address the customer's core request about restoring past ticket attachments and accessing historical information.",
+    "evidence": [
+      "[2025-12-23T00:58:06+00:00] Shingo: I can't view Ticket #4389067 now.",
+      "[2025-12-18T07:41:32+00:00] Csaba Daniel: Our product team has confirmed that the option to reorder user menu choices beyond..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant gaps between customer interactions, with some delays spanning multiple days.",
+    "evidence": [
+      "Time to first human response: 667.1 hours",
+      "Max gap between responses: 667.0 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed without fully resolving the customer's original request about accessing past ticket attachments.",
+    "evidence": [
+      "[2025-12-26T00:03:44+00:00] Phronesis: As requested, we are closing this ticket",
+      "[2025-12-23T00:58:06+00:00] Shingo: I can't view Ticket #4389067 now."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is not marked as a high-priority or severity 1 issue.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI automation comments are repetitive and do not add substantive value to the ticket resolution process.\",\n    \"evidence\": [\n      \"[2025-12-17T15:11:52+00:00] SC Automan: I noticed we have the following open SC/s. I'm going to take a closer look...\",\n      \"[2025-12-15T15:02:14+00:00] SC Automan: I noticed we have the following open SC/s. I'm going to take a closer look...\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of customer being stuck in an AI loop or unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support team appears to not fully address the customer's core request about restoring past ticket attachments and accessing historical information.\",\n    \"evidence\": [\n      \"[2025-12-23T00:58:06+00:00] Shingo: I can't view Ticket #4389067 now.\",\n      \"[2025-12-18T07:41:32+00:00] Csaba Daniel: Our product team has confirmed that the option to reorder user menu choices beyond...\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant gaps between customer interactions, with some delays spanning multiple days.\",\n    \"evidence\": [\n      \"Time to first human response: 667.1 hours\",\n      \"Max gap between responses: 667.0 hours\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was closed without fully resolving the customer's original request about accessing past ticket attachments.\",\n    \"evidence\": [\n      \"[2025-12-26T00:03:44+00:00] Phronesis: As requested, we are closing this ticket\",\n      \"[2025-12-23T00:58:06+00:00] Shingo: I can't view Ticket #4389067 now.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is not marked as a high-priority or severity 1 issue.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n1. The ticket shows significant communication gaps\n2. The customer's core request about accessing historical ticket attachments was not fully resolved\n3. Multiple AI automation comments added no substantive value\n4. The ticket was closed prematurely without addressing the customer's original concern\n5. Long response times (667 hours) indicate poor support responsiveness",
+  "_model": "claude-haiku",
+  "_ticket_id": 60232940
+}

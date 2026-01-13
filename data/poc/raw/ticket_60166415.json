@@ -1,0 +1,372 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_languard",
+        "requester": {
+          "id": 60195442,
+          "uuid": "632f0a48-dd28-4770-987f-381aa70f70a2",
+          "full_name": "Adam Bangash",
+          "legacy_id": "19212806869266",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/632f0a48-dd28-4770-987f-381aa70f70a2?1758608660",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 196977,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-09-23T06:24:20+00:00",
+          "last_active_at": "2025-09-23T06:24:20+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60195442",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@ba08f643bb0b4a3873e61a3b2abf57251595ff22",
+          "password_updated_at": "2025-03-21T06:42:15+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2024-05-29T07:20:37+00:00",
+          "updated_at": "2025-09-23T06:24:20+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60195442"
+        },
+        "ticket_idt": 60166415
+      },
+      "interactions": [
+        [
+          "2025-09-16T06:53:03+00:00",
+          "Kayako - ticket id 60166415 // Matthew Mrosko commented publicly: Dear Adam,\n\nOur Development Team have advised that you should only need to use the provided file to upgrade the LanGuard Server, and that it should push the agent updates automatically. \u00a0\n\nWe recommended a full uninstall of the agents, then upgrading the LanGuard server using the provided build, then reinstalling the agents to ensure that we have the cleanest possible test, but per our Development Team, this is not necessary. \u00a0You should only need to upgrade the LanGuard Server using the provided file.\n\nPlease let us know if you have any questions or if you have tested and have any results to share.\n\nBest regards,\nMatthew Mrosko\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-16T06:11:34+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Keep this ticket open"
+        ],
+        [
+          "2025-09-15T18:02:45+00:00",
+          "Kayako - ticket id 60166415 // Jozef Kacala commented privately:  Hi Team, \n\n Anuj mentioned to me that only \u00a0GFI LanGuard server should be reinstalled, \u00a0then it should be pushing \u00a0agent update which should resolve the issue. \u00a0Can you navitage the customer please to reinstall only the server side? and wait until all agents get their updates? \n\n thanks "
+        ],
+        [
+          "2025-09-09T12:20:05+00:00",
+          "Kayako - ticket id 60166415 // Matthew Mrosko commented publicly: Dear Adam,\n\nThank you for your reply.\n\nAt this point, this is the only client reporting this issue and we were unable to reproduce it locally. \u00a0Therefore, the suggestion of uninstalling the agents and upgrading LanGuard using the provided executable, then redeploying agents using the new version is the way forward.\n\nYou may try spinning up another VM and deploying the new version agent to a few nodes to test, but given that the issue is only reproducible in this specific environment, it may not be a reliable way to validate the fix. \u00a0\n\nWe do not join sessions ad-hoc, and do not join sessions to explain an issue in person to a customer. \u00a0\n\nYou asked for \"an immediate escalation to your higher technical team and a clear resolution plan without any delays\". \u00a0That has already been done and this is the result. \u00a0\n\nPlease move forward with testing the new version provided, being sure to take a backup of the system before making changes. \u00a0Do let us know the results of the testing so that our Development Team can merge the fix or continue working on the issue if it is not effective.\n\nBest regards,\nMatthew Mrosko\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-09T10:59:51+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Hello Team,\n\nThis is completely unacceptable. The issue is clearly originating from your product and now, according to your suggestion, the entire deployment has to be redone from scratch. Is this what your support standards look like?\n\nWe are talking about a banking client here, with over 300+ endpoints deployed across multiple branches nationwide. Asking for a complete redeployment is not a feasible solution and is causing a severe business impact.\n\nYou are required to join the next session with the client and personally clarify why this problem has occurred and how it will be fixed. This issue is from your backend, and you must own the responsibility instead of pushing for a complete redeployment.\n\nWe need an immediate escalation to your higher technical team and a clear resolution plan without any delays."
+        ],
+        [
+          "2025-09-09T10:59:42+00:00",
+          "Kayako - ticket id 60166415 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:Core Functionality Defect\n\nThe severity is: core_functionality_defect\n\n"
+        ],
+        [
+          "2025-09-09T04:02:37+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nYou only need to be concerned with the languard12.exe file. That is not the agent - that is the entire application package. The instructions were already provided earlier:\n\n>\u00a0Please\u00a0ensure\u00a0that\u00a0the\u00a0affected\u00a0agents\u00a0are\u00a0completely\u00a0wiped\u00a0(using\u00a0both\u00a0the\u00a0app\u00a0UI\u00a0and\u00a0the\u00a0CLI\u00a0command)\u00a0before\u00a0upgrading\u00a0the\u00a0desktop\u00a0app\u00a0and\u00a0deploying\u00a0the\u00a0new\u00a0agents:\u00a0https://support.languard.gfi.com/article/123092-uninstalling-gfi-languard-agents\n>\u00a0\n>\u00a0Do\u00a0not\u00a0run\u00a0the\u00a0CLI\u00a0command\u00a0on\u00a0the\u00a0LanGuard\u00a0server\u00a0itself.\n\nThe Development team believes this to be a potential issue with how the CDATA nodes for LastScan and LastRecurringScan are generated sequentially. We were unable to replicate it, but the build contains a code fix for better handling of these nodes which, according to the team, might help fix this.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-08T08:57:47+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: \"Step-by-step procedure and provide clear instructions to assist you and your client.\"\n\nWaiting for this"
+        ],
+        [
+          "2025-09-08T06:24:37+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Also these EXE files are Agents?\nAnd we need to push these agents again? if yes why this issue happened ? Client is asking reasoning on it as well."
+        ],
+        [
+          "2025-09-08T05:54:47+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Hi Keyur,\n\nThank You for the update.\n\nClient needs step by step procedure to resolve this issue using your provided exe files etc. We shared your provided steps but they are not satisfied or is not clear to them.\n\nKindly help us out in it and provided us each step in detail, so that we can share it with customer."
+        ],
+        [
+          "2025-09-05T08:34:41+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nYes.\n1. Completely wipe the agents using the UI and CLI commands.\n2. Upgrade LanGuard (ensure you have a rollback plan just in case).\n3. Install new agents via the UI.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-05T07:04:52+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Hi Team,\n\nSo we need to uninstall these agents and install them again with your provided exe files?"
+        ],
+        [
+          "2025-09-04T18:01:33Z",
+          "GHI Engineering - 13439 // trilogy-eng-standards removed_from_project_v2"
+        ],
+        [
+          "2025-09-04T17:22:41+00:00",
+          "Kayako - ticket id 60166415 // CE Maintenance Bot commented privately: Reopening because Engineering issue https://github.com/trilogy-group/eng-maintenance/issues/13439 has been completed."
+        ],
+        [
+          "2025-09-04T17:22:03Z",
+          "GHI Engineering - 13439 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-09-04T17:22:00Z",
+          "GHI Engineering - 13439 // anujkumar-df closed"
+        ],
+        [
+          "2025-09-04T17:13:12+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nThe Development team has provided a potential fix with this build: https://drive.google.com/drive/u/0/folders/13QWugUGRmXaslqhfnyOaHkyTJ3aVvp8I\n\nPlease ensure that the affected agents are completely wiped (using both the app UI and the CLI command) before upgrading the desktop app and deploying the new agents: https://support.languard.gfi.com/article/123092-uninstalling-gfi-languard-agents\n\nDo not run the CLI command on the LanGuard server itself.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-04T17:06:20Z",
+          "GHI Engineering - 13439 // anujkumar-df subscribed"
+        ],
+        [
+          "2025-09-03T17:25:07Z",
+          "GHI Engineering - 13439 // nadeem-akhtar-nu commented: ## Analysis\n\nIssue is not reproducible.\n\nIdentified a suspicious code area where potentially, the issue could appear.\n\nOnly the value for LastRecurringScan get corrupted.\n\n## Root Cause\n\n### Why Only LastRecurringScan Gets Corrupted\nKey Insight: Node Creation Order\nThe corruption pattern reveals the root cause:\n\n```\n// Line 1328: LastScan is ALWAYS written first\ncrmiAgent->SetServerOption(L\"LastScan\", timestamp);\n\n// Lines 1330-1334: LastRecurringScan is written second (only when isRecurring=true)\nif (isRecurring)\n{\n    crmiAgent->SetServerOption(L\"LastRecurringScan\", timestamp);\n}\n```\n\nXML Node State Inconsistency\nWhy LastScan Never Corrupts:\nLastScan is always the first node created for a new server\nTakes the \"new node\" path in \n[SetServerOption](https://github.com/trilogy-group/gfi-languard/blob/89f922a52fbfd4b0cdc0eabf71fe95f2fe5c350a/Services/ScanMngSys/AgentScanManager.cpp#L1326-L1334)\n\nGets created cleanly as the first child element\n\n### Why LastRecurringScan Corrupts Intermittently\n\nFirst Recurring Scan: LastRecurringScan doesn't exist yet\nTakes \"new node\" path \u2192 Gets corrupted due to CDATA bug\nExplains why corruption happens\nSubsequent Recurring Scans: LastRecurringScan already exists\nTakes \"existing node\" path (line 205) \u2192 spOption->GetfirstChild()->text = value\nNo corruption because it bypasses the CDATA bug\nThe Intermittent Pattern\nFirst time a server has a recurring scan \u2192 Corruption occurs\nAll subsequent recurring scans \u2192 No corruption (uses existing node path)\nLastScan \u2192 Never corrupts (always first, gets created cleanly)\nThe Fix\nThe CDATA bug in lines 210-211 only affects newly created nodes:\n\n```\n// PROBLEMATIC CODE (lines 210-211):\nMSXML2::IXMLDOMNodePtr spCData = m_spXMLDoc->createCDATASection(value);\nspCData->text = value;  // \u2190 This corrupts the CDATA section\n```\n\nSolution: Remove the redundant text assignment:\n\n```\nMSXML2::IXMLDOMNodePtr spCData = m_spXMLDoc->createCDATASection(value);\n// Remove: spCData->text = value;\n```\n\nThis explains the selective and intermittent nature of the corruption perfectly.\n\n ## Fix\n\n1. Change LPCTSTR to _bstr_t at for [timestamp](https://github.com/trilogy-group/gfi-languard/blob/89f922a52fbfd4b0cdc0eabf71fe95f2fe5c350a/Services/ScanMngSys/AgentScanManager.cpp#L1327)\n```\nauto timestamp = (LPCTSTR)now.Format(constants.FORMAT_LastOcurrenceDate);\n```\n\n2. Split save by saving one option at a time in [SaveLastAgentScanTimestamp](https://github.com/trilogy-group/gfi-languard/blob/89f922a52fbfd4b0cdc0eabf71fe95f2fe5c350a/Services/ScanMngSys/AgentScanManager.cpp#L1302C17-L1302C43)\n\n3. Verify the saved value by reading them again.\n\n4. Implement a local cache for recurring scan timestamp to avoid continuous reading from file.\n\n### Deliverables\n\nPR: https://github.com/trilogy-group/gfi-languard/pull/3392\n\nInstaller: https://drive.google.com/drive/u/0/folders/13QWugUGRmXaslqhfnyOaHkyTJ3aVvp8I\n\n@keyursaxenacrossover, @anujkumar-df "
+        ],
+        [
+          "2025-09-03T15:42:44Z",
+          "GHI Engineering - 13439 // nadeem-akhtar-nu assigned to nadeem-akhtar-nu"
+        ],
+        [
+          "2025-09-01T07:39:39+00:00",
+          "Kayako - ticket id 60166415 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-09-01T07:39:33+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nNo updates yet.\n\nBest regards,\n\nKeyur Saxena\n\nGFI - LanGuard Support Team"
+        ],
+        [
+          "2025-09-01T06:06:02+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Update?"
+        ],
+        [
+          "2025-08-28T11:13:41+00:00",
+          "Kayako - ticket id 60166415 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-08-28T11:13:35+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nNo updates yet.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team\n\n"
+        ],
+        [
+          "2025-08-28T10:51:04+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Any Updates?"
+        ],
+        [
+          "2025-08-26T06:15:55+00:00",
+          "Kayako - ticket id 60166415 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-08-26T06:15:49+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nNo updates yet.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team"
+        ],
+        [
+          "2025-08-26T05:40:12+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Any Updates?"
+        ],
+        [
+          "2025-08-25T08:10:43+00:00",
+          "Kayako - ticket id 60166415 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-08-25T08:10:37+00:00",
+          "Kayako - ticket id 60166415 // Andriy Rybalchenko commented publicly: Hello Adam,\n\nThank you for following up. \u00a0We understand that, and are waiting for the Development team to find and address the root cause. We will share further updates as soon as we receive additional insights from the investigation.\n\nBest regards,\nAndriy Rybalchenko\nGFI - LanGuard Support Team\n\n"
+        ],
+        [
+          "2025-08-25T06:49:15+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: We already did that in multiple machines but issue is still there"
+        ],
+        [
+          "2025-08-25T06:36:13Z",
+          "GHI Engineering - 13439 // not-lmrlima labeled as Priority:High"
+        ],
+        [
+          "2025-08-25T06:36:12Z",
+          "GHI Engineering - 13439 // not-lmrlima unlabeled"
+        ],
+        [
+          "2025-08-25T06:05:43+00:00",
+          "Kayako - ticket id 60166415 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-08-25T06:05:37+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nOnce we have an update from the Development team, we will inform you in this ticket. In the meantime, current workarounds include:\n- Disabling the scan schedule after correcting toolcfg_agent.xml\n- Correcting toolcfg_agent.xml repeatedly in case the corruption sets in again after the previous correction.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team"
+        ],
+        [
+          "2025-08-25T06:03:37Z",
+          "GHI Engineering - 13439 // keyursaxenacrossover labeled as Priority:Urgent"
+        ],
+        [
+          "2025-08-25T05:41:38+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Its been 4 days and no response on this."
+        ],
+        [
+          "2025-08-21T07:22:01+00:00",
+          "Kayako - ticket id 60166415 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-08-21T07:21:54+00:00",
+          "Kayako - ticket id 60166415 // Andriy Rybalchenko commented publicly: Hello Adam,\n\nThank you for the update.\nWe understand the issue persists despite the XML file replacement, and we appreciate your continued patience. The Development team is still investigating the root cause with high priority to provide a more permanent solution.\nWe will share further updates as soon as we receive additional insights from the investigation.\n\nBest regards,\nAndriy Rybalchenko\nGFI - LanGuard Support Team"
+        ],
+        [
+          "2025-08-21T05:38:58+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: The issue of automatic scanning still exist. The scan started again after replacing the XML file provided. Please look into it on priority."
+        ],
+        [
+          "2025-08-20T11:47:58+00:00",
+          "Kayako - ticket id 60166415 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-08-20T11:47:52+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nYou could create a custom script to do this and deploy it using the custom software deployment method on every affected machine. The creation of the script would be outside our scope, though. We have already asked the Development team to investigate this to determine and fix the root cause.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team"
+        ],
+        [
+          "2025-08-20T05:36:26+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Is there any process we can do it on all machines at once? because there are multiple machines in different branches."
+        ],
+        [
+          "2025-08-19T09:19:15+00:00",
+          "Kayako - ticket id 60166415 // Marcio Zimerman commented publicly: Hi Adam,\n\nWe cannot offer a meeting on this issue, but the steps to resolve it are straightforward:\n\nReplace toolcfg_agent.xml in C:\\ProgramData\\GFI\\LanGuard 12 on the affected agent with the file attached to this message. This will stop the repeated scans. The issue is caused by corruption in the <LastRecurringScan> tag.\n\nTo explain further: the LastRecurringScan value is used to track when the most recent recurring scan occurred. This allows the system to determine whether it\u2019s time to initiate the next scheduled scan based on your recurrence settings. If that value becomes corrupted, for example, due to a failed connection during a scan or a sync issue, the agent may continue to rescan repeatedly. Fortunately, this is usually a quick fix.\n\nPlease replace the file as described and let me know if the problem persists or if you have any further questions.\n\nBest regards,\nMarcio Zimerman\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-08-19T05:41:22+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Waiting for Technical Session link please"
+        ],
+        [
+          "2025-08-18T20:03:58+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Hi Team, Waiting for the session link so that we can align this session with the customer tomorrow.\n\nThank You"
+        ],
+        [
+          "2025-08-18T10:00:58+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Hi Team,\nI appreciate your support on this, can you please align a technical meeting session and demonstrate these steps with any one of the client machines? rest client will do it.\n\nAlso to provide the reason why this is taking place."
+        ],
+        [
+          "2025-08-15T12:52:13+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nNo, only the ones that are scanning repeatedly. Essentially, replace the corrupted date string in the <LastRecurringScan> tag with the good string from the <LastScan> tag just before it.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-08-15T12:33:56+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: So i have to this on all agents ?"
+        ],
+        [
+          "2025-08-15T10:17:45+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nReplace toolcfg_agent.xml in C:\\ProgramData\\GFI\\LanGuard 12 on the agent with the one attached to this message, and the repeated scans should stop. The date was corrupted in the <LastRecurringScan> tag.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-08-15T08:19:12+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Hi Keyur,\n\nPlease find agent logs provided by the client"
+        ],
+        [
+          "2025-08-13T11:39:21+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nYes, we need the logs from the agent that is not following the schedule, as well as the toolcfg_agentrecurrence.xml file I requested in my previous message.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-08-13T11:16:44+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: It is GFI server where Dashboard is installed, you want agent logs let me collect it from the client"
+        ],
+        [
+          "2025-08-13T11:01:00+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nI requested the logs from the agent in my previous message - please confirm if it is the agent of the server itself that is scanning multiple times with no schedule, or if it is a different machine. Additionally, from the affected agent, provide the \u00a0\"C:\\ProgramData\\GFI\\LanGuard 12\\Servers\\<random_id>\\toolcfg_agentrecurrence.xml\" file as this shows the real schedule configured on the agent and whether that matches the UI setting of no schedule.\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-08-13T09:19:47+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Please find attached logs of server"
+        ],
+        [
+          "2025-08-12T11:25:26+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented publicly: Hello Adam,\n\nWe currently suspect corrupted date data in toolcfg_agent.xml on the agent. Please share the complete troubleshooter archive containing the logs from the agent: Providing Troubleshooter Logs from GFI LanGuard Agent - GFI LanGuard [https://support.languard.gfi.com/article/123171-providing-troubleshooter-logs-from-gfi-languard-agent]\n\nBest regards,\nKeyur Saxena\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-08-12T11:24:32+00:00",
+          "Kayako - ticket id 60166415 // Keyur Saxena commented privately:  Maybe Corrupted input in toolcfg_agent.xml data field causing repeated back to back agent scans \u00b7 Issue #13439 \u00b7 trilogy-group/eng-maintenance [https://github.com/trilogy-group/eng-maintenance/issues/13439], logs will include the file to confirm "
+        ],
+        [
+          "2025-08-12T09:27:12+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Any update on this please?\nClient is waiting for the response"
+        ],
+        [
+          "2025-08-12T05:57:27+00:00",
+          "Kayako - ticket id 60166415 // ATLAS commented privately: Requesting more information"
+        ],
+        [
+          "2025-08-12T05:56:49+00:00",
+          "Kayako - ticket id 60166415 // Adam Bangash commented privately: Description:\nWe are experiencing an issue where Agent-Based (Automatic) Scans from the GFI LanGuard Dashboard are running automatically on multiple machines, even though scans have been explicitly disabled.\n\nDetails:\nFrom the Dashboard, we navigated to: Properties \u2192 Agent Status \u2192 Scan (OFF) and Remediation Scan (OFF) for affected machines.\n\nVerified in the Machines Tree within GFI LANguard \u2014 all agents were showing scans as OFF.\nDespite this, multiple agents simultaneously initiated automatic scans.\nThis has been happening regularly.\nWhen these scans run, they complete without errors.\n\nImpact:\nCauses unnecessary network traffic and system resource usage.\nPotentially disrupts normal operations on the affected endpoints.\n\nRequest:\nPlease investigate why agents are still initiating scans automatically despite being disabled, and provide guidance on how to prevent this behavior."
+        ],
+        [
+          "2025-08-12T05:55:54+00:00",
+          "Kayako - ticket id 60166415 // ATLAS commented publicly: Dear Adam,\n\nThank you for reaching out. I understand that agent-based scans are starting automatically on multiple machines even though both Scan and Remediation Scan are set to OFF. We recognize the urgency and have flagged your case as a priority.\n\nTo investigate and resolve this quickly, please provide the following:\n\n- A LanGuard Console support log bundle (generated with the built-in Troubleshooter), taken after an unwanted scan is observed.\n- Support log bundles from at least two affected agents, captured shortly after an unwanted scan begins.\n- If available, the hostnames/IPs of those agents and the approximate time the unwanted scan started (to help us correlate events in the logs).\n\nIf you need more time to gather this information, the ticket will remain open for one additional week. Just let us know if you require any further extension.\n\nSincerely,\nATLAS\nGFI LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-08-12T05:55:25+00:00",
+          "Kayako - ticket id 60166415 // ATLAS commented privately: Requesting more information"
+        ],
+        [
+          "2025-08-12T05:54:35+00:00",
+          "Kayako - ticket id 60166415 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Adam Bangash ! \ud83d\udc4b\n\nThis is the GFI LanGuard ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nAdam Bangash:\n\n undefined \nChat Support:\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of GFI LanGuard ATLAS Support Chat [https://support.languard.gfi.com/article/122307]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nAdam Bangash:\n\n Hi \nChat Support:\n\n Adam Bangash , I see that you are an active GFI reseller/distributor.\nWhile not mandatory, it may be useful for troubleshooting if you provide me with the GFI LanGuard license key for which you are contacting us. \ud83d\ude0a.\nPlease select the option that applies below \ud83d\udc47 \nAdam Bangash:\n\n I don't have the license key handy \nChat Support:\n\n Given your reseller/distributor status, that's alright, so let's get down to business! \ud83d\udedf \nChat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI2MDFmNDUwMC05YzhlLTRiYWQtOTBhNi01MTg2M2EzNDIxMjkiLCJzZXNzaW9uX3VpZCI6IjYwMWY0NTAwLTljOGUtNGJhZC05MGE2LTUxODYzYTM0MjEyOSIsImVtYWlsIjoiYS5odXNzYWluQGFnaWxlbWl0c2VydmljZXMuYWUiLCJjdXN0b21fcGFyc2VyIjp7fSwiY2FsbGJhY2siOnsiY2FsbGJhY2tfdXJsIjpudWxsLCJjYWxsYmFja19lbWFpbCI6ImNpcHJpYW4ubmFzdGFzZUB0cmlsb2d5LmNvbSJ9LCJwcm9kdWN0X3RhZyI6ImF1cmVhX2xhbmd1YXJkIiwicXVlcnkiOiIiLCJleHAiOjE3NTQ5ODQ5NzZ9.eT9ftPoG2wxJgN4DBqLiO-hxISX5m3NPBoxLmKACHak]\n\nYou should see the following:\n- User: a.hussain@agilemitservices.ae\n- Session ID: 601f4500-9c8e-4bad-90a6-51863a342129 \nAdam Bangash:\n\n \ud83d\udd19 Continue without file upload \nChat Support:\n\n No problem, we can continue without any file uploads. \ud83d\ude0a\n\nHow can I help you today with GFI LanGuard? Could you tell me a bit more about the issue or question you have? The more details you provide, the better I can assist you! \nAdam Bangash:\n\n I want to raise a ticket on urgent priority \nChat Support:\n\n I understand this is urgent, and I\u2019m here to help get things moving quickly for you. \ud83d\udea8\n\nTo make sure your ticket is prioritized correctly and routed to the right team, could you please provide a brief description of the issue you\u2019re experiencing with GFI LanGuard? For example:\n- What exactly isn\u2019t working or what error are you seeing?\n- When did the problem start?\n- Is this affecting all users or just some?\n- Has anything changed recently in your environment?\n\nOnce I have a bit more detail, I\u2019ll make sure your request is escalated as a high-priority ticket. \nAdam Bangash:\n\n Problem: Agent Based (Automatic) Scans from Dashboard are running on many machines automatically even after keeping them off, from clicking properties-> Agent Status -> Scan (OFF) & Remediation Scan (OFF). \nChat Support:\n\n Thank you for providing the details. I understand that agent-based scans are running automatically on many machines, even though you've set both Scan (OFF) and Remediation Scan (OFF) in the Agent Status properties. This definitely sounds urgent and unexpected.\n\nBefore I escalate this as a high-priority ticket, could you please clarify a couple of things to help the technical team address your issue faster:\n\n1. Are these scans happening on all agents, or only on specific machines?\n2. When did you first notice this behavior?\n3. Have there been any recent changes to your GFI LanGuard configuration, version, or environment?\n4. Are these scans being triggered at regular intervals, or do they seem random?\n5. Are there any relevant error messages or logs you can share (even a brief summary)?\n\nOnce you provide this info, I\u2019ll escalate your request as an urgent ticket with all the necessary context for the support team. \nAdam Bangash:\n\n 1- First i want this to be Urgent Priority Ticket\n2- On Many Agents simultaneously\n3- When I OFF Scans and checked them even from Machines tree created on GFI all were OFF\n4- Yes Regularly\n5- No Error Scans completes without errors \nChat Support:\n\n Thank you for sharing these important details\u2014I understand your urgency and concern. \ud83d\ude0a A human colleague will be ready to assist you further; please feel free to choose from the available options to connect with them. \nAdam Bangash:\n\n \ud83d\udce9 Raise a ticket \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\n\ud83d\udca1 If the reported behavior affects multiple end-customers, please do let us know the impact radius of the issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nAdam Bangash:\n\n No Additional Details \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nAdam Bangash:\n\n No additional email addresses required in CC \nChat Support:\n\n I'm creating a ticket for you with the information you've provided.\n\nTicket subject: GFI LanGuard issue\n\nAllow me a few moments while I work on this \u23f3 \nChat Support:\n\n \ud83d\ude80 I've successfully created a ticket for you.\n\nYour ticket number is: 60166415\n\nYou can see it and update it in this link [https://support.languard.gfi.com/conversation/view/60166415]\n\nFor a faster resolution, please be sure to include and attach to the ticket all relevant context such as screenshots, recordings, and logs.\n\nOur agents will work on it and you will receive a response in your email \ud83d\udce8: a.hussain@agilemitservices.ae "
+        ],
+        [
+          "2025-08-12T05:54:29+00:00",
+          "Kayako - ticket id 60166415 // ATLAS commented privately: --- Ticket generated by GFI LanGuard AI chat on behalf of Adam Bangash ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * Hi<br>\n  * I want to raise a ticket on urgent priority<br>\n  * Problem: Agent Based (Automatic) Scans from Dashboard are running on many machines automatically even after keeping them off, from clicking properties-> Agent Status -> Scan (OFF) & Remediation Scan (OFF).<br>\n  * 1- First i want this to be Urgent Priority Ticket<br>\n  2- On Many Agents simultaneously<br>\n  3- When I OFF Scans and checked them even from Machines tree created on GFI all were OFF<br>\n  4- Yes Regularly<br>\n  5- No Error Scans completes without errors<br>\n  * No Additional Details<br>\n  <br>\n  <b>License key:</b> Not provided - ticket created by Reseller/Distributor account<br>"
+        ],
+        [
+          "2025-08-08T10:36:56Z",
+          "GHI Engineering - 13439 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-08-08T10:36:54Z",
+          "GHI Engineering - 13439 // trilogy-eng-standards added_to_project_v2"
+        ],
+        [
+          "2025-08-08T10:36:33Z",
+          "GHI Engineering - 13439 // keyursaxenacrossover labeled as Eng-Maintenance"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 56,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": true,
+          "link_value": "https://github.com/trilogy-group/eng-maintenance/issues/13439"
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

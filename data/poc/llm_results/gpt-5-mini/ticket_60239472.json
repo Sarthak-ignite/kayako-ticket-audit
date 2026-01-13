@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI replies are generic/placeholder and include non-informative or truncated actions instead of concrete guidance.",
+    "evidence": [
+      "\"[2025-11-11T12:11:13+00:00] (AI) ATLAS: Action: l1\"",
+      "\"[2025-11-10T10:36:00+00:00] (AI) ATLAS: Dear Jens,\\n\\nThank you for providing such a detailed description of the issue with scheduled scans in GFI LanGuard. I understand that after a fu\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The AI produced repeated/transcript-style messages and minimal actionable follow-up, indicating the customer was interacting with AI responses rather than progressing to useful human assistance.",
+    "evidence": [
+      "\"[2025-11-10T10:35:12+00:00] (AI) ATLAS: Here is a transcript of the customer's recent interaction with ATLAS chat:\"",
+      "\"[2025-11-11T12:11:13+00:00] (AI) ATLAS: Action: l1\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear instance where an agent requested the same logs/screenshots again or explicitly ignored provided details; the human agent offered a fix after the customer's logs were posted.",
+    "evidence": [
+      "\"[2025-11-11T15:40:50+00:00] (Customer) Jens Weber: Ich habe drei Clients gepr\u00fcft und auf keinem liegt unter C:\\ProgramData\\GFI\\LanGuard 12\\PatchManagement die Datei lanss_xx_patchmngmt.mdb\"",
+      "\"[2025-11-12T07:24:25+00:00] (Employee) Keyur Saxena: Please apply this fix on all new and existing agents: Fixing the \\\"You are no longer entitled to product updates\\\" error in p\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant delays are present (time to first human ~44.8 hours and large gaps between messages), indicating slow human response for a high-priority ticket.",
+    "evidence": [
+      "\"Time to first human (hours): 44.8\"",
+      "\"[2025-11-10T10:36:00+00:00] (AI) ATLAS...\" then next human reply \"[2025-11-12T07:24:25+00:00] (Employee) Keyur Saxena\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket is marked closed while the customer posted a follow-up expressing surprise and concern, with no subsequent agent reply shown.",
+    "evidence": [
+      "\"Status: closed\"",
+      "\"[2025-11-13T09:19:12+00:00] (Customer) Jens Weber: Guten Morgen aus Frankfurt,\\nsieht gut aus.\\nIch bin allerdings doch \u00fcberrascht, dass der Fehler nicht schon fr\u00fcher entdeckt wurde.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of trivial checklist troubleshooting (cache/firewall/VPN) being applied instead of escalation; a specific fix was provided by the human agent.",
+    "evidence": [
+      "\"[2025-11-12T07:24:25+00:00] (Employee) Keyur Saxena: Please apply this fix on all new and existing agents: Fixing the \\\"You are no longer entitled to product updates\\\" error in p\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI replies are generic/placeholder and include non-informative or truncated actions instead of concrete guidance.\",\n    \"evidence\": [\n      \"\\\"[2025-11-11T12:11:13+00:00] (AI) ATLAS: Action: l1\\\"\",\n      \"\\\"[2025-11-10T10:36:00+00:00] (AI) ATLAS: Dear Jens,\\\\n\\\\nThank you for providing such a detailed description of the issue with scheduled scans in GFI LanGuard. I understand that after a fu\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI produced repeated/transcript-style messages and minimal actionable follow-up, indicating the customer was interacting with AI responses rather than progressing to useful human assistance.\",\n    \"evidence\": [\n      \"\\\"[2025-11-10T10:35:12+00:00] (AI) ATLAS: Here is a transcript of the customer's recent interaction with ATLAS chat:\\\"\",\n      \"\\\"[2025-11-11T12:11:13+00:00] (AI) ATLAS: Action: l1\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear instance where an agent requested the same logs/screenshots again or explicitly ignored provided details; the human agent offered a fix after the customer's logs were posted.\",\n    \"evidence\": [\n      \"\\\"[2025-11-11T15:40:50+00:00] (Customer) Jens Weber: Ich habe drei Clients gepr\u00fcft und auf keinem liegt unter C:\\\\ProgramData\\\\GFI\\\\LanGuard 12\\\\PatchManagement die Datei lanss_xx_patchmngmt.mdb\\\"\",\n      \"\\\"[2025-11-12T07:24:25+00:00] (Employee) Keyur Saxena: Please apply this fix on all new and existing agents: Fixing the \\\\\\\"You are no longer entitled to product updates\\\\\\\" error in p\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant delays are present (time to first human ~44.8 hours and large gaps between messages), indicating slow human response for a high-priority ticket.\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 44.8\\\"\",\n      \"\\\"[2025-11-10T10:36:00+00:00] (AI) ATLAS...\\\" then next human reply \\\"[2025-11-12T07:24:25+00:00] (Employee) Keyur Saxena\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is marked closed while the customer posted a follow-up expressing surprise and concern, with no subsequent agent reply shown.\",\n    \"evidence\": [\n      \"\\\"Status: closed\\\"\",\n      \"\\\"[2025-11-13T09:19:12+00:00] (Customer) Jens Weber: Guten Morgen aus Frankfurt,\\\\nsieht gut aus.\\\\nIch bin allerdings doch \u00fcberrascht, dass der Fehler nicht schon fr\u00fcher entdeckt wurde.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of trivial checklist troubleshooting (cache/firewall/VPN) being applied instead of escalation; a specific fix was provided by the human agent.\",\n    \"evidence\": [\n      \"\\\"[2025-11-12T07:24:25+00:00] (Employee) Keyur Saxena: Please apply this fix on all new and existing agents: Fixing the \\\\\\\"You are no longer entitled to product updates\\\\\\\" error in p\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60239472
+}

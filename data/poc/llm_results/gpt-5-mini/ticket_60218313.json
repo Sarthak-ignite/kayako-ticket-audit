@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI-generated messages are generic and sometimes contain incomplete or filler text rather than concrete, actionable resolution (truncated/placeholder-like content).",
+    "evidence": [
+      "[2025-10-10T11:46:34+00:00] (AI) ADN Support: \"\u200bDear Support Team, Dear Jozef\n\nas confirmed, the customer\u2019s installation of GFI MailEssentials is already up to date.\n\nThe Case:\u00a0\n\nClien\"",
+      "[2025-10-17T13:18:26+00:00] (AI) ADN Support: \"Dear Support,\n\nmaybe this Informations will help further.\n\nHere\u2019s a summary of the situation our partner is currently experiencing:\n\n1. \""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "AI repeatedly states or implies previously-suggested steps have been done, indicating the conversation is looping over the same troubleshooting without progression to new resolution or human intervention.",
+    "evidence": [
+      "[2025-10-10T09:23:11+00:00] (AI) ADN Support: \"Please note that all the suggested steps have already been completed.\"",
+      "[2025-10-10T09:24:03+00:00] (AI) ATLAS: \"Thank you for your update and for confirming that all suggested troubleshooting steps have already been performed.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/AI messages acknowledge that suggested steps were already completed but continue to provide repeated or generic guidance rather than using the provided logs/steps to advance troubleshooting.",
+    "evidence": [
+      "[2025-10-10T09:23:11+00:00] (AI) ADN Support: \"Please note that all the suggested steps have already been completed.\"",
+      "[2025-10-10T07:48:26+00:00] (AI) ADN Support: \"Mr Dederding reports that none of the knowledge base entries (KBs) provided by ADN solved the problem or applied to his case.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps and the ticket metadata shows long response metrics (first human response and max gap are measured in days/hours).",
+    "evidence": [
+      "Ticket metadata: \"Time to first human (hours): 44.4\", \"Max gap between responses (hours): 77.7\"",
+      "[2025-10-10T11:46:34+00:00] (AI) ADN Support ... then next public employee reply at [2025-10-12T04:12:15+00:00] (Aditi Garg) \u2014 multi-day timeline."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed and was escalated, there is no clear evidence in the provided excerpts that the ticket was closed while the customer was explicitly still awaiting promised information or had explicitly given up.",
+    "evidence": [
+      "Ticket Context: \"Status: closed\"",
+      "[2025-10-18T14:12:57+00:00] (Employee) Arafat Bakhsh: \"Our Development Team has released a new version with the fix for the current issue.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket is high priority, the excerpts do not show generic end-user troubleshooting (cache/VPN/etc.) being suggested in place of escalation; the thread shows engineering/dev involvement and a released fix.",
+    "evidence": [
+      "[2025-10-18T14:12:57+00:00] (Employee) Arafat Bakhsh: \"Our Development Team has released a new version with the fix for the current issue.\"",
+      "[2025-10-20T12:27:19+00:00] (AI) ADN Support: \"our partner has followed all the steps provided in your previous message, including the upgrade to the latest MailEssentials\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI-generated messages are generic and sometimes contain incomplete or filler text rather than concrete, actionable resolution (truncated/placeholder-like content).\",\n    \"evidence\": [\n      \"[2025-10-10T11:46:34+00:00] (AI) ADN Support: \\\"\u200bDear Support Team, Dear Jozef\\n\\nas confirmed, the customer\u2019s installation of GFI MailEssentials is already up to date.\\n\\nThe Case:\u00a0\\n\\nClien\\\"\",\n      \"[2025-10-17T13:18:26+00:00] (AI) ADN Support: \\\"Dear Support,\\n\\nmaybe this Informations will help further.\\n\\nHere\u2019s a summary of the situation our partner is currently experiencing:\\n\\n1. \\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"AI repeatedly states or implies previously-suggested steps have been done, indicating the conversation is looping over the same troubleshooting without progression to new resolution or human intervention.\",\n    \"evidence\": [\n      \"[2025-10-10T09:23:11+00:00] (AI) ADN Support: \\\"Please note that all the suggested steps have already been completed.\\\"\",\n      \"[2025-10-10T09:24:03+00:00] (AI) ATLAS: \\\"Thank you for your update and for confirming that all suggested troubleshooting steps have already been performed.\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support/AI messages acknowledge that suggested steps were already completed but continue to provide repeated or generic guidance rather than using the provided logs/steps to advance troubleshooting.\",\n    \"evidence\": [\n      \"[2025-10-10T09:23:11+00:00] (AI) ADN Support: \\\"Please note that all the suggested steps have already been completed.\\\"\",\n      \"[2025-10-10T07:48:26+00:00] (AI) ADN Support: \\\"Mr Dederding reports that none of the knowledge base entries (KBs) provided by ADN solved the problem or applied to his case.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps and the ticket metadata shows long response metrics (first human response and max gap are measured in days/hours).\",\n    \"evidence\": [\n      \"Ticket metadata: \\\"Time to first human (hours): 44.4\\\", \\\"Max gap between responses (hours): 77.7\\\"\",\n      \"[2025-10-10T11:46:34+00:00] (AI) ADN Support ... then next public employee reply at [2025-10-12T04:12:15+00:00] (Aditi Garg) \u2014 multi-day timeline.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed and was escalated, there is no clear evidence in the provided excerpts that the ticket was closed while the customer was explicitly still awaiting promised information or had explicitly given up.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Status: closed\\\"\",\n      \"[2025-10-18T14:12:57+00:00] (Employee) Arafat Bakhsh: \\\"Our Development Team has released a new version with the fix for the current issue.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is high priority, the excerpts do not show generic end-user troubleshooting (cache/VPN/etc.) being suggested in place of escalation; the thread shows engineering/dev involvement and a released fix.\",\n    \"evidence\": [\n      \"[2025-10-18T14:12:57+00:00] (Employee) Arafat Bakhsh: \\\"Our Development Team has released a new version with the fix for the current issue.\\\"\",\n      \"[2025-10-20T12:27:19+00:00] (AI) ADN Support: \\\"our partner has followed all the steps provided in your previous message, including the upgrade to the latest MailEssentials\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60218313
+}

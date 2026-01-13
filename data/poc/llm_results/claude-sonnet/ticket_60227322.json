@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient information to evaluate AI response quality. The ticket only shows a private comment indicating an AI conversation occurred, but does not include the actual AI conversation content or customer interactions.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of looping behavior. The interactions timeline only contains a single private comment from ATLAS referencing a prior AI chat, with no indication of repeated requests or inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of context being ignored. There are no subsequent interactions where support could have ignored previously provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No delays detected. The ticket shows a max gap of 0.0 hours between responses, and only contains a single timestamp entry. The ticket appears to have been resolved quickly.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Insufficient information to determine if closure was premature. The ticket is closed, but there's no evidence of the customer waiting for promised information or expressing dissatisfaction. The actual AI conversation content is not visible.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Not applicable. This is a normal priority ticket, not a P1/SEV1 incident requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to evaluate AI response quality. The ticket only shows a private comment indicating an AI conversation occurred, but does not include the actual AI conversation content or customer interactions.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of looping behavior. The interactions timeline only contains a single private comment from ATLAS referencing a prior AI chat, with no indication of repeated requests or inability to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of context being ignored. There are no subsequent interactions where support could have ignored previously provided information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No delays detected. The ticket shows a max gap of 0.0 hours between responses, and only contains a single timestamp entry. The ticket appears to have been resolved quickly.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to determine if closure was premature. The ticket is closed, but there's no evidence of the customer waiting for promised information or expressing dissatisfaction. The actual AI conversation content is not visible.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Not applicable. This is a normal priority ticket, not a P1/SEV1 incident requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60227322
+}

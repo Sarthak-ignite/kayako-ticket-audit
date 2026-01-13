@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI (ATLAS) only appears at ticket creation to route the ticket appropriately, with minimal interaction. No evidence of providing wrong information or unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "AI was only involved in initial ticket creation and routing. Customer immediately received human support without being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Customer referenced previous ticket #60192334 with the same issue and an article that was already provided, but support proceeded with standard troubleshooting without acknowledging or checking this context.",
+    "evidence": [
+      "[2025-10-14T12:33:30+00:00] Eswaramoorthy P: Previous ticket#60192334 Article provided in the previous ticket. https://support.exinda.gfi.com/article/117221-system-disk-full-fo",
+      "[2025-10-22T16:05:35+00:00] Randall Shawver: I can see from your previous diagnostics that this is a recurring issue that requires further investigation"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Critical delays throughout the ticket: 8 days between initial contact (Oct 14) and first human response (Oct 22), and the time to first human was 195.6 hours. Multiple follow-ups from customer and escalation team were needed.",
+    "evidence": [
+      "[2025-10-14T12:30:43+00:00] Customer creates ticket",
+      "[2025-10-22T16:05:35+00:00] First substantive response from Randall Shawver - 8 days later",
+      "[2025-10-23T11:32:52+00:00] Zaigham Abbas: ++ @Monyah for visibility",
+      "[2025-10-26T12:35:40+00:00] Monyah Aladeli: Please any update here? Can you provide the below request ASAP",
+      "[2025-11-02T11:12:25+00:00] Monyah Aladeli: Please can you get back to us ASAP on the requested Webex call?"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket shows resolution through a scheduled meeting and investigation, with customer participation throughout. Final response indicates the issue was addressed during the call.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite urgent priority and system disk space issue (critical system problem), ticket took 195.6 hours for first human response. Multiple internal escalations were required, and generic troubleshooting steps were provided instead of immediate emergency response.",
+    "evidence": [
+      "Priority: urgent, Time to first human (hours): 195.6",
+      "[2025-10-26T12:35:40+00:00] Monyah Aladeli: Please any update here? Can you provide the below request ASAP",
+      "[2025-10-27T07:06:23+00:00] Monyah Aladeli: Please need your support here urgently",
+      "[2025-11-02T11:12:25+00:00] Monyah Aladeli: Please can you get back to us ASAP on the requested Webex call?"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI (ATLAS) only appears at ticket creation to route the ticket appropriately, with minimal interaction. No evidence of providing wrong information or unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"AI was only involved in initial ticket creation and routing. Customer immediately received human support without being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer referenced previous ticket #60192334 with the same issue and an article that was already provided, but support proceeded with standard troubleshooting without acknowledging or checking this context.\",\n    \"evidence\": [\n      \"[2025-10-14T12:33:30+00:00] Eswaramoorthy P: Previous ticket#60192334 Article provided in the previous ticket. https://support.exinda.gfi.com/article/117221-system-disk-full-fo\",\n      \"[2025-10-22T16:05:35+00:00] Randall Shawver: I can see from your previous diagnostics that this is a recurring issue that requires further investigation\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Critical delays throughout the ticket: 8 days between initial contact (Oct 14) and first human response (Oct 22), and the time to first human was 195.6 hours. Multiple follow-ups from customer and escalation team were needed.\",\n    \"evidence\": [\n      \"[2025-10-14T12:30:43+00:00] Customer creates ticket\",\n      \"[2025-10-22T16:05:35+00:00] First substantive response from Randall Shawver - 8 days later\",\n      \"[2025-10-23T11:32:52+00:00] Zaigham Abbas: ++ @Monyah for visibility\",\n      \"[2025-10-26T12:35:40+00:00] Monyah Aladeli: Please any update here? Can you provide the below request ASAP\",\n      \"[2025-11-02T11:12:25+00:00] Monyah Aladeli: Please can you get back to us ASAP on the requested Webex call?\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket shows resolution through a scheduled meeting and investigation, with customer participation throughout. Final response indicates the issue was addressed during the call.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite urgent priority and system disk space issue (critical system problem), ticket took 195.6 hours for first human response. Multiple internal escalations were required, and generic troubleshooting steps were provided instead of immediate emergency response.\",\n    \"evidence\": [\n      \"Priority: urgent, Time to first human (hours): 195.6\",\n      \"[2025-10-26T12:35:40+00:00] Monyah Aladeli: Please any update here? Can you provide the below request ASAP\",\n      \"[2025-10-27T07:06:23+00:00] Monyah Aladeli: Please need your support here urgently\",\n      \"[2025-11-02T11:12:25+00:00] Monyah Aladeli: Please can you get back to us ASAP on the requested Webex call?\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60220701
+}

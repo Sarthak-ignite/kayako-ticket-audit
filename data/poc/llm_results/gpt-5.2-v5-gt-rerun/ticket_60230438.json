@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI response shown appears potentially off-topic, but the conversation is truncated and there is no explicit customer statement that the AI was wrong/useless, nor clear proof of incorrect guidance or broken output.",
+    "evidence": [
+      "Customer: \"Why is chat Ticket ID: #60230003 marked as closed when I have not had an answer or a conversation with a human agent?\"",
+      "AI Assistant: \"I have this license key on record:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly indicates they have not had a conversation with a human agent, and the visible interaction contains multiple consecutive AI messages with no human response shown.",
+    "evidence": [
+      "Customer: \"...marked as closed when I have not had an answer or a conversation with a human agent?\"",
+      "AI Assistant: \"This is the GFI MailEssentials ATLAS support chat.\"",
+      "AI Assistant: \"Please select from the below or give me a detailed description of what\u2019s happening.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer\u2019s question is about a different ticket being closed without human contact, but the AI appears to pivot to license information rather than acknowledging or addressing the closure/human-agent concern.",
+    "evidence": [
+      "Customer: \"Why is chat Ticket ID: #60230003 marked as closed when I have not had an answer or a conversation with a human agent?\"",
+      "AI Assistant: \"I have this license key on record:\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket lifecycle is about a minute end-to-end per CSV, and there is no customer-facing indication of waiting days or follow-up nudges.",
+    "evidence": [
+      "CSV: resolutionTime=62",
+      "CSV: Ticket Created=2025-10-28 08:39:02"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in the CSV, while the customer explicitly states they have not received an answer or spoken to a human agent, indicating closure before the customer\u2019s concern was resolved.",
+    "evidence": [
+      "Customer: \"...marked as closed when I have not had an answer or a conversation with a human agent?\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-28 08:40:05"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No P1/SEV1/critical outage language or broad business-impact indicators are present in the provided interaction.",
+    "evidence": [
+      "Customer: \"Why is chat Ticket ID: #60230003 marked as closed when I have not had an answer or a conversation with a human agent?\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60230438
+}

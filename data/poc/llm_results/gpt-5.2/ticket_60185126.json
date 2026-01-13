@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer explicitly states dissatisfaction and questions whether support actually analyzed the provided dumps/logs, suggesting the prior response may have been generic, misleading, or implied analysis that was not done (broken promise/low-quality answer).",
+    "evidence": [
+      "[2025-09-04T12:14:51+00:00] (Employee) servis.prerov@comit.cz: \"We are very dissatisfied with your answer. Did you analyze the dump and logs from previous crashes? If you wrote, yes,\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket shows a human employee response (Mike Kebede). There is no clear evidence the customer was stuck in an AI-only loop or prevented from reaching a human, nor clear repeated AI questioning cycles shown in the excerpt.",
+    "evidence": [
+      "[2025-09-04T12:04:05+00:00] (Employee) Mike Kebede: commented publicly"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI notes the customer already collected relevant diagnostic data, yet the workflow shows an explicit 'Requesting more information' step; the customer then challenges whether previously provided dumps/logs were analyzed, indicating their provided context may have been ignored or not used.",
+    "evidence": [
+      "[2025-09-02T19:13:32+00:00] (AI) ATLAS: \"I understand Kerio Control has been repeatedly crashing and that you\u2019ve already colle...\"",
+      "[2025-09-02T19:13:12+00:00] (AI) ATLAS: \"Requesting more information\"",
+      "[2025-09-04T12:14:51+00:00] (Employee) servis.prerov@comit.cz: \"Did you analyze the dump and logs from previous crashes?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long gap of ~20 days between responses (Sep 4 to Sep 24), which is a significant delay for an active support thread.",
+    "evidence": [
+      "[2025-09-04T12:14:51+00:00] last customer message shown",
+      "[2025-09-24T16:18:51+00:00] next visible reply (AI) ATLAS"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No explicit closure event, closure language, or indication the ticket was closed while the customer awaited promised information is present in the provided excerpt.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue involves repeated crashes/firewall communication problems, the excerpt does not clearly indicate it was treated/flagged as P1/SEV1, nor does it show clearly inappropriate handling relative to an established P1/SEV1 process (e.g., failure to escalate when priority is explicitly high).",
+    "evidence": [
+      "[2025-09-02T21:17:02+00:00] (Employee) servis.prerov@comit.cz: \"The whole problem started ... when Kerio firewall stopped communicating...\"",
+      "[2025-09-02T19:13:32+00:00] (AI) ATLAS: \"Kerio Control has been repeatedly crashing...\""
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60185126
+}

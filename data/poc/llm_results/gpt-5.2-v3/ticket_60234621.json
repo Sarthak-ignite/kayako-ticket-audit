@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No customer-facing AI responses are present. The only AI/ATLAS entries are internal routing/status notes and do not show incorrect guidance, broken templates, or unfulfilled promises to the customer.",
+    "evidence": [
+      "[2025-11-03T13:23:12+00:00] ATLAS commented privately: Action: l1",
+      "[2025-11-03T15:53:07+00:00] Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9956 is changed to 'Closed'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped in an AI loop (no repeated AI questions, no customer request for a human, and no sequence of customer-facing AI messages).",
+    "evidence": [
+      "Customer messages are followed by human support responses (e.g., Priyanka, Meaghan, Pavly, Chintan)."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not repeatedly ask for already-provided information or ignore explicit customer statements of prior actions/files. The customer asked for a ticket number and it was provided publicly shortly after.",
+    "evidence": [
+      "[2025-11-03T13:37:55+00:00] Customer: \"Please share the ticket number...\"",
+      "[2025-11-03T13:55:16+00:00] Meaghan Mcclure (public): \"Khoros ticket number 60234621. ISE FortiCare Ticket number 11241084\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No gaps of 3+ calendar days between customer message and support response are present, and the customer does not complain about multi-day waiting.",
+    "evidence": [
+      "[2025-11-03T13:22:34+00:00] Customer initial report \u2192 [2025-11-03T13:53:23+00:00] Support acknowledgement (same day)",
+      "[2025-11-03T14:16:53+00:00] Support update on investigation (same day)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript shows the incident fix communication, but does not show the Kayako ticket being closed while an explicit customer question/request remained unanswered. (Jira closure is shown, but not an improper support-ticket closure.)",
+    "evidence": [
+      "[2025-11-03T15:50:44+00:00] Chintan Parekh (public): \"We have identified the cause... and implemented a fix.\"",
+      "[2025-11-03T15:53:00.789+0000] Jira status changed ... to Closed (incident record), not explicit Kayako ticket closure"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer labeled it 'Severity 1', support treated it as an outage, escalated promptly to infrastructure, created a Jira incident, and delivered a fix. There is no evidence of inappropriate generic troubleshooting in place of escalation.",
+    "evidence": [
+      "Customer email subject includes severity: \"Severity 1- Fortinet-Khoros Outage\" (in forwarded content)",
+      "[2025-11-03T14:12:50.310+0000] Jira created: \"Multiple reports of not being able to raise chats...\" with SSL error analysis",
+      "[2025-11-03T14:16:53+00:00] Pavly (public): \"escalated this to our infrastructure team with the highest priority.\"",
+      "[2025-11-03T14:55:30.614+0000] Jira: \"Renewed certificate...\" (fix action)"
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60234621
+}

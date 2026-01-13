@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only visible AI message appears to be a generic greeting/introduction and is cut off mid-sentence, which indicates low-value filler and potentially a broken/incomplete response.",
+    "evidence": [
+      "AI message contains only a greeting and boilerplate: \"Hi, Jason Harrison ! \ud83d\udc4b\" / \"This is the Kerio Connect ATLAS support\"",
+      "Message appears truncated/incomplete: \"This is the Kerio Connect ATLAS support\" followed by an abrupt cutoff"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one partial AI interaction shown; no evidence of repeated prompting, circular loops, or inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The provided excerpt does not show the customer providing context/logs nor the AI asking for the same information again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamped interaction is visible, so delays between responses cannot be assessed.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No ticket closure event or customer waiting state is shown in the provided excerpt.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No severity/priority information is present, and there is no evidence of required escalation being missed.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60169826
+}

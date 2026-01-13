@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response appears to be a generic, non-specific meta-comment about a previous conversation that provides no actual support value.",
+    "evidence": [
+      "Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient evidence of customer being trapped in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No context provided to demonstrate context being ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The max gap between responses is 0.0 hours, indicating no delay.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket is closed with no substantive resolution visible, and the only interaction is a generic AI meta-comment.",
+    "evidence": [
+      "Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is low priority with no indication of a severity issue.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the extremely limited ticket context provided, I'll analyze the patterns transparently:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response appears to be a generic, non-specific meta-comment about a previous conversation that provides no actual support value.\",\n    \"evidence\": [\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient evidence of customer being trapped in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No context provided to demonstrate context being ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The max gap between responses is 0.0 hours, indicating no delay.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is closed with no substantive resolution visible, and the only interaction is a generic AI meta-comment.\",\n    \"evidence\": [\"Status: closed\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is low priority with no indication of a severity issue.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey caveats:\n- The provided ticket context is extremely limited\n- Only a single AI meta-response is visible\n- A comprehensive analysis would require full ticket transcript",
+  "_model": "claude-haiku",
+  "_ticket_id": 60243347
+}

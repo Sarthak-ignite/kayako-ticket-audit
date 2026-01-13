@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only AI content shown is an ATLAS transcript header and routing action; there is no visible AI advice, promises, or troubleshooting text to evaluate for correctness or generic filler.",
+    "evidence": [
+      "[2025-11-28T05:10:37+00:00] (AI) ATLAS: \"Here is a transcript of the customer's recent interaction with ATLAS chat:\"",
+      "[2025-11-28T05:11:11+00:00] (AI) ATLAS: \"Action: l1\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The timeline does not show repeated AI prompts requesting the same information or preventing access to a human; the thread proceeds to human agent responses.",
+    "evidence": [
+      "[2025-11-28T19:18:37+00:00] (Employee) Randall Shawver: \"Thank you for contacting the GFI - LanGuard Support Team.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer repeatedly stated logs were already uploaded/sent and asked for updates, indicating support either didn\u2019t review them promptly or continued to request/route log-upload steps instead of acknowledging review of the already-uploaded set.",
+    "evidence": [
+      "[2025-12-03T08:56:57+00:00] (Customer) Jonard Umerez: \"Hi, I\u2019ve already uploaded the logs to the FTP folder. Kindly check them.\"",
+      "[2025-12-05T02:49:18+00:00] (Customer) Jonard Umerez: \"Hi is there any updates for this?\"",
+      "[2025-12-10T07:14:25+00:00] (Employee) Keyur Saxena: \"Please upload the same log archive in this SFTP location created specifically fo\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer follow-ups and the next agent response, including a gap of several days between Dec 1 and Dec 10, consistent with the provided max response gap metric.",
+    "evidence": [
+      "[2025-12-01T04:03:38+00:00] (Employee) Deepanshu Dewan: \"Please proceed with the method as discussed, and let us know the results\"",
+      "[2025-12-10T07:10:10+00:00] (Employee) Keyur Saxena: \"image  Site doesnt load for me as shown in the image.\"",
+      "[2025-12-10T07:14:25+00:00] (Employee) Keyur Saxena: \"Apologies for the delayed response here.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is marked closed, the provided interaction excerpts do not include a closure message or any indication the customer was waiting on a promised next step at the moment of closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the priority is urgent, the excerpts do not clearly show inappropriate low-level generic troubleshooting in lieu of escalation; the main actions shown involve log handling and an SFTP upload issue (firewall suspicion). Insufficient evidence of a P1/SEV1 escalation failure from the provided text.",
+    "evidence": [
+      "[2025-12-10T09:11:47+00:00] (Employee) Keyur Saxena: \"That looks like a corporate firewall blocking the connection.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only AI content shown is an ATLAS transcript header and routing action; there is no visible AI advice, promises, or troubleshooting text to evaluate for correctness or generic filler.\",\n    \"evidence\": [\n      \"[2025-11-28T05:10:37+00:00] (AI) ATLAS: \\\"Here is a transcript of the customer's recent interaction with ATLAS chat:\\\"\",\n      \"[2025-11-28T05:11:11+00:00] (AI) ATLAS: \\\"Action: l1\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline does not show repeated AI prompts requesting the same information or preventing access to a human; the thread proceeds to human agent responses.\",\n    \"evidence\": [\n      \"[2025-11-28T19:18:37+00:00] (Employee) Randall Shawver: \\\"Thank you for contacting the GFI - LanGuard Support Team.\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer repeatedly stated logs were already uploaded/sent and asked for updates, indicating support either didn\u2019t review them promptly or continued to request/route log-upload steps instead of acknowledging review of the already-uploaded set.\",\n    \"evidence\": [\n      \"[2025-12-03T08:56:57+00:00] (Customer) Jonard Umerez: \\\"Hi, I\u2019ve already uploaded the logs to the FTP folder. Kindly check them.\\\"\",\n      \"[2025-12-05T02:49:18+00:00] (Customer) Jonard Umerez: \\\"Hi is there any updates for this?\\\"\",\n      \"[2025-12-10T07:14:25+00:00] (Employee) Keyur Saxena: \\\"Please upload the same log archive in this SFTP location created specifically fo\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between customer follow-ups and the next agent response, including a gap of several days between Dec 1 and Dec 10, consistent with the provided max response gap metric.\",\n    \"evidence\": [\n      \"[2025-12-01T04:03:38+00:00] (Employee) Deepanshu Dewan: \\\"Please proceed with the method as discussed, and let us know the results\\\"\",\n      \"[2025-12-10T07:10:10+00:00] (Employee) Keyur Saxena: \\\"image  Site doesnt load for me as shown in the image.\\\"\",\n      \"[2025-12-10T07:14:25+00:00] (Employee) Keyur Saxena: \\\"Apologies for the delayed response here.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is marked closed, the provided interaction excerpts do not include a closure message or any indication the customer was waiting on a promised next step at the moment of closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"While the priority is urgent, the excerpts do not clearly show inappropriate low-level generic troubleshooting in lieu of escalation; the main actions shown involve log handling and an SFTP upload issue (firewall suspicion). Insufficient evidence of a P1/SEV1 escalation failure from the provided text.\",\n    \"evidence\": [\n      \"[2025-12-10T09:11:47+00:00] (Employee) Keyur Saxena: \\\"That looks like a corporate firewall blocking the connection.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60252140
+}

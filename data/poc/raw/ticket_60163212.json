@@ -1,0 +1,107 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_archiver",
+        "requester": {
+          "id": 60161329,
+          "uuid": "5f026e1f-6827-4c98-ad94-079c196c1bcc",
+          "full_name": "Daniel Riek",
+          "legacy_id": "369988309754",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/5f026e1f-6827-4c98-ad94-079c196c1bcc?1756494546",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60050418,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 162864,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-08-29T19:09:06+00:00",
+          "last_active_at": "2025-08-29T19:09:06+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60161329",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@e861dca188e6338646448c6186e07d3f8a85f8fa",
+          "password_updated_at": "2025-08-07T13:05:57+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2018-12-02T10:49:20+00:00",
+          "updated_at": "2025-08-29T19:09:06+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60161329"
+        },
+        "ticket_idt": 60163212
+      },
+      "interactions": [
+        [
+          "2025-08-07T13:09:02+00:00",
+          "Kayako - ticket id 60163212 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>Chat Support:</b><br>Hi, Daniel Riek ! \ud83d\udc4b<br><br>This is the GFI Archiver ATLAS support chat.<br><br><hr><br><div style=\"line-height: 1.3; margin-top: 8px; font-size: 0.9rem; color: #666666;\"><b>Please note:</b> ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" target=\"_blank\">these terms and conditions</a>. <br>If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.</div><br><br><b>Chat Support:</b><br>Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\r<br>\r\ud83d\udca1<a href=\"https://support.archiver.gfi.com/article/105227 \" target=\"_blank\">Getting the most out of GFI Archiver ATLAS Support Chat</a>\r<br>\r\ud83d\udca1Tip: Aim to give us a bit more context than just a quick \"It's not working.\" The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\r<br>\rIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa<br><br><b>Daniel Riek:</b><br>using the outlook connector and trying to restore an email I get a script error. Line :15 Char: 16485 Error: sys.webforms.pagerequestmanagerservererrorexception.<br><br><b>Chat Support:</b><br>Checking the validity of this license key: <strong>pagerequestmanagerservererrorexception</strong> ...<br><br><b>Chat Support:</b><br>I was unable to verify the validity of the provided license key. Remember that this is a pre-requisite for moving forward.<br>If <strong>pagerequestmanagerservererrorexception</strong> is a trial license, please allow our systems more time to update and try again later.<br>Otherwise, let's try again now!<br><br><b>Chat Support:</b><br>Please provide me with your <strong>GFI Archiver</strong> license key. <br>(Trial license keys are also accepted, but in the case of trial licenses, please make sure to wait for at least 1 hour after obtaining it before contacting us).<br><br>\u2753Don't know where to get the license key from? Check the resource below \ud83d\udc47<br>\u2753 <a href=\"https://support.gfi.com/article/109025-obtaining-your-gfi-license-key\" target=\"_blank\">How to Obtain Your GFI License Key</a><br><br><b>Daniel Riek:</b><br>support request<br><br><b>Chat Support:</b><br>I was unable to identify a correct <strong>GFI Archiver</strong> license key in your last message. Remember that this is a pre-requisite for moving forward.<br>Let's try again!<br><br><b>Chat Support:</b><br>Please provide me with your <strong>GFI Archiver</strong> license key. <br>(Trial license keys are also accepted, but in the case of trial licenses, please make sure to wait for at least 1 hour after obtaining it before contacting us).<br><br>\u2753Don't know where to get the license key from? Check the resource below \ud83d\udc47<br>\u2753 <a href=\"https://support.gfi.com/article/109025-obtaining-your-gfi-license-key\" target=\"_blank\">How to Obtain Your GFI License Key</a><br><br><b>Daniel Riek:</b><br>YbnmtGH0-MHzKNpzwsrh1CsiNNegDvs5-PY-799169<br><br><b>Chat Support:</b><br>Checking the validity of this license key: <strong>YbnmtGH0-MHzKNpzwsrh1CsiNNegDvs5-PY-799169</strong> ...<br><br><b>Chat Support:</b><br>\u2728 Good news, you've got a valid license, which is due to expire at: <strong>2027-01-13</strong>.<br><br>Now that we're done with the formalities, let's start troubleshooting!<br><br><b>Chat Support:</b><br>If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa<br><br>\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.<br><br>\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow. <br><br>\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.<br><br>\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it: <br>\ud83d\udc49 <a href=\"https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI0MTAzMjRjNy05NzQ3LTQwMTMtODNkYS1jY2JiNjk0NWFhY2MiLCJzZXNzaW9uX3VpZCI6IjQxMDMyNGM3LTk3NDctNDAxMy04M2RhLWNjYmI2OTQ1YWFjYyIsImVtYWlsIjoiZGFuaWVsQGRhbmFpbnZlc3RtZW50LmNvbSIsImN1c3RvbV9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoiYXVyZWFfYXJjaGl2ZXIiLCJxdWVyeSI6IiIsImV4cCI6MTc1NDU3OTU1M30.QU1vSVJjG-hznsllgrhGM7rrb6ndccsRL4KmT2nvtQE  \" target=\"_blank\">Secure File Upload</a><br><br>You should see the following:<br>- User: daniel@danainvestment.com <br>- Session ID: 410324c7-9747-4013-83da-ccbb6945aacc<br><br><b>Daniel Riek:</b><br>\ud83d\udcce I want to upload files<br><br><b>Daniel Riek:</b><br>\u2705 I'm done uploading<br><br><b>Chat Support:</b><br>Thanks for letting me know you've finished uploading your files! I see that the analysis is still in progress, so it might take a little while depending on the file size and type. If you'd like an update on the progress, just let me know and I'll check for you.<br><br>In the meantime, regarding your issue with the Outlook Connector script error (specifically: sys.webforms.pagerequestmanagerservererrorexception Line 15 Char 16485 when restoring email), this type of error can sometimes be related to how the Outlook Connector interacts with the preview pane or certain web components.<br><br>There's a relevant article that might help:  <br>- <a href=\"https://support.archiver.gfi.com/article/105984\" target=\"_blank\">The Outlook Connector search shows a script error when hiding preview pane (when it was displayed on the bottom)</a><br><br>Could you tell me a bit more about when this error appears? For example:<br>- Does it happen every time you try to restore an email, or only in certain situations?<br>- Have you recently changed any settings in Outlook or GFI Archiver?<br>- Are multiple users affected, or just one?<br><br>Once the file analysis is complete, I'll review the results and provide more targeted troubleshooting steps. Let me know if you want me to check the upload progress at any time!<br><br><b>Daniel Riek:</b><br>only one user is effected. It happens everytime the user click the button to restore and email to his inbox.<br><br><b>Chat Support:</b><br>Thanks for clarifying that only one user is affected and the error happens every time they try to restore an email to their inbox. That helps narrow things down!<br><br>To move forward, could you please let me know:<br>1. Has this user ever been able to restore emails successfully in the past, or has it always failed for them?<br>2. Have you (or the user) already tried any troubleshooting steps, such as clearing the Outlook cache, reinstalling the Outlook Connector, or updating Outlook?<br>3. Did you upload any log files or screenshots related to this error? If so, let me know which ones so I can look for them once the analysis is ready.<br><br>Also, just to confirm, the exact error message is:<br>> sys.webforms.pagerequestmanagerservererrorexception Line 15 Char 16485<br><br>Is that correct, or is there any additional detail in the error popup?<br><br>Once I have this info and the file analysis is complete, I\u2019ll be able to give you more targeted steps. Thanks for your patience!<br><br><b>Daniel Riek:</b><br>The user has been able to restore email in the past. I have reinstalled the Outlook Connector. Outlook is up to date. I did upload a screen shot of the error. Yes the error message is listed.<br><br><b>Chat Support:</b><br>Thank you for the details and for uploading the screenshot. I\u2019ve reviewed the analysis, and here\u2019s what I found:<br><br>- The error message is:  <br>  Sys.WebForms.PageRequestManagerServerErrorException  <br>  It specifically mentions an issue with RadScriptBlock1 and invalid characters outside of script tags.<br><br>This type of script error is usually related to a problem in the Outlook Connector\u2019s interaction with the web components, and it can sometimes be triggered by a corrupted local cache, a problematic email item, or a temporary glitch in the Outlook Connector\u2019s files.<br><br>Here\u2019s what I recommend as next steps:<br><br>1. <strong>Clear the Outlook Connector Cache for the Affected User</strong><br>   - Close Outlook completely.<br>   - Navigate to:  <br>     `C:\\Users\\<username>\\AppData\\Local\\GFI\\MailArchiver\\`<br>   - Delete the contents of this folder (this will force the Outlook Connector to rebuild its cache).<br>   - Reopen Outlook and try restoring the email again.<br><br>2. <strong>Check for Problematic Emails</strong><br>   - If the error only happens with certain emails, there may be a corruption or unsupported content in those specific messages. Try restoring a different email to see if the error persists.<br><br>3. <strong>Review Server Logs</strong><br>   - If the above steps don\u2019t resolve the issue, it may be helpful to review the server logs for more details. You can find guidance on gathering logs here:  <br>     <a href=\"https://gfi-archiver-supportdesk.kayako.com/article/106126-gathering-troubleshooter-logs-for-archiver\" target=\"_blank\">Gathering Troubleshooter Logs for Archiver</a><br><br>4. <strong>Related Knowledge Base Article</strong><br>   - While not an exact match, this article discusses a similar scenario where script errors or HTTP 500 errors occur due to issues in the database or with specific tags:  <br>     <a href=\"https://support.archiver.gfi.com/article/105583\" target=\"_blank\">Error: 'GFI MailArchiver Archive Store \"2011 Jan - Dec\" is inaccessible. HTTP Error 500 - Server Error' when Outlook Connector syncs due to empty tagValue rows in arc_tags table</a><br><br>If you try these steps, could you let me know what happens? If the issue continues, please let me know if it affects all emails or just specific ones, and if possible, gather the logs as described above. That will help us dig deeper!<br><br>Is there anything else about this issue or the Outlook Connector that I can help with right now?<br><br><b>Daniel Riek:</b><br>I can upload the support log<br><br><b>Chat Support:</b><br>That would be really helpful! Please go ahead and upload the support log file. Once it's uploaded, let me know, and I'll check the analysis for any clues related to the script error and restoration issue.<br><br>Just a quick note: depending on the size of the log file, the analysis might take a little while. I can't proactively monitor the progress, so feel free to ask me for updates at any time.<br><br>Whenever you're ready, upload the log and I'll guide you through the next steps!<br><br><b>Daniel Riek:</b><br>how can i upload the support file?<br><br><b>Chat Support:</b><br>Great question! To upload your support log file for analysis, you'll need to use the external portal provided by GFI Archiver Support. Here\u2019s how you can do it:<br><br>1. <strong>Locate the Support Portal Link:</strong>  <br>   Usually, your support representative or the GFI Archiver support website will provide a secure upload link or portal for file submissions. If you\u2019re chatting through the GFI Support Portal, look for an \u201cUpload\u201d or \u201cAttach File\u201d button in the chat interface or on the support ticket page.<br><br>2. <strong>Accepted File Types:</strong>  <br>   You can upload log files (TXT, CSV, XML, etc.), ZIP files, PDFs, EML files, HAR files, or image files (JPG, PNG, etc.). The portal accepts large files (up to 15GB for PDFs).<br><br>3. <strong>Upload Steps:</strong>  <br>   - Click the \u201cUpload\u201d or \u201cAttach File\u201d button.<br>   - Select your support log file from your computer.<br>   - Wait for the upload to complete.  <br>   - Let me know once it\u2019s uploaded so I can check the analysis progress and help interpret the results.<br><br>If you don\u2019t see an upload option, please let me know how you\u2019re accessing support (e.g., web portal, email, chat), and I\u2019ll guide you to the right place!<br><br>Once your file is uploaded, just give me a heads up, and I\u2019ll take it from there.<br><br><b>Daniel Riek:</b><br>I don't see an upload option using the AI<br><br><b>Chat Support:</b><br>Thanks for letting me know! Actually, you\u2019re right\u2014there isn\u2019t a direct upload option within this AI chat interface itself. File uploads for analysis are handled through the external GFI Support Portal or via a secure upload link provided by the support team.<br><br>Here\u2019s what you can do:<br><br>1. <strong>If you have an open support ticket:</strong>  <br>   - Log in to your GFI Support Portal account.<br>   - Open your ticket and look for an \u201cAttach File\u201d or \u201cUpload\u201d button\u2014this is usually available on the ticket page.<br>   - Upload your support log file there.<br><br>2. <strong>If you don\u2019t have a ticket yet:</strong>  <br>   - You can create a new support ticket through the GFI Support Portal: <a href=\"https://support.gfi.com/\" target=\"_blank\">GFI Support Portal</a><br>   - Once your ticket is created, you\u2019ll be able to upload files directly to it.<br><br>3. <strong>If you need a secure upload link:</strong>  <br>   - Let me know, and I can guide you on how to request one from the support team.<br><br>If you\u2019d like, I can help you with the wording to request a file upload link or walk you through the process of opening a ticket. Just let me know what works best for you!<br><br>Is there anything else I can clarify or help with regarding the upload process?<br><br><b>Daniel Riek:</b><br>where do i go to create a support ticket?<br><br><b>Chat Support:</b><br>You can create a support ticket for GFI Archiver by visiting the official GFI Support Portal. Here\u2019s how you can do it:<br><br>1. <strong>Go to the GFI Support Portal:</strong>  <br>   <a href=\"https://support.gfi.com/\" target=\"_blank\">GFI Support Portal</a><br><br>2. <strong>Sign In or Register:</strong>  <br>   - If you already have an account, sign in with your credentials.<br>   - If you don\u2019t have an account yet, you\u2019ll need to register for one. Just click on the \u201cSign Up\u201d or \u201cRegister\u201d link and follow the prompts.<br><br>3. <strong>Create a New Ticket:</strong>  <br>   - Once you\u2019re logged in, look for an option like \u201cSubmit a Ticket,\u201d \u201cOpen a New Ticket,\u201d or \u201cCreate Case.\u201d<br>   - Fill in the required details about your issue. Be as specific as possible\u2014describe the error, what you\u2019ve tried so far, and mention that you have a support log file ready to upload.<br><br>4. <strong>Attach Your Log File:</strong>  <br>   - After submitting your ticket, you\u2019ll be able to attach your support log file directly to the ticket.<br><br>5. <strong>Submit and Wait for a Response:</strong>  <br>   - The support team will review your ticket and get back to you, often requesting additional information or providing troubleshooting steps.<br><br>If you run into any trouble during this process, just let me know where you\u2019re getting stuck, and I\u2019ll walk you through it step by step!<br><br>Is there anything else I can help with while you\u2019re creating your ticket?<br><br><b>Daniel Riek:</b><br>there is no option to create a ticket<br><br><b>Chat Support:</b><br>Thanks for letting me know\u2014that can definitely be confusing. Sometimes, the GFI Support Portal may restrict ticket creation based on your account type, support contract status, or if you\u2019re accessing as a trial user or through a partner/reseller.<br><br>Here are a few things you can try:<br><br>### 1. <strong>Check Your Login Status</strong><br>- Make sure you\u2019re logged in with the correct account. Some features (like ticket creation) are only available to registered users with an active support contract.<br><br>### 2. <strong>Look for \u201cContact Support\u201d or \u201cSubmit a Request\u201d</strong><br>- Sometimes the option is labeled as \u201cContact Support,\u201d \u201cSubmit a Request,\u201d or \u201cOpen Case\u201d instead of \u201cCreate Ticket.\u201d<br>- It might be in the top menu, sidebar, or under your account/profile dropdown.<br><br>### 3. <strong>If You Purchased Through a Reseller/Partner</strong><br>- If your GFI Archiver license was purchased through a reseller or partner, you may need to contact them directly for support or to escalate issues.<br><br>### 4. <strong>Alternative: Email Support</strong><br>- If you can\u2019t find any way to create a ticket, you can email GFI Support directly at:  <br>  <strong>support@gfi.com</strong><br>- In your email, include:<br>  - Your company name and license details (if available)<br>  - A description of your issue<br>  - Mention that you need to upload a support log file<br><br>### 5. <strong>Live Chat or Contact Form</strong><br>- Some regions or account types have access to a live chat or web contact form on the <a href=\"https://www.gfi.com/contact-us\" target=\"_blank\">GFI Contact Page</a>.<br><br><hr><br><br>If none of these options work, please let me know:<br>- How you purchased GFI Archiver (direct, reseller, partner, etc.)<br>- If you\u2019re using a trial or full license<br>- What you see when you log in to the portal (any options or error messages)<br><br>I\u2019ll do my best to guide you based on your specific situation!"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

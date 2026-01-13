@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI reply is a single terse action without useful detail or next steps, indicating a low-quality/generic response that doesn't help the customer progress.",
+    "evidence": [
+      "\"[2025-10-02T14:08:44+00:00] (AI) ATLAS: Action: l2\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear pattern of the AI repeatedly requesting the same information or preventing escalation to a human; the thread includes multiple human agents and an escalation to L2 was indicated.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asks about upgrading to v10 and requests reproduction details despite the customer explicitly saying they downgraded and restored with a rescue image, showing they did not fully incorporate the customer's prior statements.",
+    "evidence": [
+      "\"[2025-09-30T00:55:16+00:00] (Customer) D. Middleton: We have already downgraded. There is no mention anywhere on your website about version 10.0.0. Call me immediately to provide support o\"",
+      "\"[2025-09-30T02:05:00+00:00] (Employee) Arafat Bakhsh: * Has the customer upgraded to v10?\"",
+      "\"[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: Please provide us with the following details after having reproduced the issue: * All item\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between interactions (up to ~44.8 hours) despite the ticket being marked urgent, indicating significant response delays.",
+    "evidence": [
+      "\"Max gap between responses (hours): 44.8\"",
+      "\"[2025-09-30T00:55:16+00:00] (Customer) D. Middleton\" and \"[2025-10-02T14:08:44+00:00] (AI) ATLAS\" (multi-day gap)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Customer explicitly asked the ticket remain open and requested manager contact, but the ticket status is closed, indicating it was closed while the customer was still awaiting escalation/response.",
+    "evidence": [
+      "\"[2025-09-30T02:42:29+00:00] (Customer) D. Middleton: This ticket needs to remain open until I speak with someone in your management team. We have restored with the rescue image, but AppMan\"",
+      "\"Ticket Context - Status: closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The available agent messages show escalation attempts and requests for contact rather than generic end-user troubleshooting (no evidence of trivial steps like clearing cache/firewall guidance), so there's no clear P1 mishandling of that specific kind.",
+    "evidence": [
+      "\"[2025-09-29T23:36:55+00:00] (Employee) Harry Tasker: We\u2019ve received your escalation regarding ticket 60209553 and we are investigating the issue.\"",
+      "\"[2025-09-30T00:51:24+00:00] (Employee) Aditi Garg: The new NG models require v10 due to updated network interface\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI reply is a single terse action without useful detail or next steps, indicating a low-quality/generic response that doesn't help the customer progress.\",\n    \"evidence\": [\n      \"\\\"[2025-10-02T14:08:44+00:00] (AI) ATLAS: Action: l2\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear pattern of the AI repeatedly requesting the same information or preventing escalation to a human; the thread includes multiple human agents and an escalation to L2 was indicated.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support asks about upgrading to v10 and requests reproduction details despite the customer explicitly saying they downgraded and restored with a rescue image, showing they did not fully incorporate the customer's prior statements.\",\n    \"evidence\": [\n      \"\\\"[2025-09-30T00:55:16+00:00] (Customer) D. Middleton: We have already downgraded. There is no mention anywhere on your website about version 10.0.0. Call me immediately to provide support o\\\"\",\n      \"\\\"[2025-09-30T02:05:00+00:00] (Employee) Arafat Bakhsh: * Has the customer upgraded to v10?\\\"\",\n      \"\\\"[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: Please provide us with the following details after having reproduced the issue: * All item\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between interactions (up to ~44.8 hours) despite the ticket being marked urgent, indicating significant response delays.\",\n    \"evidence\": [\n      \"\\\"Max gap between responses (hours): 44.8\\\"\",\n      \"\\\"[2025-09-30T00:55:16+00:00] (Customer) D. Middleton\\\" and \\\"[2025-10-02T14:08:44+00:00] (AI) ATLAS\\\" (multi-day gap)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer explicitly asked the ticket remain open and requested manager contact, but the ticket status is closed, indicating it was closed while the customer was still awaiting escalation/response.\",\n    \"evidence\": [\n      \"\\\"[2025-09-30T02:42:29+00:00] (Customer) D. Middleton: This ticket needs to remain open until I speak with someone in your management team. We have restored with the rescue image, but AppMan\\\"\",\n      \"\\\"Ticket Context - Status: closed\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The available agent messages show escalation attempts and requests for contact rather than generic end-user troubleshooting (no evidence of trivial steps like clearing cache/firewall guidance), so there's no clear P1 mishandling of that specific kind.\",\n    \"evidence\": [\n      \"\\\"[2025-09-29T23:36:55+00:00] (Employee) Harry Tasker: We\u2019ve received your escalation regarding ticket 60209553 and we are investigating the issue.\\\"\",\n      \"\\\"[2025-09-30T00:51:24+00:00] (Employee) Aditi Garg: The new NG models require v10 due to updated network interface\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60209553
+}

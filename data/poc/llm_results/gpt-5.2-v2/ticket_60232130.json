@@ -1,0 +1,67 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI-assisted analysis produced incorrect technical claims (later called out as hallucination), and earlier AI chat used generic handover language without actually ensuring a human took over. Customer repeatedly questioned whether responses were bot-driven and unhelpful.",
+    "evidence": [
+      "\"The sysdump shows 3,851 segmentation faults where collectord repeatedly crashes and restarts\"",
+      "\"After reviewing the logs again, the initial diagnosis was incorrect.\"",
+      "\"The above statement appears to be a hallucination. There is 0 evidence of any crashes in the log analysis output\"",
+      "\"Thank you for letting us know your preference. A human colleague will be available to assist you shortly\u2014please feel free to choose from the handover options when you're ready.\"",
+      "\"So many responses from your replies are saying \\\"feedback and the information you have shared will be carefully reviewed as we continue to address your situation.\\\"\"",
+      "\"Is this so-called support still operated by the ChatBot?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer explicitly asked for a human/live agent and expressed frustration about AI-driven support and lack of real engagement; the interaction shows AI gatekeeping questions and handover language while the customer still couldn't get timely human help.",
+    "evidence": [
+      "\"need human chat option\"",
+      "\"It's business critical & needs human support intervention\"",
+      "\"Yes, I request a live agent transfer in this chat,\"",
+      "\"Can someone take it on a serious note, OR is your support also in AI time-kill mode?\"",
+      "\"Is this so-called support still operated by the ChatBot?\"",
+      "\"we will ditch this hatbot-based company & prefer the real one, no robotics.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support focused on downgrade and repeated discovery questions while not addressing key originally stated asks (latest firmware/EOL/URL categorization) and asked the customer for information they felt was already in dumps or should be derived by support/engineering.",
+    "evidence": [
+      "Customer issue list includes: \"need latest firmware\" and \"what is the EOL date of my appliance\" and \"experiencing specific issues with URL catagorisation\"",
+      "\"Prior to the upgrade, were you experiencing issues? Is this why you performed the upgrade?\"",
+      "\"Did you receive any errors or encounter any issues during the upgrade to v7.6.3?\"",
+      "\"As per my understanding, nothing got corrupted... because there were no errors shown & it could have been shown in the diagnostic dump file\"",
+      "\"I do not see it on the Dashboard, & that's your developer's job to trace the same.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Customer complained about no response for ~24 hours on a critical ticket and had to follow up multiple times before receiving substantive support communication, indicating unacceptable delay for the stated severity.",
+    "evidence": [
+      "\"The case was raised in Critical Priority, and no show for 24 hours.\"",
+      "\"Can someone take it on a serious note\"",
+      "Timeline gap: customer messages on \"2025-10-30T09:13:04+00:00\" then complaints on \"2025-10-31T05:02:41+00:00\" and first substantive public support response at \"2025-10-31T14:34:16+00:00\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support issued auto-closure language ('stay open for one week unless...') while the customer was still disputing the diagnosis and the issue was not confirmed resolved, creating risk of closure without resolution.",
+    "evidence": [
+      "\"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Customer continuing to dispute/seek resolution after this message: \"Is the \\\" firmware downgrade\\\" the solution?\" and later \"Prior to the upgrade, I was experiencing issues with URL categorization.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer declared the issue business-critical/critical priority with CPU pegged at ~100%, yet it apparently sat without timely engagement and the response path relied on generic gating questions and delayed escalation/clear action.",
+    "evidence": [
+      "\"It's business critical & needs human support intervention\"",
+      "\"The case was raised in Critical Priority, and no show for 24 hours.\"",
+      "\"Description: CPU 2 utilization threshold exceeded\" / \"Detected Value: 99\"",
+      "\"CPU utilization at 100%\" / \"Notice the high CPU as soon upgraded to v7.6.3\"",
+      "AI gating questions before transfer: \"Just two quick questions to help the support team: Are the Monitor graphs working?... Is traffic flowing...\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60232130
+}

@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS repeatedly uses templated, filler-style responses and policy boilerplate (\u201cticket will stay open for one week\u2026\u201d) rather than providing a concrete resolution path, and it offers broad/KB-style \u201cplausible root causes\u201d instead of a specific, owned action plan for the identified scheduling defect.",
+    "evidence": [
+      "\u201cThank you for contacting us. We understand that scheduled scanning is not working and that this is causing significant business impact.\u201d",
+      "\u201cTo investigate and address this as quickly as possible, please provide the following: - GFI LanGuard diagnostic logs\u2026\u201d",
+      "\u201cThis ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"\u2026\u201d",
+      "\u201cPlausible Root Causes Based on Our Knowledge Base:\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer is stuck in an AI-only loop with repeated requests for logs and reiteration of troubleshooting, while the customer asks for senior involvement/a session and states prior steps were already done.",
+    "evidence": [
+      "Customer: \u201cOur partners have already followed every single step and troubleshooting process as advised by your team.\u201d",
+      "Customer: \u201cWe need your senior technical team involved immediately and a clear, executable action plan\u2026\u201d",
+      "ATLAS: \u201cTo move quickly, please share the following\u2026 diagnostic logs\u2026\u201d",
+      "Customer: \u201cWe have already performed all the steps provided by the support team, but unfortunately, the issue remains unresolved.\u201d",
+      "Customer: \u201cWe request your immediate attention and a session with your team\u2026\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support continues asking for diagnostics and repeats the same request despite the customer stating the partner already provided information under another ticket and that all steps were already performed; this forces repetition instead of leveraging the referenced prior ticket data.",
+    "evidence": [
+      "Customer: \u201cOur Partner has already created a ticket 60166415 for the required and already have shared all the relevant information.\u201d",
+      "Customer: \u201cOur partners have already followed every single step and troubleshooting process as advised by your team.\u201d",
+      "ATLAS: \u201cTo move quickly, please share the following\u2026 diagnostic logs from the LanGuard console\u2026 Diagnostic logs from the affected endpoints\u2026\u201d",
+      "Customer: \u201cWe have already performed all the steps provided by the support team\u2026\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Within this transcript, ATLAS responses follow customer messages within minutes, and there is no instance where a customer message waits more than 2 days for a reply.",
+    "evidence": [
+      "[2025-09-09T11:29:21+00:00] Customer message followed by [2025-09-09T11:30:59+00:00] ATLAS reply",
+      "[2025-09-16T06:10:59+00:00] Customer message followed by [2025-09-16T06:12:00+00:00] ATLAS reply"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed in the provided interactions; the customer explicitly asks to keep it open and ATLAS continues responding.",
+    "evidence": [
+      "Customer: \u201cKeep this ticket open.\u201d",
+      "ATLAS responds afterward: \u201cThank you for your continued updates\u2026 I want to summarize the situation and provide actionable\u2026 recommendations\u2026\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer clearly signals an urgent, business-impacting outage (\u201cPriority Urgent\u201d, \u201cextreme business loss\u201d, banking environment, 300+ endpoints), yet support defaults to standard log-collection and \u201cone week\u201d auto-close language rather than immediate escalation/incident handling and a concrete rapid action plan.",
+    "evidence": [
+      "Customer: \u201cWe would like to open a ticket Priority Urgent as this is causing business loss.\u201d",
+      "Customer: \u201cScheduled Scanning is not working causing extreme business loss.\u201d",
+      "Customer: \u201cbanking environment. With 300+ endpoints across multiple branches\u2026\u201d",
+      "ATLAS: \u201cplease provide\u2026 diagnostic logs\u2026\u201d",
+      "ATLAS: \u201cThis ticket will stay open for one week unless\u2026\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60193443
+}

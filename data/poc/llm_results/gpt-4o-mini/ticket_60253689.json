@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response lacks relevance and simply closes the ticket without providing any substantive assistance or resolution to the customer.",
+    "evidence": [
+      "[2025-12-01T14:44:29+00:00] (AI) ATLAS: Closing as non-billable"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was stuck in an AI loop; the interaction is one-sided with the AI providing a closing statement.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI does not request any additional information that the customer has already provided nor does it appear to ask for logs/screenshots again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interactions show no significant delays; responses occurred almost immediately after each other.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while it appears the customer was simply inquiring about unsubscribing from a group without receiving an adequate response.",
+    "evidence": [
+      "[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This support ticket does not seem to involve a high-priority outage or critical issue that would necessitate immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response lacks relevance and simply closes the ticket without providing any substantive assistance or resolution to the customer.\",\n    \"evidence\": [\"[2025-12-01T14:44:29+00:00] (AI) ATLAS: Closing as non-billable\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was stuck in an AI loop; the interaction is one-sided with the AI providing a closing statement.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI does not request any additional information that the customer has already provided nor does it appear to ask for logs/screenshots again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions show no significant delays; responses occurred almost immediately after each other.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while it appears the customer was simply inquiring about unsubscribing from a group without receiving an adequate response.\",\n    \"evidence\": [\"[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This support ticket does not seem to involve a high-priority outage or critical issue that would necessitate immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60253689
+}

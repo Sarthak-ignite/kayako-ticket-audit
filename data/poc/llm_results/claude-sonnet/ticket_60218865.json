@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The interaction timeline is incomplete and cut off mid-message. There is insufficient evidence to evaluate AI response quality as the actual AI conversation content is not visible.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Cannot determine if customer was stuck in an AI loop as the conversation content is truncated and not available for analysis.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is only one partial interaction visible in the timeline, insufficient to assess whether context was ignored in subsequent responses.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamp is visible (2025-10-11T07:48:43), and the max gap between responses is 0.0 hours, indicating no significant delays occurred.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is marked as closed, there is insufficient interaction data to determine if closure was premature or if the customer's issue was resolved.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not a P1/SEV1 issue, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction timeline is incomplete and cut off mid-message. There is insufficient evidence to evaluate AI response quality as the actual AI conversation content is not visible.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if customer was stuck in an AI loop as the conversation content is truncated and not available for analysis.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one partial interaction visible in the timeline, insufficient to assess whether context was ignored in subsequent responses.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one timestamp is visible (2025-10-11T07:48:43), and the max gap between responses is 0.0 hours, indicating no significant delays occurred.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked as closed, there is insufficient interaction data to determine if closure was premature or if the customer's issue was resolved.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not a P1/SEV1 issue, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60218865
+}

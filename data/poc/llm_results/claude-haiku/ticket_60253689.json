@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response is a generic, non-specific closure comment that provides no actual support or resolution to the customer's request.",
+    "evidence": [
+      "[2025-12-01T14:44:29+00:00] (AI) ATLAS: Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There's insufficient evidence of an AI loop in this interaction.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There's not enough context to determine if the support team ignored any specific customer information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interactions appear to be very close together in time, with no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed immediately after the customer's unsubscribe request, without addressing their specific need.",
+    "evidence": [
+      "[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: Kayako - ticket id 60253689 // Aven Saren commented publicly: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.",
+      "[2025-12-01T14:44:29+00:00] (AI) ATLAS: Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is not a P1/Sev1 ticket, and there's no evidence of outage or critical issue.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response is a generic, non-specific closure comment that provides no actual support or resolution to the customer's request.\",\n    \"evidence\": [\"[2025-12-01T14:44:29+00:00] (AI) ATLAS: Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There's insufficient evidence of an AI loop in this interaction.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There's not enough context to determine if the support team ignored any specific customer information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions appear to be very close together in time, with no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed immediately after the customer's unsubscribe request, without addressing their specific need.\",\n    \"evidence\": [\n      \"[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: Kayako - ticket id 60253689 // Aven Saren commented publicly: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.\",\n      \"[2025-12-01T14:44:29+00:00] (AI) ATLAS: Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is not a P1/Sev1 ticket, and there's no evidence of outage or critical issue.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-haiku",
+  "_ticket_id": 60253689
+}

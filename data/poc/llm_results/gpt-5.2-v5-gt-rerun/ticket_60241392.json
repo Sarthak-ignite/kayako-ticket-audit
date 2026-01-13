@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer explicitly reports that the chatbot is crashing and unable to perform the needed serial-number check. The included ATLAS transcript also shows the AI repeating the wrong license key prompt, suggesting the AI interaction was broken/unhelpful.",
+    "evidence": [
+      "Customer (private): \"Hello the chatbot crashes because he cant check the serial number from my kerio ng120\"",
+      "ATLAS transcript (private): \"I have this license key on record: * License: 20339-8LMFV-3J3LZ ... Just to make sure we're on the same page - is this the same system you're reaching out about today?\" (after customer provided a different key: \"It is this: 20339-1LQWD-4A2PV\")"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While the customer asked to 'create me a ticket' during the ATLAS interaction, the case does get created and a support agent posts a public response shortly after. There is not enough customer-facing evidence that the customer was stuck in repeated AI loops preventing access to a human.",
+    "evidence": [
+      "Customer query (private transcript): \"Please create me a ticket\"",
+      "Support (public): \"Dear Robert, Thank you for the comprehensive information provided... To proceed further, we require the following from you...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support requests additional items (video evidence and serial label photo) to proceed with the RMA and then acknowledges receipt once provided. There is no clear customer-facing instance where support asks for the same exact information again after the customer explicitly said it was already provided in the ticket.",
+    "evidence": [
+      "Support (public): \"The remaining requirement for the RMA is a video showing the boot failure... Please attach the video directly to this ticket... or share a downloadable link\"",
+      "Customer (private): \"as you wished a picture of the backlabel. And the video can be found via this link: https://cloud.jacoby-gm.at/s/yyeEi6jsGenyKoc\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The visible timeline shows rapid back-and-forth on the same day (minutes between messages) and no customer-facing complaints about waiting. The CSV fields also show no time spent open in L1/L2.",
+    "evidence": [
+      "CSV: timeSpentOpenL1=0",
+      "CSV: timeSpentOpenL2=0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is closed in CSV context, there is no customer-facing evidence in the provided interactions showing the customer still waiting on an unresolved request at the time of closure, nor an explicit closure notice tied to an unresolved state.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-22 09:42:30"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a non-booting firewall (high impact), and support treats it as a hardware/RMA workflow item (collects required evidence, initiates warranty verification and RMA approval). There is no customer-facing evidence of inappropriate generic low-severity troubleshooting in response to an outage.",
+    "evidence": [
+      "Support (public): \"Given that the system recovery attempt... was unsuccessful, once we receive the video and the label photo, we can proceed with the warranty verification and RMA approval.\"",
+      "Support (public): \"We have commenced the warranty verification process with our internal team. You can expect an update from us once we receive their confirmation, which is usually within 48 hours.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60241392
+}

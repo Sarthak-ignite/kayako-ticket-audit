@@ -1,0 +1,120 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_connect",
+        "requester": {
+          "id": 60192785,
+          "uuid": "5459cfe8-b15e-4708-a774-e8b51ba2af38",
+          "full_name": "Sandro",
+          "legacy_id": "16233674677010",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/5459cfe8-b15e-4708-a774-e8b51ba2af38?1767641776",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 194320,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15",
+          "last_seen_ip": "151.68.244.200",
+          "last_seen_at": "2025-12-24T16:22:56+00:00",
+          "last_active_at": "2026-01-05T19:36:16+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60192785",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@569455c21eae6c0688f68de9183ca94e9b9b9b6e",
+          "password_updated_at": "2025-03-20T11:02:13+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2025-12-21T08:20:50+00:00",
+          "last_activity_at": "2025-12-21T08:20:50+00:00",
+          "created_at": "2024-01-08T07:53:00+00:00",
+          "updated_at": "2026-01-05T19:36:16+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60192785"
+        },
+        "ticket_idt": 60185905
+      },
+      "interactions": [
+        [
+          "2025-09-24T16:19:04+00:00",
+          "Kayako - ticket id 60185905 // ATLAS commented publicly: Dear Sandro,\n\nThank you for providing the detailed logs and support information regarding the Kerio Connect Active Directory (AD) authentication issue following your upgrade to version 10.0.8 on Ubuntu.\n\nBased on our review of both your support_info.txt and debug.log files, we observe that:\n\n \t* The Kerio Connect server and its Java backend services are running natively on Ubuntu, without containerization or evidence of resource exhaustion or file descriptor leaks.\n \t* The debug log reveals the root cause: a critical LDAP connectivity failure occurs about one hour after Kerio Connect is restarted, indicated by the log: {ldapdb} Connections to LDAP servers were forbidden. Subsequent LDAP operations will fail. This leads to all further authentication against AD failing until another server restart.\n\nAccording to our knowledge base, when Kerio Connect loses the ability to authenticate against AD after some time, the most common causes are related to Kerberos authentication issues, DNS misconfiguration, or problems with the Kerberos keytab file. Such authentication failures are frequently time-based, matching your description (works for about an hour after reboot, then stops), and may be triggered by DNS cache expiry, Kerberos ticket expiration, or time synchronization problems.\n\nRecommended step-by-step troubleshooting:\n\n\t* DNS Configuration: \n\n \t* Ensure the Linux server running Kerio Connect uses the DNS server provided by your Active Directory (not a third-party DNS). Many Kerberos issues are actually DNS-related. The DNS setting should point directly to your AD DNS.\n \t* Test DNS resolution for both the AD domain controllers and the Kerio Connect server\u2019s own hostname from the Linux command line using nslookup or dig.\n\n\t* Kerberos Authentication Test: \n\n \t* Use the kinit command to verify Kerberos authentication from the Linux server:\n \t* Method 1: In the terminal, run: \nkinit username \nReplace username with an AD user account (e.g., Administrator). Enter the password when prompted. If successful, there will be no errors. \n \t* Method 2: For advanced testing, run: \nkinit -S host/mailserver.domain.com@YOUR.REALM \nReplace mailserver.domain.com with your server\u2019s FQDN and YOUR.REALM with your Kerberos realm (often your AD domain in uppercase). \n \t* Refer to the article: Troubleshooting authentication issues in Kerio Connect - Directory Services [https://support.kerioconnect.gfi.com/article/115003] for detailed guidance.\n\n\t* Keytab File Integrity: \n\n \t* If Kerberos was working initially but fails after some time, the keytab file (used by Kerberos for credential storage) might be damaged. If kinit fails with keytab-related errors, you may need to recreate or reconfigure the keytab as per your AD and Kerberos environment.\n\n\t* Clock Synchronization: \n\n \t* Kerberos requires close time synchronization between the mail server and the AD domain controllers. Make sure both systems are synchronized using NTP, ideally with the DC as the NTP server.\n \t* Details can be found at: Kerberos Authentication Failing Because of Clock Offset Difference [https://support.kerioconnect.gfi.com/article/115027]\n\nFor further configuration and troubleshooting details, see:\n\n \t* Troubleshooting authentication issues in Kerio Connect - Directory Services [https://support.kerioconnect.gfi.com/article/115003]\n \t* Using Kerberos Authentication with Kerio Connect [https://support.kerioconnect.gfi.com/article/114988]\n\nTo summarize: please verify your DNS points to the AD DNS server, ensure Kerberos authentication works using kinit, and confirm both time synchronization and keytab integrity. Your provided logs and configuration confirm Kerio Connect\u2019s components are healthy and that the problem centers on the Kerberos/AD link. These steps should help you identify and resolve the underlying cause of the interrupted AD authentication.\n\nIf after these checks the problem persists, further examination of your DNS/Kerberos/AD settings and environment (such as firewall rules or ticket lifetimes) may be needed based on the concrete results of the above tests.\n\nSincerely,\nAtlas\nGFI - Kerio Connect Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-04T13:41:10+00:00",
+          "Kayako - ticket id 60185905 // Sandro commented publicly: Dear Hermes,\n\nthe reseller increased the RAM for the Kerio Connect VM to 12GB, but the AD integration stops working after about one hour again.\n\nThank you in advance!\n\nKind Regards\n\nSandro\nNAONIS.COM\n\n\n"
+        ],
+        [
+          "2025-09-03T14:02:10+00:00",
+          "Kayako - ticket id 60185905 // ATLAS commented privately: Action: l2"
+        ],
+        [
+          "2025-09-03T13:58:13+00:00",
+          "Kayako - ticket id 60185905 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\tsupport_info.txt_1535504\n \t\tKerio Connect is running as a native process on Ubuntu, not inside a Docker container.\n \t\tThe process list shows Kerio Connect and its Java services running directly under /opt/kerio/mailserver with no evidence of containerization (e.g., no overlay or container-specific process trees, no containerized init, and all processes are owned by root directly). This is important for troubleshooting, as containerized environments can introduce additional networking and file descriptor isolation issues.\n\n \t\tThere is no evidence of file descriptor leaks or abnormal open file/socket usage in the Kerio Connect backend processes.\n \t\tThe lsof output for the main Kerio Connect Java processes (PIDs 1358, 1359, etc.) shows a high but normal number of open files, sockets, and pipes, consistent with a busy mail server using Java and Derby DB. File descriptors are mostly regular files, pipes, and expected TCP/UNIX sockets. There are no runaway counts or repeated patterns that would indicate a leak. This rules out a backend resource exhaustion as the root cause for the described AD authentication failures.\n\n \t\tMultiple Kerio Connect Java service processes are running, including IM, XMPP, and core services, all under the same root context.\n \t\tThe process tree and lsof output show multiple Java processes (e.g., 1358, 1359, 1366, 1368, 1370, etc.) each with their own set of open files and libraries, all referencing /opt/kerio/mailserver/javaservices and related store/database/log files. This is the expected architecture for Kerio Connect 10.x and confirms that all backend components are active. No crashed or zombie processes are present.\n\n \t\tSpamserver plugin processes are running and appear healthy.\n \t\tProcesses such as spamserve 1732 and its children are running under /opt/kerio/mailserver/plugins/spamserver, with expected shared libraries and open sockets. There are no signs of plugin crashes or resource starvation. This indicates that the anti-spam subsystem is not contributing to the authentication issue.\n\n \t\tNo evidence of system-wide resource exhaustion or kernel-level process limits being hit.\n \t\tThe lsof output does not show 'too many open files' errors, and the process table is not saturated. There are no kernel worker (kworker) processes in a blocked or abnormal state. This suggests that the OS is not imposing limits that would interfere with Kerio Connect's ability to maintain LDAP/AD connections.\n\n \t\tKerio Connect is using Derby DB for XMPP and IM services, with all database segment and log files accessible.\n \t\tOpen files include numerous Derby DB segment files (e.g., seg0/*.dat) and log files under /opt/kerio/mailserver/store/xmpp/database and /store/logs. There are no locked or inaccessible files, and the database files are being accessed in read/write mode as expected. This confirms that the backend storage layer is operational.\n\n \t\tNo abnormal or unexpected processes are running under the Kerio Connect installation directory.\n \t\tAll processes under /opt/kerio/mailserver are either Kerio Connect core, Java services, or expected plugins (spamserver). There are no rogue binaries or suspicious activity, which rules out local interference from unauthorized software.\n\n \t\tBased on the described issue (Kerio Connect loses ability to authenticate against AD after about an hour post-reboot, but works immediately after restart), Kerberos authentication or DNS configuration issues are likely root causes.\n \t\tThe knowledgebase article https://support.kerioconnect.gfi.com/article/115003 describes that many Kerberos authentication failures in Kerio Connect are due to DNS misconfiguration or issues with the keytab file. It is recommended to verify that the Linux server is using the DNS server provided by the Active Directory, and to test Kerberos authentication using the 'kinit' command as described in the article. If authentication works immediately after reboot but fails after some time, it may indicate a DNS cache issue, Kerberos ticket expiration, or a damaged keytab file. Please review the DNS settings, ensure the correct DNS server is used, and follow the Kerberos troubleshooting steps in the referenced article.\n\n \t\tdebug.log_1535505\n \t\tCritical LDAP connectivity failure detected, causing all subsequent LDAP operations to fail. This directly matches the reported issue of Active Directory authentication failures after a period of normal operation.\n \t\tAt [03/Sep/2025 13:56:01][3098], the log records: '{ldapdb} Connections to LDAP servers were forbidden. Subsequent LDAP operations will fail.' Immediately after, '{auth} LdapManager: Unregistered all domain.' is logged. This indicates Kerio Connect lost its ability to communicate with the AD server, which would prevent user authentication against Active Directory. This is the only critical error found in the analyzed log segments and aligns with the customer's report that authentication works for a short period after a restart, then fails. According to the knowledgebase article (https://support.kerioconnect.gfi.com/article/115003), such issues can often be related to Kerberos authentication or DNS configuration problems. The article recommends using the 'kinit' command to test Kerberos authentication and ensuring that the Linux mailserver's DNS is pointed to the AD-provided DNS server, as many Kerberos issues are actually DNS-related. If authentication still fails, the keytab file used by Kerberos may be damaged. Please refer to the article for detailed troubleshooting steps.\n\n"
+        ],
+        [
+          "2025-09-03T13:56:24+00:00",
+          "Kayako - ticket id 60185905 // Sandro commented privately: Dear Sirs,\nsorry to bother you, but one of our resellers updated to 10.0.8 a Kerio Connect that is running on linux Ubuntu.\nAfter the upgrade the Kerio Connect is no more able to authenticate users agaist AD server.\nNothing has been changed in the AD server.\nThey found that id they restart the linux server (with Kerio Connect), the authentication works for an hour and the they have again the same error.\nI attached the support info file and the debug log with user athentication and directory server messages enabled.\nDo you have any suggestion?\nThank you in advance!\nKind Regards\nSandro\nNAONIS.COM"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 5,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

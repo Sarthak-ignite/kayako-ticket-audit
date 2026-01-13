@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response was just a closing remark without addressing any user issues or providing any information.",
+    "evidence": [
+      "[2025-10-23T08:03:34+00:00] - Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the AI asking for repeated information or preventing access to human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that the AI ignored any context or previously provided information since the interaction is not visible.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between responses was 0.0 hours, indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence suggesting the ticket was closed while awaiting promised information from the support team.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal, and there is no evidence of mishandled high-priority issues.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response was just a closing remark without addressing any user issues or providing any information.\",\n    \"evidence\": [\"[2025-10-23T08:03:34+00:00] - Thanks for chatting earlier with our AI Support!\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the AI asking for repeated information or preventing access to human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the AI ignored any context or previously provided information since the interaction is not visible.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between responses was 0.0 hours, indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence suggesting the ticket was closed while awaiting promised information from the support team.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal, and there is no evidence of mishandled high-priority issues.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60227322
+}

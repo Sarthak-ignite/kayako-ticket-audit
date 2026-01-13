@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "While there are many AI comments, they do not appear to provide filler or false information; they relate to the status of a Jira issue. No promises are noted that were broken.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer successfully reached a human agent and there is no evidence suggesting that they were stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that the support team ignored information from the customer, as their responses align with the conversation.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay (152.5 hours) between the responses of the AI and the human employee, which is excessive for an urgent ticket.",
+    "evidence": [
+      "(2025-11-19T16:54:45+00:00) Pavly Nashed: Dear Warren, Thank you for the confirmation.",
+      "(2025-11-13T05:20:07+00:00) Chintan Parekh: The deployment has been completed, and we have verified that the issue is no longer reproducible."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed after the customer had indicated they could close it but had not received sufficient follow-up and verification of resolution.",
+    "evidence": [
+      "(2025-11-19T16:48:08+00:00) Warren Cook: We can close this case",
+      "(2025-11-19T16:54:45+00:00) Pavly Nashed: We will go ahead and close this ticket as requested."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence that high-priority troubleshooting was mishandled. The conversation doesn't indicate improper handling of the situation related to the chat widget.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"While there are many AI comments, they do not appear to provide filler or false information; they relate to the status of a Jira issue. No promises are noted that were broken.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer successfully reached a human agent and there is no evidence suggesting that they were stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the support team ignored information from the customer, as their responses align with the conversation.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay (152.5 hours) between the responses of the AI and the human employee, which is excessive for an urgent ticket.\",\n    \"evidence\": [\"(2025-11-19T16:54:45+00:00) Pavly Nashed: Dear Warren, Thank you for the confirmation.\", \"(2025-11-13T05:20:07+00:00) Chintan Parekh: The deployment has been completed, and we have verified that the issue is no longer reproducible.\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed after the customer had indicated they could close it but had not received sufficient follow-up and verification of resolution.\",\n    \"evidence\": [\"(2025-11-19T16:48:08+00:00) Warren Cook: We can close this case\", \"(2025-11-19T16:54:45+00:00) Pavly Nashed: We will go ahead and close this ticket as requested.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that high-priority troubleshooting was mishandled. The conversation doesn't indicate improper handling of the situation related to the chat widget.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60238457
+}

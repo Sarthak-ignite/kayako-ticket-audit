@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No AI or agent responses are present in the provided timeline, so there is no basis to assess response quality, correctness, or broken promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single customer message shown and no AI back-and-forth requesting repeated information, so an AI loop cannot be evidenced.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support replies are included, so there is no evidence that support ignored provided context or asked again for the same information/logs.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one interaction is shown; without subsequent responses (or their timestamps), delays between interactions cannot be established from the transcript.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is listed as closed, there is no transcript evidence of support promising follow-up or the customer waiting for information when it was closed.",
+    "evidence": [
+      "[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: \"Hi DNN team, Our previous request[#60169878] ...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is 'normal' (not P1/Sev1), and there are no support troubleshooting steps shown to evaluate mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No AI or agent responses are present in the provided timeline, so there is no basis to assess response quality, correctness, or broken promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single customer message shown and no AI back-and-forth requesting repeated information, so an AI loop cannot be evidenced.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support replies are included, so there is no evidence that support ignored provided context or asked again for the same information/logs.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one interaction is shown; without subsequent responses (or their timestamps), delays between interactions cannot be established from the transcript.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is listed as closed, there is no transcript evidence of support promising follow-up or the customer waiting for information when it was closed.\",\n    \"evidence\": [\n      \"[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: \\\"Hi DNN team, Our previous request[#60169878] ...\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is 'normal' (not P1/Sev1), and there are no support troubleshooting steps shown to evaluate mishandling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60229854
+}

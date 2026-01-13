@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS publicly concluded the behavior was normal (\u201cno evidence of a firmware\u2026malfunction\u201d) and attributed blank graphs to no recorded traffic, but the customer stated there was traffic during those periods and later support identified a real monitoring/collector failure from logs. This makes the earlier AI guidance misleading/incorrect for this case.",
+    "evidence": [
+      "ATLAS (public, 2025-11-09): \"This behavior is in line with normal Exinda operation; there is no evidence of a firmware or reporting engine malfunction.\"",
+      "Customer (private, 2025-11-07): \"there was traffic over the link on the mentioned period, but it was not present on exinda subnet report.\"",
+      "Syed Haider (public, 2025-11-27): \"The logs indicate that the `collectord` process is failing to process network traffic due to a buffer overflow error (`No buffer space available`).\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While the customer asked for a call/escalation, the subsequent substantive replies requesting diagnostics and providing corrective steps were from named human agents (e.g., Rishi Singh, Randall Shawver, Syed Haider), not an AI-only loop. There is not enough customer-facing evidence that the customer was stuck interacting only with AI after requesting a human.",
+    "evidence": [
+      "Rishi Singh (public, 2025-11-14): \"To pinpoint why the graphs are blank in the 24-hour view, we need a closer look at the appliance\u2019s internal logs.\"",
+      "Randall Shawver (public, 2025-11-20): \"If this is a bug with the new firmware version, we must send this to our Engineering team.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly indicated they had already provided the requested data and questioned why support was asking again, while support asked whether the files had been uploaded because they were not visible. This is a strong signal of forcing repetition / not recognizing previously provided information.",
+    "evidence": [
+      "Customer (private, 2025-11-19): \"can you tell us that how many times you need same data. Have you checked previous update on this ticket provides by us?\"",
+      "Randall Shawver (public, 2025-11-20): \"Did you previously upload these, as I do not see them attached to this ticket? If not, please provide these so we can continue the investigation.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer repeatedly followed up over days/weeks stating they had not received updates, including waiting 6 days and then about a month without a solution. This is a strong customer-facing signal of significant response delays.",
+    "evidence": [
+      "Customer (private, 2025-10-06): \"As we are waiting from last 6 days still, we have not received any updates regarding the same.\"",
+      "Customer (private, 2025-11-04): \"It has been now a month ago but still we haven't received any solution regarding the issue.\"",
+      "Priyanka Bhotika (public, 2025-11-04): \"We have received your escalation and we are currently working on it.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There are auto-closure warning statements (\u201cThis ticket will stay open for one week unless\u2026\u201d) but no explicit closure notice in the provided interactions, and the CSV status is not closed.",
+    "evidence": [
+      "Syed Haider (public, 2025-11-27): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "CSV: Status=hold"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although an internal escalation tag references severity \u201cdata_loss,\u201d the customer-facing thread does not clearly state an outage/production-down/P1 situation, and support ultimately moved toward log collection and a concrete remediation path. Internal-only severity signals are insufficient to mark this as mishandled.",
+    "evidence": [
+      "Centralsupport-ai-acc (private, 2025-11-04): \"The severity is: data_loss\"",
+      "Syed Haider (public, 2025-11-27): \"We have analyzed the system logs and identified the cause of the reporting issue.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60209095
+}

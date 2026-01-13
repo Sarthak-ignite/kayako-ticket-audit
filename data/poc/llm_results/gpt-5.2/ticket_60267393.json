@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI replies shown are truncated, so there isn\u2019t clear evidence of incorrect guidance, empty filler, or unkept promises.",
+    "evidence": [
+      "[2025-12-19T17:29:37+00:00] (AI) ATLAS: \"Dear Liz, Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy...\"",
+      "[2025-12-22T18:23:12+00:00] (AI) ATLAS: \"Dear Liz, Thank you for your update. We appreciate you letting us know about your current availability...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear repeated cycle of the AI requesting the same information or blocking escalation; the customer indicates they cannot troubleshoot due to PTO, and the AI acknowledges that update.",
+    "evidence": [
+      "[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: \"Thanks for the response and troubleshooting advice. Right now, due to PTO, we are unable to troubleshoot.\"",
+      "[2025-12-22T18:23:12+00:00] (AI) ATLAS: \"Thank you for your update. We appreciate you letting us know about your current availability...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI explicitly references the screenshots the customer attached, and there\u2019s no visible request to resend the same screenshots/logs.",
+    "evidence": [
+      "[2025-12-19T17:29:37+00:00] (AI) ATLAS: \"...providing detailed screenshots illustrating the queue discrepancy...\"",
+      "[2025-12-19T17:27:04+00:00] (Customer) Liz Mech: \"I\u2019ve attached two screenshots, both from yesterday.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap (~72+ hours) between the AI\u2019s response on Dec 19 and the customer\u2019s next message on Dec 22, consistent with the stated max gap of 72.9 hours.",
+    "evidence": [
+      "[2025-12-19T17:29:37+00:00] (AI) ATLAS: \"Dear Liz, Thank you for reaching out...\"",
+      "[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: \"Hi There, Thanks for the response and troubleshooting advice...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is listed as closed, the interaction log provided does not show a closure message or that the customer was awaiting promised follow-up when it was closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/Sev1), so this pattern does not apply based on the provided context.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI replies shown are truncated, so there isn\u2019t clear evidence of incorrect guidance, empty filler, or unkept promises.\",\n    \"evidence\": [\n      \"[2025-12-19T17:29:37+00:00] (AI) ATLAS: \\\"Dear Liz, Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy...\\\"\",\n      \"[2025-12-22T18:23:12+00:00] (AI) ATLAS: \\\"Dear Liz, Thank you for your update. We appreciate you letting us know about your current availability...\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear repeated cycle of the AI requesting the same information or blocking escalation; the customer indicates they cannot troubleshoot due to PTO, and the AI acknowledges that update.\",\n    \"evidence\": [\n      \"[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: \\\"Thanks for the response and troubleshooting advice. Right now, due to PTO, we are unable to troubleshoot.\\\"\",\n      \"[2025-12-22T18:23:12+00:00] (AI) ATLAS: \\\"Thank you for your update. We appreciate you letting us know about your current availability...\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI explicitly references the screenshots the customer attached, and there\u2019s no visible request to resend the same screenshots/logs.\",\n    \"evidence\": [\n      \"[2025-12-19T17:29:37+00:00] (AI) ATLAS: \\\"...providing detailed screenshots illustrating the queue discrepancy...\\\"\",\n      \"[2025-12-19T17:27:04+00:00] (Customer) Liz Mech: \\\"I\u2019ve attached two screenshots, both from yesterday.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a multi-day gap (~72+ hours) between the AI\u2019s response on Dec 19 and the customer\u2019s next message on Dec 22, consistent with the stated max gap of 72.9 hours.\",\n    \"evidence\": [\n      \"[2025-12-19T17:29:37+00:00] (AI) ATLAS: \\\"Dear Liz, Thank you for reaching out...\\\"\",\n      \"[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: \\\"Hi There, Thanks for the response and troubleshooting advice...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is listed as closed, the interaction log provided does not show a closure message or that the customer was awaiting promised follow-up when it was closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/Sev1), so this pattern does not apply based on the provided context.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60267393
+}

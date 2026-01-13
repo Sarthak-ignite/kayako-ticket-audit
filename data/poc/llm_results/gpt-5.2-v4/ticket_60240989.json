@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer asked a clear product question (upgrade path from 9.2 to 9.5). The AI response shown immediately pivots to license-key details rather than answering or even acknowledging the upgrade-path request, which is irrelevant/misaligned to the question and likely unhelpful.",
+    "evidence": [
+      "Customer: \"what is the correct upgrade path from version 9.2 to 9.5\"",
+      "AI Assistant: \"I have this license key on record: - License: 20339-9FEMI-5GDDV - Expiry date: 2026-06-07\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only a single customer question and a single AI response are visible; there\u2019s no evidence of repeated prompting, inability to reach a human, or looping behavior in the provided excerpt.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the AI appears to answer off-topic, there is not enough back-and-forth in the provided snippet to show the agent repeatedly ignoring previously provided information (e.g., asking for the same info again, or disregarding attachments).",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The transcript does not show any multi-day gaps between customer messages and support responses, nor any customer follow-ups about waiting.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The excerpt does not show the ticket being closed/resolved, auto-closed, or abandoned while an open question remained. Only an initial AI chat log is shown.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No indication of outage/critical severity or urgent business impact is present in the provided content; the customer asks a routine upgrade-path question.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60240989
+}

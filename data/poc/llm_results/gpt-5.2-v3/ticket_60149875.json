@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS provides plausible product guidance (filter logic, documentation links, cache refresh) and does not make a clearly false factual claim that can be verified as incorrect from the ticket text alone. No broken-template issues or unfulfilled promises to send specific deliverables are clearly shown.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer offers to join a call, but does not explicitly request a human agent. ATLAS does not repeatedly ask for the same specific information 2+ times; after the initial info request, subsequent replies mostly summarize and provide guidance.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "ATLAS acknowledges the customer\u2019s described behavior (Role equals works; Role does not equal fails) and later acknowledges the customer provided screenshots/exports. There is no clear instance where support asks again for files already attached or repeats the same troubleshooting step after the customer explicitly said it was already tried (beyond general reiteration).",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is clear evidence of significant waiting time and explicit customer complaints about lack of response. Additionally, there is a 7-day gap (Jul 31 to Aug 7) where the customer states they have not received a response.",
+    "evidence": [
+      "Customer (2025-07-22): \"This has now been open for 18 days without resolution\"",
+      "Quoted prior follow-up (2025-07-16): \"This issue has been outstanding for 12 days without any response\"",
+      "ATLAS (2025-07-22): \"we apologize for the delay in our response.\"",
+      "Customer (2025-08-07): \"I have not received a response on the following after reaching out last week\" (customer follow-up comes 7 days after 2025-07-31 message)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No explicit ticket closure event is shown in the provided timeline. The customer asks to keep the ticket open and later asks to reopen it, but the log does not clearly show an improper closure occurring.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer expresses urgency and business impact (metrics analysis impacted), but the ticket is not explicitly marked P1/SEV1/Critical, nor is there a clear 'production down/complete outage' scenario. Without an explicit severity marker or outage language, P1/SEV1 mishandling cannot be concluded under the criteria.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60149875
+}

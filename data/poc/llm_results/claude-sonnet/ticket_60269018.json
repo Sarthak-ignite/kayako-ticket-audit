@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI initially escalated the issue to engineering and informed the customer they would receive updates, but then closed the ticket claiming it was a 'test-triggered incident' when an employee identified it as from a test ticket. The AI's final response misrepresents the situation to the customer.",
+    "evidence": [
+      "[2025-12-23T08:19:50+00:00] Cu Chulainn AI Manager: Dear Andriy, Thank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive fu",
+      "[2025-12-23T08:20:34Z] AlterPKC: Triggered from a test ticket. Closing",
+      "[2025-12-23T08:29:28+00:00] Cu Chulainn AI Manager: Dear Andriy, We have identified the issue you experienced as a test-triggered incident rather than a true product defect. You"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one customer interaction and the AI responded immediately without creating a loop or repeatedly requesting the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI did not ignore customer-provided information or ask for duplicate information. The issue was that it was identified as a test ticket, not a context problem.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket was handled within minutes from customer report to closure. The max gap of 3.4 hours is not significant and all responses occurred on the same day.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed and the customer was told the issue was resolved as a 'test-triggered incident,' but this appears to be an internal determination that it was a test ticket rather than actually resolving the customer's reported issue about being unable to download December patches.",
+    "evidence": [
+      "[2025-12-23T08:20:34Z] AlterPKC: Triggered from a test ticket. Closing",
+      "[2025-12-23T08:29:28+00:00] Cu Chulainn AI Manager: Dear Andriy, We have identified the issue you experienced as a test-triggered incident rather than a true product defect. You",
+      "[2025-12-23T08:18:31+00:00] Andriy Rybalchenko: We are unable to download the December patches from the GFI console. We have verified that all network connectivity is function"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not P1/SEV1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI initially escalated the issue to engineering and informed the customer they would receive updates, but then closed the ticket claiming it was a 'test-triggered incident' when an employee identified it as from a test ticket. The AI's final response misrepresents the situation to the customer.\",\n    \"evidence\": [\n      \"[2025-12-23T08:19:50+00:00] Cu Chulainn AI Manager: Dear Andriy, Thank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive fu\",\n      \"[2025-12-23T08:20:34Z] AlterPKC: Triggered from a test ticket. Closing\",\n      \"[2025-12-23T08:29:28+00:00] Cu Chulainn AI Manager: Dear Andriy, We have identified the issue you experienced as a test-triggered incident rather than a true product defect. You\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one customer interaction and the AI responded immediately without creating a loop or repeatedly requesting the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not ignore customer-provided information or ask for duplicate information. The issue was that it was identified as a test ticket, not a context problem.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was handled within minutes from customer report to closure. The max gap of 3.4 hours is not significant and all responses occurred on the same day.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed and the customer was told the issue was resolved as a 'test-triggered incident,' but this appears to be an internal determination that it was a test ticket rather than actually resolving the customer's reported issue about being unable to download December patches.\",\n    \"evidence\": [\n      \"[2025-12-23T08:20:34Z] AlterPKC: Triggered from a test ticket. Closing\",\n      \"[2025-12-23T08:29:28+00:00] Cu Chulainn AI Manager: Dear Andriy, We have identified the issue you experienced as a test-triggered incident rather than a true product defect. You\",\n      \"[2025-12-23T08:18:31+00:00] Andriy Rybalchenko: We are unable to download the December patches from the GFI console. We have verified that all network connectivity is function\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not P1/SEV1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60269018
+}

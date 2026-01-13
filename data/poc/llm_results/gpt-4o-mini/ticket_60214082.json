@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic filler responses or wrong information in the provided interaction.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The provided interaction does not indicate the customer was stuck in a loop or unable to reach a human representative.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that the AI support ignored any context or asked for previously provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between responses was 0.0 hours, indicating there were no delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed without evidence that the customer was adequately addressed or that any promised information was provided.",
+    "evidence": [
+      "Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference: (2025-10-05T06:47:57+00:00)",
+      "ATLAS commented publicly."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket was labeled as low priority, so the criteria for mishandling high-priority tickets do not apply.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic filler responses or wrong information in the provided interaction.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided interaction does not indicate the customer was stuck in a loop or unable to reach a human representative.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the AI support ignored any context or asked for previously provided information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between responses was 0.0 hours, indicating there were no delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed without evidence that the customer was adequately addressed or that any promised information was provided.\",\n    \"evidence\": [\"Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference: (2025-10-05T06:47:57+00:00)\", \"ATLAS commented publicly.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket was labeled as low priority, so the criteria for mishandling high-priority tickets do not apply.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60214082
+}

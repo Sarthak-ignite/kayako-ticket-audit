@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI's response was generic and did not provide specific information related to the customer's issue, which is a failure in quality.",
+    "evidence": [
+      "[2025-10-29T14:10:49+00:00] (AI) ATLAS: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence in the interactions that indicates the customer is stuck in a loop with the AI avoiding a direct human response.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI did not acknowledge the customer's mention of a full conversation with a reference number, suggesting it ignored pertinent context.",
+    "evidence": [
+      "[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no significant delays between responses, as the timestamps indicate immediate interactions.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed without any indication that the customer was waiting for additional information from support.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic troubleshooting for a high-priority issue; thus, no mishandling was detected.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI's response was generic and did not provide specific information related to the customer's issue, which is a failure in quality.\",\n    \"evidence\": [\"[2025-10-29T14:10:49+00:00] (AI) ATLAS: Component could not be determined\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence in the interactions that indicates the customer is stuck in a loop with the AI avoiding a direct human response.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI did not acknowledge the customer's mention of a full conversation with a reference number, suggesting it ignored pertinent context.\",\n    \"evidence\": [\"[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no significant delays between responses, as the timestamps indicate immediate interactions.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed without any indication that the customer was waiting for additional information from support.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic troubleshooting for a high-priority issue; thus, no mishandling was detected.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60231535
+}

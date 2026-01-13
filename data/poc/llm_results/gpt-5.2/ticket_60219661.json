@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is an internal ATLAS note but no visible AI-generated customer-facing response to evaluate for generic filler, incorrect info, or unkept promises.",
+    "evidence": [
+      "[2025-10-13T08:47:26+00:00] (AI) ATLAS: \"Action: l1\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer interacts with human agents (Keyur, Balaji) and there is no evidence of repeated AI prompts or the customer being blocked from reaching a human.",
+    "evidence": [
+      "[2025-10-13T14:38:33+00:00] (Employee) Keyur Saxena: \"Hello Daniel, I can see that https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg now loads up fine.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Agents appear to reference and check the specific URL the customer is concerned about; there is no clear repetition of requests for the same info/logs or ignoring previously provided details.",
+    "evidence": [
+      "[2025-10-15T17:01:18+00:00] (Employee) Keyur Saxena: \"I can see that https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg is not returning 404.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a gap of ~44 hours between the customer\u2019s message and the next employee public response, indicating a significant response delay.",
+    "evidence": [
+      "[2025-10-13T14:38:33+00:00] (Employee) Keyur Saxena: \"Hello Daniel, I can see that https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg now loads up fine.\"",
+      "[2025-10-15T11:00:31+00:00] (Customer) Daniel An: \"Sent with Kayako ...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The last agent message asks the customer to confirm if issues persist, and there is no explicit evidence the ticket was closed while the customer was awaiting promised next steps or information.",
+    "evidence": [
+      "[2025-10-16T12:31:05+00:00] (Employee) Balaji Jayaraman: \"Please let us know if you still see issues.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/SEV1), and there is no evidence of outage-level mishandling or inappropriate generic troubleshooting in a high-severity context.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is an internal ATLAS note but no visible AI-generated customer-facing response to evaluate for generic filler, incorrect info, or unkept promises.\",\n    \"evidence\": [\"[2025-10-13T08:47:26+00:00] (AI) ATLAS: \\\"Action: l1\\\"\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer interacts with human agents (Keyur, Balaji) and there is no evidence of repeated AI prompts or the customer being blocked from reaching a human.\",\n    \"evidence\": [\"[2025-10-13T14:38:33+00:00] (Employee) Keyur Saxena: \\\"Hello Daniel, I can see that https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg now loads up fine.\\\"\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Agents appear to reference and check the specific URL the customer is concerned about; there is no clear repetition of requests for the same info/logs or ignoring previously provided details.\",\n    \"evidence\": [\"[2025-10-15T17:01:18+00:00] (Employee) Keyur Saxena: \\\"I can see that https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg is not returning 404.\\\"\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a gap of ~44 hours between the customer\u2019s message and the next employee public response, indicating a significant response delay.\",\n    \"evidence\": [\n      \"[2025-10-13T14:38:33+00:00] (Employee) Keyur Saxena: \\\"Hello Daniel, I can see that https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg now loads up fine.\\\"\",\n      \"[2025-10-15T11:00:31+00:00] (Customer) Daniel An: \\\"Sent with Kayako ...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The last agent message asks the customer to confirm if issues persist, and there is no explicit evidence the ticket was closed while the customer was awaiting promised next steps or information.\",\n    \"evidence\": [\"[2025-10-16T12:31:05+00:00] (Employee) Balaji Jayaraman: \\\"Please let us know if you still see issues.\\\"\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/SEV1), and there is no evidence of outage-level mishandling or inappropriate generic troubleshooting in a high-severity context.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60219661
+}

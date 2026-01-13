@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses contain generic/wrong context (addresses a different name) and internal AI logs indicate failures, showing poor AI quality handling.",
+    "evidence": [
+      "\"[2025-11-07T16:50:04+00:00] (AI) ATLAS: --- AI Assistant ---\\n\\n Hi, Saurish Savant ! \ud83d\udc4b\\n\\nThis is the StreetS\"",
+      "\"[2025-11-07T16:52:54+00:00] (AI) Cu Chulainn AI Manager: ===== Operation Summary =====\\nThe process has failed and andon cord has been pulled for the following reason:\\n\\n**Unexpected b\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was repeatedly asked the same information by AI or prevented from reaching a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Agent responses reference account data and the customer-provided number appears to be acknowledged; there's no clear instance of repeated requests for the same information or ignoring provided details.",
+    "evidence": [
+      "\"[2025-11-10T14:26:44+00:00] (Employee) Shaquille De Lancy: Dear David,\\n\\nThank you for following up on this issue.\\n\\nWe've noticed that there is already a very similar number on your account:\"",
+      "\"[2025-11-10T14:31:39+00:00] (Customer) David OBrien: 5512175999 is the correct number\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day / multi-hour gaps between customer and agent messages (max gap noted 26.4 hours), indicating significant response delays.",
+    "evidence": [
+      "\"[2025-11-09T20:44:55+00:00] (Customer) David OBrien: I still need number 5512175899 reactivated and connected to Winston hosang\"",
+      "\"[2025-11-10T14:26:44+00:00] (Employee) Shaquille De Lancy: Dear David,\\n\\nThank you for following up on this issue.\"",
+      "\"Max gap between responses (hours): 26.4\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed, there is no clear evidence the ticket was closed while the customer was still waiting for promised information or had explicitly given up.",
+    "evidence": [
+      "\"Status: closed\"",
+      "\"[2025-11-10T16:05:22+00:00] (Employee) Shaquille De Lancy: Dear David,\\n\\nThank you for confirming.\\n\\nIn that case, kindly direct the user to Activate Their Mobile Application [https://support\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is normal priority and there is no evidence of an attempted generic escalation or inappropriate handling for a P1/SEV1 outage.",
+    "evidence": [
+      "\"Priority: normal\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses contain generic/wrong context (addresses a different name) and internal AI logs indicate failures, showing poor AI quality handling.\",\n    \"evidence\": [\n      \"\\\"[2025-11-07T16:50:04+00:00] (AI) ATLAS: --- AI Assistant ---\\\\n\\\\n Hi, Saurish Savant ! \ud83d\udc4b\\\\n\\\\nThis is the StreetS\\\"\",\n      \"\\\"[2025-11-07T16:52:54+00:00] (AI) Cu Chulainn AI Manager: ===== Operation Summary =====\\\\nThe process has failed and andon cord has been pulled for the following reason:\\\\n\\\\n**Unexpected b\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the customer was repeatedly asked the same information by AI or prevented from reaching a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Agent responses reference account data and the customer-provided number appears to be acknowledged; there's no clear instance of repeated requests for the same information or ignoring provided details.\",\n    \"evidence\": [\n      \"\\\"[2025-11-10T14:26:44+00:00] (Employee) Shaquille De Lancy: Dear David,\\\\n\\\\nThank you for following up on this issue.\\\\n\\\\nWe've noticed that there is already a very similar number on your account:\\\"\",\n      \"\\\"[2025-11-10T14:31:39+00:00] (Customer) David OBrien: 5512175999 is the correct number\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day / multi-hour gaps between customer and agent messages (max gap noted 26.4 hours), indicating significant response delays.\",\n    \"evidence\": [\n      \"\\\"[2025-11-09T20:44:55+00:00] (Customer) David OBrien: I still need number 5512175899 reactivated and connected to Winston hosang\\\"\",\n      \"\\\"[2025-11-10T14:26:44+00:00] (Employee) Shaquille De Lancy: Dear David,\\\\n\\\\nThank you for following up on this issue.\\\"\",\n      \"\\\"Max gap between responses (hours): 26.4\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed, there is no clear evidence the ticket was closed while the customer was still waiting for promised information or had explicitly given up.\",\n    \"evidence\": [\n      \"\\\"Status: closed\\\"\",\n      \"\\\"[2025-11-10T16:05:22+00:00] (Employee) Shaquille De Lancy: Dear David,\\\\n\\\\nThank you for confirming.\\\\n\\\\nIn that case, kindly direct the user to Activate Their Mobile Application [https://support\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is normal priority and there is no evidence of an attempted generic escalation or inappropriate handling for a P1/SEV1 outage.\",\n    \"evidence\": [\n      \"\\\"Priority: normal\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60238514
+}

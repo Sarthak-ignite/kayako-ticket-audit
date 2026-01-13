@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS interaction is minimal and primarily a standard intake (requesting uploads and then routing to L1). There\u2019s no clear evidence it provided incorrect/misleading technical guidance or a broken template response (beyond the transcript showing an odd 'undefined' from the customer).",
+    "evidence": [
+      "ATLAS commented privately: Action: Send to l1",
+      "Chat Support: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence the customer was trapped in an AI loop or repeatedly blocked from reaching a human. The case was routed to L1 quickly.",
+    "evidence": [
+      "ATLAS commented privately: Action: Send to l1"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Customer clearly reported two separate issues (browser/L7 blocking + AD sync/IP update). Support\u2019s public response addressed only the IPOQUE/library update angle for the blocking issue and did not acknowledge or troubleshoot the AD synchronization/IP update problem at all. Additionally, the customer referenced a prior case number for the recurring blocking issue, but the public reply did not acknowledge the recurrence or provide next steps/workarounds beyond \u201cwait for next release.\u201d",
+    "evidence": [
+      "Customer: \"i cam facing two issues with exinda appliance 1- blocking issue... last case opened for this issue case#60020917 2- issue in synch with AD, if the users ip changed the exinda database not updated the ip\"",
+      "Support (public): \"An IPOQUE library definitions upgrade will be documented in the release notes... Please keep an eye out for the next release.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a multi-day gap with no customer-facing update. The customer had to follow up with 'any update' a week later, indicating perceived stall/latency while the ticket remained open.",
+    "evidence": [
+      "Customer [2025-06-18T05:04:24+00:00]: \"any update\"",
+      "Initial ticket creation/intake [2025-06-11T07:36:41+00:00] with no public response until [2025-06-18T05:11:22+00:00]."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows an auto-close warning, but there is no evidence it was actually closed in the provided timeline.",
+    "evidence": [
+      "Support (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The reported behavior impacts enforcement of blocking policies across major browsers (Chrome/Edge) and was stated to affect 'all users' and 'all sites,' plus it is recurring (previous case referenced). Support response effectively says to wait for a future release without providing mitigation, workaround, escalation, or an actionable plan\u2014suggesting insufficient urgency for a broad-impact policy/enforcement failure.",
+    "evidence": [
+      "Customer: \"blocking feature are not working with edge and chrome browser\"",
+      "Customer: \"for all sites\"",
+      "Customer: \"2- all users\"",
+      "Customer: \"last case opened for this issue case#60020917\"",
+      "Support (public): \"Please keep an eye out for the next release.\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60073892
+}

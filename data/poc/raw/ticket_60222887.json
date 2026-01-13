@@ -1,0 +1,112 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "objectstore",
+        "requester": {
+          "id": 60308363,
+          "uuid": "93d16160-67df-56f3-9cd8-3717bed64a3f",
+          "full_name": "Asad Khalil",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 3,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/93d16160-67df-56f3-9cd8-3717bed64a3f?1767777592",
+          "agent_case_access": "ALL",
+          "organization_case_access": null,
+          "organization": {
+            "id": 60000019,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 2,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 309898,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/London",
+          "time_zone_offset": 0,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "154.192.9.102",
+          "last_seen_at": "2026-01-06T17:38:29+00:00",
+          "last_active_at": "2026-01-07T09:19:52+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60308363",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@329c9fdb733facbbe728e8f0001e2e3711880994",
+          "password_updated_at": "2025-10-16T17:34:11+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T15:21:26+00:00",
+          "last_activity_at": "2026-01-06T15:21:26+00:00",
+          "created_at": "2025-02-25T14:10:05+00:00",
+          "updated_at": "2026-01-07T09:19:52+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60308363"
+        },
+        "ticket_idt": 60222887
+      },
+      "interactions": [
+        [
+          "2025-10-16T17:37:34+00:00",
+          "Kayako - ticket id 60222887 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Hi, Asad Khalil ! \ud83d\udc4b</p>\n      <p>This is the ObjectStore ATLAS support chat.</p>\n      <hr>\n      <div style=\"line-height: 1.3; margin-top: 8px; font-size: 0.9rem; color: #666666;\">\n        <b>Please note:</b> ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" rel=\"nofollow\">these terms and conditions</a>. If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.\n      </div>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Welcome to the menu for internal employees.</p>\n      <p>How can I help?</p>\n    </div><br>\n    <p><strong>--- Customer (Asad Khalil) ---</strong></p>\n    <div>\n      <p>Hi. What is the latest version for Objectsore?</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Walk me through what's happening or select from the below options.</p>\n      <p>Don't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you. \ud83d\udcaa</p>\n      <p>\ud83d\udca1Tip: Aim to give us a bit more context than just a quick \"It's not working.\" The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f</p>\n      <p>\ud83d\udca1<a href=\"https://objectstore-ignitetech.kayako.com/article/105207\" rel=\"nofollow\">Getting the most out of ObjectStore ATLAS Support Chat</a></p>\n      <p>If I'm unable to help you, I can patch you through to a Live agent, along with the information you supply to me during this session, so that our team has something to work with from the get-go.</p>\n    </div><br>\n    <p><strong>--- Customer (Asad Khalil) ---</strong></p>\n    <div>\n      <p><em>Button selection:</em> [\ud83d\udd27 I need Technical Support]</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa</p>\n      <p>\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.</p>\n      <p>\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.</p>\n      <p>\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:<br>\n      \ud83d\udc49 <a href=\"https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiJjOTY4MDc0NS1hYzc2LTQyYTAtYmNkNC1jYjhhZDMxMWUwNGMiLCJzZXNzaW9uX3VpZCI6ImM5NjgwNzQ1LWFjNzYtNDJhMC1iY2Q0LWNiOGFkMzExZTA0YyIsImVtYWlsIjoiYXNhZC5raGFsaWxAaWduaXRldGVjaC5jb20iLCJjdXN0b21fcGFyc2VyIjp7fSwiY2FsbGJhY2siOnsiY2FsbGJhY2tfdXJsIjpudWxsLCJjYWxsYmFja19lbWFpbCI6ImNpcHJpYW4ubmFzdGFzZUB0cmlsb2d5LmNvbSJ9LCJwcm9kdWN0X3RhZyI6Im9iamVjdHN0b3JlIiwicXVlcnkiOiIiLCJleHAiOjE3NjA2NDE3Nzh9.oZvKic47PMLYzVW-ZJchDORMoqNs0fU5HVxezyWpsnM\" rel=\"nofollow\">Secure File Upload</a></p>\n      <p>You should see the following:</p>\n      <ul>\n        <li>User: <a href=\"mailto:asad.khalil@ignitetech.com\" rel=\"nofollow\">asad.khalil@ignitetech.com</a>\n        </li>\n        <li>Session ID: c9680745-ac76-42a0-bcd4-cb8ad311e04c</li>\n      </ul>\n    </div><br>\n    <p><strong>--- Customer (Asad Khalil) ---</strong></p>\n    <div>\n      <p><em>Button selection:</em> [\ud83d\udd19 Continue without file upload ]</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>No problem, we can continue without any file uploads.</p>\n      <p>Could you tell me a bit more about the technical issue you're experiencing with ObjectStore? For example:</p>\n      <ul>\n        <li>What specific problem or error are you seeing?</li>\n        <li>When did this issue start?</li>\n        <li>Does it happen every time, or only in certain situations?</li>\n      </ul>\n      <p>The more details you can provide, the better I can assist you!</p>\n    </div><br>\n    <p><strong>--- Customer (Asad Khalil) ---</strong></p>\n    <div>\n      <p>Can you please tell me what the latest version for objectstore is?</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>The latest available version of ObjectStore is ObjectStore Standard 2018.2 (2013.0 update 14). This release is a maintenance update focused on improving stability and functionality, and it addresses several critical issues and bug fixes.</p>\n      <p>You can find more details in the official release notes here: <a href=\"https://objectstore-ignitetech.kayako.com/article/95865\" rel=\"nofollow\">ObjectStore Standard 2018.2 Release Notes</a>.</p>\n      <p>If you need information about earlier versions or have questions about upgrading, just let me know!</p>\n    </div><br>\n    <p><strong>--- Customer (Asad Khalil) ---</strong></p>\n    <div>\n      <p>what version is ndc technologies on?</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Hmm, I wasn't able to find any specific information about which version of ObjectStore NDC Technologies is currently using in the available documentation.</p>\n      <p>If you have access to the ObjectStore environment at NDC Technologies, you can usually check the version by running the version command or checking the About section in the software interface. If you need step-by-step instructions on how to do that, just let me know!</p>\n      <p>Alternatively, if you\u2019d like, I can connect you with a live support agent who may have access to more detailed account-specific information. Would you like to proceed with that?</p>\n    </div><br>\n    <p><strong>--- Customer (Asad Khalil) ---</strong></p>\n    <div>\n      <p>Tell me how to find that</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Actually, the specific steps to check your ObjectStore version can depend on how it's installed and used in your environment, but here are the most common ways:</p>\n      <p>1.\u202fCommand Line:</p>\n      <ul>\n        <li>Open a command prompt or terminal window on the server where ObjectStore is installed.</li>\n        <li>Run the following command:\n          <pre><code>osserver -version\n</code></pre>or\n          <pre><code>osadmin -version\n</code></pre>This should display the installed ObjectStore version.\n        </li>\n      </ul>\n      <p>2.\u202fCheck the About Section:</p>\n      <ul>\n        <li>If you use a graphical interface or management tool for ObjectStore, look for an \u201cAbout\u201d menu or section. The version number is often listed there.</li>\n      </ul>\n      <p>3.\u202fReview Release Notes or Documentation:</p>\n      <ul>\n        <li>Sometimes, the version is documented in your deployment or installation notes.</li>\n      </ul>\n      <p>If you try these steps and still can't find the version, let me know how you're accessing ObjectStore (command line, GUI, etc.), and I can tailor the instructions further!</p>\n    </div><br>\n    <p><strong>--- Customer (Asad Khalil) ---</strong></p>\n    <div>\n      <p>Ok tell me about what Objectstore is</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>ObjectStore is an embedded object-oriented database management system (DBMS). Essentially, it\u2019s designed to store, manage, and retrieve complex data as objects\u2014just like you use in object-oriented programming. This makes it a great fit for applications that need reliable, transactional object persistence and real-time data caching.</p>\n      <p>Think of ObjectStore as a specialized filing cabinet for your software\u2019s objects, allowing you to save and retrieve them quickly and efficiently, without having to convert them into tables or rows like in traditional relational databases.</p>\n      <p>If you\u2019d like to learn more about recent releases or features, you can check out the official documentation, such as the announcement for ObjectStore Standard 2024.2 here: <a href=\"https://objectstore-ignitetech.kayako.com/article/95837\" rel=\"nofollow\">Announcing ObjectStore Standard 2024.2 General Availability</a>.</p>\n      <p>Let me know if you want more details about how it works or what makes it unique!</p>\n    </div><br>\n    <p><strong>--- Customer (Asad Khalil) ---</strong></p>\n    <div>\n      <p>Ok when was it first created and when was the latest update released? When is the next release planned?</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Here's what I found about ObjectStore's history and release timeline:</p>\n      <ul>\n        <li>\n          <p>ObjectStore was originally created in the late 1980s as one of the first commercial object-oriented database management systems. It has a long history of supporting complex, object-based applications.</p>\n        </li>\n        <li>\n          <p>The latest update is ObjectStore Standard 2025.1. You can find the release notes here: <a href=\"https://objectstore-ignitetech.kayako.com/article/128218\" rel=\"nofollow\">ObjectStore Standard 2025.1 Release Notes</a>.</p>\n        </li>\n        <li>\n          <p>As for the next planned release, there isn't any publicly available information or official announcement about future release dates. ObjectStore typically announces new versions through their official channels, so it's best to keep an eye on their documentation or support portal for updates.</p>\n        </li>\n      </ul>\n      <p>If you need details about what's new in the latest release or want to know more about the product's evolution, just let me know!</p>\n    </div><br>\n  </div>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

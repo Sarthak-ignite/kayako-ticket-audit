@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI gave vague, templated updates and then asserted the issue was \u201ctest-triggered\u201d without showing supporting explanation/evidence to the customer, which risks being incorrect/misleading. It also promised to update after hearing back from Engineering, but the ticket was effectively closed as \u201ctest ticket\u201d shortly after.",
+    "evidence": [
+      "[2025-12-23T08:19:50+00:00] (AI) Cu Chulainn AI Manager: \"Thank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive fu\"",
+      "[2025-12-23T08:29:28+00:00] (AI) Cu Chulainn AI Manager: \"We have identified the issue you experienced as a test-triggered incident rather than a true product defect.\"",
+      "[2025-12-23T08:20:34Z] (Employee) AlterPKC: \"Triggered from a test ticket. Closing\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated AI requests for the same information or the customer being unable to reach a human; the flow shows escalation to Engineering quickly.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI does not appear to ask the customer to re-provide logs/screenshots or repeat information already provided; instead it escalates to Engineering and closes as a test-triggered incident.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All visible interactions occur within the same day and within minutes/hours; no multi-day gaps are present.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The customer was told Engineering was contacted and they would be updated, but the engineering side immediately marked it as a test ticket and closed, with no evidence of customer confirmation or opportunity to respond before closure.",
+    "evidence": [
+      "[2025-12-23T08:19:50+00:00] (AI) Cu Chulainn AI Manager: \"We have contacted the Engineering team and will inform you as soon as we receive fu\"",
+      "[2025-12-23T08:20:34Z] (Employee) AlterPKC: \"Triggered from a test ticket. Closing\"",
+      "[2025-12-23T08:29:28+00:00] (AI) Cu Chulainn AI Manager: \"We have identified the issue you experienced as a test-triggered incident rather than a true product defect.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is listed as normal (not P1/Sev1), and there is no evidence of inappropriate generic troubleshooting in lieu of escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI gave vague, templated updates and then asserted the issue was \u201ctest-triggered\u201d without showing supporting explanation/evidence to the customer, which risks being incorrect/misleading. It also promised to update after hearing back from Engineering, but the ticket was effectively closed as \u201ctest ticket\u201d shortly after.\",\n    \"evidence\": [\n      \"[2025-12-23T08:19:50+00:00] (AI) Cu Chulainn AI Manager: \\\"Thank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive fu\\\"\",\n      \"[2025-12-23T08:29:28+00:00] (AI) Cu Chulainn AI Manager: \\\"We have identified the issue you experienced as a test-triggered incident rather than a true product defect.\\\"\",\n      \"[2025-12-23T08:20:34Z] (Employee) AlterPKC: \\\"Triggered from a test ticket. Closing\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repeated AI requests for the same information or the customer being unable to reach a human; the flow shows escalation to Engineering quickly.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI does not appear to ask the customer to re-provide logs/screenshots or repeat information already provided; instead it escalates to Engineering and closes as a test-triggered incident.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All visible interactions occur within the same day and within minutes/hours; no multi-day gaps are present.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer was told Engineering was contacted and they would be updated, but the engineering side immediately marked it as a test ticket and closed, with no evidence of customer confirmation or opportunity to respond before closure.\",\n    \"evidence\": [\n      \"[2025-12-23T08:19:50+00:00] (AI) Cu Chulainn AI Manager: \\\"We have contacted the Engineering team and will inform you as soon as we receive fu\\\"\",\n      \"[2025-12-23T08:20:34Z] (Employee) AlterPKC: \\\"Triggered from a test ticket. Closing\\\"\",\n      \"[2025-12-23T08:29:28+00:00] (AI) Cu Chulainn AI Manager: \\\"We have identified the issue you experienced as a test-triggered incident rather than a true product defect.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is listed as normal (not P1/Sev1), and there is no evidence of inappropriate generic troubleshooting in lieu of escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60269018
+}

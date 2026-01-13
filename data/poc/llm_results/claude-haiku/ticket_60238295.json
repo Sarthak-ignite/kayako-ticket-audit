@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are vague, generic, and do not provide substantive assistance to the customer's specific licensing issue.",
+    "evidence": [
+      "[2025-11-11T13:25:41+00:00] Hi support, I have not received a licence or any helpful feedback. Are you actually working on this?\u200b",
+      "[2025-11-07T12:48:27+00:00] Hi support, I did as asked, but I can't track the message I've sent properly. Would you mind keeping us posted?\u200b"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "AI appears to be repeatedly asking for action or status without resolving the customer's core licensing issue.",
+    "evidence": [
+      "[2025-11-07T12:49:08+00:00] Action: l1",
+      "[2025-11-11T13:25:41+00:00] Hi support, I have not received a licence or any helpful feedback."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There's insufficient evidence that context was explicitly ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant gaps between customer interactions, with over 13 days between some responses.",
+    "evidence": [
+      "Time to first human (hours): 407.4",
+      "Max gap between responses (hours): 310.8"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket appears closed without resolving the customer's piracy warning license issue.",
+    "evidence": [
+      "Status: closed",
+      "Ticket mentions an unresolved piracy warning for trial license 10512-Z56RC-71G7M"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is not marked as a high-priority/outage ticket.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are vague, generic, and do not provide substantive assistance to the customer's specific licensing issue.\",\n    \"evidence\": [\n      \"[2025-11-11T13:25:41+00:00] Hi support, I have not received a licence or any helpful feedback. Are you actually working on this?\u200b\",\n      \"[2025-11-07T12:48:27+00:00] Hi support, I did as asked, but I can't track the message I've sent properly. Would you mind keeping us posted?\u200b\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"AI appears to be repeatedly asking for action or status without resolving the customer's core licensing issue.\",\n    \"evidence\": [\n      \"[2025-11-07T12:49:08+00:00] Action: l1\",\n      \"[2025-11-11T13:25:41+00:00] Hi support, I have not received a licence or any helpful feedback.\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There's insufficient evidence that context was explicitly ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant gaps between customer interactions, with over 13 days between some responses.\",\n    \"evidence\": [\n      \"Time to first human (hours): 407.4\",\n      \"Max gap between responses (hours): 310.8\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket appears closed without resolving the customer's piracy warning license issue.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"Ticket mentions an unresolved piracy warning for trial license 10512-Z56RC-71G7M\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is not marked as a high-priority/outage ticket.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-haiku",
+  "_ticket_id": 60238295
+}

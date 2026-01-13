@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI provided generic troubleshooting steps that were not relevant to the customer's clearly stated issue - that upgrading to v10 breaks PBX functionality while downgrading to 9.5p3 fixes it.",
+    "evidence": [
+      "[2025-09-30T15:51:35+00:00] ATLAS: Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K",
+      "[2025-09-30T15:50:42+00:00] Jozef Kacala: on Kerio control v10 we already had some reports on PBX issues",
+      "[2025-09-30T15:55:22+00:00] Jozef Kacala: all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it. there are no config changes at"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While the AI provided unhelpful responses, there is only one AI interaction visible, and the customer did eventually reach a human agent (Ciprian) after approximately 31 days.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Customer explicitly stated the issue is caused by v10 upgrade and fixed by downgrading to 9.5p3, but AI responded with generic troubleshooting steps that ignored this critical context about version-specific bug.",
+    "evidence": [
+      "[2025-09-30T15:50:42+00:00] Jozef Kacala: on Kerio control v10 we already had some reports on PBX issues",
+      "[2025-09-30T15:55:22+00:00] Jozef Kacala: all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a massive 31-day gap between the customer's September 30th message and the first human agent response on October 31st, with a time to first human of 742.1 hours (approximately 31 days).",
+    "evidence": [
+      "[2025-09-30T15:55:22+00:00] Jozef Kacala: Hi Atlas, all those steps are not to the point...",
+      "[2025-10-31T13:59:15+00:00] Ciprian Nastase: Thank you for contacting GFI - Kerio Control Support"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket status shows closed, but the final visible interaction shows the customer acknowledging the issue was related to a broader incident, suggesting resolution was reached collaboratively.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is a high-priority ticket involving PBX/VoIP outages affecting multiple customers, yet it took 31 days to reach a human agent, and the AI provided generic troubleshooting instead of immediate escalation for a production-impacting issue.",
+    "evidence": [
+      "[2025-09-30T15:50:42+00:00] Jozef Kacala: on Kerio control v10 we already had some reports on PBX issues, this is latest with partner Walter having issues",
+      "[2025-09-30T15:51:35+00:00] ATLAS: Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality",
+      "Time to first human (hours): 742.1, Priority: high"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI provided generic troubleshooting steps that were not relevant to the customer's clearly stated issue - that upgrading to v10 breaks PBX functionality while downgrading to 9.5p3 fixes it.\",\n    \"evidence\": [\n      \"[2025-09-30T15:51:35+00:00] ATLAS: Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K\",\n      \"[2025-09-30T15:50:42+00:00] Jozef Kacala: on Kerio control v10 we already had some reports on PBX issues\",\n      \"[2025-09-30T15:55:22+00:00] Jozef Kacala: all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it. there are no config changes at\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While the AI provided unhelpful responses, there is only one AI interaction visible, and the customer did eventually reach a human agent (Ciprian) after approximately 31 days.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer explicitly stated the issue is caused by v10 upgrade and fixed by downgrading to 9.5p3, but AI responded with generic troubleshooting steps that ignored this critical context about version-specific bug.\",\n    \"evidence\": [\n      \"[2025-09-30T15:50:42+00:00] Jozef Kacala: on Kerio control v10 we already had some reports on PBX issues\",\n      \"[2025-09-30T15:55:22+00:00] Jozef Kacala: all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a massive 31-day gap between the customer's September 30th message and the first human agent response on October 31st, with a time to first human of 742.1 hours (approximately 31 days).\",\n    \"evidence\": [\n      \"[2025-09-30T15:55:22+00:00] Jozef Kacala: Hi Atlas, all those steps are not to the point...\",\n      \"[2025-10-31T13:59:15+00:00] Ciprian Nastase: Thank you for contacting GFI - Kerio Control Support\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket status shows closed, but the final visible interaction shows the customer acknowledging the issue was related to a broader incident, suggesting resolution was reached collaboratively.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This is a high-priority ticket involving PBX/VoIP outages affecting multiple customers, yet it took 31 days to reach a human agent, and the AI provided generic troubleshooting instead of immediate escalation for a production-impacting issue.\",\n    \"evidence\": [\n      \"[2025-09-30T15:50:42+00:00] Jozef Kacala: on Kerio control v10 we already had some reports on PBX issues, this is latest with partner Walter having issues\",\n      \"[2025-09-30T15:51:35+00:00] ATLAS: Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality\",\n      \"Time to first human (hours): 742.1, Priority: high\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60210541
+}

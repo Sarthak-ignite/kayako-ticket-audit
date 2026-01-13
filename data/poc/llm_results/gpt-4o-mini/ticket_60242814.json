@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No evidence of generic filler responses or misinformation from the AI.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to communicate with a human support agent and did not appear to be stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support agent did not address Michael Healy's retirement or his request for his teammates to take over the case.",
+    "evidence": [
+      "[2025-12-09T19:20:09+00:00] (Employee) Carlos Encalada: Dear Michael, Thank you for the update. We wish you all the best in your retirement and future endeavors."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a notably long delay of 408.3 hours to first human response and maximum gaps of 288.8 hours, which is excessive.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was not closed while awaiting a significant input from the customer or promise from support.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication that this ticket was related to a high-priority outage or that generic troubleshooting was suggested.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of generic filler responses or misinformation from the AI.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer was able to communicate with a human support agent and did not appear to be stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support agent did not address Michael Healy's retirement or his request for his teammates to take over the case.\",\n    \"evidence\": [\n      \"[2025-12-09T19:20:09+00:00] (Employee) Carlos Encalada: Dear Michael, Thank you for the update. We wish you all the best in your retirement and future endeavors.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a notably long delay of 408.3 hours to first human response and maximum gaps of 288.8 hours, which is excessive.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was not closed while awaiting a significant input from the customer or promise from support.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that this ticket was related to a high-priority outage or that generic troubleshooting was suggested.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60242814
+}

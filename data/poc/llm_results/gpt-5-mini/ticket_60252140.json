@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Interactions are from human agents; there is no clear evidence of AI-generated generic filler, incorrect info, or unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear pattern of an AI repeatedly asking for the same information or preventing escalation to a human \u2014 customers are interacting with human agents.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asked the customer to upload logs to the SFTP after the customer had already stated they uploaded logs to FTP, and support later dismissed a request for a remote session despite the customer repeatedly requesting one.",
+    "evidence": [
+      "2025-12-03T08:56:57+00:00 Customer: \"Hi, I\u2019ve already uploaded the logs to the FTP folder. Kindly check them.\"",
+      "2025-12-10T07:14:25+00:00 Employee Keyur Saxena: \"Please upload the same log archive in this SFTP location created specifically fo\"",
+      "2025-12-15T05:19:05+00:00 Customer Jonard Umerez: \"Hi keyur, can we request a remote session for this issue?\"",
+      "2025-12-18T06:46:43+00:00 Employee Andriy Rybalchenko: \"At this stage, a remote session would not provide meaningful diagnostic insight since\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple multi-day gaps between customer and agent responses (several days between key exchanges); metadata also shows long first-response and max-gap times.",
+    "evidence": [
+      "Ticket metadata: \"Time to first human (hours): 13.6\", \"Max gap between responses (hours): 118.8\"",
+      "2025-12-10T07:14:25+00:00 Employee Keyur Saxena and next agent activity 2025-12-15T05:19:05+00:00 Customer (\u22485 days gap)",
+      "2025-12-15T16:49:24+00:00 Employee Ibiso Barimalaa and 2025-12-17T04:50:57+00:00 Customer (\u22481.5 days gap)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed, there is no explicit evidence in the thread that the ticket was closed while the customer was still waiting for promised information or that the customer explicitly abandoned the ticket.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked urgent, the agents performed log collection and diagnostic steps rather than only generic end-user steps; there is no clear evidence of inappropriate generic troubleshooting in lieu of escalation.",
+    "evidence": [
+      "2025-12-15T16:49:24+00:00 Employee Ibiso Barimalaa: \"The patchagent.log contained over 20000 lines including entries from 2024 so I've trimmed the log and attached it\"",
+      "2025-12-10T09:11:47+00:00 Employee Keyur Saxena: \"That looks like a corporate firewall blocking the connection. I confirm I was able to access the SFTP location successful\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Interactions are from human agents; there is no clear evidence of AI-generated generic filler, incorrect info, or unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear pattern of an AI repeatedly asking for the same information or preventing escalation to a human \u2014 customers are interacting with human agents.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support asked the customer to upload logs to the SFTP after the customer had already stated they uploaded logs to FTP, and support later dismissed a request for a remote session despite the customer repeatedly requesting one.\",\n    \"evidence\": [\n      \"2025-12-03T08:56:57+00:00 Customer: \\\"Hi, I\u2019ve already uploaded the logs to the FTP folder. Kindly check them.\\\"\",\n      \"2025-12-10T07:14:25+00:00 Employee Keyur Saxena: \\\"Please upload the same log archive in this SFTP location created specifically fo\\\"\",\n      \"2025-12-15T05:19:05+00:00 Customer Jonard Umerez: \\\"Hi keyur, can we request a remote session for this issue?\\\"\",\n      \"2025-12-18T06:46:43+00:00 Employee Andriy Rybalchenko: \\\"At this stage, a remote session would not provide meaningful diagnostic insight since\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multiple multi-day gaps between customer and agent responses (several days between key exchanges); metadata also shows long first-response and max-gap times.\",\n    \"evidence\": [\n      \"Ticket metadata: \\\"Time to first human (hours): 13.6\\\", \\\"Max gap between responses (hours): 118.8\\\"\",\n      \"2025-12-10T07:14:25+00:00 Employee Keyur Saxena and next agent activity 2025-12-15T05:19:05+00:00 Customer (\u22485 days gap)\",\n      \"2025-12-15T16:49:24+00:00 Employee Ibiso Barimalaa and 2025-12-17T04:50:57+00:00 Customer (\u22481.5 days gap)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed, there is no explicit evidence in the thread that the ticket was closed while the customer was still waiting for promised information or that the customer explicitly abandoned the ticket.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked urgent, the agents performed log collection and diagnostic steps rather than only generic end-user steps; there is no clear evidence of inappropriate generic troubleshooting in lieu of escalation.\",\n    \"evidence\": [\n      \"2025-12-15T16:49:24+00:00 Employee Ibiso Barimalaa: \\\"The patchagent.log contained over 20000 lines including entries from 2024 so I've trimmed the log and attached it\\\"\",\n      \"2025-12-10T09:11:47+00:00 Employee Keyur Saxena: \\\"That looks like a corporate firewall blocking the connection. I confirm I was able to access the SFTP location successful\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60252140
+}

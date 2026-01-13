@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response appears to be a generic filler message that doesn't address any specific customer issue.",
+    "evidence": [
+      "[2025-10-31T14:37:09+00:00] (AI) ATLAS: 'Thanks for chatting earlier with our AI Support!'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient evidence to suggest customer is stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Not enough context provided to determine if information was ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No clear evidence of significant response delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears to be closed with only a generic AI response, suggesting premature closure.",
+    "evidence": [
+      "Status: closed",
+      "Time to first human (hours): nan"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is marked as low priority, so not applicable.",
+    "evidence": []
+  },
+  "_raw_response": "After carefully analyzing the provided ticket, here's my assessment:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response appears to be a generic filler message that doesn't address any specific customer issue.\",\n    \"evidence\": [\n      \"[2025-10-31T14:37:09+00:00] (AI) ATLAS: 'Thanks for chatting earlier with our AI Support!'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient evidence to suggest customer is stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Not enough context provided to determine if information was ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence of significant response delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket appears to be closed with only a generic AI response, suggesting premature closure.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"Time to first human (hours): nan\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is marked as low priority, so not applicable.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket seems to have been closed immediately after an AI-generated message\n- There's no evidence of a human actually addressing the customer's issue\n- The ticket's priority is low, and no substantive support interaction is visible\n\nThe primary quality issues detected are the generic AI response and premature closure without human intervention.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60233405
+}

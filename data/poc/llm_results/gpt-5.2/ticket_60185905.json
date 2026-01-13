@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The visible AI public reply appears to be generic filler (thanks for logs/support info) and does not show any concrete troubleshooting, next steps, or resolution. The message is also truncated mid-word, suggesting a low-quality or incomplete response was posted publicly.",
+    "evidence": [
+      "[2025-09-24T16:19:04+00:00] (AI) ATLAS public: \"Thank you for providing the detailed logs and support information regarding the Kerio Connect Active Directory (AD) authenticatio\" (generic + incomplete/truncated)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is not enough evidence of the customer being repeatedly redirected by AI, blocked from reaching a human, or being asked the same questions in a loop. The log shows only one AI public response and internal AI notes.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The ticket shows the customer provided details (upgrade to 10.0.8, Ubuntu, RAM increased, AD integration fails after ~1 hour), and the AI references having received detailed logs. There is no clear instance of support requesting the same logs/info again or ignoring what was already provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap of ~20 days between the customer update (Sept 4) and the next visible support response (Sept 24), indicating an excessive response delay.",
+    "evidence": [
+      "[2025-09-04T13:41:10+00:00] (Employee) Sandro public update",
+      "[2025-09-24T16:19:04+00:00] (AI) ATLAS public response"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence is shown that the ticket was closed while the customer was waiting, nor any closure message/status change.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not indicate it is high-priority (P1/Sev1) and there is no explicit evidence that an urgent case was handled with generic troubleshooting instead of immediate escalation.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60185905
+}

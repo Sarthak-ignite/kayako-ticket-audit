@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only clearly AI-generated content is the initial ATLAS chat transcript, which is truncated and does not show a full AI recommendation that is demonstrably wrong or misleading. Most later responses are from human agents and are better assessed under other patterns (delay/context).",
+    "evidence": [
+      "ATLAS transcript is incomplete: \"I have this license ...[truncated]...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "After the initial ATLAS intake, the ticket receives human-agent replies (Arafat/Qasim/Andriy). The customer is not stuck interacting only with AI, and there is no clear repeated AI re-asking for the same info.",
+    "evidence": [
+      "Human responses appear starting 2025-09-18: \"Arafat Bakhsh commented publicly\"; later \"Qasim Ali\" and \"Andriy Rybalchenko\"."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support requested/treated the case as if key diagnostics were not already provided and gave guidance that did not reflect what the customer had already shared (install logs; customer\u2019s request for a specific recommended version). The response also leaned on a KBA that appears mismatched (Exchange 2013) without acknowledging that mismatch to the customer.",
+    "evidence": [
+      "Customer already provided install logs: \"This is log install GFI MailEssential 21.6 on Exchange 2019. Also I can not install GFI MailEssential version 22.0 on Exchange 2019\" (2025-09-11T07:14:59)",
+      "Internal reviewer notes lack of log review mention: \"I don't see any mention regarding the review of the install logs.\" (2025-09-18T09:32:49 private)",
+      "Support still asks again for logs/screenshots: \"In case of issues, please share Windows Event logs, Installation logs, and a Screenshot of the issue.\" (Qasim, 2025-09-18T10:26:33)",
+      "Customer asked a direct question about what version to use for compatibility: \"could you please confirm which version of GFI MailEssentials we should use for full compatibility... Exchange 2019 CU15\" (2025-09-18T09:54:44)",
+      "Instead of a direct version recommendation, support points to a generic prerequisites page: \"Please find the compatibility guide here...\" (Qasim, 2025-09-18T10:26:33)",
+      "Internal note that the suggested KBA may not apply: \"The article is for Exchange 2013.\" (2025-09-18T09:32:49 private)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap between the customer\u2019s initial report/log submission and the first substantive public support response, leading to multiple customer follow-ups requesting updates and a projected deadline.",
+    "evidence": [
+      "Initial ticket creation and issue report: \"I cannot install on exchange 2019\" (2025-09-11T07:12:27)",
+      "Customer provides logs same day: \"This is log install...\" (2025-09-11T07:14:59)",
+      "Customer follow-ups indicating waiting: \"I look forward to hearing from you and the team with your findings.\" (2025-09-15T08:29:49) and again (2025-09-17T06:43:56)",
+      "Customer asks for a deadline: \"we need a projected deadline from your end\" (2025-09-18T03:18:23)",
+      "First substantive public support response appears on 2025-09-18 (Arafat), ~7 calendar days after 2025-09-11."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not show being closed while an unanswered customer request was pending. Latest interaction includes support providing version numbers and download links.",
+    "evidence": [
+      "Latest support reply provides actionable info: \"The latest version... is version 22.0... Additionally, version 22.1 has been released...\" (2025-09-19T09:30:19)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer indicates project timeline impact and requests a deadline, but there is no explicit P1/SEV1 signal such as 'production down', 'mail flow stopped for all users', or a widespread outage that would clearly require urgent/severity handling based on the ticket text provided.",
+    "evidence": [
+      "\"we need a projected deadline from your end to manage our project timeline\" (2025-09-18T03:18:23)"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60195349
+}

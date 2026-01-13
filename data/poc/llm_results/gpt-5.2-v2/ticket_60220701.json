@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provides generic, templated guidance (requesting uploads) without any issue-specific troubleshooting or analysis, and the chat transcript is largely filler rather than actionable steps for the reported performance/disk-full recurrence.",
+    "evidence": [
+      "\"Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\"",
+      "\"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\"",
+      "\"Getting the most out of GFI Exinda ATLAS Support Chat\" (link-only guidance)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The AI interaction is short and mainly results in a ticket being created; there is no clear loop of repeated AI requests or customer frustration about being unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support does not fully engage with key context the customer repeatedly highlights (recurrence after following the prior KB and that diagnostic/snapshot files are being auto-generated), initially responding with deletion advice rather than addressing the root cause question of why files keep regenerating.",
+    "evidence": [
+      "\"We raised a ticket earlier and they provided us with an article. We have followed the same but the issue reoccurs and persists.\"",
+      "\"Able to see many diagnostic files auto created, not sure how and why. Are they crash logs?\"",
+      "\"We can see that the multiple diagnostic & snapshot files are automatically getting generated. ... Please let us know if we can have a Webex to check further.\"",
+      "\"Thank you for providing the logs. You can delete all of the diagnostic files that appear in your screenshot.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple customer follow-ups after multi-day gaps with no support response, and support explicitly apologizes for the delay.",
+    "evidence": [
+      "Customer: \"Please provide us with the shell license key to execute these commands.\" [2025-10-23T08:30:51+00:00] vs Support key provided [2025-10-27T13:59:45+00:00]",
+      "\"Please any update here? Can you provide the below request ASAP.\" [2025-10-26T12:35:40+00:00]",
+      "Customer: \"Please let us know if we can have a Webex to check further.\" [2025-10-30T21:14:34+00:00] vs Support scheduler link [2025-11-03T19:12:25+00:00]",
+      "\"Please can you get back to us ASAP on the requested Webex call?\" [2025-11-02T11:12:25+00:00]",
+      "\"I sincerely apologize for the delayed response on this ticket.\" [2025-11-04T11:35:20+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although there are auto-messages warning the ticket may close after a week, the transcript does not show the ticket actually being closed while the customer is awaiting action; support ultimately conducts a meeting and provides next steps.",
+    "evidence": [
+      "\"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue is presented as urgent/critical (disk full + performance degradation, recurring) with explicit urgency from stakeholders, yet there are multi-day delays and a slow path to real-time escalation (WebEx) and deeper investigation.",
+    "evidence": [
+      "\"Exinda Network Orchestrator Performance Issue and the disk space is full.\"",
+      "\"We have followed the same but the issue reoccurs and persists.\"",
+      "\"We are at critical stage and must expediate all the tasks and activities\"",
+      "\"Please need your support here urgently.\"",
+      "Multi-day gap before providing required \"shell license key\" and multi-day delay to schedule the requested Webex"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60220701
+}

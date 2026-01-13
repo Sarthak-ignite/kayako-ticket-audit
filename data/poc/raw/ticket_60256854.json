@@ -1,0 +1,112 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_languard",
+        "requester": {
+          "id": 60119578,
+          "uuid": "6bbaf3c5-3286-4bc2-b5a6-c3dd4b794c0a",
+          "full_name": "Mary Long",
+          "legacy_id": "363381821339",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/6bbaf3c5-3286-4bc2-b5a6-c3dd4b794c0a?1767732137",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60039921,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 121113,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 30520,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "America/Chicago",
+          "time_zone_offset": -21600,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "67.211.185.10",
+          "last_seen_at": "2026-01-06T20:42:17+00:00",
+          "last_active_at": "2026-01-06T20:42:17+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60119578",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@b1a6adbdde24a244c4036ce3f864256034f00711",
+          "password_updated_at": "2025-12-04T20:33:55+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T19:50:49+00:00",
+          "last_activity_at": "2026-01-06T20:42:17+00:00",
+          "created_at": "2019-10-16T21:43:28+00:00",
+          "updated_at": "2026-01-06T20:42:17+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60119578"
+        },
+        "ticket_idt": 60256854
+      },
+      "interactions": [
+        [
+          "2025-12-04T22:59:16+00:00",
+          "Kayako - ticket id 60256854 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>\n    <p><strong>--- Customer (Mary Long) ---</strong></p>\n    <div>\n      <p>Completed successfully! I ran the diagnostics on the same computer and they were still outdated but the dowload for the updates was today's date. I'm going to restart the server and let it run the scans over night and see how it looks tomorrow.</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Perfect! That's actually expected behavior - and restarting the server is a great idea. \ud83d\udc4d</p>\n      <p><strong>Here's what's happening:</strong></p>\n      <p>The <strong>server</strong> now has the updated definitions (which is why you see today's date on the downloads), but the <strong>agent on that computer</strong> (WGN-KAREN) still has the old definitions cached. This is completely normal!</p>\n      <p><strong>What will happen overnight:</strong></p>\n      <p>According to the <a href=\"https://support.languard.gfi.com/article/123074\" rel=\"nofollow\">Forcing an update for the patch definitions on the LanGuard server and connected Agents</a> article, agents automatically update at the start of the next scan. So when your scheduled scans run overnight, the agents should pull the new definitions from the server and update themselves.</p>\n      <p><strong>To verify tomorrow morning:</strong></p>\n      <ol>\n        <li>Check <strong>Activity Monitor > Program Updates > Agent Updates</strong> tab to confirm the agents updated successfully</li>\n        <li>Run diagnostics again on WGN-KAREN to see the updated definition versions</li>\n        <li>Review your scan results to ensure patches are being detected properly</li>\n      </ol>\n      <p><strong>If the agent still shows outdated definitions tomorrow</strong>, you can manually force an agent update by:</p>\n      <ul>\n        <li>Right-clicking on WGN-KAREN in the Computer Tree</li>\n        <li>Selecting <strong>Scan > Refresh information now</strong></li>\n      </ul>\n      <p>This should trigger the agent to pull the latest definitions from the server immediately.</p>\n      <p>Let me know how things look tomorrow after the overnight scans! I'm confident this should resolve the issue. \ud83d\ude0a</p>\n    </div><br>\n    <p><strong>--- Customer (Mary Long) ---</strong></p>\n    <div>\n      <p>Ok, thanks, will do.</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>You're very welcome! \ud83d\ude0a</p>\n      <p>Sounds like a solid plan - the overnight scans should get everything synced up with those fresh definitions. If you run into any issues tomorrow or the definitions still aren't updating on the agents, just reach out and we'll troubleshoot further.</p>\n      <p>Have a great rest of your day, and I hope everything looks good in the morning! \ud83d\udc4d</p>\n      <p>Feel free to come back if you need anything else!</p>\n    </div><br>\n  </div>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "An AI comment asserts the ticket can be closed despite ongoing escalation and customer reports that the issue persists, which is misleading and a quality failure.",
+    "evidence": [
+      "[2025-11-05T15:43:09+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed",
+      "[2025-10-17T12:09:00+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Hi GFI Support, I just spoke again with our partner, and unfortunately the issue still persists."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear pattern of the AI repeatedly asking for the same information or preventing escalation to a human; the conversation shows escalation activity and handover attempts rather than repetitive requests.",
+    "evidence": [
+      "[2025-11-04T11:43:01+00:00] (Employee) Mike Kebede: We\u2019ve escalated this case to the L2 team and raised the priority to High.",
+      "[2025-10-29T08:41:15+00:00] (Employee) Zubair Farooq: This ticket is a duplicate of ticket# 60216786, and we have repli"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support responses indicate they either attempted to close or mark duplicate without resolving ongoing troubleshooting and there are requests/comments that ignore the customer's statements that prior changes (Allow rule) did not resolve the issue.",
+    "evidence": [
+      "[2025-10-15T10:31:09+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Hi Support Team, unfortunately, the Allow rule didn\u2019t resolve the issue. [See fotos.] Apple devices are still experiencing very slow do",
+      "[2025-11-05T15:43:09+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps and long time to first human response (about 360 hours), indicating significant delays.",
+    "evidence": [
+      "Ticket metadata: Time to first human (hours): 359.9",
+      "Ticket metadata: Max gap between responses (hours): 138.5",
+      "[2025-10-15T10:31:09+00:00] (AI) ADN Support ...",
+      "[2025-10-29T08:41:15+00:00] (Employee) Zubair Farooq ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The AI indicated the ticket could be closed while prior messages show the issue remained unresolved and the case had been escalated; the ticket status is closed despite ongoing reports of the problem.",
+    "evidence": [
+      "[2025-11-05T15:43:09+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed",
+      "[2025-10-17T12:09:00+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: ... unfortunately the issue still persists."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although priority was raised and escalation to L2 is documented, there is no clear evidence that only generic troubleshooting (e.g., browser cache) was used instead of immediate escalation; escalation to L2 did occur.",
+    "evidence": [
+      "[2025-11-04T11:43:01+00:00] (Employee) Mike Kebede: We\u2019ve escalated this case to the L2 team and raised the priority to High.",
+      "[2025-10-15T15:07:50+00:00] (AI) ATLAS: Kayako - ticket id 60220499 // ATLAS commented privately: Action: l1"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"An AI comment asserts the ticket can be closed despite ongoing escalation and customer reports that the issue persists, which is misleading and a quality failure.\",\n    \"evidence\": [\n      \"[2025-11-05T15:43:09+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed\",\n      \"[2025-10-17T12:09:00+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Hi GFI Support, I just spoke again with our partner, and unfortunately the issue still persists.\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear pattern of the AI repeatedly asking for the same information or preventing escalation to a human; the conversation shows escalation activity and handover attempts rather than repetitive requests.\",\n    \"evidence\": [\n      \"[2025-11-04T11:43:01+00:00] (Employee) Mike Kebede: We\u2019ve escalated this case to the L2 team and raised the priority to High.\",\n      \"[2025-10-29T08:41:15+00:00] (Employee) Zubair Farooq: This ticket is a duplicate of ticket# 60216786, and we have repli\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support responses indicate they either attempted to close or mark duplicate without resolving ongoing troubleshooting and there are requests/comments that ignore the customer's statements that prior changes (Allow rule) did not resolve the issue.\",\n    \"evidence\": [\n      \"[2025-10-15T10:31:09+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Hi Support Team, unfortunately, the Allow rule didn\u2019t resolve the issue. [See fotos.] Apple devices are still experiencing very slow do\",\n      \"[2025-11-05T15:43:09+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps and long time to first human response (about 360 hours), indicating significant delays.\",\n    \"evidence\": [\n      \"Ticket metadata: Time to first human (hours): 359.9\",\n      \"Ticket metadata: Max gap between responses (hours): 138.5\",\n      \"[2025-10-15T10:31:09+00:00] (AI) ADN Support ...\",\n      \"[2025-10-29T08:41:15+00:00] (Employee) Zubair Farooq ...\" \n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI indicated the ticket could be closed while prior messages show the issue remained unresolved and the case had been escalated; the ticket status is closed despite ongoing reports of the problem.\",\n    \"evidence\": [\n      \"[2025-11-05T15:43:09+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed\",\n      \"[2025-10-17T12:09:00+00:00] (AI) ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: ... unfortunately the issue still persists.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although priority was raised and escalation to L2 is documented, there is no clear evidence that only generic troubleshooting (e.g., browser cache) was used instead of immediate escalation; escalation to L2 did occur.\",\n    \"evidence\": [\n      \"[2025-11-04T11:43:01+00:00] (Employee) Mike Kebede: We\u2019ve escalated this case to the L2 team and raised the priority to High.\",\n      \"[2025-10-15T15:07:50+00:00] (AI) ATLAS: Kayako - ticket id 60220499 // ATLAS commented privately: Action: l1\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60220499
+}

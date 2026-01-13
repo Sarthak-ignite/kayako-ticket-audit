@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses are generic and lack specific information or follow-up that addresses the customer's issues directly.",
+    "evidence": [
+      "Dear Customer, Thank you for your continued patience. We are delighted to inform you that our Development team has addressed ... [2025-11-02T09:42:05+00:00]",
+      "Dear Andriy, I wanted to provide you with a quick update on your escalation: the solution is planned to be included in the Kh ... [2025-11-02T08:31:34+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer is stuck in an AI loop, as responses are directed towards updates, albeit generic.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI does not seem to address specific previous customer references or provide tailored information based on prior interactions.",
+    "evidence": [
+      "The process has failed and andon cord has been pulled for the following reason: **Terminating ... [2025-11-02T10:22:50+00:00]",
+      "Ticket is pending without solDelProc flag. Setting it to True ... [2025-11-02T10:50:05+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays in responses, with over 66 hours without any human interaction.",
+    "evidence": [
+      "Time to first human: 1588.5 hours; Max gap between responses: 1025.8 hours."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears to have been closed despite the customer not receiving a satisfactory solution or clear communication about the next steps.",
+    "evidence": [
+      "Closing status and the lack of follow-up on promised updates from the development team."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is insufficient evidence of high-priority status or mishandling, as the ticket appears to relate to general product issues rather than a severe outage.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses are generic and lack specific information or follow-up that addresses the customer's issues directly.\",\n    \"evidence\": [\n      \"Dear Customer, Thank you for your continued patience. We are delighted to inform you that our Development team has addressed ... [2025-11-02T09:42:05+00:00]\",\n      \"Dear Andriy, I wanted to provide you with a quick update on your escalation: the solution is planned to be included in the Kh ... [2025-11-02T08:31:34+00:00]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer is stuck in an AI loop, as responses are directed towards updates, albeit generic.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI does not seem to address specific previous customer references or provide tailored information based on prior interactions.\",\n    \"evidence\": [\n      \"The process has failed and andon cord has been pulled for the following reason: **Terminating ... [2025-11-02T10:22:50+00:00]\",\n      \"Ticket is pending without solDelProc flag. Setting it to True ... [2025-11-02T10:50:05+00:00]\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays in responses, with over 66 hours without any human interaction.\",\n    \"evidence\": [\n      \"Time to first human: 1588.5 hours; Max gap between responses: 1025.8 hours.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket appears to have been closed despite the customer not receiving a satisfactory solution or clear communication about the next steps.\",\n    \"evidence\": [\n      \"Closing status and the lack of follow-up on promised updates from the development team.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient evidence of high-priority status or mishandling, as the ticket appears to relate to general product issues rather than a severe outage.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60233855
+}

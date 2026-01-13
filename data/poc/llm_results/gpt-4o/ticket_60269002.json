@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI provided relevant information without errors or generic responses.",
+    "evidence": [
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication of repeated requests for the same information or inability to reach a human.",
+    "evidence": [
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI appropriately responded with the requested report without asking for additional information.",
+    "evidence": [
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no evidence of delay in responses; the interaction times show prompt communication.",
+    "evidence": [
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation",
+      "[2025-12-23T08:00:53+00:00] (AI) Kayako Automations: Initial ticket creation."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence that the ticket was closed prematurely; the requested report was attached.",
+    "evidence": [
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as high priority, and appropriate action was taken by providing the requested report.",
+    "evidence": [
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI provided relevant information without errors or generic responses.\",\n    \"evidence\": [\"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication of repeated requests for the same information or inability to reach a human.\",\n    \"evidence\": [\"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI appropriately responded with the requested report without asking for additional information.\",\n    \"evidence\": [\"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of delay in responses; the interaction times show prompt communication.\",\n    \"evidence\": [\"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation\", \"[2025-12-23T08:00:53+00:00] (AI) Kayako Automations: Initial ticket creation.\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the ticket was closed prematurely; the requested report was attached.\",\n    \"evidence\": [\"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as high priority, and appropriate action was taken by providing the requested report.\",\n    \"evidence\": [\"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: Hi Team, Your requested report is attached. Best regards, Kayako Automation\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60269002
+}

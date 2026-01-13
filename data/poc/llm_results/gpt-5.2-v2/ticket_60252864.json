@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS clearly misunderstood the customer\u2019s intent (license problem leading to outage) and responded with a generic clarification flow instead of actionable guidance, forcing the customer to restate the issue.",
+    "evidence": [
+      "Customer (Ashraaz Nadeem Yusuf) --  Expired license",
+      "AI Assistant -- Since it's a delicate topic, I want to make extra sure: are you seeking assistance with renewing/modifying/cancelling an existing license, or purchasing a new license and not for technical issues related to a license that is already renewed, correct?",
+      "Customer (Ashraaz Nadeem Yusuf) --  Need tech support",
+      "AI Assistant -- \ud83d\ude33 Sorry about the misunderstanding, let's try again."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer attempted to get help beyond the bot and then repeatedly pinged the ticket for hours with no human engagement, indicating they were effectively stuck without access to timely human support during an outage scenario.",
+    "evidence": [
+      "Customer: Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?",
+      "Kayako - ticket id 60252864 // ATLAS commented privately: Action: l1",
+      "Customer: Anyone there",
+      "Customer: Hi",
+      "Customer: Hello",
+      "Customer: we require your assistance"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "When the human agent responded, they directly used the context and details already provided (company name and license key) and did not ask the customer to repeat prior troubleshooting or re-share information.",
+    "evidence": [
+      "When submitting your request, please include:\n\n\t*\nYour Kerio Control license key: 20339-Z6JHP-2QUX8\n\n\t*\nYour company name: Rooster Poultry"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a long gap with multiple customer follow-ups before the first human response, and the customer explicitly chased for responses several times.",
+    "evidence": [
+      "[2025-11-29T21:03:39+00:00] Customer: Our license expired. Please issue us a temporary extension. Our services are down.",
+      "[2025-11-29T21:42:34+00:00] Customer: Anyone there",
+      "[2025-11-29T23:34:53+00:00] Customer: We are facing total outage. Your assistance will be highly appreciated",
+      "[2025-11-30T13:19:12+00:00] Mike Kebede commented publicly: Dear Ashraaz,"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The agent introduced an auto-closure condition (\u201cstay open for one week unless...\u201d) even though the issue (active outage due to expired license) was not resolved within the ticket and required external action, creating risk of closure before confirmation of restoration.",
+    "evidence": [
+      "This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reported a business-impacting outage (\u201cservices are down\u201d, \u201ctotal outage\u201d) but did not receive urgent escalation guidance or a rapid-response path; the first meaningful response arrived many hours later and routed them to a generic sales form.",
+    "evidence": [
+      "Customer: Our license expired. Please issue us a temporary extension. Our services are down.",
+      "Customer: We are facing total outage. Your assistance will be highly appreciated",
+      "Mike: Kerio Support does not have the ability to issue temporary licenses or extend expired licenses.",
+      "Mike: please submit your request directly to GFI Sales using the Customer Care form below:\n\nhttps://customercare.gfi.com/hc/en-us/requests/new"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60252864
+}

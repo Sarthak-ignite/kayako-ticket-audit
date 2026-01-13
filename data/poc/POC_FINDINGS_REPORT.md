@@ -1,0 +1,156 @@
+# Central Support Performance Analysis - POC Findings
+
+**Date:** January 7, 2026  
+**Scope:** 99 tickets from Q4 (IgniteTech, Khoros, GFI)  
+**Purpose:** Validate analysis methodology before full-scale execution
+
+---
+
+## Executive Summary
+
+We analyzed 99 support tickets using a hybrid approach combining:
+1. **Deterministic metrics** from ticket data (response times, handoff rates, etc.)
+2. **LLM-based pattern detection** (6 quality issue categories)
+
+### Key Findings
+
+| Finding | Value | Implication |
+|---------|-------|-------------|
+| Tickets with 24h+ response gaps | **45%** | Nearly half of tickets have significant delays |
+| Time to first human response (median) | **39 hours** | AI handling adds ~1.6 days before human engagement |
+| Tickets with AI streak at start | **6%** | Initial AI responses before human involvement |
+| P1/SEV1 mishandling rate | **12-29%** | Inconsistent handling of high-priority tickets |
+| Premature closure rate | **8-41%** | Wide variance suggests detection methodology matters |
+
+---
+
+## Methodology Validation
+
+### LLM Model Comparison (4 models tested)
+
+| Pattern | Claude Sonnet | Claude Haiku | GPT-4o | GPT-4o-mini |
+|---------|---------------|--------------|--------|-------------|
+| AI Quality Failures | 22.2% | **76.5%** | 31.3% | 20.2% |
+| AI Wall/Looping | 14.1% | 33.7% | 9.1% | 6.1% |
+| Ignoring Context | 22.2% | 24.5% | 19.2% | 36.4% |
+| Response Delays | 50.5% | 48.0% | 50.5% | 50.5% |
+| Premature Closure | 28.3% | 40.8% | 8.1% | 26.3% |
+| P1/SEV1 Mishandling | 29.3% | 19.4% | 12.1% | 23.2% |
+
+### Model Agreement Rates
+
+| Comparison | Agreement |
+|------------|-----------|
+| Claude Sonnet ↔ Haiku | 74.8% |
+| GPT-4o ↔ GPT-4o-mini | 80.1% |
+| Claude Sonnet ↔ GPT-4o | 82.2% |
+
+**Recommendation:** Use **GPT-4o-mini** or **Claude Sonnet** for full analysis:
+- GPT-4o-mini: Lowest cost, balanced detection rates
+- Claude Sonnet: Most consistent with cross-provider agreement
+
+---
+
+## Detailed Findings
+
+### 1. Ticket Processing Overview
+
+| Metric | Value |
+|--------|-------|
+| Total tickets analyzed | 99 |
+| Tickets with interactions fetched | 99 (100%) |
+| Total interactions analyzed | 1,840 |
+| Avg interactions per ticket | 18.6 |
+
+### 2. Interaction Breakdown
+
+| Actor Type | Count | Percentage |
+|------------|-------|------------|
+| AI (Atlas, Cu Chulainn, etc.) | 698 | 38% |
+| Employee | 617 | 34% |
+| Customer | 344 | 19% |
+| Other | 181 | 9% |
+
+**AI Bot Distribution:**
+- Cu Chulainn AI Manager: 224 (32%)
+- ATLAS: 222 (32%)
+- Centralsupport-ai-acc: 148 (21%)
+- Other bots: 104 (15%)
+
+### 3. Response Time Analysis
+
+| Metric | Value |
+|--------|-------|
+| Time to first human (median) | 38.9 hours |
+| Time to first human (P90) | 667 hours |
+| Tickets with gaps > 24h | 45 (45%) |
+| Tickets with gaps > 48h | 38 (38%) |
+
+### 4. Handoff to BU (L2+)
+
+| Metric | Value |
+|--------|-------|
+| Tickets handed to BU | 25 (25.3%) |
+| High priority tickets | 24 (24.2%) |
+
+---
+
+## Pattern Detection Results (Consensus View)
+
+Using the average across all 4 models:
+
+| Pattern | Avg Detection Rate | Notes |
+|---------|-------------------|-------|
+| **Response Delays** | ~50% | Most consistent across models |
+| **AI Quality Failures** | ~37% | Haiku outlier (76%) skews average |
+| **Premature Closure** | ~26% | GPT-4o outlier (8%) |
+| **Ignoring Context** | ~25% | Moderate consistency |
+| **P1/SEV1 Mishandling** | ~21% | Wide variance (12-29%) |
+| **AI Wall/Looping** | ~16% | Most conservative detection |
+
+---
+
+## Recommendations for Full Analysis
+
+### Model Selection
+- **Primary:** GPT-4o-mini (cost-effective, balanced)
+- **Validation:** Claude Sonnet (spot-check 10% of results)
+
+### Estimated Costs for Full Quarter (~13,500 tickets)
+| Model | Cost per ticket* | Total Estimate |
+|-------|------------------|----------------|
+| GPT-4o-mini | ~$0.002 | ~$27 |
+| Claude Sonnet | ~$0.015 | ~$200 |
+| Both (validation) | ~$0.004 | ~$54 |
+
+*Based on ~2K tokens input, ~500 tokens output per ticket
+
+### Methodology Refinements
+1. **Calibrate against known examples**: Use Patterns.csv examples for validation
+2. **Add vertical-specific analysis**: Compare IgniteTech vs Khoros vs GFI
+3. **Include time-based trends**: Weekly/monthly trend analysis
+4. **Severity weighting**: Prioritize P1/SEV1 issues in reporting
+
+---
+
+## Next Steps
+
+1. **Stakeholder Approval**: Review this POC before scaling
+2. **Full Execution**: Process all 13,500 tickets with GPT-4o-mini
+3. **Report Generation**: Per-vertical dashboards and executive summary
+4. **Presentation to SLT**: Data-backed findings with actionable recommendations
+
+---
+
+## Appendix: Data Quality Notes
+
+- **Missing tickets in sample**: Some Patterns.csv seed tickets not found in main data
+- **Gemini API**: Quota exceeded, excluded from comparison
+- **Hermes detection**: 0 Hermes interactions found in sample (may be product-specific)
+- **Timestamp parsing**: Fixed UTC handling during analysis
+
+---
+
+*Generated by Central Support Analysis Pipeline v0.1*
+
+

@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient ticket details to evaluate AI response quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of customer interaction or AI conversation flow.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer context or support interaction is visible.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Time between interactions cannot be determined from available data.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Insufficient information to assess ticket closure appropriateness.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority and severity details are not provided.",
+    "evidence": []
+  },
+  "_raw_response": "After careful analysis of the provided ticket context, I'll assess the quality patterns. However, there's a critical observation: the ticket appears to have minimal contextual information, with only an AI-generated summary record.\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient ticket details to evaluate AI response quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of customer interaction or AI conversation flow.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer context or support interaction is visible.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Time between interactions cannot be determined from available data.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to assess ticket closure appropriateness.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority and severity details are not provided.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket contains only an AI-generated summary\n- No actual customer interaction or support conversation is visible\n- Insufficient data to meaningfully analyze quality patterns\n\nRecommendation: Provide the complete ticket conversation details for a comprehensive quality assessment.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60246498
+}

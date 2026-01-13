@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses appear contextually appropriate, acknowledging customer's screenshots and providing troubleshooting guidance. No evidence of generic filler or false promises in the truncated visible portions.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer successfully moved from initial problem report to receiving troubleshooting advice from AI, then provided a status update. No evidence of repetitive AI requests or customer unable to progress.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "AI response on 2025-12-19 directly references the customer's provided screenshots and acknowledges the specific queue discrepancy issue mentioned in their message.",
+    "evidence": [
+      "ATLAS (2025-12-19T17:29:37): 'Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a 72.9-hour maximum gap between responses, with a 3-day delay between the customer's initial message (2025-12-19) and their follow-up (2025-12-22). Additionally, no human took ownership of the ticket (Time to first human: nan).",
+    "evidence": [
+      "Customer message: 2025-12-19T17:27:04",
+      "Customer follow-up: 2025-12-22T18:22:29 (72.9 hours later)",
+      "Max gap between responses: 72.9 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket is marked as closed, but the customer explicitly stated on 2025-12-22 they are on PTO and unable to troubleshoot, only promising to review suggestions when available. The ticket was closed while customer work was still pending.",
+    "evidence": [
+      "Liz Mech (2025-12-22T18:22:29): 'Right now, due to PTO, we are unable to troubleshoot. We will be able to...'",
+      "Ticket Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is 'normal', not P1/SEV1. Pattern is not applicable to this ticket's severity level.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses appear contextually appropriate, acknowledging customer's screenshots and providing troubleshooting guidance. No evidence of generic filler or false promises in the truncated visible portions.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer successfully moved from initial problem report to receiving troubleshooting advice from AI, then provided a status update. No evidence of repetitive AI requests or customer unable to progress.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"AI response on 2025-12-19 directly references the customer's provided screenshots and acknowledges the specific queue discrepancy issue mentioned in their message.\",\n    \"evidence\": [\n      \"ATLAS (2025-12-19T17:29:37): 'Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view'\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a 72.9-hour maximum gap between responses, with a 3-day delay between the customer's initial message (2025-12-19) and their follow-up (2025-12-22). Additionally, no human took ownership of the ticket (Time to first human: nan).\",\n    \"evidence\": [\n      \"Customer message: 2025-12-19T17:27:04\",\n      \"Customer follow-up: 2025-12-22T18:22:29 (72.9 hours later)\",\n      \"Max gap between responses: 72.9 hours\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is marked as closed, but the customer explicitly stated on 2025-12-22 they are on PTO and unable to troubleshoot, only promising to review suggestions when available. The ticket was closed while customer work was still pending.\",\n    \"evidence\": [\n      \"Liz Mech (2025-12-22T18:22:29): 'Right now, due to PTO, we are unable to troubleshoot. We will be able to...'\",\n      \"Ticket Status: closed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is 'normal', not P1/SEV1. Pattern is not applicable to this ticket's severity level.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60267393
+}

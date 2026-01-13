@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Customer-facing replies are written by named agents and contain coherent troubleshooting guidance. The only \u201cAI\u201d content appears as private escalation tags, which are not customer-facing evidence of poor AI output.",
+    "evidence": [
+      "Centralsupport-ai-acc commented privately: [customer_escalation]",
+      "Carlos Encalada commented publicly: \"Thank you for reaching out. We\u2019ve received your escalation regarding ticket 60177804 and are actively working on it.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer-facing pattern of repeated AI replies blocking access to a human. When the customer requested a meeting, a human agent responded publicly the same day.",
+    "evidence": [
+      "Bennett Duarte commented privately: \"Could we have a meeting to take a closer look? Customer really needs this working\"",
+      "Pablo Ambram commented publicly: \"An agent will contact you shortly to propose a meeting.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support requested fresh diagnostics during/around the latest freeze, which is additional time-scoped data rather than an obvious repeat of an already-fulfilled request. The customer does not explicitly state (in a public message) that they already provided the exact requested debug capture/timestamps and is being asked again.",
+    "evidence": [
+      "Arafat Bakhsh commented publicly: \"Thank you for sending the logs and support info. We\u2019ve reviewed them and identified several factors contributing to the intermittent 'freeze'\"",
+      "Carlos Encalada commented publicly: \"Please provide a fresh set of diagnostics covering the most recent freeze\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Staff responses occur the same day or within short intervals after customer updates/escalations; no 5+ day gap (or two 3+ day gaps) between a customer message and the next staff reply is visible in the provided timeline.",
+    "evidence": [
+      "Bennett Duarte commented privately: \"It is still freezing and just froze now.\"",
+      "Pablo Ambram commented publicly (same day): \"We have received your escalation regarding the server freezing issue and we are currently working on it.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support introduced auto-closure language (\u201cstay open for one week unless\u2026\u201d) while the issue was still active and the customer was seeking urgent help/meeting due to recurring freezes, which risks closing the case before resolution.",
+    "evidence": [
+      "Bennett Duarte commented privately: \"Could we have a meeting to take a closer look? Customer really needs this working\"",
+      "Shaquille De Lancy commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Carlos Encalada commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer describes broad impact and frequent freezes, there is no explicit SEV1/P1/critical/outage designation in customer-facing content, and support did engage with detailed troubleshooting and requested time-bound diagnostics. Evidence of mishandling/escalation failure is not strong enough from the provided text.",
+    "evidence": [
+      "Bennett Duarte commented privately: \"when it stops, it stops for everyone\"",
+      "Carlos Encalada commented publicly: \"Please provide a fresh set of diagnostics covering the most recent freeze\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60177804
+}

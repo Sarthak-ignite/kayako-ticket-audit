@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible ATLAS content is a short intake/clarification flow (confirming the license key and asking for uploads). There is no customer-facing statement that ATLAS was wrong/useless, no broken/garbled AI output in a way that impacted resolution, and no AI promise that later proved undelivered.",
+    "evidence": [
+      "Chat Support: \"I have this license key on record: - License: QjcmHQpCsc0-zdMys0gYs6BVdL4wa-cEBF8-790951 - Expiry date: 2026-03-29. Just to make sure we're on the same page - is this the same system you're reaching out about today?\"",
+      "Chat Support: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer asked for a human and kept getting AI replies afterward, nor any repetitive AI loop after the customer said they already provided information. The AI interaction shown is brief and then the ticket proceeds to BU escalation.",
+    "evidence": [
+      "Chat Support: \"Please select an option below or give me a detailed description of what\u2019s happening.\"",
+      "Kayako (private): \"Sending to BU\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer provided the license key and the final resolution references the same key and requested downgrade; there is no customer-facing complaint about being asked to repeat information, and no repeated requests for already-provided items (logs/steps) after the customer indicated they had already shared them.",
+    "evidence": [
+      "Customer: \"Hey, please downgrade this license key to version 18.2\"",
+      "Agent (public): \"License has been downgraded to GFI FaxMaker 2015 (version 18.2). New key is 6E1f-HUTS-101TmxYN6NHMccEwbvhRRr0K-790951.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a very long period without a meaningful staff update, and the customer explicitly called out the extended wait. The agent later apologized for the delay in public responses, which is a strong signal of response delay.",
+    "evidence": [
+      "Customer (private): \"Hello, we are now waiting 22 days...\"",
+      "Aditi Garg (public): \"We sincerely apologize for the delay in processing your request to downgrade your license key to version 18.2.\"",
+      "Aditi Garg (public): \"We sincerely apologize for the delay.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The closure-warning language appears after the downgrade is completed and a new key is provided. The customer then confirms closure is fine, so this is not premature closure.",
+    "evidence": [
+      "Aditi Garg (public): \"License has been downgraded to GFI FaxMaker 2015 (version 18.2). New key is 6E1f-HUTS-101TmxYN6NHMccEwbvhRRr0K-790951.\"",
+      "Aditi Garg (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\"",
+      "Customer (private): \"you can close the ticket\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The request is a license downgrade and does not include P1/SEV1/outage language or indications of production-down impact. There is no evidence of high-severity signals being handled with inappropriate generic troubleshooting.",
+    "evidence": [
+      "Customer: \"Hey, please downgrade this license key to version 18.2\"",
+      "Aditi Garg (public): \"License has been downgraded to GFI FaxMaker 2015 (version 18.2).\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60018792
+}

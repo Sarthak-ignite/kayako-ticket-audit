@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response was generic and dismissed the ticket due to tags without addressing the customer's issue.",
+    "evidence": [
+      "[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was stuck in a loop where the AI repeatedly asked for the same information or impeded access to a human representative.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence in the provided interaction of the support ignoring customer-provided information or asking for redundant information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no significant delays between responses; interactions appear to occur in quick succession.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed, but there is no clear evidence from the provided interactions that the closure occurred prematurely or before all promised information was given.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence that generic troubleshooting steps were provided instead of immediate escalation for this high-priority ticket.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response was generic and dismissed the ticket due to tags without addressing the customer's issue.\",\n    \"evidence\": [\"[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was stuck in a loop where the AI repeatedly asked for the same information or impeded access to a human representative.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence in the provided interaction of the support ignoring customer-provided information or asking for redundant information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no significant delays between responses; interactions appear to occur in quick succession.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed, but there is no clear evidence from the provided interactions that the closure occurred prematurely or before all promised information was given.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that generic troubleshooting steps were provided instead of immediate escalation for this high-priority ticket.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60264009
+}

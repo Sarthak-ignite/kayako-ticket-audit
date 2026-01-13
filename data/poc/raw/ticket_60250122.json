@@ -1,0 +1,175 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_classic",
+        "requester": {
+          "id": 60450924,
+          "uuid": "b2f46163-5b5d-57d8-bbf5-99bf0369cf63",
+          "full_name": "Sheena Kenny",
+          "legacy_id": "0032E00002ZoNXvQAN",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/b2f46163-5b5d-57d8-bbf5-99bf0369cf63?1767751881",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60066525,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 452453,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-12-04T00:29:07+00:00",
+          "last_active_at": "2026-01-07T02:11:21+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60450924",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@1259e44aad7bb42175f59dcb30ef0c4660a1ac18",
+          "password_updated_at": "2025-07-17T13:20:00+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-07-07T06:14:41+00:00",
+          "updated_at": "2026-01-07T02:11:21+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60450924"
+        },
+        "ticket_idt": 60250122
+      },
+      "interactions": [
+        [
+          "2025-12-27T07:23:42+00:00",
+          "Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-12-27T07:23:12+00:00",
+          "Kayako - ticket id 60250122 // Santhosh M commented privately:  The clone https://trilogy-eng.atlassian.net/browse/AURORA-872 seems to have been closed. Will link ticket with the correct LIA:\u00a0https://trilogy-eng.atlassian.net/browse/AURORA-840 [https://trilogy-eng.atlassian.net/browse/AURORA-840] "
+        ],
+        [
+          "2025-12-27T02:38:34+00:00",
+          "Kayako - ticket id 60250122 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-12-27T02:38:25+00:00",
+          "Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: JIRA Issue AURORA-872 is changed to 'Closed' , block reason: -"
+        ],
+        [
+          "2025-12-27T02:37:39+00:00",
+          "Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: JIRA Issue AURORA-872 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-12-26T18:09:45+00:00",
+          "Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: JIRA Issue AURORA-840 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-12-26T18:09:42.919+0000",
+          "SaaS Jira - issue key AURORA-840 // status is changed from In Queue to In Progress"
+        ],
+        [
+          "2025-12-26T18:09:39+00:00",
+          "Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: JIRA Issue AURORA-840 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-12-01T04:38:30+00:00",
+          "Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-12-01T04:36:21+00:00",
+          "Kayako - ticket id 60250122 // Centralsupport-ai-acc commented privately: JIRA Issue AURORA-840 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-12-01T04:36:17.661+0000",
+          "SaaS Jira - issue key AURORA-840 // Issue is created by Keyur Saxena with description: Problem:Dropbox stage community (https://forum-stage.dropboxforum.com/) is intermittently unusable because the HTTP Basic Auth (HTAccess) prompt keeps re-appearing even when the correct credentials are entered. Multiple users on different devices and networks are affected, and in some cases they are blocked from accessing stage for up to an hour at a time.Reproduction Steps:Actual Behavior:Expected Behavior:"
+        ],
+        [
+          "2025-11-25T15:27:57+00:00",
+          "Kayako - ticket id 60250122 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-11-25T15:27:36+00:00",
+          "Kayako - ticket id 60250122 // Sheena Kenny commented privately: Hi, the same issue occurs using incognito mode, cookies are enabled, and confirmed that multiple users are experiencing the same issue, all with different devices and connections. We're unable to whitelist an IP address or range of IPs addresses for this."
+        ],
+        [
+          "2025-11-25T11:32:25+00:00",
+          "Kayako - ticket id 60250122 // ATLAS commented publicly: Dear Sheena,\n\nThank you for reaching out regarding the intermittent repeated login prompts on your staging environment at https://forum-stage.dropboxforum.com/. The scenario you described\u2014having to enter credentials multiple times across various sessions or page resources\u2014is commonly connected to how browser-based HTTP authentication (such as HTAccess) is configured for staging areas.\n\nBased on your description and the attached screenshot, here are several common causes and step-by-step troubleshooting suggestions to address this issue:\n\n \t* Browser Session and Cache Issues: Browsers may not always retain authentication cookies or credentials, especially if cache or cookies are being cleared automatically, or if browser privacy settings are strict. \nTry accessing the site in an incognito/private window. If the problem is less frequent or does not occur in this mode, it can indicate a conflict with cached credentials or extensions. \n \t* Multiple Protected Resources: When the page loads resources (such as images, scripts, or stylesheets) from different paths or subdomains also behind HTTP authentication, the browser may ask for credentials again for each unrecognized resource. \nIf you notice the repeated prompt appears when loading specific content, try accessing the resource URLs directly to see if further authentication is requested. \n \t* Session Timeout and Network Factors: Short HTTP authentication session timeouts, changing IP addresses during a session (such as when using VPNs or proxies), or disruptions in connectivity can force re-authentication. \nConsider whether the issue occurs more frequently after being idle or after network changes. \n \t* Extensions and Cookie Settings: Browser extensions that interfere with cookies or privacy may disrupt authentication sessions. Ensure no extensions are blocking cookies or interfering with HTTP sessions.\n\nHere are some specific guidance and options based on Khoros documentation:\n\n \t* You can whitelist your IP address to exempt it from HTAccess authentication entirely. This should stop repeated prompts for authorized users. As noted in the HTAccess FAQ [https://khoros-classic.kayako.com/article/126154], you can request your stage environment to allow access from certain IP addresses only, bypassing the credential prompt for those users.\n \t* If you wish to continue using HTAccess for security, consider reviewing the structure of your authentication rules (e.g., in .htaccess or web server config) to ensure that all required resources are covered uniformly, and that static resources (like images or stylesheets) do not unnecessarily require repeat credentials.\n \t* If your environment allows, avoid referencing any external assets with non-secure HTTP links as modern browsers may block or re-prompt for authentication. See further details in the SSL Options [https://khoros-classic.kayako.com/article/126074] article regarding mixed content behaviors.\n\nKey knowledge base articles for your reference:\n\n \t* HTAccess FAQ [https://khoros-classic.kayako.com/article/126154]\n \t* SSL Options [https://khoros-classic.kayako.com/article/126074]\n\nIn summary, repeated login prompts are most often due to browser handling, inconsistent resource authentication rules, or network/session factors. Testing with different browsers, private/incognito mode, and reviewing how resources are protected in your staging authentication settings will help identify and mitigate the root cause.\n\nIf you would like to explore IP whitelisting for your team or adjust authentication rules, the linked FAQ explains the possibilities and considerations.\n\nPlease let us know if you have any further questions or if the behavior changes after following these recommendations.\n\nSincerely,\nAtlas\nKhoros Community Classic Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-25T11:31:46+00:00",
+          "Kayako - ticket id 60250122 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Brand set to Khoros Classic. Rationale: The issue concerns the Dropbox community stage environment at https://forum-stage.dropboxforum.com/ repeatedly prompting for credentials. This clearly pertains to the Community platform (forum) rather than Care/Marketing/Flow. No Aurora-specific indicators (e.g., GraphQL, Aurora features) are present, and Dropbox\u2019s community is on Classic. Actions taken: Updated brand to Khoros Classic and added tag 'atlas-ticket-backlog'\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-25T11:31:28+00:00",
+          "Kayako - ticket id 60250122 // ATLAS commented publicly: Dear Sheena,\n\nThank you for reaching out regarding the intermittent repeated login prompts for your stage environment at https://forum-stage.dropboxforum.com/.\n\nThis type of issue is likely related to basic authentication in staging environments. When a stage environment is secured with browser-based HTTP authentication, repeated login prompts can occur due to several factors, including:\n\n \t* Browser Session/Cache Issues: Some browsers may not retain authentication cookies or credentials properly, causing repeated prompts. Try clearing your browser cache or testing with another browser to isolate browser-specific causes.\n \t* Multiple Page Resources: If the environment loads resources from domains or paths also protected by HTTP authentication, browsers might prompt again when those resources are requested, especially if credentials are not cached for each.\n \t* Network or Proxy Settings: If you are behind a proxy or VPN, or if your IP address changes during the session, authentication prompts may repeat.\n \t* Session Timeout Settings: Short timeout configurations on the authentication system could require re-authentication more frequently, especially if the page or environment is idle for a period.\n\nTroubleshooting Steps to Help Resolve/Reproduce the Issue:\n\n \t* Test the stage environment in an incognito/private browsing window. If the issue is reduced or does not occur, this can indicate a browser cache or stored credential conflict.\n \t* Check if the repeated prompt occurs across different browsers or devices. Narrowing this down helps identify client-side versus server-side causes.\n \t* If possible, ensure your browser allows cookies and does not have any extensions enabled that could interfere with session management or authentication.\n \t* If you encounter repeated login prompts specifically while accessing certain resources (images, scripts, etc.), try accessing those resource URLs directly in a separate browser tab to see if they prompt for credentials.\n\nIf clicking \"Cancel\" allows the content to load, this sometimes suggests that the resources being requested are non-essential for the initial page load or that fallback logic is present. However, persistent prompts are not expected behavior and may suggest a misconfiguration in how authentication is being enforced for different resources or paths.\n\nWhile there is no direct knowledge base article specific to staging environment authentication, these general troubleshooting steps should help identify the underlying cause. If you determine that the behavior is isolated to certain browsers or only occurs when specific resources are loaded, updating your authentication rules or excluding certain static resources from authentication may help alleviate the issue.\n\nIf these steps do not resolve the problem, consider reviewing your server configuration (such as .htaccess or NGINX settings if applicable) to ensure consistent authentication rules across all resources served on your stage environment.\n\nPlease let us know if you have any additional observations or questions.\n\nSincerely,\nAtlas\nKhoros Community Classic Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-25T11:29:27+00:00",
+          "Kayako - ticket id 60250122 // Cu Chulainn AI Manager commented privately: <CC Log>\n\nPackage URL: https://cs.cu-chulainn.csaiautomations.com/marketplace/packages/edit/PACKAGE-b076d16e-40d5-4397-87c7-25b52aca9e5b\nPackage Name: KhorosGenericRouter\n\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60250122/kayako_central-supportdesk_60250122_20251125_112927_b844.txt]\n\n</CC Log>\n"
+        ],
+        [
+          "2025-11-25T11:29:01+00:00",
+          "Kayako - ticket id 60250122 // Sheena Kenny commented publicly: Hi,\n\nOur stage environment (https://forum-stage.dropboxforum.com/) requires us to login when we open it, which is normal and fine. However over the last few months it often requests the same login details over and over again, even though they are entered correctly. It's quite intermittent, and sometimes clicking cancel will allow the page to load.\u00a0\n\nIt's very frustrating when it won't load the page without requesting the details over and over, as it can continue requesting details for up to 1 hour at times.\n\nimage\n\nThanks\nSheena\n-- \n\nSheena Kenny\u00a0(she/her)\n\nSocial Media Manager & Community Developer\u00a0| CXS\n\nimage\n\n"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 16,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": true,
+          "link_value": "AURORA-840"
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

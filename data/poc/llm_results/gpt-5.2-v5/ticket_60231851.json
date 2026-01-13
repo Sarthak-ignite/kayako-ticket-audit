@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer explicitly states that the AI bot was not helpful and that they wasted hours without progress. The customer also reports receiving the same automated message repeatedly.",
+    "evidence": [
+      "\u201cThe BOT AI is not helping\u2026\u201d",
+      "\u201cI\u2019ve been through all this and have wasted hours leading to nowhere on the both cases\u2026.\u201d",
+      "\u201cWow,  Same automated message as the one below. Scroll down, exact same one and from same person\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although the customer strongly requests a human and expresses frustration about AI, the ticket text does not show 2+ subsequent customer-facing AI responses after that request; instead, there is a long period with no staff response until a human replies.",
+    "evidence": [
+      "\u201cSo once again, CAN I SPEAK TO A HUMAN\u2026.\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer repeatedly indicates the issue is not related to whitelist/blocklist and that the troubleshooting steps had already been done via the bot, implying support responses were not aligned with the provided context and repeated prior steps.",
+    "evidence": [
+      "\u201cMy issues is not with the whitelist but with the Information Store Protection.\u201d",
+      "\u201cWe been though all these steps already with the AI bot?\u201d",
+      "\u201cLike I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026  Not helpful\u2026\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is clear customer-facing evidence of a prolonged wait for a human response, and support later apologizes for the delay. The customer posts multiple follow-ups indicating they are still waiting.",
+    "evidence": [
+      "\u201cI\u2019ve been waiting for a support representative to reach out..\u201d",
+      "\u201cSTILL WAITING FOR SUPPORT..\u201d",
+      "\u201cWe apologize for the delay on this, I ve escalated it internally for faster resolution.\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While support includes an auto-closure warning (\u201cThis ticket will stay open for one week unless\u2026\u201d), the provided text does not show the ticket actually being closed or auto-closed while the customer still had unresolved requests.",
+    "evidence": [
+      "\u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer does not describe a production outage or SEV1/P1 impact; they explicitly note that email is flowing and they are not in a down situation.",
+    "evidence": [
+      "\u201cEmail seem to be flowing properly\u201d",
+      "\u201cThank god I'm not in a down situation.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60231851
+}

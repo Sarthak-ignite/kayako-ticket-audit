@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No clear customer-facing evidence shows ATLAS/Hermes (or any AI) providing incorrect/misleading troubleshooting or broken/garbled AI output. The main customer-facing replies are generic but not demonstrably wrong based on the ticket text.",
+    "evidence": [
+      "Additionally build number 10.0.0 is correct, New Kerio Control NG appliances (NG 520 and NG 521) ship with Kerio Control v10 preinstalled and are fully supported",
+      "The new NG models require v10 due to updated network interface drivers and will not operate correctly on older 9.x images."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer asked for live contact, but the ticket shows multiple human/staff public responses (Denis, Harry, Aditi, Arafat). There isn\u2019t evidence the customer was kept in an AI-only loop after requesting a human agent.",
+    "evidence": [
+      "Yes please connect me to a live agent. Thank you.",
+      "Dear D. Middleton, We have received your escalation regarding the GFI AppManager issue, and we want to assure you that we are actively working on it."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support asked for additional artifacts/logs and confirmation steps, but the customer does not explicitly state they already provided the same requested items or already performed the same steps and is being asked again. Lack of acknowledgement/frustration is present, but not enough to confirm context is being ignored per the rubric.",
+    "evidence": [
+      "Here is the support file from the unit before the 9.5.0 downgrade.",
+      "Please provide us with the following details after having reproduced the issue: * All items in the /var/gfiagent/appliances folder ..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Customer-facing text includes both an explicit apology for delay from support and customer complaints that nobody was responding / they could not reach anyone during an outage/escalation.",
+    "evidence": [
+      "I apologize for the delay.",
+      "I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.",
+      "It is completely unacceptable in a network down emergency to be unable to reach anyone in your support team."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While there are standard auto-closure warnings ('stay open for one week unless...'), the transcript does not show an actual closure/auto-closure notice occurring while the issue remained unresolved.",
+    "evidence": [
+      "This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.",
+      "This ticket needs to remain open until I speak with someone in your management team."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer reports a complete outage, support did provide product-specific guidance and v10 download information rather than only generic checks. The ticket text does not clearly show the outage being handled purely as routine troubleshooting without escalation.",
+    "evidence": [
+      "Customer is completely down.",
+      "The new NG models require v10 due to updated network interface drivers and will not operate correctly on older 9.x images.",
+      "You can download the installer here: Kerio Control v10 Installer"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60209553
+}

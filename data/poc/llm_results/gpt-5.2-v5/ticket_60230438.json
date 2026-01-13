@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only content available is a privately logged transcript snippet of an AI chat, and it is truncated. There isn\u2019t enough customer-facing evidence showing the AI gave incorrect/misleading guidance or a broken/garbled response.",
+    "evidence": [
+      "\u201cATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\u201d",
+      "\u201c--- AI Assistant --- Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer asks why a different ticket was closed without a human conversation, but the provided record does not show a request for a human followed by multiple additional AI-only replies (and the transcript is truncated). Also, the only evidence is in a private note.",
+    "evidence": [
+      "\u201cWhy is chat Ticket ID: #60230003 marked as closed when I have not had an answer or a conversation with a human agent?\u201d",
+      "\u201cATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There\u2019s no visible back-and-forth (in customer-facing comments) where support asks for information the customer already provided or repeats the same request after the customer says it was already done. The snippet is also truncated, limiting confirmation.",
+    "evidence": [
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d",
+      "\u201cHere is a record of your conversation for easy reference: \u2026 [truncated]\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket text does not show timed gaps between a customer message and a subsequent staff reply, nor any apology/request for an update due to waiting. Only a single timestamped private note is shown.",
+    "evidence": [
+      "[2025-10-28T08:40:01+00:00] \u201cATLAS commented privately: Thanks for chatting earlier with our AI Support!\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer mentions another ticket being marked closed, but there is no explicit closure/auto-closure notice shown within this ticket\u2019s visible messages. Without a closure message in-text for this ticket, premature closure can\u2019t be confirmed.",
+    "evidence": [
+      "\u201cWhy is chat Ticket ID: #60230003 marked as closed when I have not had an answer or a conversation with a human agent?\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No outage/critical severity language (P1/SEV1/production down) is present in the visible text, and there is no evidence of a high-severity scenario being handled with inappropriate low-level troubleshooting.",
+    "evidence": [
+      "\u201cWhy is chat Ticket ID: #60230003 marked as closed when I have not had an answer or a conversation with a human agent?\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60230438
+}

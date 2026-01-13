@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Automations (AI-CS integration) sent generic status/closure messaging that implied resolution and triggered closure workflows without any evidence the issue was fixed. This is misleading and adds friction (customer had to request reopening and repeatedly ask to keep it open).",
+    "evidence": [
+      "2025-06-24T17:30:11+00:00 (AI-CS Integration): \"Based on previous information received, your case has been marked as resolved.\" (No resolution details provided and customer later says keep open.)",
+      "2025-06-10T09:02:20+00:00 (TechSupport closure email referencing automation): \"This case has now been closed... Most recent update: A final automated reminder was sent on 6 June 2025...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "A human agent engaged early and throughout; the customer was not blocked from reaching a human by AI-only interactions. Automated reminders occurred, but humans responded and took ownership.",
+    "evidence": [
+      "2025-05-27T10:37:20+00:00: Human agent acknowledges and begins investigation.",
+      "2025-05-29T18:15:39+00:00: Human agent (Huzaif) requests additional info and continues handling."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeated questions and requests after the customer had already provided/clarified the context, and continued to insist on a specific path (creating a new admin test account) even after the customer explained why it was impractical and asked what internal replication had shown.",
+    "evidence": [
+      "Customer already stated it never worked: 2025-05-28T13:15:34+00:00: \"This has never worked for the customer.\" Yet support later asks again: 2025-05-29T18:15:39+00:00: \"When did this issue first occur? Was it when Marcus's account was created in Care?\"",
+      "Customer pushes back on test-account requirement and asks for internal replication findings: 2025-06-02T12:30:12+00:00: \"As I've already shared the steps and the error, have you had a chance to replicate this in internal test instances? ... I'd appreciate it if you could share your findings\"",
+      "Support repeats the same test-account request without addressing the replication/observations request: 2025-06-04T08:41:06+00:00: \"As we discussed, we will need a community test account with administrator role...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no clear 3+ day gaps where the customer was actively waiting on support and support was silent; many gaps are driven by awaiting customer-provided artifacts (test credentials, logs, HAR/console output).",
+    "evidence": [
+      "Delays are largely tied to pending customer action: requests for a test admin account/credentials (from 2025-05-30 onward) and later request for console/HAR (2025-06-18 onward)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The case was closed/marked resolved without confirmation of resolution, while the issue was still open and support was still requesting prerequisites/logs. The customer explicitly stated the issue was not resolved and requested reopening/keeping it open.",
+    "evidence": [
+      "2025-06-10T09:02:20+00:00: \"This case has now been closed.\" (No fix or resolution described; closure based on reminder inactivity.)",
+      "2025-06-10T12:46:38+00:00 (Customer): \"Please reopen this case. The issue is yet to be resolved.\"",
+      "2025-06-24T17:30:11+00:00 (AI-CS Integration): \"your case has been marked as resolved.\"",
+      "2025-06-25T10:31:00+00:00 (Customer): \"Please keep this ticket open for now. I'll share the logs as soon as possible.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer asked to 'prioritize,' but the issue appears to be a single-user access/permissions/integration problem rather than a broad production outage. There is no clear indication of platform-wide downtime or critical business-blocking impact affecting many users that would require Sev1 handling.",
+    "evidence": [
+      "Initial request: \"I'd appreciate it if you could prioritize this\" (2025-05-27). No explicit outage language like \"production down\" or \"all users impacted.\"",
+      "Issue scope described as one user: \"Mark is the only Community Admin who uses Care.\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60144719
+}

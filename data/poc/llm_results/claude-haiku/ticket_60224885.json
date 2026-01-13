@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient evidence to determine AI response quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No visible evidence of customer being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Limited interaction details prevent context analysis.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Insufficient context to determine if closure was premature.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, not a P1/Sev1 ticket.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the provided ticket context, I'll analyze the quality issues:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient evidence to determine AI response quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No visible evidence of customer being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Limited interaction details prevent context analysis.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient context to determine if closure was premature.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, not a P1/Sev1 ticket.\",\n    \"evidence\": []\n  }\n}\n```\n\nImportant Note: The provided interaction appears to be a meta-comment about a previous conversation, with no actual support interaction details visible. This makes a comprehensive quality analysis impossible. To properly assess these patterns, I would need:\n1. Full conversation transcript\n2. Complete interaction history\n3. More context about the original support request\n\nThe current snippet provides no substantive information to definitively detect any quality issues.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60224885
+}

@@ -1,0 +1,34 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided ticket fragment does not contain any AI responses that are clearly generic filler, factually wrong, or contain broken promises. The visible AI message is a polite record/summary but is truncated; there is no clear evidence of incorrect information or unfulfilled promises in the excerpt.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear indication in the supplied content that the customer was stuck repeating the same information or being asked the same questions by the AI multiple times. Only a single AI-generated timestamped message is shown, so a loop cannot be established from the data provided.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The fragment does not show the support agent requesting information that the customer had already provided (e.g., logs repeated requests). The visible AI text appears to be a chat transcript header and does not demonstrate ignoring supplied context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamped interaction (2025-06-20T08:54:12Z) is present in the excerpt. There is no evidence of multiple-day gaps or significant delays between messages in the supplied data.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket fragment does not show the ticket being closed while the customer was waiting or having given up. No closing action or customer complaint about closure is visible in the provided text.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication in the excerpt that this is a P1/SEV1 ticket or that a high-priority issue received only generic troubleshooting rather than escalation. The content does not provide priority or troubleshooting details to support this pattern.",
+    "evidence": []
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60082637
+}

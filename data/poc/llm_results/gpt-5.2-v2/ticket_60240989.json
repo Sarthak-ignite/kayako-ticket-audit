@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer asked a clear product question (upgrade path 9.2 \u2192 9.5), but the AI responded with generic intake text and then surfaced license details instead of directly answering the upgrade-path question (doesn't address the issue).",
+    "evidence": [
+      "Customer (Guenter Weidlich): \"what is the correct upgrade path from version 9.2 to 9.5\"",
+      "AI Assistant: \"Please select from the below or give me a detailed description of what\u2019s happening.\"",
+      "AI Assistant: \"I have this license key on record: - License: *20339-9FEMI-5GDDV* - Expiry date: *2026-06-07*. ...[truncated]...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The excerpt shows only a single customer question and no repeated cycles, no explicit requests for a human, and no customer frustration indicating a loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer provided the needed context (versions 9.2 and 9.5) and asked a direct question, but the AI pivoted to generic prompting and license information rather than using the provided context to answer.",
+    "evidence": [
+      "Customer (Guenter Weidlich): \"what is the correct upgrade path from version 9.2 to 9.5\"",
+      "AI Assistant: \"Please select from the below or give me a detailed description of what\u2019s happening.\"",
+      "AI Assistant: \"I have this license key on record: ...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps or follow-ups about waiting are visible in the provided excerpt.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Only AI interactions are shown with no human engagement, which is an explicit detection signal for this pattern even though an actual closure event isn't displayed in the excerpt.",
+    "evidence": [
+      "Kayako - ticket id 60240989 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!",
+      "--- AI Assistant --- (no human agent messages shown)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The request is about an upgrade path and does not describe an outage/critical impact (no SEV1/P1 language or business-down indicators).",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60240989
+}

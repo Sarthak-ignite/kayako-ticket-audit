@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI appears to respond with unrelated/possibly incorrect account details (e.g., jumping to a license key) instead of addressing the customer\u2019s question about why a prior chat ticket was closed without human interaction. This suggests poor intent detection and an off-topic response, though the transcript is truncated so the full extent is uncertain.",
+    "evidence": [
+      "Customer: \"Why is chat Ticket ID: #60230003 marked as closed when I have not had an answer or a conversation with a human agent?\"",
+      "AI Assistant: \"I have this license key on record:\"",
+      "Kayako private note: \"Thanks for chatting earlier with our AI Support!\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly indicates they did not get a human agent and is questioning why the ticket was closed without a human conversation. The presented interaction is AI-led, and there is no evidence of a successful handoff to a human agent in the provided record.",
+    "evidence": [
+      "Customer: \"...when I have not had an answer or a conversation with a human agent?\"",
+      "Kayako private note: \"This is the GFI MailEssentials ATLAS support chat.\"",
+      "AI Assistant: \"If I'm not able to resolve your issue, I can connect you with one of our support specialists...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer\u2019s stated problem is about a specific ticket being closed without human response, but the AI reply shown pivots to license-key information rather than acknowledging or investigating the closure concern. This indicates failure to use the immediate context provided by the customer (even if the remaining transcript is truncated).",
+    "evidence": [
+      "Customer: \"Why is chat Ticket ID: #60230003 marked as closed...\"",
+      "AI Assistant: \"I have this license key on record:\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is an explicit customer complaint implying they received no answer, which can indicate perceived delay/non-response. However, the CSV shows the ticket lifecycle was extremely short, so the delay signal is more about lack of response than elapsed time.",
+    "evidence": [
+      "Customer: \"...marked as closed when I have not had an answer...\"",
+      "CSV: resolutionTime=62",
+      "CSV: Ticket Created=2025-10-28 08:39:02",
+      "CSV: Ticket Closed=2025-10-28 08:40:05"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed within ~1 minute, while the customer\u2019s question indicates they still need assistance (and did not receive a human response). This strongly suggests closure occurred before resolving the customer\u2019s concern.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: resolutionTime=62",
+      "CSV: Ticket Solved=2025-10-28 08:40:04",
+      "CSV: Ticket Closed=2025-10-28 08:40:05",
+      "Customer: \"Why is chat Ticket ID: #60230003 marked as closed when I have not had an answer or a conversation with a human agent?\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No evidence indicates an outage, severe business impact, or urgent severity requiring escalation. The issue presented is about ticket/chat handling rather than a critical service disruption.",
+    "evidence": [
+      "Customer: \"Why is chat Ticket ID: #60230003 marked as closed...\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60230438
+}

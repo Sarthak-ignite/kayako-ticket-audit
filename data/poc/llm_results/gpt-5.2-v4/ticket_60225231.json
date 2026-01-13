@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS chat content was largely irrelevant/generic to the customer\u2019s licensing/registration problem (incident list, then a generic request for details) and did not progress troubleshooting or route efficiently to a human agent within the chat. This degraded the experience and contributed to the customer needing to explicitly request ticket creation/escalation.",
+    "evidence": [
+      "[ATLAS transcript] \"\ud83d\udd25 Active Incidents for Kerio Control\" ... \"Did this help?\" (customer issue was license registration failure, not an incident/status request).",
+      "[ATLAS transcript after customer: \"nefunguje registrace licence\"] \"Please select from the below or give me a detailed description of what\u2019s happening...\" (generic prompt, no targeted guidance).",
+      "Customer initial request: \"customer care send me to Atlas! please make from conversation support request for technician\" / \"i need create ticket\" (shows chat did not resolve and customer needed escalation)."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a brief ATLAS interaction before human support takes over; no evidence of prolonged AI-only looping or repeated AI prompts preventing access to a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeatedly pivoted or re-ran basic steps after the customer reported those steps were already completed, and misdiagnosed the root cause as a license-binding issue even after the customer demonstrated connectivity to AppManager. This led to unnecessary back-and-forth and an avoidable handoff to Customer Care. Internal notes later confirm the earlier classification was wrong and the fix was to reset the AppManager agent after restore/migration.",
+    "evidence": [
+      "Customer (2025-10-23 18:58): \"outbond access is ok, also from ssh terminal, lynx, curl.. open website appmanager.gfi.com ok\" (connectivity confirmed).",
+      "Support (2025-10-27 14:59): \"The Root Cause: The license file information is incorrect or incompatible with your new Proxmox virtual environment... license file is still bound to the old hardware box's serial number\" (asserted license root cause despite customer showing AppManager is reachable).",
+      "Customer (2025-10-27 15:08): \"...I created ticket to this support before you and they saw that I have to create ticket on you and now back to license support. :(\" (customer explicitly experiences being bounced due to mis-triage).",
+      "Internal correction (2025-10-28 10:38): \"The issue is misclassification of tickets... mistakenly treated as a license issue... Resolution: Reset the AppManager agent \u2014 this is the only valid fix.\" (confirms earlier support direction was wrong)."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No 3+ calendar-day gaps are evident. Customer follow-up on 2025-10-22 received a response on 2025-10-23.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer confirmed resolution after the final guidance (resetting AppManager agent). No evidence the ticket was closed while unresolved.",
+    "evidence": [
+      "Customer (2025-10-28 17:58): \"your colleague solve this problem... Thank you\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue impacted licensing/registration, the ticket content does not clearly indicate a full production outage or explicit urgent/SLA requirement; therefore insufficient evidence to label as P1/Sev1 mishandling based on the transcript alone.",
+    "evidence": [
+      "Escalation metadata (2025-10-20 19:36): severity set to \"core_functionality_defect\" but customer messages do not explicitly describe total outage/business down."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60225231
+}

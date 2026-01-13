@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses are repetitive and fail to address Ralph's specific issues adequately, indicating a lack of meaningful engagement.",
+    "evidence": [
+      "Once again\u2026 This is second time I requested support over the last 6 months due to multiple issues that are occurring. [2025-10-31T14:49:23+00:00]",
+      "Like I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative who was suppose to contact [2025-11-06T15:5103+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly expresses frustration over the automated responses and feels trapped in an AI loop without access to human support.",
+    "evidence": [
+      "I\u2019ve been waiting for a support representative [2025-11-06T15:49:34+00:00]",
+      "STILL WAITING FOR SUPPORT.. [2025-11-12T18:21:01+00:00]"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team fails to acknowledge or build upon the customer's previous communications, causing repetitive requests for the same information.",
+    "evidence": [
+      "Wow, Same automated message as the one below. Scroll down, exact same one and from same person [2025-11-06T18:53:10+00:00]",
+      "Arafat, I\u2019ve gone ahead and download and installed the version you supplied. I\u2019ll keep you posted in the next day or [2025-11-19T04:04:31+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant delays are evident between customer responses and support replies, with up to 450.3 hours to first human response.",
+    "evidence": [
+      "STILL WAITING FOR SUPPORT.. [2025-11-12T18:21:01+00:00]",
+      "Wow, Same automated message as the one below. Scroll down, exact same one and from same person [2025-11-06T18:53:10+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while the customer was still expressing dissatisfaction and waiting for proper support.",
+    "evidence": [
+      "STILL WAITING FOR SUPPORT.. [2025-11-12T18:21:01+00:00]",
+      "So I guess support on this ticket is going to go nowhere like my last one. [2025-11-06T15:49:34+00:00]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The support team employed generic responses instead of immediate escalation, failing to handle the high-priority nature of the ticket effectively.",
+    "evidence": [
+      "We apologize for the delay on this, I\u2019ve escalated it internally for faster resolution. [2025-11-17T14:17:45+00:00]",
+      "I\u2019ve gone ahead and download and installed the version you supplied. I\u2019ll keep you posted in the next day or [2025-11-19T04:04:31+00:00]"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses are repetitive and fail to address Ralph's specific issues adequately, indicating a lack of meaningful engagement.\",\n    \"evidence\": [\n      \"Once again\u2026 This is second time I requested support over the last 6 months due to multiple issues that are occurring. [2025-10-31T14:49:23+00:00]\",\n      \"Like I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative who was suppose to contact [2025-11-06T15:5103+00:00]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer repeatedly expresses frustration over the automated responses and feels trapped in an AI loop without access to human support.\",\n    \"evidence\": [\n      \"I\u2019ve been waiting for a support representative [2025-11-06T15:49:34+00:00]\",\n      \"STILL WAITING FOR SUPPORT.. [2025-11-12T18:21:01+00:00]\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team fails to acknowledge or build upon the customer's previous communications, causing repetitive requests for the same information.\",\n    \"evidence\": [\n      \"Wow, Same automated message as the one below. Scroll down, exact same one and from same person [2025-11-06T18:53:10+00:00]\",\n      \"Arafat, I\u2019ve gone ahead and download and installed the version you supplied. I\u2019ll keep you posted in the next day or [2025-11-19T04:04:31+00:00]\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant delays are evident between customer responses and support replies, with up to 450.3 hours to first human response.\",\n    \"evidence\": [\n      \"STILL WAITING FOR SUPPORT.. [2025-11-12T18:21:01+00:00]\",\n      \"Wow, Same automated message as the one below. Scroll down, exact same one and from same person [2025-11-06T18:53:10+00:00]\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while the customer was still expressing dissatisfaction and waiting for proper support.\",\n    \"evidence\": [\n      \"STILL WAITING FOR SUPPORT.. [2025-11-12T18:21:01+00:00]\",\n      \"So I guess support on this ticket is going to go nowhere like my last one. [2025-11-06T15:49:34+00:00]\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team employed generic responses instead of immediate escalation, failing to handle the high-priority nature of the ticket effectively.\",\n    \"evidence\": [\n      \"We apologize for the delay on this, I\u2019ve escalated it internally for faster resolution. [2025-11-17T14:17:45+00:00]\",\n      \"I\u2019ve gone ahead and download and installed the version you supplied. I\u2019ll keep you posted in the next day or [2025-11-19T04:04:31+00:00]\"\n    ]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60231851
+}

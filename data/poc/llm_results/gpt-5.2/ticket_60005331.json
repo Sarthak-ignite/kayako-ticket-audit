@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is clear evidence of low-quality AI output in the ticket creation/summary (content is essentially empty/placeholder), and repeated AI automation notes that it is \u201cskipping\u201d without adding value. While not necessarily customer-facing, this still represents an AI quality issue in the workflow.",
+    "evidence": [
+      "[2025-03-21T15:08:34+00:00] (AI) ATLAS: Ticket generated ... Issue description: * human * Yes,",
+      "[2025-03-24T12:22:15+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-03-25T13:00:41+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-03-26T10:58:34+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-03-26T14:32:04+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-03-27T14:52:54+00:00] (AI) ATLAS: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The record does not show the customer being trapped in an AI-only loop or repeatedly blocked from reaching a human. Human agents (Jan, Ciprian, Jozef) do engage in the ticket.",
+    "evidence": [
+      "[2025-03-23T10:29:42+00:00] (Employee) Jan Paraniak commented publicly",
+      "[2025-03-28T10:22:44+00:00] (Employee) Ciprian Nastase commented publicly"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer expresses frustration (\"i'm not sure what is it to review ?\"), the provided excerpts are truncated and do not clearly show support asking again for information that was already provided (e.g., the same logs/details). Without a clear repeated request, this cannot be confirmed.",
+    "evidence": [
+      "[2025-03-26T10:54:16+00:00] (Employee) Kris Cardona: \"Hi Hermes, i'm not sure what is it to review ? The hardware failed... i need to RMA it...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps in visible public progress and the customer explicitly calls out the delay and asks for updates/ETA, indicating responsiveness/timeliness issues during the RMA process.",
+    "evidence": [
+      "[2025-03-26T14:31:43+00:00] (Employee) Kris Cardona: \"I need an ETA for this to be resolved, this is not normal to process an RMA.\"",
+      "[2025-03-27T14:20:47+00:00] (Employee) Kris Cardona: \"Hi Hermes, any updates ? It's becoming a bit ridiculous at this stage\"",
+      "Timeline shows the issue spanning at least 2025-03-21 through 2025-03-28 with repeated follow-ups (e.g., 2025-03-23 to 2025-03-28)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is an internal suggestion that the ticket 'can be closed' because another party is handling the RMA, but the excerpt does not show the ticket actually being closed while the customer is still waiting for promised information. The public message also indicates handoff/coordination rather than abrupt closure.",
+    "evidence": [
+      "[2025-03-28T12:59:34+00:00] (Employee) Jozef Kacala (private): \"this can be closed... Apligo is dealing with RMA directly\"",
+      "[2025-03-28T13:15:08+00:00] (Employee) Ciprian Nastase (public): \"As far as I understand, you are already in contact with the GFI team for this DOA case...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket involves a DOA/failed hardware unit, but there is no explicit severity (P1/Sev1) designation or clear evidence that it was treated with generic troubleshooting instead of escalation. The notes show they are moving toward RMA handling/coordination.",
+    "evidence": [
+      "[2025-03-28T10:22:44+00:00] (Employee) Ciprian Nastase (public): \"...requesting an RMA for a hardware NG510...\"",
+      "[2025-03-28T10:13:57+00:00] (Employee) Ciprian Nastase (private): \"Let the RMA fun begin....\""
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60005331
+}

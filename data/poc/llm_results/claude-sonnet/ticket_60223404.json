@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses appear to be cut off mid-sentence, suggesting incomplete or broken responses that don't provide meaningful assistance.",
+    "evidence": [
+      "[2025-10-17T13:38:49+00:00] ATLAS: 'Thank you for providing clear details and a screenshot regarding the intermittent 500 Internal Server Error messages encountered w' - response cuts off abruptly",
+      "[2025-10-17T13:38:24+00:00] ATLAS: 'Intermittent 500 Internal Server Errors are being experienced. -' - incomplete analysis that trails off"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer is trapped in AI responses with no human intervention. The ticket shows only AI (ATLAS) responses after the initial customer contact, and was closed without any human agent interaction despite being high priority.",
+    "evidence": [
+      "[2025-10-17T13:37:19+00:00] ATLAS: 'Requesting more information' - AI requesting more info",
+      "[2025-10-17T13:37:28+00:00] ATLAS: 'Thank you for contacting us regarding the intermittent internal server error 500 issues' - AI automated response",
+      "Time to first human (hours): nan - No human agent ever engaged"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI does acknowledge the information provided by the customer about internal server errors and filtering, though its responses are incomplete.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occurred within a 2-minute window on the same day with max gap of 0.0 hours, indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "High-priority ticket was closed while still being handled by AI without any resolution provided or human engagement, despite customer reporting internal server errors.",
+    "evidence": [
+      "Status: closed, Priority: high, Was handed to BU: False",
+      "[2025-10-17T13:37:19+00:00] ATLAS: 'Requesting more information' - AI was still gathering information when ticket was closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority ticket involving internal server 500 errors (potential outage) was handled only by AI with no human escalation or engagement, violating proper incident management procedures.",
+    "evidence": [
+      "Priority: high, Time to first human (hours): nan",
+      "[2025-10-17T13:37:57+00:00] Tyron: 'Internal server errors being experienced when filtering' - clear service disruption",
+      "No evidence of immediate human escalation or investigation despite server errors"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses appear to be cut off mid-sentence, suggesting incomplete or broken responses that don't provide meaningful assistance.\",\n    \"evidence\": [\n      \"[2025-10-17T13:38:49+00:00] ATLAS: 'Thank you for providing clear details and a screenshot regarding the intermittent 500 Internal Server Error messages encountered w' - response cuts off abruptly\",\n      \"[2025-10-17T13:38:24+00:00] ATLAS: 'Intermittent 500 Internal Server Errors are being experienced. -' - incomplete analysis that trails off\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer is trapped in AI responses with no human intervention. The ticket shows only AI (ATLAS) responses after the initial customer contact, and was closed without any human agent interaction despite being high priority.\",\n    \"evidence\": [\n      \"[2025-10-17T13:37:19+00:00] ATLAS: 'Requesting more information' - AI requesting more info\",\n      \"[2025-10-17T13:37:28+00:00] ATLAS: 'Thank you for contacting us regarding the intermittent internal server error 500 issues' - AI automated response\",\n      \"Time to first human (hours): nan - No human agent ever engaged\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI does acknowledge the information provided by the customer about internal server errors and filtering, though its responses are incomplete.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occurred within a 2-minute window on the same day with max gap of 0.0 hours, indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority ticket was closed while still being handled by AI without any resolution provided or human engagement, despite customer reporting internal server errors.\",\n    \"evidence\": [\n      \"Status: closed, Priority: high, Was handed to BU: False\",\n      \"[2025-10-17T13:37:19+00:00] ATLAS: 'Requesting more information' - AI was still gathering information when ticket was closed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority ticket involving internal server 500 errors (potential outage) was handled only by AI with no human escalation or engagement, violating proper incident management procedures.\",\n    \"evidence\": [\n      \"Priority: high, Time to first human (hours): nan\",\n      \"[2025-10-17T13:37:57+00:00] Tyron: 'Internal server errors being experienced when filtering' - clear service disruption\",\n      \"No evidence of immediate human escalation or investigation despite server errors\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60223404
+}

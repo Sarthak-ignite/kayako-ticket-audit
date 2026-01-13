@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient interaction data to assess AI response quality. Only a ticket header and partial email forwarding visible.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of AI loop or repeated requests. Only one customer message visible in the timeline.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Insufficient interaction history to determine if context was ignored. The visible interaction is incomplete.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, indicating no significant delays. Time to first human is marked as NaN, which cannot be evaluated as a delay.",
+    "evidence": [
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is closed but no customer follow-up requests or promised information that was not delivered are visible in the provided interaction data.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is 'normal', not P1/SEV1, so this pattern is not applicable.",
+    "evidence": [
+      "Priority: normal"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction data to assess AI response quality. Only a ticket header and partial email forwarding visible.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of AI loop or repeated requests. Only one customer message visible in the timeline.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction history to determine if context was ignored. The visible interaction is incomplete.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, indicating no significant delays. Time to first human is marked as NaN, which cannot be evaluated as a delay.\",\n    \"evidence\": [\n      \"Max gap between responses (hours): 0.0\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is closed but no customer follow-up requests or promised information that was not delivered are visible in the provided interaction data.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is 'normal', not P1/SEV1, so this pattern is not applicable.\",\n    \"evidence\": [\n      \"Priority: normal\"\n    ]\n  }\n}\n```\n\n**Note**: The interaction data provided is incomplete - only a ticket header and the beginning of an email forward are visible. A complete analysis would require the full interaction history and all support responses.",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60264368
+}

@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear evidence that the AI responses provided wrong information or promises that weren't kept.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The provided interactions do not indicate that the customer was stuck in an AI loop or unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support representatives acknowledged the customer\u2019s input but did not ask for repeated information or ignore past interactions.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap of over 107 hours between some responses, which is concerning for timely support.",
+    "evidence": [
+      "[2025-11-26T14:33:53+00:00] - Don Kempt commented: 'Please go ahead and close this this case.'",
+      "[2025-11-22T00:11:53+00:00] - Harry Tasker commented: 'Please let us know if the issue is resolved on your end.'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed before receiving a confirmation from the customer that the issue was resolved.",
+    "evidence": [
+      "[2025-11-26T14:33:53+00:00] - Don Kempt commented: 'We have not received any further complaints. Please go ahead and close this this case.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There are no indications that generic troubleshooting was performed instead of immediate escalation for this high-priority ticket.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence that the AI responses provided wrong information or promises that weren't kept.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided interactions do not indicate that the customer was stuck in an AI loop or unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support representatives acknowledged the customer\u2019s input but did not ask for repeated information or ignore past interactions.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant gap of over 107 hours between some responses, which is concerning for timely support.\",\n    \"evidence\": [\"[2025-11-26T14:33:53+00:00] - Don Kempt commented: 'Please go ahead and close this this case.'\", \"[2025-11-22T00:11:53+00:00] - Harry Tasker commented: 'Please let us know if the issue is resolved on your end.'\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed before receiving a confirmation from the customer that the issue was resolved.\",\n    \"evidence\": [\"[2025-11-26T14:33:53+00:00] - Don Kempt commented: 'We have not received any further complaints. Please go ahead and close this this case.'\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no indications that generic troubleshooting was performed instead of immediate escalation for this high-priority ticket.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60247476
+}

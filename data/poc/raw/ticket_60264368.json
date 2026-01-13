@@ -1,0 +1,107 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_care",
+        "requester": {
+          "id": 60551815,
+          "uuid": "40bc2b1a-b43e-5ff1-a656-238c506f072c",
+          "full_name": "A, Anitha",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/40bc2b1a-b43e-5ff1-a656-238c506f072c?1766472963",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60033823,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 553433,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-12-16T12:09:06+00:00",
+          "last_active_at": "2025-12-23T06:56:03+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60551815",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@8b0a8f243f5569d19d8844064524fd4f9cfa42ae",
+          "password_updated_at": "2025-12-16T11:20:27+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-12-16T11:20:27+00:00",
+          "updated_at": "2025-12-23T06:56:03+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60551815"
+        },
+        "ticket_idt": 60264368
+      },
+      "interactions": [
+        [
+          "2025-12-16T12:03:53+00:00",
+          "Kayako - ticket id 60264368 // A, Anitha commented publicly:  \n\n++++\n\nFrom: A, Anitha <anitha.a@cgi.com> \nSent: Tuesday, December 16, 2025 6:56 AM\nTo: Bujold, Mark <mark.bujold@bell.ca>; Karabelska, Natalya <natalya.karabelska@bell.ca>; Harrison, Darrell <darrell.harrison@bell.ca>\nCc: Global CGI Bell IMC ALL <global.cgi.bell.imc.all@cgi.com>\nSubject: RE: SSL Certificate Validation Error for forum.virginplus.ca-INC000023495133\n\n\u00a0\n\nHello @Karabelska, Natalya & @Harrison, Darrell,\n\nPlease join the below bridge:\nJoin the meeting now [https://teams.microsoft.com/l/meetup-join/19%3ameeting_Y2QxYWY2MTktZDI1My00OWIzLTk2NDktNGVjYjI4MDc4OTc0%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%220feb6083-98d9-4909-87c6-c299a989186c%22%7d]\n\nIssue : SSL Certificate Validation Error for forum.virginplus.ca\nImpact: Users won\u2019t be able to login virgin plus community forum\n\nThank you & Regards,\n\nAnitha A| Incident Manager\n\nCGI Partner\nCyberpark, Electronics City Phase 1, Electronic City, Bengaluru, Karnataka 560100 \n\nM: +91 8095869138 | Email: anitha.a@cgi.com\n\nIMC Support: +1 833.440.1764 | global.cgi.bell.imc.all@cgi.com\n\n\u00a0\n\nCONFIDENTIALITY NOTICE: Proprietary/Confidential Information belonging to CGI Group Inc. and its affiliates may be contained in this message. If you are not a recipient indicated or intended in this message (or responsible for delivery of this message to such person), or you think for any reason that this message may have been addressed to you in error, you may not use or copy or deliver this message to anyone else. In such case, you should destroy this message and are asked to notify the sender by reply e-mail\n\n\u00a0\n\nFrom: Bujold, Mark <mark.bujold@bell.ca> \nSent: Tuesday, December 16, 2025 6:49 AM\nTo: Karabelska, Natalya <natalya.karabelska@bell.ca>; Harrison, Darrell <darrell.harrison@bell.ca>\nCc: A, Anitha <anitha.a@cgi.com>\nSubject: FW: SSL Certificate Validation Error for forum.virginplus.ca-INC000023495133\n\n\u00a0\n\n!\n\nCAUTION: EXTERNAL SENDER. Stop, assess, and verify. Do you know the sender? Were you expecting this email? If not, report it using the Report Phishing Button.\n\nATTENTION: EXP\u00c9DITEUR EXTERNE. Arr\u00eatez, \u00e9valuez et v\u00e9rifiez. Connaissez-vous l\u2019exp\u00e9diteur? Attendiez-vous ce courriel? Sinon, signalez-le avec le bouton d\u2019hame\u00e7onnage.\n\n\u00a0\n\nNatalya or Darrell should be able to help you.\n\n\u00a0\n\nGuys the Virgin forum is down\n\n\u00a0\n\n\u00a0\n\nimage\n\nMark Bujold\n\nSenior Manager, Customer Strategy & Operations\n\nT: 506-694-2705 \u00a0M: 506-333-7890\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\nFrom: A, Anitha <anitha.a@cgi.com> \nSent: December-16-25 7:47 AM\nTo: Khoros Support <support@khoros.com>; kim.spraggins@khoros.com; Bujold, Mark <mark.bujold@bell.ca>\nCc: global.cgi.bell.imc.all <global.cgi.bell.imc.all@cgi.com>\nSubject: [EXT]RE: SSL Certificate Validation Error for forum.virginplus.ca-INC000023495133\n\n\u00a0\n\n++++\n\n\u00a0\n\nFrom: A, Anitha <anitha.a@cgi.com> \nSent: Tuesday, December 16, 2025 6:35 AM\nTo: Khoros Support <support@khoros.com>; kim.spraggins@khoros.com\nCc: Global CGI Bell IMC ALL <global.cgi.bell.imc.all@cgi.com>\nSubject: SSL Certificate Validation Error for forum.virginplus.ca-INC000023495133\n\n\u00a0\n\nHello Team,\n\nPlease join the below bridge :\n\nJoin the meeting now [https://teams.microsoft.com/l/meetup-join/19%3ameeting_Y2QxYWY2MTktZDI1My00OWIzLTk2NDktNGVjYjI4MDc4OTc0%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%220feb6083-98d9-4909-87c6-c299a989186c%22%7d] \n\nThank you & Regards,\n\nAnitha A| Incident Manager\n\nCGI Partner\nCyberpark, Electronics City Phase 1, Electronic City, Bengaluru, Karnataka 560100 \n\nM: +91 8095869138 | Email: anitha.a@cgi.com\n\nIMC Support: +1 833.440.1764 | global.cgi.bell.imc.all@cgi.com\n\n\u00a0\n\nCONFIDENTIALITY NOTICE: Proprietary/Confidential Information belonging to CGI Group Inc. and its affiliates may be contained in this message. If you are not a recipient indicated or intended in this message (or responsible for delivery of this message to such person), or you think for any reason that this message may have been addressed to you in error, you may not use or copy or deliver this message to anyone else. In such case, you should destroy this message and are asked to notify the sender by reply e-mail\n\n\u00a0\n\n\u00a0\n\n-------------------------\n\nExternal Email: Please use caution when opening links and attachments / Courriel externe: Soyez prudent avec les liens et documents joints \n "
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

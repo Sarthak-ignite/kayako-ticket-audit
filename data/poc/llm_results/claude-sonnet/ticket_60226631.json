@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI interactions are primarily administrative (status updates, JIRA sync notifications). No evidence of AI providing wrong information or making unfulfilled promises to the customer.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer reached a human agent (Deepanshu Dewan) within 12 minutes of reporting the issue. No evidence of customer being stuck in AI loop or unable to reach human support.",
+    "evidence": [
+      "[2025-10-22T10:26:48+00:00] Deepanshu Dewan: Dear Manju, Thank you for calling Khoros Care Support. As discussed, your ticket has been assigned to an agent."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Customer explicitly mentioned encountering recurring issues and requested review of previously raised tickets, but the support team did not reference or address the pattern of recurrence in their responses.",
+    "evidence": [
+      "[2025-10-23T07:56:23+00:00] Jayashree Shetty: We have been encountering this issue repeatedly. Please review the history of previously raised tickets for re"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a 9.4-hour gap between responses, specifically between the resolution announcement on Oct 22 at 12:49 and the customer's follow-up on Oct 23 at 07:56, with no response until 08:36. This matches the max gap reported in ticket metadata.",
+    "evidence": [
+      "[2025-10-22T12:49:34+00:00] Chintan Parekh: We're pleased to inform you that the recent service disruption affecting the Khoros Care platform has been resolved.",
+      "[2025-10-23T07:56:23+00:00] Jayashree Shetty: We have been encountering this issue repeatedly.",
+      "[2025-10-23T08:36:12+00:00] Balaji Jayaraman: The disruption was triggered by background data processing placing unexpected load on our search infrastructure"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket was closed after the issue was resolved and customer was informed. No evidence of customer waiting for promised information when ticket was closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This urgent priority ticket was handled appropriately - customer reached human support quickly (0.2 hours), issue was escalated to backend team via JIRA, and Elasticsearch service was restarted to resolve the outage. No generic troubleshooting was attempted.",
+    "evidence": [
+      "[2025-10-22T10:26:48+00:00] Deepanshu Dewan: As discussed, your ticket has been assigned to an agent.",
+      "[2025-10-22T11:39:07.819+0000] Muhammad Waqar: Elasticsearch service was restarted on the following nodes"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI interactions are primarily administrative (status updates, JIRA sync notifications). No evidence of AI providing wrong information or making unfulfilled promises to the customer.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer reached a human agent (Deepanshu Dewan) within 12 minutes of reporting the issue. No evidence of customer being stuck in AI loop or unable to reach human support.\",\n    \"evidence\": [\"[2025-10-22T10:26:48+00:00] Deepanshu Dewan: Dear Manju, Thank you for calling Khoros Care Support. As discussed, your ticket has been assigned to an agent.\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer explicitly mentioned encountering recurring issues and requested review of previously raised tickets, but the support team did not reference or address the pattern of recurrence in their responses.\",\n    \"evidence\": [\"[2025-10-23T07:56:23+00:00] Jayashree Shetty: We have been encountering this issue repeatedly. Please review the history of previously raised tickets for re\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a 9.4-hour gap between responses, specifically between the resolution announcement on Oct 22 at 12:49 and the customer's follow-up on Oct 23 at 07:56, with no response until 08:36. This matches the max gap reported in ticket metadata.\",\n    \"evidence\": [\"[2025-10-22T12:49:34+00:00] Chintan Parekh: We're pleased to inform you that the recent service disruption affecting the Khoros Care platform has been resolved.\", \"[2025-10-23T07:56:23+00:00] Jayashree Shetty: We have been encountering this issue repeatedly.\", \"[2025-10-23T08:36:12+00:00] Balaji Jayaraman: The disruption was triggered by background data processing placing unexpected load on our search infrastructure\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket was closed after the issue was resolved and customer was informed. No evidence of customer waiting for promised information when ticket was closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This urgent priority ticket was handled appropriately - customer reached human support quickly (0.2 hours), issue was escalated to backend team via JIRA, and Elasticsearch service was restarted to resolve the outage. No generic troubleshooting was attempted.\",\n    \"evidence\": [\"[2025-10-22T10:26:48+00:00] Deepanshu Dewan: As discussed, your ticket has been assigned to an agent.\", \"[2025-10-22T11:39:07.819+0000] Muhammad Waqar: Elasticsearch service was restarted on the following nodes\"]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60226631
+}

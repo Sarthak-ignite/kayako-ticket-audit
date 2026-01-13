@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses were generic, initially framed the issue as common browser/cache/extension problems without engaging the specifics (real-time chat not updating), and then pivoted to incorrect product/context (Khoros Community notifications articles) even though the issue was in Khoros Care chat. The customer also explicitly complained that AI replies were generic and requested a human.",
+    "evidence": [
+      "Customer escalation note: \"Platform is not working. AI responses are generic. We need real human assistance now.\"",
+      "ATLAS (first reply) provides broad template steps: \"This behavior is commonly associated with browser caching issues, network connectivity interruptions, or conflicts with browser extensions.\"",
+      "ATLAS (second reply) appears to mis-scope product: \"this suggests the problem may be related to real-time notification or chat update mechanisms within the Khoros Community platform\" and links to \"Preferred Browsers for Khoros Communities\" / notification articles",
+      "Internal customer comment highlights mismatch: \"this is not a Community issue, is it Khoros Care\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although the customer expressed frustration with generic AI guidance, the ticket does not show a prolonged AI-only loop preventing access to a human. After the escalation, a human acknowledged within minutes and then troubleshooting/escalation continued with human agents.",
+    "evidence": [
+      "Escalation logged at 2025-08-08T15:55:32+00:00; human public acknowledgment followed at 2025-08-08T15:59:10+00:00: \"We have received your escalation and are currently working on it.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "After the customer stated they had already performed the suggested steps (cache clear, incognito, multiple browsers, no console errors), ATLAS responded with more generic guidance and unrelated Community notification documentation instead of adjusting to the new information or requesting actionable Care-specific diagnostics (e.g., convo IDs, HAR, websocket checks) at that point.",
+    "evidence": [
+      "Customer: \"We have tried all the below steps and issue is persistent. Console also don\u2019t give any specific error message. We have tried multiple browsers and cleared cache, tried incognito etc\"",
+      "ATLAS response continues with generic/KB guidance and mis-scoped context: \"Khoros Community is designed to work best...\" and provides notification testing links rather than moving to targeted Care/chat diagnostics"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are delays and multiple customer follow-ups, but the strict threshold described (3+ calendar days without response) is not clearly met based on the transcript provided. The longest visible public gap is roughly ~2 days between Monica\u2019s follow-up and the next substantive public update.",
+    "evidence": [
+      "Customer follow-up: 2025-08-09T00:38:26+00:00 \"Any news?\"; next substantive public guidance appears 2025-08-11T04:15:40+00:00"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was not shown as closed while the customer was waiting; instead, support provided next diagnostic steps and explicitly stated the ticket would remain open for a week. While the linked JIRA was closed, the support case itself was not clearly closed without resolution in the provided interactions.",
+    "evidence": [
+      "Rishi (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was reported as broadly impacting engineers and later confirmed to affect customers (core chat functionality requiring refresh). Initial handling was standard browser troubleshooting and mis-scoped to Community, and the case was placed on hold for an extremely long period (9999 hours) even after customer escalation and statements that chat service was effectively down. Customers explicitly asked for P1 confirmation and a phone call, indicating expectation of urgent incident handling.",
+    "evidence": [
+      "Monica (public): \"please escalate, this issue is affecting all our customers trying to create a chat.\"",
+      "Warren (private): \"Our chat service has been down for 4 hours.\" and \"Can we get confirmation this is classified as an escalated P1?\"",
+      "System action after escalation: \"Placing on hold for 9999 hour(s)\" (2025-08-08T17:26:53+00:00) and again \"Placing on hold for 9999 hour(s)\" (2025-08-09T09:08:29+00:00)",
+      "Severity indicator in escalation record: \"The severity is: core_functionality_defect\"",
+      "Initial response pattern was generic troubleshooting rather than immediate incident-style validation when scope broadened to customers: \"Clear Browser Cache and Cookies\" / \"Disable Browser Extensions\" / \"Check Network Connectivity\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60164071
+}

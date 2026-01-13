@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no indications that AI responses were generic filler or provided wrong information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer struggled to get past the AI system and repeated the need for further assistance multiple times without receiving help.",
+    "evidence": [
+      "[2025-11-29T21:03:39+00:00] (Customer) Ashraaz Nadeem Yusuf: Hi. Iam the Manager IT from Rooster Poultry. Our license expired. Please issue us a temporary extension. Our services are down.",
+      "[2025-11-29T21:02:32+00:00] (Customer) Ashraaz Nadeem Yusuf: Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support failed to acknowledge and respond appropriately to the urgency and specifics of the customer\u2019s requests regarding the expired license and total outage.",
+    "evidence": [
+      "[2025-11-29T21:03:39+00:00] (Customer) Ashraaz Nadeem Yusuf: Hi. Iam the Manager IT from Rooster Poultry. Our license expired. Please issue us a temporary extension. Our services are down.",
+      "[2025-11-29T23:34:53+00:00] (Customer) Ashraaz Nadeem Yusuf: We are facing total outage. Your assistance will be highly appreciated."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay (over 16 hours) before a human response was provided, which is unacceptable for an urgent ticket.",
+    "evidence": [
+      "[2025-11-30T13:19:12+00:00] (Employee) Mike Kebede: Dear Ashraaz,...",
+      "[2025-11-29T23:34:53+00:00] (Customer) Ashraaz Nadeem Yusuf: We are facing total outage. Your assistance will be highly appreciated."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was not closed while the customer was still waiting for promised information; it was merely closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The urgent outage situation was not escalated appropriately and generic responses may have been provided instead.",
+    "evidence": [
+      "[2025-11-29T21:02:32+00:00] (Customer) Ashraaz Nadeem Yusuf: Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no indications that AI responses were generic filler or provided wrong information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer struggled to get past the AI system and repeated the need for further assistance multiple times without receiving help.\",\n    \"evidence\": [\"[2025-11-29T21:03:39+00:00] (Customer) Ashraaz Nadeem Yusuf: Hi. Iam the Manager IT from Rooster Poultry. Our license expired. Please issue us a temporary extension. Our services are down.\", \"[2025-11-29T21:02:32+00:00] (Customer) Ashraaz Nadeem Yusuf: Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support failed to acknowledge and respond appropriately to the urgency and specifics of the customer\u2019s requests regarding the expired license and total outage.\",\n    \"evidence\": [\"[2025-11-29T21:03:39+00:00] (Customer) Ashraaz Nadeem Yusuf: Hi. Iam the Manager IT from Rooster Poultry. Our license expired. Please issue us a temporary extension. Our services are down.\", \"[2025-11-29T23:34:53+00:00] (Customer) Ashraaz Nadeem Yusuf: We are facing total outage. Your assistance will be highly appreciated.\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay (over 16 hours) before a human response was provided, which is unacceptable for an urgent ticket.\",\n    \"evidence\": [\"[2025-11-30T13:19:12+00:00] (Employee) Mike Kebede: Dear Ashraaz,...\", \"[2025-11-29T23:34:53+00:00] (Customer) Ashraaz Nadeem Yusuf: We are facing total outage. Your assistance will be highly appreciated.\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was not closed while the customer was still waiting for promised information; it was merely closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The urgent outage situation was not escalated appropriately and generic responses may have been provided instead.\",\n    \"evidence\": [\"[2025-11-29T21:02:32+00:00] (Customer) Ashraaz Nadeem Yusuf: Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\"]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60252864
+}

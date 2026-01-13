@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI provided an incorrect message stating the ticket was placed on hold for 9999 hours, which is nonsensical.",
+    "evidence": [
+      "[2025-12-17T09:02:25+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-12-16T13:14:49+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-12-16T01:54:05+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-12-15T13:22:46+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer did not appear to be stuck in an AI loop; there were interactions with human agents throughout the ticket.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team ignored the customer's clarification regarding the version downgrade and propagated incorrect assumptions about the situation.",
+    "evidence": [
+      "[2025-12-16T04:15:39+00:00] (Customer) Santosh Shinde: Who said we have downgraded to version 7.5.7 ? No, we have not.",
+      "[2025-12-16T13:10:50+00:00] (Employee) Udai Narayan Singh: Hi Jozef, We already downgraded today and appliance is working..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay of over 174 hours between responses, which indicates a lack of timely support.",
+    "evidence": [
+      "Time to first human: 30.4 hours",
+      "Max gap between responses: 174.0 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was marked as closed, but it was not clear if the closure occurred while the customer was still awaiting information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the ticket was marked as urgent, there is no evidence of generic troubleshooting advice given instead of appropriate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI provided an incorrect message stating the ticket was placed on hold for 9999 hours, which is nonsensical.\",\n    \"evidence\": [\"[2025-12-17T09:02:25+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\", \"[2025-12-16T13:14:49+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\", \"[2025-12-16T01:54:05+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\", \"[2025-12-15T13:22:46+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer did not appear to be stuck in an AI loop; there were interactions with human agents throughout the ticket.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team ignored the customer's clarification regarding the version downgrade and propagated incorrect assumptions about the situation.\",\n    \"evidence\": [\"[2025-12-16T04:15:39+00:00] (Customer) Santosh Shinde: Who said we have downgraded to version 7.5.7 ? No, we have not.\", \"[2025-12-16T13:10:50+00:00] (Employee) Udai Narayan Singh: Hi Jozef, We already downgraded today and appliance is working...\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay of over 174 hours between responses, which indicates a lack of timely support.\",\n    \"evidence\": [\"Time to first human: 30.4 hours\", \"Max gap between responses: 174.0 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was marked as closed, but it was not clear if the closure occurred while the customer was still awaiting information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket was marked as urgent, there is no evidence of generic troubleshooting advice given instead of appropriate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60232130
+}

@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No customer-facing AI-generated response is shown to be broken, misleading, or repeatedly unhelpful. The only clear support reply is a human agent response that explains limitations and provides next steps.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was stuck in an AI loop or unable to reach a human; the ticket eventually receives a human public reply. The customer does not request a human agent or complain about AI specifically.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support references the existing situation (trial license piracy warning and prior guidance) and does not ask the customer to re-provide the same information. The public response acknowledges prior direction and provides a concrete alternative step (new trial with different email).",
+    "evidence": [
+      "\u201cI understand that a prospect customer is facing issues with the trial license they were issued:  10512-Z56RC-71G7M.\u201d",
+      "\u201cAs previously indicated, the support team is unable to help with obtaining new licenses or adjusting any other license\u2026\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long gap between the customer\u2019s follow-up and the next public staff response, and the agent explicitly apologizes for the delay. CSV timing fields also indicate very slow initial response and a long overall resolution time.",
+    "evidence": [
+      "Customer (2025-11-11): \u201cI have not received a licence or any helpful feedback. Are you actually working on this?\u201d",
+      "Agent (2025-11-24): \u201cPlease accept my sincere apologies for the delay in getting back to you; since the ticket was raised via email follow-up, it attained a low priority.\u201d",
+      "CSV: initialResponseTime=85320",
+      "CSV: resolutionTime=1466833"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is closed in the CSV, there is no customer-facing closure notice in the conversation and no post-closure customer message indicating they were still waiting or that the issue remained unresolved at the moment of closure.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-27 12:35:32"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No P1/SEV1 indicators (outage/production down/critical impact) appear in the customer messages, and the issue described is a trial license warning rather than a service outage.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60238295
+}

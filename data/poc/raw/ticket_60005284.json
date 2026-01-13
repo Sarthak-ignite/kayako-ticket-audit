@@ -1,0 +1,156 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_control",
+        "requester": {
+          "id": 60323480,
+          "uuid": "ae18a672-32cf-52b2-9b9f-9e4f843c6a11",
+          "full_name": "Danijel Knezic",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/ae18a672-32cf-52b2-9b9f-9e4f843c6a11?1743171734",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 325034,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-03-27T08:54:41+00:00",
+          "last_active_at": "2025-03-28T14:22:14+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60323480",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@4dd86f8740e733ab626deff37f951dd77b96100c",
+          "password_updated_at": "2025-03-21T13:09:39+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-03-21T13:09:39+00:00",
+          "updated_at": "2025-03-28T14:22:14+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60323480"
+        },
+        "ticket_idt": 60005284
+      },
+      "interactions": [
+        [
+          "2025-03-28T14:26:04+00:00",
+          "Kayako - ticket id 60005284 // Ciprian Nastase commented publicly: Dear Danijel,\n\u00a0\nPlease accept my sincere apologies for the delay in handling this! The ticket was incorrectly prioritized, which led to this issue. We have made the required adjustments to prevent this from happening.\n\nAs far as I can see, your reseller has submitted an RMA request for this same appliance, and that is already being handled. In light of this, I will proceed to close this ticket.\n\u00a0\nShould you have further questions related to GFI - Kerio Control, please do not hesitate to submit an additional support request and we will be happy to assist!\n\u00a0\nPlease take a moment to tell us about your support experience; you'll be invited to our short survey in a separate email.\n\u00a0\nBest regards,\nCiprian Nastase\nGFI - Kerio Control Support Team"
+        ],
+        [
+          "2025-03-28T14:22:14+00:00",
+          "Kayako - ticket id 60005284 // Ciprian Nastase commented privately:  This is the same S/N as in https://central-supportdesk.kayako.com/agent/conversations/60005331\u00a0- closing "
+        ],
+        [
+          "2025-03-27T08:51:48+00:00",
+          "Kayako - ticket id 60005284 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-03-27T08:25:39+00:00",
+          "Kayako - ticket id 60005284 // Danijel Knezic commented privately: this is so unproffesional from the GFI side"
+        ],
+        [
+          "2025-03-26T12:07:29+00:00",
+          "Kayako - ticket id 60005284 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-03-26T12:07:11+00:00",
+          "Kayako - ticket id 60005284 // Danijel Knezic commented privately: any updates"
+        ],
+        [
+          "2025-03-25T11:34:33+00:00",
+          "Kayako - ticket id 60005284 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-03-25T11:22:03+00:00",
+          "Kayako - ticket id 60005284 // Danijel Knezic commented privately: Hi Hermes,\n\nThis is high priority to us. We are vessel and our firewall is dead. I cnat wait such long time we need solution asap. How we can get new device."
+        ],
+        [
+          "2025-03-22T11:24:25+00:00",
+          "Kayako - ticket id 60005284 // ATLAS commented privately: Action: Send to l1"
+        ],
+        [
+          "2025-03-22T11:23:44+00:00",
+          "Kayako - ticket id 60005284 // Danijel Knezic commented privately: Please anyone assist"
+        ],
+        [
+          "2025-03-21T14:14:26+00:00",
+          "Kayako - ticket id 60005284 // Xavier A Villarroel commented privately: [ Analysis requested by PhoneCall (VoiceBot) ]"
+        ],
+        [
+          "2025-03-21T14:08:30+00:00",
+          "Kayako - ticket id 60005284 // Danijel Knezic commented privately: Kerio NG510 is fautly and not stqrting. You have photos attached. I need urgent creation of RMA so I can get new one. Please let me know what I need to send you more."
+        ],
+        [
+          "2025-03-21T13:47:57+00:00",
+          "Kayako - ticket id 60005284 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Danijel Knezic ! \ud83d\udc4b\n\nThis is the Kerio Control ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nDanijel Knezic:\n\n undefined \nChat Support:\n\n Please select an option below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of Kerio Control ATLAS Support Chat [https://support.keriocontrol.gfi.com/article/117054]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nDanijel Knezic:\n\n How to start RMA for faulty device \nChat Support:\n\n I have this license key on record:\n- License: 20339-1IJNI-357VC\n- Expiry date: 2026-01-09.\n\nJust to make sure we're on the same page - is this the same system you're reaching out about today?\n\n\ud83d\udca1It's important to have to correct license file, as it could influence the resolution. \nDanijel Knezic:\n\n Yes, 20339-1IJNI-357VC is correct \nChat Support:\n\n Thank you for confirming the license key. I understand you're looking to start the RMA (Return Merchandise Authorization) process for a faulty Kerio Control device. I'll guide you through the steps to initiate this process.\n\nFirst, let's ensure we've completed the necessary prerequisites:\n\n1. Troubleshooting:\n- Have you performed a factory reset on the device?\n- If the factory reset didn't resolve the issue, did you attempt a complete system recovery using kerio-control-rescue?\n- For guidance on these steps, please refer to Restoring the Kerio Control Box NG series default configuration.\n\n2. Observation:\nAfter performing these steps, it's important to observe the box's behavior for a couple of hours to confirm that it's still not functioning correctly.\n\n3. Diagnostic Logs:\nIf possible, gather diagnostic logs from the device using the Diagnostic tool for Kerio Control Box NG series.\n\nAssuming you've completed these steps and the device is still faulty, here's what you need to do to start the RMA process:\n\n1. Prepare a detailed description of the symptoms and issues you're experiencing with the hardware.\n\n2. Record a video showing the physical problem or unexpected behavior. This is a required step for the RMA process.\n\n3. Gather the following information:\n- Serial Number (located on the back of the unit)\n- Company name\n- Contact name\n- Contact phone number\n- Contact email address\n- Shipping Address (including Address, Zip Code, City, and Country)\n\n4. Compile the diagnostic logs (if generated) into a zip file.\n\nOnce you have all this information ready, you'll need to provide it to Kerio Control Support. To do this, please ask for a support agent in this chat. They will be able to process your RMA request and guide you through the next steps.\n\nRemember, after you receive the replacement box, you'll need to send the faulty device back to the address provided by the support team.\n\nIs there anything else you need clarification on regarding this process?\n\n-------------------------\n\nFor more details check:\n\ud83d\udc49 Requesting RMA for hardware box [https://support.keriocontrol.gfi.com/article/120394] \nChat Support:\n\n Take all the time you need to read through the provided resources \u261d\ufe0f\nI'll stay here in case you need anything else \ud83d\ude00\n\n-------------------------\n\nWas this helpful? \nDanijel Knezic:\n\n LNKR24070037 \nChat Support:\n\n You did not use the provided buttons to let me know, so I assume that my previous answer was helpful but you have a follow-up question.\n\ud83e\udde0 Working on an answer for that ... \nChat Support:\n\n Thank you for providing the serial number LNKR24070037. I understand you're looking to start the RMA (Return Merchandise Authorization) process for your Kerio Control device. Let me guide you through the next steps.\n\nTo initiate the RMA process, we'll need to gather some additional information:\n\n1. Detailed description: Please provide a detailed description of the symptoms and issues you're experiencing with the hardware.\n\n2. Video evidence: It is required to record a video showing the physical problem or unexpected behavior of the device.\n\n3. Additional information needed:\n- Company name\n- Contact name\n- Contact phone number\n- Contact email address\n- Shipping Address (including Address, Zip Code, City, and Country)\n\n4. Diagnostic logs: If possible, gather diagnostic logs from the device using the Diagnostic tool for Kerio Control Box NG series. These should be compiled into a zip file.\n\nBefore proceeding with the RMA request, please ensure you've completed these prerequisite steps:\n\n- Performed a factory reset on the device\n- If the issue persisted, attempted a complete system recovery using kerio-control-rescue\n- Observed the box's behavior for a couple of hours after these steps to confirm it's still not functioning correctly\n\nOnce you have all this information ready, you'll need to provide it to Kerio Control Support to process your RMA request. To do this, please ask for a support agent in this chat. They will be able to guide you through the next steps and process your RMA request.\n\nIs there any part of this process you need clarification on? I'm here to help ensure you have all the information you need to proceed with your RMA request.\n\n-------------------------\n\nFor more details check:\n\ud83d\udc49 Requesting RMA for hardware box [https://support.keriocontrol.gfi.com/article/120394] \nChat Support:\n\n Take all the time you need to read through the provided resources \u261d\ufe0f\nI'll stay here in case you need anything else \ud83d\ude00\n\n-------------------------\n\nWas this helpful? \nDanijel Knezic:\n\n HOW TO START RMA \nChat Support:\n\n You did not use the provided buttons to let me know, so I assume that my previous answer was helpful but you have a follow-up question.\n\ud83e\udde0 Working on an answer for that ... \nChat Support:\n\n I understand you're looking for clear instructions on how to start the RMA (Return Merchandise Authorization) process for your Kerio Control device. I'll provide you with a step-by-step guide to initiate this process.\n\nTo start the RMA process:\n\n1. Perform preliminary troubleshooting:\n- Conduct a factory reset of the device.\n- If issues persist, execute a complete system recovery using kerio-control-rescue.\n- Observe the device's behavior for a couple of hours to confirm it's still not functioning correctly.\n\n2. Gather necessary information:\n- Your license key (if applicable)\n- Serial Number (located on the back of the device)\n- Company name\n- Contact name, phone number, and email address\n- Shipping Address (including Address, Zip Code, City, and Country)\n\n3. Document the issue:\n- Provide a detailed description of the symptoms and hardware issues you're experiencing.\n- Important: Record a video showing the physical problem or unexpected behavior. This is a required step for the RMA process.\n\n4. Collect diagnostic logs (if applicable):\n- Use the Diagnostic tool for Kerio Control Box NG series to gather logs.\n- Compress these logs into a zip file.\n\n5. Contact Kerio Control Support:\n- To proceed with your RMA request, please ask for a support agent in this chat.\n- Provide all the gathered information and the compressed diagnostic logs to the support agent.\n\n6. Wait for processing:\n- The support agent will process your RMA request and provide further instructions.\n\n7. Return the faulty device:\n- Once you receive the replacement box, send the faulty device back to the address provided by the support team.\n\nRemember, to be eligible for an RMA:\n- You must have physical (onsite) access to the Kerio Control hardware box.\n- The device must have a valid (not expired) warranty. If expired, contact GFI Sales.\n- Note that legacy hardware boxes (1120, 3130, etc.) are not eligible for RMA as they are End of Life (EOL).\n\nTo proceed with your RMA request, please ask for a support agent in this chat. They will guide you through the next steps and process your request.\n\nIs there anything else you need clarification on regarding the RMA process?\n\n-------------------------\n\nFor more details check:\n\ud83d\udc49 Requesting RMA for hardware box [https://support.keriocontrol.gfi.com/article/120394] \nChat Support:\n\n Take all the time you need to read through the provided resources \u261d\ufe0f\nI'll stay here in case you need anything else \ud83d\ude00\n\n-------------------------\n\nWas this helpful? \nDanijel Knezic:\n\n I NEED SUPPORT AGENT FOR RMA \nChat Support:\n\n Of course! I do understand some things are better handled by my human colleagues.\n\nLet me get some further help for you! \nDanijel Knezic:\n\n \ud83d\udcac Chat with live agent \nChat Support:\n\n Our agents are currently busy assisting other customers at the time, so we'll proceed with ticket creation \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nDanijel Knezic:\n\n i want to wait \nChat Support:\n\n I'm creating a ticket for you with the information you've provided, allow me a few moments while I work on this \u23f3 \nChat Support:\n\n I've automatically set the ticket subject to: RMA request for faulty device LNKR24070037\n\nDoes that work for you?\n- If it does, simply say YES or use the below button to confirm \ud83d\udc47\n- If not, please directly type in the ticket subject of your choosing below \ud83d\ude09 "
+        ],
+        [
+          "2025-03-21T13:47:29+00:00",
+          "Kayako - ticket id 60005284 // ATLAS commented privately: --- Ticket generated by Kerio Control AI chat on behalf of Danijel Knezic ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * How to start RMA for faulty device<br>\n  * Yes, 20339-1IJNI-357VC is correct<br>\n  * LNKR24070037<br>\n  * HOW TO START RMA<br>\n  * I NEED SUPPORT AGENT FOR RMA<br>\n  * i want to wait<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 14,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

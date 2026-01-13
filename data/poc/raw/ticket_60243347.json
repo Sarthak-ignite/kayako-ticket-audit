@@ -1,0 +1,107 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_classic",
+        "requester": {
+          "id": 60519608,
+          "uuid": "a9edbb43-b712-59f1-be00-d3e77e41ac07",
+          "full_name": "Kritika Kritika",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/a9edbb43-b712-59f1-be00-d3e77e41ac07?1765828182",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60066483,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 521139,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-11-17T07:01:53+00:00",
+          "last_active_at": "2025-12-15T19:49:42+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60519608",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@3feb5da0441f71f7ec0190a34bb5d6652c44f55a",
+          "password_updated_at": "2025-07-13T19:59:10+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-07-13T19:59:10+00:00",
+          "updated_at": "2025-12-15T19:49:42+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60519608"
+        },
+        "ticket_idt": 60243347
+      },
+      "interactions": [
+        [
+          "2025-11-14T14:07:25+00:00",
+          "Kayako - ticket id 60243347 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant ---</b><br>Hi, Kritika Kritika ! \ud83d\udc4b<br><br>This is the <strong>Khoros Classic</strong> AI Support Agent \ud83e\udd16.<br><br><hr><br><div style=\"line-height: 1.3; margin-top: 8px; font-size: 0.9rem; color: #666666;\"><b>Please note:</b> The AI Support Agent is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" target=\"_blank\">these terms and conditions</a>. <br>If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.</div><br/><br><br><b>--- AI Assistant ---</b><br>Walk me through what's happening or select from the below frequent requests. <br><br>Don't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you. \ud83d\udcaa <br><br>\ud83d\udca1Tip: Aim to give us a bit more context than just a quick \"It's not working.\" The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f<br><br>\ud83d\udca1<a href=\"https://khoros-classic.kayako.com/article/128087 \" target=\"_blank\">Getting the most out of Khoros Classic AI Support Agent</a><br><br>If I'm unable to help you, I can patch you through to a Live agent, along with the information you supply to me during this session, so that our team has something to work with from the get-go.<br/><br><br><b>--- Customer (Kritika Kritika) ---</b><br>API to fetch groups of which loggedin user is member of<br/><br><br><b>--- AI Assistant ---</b><br>If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa<br><br>\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.<br><br>\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.<br><br>\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it: <br>\ud83d\udc49 <a href=\"https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI0OTA5N2ExMS01YzJmLTQ2ZmMtOWQ5My1lNGE2ODU4YjgxNzYiLCJzZXNzaW9uX3VpZCI6IjQ5MDk3YTExLTVjMmYtNDZmYy05ZDkzLWU0YTY4NThiODE3NiIsImVtYWlsIjoia2tyaXRpa2FAeGFjdGx5Y29ycC5jb20iLCJjdXN0b21fcGFyc2VyIjp7fSwiY2FsbGJhY2siOnsiY2FsbGJhY2tfdXJsIjpudWxsLCJjYWxsYmFja19lbWFpbCI6ImNpcHJpYW4ubmFzdGFzZUB0cmlsb2d5LmNvbSJ9LCJwcm9kdWN0X3RhZyI6Imtob3Jvc19jbGFzc2ljIiwicXVlcnkiOiIiLCJleHAiOjE3NjMxMzY0Nzl9.P7MmLLbAXkC_Qbs_73Wc1fs-J3OFdNKJy_Ze7B2PFC0  \" target=\"_blank\">Secure File Upload</a><br><br>You should see the following:<br>- User: kkritika@xactlycorp.com <br>- Session ID: 49097a11-5c2f-46fc-9d93-e4a6858b8176<br/><br><br><b>--- Customer (Kritika Kritika) ---</b><br><em>Button selection:</em> [\ud83d\udd19 Continue without file upload ]<br/><br><br><b>--- AI Assistant ---</b><br>Thanks for providing those details! Let me help you find the right API endpoint to fetch the groups that a logged-in user is a member of.<br><br>Based on the information available, I can see that Khoros Classic has group membership functionality, but I don't have specific documentation about the exact API endpoint for retrieving a logged-in user's group memberships in the search results.<br><br>However, I can point you in the right direction. Typically, you would use the <strong>Community API v2</strong> with LiQL (Lithium Query Language) to query user group memberships. The general approach would be something like:<br><br>```<br>SELECT * FROM memberships WHERE user.id = '[USER_ID]'<br>```<br><br>Or you might query the groups collection with filters for the specific user.<br><br>To give you the most accurate API endpoint and syntax for your specific use case, could you tell me a bit more about what you're trying to accomplish?<br><br>- Are you looking to retrieve this for the currently authenticated user via their session?<br>- Do you need specific group details (like group names, IDs, roles within those groups)?<br>- Are you working with Community API v1 or v2?<br><br>This will help me provide you with more targeted guidance or connect you with someone who can give you the exact API documentation you need.<br/>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI produced templated/helpdesk-style responses but did not resolve the core issue (broken/404 links and licensing access) and the automated process explicitly failed (\u201candon cord\u201d), indicating the AI interaction did not successfully help the customer.",
+    "evidence": [
+      "[2025-10-10T16:46:45+00:00] (AI) Cu Chulainn AI Manager: \"Thank you for drawing our attention to the broken links and the confusion surrounding the various portals. Her\"",
+      "[2025-10-10T18:03:35+00:00] (AI) Cu Chulainn AI Manager: \"===== Operation Summary ===== The process has failed and andon cord has been pulled for the following reason:\"",
+      "[2025-10-10T06:16:24+00:00] (AI) Cu Chulainn AI Manager: \"Thank you for confirming that the Emergency License Activation article results in a 404 error, even when logged\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While AI responded multiple times, there is no clear evidence it repeatedly asked for the same information or prevented access to a human; a human agent (Carlos) did respond later and the issue progressed to resolution.",
+    "evidence": [
+      "[2025-10-11T22:12:09+00:00] (Employee) Carlos Encalada: \"Hi Matthew, Thank you for the information provided so far\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Agents appear to acknowledge provided materials (e.g., HAR) and do not clearly re-request the same items after the customer provided them; the timeline excerpt is truncated so repeated asks cannot be confirmed.",
+    "evidence": [
+      "[2025-10-13T17:33:00+00:00] (Customer) Matthew Hart: \"I followed your instructions to get the HAR files, and DNN logs, and attached them to this ticket.\"",
+      "[2025-10-13T20:08:44+00:00] (Employee) Pablo Ambram: \"Thanks for the details and the HAR.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer messages and employee responses, including ~41 hours and ~52+ hours gaps, aligning with the provided ticket metrics (time to first human 50.7h; max gap 171.4h).",
+    "evidence": [
+      "[2025-10-11T06:07:24+00:00] (Customer) Matthew Hart: \"When can expect actual help with this issue?\"",
+      "[2025-10-11T22:12:09+00:00] (Employee) Carlos Encalada: \"Hi Matthew, Thank you for the information provided so far\"",
+      "[2025-10-13T20:08:44+00:00] (Employee) Pablo Ambram: \"Hi Matthew, Thanks for the details and the HAR.\"",
+      "[2025-10-15T04:13:35+00:00] (Customer) Matthew Hart: \"Support, Sateesh and I installed the temporary licenses tonight. All is well.\"",
+      "[2025-10-15T14:08:25+00:00] (Employee) Pablo Ambram: \"Dear Matt, Thank you for confirming that the temporary licenses are installed\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to have concluded with customer satisfaction rather than abandonment; the customer explicitly thanked the team and indicated things were working.",
+    "evidence": [
+      "[2025-10-15T04:13:35+00:00] (Customer) Matthew Hart: \"Support, Sateesh and I installed the temporary licenses tonight. All is well.\"",
+      "[2025-10-22T17:34:06+00:00] (Customer) Matthew Hart: \"Thank you, you guys were great!\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although urgency is implied by an impending license-expiration deadline, the excerpt does not clearly show inappropriate \u201cgeneric troubleshooting instead of immediate escalation\u201d by agents; the customer mentions rebooting/clearing cache, but it\u2019s not clearly shown as agent-directed in this snippet.",
+    "evidence": [
+      "[2025-10-11T05:48:47+00:00] (Customer) Matthew Hart: \"Guys, our current DNN licenses expire on Tuesday night at 11 pm, October 14, 2025.\"",
+      "[2025-10-10T06:11:36+00:00] (Customer) Matthew Hart: \"we rebooted both DNN servers, and also cleared the cache\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI produced templated/helpdesk-style responses but did not resolve the core issue (broken/404 links and licensing access) and the automated process explicitly failed (\u201candon cord\u201d), indicating the AI interaction did not successfully help the customer.\",\n    \"evidence\": [\n      \"[2025-10-10T16:46:45+00:00] (AI) Cu Chulainn AI Manager: \\\"Thank you for drawing our attention to the broken links and the confusion surrounding the various portals. Her\\\"\",\n      \"[2025-10-10T18:03:35+00:00] (AI) Cu Chulainn AI Manager: \\\"===== Operation Summary ===== The process has failed and andon cord has been pulled for the following reason:\\\"\",\n      \"[2025-10-10T06:16:24+00:00] (AI) Cu Chulainn AI Manager: \\\"Thank you for confirming that the Emergency License Activation article results in a 404 error, even when logged\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI responded multiple times, there is no clear evidence it repeatedly asked for the same information or prevented access to a human; a human agent (Carlos) did respond later and the issue progressed to resolution.\",\n    \"evidence\": [\n      \"[2025-10-11T22:12:09+00:00] (Employee) Carlos Encalada: \\\"Hi Matthew, Thank you for the information provided so far\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Agents appear to acknowledge provided materials (e.g., HAR) and do not clearly re-request the same items after the customer provided them; the timeline excerpt is truncated so repeated asks cannot be confirmed.\",\n    \"evidence\": [\n      \"[2025-10-13T17:33:00+00:00] (Customer) Matthew Hart: \\\"I followed your instructions to get the HAR files, and DNN logs, and attached them to this ticket.\\\"\",\n      \"[2025-10-13T20:08:44+00:00] (Employee) Pablo Ambram: \\\"Thanks for the details and the HAR.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between customer messages and employee responses, including ~41 hours and ~52+ hours gaps, aligning with the provided ticket metrics (time to first human 50.7h; max gap 171.4h).\",\n    \"evidence\": [\n      \"[2025-10-11T06:07:24+00:00] (Customer) Matthew Hart: \\\"When can expect actual help with this issue?\\\"\",\n      \"[2025-10-11T22:12:09+00:00] (Employee) Carlos Encalada: \\\"Hi Matthew, Thank you for the information provided so far\\\"\",\n      \"[2025-10-13T20:08:44+00:00] (Employee) Pablo Ambram: \\\"Hi Matthew, Thanks for the details and the HAR.\\\"\",\n      \"[2025-10-15T04:13:35+00:00] (Customer) Matthew Hart: \\\"Support, Sateesh and I installed the temporary licenses tonight. All is well.\\\"\",\n      \"[2025-10-15T14:08:25+00:00] (Employee) Pablo Ambram: \\\"Dear Matt, Thank you for confirming that the temporary licenses are installed\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to have concluded with customer satisfaction rather than abandonment; the customer explicitly thanked the team and indicated things were working.\",\n    \"evidence\": [\n      \"[2025-10-15T04:13:35+00:00] (Customer) Matthew Hart: \\\"Support, Sateesh and I installed the temporary licenses tonight. All is well.\\\"\",\n      \"[2025-10-22T17:34:06+00:00] (Customer) Matthew Hart: \\\"Thank you, you guys were great!\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although urgency is implied by an impending license-expiration deadline, the excerpt does not clearly show inappropriate \u201cgeneric troubleshooting instead of immediate escalation\u201d by agents; the customer mentions rebooting/clearing cache, but it\u2019s not clearly shown as agent-directed in this snippet.\",\n    \"evidence\": [\n      \"[2025-10-11T05:48:47+00:00] (Customer) Matthew Hart: \\\"Guys, our current DNN licenses expire on Tuesday night at 11 pm, October 14, 2025.\\\"\",\n      \"[2025-10-10T06:11:36+00:00] (Customer) Matthew Hart: \\\"we rebooted both DNN servers, and also cleared the cache\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60218070
+}

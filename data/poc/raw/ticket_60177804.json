@@ -1,0 +1,183 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_connect",
+        "requester": {
+          "id": 60166813,
+          "uuid": "b29f0b1f-ed27-49ad-88f5-331aaa578401",
+          "full_name": "Bennett Duarte",
+          "legacy_id": "390851562719",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/b29f0b1f-ed27-49ad-88f5-331aaa578401?1767731419",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60033425,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 168348,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "152.237.155.51",
+          "last_seen_at": "2026-01-06T19:19:50+00:00",
+          "last_active_at": "2026-01-06T20:30:19+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60166813",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@0a354d99ae75cf8a0522ffc9bc8d9430c597436d",
+          "password_updated_at": "2025-08-19T17:00:45+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T19:09:27+00:00",
+          "last_activity_at": "2026-01-06T19:19:50+00:00",
+          "created_at": "2021-11-26T18:15:08+00:00",
+          "updated_at": "2026-01-06T20:30:19+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60166813"
+        },
+        "ticket_idt": 60177804
+      },
+      "interactions": [
+        [
+          "2025-09-05T21:00:26+00:00",
+          "Kayako - ticket id 60177804 // Carlos Encalada commented publicly: Hello Bennett,\n\nA meeting is not necessary at this stage. To respect everyone\u2019s time and ensure any call is productive, we only schedule one after we\u2019ve reviewed the diagnostic information we requested.\n\nPlease provide a fresh set of diagnostics covering the most recent freeze:\n\n\t* Logs: mail, warning, and error logs, plus a 10\u201315 minute Debug capture taken just before/during a freeze. Enable debug for: SMTP, IMAP/POP3, Store/Performance, Network/Connections, and LDAP/Directory. (Kerio Connect Admin \u2192 Logs \u2192 Debug \u2192 select modules \u2192 reproduce \u2192 stop \u2192 export.)\n\t* Exact timestamps of the latest freeze, including timezone.\n\t* Environment details: Kerio Connect version/build, OS version, VM or physical, CPU/RAM, storage type and free space on the message-store volume.\n\t* Integrated tools: any antivirus, antispam, backup, or proxy/reverse-proxy in use.\n\t* Resource snapshots taken during a freeze: CPU, memory, disk I/O, and network usage (e.g., Task Manager/Activity Monitor/top/iostat).\n\t* Queue status at the time of the freeze and whether any crash/minidump files were generated.\nFeel free to zip large files and upload them via the Help Center.\n\nOnce we\u2019ve reviewed these details, we\u2019ll share next steps and, if it will accelerate resolution, propose a meeting.\n\nBest regards,\nCarlos Encalada\nGFI - Kerio Connect Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-05T16:36:54+00:00",
+          "Kayako - ticket id 60177804 // Bennett Duarte commented privately: The customer could use a quicker method to help him. Can't we schedule a meeting for next monday? It is freezing very often and affecting their workflow."
+        ],
+        [
+          "2025-09-02T21:15:28+00:00",
+          "Kayako - ticket id 60177804 // Shaquille De Lancy commented publicly: Dear Bennett,\n\nThank you for following up on this issue. We note the repeated authentication attempts on two particular user accounts.\n\nPlease Gather New Log Files [https://support.kerioconnect.gfi.com/article/114176-gathering-relevant-logs-to-upload-during-ticket-creation] to share with us and facilitate continued troubleshooting.\nAdditionally, kindly review Troubleshooting Performance Issues in Kerio Connect [https://support.kerioconnect.gfi.com/article/115547-troubleshooting-performance-issues-in-kerio-connect] on typical issues that may be related.\n\nWe look forward to hearing from you again.\n\nBest regards,\nShaquille De Lancy\nGFI - Kerio Connect Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-02T18:47:45+00:00",
+          "Kayako - ticket id 60177804 // Pablo Ambram commented privately:  IM\nBoosting "
+        ],
+        [
+          "2025-09-02T18:47:43+00:00",
+          "Kayako - ticket id 60177804 // Pablo Ambram commented publicly: Dear Bennett Neves Duarte,\n\nWe have received your escalation regarding the server freezing issue and we are currently working on it.\n\nAn agent will contact you shortly to propose a meeting. \n\nBest regards,\nKerioConnect Support Team"
+        ],
+        [
+          "2025-09-02T18:35:21+00:00",
+          "Kayako - ticket id 60177804 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:\n\nThe severity is:\n\n"
+        ],
+        [
+          "2025-09-02T16:18:33+00:00",
+          "Kayako - ticket id 60177804 // Bennett Duarte commented privately: Could we have a meeting to take a closer look? Customer really needs this working"
+        ],
+        [
+          "2025-09-02T16:18:01+00:00",
+          "Kayako - ticket id 60177804 // Bennett Duarte commented privately: It is still freezing and just froze now."
+        ],
+        [
+          "2025-09-01T19:13:29+00:00",
+          "Kayako - ticket id 60177804 // Bennett Duarte commented privately: Hi. So, the customer told us that it is not having an authentication problem, and when it stops, it stops for everyone, not just one or other account. And a doubt here... If they have empty queues than it is correct to say that those are corrupted as you mentioned? Because if there are no files in the queue, than, should any appear on the logs?"
+        ],
+        [
+          "2025-08-29T18:12:40+00:00",
+          "Kayako - ticket id 60177804 // Bennett Duarte commented privately: Give me more time"
+        ],
+        [
+          "2025-08-28T08:22:10+00:00",
+          "Kayako - ticket id 60177804 // Arafat Bakhsh commented publicly: Dear Bennett,\n\nThank you for sending the logs and support info. We\u2019ve reviewed them and identified several factors contributing to the intermittent \u201cfreeze\u201d where mail stops until you restart the server.\n\nWhat we found\n\n\t* POP3 download authentication failures: Multiple remote accounts are repeatedly failing to authenticate against mail.caio.com.br:995 [http://mail.caio.com.br:995/], which triggers continuous retries and load.\n\t* File locking by antivirus/backup: Temporary antivirus files in the Kerio store cannot be removed because they\u2019re held by another process, which is typical of real-time AV or backup scanning the mailstore.\n\t* Full-Text Search service timeouts: The fulltext process is timing out shortly after start, which can stall components and add CPU load.\n\t* Corrupted queue envelopes: Some .env files in the message queue are invalid and block normal processing.\n\t* Ongoing mailbox index repairs: Many folders are being auto-recovered from index logs, adding extra I/O during operation.\n\nAction plan to stabilize\n\n\t* POP3 download cleanup\n\n\t* In Administration Console, go to Configuration > Delivery > POP3 Download and:\n\n\t* Correct invalid credentials or disable failing accounts temporarily (we see several failures against mail.caio.com.br [http://mail.caio.com.br/]).\n\t* If any accounts are set to \u201cleave messages on server\u201d but the provider doesn\u2019t support UIDL, uncheck that option for those accounts.\n\t* Use \u201cDownload Now\u201d on a corrected account to confirm successful retrieval.\n\n\t* Exclude Kerio from antivirus/backup scanning\n\n\t* Configure your AV/backup to exclude the Kerio installation and the entire store, including tmp and queue. Based on your paths, exclude:\n\n\t* C:\\Program Files\\Kerio\\MailServer\\\n\t* E:\\Kerio\\MailServer\\store\\\n\t* E:\\Kerio\\MailServer\\store\\tmp\\\n\t* E:\\Kerio\\MailServer\\store\\queue\\\n\t* E:\\Kerio\\MailServer\\store\\archive\\\n\t* E:\\Kerio\\MailServer\\store\\backup\\\n\n\t* If possible, temporarily pause real-time scanning to validate improvement, then re-enable with the exclusions in place.\n\n\t* Full\u2011Text Search (FTS) triage\n\n\t* Short term: disable FTS in Configuration > Advanced Options > Store Directory > Full\u2011Text Search to remove the timeout from the equation.\n\t* After the system is stable, please re-enable FTS and rebuild the fulltext index in a maintenance window.\n\n\t* Clear corrupted queue envelopes\n\n\t* Stop the Kerio Connect service.\n\n\t* Back up the queue folder:\n\n\t* E:\\Kerio\\MailServer\\store\\queue\n\n\t* Remove only the specific corrupted .env files referenced in the logs (do not delete .eml files).\n\t* Start the Kerio Connect service and confirm that the queue processes normally.\n\n\t* Finish mailbox index repairs\n\n\t* In Admin Console, go to Accounts > Users, select impacted users, and run More Actions > Reindex Mailbox. This lets Kerio complete the index work cleanly and reduces repeated I/O.\n\nPlease let us know if the issue persists.\n\nReferences\n\n\t* Antivirus Exclusions for Kerio Connect [https://support.kerioconnect.gfi.com/article/115965]\n\t* Full Text Search Is Crashing with Timeout Errors [https://support.kerioconnect.gfi.com/article/114805]\n\t* Troubleshooting Full Text Search Functionality Issues in Kerio Connect [https://support.kerioconnect.gfi.com/article/114129]\n\t* Fixing Data Consistency Issues [https://support.kerioconnect.gfi.com/article/114336]\n\t* Configuring POP3 for Remote Emails and Applying Sorting Rules in Kerio Connect [https://support.kerioconnect.gfi.com/article/115891]\n\t* Error: \u201cEmpty envelope file\u201d in the Log File on MacOS/Linux [https://support.kerioconnect.gfi.com/article/112611]\n\t* Starting or Stopping the Kerio Connect Server on Windows [https://support.kerioconnect.gfi.com/article/114508]\n\nBest regards,\nArafat Bakhsh\nGFI - Kerio Connect Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-08-28T07:44:09+00:00",
+          "Kayako - ticket id 60177804 // Daniel Bosman commented privately:  Instructions [https://docs.google.com/document/d/1w6pg-Lqz1Y5n8Gah7JXTRAnNEgnLGDgQn0p4EE_DdyU/edit#bookmark=id.nmtleyh2xrkb] \n\nWHAT IS YOUR PROPOSED ACTION?\n(REQUIRED: SELECT ONE, DELETE THE REST)\n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Bennett, \n Thank you for providing the logs and support info. After reviewing them, we\u2019ve identified several factors that are causing your Kerio Connect server to freeze and stop processing email until a full restart: \n\n \t* POP3 Authentication Failures \u2013 Multiple accounts are repeatedly failing login against mail.caio.com.br. These endless retries overload the server.\n \t* File Locking by Antivirus/Backup \u2013 Temp and queue files are being locked by another process, preventing Kerio from cleaning up its store. This is typically caused by real-time antivirus or backup agents.\n \t* FullText Indexing Service Crashes \u2013 The full-text search process is timing out, which stalls the mailserver and contributes to CPU spikes.\n \t* Corrupted Queue Files \u2013 Some .env files in the queue are invalid and block message delivery.\n\n Recommended Actions: \n\n \t* Audit all POP3 accounts in Configuration \u2192 POP3 Download and correct or remove those with bad credentials.\n \t* Exclude the entire Kerio store path (E:\\Kerio\\MailServer\\store) from real-time antivirus and backup processes, especially the tmp/ and queue/ folders.\n \t* Temporarily disable FullText indexing under Advanced Options \u2192 Full-Text Search. Rebuild later once stability is restored.\n \t* Stop Kerio, back up E:\\Kerio\\MailServer\\store\\queue, then remove the corrupted .env files mentioned in the logs before restarting the service.\n \t* On VMware, ensure the VM has reserved CPU and increase memory allocation to at least 16\u201320 GB if possible.\n\n These steps should significantly reduce the freezes and restore stable mail flow. Please let us know once you\u2019ve applied them, or if you\u2019d like us to provide the exact antivirus/backup exclusion list. \n Best regards, \n Daniel Bosman \n Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n N/A \n\n =============================================================== \n GPT \n Did you use GPT: Yes "
+        ],
+        [
+          "2025-08-27T17:48:45+00:00",
+          "Kayako - ticket id 60177804 // Deniz Yavas commented publicly: Dear Bennett Neves Duarte,\n\nWe have received your escalation and we are currently working on it.\n\nRest assured, our team is looking into the matter to ensure we provide you with the best possible support. Your concerns about the server issues are important to us, and we appreciate your patience while we investigate.\n\nBest regards,\nKerioConnect Support Team"
+        ],
+        [
+          "2025-08-27T17:47:34+00:00",
+          "Kayako - ticket id 60177804 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:\n\nThe severity is:\n\n"
+        ],
+        [
+          "2025-08-26T20:31:22+00:00",
+          "Kayako - ticket id 60177804 // Carlos Encalada commented publicly: Dear Bennett Neves Duarte,\n\nThank you for reaching out. We\u2019ve received your escalation regarding ticket 60177804 and are actively working on it.\n\nYou can expect an update from us shortly.\n\nBest regards,\nCarlos Encalada\nGFI - Kerio Connect Support Team"
+        ],
+        [
+          "2025-08-26T19:56:53+00:00",
+          "Kayako - ticket id 60177804 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:\n\nThe severity is:\n\n"
+        ],
+        [
+          "2025-08-26T19:34:11+00:00",
+          "Kayako - ticket id 60177804 // Bennett Duarte commented privately: Here are some files..."
+        ],
+        [
+          "2025-08-25T20:24:04+00:00",
+          "Kayako - ticket id 60177804 // Carlos Encalada commented publicly: Dear Bennett Neves Duarte,\n\nThank you for reaching out. We\u2019ve received your escalation regarding ticket 60177804 and are actively working on it.\n\nYou can expect an update from us shortly.\n\nBest regards,\nCarlos Encalada\nGFI - Kerio Connect Support Team"
+        ],
+        [
+          "2025-08-25T20:18:50+00:00",
+          "Kayako - ticket id 60177804 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:\n\nThe severity is:\n\n"
+        ],
+        [
+          "2025-08-25T20:11:53+00:00",
+          "Kayako - ticket id 60177804 // Bennett Duarte commented privately: We have the Kerio Connect email service on VMware and hosted on Hostgator.\n\nSeveral times a day, both internal and external emails stop arriving. The Kerio email queue is empty, and we've noticed that the traffic graph is also empty.\n\nWe've run several tests and haven't found the exact problem.\n\nOnly when we restart the entire server and start the Kerio Connect service do emails start arriving again. The queue is empty, and the server reaches 100% capacity, even with 22 GB of RAM.\n\nIt is in the most recent version."
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 20,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

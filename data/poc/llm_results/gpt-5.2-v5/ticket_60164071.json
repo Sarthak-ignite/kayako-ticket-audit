@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The early ATLAS replies are somewhat generic, but there is no customer-facing statement in the ticket explicitly saying the AI guidance was wrong/useless, nor clear evidence that ATLAS provided incorrect guidance that was later corrected. The only explicit complaint about AI appears in an internal note, which is not sufficient by itself per the instructions.",
+    "evidence": [
+      "Centralsupport-ai-acc commented privately: \"The customer message is:Platform is not working. AI responses are generic. We need real human assistance now.\"",
+      "ATLAS commented publicly: \"This behavior is commonly associated with browser caching issues, network connectivity interruptions, or conflicts with browser extensions.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer-facing request for a human that is followed by multiple additional AI-only responses; humans do respond publicly (e.g., Pablo, Mike, Jos\u00e9, Rishi). The internal escalation note mentions a desire for human help, but the subsequent public thread includes human responses.",
+    "evidence": [
+      "Pablo Ambram commented publicly: \"We have received your escalation and are currently working on it.\"",
+      "Mike Kebede commented publicly: \"We have escalated the real-time chat update problem, which is affecting both agents and customers, to our Infrastructure and Engineering teams for further investigation.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "When the customer stated they already tried the initial troubleshooting, support acknowledged this and moved to different isolation steps (HAR capture, network/device interference checks), rather than simply repeating the same requests. The later requests (hotspot test, HAR/WebSocket inspection, domain/protocol checks) are additional/different, not duplicates of what the customer already reported doing.",
+    "evidence": [
+      "Firdous Amreen commented publicly: \"We have tried all the below steps and issue is persistent.\"",
+      "ATLAS commented publicly: \"Thank you for your prompt follow-up and for confirming that you have already performed all recommended troubleshooting steps...\"",
+      "Mike Kebede commented publicly: \"Connect one affected workstation to a mobile hotspot, with VPN disabled...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket shows follow-ups asking for updates, but the observed response gaps are under the thresholds in the rubric (no 5+ day gap, and no two separate 3+ day gaps between a customer message and the next staff reply).",
+    "evidence": [
+      "Don Kempt commented publicly: \"I am just following up on this. Any update?\"",
+      "Mike Kebede commented publicly (about ~2 hours later): \"Our Infrastructure Team is actively investigating the matter, and given the urgency, it is being treated as a showstopper priority.\"",
+      "Monica Botey commented publicly: \"Hi Mike, Any news? Our customers are still experiencing the same issue.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is closure-warning language indicating the ticket will remain open for one week unless the customer confirms closure, but there is no explicit closure/auto-closure event shown in the text while the customer is still waiting. Therefore the criteria for premature closure are not met.",
+    "evidence": [
+      "Rishi Singh commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Rishi Singh commented publicly: \"We look forward to hearing from you.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the issue is described as impacting customers and treated as urgent, support escalated to Infrastructure/Engineering and explicitly treated it as high priority/showstopper the same day. This does not match the rubric\u2019s requirement of handling a P1/SEV1 strictly as generic troubleshooting without escalation.",
+    "evidence": [
+      "Monica Botey commented publicly: \"please escalate, this issue is affecting all our customers trying to create a chat.\"",
+      "Warren Cook commented privately: \"Our chat service has been down for 4 hours.\"",
+      "Mike Kebede commented publicly: \"We have escalated the real-time chat update problem... to our Infrastructure and Engineering teams for further investigation.\"",
+      "Mike Kebede commented publicly: \"given the urgency, it is being treated as a showstopper priority.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60164071
+}

@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI provided relevant information about the issue and its resolution without making unfulfilled promises or providing incorrect information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was stuck in an AI loop as there are acknowledgments and escalations to human intervention.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interactions do not show evidence of previously provided information being ignored; the responses seem to address the customer's issues adequately.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a maximum gap of 674.4 hours between responses, indicating a significant delay in the handling of the ticket.",
+    "evidence": [
+      "Max gap between responses: 674.4 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed after long delays without any indication that the customer had confirmed the resolution or was satisfied.",
+    "evidence": [
+      "Ticket ID 60222765 closed while customer was waiting for further assistance."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority status was assigned, yet the ticket was not escalated immediately as there were extensive delays before resolution.",
+    "evidence": [
+      "Status: urgent",
+      "Time to first human: 14.4 hours"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI provided relevant information about the issue and its resolution without making unfulfilled promises or providing incorrect information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was stuck in an AI loop as there are acknowledgments and escalations to human intervention.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions do not show evidence of previously provided information being ignored; the responses seem to address the customer's issues adequately.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a maximum gap of 674.4 hours between responses, indicating a significant delay in the handling of the ticket.\",\n    \"evidence\": [\"Max gap between responses: 674.4 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed after long delays without any indication that the customer had confirmed the resolution or was satisfied.\",\n    \"evidence\": [\"Ticket ID 60222765 closed while customer was waiting for further assistance.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority status was assigned, yet the ticket was not escalated immediately as there were extensive delays before resolution.\",\n    \"evidence\": [\"Status: urgent\", \"Time to first human: 14.4 hours\"]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60222765
+}

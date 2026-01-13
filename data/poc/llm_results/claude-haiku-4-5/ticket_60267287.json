@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No AI-generated support responses detected in the ticket. The only AI actions are ticket status management (placing on hold, reopening), not customer-facing responses.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer successfully reached human agents from the start. Multiple human employees engaged with the ticket (Amir Khan, Zubair Farooq, Qasim Ali, etc.) without the customer being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Zubair Farooq provided a generic response without acknowledging the customer's prior troubleshooting efforts. The customer had already tested on a fresh Windows Server 2019 with Outlook 2019 x64, but Zubair's response appears to request similar testing again without referencing the previous work.",
+    "evidence": [
+      "Customer (2025-12-31T16:51:34): 'I built a brand new server installed O365 on it and tested the import feature, same result'",
+      "Zubair Farooq (2025-12-31T17:09:32): 'Thank you for your response. We have reviewed the logs and can see an issue with the import. Kindly refer to the article' [truncated, non-specific response]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant multi-day gaps between customer and support interactions. A 119.8-hour max gap between responses indicates the customer was waiting nearly 5 days for replies on a high-priority ticket.",
+    "evidence": [
+      "Gap from 2025-12-26T15:13:43 (Zubair response) to 2025-12-27T14:52:13 (Amir response): ~24 hours",
+      "Gap from 2025-12-27T15:07:01 (ticket placed on hold) to 2025-12-29T15:26:29 (customer response): ~48+ hours during hold period",
+      "Ticket metadata shows 'Max gap between responses (hours): 119.8' - indicating a nearly 5-day gap at some point"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket remains pending and has not been closed. The customer is actively running imports and the issue appears to be ongoing. No evidence of premature closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority ticket received generic troubleshooting (registry key adjustments, fresh OS install testing) without evidence of immediate escalation to development/engineering team. Support spent significant time on standard diagnostic requests rather than fast-tracking to technical specialists.",
+    "evidence": [
+      "Ticket marked 'Priority: high' but handled with extended troubleshooting cycles",
+      "Multiple support agents requested logs and diagnostic information over several days (2025-12-25 through 2025-12-31)",
+      "No evidence of escalation to development team until much later; primarily focused on customer-side troubleshooting (OS reinstalls, registry key adjustments)"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No AI-generated support responses detected in the ticket. The only AI actions are ticket status management (placing on hold, reopening), not customer-facing responses.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer successfully reached human agents from the start. Multiple human employees engaged with the ticket (Amir Khan, Zubair Farooq, Qasim Ali, etc.) without the customer being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Zubair Farooq provided a generic response without acknowledging the customer's prior troubleshooting efforts. The customer had already tested on a fresh Windows Server 2019 with Outlook 2019 x64, but Zubair's response appears to request similar testing again without referencing the previous work.\",\n    \"evidence\": [\n      \"Customer (2025-12-31T16:51:34): 'I built a brand new server installed O365 on it and tested the import feature, same result'\",\n      \"Zubair Farooq (2025-12-31T17:09:32): 'Thank you for your response. We have reviewed the logs and can see an issue with the import. Kindly refer to the article' [truncated, non-specific response]\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant multi-day gaps between customer and support interactions. A 119.8-hour max gap between responses indicates the customer was waiting nearly 5 days for replies on a high-priority ticket.\",\n    \"evidence\": [\n      \"Gap from 2025-12-26T15:13:43 (Zubair response) to 2025-12-27T14:52:13 (Amir response): ~24 hours\",\n      \"Gap from 2025-12-27T15:07:01 (ticket placed on hold) to 2025-12-29T15:26:29 (customer response): ~48+ hours during hold period\",\n      \"Ticket metadata shows 'Max gap between responses (hours): 119.8' - indicating a nearly 5-day gap at some point\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket remains pending and has not been closed. The customer is actively running imports and the issue appears to be ongoing. No evidence of premature closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority ticket received generic troubleshooting (registry key adjustments, fresh OS install testing) without evidence of immediate escalation to development/engineering team. Support spent significant time on standard diagnostic requests rather than fast-tracking to technical specialists.\",\n    \"evidence\": [\n      \"Ticket marked 'Priority: high' but handled with extended troubleshooting cycles\",\n      \"Multiple support agents requested logs and diagnostic information over several days (2025-12-25 through 2025-12-31)\",\n      \"No evidence of escalation to development team until much later; primarily focused on customer-side troubleshooting (OS reinstalls, registry key adjustments)\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60267287
+}

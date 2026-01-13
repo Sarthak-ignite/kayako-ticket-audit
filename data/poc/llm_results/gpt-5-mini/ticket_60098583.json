@@ -1,0 +1,34 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided ticket content is truncated and does not contain clear examples of AI giving generic filler, wrong information, or making broken promises. There is an AI-generated message present, but it is a courteous summary and not demonstrably low quality or incorrect based on the excerpt.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence that the customer was stuck in a loop with the AI or repeatedly asked the same question and received the same response. The transcript is incomplete and does not show repeated requests or refusal/ inability to route to a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The ticket excerpt does not show the support agent asking for information the customer already provided (e.g., logs, screenshots) or otherwise ignoring prior context. The message visible appears to be a chat summary rather than a request that ignores previously supplied data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only a single timestamped AI comment is visible with no follow-up timestamps or multi-day gaps shown. There is insufficient information to conclude that there were significant delays between responses.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The excerpt does not indicate that the ticket was closed while the customer was waiting for promised information, nor that the customer abandoned the ticket due to inadequate responses. No closure status or customer statements of giving up are present.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication in the provided content that this ticket was classified as a P1/SEV1 incident or that high-priority issues were handled with generic troubleshooting instead of escalation. The content is insufficient to support this pattern.",
+    "evidence": []
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60098583
+}

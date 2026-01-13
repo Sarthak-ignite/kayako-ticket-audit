@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no customer-facing AI (ATLAS/Hermes) replies in the ticket, and the customer does not complain about AI guidance being wrong or unhelpful. Public updates are from human agents and are consistent with an outage investigation and fix.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No customer-facing AI loop is visible, and the customer does not request a human agent or express frustration about interacting with AI. Human agents respond publicly with acknowledgements and updates.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not ask the customer to re-provide already-shared information, and the customer does not state that support ignored attachments or prior details. The public responses acknowledge the issue and provide status updates.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Response times appear to be within minutes to a couple hours on the same day, with multiple public updates. There are no multi-day gaps or apologies for delay in the customer-facing conversation.",
+    "evidence": [
+      "Customer (13:22): \"We have not received any chat for the past 35minutes, Unable to create a chat...\"",
+      "Support (13:53): \"We have received your escalation, and our team is currently reviewing the issue.\"",
+      "Support (14:16): \"We have done a preliminary investigation... escalated this to our infrastructure team with the highest priority.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no customer-facing statement that the ticket was closed or would be auto-closed while the customer was still waiting. The public thread ends with a fix communication rather than a closure notice.",
+    "evidence": [
+      "Support (15:50): \"We have identified the cause of the chat widget outage and implemented a fix.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer frames this as a Sev1/outage, support responds by acknowledging escalation and escalating to infrastructure with highest priority, then later confirms a fix\u2014rather than staying in generic troubleshooting. The public communications align with incident handling.",
+    "evidence": [
+      "Customer subject (forwarded in public reply): \"Severity 1- Fortinet-Khoros Outage\"",
+      "Support (13:53): \"We have received your escalation, and our team is currently reviewing the issue.\"",
+      "Support (14:16): \"We have done a preliminary investigation... escalated this to our infrastructure team with the highest priority.\"",
+      "Support (15:50): \"We have identified the cause of the chat widget outage and implemented a fix.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60234621
+}

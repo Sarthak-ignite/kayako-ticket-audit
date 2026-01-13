@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI provided generic filler, incorrect facts, or unkept promises\u2014AI messages only show administrative actions (placing on hold, splitting ticket).",
+    "evidence": [
+      "2025-11-24T10:20:29+00:00 (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)",
+      "2025-11-26T09:15:37+00:00 (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)",
+      "2025-11-21T14:50:44+00:00 (AI) Centralsupport-ai-acc: This ticket was split from 60243519 [https://central-supportdesk.kayako.com/agent/conversations/60243519]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The AI did not repeatedly request the same information or block escalation; it posted administrative updates (hold/split) rather than looping for the same details.",
+    "evidence": [
+      "2025-11-24T10:20:29+00:00 (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)",
+      "2025-11-21T14:50:41+00:00 (AI) Centralsupport-ai-acc: The customer (Antonio Orellano) is requesting additional information about migrating their instance to the cloud. Specificall"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support referenced related internal conversations and a linked ticket, indicating context was reviewed rather than ignored.",
+    "evidence": [
+      "2025-11-21T14:50:44+00:00 (AI) Centralsupport-ai-acc: This ticket was split from 60243519 [https://central-supportdesk.kayako.com/agent/conversations/60243519]",
+      "2025-11-24T10:19:33+00:00 (Employee) Andriy Rybalchenko: Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073 I will ping Csa"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer messages and human responses, and the ticket metadata indicates a long time to first human.",
+    "evidence": [
+      "Ticket metadata: Time to first human (hours): 67.5",
+      "2025-11-25T22:24:20+00:00 (Customer) Antonio Orellano: Would like to follow-up this request.",
+      "2025-11-26T09:15:17+00:00 (Employee) Andriy Rybalchenko: Thank you for your patience. We\u2019ve reached out to our Product VP, who is currently discussing the details of the mi"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Though the ticket is marked closed, there is no explicit evidence the ticket was closed while the customer was still awaiting promised information or had given up.",
+    "evidence": [
+      "Ticket Context: Status: closed",
+      "2025-11-26T09:56:08+00:00 (Employee) Andriy Rybalchenko: We\u2019ve received an update from the Product VP. Please reach out directly to sales@ignitetech.com to proceed with the"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is not flagged as a high-priority/outage issue and there is no evidence of inappropriate generic troubleshooting for a P1/SEV1 incident.",
+    "evidence": [
+      "Ticket Context: Priority: normal",
+      "No interactions contain generic P1 troubleshooting (e.g., 'clear cache', 'disable VPN', etc.)"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI provided generic filler, incorrect facts, or unkept promises\u2014AI messages only show administrative actions (placing on hold, splitting ticket).\",\n    \"evidence\": [\n      \"2025-11-24T10:20:29+00:00 (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)\",\n      \"2025-11-26T09:15:37+00:00 (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)\",\n      \"2025-11-21T14:50:44+00:00 (AI) Centralsupport-ai-acc: This ticket was split from 60243519 [https://central-supportdesk.kayako.com/agent/conversations/60243519]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not repeatedly request the same information or block escalation; it posted administrative updates (hold/split) rather than looping for the same details.\",\n    \"evidence\": [\n      \"2025-11-24T10:20:29+00:00 (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)\",\n      \"2025-11-21T14:50:41+00:00 (AI) Centralsupport-ai-acc: The customer (Antonio Orellano) is requesting additional information about migrating their instance to the cloud. Specificall\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support referenced related internal conversations and a linked ticket, indicating context was reviewed rather than ignored.\",\n    \"evidence\": [\n      \"2025-11-21T14:50:44+00:00 (AI) Centralsupport-ai-acc: This ticket was split from 60243519 [https://central-supportdesk.kayako.com/agent/conversations/60243519]\",\n      \"2025-11-24T10:19:33+00:00 (Employee) Andriy Rybalchenko: Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073 I will ping Csa\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between customer messages and human responses, and the ticket metadata indicates a long time to first human.\",\n    \"evidence\": [\n      \"Ticket metadata: Time to first human (hours): 67.5\",\n      \"2025-11-25T22:24:20+00:00 (Customer) Antonio Orellano: Would like to follow-up this request.\",\n      \"2025-11-26T09:15:17+00:00 (Employee) Andriy Rybalchenko: Thank you for your patience. We\u2019ve reached out to our Product VP, who is currently discussing the details of the mi\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Though the ticket is marked closed, there is no explicit evidence the ticket was closed while the customer was still awaiting promised information or had given up.\",\n    \"evidence\": [\n      \"Ticket Context: Status: closed\",\n      \"2025-11-26T09:56:08+00:00 (Employee) Andriy Rybalchenko: We\u2019ve received an update from the Product VP. Please reach out directly to sales@ignitetech.com to proceed with the\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is not flagged as a high-priority/outage issue and there is no evidence of inappropriate generic troubleshooting for a P1/SEV1 incident.\",\n    \"evidence\": [\n      \"Ticket Context: Priority: normal\",\n      \"No interactions contain generic P1 troubleshooting (e.g., 'clear cache', 'disable VPN', etc.)\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60248265
+}

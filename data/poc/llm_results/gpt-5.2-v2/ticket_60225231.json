@@ -1,0 +1,64 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support (with apparent AI-assisted content) provided an incorrect root-cause conclusion (license bound to old hardware/Proxmox incompatibility) and routed the customer to Customer Care, but later internal notes confirmed this was a known/expected AppManager agent reset issue after config restore. Early ATLAS chat was also generic and did not engage the specific license/AppManager error.",
+    "evidence": [
+      "ATLAS: \"Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\"",
+      "Mike (public): \"The Root Cause: The license file information is incorrect or incompatible with your new Proxmox virtual environment... the license file is still bound to the old hardware box's serial number\"",
+      "Private note (later): \"The issue is misclassification of tickets where the error message ... is mistakenly treated as a license issue.\"",
+      "Private note (later): \"Resolution: Reset the AppManager agent \u2014 this is the only valid fix.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly indicated the issue persisted after following instructions and providing screenshots/logs, and support continued to request additional artifacts/steps, contributing to a loop before the correct fix was identified.",
+    "evidence": [
+      "Customer: \"customer care send me to Atlas! please make from conversation support request for technician\"",
+      "Customer: \"The problem still persist. ... I sent you screenshots with log.\"",
+      "Customer: \"Hello,do you have some solution for me?\"",
+      "Support: \"If the registration still fails... please download the Support Information File... and attach it to this ticket.\"",
+      "Customer: \"problem still persist. I sent you log file.\"",
+      "Support (again): \"If the issue persists, please download a new Support Information File ... and attach it to this ticket for further review.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support did not fully incorporate customer-provided context (already sent screenshots/logs and confirmed connectivity tests) and continued with repeated requests and an incorrect diagnosis, despite evidence that the license file was valid and outbound access was working.",
+    "evidence": [
+      "Customer: \"I sent you screenshots with log.\"",
+      "Customer: \"problem still persist. I sent you log file.\"",
+      "Customer: \"Hello, without change... 1. test DNS, ok ... 3. outbond access is ok, also from ssh terminal, lynx, curl.. open website appmanager.gfi.com ok\"",
+      "Support (after customer confirmed connectivity): \"The issue is clearly with the license registration itself... license file is still bound to the old hardware box's serial number\"",
+      "Private note (later contradicting earlier handling): \"misclassification... mistakenly treated as a license issue.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer had to follow up for lack of response, indicating a service delay. There is also a ~2-day gap between the customer's 2025-10-21 update and the next public support reply on 2025-10-23.",
+    "evidence": [
+      "Customer (2025-10-22T18:41:38+00:00): \"Hello,do you have some solution for me?\"",
+      "Customer (2025-10-21T05:34:22+00:00): \"The problem still persist...\"",
+      "Support next response (2025-10-23T11:51:44+00:00): \"Dear Milos, Thank you for your update...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was not shown as closed before resolution; the customer confirmed the problem was solved and thanked support. The auto-close warning text is present, but no actual premature closure occurred in the provided timeline.",
+    "evidence": [
+      "Customer: \"Hi, your colleague solve this problem... Thank you\"",
+      "Support: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The case was tagged as a core functionality defect and described as 'Limited services', yet it was handled with standard steps and misrouted to Customer Care based on an incorrect license conclusion instead of prompt escalation/recognition of a known post-restore AppManager agent issue.",
+    "evidence": [
+      "System escalation note: \"The severity is: core_functionality_defect\"",
+      "System escalation note: \"The customer message is:Limited services\"",
+      "Support (misroute): \"The customer will need to contact GFI Customer Care for further assistance.\"",
+      "Private note (later indicating known/expected behavior): \"This behavior is expected and happens in 100% of such cases. Resolution: Reset the AppManager agent \u2014 this is the only valid fix.\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60225231
+}

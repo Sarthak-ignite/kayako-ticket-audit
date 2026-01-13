@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient evidence to determine AI response quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No visible conversation showing AI interaction or looping.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No actual support conversation is visible in the provided ticket details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, indicating immediate or no real interaction.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is closed, but no context of customer dissatisfaction is provided.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, and no severity details are given.",
+    "evidence": []
+  },
+  "_raw_response": "After carefully analyzing the provided ticket, here's the assessment:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient evidence to determine AI response quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No visible conversation showing AI interaction or looping.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No actual support conversation is visible in the provided ticket details.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, indicating immediate or no real interaction.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is closed, but no context of customer dissatisfaction is provided.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, and no severity details are given.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The provided ticket snippet appears to be an AI-generated summary/confirmation\n- There are no actual customer or support agent interactions visible\n- Insufficient context to evaluate any quality patterns\n\nI recommend providing the full ticket conversation for a comprehensive analysis.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60221483
+}

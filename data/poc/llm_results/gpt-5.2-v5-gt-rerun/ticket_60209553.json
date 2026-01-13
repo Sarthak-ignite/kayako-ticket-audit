@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no clear customer-facing ATLAS/Hermes AI responses in the ticket showing wrong/misleading guidance, broken templates, or repeated unhelpful loops. The visible customer-facing messages are from named support agents and focus on explaining v10 and requesting logs.",
+    "evidence": [
+      "Kayako - ticket id 60209553 // Denis Spirin commented publicly: \"We have received your escalation... we are actively working on it.\"",
+      "Kayako - ticket id 60209553 // Aditi Garg commented publicly: \"Additionally build number 10.0.0 is correct, New Kerio Control NG appliances (NG 520 and NG 521) ship with Kerio Control v10 preinstalled...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The record does not show customer-facing AI repeatedly responding after requests for a human; instead, human agents respond publicly multiple times. Customer frustration is about lack of contact/response, but not being stuck in an AI-only loop.",
+    "evidence": [
+      "Kayako - ticket id 60209553 // Harry Tasker commented publicly: \"We\u2019ve received your escalation regarding ticket 60209553 and we are investigating the issue.\"",
+      "Kayako - ticket id 60209553 // Arafat Bakhsh commented publicly: \"Lets take a step by step approach to resolve your concerns...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While support requested extensive diagnostic artifacts, the customer-facing thread does not contain an explicit statement from the customer that they already provided the exact same requested items and were asked again. The customer did express dissatisfaction generally, but not a clear repeat-request scenario meeting the rubric.",
+    "evidence": [
+      "Kayako - ticket id 60209553 // Arafat Bakhsh commented publicly: \"Please provide us with the following details after having reproduced the issue: * All items in the /var/gfiagent/appliances folder ...\"",
+      "Kayako - ticket id 60209553 // D. Middleton commented privately: \"How about you look back through the comments in this case, and you tell me what my concerns are. . .\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is explicit customer-facing evidence of waiting/no response and an explicit apology for delay. The customer reports inability to reach support during an outage and multiple escalation attempts before receiving substantive guidance.",
+    "evidence": [
+      "Kayako - ticket id 60209553 // D. Middleton commented publicly: \"I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\"",
+      "Kayako - ticket id 60209553 // Aditi Garg commented publicly: \"I apologize for the delay.\"",
+      "Kayako - ticket id 60209553 // D. Middleton commented privately: \"Please have a manager call me immediately... It is completely unacceptable in a network down emergency to be unable to reach anyone in your support team.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in the CSV context, but the last customer-facing content shows the issue still ongoing (serial number UNKNOWN and update failures) with support requesting more data, not providing a resolution. This indicates closure occurred despite unresolved reported problems.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-13 03:34:25",
+      "Kayako - ticket id 60209553 // D. Middleton commented privately: \"Serial number still reporting UNKNOWN> ... ALSO updates are reporting to fail> Kerio Control Update failed\"",
+      "Kayako - ticket id 60209553 // D. Middleton commented privately: \"What are next steps on this issue?\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer describes a complete outage, the rubric\u2019s STRONG condition requires generic low-level checks without escalation; here, support did engage (multiple public responses, acknowledgement of escalation, and v10/rescue guidance). The ticket shows delay and customer dissatisfaction, but not enough evidence that it was handled strictly like routine troubleshooting without escalation.",
+    "evidence": [
+      "Kayako - ticket id 60209553 // D. Middleton commented publicly: \"Customer is completely down.\"",
+      "Kayako - ticket id 60209553 // Aditi Garg commented publicly: \"And I am the VP of Support here for GFI...\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60209553
+}

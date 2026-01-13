@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS repeatedly sent largely boilerplate troubleshooting (same folder/FailedMails/Temp/event-log themes) across multiple replies without materially advancing diagnosis, which is a weak-signal pattern of low-quality, repetitive AI output. The repetition persists even as the customer\u2019s described symptoms remain the same (mail processed in dashboard but not delivered).",
+    "evidence": [
+      "ATLAS (public, 19:29:25): \"1. Verify Pickup and Replay Folder Configuration\" ... \"2. Check for FailedMails or Temporary Files\" ... \"3. Review MailEssentials and Windows Event Logs\"",
+      "ATLAS (public, 19:46:47): \"1. Review Pickup and Replay Folder Configuration\" ... \"2. Inspect the BadMail and FailedMails Folders\"",
+      "ATLAS (public, 20:29:34): \"1. Review Pickup, Replay, and Queue Folder Configuration\" ... \"2. Inspect BadMail, FailedMails, and Temp Directories\"",
+      "ATLAS (public, 21:23:00): \"2. Clean Reinstallation Procedure (Preserving Configuration and Data)\" followed by the same backup/clean reinstall guidance again"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although there are many consecutive AI public replies with no visible human engagement, the strongest required public evidence (customer asking for a human and still getting multiple AI replies, or explicit customer frustration about AI) is not present in customer-facing/public comments in this ticket text.",
+    "evidence": [
+      "ATLAS (public, 19:26:43): \"Below are some targeted troubleshooting steps and references to help resolve the issue\"",
+      "ATLAS (public, 19:29:25): \"Based on your description... here are targeted steps and references\"",
+      "ATLAS (public, 19:46:47): \"Here are targeted steps and references to help you resolve this scenario\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer\u2019s complaints about having already stated/tried items appear only in private comments, and there is no clear public instance where support asks for the exact same already-provided information after the customer publicly stated it was already provided.",
+    "evidence": [
+      "ATLAS (public, 19:29:25): \"I understand that disabling MailEssentials scanning allows emails to be delivered as expected\"",
+      "ATLAS (public, 20:50:23): \"Thank you for... clarifying that the configuration has remained unchanged for years\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All visible exchanges occur within the same day and within minutes; there are no multi-day gaps or delay apologies in the text provided.",
+    "evidence": [
+      "Timeline shows multiple staff replies within minutes (e.g., 19:26:43 \u2192 19:29:25 \u2192 19:46:47 \u2192 20:05:38)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no text indicating the ticket was closed, would be closed, or auto-closed while the issue was unresolved.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue appears serious, there is no explicit P1/SEV1/critical/outage labeling in public messages, and no clear public evidence of an escalation being required but not done based on the criteria.",
+    "evidence": [
+      "ATLAS (public, 20:50:23): \"this points to a problem within the MailEssentials scanning engine or its integration with the SMTP service\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60098171
+}

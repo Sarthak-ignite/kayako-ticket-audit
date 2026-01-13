@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided ticket content is truncated and only shows the AI agent\u2019s introductory/preface messages (greeting, disclaimer, and request for details). There is no visible troubleshooting guidance, promises, or product claims to evaluate for factual correctness or relevance, and no customer feedback indicating the AI was wrong/unhelpful.",
+    "evidence": [
+      "\u201cWalk me through what's happening or select from the below frequent requests.\u201d",
+      "\u201cIf I'm unable to help you, I can patch you through to a Live agent\u2026\u201d",
+      "[Ticket conversation is truncated after the AI intro; no substantive AI solution content is visible.]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence the customer requested a human, no repeated requests for the same information are visible, and the excerpt does not show multiple back-and-forth AI turns beyond the intro prompts. The record is truncated, so looping cannot be established.",
+    "evidence": [
+      "[No customer message shown requesting a human or stating they already provided info.]",
+      "[Only initial AI prompts are visible before truncation.]"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no visible customer-provided context (problem description, steps tried, attachments) for support to ignore, and no repeated troubleshooting requests shown. The excerpt is limited to AI introduction text.",
+    "evidence": [
+      "[No customer issue description or attachments are shown in the provided excerpt.]",
+      "\u201cDon't hold back on the details \u2013 the more you can share\u2026\u201d (AI requesting initial context, not repeating after it was provided)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The excerpt includes a single timestamped entry and does not show a sequence of customer messages followed by delayed support responses. No 3+ day gaps, delay apologies, or customer complaints about waiting are visible.",
+    "evidence": [
+      "[Only one dated interaction is visible: 2025-11-06T11:06:38+00:00.]",
+      "[No subsequent customer/support timestamps shown to measure gaps.]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication in the provided excerpt that the ticket was closed, nor is there a visible unanswered final customer request followed by closure. The excerpt is incomplete/truncated, so closure status and end-of-thread context cannot be verified.",
+    "evidence": [
+      "[No closure event/status or final-resolution message is shown in the provided excerpt.]",
+      "[Conversation content is explicitly truncated.]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No severity markers (P1/SEV1/Critical) or outage/production-down statements are visible in the provided excerpt. Without explicit high-severity indicators or evidence of inappropriate generic troubleshooting in that context, this pattern cannot be detected.",
+    "evidence": [
+      "[No mention of P1/SEV1/Critical/Urgent in the visible content.]",
+      "[No mention of outage/production down/team-wide impact in the visible content.]"
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60237327
+}

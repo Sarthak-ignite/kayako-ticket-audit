@@ -1,0 +1,131 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_care",
+        "requester": {
+          "id": 60511223,
+          "uuid": "ce13e5f5-28b6-5855-99fc-0bafdaacaa50",
+          "full_name": "Liz Mech",
+          "legacy_id": "0034W00002thrl3QAA",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/ce13e5f5-28b6-5855-99fc-0bafdaacaa50?1767247594",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60068794,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 512754,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-12-22T18:22:29+00:00",
+          "last_active_at": "2026-01-01T06:06:34+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60511223",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@06484e1ccfe4941a646f1be286cebe24390b6561",
+          "password_updated_at": "2025-07-08T22:30:14+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-07-08T22:30:14+00:00",
+          "updated_at": "2026-01-01T06:06:34+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60511223"
+        },
+        "ticket_idt": 60267393
+      },
+      "interactions": [
+        [
+          "2025-12-22T18:23:12+00:00",
+          "Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\n\nThank you for your update. We appreciate you letting us know about your current availability and your intention to review the suggested troubleshooting steps after the holidays.\n\nAs a recap, the difference in conversation visibility between your agent view and your colleague\u2019s is most commonly related to differences in Smart View assignments, work queue selections, or filtering/sorting settings in the Khoros Care dashboard. The diagnostic screenshots you provided help confirm that you should both be able to see the same conversations, given your team\u2019s process expectations.\n\nFor your reference and whenever you resume troubleshooting, here is a summary of the recommended steps:\n\n \t* Smart View filters: Use the Smart View Selection (lightbulb icon) to ensure both accounts have the same Smart View setting. Different Smart Views may filter out conversations from specific work queues or with specific attributes. Details can be found in Set up Smart Views [https://khoros-care.kayako.com/article/126836].\n \t* Work queue filters: Click the Work Queue Selection (bulleted list icon) and ensure all relevant work queues are selected on both accounts. If only some queues are selected, the available conversation count may differ. More information is available at About the Agent View Queue Panel [https://khoros-care.kayako.com/article/126943].\n \t* Sorting options: Confirm that sorting (by Priority, Flush Date, etc.) is not causing certain tickets to be deprioritized in your display. This is especially important when working with time-sensitive conversations.\n \t* Verify with your admin that both agents have identical permissions and queue access.\n\nThe file analysis verifies that your screenshot shows no conversations in your queue, while your colleague\u2019s queue has 11 available conversations with consistent tags and visible Facebook profiles. This supports the need to review filtering and queue assignment settings as outlined above.\n\nWhen you are ready to resume, please reference these steps and the relevant articles to help align your configuration:\n\n \t* About the Agent View Queue Panel [https://khoros-care.kayako.com/article/126943]\n \t* Set up Smart Views [https://khoros-care.kayako.com/article/126836]\n\nIf you have any questions or need further clarification after you have a chance to investigate, feel free to update this case and we\u2019ll be happy to assist further.\n\nSincerely,\nAtlas\nKhoros Care Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-12-22T18:22:29+00:00",
+          "Kayako - ticket id 60267393 // Liz Mech commented publicly:  \n\nHi There,\n\n\u00a0\n\nThanks for the response and troubleshooting advice. Right now, due to PTO, we are unable to troubleshoot. We will be able to dig in after the holidays.\n\n\u00a0\n\nThank you,\n\nLiz\n\n\u00a0\n\nLiz Mech\n\nSenior Marketing & Communications Specialist\n\nShe/Her\n\n\u00a0\n\nimage\n\n\u00a0\n\nTacoma, WA - Remote \n\nPreferred Contact \u2013 Email, Teams \nelizabeth.mech@coordinatedcarehealth.com\u00a0 | \u00a0coordinatedcarehealth.com [https://www.coordinatedcarehealth.com/]\n\n\u00a0\n\nTransforming the health of the communities\u00a0 \nwe serve, one person at a time.\n\n\u00a0\n\n CONFIDENTIALITY NOTICE: This communication contains information intended for the use of the individuals to whom it is addressed and may contain information that is privileged, confidential or exempt from other disclosure under applicable law. If you are not the intended recipient, you are notified that any disclosure, printing, copying, distribution or use of the contents is prohibited. If you have received this in error, please notify the sender immediately by telephone or by returning it by return mail and then permanently delete the communication from your system. Thank you. \n"
+        ],
+        [
+          "2025-12-19T17:29:37+00:00",
+          "Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\n\nThank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and your colleague's.\n\nBased on your description and the diagnostic screenshots:\n\n \t* Your agent view (Liz Mech) shows Available (0/0), with no conversations visible in your queue.\n \t* Your colleague (Leanne Sangster) is able to see 11 conversations available in her queue at the same time.\n \t* As per your process, both agents are expected to see the same set of conversations for assignment and action.\n\nPotential Causes and Explanations:\n\nThis behavior is most often caused by queue configuration settings or agent-specific filtering that determines access to conversations in the Available queue. According to the article About the Agent View Queue Panel [https://khoros-care.kayako.com/article/126943], the visibility of conversations can be impacted by several factors:\n\n \t* Smart Views: If agents are assigned to different Smart Views (filter sets), their queues will show only the conversations matching those criteria. If an agent has not been added to a Smart View by an admin, their Smart View dropdown will be blank, and they may not see certain conversations.\n \t* Work Queues: Each agent can filter by specific work queues. If an agent selects only certain work queues, only conversations from those will be visible. If no work queues are selected, all should be shown, but selecting specific ones may limit what\u2019s visible.\n \t* Conversation Assignment: Once a conversation is claimed by an agent or auto-assigned (depending on queue settings), it moves from the Available queue to Assigned to Me and is no longer visible to other agents.\n\nRecommended Steps:\n\n\t* Ensure both agents are using the same Smart View and work queue filters: \n\n \t* Click the Smart View Selection (lightbulb icon) and make sure you have the correct Smart View selected.\n \t* Click the Work Queue Selection (bulleted list icon) and verify that all relevant queues are checked.\n\n \t* Check with your admin that both accounts have the same access rights to queues and Smart Views.\n \t* If sorting is applied, review the sorting option being used (e.g., by Priority, Flush Date, or other criteria), as this may affect which tickets are immediately visible at the top of the queue panel.\n\nFor further detailed information on queue panel configuration and troubleshooting differences in agent views, please see the official guide: About the Agent View Queue Panel [https://khoros-care.kayako.com/article/126943].\n\nIf after verifying the above settings you are still unable to view the shared conversations, ensure there are no additional Smart View or permission differences at the admin level that might restrict your access to certain tickets. The screenshots confirm the discrepancy, so aligning Smart Views and work queues should be your first troubleshooting step.\n\nPlease let us know if this helps clarify the situation or if you observe anything different after adjusting these settings.\n\nSincerely,\nAtlas\nKhoros Care Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-12-19T17:29:25+00:00",
+          "Kayako - ticket id 60267393 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\nBrand updated to Khoros Care based on clear product cues in the customer\u2019s message: references to the Khoros Care dashboard, Agent view, and conversations/queue directly match Care keywords (conversation, Agent view, Work Queue). Added the tag 'atlas-ticket-backlog' per process.\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-12-19T17:29:10+00:00",
+          "Kayako - ticket id 60267393 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\tKhorosCare_AgentView_LizMech.jpg_1654606\n\n-\u00a0The\u00a0Agent\u00a0view\u00a0in\u00a0the\u00a0Khoros\u00a0Care\u00a0dashboard\u00a0shows\u00a0Available\u00a0(0/0),\u00a0indicating\u00a0there\u00a0are\u00a0no\u00a0available\u00a0conversations\u00a0or\u00a0assignments\u00a0for\u00a0the\u00a0user.\n-\u00a0The\u00a0conversation\u00a0queue\u00a0is\u00a0completely\u00a0empty\u00a0in\u00a0the\u00a0provided\u00a0screenshot.\n-\u00a0The\u00a0customer\u00a0reports\u00a0that\u00a0their\u00a0colleague\u00a0(Leanne\u00a0Sangster)\u00a0has\u00a011\u00a0conversations\u00a0visible\u00a0in\u00a0her\u00a0queue\u00a0at\u00a0the\u00a0same\u00a0time.\n-\u00a0Both\u00a0users\u00a0are\u00a0expected\u00a0to\u00a0see\u00a0the\u00a0same\u00a0set\u00a0of\u00a0conversations\u00a0in\u00a0the\u00a0queue,\u00a0but\u00a0this\u00a0is\u00a0not\u00a0occurring\u00a0for\u00a0Liz\u00a0Mech.\n-\u00a0The\u00a0screenshot\u00a0confirms\u00a0the\u00a0discrepancy\u00a0in\u00a0conversation\u00a0visibility\u00a0between\u00a0agents\u00a0as\u00a0described\u00a0in\u00a0the\u00a0customer\u2019s\u00a0message.\n\n \t\tKhorosCare_AgentView_LeanneSangster.png_1654607\n\n-\u00a0The\u00a0screenshot\u00a0shows\u00a0the\u00a0Agent\u00a0view\u00a0from\u00a0the\u00a0Khoros\u00a0Care\u00a0dashboard.\n-\u00a0There\u00a0are\u00a011\u00a0conversations\u00a0listed\u00a0under\u00a0the\u00a0Available\u00a0(11/11)\u00a0queue.\n-\u00a0Each\u00a0conversation\u00a0is\u00a0associated\u00a0with\u00a0a\u00a0Facebook\u00a0profile\u00a0(as\u00a0indicated\u00a0by\u00a0the\u00a0Facebook\u00a0icon).\n-\u00a0The\u00a0ticket\u00a0times\u00a0range\u00a0from\u00a0December\u00a09,\u00a02025,\u00a0to\u00a0December\u00a015,\u00a02025.\n-\u00a0All\u00a0conversations\u00a0are\u00a0designated\u00a0as\u00a0\u201cFlush\u201d\u00a0with\u00a0a\u00a0time\u00a0period\u00a0ranging\u00a0from\u00a05\u00a0to\u00a011\u00a0days.\n-\u00a0There\u00a0is\u00a0a\u00a0label\u00a0Overdue\u00a0on\u00a0one\u00a0of\u00a0the\u00a0conversations,\u00a0suggesting\u00a0time-sensitive\u00a0handling.\n-\u00a0The\u00a0presence\u00a0of\u00a0multiple\u00a0conversations\u00a0with\u00a0the\u00a0same\u00a0user\u00a0(McCray\u00a0Crawford\u00a0Ta-mara)\u00a0indicates\u00a0there\u00a0might\u00a0be\u00a0repeated\u00a0or\u00a0related\u00a0tickets.\n-\u00a0The\u00a0aggregate\u00a0view\u00a0implies\u00a0that\u00a0this\u00a0agent\u00a0can\u00a0see\u00a0all\u00a011\u00a0active\u00a0conversations\u00a0in\u00a0their\u00a0queue.\n\n"
+        ],
+        [
+          "2025-12-19T17:27:32+00:00",
+          "Kayako - ticket id 60267393 // Cu Chulainn AI Manager commented privately: <CC Log>\n\nPackage URL: https://cs.cu-chulainn.csaiautomations.com/marketplace/packages/edit/PACKAGE-b076d16e-40d5-4397-87c7-25b52aca9e5b\nPackage Name: KhorosGenericRouter\n\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60267393/kayako_central-supportdesk_60267393_20251219_172732_d4ab.txt]\n\n</CC Log>\n"
+        ],
+        [
+          "2025-12-19T17:27:04+00:00",
+          "Kayako - ticket id 60267393 // Liz Mech commented publicly:  \n\nHello,\n\n\u00a0\n\nWe\u2019re experiencing an issue in our Khoros Care dashboard.\n\n\u00a0\n\nI\u2019ve attached two screenshots, both from yesterday. One is of Leanne Sangster\u2019s agent view, one is of my agent view (Liz Mech). As you can see, Leanne has 11 conversations in her queue, but I have none. We should see the same conversations. Is this something your team can help with/look into?\n\n\u00a0\n\nLet me know what information you need from me.\n\n\u00a0\n\nThank you,\n\nLiz\n\n\u00a0\n\nLiz Mech\n\nSenior Marketing & Communications Specialist\n\nShe/Her\n\n\u00a0\n\nimage\n\n\u00a0\n\nTacoma, WA - Remote \n\nPreferred Contact \u2013 Email, Teams \nelizabeth.mech@coordinatedcarehealth.com\u00a0 | \u00a0coordinatedcarehealth.com [https://www.coordinatedcarehealth.com/]\n\n\u00a0\n\nTransforming the health of the communities\u00a0 \nwe serve, one person at a time.\n\n\u00a0\n CONFIDENTIALITY NOTICE: This communication contains information intended for the use of the individuals to whom it is addressed and may contain information that is privileged, confidential or exempt from other disclosure under applicable law. If you are not the intended recipient, you are notified that any disclosure, printing, copying, distribution or use of the contents is prohibited. If you have received this in error, please notify the sender immediately by telephone or by returning it by return mail and then permanently delete the communication from your system. Thank you. \n\nTo unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.\n"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 7,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

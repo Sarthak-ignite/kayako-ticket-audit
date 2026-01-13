@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "While there are automated responses, they seem to provide relevant information regarding the ticket issue without any apparent misinformation or broken promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to interact with a human representative by the end of the ticket lifecycle and did not appear to be stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The representatives and the AI acknowledged the customer's concerns and took appropriate actions without asking for previously provided information again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were substantial response delays in this ticket, with a time to first human of over 431 hours and a maximum gap between responses of over 427 hours.",
+    "evidence": [
+      "Time to first human (hours): 431.5",
+      "Max gap between responses (hours): 427.7"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was marked as closed with a customer response indicating they were ready to close, but the lengthy delays suggest it may not have been adequately addressed before closure.",
+    "evidence": [
+      "[2025-12-17T15:02:18+00:00] (Customer) Jozef Kacala: thanks, we can close this ticket",
+      "[2025-12-17T15:02:30+00:00] (Employee) Phronesis: we are closing this ticket as requested."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The high-priority status and lengthy delays indicate that the ticket was not handled with the urgency required for a severity one issue, with generic responses instead of immediate escalation.",
+    "evidence": [
+      "[2025-11-30T14:32:36Z] (Employee) Randall Shawver: Thank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"While there are automated responses, they seem to provide relevant information regarding the ticket issue without any apparent misinformation or broken promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer was able to interact with a human representative by the end of the ticket lifecycle and did not appear to be stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The representatives and the AI acknowledged the customer's concerns and took appropriate actions without asking for previously provided information again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were substantial response delays in this ticket, with a time to first human of over 431 hours and a maximum gap between responses of over 427 hours.\",\n    \"evidence\": [\n      \"Time to first human (hours): 431.5\",\n      \"Max gap between responses (hours): 427.7\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was marked as closed with a customer response indicating they were ready to close, but the lengthy delays suggest it may not have been adequately addressed before closure.\",\n    \"evidence\": [\n      \"[2025-12-17T15:02:18+00:00] (Customer) Jozef Kacala: thanks, we can close this ticket\",\n      \"[2025-12-17T15:02:30+00:00] (Employee) Phronesis: we are closing this ticket as requested.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The high-priority status and lengthy delays indicate that the ticket was not handled with the urgency required for a severity one issue, with generic responses instead of immediate escalation.\",\n    \"evidence\": [\n      \"[2025-11-30T14:32:36Z] (Employee) Randall Shawver: Thank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review.\"\n    ]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60241518
+}

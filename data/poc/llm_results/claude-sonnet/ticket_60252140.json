@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI (ATLAS) only appears at ticket creation to route the ticket. No evidence of generic responses, wrong information, or broken promises from AI.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer interacted with ATLAS only for initial ticket creation and was immediately routed to human support. No loop or barrier to reaching humans.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support requested logs multiple times despite customer already uploading them. Keyur on Dec 10 asks for logs to be uploaded to SFTP when customer had already uploaded them on Dec 3 to FTP.",
+    "evidence": [
+      "[2025-12-03T08:56:57+00:00] Jonard Umerez: Hi, I've already uploaded the logs to the FTP folder. Kindly check them. this is the file name: SupportLog_PATCHSERVER2_12-3-2025-8-4",
+      "[2025-12-10T07:14:25+00:00] Keyur Saxena: Apologies for the delayed response here. Please upload the same log archive in this SFTP location created specifically fo"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple significant delays between interactions. Customer waited 4+ days multiple times, with maximum gap of 118.8 hours (nearly 5 days) between responses.",
+    "evidence": [
+      "[2025-12-03T08:56:57+00:00] Customer uploads logs, next response [2025-12-10T07:14:25+00:00] - 6+ days delay",
+      "[2025-12-05T02:49:18+00:00] Jonard Umerez: Hi is there any updates for this?",
+      "[2025-12-10T01:35:17+00:00] Jonard Umerez: Hello, good day i just want to follow up this ticket",
+      "[2025-12-15T05:05:16+00:00] Jonard Umerez: Hi, any update on this."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed while customer was actively requesting a remote session and waiting for responses. Last customer message on Dec 18 about remote session, then ticket closed without resolution confirmation.",
+    "evidence": [
+      "[2025-12-18T06:30:52+00:00] Jonard Umerez: HI, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible",
+      "[2025-12-18T06:46:43+00:00] Andriy Rybalchenko: At this stage, a remote session would not provide meaningful diagnostic insight since",
+      "Status: closed - Customer requested remote session which was dismissed without clear resolution"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Urgent priority ticket with 13.6 hours to first human response, and generic troubleshooting approach (checking patches manually, firewall issues) instead of immediate escalation for patch deployment failures and auto-remediation not working.",
+    "evidence": [
+      "Priority: urgent, Time to first human (hours): 13.6",
+      "[2025-11-28T05:13:04+00:00] Jonard Umerez: the timeout is not only occurring with large deployments but also with smaller files",
+      "[2025-11-28T05:27:35+00:00] Jonard Umerez: Just to add, the auto-remediation is not working as well.",
+      "[2025-11-28T19:19:08+00:00] Randall Shawver: First, please check a few of the remote computers to ensure..."
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI (ATLAS) only appears at ticket creation to route the ticket. No evidence of generic responses, wrong information, or broken promises from AI.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer interacted with ATLAS only for initial ticket creation and was immediately routed to human support. No loop or barrier to reaching humans.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support requested logs multiple times despite customer already uploading them. Keyur on Dec 10 asks for logs to be uploaded to SFTP when customer had already uploaded them on Dec 3 to FTP.\",\n    \"evidence\": [\n      \"[2025-12-03T08:56:57+00:00] Jonard Umerez: Hi, I've already uploaded the logs to the FTP folder. Kindly check them. this is the file name: SupportLog_PATCHSERVER2_12-3-2025-8-4\",\n      \"[2025-12-10T07:14:25+00:00] Keyur Saxena: Apologies for the delayed response here. Please upload the same log archive in this SFTP location created specifically fo\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple significant delays between interactions. Customer waited 4+ days multiple times, with maximum gap of 118.8 hours (nearly 5 days) between responses.\",\n    \"evidence\": [\n      \"[2025-12-03T08:56:57+00:00] Customer uploads logs, next response [2025-12-10T07:14:25+00:00] - 6+ days delay\",\n      \"[2025-12-05T02:49:18+00:00] Jonard Umerez: Hi is there any updates for this?\",\n      \"[2025-12-10T01:35:17+00:00] Jonard Umerez: Hello, good day i just want to follow up this ticket\",\n      \"[2025-12-15T05:05:16+00:00] Jonard Umerez: Hi, any update on this.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was closed while customer was actively requesting a remote session and waiting for responses. Last customer message on Dec 18 about remote session, then ticket closed without resolution confirmation.\",\n    \"evidence\": [\n      \"[2025-12-18T06:30:52+00:00] Jonard Umerez: HI, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible\",\n      \"[2025-12-18T06:46:43+00:00] Andriy Rybalchenko: At this stage, a remote session would not provide meaningful diagnostic insight since\",\n      \"Status: closed - Customer requested remote session which was dismissed without clear resolution\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Urgent priority ticket with 13.6 hours to first human response, and generic troubleshooting approach (checking patches manually, firewall issues) instead of immediate escalation for patch deployment failures and auto-remediation not working.\",\n    \"evidence\": [\n      \"Priority: urgent, Time to first human (hours): 13.6\",\n      \"[2025-11-28T05:13:04+00:00] Jonard Umerez: the timeout is not only occurring with large deployments but also with smaller files\",\n      \"[2025-11-28T05:27:35+00:00] Jonard Umerez: Just to add, the auto-remediation is not working as well.\",\n      \"[2025-11-28T19:19:08+00:00] Randall Shawver: First, please check a few of the remote computers to ensure...\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60252140
+}

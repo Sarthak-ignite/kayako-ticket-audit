@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response is generic filler thanking the user and promising a conversation record without providing substantive help or specific follow-up \u2014 indicative of low-quality, generic messaging.",
+    "evidence": [
+      "[2025-10-02T11:27:35+00:00] (AI) ATLAS: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no repeated request for the same information nor multiple back-and-forth AI prompts shown in the timeline to indicate a loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The transcript contains only a single generic AI message and shows no instance of the AI asking for already-provided details or ignoring customer-supplied context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Timeline shows a single AI message with max gap 0.0 hours and no multi-day gaps between interactions.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is closed, there is no evidence in the provided transcript that the customer was awaiting promised information or had abandoned the ticket.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is 'normal' and there is no troubleshooting content shown that would indicate mishandling of a high-severity outage.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response is generic filler thanking the user and promising a conversation record without providing substantive help or specific follow-up \u2014 indicative of low-quality, generic messaging.\",\n    \"evidence\": [\n      \"[2025-10-02T11:27:35+00:00] (AI) ATLAS: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no repeated request for the same information nor multiple back-and-forth AI prompts shown in the timeline to indicate a loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The transcript contains only a single generic AI message and shows no instance of the AI asking for already-provided details or ignoring customer-supplied context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Timeline shows a single AI message with max gap 0.0 hours and no multi-day gaps between interactions.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is closed, there is no evidence in the provided transcript that the customer was awaiting promised information or had abandoned the ticket.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is 'normal' and there is no troubleshooting content shown that would indicate mishandling of a high-severity outage.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60212281
+}

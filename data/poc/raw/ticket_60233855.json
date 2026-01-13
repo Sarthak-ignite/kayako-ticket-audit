@@ -1,0 +1,336 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_classic",
+        "requester": {
+          "id": 10,
+          "uuid": "7e697578-55af-5813-85b8-e58fa1e4baef",
+          "full_name": "Andriy Rybalchenko",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 5,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/7e697578-55af-5813-85b8-e58fa1e4baef?1767781696",
+          "agent_case_access": "INHERIT-FROM-ROLE",
+          "organization_case_access": null,
+          "organization": {
+            "id": 3,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 1,
+              "resource_type": "team"
+            },
+            {
+              "id": 3,
+              "resource_type": "team"
+            },
+            {
+              "id": 4,
+              "resource_type": "team"
+            },
+            {
+              "id": 6,
+              "resource_type": "team"
+            },
+            {
+              "id": 7,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000002,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 11,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "7390,7403,7404,7353,7420,7366,7371,7372,7424,7425,7361,7426,7360,7382,7448",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Madrid",
+          "time_zone_offset": 3600,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "90.166.134.217",
+          "last_seen_at": "2026-01-07T10:28:16+00:00",
+          "last_active_at": "2026-01-07T10:28:16+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_10",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@d4a719f83edff674488dbd7f7fbb92e5f31a22a4",
+          "password_updated_at": "2024-11-28T15:17:30+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-07T07:09:59+00:00",
+          "last_activity_at": "2026-01-07T07:09:59+00:00",
+          "created_at": "2024-11-28T15:14:36+00:00",
+          "updated_at": "2026-01-07T10:28:16+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/10"
+        },
+        "ticket_idt": 60233855
+      },
+      "interactions": [
+        [
+          "2025-11-03T06:52:51+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Process Step 5 reached: Public communication already sent to the customer referencing the same release. Validation summary: \u2022 DS for Escalated Issue (only GHI!) = https://github.com/trilogy-group/eng-maintenance/issues/13744 \u2192 parsed issue ID 13744 \u2022 GHI: Project = Khoros Community, Status = Done, Fix Release = 25.12 \u2022 Community Releases sheet (Tab: Community Releases, column B=25.12): Stage = Date(2025,11,14) \u2192 2025-12-14; Prod = Date(2026,0,5) \u2192 2026-01-05; both dates are in the future (as of 2025-11-03)\n2. A public message in this ticket already communicated release 25.12 and these rollout dates. Per process, no further public updates will be sent; leaving for human agents to review.\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-03T06:50:35+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251103_065032_32a5.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-03T06:49:32+00:00",
+          "Kayako - ticket id 60233855 // Centralsupport-ai-acc commented privately: Placing on hold for 1 hour(s)"
+        ],
+        [
+          "2025-11-03T06:47:06+00:00",
+          "Kayako - ticket id 60233855 // Centralsupport-ai-acc commented privately: Placing on hold for 1 hour(s)"
+        ],
+        [
+          "2025-11-03T06:44:29+00:00",
+          "Kayako - ticket id 60233855 // Centralsupport-ai-acc commented privately: Placing on hold for 1 hour(s)"
+        ],
+        [
+          "2025-11-03T06:38:21+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Process Step 5 reached: Customer has already been informed publicly about the fix being included in Khoros Community release 25.12 with rollout dates (Stage: 2025-12-14, Prod: 2026-01-05)\n2. Validation steps:\n3. \u2022 DS for Escalated Issue (only GHI!) = https://github.com/trilogy-group/eng-maintenance/issues/13744 \u2192 parsed issue ID 13744\n4. \u2022 GHI check \u2192 Project: Khoros Community, Status: Done, Fix Release: 25.12\n5. \u2022 Community Releases sheet \u2192 Stage Date: Date(2025,11,14) \u2192 2025-12-14; Prod Date: Date(2026,0,5) \u2192 2026-01-05; both are in the future.\n6. Since a public message already communicated this release/version and dates, per process we will not send another customer update and will leave the ticket for human agents to review. No field or status changes performed.\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-03T06:36:42+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251103_063638_6f72.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-02T10:50:05+00:00",
+          "Kayako - ticket id 60233855 // AI-CS Integration commented privately: \"(Lachesis): Ticket is pending without solDelProc flag. Setting it to True\""
+        ],
+        [
+          "2025-11-02T10:36:13Z",
+          "GHI Engineering - 13744 // not-lmrlima labeled as Priority:Normal"
+        ],
+        [
+          "2025-11-02T10:22:50+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\nThe process has failed and andon cord has been pulled for the following reason:\n\n**Terminating loop: The automated release notification flow was completed successfully and no further actions are required, but the conversation entered a redundant acknowledge loop. Work done: - Read Kayako custom field 'DS for Escalated Issue (only GHI!)' \u2192 https://github.com/trilogy-group/eng-maintenance/issues/13744 - Parsed GitHub issue ID: 13744 - Queried GHI: Project = Khoros Community, Status = Done, Fix Release = 25.12 - Read Google Sheet (Community Releases, column B = 25.12): Found rollout dates \u2022 Customer Stage Rollout: Date(2025,11,14) \u2192 2025-12-14 \u2022 Customer Prod Rollout: Date(2026,0,5) \u2192 2026-01-05 - Verified both dates are in the future. - Checked ticket content: Customer has already been informed publicly about release 25.12 and these dates. - Per process (Step 5 \u2192 Step 7), no additional public response or updates were required. Reason for Andon: Conversation got stuck in an acknowledgment loop despite process completion. Logging and ending gracefully.**\n\nPlease review the ticket details and process the request manually.\n===== End of Summary ====="
+        ],
+        [
+          "2025-11-02T10:10:38+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251102_101035_f1d7.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-02T09:42:05+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented publicly: Dear Customer,\n\nThank you for your continued patience. We are delighted to inform you that our Development team has addressed the issue. The resolution will be included in the upcoming version 25.12, which is currently scheduled for deployment to the stage environment on December 14, 2025, and to the production environment on January 5, 2026.\n\nPlease be aware that these dates are tentative. We recommend monitoring the official Khoros Community Release Notes page [https://community.khoros.com/category/products/blog/release-notes] for the most up-to-date information. We will keep this ticket open until the stage deployment, allowing you to validate the fix.\n\nBest regards,\nCentral Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-02T09:42:01+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Process execution summary:\n2. - Retrieved DS for Escalated Issue (only GHI!) field: https://github.com/trilogy-group/eng-maintenance/issues/13744\n3. - Parsed GitHub issue ID: 13744\n4. - GHI check: Project = Khoros Community, Status = Done, Fix Release = 25.12\n5. - Community Releases sheet lookup (Tab: Community Releases, search in column B): Found row A5:L5 with F=Date(2025,11,14) and G=Date(2026,0,5)\n6. - Normalized dates (Google Sheet months are 0-indexed): Stage = 2025-12-14, Prod = 2026-01-05; both dates are in the future relative to today (2025-11-02)\n7. - Computed 'Date of the first reminder' = Stage + 1 day = 2025-12-15; updated the ticket field successfully\n8. - Sending public update with release version 25.12 and the above dates; setting ticket to Pending until Stage deployment for customer validation.\n===== End of Summary =====\n"
+        ],
+        [
+          "2025-11-02T09:38:29+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251102_093825_6863.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-02T09:10:05+00:00",
+          "Kayako - ticket id 60233855 // AI-CS Integration commented privately: \"(Lachesis): Ticket is pending without solDelProc flag. Setting it to True\""
+        ],
+        [
+          "2025-11-02T08:31:34+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented publicly: Dear Andriy,\n\nI wanted to provide you with a quick update on your escalation: the solution is planned to be included in the Khoros Community release 25.12. The tentative rollout dates are as follows:\n\n\t* Customer Stage: December 14, 2025\n\n\t* Customer Production: January 5, 2026\n\nWe will keep this ticket open until January 4, 2026. Should you require any further assistance before then, please feel free to respond here.\n\nBest regards,\n\nCentral Support Team"
+        ],
+        [
+          "2025-11-02T08:31:28+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. GHI lookup complete for issue 13744.\n2. - Project: Khoros Community\n3. - Status: Done\n4. - Fix Release: 25.12. All Set.\n5. Community Releases sheet lookup (Tab: Community Releases, search '25.12' in column B) returned:\n6. Row A5:L5 values: [A: -, B: 25.12, C: Date(2025,10,23), D: Date(2025,10,30), E: Date(2025,11,7), F: Date(2025,11,14), G: Date(2026,0,5), H-L: -]\n7. Identified rollout dates for 25.12:\n8. - Customer Stage Rollout Date (F): 2025-12-14\n9. - Customer Prod Rollout Date (G): 2026-01-05\n10. 'Date of the first reminder' field has been set to: 2026-01-04.\n===== End of Summary =====\n"
+        ],
+        [
+          "2025-11-02T08:27:34+00:00",
+          "Kayako - ticket id 60233855 // ATLAS commented privately: Component could not be determined"
+        ],
+        [
+          "2025-11-02T08:27:21+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251102_082718_dd92.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-01T17:57:10+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. ===== Operation Summary =====\n2. 1. GHI lookup complete for issue 13742. Project: CE Maintenance | Status: To triage | Fix Release: None (not available)\n3. 2. Raw query response: Work on the issue 13742 is ongoing: [articulate]Unable to attach Zip files to the messages using the windows machine, Issue state is OPEN, Updated with \"CE Maintenance\" project at: 2025-08-21T06:57:08Z UTC, Current status in the project: To triage\n4. ===== End of Summary =====\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-01T17:55:27+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251101_175527_f9a6.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-01T17:54:30+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. ===== Operation Summary =====\n2. 1. GHI lookup complete for issue 13711. Project: Khoros Spredfast | Status: Done | Fix Release: None (no release published)\n3. 2. Raw query response: Issue 13711 project(s): Khoros Spredfast: status Done, release null\n4. ===== End of Summary =====\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-01T17:52:51+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251101_175248_e4be.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-01T17:52:38+00:00",
+          "Kayako - ticket id 60233855 // Andriy Rybalchenko commented privately:  Testing different project -\u00a0https://github.com/trilogy-group/eng-maintenance/issues/13711 "
+        ],
+        [
+          "2025-11-01T17:43:11+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. ===== Operation Summary =====\n2. 1. GHI lookup complete for issue 13742. Project: CE Maintenance | Status: To triage | Fix Release: None (not available)\n3. 2. Raw query response: 0 is with Engineering project CE Maintenance, Issue https://github.com/trilogy-group/eng-maintenance/issues/13742: [articulate]Unable to attach Zip files to the messages using the windows machine, Issue state is OPEN, Updated with \"CE Maintenance\" project at: 2025-08-21T06:57:08Z UTC, Current status in the project: To triage\n4. ===== End of Summary =====\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-01T17:41:37+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251101_174136_1807.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-01T17:41:32+00:00",
+          "Kayako - ticket id 60233855 // Andriy Rybalchenko commented privately:  Testing https://github.com/trilogy-group/eng-maintenance/issues/13742 - status not Done "
+        ],
+        [
+          "2025-11-01T17:40:49+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. ===== Operation Summary =====\n2. 1. GHI lookup complete for issue 13743. Project: Khoros Community | Status: Done | Fix Release: None (no release published)\n3. Raw query response: Issue 13743 project(s): Khoros Community: status Done, release null\n4. ===== End of Summary =====\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-01T17:38:59+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251101_173859_4c9a.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-01T17:38:35+00:00",
+          "Kayako - ticket id 60233855 // Andriy Rybalchenko commented privately:  Testing https://github.com/trilogy-group/eng-maintenance/issues/13743 - no release "
+        ],
+        [
+          "2025-11-01T17:36:46+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. GHI lookup complete for issue 13744. Project: Khoros Community | Status: Done | Fix Release: 25.12. All Set.\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-01T17:34:50+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251101_173450_ba45.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-01T17:33:57+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Unable to proceed with GHI lookup. The 'DS for Escalated Issue (only GHI!)' field is empty, so no GitHub issue URL was available and no numeric issue ID could be parsed. read_custom_field_kayako returned: 'No value found in ticket for field \"DS for Escalated Issue (only GHI!)\"'\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-01T17:32:15+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251101_173214_6487.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-01T17:27:14+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented publicly: Dear Customer,\n\nWe were unable to proceed as the 'DS for Escalated Issue (only GHI!)' field is currently empty. Kindly add the GitHub issue URL in this field, for example, GitHub Issue [https://github.com///issues/12345], or reply here with the URL. Once this is done, we can continue to check the project status and fix the release version.\n\nThank you for your attention to this matter!\n\nBest regards,\n\nCentral Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-01T17:27:09+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Unable to proceed with GHI lookup. The custom field 'DS for Escalated Issue (only GHI!)' is empty, so no GitHub issue URL was available and no numeric issue ID could be parsed. read_custom_field_kayako returned: 'No value found in ticket for field \"DS for Escalated Issue (only GHI!)\"'\n2. Per process, adding this note and requesting the requester to provide the URL to continue.\n===== End of Summary =====\n"
+        ],
+        [
+          "2025-11-01T17:26:02+00:00",
+          "Kayako - ticket id 60233855 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60233855/kayako_central-supportdesk_60233855_20251101_172559_b35e.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-01T17:25:18+00:00",
+          "Kayako - ticket id 60233855 // ATLAS commented privately: Component could not be determined"
+        ],
+        [
+          "2025-11-01T17:24:53+00:00",
+          "Kayako - ticket id 60233855 // Andriy Rybalchenko commented publicly: Testing CC package for Khoros Community"
+        ],
+        [
+          "2025-10-28T16:46:29Z",
+          "GHI Engineering - 13744 // trilogy-eng-standards removed_from_project_v2"
+        ],
+        [
+          "2025-10-28T16:15:52Z",
+          "GHI Engineering - 13744 // trilogy-taro[bot] commented: > #taro-issue-summary\n\nThe GraphQL ancestorId constraint for boards returns zero results instead of the expected boards under a specified ancestor category. The root cause is that the BoardQueryConstraints class does not properly handle the full ancestor ID format (e.g., \"category:canaries\") and only forwards the ID portion (\"canaries\") to subsequent processing steps, while other similar query constraints correctly include the type prefix using the includeType() method. The Engineering team has implemented a fix by overriding the setAncestorId method in BoardQueryConstraints.java to call ancestorId.includeType(), ensuring the complete ancestor ID format is preserved during query processing, and the fix has been verified through manual API testing and submitted via pull request #615.\n\n\n> Created with [Taro](https://github.com/trilogy-group/taro/tree/shell). Like this comment if it was helpful.\n"
+        ],
+        [
+          "2025-10-28T16:15:05Z",
+          "GHI Engineering - 13744 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-10-28T16:15:04Z",
+          "GHI Engineering - 13744 // lmrlima closed"
+        ],
+        [
+          "2025-10-26T10:31:27Z",
+          "GHI Engineering - 13744 // bachly-trilogy project_v2_item_status_changed"
+        ],
+        [
+          "2025-10-26T10:31:17Z",
+          "GHI Engineering - 13744 // bachly-trilogy commented: # Defect Analysis & Fix\n\n## Verification\n1. Capture the authen GraphQL: go to https://leorora.qa.lithium.com =>  open network tab => copy any GraphQL request as Curl => paste to Postman\n2. Keep the url `https://leorora.qa.lithium.com/t5/s/api/2.1/graphql`. Goto body > GraphQL and paste below query:\n```\nquery MyQuery {\n  boards(constraints: {ancestorId: {eq: \"category:canaries\"}}) {\n    totalCount\n    edges {\n      node {\n        id\n        creationDate\n        parent {\n          id\n}}}}}\n```\n3. Observe empty response, although on UI, it has 4 boards\n\n<img width=\"1512\" height=\"457\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/cac6f09c-1b4a-4e8e-b64e-1226c12fcae4\" />\n\n<img width=\"1512\" height=\"636\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/a324b483-ad12-4c4d-9328-f79a359dea1f\" />\n\n## Root Cause Analysis\n- The constraint logic for boards query is defined in [BoardQueryConstraints.java](https://github.com/lithiumtech/lia/blob/7e4c39a2f64769ebd284adf82ab59f645221e015/dev/lia/components/restv2/src/main/java/lithium/api/graphql/schema/query/nodes/BoardQueryConstraints.java)\n- By default, ancestorId set as is\n```\npublic void setAncestorId(IDEqlInConstraint ancestorId) {\n\tthis.ancestorId = ancestorId;\n}\n```\n- Our input is `category:canaries` which syntax is enforce by [IDEqlInConstraint.java](https://github.com/lithiumtech/lia/blob/f316ed90fe07ffceb02b4f527aa63dc61b22875c/dev/lia/components/restv2/src/main/java/lithium/api/graphql/schema/query/base/IDEqlInConstraint.java). That input is parsed to object IDRef, which is {type:category, id: canaries} in this case.\n- If relying on default ancestorId implementation, only \"canaries\" is forwarded to next steps, which is not expected\n- A similar situation can be seen through [NodeQueryConstraints.java](https://github.com/lithiumtech/lia/blob/b119cc982b0663d5309dcc84353c94cc6b362254/dev/lia/components/restv2/src/main/java/lithium/api/graphql/schema/query/nodes/NodeQueryConstraints.java) which also require similar syntax, such as \"board:board-id\". And it set ancestorId by:\n```\n@Override\npublic void setAncestorId(IDEqlInConstraint ancestorId) {\n\tsuper.setAncestorId(ancestorId.includeType());\n}\n```\n\n=> This must be an edge case for boards query and cause by lack of proper OOP inheritance.\n\n## Test Plan\nAPI Manual test:\n- Follow steps in section **Verification**\n- Expected: Not empty, similar to below\n\n<img width=\"1512\" height=\"784\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/532719b5-7fd8-4fb5-b0b0-ad0fc164eb77\" />\n\n## Test results\n\nhttps://github.com/user-attachments/assets/f9e38468-1340-4544-808d-89a00f4ff84e\n\n## Deliverables\nhttps://github.com/lithiumtech/lia/pull/615\n"
+        ],
+        [
+          "2025-10-26T09:04:19Z",
+          "GHI Engineering - 13744 // bachly-trilogy assigned to bachly-trilogy"
+        ],
+        [
+          "2025-09-13T15:14:50Z",
+          "GHI Engineering - 13744 // trilogy-taro[bot] commented: # Engineering Issue Bot\n\n## Issue Analysis\n\nThis issue involves a GraphQL query constraint failure where the `ancestorId` constraint for fetching boards returns zero results when it should return all boards under the specified ancestor category.\n\n## Issue Reproduction\n\n**Environment**: https://italentcorp5.stage.lithium.com/t5/s/api/2.1/graphql\n\n**GraphQL Query Tested**:\n```graphql\nquery MyQuery {\n  boards(constraints: {ancestorId: {eq: \"category:Fabric_Ideas\"}}) {\n    edges {\n      node {\n        conversationStyle\n        title\n        id\n      }\n    }\n  }\n}\n```\n\n**Expected Behavior**: Return all boards under the \"category:Fabric_Ideas\" ancestor\n**Actual Behavior**: Returns empty result set (zero boards)\n\n## Root Cause Analysis\n\n### API Layer Analysis\nThe GraphQL API endpoint at `/t5/s/api/2.1/graphql` is receiving and parsing the query correctly, but the constraint evaluation for `ancestorId` is failing during query execution.\n\n### Logic Layer Analysis\nThe most likely root causes for this issue are:\n\n1. **Incorrect Ancestor ID Format Handling**: The constraint processor may not be correctly parsing the \"category:\" prefix in the ancestor ID\n2. **Missing Index or Relationship Mapping**: The database query generated from the GraphQL constraint may be missing proper joins for ancestor relationships\n3. **Case Sensitivity Issues**: The ancestor ID comparison might be case-sensitive when it shouldn't be\n4. **Permission/Visibility Filtering**: Results might be filtered out due to permission checks after the query\n\n### Persistence Layer Analysis\nThe boards-to-ancestors relationship query is likely failing due to:\n- Missing or incorrect database index on ancestor relationships\n- Incorrect SQL generation for hierarchical queries\n- Potential data inconsistency where boards exist but ancestor relationships are not properly stored\n\n## Resolution Approach\n\nSince access to the Khoros Aurora Community codebase is restricted, I cannot directly implement and test the fix. However, based on the analysis, the following approach would resolve the issue:\n\n### Required Code Changes\n\n1. **GraphQL Resolver Update**:\n   - Locate the boards query resolver that handles BoardConstraints\n   - Fix the ancestorId constraint processing to properly handle the \"category:\" prefix\n   - Ensure the constraint generates correct database queries for ancestor relationships\n\n2. **Database Query Optimization**:\n   - Add or fix indexes on board-ancestor relationship tables\n   - Ensure hierarchical queries properly traverse the ancestor tree\n\n3. **Validation Enhancement**:\n   - Add input validation for ancestorId format\n   - Implement proper error messages for invalid ancestor IDs\n\n### Test Plan\n\n1. **Unit Tests**:\n   - Test ancestorId constraint with various formats (with/without prefix)\n   - Test empty and invalid ancestor IDs\n   - Test nested ancestor hierarchies\n\n2. **Integration Tests**:\n   - Verify boards are returned for valid ancestor IDs\n   - Test multiple constraint combinations\n   - Validate performance with large board sets\n\n3. **E2E Tests**:\n   - Execute the original failing query and verify it returns results\n   - Test via GraphQL playground on staging environment\n   - Verify no regression in other board query constraints\n\n## Next Steps\n\nTo make progress on this issue:\n\n1. **Access Required**: Need access to the Khoros Aurora Community codebase (lithiumtech organization repositories) to implement the fix\n2. **Investigation Needed**:\n   - Examine the actual GraphQL schema definition for BoardConstraints\n   - Review the resolver implementation for the boards query\n   - Analyze the database schema for board-ancestor relationships\n3. **Collaboration**: Contact the Khoros Aurora team or someone with repository access to proceed with implementation\n\n## Alternative Solutions\n\nIf the main approach cannot be implemented:\n\n1. **Workaround**: Query all boards without constraints and filter client-side (not recommended for production)\n2. **Alternative Query**: Use different constraints or query ancestors separately then fetch their boards\n3. **API Version**: Check if newer API versions have this issue fixed\n\n## Verdict\n\n**Likelihood of Correctness**: 75%\n\nThe analysis identifies the probable root cause in the GraphQL constraint processing for ancestorId. However, without access to the actual codebase and ability to test the fix, full verification cannot be completed. The issue requires someone with repository access to the Khoros Aurora Community codebase to implement and test the solution."
+        ],
+        [
+          "2025-08-21T06:28:49Z",
+          "GHI Engineering - 13744 // not-lmrlima labeled as community-maintenance"
+        ],
+        [
+          "2025-08-21T06:28:48Z",
+          "GHI Engineering - 13744 // not-lmrlima added_to_project_v2"
+        ],
+        [
+          "2025-08-21T06:01:44Z",
+          "GHI Engineering - 13744 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-08-21T06:01:42Z",
+          "GHI Engineering - 13744 // trilogy-eng-standards added_to_project_v2"
+        ],
+        [
+          "2025-08-21T06:01:20Z",
+          "GHI Engineering - 13744 // carlosencaladatrilogy labeled as Eng-Maintenance"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 38,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": true,
+          "link_value": "https://github.com/trilogy-group/eng-maintenance/issues/13744"
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

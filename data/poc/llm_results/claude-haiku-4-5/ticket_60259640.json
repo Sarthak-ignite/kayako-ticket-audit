@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The interaction provided is incomplete - only an AI acknowledgment message is shown with no substantive response content to evaluate.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient data to detect looping. Only one AI message visible, and it appears to be a closing/summary message rather than a repetitive request.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Cannot evaluate context handling as the full conversation history and customer issue details are not provided in the interaction data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamp is present in the data. The max gap between responses is listed as 0.0 hours in the metadata, indicating no significant delays.",
+    "evidence": [
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket shows as closed with no evidence of pending customer requests or unresolved issues. The single visible message is an AI summary/acknowledgment.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is 'normal', not P1/Sev1. This pattern is not applicable to this ticket.",
+    "evidence": [
+      "Priority: normal"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction provided is incomplete - only an AI acknowledgment message is shown with no substantive response content to evaluate.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient data to detect looping. Only one AI message visible, and it appears to be a closing/summary message rather than a repetitive request.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot evaluate context handling as the full conversation history and customer issue details are not provided in the interaction data.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one timestamp is present in the data. The max gap between responses is listed as 0.0 hours in the metadata, indicating no significant delays.\",\n    \"evidence\": [\n      \"Max gap between responses (hours): 0.0\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket shows as closed with no evidence of pending customer requests or unresolved issues. The single visible message is an AI summary/acknowledgment.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is 'normal', not P1/Sev1. This pattern is not applicable to this ticket.\",\n    \"evidence\": [\n      \"Priority: normal\"\n    ]\n  }\n}\n```\n\n**Note**: The interaction data provided is incomplete - it only shows a closing acknowledgment from ATLAS without the actual customer issue or substantive support responses. A full quality analysis would require the complete conversation history and customer problem statement.",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60259640
+}

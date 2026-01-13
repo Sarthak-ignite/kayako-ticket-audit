@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no AI response to evaluate for quality issues in the interactions provided.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in an AI loop or repeated requests for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence of the support ignoring information or asking for the same information repeatedly.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no delays evident as the 'Max gap between responses' is 0 hours and the conversation timeline supports this.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed immediately after the customer's message without any response to their concern about unsubscribing.",
+    "evidence": [
+      "[2025-12-01T14:44:29+00:00] (AI) ATLAS: Closing as non-billable",
+      "[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: To unsubscribe from this group..."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as high-priority or as an outage, so mishandling protocols do not apply.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no AI response to evaluate for quality issues in the interactions provided.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in an AI loop or repeated requests for the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the support ignoring information or asking for the same information repeatedly.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no delays evident as the 'Max gap between responses' is 0 hours and the conversation timeline supports this.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed immediately after the customer's message without any response to their concern about unsubscribing.\",\n    \"evidence\": [\"[2025-12-01T14:44:29+00:00] (AI) ATLAS: Closing as non-billable\", \"[2025-12-01T14:44:11+00:00] (Customer) Aven Saren: To unsubscribe from this group...\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as high-priority or as an outage, so mishandling protocols do not apply.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60253689
+}

@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI system appears to be performing automated testing and processing related to GitHub issue tracking and release information. While multiple AI processes are running, there's no evidence of generic filler responses or broken promises to actual customer requests.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer (Andriy Rybalchenko) appears to be conducting internal testing of different GitHub issues, not stuck in an AI loop trying to reach human support. The interactions show deliberate testing patterns rather than a frustrated customer.",
+    "evidence": [
+      "[2025-11-01T17:52:38+00:00] Andriy Rybalchenko: Testing different project - https://github.com/trilogy-group/eng-maintenance/issues/13711",
+      "[2025-11-01T17:41:32+00:00] Andriy Rybalchenko: Testing https://github.com/trilogy-group/eng-maintenance/issues/13742 - status not Done",
+      "[2025-11-01T17:38:35+00:00] Andriy Rybalchenko: Testing https://github.com/trilogy-group/eng-maintenance/issues/13743 - no release"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of support ignoring previously provided information. The customer's interactions are internal test comments, and the AI system is responding appropriately to each test case.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Time to first human response was 1588.5 hours (over 66 days), which represents a significant delay. The maximum gap between responses was 1025.8 hours (approximately 43 days), indicating substantial periods of inactivity.",
+    "evidence": [
+      "Time to first human (hours): 1588.5",
+      "Max gap between responses (hours): 1025.8"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to be an internal testing ticket rather than a genuine customer support case. The customer was conducting deliberate tests and the ticket was closed after AI provided updates about development team fixes.",
+    "evidence": [
+      "[2025-11-02T09:42:05+00:00] Cu Chulainn AI Manager: Dear Customer, Thank you for your continued patience. We are delighted to inform you that our Development team has addressed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is marked as 'normal', not P1/SEV1, so high-priority handling criteria do not apply.",
+    "evidence": [
+      "Priority: normal"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI system appears to be performing automated testing and processing related to GitHub issue tracking and release information. While multiple AI processes are running, there's no evidence of generic filler responses or broken promises to actual customer requests.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer (Andriy Rybalchenko) appears to be conducting internal testing of different GitHub issues, not stuck in an AI loop trying to reach human support. The interactions show deliberate testing patterns rather than a frustrated customer.\",\n    \"evidence\": [\n      \"[2025-11-01T17:52:38+00:00] Andriy Rybalchenko: Testing different project - https://github.com/trilogy-group/eng-maintenance/issues/13711\",\n      \"[2025-11-01T17:41:32+00:00] Andriy Rybalchenko: Testing https://github.com/trilogy-group/eng-maintenance/issues/13742 - status not Done\",\n      \"[2025-11-01T17:38:35+00:00] Andriy Rybalchenko: Testing https://github.com/trilogy-group/eng-maintenance/issues/13743 - no release\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of support ignoring previously provided information. The customer's interactions are internal test comments, and the AI system is responding appropriately to each test case.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Time to first human response was 1588.5 hours (over 66 days), which represents a significant delay. The maximum gap between responses was 1025.8 hours (approximately 43 days), indicating substantial periods of inactivity.\",\n    \"evidence\": [\n      \"Time to first human (hours): 1588.5\",\n      \"Max gap between responses (hours): 1025.8\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to be an internal testing ticket rather than a genuine customer support case. The customer was conducting deliberate tests and the ticket was closed after AI provided updates about development team fixes.\",\n    \"evidence\": [\n      \"[2025-11-02T09:42:05+00:00] Cu Chulainn AI Manager: Dear Customer, Thank you for your continued patience. We are delighted to inform you that our Development team has addressed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is marked as 'normal', not P1/SEV1, so high-priority handling criteria do not apply.\",\n    \"evidence\": [\n      \"Priority: normal\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60233855
+}

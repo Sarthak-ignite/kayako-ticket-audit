@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses are generic and do not provide substantive help to the customer's specific issue.",
+    "evidence": [
+      "[2025-10-06T10:43:36+00:00] Hi, Andrew Mugisha ! \ud83d\udc4b This is the StreetS...",
+      "[2025-10-06T10:44:30+00:00] Action: l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There's no evidence of the customer being stuck in a repetitive AI interaction loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Multiple support agents seem unaware of previous interactions and repeatedly ask for or investigate the same information.",
+    "evidence": [
+      "[2025-10-10T03:21:05+00:00] Alexandr Oliynyk: We were unable to reproduce the issue impersonating one of the admin accounts for COID 10",
+      "[2025-10-07T08:55:52+00:00] Raymond Guirguis: The ATLAS automation for this customer is currently not functioning because the required Salesforce fields that store..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer communications and support responses, with some interactions spanning multiple days.",
+    "evidence": [
+      "First customer message: [2025-10-06T10:45:20+00:00]",
+      "Last interaction: [2025-10-11T12:22:00+00:00]",
+      "Max gap between responses: 25.5 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed before the customer's core issue was fully resolved, with ongoing problems about device addition.",
+    "evidence": [
+      "[2025-10-11T12:22:00+00:00] Raymond Guirguis: 'Thank you for your continued patience.'",
+      "Customer's original issue of not being able to add devices was not conclusively addressed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite an urgent priority ticket, the support team did not provide immediate, decisive resolution and instead engaged in prolonged investigation.",
+    "evidence": [
+      "[2025-10-07T08:55:52+00:00] Raymond Guirguis explains automation is not functioning",
+      "[2025-10-11T11:05:06+00:00] Raymond Guirguis: 'im working on this.. it is a case sensitivity issue with the automation'"
+    ]
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses are generic and do not provide substantive help to the customer's specific issue.\",\n    \"evidence\": [\n      \"[2025-10-06T10:43:36+00:00] Hi, Andrew Mugisha ! \ud83d\udc4b This is the StreetS...\",\n      \"[2025-10-06T10:44:30+00:00] Action: l1\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There's no evidence of the customer being stuck in a repetitive AI interaction loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple support agents seem unaware of previous interactions and repeatedly ask for or investigate the same information.\",\n    \"evidence\": [\n      \"[2025-10-10T03:21:05+00:00] Alexandr Oliynyk: We were unable to reproduce the issue impersonating one of the admin accounts for COID 10\",\n      \"[2025-10-07T08:55:52+00:00] Raymond Guirguis: The ATLAS automation for this customer is currently not functioning because the required Salesforce fields that store...\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer communications and support responses, with some interactions spanning multiple days.\",\n    \"evidence\": [\n      \"First customer message: [2025-10-06T10:45:20+00:00]\",\n      \"Last interaction: [2025-10-11T12:22:00+00:00]\",\n      \"Max gap between responses: 25.5 hours\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed before the customer's core issue was fully resolved, with ongoing problems about device addition.\",\n    \"evidence\": [\n      \"[2025-10-11T12:22:00+00:00] Raymond Guirguis: 'Thank you for your continued patience.'\",\n      \"Customer's original issue of not being able to add devices was not conclusively addressed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite an urgent priority ticket, the support team did not provide immediate, decisive resolution and instead engaged in prolonged investigation.\",\n    \"evidence\": [\n      \"[2025-10-07T08:55:52+00:00] Raymond Guirguis explains automation is not functioning\",\n      \"[2025-10-11T11:05:06+00:00] Raymond Guirguis: 'im working on this.. it is a case sensitivity issue with the automation'\"\n    ]\n  }\n}\n```\n\nKey observations:\n- The ticket demonstrates multiple quality issues\n- Communication was fragmented and inefficient\n- The core customer problem was not quickly or clearly resolved\n- Multiple agents seemed disconnected from the ticket's history",
+  "_model": "claude-haiku",
+  "_ticket_id": 60214613
+}

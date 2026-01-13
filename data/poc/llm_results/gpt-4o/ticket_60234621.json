@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI responses being filler or inaccurate in this ticket.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket interactions do not show any repetitive AI requests or inability to escalate to a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support staff provided information based on the ongoing incident and did not ask for repeated details already shared.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between responses was 0.7 hours, which does not constitute significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was resolved and closed after a fix was implemented without indication that the customer was waiting for additional information.",
+    "evidence": [
+      "Chintan Parekh commented publicly: 'We have identified the cause of the chat widget outage and implemented a fix.' [2025-11-03T15:50:44+00:00]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue was addressed promptly with identification and resolution of the SSL certificate problem.",
+    "evidence": [
+      "Muhammad Waqar commented: 'Renewed certificate for https://brandmessenger.usw2.khoros.com/' [2025-11-03T14:55:30.614+0000]",
+      "Pavly Nashed commented: 'Confirmed fixed on one of the reported customers' websites.' [2025-11-03T15:38:45.905+0000]"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI responses being filler or inaccurate in this ticket.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket interactions do not show any repetitive AI requests or inability to escalate to a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support staff provided information based on the ongoing incident and did not ask for repeated details already shared.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between responses was 0.7 hours, which does not constitute significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was resolved and closed after a fix was implemented without indication that the customer was waiting for additional information.\",\n    \"evidence\": [\n      \"Chintan Parekh commented publicly: 'We have identified the cause of the chat widget outage and implemented a fix.' [2025-11-03T15:50:44+00:00]\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The issue was addressed promptly with identification and resolution of the SSL certificate problem.\",\n    \"evidence\": [\n      \"Muhammad Waqar commented: 'Renewed certificate for https://brandmessenger.usw2.khoros.com/' [2025-11-03T14:55:30.614+0000]\",\n      \"Pavly Nashed commented: 'Confirmed fixed on one of the reported customers' websites.' [2025-11-03T15:38:45.905+0000]\"\n    ]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60234621
+}

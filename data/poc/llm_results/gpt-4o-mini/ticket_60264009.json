@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response appears to be non-informative and evasive, indicated by the message 'Skipping ticket due to tags'.",
+    "evidence": [
+      "[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer is stuck in a loop; the AI simply chose to skip the ticket.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI response did not request any repeated information or logs from the customer; it was a response with no apparent action.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occurred in a very short timeframe (within seconds), indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed, but there is no indication that the customer was waiting for promised information or expressed frustration.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There are no indications of generic troubleshooting responses that would suggest mishandling of a high-priority issue.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response appears to be non-informative and evasive, indicated by the message 'Skipping ticket due to tags'.\",\n    \"evidence\": [\"[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer is stuck in a loop; the AI simply chose to skip the ticket.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI response did not request any repeated information or logs from the customer; it was a response with no apparent action.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occurred in a very short timeframe (within seconds), indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed, but there is no indication that the customer was waiting for promised information or expressed frustration.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no indications of generic troubleshooting responses that would suggest mishandling of a high-priority issue.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60264009
+}

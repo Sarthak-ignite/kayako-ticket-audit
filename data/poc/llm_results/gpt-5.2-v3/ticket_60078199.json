@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provides an irrelevant response to the customer's direct question, indicating a clear AI quality failure (misunderstanding/derailing). The customer asks for the last chat history, but ATLAS responds with license details instead of addressing the request.",
+    "evidence": [
+      "[ATLAS chat transcript] Customer: \"Hast Du den Letzten chatverlauf\"",
+      "[ATLAS chat transcript] Chat Support: \"I have this license key on record: - License: ... - Expiry date: 2028-01-09. Just to make sure we're on the same page - is this the same system you're reaching out about today?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence the customer was trapped in an AI loop. The ATLAS interaction is brief and the subsequent conversation is handled by human agents; there is no repeated AI request for the same info 2+ times or a request for a human being ignored.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly states that requested materials (logs/screenshots) are already in the ticket, yet support continues to request them again rather than acknowledging and focusing on what is missing/different. This indicates support is not fully incorporating the context of what was already provided.",
+    "evidence": [
+      "[2025-06-23T11:54:39+00:00] Customer: \"The logs and screenshots are already in the ticket!\"",
+      "[2025-06-24T06:39:42+00:00] Support: \"We will require the complete set of logs... gather the logs as per the article... Please also provide us with the sample .eml files...\"",
+      "[2025-06-24T11:21:55+00:00] Customer: \"I created the logs... and sent them. And the screenshots.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a gap of more than 3 calendar days between the customer's initial detailed report and the first public support response.",
+    "evidence": [
+      "[2025-06-16T11:04:01+00:00] Customer describes issue: \"Bug in MailEsstainels in the Pop3 conector... mails are retrieved twice...\"",
+      "[2025-06-23T03:38:59+00:00] First public support reply requesting info: \"To help us investigate this further, please provide the following...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed, and the last support message is a follow-up awaiting the customer's next action (reproduce on new version and provide logs).",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit P1/SEV1/Critical marking or clear outage/production-down statement is present, so high-severity mishandling cannot be concluded from the record.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60078199
+}

@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI (ATLAS) provided generic filler responses promising follow-ups multiple times without delivering actual help, creating noise without value.",
+    "evidence": [
+      "[2025-12-03T08:17:17+00:00] ATLAS: 'Thank you for your continued patience and for following up regarding your vendor due diligence request. We understand how important'",
+      "[2025-12-03T08:02:14+00:00] ATLAS: 'Thank you for your continued patience and your follow-ups regarding your vendor due diligence request. We recognize the importance o'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While AI responses were present, the customer was eventually able to reach a human agent (Carlos Encalada) who handled the request. No evidence of customer being stuck requesting human contact.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "When the customer provided the specific documents needed on Dec 8, Carlos acknowledged and forwarded to the specialized team appropriately. No evidence of re-requesting already provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows extreme delays with 384.9 hours (16 days) to first human response and a maximum gap of 151.9 hours (over 6 days) between responses, which is unacceptable for a high-priority ticket.",
+    "evidence": [
+      "Time to first human (hours): 384.9",
+      "Max gap between responses (hours): 151.9",
+      "Multiple days passed between customer interaction on [2025-12-08T17:20:21+00:00] and next meaningful human response"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed only after the customer explicitly requested closure, stating 'Thank you. You can close out this ticket.'",
+    "evidence": [
+      "[2025-12-09T15:49:39+00:00] Ben Smith: 'Thank you. You can close out this ticket.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This high-priority ticket received no human response for 384.9 hours (16 days), with only AI attempting to handle vendor due diligence requests. High-priority tickets require immediate human attention, not extended AI handling.",
+    "evidence": [
+      "Priority: high",
+      "Time to first human (hours): 384.9",
+      "[2025-12-03T08:17:17+00:00] and [2025-12-03T08:02:14+00:00] ATLAS providing generic responses instead of immediate human escalation"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI (ATLAS) provided generic filler responses promising follow-ups multiple times without delivering actual help, creating noise without value.\",\n    \"evidence\": [\n      \"[2025-12-03T08:17:17+00:00] ATLAS: 'Thank you for your continued patience and for following up regarding your vendor due diligence request. We understand how important'\",\n      \"[2025-12-03T08:02:14+00:00] ATLAS: 'Thank you for your continued patience and your follow-ups regarding your vendor due diligence request. We recognize the importance o'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI responses were present, the customer was eventually able to reach a human agent (Carlos Encalada) who handled the request. No evidence of customer being stuck requesting human contact.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"When the customer provided the specific documents needed on Dec 8, Carlos acknowledged and forwarded to the specialized team appropriately. No evidence of re-requesting already provided information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket shows extreme delays with 384.9 hours (16 days) to first human response and a maximum gap of 151.9 hours (over 6 days) between responses, which is unacceptable for a high-priority ticket.\",\n    \"evidence\": [\n      \"Time to first human (hours): 384.9\",\n      \"Max gap between responses (hours): 151.9\",\n      \"Multiple days passed between customer interaction on [2025-12-08T17:20:21+00:00] and next meaningful human response\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed only after the customer explicitly requested closure, stating 'Thank you. You can close out this ticket.'\",\n    \"evidence\": [\n      \"[2025-12-09T15:49:39+00:00] Ben Smith: 'Thank you. You can close out this ticket.'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This high-priority ticket received no human response for 384.9 hours (16 days), with only AI attempting to handle vendor due diligence requests. High-priority tickets require immediate human attention, not extended AI handling.\",\n    \"evidence\": [\n      \"Priority: high\",\n      \"Time to first human (hours): 384.9\",\n      \"[2025-12-03T08:17:17+00:00] and [2025-12-03T08:02:14+00:00] ATLAS providing generic responses instead of immediate human escalation\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60243726
+}

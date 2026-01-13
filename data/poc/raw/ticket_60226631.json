@@ -1,0 +1,203 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_care",
+        "requester": {
+          "id": 60490396,
+          "uuid": "22db66f8-2bef-5dd0-9b5f-8aee22b40a38",
+          "full_name": "Manju Srinivasan",
+          "legacy_id": "003Uv00000221aJIAQ",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/22db66f8-2bef-5dd0-9b5f-8aee22b40a38?1765815734",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60067841,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 491925,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-10-22T10:26:32+00:00",
+          "last_active_at": "2025-12-15T16:22:14+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60490396",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@82318c72f56a80d93ba707b63641df96362f5b15",
+          "password_updated_at": "2025-09-18T11:06:43+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-07-07T22:10:24+00:00",
+          "updated_at": "2025-12-15T16:22:14+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60490396"
+        },
+        "ticket_idt": 60226631
+      },
+      "interactions": [
+        [
+          "2025-10-23T08:36:12+00:00",
+          "Kayako - ticket id 60226631 // Balaji Jayaraman commented publicly: Dear Jayashree,\n\nThe disruption was triggered by background data processing placing unexpected load on our search infrastructure, which delayed system operations. Service recovered once that load subsided; no data loss occurred. We\u2019re strengthening monitoring and controls to catch similar performance issues earlier and to better isolate background jobs from customer-facing features to prevent recurrence.\n\nBest regards,\nKhoros Care Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-23T07:56:23+00:00",
+          "Kayako - ticket id 60226631 // Jayashree Shetty commented publicly:  \n\nHello Chintan,\n\n\u00a0\n\nWe have been encountering this issue repeatedly. Please review the history of previously raised tickets for reference. The same issue also occurred on 18th October between 13:30 and 13:45 IST, and it resolved itself at that time.\n\nKindly confirm whether the fix you have implemented will prevent this issue from recurring in the future. This problem has a significant impact on production, and we cannot afford to experience repeated occurrences.\n\n\u00a0\n\n\u00a0\n\nRegards\n\nJayashree Shetty\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-10-23T04:36:53.092+0000",
+          "SaaS Jira - issue key CARESMM-9351 // Service Sfit commented: \u274c QC FAILED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis SummaryThe incident involved recurring error messages related to Elasticsearch indexing failures, specifically affecting the EU customers of a SaaS platform. The error, \"Future got interrupted,\" suggests issues with asynchronous operations in Elasticsearch, leading to loss of core functionalities during peak times. The incident was resolved by restarting the Elasticsearch service on specific nodes.\ud83d\ude80 Resolution EffectivenessRoot Cause: The root cause appears to be related to interruptions in Elasticsearch's asynchronous operations, possibly due to resource constraints or misconfigurations. However, the exact root cause is not clearly documented.Actions Taken: The resolution involved restarting the Elasticsearch service on the affected nodes, as detailed in the comments. This action temporarily resolved the issue.Evidence: The comments provide evidence of the actions taken, including the specific nodes restarted. However, there is no detailed analysis or logs explaining why the interruptions occurred.Monitoring: There is no indication that a monitoring ticket was created, suggesting a need for improved monitoring to preemptively catch such issues.Non-Execution: Not applicable, as the resolution was executed.\ud83d\udcdd Process AdherenceCommunication: Communication was clear regarding the actions taken, but lacked detailed analysis of the root cause. The escalation to DevOps was noted, but further details on the investigation were sparse.Documentation: The documentation includes comments and references to actions taken but lacks a comprehensive resolution summary and root cause analysis.Runbook Usage/Creation: A runbook was requested but not provided. Creating a runbook for handling similar Elasticsearch issues is necessary to streamline future resolutions.\ud83d\udcca MetricsInvestigation Quality: 2/5 (The root cause analysis was not thorough or clearly documented.)Documentation Quality: 3/5 (Comments were clear, but the resolution summary was incomplete.)Resolution Effectiveness: 3/5 (The actions taken resolved the issue temporarily, but lacked supporting evidence for long-term prevention.)Total score: 8/15\ud83d\udca1 Suggestions for Improvement1. Enhance Root Cause Analysis: Conduct a deeper investigation into the Elasticsearch interruptions to identify underlying issues.2. Improve Monitoring: Implement monitoring solutions to detect and alert on similar issues proactively.3. Develop a Runbook: Create a detailed runbook for handling Elasticsearch service interruptions, including steps for diagnosis and resolution.4. Document Thoroughly: Ensure that all incidents include a complete resolution summary and root cause analysis for future reference.\u2705 Final AssessmentThis analysis was performed to ensure quality and completeness."
+        ],
+        [
+          "2025-10-23T04:36:35+00:00",
+          "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9351 is changed to 'Closed' , block reason: -"
+        ],
+        [
+          "2025-10-23T04:36:31.968+0000",
+          "SaaS Jira - issue key CARESMM-9351 // status is changed from In Progress to Closed"
+        ],
+        [
+          "2025-10-23T04:36:06.199+0000",
+          "SaaS Jira - issue key CARESMM-9351 // Quang Vo commented: Closing this ticket as the issue was resolved.This is my understanding of what  had done to restart the ES service:ssh -i <khoros_ad_username>@<elastic_search_host> # or\nssh -i <khoros_ad_username>@<elastic_search_private_ipv4>\n\nsudo service elasticsearch restartThe list of master nodes is in the GH ticket itself, but I will put them here just in case:Restarted standby master 1 (i-00047395504b2fa7c)\nRestarted standby master 2 (i-0370348e269e980ca)\nRestarted elected master (i-04c393d36f390adae)You can get the private IPv4 address of these EC2 nodes using either AWS CLI or AWS Console by logging in with OneLogin. cc  "
+        ],
+        [
+          "2025-10-22T22:13:02.111+0000",
+          "SaaS Jira - issue key CARESMM-9351 // Muhammad Umer commented:    shows that the cluster is healthy could you please share the runbook to cater this kind of issue in future."
+        ],
+        [
+          "2025-10-22T12:49:34+00:00",
+          "Kayako - ticket id 60226631 // Chintan Parekh commented publicly: Dear Customer,\n\nWe\u2019re pleased to inform you that the recent service disruption affecting the Khoros Care platform has been resolved.\n\nOur infrastructure team has identified and implemented a fix, and we\u2019ve been closely monitoring the platform\u2019s performance. All services are now fully operational, and message delivery has returned to normal.\n\nWe sincerely apologize for any inconvenience this incident may have caused and appreciate your patience while we worked to restore service.\n\nIf you continue to experience any issues, please don\u2019t hesitate to reach out again to us.\n\nBest regards,\nKhoros Care Support Team"
+        ],
+        [
+          "2025-10-22T12:49:31+00:00",
+          "Kayako - ticket id 60226631 // Chintan Parekh commented privately: Bulk status update by IM after solving CARESMM-9147"
+        ],
+        [
+          "2025-10-22T11:47:54.076+0000",
+          "SaaS Jira - issue key CARESMM-9351 // Deniz Yavas commented:  please prepare a playbook on how to fix this issue for any further occurences."
+        ],
+        [
+          "2025-10-22T11:39:07.819+0000",
+          "SaaS Jira - issue key CARESMM-9351 // Muhammad Waqar commented: Elasticsearch service was restarted on the following nodes by  Elected Master:\nInstance ID: i-04c393d36f390adae\nPrivate IP: 10.221.125.166\nName: prod-eagle-lswcore-elasticsearch-04c393d3.prod.aws.lcloud.com\nStandby Master 1:\nInstance ID: i-00047395504b2fa7c\nPrivate IP: 10.221.55.225\nName: prod-eagle-lswcore-elasticsearch-00047395.prod.aws.lcloud.com\nStandby Master 2:\nInstance ID: i-0370348e269e980ca\nPrivate IP: 10.221.172.59\nName: prod-eagle-lswcore-elasticsearch-0370348e.prod.aws.lcloud.comIt is being worked on in an IM call, Escalating to DevOps"
+        ],
+        [
+          "2025-10-22T10:42:01+00:00",
+          "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9351 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-10-22T10:37:17+00:00",
+          "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-10-22T10:37:10+00:00",
+          "Kayako - ticket id 60226631 // Pavly Nashed commented publicly: Dear Manju,\n\nThank you for your reaching out and reporting this issue.\n\nWe have investigated the root cause of the issue, and this has been escalated to our infrastructure team with the highest priority, and we will let you know once we receive further feedback from them.\n\nBest regards,\nPavly Nashed\nKhoros Care Support Team"
+        ],
+        [
+          "2025-10-22T10:36:22+00:00",
+          "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9351 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-10-22T10:36:18.737+0000",
+          "SaaS Jira - issue key CARESMM-9351 // SaaS Portal commented: note: Alert API - ticket status changed to In Progress"
+        ],
+        [
+          "2025-10-22T10:36:18.280+0000",
+          "SaaS Jira - issue key CARESMM-9351 // SaaS Portal commented: note: Alert API - Assigned from Jira: muhammad.waqar@trilogy.com"
+        ],
+        [
+          "2025-10-22T10:36:18.164+0000",
+          "SaaS Jira - issue key CARESMM-9351 // status is changed from In Queue to In Progress"
+        ],
+        [
+          "2025-10-22T10:36:17.664+0000",
+          "SaaS Jira - issue key CARESMM-9351 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com"
+        ],
+        [
+          "2025-10-22T10:34:21+00:00",
+          "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9351 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-10-22T10:34:18.380+0000",
+          "SaaS Jira - issue key CARESMM-9351 // Issue is created by Pavly Nashed with description: The same error message (with same symptoms) from   showed up again \u2013 Search Run:Error Message:2025-10-22 10:32:02,877 ERROR [CaseReindexing-clusterB-0] services.search.write.StreamingBulkIndexer:[94] - [v:205.0] Uncaught exception while trying to index cases: [CASE.18466022] for companyKey: fortinet\njava.lang.IllegalStateException: Future got interrupted\n\tat org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:74)\n\tat org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:63)\n\tat org.elasticsearch.action.ActionRequestBuilder.get(ActionRequestBuilder.java:69)\n\tat com.khoros.elasticsearch.wrapper.es5.ClusterWrapperES5.executeBulkRequest(ClusterWrapperES5.java:268)\n\tat services.search.write.StreamingBulkIndexer.sendIndexRequests(StreamingBulkIndexer.java:127)\n\tat services.search.write.StreamingBulkIndexer.flushPendingIndexRequests(StreamingBulkIndexer.java:88)\n\tat services.search.write.ElasticSearchUpdateServiceAggregatingImpl.bulkIndexCases(ElasticSearchUpdateServiceAggregatingImpl.java:313)\n\tat services.search.write.ElasticSearchUpdateServiceAggregatingImpl.bulkIndexCases(ElasticSearchUpdateServiceAggregatingImpl.java:262)\n\tat jobs.search.write.ReindexCaseJob.doReindex(ReindexCaseJob.java:160)\n\tat jobs.search.write.ReindexCaseJob.reindexNow(ReindexCaseJob.java:368)\n\tat jobs.search.write.ReindexClusterBQueueWatcherJob.performTask(ReindexClusterBQueueWatcherJob.java:53)\n\tat jobs.search.write.ReindexQueueWatcherJob$1.run(ReindexQueueWatcherJob.java:222)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: java.lang.InterruptedException\n\tat java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1039)\n\tat java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)\n\tat org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:231)\n\tat org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:67)\n\tat org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:69)This is the history of the error in the last 30 days, it keeps coming and going - causing loss of core functionalities in the peaks:Affected customers \u2013 all in EU:"
+        ],
+        [
+          "2025-10-22T10:26:48+00:00",
+          "Kayako - ticket id 60226631 // Deepanshu Dewan commented publicly: Dear Manju,\n\nThank you for calling Khoros Care Support.\n\nAs discussed, your ticket has been assigned to an agent. You will receive an update soon with the preliminary analysis completed so far.\n\nWe appreciate your patience and understanding.\n\nBest regards,\nKhoros Care Support Team"
+        ],
+        [
+          "2025-10-22T10:26:32+00:00",
+          "Kayako - ticket id 60226631 // Manju Srinivasan commented publicly:  \n\nHello Hermes,\n\n\u00a0\n\nIssue is happening again now. Can you look into this on priority. \n\nI called the Outage Phone Line: +1 347-282-2200 and spoke to Deebanshu; he informed that the ticket is being escalated. \nKindly do the needful. \n\n\u00a0\n\nWarm Regards,\n\n\u00a0\n\nManju Srinivasan\n\nLead Trainer \u2013 Customer Service\n\nMonday to Friday: 8:30 AM \u2013 5:30 PM IST\n\nEmail: msrinivasan@fortinet.com \n\nMain: +91.80.67081000 Ext. 62748\n\nhttp://www.fortinet.com/support/contact_support.html\n\nWelcome to Fortinet Community! \n\nFind your answers here! Check out our portal:\u00a0 https://community.fortinet.com/ \n\n\u00a0\n\nimage\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-10-22T10:13:46+00:00",
+          "Kayako - ticket id 60226631 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-10-22T10:13:07+00:00",
+          "Kayako - ticket id 60226631 // Manju Srinivasan commented publicly:  \n\nHello Team,\n\nWe are unable to view or claim any new incoming chats in Khoros Care Production. Manager are currently assigning chats to the team manually.\n\nAdditionally, a manual refresh is required for sending and receiving responses, and new chats initiated from www.fortinet.com [https://www.fortinet.com] are taking over 10 minutes to appear in the queue.\n\n\u00a0\n\nOur hosting location: EMEA \n\nOur care instance: https://fortinet.response.lithium.com [https://fortinet.response.lithium.com] \u00a0\n\n\u00a0\n\nThe issue persisted for about 30 minutes and resolved on its own. Please prioritize this and investigate the root cause to ensure it is properly addressed and prevented in the future.\n\nWarm Regards,\n\n\u00a0\n\nManju Srinivasan\n\nLead Trainer \u2013 Customer Service\n\nMonday to Friday: 8:30 AM \u2013 5:30 PM IST\n\nEmail: msrinivasan@fortinet.com \n\nMain: +91.80.67081000 Ext. 62748\n\nhttp://www.fortinet.com/support/contact_support.html [http://www.fortinet.com/support/contact_support.html]\n\nWelcome to Fortinet Community! \n\nFind your answers here! Check out our portal:\u00a0 https://community.fortinet.com/ [https://community.fortinet.com/] \n\n\u00a0\n\nimage\n\n\u00a0\n\n\u00a0\n\n-------------------------\n *** Please note that this message and any attachments may contain confidential and proprietary material and information and are intended only for the use of the intended recipient(s). If you are not the intended recipient, you are hereby notified that any review, use, disclosure, dissemination, distribution or copying of this message and any attachments is strictly prohibited. If you have received this email in error, please immediately notify the sender and destroy this e-mail and any attachments and all copies, whether electronic or printed. Please also note that any views, opinions, conclusions or commitments expressed in this message are those of the individual sender and do not necessarily reflect the views of Fortinet, Inc., its affiliates, and emails are not binding on Fortinet and only a writing manually signed by Fortinet's General Counsel can be a binding commitment of Fortinet to Fortinet's customers or partners. Thank you. *** \n\n-------------------------\n "
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 14,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": true,
+          "link_value": "CARESMM-9351"
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

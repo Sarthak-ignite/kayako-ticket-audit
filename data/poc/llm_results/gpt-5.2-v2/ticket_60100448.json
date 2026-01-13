@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided incorrect product compatibility guidance (stating NG110 is not supported for 9.5.0) and did not deliver a concrete resolution for the patch-2 upgrade failure; the customer later confirmed the AI info was wrong after successfully installing 9.5.0.",
+    "evidence": [
+      "ATLAS: \"Kerio Control Box NG110 appliances are supported up to version 9.4.x. The 9.5.0 release is not offered via automatic updates for NG110 hardware because this model is not officially supported for 9.5.0\"",
+      "ATLAS: \"As of the latest available information, the Kerio Control Box NG110 series is not supported for Kerio Control version 9.5.0 or later.\"",
+      "Customer: \"They claimed that informations given by your support (AI - below in this conversation) are totally wrong. Version 9.5.0 IS supported on NG110 units and CAN be installed. So I downloaded 9.5.0 image and installed it on NG110 and it is working !\"",
+      "Customer: \"your AI help is totally useless an gives only wrong and bad informations.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested escalation to a human due to the AI not addressing the core issue (patch offered but failing, no patch image available), indicating the interaction became a blocker and generated frustration.",
+    "evidence": [
+      "Customer: \"Please pass this ticket to human.\"",
+      "Customer: \"This is oviously error which needs to be corrected by human operator and not AI assistant !\"",
+      "ATLAS: \"Action: Send to l1\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS proposed troubleshooting/actions that did not align with the customer\u2019s already-provided facts (e.g., customer already attempted manual update and confirmed ample disk space), and it missed the key point that the patch-2 image was not available for manual download while the device kept offering it.",
+    "evidence": [
+      "Customer: \"I have tested manual update ... but after restart there is still version 9.4.5 build 8629.\"",
+      "Customer: \"there is enough free disk space (22GB free from 27GB total)\"",
+      "Customer: \"There is no new (patch 2) image on download page available so we cannot try it.\"",
+      "ATLAS: \"Check Disk Space: In the Webadmin interface, review the available disk space on the appliance.\"",
+      "ATLAS: \"Manual Upgrade Attempt: ... manually download the 9.4.5 Patch 2 firmware from the official Kerio archive\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions shown occur within the same day with short gaps; there is no evidence of multi-day delays or 'still waiting' follow-ups due to silence.",
+    "evidence": [
+      "[2025-07-11T07:56:00+00:00] customer follow-up and [2025-07-11T07:56:50+00:00] ATLAS response",
+      "[2025-07-11T08:11:18+00:00] escalation request and [2025-07-11T08:11:46+00:00] ATLAS sends to L1"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript does not show the ticket being closed or auto-closed; it shows escalation to L1, but no closure event/message is present.",
+    "evidence": [
+      "ATLAS: \"Action: Send to l1\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No P1/SEV1 indicators (outage, production down, critical impact, urgency/SLA language) appear; the issue is an upgrade failure and compatibility question without stated business outage impact.",
+    "evidence": [
+      "Customer: \"attempt to upgrade failed ... it rebooted to 9.4.5 8629 again.\"",
+      "Customer: \"I wish to GFI suport directly confirm 9.5.0 compatibilty with NG110 and correct way to upgrade.\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60100448
+}

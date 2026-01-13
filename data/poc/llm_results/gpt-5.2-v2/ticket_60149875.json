@@ -1,0 +1,69 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses are largely templated acknowledgements with generic documentation links and speculative explanations (e.g., multi-role limitation) but no concrete investigation, confirmation, or actionable next-step plan (e.g., escalation/bug filing). It also recommends client-side steps (cache) for what appears to be a report/filter logic defect.",
+    "evidence": [
+      "\u201cThank you for your continued patience... we apologize for the delay... we kindly request the following additional information\u201d",
+      "\u201cRecommended Steps and Considerations: 1. Review Filter Logic...\u201d",
+      "\u201cRefer to our article Apply filters to Community Analytics reports...\u201d",
+      "\u201cSometimes, refreshing the report or clearing your browser cache can help apply the latest filter settings.\u201d",
+      "\u201cThis is a known limitation of the filtering logic in Community Analytics.\u201d",
+      "Customer: \u201cI attempted all the solutions recommended... none of these worked for the Emerging Leaders.\u201d",
+      "Customer: \u201cCan you please provide a response on next steps to resolve?\u201d (no clear next steps provided beyond repeated limitations/tips)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer is stuck in an AI-only loop with repeated generic guidance; despite asking for urgent investigation and offering a call, there is no clear human handoff or escalation and the same themes are repeated across responses.",
+    "evidence": [
+      "Long chain of only ATLAS responses: \u201cATLAS commented publicly...\u201d (multiple times; no named human responder appears after the initial customer thread referencing Andrew/Jasmin).",
+      "Customer: \u201cHappy to join a call to discuss if needed.\u201d",
+      "Customer: \u201cHappy to get on a call to walk through if needed.\u201d",
+      "Customer: \u201cI attempted all the solutions recommended in the previous email... none of these worked for the Emerging Leaders.\u201d",
+      "ATLAS repeats similar guidance/limitations again on 2025-08-07: \u201cRelevant Product Behavior and Limitations... known limitations when users have multiple roles assigned...\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support continues to suggest already-tried steps and restates generic limitations instead of acknowledging the specific reproduction and evidence (screenshots/exports) and moving to deeper product-side investigation for the single-forum anomaly.",
+    "evidence": [
+      "Customer: \u201cI attempted all the solutions recommended in the previous email, and while clearing browsing cache worked for the other communities... none of these worked for the Emerging Leaders.\u201d",
+      "Customer: \u201cI\u2019ve also attached the exports.\u201d",
+      "ATLAS (after customer provided evidence): \u201cSometimes, refreshing the report or clearing your browser cache can help apply the latest filter settings.\u201d",
+      "ATLAS reiteration without new investigation: \u201cThis issue appears to be isolated to the Emerging Leaders Forum...\u201d followed by repeated \u201cknown limitations when users have multiple roles assigned\u201d and \u201ccase sensitive\u201d guidance."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows multi-day gaps and explicit customer complaints about lack of response over weeks, indicating significant response delay/SLA miss behavior.",
+    "evidence": [
+      "Customer: \u201cThis has now been open for 18 days without resolution\u201d",
+      "Quoted prior email: \u201cThis issue has been outstanding for 12 days without any response\u201d",
+      "Gap: 2025-07-23 to 2025-07-31 (customer follows up/reopens after ~8 days).",
+      "Customer: \u201cI have not received a response on the following after reaching out last week... open for over a month without resolution.\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "ATLAS introduces an auto-closure deadline while the issue is unresolved, creating premature-closure pressure; the customer then explicitly asks to keep it open and later needs to 'reopen' due to unresolved behavior.",
+    "evidence": [
+      "ATLAS: \u201cIf you require additional time... we will keep this ticket open for one additional week to accommodate your response.\u201d",
+      "ATLAS: \u201cThis ticket will stay open for one week unless you reply with 'This ticket can be closed'...\u201d",
+      "Customer: \u201cPlease keep ticket open as I am still reviewing.\u201d",
+      "Customer later: \u201cI would like to reopen this ticket. I am still having trouble...\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer describes urgent, business-blocking impact (teams unable to conduct analytics) and repeatedly requests urgent investigation, but support responds with standard tips (cache, docs, filter logic) and no visible escalation to engineering/incident handling.",
+    "evidence": [
+      "Customer: \u201cCommunity Managers are unable to conduct metric analysis.\u201d",
+      "Customer: \u201cCan we please receive a response... ASAP? This has now been open for 18 days without resolution\u201d",
+      "Customer: \u201cCan we please have someone investigate this urgently?\u201d",
+      "Customer: \u201copen for over a month without resolution.\u201d",
+      "ATLAS: \u201cSometimes, refreshing the report or clearing your browser cache...\u201d (standard troubleshooting despite apparent server-side/report logic defect and forum-specific inconsistency)"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60149875
+}

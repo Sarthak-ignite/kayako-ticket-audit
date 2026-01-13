@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer-facing updates were largely generic/templated and did not provide actionable steps when the customer was in a critical state. There is also a clear template/quality error (wrong agent signature), which undermines trust during an escalation. The key information (v10 is valid/required for NG520) was provided only after many hours and after the customer had already downgraded and bricked the unit, despite the customer explicitly flagging urgency and suspected maliciousness early.",
+    "evidence": [
+      "2025-09-29T18:40:35+00:00 (Support): \"We have received your escalation... we are actively working on it... currently reviewing the case...\" (generic, no troubleshooting/next steps)",
+      "2025-09-29T23:36:55+00:00 (Support): \"We\u2019ve received your escalation... investigating... You can expect an update... we may request a meeting.\" (generic; not helpful for outage)",
+      "2025-09-30T00:34:21+00:00 (Aditi): Gives v10 clarification but signs as another agent: \"Best regards, Harry Samuel Tasker\" (template/signature mismatch)",
+      "Customer impact from missing/late guidance: 2025-09-29T18:56:27+00:00 (Customer): \"We attempted to downgrade to 9.5.0 patch 3... now it appears the NG520 is not booting.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly requested live contact/callback during a complete outage and instead received repeated canned updates and repeated requests for the same bundles of logs. The interaction shows a loop: requests for human/urgent help \u2192 generic acknowledgement \u2192 more requests for logs, without timely real-time engagement.",
+    "evidence": [
+      "2025-09-29T19:50:15+00:00 (Customer): \"I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\"",
+      "2025-09-29T22:34:06+00:00 (Customer): \"Please have a manager call me immediately... completely unacceptable...\"",
+      "2025-09-30T02:13:55+00:00 (Support): Requests extensive logs/artifacts list (instead of arranging immediate contact during/after outage).",
+      "2025-10-03T02:26:46+00:00 (Support): Repeats essentially the same extensive log/artifact request again after customer asks for next steps: \"Please provide us with the following details...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support responses did not sufficiently account for key context already provided: the downgrade had already happened and the unit was not booting; later, the customer stated they had restored via rescue image and that the remaining issue was the serial showing UNKNOWN, yet support continued to pivot back to generic 'confirm upgraded' / repeated data requests rather than directly addressing the serial/updates failure path. Support also requested artifacts despite the customer previously stating they provided a support file and backup.",
+    "evidence": [
+      "2025-09-29T18:56:27+00:00 (Customer): \"We attempted to downgrade... now it appears the NG520 is not booting.\"",
+      "2025-09-30T00:43:21+00:00 (Customer): \"We have already downgraded... Call me immediately... Provide me with v10 rescue immediately\"",
+      "2025-09-30T02:42:29+00:00 (Customer): \"We have restored with the rescue image, but AppManager still does not register the serial...\"",
+      "2025-10-03T02:26:46+00:00 (Support): Re-requests the same broad log set again rather than acknowledging what was already shared earlier: \"Please provide us with the following details...\"",
+      "Earlier customer provided files: 2025-09-29T19:03:14+00:00 \"Here is the backup before the downgrade...\" and 2025-09-29T19:05:36+00:00 \"Here is the support file...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There were serious same-day gaps during an outage (hours), but the specified detection rule calls for 3+ calendar days gaps. The longest clear gap between customer message and support reply in the log is under 3 days.",
+    "evidence": [
+      "Notable (but <3-day) gap during outage: 2025-09-29T19:50:15+00:00 (Customer outage complaint) \u2192 next substantive support reply at 2025-09-29T23:36:55+00:00"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence the ticket was closed/resolved without addressing the open issues; the conversation continues with active troubleshooting requests and the customer continues to respond.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer declared a complete outage and repeatedly requested urgent live contact/callback. Support responses were largely templated acknowledgements and delayed provision of critical information (v10 requirement). There is no visible rapid incident-style handling (e.g., immediate bridge/callback, clear P1 owner, immediate recovery steps) despite \"complete_outage\" escalations being logged multiple times.",
+    "evidence": [
+      "2025-09-29T19:39:54+00:00 (System): escalation severity set to \"complete_outage\"",
+      "2025-09-29T19:50:15+00:00 (Customer): \"Customer is completely down.\"",
+      "2025-09-29T22:34:06+00:00 (Customer): \"Please have a manager call me immediately... unacceptable in a network down emergency\"",
+      "2025-09-29T23:40:58+00:00 (Customer): \"someone contacts me like I have asked now 5 times... Rather than leaving a customer hard down\"",
+      "2025-09-30T00:34:21+00:00 (Support): First clear guidance about v10 being legitimate/required appears only after many hours, after outage/downgrade damage already occurred"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60209553
+}

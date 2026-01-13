@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI appears to misunderstand/misstate the customer\u2019s problem by reframing it around Let's Encrypt certificate renewal, while the customer is reporting PBX/VoIP breakage tied to upgrading to Kerio Control v10. This indicates likely wrong/irrelevant content rather than targeted assistance.",
+    "evidence": [
+      "[2025-09-30T15:51:35+00:00] (AI) ATLAS: \"Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K\"",
+      "[2025-09-30T15:50:42+00:00] (Customer) Jozef Kacala: \"on Kerio control v10 we already had some reports on PBX issues\"",
+      "[2025-09-30T15:55:22+00:00] (Customer) Jozef Kacala: \"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single visible AI response and no clear repetition pattern of the AI repeatedly asking for the same information or preventing escalation to a human.",
+    "evidence": [
+      "[2025-09-30T15:51:35+00:00] (AI) ATLAS: \"Dear Jozef, Thank you for detailing the issue...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI response appears misaligned with the customer\u2019s stated root-cause correlation (v10 upgrade breaks PBX; downgrade fixes), and the customer explicitly says the suggested steps are not relevant\u2014indicating the response did not incorporate the provided context.",
+    "evidence": [
+      "[2025-09-30T15:55:22+00:00] (Customer) Jozef Kacala: \"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it.\"",
+      "[2025-09-30T15:51:35+00:00] (AI) ATLAS: \"...issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is an approximately one-month gap between the last customer/AI interaction (Sep 30) and the next employee response (Oct 31), which is multiple days and aligns with the provided metrics showing ~742 hours to first human response.",
+    "evidence": [
+      "[2025-09-30T15:55:22+00:00] (Customer) Jozef Kacala: \"...update to v10 brakes it, downgrade to 9.5p3 fixes it.\"",
+      "[2025-10-31T13:59:15+00:00] (Employee) Ciprian Nastase: \"Thank you for contacting GFI - Kerio Control Support...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is 'closed', the provided interaction snippets do not show a closure message, a promise pending, or the customer waiting when it was closed, so there isn\u2019t clear evidence of premature closure from the transcript alone.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is marked high priority, but the visible human response content is truncated and does not clearly show generic low-value troubleshooting instead of escalation; therefore mishandling cannot be confirmed from the provided text.",
+    "evidence": [
+      "[2025-10-31T13:59:15+00:00] (Employee) Ciprian Nastase: \"...I understand that you are reporting PBX C3X stops working after\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI appears to misunderstand/misstate the customer\u2019s problem by reframing it around Let's Encrypt certificate renewal, while the customer is reporting PBX/VoIP breakage tied to upgrading to Kerio Control v10. This indicates likely wrong/irrelevant content rather than targeted assistance.\",\n    \"evidence\": [\n      \"[2025-09-30T15:51:35+00:00] (AI) ATLAS: \\\"Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K\\\"\",\n      \"[2025-09-30T15:50:42+00:00] (Customer) Jozef Kacala: \\\"on Kerio control v10 we already had some reports on PBX issues\\\"\",\n      \"[2025-09-30T15:55:22+00:00] (Customer) Jozef Kacala: \\\"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it.\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single visible AI response and no clear repetition pattern of the AI repeatedly asking for the same information or preventing escalation to a human.\",\n    \"evidence\": [\n      \"[2025-09-30T15:51:35+00:00] (AI) ATLAS: \\\"Dear Jozef, Thank you for detailing the issue...\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response appears misaligned with the customer\u2019s stated root-cause correlation (v10 upgrade breaks PBX; downgrade fixes), and the customer explicitly says the suggested steps are not relevant\u2014indicating the response did not incorporate the provided context.\",\n    \"evidence\": [\n      \"[2025-09-30T15:55:22+00:00] (Customer) Jozef Kacala: \\\"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it.\\\"\",\n      \"[2025-09-30T15:51:35+00:00] (AI) ATLAS: \\\"...issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality...\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is an approximately one-month gap between the last customer/AI interaction (Sep 30) and the next employee response (Oct 31), which is multiple days and aligns with the provided metrics showing ~742 hours to first human response.\",\n    \"evidence\": [\n      \"[2025-09-30T15:55:22+00:00] (Customer) Jozef Kacala: \\\"...update to v10 brakes it, downgrade to 9.5p3 fixes it.\\\"\",\n      \"[2025-10-31T13:59:15+00:00] (Employee) Ciprian Nastase: \\\"Thank you for contacting GFI - Kerio Control Support...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is 'closed', the provided interaction snippets do not show a closure message, a promise pending, or the customer waiting when it was closed, so there isn\u2019t clear evidence of premature closure from the transcript alone.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is marked high priority, but the visible human response content is truncated and does not clearly show generic low-value troubleshooting instead of escalation; therefore mishandling cannot be confirmed from the provided text.\",\n    \"evidence\": [\n      \"[2025-10-31T13:59:15+00:00] (Employee) Ciprian Nastase: \\\"...I understand that you are reporting PBX C3X stops working after\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60210541
+}

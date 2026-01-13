@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS AI provided a generic, incomplete public response that was cut off mid-sentence and failed to properly address the customer's specific license transfer request with clear next steps.",
+    "evidence": [
+      "ATLAS [2025-12-10T06:21:44+00:00]: 'Dear Kyoko, Thank you for reaching out regarding your request for a new G2 license. To process your request efficiently, we kindly ask you to' - response is truncated and incomplete"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer information was already provided in the private comment, yet ATLAS marked it as 'Requesting more information' and sent a generic request, forcing the customer to re-clarify they had already provided details about the G2-2023 Standard 32bit License transfer.",
+    "evidence": [
+      "Customer [2025-12-10T06:23:05+00:00]: 'G2-2023 Standard 32bit License request... This request is not new purchase but license transf...'",
+      "ATLAS [2025-12-10T06:21:34+00:00]: 'Requesting more information' - flagged after customer had already submitted details"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While there is information provided by the customer, the human agent (Muhammad Rizwan) did eventually process the request appropriately, and the ticket shows progression toward resolution rather than repeated requests for the same information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Critical delays in ticket handling: 454.6 hours to first human response, and a 367.4-hour gap between responses. Specifically, a 15-day gap between customer's request on 2025-12-10 and the next action on 2025-12-25, then another 4-day gap before final resolution on 2025-12-29.",
+    "evidence": [
+      "Time to first human response: 454.6 hours (~19 days)",
+      "Max gap between responses: 367.4 hours (~15 days between 2025-12-10T06:23:05 and 2025-12-25T13:50:09)",
+      "Additional delay: 2025-12-25T13:50:09 to 2025-12-29T04:55:50 (~3.7 days before final delivery)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows completion with the customer's requested deliverable (license) finally provided by Muhammad Rizwan on 2025-12-29. The ticket was not closed prematurely; the promised action was eventually fulfilled, though with significant delays.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket (not P1/SEV1), so this pattern does not apply. The ticket is a standard license request rather than an outage or high-severity issue.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"ATLAS AI provided a generic, incomplete public response that was cut off mid-sentence and failed to properly address the customer's specific license transfer request with clear next steps.\",\n    \"evidence\": [\n      \"ATLAS [2025-12-10T06:21:44+00:00]: 'Dear Kyoko, Thank you for reaching out regarding your request for a new G2 license. To process your request efficiently, we kindly ask you to' - response is truncated and incomplete\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer information was already provided in the private comment, yet ATLAS marked it as 'Requesting more information' and sent a generic request, forcing the customer to re-clarify they had already provided details about the G2-2023 Standard 32bit License transfer.\",\n    \"evidence\": [\n      \"Customer [2025-12-10T06:23:05+00:00]: 'G2-2023 Standard 32bit License request... This request is not new purchase but license transf...'\",\n      \"ATLAS [2025-12-10T06:21:34+00:00]: 'Requesting more information' - flagged after customer had already submitted details\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"While there is information provided by the customer, the human agent (Muhammad Rizwan) did eventually process the request appropriately, and the ticket shows progression toward resolution rather than repeated requests for the same information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Critical delays in ticket handling: 454.6 hours to first human response, and a 367.4-hour gap between responses. Specifically, a 15-day gap between customer's request on 2025-12-10 and the next action on 2025-12-25, then another 4-day gap before final resolution on 2025-12-29.\",\n    \"evidence\": [\n      \"Time to first human response: 454.6 hours (~19 days)\",\n      \"Max gap between responses: 367.4 hours (~15 days between 2025-12-10T06:23:05 and 2025-12-25T13:50:09)\",\n      \"Additional delay: 2025-12-25T13:50:09 to 2025-12-29T04:55:50 (~3.7 days before final delivery)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows completion with the customer's requested deliverable (license) finally provided by Muhammad Rizwan on 2025-12-29. The ticket was not closed prematurely; the promised action was eventually fulfilled, though with significant delays.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket (not P1/SEV1), so this pattern does not apply. The ticket is a standard license request rather than an outage or high-severity issue.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60260239
+}

@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence that the AI provided incorrect/misleading guidance or that the customer complained the AI was wrong/useless. The only AI transcript appears in private notes, and it is not explicitly contradicted in public replies.",
+    "evidence": [
+      "Kayako - ticket id 60211680 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The only indicator of the customer asking for a human (\"representative\") appears inside a private ATLAS transcript, not in customer-facing ticket comments. In the public thread, humans do respond and resolve the issue, so there is no customer-facing evidence of being stuck in an AI loop.",
+    "evidence": [
+      "Kayako - ticket id 60211680 // ATLAS commented privately: --- Customer (Daniel Soler) --- representative",
+      "Kayako - ticket id 60211680 // Ibiso Barimalaa commented publicly: Dear Daniel, ... We have processed your request"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer later clarifies they do not have access to COID 102817, the ticket does not show support repeatedly asking for already-provided information or forcing the customer to re-provide the same details. Support ultimately processes the request and confirms completion.",
+    "evidence": [
+      "Alexandr Oliynyk commented publicly: \"Could you please login to COID 102817 and transition it to StreetSmart and then we will be able to move the number to another COID 104983\"",
+      "Daniel Soler commented publicly: \"102817 is not our company ID so I do not have the login for it. 7868153707 is our number which needs to be added to 104983.\"",
+      "Ibiso Barimalaa commented publicly: \"We have processed your request, and you should also now be able to see it when you navigate to Administration > Devices...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is one long gap (~6 days) between the customer's public reply and the next staff public response, but the policy requires either a strong signal (customer publicly states they\u2019ve been waiting) or 2+ weak signals. The customer\u2019s 'waiting over a week' message appears only in a private escalation note.",
+    "evidence": [
+      "Daniel Soler commented publicly (2025-10-03T09:34:36+00:00): \"102817 is not our company ID so I do not have the login for it...\"",
+      "Mohammed Amer commented publicly (2025-10-09T14:01:39+00:00): \"We have received your escalation and we are currently working on it.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the agent includes an auto-closure warning, the ticket shows the request was completed and the customer explicitly asked to close the ticket. There is no evidence of closure while an unresolved request was pending.",
+    "evidence": [
+      "Ibiso Barimalaa commented publicly: \"We have processed your request...\"",
+      "Ibiso Barimalaa commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Daniel Soler commented publicly: \"This ticket can be closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The public conversation does not describe an outage/production-down scenario or explicit P1/SEV1 language. The only severity label appears in a private escalation note, and support proceeds to resolve the specific request to move/add the phone number.",
+    "evidence": [
+      "Mohammed Amer commented publicly: \"We have received your escalation and we are currently working on it.\"",
+      "Ibiso Barimalaa commented publicly: \"We have processed your request...\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60211680
+}

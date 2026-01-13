@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI reply is terse and unhelpful given the customer indicated more information and call metadata would be uploaded; the response does not address or advance the issue.",
+    "evidence": [
+      "[2025-10-18T21:59:59+00:00] (AI) ATLAS: Kayako - ticket id 60224201 // ATLAS commented privately: Component could not be determined",
+      "[2025-10-18T21:59:37+00:00] (Customer) Xavier A Villarroel: Kayako - ticket id 60224201 // Xavier A Villarroel commented privately: Full conversation with customer 14846034063 The complete conversation with this customer will be uploaded to this ticket shortly"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI response and no repeated requests for the same information, so no evidence of the customer being stuck in a loop.",
+    "evidence": [
+      "[2025-10-18T21:59:59+00:00] (AI) ATLAS: Kayako - ticket id 60224201 // ATLAS commented privately: Component could not be determined"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI did not acknowledge or use the call metadata or the customer's note that a full conversation would be uploaded; instead it returned a generic 'could not be determined' result.",
+    "evidence": [
+      "[2025-10-18T21:59:37+00:00] (Customer) Xavier A Villarroel: ...The complete conversation with this customer will be uploaded to this ticket shortly",
+      "[2025-10-18T22:00:01+00:00] (Customer) Xavier A Villarroel: Kayako - ticket id 60224201 // Xavier A Villarroel commented privately: Call Metadata [ SESSION ] : CA45c719c01a6c950647ac620c6c9232b7 [ RECORDING URL ] : [ SERVER-A 10/18/20",
+      "[2025-10-18T21:59:59+00:00] (AI) ATLAS: Kayako - ticket id 60224201 // ATLAS commented privately: Component could not be determined"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The recorded exchanges occur within seconds of each other (under one minute), so there is no multi-day delay visible in the interaction timestamps.",
+    "evidence": [
+      "[2025-10-18T21:59:37+00:00] (Customer) Xavier A Villarroel: ...",
+      "[2025-10-18T21:59:59+00:00] (AI) ATLAS: ...",
+      "[2025-10-18T22:00:01+00:00] (Customer) Xavier A Villarroel: ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no clear evidence in the interactions that the ticket was closed while the customer was still waiting or had explicitly given up\u2014the customer indicated they would upload more information and provided metadata, but no human follow-up is shown; this alone is insufficient to conclude premature closure.",
+    "evidence": [
+      "[2025-10-18T21:59:37+00:00] (Customer) Xavier A Villarroel: ...The complete conversation with this customer will be uploaded to this ticket shortly",
+      "[2025-10-18T22:00:01+00:00] (Customer) Xavier A Villarroel: ...Call Metadata [ SESSION ] : CA45c719c01a6c950647ac620c6c9232b7"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The AI did not perform or recommend generic end-user troubleshooting steps (e.g., cache, VPN) nor is there evidence of escalation or mishandling; only a single terse determination was made.",
+    "evidence": [
+      "[2025-10-18T21:59:59+00:00] (AI) ATLAS: Kayako - ticket id 60224201 // ATLAS commented privately: Component could not be determined"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI reply is terse and unhelpful given the customer indicated more information and call metadata would be uploaded; the response does not address or advance the issue.\",\n    \"evidence\": [\n      \"[2025-10-18T21:59:59+00:00] (AI) ATLAS: Kayako - ticket id 60224201 // ATLAS commented privately: Component could not be determined\",\n      \"[2025-10-18T21:59:37+00:00] (Customer) Xavier A Villarroel: Kayako - ticket id 60224201 // Xavier A Villarroel commented privately: Full conversation with customer 14846034063 The complete conversation with this customer will be uploaded to this ticket shortly\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI response and no repeated requests for the same information, so no evidence of the customer being stuck in a loop.\",\n    \"evidence\": [\n      \"[2025-10-18T21:59:59+00:00] (AI) ATLAS: Kayako - ticket id 60224201 // ATLAS commented privately: Component could not be determined\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI did not acknowledge or use the call metadata or the customer's note that a full conversation would be uploaded; instead it returned a generic 'could not be determined' result.\",\n    \"evidence\": [\n      \"[2025-10-18T21:59:37+00:00] (Customer) Xavier A Villarroel: ...The complete conversation with this customer will be uploaded to this ticket shortly\",\n      \"[2025-10-18T22:00:01+00:00] (Customer) Xavier A Villarroel: Kayako - ticket id 60224201 // Xavier A Villarroel commented privately: Call Metadata [ SESSION ] : CA45c719c01a6c950647ac620c6c9232b7 [ RECORDING URL ] : [ SERVER-A 10/18/20\",\n      \"[2025-10-18T21:59:59+00:00] (AI) ATLAS: Kayako - ticket id 60224201 // ATLAS commented privately: Component could not be determined\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The recorded exchanges occur within seconds of each other (under one minute), so there is no multi-day delay visible in the interaction timestamps.\",\n    \"evidence\": [\n      \"[2025-10-18T21:59:37+00:00] (Customer) Xavier A Villarroel: ...\",\n      \"[2025-10-18T21:59:59+00:00] (AI) ATLAS: ...\",\n      \"[2025-10-18T22:00:01+00:00] (Customer) Xavier A Villarroel: ...\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence in the interactions that the ticket was closed while the customer was still waiting or had explicitly given up\u2014the customer indicated they would upload more information and provided metadata, but no human follow-up is shown; this alone is insufficient to conclude premature closure.\",\n    \"evidence\": [\n      \"[2025-10-18T21:59:37+00:00] (Customer) Xavier A Villarroel: ...The complete conversation with this customer will be uploaded to this ticket shortly\",\n      \"[2025-10-18T22:00:01+00:00] (Customer) Xavier A Villarroel: ...Call Metadata [ SESSION ] : CA45c719c01a6c950647ac620c6c9232b7\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not perform or recommend generic end-user troubleshooting steps (e.g., cache, VPN) nor is there evidence of escalation or mishandling; only a single terse determination was made.\",\n    \"evidence\": [\n      \"[2025-10-18T21:59:59+00:00] (AI) ATLAS: Kayako - ticket id 60224201 // ATLAS commented privately: Component could not be determined\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60224201
+}

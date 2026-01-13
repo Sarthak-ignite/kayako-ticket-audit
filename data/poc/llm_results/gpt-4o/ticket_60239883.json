@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses provide specific updates on the Apache upgrade and communicate involvement of the Engineering team without evident generic filler or false promises.",
+    "evidence": [
+      "2025-11-13T13:02:20+00:00 - 'We are pleased to inform you that our Engineering team has successfully upgraded the Apache version in the GFI La'",
+      "2025-11-10T18:02:54+00:00 - 'We have contacted the Engineering team and will provide you with an update as soon as we receive more information'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was repeatedly asked for the same information or prevented from reaching a human.",
+    "evidence": [
+      "2025-11-10T18:00:48+00:00 - Customer's initial complaint",
+      "2025-11-10T18:02:54+00:00 - Prompt response indicating action taken by contacting Engineering team"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support interactions appear to build on previous information and do not demonstrate repeated requests for the same information.",
+    "evidence": [
+      "2025-11-10T18:02:50+00:00 - 'GHI created and linked: https://github.com/trilogy-group/eng-maintenance/issues/15431'",
+      "2025-11-10T18:02:54+00:00 - Updates on the progress of addressing the reported issue"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays in response times, with 67 hours to the first human interaction and a 64.4-hour gap between responses.",
+    "evidence": [
+      "Time to first human (hours): 67.0",
+      "Max gap between responses (hours): 64.4"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed following confirmation from the AI that the issue had been resolved by upgrading the Apache version.",
+    "evidence": [
+      "2025-11-13T13:02:20+00:00 - 'We are pleased to inform you that our Engineering team has successfully upgraded the Apache version...'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic troubleshooting steps being employed; the issue was escalated appropriately to the Engineering team who performed the necessary updates.",
+    "evidence": [
+      "2025-11-10T18:02:54+00:00 - 'We have contacted the Engineering team...'",
+      "2025-11-13T13:02:15+00:00 - 'The GFI LanGuard agent's Apache version was successfully upgraded...'"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses provide specific updates on the Apache upgrade and communicate involvement of the Engineering team without evident generic filler or false promises.\",\n    \"evidence\": [\n      \"2025-11-13T13:02:20+00:00 - 'We are pleased to inform you that our Engineering team has successfully upgraded the Apache version in the GFI La'\",\n      \"2025-11-10T18:02:54+00:00 - 'We have contacted the Engineering team and will provide you with an update as soon as we receive more information'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was repeatedly asked for the same information or prevented from reaching a human.\",\n    \"evidence\": [\n      \"2025-11-10T18:00:48+00:00 - Customer's initial complaint\",\n      \"2025-11-10T18:02:54+00:00 - Prompt response indicating action taken by contacting Engineering team\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support interactions appear to build on previous information and do not demonstrate repeated requests for the same information.\",\n    \"evidence\": [\n      \"2025-11-10T18:02:50+00:00 - 'GHI created and linked: https://github.com/trilogy-group/eng-maintenance/issues/15431'\",\n      \"2025-11-10T18:02:54+00:00 - Updates on the progress of addressing the reported issue\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays in response times, with 67 hours to the first human interaction and a 64.4-hour gap between responses.\",\n    \"evidence\": [\n      \"Time to first human (hours): 67.0\",\n      \"Max gap between responses (hours): 64.4\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed following confirmation from the AI that the issue had been resolved by upgrading the Apache version.\",\n    \"evidence\": [\n      \"2025-11-13T13:02:20+00:00 - 'We are pleased to inform you that our Engineering team has successfully upgraded the Apache version...'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic troubleshooting steps being employed; the issue was escalated appropriately to the Engineering team who performed the necessary updates.\",\n    \"evidence\": [\n      \"2025-11-10T18:02:54+00:00 - 'We have contacted the Engineering team...'\",\n      \"2025-11-13T13:02:15+00:00 - 'The GFI LanGuard agent's Apache version was successfully upgraded...'\"\n    ]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60239883
+}

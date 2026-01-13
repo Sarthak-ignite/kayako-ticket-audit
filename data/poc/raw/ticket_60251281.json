@@ -1,0 +1,259 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "gensym",
+        "requester": {
+          "id": 60194879,
+          "uuid": "233d24fa-9c55-4481-afd1-00ecc3d0844d",
+          "full_name": "Kai Wisser",
+          "legacy_id": "11720191034514",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/233d24fa-9c55-4481-afd1-00ecc3d0844d?1767422133",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60027886,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 196414,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+          "last_seen_ip": "20.151.69.234",
+          "last_seen_at": "2026-01-02T16:30:02+00:00",
+          "last_active_at": "2026-01-03T06:35:33+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60194879",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@2235399aad059610bee4bba6a8187b52ed84413f",
+          "password_updated_at": "2025-09-12T21:26:58+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2025-12-30T17:43:07+00:00",
+          "last_activity_at": "2026-01-02T16:30:02+00:00",
+          "created_at": "2023-05-29T22:06:52+00:00",
+          "updated_at": "2026-01-03T06:35:33+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60194879"
+        },
+        "ticket_idt": 60251281
+      },
+      "interactions": [
+        [
+          "2025-12-25T09:04:32+00:00",
+          "Kayako - ticket id 60251281 // Muhammad Rizwan commented publicly: Dear Kai,\n\nThank you for your patience.\n\nAs Roger has already shared the license with you in the previous response, and your request has been completed, we will now mark this ticket as Solved.\n\nIf you have any further questions or concerns regarding Gensym, please don't hesitate to submit another support request. We\u2019ll be happy to assist you.\n\nBest regards,\nMuhammad Rizwan\nGensym Support Team"
+        ],
+        [
+          "2025-12-25T09:01:38+00:00",
+          "Kayako - ticket id 60251281 // Muhammad Rizwan commented privately:  \t* This request has already been completed\n \t* Roger has already sent the PR and shared the licenses.\n \t* We have two options: set the ticket to Pending silently (no PR), or close it with a PR update stating the request is complete\u2014since it would\u2019ve been closed by now if we had set it to Pending on Dec 3.\n \t* I am going with the 2nd option.\n\n"
+        ],
+        [
+          "2025-12-25T07:45:13+00:00",
+          "Kayako - ticket id 60251281 // Centralsupport-ai-acc commented privately: JIRA Issue GENSYMBSE-28 is changed to 'Done' , block reason: -"
+        ],
+        [
+          "2025-12-25T04:45:10.728-0300",
+          "Ignite Jira Gensym - issue key GENSYMBSE-28 // status is changed from In Progress to Done"
+        ],
+        [
+          "2025-12-05T10:16:54+00:00",
+          "Kayako - ticket id 60251281 // Roger King commented publicly: Hi Kai,\n\nPlease find attached the remaining 3 subscription G2 licenses\n\nRegards,\nRoger"
+        ],
+        [
+          "2025-12-05T07:24:05.356-0300",
+          "Ignite Jira Gensym - issue key GENSYMBSE-28 // Roger King commented:  , Thanks for these. For the remainder of the Enbridge requests I will ping you in Slack"
+        ],
+        [
+          "2025-12-05T06:52:33.420-0300",
+          "Ignite Jira Gensym - issue key GENSYMBSE-28 // Dmitri Hrapof commented:  attached dec.zip with the PERMANENT 2011 licenses.P.S. really haven\u2019t seen this ticket on 12/03  Async is very nice, but we need to have Jira etc. notifications built into WS  "
+        ],
+        [
+          "2025-12-04T17:57:04+00:00",
+          "Kayako - ticket id 60251281 // Centralsupport-ai-acc commented privately: JIRA Issue GENSYMBSE-28 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-12-04T15:13:50.515-0300",
+          "Ignite Jira Gensym - issue key GENSYMBSE-28 // Dmitri Hrapof commented:  Will do tomorrow!"
+        ],
+        [
+          "2025-12-04T14:56:58.287-0300",
+          "Ignite Jira Gensym - issue key GENSYMBSE-28 // status is changed from To Do to In Progress"
+        ],
+        [
+          "2025-12-04T08:54:27.297-0300",
+          "Ignite Jira Gensym - issue key GENSYMBSE-28 // Roger King commented:  , They are only looking for 3 licenses, as Support has already been able to create a G2 2024 license for enbdazcrapp741_Subscription-NewG2_Authorization_Request"
+        ],
+        [
+          "2025-12-03T19:08:48+00:00",
+          "Kayako - ticket id 60251281 // Centralsupport-ai-acc commented privately: JIRA Issue GENSYMBSE-28 is changed to 'To Do' , block reason: -"
+        ],
+        [
+          "2025-12-03T19:08:19+00:00",
+          "Kayako - ticket id 60251281 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-12-03T19:06:22+00:00",
+          "Kayako - ticket id 60251281 // Centralsupport-ai-acc commented privately: JIRA Issue GENSYMCID-13191 is changed to 'Cancelled' , block reason: -"
+        ],
+        [
+          "2025-12-03T11:43:26+00:00",
+          "Kayako - ticket id 60251281 // Roger King commented publicly: Hi Kai,\n\nAll four requests are now with the Gensym BU team for generation of G2 2011 subscription licenses.\n\nRegards,\nRoger"
+        ],
+        [
+          "2025-12-03T11:42:11+00:00",
+          "Kayako - ticket id 60251281 // Centralsupport-ai-acc commented privately: JIRA Issue GENSYMBSE-28 is changed to 'To Do' , block reason: -"
+        ],
+        [
+          "2025-12-03T08:35:31.570-0300",
+          "Ignite Jira Gensym - issue key GENSYMBSE-28 // Roger King commented:  , These are the first 4 machines that they require G2 2011 subscription licenses to be created. This has been a long drawn out process and we need to get these to Enbridge by tomorrow (4th December)"
+        ],
+        [
+          "2025-12-03T08:27:53.813-0300",
+          "Ignite Jira Gensym - issue key GENSYMBSE-28 // IgniteSupportAutomation commented: Feature OverviewThis ticket requests the generation of subscription licenses for G2 2011. Based on the minimal information provided, this appears to be a request to create or provision subscription-based licensing for the G2 2011 product. Subscription licenses typically have time-limited validity and may include specific feature sets or user counts depending on the subscription tier.Implementation ConsiderationsThe implementation of subscription license generation for G2 2011 requires consideration of several technical aspects:Without additional context, it's difficult to provide more specific implementation details. The ticket would benefit from clarification on the quantity of licenses needed, specific parameters, and the intended delivery mechanism.Affected ComponentsBased on the limited information, the following components are likely to be affected:Similar ImplementationsNo information available on similar implementations due to limited knowledge base access. It would be helpful to review previous license generation tickets for G2 products to understand the established processes and any potential issues encountered.Technical DependenciesThe license generation process likely depends on:Implementation RecommendationsBased on the limited information available, I recommend:Expected BenefitsGenerating subscription licenses for G2 2011 will:SourcesNo URL placeholders were provided in the knowledge base findings due to an authentication error (401) when querying Dashworks."
+        ],
+        [
+          "2025-12-03T08:27:04.003-0300",
+          "Ignite Jira Gensym - issue key GENSYMBSE-28 // Issue is created by Roger King with description: G2 2011 Subscription licenses required for :-edrv0614_Subscription_Authorization_Requestenbdazcrapp020_Subscription_Authorization_Formenbdazcrapp021_Subscription_Authorization_Request"
+        ],
+        [
+          "2025-12-03T06:17:13+00:00",
+          "Kayako - ticket id 60251281 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-12-02T20:31:34+00:00",
+          "Kayako - ticket id 60251281 // Kai Wisser commented publicly:  \n Thanks for this update Harry. \n\n Looping Roger in on this thread as we have been getting 2011 licenses since the upgrade to the new G2 is not clean for our application. \n\n We will be continuing to trouble shoot this upgrade on a dev server, however it is not our path forward currently. \n\n Thanks,\nKai Wisser, Technical Resource, HE/HIM/HIS\nPipesked Support\n\nLiquid Pipelines\n\n\u2014\n\n\u00a0\n\nimage\n\n\u00a0\n\nenbridge.com [http://www.enbridge.com]\nSafety. Integrity. Respect. Inclusion.\n\n\u00a0\n\nWith a spirit of reconciliation, I mindfully acknowledge that I live and work on the traditional lands of First Peoples, including the Plains Cree and Nakota Sioux, in Treaty 6 Territory, and the M\u00e9tis.\n\n\u00a0\n\n-------------------------\n\n \n"
+        ],
+        [
+          "2025-12-02T20:21:22+00:00",
+          "Kayako - ticket id 60251281 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-12-02T20:21:13+00:00",
+          "Kayako - ticket id 60251281 // Harry Tasker commented privately:  https://workstation-df.atlassian.net/browse/GENSYMCID-13191 "
+        ],
+        [
+          "2025-12-02T20:17:54+00:00",
+          "Kayako - ticket id 60251281 // Centralsupport-ai-acc commented privately: JIRA Issue GENSYMCID-13191 is changed to 'Backlog' , block reason: -"
+        ],
+        [
+          "2025-12-02T20:09:40+00:00",
+          "Kayako - ticket id 60251281 // Harry Tasker commented publicly: Dear Kai,\n\nPlease find attached the license files for the G2 2024 installation.\n\nThe other 3 licenses are for G2 2011, which is no longer supported.\u00a0\nI will request these license files from the BU, as we do not have the ability to create license files for versions prior to 2021.\nYou may wish to consider upgrading to 2021 or later, which are all currently supported versions.\n\nWe will get back to you as soon as we hear from the BU regarding the 2011 licenses.\n\nBest regards,\nHarry Samuel Tasker\nGensym Support Team"
+        ],
+        [
+          "2025-12-02T20:06:40+00:00",
+          "Kayako - ticket id 60251281 // Harry Tasker commented privately:  https://docs.google.com/spreadsheets/d/1UrmxLb_B6Pzm8XqsrBVOKWVUhZufiXAEmEQn2FVdItU/edit?usp=sharing \n\n first license generated only. Other 3 require BU to generate as they are for G2 2011 "
+        ],
+        [
+          "2025-12-01T18:13:28+00:00",
+          "Kayako - ticket id 60251281 // Roger King commented privately:  This ticket is set as Urgent and the Sales team has approved the request, so can you please progress this to send the new licenses to the customer. "
+        ],
+        [
+          "2025-11-28T12:13:57+00:00",
+          "Kayako - ticket id 60251281 // Kayako Automations commented privately: SC Automan: I noticed we have the following open SC/s. I'm going to take a closer look...\n\n\u2022 Re: [Sales @ IgniteTech] [SC-4922] 60251281 - Gensym license replacement request - A meaningful response has been received in this SC that addresses the customer's request. GPT has suggested the following reply:\n_________________________________________\n\nDear Customer,\n\nThank you for your continued patience.\n\nWe\u2019ve just received approval from the relevant team, and we are now moving forward with providing your license details. We will update you shortly once everything is finalized and ready.\n\nIf you have any questions or need further assistance, please let us know.\n\nBest regards,_________________________________________\n\nI have marked the SC as closed for you to review and send the reply to the customer. If you would like me to follow up automatically after the next on-hold timer expires, please REOPEN the SC. Cheers!\n\nGiven the above, I have opened the ticket so an agent can review it manually."
+        ],
+        [
+          "2025-11-28T12:13:13+00:00",
+          "Kayako - side conversation ID: 4922 // byron.trivett@ignitetech.ai wrote to sales@ignitetech.com. Message: <div>\n    <div>\n      <span>This is approved.</span>\n    </div>\n  </div>\n  <div style=\"display:none;border:0px;width:0px;height:0px;overflow:hidden\"><img src=\"https://t.shortwave.com/v1/8QIXGPXl2X5QI-7mJSGWIK2ASUaAs9MLJIaTMkcpu8016qvkO6wJWLHk5hj-hh1I7xmQq91R-RelTOnKwKRoVSEbLnHgFWdDiawKRjQxeoO8b8NDO-F5ViavWP4iylR8oTNlYryTOsqKeTWn6xbk4FUREsFzIgN9FbLd7forp44.gif\" alt=\" \" width=\"1\" height=\"0\" style=\"display:none;border:0px;width:0px;height:0px;overflow:hidden\"></div><br>\n  <div>\n    <table style=\"width:600px\">\n      <tbody>\n        <tr>\n          <td><span style=\"color:#039\"><span style=\"font-family:&#39;sans&#39; serif,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif\"><strong><span style=\"font-size:14px\">Byron</span></strong></span></span><span style=\"color:#444\"><span style=\"font-family:&#39;sans&#39; serif,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif\"><strong><span style=\"font-size:14px\">\u00a0</span></strong></span></span><span style=\"color:#039\"><span style=\"font-family:&#39;sans&#39; serif,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif\"><strong><span style=\"font-size:14px\">Trivett</span></strong></span></span><span style=\"color:#444\"><span style=\"font-family:&#39;sans&#39; serif,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif\"><strong><span style=\"font-size:14px\">\u00a0</span></strong></span></span> <span style=\"color:#f1c40f\"><span style=\"font-family:&#39;sans&#39; serif,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif\"><strong><span style=\"font-size:18px\">|\u00a0</span></strong></span></span><span style=\"color:#444\"><span style=\"font-family:&#39;sans&#39; serif,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif\"><strong><span style=\"font-size:14px\">\u00a0Senior AI Innovation Specialist - Sales</span></strong></span></span></td>\n        </tr>\n        <tr>\n          <td>\u00a0</td>\n        </tr>\n        <tr>\n          <td><span style=\"font-family:&#39;sans&#39; serif,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif\"><span style=\"color:#444\">Click here to b</span><span style=\"text-decoration:none\"><a href=\"https://calendly.com/byron-trivett-ignitetech/30min\" style=\"color:#06f;text-decoration:none\" rel=\"nofollow\"><span style=\"color:#444\"><span style=\"text-decoration:none\">ook a meeting</span></span></a></span></span></td>\n        </tr>\n        <tr>\n          <td></td>\n        </tr>\n        <tr>\n          <td><span style=\"font-family:&#39;sans&#39; serif,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif\"><span style=\"text-decoration:none\"><a href=\"http://ignitetech.ai\" style=\"color:#06f;text-decoration:none\" rel=\"nofollow\"><span style=\"color:#444\">ignitetech.ai</span></a><span style=\"color:#444\">\u00a0</span></span><span style=\"color:#444\">\u00a0</span></span><span style=\"color:#f1c40f\"><span style=\"font-family:&#39;sans&#39; serif,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif\"><strong><span style=\"font-size:18px\">|\u00a0</span></strong></span></span><span style=\"font-family:&#39;sans&#39; serif,&#39;helvetica neue&#39;,&#39;helvetica&#39;,&#39;arial&#39;,sans-serif\"><span style=\"color:#444\">\u00a0<a href=\"https://x.com/ByronLT\" rel=\"nofollow\"><img alt=\"twitter icon\" height=\"16\" src=\"https://storage.googleapis.com/signaturesatori/icons/sq/16/003399/twitter.png\" width=\"16\"></a>\u00a0\u00a0</span><span style=\"text-decoration:none\"><a href=\"https://x.com/ByronLT\" style=\"color:#06f;text-decoration:none\" rel=\"nofollow\"><span style=\"color:#444\">https://x.com/ByronLT</span></a><span style=\"color:#444\">\u00a0</span></span><span style=\"color:#444\">\u00a0\u00a0<a href=\"https://www.linkedin.com/in/byron-trivett/\" rel=\"nofollow\"><img alt=\"linkedin icon\" height=\"16\" src=\"https://storage.googleapis.com/signaturesatori/icons/sq/16/003399/linkedin.png\" width=\"16\"></a>\u00a0</span><span style=\"text-decoration:none\"><a href=\"https://www.linkedin.com/in/byron-trivett/\" style=\"color:#06f;text-decoration:none\" rel=\"nofollow\"><span style=\"color:#444\">LinkedIn</span></a></span></span></td>\n        </tr>\n        <tr>\n          <td>\u00a0</td>\n        </tr>\n        <tr>\n          <td>\n            \u00a0<a href=\"http://www.gfi.ai\" rel=\"nofollow\"><img alt=\"Ignitetech, GFI and Khoros Logos\" height=\"50\" src=\"https://storage.googleapis.com/signaturesatori/customer-C02ine5fc/images/4dbu7.png\" width=\"551\"></a>\n          </td>\n        </tr>\n        <tr>\n          <td>\u00a0</td>\n        </tr>\n      </tbody>\n    </table>\u00a0\u00a0\u00a0\u00a0\u00a0\n  </div><br>"
+        ],
+        [
+          "2025-11-28T05:40:40+00:00",
+          "Kayako - ticket id 60251281 // Centralsupport-ai-acc commented privately: Placing on hold for 24 hour(s)"
+        ],
+        [
+          "2025-11-28T05:40:31+00:00",
+          "Kayako - ticket id 60251281 // Muhammad Rizwan commented publicly: Dear Kai,\n\nThank you for your patience.\n\nWe have engaged the relevant team for approval. Once the approval is received, we will provide you with the license details accordingly.\n\nIf you have any questions or concerns, please let us know and we will be happy to address them.\n\nBest Regards\nMuhammad Rizwan\nGensym Support Team"
+        ],
+        [
+          "2025-11-28T05:38:28+00:00",
+          "Kayako - ticket id 60251281 // Muhammad Rizwan commented privately:  \t* We need approval here 1st\n \t* Going to generate the SC\n\n"
+        ],
+        [
+          "2025-11-28T05:37:42+00:00",
+          "Kayako - side conversation ID: 4922 // muhammad.rizwan@trilogy.com wrote to sales@ignitetech.com. Message: <div>Hi Team,</div><div data-empty=\"true\"><br></div><div>We have received a request to <strong>Modify&nbsp;</strong>existing G2 license under ticket <a href=\"https://central-supportdesk.kayako.com/agent/conversations/60251281\">60251281</a>, submitted by</div><div><strong>Gensym - Enbridge Employee Services Canada Inc [736E]</strong></div><div><br></div><div>Here are the details:</div><div><br></div><blockquote><blockquote>Here is the Authorization Form for these Subscription Licenses needed. These are replacing current perpetual licenses.</blockquote></blockquote><div><br></div><div>The relevant sheets have been attached for your review.</div><div data-empty=\"true\"><br data-start=\"316\" data-end=\"319\"></div><div>Kindly confirm whether the request for <strong data-end=\"388\" data-start=\"358\">Perpetual license creation</strong> is approved.</div><div><br></div><div>Best Regards</div><div>Gensym Support Team</div>"
+        ],
+        [
+          "2025-11-26T19:17:47+00:00",
+          "Kayako - ticket id 60251281 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-11-26T19:17:11+00:00",
+          "Kayako - ticket id 60251281 // Kai Wisser commented privately: Here is the Authorization Form for these Subscription Licenses needed. These are replacing current perpetual licenses."
+        ],
+        [
+          "2025-11-26T19:16:11+00:00",
+          "Kayako - ticket id 60251281 // ATLAS commented publicly: Dear Kai,\n\nThank you for reaching out and informing us of your need for a replacement Gensym G2 license associated with your 2011 subscription and existing contract.\n\nTo proceed and ensure we process your request efficiently, could you kindly provide the following required details:\n\n- The current license information:\n- Version\n- Type (e.g., Development, Restricted, Runtime, or Embedded)\n- Expiration date (if applicable)\n- Server details:\n- Server name\n- Current version\n- License identifier\n- Your specific requirements:\n- Type of license being requested (e.g., Site License in English)\n- Any features or additional specifications needed\n- Additional documentation, if available:\n- Authorization form (please attach directly if possible)\n- Any other relevant documents or context\n- Reference to previous correspondence or related ticket numbers (if applicable)\n\nIf it is more convenient, you may simply reply to this email with the requested information or documentation attached.\n\nThis ticket will remain open for another week should you require additional time to gather the details.\n\nSincerely, \nATLAS \nGensym Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-26T19:16:00+00:00",
+          "Kayako - ticket id 60251281 // ATLAS commented privately: Requesting more information"
+        ],
+        [
+          "2025-11-26T19:15:42+00:00",
+          "Kayako - ticket id 60251281 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, Kai Wisser ! \ud83d\udc4b\n\nThis is the Gensym ATLAS support chat. \n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \n\n--- AI Assistant ---\n\n Walk me through what's happening or select from the below options.\n\nDon't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you. \ud83d\udcaa\n\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\n\n\ud83d\udca1Getting the most out of Gensym ATLAS Support Chat [https://gensym-ignitetech.kayako.com/article/105200]\n\nIf I'm unable to help you, I can patch you through to a Live agent, along with the information you supply to me during this session, so that our team has something to work with from the get-go. \n\n--- Customer (Kai Wisser) ---\n\n Raise a ticket for a Gensym G2 license \n\n--- AI Assistant ---\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiJmNjFjOTg0My00MTdkLTQ5ZmYtOTliZC1jNzUwNzEyZTE2M2EiLCJzZXNzaW9uX3VpZCI6ImY2MWM5ODQzLTQxN2QtNDlmZi05OWJkLWM3NTA3MTJlMTYzYSIsImVtYWlsIjoia2FpLndpc3NlckBlbmJyaWRnZS5jb20iLCJjdXN0b21fcGFyc2VyIjp7fSwiY2FsbGJhY2siOnsiY2FsbGJhY2tfdXJsIjpudWxsLCJjYWxsYmFja19lbWFpbCI6ImNpcHJpYW4ubmFzdGFzZUB0cmlsb2d5LmNvbSJ9LCJwcm9kdWN0X3RhZyI6ImdlbnN5bSIsInF1ZXJ5IjoiIiwiZXhwIjoxNzY0MTkxMjIwfQ.H7MnhtwJWMHgP4nh80NkVGgnQrj2evhMj1-6N4U8MiE]\n\nYou should see the following:\n\n \t* User: kai.wisser@enbridge.com\n \t* Session ID: f61c9843-417d-49ff-99bd-c750712e163a\n\n--- Customer (Kai Wisser) ---\n\n Button selection: [\ud83d\udd19 Continue without file upload ] \n\n--- AI Assistant ---\n\n Perfect! I can help you with that. To raise a ticket for a Gensym G2 license request, I'll need to gather some information first so our support team can process this efficiently.\n\nBased on our license request process [https://gensym-ignitetech.kayako.com/article/53090], I'll need the following details:\n\nCurrent License Details:\n\n \t* What version of G2 do you need the license for? (Note: Gensym only issues licenses for G2 2021 and later versions)\n \t* What type of license do you need? (Development, Restricted, Runtime, or Embedded)\n \t* Is this a new license, a renewal, or an extension?\n\nCould you start by telling me which version of G2 you need the license for? \n\n--- Customer (Kai Wisser) ---\n\n 2011 subscription license \n\n--- AI Assistant ---\n\n I need to let you know something important about your request. According to our licensing policy, Gensym does not issue licenses for G2 versions prior to 2021. You've mentioned you need a license for G2 2011, which unfortunately falls outside of what our support team can provide.\n\nFor G2 2011 or any other pre-2021 versions, you would need to contact your account manager directly to discuss your options.\n\nA few questions to help clarify your situation:\n\n \t* Is G2 2011 the version you absolutely need, or could you potentially upgrade to G2 2021 or later?\n \t* Are you currently under an active Gensym contract that might allow for an upgrade discussion?\n\nIf you'd like, I can connect you with our support team who can help route you to the appropriate account manager to discuss licensing options for older versions. What would work best for you? \n\n--- Customer (Kai Wisser) ---\n\n Absolutely need it and it is covered by contract \n\n--- AI Assistant ---\n\n Understood. Since you absolutely need G2 2011 and it's covered by your contract, I can help you get this request to our support team who will work with the appropriate resources to handle your license request.\n\nBefore I connect you with a live agent to create the ticket, let me gather a few more details to make the process smoother:\n\nWhat type of license do you need?\n\n \t* Site license (can be used on any number of machines)\n \t* Perpetual license (bound to a specific machine ID)\n\n--- Customer (Kai Wisser) ---\n\n These are subscription licenses \n\n--- AI Assistant ---\n\n Perfect, thank you for clarifying that these are subscription licenses.\n\nTo complete the information for your ticket, I need just a couple more details:\n\nDo you have the Gensym Authorization Request form filled out? This form typically includes:\n\n \t* Your organization details\n \t* Machine ID information\n \t* Number of Telewindows connections needed\n \t* Content of your previous license file (g2.ok file) if this is a renewal\n\nIf you have the form ready, you can upload it using the Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiJmNjFjOTg0My00MTdkLTQ5ZmYtOTliZC1jNzUwNzEyZTE2M2EiLCJzZXNzaW9uX3VpZCI6ImY2MWM5ODQzLTQxN2QtNDlmZi05OWJkLWM3NTA3MTJlMTYzYSIsImVtYWlsIjoia2FpLndpc3NlckBlbmJyaWRnZS5jb20iLCJjdXN0b21lcl9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoiZ2Vuc3ltIiwicXVlcnkiOiIiLCJleHAiOjE3NjQxOTEyMjB9.H7MnhtwJWMHgP4nh80NkVGgnQrj2evhMj1-6N4U8MiE] portal, or if you don't have it yet, our support team can guide you through that process.\n\nAlso, is this a renewal of an existing license or a new license request? \n\n--- Customer (Kai Wisser) ---\n\n Yes \n\n--- AI Assistant ---\n\n I appreciate your response, but I want to make sure I understand correctly since I asked two separate questions:\n\n \t* Do you have the Authorization Request form filled out and ready to upload?\n\n \t* Is this a renewal of an existing license or a new license request?\n\nCould you clarify which one (or both) you're saying yes to? \n\n--- Customer (Kai Wisser) ---\n\n I have an authorization request and this is a replacement for an existing license \n\n--- AI Assistant ---\n\n Perfect! Thank you for that clarification. So you have the authorization request form ready and this is a replacement for an existing G2 2011 subscription license.\n\nSince you have the authorization form ready, please go ahead and upload it using the Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiJmNjFjOTg0My00MTdkLTQ5ZmYtOTliZC1jNzUwNzEyZTE2M2EiLCJzZXNzaW9uX3VpZCI6ImY2MWM5ODQzLTQxN2QtNDlmZi05OWJkLWM3NTA3MTJlMTYzYSIsImVtYWlsIjoia2FpLndpc3NlckBlbmJyaWRnZS5jb20iLCJjdXN0b21lcl9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoiZ2Vuc3ltIiwicXVlcnkiOiIiLCJleHAiOjE3NjQxOTEyMjB9.H7MnhtwJWMHgP4nh80NkVGgnQrj2evhMj1-6N4U8MiE] portal. Once you've uploaded it, let me know and I'll connect you with our support team who will create the ticket and work with the necessary resources to process your G2 2011 license replacement request.\n\nHave you uploaded the authorization form, or would you like to do that now? \n\n--- Customer (Kai Wisser) ---\n\n I can't login to the site. Can you please just raise the ticket? \n\n--- AI Assistant ---\n\n I understand the login issue is frustrating. Let me connect you with our support team right away. They'll be able to create the ticket for your G2 2011 subscription license replacement and work with you on getting the authorization form submitted through an alternative method.\n\nJust to summarize what I'll pass along to them:\n\n \t* Request: G2 2011 subscription license replacement\n \t* Issue: Customer has authorization form ready but cannot login to the secure upload portal\n \t* Contract Status: Covered by existing contract\n\nLet me transfer you to a live agent now who can help you complete this request. \n\n--- AI Assistant ---\n\n I understand the difficulty you're facing with the login. \ud83d\ude0a A human colleague is available to assist you further\u2014please feel free to choose from the handover options when you're ready. \n\n--- Customer (Kai Wisser) ---\n\n Button selection: [\ud83d\udce9 Raise a ticket] \n\n--- AI Assistant ---\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\n \ud83d\udccc Important: Your ticket will be created in one of two ways:\n\n\t* Immediately after you provide the requested information above, or\n\n\t* Automatically after 5 minutes if no response is received\n\nPlease keep this browser/chat window open until you receive your ticket number as confirmation. \n\n--- Customer (Kai Wisser) ---\n\n none \n\n--- AI Assistant ---\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \n\n--- Customer (Kai Wisser) ---\n\n Pipesked.support@enbridge.com \n\n--- AI Assistant ---\n\n \ud83d\udc4c Got it!\n\nThese email addresses will be added to the ticket CC: Pipesked.support@enbridge.com \n\n--- AI Assistant ---\n\n I've automatically set the ticket subject to: Gensym license replacement request\n\nDoes that work for you?\n\n \t* If it does, simply say YES or use the below button to confirm \ud83d\udc47\n \t* If not, please directly type in the ticket subject of your choosing below \ud83d\ude09\n\n"
+        ],
+        [
+          "2025-11-26T19:15:38+00:00",
+          "Kayako - ticket id 60251281 // Kai Wisser commented privately: --- Ticket generated by Gensym AI chat on behalf of Kai Wisser - <a href=\"mailto:kai.wisser@enbridge.com\" rel=\"nofollow\">kai.wisser@enbridge.com</a> ---<br>\n  <br>\n  <b>Issue description:</b>\n  <ul>\n    <li>Raise a ticket for a Gensym G2 license</li>\n    <li>2011 subscription license</li>\n    <li>Absolutely need it and it is covered by contract</li>\n    <li>These are subscription licenses</li>\n    <li>Yes</li>\n    <li>I have an authorization request and this is a replacement for an existing license</li>\n    <li>I can't login to the site. Can you please just raise the ticket?</li>\n    <li>none</li>\n  </ul><br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 28,
+          "side_conversation_items": 2
+        },
+        "jira": {
+          "link_present": true,
+          "link_value": "GENSYMBSE-28"
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

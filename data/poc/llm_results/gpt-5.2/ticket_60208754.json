@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI/bot entries shown are operational status updates (hold/reopen/split) rather than customer-facing troubleshooting or commitments; there\u2019s no clear incorrect info or broken promises evidenced in the provided excerpts.",
+    "evidence": [
+      "[2025-10-13T10:00:34+00:00] (AI) Centralsupport-ai-acc: \"Ticket 60208754 has been splitted to 60219722\"",
+      "[2025-10-14T05:10:35+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-10-20T19:58:12+00:00] (AI) CE Maintenance Bot: \"Reopening because Engineering issue https://github.com/trilogy-group/eng-maintenance/issues/13147 has been completed.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of an AI repeatedly asking the customer for the same information or blocking access to a human; customer-facing replies in the timeline are from named employees.",
+    "evidence": [
+      "[2025-10-09T12:21:44+00:00] (Employee) Raditya Perdhevi: \"Dear Patti,\"",
+      "[2025-10-16T17:58:43+00:00] (Employee) Pavly Nashed: \"Dear Patti,\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The excerpts do not show agents re-requesting the same logs/screenshots or overlooking already-provided details; the main visible action is splitting the ticket and status updates.",
+    "evidence": [
+      "[2025-10-09T12:22:58+00:00] (Employee) Raditya Perdhevi: \"We should've split this ticket into khoros care as the marketing part is already resolved.\"",
+      "[2025-10-13T10:00:26+00:00] (Employee) Raditya Perdhevi: \"Khoros Care Facebook account keep getting disconnected.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket metadata indicates a very large maximum gap between responses, and the timeline shows a multi-day gap between customer and subsequent agent activity.",
+    "evidence": [
+      "[2025-10-09T12:21:44+00:00] (Employee) Raditya Perdhevi: \"Dear Patti,\"",
+      "[2025-10-13T00:52:38+00:00] (Customer) Patti Sebastiao: \"Hi Raditya,\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, the provided interaction excerpts do not show the moment of closure or that it was closed while the customer was awaiting promised information or follow-up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is evidence of engineering engagement and deployment rather than generic end-user troubleshooting; no cache/VPN/firewall-style guidance is shown in the excerpts.",
+    "evidence": [
+      "[2025-10-16T15:38:31Z] (Employee) MohammadAzhari-Trilogy: \"This change has been deployed\"",
+      "[2025-10-16T17:58:43+00:00] (Employee) Pavly Nashed: \"Our Development team has imple\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI/bot entries shown are operational status updates (hold/reopen/split) rather than customer-facing troubleshooting or commitments; there\u2019s no clear incorrect info or broken promises evidenced in the provided excerpts.\",\n    \"evidence\": [\n      \"[2025-10-13T10:00:34+00:00] (AI) Centralsupport-ai-acc: \\\"Ticket 60208754 has been splitted to 60219722\\\"\",\n      \"[2025-10-14T05:10:35+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-10-20T19:58:12+00:00] (AI) CE Maintenance Bot: \\\"Reopening because Engineering issue https://github.com/trilogy-group/eng-maintenance/issues/13147 has been completed.\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of an AI repeatedly asking the customer for the same information or blocking access to a human; customer-facing replies in the timeline are from named employees.\",\n    \"evidence\": [\n      \"[2025-10-09T12:21:44+00:00] (Employee) Raditya Perdhevi: \\\"Dear Patti,\\\"\",\n      \"[2025-10-16T17:58:43+00:00] (Employee) Pavly Nashed: \\\"Dear Patti,\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The excerpts do not show agents re-requesting the same logs/screenshots or overlooking already-provided details; the main visible action is splitting the ticket and status updates.\",\n    \"evidence\": [\n      \"[2025-10-09T12:22:58+00:00] (Employee) Raditya Perdhevi: \\\"We should've split this ticket into khoros care as the marketing part is already resolved.\\\"\",\n      \"[2025-10-13T10:00:26+00:00] (Employee) Raditya Perdhevi: \\\"Khoros Care Facebook account keep getting disconnected.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket metadata indicates a very large maximum gap between responses, and the timeline shows a multi-day gap between customer and subsequent agent activity.\",\n    \"evidence\": [\n      \"[2025-10-09T12:21:44+00:00] (Employee) Raditya Perdhevi: \\\"Dear Patti,\\\"\",\n      \"[2025-10-13T00:52:38+00:00] (Customer) Patti Sebastiao: \\\"Hi Raditya,\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, the provided interaction excerpts do not show the moment of closure or that it was closed while the customer was awaiting promised information or follow-up.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is evidence of engineering engagement and deployment rather than generic end-user troubleshooting; no cache/VPN/firewall-style guidance is shown in the excerpts.\",\n    \"evidence\": [\n      \"[2025-10-16T15:38:31Z] (Employee) MohammadAzhari-Trilogy: \\\"This change has been deployed\\\"\",\n      \"[2025-10-16T17:58:43+00:00] (Employee) Pavly Nashed: \\\"Our Development team has imple\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60208754
+}

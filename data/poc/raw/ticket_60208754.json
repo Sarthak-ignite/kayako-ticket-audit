@@ -1,0 +1,379 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_marketing",
+        "requester": {
+          "id": 60440026,
+          "uuid": "321361d8-2668-584c-a596-4776a868f9ae",
+          "full_name": "Patti Sebastiao",
+          "legacy_id": "0034W00002uLrVVQA0",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/321361d8-2668-584c-a596-4776a868f9ae?1765825185",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60062834,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 441555,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-10-22T05:08:29+00:00",
+          "last_active_at": "2025-12-15T18:59:45+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60440026",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@243d5db7cd7816e9bb1b2afc023ceebd56949b72",
+          "password_updated_at": "2025-09-29T05:46:13+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-07-07T01:48:06+00:00",
+          "updated_at": "2025-12-15T18:59:45+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60440026"
+        },
+        "ticket_idt": 60208754
+      },
+      "interactions": [
+        [
+          "2025-10-22T12:47:56+00:00",
+          "Kayako - ticket id 60208754 // CE Maintenance Bot commented privately: Reopening because Engineering issue https://github.com/trilogy-group/eng-maintenance/issues/14145 has been completed."
+        ],
+        [
+          "2025-10-22T01:57:17+00:00",
+          "Kayako - ticket id 60208754 // Patti Sebastiao commented publicly:  \n\n Hi Pavly, \n\n Thanks for the update. I will keep an eye on it and let you know if the issue comes back. \n\n Best, \n Patti \n\n Get Outlook for iOS [https://aka.ms/o0ukef] \n-------------------------\n\n \n"
+        ],
+        [
+          "2025-10-21T21:27:51Z",
+          "GHI Engineering - 14145 // Tasker-AI commented: @MohammadAzhari-Trilogy \nWe have customer confirmation on 2 tickets that they can now post:  [60217671](https://central-supportdesk.kayako.com/agent/conversations/60217671) and [60216934](https://central-supportdesk.kayako.com/agent/conversations/60216934)"
+        ],
+        [
+          "2025-10-20T19:58:12+00:00",
+          "Kayako - ticket id 60208754 // CE Maintenance Bot commented privately: Reopening because Engineering issue https://github.com/trilogy-group/eng-maintenance/issues/13147 has been completed."
+        ],
+        [
+          "2025-10-16T19:44:23Z",
+          "GHI Engineering - 14145 // MohammadAzhari-Trilogy commented: The issue seems to be resolved after the deployment, no new occurrences after the deployment:\n\n<img width=\"1860\" height=\"288\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/d1709119-bddb-41eb-a2b8-6fafc4a93bfc\" />\n\n "
+        ],
+        [
+          "2025-10-16T17:58:43+00:00",
+          "Kayako - ticket id 60208754 // Pavly Nashed commented publicly: Dear Patti,\n\nThank you for your patience while we investigated the issue with the failed Instagram post.\n\nOur Development team has implemented and deployed a fix to address this, which increases the timeout duration and adds retry capabilities to handle delays in Instagram's media readiness.\n\nCould you please attempt to republish the posts and let us know in case you encounter any further issues?\nBest regards,\nPavly Nashed\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-16T15:38:31Z",
+          "GHI Engineering - 14145 // MohammadAzhari-Trilogy commented: This change has been deployed\n\nCR: https://trilogy-eng.atlassian.net/browse/SPREDFAST-8248"
+        ],
+        [
+          "2025-10-14T05:10:35+00:00",
+          "Kayako - ticket id 60208754 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-10-14T01:16:43+00:00",
+          "Kayako - ticket id 60208754 // Patti Sebastiao commented publicly: Hi Raditya,\n\n\u00a0\n\nThank you for the update. I appreciate the follow-up and look forward to this being resolved.\n\n\u00a0\n\nBest regards,\n\n\u00a0\n\nPatti Sebastiao\nHead of Social Media\n\nPADI Worldwide\nLevel 4, 120 Old Pittwater Road\nBrookvale NSW 2100, Australia\nT\u00a0+61 2 9454 2813\nW\u00a0padi.com\n\nimage [http://www.padi.com/]\n\nimage\n\nimage [https://www.padi.com/education]\n\nimage\n\nimage [https://my.padi.com/]\n\nimage\n\nimage [https://www.padigear.com.au/]\n\nimage\n\nimage [https://travel.padi.com/]\n\n\u00a0"
+        ],
+        [
+          "2025-10-13T10:06:36+00:00",
+          "Kayako - ticket id 60208754 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-10-13T10:05:02+00:00",
+          "Kayako - ticket id 60208754 // Raditya Perdhevi commented publicly: Hi Patti,\n\nThank you for the updates.\n\nTo better streamline the investigation, we are opening a separate ticket [https://central-supportdesk.kayako.com/agent/conversations/60219722] specifically to track the Khoros Care issue and ensure all relevant updates are shared with our Engineering team accordingly.\n\nAs for the Khoros Marketing issue concerning Instagram scheduled posts (specifically affecting the Scuba Diving Magazine account), it remains under investigation. Our Engineering team is actively working on a fix, and we\u2019ll continue to provide updates as progress is made.\n\nWe appreciate your continued patience and collaboration.\n\nBest regards,\nRaditya Perdhevi\nKhoros Marketing Support Team\n\n"
+        ],
+        [
+          "2025-10-13T10:00:34+00:00",
+          "Kayako - ticket id 60208754 // Centralsupport-ai-acc commented privately: Ticket 60208754 has been splitted to 60219722 [https://central-supportdesk.kayako.com/agent/conversations/60219722]"
+        ],
+        [
+          "2025-10-13T10:00:26+00:00",
+          "Kayako - ticket id 60208754 // Raditya Perdhevi commented privately:  Khoros Care Facebook account keep getting disconnected.\u00a0 "
+        ],
+        [
+          "2025-10-13T09:47:01+00:00",
+          "Kayako - ticket id 60208754 // Darvin Moctaram commented privately:  Instructions [https://docs.google.com/document/d/1w6pg-Lqz1Y5n8Gah7JXTRAnNEgnLGDgQn0p4EE_DdyU/edit#bookmark=id.nmtleyh2xrkb] \n\nWHAT IS YOUR PROPOSED ACTION?\n(REQUIRED: SELECT ONE, DELETE THE REST)\n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Hi Patti,\n\n Thank you for the updates.\n\n To better streamline the investigation, we are opening a separate ticket specifically to track the Khoros Care issue and ensure all relevant updates are shared with our Engineering team accordingly.\n\n As for the Khoros Marketing issue concerning Instagram scheduled posts (specifically affecting the Scuba Diving Magazine account), it remains under investigation. Our Engineering team is actively working on a fix, and we\u2019ll continue to provide updates as progress is made.\n\n We appreciate your continued patience and collaboration. \n\n Best regards, \n Darvin Moctaram \n Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n - 2 separate issues:\u00a0 \n --> 1. Scheduled Instagram posts not publishing in Marketing. --> https://github.com/trilogy-group/eng-maintenance/issues/14145 - the fix is being tested in QA. \n --> 2. Facebook accounts getting disconnected on Care. --> https://github.com/trilogy-group/eng-maintenance/issues/13147 - investigation in progress. \n\n Next action \n - Recommend splitting this ticket for the two issues.\n- Original ticket link to https://github.com/trilogy-group/eng-maintenance/issues/14145 \n - 2nd ticket for Care issue. Link to https://github.com/trilogy-group/eng-maintenance/issues/13147\n\n- Default Facebook integration is disconnected on Care:\n\nimage\n\n -\n\n =============================================================== \n GPT \n Did you use GPT: Yes "
+        ],
+        [
+          "2025-10-13T04:13:05+00:00",
+          "Kayako - ticket id 60208754 // Patti Sebastiao commented publicly: Just a quick update: I had mentioned that the Instagram failures had stopped on PADI, but that\u2019s no longer the case. Just today, we had another failed post. \n\n\u00a0\n\nThank you!\n\n\u00a0\n\nPatti Sebastiao\nHead of Social Media\n\nPADI Worldwide\nLevel 4, 120 Old Pittwater Road\nBrookvale NSW 2100, Australia\nT\u00a0+61 2 9454 2813\nW\u00a0padi.com\n\nimage [http://www.padi.com/]\n\nimage\n\nimage [https://www.padi.com/education]\n\nimage\n\nimage [https://my.padi.com/]\n\nimage\n\nimage [https://www.padigear.com.au/]\n\nimage\n\nimage [https://travel.padi.com/]\n\n\u00a0"
+        ],
+        [
+          "2025-10-13T03:57:17+00:00",
+          "Kayako - ticket id 60208754 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-10-13T00:52:38+00:00",
+          "Kayako - ticket id 60208754 // Patti Sebastiao commented publicly: Hi Raditya,\n\n\u00a0\n\nThank you for your detailed response. I can confirm that Facebook items were not coming through earlier today. I deleted the Facebook connection and reconnected it, and the items have since started to come back through. However, the issue is still occurring intermittently. Thanks for continuing to look into this with your team.\n\n\u00a0\n\nI was also informed over the weekend that our Instagram posts for Scuba Diving Magazine continue to fail almost daily. As I mentioned previously, we faced the same issue with the main PADI Instagram account, but that seems to have stopped. It appears to still be affecting the Scuba Diving Magazine account, though.\n\n\u00a0\n\nThank you again for your help and for keeping us updated.\n\n\u00a0\n\nBest regards,\n\n\u00a0\n\nPatti Sebastiao\nHead of Social Media\n\nPADI Worldwide\nLevel 4, 120 Old Pittwater Road\nBrookvale NSW 2100, Australia\nT\u00a0+61 2 9454 2813\nW\u00a0padi.com\n\nimage [http://www.padi.com/]\n\nimage\n\nimage [https://www.padi.com/education]\n\nimage\n\nimage [https://my.padi.com/]\n\nimage\n\nimage [https://www.padigear.com.au/]\n\nimage\n\nimage [https://travel.padi.com/]\n\n\u00a0"
+        ],
+        [
+          "2025-10-09T12:23:03+00:00",
+          "Kayako - ticket id 60208754 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-10-09T12:22:58+00:00",
+          "Kayako - ticket id 60208754 // Raditya Perdhevi commented privately:  We should've split this ticket into khoros care as the marketing part is already resolved.\u00a0 "
+        ],
+        [
+          "2025-10-09T12:21:44+00:00",
+          "Kayako - ticket id 60208754 // Raditya Perdhevi commented publicly: Dear Patti,\n\nThank you for the update. We understand that all issues have been resolved except for the disconnection issue with Facebook in Khoros Care.\n\nAfter a detailed analysis, we believe the issue stems from stale or invalid authentication tokens that failed silently on Meta\u2019s side\u2014without triggering standard alerts or disconnections in Khoros Care. As a result, the accounts appeared connected, even though data ingestion had stopped.\n\nThis behavior is currently being tracked under an active incident affecting Meta (Facebook/Instagram) channel authentication in Khoros Care. Our Engineering teams are actively working toward a long-term fix. You can follow live updates on the Khoros Status Page [https://status.khoros.com/incidents/87c8jw58m6db].\n\nWe've reviewed your Khoros Care instance and confirmed that Facebook content is currently being ingested. If you encounter any issues, please reconnect the Facebook integration and inform us so we can relay it to our Engineering team.\n\nBest regards,\nRaditya Perdhevi\nKhoros Support Team\n\n"
+        ],
+        [
+          "2025-10-09T12:12:55Z",
+          "GHI Engineering - 14145 // MohammadAzhari-Trilogy commented: Worked fine on QA22 environment, and PR is ready for review."
+        ],
+        [
+          "2025-10-09T11:54:30Z",
+          "GHI Engineering - 14145 // MohammadAzhari-Trilogy commented: Most failures with this error originate in `InstagramPublishingService.publishPost`.\n\nLogs: [Logs](https://service.sumologic.com/log-search#H4sIAAAAAAAAEy2NUUvDMBSF%2F0o4TwpButZ1prAHxxT6MJju0Q65Sy9ZoE1qklaK%2BN%2BluPN2Pr7D%2BUHnTXwbOcwH3zIqPLcTOc0tJBz1CzkxBX2FxEAhWmduIo3JQ%2BJr2aJCgwO3lkS9FzYK55OgiWxHl44biLvP6MegWVNi48O8nQZ9L25w%2BdlGry11hhJ%2F0ywa1C4mMoH643jpbLxaZ04cJqv5YfgnRx9TA0iE0aFKYWSJyDFa7%2BoWFcpCFWX5WG5e9vnrbreGRLI9v5MzjOpjtVmrXK3ybIlcmnrKC6WyLDv%2F%2FgG57igjGAEAAA%3D%3D)\n\n**RCA:**\n`facebookClient.publishInstagramMedia` returns an error intermittently because the media is not yet ready. This call directly hits the Instagram `media_publish` endpoint, and we do **not** currently retry it. As a result, transient \u201cmedia not ready\u201d responses cause the operation to fail.\n\n**Fix:**\nAdded a retry mechanism around `publishInstagramMedia` to handle \u201cmedia not ready\u201d responses.\n\n**Status:**\nPR https://github.com/spredfast/sf-social-gateway/pull/5274 created and the change is being deployed to the **QA22** environment for validation.\n"
+        ],
+        [
+          "2025-10-09T11:32:28+00:00",
+          "Kayako - ticket id 60208754 // Darvin Moctaram commented privately:  Instructions [https://docs.google.com/document/d/1w6pg-Lqz1Y5n8Gah7JXTRAnNEgnLGDgQn0p4EE_DdyU/edit#bookmark=id.nmtleyh2xrkb] \n\nWHAT IS YOUR PROPOSED ACTION?\n(REQUIRED: SELECT ONE, DELETE THE REST)\n\n \t* Send to customer & put on Hold\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Patti,\n\n Thank you for the update. We understand that all issues have been resolved except for the disconnection issue with Facebook in Khoros Care. \n\n After a detailed analysis, we believe the issue stems from stale or invalid authentication tokens that failed silently on Meta\u2019s side\u2014without triggering standard alerts or disconnections in Khoros Care. As a result, the accounts appeared connected, even though data ingestion had stopped. \n\n This behavior is currently being tracked under an active incident affecting Meta (Facebook/Instagram) channel authentication in Khoros Care. Our Engineering teams are actively working toward a long-term fix. You can follow live updates on the Khoros Status Page [https://status.khoros.com/incidents/87c8jw58m6db]. \n\n We've reviewed your Khoros Care instance and confirmed that Facebook content is currently being ingested. If you encounter any issues, please reconnect the Facebook integration and inform us so we can relay it to our Engineering team. \n\n Best regards, \n Darvin Moctaram \n Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n- GHI already opened for this issue - https://github.com/trilogy-group/eng-maintenance/issues/13147\n- Current ticket linked to GHI.\n- Checked on Token Debugger - main token PADI not found in Enigma. However despite this error, I logged into Khoros Care and confirmed that Facebook content is being currently ingested into Care.\n\nimage \n\nNext action:\n- Send PR & put ticket on Hold 9999, set ON-HOLD - Reason to https://github.com/trilogy-group/eng-maintenance/issues/13147 & set DS for Escalated Issue (only GHI!) to https://github.com/trilogy-group/eng-maintenance/issues/13147\n\n =============================================================== \n GPT \n Did you use GPT: Yes "
+        ],
+        [
+          "2025-10-09T01:08:06+00:00",
+          "Kayako - ticket id 60208754 // Patti Sebastiao commented publicly: Hi Hermes,\n\n\u00a0\n\nThanks for your response. It seems that the other issues have resolved, except for Facebook disconnecting from Khoros Care. To clarify, it doesn\u2019t show any indication that it has disconnected \u2014 there\u2019s no error message or request for reauthentication either. It just suddenly stops pulling any Facebook tickets. Each time this happens, I remove Facebook, reconnect it, and within minutes the tickets start coming through again. This has happened over 10 times now. \n\n\u00a0\n\nPatti Sebastiao\nHead of Social Media\n\nPADI Worldwide\nLevel 4, 120 Old Pittwater Road\nBrookvale NSW 2100, Australia\nT\u00a0+61 2 9454 2813\nW\u00a0padi.com\n\nimage [http://www.padi.com/]\n\nimage\n\nimage [https://www.padi.com/education]\n\nimage\n\nimage [https://my.padi.com/]\n\nimage\n\nimage [https://www.padigear.com.au/]\n\nimage\n\nimage [https://travel.padi.com/]\n\n\u00a0"
+        ],
+        [
+          "2025-10-08T20:10:49Z",
+          "GHI Engineering - 14145 // JordanKhoros commented: Seeing these errors in the hundreds for the last week. \n\nhttps://service.sumologic.com/log-search/create?id=K6HmCdNkFNXpw8OgvExqJtWl0bkZx3zPfwHm4hGa"
+        ],
+        [
+          "2025-10-08T20:06:25Z",
+          "GHI Engineering - 14145 // Hussnain47 subscribed"
+        ],
+        [
+          "2025-10-08T20:06:24Z",
+          "GHI Engineering - 14145 // Hussnain47 mentioned"
+        ],
+        [
+          "2025-10-08T20:06:22Z",
+          "GHI Engineering - 14145 // trilogy-taro[bot] commented: # Engineering Issue Bot\n\n## Issue Reproduction\n\nI have analyzed the publishing failure issue for Instagram posts with media. The issue manifests with the following key characteristics:\n\n**Key Interactions Documented:**\n- Users schedule Instagram posts with video content through Khoros Marketing\n- Videos requiring >5 minutes of processing time on Meta's platform\n- Publishing attempts fail with Facebook API error code 9007, subcode 2207027\n\n**Primary Error Pattern:**\n```\nFacebookError{message=Media ID is not available, type=OAuthException, code=9007, subcode=2207027,\nerrorUserTitle=Cannot Publish, errorUserMessage=The media is not ready for publishing, please wait for a moment}\n```\n\n**Secondary Error (Concurrency Issue):**\n```\njava.lang.IllegalArgumentException: Action is currently locked for editing\nat com.spredfast.publish.service.EventPublisher.lock(EventPublisher.java:462)\n```\n\n**Affected Message IDs:** 224094871, 226094068, 226094151, 226094127, 226094010, 224884228, 226093916, 225966902, 226120413, 225919810, 226048716, 226071663, 226512506, 274278101, 226664308, 226662511, 226661386, 226657598, 226648551\n\n**Log Analysis Results:**\n- Error timeline shows consistent failures from Sept 4-11, 2025, with recurrence in October 2025\n- Video processing delta of ~5 minutes between creation and modification timestamps\n- Errors occur when Instagram video processing exceeds the hardcoded 5-minute timeout\n\n## Root Cause Analysis\n\n**Primary Root Cause**: Hardcoded 5-minute timeout in the Khoros Marketing publishing service is insufficient for Instagram video processing.\n\n**Step-by-Step Evidence:**\n\n1. **UI Layer**: Users successfully schedule Instagram video posts through Khoros Marketing interface\n2. **API Layer**: EventPublisher service initiates publish request with 5-minute (300s) timeout\n3. **Logic Layer**:\n   - Video upload to Meta begins\n   - Processing time exceeds 5-minute threshold\n   - Timeout triggers before Meta completes video processing\n   - System attempts concurrent retry while resource is locked\n4. **Persistence Layer**: Meta's Instagram API returns \"Media ID not available\" error when queried before processing completes\n\n**Contextual Factors:**\n- Instagram video processing times are variable based on video size, complexity, and Meta's server load\n- The 5-minute hardcoded timeout was likely sufficient historically but is now inadequate\n- Concurrency control mechanism creates cascade failures when initial publish attempts timeout\n- Issue appears intermittent as it only affects videos requiring >5 minutes processing\n\n**Regression Analysis**: This is not a regression but rather a limitation that has become more prominent as:\n- Video sizes and quality have increased over time\n- Meta's processing times may have increased\n- Customer usage patterns have evolved to include larger/complex videos\n\n## Test Plan\n\n**Unit Tests Required:**\n- Test timeout handling with mocked delays exceeding 5 minutes\n- Test retry mechanism behavior when media is not ready\n- Test concurrency control to prevent resource locking conflicts\n\n**Integration Tests:**\n- End-to-end Instagram video publishing with various video sizes\n- Concurrent publishing attempts validation\n- Timeout configuration adjustments\n\n**E2E Tests:**\n- Manual: Schedule Instagram videos of varying sizes (1MB to 100MB+)\n- Automated: Mock Meta API with processing delays to validate retry behavior\n\n**Impact Analysis:**\n- **Affected Modules**: Publishing service, scheduler, retry mechanism\n- **External Integrations**: Instagram/Facebook Graph API\n- **Feature Dependencies**: All Instagram video publishing in Khoros Marketing\n\n## Fix Implementation\n\n**Immediate Workaround Already Applied:**\nAccording to comment from @Hussnain47, a fix has been implemented increasing the timeout from 5 minutes (300s) to 15 minutes (900s) in PR https://github.com/spredfast/sf-social-gateway/pull/5268.\n\n**Engineering Solution Recommendations:**\n\n1. **Make timeout configurable** (instead of hardcoded):\n```java\n@Value(\"${publishing.instagram.video.timeout:900}\")\nprivate int videoPublishTimeout;\n```\n\n2. **Implement exponential backoff retry**:\n```java\nprivate static final int[] RETRY_DELAYS = {30, 60, 120, 240, 480}; // seconds\n```\n\n3. **Add async status polling** for media processing:\n   - Poll Meta API for media status instead of fixed timeout\n   - Implement webhook notifications if supported by Meta\n\n4. **Improve concurrency control**:\n   - Fix resource locking to prevent \"Action is currently locked\" errors\n   - Implement proper lock timeout and cleanup\n\n## Test Results\n\n**Current Status**:\n- The 15-minute timeout increase appears to have resolved most failures based on @Hussnain47's monitoring\n- However, new failures reported in October 2025 by @JordanKhoros indicate the issue persists for some customers\n\n**Monitoring Shows**:\n- Reduced error rate after timeout increase\n- Some videos still exceed even the 15-minute timeout\n- YouKnow customer experiencing high volume of failures\n\n## Deliverables\n\n**Already Delivered:**\n- PR #5268 with timeout increase to 15 minutes (reported as merged)\n- Performance logging additions for observability\n\n**Additional Recommendations:**\n1. **Configuration Management**: Make timeout configurable per environment/customer\n2. **Monitoring**: Add alerts for publishing failures exceeding threshold\n3. **Documentation**: Update troubleshooting guide for Instagram publishing timeouts\n4. **Long-term Solution**: Implement async processing with status polling\n\n## Verdict and Next Steps\n\n**Likelihood of Current Fix Effectiveness: 70%** - The 15-minute timeout resolves most cases but not all.\n\n**Root Cause Confidence: 95%** - Clear evidence shows timeout is the primary issue.\n\n**Alternative Solutions:**\n1. **Dynamic timeout based on video size** (85% likely to help): Calculate timeout based on file size\n2. **Async processing with webhook callbacks** (95% likely to resolve): Most robust solution\n3. **Queue-based retry with exponential backoff** (90% likely to help): Better handles variable processing times\n\n**Most Important Next Step**: Since the repository appears to be private/inaccessible, and a workaround has been applied:\n\n1. **Monitor the effectiveness** of the 15-minute timeout for the YouKnow customer\n2. **Implement configurable timeout** to allow per-customer adjustments\n3. **Plan migration to async processing** for long-term resolution\n4. **Add comprehensive logging** to track actual Instagram processing times\n\n**Immediate Action Required**: The engineering team should verify if the 15-minute timeout is deployed to all environments, as October 2025 failures suggest some instances may still have the old 5-minute timeout."
+        ],
+        [
+          "2025-10-08T20:06:21Z",
+          "GHI Engineering - 14145 // trilogy-taro[bot] comment_deleted"
+        ],
+        [
+          "2025-10-08T19:58:30Z",
+          "GHI Engineering - 14145 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-10-08T19:58:27Z",
+          "GHI Engineering - 14145 // trilogy-eng-standards added_to_project_v2"
+        ],
+        [
+          "2025-10-08T19:58:06Z",
+          "GHI Engineering - 14145 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-10-08T19:58:03Z",
+          "GHI Engineering - 14145 // JordanKhoros commented: Reopening this as Multichoice is experiencing a huge number of these errors. \n\nCase link: [60215662](https://central-supportdesk.kayako.com/agent/conversations/60215662)\n\nList of some examples by messageID\n\n226664308\n226662511\n226661386\n226657598\n226648551\n\nI've checked a few examples by hand, every single one appears to be due to the error attached to this ticket.\n\nhttps://service.sumologic.com/log-search/create?id=EeKFJNTYOn7FzO9Yim8Ez2gz88DfqE2N8F9X7DKk\n\n<img width=\"2333\" height=\"1231\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/ff178c53-73f7-4717-ae1f-67e771544ce3\" />\n\n<img width=\"1317\" height=\"1203\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/8a682231-8835-486e-9b81-ed749d05f1f7\" />\n"
+        ],
+        [
+          "2025-10-07T10:54:32Z",
+          "GHI Engineering - 14145 // PavlyN commented: Another customer reported the same issue around the same time ([ka#60215103](https://central-supportdesk.kayako.com/agent/conversations/60215103)). Message ID:\n274278101"
+        ],
+        [
+          "2025-10-05T11:32:13Z",
+          "GHI Engineering - 14145 // PavlyN commented: Just for documentation, another customer reported this happening again on October 1 and 2 ([ka#60212320](https://central-supportdesk.kayako.com/agent/conversations/60212320?)). Message IDs:\n226512506\n\nAs only 1 customer reported this thus far, not reopening it."
+        ],
+        [
+          "2025-10-02T19:44:28+00:00",
+          "Kayako - ticket id 60208754 // Jordan Knezha commented publicly: Hey Patti,\n\nWe will unfortunately be unable to join a call without a very specific agenda for actions needing to be taken on our side.\n\nIf there are a number of issues here, we also may need to split this into multiple tickets to get everything addressed with the proper focus and effort required to make sure that everything is solved.\n\nIf possible, could you please clarify the exact issues you're seeing as currently there are not enough details to investigate.\n\nI'll address the disconnection issues first, as we currently have an ongoing issue and are working towards a long term solution for this. The status page reflects our ongoing efforts here: https://status.khoros.com/incidents/87c8jw58m6db\n\nI understand the frustration here, and we are working diligently towards a long term fix on the issue. In the meantime, please continue to reconnect the accounts as needed.\u00a0\n\nAny information about when the disconnections are occurring as well as the specific accounts that are being disconnected will allow us to investigate further.\n\nI believe that this may be the cause of your issues with Instagram publishing failures as well, but any details on specific dates that the failures are occurring, and screenshots showing the failures would be incredibly helpful. \n\nYou mentioned filters not working, any details on which filters are not working, in which platform, and what is expected to be seen and what is actually seen will allow us to properly triage the issue.\n\nLastly, if you are still not seeing any scheduled posts on your calendar, and can give examples of those, we can start investigating the issue.\n\nOnce we have the details on these issues, we can get the ticket split up appropriately and, if necessary, set up a meeting. \n\nBest regards,\nJordan Knezha\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-02T07:14:20+00:00",
+          "Kayako - ticket id 60208754 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-10-02T07:14:03+00:00",
+          "Kayako - ticket id 60208754 // Patti Sebastiao commented publicly: Hi there,\n\n\u00a0\n\nUnfortunately, we are still facing multiple issues across scheduled posts, Instagram publishing failures, filters not working, and recurring Facebook disconnections. At this stage, it\u2019s unrealistic for us to continue troubleshooting the suggested steps without seeing any resolution despite multiple attempts. \n\n\u00a0\n\nI\u2019d like to request a call with someone from your team so we can go through these problems directly and work toward a solution. Could you please let me know a suitable time? I\u2019m based in the Sydney timezone.\n\n\u00a0\n\nThanks, \n\n\u00a0\n\nPatti Sebastiao\nHead of Social Media\n\nPADI Worldwide\nLevel 4, 120 Old Pittwater Road\nBrookvale NSW 2100, Australia\nT\u00a0+61 2 9454 2813\n\nW\u00a0padi.com\n\nimage [http://www.padi.com/]\n\nimage\n\nimage [https://www.padi.com/education]\n\nimage\n\nimage [https://my.padi.com/]\n\nimage\n\nimage [https://www.padigear.com.au/]\n\nimage\n\nimage [https://travel.padi.com/]\n\n\u00a0"
+        ],
+        [
+          "2025-09-30T21:35:50+00:00",
+          "Kayako - ticket id 60208754 // ATLAS commented publicly: Dear Patti,\n\nThank you for your follow-up and for explaining the ongoing issues with Instagram post failures and recurring Facebook disconnections in Khoros, despite repeated re-authentication of your accounts. We recognize the disruption this has caused and want to provide further guidance based on the behaviors you're describing.\n\nInstagram Post Failures (Despite Re-Authentication)\nRepeated failures in Instagram post publishing\u2014particularly if you have already re-authenticated the account\u2014can sometimes be due to issues with token expiry, changes to social account permissions, or specific restrictions on the Instagram account (such as required two-factor authentication or missing permissions for business integration). It's also important to ensure that the Instagram account is set up as a Business or Creator profile and is correctly linked to a Facebook Page with full admin rights. If any of these conditions are not met, posting can intermittently fail even after successful re-authentication.\nFor more background on scheduling and troubleshooting Instagram posts in Khoros, please review:\nCalendar Views [https://khoros-marketing.kayako.com/article/127470]\n\nRecurring Facebook Disconnects in Khoros Care\nFrequent disconnection of Facebook accounts\u2014especially if daily re-authentication is required\u2014often results from one of the following:\n\n \t* Changes in user permissions or admin rights on the Facebook Page or Business Manager.\n \t* Facebook security checks (for example, changes in password or unusual activity detected by Facebook).\n \t* Expired access tokens or the removal of third-party access by Page admins.\n\nTo mitigate this, confirm that:\n\n \t* The Facebook user performing the connection has full admin rights on both the Facebook Page and in the Business Manager settings.\n \t* No other users or Facebook platform policies are restricting or removing the Khoros app's permissions.\n \t* All necessary permissions are granted during the re-authentication process (Khoros requires a variety of permissions to maintain a stable connection).\n\nIf a re-authenticated account disconnects almost immediately or repeatedly, it is advisable to check directly within Facebook's Business Integrations page (Settings > Security > Business Integrations) for any warnings about the Khoros application or revoked access. Also, verify that no ad blockers or strict browser privacy settings are interfering with the authentication flow.\n\nContent Visibility and Historical Issues\nYour earlier screenshot (reviewed and summarized in our previous response) indicated missing scheduled posts in your calendar for September 7\u201328, with items only appearing from September 29 onward. The absence of visible content during this period, combined with continued post failures, reinforces the possibility of either persistent account-level disruptions or temporary platform-side outages. To review all scheduled, unscheduled, or failed posts in your environment, we recommend using the List View of the calendar and applying filters to confirm whether any hidden filter or view configuration is limiting visibility. For more information: \nCalendar Views [https://khoros-marketing.kayako.com/article/127470] \nApply filters to the Calendar [https://khoros-marketing.kayako.com/article/127471]\n\nIf the Issue Persists\nSince you have confirmed repeated re-authentication and the issues are ongoing for both Instagram and Facebook, it's advisable to:\n\n \t* Double-check all admin and integration permissions directly in Facebook and Instagram as outlined above.\n \t* Review for browser security settings or network restrictions that might interrupt token handoffs or session persistence.\n \t* If other admins have access to these channels, have them attempt an authentication from a different account as an additional test.\n\nFor references on channel management and troubleshooting, here are additional articles that may be of help:\nGuide to the Social Marketing Calendar [https://khoros-marketing.kayako.com/article/127469]\n\nThank you again for outlining your experience and including the relevant details and screenshot. If the troubleshooting steps above do not resolve the issue, and you continue to encounter channel disconnections or post failures, please review the account-level details within your Facebook and Instagram settings as conflicts or permission gaps there are the most common cause of persistent authentication problems in Khoros.\n\nIf you have more specific error messages or see any pattern regarding when disconnections or post failures occur (such as at certain times or only with particular users/channels), please let us know. We're here to provide any further clarification you may need.\n\nSincerely,\nAtlas\nKhoros Marketing Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-30T21:34:53+00:00",
+          "Kayako - ticket id 60208754 // Patti Sebastiao commented publicly: Hi there, \n\n\u00a0\n\nThe posts are now showing, but our Instagram posts keep failing for a few days now even though it has been reauthenticated. \n\nThe same thing with Khoros Care, I\u2019ve been re-authenticating Facebook almost daily and it keeps getting disconnected. \n\nThere have been a ton of issues with Khoros recently. \n\n\u00a0\n\nPatti Sebastiao\nHead of Social Media\n\nPADI Worldwide\nLevel 4, 120 Old Pittwater Road\nBrookvale NSW 2100, Australia\nT\u00a0+61 2 9454 2813\nW\u00a0padi.com\n\nimage [http://www.padi.com/]\n\nimage\n\nimage [https://www.padi.com/education]\n\nimage\n\nimage [https://my.padi.com/]\n\nimage\n\nimage [https://www.padigear.com.au/]\n\nimage\n\nimage [https://travel.padi.com/]\n\n\u00a0"
+        ],
+        [
+          "2025-09-29T06:27:00+00:00",
+          "Kayako - ticket id 60208754 // ATLAS commented publicly: Dear Patti,\n\nThank you for providing the details and the attached screenshot regarding the issues you are experiencing in Khoros Marketing, including missing scheduled posts, Instagram failures, and Facebook disconnections.\n\nObservations from your screenshot:\nThe calendar in your screenshot shows a significant gap, with \"0 items\" displayed for each day from September 7 to September 28. Only posts scheduled from September 29 onward appear in the calendar. This confirms your report that scheduled posts are missing or failing for the past three days and that new posts do not display in those periods. There is no visible indication that publishing is paused or posts are set as drafts\u2014they simply do not show up in the calendar for the affected dates.\n\nPotential Causes and Guidance:\n\n \t* Missing Scheduled Posts: If your scheduled posts are not showing on the calendar for specific days, but appear for others, make sure you are viewing the correct calendar filters (such as correct campaigns, channels, or initiatives). For more on calendar views and filtering, review the article: Calendar Views [https://khoros-marketing.kayako.com/article/127470].\n \t* Failed Posts: If posts failed to publish, these would typically appear in the calendar with an error or failure status. If there is no sign of these in any view, it may be worthwhile to check the List View in the calendar, as sometimes unscheduled or failed posts are visible there. The Calendar Views [https://khoros-marketing.kayako.com/article/127470] article explains how to access List View and review failed or unscheduled posts.\n \t* Pause Status: Based on your screenshot, there is no indication that publishing is currently paused (which would normally display a red banner and set posts to a \"failed to publish\" status if paused during their scheduled time). For reference on pausing and resuming publishing, see: Pause publishing [https://khoros-marketing.kayako.com/article/127428].\n \t* Facebook and Instagram Issues: Regarding Instagram failures and Facebook account disconnections from Khoros Care, note that account authentication problems or token expirations can cause these symptoms (posts failing or channels disconnecting). Navigate to your account/channel settings in Khoros Marketing or Khoros Care to review the connection status, and re-authenticate if prompted. If the platform shows a warning or \u201cdisconnected\u201d status for these accounts, re-authenticating them generally restores functionality.\n\nUseful Articles:\n\n \t* View content calendar when scheduling new posts [https://khoros-marketing.kayako.com/article/127429]\n \t* Calendar Views [https://khoros-marketing.kayako.com/article/127470]\n \t* Scheduling posts for Facebook [https://khoros-marketing.kayako.com/article/127441]\n \t* Pause publishing [https://khoros-marketing.kayako.com/article/127428]\n\nNext Steps:\n\n \t* Check the List View in your calendar for any missing, failed, or unscheduled posts.\n \t* Review filter settings in your calendar to ensure posts for all intended channels and campaigns are visible.\n \t* For Instagram and Facebook channel issues, go to your channel/account settings in Khoros Marketing (and Khoros Care for Facebook) to verify or re-establish the account connections. If prompted, re-authenticate the affected channels.\n\nIf you continue to encounter missing content or persistent channel disconnects after verifying these settings, additional investigation into account-specific error logs or platform status at the time of failure may be necessary. However, by applying the above steps, many visibility and channel connection issues can be addressed directly within the platform.\n\nPlease let us know if you have any further questions or require clarifications based on the above steps.\n\nSincerely,\nAtlas\nKhoros Marketing Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-29T06:26:18+00:00",
+          "Kayako - ticket id 60208754 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\tScreenshot_2025-09-29_at_3.48.29_PM.png_1568865\n\n-\u00a0The\u00a0Khoros\u00a0Marketing\u00a0calendar\u00a0displays\u00a0no\u00a0scheduled\u00a0items\u00a0from\u00a0September\u00a07\u00a0to\u00a0September\u00a028,\u00a0except\u00a0for\u00a0the\u00a0period\u00a0starting\u00a0from\u00a0September\u00a029\u00a0onward.\n-\u00a0Scheduled\u00a0posts\u00a0are\u00a0only\u00a0visible\u00a0from\u00a0September\u00a029\u00a0through\u00a0October\u00a04,\u00a0with\u00a0a\u00a0concentration\u00a0of\u00a0items\u00a0appearing\u00a0at\u00a0the\u00a0end\u00a0of\u00a0September\u00a0and\u00a0into\u00a0early\u00a0October.\n-\u00a0For\u00a0the\u00a0majority\u00a0of\u00a0the\u00a0month,\u00a0specifically\u00a0September\u00a07\u201328,\u00a0the\u00a0calendar\u00a0indicates\u00a00\u00a0items\u00a0for\u00a0each\u00a0day.\n-\u00a0No\u00a0scheduled\u00a0posts\u00a0are\u00a0shown\u00a0on\u00a0the\u00a0calendar\u00a0for\u00a0the\u00a0days\u00a0when\u00a0the\u00a0customer\u00a0reports\u00a0failures\u00a0and\u00a0missing\u00a0scheduled\u00a0posts\u00a0over\u00a0the\u00a0past\u00a0three\u00a0days.\n-\u00a0Calendar\u00a0items\u00a0visible\u00a0are\u00a0a\u00a0mix\u00a0of\u00a0Facebook,\u00a0Instagram,\u00a0and\u00a0TikTok\u00a0posts\u00a0and\u00a0reels,\u00a0but\u00a0only\u00a0at\u00a0the\u00a0end/beginning\u00a0of\u00a0the\u00a0month.\n-\u00a0The\u00a0missing\u00a0scheduled\u00a0posts\u00a0issue\u00a0is\u00a0visually\u00a0apparent\u00a0in\u00a0the\u00a0calendar\u00a0view,\u00a0with\u00a0large\u00a0gaps\u00a0and\u00a0missing\u00a0entries\u00a0for\u00a0most\u00a0of\u00a0the\u00a0visible\u00a0time\u00a0period.\n-\u00a0There\u00a0is\u00a0no\u00a0indication\u00a0in\u00a0the\u00a0calendar\u00a0of\u00a0any\u00a0paused\u00a0or\u00a0draft\u00a0status;\u00a0scheduled\u00a0posts\u00a0simply\u00a0do\u00a0not\u00a0appear\u00a0for\u00a0the\u00a0affected\u00a0dates.\n\n"
+        ],
+        [
+          "2025-09-29T06:25:49+00:00",
+          "Kayako - ticket id 60208754 // Patti Sebastiao commented privately: Hi there,\n\nWe\u2019re currently experiencing several issues with Khoros at the moment:\n\n1. Scheduled posts are not appearing (see attached screenshot).\n\n2. Instagram posts are failing and had to be pushed manually over the weekend.\n\n3. Facebook keeps disconnecting from Khoros Care without any warning. We simply stop receiving messages and tickets.\n\nCould you please let me know what\u2019s happening? These problems are causing a major disruption for us.\n\nThanks,\nPatti"
+        ],
+        [
+          "2025-09-29T06:20:38+00:00",
+          "Kayako - ticket id 60208754 // ATLAS commented publicly: Dear Patti,\n\nThank you for reaching out about the issues you've encountered with scheduled posts not appearing in your Khoros Marketing calendar and several posts failing over the past three days. We apologize for the inconvenience and understand how important this is for your workflow.\n\nTo help us investigate and resolve the issue as quickly as possible, could you please provide the following details:\n\n- A detailed description of what you are experiencing, including which features or buttons are unresponsive.\n- The specific steps you've taken that lead to this issue, including any actions or clicks.\n- Whether the issue occurs on multiple browsers and/or when using incognito or private mode.\n- Any screenshots or videos that show the behavior you're encountering.\n- The email addresses of the users who are affected.\n- Confirmation on whether your internal IT or security settings might be blocking pop-ups or scripts.\n- Approximate timestamps of when you observed the issue.\n- Information about any recent changes to your browser, network, or security configurations.\n\nYour responses to the above will help speed up the troubleshooting process. If you need more time to gather this information, please let us know; we will keep this ticket open for one additional week.\n\nSincerely, \nATLAS \nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-29T06:20:31+00:00",
+          "Kayako - ticket id 60208754 // ATLAS commented privately: Requesting more information"
+        ],
+        [
+          "2025-09-29T06:19:55+00:00",
+          "Kayako - ticket id 60208754 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- Customer (Patti Sebastiao) ---\n\n Can I chat with a human \n\n--- AI Assistant ---\n\n Absolutely! I understand you'd prefer to speak with a human agent directly.\n\nI'm connecting you with our live support team right now. They'll be able to assist you with your technical issues and provide the hands-on help you need.\n\nA human agent will be with you shortly. Thank you for your patience! \n\n--- AI Assistant ---\n\n I understand you'd like to chat with a human agent \ud83d\ude0a A colleague will be happy to assist you\u2014please feel free to choose from the available options to connect with them. \n\n--- Customer (Patti Sebastiao) ---\n\n Button selection: [\ud83d\udce9 Raise a ticket] \n\n--- AI Assistant ---\n\n I can help you raise a support ticket! To get started, could you please provide your Khoros instance URL? This helps our team identify your account and resolve your issue more efficiently.\n\nIf you\u2019re not sure what your instance URL is, it\u2019s usually the web address you use to log in to your Khoros platform (for example: yourcompany.khoros.com).\n\nPlease reply with your instance URL, or let me know if you need help finding it. If you don\u2019t have it, that\u2019s okay\u2014just let me know and I\u2019ll continue without it. \n\n--- Customer (Patti Sebastiao) ---\n\n https://vpc1.spredfast.com/planner/index/companyid/677/campaignid/6191/calendar?mode=week_view&date=1759729464179 \n\n--- AI Assistant ---\n\n I've noted down your instance URL\ud83d\udd17: https://vpc1.spredfast.com \n\n--- AI Assistant ---\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \n\n--- Customer (Patti Sebastiao) ---\n\n Scheduled posts aren't showing on Khoros Marketing's calendar and posts have failed over the past 3 days. \n\n--- AI Assistant ---\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \n\n--- Customer (Patti Sebastiao) ---\n\n patti.sebastiao@padi.com\nmollie.schulman@padi.com \n\n--- AI Assistant ---\n\n \ud83d\udc4c Got it!\n\nThese email addresses will be added to the ticket CC: patti.sebastiao@padi.com, mollie.schulman@padi.com \n\n--- AI Assistant ---\n\n I've automatically set the ticket subject to: Khoros Marketing scheduled posts not showing\n\nDoes that work for you?\n\n \t* If it does, simply say YES or use the below button to confirm \ud83d\udc47\n \t* If not, please directly type in the ticket subject of your choosing below \ud83d\ude09\n\n"
+        ],
+        [
+          "2025-09-29T06:19:52+00:00",
+          "Kayako - ticket id 60208754 // ATLAS commented privately: **Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction, which means that they may have uploaded some files for AI analysis.** Please login to UPLOAD using your Devfactory AD credentials to verify: https://files.eswsecuretransfers.com/agents/?user_id=patti.sebastiao@padi.com&session_uuid=1a3beeff-fd9f-4c51-8b98-9ebfdd7ee582"
+        ],
+        [
+          "2025-09-29T06:19:49+00:00",
+          "Kayako - ticket id 60208754 // ATLAS commented privately: --- Ticket generated by Khoros Marketing AI chat on behalf of Patti Sebastiao ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * Khoros marketing isn't showing my scheduled posts<br>\n  * The posts aren't appearing in your scheduled queue in Khoros Marketing? There have been multiple post fails as well<br>\n  * No, it's not paused. It's tecnical issues. Can I talk with a human<br>\n  * Can I chat with a human<br>\n  * https://vpc1.spredfast.com/planner/index/company_id/677/campaign_id/6191/calendar?mode=week_view&date=1759729464179<br>\n  * Scheduled posts aren't showing on Khoros Marketing's calendar and posts have failed over the past 3 days.<br>\n  <br>\n  <b>Khoros Instance URL:</b> <a href=\"https://vpc1.spredfast.com\" rel=\"nofollow\">https://vpc1.spredfast.com</a>"
+        ],
+        [
+          "2025-09-18T00:19:56Z",
+          "GHI Engineering - 14145 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-09-18T00:19:55Z",
+          "GHI Engineering - 14145 // not-lmrlima added_to_project_v2"
+        ],
+        [
+          "2025-09-17T23:36:17Z",
+          "GHI Engineering - 14145 // not-lmrlima labeled as Priority:Normal"
+        ],
+        [
+          "2025-09-17T23:36:16Z",
+          "GHI Engineering - 14145 // not-lmrlima unlabeled"
+        ],
+        [
+          "2025-09-13T08:06:17Z",
+          "GHI Engineering - 14145 // trilogy-eng-standards removed_from_project_v2"
+        ],
+        [
+          "2025-09-13T06:36:03Z",
+          "GHI Engineering - 14145 // trilogy-taro[bot] commented: > #taro-issue-summary\n\nCustomers experience publishing failures when scheduling Instagram posts with video content in Khoros Marketing, receiving the error \"Media ID is not available\" (Facebook error code 9007, subcode 2207027) because Instagram's video processing takes longer than expected and the system does not retry when media is temporarily unavailable. The root cause is that the publishInstagramMedia method directly calls Instagram's media_publish endpoint without implementing retry logic to handle transient \"media not ready\" responses from Meta's servers. Engineering has deployed a fix that adds retry mechanisms around the publishInstagramMedia method to automatically handle these temporary unavailability responses, and monitoring shows no new occurrences since the October 16th deployment with customer confirmation that posting now works correctly.\n\n\n> Created with [Taro](https://github.com/trilogy-group/taro/tree/shell). Like this comment if it was helpful.\n"
+        ],
+        [
+          "2025-09-13T06:35:16Z",
+          "GHI Engineering - 14145 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-09-13T06:35:15Z",
+          "GHI Engineering - 14145 // ngochai94 commented: > CS was asked to move this to ENG for further investigation as the above is considered a workaround\n\nWe believe this defect was due to a temporary degradation from Meta services. Other than the timeout increase for media publishing, there won't be anything required fixing for Spredfast."
+        ],
+        [
+          "2025-09-12T09:18:46Z",
+          "GHI Engineering - 14145 // not-lmrlima project_v2_item_status_changed"
+        ],
+        [
+          "2025-09-12T08:48:01Z",
+          "GHI Engineering - 14145 // Hussnain47 project_v2_item_status_changed"
+        ],
+        [
+          "2025-09-12T08:47:55Z",
+          "GHI Engineering - 14145 // Hussnain47 commented: **Error**: FacebookError: Media ID is not available, type=OAuthException, code=9007, subcode=2207027\n\n**Root Cause**: Instagram video processing exceeded hardcoded 5-minute timeout in publishing service\n\n**Impact**: Failed video publications, requiring manual retry/reprocessing\n\n### Resolution\n\nIncreased timeout from 5 minutes (300s) to 15 minutes (900s)\n\nAdded performance logging: Track processing times, creation IDs, media IDs for observability\n\nApplied to methods tryToPublishContainer and publishCarousel\n\nPR: https://github.com/spredfast/sf-social-gateway/pull/5268\n\nAfter monitoring the logs, the bug seems to be fixed\n\n<img width=\"1451\" height=\"735\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/d215f9cc-7b8f-4952-ad12-97cdf954be92\" />"
+        ],
+        [
+          "2025-09-12T04:36:15Z",
+          "GHI Engineering - 14145 // not-lmrlima labeled as Priority:Urgent"
+        ],
+        [
+          "2025-09-12T04:36:14Z",
+          "GHI Engineering - 14145 // not-lmrlima unlabeled"
+        ],
+        [
+          "2025-09-11T18:46:15Z",
+          "GHI Engineering - 14145 // PavlyN subscribed"
+        ],
+        [
+          "2025-09-11T18:01:35Z",
+          "GHI Engineering - 14145 // Hussnain47 assigned to Hussnain47"
+        ],
+        [
+          "2025-09-11T16:18:46Z",
+          "GHI Engineering - 14145 // not-lmrlima project_v2_item_status_changed"
+        ],
+        [
+          "2025-09-11T15:18:53Z",
+          "GHI Engineering - 14145 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-09-11T15:18:51Z",
+          "GHI Engineering - 14145 // trilogy-eng-standards added_to_project_v2"
+        ],
+        [
+          "2025-09-11T15:18:48Z",
+          "GHI Engineering - 14145 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-09-11T15:18:47Z",
+          "GHI Engineering - 14145 // github-project-automation[bot] added_to_project_v2"
+        ],
+        [
+          "2025-09-11T15:18:22Z",
+          "GHI Engineering - 14145 // JordanKhoros labeled as Eng-Maintenance"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 32,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": true,
+          "link_value": "https://github.com/trilogy-group/eng-maintenance/issues/14145"
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

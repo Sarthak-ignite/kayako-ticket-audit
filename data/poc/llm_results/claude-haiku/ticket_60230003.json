@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient evidence due to incomplete ticket interactions.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No visible interaction showing AI repeatedly requesting same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Cannot determine context ignorance with limited ticket details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No clear evidence of premature closure with available information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, and no escalation details are visible.",
+    "evidence": []
+  },
+  "_raw_response": "After carefully reviewing the provided ticket context and interactions, I'll analyze the quality issues. However, I notice that the ticket interactions seem incomplete or truncated, which limits my comprehensive analysis.\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient evidence due to incomplete ticket interactions.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No visible interaction showing AI repeatedly requesting same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine context ignorance with limited ticket details.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence of premature closure with available information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, and no escalation details are visible.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n1. The ticket context shows a normal priority\n2. Time to first human is marked as 'nan'\n3. Max response gap is 0.0 hours\n4. The interaction appears to be an AI-generated summary/wrap-up message\n5. Most of the ticket details and actual customer interaction are missing\n\nTo provide a more accurate quality assessment, I would need:\n- Complete customer interactions\n- Full conversation transcript\n- More context about the support request",
+  "_model": "claude-haiku",
+  "_ticket_id": 60230003
+}

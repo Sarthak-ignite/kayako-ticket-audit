@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are repetitive and lack substantive problem-solving. Multiple AI systems (ATLAS, Centralsupport-ai-acc) generate generic comments without addressing the core issue.",
+    "evidence": [
+      "[2025-11-25T11:32:25+00:00] (AI) ATLAS: Dear Sheena, Thank you for reaching out regarding the intermittent repeated login prompts...",
+      "[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The ticket shows multiple AI interventions that prevent human interaction, with repeated holds and automated responses instead of resolving the customer's specific login issue.",
+    "evidence": [
+      "[2025-12-27T02:38:34+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "AI and support systems repeatedly reference different JIRA tickets without addressing the customer's specific problem about login prompts.",
+    "evidence": [
+      "[2025-12-27T07:23:12+00:00] (Employee) Santhosh M: The clone https://trilogy-eng.atlassian.net/browse/AURORA-872 seems to have been closed...",
+      "[2025-12-27T02:38:25+00:00] (AI) Centralsupport-ai-acc: JIRA Issue AURORA-872 is changed to 'Closed'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant time gaps between interactions, with over 26 days between the initial customer complaint and subsequent AI interactions.",
+    "evidence": [
+      "[2025-11-25T11:29:01+00:00] (Customer) Sheena Kenny: Initial complaint",
+      "[2025-12-27T07:23:42+00:00] Last AI interaction - over 26 days later"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket appears to be arbitrarily placed on hold multiple times without resolving the customer's login issue.",
+    "evidence": [
+      "[2025-12-01T04:38:30+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the ticket involves a staging environment issue, there's insufficient evidence of critical severity mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "Here's the analysis in the requested JSON format:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are repetitive and lack substantive problem-solving. Multiple AI systems (ATLAS, Centralsupport-ai-acc) generate generic comments without addressing the core issue.\",\n    \"evidence\": [\n      \"[2025-11-25T11:32:25+00:00] (AI) ATLAS: Dear Sheena, Thank you for reaching out regarding the intermittent repeated login prompts...\",\n      \"[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket shows multiple AI interventions that prevent human interaction, with repeated holds and automated responses instead of resolving the customer's specific login issue.\",\n    \"evidence\": [\n      \"[2025-12-27T02:38:34+00:00] (AI) ATLAS: Skipping ticket due to tags\",\n      \"[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"AI and support systems repeatedly reference different JIRA tickets without addressing the customer's specific problem about login prompts.\",\n    \"evidence\": [\n      \"[2025-12-27T07:23:12+00:00] (Employee) Santhosh M: The clone https://trilogy-eng.atlassian.net/browse/AURORA-872 seems to have been closed...\",\n      \"[2025-12-27T02:38:25+00:00] (AI) Centralsupport-ai-acc: JIRA Issue AURORA-872 is changed to 'Closed'\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant time gaps between interactions, with over 26 days between the initial customer complaint and subsequent AI interactions.\",\n    \"evidence\": [\n      \"[2025-11-25T11:29:01+00:00] (Customer) Sheena Kenny: Initial complaint\",\n      \"[2025-12-27T07:23:42+00:00] Last AI interaction - over 26 days later\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket appears to be arbitrarily placed on hold multiple times without resolving the customer's login issue.\",\n    \"evidence\": [\n      \"[2025-12-01T04:38:30+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket involves a staging environment issue, there's insufficient evidence of critical severity mishandling.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-haiku",
+  "_ticket_id": 60250122
+}

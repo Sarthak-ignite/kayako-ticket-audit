@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI response did not provide any specific incorrect or unfulfilled information; it simply summarized a past interaction.",
+    "evidence": [
+      "Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There are no indications that the customer was trapped in a repetitive loop with the AI or unable to escalate to human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI does not request the same information or display behavior that indicates a lack of awareness of prior context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There were no significant delays indicated in the interactions, with a max gap of 0.0 hours.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket status is closed, but there is no evidence that the customer was awaiting further information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not fall under high-priority or outage conditions as it was marked with normal priority.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI response did not provide any specific incorrect or unfulfilled information; it simply summarized a past interaction.\",\n    \"evidence\": [\"Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\"] \n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no indications that the customer was trapped in a repetitive loop with the AI or unable to escalate to human support.\",\n    \"evidence\": [] \n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI does not request the same information or display behavior that indicates a lack of awareness of prior context.\",\n    \"evidence\": [] \n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There were no significant delays indicated in the interactions, with a max gap of 0.0 hours.\",\n    \"evidence\": [] \n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket status is closed, but there is no evidence that the customer was awaiting further information.\",\n    \"evidence\": [] \n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not fall under high-priority or outage conditions as it was marked with normal priority.\",\n    \"evidence\": [] \n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60227322
+}

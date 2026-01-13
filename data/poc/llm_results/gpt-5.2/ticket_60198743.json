@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is clear customer dissatisfaction with AI replies being repetitive/non-progressing and not aligned with the request for L2 handling, indicating low-quality/generic AI handling at least part of the time.",
+    "evidence": [
+      "[2025-10-06T12:07:01+00:00] (Employee) Stefan Gro\u00dfhauser: \"your reply is just the same as the one from 19. september.\"",
+      "[2025-10-31T13:24:34+00:00] (Employee) Stefan Gro\u00dfhauser: \"I do not want to get any more responses from an AI Bot in #60198743 . I thought that this was escalated to Level2\"",
+      "[2025-09-16T12:12:32+00:00] (Employee) Stefan Gro\u00dfhauser: \"Dear Kerio AI, I have already, in the very beginning of this conversation, shown that...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly reports not receiving answers from a human for an extended period and asks to stop AI responses, which is strong evidence they were stuck in an AI loop and unable to reach a human owner effectively.",
+    "evidence": [
+      "[2025-10-02T07:30:42+00:00] (Employee) Stefan Gro\u00dfhauser: \"for two weeks again I have not received any answer from a human.\"",
+      "[2025-10-31T13:24:34+00:00] (Employee) Stefan Gro\u00dfhauser: \"I do not want to get any more responses from an AI Bot\"",
+      "[2025-09-16T12:12:32+00:00] (Employee) Stefan Gro\u00dfhauser: \"Dear Kerio AI, I have already...\" (indicates AI was the interacting party)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer states they already provided key information early on and implies the AI repeated prior content; however, the excerpt does not show support explicitly re-requesting the same logs/details in a way that can be conclusively verified beyond the customer's complaint.",
+    "evidence": [
+      "[2025-09-16T12:12:32+00:00] (Employee) Stefan Gro\u00dfhauser: \"I have already, in the very beginning of this conversation, shown that...\"",
+      "[2025-10-06T12:07:01+00:00] (Employee) Stefan Gro\u00dfhauser: \"your reply is just the same as the one from 19. september.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are clear indications of multi-day to multi-week gaps without meaningful human response, explicitly called out by the customer and supported by timestamps (e.g., 09/16 to 10/02; 10/22 to 11/03 includes a longer gap in visible public progress).",
+    "evidence": [
+      "[2025-10-02T07:30:42+00:00] (Employee) Stefan Gro\u00dfhauser: \"for two weeks again I have not received any answer from a human.\"",
+      "[2025-10-06T15:05:27+00:00] (Employee) Stefan Gro\u00dfhauser: \"another afternoon has passed, and I still have not received a reply.\"",
+      "Timestamp gap: [2025-09-16] to [2025-10-02] (16 days) with customer stating lack of human response"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The provided interaction history does not show the ticket being closed/resolved while the customer is still waiting, nor a closure message or customer giving up due to closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer asks for escalation and higher priority, the ticket severity/priority (P1/Sev1) is not explicitly stated, and the record does show eventual escalation to L2. There isn't enough clear evidence that a confirmed Sev1/P1 was mishandled.",
+    "evidence": [
+      "[2025-10-06T15:05:27+00:00] (Employee) Stefan Gro\u00dfhauser: \"I want this to be escalated to the team lead, please.\"",
+      "[2025-10-22T14:23:50+00:00] (Employee) Ciprian Nastase: \"this ticket is now elevated to the L2 Support tier.\""
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60198743
+}

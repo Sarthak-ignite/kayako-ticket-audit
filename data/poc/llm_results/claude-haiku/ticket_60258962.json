@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are highly generic and seem to be partially truncated, indicating low-quality automated responses that don't fully address the customer's specific issue.",
+    "evidence": [
+      "[2025-12-08T19:12:56+00:00] Dear Robert, Thank you for providing such a detailed description of your situation and attaching your diagnostic file...",
+      "[2025-12-08T19:06:50+00:00] Dear Robert, Thank you for providing detailed information about your issue with cumulative Windows 11 updates failing to deploy via GFI LanGua[truncated]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Multiple AI interactions suggest the customer is trapped in an AI chat/ticket system without clear human intervention or resolution path.",
+    "evidence": [
+      "[2025-12-08T19:06:10+00:00] Here is a transcript of the customer's recent interaction with ATLAS chat...",
+      "[2025-12-08T19:06:07+00:00] Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Not enough evidence to suggest the support team is ignoring previously provided context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Interactions appear to be happening within a very short timeframe, with minimal gaps between responses.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket appears to be closed quickly without a clear resolution to the customer's core issue of CU updates failing.",
+    "evidence": [
+      "Status: closed",
+      "[2025-12-08T19:12:19+00:00] Customer's statement: 'All CU updates fail. Other Microsoft and 3rd party updates install fine.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority ticket with a critical update deployment issue receives generic AI responses instead of targeted technical investigation.",
+    "evidence": [
+      "Priority: high",
+      "[2025-12-08T19:12:19+00:00] Customer issue: 'All CU updates fail. Other Microsoft and 3rd party updates install fine.'"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are highly generic and seem to be partially truncated, indicating low-quality automated responses that don't fully address the customer's specific issue.\",\n    \"evidence\": [\n      \"[2025-12-08T19:12:56+00:00] Dear Robert, Thank you for providing such a detailed description of your situation and attaching your diagnostic file...\",\n      \"[2025-12-08T19:06:50+00:00] Dear Robert, Thank you for providing detailed information about your issue with cumulative Windows 11 updates failing to deploy via GFI LanGua[truncated]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple AI interactions suggest the customer is trapped in an AI chat/ticket system without clear human intervention or resolution path.\",\n    \"evidence\": [\n      \"[2025-12-08T19:06:10+00:00] Here is a transcript of the customer's recent interaction with ATLAS chat...\",\n      \"[2025-12-08T19:06:07+00:00] Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction...\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Not enough evidence to suggest the support team is ignoring previously provided context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Interactions appear to be happening within a very short timeframe, with minimal gaps between responses.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket appears to be closed quickly without a clear resolution to the customer's core issue of CU updates failing.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"[2025-12-08T19:12:19+00:00] Customer's statement: 'All CU updates fail. Other Microsoft and 3rd party updates install fine.'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority ticket with a critical update deployment issue receives generic AI responses instead of targeted technical investigation.\",\n    \"evidence\": [\n      \"Priority: high\",\n      \"[2025-12-08T19:12:19+00:00] Customer issue: 'All CU updates fail. Other Microsoft and 3rd party updates install fine.'\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku",
+  "_ticket_id": 60258962
+}

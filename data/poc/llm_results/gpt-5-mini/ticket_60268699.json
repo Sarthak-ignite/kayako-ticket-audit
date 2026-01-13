@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only AI response is a generic, non-actionable message thanking the user and promising a conversation record without providing any troubleshooting, resolution, or specific guidance.",
+    "evidence": [
+      "[2025-12-22T17:00:55+00:00] (AI) ATLAS: Kayako - ticket id 60268699 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI requested repeated information or trapped the customer in a loop; only a single generic AI message is present.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no customer-provided details in the interaction to show the AI ignored or re-requested information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline contains a single AI message and metadata shows no multi-day gaps; no evidence of significant response delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, the transcript shows only one AI message and no customer waiting or promised follow-up to indicate a premature closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is low priority and there is no high-severity incident or escalation evidence to evaluate mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The only AI response is a generic, non-actionable message thanking the user and promising a conversation record without providing any troubleshooting, resolution, or specific guidance.\",\n    \"evidence\": [\n      \"[2025-12-22T17:00:55+00:00] (AI) ATLAS: Kayako - ticket id 60268699 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI requested repeated information or trapped the customer in a loop; only a single generic AI message is present.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no customer-provided details in the interaction to show the AI ignored or re-requested information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline contains a single AI message and metadata shows no multi-day gaps; no evidence of significant response delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, the transcript shows only one AI message and no customer waiting or promised follow-up to indicate a premature closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is low priority and there is no high-severity incident or escalation evidence to evaluate mishandling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60268699
+}

@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only AI (ATLAS) public reply mainly redirected to the status page, but there is no customer complaint that the guidance was wrong/useless and no later contradiction showing it was incorrect. The requested RCA was ultimately provided in a later public update.",
+    "evidence": [
+      "ATLAS commented publicly: \"For the most up-to-date information, including the root cause analysis... we kindly ask you to refer to our official status page\"",
+      "Balaji Jayaraman commented publicly: \"Please find attached the customer-facing RCA for the Khoros Care incident.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer asked for a human or got stuck in repeated AI loops; the ticket contains a single ATLAS public response and later a human public response with the RCA.",
+    "evidence": [
+      "ATLAS commented publicly: \"Dear Brad, Thank you for reaching out...\"",
+      "Balaji Jayaraman commented publicly: \"Please find attached the customer-facing RCA for the Khoros Care incident.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to re-provide information already given, and they acknowledged the reported instance/incident context. The customer did not state they had already provided something that support ignored or re-requested.",
+    "evidence": [
+      "Customer: \"Customer Fortinet ... has requested a detailed RCA following repeated chat queue delays and system latency...\"",
+      "ATLAS commented publicly: \"Thank you for reaching out regarding the recent service disruption affecting your EMEA production instance... (https://fortinet.response.lithium.com).\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The initial response was fast (CSV: initialResponseTime=22), and although the RCA delivery took several days, there is no customer-facing follow-up indicating they were waiting or complaining about delays (a required signal for detection per guidance).",
+    "evidence": [
+      "CSV: initialResponseTime=22",
+      "Balaji Jayaraman commented publicly (2025-10-29): \"Please find attached the customer-facing RCA for the Khoros Care incident.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While there is an auto-close warning and the ticket is closed (CSV: Status=closed), the customer\u2019s primary request (customer-facing RCA) appears to have been fulfilled before closure, and there is no evidence the customer was still waiting or had an unresolved request at close.",
+    "evidence": [
+      "ATLAS commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Closed in the portal.\"",
+      "CSV: Status=closed",
+      "Balaji Jayaraman commented publicly: \"Please find attached the customer-facing RCA for the Khoros Care incident.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the issue was marked urgent and described as operationally impactful, the response did not devolve into generic end-user troubleshooting; it referenced an active platform disruption and later provided an RCA. There is no evidence in public replies of failure to escalate a stated SEV1/P1 outage via inappropriate low-level steps.",
+    "evidence": [
+      "ATLAS commented privately: \"Responding to active incident\"",
+      "ATLAS commented publicly: \"...refer to our official status page: Khoros Platform Service Disruption\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60227783
+}

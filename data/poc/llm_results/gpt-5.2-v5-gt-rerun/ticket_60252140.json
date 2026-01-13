@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS content is present only as a private transcript and does not show clearly incorrect or misleading troubleshooting, nor does the customer complain that the AI guidance was wrong or useless.",
+    "evidence": [
+      "Kayako - ticket id 60252140 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:",
+      "Customer (Jonard Umerez) --- GFI LanGuard deployment timeout for large package"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket shows human agent public responses throughout (e.g., Randall, Deepanshu, Keyur, Ibiso, Andriy). There is no customer-facing pattern of being stuck with AI after requesting a human.",
+    "evidence": [
+      "Kayako - ticket id 60252140 // Randall Shawver commented publicly: Dear Jonard,",
+      "Kayako - ticket id 60252140 // Andriy Rybalchenko commented publicly: Dear Jonard,"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer mentions having already sent many logs, support\u2019s repeated requests are for a fresh/reproduced dataset after deleting old logs (a different ask), not the exact same information being ignored or re-requested without acknowledgment.",
+    "evidence": [
+      "Customer (private): \"HI, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible\"",
+      "Andriy (public): \"Even though logs were shared before, we do need a scan results + fresh set after the previous log files were deleted to eliminate noise and concentrate on the current flow.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long customer-facing wait: the customer said logs were uploaded and then followed up multiple times (\u201cany updates\u201d) before staff responded, and the agent explicitly apologized for the delayed response.",
+    "evidence": [
+      "Customer (private) [2025-12-03]: \"Hi, I\u2019ve already uploaded the logs to the FTP folder. Kindly check them.\"",
+      "Customer (private) [2025-12-05]: \"Hi is there any updates for this?\"",
+      "Customer (private) [2025-12-10]: \"Hello, good day i just want to follow up this ticket\"",
+      "Keyur (public) [2025-12-10]: \"Apologies for the delayed response here.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in CSV, but the last customer-facing state in the thread still required additional diagnostics/logs to proceed (i.e., the issue was not resolved and support was waiting on customer-provided data). The repeated auto-close warning language also indicates risk of closure while troubleshooting remained pending.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-28 08:35:02",
+      "Andriy (public) [2025-12-17]: \"Reproduce the issue... gather Troubleshooter Logs... Export and share Scan Results in XML... attach the newly generated PatchAgent.log file\"",
+      "Deepanshu (public) [2025-12-01]: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit P1/SEV1/critical/outage language or clear multi-user/production-down impact is present; the issue is handled as standard troubleshooting.",
+    "evidence": [
+      "Customer (private): \"GFI LanGuard deployment timeout for large package\"",
+      "Keyur (public): \"In the meantime, based on the symptoms you describe, I believe that the patch itself is deploying fine, just the job times out in LanGuard.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60252140
+}

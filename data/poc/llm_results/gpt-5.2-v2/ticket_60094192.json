@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS appears to misunderstand the customer\u2019s intent (reopen an old ticket) and responds with generic license confirmation/log requests rather than addressing the request. The customer explicitly states the AI is a \u201cdisaster,\u201d indicating perceived low-quality/unhelpful AI support.",
+    "evidence": [
+      "*Issue description:* \"\u00d6ffne Das Ticket wieder: 60078199\"",
+      "ATLAS chat: \"I have this license key on record... Just to make sure we're on the same page - is this the same system you're reaching out about today?\"",
+      "Customer: \"In addition, your Atlas Ki is a disater.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly asks to reopen the existing ticket, but the flow generates a new ticket and shifts into repeated info-gathering (license/logs), creating a \u201cwall\u201d rather than fulfilling the simple request to reopen/continue the prior case.",
+    "evidence": [
+      "*Issue description:* \"\u00d6ffne Das Ticket wieder: 60078199\"",
+      "*Issue description:* \"\u00d6ffne Das TIcket: #60078199\" (repeated multiple times)",
+      "ATLAS chat: \"Please select from the below or give me a detailed description of what\u2019s happening...\" followed by license verification and log prompting"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support continues to focus on reproducing the issue on v22 and requesting logs, while the customer later clearly states they reverted and want the v21 duplicate-email issue solved. Also, the system flags potential uploads, but there is no visible acknowledgment/triage of any uploaded files.",
+    "evidence": [
+      "Customer: \"We installed the update to version 22 on Friday... E-mails were no longer forwarded to Kerio. We had to restore a backup...\"",
+      "Agent: \"We were waiting for the logs once the issue was reproduced with the new version.\"",
+      "Customer: \"am no longer interested in version 22. GFi must now solve the problem in version 21 with the duplicate e-mails.\"",
+      "System note: \"Customer interacted with ATLAS-UPLOAD... they may have uploaded some files... Please login to UPLOAD... to verify\" (no follow-up confirming review)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a gap of more than 2 calendar days without a public agent response after the customer\u2019s 2025-07-07 message; the next entry is an internal note on 2025-07-10 and no customer-facing update is shown.",
+    "evidence": [
+      "[2025-07-07T14:35:11+00:00] Customer: \"am no longer interested in version 22...\"",
+      "[2025-07-10T13:02:58+00:00] Internal note: \"we have been waiting for the logs...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The prior ticket the customer asked to reopen (60078199) was auto-closed due to no response, which is explicitly stated. Additionally, agents reiterate auto-closure threats (\u201cstay open for one week unless...\u201d), creating risk of closing without resolution while the issue remains unresolved.",
+    "evidence": [
+      "Agent: \"Ticket 60078199 was closed by automation due to no response for more than a week.\"",
+      "Agent: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer describes a production-impacting mail flow failure after upgrading (emails not forwarded to Kerio; forced rollback/restore). Support response remains standard log-requesting and reassurance (\u201cmany installations... not having issues\u201d) without clear urgency/escalation or immediate containment guidance.",
+    "evidence": [
+      "Customer: \"E-mails were no longer forwarded to Kerio. We had to restore a backup to get everything running again.\"",
+      "Agent: \"We were waiting for the logs once the issue was reproduced with the new version.\"",
+      "Agent: \"We will work with our Engineering team as we have many installations on SMTP servers that are not having issues. If you wish to provide logs...\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60094192
+}

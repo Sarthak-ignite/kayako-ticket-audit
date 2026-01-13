@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided a generic acknowledgment response without addressing the specific security vulnerability concerns, forcing the customer to escalate twice for actual human intervention.",
+    "evidence": [
+      "[2025-10-01T08:22:14+00:00] ATLAS: Dear PTA, Thank you for your detailed inquiry regarding the current security advisories affecting Evoq 9.13.9 and possible remediation options",
+      "[2025-10-02T01:42:22+00:00] Centralsupport-ai-acc: [customer_escalation] The customer escalated the Case. The customer message is:We need a better answer from the team directl"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer had to escalate twice (Oct 2 and Oct 24) with messages indicating frustration at not getting proper human responses, suggesting they were stuck behind AI responses.",
+    "evidence": [
+      "[2025-10-02T01:42:22+00:00] Centralsupport-ai-acc: [customer_escalation] The customer escalated the Case. The customer message is:We need a better answer from the team directl",
+      "[2025-10-24T01:50:12+00:00] Centralsupport-ai-acc: [customer_escalation] The customer escalated the Case. The customer message is:Slow response"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No clear evidence of support asking for information already provided or ignoring customer-referenced context. The responses appear to acknowledge the escalation and work on the security issue.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Massive delays between interactions - 22 days between customer escalation on Oct 2 and next public response on Oct 24, and the max gap of 981.8 hours (approximately 41 days) confirms severe delays.",
+    "evidence": [
+      "[2025-10-02T03:06:19+00:00] Aditi Garg: Dear PTA Web Team, We have received your escalation and we are currently working on it.",
+      "[2025-10-24T02:04:36+00:00] Denis Spirin: Dear PTA Web Team, We have received your escalation and we are currently working on it.",
+      "Max gap between responses (hours): 981.8"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed after promising updates about Evoq 9.13 security fixes and Evoq 10 availability, but the final public message only mentioned work in progress without confirmation of resolution.",
+    "evidence": [
+      "[2025-10-24T03:17:48+00:00] Pablo Ambram: Dear PTA Team, Thank you for your patience. Our engineering team is working on updates for the Evoq 9.13 line that include security f",
+      "Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority security vulnerability ticket had 18.8 hours to first human response and received generic 'we are working on it' responses instead of immediate escalation to engineering with clear timelines.",
+    "evidence": [
+      "Priority: high",
+      "Time to first human (hours): 18.8",
+      "[2025-10-02T03:06:19+00:00] Aditi Garg: Dear PTA Web Team, We have received your escalation and we are currently working on it. Our team is reviewing the ticket, and we are com"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"ATLAS provided a generic acknowledgment response without addressing the specific security vulnerability concerns, forcing the customer to escalate twice for actual human intervention.\",\n    \"evidence\": [\n      \"[2025-10-01T08:22:14+00:00] ATLAS: Dear PTA, Thank you for your detailed inquiry regarding the current security advisories affecting Evoq 9.13.9 and possible remediation options\",\n      \"[2025-10-02T01:42:22+00:00] Centralsupport-ai-acc: [customer_escalation] The customer escalated the Case. The customer message is:We need a better answer from the team directl\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer had to escalate twice (Oct 2 and Oct 24) with messages indicating frustration at not getting proper human responses, suggesting they were stuck behind AI responses.\",\n    \"evidence\": [\n      \"[2025-10-02T01:42:22+00:00] Centralsupport-ai-acc: [customer_escalation] The customer escalated the Case. The customer message is:We need a better answer from the team directl\",\n      \"[2025-10-24T01:50:12+00:00] Centralsupport-ai-acc: [customer_escalation] The customer escalated the Case. The customer message is:Slow response\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence of support asking for information already provided or ignoring customer-referenced context. The responses appear to acknowledge the escalation and work on the security issue.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Massive delays between interactions - 22 days between customer escalation on Oct 2 and next public response on Oct 24, and the max gap of 981.8 hours (approximately 41 days) confirms severe delays.\",\n    \"evidence\": [\n      \"[2025-10-02T03:06:19+00:00] Aditi Garg: Dear PTA Web Team, We have received your escalation and we are currently working on it.\",\n      \"[2025-10-24T02:04:36+00:00] Denis Spirin: Dear PTA Web Team, We have received your escalation and we are currently working on it.\",\n      \"Max gap between responses (hours): 981.8\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was closed after promising updates about Evoq 9.13 security fixes and Evoq 10 availability, but the final public message only mentioned work in progress without confirmation of resolution.\",\n    \"evidence\": [\n      \"[2025-10-24T03:17:48+00:00] Pablo Ambram: Dear PTA Team, Thank you for your patience. Our engineering team is working on updates for the Evoq 9.13 line that include security f\",\n      \"Status: closed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority security vulnerability ticket had 18.8 hours to first human response and received generic 'we are working on it' responses instead of immediate escalation to engineering with clear timelines.\",\n    \"evidence\": [\n      \"Priority: high\",\n      \"Time to first human (hours): 18.8\",\n      \"[2025-10-02T03:06:19+00:00] Aditi Garg: Dear PTA Web Team, We have received your escalation and we are currently working on it. Our team is reviewing the ticket, and we are com\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60211226
+}

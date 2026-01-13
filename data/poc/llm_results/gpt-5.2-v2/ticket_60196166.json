@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI (Hermes/ATLAS) produced largely non-actionable, template-style updates and at least one response that appears to misattribute the issue (customer explicitly disputes AI\u2019s conclusion), without providing a concrete resolution path until later escalation.",
+    "evidence": [
+      "\u201cYour input will be carefully reviewed to better understand the situation and determine the most appropriate next steps.\u201d (Hermes, 2025-09-15)",
+      "\u201cYour input will be carefully reviewed to better understand the situation and determine the most appropriate next steps.\u201d (Hermes, 2025-09-15/2025-09-16 follow-up chain)",
+      "Customer: \u201cThank you for your reply. I disagree that the problem is related to the configuration or the fact that I ran the tests in a virtual environment.\u201d (2025-09-25)",
+      "Customer: \u201cHave you tested this on your end? ... Could you confirm whether we found an issue in the product/release?\u201d (2025-09-25)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer explicitly requested to speak with tech support, and the interaction started with the AI gatekeeping via license questions rather than connecting to a human immediately.",
+    "evidence": [
+      "Issue description: \u201cI want to talk to Tech support\u201d (2025-09-12)",
+      "Issue description: \u201cI want to talk to Support Engineer / Developrt...\u201d (2025-09-12)",
+      "ATLAS chat: \u201cPlease provide me with your Kerio Control license key.\u201d after customer said they want tech support (2025-09-12 transcript)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeatedly asked for configuration evidence after the customer already provided support info/screenshots/video, and initial replies focused on generic HA requirements rather than the specific \u2018Primary/Backup flags disappear on Slave\u2019 symptom already described.",
+    "evidence": [
+      "Customer: \u201cPlease find out a Support Info files from my test setup.\u201d (2025-09-12)",
+      "Support: \u201cIf the issue is still not resolved, please send us the screenshots of the configuration...\u201d (2025-09-13)",
+      "Customer: \u201cPlease find attached screenshots.\u201d (2025-09-13)",
+      "Customer: \u201cPlease find attached a video from my test environment.\u201d (2025-09-15)",
+      "Hermes reply contains no concrete next step beyond \u2018reviewed\u2019 despite screenshots/video already provided: \u201cYour input will be carefully reviewed...\u201d (2025-09-15)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple gaps exceeding 2 days between customer updates and meaningful support responses, and the customer repeatedly asked for status updates due to waiting.",
+    "evidence": [
+      "Customer: \u201cCould I kindly ask for an update? The customer is waiting...\u201d (2025-09-16) \u2192 next substantive update appears 2025-09-24 (ATLAS analysis), ~8 days later",
+      "Customer: \u201cThe customer has been waiting for a solution for almost two months.\u201d (2025-10-27)",
+      "Customer: \u201cCould you please let me know if there has been any progress on my case?\u201d (2025-10-27) \u2192 response 2025-10-30 (~3 days)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows hold states and auto-messages about potential closure, but no evidence that the case was actually closed while the customer was awaiting an answer; the thread continues with engineering/beta build delivery.",
+    "evidence": [
+      "\u201cThis ticket will stay open for one week unless you reply with \u2018This ticket can be closed\u2019...\u201d (2025-09-13; also 2025-10-30) \u2014 warning only, not an actual closure",
+      "Subsequent agent replies continue after these warnings (e.g., 2025-10-13, 2025-10-30)."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is a core-functionality defect impacting HA failover/WAN connectivity, yet the case initially received generic KB guidance and lingered for ~2\u20133 weeks before formal escalation to engineering, indicating under-triage of a potentially critical availability issue.",
+    "evidence": [
+      "Issue description: \u201cAfter Failover ... WAN links not working as expected.\u201d (2025-09-12)",
+      "Issue description: \u201cSlave device shows message on Dashbord: Problem with default gateway\u201d (2025-09-12)",
+      "Escalation record: \u201cseverity is: core_functionality_defect\u201d (2025-10-02)",
+      "Initial response was generic setup/KB guidance rather than immediate escalation despite failover breaking WAN: \u201cKindly note that ... requires a specific setup... You can see the details in Configure High Availability with 2 Internet connections...\u201d (2025-09-13)",
+      "Engineering escalation occurs much later: \u201cOpened engineering issue .../14502\u201d (2025-10-02) after problem reported 2025-09-12"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60196166
+}

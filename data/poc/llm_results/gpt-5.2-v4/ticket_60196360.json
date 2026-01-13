@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided an unrelated incident/status response that did not address the customer's reported production-impacting issue (lost handovers Flow \u2192 Care). The customer explicitly indicated it was not helpful/not related.",
+    "evidence": [
+      "AI: \"### \ud83d\udd25 Active Incidents for Khoros Classic\\n\\n1. Missing Community Analytics data since August 29\"",
+      "Customer: \"\ud83d\udc4e No. My issue is not related\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only a single visible ATLAS exchange is shown and a human agent responded later; there is no clear evidence the customer was stuck in an AI loop or repeatedly blocked from reaching a human.",
+    "evidence": [
+      "Chat transcript shows one AI incident message followed by a prompt to describe the issue; human agent reply appears on 2025-09-13."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The human agent acknowledged the existing/original ticket, explained the access issue, and stated the new information was shared to the original ticket. There is no clear instance of asking again for already-provided logs or repeating troubleshooting the customer said they already did.",
+    "evidence": [
+      "Agent: \"In the meantime, I have shared the additional information provided here to the original ticket.\"",
+      "Agent: \"Just to give you an update: The issue has already been escalated to our Development team and they are investigating the problem at this time.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Time from ticket creation/customer message (2025-09-12) to first human response (2025-09-13) is under 3 calendar days; no explicit 'waiting for days' follow-up is shown.",
+    "evidence": [
+      "Customer: [2025-09-12T12:42:03+00:00]",
+      "Agent response: [2025-09-13T03:52:11+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was not closed in the provided interactions; the agent proposed closing as a duplicate only if access to the original ticket is confirmed.",
+    "evidence": [
+      "Agent: \"Otherwise, we can close this new ticket as a duplicate.\"",
+      "Agent: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer reports a critical, business-impacting issue (lost conversations, legal/compliance risk) and expresses urgency. While the issue was escalated to Development, the customer-facing response largely focused on portal access/duplicate-ticket administration and did not acknowledge severity, provide immediate mitigation guidance, define priority/severity, or offer an incident-style update cadence/ETA\u2014creating a 'standard process' feel for a potentially Sev1 situation.",
+    "evidence": [
+      "Customer: \"This situation is slowly becoming critical! We are losing customers and our reputation. In addition, we are unable to comply with legal requirements and may become liable for damages.\\n\\nAn urgent analysis and troubleshooting is therefore imperative!\"",
+      "Customer: \"UPDATE URGENT !!!! Missing Handover Flow > Care\"",
+      "Agent response focus: \"Kindly use that email address to log in to the support portal and access the ticket... Otherwise, we can close this new ticket as a duplicate.\"",
+      "Agent (limited operational detail): \"The issue has already been escalated to our Development team and they are investigating the problem at this time.\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60196360
+}

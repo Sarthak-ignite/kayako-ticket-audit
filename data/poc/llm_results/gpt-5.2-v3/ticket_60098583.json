@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided excerpt only shows the ATLAS chat introduction and the customer's initial problem statement. There is no visible AI troubleshooting guidance or conclusion to evaluate for factual incorrectness, irrelevance, broken templates, or unfulfilled promises. The ticket content is explicitly truncated, so there is insufficient evidence to confirm an AI quality failure.",
+    "evidence": [
+      "Chat log is truncated: \"Expiry date: ...[truncated]...\"",
+      "Only customer issue statement is visible: \"Users are not able to approve emails. They get a message that the email has been deleted or approved\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer requested a human, nor any repeated requests by AI for the same information. Only the initial prompt and the customer's first description are visible.",
+    "evidence": [
+      "No customer request for human assistance is shown in the excerpt.",
+      "Only one customer problem description is shown; no repeated AI questioning is visible due to truncation."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The excerpt does not show support (AI or human) asking for information the customer already provided, nor does it show the customer indicating they already explained or already tried steps. With the conversation truncated, there is no clear, unambiguous instance of context being ignored.",
+    "evidence": [
+      "Customer provides initial context once: \"Users are not able to approve emails...\"",
+      "No subsequent support response content is visible beyond a license snippet and truncation."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The excerpt contains a single timestamped customer entry and does not show any subsequent support response timestamps or multi-day gaps. No customer complaint about waiting is present.",
+    "evidence": [
+      "Only one visible interaction timestamp: \"[2025-07-09T06:09:20+00:00]\"",
+      "No message such as \"still waiting\" / \"any update\" appears in the provided text."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication the ticket was closed, auto-closed, or otherwise resolved/ended in the provided excerpt. The last visible content is a truncated AI message, not a closure event.",
+    "evidence": [
+      "No closure status/event shown in the provided content.",
+      "Conversation ends with truncated content: \"Expiry date: ...[truncated]...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer reports multiple users affected, the excerpt does not explicitly mark severity (P1/SEV1/Critical/Urgent), mention production down/outage, SLA/time sensitivity, or show a mishandled support response. With the troubleshooting portion truncated, there is not enough evidence to confirm mishandling.",
+    "evidence": [
+      "Customer mentions multiple users: \"Users are not able to approve emails.\"",
+      "No explicit severity marker (P1/SEV1/Critical) is shown in the excerpt."
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60098583
+}

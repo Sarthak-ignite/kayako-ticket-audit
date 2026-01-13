@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI made an inappropriate automation action (placing ticket on hold for an unrealistic duration) and produced an unclear QC failed summary rather than a helpful resolution.",
+    "evidence": [
+      "\"[2025-10-22T10:37:17+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"",
+      "\"[2025-10-23T04:36:53.092+0000] (AI) Service Sfit: \u274c QC FAILED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis SummaryThe incident involved recurring error messages related to Elasticsearch index\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information or trapped the customer; human agents responded and the customer engaged with staff.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Customer explicitly asked to review past tickets, but interactions show staff investigated and reported root cause and remediation; there is no clear instance of requests to re-submit the same info.",
+    "evidence": [
+      "\"[2025-10-22T10:37:10+00:00] (Employee) Pavly Nashed: Dear Manju, Thank you for your reaching out and reporting this issue. We have investigated the root cause of the issue, and this has b\"",
+      "\"[2025-10-23T07:56:23+00:00] (Employee) Jayashree Shetty: Hello Chintan,  We have been encountering this issue repeatedly. Please review the history of previously raised tickets for re\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket shows a prompt time to first human (0.2 hours) and maximum gap under a day (9.4 hours), not multiple-day delays.",
+    "evidence": [
+      "\"Time to first human (hours): 0.2\"",
+      "\"Max gap between responses (hours): 9.4\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed before a customer follow-up expressing ongoing recurrence was posted, indicating closure occurred while the customer was still reporting issues.",
+    "evidence": [
+      "\"[2025-10-23T04:36:53.092+0000] (AI) Service Sfit: SaaS Jira - issue key CARESMM-9351 // Service Sfit commented: \u274c QC FAILED...\"",
+      "\"[2025-10-23T04:36:31.968+0000] (General) None: SaaS Jira - issue key CARESMM-9351 // status is changed from In Progress to Closed\"",
+      "\"[2025-10-23T07:56:23+00:00] (Employee) Jayashree Shetty: Hello Chintan,  We have been encountering this issue repeatedly. Please review the history of previously raised tickets for re\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Responders performed appropriate operational actions (Elasticsearch restart, playbook/runbook requests) rather than generic end-user troubleshooting for a high-priority platform issue.",
+    "evidence": [
+      "\"[2025-10-22T11:39:07.819+0000] (Employee) Muhammad Waqar: Elasticsearch service was restarted on the following nodes by  Elected Master: Instance ID: i-04c393d36f390adae Private IP: 10.221.125.1\"",
+      "\"[2025-10-22T11:47:54.076+0000] (Employee) Deniz Yavas:  please prepare a playbook on how to fix this issue for any further occurences.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI made an inappropriate automation action (placing ticket on hold for an unrealistic duration) and produced an unclear QC failed summary rather than a helpful resolution.\",\n    \"evidence\": [\n      \"\\\"[2025-10-22T10:37:17+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\\\"\",\n      \"\\\"[2025-10-23T04:36:53.092+0000] (AI) Service Sfit: \u274c QC FAILED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis SummaryThe incident involved recurring error messages related to Elasticsearch index\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information or trapped the customer; human agents responded and the customer engaged with staff.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer explicitly asked to review past tickets, but interactions show staff investigated and reported root cause and remediation; there is no clear instance of requests to re-submit the same info.\",\n    \"evidence\": [\n      \"\\\"[2025-10-22T10:37:10+00:00] (Employee) Pavly Nashed: Dear Manju, Thank you for your reaching out and reporting this issue. We have investigated the root cause of the issue, and this has b\\\"\",\n      \"\\\"[2025-10-23T07:56:23+00:00] (Employee) Jayashree Shetty: Hello Chintan,  We have been encountering this issue repeatedly. Please review the history of previously raised tickets for re\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows a prompt time to first human (0.2 hours) and maximum gap under a day (9.4 hours), not multiple-day delays.\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 0.2\\\"\",\n      \"\\\"Max gap between responses (hours): 9.4\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed before a customer follow-up expressing ongoing recurrence was posted, indicating closure occurred while the customer was still reporting issues.\",\n    \"evidence\": [\n      \"\\\"[2025-10-23T04:36:53.092+0000] (AI) Service Sfit: SaaS Jira - issue key CARESMM-9351 // Service Sfit commented: \u274c QC FAILED...\\\"\",\n      \"\\\"[2025-10-23T04:36:31.968+0000] (General) None: SaaS Jira - issue key CARESMM-9351 // status is changed from In Progress to Closed\\\"\",\n      \"\\\"[2025-10-23T07:56:23+00:00] (Employee) Jayashree Shetty: Hello Chintan,  We have been encountering this issue repeatedly. Please review the history of previously raised tickets for re\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Responders performed appropriate operational actions (Elasticsearch restart, playbook/runbook requests) rather than generic end-user troubleshooting for a high-priority platform issue.\",\n    \"evidence\": [\n      \"\\\"[2025-10-22T11:39:07.819+0000] (Employee) Muhammad Waqar: Elasticsearch service was restarted on the following nodes by  Elected Master: Instance ID: i-04c393d36f390adae Private IP: 10.221.125.1\\\"\",\n      \"\\\"[2025-10-22T11:47:54.076+0000] (Employee) Deniz Yavas:  please prepare a playbook on how to fix this issue for any further occurences.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60226631
+}

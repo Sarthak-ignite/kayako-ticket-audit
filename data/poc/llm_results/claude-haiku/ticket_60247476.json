@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are mechanical status updates from JIRA and system logs, adding no substantive value to ticket resolution.",
+    "evidence": [
+      "[2025-11-22T03:21:09+00:00] JIRA Issue CARESMM-10815 is changed to 'Closed' , block reason: -",
+      "[2025-11-21T21:03:54+00:00] Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of customer being repeatedly trapped by AI responses.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support agents appear responsive and tracking the context of the issue.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer and support interactions, with over 107 hours of maximum response time.",
+    "evidence": [
+      "Max gap between responses (hours): 107.2",
+      "Interactions span from 2025-11-21 to 2025-11-26"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed with a brief note from Don Kempt without explicit customer confirmation of full resolution.",
+    "evidence": [
+      "[2025-11-26T14:33:53+00:00] Don Kempt: 'We have not received any further complaints. Please go ahead and close this this case.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite being an urgent ticket, resolution involved multiple status changes and prolonged investigation without immediate customer-focused action.",
+    "evidence": [
+      "[2025-11-21T21:38:19.916+0000] Nitin Manik: 'Waiting on confirmation from Customer via CS'",
+      "[2025-11-21T16:06:32.719+0000] Vikranth Tirumuru: '\ud83d\udd0d Investigation Complete - Root Cause Identified'"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are mechanical status updates from JIRA and system logs, adding no substantive value to ticket resolution.\",\n    \"evidence\": [\n      \"[2025-11-22T03:21:09+00:00] JIRA Issue CARESMM-10815 is changed to 'Closed' , block reason: -\",\n      \"[2025-11-21T21:03:54+00:00] Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of customer being repeatedly trapped by AI responses.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support agents appear responsive and tracking the context of the issue.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer and support interactions, with over 107 hours of maximum response time.\",\n    \"evidence\": [\n      \"Max gap between responses (hours): 107.2\",\n      \"Interactions span from 2025-11-21 to 2025-11-26\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was closed with a brief note from Don Kempt without explicit customer confirmation of full resolution.\",\n    \"evidence\": [\n      \"[2025-11-26T14:33:53+00:00] Don Kempt: 'We have not received any further complaints. Please go ahead and close this this case.'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite being an urgent ticket, resolution involved multiple status changes and prolonged investigation without immediate customer-focused action.\",\n    \"evidence\": [\n      \"[2025-11-21T21:38:19.916+0000] Nitin Manik: 'Waiting on confirmation from Customer via CS'\",\n      \"[2025-11-21T16:06:32.719+0000] Vikranth Tirumuru: '\ud83d\udd0d Investigation Complete - Root Cause Identified'\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku",
+  "_ticket_id": 60247476
+}

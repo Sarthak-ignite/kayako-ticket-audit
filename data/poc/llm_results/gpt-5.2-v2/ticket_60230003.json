@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI uses generic template/gating language and links instead of engaging a specific problem, and it front-loads boilerplate rather than immediately addressing the reported issue context.",
+    "evidence": [
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d",
+      "\u201c\ud83d\udca1Getting the most out of GFI MailEssentials ATLAS Support Chat\u201d",
+      "\u201cIf I'm not able to resolve your issue, I can connect you with one of our support specialists\u2026\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer requesting a human, expressing frustration, or the AI repeatedly asking for the same information across multiple turns.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The provided excerpt does not show support ignoring previously supplied details or asking for information already given; the conversation appears to be at the initial intake stage.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamped interaction is shown, so no multi-day gaps or follow-up complaints about waiting can be verified.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no ticket-closure message, auto-close warning, or indication the issue was marked resolved without confirmation in the excerpt provided.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit Sev1/P1/outage/critical language or business-stopping impact is visible in the provided text (the customer description is truncated).",
+    "evidence": [
+      "\u201cAfter updating to ME 22.2 the outlook spam handler ...[truncated]...\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60230003
+}

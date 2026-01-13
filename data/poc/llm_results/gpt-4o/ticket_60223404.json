@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses are polite and acknowledge the issues presented by the customer but without providing incorrect information or unkept promises.",
+    "evidence": [
+      "2025-10-17T13:37:28+00:00 - Thank you for contacting us regarding the intermittent internal server error 500 issues you and your team have been experiencing."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no repetitive request for the same information, nor is there an inability for the customer to interact with a human representative.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "AI made requests for more information despite the customer providing details about the error.",
+    "evidence": [
+      "2025-10-17T13:37:19+00:00 - Requesting more information",
+      "2025-10-17T13:37:57+00:00 - Internal server errors being experienced when filtering."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interactions in the timeline occurred within the same minute, with no significant delays between responses.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence that the ticket was closed without addressing the customer's concerns or that the customer was still waiting for a promised response.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite being a high-priority ticket, there is no evidence of escalation, just a basic inquiry for more information.",
+    "evidence": [
+      "2025-10-17T13:37:19+00:00 - Requesting more information"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses are polite and acknowledge the issues presented by the customer but without providing incorrect information or unkept promises.\",\n    \"evidence\": [\"2025-10-17T13:37:28+00:00 - Thank you for contacting us regarding the intermittent internal server error 500 issues you and your team have been experiencing.\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no repetitive request for the same information, nor is there an inability for the customer to interact with a human representative.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"AI made requests for more information despite the customer providing details about the error.\",\n    \"evidence\": [\"2025-10-17T13:37:19+00:00 - Requesting more information\", \"2025-10-17T13:37:57+00:00 - Internal server errors being experienced when filtering.\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions in the timeline occurred within the same minute, with no significant delays between responses.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the ticket was closed without addressing the customer's concerns or that the customer was still waiting for a promised response.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite being a high-priority ticket, there is no evidence of escalation, just a basic inquiry for more information.\",\n    \"evidence\": [\"2025-10-17T13:37:19+00:00 - Requesting more information\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60223404
+}

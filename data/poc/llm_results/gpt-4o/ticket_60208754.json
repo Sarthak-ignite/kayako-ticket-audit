@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses were mostly internal actions like placing on hold; no evidence of wrong information or broken promises was found.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The AI repeatedly placed the ticket on hold for an excessive duration, potentially obstructing timely human intervention.",
+    "evidence": [
+      "[2025-10-14T05:10:35+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-10-13T10:06:36+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-10-13T03:57:17+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-10-09T12:23:03+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear evidence that support ignored previously provided information by the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay of 270 hours between interactions, indicative of response delays.",
+    "evidence": [
+      "Max gap between responses (hours): 270.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket seems to have been closed appropriately after resolving the engineering issue, with no indication of customer waiting for additional information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket dealt with both engineering and support aspects, but there is no indication of improper handling or lack of escalation for this high-priority item.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses were mostly internal actions like placing on hold; no evidence of wrong information or broken promises was found.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI repeatedly placed the ticket on hold for an excessive duration, potentially obstructing timely human intervention.\",\n    \"evidence\": [\"[2025-10-14T05:10:35+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\", \"[2025-10-13T10:06:36+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\", \"[2025-10-13T03:57:17+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\", \"[2025-10-09T12:23:03+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence that support ignored previously provided information by the customer.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay of 270 hours between interactions, indicative of response delays.\",\n    \"evidence\": [\"Max gap between responses (hours): 270.0\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket seems to have been closed appropriately after resolving the engineering issue, with no indication of customer waiting for additional information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket dealt with both engineering and support aspects, but there is no indication of improper handling or lack of escalation for this high-priority item.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60208754
+}

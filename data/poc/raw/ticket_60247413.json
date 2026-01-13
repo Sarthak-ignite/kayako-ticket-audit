@@ -1,0 +1,112 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_archiver",
+        "requester": {
+          "id": 60138680,
+          "uuid": "ee8e6057-5418-4e44-b013-98624ea0b950",
+          "full_name": "Beacon Technologies",
+          "legacy_id": "377414295574",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/ee8e6057-5418-4e44-b013-98624ea0b950?1764770949",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60045487,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 140215,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 39117,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-11-20T19:57:57+00:00",
+          "last_active_at": "2025-12-03T14:09:09+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60138680",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@04d7c6058a411965bddd40d626daee78083af0e1",
+          "password_updated_at": "2025-11-06T14:34:37+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2019-04-03T12:57:34+00:00",
+          "updated_at": "2025-12-03T14:09:09+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60138680"
+        },
+        "ticket_idt": 60247413
+      },
+      "interactions": [
+        [
+          "2025-11-20T14:02:32+00:00",
+          "Kayako - ticket id 60247413 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>\n    <p><strong>--- Customer (Beacon Technologies) ---</strong></p>\n    <div>\n      <p>I deactivated the journaling mailbox in preparation for the migration. I'm still seeing 4 files in the D:\\Program Files\\GFI\\MailArchiver\\Core\\Queue directory, but they appear to be over a year old. There are 2 .ICAL and 2 .BODY files.</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Perfect! You've found exactly what I suspected - <strong>orphaned files</strong> that got stuck over a year ago. These are leftover fragments from emails that were already processed, and they're safe to handle before your migration.</p>\n      <p><strong>Here's what's happening:</strong></p>\n      <p>According to <a href=\"https://support.archiver.gfi.com/article/106535\" rel=\"nofollow\"><strong>Processing Orphaned Files in Core\\Queue or MAIS\\Queue</strong></a>, when emails are processed, they're split into parts:</p>\n      <ul>\n        <li><strong>.body</strong> = message body text</li>\n        <li><strong>.eml</strong> = the actual email (needed for reprocessing)</li>\n        <li><strong>.emc</strong> = compressed copy</li>\n        <li><strong>.ical</strong> = calendar items</li>\n        <li><strong>.envelope</strong> or <strong>.envelopefailed</strong> = processing instructions</li>\n      </ul>\n      <p><strong>The key point:</strong> If you only have <strong>.ICAL</strong> and <strong>.BODY</strong> files without their corresponding <strong>.eml</strong> and <strong>.envelope</strong> files, these are <strong>orphaned fragments</strong> - the emails were already archived, but these pieces got left behind.</p>\n      <p><strong>What to do before migration:</strong></p>\n      <p>Since these files are over a year old and are just fragments (no .eml or .envelope files), you have two safe options:</p>\n      <p><strong>Option 1 - Simple approach (recommended for migration prep):</strong></p>\n      <ol>\n        <li><strong>Stop the GFI Archiver Core service</strong> (makes it easier to work with the files)</li>\n        <li><strong>Move these 4 files to a backup folder</strong> (like <code>D:\\Backup_Queue_Files\\</code>) - just in case</li>\n        <li><strong>Verify the Queue folder is now empty</strong></li>\n        <li><strong>Restart the GFI Archiver Core service</strong></li>\n        <li><strong>Proceed with migration</strong></li>\n      </ol>\n      <p><strong>Option 2 - Verify they're already archived:</strong></p>\n      <ol>\n        <li>Open one of the <strong>.body</strong> files with Notepad</li>\n        <li>Find a unique phrase from the message</li>\n        <li>Search for it in the Archiver web interface (<strong>Archive Search</strong> \u2192 <strong>Advanced Search</strong>)</li>\n        <li>If found, the email is already archived and these fragments can be safely removed</li>\n      </ol>\n      <p><strong>My recommendation:</strong> Since you're about to migrate anyway and these files are over a year old, I'd go with <strong>Option 1</strong> - just move them to a backup folder to be safe, then proceed with your migration once the Queue is empty.</p>\n      <p>Would you like to proceed with clearing those files, or would you prefer to verify they're already archived first?</p>\n    </div><br>\n  </div>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

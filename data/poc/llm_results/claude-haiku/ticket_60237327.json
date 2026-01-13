@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient ticket interaction data to evaluate AI response quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No customer interaction transcript available to assess AI looping behavior.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No substantive interaction details present to evaluate contextual understanding.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Insufficient interaction timeline to determine response intervals.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Cannot assess ticket closure appropriateness without full interaction context.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority and severity details incomplete for comprehensive assessment.",
+    "evidence": []
+  },
+  "_raw_response": "After carefully analyzing the ticket, I observe a critical limitation: the provided ticket context lacks the actual customer interaction details. Only an AI summary message is present, which prevents a comprehensive quality analysis.\n\nI'll provide a response indicating insufficient information:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient ticket interaction data to evaluate AI response quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer interaction transcript available to assess AI looping behavior.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No substantive interaction details present to evaluate contextual understanding.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction timeline to determine response intervals.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot assess ticket closure appropriateness without full interaction context.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority and severity details incomplete for comprehensive assessment.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The provided snippet is a ticket summary/record generation, not an actual support interaction\n- No customer messages or support agent responses are visible\n- Unable to conduct quality analysis without full interaction transcript\n\nRecommendation: Please provide the complete ticket interaction details for a thorough quality assessment.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60237327
+}

@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI or agent responses in the interaction to evaluate for quality issues.",
+    "evidence": [
+      "[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No AI/agent messages are present that repeatedly request the same information or trap the customer in a loop.",
+    "evidence": [
+      "[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no support responses that could have ignored prior customer-provided context or repeated requests for the same logs/screenshots.",
+    "evidence": [
+      "[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows a customer message with no recorded human response (time to first human is 'nan'), indicating the customer was not responded to.",
+    "evidence": [
+      "Time to first human (hours): nan",
+      "[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed while the only recorded interaction is an unanswered customer message, indicating it was closed without addressing the customer's request.",
+    "evidence": [
+      "- Status: closed",
+      "[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is 'normal' and there are no agent responses to evaluate for inappropriate generic troubleshooting or failure to escalate.",
+    "evidence": [
+      "- Priority: normal",
+      "[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI or agent responses in the interaction to evaluate for quality issues.\",\n    \"evidence\": [\n      \"[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No AI/agent messages are present that repeatedly request the same information or trap the customer in a loop.\",\n    \"evidence\": [\n      \"[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no support responses that could have ignored prior customer-provided context or repeated requests for the same logs/screenshots.\",\n    \"evidence\": [\n      \"[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket shows a customer message with no recorded human response (time to first human is 'nan'), indicating the customer was not responded to.\",\n    \"evidence\": [\n      \"Time to first human (hours): nan\",\n      \"[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked closed while the only recorded interaction is an unanswered customer message, indicating it was closed without addressing the customer's request.\",\n    \"evidence\": [\n      \"- Status: closed\",\n      \"[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is 'normal' and there are no agent responses to evaluate for inappropriate generic troubleshooting or failure to escalate.\",\n    \"evidence\": [\n      \"- Priority: normal\",\n      \"[2025-10-27T14:07:15+00:00] (Customer) Vijayakumar Shanmuganathan: Kayako - ticket id 60229854 // Vijayakumar Shanmuganathan commented publicly:  Hi DNN team,\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60229854
+}

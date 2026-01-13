@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence within the provided data indicating that AI responses were generic, incorrect, or made unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not seem to be stuck in a loop with the AI, as there is no indication of repeated requests for information or inability to connect with human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence suggesting that the support ignored previously provided information or asked for the same logs/screenshots again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occurred without significant delays, as indicated by the max gap of 0 hours between responses.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket status is marked as closed without indication that the customer was waiting for further information or had expressed dissatisfaction.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of mishandling, as the priority of the ticket is normal, not high-priority or outage-related.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence within the provided data indicating that AI responses were generic, incorrect, or made unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer does not seem to be stuck in a loop with the AI, as there is no indication of repeated requests for information or inability to connect with human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence suggesting that the support ignored previously provided information or asked for the same logs/screenshots again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occurred without significant delays, as indicated by the max gap of 0 hours between responses.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket status is marked as closed without indication that the customer was waiting for further information or had expressed dissatisfaction.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of mishandling, as the priority of the ticket is normal, not high-priority or outage-related.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60218865
+}

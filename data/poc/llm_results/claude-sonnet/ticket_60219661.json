@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI only made one private comment tagging the ticket for L1 escalation, which appears appropriate. No generic responses or wrong information provided by AI.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "AI made a single private escalation comment and the customer was immediately handled by human support. No evidence of customer being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledged the customer's issue and provided relevant updates. The customer initially reported a 404 error for an image URL, and support checked and confirmed it was working.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple significant delays occurred: 5.9 hours to first human response, and a 44.3-hour gap between customer's response on 2025-10-15T11:00:31 and the next support response on 2025-10-16T17:01:18 (over 30 hours).",
+    "evidence": [
+      "[2025-10-15T11:00:31+00:00] Customer provided screenshots",
+      "[2025-10-15T17:01:18+00:00] Next support response came ~6 hours later",
+      "[2025-10-16T08:28:05+00:00] Customer responded about 404 error",
+      "[2025-10-16T12:31:05+00:00] Support responded ~4 hours later"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed after support asked the customer to report if they still see issues, but no confirmation from the customer that the issue was resolved. Customer's last comment indicated confusion about the error appearing 'yesterday' but no final confirmation was received.",
+    "evidence": [
+      "[2025-10-16T08:28:05+00:00] Daniel An: 'Yesterday, it showed the 404 error message. So wired but thanks a lot to hear from you about t'",
+      "[2025-10-16T12:31:05+00:00] Balaji Jayaraman: 'Please let us know if you still see issues.' - Status shows ticket closed without customer confirmation"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not a P1/Sev1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI only made one private comment tagging the ticket for L1 escalation, which appears appropriate. No generic responses or wrong information provided by AI.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"AI made a single private escalation comment and the customer was immediately handled by human support. No evidence of customer being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support acknowledged the customer's issue and provided relevant updates. The customer initially reported a 404 error for an image URL, and support checked and confirmed it was working.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple significant delays occurred: 5.9 hours to first human response, and a 44.3-hour gap between customer's response on 2025-10-15T11:00:31 and the next support response on 2025-10-16T17:01:18 (over 30 hours).\",\n    \"evidence\": [\n      \"[2025-10-15T11:00:31+00:00] Customer provided screenshots\",\n      \"[2025-10-15T17:01:18+00:00] Next support response came ~6 hours later\",\n      \"[2025-10-16T08:28:05+00:00] Customer responded about 404 error\",\n      \"[2025-10-16T12:31:05+00:00] Support responded ~4 hours later\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed after support asked the customer to report if they still see issues, but no confirmation from the customer that the issue was resolved. Customer's last comment indicated confusion about the error appearing 'yesterday' but no final confirmation was received.\",\n    \"evidence\": [\n      \"[2025-10-16T08:28:05+00:00] Daniel An: 'Yesterday, it showed the 404 error message. So wired but thanks a lot to hear from you about t'\",\n      \"[2025-10-16T12:31:05+00:00] Balaji Jayaraman: 'Please let us know if you still see issues.' - Status shows ticket closed without customer confirmation\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not a P1/Sev1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60219661
+}

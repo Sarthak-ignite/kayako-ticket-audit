@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS content shown is mainly standard intake/clarification and does not contain an obvious broken template, incorrect guidance that is later corrected, or a customer complaint about the AI being wrong/useless. The only substantive customer-facing resolution guidance comes from the human agent.",
+    "evidence": [
+      "ATLAS (private): \"Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\"",
+      "Mike Kebede (public): \"Kerio Support does not have the ability to issue temporary licenses or extend expired licenses. All licensing actions... must be handled strictly through our Sales and Licensing channels.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer-facing pattern of repeated AI replies keeping the customer stuck, nor evidence the customer requested a human and then received multiple additional AI responses instead. A human agent ultimately replied publicly with next steps.",
+    "evidence": [
+      "Customer (private): \"Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\"",
+      "Mike Kebede (public): \"Dear Ashraaz, Thank you for contacting us regarding the expired Kerio Control license...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The agent\u2019s public response reflects key context already provided (company and license key) and does not ask the customer to re-provide the same information or repeat earlier steps. There is also no customer complaint about having to repeat details.",
+    "evidence": [
+      "Customer (private): \"Our license expired. Please issue us a temporary extension. Our services are down.\"",
+      "Mike Kebede (public): \"When submitting your request, please include: * Your Kerio Control license key: 20339-Z6JHP-2QUX8 * Your company name: Rooster Poultry\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The customer did send multiple follow-ups (\u201cAnyone there\u201d, \u201cHello\u201d), but the interaction log does not show a multi-day gap meeting the stated thresholds (e.g., >=5 days) between a customer message and a staff reply. The first public staff reply appears the next day.",
+    "evidence": [
+      "Customer (private): \"Anyone there\"",
+      "Mike Kebede (public) [2025-11-30T13:19:12+00:00]: \"Dear Ashraaz, Thank you for contacting us...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is closed in the CSV, the public thread contains a clear next-step direction (contact Sales via a form) and does not show the customer indicating the issue remained unresolved at the time of closure. There is no public closure notice after a pending customer response.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Mike Kebede (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reports a service outage, but the agent did not respond with generic technical troubleshooting; instead, they explained a licensing limitation and routed the customer to the correct Sales/Licensing process. There is insufficient evidence of mishandling (e.g., prolonged generic troubleshooting or refusal to route appropriately).",
+    "evidence": [
+      "Customer (private): \"We are facing total outage.\"",
+      "Mike Kebede (public): \"Kerio Support does not have the ability to issue temporary licenses or extend expired licenses... please submit your request directly to GFI Sales...\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60252864
+}

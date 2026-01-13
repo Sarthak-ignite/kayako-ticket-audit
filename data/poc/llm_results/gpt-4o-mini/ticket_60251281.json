@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses do not provide any valuable or specific information regarding the customer's issue and instead offer generic updates on ticket statuses.",
+    "evidence": [
+      "[2025-12-03T19:08:19+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-12-03T19:08:48+00:00] (AI) Centralsupport-ai-acc: JIRA Issue GENSYMBSE-28 is changed to 'To Do' , block reason: -"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While the AI provided updates, it does not appear that the customer was stuck in a loop or unable to reach human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support staff repeated information regarding license provision without acknowledging previous work or the fact that licenses were already sent.",
+    "evidence": [
+      "[2025-12-25T09:01:38+00:00] (Employee) Muhammad Rizwan: This request has already been completed",
+      "[2025-12-25T09:04:32+00:00] (Employee) Muhammad Rizwan: and your request"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant gap of 477.5 hours between certain responses, indicating extremely delayed communication.",
+    "evidence": [
+      "[2025-12-25T09:04:32+00:00] (Employee) Muhammad Rizwan: Dear Kai, Thank you for your patience.",
+      "[2025-12-02T20:21:13+00:00] (Employee) Harry Tasker: Dear Kai, Please find attached the license files for the G2 2024 installation."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no clear indication in the data that the ticket was closed while the customer was still awaiting a response.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There are no instances of generic troubleshooting mentioned; priority handling does reflect urgency.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses do not provide any valuable or specific information regarding the customer's issue and instead offer generic updates on ticket statuses.\",\n    \"evidence\": [\n      \"[2025-12-03T19:08:19+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-12-03T19:08:48+00:00] (AI) Centralsupport-ai-acc: JIRA Issue GENSYMBSE-28 is changed to 'To Do' , block reason: -\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While the AI provided updates, it does not appear that the customer was stuck in a loop or unable to reach human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support staff repeated information regarding license provision without acknowledging previous work or the fact that licenses were already sent.\",\n    \"evidence\": [\n      \"[2025-12-25T09:01:38+00:00] (Employee) Muhammad Rizwan: This request has already been completed\",\n      \"[2025-12-25T09:04:32+00:00] (Employee) Muhammad Rizwan: and your request\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant gap of 477.5 hours between certain responses, indicating extremely delayed communication.\",\n    \"evidence\": [\n      \"[2025-12-25T09:04:32+00:00] (Employee) Muhammad Rizwan: Dear Kai, Thank you for your patience.\",\n      \"[2025-12-02T20:21:13+00:00] (Employee) Harry Tasker: Dear Kai, Please find attached the license files for the G2 2024 installation.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear indication in the data that the ticket was closed while the customer was still awaiting a response.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no instances of generic troubleshooting mentioned; priority handling does reflect urgency.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60251281
+}

@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI/agent responses in the ticket to evaluate for filler, incorrect information, or unkept promises.",
+    "evidence": [
+      "[2025-11-06T08:30:23+00:00] (Customer) Emily: \"Dear support,\\n\\nHope you have a good week.\\n\\nWe had tried to reach out a few times now without a reply. Usually when this happens, it mea\"",
+      "Time to first human (hours): nan"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single customer message and no repeated AI/agent requests, so no evidence of an AI loop.",
+    "evidence": [
+      "[2025-11-06T08:30:23+00:00] (Customer) Emily: \"We had tried to reach out a few times now without a reply. Usually when this happens, it mea\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support replies are present that could ignore or re-request information the customer already provided.",
+    "evidence": [
+      "[2025-11-06T08:30:23+00:00] (Customer) Emily: \"We had tried to reach out a few times now without a reply. Usually when this happens, it mea\"",
+      "Time to first human (hours): nan"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Customer states multiple prior outreach attempts without a reply; the ticket shows no recorded human response (time to first human is nan).",
+    "evidence": [
+      "[2025-11-06T08:30:23+00:00] (Customer) Emily: \"We had tried to reach out a few times now without a reply. Usually when this happens, it mea\"",
+      "Time to first human (hours): nan"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed while the customer indicates they have not received replies and appears to be awaiting a response.",
+    "evidence": [
+      "[2025-11-06T08:30:23+00:00] (Customer) Emily: \"We had tried to reach out a few times now without a reply. Usually when this happens, it mea\"",
+      "Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is marked as normal priority and contains no agent troubleshooting steps to assess for improper high-severity handling.",
+    "evidence": [
+      "Priority: normal",
+      "[2025-11-06T08:30:23+00:00] (Customer) Emily: \"We had tried to reach out a few times now without a reply. Usually when this happens, it mea\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI/agent responses in the ticket to evaluate for filler, incorrect information, or unkept promises.\",\n    \"evidence\": [\n      \"[2025-11-06T08:30:23+00:00] (Customer) Emily: \\\"Dear support,\\\\n\\\\nHope you have a good week.\\\\n\\\\nWe had tried to reach out a few times now without a reply. Usually when this happens, it mea\\\"\",\n      \"Time to first human (hours): nan\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single customer message and no repeated AI/agent requests, so no evidence of an AI loop.\",\n    \"evidence\": [\n      \"[2025-11-06T08:30:23+00:00] (Customer) Emily: \\\"We had tried to reach out a few times now without a reply. Usually when this happens, it mea\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support replies are present that could ignore or re-request information the customer already provided.\",\n    \"evidence\": [\n      \"[2025-11-06T08:30:23+00:00] (Customer) Emily: \\\"We had tried to reach out a few times now without a reply. Usually when this happens, it mea\\\"\",\n      \"Time to first human (hours): nan\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer states multiple prior outreach attempts without a reply; the ticket shows no recorded human response (time to first human is nan).\",\n    \"evidence\": [\n      \"[2025-11-06T08:30:23+00:00] (Customer) Emily: \\\"We had tried to reach out a few times now without a reply. Usually when this happens, it mea\\\"\",\n      \"Time to first human (hours): nan\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked closed while the customer indicates they have not received replies and appears to be awaiting a response.\",\n    \"evidence\": [\n      \"[2025-11-06T08:30:23+00:00] (Customer) Emily: \\\"We had tried to reach out a few times now without a reply. Usually when this happens, it mea\\\"\",\n      \"Status: closed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is marked as normal priority and contains no agent troubleshooting steps to assess for improper high-severity handling.\",\n    \"evidence\": [\n      \"Priority: normal\",\n      \"[2025-11-06T08:30:23+00:00] (Customer) Emily: \\\"We had tried to reach out a few times now without a reply. Usually when this happens, it mea\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60237213
+}

@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "While AI/ATLAS was involved in ticket creation, there's no evidence of AI providing wrong information, generic filler, or broken promises. The AI simply facilitated ticket generation.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of customer being stuck in AI loops. The customer successfully created a ticket through ATLAS chat and proceeded to human support without repeated AI interactions requesting the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence that support ignored provided context. The customer provided files/screenshots on 2025-10-28, and support took action based on the issue without asking for information again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a 156-hour (6.5 day) gap between customer ticket creation on Oct 28 and first human response on Nov 3, which represents a significant delay for a high-priority ticket.",
+    "evidence": [
+      "[2025-10-28T01:06:35+00:00] (Customer) Lucy Liu: Ticket generated",
+      "[2025-11-03T13:05:08+00:00] (Employee) Santhosh M: Initiated a restart as a part of https://jira.dev.lithium.com/browse/PDR-151323"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while the customer was still reporting issues. After support's action on Nov 3, the customer responded on Nov 5 stating the moderation tab still takes a long time to load, but the ticket status shows as closed.",
+    "evidence": [
+      "[2025-11-05T21:25:04+00:00] (Customer) Fang Ying Liu: The overall forum speed has greatly improved. Thank you for that. However the moderation tab takes a long while to load or not lo",
+      "Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While this is a high-priority ticket, the support team took appropriate technical action (restarting Atlas production instance, clearing cache, reloading plugins) rather than generic troubleshooting. The issue was handled at the infrastructure level.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI/ATLAS was involved in ticket creation, there's no evidence of AI providing wrong information, generic filler, or broken promises. The AI simply facilitated ticket generation.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of customer being stuck in AI loops. The customer successfully created a ticket through ATLAS chat and proceeded to human support without repeated AI interactions requesting the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence that support ignored provided context. The customer provided files/screenshots on 2025-10-28, and support took action based on the issue without asking for information again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a 156-hour (6.5 day) gap between customer ticket creation on Oct 28 and first human response on Nov 3, which represents a significant delay for a high-priority ticket.\",\n    \"evidence\": [\n      \"[2025-10-28T01:06:35+00:00] (Customer) Lucy Liu: Ticket generated\",\n      \"[2025-11-03T13:05:08+00:00] (Employee) Santhosh M: Initiated a restart as a part of https://jira.dev.lithium.com/browse/PDR-151323\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while the customer was still reporting issues. After support's action on Nov 3, the customer responded on Nov 5 stating the moderation tab still takes a long time to load, but the ticket status shows as closed.\",\n    \"evidence\": [\n      \"[2025-11-05T21:25:04+00:00] (Customer) Fang Ying Liu: The overall forum speed has greatly improved. Thank you for that. However the moderation tab takes a long while to load or not lo\",\n      \"Status: closed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"While this is a high-priority ticket, the support team took appropriate technical action (restarting Atlas production instance, clearing cache, reloading plugins) rather than generic troubleshooting. The issue was handled at the infrastructure level.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60230303
+}

@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI comments contain generic/systemic filler (e.g., mass 'on hold' placements for long arbitrary hours) and short automated status messages rather than substantive help.",
+    "evidence": [
+      "[2025-12-09T04:46:13+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "[2025-11-14T05:01:53+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 8888 hour(s)",
+      "[2025-12-24T09:57:21+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: JIRA Issue KPSSUPPORT-181 is changed to 'Done' , block reason: -"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI repeatedly requested the same information or prevented escalation to a human; interactions include human agent responses and escalation notes.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No clear instance where support asked for already-provided logs/screenshots or explicitly ignored prior customer information; communications show follow-ups and status updates referencing the SFTP file.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple long gaps between interactions and metrics show slow human response (time to first human ~39 hours, very large max gap), and the customer complained about the delay.",
+    "evidence": [
+      "Ticket metadata: Time to first human (hours): 38.9, Max gap between responses (hours): 589.0",
+      "[2025-12-08T18:04:24+00:00] (Customer) Varun Venkat: Kayako - ticket id 60230887 // Varun Venkat commented publicly: Any eta on this request, it\u2019s been a while since we opened this ticket.",
+      "[2025-12-15T04:40:54+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: The customer escalated the Case. The customer message is:issue not resolved from last 2 months"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was moved to Done/closed by support stating the data file was provided, but there is no clear customer confirmation of resolution and earlier messages show the customer was still escalating and asking for ETA.",
+    "evidence": [
+      "[2025-12-24T06:55:48.001-0300] (General) None: KPS Support - issue key KPSSUPPORT-181 // Abhishek Chandel commented: Data file has been provided in the given location and kayako ticket (60230887) is also completed.so closing this ticket.  please r",
+      "[2025-12-15T04:40:54+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: The customer escalated the Case. The customer message is:issue not resolved from last 2 months",
+      "[2025-12-08T18:04:24+00:00] (Customer) Varun Venkat: Kayako - ticket id 60230887 // Varun Venkat commented publicly: Any eta on this request, it\u2019s been a while since we opened this ticket."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic end-user troubleshooting being applied to a high-severity/outage case; interactions show coordination with Professional Services and infrastructure checks rather than superficial steps.",
+    "evidence": [
+      "[2025-12-09T04:45:59+00:00] (Employee) Balaji Jayaraman: Kayako - ticket id 60230887 // Balaji Jayaraman commented publicly: Dear Varun, Thank you for your patience. We are coordinating with our Professional Services team on this request and will provide a",
+      "[2025-12-15T06:10:21.370-0300] (General) None: KPS Support - issue key KPSSUPPORT-181 // Jiya Haq commented: The LITHCOMMDAILY.zip file is now present in the SFTP location.sftp> cd /home/ciscosupport/communityexport/ sftp> ls -la"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI comments contain generic/systemic filler (e.g., mass 'on hold' placements for long arbitrary hours) and short automated status messages rather than substantive help.\",\n    \"evidence\": [\n      \"[2025-12-09T04:46:13+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)\",\n      \"[2025-11-14T05:01:53+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 8888 hour(s)\",\n      \"[2025-12-24T09:57:21+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: JIRA Issue KPSSUPPORT-181 is changed to 'Done' , block reason: -\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI repeatedly requested the same information or prevented escalation to a human; interactions include human agent responses and escalation notes.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear instance where support asked for already-provided logs/screenshots or explicitly ignored prior customer information; communications show follow-ups and status updates referencing the SFTP file.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multiple long gaps between interactions and metrics show slow human response (time to first human ~39 hours, very large max gap), and the customer complained about the delay.\",\n    \"evidence\": [\n      \"Ticket metadata: Time to first human (hours): 38.9, Max gap between responses (hours): 589.0\",\n      \"[2025-12-08T18:04:24+00:00] (Customer) Varun Venkat: Kayako - ticket id 60230887 // Varun Venkat commented publicly: Any eta on this request, it\u2019s been a while since we opened this ticket.\",\n      \"[2025-12-15T04:40:54+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: The customer escalated the Case. The customer message is:issue not resolved from last 2 months\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was moved to Done/closed by support stating the data file was provided, but there is no clear customer confirmation of resolution and earlier messages show the customer was still escalating and asking for ETA.\",\n    \"evidence\": [\n      \"[2025-12-24T06:55:48.001-0300] (General) None: KPS Support - issue key KPSSUPPORT-181 // Abhishek Chandel commented: Data file has been provided in the given location and kayako ticket (60230887) is also completed.so closing this ticket.  please r\",\n      \"[2025-12-15T04:40:54+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: The customer escalated the Case. The customer message is:issue not resolved from last 2 months\",\n      \"[2025-12-08T18:04:24+00:00] (Customer) Varun Venkat: Kayako - ticket id 60230887 // Varun Venkat commented publicly: Any eta on this request, it\u2019s been a while since we opened this ticket.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic end-user troubleshooting being applied to a high-severity/outage case; interactions show coordination with Professional Services and infrastructure checks rather than superficial steps.\",\n    \"evidence\": [\n      \"[2025-12-09T04:45:59+00:00] (Employee) Balaji Jayaraman: Kayako - ticket id 60230887 // Balaji Jayaraman commented publicly: Dear Varun, Thank you for your patience. We are coordinating with our Professional Services team on this request and will provide a\",\n      \"[2025-12-15T06:10:21.370-0300] (General) None: KPS Support - issue key KPSSUPPORT-181 // Jiya Haq commented: The LITHCOMMDAILY.zip file is now present in the SFTP location.sftp> cd /home/ciscosupport/communityexport/ sftp> ls -la\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60230887
+}

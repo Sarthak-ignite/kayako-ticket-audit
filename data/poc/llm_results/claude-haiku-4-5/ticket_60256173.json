@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are truncated/incomplete and provide generic filler without substantive technical content. Multiple AI comments show incomplete text (cut off mid-sentence) that don't actually help resolve the customer's technical issue.",
+    "evidence": [
+      "2025-12-18T08:17:54: 'Thank you for updating us. We are pleased to hear that the DNS socket errors have been resolved after adjusting t' (truncated mid-sentence)",
+      "2025-12-16T12:05:45: Generic acknowledgment of 'details and logs' with no specific technical guidance provided",
+      "2025-12-15T16:25:31: 'CC returned an error undefined Sending to L1' (error state, no useful response)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer explicitly complained about unclear AI communication and difficulty distinguishing AI from human responses. ATLAS made repeated generic error responses instead of routing properly, and customer had to repeatedly follow up for human assistance.",
+    "evidence": [
+      "2025-12-06T22:05:08: Customer states 'about the communication - it should be cleary noted when its AI and when its real human. \"Cu Chulainn AI Manager\" is not 100%' - expressing frustration with AI wall",
+      "2025-12-15T16:25:31: 'ATLAS: CC returned an error undefined Sending to L1' (error state)",
+      "2025-12-10T07:10:34: 'ATLAS: CC returned an error undefined Sending to L1' (repeated error)",
+      "2025-12-08T12:10:24: 'ATLAS: CC returned an error undefined Sending to L1' (repeated error)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While there are some repeated information requests (e.g., asking about version, requesting logs), the human employees generally acknowledge prior communications and build on context. The ticket shows reasonable continuity across multiple interactions.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple significant gaps between responses. Max gap of 97.5 hours is extreme for an URGENT priority ticket. Gap from 2025-12-10T07:41:45 to 2025-12-14T09:14:13 is ~3.5 days, and multiple 1-2 day gaps occur throughout.",
+    "evidence": [
+      "Ticket metadata shows 'Max gap between responses (hours): 97.5' (over 4 days)",
+      "Gap from 2025-12-10T07:41:45 (customer update) to 2025-12-14T09:14:13 (human response) = ~3.5 days",
+      "Gap from 2025-12-06T17:52:59 to 2025-12-08T11:45:30 = ~42 hours for URGENT ticket"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is marked as closed, the final interaction shows customer reporting resolution ('We solved...by changing DNS serve'). There is no evidence of closure while awaiting customer response or promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite URGENT priority and an outage situation (WebAdmin unresponsive, customer unable to connect), initial response by Mike Kebede provided generic troubleshooting (analyzing log messages) rather than immediate hands-on escalation or emergency support coordination. The 29.7 hours to first human response is also excessive for an URGENT P1 ticket.",
+    "evidence": [
+      "Ticket metadata: 'Priority: urgent' with 'Time to first human (hours): 29.7' - unacceptable delay",
+      "2025-12-14T09:14:13: Mike Kebede provides generic log analysis rather than emergency escalation: 'The reported messages indicate the following: DNS soc...' (generic troubleshooting of log entries)",
+      "Ticket involves production outage (WebAdmin became unresponsive, customer cannot connect) but response approach is analytical rather than immediate remediation-focused"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are truncated/incomplete and provide generic filler without substantive technical content. Multiple AI comments show incomplete text (cut off mid-sentence) that don't actually help resolve the customer's technical issue.\",\n    \"evidence\": [\n      \"2025-12-18T08:17:54: 'Thank you for updating us. We are pleased to hear that the DNS socket errors have been resolved after adjusting t' (truncated mid-sentence)\",\n      \"2025-12-16T12:05:45: Generic acknowledgment of 'details and logs' with no specific technical guidance provided\",\n      \"2025-12-15T16:25:31: 'CC returned an error undefined Sending to L1' (error state, no useful response)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer explicitly complained about unclear AI communication and difficulty distinguishing AI from human responses. ATLAS made repeated generic error responses instead of routing properly, and customer had to repeatedly follow up for human assistance.\",\n    \"evidence\": [\n      \"2025-12-06T22:05:08: Customer states 'about the communication - it should be cleary noted when its AI and when its real human. \\\"Cu Chulainn AI Manager\\\" is not 100%' - expressing frustration with AI wall\",\n      \"2025-12-15T16:25:31: 'ATLAS: CC returned an error undefined Sending to L1' (error state)\",\n      \"2025-12-10T07:10:34: 'ATLAS: CC returned an error undefined Sending to L1' (repeated error)\",\n      \"2025-12-08T12:10:24: 'ATLAS: CC returned an error undefined Sending to L1' (repeated error)\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"While there are some repeated information requests (e.g., asking about version, requesting logs), the human employees generally acknowledge prior communications and build on context. The ticket shows reasonable continuity across multiple interactions.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple significant gaps between responses. Max gap of 97.5 hours is extreme for an URGENT priority ticket. Gap from 2025-12-10T07:41:45 to 2025-12-14T09:14:13 is ~3.5 days, and multiple 1-2 day gaps occur throughout.\",\n    \"evidence\": [\n      \"Ticket metadata shows 'Max gap between responses (hours): 97.5' (over 4 days)\",\n      \"Gap from 2025-12-10T07:41:45 (customer update) to 2025-12-14T09:14:13 (human response) = ~3.5 days\",\n      \"Gap from 2025-12-06T17:52:59 to 2025-12-08T11:45:30 = ~42 hours for URGENT ticket\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked as closed, the final interaction shows customer reporting resolution ('We solved...by changing DNS serve'). There is no evidence of closure while awaiting customer response or promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite URGENT priority and an outage situation (WebAdmin unresponsive, customer unable to connect), initial response by Mike Kebede provided generic troubleshooting (analyzing log messages) rather than immediate hands-on escalation or emergency support coordination. The 29.7 hours to first human response is also excessive for an URGENT P1 ticket.\",\n    \"evidence\": [\n      \"Ticket metadata: 'Priority: urgent' with 'Time to first human (hours): 29.7' - unacceptable delay\",\n      \"2025-12-14T09:14:13: Mike Kebede provides generic log analysis rather than emergency escalation: 'The reported messages indicate the following: DNS soc...' (generic troubleshooting of log entries)\",\n      \"Ticket involves production outage (WebAdmin became unresponsive, customer cannot connect) but response approach is analytical rather than immediate remediation-focused\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60256173
+}

@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS responses are lengthy and may be somewhat generic, but there is no clear evidence of broken templates, obviously incorrect guidance, or a customer-visible correction showing the AI was wrong. The guidance requested diagnostics and later discussed a plausible XML corruption cause, which is at least connected to the symptom (scheduled scans).",
+    "evidence": [
+      "\u201cWe understand that scheduled scanning is not working and that this is causing significant business impact.\u201d",
+      "\u201cKey observations from your attachment: * The repeated scans and scheduling issues are linked to a date corruption in the <LastRecurringScan> tag within the toolcfg_agent.xml file on affected agents.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There are multiple consecutive public ATLAS replies and no visible human responder, but the strongest triggers (customer asking for a human in a public comment, or the AI repeatedly re-asking for the same item after the customer publicly stated it was already provided) are not present in the customer-facing/public thread.",
+    "evidence": [
+      "\u201cDear asim.mehmood, Thank you for contacting us\u2026 please provide the following: - GFI LanGuard diagnostic logs\u2026\u201d",
+      "\u201cDear asim.mehmood, Thank you for your candid feedback\u2026 To move quickly, please share the following\u2026\u201d",
+      "\u201cDear asim.mehmood, Thank you for your detailed feedback and for sharing the reference image and diagnostic logs\u2026\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "In public replies, ATLAS acknowledges the referenced partner ticket and explicitly offers to reuse previously uploaded data, which is the opposite of forcing repetition. Any stronger \u201calready provided / asked again\u201d signals appear only in private customer comments, not in customer-facing/public content.",
+    "evidence": [
+      "\u201cWe also note your reference to partner ticket 60166415 and the urgency of the situation.\u201d",
+      "\u201cIf your partner has already uploaded these under ticket 60166415, please confirm the upload date/time so we can locate and use the same data internally, avoiding duplication.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No customer-facing evidence shows the customer waiting on support for days, asking for updates after silence, or support apologizing for delays. The only visible week-gap is between ATLAS public messages, not a staff delay after a customer public request.",
+    "evidence": [
+      "\u201c[2025-09-09T11:30:59+00:00] \u2026 ATLAS commented publicly\u2026\u201d",
+      "\u201c[2025-09-16T06:12:00+00:00] \u2026 ATLAS commented publicly\u2026\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "ATLAS includes a standard warning that the ticket will stay open for one week unless the customer responds/updates status, but there is no explicit closure/auto-closure notice shown in the text.",
+    "evidence": [
+      "\u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While urgency/business impact is mentioned, the public record does not clearly show P1/SEV1/outage handling requirements being ignored (e.g., refusal to escalate, prolonged generic troubleshooting with no progression). ATLAS requests diagnostics and later discusses a specific suspected configuration corruption cause.",
+    "evidence": [
+      "\u201cWe understand that scheduled scanning is not working and that this is causing significant business impact.\u201d",
+      "\u201cOnce we receive the diagnostics, we will prioritize analysis and update you with our findings.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60193443
+}

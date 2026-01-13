@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The visible ATLAS messages are mostly standard intake (greeting, asking for details, license eligibility request). There is no customer-facing statement that the AI was wrong/useless, and no clearly incorrect or garbled guidance shown in the provided excerpt.",
+    "evidence": [
+      "Chat Support: Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.",
+      "Chat Support: Based on your stated intent, it is mandatory that we check the support eligibility through the product license \ud83d\udd11 before moving forward"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only one weak signal is present (multiple consecutive AI messages with no human shown), but there is no customer request for a human, no repeated asking for the same info, and no expressed frustration about the AI in the visible text.",
+    "evidence": [
+      "Chat Support: Got it! \ud83d\udc4c",
+      "Chat Support: Based on your stated intent, it is mandatory that we check the support eligibility through the product license \ud83d\udd11 before moving forward",
+      "Chat Support: Please provide me with your GFI MailEssentials licen"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer shared troubleshooting already attempted, and the AI did not ask them to repeat those exact steps again in the provided excerpt. The AI instead moved to a license eligibility request, which is not a repeat of the customer\u2019s prior details.",
+    "evidence": [
+      "Stanley Wanyoike: Gfi instance is not scanning emails. I have restarted all services, excluded GFI folders from scanning by the anti-virus, manually forced update by clicking download update to no avail.",
+      "Chat Support: ...it is mandatory that we check the support eligibility through the product license \ud83d\udd11 before moving forward"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps or explicit delay acknowledgements are visible in the provided interactions excerpt.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no text indicating the ticket was closed/auto-closed or that it would be closed if the customer did not respond.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue (emails not scanning) could be impactful, there is no explicit SEV1/P1/outage language (e.g., 'production down', 'critical', 'urgent', 'all users') in the provided excerpt, so severity mishandling cannot be concluded from the text shown.",
+    "evidence": [
+      "Stanley Wanyoike: Gfi instance is not scanning emails."
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60082637
+}

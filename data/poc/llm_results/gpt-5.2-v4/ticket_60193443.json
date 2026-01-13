@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses are largely templated and repetitive (log-collection + 1-week closure warning), and later messages add broad/KB-style \u201cplausible root causes\u201d rather than a concrete, enterprise-executable plan (e.g., controlled/scripted remediation, scope assessment, escalation path). The guidance also appears internally inconsistent: customer says support/dev advised mass redeploy; ATLAS agrees it\u2019s not feasible but still does not clearly offer a vetted alternative beyond repeating file replacement and generic checks.",
+    "evidence": [
+      "\u201cTo investigate and address this as quickly as possible, please provide the following: - GFI LanGuard diagnostic logs...\u201d",
+      "\u201cIf you need more time to gather the information, the ticket will remain open for one additional week.\u201d",
+      "\u201cPlausible Root Causes Based on Our Knowledge Base:\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly asks for urgent/senior involvement and an actionable plan; ATLAS continues responding as AI with repeated requests for the same diagnostics and generic next steps. No clear handoff to a human or escalation is shown, despite the customer explicitly requesting senior technical involvement and a session.",
+    "evidence": [
+      "Customer: \u201cWe need your senior technical team involved immediately and a clear, executable action plan...\u201d",
+      "ATLAS (after that): \u201cTo move quickly, please share the following... diagnostic logs...\u201d",
+      "ATLAS repeats the same collection path twice: \u201cYou can collect these via Help > Support > Troubleshooter...\u201d",
+      "Customer: \u201cWe request your immediate attention and a session with your team...\u201d (no visible scheduling/escalation; ATLAS continues with guidance text)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Customer references an existing partner ticket where information was already provided and states all troubleshooting steps were already performed. ATLAS still asks for logs again and does not clearly confirm it has pulled/used the prior ticket\u2019s artifacts (only asks the customer to confirm upload date/time). This creates duplication and makes the customer feel unheard.",
+    "evidence": [
+      "Customer (initial): \u201cOur Partner has already created a ticket 60166415... already have shared all the relevant information.\u201d",
+      "Customer: \u201cOur partners have already followed every single step and troubleshooting process as advised by your team.\u201d",
+      "ATLAS: \u201cplease provide... diagnostic logs...\u201d (repeated even after customer says everything was already done)",
+      "ATLAS: \u201cIf your partner has already uploaded these under ticket 60166415, please confirm the upload date/time...\u201d (no indication support accessed 60166415 directly)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No clear 3+ day gap where the customer is waiting on support after a message requesting action. The week gap (2025-09-09 to 2025-09-16) includes no customer follow-up asking for updates; the customer\u2019s next message (\u201cKeep this ticket open.\u201d) is answered immediately.",
+    "evidence": [
+      "Customer: \u201cKeep this ticket open.\u201d [2025-09-16T06:10:59+00:00]",
+      "ATLAS reply follows immediately: [2025-09-16T06:12:00+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is not shown as closed/resolved in the provided transcript. Although ATLAS repeatedly warns it will stay open one week unless updated, there is no evidence it was actually closed while the customer awaited action.",
+    "evidence": [
+      "ATLAS: \u201cThis ticket will stay open for one week unless you reply with 'This ticket can be closed'...\u201d",
+      "Customer: \u201cKeep this ticket open.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer explicitly requests \u201cPriority Urgent\u201d and describes \u201cextreme business loss\u201d in a banking environment impacting scheduled scanning. Support responses follow standard intake (request logs, 1-week auto-close messaging) with no visible escalation, SLA acknowledgment, or immediate real-time engagement despite the stated severity and request for senior involvement.",
+    "evidence": [
+      "Customer: \u201cWe would like to open a ticket Priority Urgent as this is causing business loss.\u201d",
+      "Customer: \u201cScheduled Scanning is not working causing extreme business loss.\u201d",
+      "Customer: \u201cWe need your senior technical team involved immediately...\u201d",
+      "ATLAS maintains standard process/closure framing: \u201cIf you need more time to gather the information, the ticket will remain open for one additional week.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60193443
+}

@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer explicitly states the ATLAS AI experience was a \"disaster,\" which is clear evidence the AI was unhelpful/poor quality from the customer\u2019s perspective (even though the specific incorrect AI content isn\u2019t fully visible due to truncated transcript).",
+    "evidence": [
+      "Customer: \"In addition, your Atlas Ki is a disater.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence the customer requested a human and was denied, nor that AI repeatedly asked for the same specific info multiple times in the visible conversation. The only repetition shown is the customer repeating the request to reopen ticket #60078199 (not AI looping).",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support requested logs and confirmation of reproduction; the customer did not indicate logs were already provided in this ticket. While the customer later states they are no longer interested in v22, there is no subsequent support reply shown that ignores this context (i.e., no clear, quoted instance of support disregarding what the customer said).",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a 3+ calendar day gap after the customer\u2019s 2025-07-07 message with no public support response recorded in the ticket interactions provided (only an internal note on 2025-07-10).",
+    "evidence": [
+      "[2025-07-07T14:35:11+00:00] Customer: \"am no longer interested in version 22. GFi must now solve the problem in version 21 with the duplicate e-mails.\"",
+      "Next logged support activity is internal only: [2025-07-10T13:02:58+00:00] \"...we have been waiting for the logs.\" (no customer-facing reply shown)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "This ticket is not shown as closed. Support messages indicate it will remain open for a week unless the customer requests closure, but no closure event is present in the provided timeline.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer reports a serious impact during the v22 update (mail not forwarded), the ticket is not explicitly marked P1/SEV1/Critical, and support responses focus on log collection and engineering review rather than clearly inappropriate troubleshooting. No clear mishandling per the strict criteria.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60094192
+}

@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS appears to respond with generic troubleshooting prompts (requesting logs/screenshots) that don\u2019t match a number port-out/fee question, suggesting low-quality or misaligned AI handling. The transcript is truncated, so the full AI behavior isn\u2019t visible, but what is shown is not tailored to the customer\u2019s request.",
+    "evidence": [
+      "ATLAS transcript: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time\"",
+      "Customer issue: \"My question: Is it possible to please port our numbers back to us. If there is a fee, how much would that be?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "There is some indication the customer first interacted with the AI assistant and did not receive an answer, later prompting them to follow up for a response. While the customer does not explicitly ask for a human, the flow suggests the AI interaction did not resolve the issue and the customer was effectively \u201cstuck\u201d until a later human reply (uncertain, but plausible).",
+    "evidence": [
+      "CSV: initialResponseTime=85225",
+      "ATLAS transcript shows no direct answer and a generic prompt: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload...\"",
+      "Customer follow-up: \"Hello, I still have not received an answer to my question.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The human agent\u2019s eventual response directly addresses the customer\u2019s questions (porting possibility, process, and fees) and acknowledges the scenario and timing. There is no clear evidence that the agent forced the customer to repeat details after the agent engaged, beyond delays.",
+    "evidence": [
+      "Agent: \"Yes \u2014 it is possible to port your fax numbers away from FaxMaker Online to your new carrier when you transition to Zoom Phone in early summer 2026\"",
+      "Agent: \"There is no fee from GFI/FaxMaker Online to port your numbers out.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly complained about not receiving an answer, and the timeline shows a long gap between ticket creation (Nov 13) and the first substantive agent response (Nov 30). CSV metrics also indicate a long initial response time and multi-week resolution duration.",
+    "evidence": [
+      "Customer: \"Hello, I still have not received an answer to my question.\"",
+      "Ticket created: \"[2025-11-13T22:15:03+00:00]\" vs. first substantive agent answer: \"[2025-11-30T22:38:09+00:00]\"",
+      "CSV: initialResponseTime=85225",
+      "CSV: resolutionTime=2895763"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket contains repeated closure-pressure language (\u201cwill stay open for one week unless...\u201d) and ultimately is in a closed status without any explicit customer confirmation of closure (e.g., \"This ticket can be closed\"). It\u2019s possible the issue was resolved, but closure may still be premature given the handoff to teammates and no explicit completion acknowledgment (uncertain).",
+    "evidence": [
+      "Agent: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Customer: \"FYI I just retired, my teammates will be following up.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-20 11:37:42"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket concerns a planned future number port-out and fee inquiry, not an outage or urgent production-impacting incident. There\u2019s no indication of P1/SEV1 impact or a missed emergency escalation requirement.",
+    "evidence": [
+      "Customer: \"We would not need to port them over until early summer 2026.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60242814
+}

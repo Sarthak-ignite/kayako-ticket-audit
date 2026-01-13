@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible AI entries are internal routing notes (e.g., 'Send to l1') and an incomplete chat transcript. There is not enough clear evidence of generic filler responses, incorrect information, or broken promises made by the AI to the customer.",
+    "evidence": [
+      "[2025-06-16T10:39:05+00:00] (AI) ATLAS: Action: Send to l1",
+      "[2025-06-16T10:38:41+00:00] (AI) ATLAS: transcript ... (truncated)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket shows human agent responses and does not show the customer being blocked from reaching a human or repeatedly looped by the AI with the same questions.",
+    "evidence": [
+      "[2025-06-23T03:38:59+00:00] (Employee) Muhammad Rizwan commented publicly",
+      "[2025-06-24T06:39:42+00:00] (Employee) Arafat Bakhsh commented publicly",
+      "[2025-06-24T14:04:26+00:00] (Employee) Qasim Ali commented publicly"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support requests logs/samples despite the customer stating they already provided logs/screenshots, and the thread includes repeated log requests rather than acknowledging what was already attached and clarifying what is missing.",
+    "evidence": [
+      "[2025-06-23T11:54:39+00:00] (Employee) Christian Schmidt commented privately: The logs and screenshots are already in the ticket!",
+      "[2025-06-24T06:39:42+00:00] (Employee) Arafat Bakhsh commented publicly: We will require the complete set of logs in order to investigate the matter further.",
+      "[2025-06-23T03:38:59+00:00] (Employee) Muhammad Rizwan commented publicly: To help us investigate this further, please provide the following: 1. A sample `.eml`"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap between the customer's initial problem/logs (June 16) and the next visible human support response (June 23), indicating a significant response delay.",
+    "evidence": [
+      "[2025-06-16T11:28:33+00:00] (Employee) Christian Schmidt commented privately: POP Log\u00b4s",
+      "[2025-06-23T03:38:59+00:00] (Employee) Muhammad Rizwan commented publicly: Dear Christian, Thank you for your patience. To help us investigate this further..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence in the provided interaction history indicates the ticket was closed while awaiting customer action or promised follow-up, nor that the customer gave up due to closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket content describes a POP3 connector issue (duplicate retrieval), but there is no clear indication of severity/priority classification (P1/Sev1), business impact, outage, or SLA breach requiring immediate escalation; therefore mishandling of a confirmed P1/Sev1 cannot be concluded.",
+    "evidence": [
+      "[2025-06-16T11:04:01+00:00] (Employee) Christian Schmidt commented privately: Bug in MailEsstainels in the Pop3 conector. Because mails are retrieved twice or even more..."
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60078199
+}

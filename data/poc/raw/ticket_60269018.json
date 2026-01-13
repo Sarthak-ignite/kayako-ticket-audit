@@ -1,0 +1,196 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_languard",
+        "requester": {
+          "id": 10,
+          "uuid": "7e697578-55af-5813-85b8-e58fa1e4baef",
+          "full_name": "Andriy Rybalchenko",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 5,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/7e697578-55af-5813-85b8-e58fa1e4baef?1767782001",
+          "agent_case_access": "INHERIT-FROM-ROLE",
+          "organization_case_access": null,
+          "organization": {
+            "id": 3,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 1,
+              "resource_type": "team"
+            },
+            {
+              "id": 3,
+              "resource_type": "team"
+            },
+            {
+              "id": 4,
+              "resource_type": "team"
+            },
+            {
+              "id": 6,
+              "resource_type": "team"
+            },
+            {
+              "id": 7,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000002,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 11,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "7390,7403,7404,7353,7420,7366,7371,7372,7424,7425,7361,7426,7360,7382,7448",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Madrid",
+          "time_zone_offset": 3600,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "python-requests/2.32.5",
+          "last_seen_ip": "18.210.160.89",
+          "last_seen_at": "2026-01-07T10:33:21+00:00",
+          "last_active_at": "2026-01-07T10:33:21+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_10",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@d4a719f83edff674488dbd7f7fbb92e5f31a22a4",
+          "password_updated_at": "2024-11-28T15:17:30+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-07T10:33:39+00:00",
+          "last_activity_at": "2026-01-07T10:33:39+00:00",
+          "created_at": "2024-11-28T15:14:36+00:00",
+          "updated_at": "2026-01-07T10:33:21+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/10"
+        },
+        "ticket_idt": 60269018
+      },
+      "interactions": [
+        [
+          "2025-12-23T11:52:14Z",
+          "GHI Engineering - 16301 // trilogy-taro[bot] removed_from_project_v2"
+        ],
+        [
+          "2025-12-23T08:29:28+00:00",
+          "Kayako - ticket id 60269018 // Cu Chulainn AI Manager commented publicly: Dear Andriy,\n\nWe have identified the issue you experienced as a test-triggered incident rather than a true product defect. You should now have access to the normal patch download functionality. Please feel free to reach out if you encounter any further issues.\n\nBest regards,\n\nCentral Support Team"
+        ],
+        [
+          "2025-12-23T08:29:23+00:00",
+          "Kayako - ticket id 60269018 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\nThe GHI issue was closed as it was triggered from a test ticket. The customer has been informed that it was a test-generated incident.\n===== End of Summary =====\n"
+        ],
+        [
+          "2025-12-23T08:28:37+00:00",
+          "Kayako - ticket id 60269018 // Cu Chulainn AI Manager commented privately: <CC Log>\n\nPackage URL: https://cs.cu-chulainn.csaiautomations.com/marketplace/packages/edit/PACKAGE-e7788ae8-2a97-46aa-87a9-0df26123353f\nPackage Name: create_ghi\n\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60269018/kayako_central-supportdesk_60269018_20251223_082836_dce3.txt]\n\n</CC Log>\n"
+        ],
+        [
+          "2025-12-23T08:21:18Z",
+          "GHI Engineering - 16301 // trilogy-taro[bot] commented: > #taro-issue-summary\n\nThe customer experiences an unresponsive GFI LanGuard console screen and error messages when attempting to download December patches, despite successful Microsoft cloud connectivity. The root cause is identified as a test-triggered issue rather than a genuine product defect. Customer Support should inform the customer that this was a test-generated incident and normal patch download functionality should be available.\n\n\n> Created with [Taro](https://github.com/trilogy-group/taro/tree/shell). Like this comment if it was helpful.\n"
+        ],
+        [
+          "2025-12-23T08:20:36Z",
+          "GHI Engineering - 16301 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-12-23T08:20:34Z",
+          "GHI Engineering - 16301 // AlterPKC commented: Triggered from a test ticket. Closing"
+        ],
+        [
+          "2025-12-23T08:19:58Z",
+          "GHI Engineering - 16301 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-12-23T08:19:57Z",
+          "GHI Engineering - 16301 // trilogy-taro[bot] added_to_project_v2"
+        ],
+        [
+          "2025-12-23T08:19:50+00:00",
+          "Kayako - ticket id 60269018 // Cu Chulainn AI Manager commented publicly: Dear Andriy,\n\nThank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive further details from them.\n\nBest regards, \nCentral Support Team"
+        ],
+        [
+          "2025-12-23T08:19:49Z",
+          "GHI Engineering - 16301 // trilogy-taro[bot] labeled as Product:LanGuard"
+        ],
+        [
+          "2025-12-23T08:19:48+00:00",
+          "Kayako - ticket id 60269018 // CE Maintenance Bot commented privately: Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/16301"
+        ],
+        [
+          "2025-12-23T08:19:46+00:00",
+          "Kayako - ticket id 60269018 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\nGHI created and linked: https://github.com/trilogy-group/eng-maintenance/issues/16301. Ticket placed on hold for Engineering review.\n===== End of Summary =====\nPlacing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-12-23T08:19:40Z",
+          "GHI Engineering - 16301 // coderabbitai[bot] commented: <!-- This is an auto-generated issue plan by CodeRabbit -->\n\n\n### \ud83d\udcdd CodeRabbit Plan Mode\nGenerate an implementation plan and prompts that you can use with your favorite coding agent.\n\n- [ ] <!-- {\"checkboxId\": \"8d4f2b9c-3e1a-4f7c-a9b2-d5e8f1c4a7b9\"} --> Create Plan\n\n<details>\n<summary>Examples</summary>\n\n- [Example 1](https://github.com/coderabbitai/git-worktree-runner/issues/29#issuecomment-3589134556)\n- [Example 2](https://github.com/coderabbitai/git-worktree-runner/issues/12#issuecomment-3606665167)\n\n</details>\n\n\n---\n<details>\n<summary> \ud83e\uddea Issue enrichment is currently in open beta.</summary>\n\n\nYou can configure auto-planning by selecting labels in the issue_enrichment configuration.\n\nTo disable automatic issue enrichment, add the following to your `.coderabbit.yaml`:\n```yaml\nissue_enrichment:\n  auto_enrich:\n    enabled: false\n```\n</details>\n\n\ud83d\udcac Have feedback or questions? Drop into our [discord](https://discord.gg/coderabbit) or [schedule a call](https://calendly.com/parth-coderabbit/issues-feedback)!"
+        ],
+        [
+          "2025-12-23T08:19:30Z",
+          "GHI Engineering - 16301 // chintanparekh2510 labeled as Eng-Maintenance"
+        ],
+        [
+          "2025-12-23T08:18:55+00:00",
+          "Kayako - ticket id 60269018 // Cu Chulainn AI Manager commented privately: <CC Log>\n\nPackage URL: https://cs.cu-chulainn.csaiautomations.com/marketplace/packages/edit/PACKAGE-e7788ae8-2a97-46aa-87a9-0df26123353f\nPackage Name: create_ghi\n\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60269018/kayako_central-supportdesk_60269018_20251223_081854_5c76.txt]\n\n</CC Log>\n"
+        ],
+        [
+          "2025-12-23T08:18:31+00:00",
+          "Kayako - ticket id 60269018 // Andriy Rybalchenko commented publicly: \t* We are unable to download the December patches from the GFI console. We have verified that all network connectivity is functioning correctly from a network perspective. However, when we initiate the patch download, the screen becomes unresponsive after some time, and the error shown below appears.\n\nWe are able to connect properly to the Microsoft cloud, but the download does not complete. Kindly assist us in resolving this issue on a priority basis.\n\t* please raise the ticket and share with us.\n\n"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 8,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": true,
+          "link_value": "https://github.com/trilogy-group/eng-maintenance/issues/16301"
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provides a generic, largely templated explanation about SSL warnings and even references an unrelated Spark KB article, without taking ownership of the reported platform-side certificate problem (redirects.gfikerioconnect.com) or stating any concrete action (e.g., confirming expiry, escalating to ops, ETA). The guidance to \u201cbypass\u201d the warning is not an appropriate primary response for a central redirect endpoint certificate issue.",
+    "evidence": [
+      "Customer: \"today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed? This leads to a security message... please fix this quickly!\"",
+      "ATLAS: \"While the knowledge base article ... When Setting up Email on Spark ... describes how a similar message appears...\"",
+      "ATLAS: \"As a workaround, users may be able to bypass the message... but this is not recommended for long-term use\"",
+      "ATLAS: \"Verifying that you and your users access Kerio Connect services using URLs with valid, up-to-date certificates... If using your own Kerio Connect installation, periodically reviewing and renewing SSL certificates...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only one AI response is shown; there is no repeated back-and-forth where the customer is trapped in an AI loop or repeatedly asked for the same info.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI response is generic, but it does not explicitly ask for information already provided or contradict specific details the customer gave. It does, however, fail to meaningfully engage with the key context (central redirect endpoint).",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The response came within the same minute of the customer\u2019s initial message, so there is no evidence of a significant delay.",
+    "evidence": [
+      "Customer timestamp: \"2025-10-29T08:27:13+00:00\"",
+      "ATLAS timestamp: \"2025-10-29T08:27:55+00:00\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript does not show the ticket being closed or marked resolved, so premature closure cannot be evidenced from the provided interactions.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This appears to be a potentially service-wide/security-impacting issue (expired/changed certificate on a central Kerio Connect redirect endpoint) affecting users immediately, and the customer requested urgent action. The AI handled it like a generic client-side SSL troubleshooting scenario rather than escalating/acknowledging a platform-side incident or providing status/ETA.",
+    "evidence": [
+      "Customer: \"today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed?... please fix this quickly!\"",
+      "ATLAS provides generic advice/workarounds and does not indicate escalation, incident creation, or restoration steps for the redirects.gfikerioconnect.com certificate."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60231299
+}

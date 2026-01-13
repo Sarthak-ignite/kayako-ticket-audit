@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses shown do not contain clear examples of generic filler, demonstrably wrong technical information, or broken promises. The public AI message is truncated in the transcript, but there is no explicit evidence that it gave incorrect guidance or made promises that were later broken.",
+    "evidence": [
+      "Public AI comment (2025-09-24) begins with a polite thank-you and reference to logs but is truncated; truncation alone is not proof of low-quality content.",
+      "Private AI comments include a file analysis summary and an escalation action 'Action: l2', which indicate substantive activity rather than generic filler."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was repeatedly asked the same question or stuck in an AI loop. The interaction history shows different messages and a private escalation action rather than repetitive requests.",
+    "evidence": [
+      "No repeated identical questions from AI in the interaction history.",
+      "Private note 'Action: l2' suggests handoff/escalation rather than continued looping."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The transcript does not show the support agent or AI asking the customer to re-submit logs or information the customer already provided. In fact, the public reply references the provided logs.",
+    "evidence": [
+      "Public AI message (2025-09-24) references 'Thank you for providing the detailed logs and support information', indicating the logs were acknowledged.",
+      "No message in the transcript asks the customer to resend the same logs or repeats previously provided requests."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long gap (about 20 days) between the customer's public report (2025-09-04) and the AI public reply (2025-09-24). This constitutes a significant delay in responding to the customer's update.",
+    "evidence": [
+      "Customer public comment: 2025-09-04T13:41:10+00:00 \u2014 'the reseller increased the RAM... but the AD integration stops working after about one hour again'.",
+      "Public AI reply: 2025-09-24T16:19:04+00:00 \u2014 'Thank you for providing the detailed logs...' (roughly 20 days later)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication in the provided transcript that the ticket was closed prematurely or that the customer gave up waiting. The conversation shows ongoing notes and an escalation action rather than closure.",
+    "evidence": [
+      "Private AI note: 'Action: l2' (2025-09-03) indicating escalation activity.",
+      "No log entries showing ticket closure or a customer message indicating they abandoned the ticket."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The transcript does not label the issue as P1/SEV1, nor does it show inappropriate generic troubleshooting in response to a declared high-priority incident. The presence of a level-2 escalation suggests escalation rather than mishandling.",
+    "evidence": [
+      "Private escalation note: 'Action: l2' indicates the case was escalated to level 2 support.",
+      "No explicit P1/SEV1 severity flag or evidence of only generic troubleshooting for a critical incident."
+    ]
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60185905
+}

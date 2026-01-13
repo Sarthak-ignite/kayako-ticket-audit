@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ATLAS chat appears to provide an unrelated incident list and then asks for more detail, but there is not enough customer-facing evidence that the AI gave incorrect/misleading guidance beyond being unhelpful once. The customer did not explicitly state the AI was wrong/useless overall, and the conversation is truncated before we can see whether the AI looped or resolved anything.",
+    "evidence": [
+      "Chat Support: \"### \ud83d\udd25 Active Incidents for Khoros Classic\n\n1. Missing Community Analytics data since August 29\"",
+      "Carsten Schmitt-Hoeppner: \"\ud83d\udc4e No. My issue is not related\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer requested a human agent and was kept in an AI loop afterward, nor clear evidence of repetitive AI questioning after the customer already provided the same information. The transcript is truncated, limiting confirmation of looping behavior.",
+    "evidence": [
+      "Chat Support: \"Walk me through what's happening or select from the below options.\"",
+      "Chat Support: \"If I'm unable to help you, I can patch you through to a Live agent...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The agent acknowledges the existence of the original ticket and states they shared the added information to it, rather than asking the customer to re-provide logs or context. No customer-facing message shows support requesting information the customer had already supplied within this ticket.",
+    "evidence": [
+      "Carlo Koh (public): \"Please be advised that ticket 60195591 is still open and we are actively working on resolving the issue through the said ticket.\"",
+      "Carlo Koh (public): \"In the meantime, I have shared the additional information provided here to the original ticket.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly states they previously reported the issue and have not received feedback, indicating a meaningful delay in response on the ongoing problem (at least since the prior day's bug report). This is customer-facing urgency tied to lack of updates.",
+    "evidence": [
+      "Issue description (customer): \"we see lots of lost handovers for conversations from Khoros Flow to Care. I have reproted this issue but not received any feedback yet!\"",
+      "Customer email content: \"UPDATE to the Bug report from yesterday! We see more and more Conversations getting lost between FLOW and CARE!\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the agent includes an auto-closure warning for this new ticket, they position it as a duplicate of an existing escalated ticket and ask the customer to confirm if it can be closed. There is no explicit closure action shown and no evidence the customer is left without an active path to resolution (since the original ticket remains open).",
+    "evidence": [
+      "Carlo Koh (public): \"Otherwise, we can close this new ticket as a duplicate.\"",
+      "Carlo Koh (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer describes the situation as critical with business/legal impact, but the agent indicates the issue is already escalated to the Development team and under investigation, which is consistent with high-severity handling. There is no evidence of prolonged generic troubleshooting in the public replies.",
+    "evidence": [
+      "Customer: \"This situation is slowly becoming critical! We are losing customers and our reputation.\"",
+      "Carlo Koh (public): \"Just to give you an update: The issue has already been escalated to our Development team and they are investigating the problem at this time.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60196360
+}

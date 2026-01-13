@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer explicitly states the AI bot was not helpful and that they had already gone through the suggested steps, indicating poor AI support quality. Additionally, the AI initially anchored on whitelist/blocklist guidance even though the customer\u2019s issue was with Information Store Protection, prompting the customer to correct it.",
+    "evidence": [
+      "Customer (public, 2025-10-31T14:49:23+00:00): \"The BOT AI is not helping\u2026\"",
+      "Customer (public, 2025-10-31T13:50:38+00:00): \"My issues is not with the whitelist but with the Information Store Protection.\"",
+      "Customer (public, 2025-10-31T13:50:38+00:00): \"We been though all these steps already with the AI bot?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although the customer strongly requested a human and expressed frustration about AI, the log does not show 2+ subsequent customer-facing AI responses after that request (there is a long silence, then a human replies). The required strong signal for an AI wall/loop is not met.",
+    "evidence": [
+      "Customer (public, 2025-10-31T14:49:23+00:00): \"So once again, CAN I SPEAK TO A HUMAN\u2026.\"",
+      "Mohammed Amer (public, 2025-11-17T14:17:45+00:00): \"We apologize for the delay on this, I ve escalated it internally for faster resolution.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly states the AI is covering steps they already did and corrects the AI\u2019s focus (whitelist vs Information Store Protection), which indicates the support flow did not properly incorporate the customer\u2019s already-provided context and prior troubleshooting.",
+    "evidence": [
+      "Customer (public, 2025-10-31T13:50:38+00:00): \"My issues is not with the whitelist but with the Information Store Protection.\"",
+      "Customer (public, 2025-10-31T13:50:38+00:00): \"We been though all these steps already with the AI bot?\"",
+      "Customer (public, 2025-11-06T15:51:03+00:00): \"Like I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is clear customer-facing evidence of extended waiting and multiple follow-ups with no timely staff response, followed by an explicit apology for delay. The structured metrics also indicate a very long end-to-end resolution time.",
+    "evidence": [
+      "Customer (public, 2025-11-06T15:49:34+00:00): \"I\u2019ve been waiting for a support representative to reach out..\"",
+      "Customer (public, 2025-11-12T18:21:01+00:00): \"STILL WAITING FOR SUPPORT..\"",
+      "Mohammed Amer (public, 2025-11-17T14:17:45+00:00): \"We apologize for the delay on this\"",
+      "CSV: resolutionTime=2493766"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed in the CSV, the visible conversation does not show the customer objecting to closure or stating an unresolved request at the point of closure. The last customer update indicates the provided build was installed / an update was applied, without a customer-facing statement that the issue remained unresolved when the case was closed.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Customer (private, 2025-11-20T15:46:49+00:00): \"The DEV version that was loaded seemed to be functioning properly... This morning 22.3 appeared as an update and went ahead and installed it.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer did not describe a full outage or explicit critical/P1 severity; they even noted email flow was working. Support ultimately escalated and provided a development build, which is consistent with non-P1 handling.",
+    "evidence": [
+      "Customer (private, 2025-10-29T19:57:36+00:00): \"Email seem to be flowing properly\"",
+      "Arafat Bakhsh (public, 2025-11-18T01:51:19+00:00): \"Our Development Team has prepared a new build that addresses the 'Information Store not accessible' issue\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60231851
+}

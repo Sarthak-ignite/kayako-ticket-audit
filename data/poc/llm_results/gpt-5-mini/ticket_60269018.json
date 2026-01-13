@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses provide a clear conclusion (issue identified as test-triggered) and there is no clear evidence of generic filler, incorrect technical guidance, or unmet promises in the provided logs.",
+    "evidence": [
+      "\"[2025-12-23T08:29:28+00:00] (AI) Cu Chulainn AI Manager: ... We have identified the issue you experienced as a test-triggered incident rather than a true product defect.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information or prevented escalation to a human; interactions show engineering involvement and closure.",
+    "evidence": [
+      "\"[2025-12-23T08:19:46+00:00] (AI) Cu Chulainn AI Manager: ===== Operation Summary ===== GHI created and linked: https://github.com/trilogy-group/eng-maintenance/issues/16301. Ticket p...\"",
+      "\"[2025-12-23T08:19:50+00:00] (AI) Cu Chulainn AI Manager: ...Thank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive fu...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no instance of the support asking the customer to re-submit information or ignoring details the customer provided in the visible logs.",
+    "evidence": [
+      "\"[2025-12-23T08:18:31+00:00] (Customer) Andriy Rybalchenko: \\t* We are unable to download the December patches from the GFI console. We have verified that all network connectivity is function...\"",
+      "\"[2025-12-23T08:29:28+00:00] (AI) Cu Chulainn AI Manager: ... We have identified the issue you experienced as a test-triggered incident rather than a true product defect.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Timestamps show the interactions occurred within a short timeframe (same hour) and metadata reports time to first human = 0.0 hours and max gap 3.4 hours, so no multi-day delays are present.",
+    "evidence": [
+      "\"Time to first human (hours): 0.0\"",
+      "\"[2025-12-23T08:18:31+00:00] (Customer) ...\"",
+      "\"[2025-12-23T08:29:28+00:00] (AI) ...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed with an explicit reason (triggered from a test ticket) and the customer was informed; there is no evidence the customer was awaiting promised follow-up or had explicitly not received resolution.",
+    "evidence": [
+      "\"[2025-12-23T08:19:48+00:00] (AI) CE Maintenance Bot: Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/16301\"",
+      "\"[2025-12-23T08:20:36Z] (Employee) AlterPKC: Triggered from a test ticket. Closing\"",
+      "\"[2025-12-23T08:29:23+00:00] (AI) Cu Chulainn AI Manager: ===== Operation Summary ===== The GHI issue was closed as it was triggered from a test ticket. The customer has been informed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is not marked as high priority in the provided metadata, and there is no evidence of improper generic troubleshooting for a P1/SEV1 outage.",
+    "evidence": [
+      "\"Priority: normal\"",
+      "\"[2025-12-23T08:18:31+00:00] (Customer) Andriy Rybalchenko: \\t* We are unable to download the December patches from the GFI console...\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses provide a clear conclusion (issue identified as test-triggered) and there is no clear evidence of generic filler, incorrect technical guidance, or unmet promises in the provided logs.\",\n    \"evidence\": [\n      \"\\\"[2025-12-23T08:29:28+00:00] (AI) Cu Chulainn AI Manager: ... We have identified the issue you experienced as a test-triggered incident rather than a true product defect.\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information or prevented escalation to a human; interactions show engineering involvement and closure.\",\n    \"evidence\": [\n      \"\\\"[2025-12-23T08:19:46+00:00] (AI) Cu Chulainn AI Manager: ===== Operation Summary ===== GHI created and linked: https://github.com/trilogy-group/eng-maintenance/issues/16301. Ticket p...\\\"\",\n      \"\\\"[2025-12-23T08:19:50+00:00] (AI) Cu Chulainn AI Manager: ...Thank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive fu...\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no instance of the support asking the customer to re-submit information or ignoring details the customer provided in the visible logs.\",\n    \"evidence\": [\n      \"\\\"[2025-12-23T08:18:31+00:00] (Customer) Andriy Rybalchenko: \\\\t* We are unable to download the December patches from the GFI console. We have verified that all network connectivity is function...\\\"\",\n      \"\\\"[2025-12-23T08:29:28+00:00] (AI) Cu Chulainn AI Manager: ... We have identified the issue you experienced as a test-triggered incident rather than a true product defect.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Timestamps show the interactions occurred within a short timeframe (same hour) and metadata reports time to first human = 0.0 hours and max gap 3.4 hours, so no multi-day delays are present.\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 0.0\\\"\",\n      \"\\\"[2025-12-23T08:18:31+00:00] (Customer) ...\\\"\",\n      \"\\\"[2025-12-23T08:29:28+00:00] (AI) ...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed with an explicit reason (triggered from a test ticket) and the customer was informed; there is no evidence the customer was awaiting promised follow-up or had explicitly not received resolution.\",\n    \"evidence\": [\n      \"\\\"[2025-12-23T08:19:48+00:00] (AI) CE Maintenance Bot: Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/16301\\\"\",\n      \"\\\"[2025-12-23T08:20:36Z] (Employee) AlterPKC: Triggered from a test ticket. Closing\\\"\",\n      \"\\\"[2025-12-23T08:29:23+00:00] (AI) Cu Chulainn AI Manager: ===== Operation Summary ===== The GHI issue was closed as it was triggered from a test ticket. The customer has been informed\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is not marked as high priority in the provided metadata, and there is no evidence of improper generic troubleshooting for a P1/SEV1 outage.\",\n    \"evidence\": [\n      \"\\\"Priority: normal\\\"\",\n      \"\\\"[2025-12-23T08:18:31+00:00] (Customer) Andriy Rybalchenko: \\\\t* We are unable to download the December patches from the GFI console...\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60269018
+}

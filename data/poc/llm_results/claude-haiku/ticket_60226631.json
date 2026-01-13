@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are generic and do not provide substantive information about the ticket's progress or resolution.",
+    "evidence": [
+      "[2025-10-23T04:36:35+00:00] JIRA Issue CARESMM-9351 is changed to 'Closed' , block reason: -",
+      "[2025-10-22T10:37:10+00:00] Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer was quickly transferred to a human agent with minimal AI interaction.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support agents do not directly address the recurring nature of the Elasticsearch infrastructure issue mentioned by the customer.",
+    "evidence": [
+      "[2025-10-23T07:56:23+00:00] Jayashree Shetty: 'We have been encountering this issue repeatedly. Please review the history of previously raised tickets'",
+      "[2025-10-22T11:47:54.076+0000] Deniz Yavas: 'please prepare a playbook on how to fix this issue for any further occurences.'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Ticket shows rapid response times with interactions within hours.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed while customer was still experiencing recurring issues with the service.",
+    "evidence": [
+      "[2025-10-23T04:36:06.199+0000] Quang Vo: 'Closing this ticket as the issue was resolved.'",
+      "[2025-10-22T10:26:32+00:00] Manju Srinivasan: 'Issue is happening again now. Can you look into this on priority.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket appears to involve direct technical investigation of Elasticsearch infrastructure without generic troubleshooting.",
+    "evidence": [
+      "[2025-10-22T11:39:07.819+0000] Muhammad Waqar: 'Elasticsearch service was restarted on the following nodes'"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are generic and do not provide substantive information about the ticket's progress or resolution.\",\n    \"evidence\": [\n      \"[2025-10-23T04:36:35+00:00] JIRA Issue CARESMM-9351 is changed to 'Closed' , block reason: -\",\n      \"[2025-10-22T10:37:10+00:00] Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer was quickly transferred to a human agent with minimal AI interaction.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support agents do not directly address the recurring nature of the Elasticsearch infrastructure issue mentioned by the customer.\",\n    \"evidence\": [\n      \"[2025-10-23T07:56:23+00:00] Jayashree Shetty: 'We have been encountering this issue repeatedly. Please review the history of previously raised tickets'\",\n      \"[2025-10-22T11:47:54.076+0000] Deniz Yavas: 'please prepare a playbook on how to fix this issue for any further occurences.'\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket shows rapid response times with interactions within hours.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was closed while customer was still experiencing recurring issues with the service.\",\n    \"evidence\": [\n      \"[2025-10-23T04:36:06.199+0000] Quang Vo: 'Closing this ticket as the issue was resolved.'\",\n      \"[2025-10-22T10:26:32+00:00] Manju Srinivasan: 'Issue is happening again now. Can you look into this on priority.'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket appears to involve direct technical investigation of Elasticsearch infrastructure without generic troubleshooting.\",\n    \"evidence\": [\n      \"[2025-10-22T11:39:07.819+0000] Muhammad Waqar: 'Elasticsearch service was restarted on the following nodes'\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku",
+  "_ticket_id": 60226631
+}

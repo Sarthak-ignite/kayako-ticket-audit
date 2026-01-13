@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Automated/AI actions in the thread show low-quality or inappropriate behaviour: an AI placed the ticket on hold for an implausible duration (9999 hours) and an AI comment changed a JIRA to 'Closed' without documented human RCA completion. There are also terse AI/private messages rather than substantive answers (e.g. placings on hold and forced state changes), which amount to generic or procedural responses rather than helpful investigation.",
+    "evidence": [
+      "Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-285 is changed to 'Closed'",
+      "Employee Aamir Merchant commented privately: The customer insists it was an outage... This will not close without an RCA"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was stuck repeatedly interacting with an AI that kept asking the same questions or preventing escalation to a human. The thread contains multiple human employee comments and engineering investigation items.",
+    "evidence": [
+      "Multiple employee interactions (e.g., caleb015, Byron Trivett, Carlos Encalada, Aamir Merchant) showing human involvement",
+      "No repeated identical AI requests to the customer are present in the transcript"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The log shows engineering reviewed HAR files and asked for more recent conversation examples, and notes about inability to reproduce; there is no clear instance of support repeatedly asking for the exact same logs or otherwise ignoring information the customer already provided.",
+    "evidence": [
+      "caleb015: \"...looking at the HAR file, this seem to be coming from the agent-side...\"",
+      "jw4kh: \"Customer has provided a more complete .har file and I have attached it here; still awaiting more recent conversation examples\"",
+      "caleb015: \"Unable to recreate the issue from provided steps\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The interaction timestamps span multiple weeks and show gaps of several days between responses and actions, indicating significant delays in communication and follow-up.",
+    "evidence": [
+      "Interactions dated from 2025-08-19 through 2025-09-03 (multiple days/weeks span)",
+      "Examples: 2025-08-19T19:22:23Z (jw4kh) then 2025-08-20T07:56:40Z (caleb015) then later 2025-08-22 and 2025-08-25 and up to 2025-09-03"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "A JIRA issue was changed to 'Closed' by an AI while the customer and internal staff explicitly indicated an RCA was still required and the customer insisted the incident was an outage. Closing while RCA was requested suggests premature closure.",
+    "evidence": [
+      "Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-285 is changed to 'Closed'",
+      "Aamir Merchant: \"The customer insists it was an outage... This will not close without an RCA\"",
+      "Carlos Encalada: \"Despite this not being classified as an outage, an RCA has been requested.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer and internal messages indicate a Showstopper / high-impact incident where the customer demanded an RCA, yet the issue was treated as not a Sev-1/outage, engineering could not reproduce, and an RCA was not provided. The handling appears to downplay the customer's severity and relies on standard triage rather than clear expedited escalation or a delivered RCA.",
+    "evidence": [
+      "Byron Trivett: \"given the Showstopper classification, the customer is demanding an RCA. When will this be provided, please?\"",
+      "Balaji Jayaraman: \"This is not a Sev-1 per https://khoros.com/service-level-agreement We also state we provide RCA for Outages in 7 days of asking.\"",
+      "Aamir Merchant: \"The customer insists it was an outage for them... This will not close without an RCA\"",
+      "caleb015: \"Unable to recreate the issue from provided steps\" and later JIRA closed"
+    ]
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60164071
+}

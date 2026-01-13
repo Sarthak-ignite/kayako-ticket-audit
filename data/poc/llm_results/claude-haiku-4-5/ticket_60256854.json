@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient interaction data to assess quality. Only a single AI comment referencing a conversation record is present, with no actual support content or responses.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of looping behavior. Only one AI interaction visible, which appears to be a follow-up summary comment rather than an active support conversation.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Cannot assess context handling with incomplete ticket data. The interaction shows only a final comment summarizing a prior conversation, not the actual support exchange.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, indicating no delays between interactions in the visible timeline.",
+    "evidence": [
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is closed but no evidence of unresolved customer needs or broken promises. The single visible interaction is a summary/archive comment with no pending customer request.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is marked as normal priority, not P1/SEV1. This pattern does not apply to this ticket.",
+    "evidence": [
+      "Priority: normal"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction data to assess quality. Only a single AI comment referencing a conversation record is present, with no actual support content or responses.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of looping behavior. Only one AI interaction visible, which appears to be a follow-up summary comment rather than an active support conversation.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot assess context handling with incomplete ticket data. The interaction shows only a final comment summarizing a prior conversation, not the actual support exchange.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, indicating no delays between interactions in the visible timeline.\",\n    \"evidence\": [\n      \"Max gap between responses (hours): 0.0\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is closed but no evidence of unresolved customer needs or broken promises. The single visible interaction is a summary/archive comment with no pending customer request.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is marked as normal priority, not P1/SEV1. This pattern does not apply to this ticket.\",\n    \"evidence\": [\n      \"Priority: normal\"\n    ]\n  }\n}\n```\n\n**Note**: This ticket analysis is severely limited by incomplete data. Only the final AI summary comment is visible in the provided interaction timeline. The actual support conversation referenced (\"Thanks for chatting earlier\") is not included, making a thorough quality assessment impossible. To properly evaluate this ticket, the full conversation history would be needed.",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60256854
+}

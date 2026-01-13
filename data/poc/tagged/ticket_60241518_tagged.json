@@ -1,0 +1,262 @@
+[
+  {
+    "index": 0,
+    "actor_name": "Phronesis",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-12-17 15:02:30",
+    "timestamp_str": "2025-12-17T15:02:30+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Phronesis commented publicly: Dear Jozef,\n\nThank you for your update; we are closing this ticket as requested.\n\nIf you have any further questions or encounter any other ",
+    "text_length": 338
+  },
+  {
+    "index": 1,
+    "actor_name": "Jozef Kacala",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-12-17 15:02:18",
+    "timestamp_str": "2025-12-17T15:02:18+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Jozef Kacala commented publicly: thanks, we can close this ticket\n\n\n",
+    "text_length": 99
+  },
+  {
+    "index": 2,
+    "actor_name": "Cu Chulainn AI Manager",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-12-16 11:23:02",
+    "timestamp_str": "2025-12-16T11:23:02+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Cu Chulainn AI Manager commented publicly: Dear Jozef,\n\nWe are pleased to inform you that our Development Team has successfully addressed the issue concerning the GFI Ap",
+    "text_length": 819
+  },
+  {
+    "index": 3,
+    "actor_name": "Cu Chulainn AI Manager",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-12-16 11:22:56",
+    "timestamp_str": "2025-12-16T11:22:56+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Process follow-up: 1) Retrieved DS for Escalated Issue (only GHI!) field value: https://gith",
+    "text_length": 1025
+  },
+  {
+    "index": 4,
+    "actor_name": "Cu Chulainn AI Manager",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-12-16 11:21:10",
+    "timestamp_str": "2025-12-16T11:21:10+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Cu Chulainn AI Manager commented privately: <CC Log>\n\nPackage URL: https://cs.cu-chulainn.csaiautomations.com/marketplace/packages/edit/PACKAGE-7f2d168a-c392-4bbe-806b-1",
+    "text_length": 638
+  },
+  {
+    "index": 5,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-12-16 11:20:41",
+    "timestamp_str": "2025-12-16T11:20:41Z",
+    "text_preview": "GHI Engineering - 15824 // trilogy-taro[bot] removed_from_project_v2",
+    "text_length": 68
+  },
+  {
+    "index": 6,
+    "actor_name": "trilogy-taro[bot]",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-12-16 11:19:18",
+    "timestamp_str": "2025-12-16T11:19:18Z",
+    "text_preview": "GHI Engineering - 15824 // trilogy-taro[bot] commented: > #taro-issue-summary\n\nThe customer facing defect involves GFI AppManager agent files continuously accumulating in the /var partition on Exinda ",
+    "text_length": 1024
+  },
+  {
+    "index": 7,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-12-16 11:18:29",
+    "timestamp_str": "2025-12-16T11:18:29Z",
+    "text_preview": "GHI Engineering - 15824 // github-project-automation[bot] project_v2_item_status_changed",
+    "text_length": 88
+  },
+  {
+    "index": 8,
+    "actor_name": "anujkumar-df",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-12-16 11:18:27",
+    "timestamp_str": "2025-12-16T11:18:27Z",
+    "text_preview": "GHI Engineering - 15824 // anujkumar-df commented: We have made fixes in the agent, so no temporary files remain after the installation. The fixed agent will be released next weekend. No changes in ex",
+    "text_length": 218
+  },
+  {
+    "index": 9,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-12-10 15:48:27",
+    "timestamp_str": "2025-12-10T15:48:27Z",
+    "text_preview": "GHI Engineering - 15824 // daniel-wachira unassigned",
+    "text_length": 52
+  },
+  {
+    "index": 10,
+    "actor_name": "daniel-wachira",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-12-02 19:55:04",
+    "timestamp_str": "2025-12-02T19:55:04Z",
+    "text_preview": "GHI Engineering - 15824 // daniel-wachira commented: ### RCA\nThe temp directory is created but not removed correctly using a defered operation. This means if anything goes wrong after the download, it",
+    "text_length": 717
+  },
+  {
+    "index": 11,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-12-02 13:13:52",
+    "timestamp_str": "2025-12-02T13:13:52Z",
+    "text_preview": "GHI Engineering - 15824 // daniel-wachira project_v2_item_status_changed",
+    "text_length": 72
+  },
+  {
+    "index": 12,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-12-02 13:13:45",
+    "timestamp_str": "2025-12-02T13:13:45Z",
+    "text_preview": "GHI Engineering - 15824 // daniel-wachira assigned to daniel-wachira",
+    "text_length": 68
+  },
+  {
+    "index": 13,
+    "actor_name": "trilogy-taro[bot]",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 14:59:35",
+    "timestamp_str": "2025-11-30T14:59:35Z",
+    "text_preview": "GHI Engineering - 15824 // trilogy-taro[bot] commented: # Engineering Issue Bot\n\n## Resolution Summary\n\nI've successfully analyzed and implemented a fix for the GFI AppManager agent directory accumula",
+    "text_length": 6882
+  },
+  {
+    "index": 14,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 14:53:38",
+    "timestamp_str": "2025-11-30T14:53:38+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+    "text_length": 106
+  },
+  {
+    "index": 15,
+    "actor_name": "Randall Shawver",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 14:53:32",
+    "timestamp_str": "2025-11-30T14:53:32+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Randall Shawver commented publicly: Dear Jozef,\n\nThank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review. We will inf",
+    "text_length": 306
+  },
+  {
+    "index": 16,
+    "actor_name": "Randall Shawver",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 14:53:00",
+    "timestamp_str": "2025-11-30T14:53:00+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Randall Shawver commented privately:  What is your proposed action?\n(required: select one, delete the rest) \n\n \t* Send to external team\n\n ===============================",
+    "text_length": 1983
+  },
+  {
+    "index": 17,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 14:52:38",
+    "timestamp_str": "2025-11-30T14:52:38Z",
+    "text_preview": "GHI Engineering - 15824 // github-project-automation[bot] project_v2_item_status_changed",
+    "text_length": 88
+  },
+  {
+    "index": 18,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 14:52:36",
+    "timestamp_str": "2025-11-30T14:52:36Z",
+    "text_preview": "GHI Engineering - 15824 // trilogy-taro[bot] added_to_project_v2",
+    "text_length": 64
+  },
+  {
+    "index": 19,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 14:52:31",
+    "timestamp_str": "2025-11-30T14:52:31Z",
+    "text_preview": "GHI Engineering - 15824 // trilogy-taro[bot] labeled as Product:Exinda Network Orchestrator",
+    "text_length": 91
+  },
+  {
+    "index": 20,
+    "actor_name": "CE Maintenance Bot",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 14:52:29",
+    "timestamp_str": "2025-11-30T14:52:29+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // CE Maintenance Bot commented privately: Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15824",
+    "text_length": 157
+  },
+  {
+    "index": 21,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 14:52:10",
+    "timestamp_str": "2025-11-30T14:52:10Z",
+    "text_preview": "GHI Engineering - 15824 // rshawver labeled as Eng-Maintenance",
+    "text_length": 62
+  },
+  {
+    "index": 22,
+    "actor_name": "Jozef Kacala",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-12 19:07:57",
+    "timestamp_str": "2025-11-12T19:07:57+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Jozef Kacala commented publicly: please pass this to engineering \n\n\n",
+    "text_length": 99
+  },
+  {
+    "index": 23,
+    "actor_name": "Cu Chulainn AI Manager",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-12 15:25:04",
+    "timestamp_str": "2025-11-12T15:25:04+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\nThe process has failed and andon cord has been pulled for the following reason:\n\n**Requester 'j",
+    "text_length": 406
+  },
+  {
+    "index": 24,
+    "actor_name": "Cu Chulainn AI Manager",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-12 15:24:42",
+    "timestamp_str": "2025-11-12T15:24:42+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https:",
+    "text_length": 470
+  },
+  {
+    "index": 25,
+    "actor_name": "Jozef Kacala",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-12 15:24:17",
+    "timestamp_str": "2025-11-12T15:24:17+00:00",
+    "text_preview": "Kayako - ticket id 60241518 // Jozef Kacala commented publicly: Hi team,\n\nAs seen on the screenshot, GFI App Manager agents are piling up in the Exinda var folder. As a result, they will occupy too mu",
+    "text_length": 329
+  }
+]

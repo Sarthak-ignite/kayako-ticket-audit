@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There are signs of low-quality automated/templated handling, including an extreme \u201chold\u201d action and generic assurances without follow-through on the customer\u2019s explicit request for a prioritized root-cause investigation. While not all content is explicitly AI-generated, CentralSupport automation (ai-acc/ATLAS) appears involved and contributed to a suboptimal experience.",
+    "evidence": [
+      "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "Customer: \"Please prioritize this and investigate the root cause to ensure it is properly addressed and prevented in the future.\"",
+      "Pavly Nashed: \"...escalated to our infrastructure team with the highest priority, and we will let you know once we receive further feedback from them.\"",
+      "Balaji Jayaraman: \"Service recovered once that load subsided... We\u2019re strengthening monitoring and controls... to prevent recurrence.\" (no concrete RCA/fix confirmation beyond generalities)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to reach a human via the outage phone line and received human-authored updates; there is no indication they were stuck in an AI loop or repeatedly blocked from a human agent.",
+    "evidence": [
+      "Customer: \"I called the Outage Phone Line: +1 347-282-2200 and spoke to Deebanshu; he informed that the ticket is being escalated.\"",
+      "Deepanshu Dewan: \"As discussed, your ticket has been assigned to an agent.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly reported recurring incidents and asked whether the fix would prevent recurrence; responses acknowledged impact but did not directly confirm whether a specific corrective action was implemented to stop recurrence or reference prior ticket history. This suggests partial non-engagement with the context/request (even if some explanation was provided).",
+    "evidence": [
+      "Jayashree Shetty: \"We have been encountering this issue repeatedly. Please review the history of previously raised tickets for reference.\"",
+      "Jayashree Shetty: \"Kindly confirm whether the fix you have implemented will prevent this issue from recurring in the future.\"",
+      "Balaji Jayaraman: \"We\u2019re strengthening monitoring and controls... to prevent recurrence.\" (does not clearly confirm what fix was implemented to prevent recurrence)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured metrics indicate a long initial response time and very long resolution duration, which is consistent with meaningful delay risk even if some early updates were posted. Additionally, the ticket lifecycle shows it remained open/closed over an extended period relative to the incident.",
+    "evidence": [
+      "CSV: initialResponseTime=442",
+      "CSV: resolutionTime=689157",
+      "CSV: Ticket Created=2025-10-22 10:13:05",
+      "CSV: Ticket Closed=2025-11-02 10:36:14"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support stated the ticket would remain open for a week unless the customer replied with explicit closure consent, implying an auto-close mechanism. The ticket ultimately shows as closed without any explicit customer confirmation to close after their last concern about recurrence, so premature/automatic closure is plausible.",
+    "evidence": [
+      "Balaji Jayaraman: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-02 10:36:14",
+      "Jayashree Shetty: \"Kindly confirm whether the fix you have implemented will prevent this issue from recurring in the future.\" (ongoing concern prior to closure)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The reported symptoms describe a production-impacting outage (unable to claim chats; long delays in new chats) and recurrence. Although escalation occurred and service was restored, the handling shows potential severity-management gaps (e.g., reliance on restart, unclear RCA, extreme hold action), indicating possible P1/Sev1 process weaknesses.",
+    "evidence": [
+      "Customer: \"We are unable to view or claim any new incoming chats in Khoros Care Production.\"",
+      "Customer: \"new chats ... are taking over 10 minutes to appear in the queue.\"",
+      "Customer: \"Issue is happening again now. Can you look into this on priority.\"",
+      "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "SaaS Jira (Quang Vo): \"Closing this ticket as the issue was resolved... restart the ES service\" (suggests a tactical restart-based remediation vs. clear corrective action)"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60226631
+}

@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS gave a largely templated response with minimal actionable guidance, incorrectly/weakly deflecting to the status page, and the customer explicitly challenged the usefulness/accuracy of that direction.",
+    "evidence": [
+      "\u201cThank you for reaching out and providing detailed information\u2026\u201d",
+      "\u201cBased on your description and our current knowledge, this is a known display issue\u2026\u201d",
+      "\u201cFor the latest updates and information regarding this situation, we recommend following our status page at https://status.gfi.com/.\u201d",
+      "Customer: \u201cyou stated it is known issue so I am expecting resolution or steps to follow to resolve.\u201d",
+      "Customer: \u201calso, Atlas should know if this incident is not on status.gfi.com it pointless to refer to this.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer expressed frustration after an AI response that didn\u2019t provide next steps, indicating they were stuck without a clear path to resolution until later human engagement.",
+    "evidence": [
+      "Customer: \u201cand what should I reply? you stated it is known issue so I am expecting resolution or steps to follow to resolve.\u201d",
+      "Customer: \u201cAtlas should know if this incident is not on status.gfi.com it pointless to refer to this.\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support acknowledged the video/evidence but did not engage with the specifics (metrics delayed ~3 hours, flagged offline for days) and instead answered generically as a \u2018known display issue,\u2019 missing the core context about delayed ingestion/metrics.",
+    "evidence": [
+      "Customer: \u201cMetrics are also present but 3 hours back. The unit has been flagged as offline by AppManager for days. Please also review the video with evidence.\u201d",
+      "ATLAS: \u201cthis is a known display issue impacting status visibility\u2026 While the unit appears offline\u2026 it continues to function correctly\u201d",
+      "Garima: \u201cAs you mentioned metrics were absent for past 3 hours, thats the reason it was showing offline. So,  the problem here actually is why were the metrics not sent or not synced.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple multi-day gaps between customer messages and support responses, and the customer explicitly complained about the long response time.",
+    "evidence": [
+      "Customer message: [2025-09-22T10:16:14+00:00] \u2192 Support reply: [2025-09-29T23:39:40+00:00]",
+      "Customer: \u201c23 days response time is not great.\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed despite the underlying issue not being resolved (support stated there is nothing to do but wait for a future re-architecture), which is effectively closure without a fix or confirmed resolution.",
+    "evidence": [
+      "Support: \u201cThere isn't anything we can do atm, just wait for TPM to work on the spec and then Engineering to implement it.\u201d",
+      "Support: \u201cI will close this ticket then, as there are no actions left on the Support team side at the moment.\u201d",
+      "Customer earlier: \u201ccan we ensure it will be stable? what else is influencing status update?\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This appears to be a recurring, platform/architecture-level monitoring-status defect affecting customer visibility, yet escalation and meaningful engineering engagement happened very late; the handling relied on generic messaging rather than timely escalation and mitigation.",
+    "evidence": [
+      "Customer: \u201cThe unit has been flagged as offline by AppManager for days.\u201d",
+      "Customer: \u201cother aspect is that this is frequent problem.\u201d",
+      "Engineering summary: \u201cUnits incorrectly reported as offline despite GFI Agent being operational\u201d",
+      "Engineering: \u201cThis has been a known issue in the current architecture\u2026\u201d",
+      "Customer: \u201c23 days response time is not great.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60201836
+}

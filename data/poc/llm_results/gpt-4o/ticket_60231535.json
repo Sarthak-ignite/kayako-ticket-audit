@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response appears to provide irrelevant information, adding limited value to the customer's inquiry.",
+    "evidence": [
+      "[2025-10-29T14:10:49+00:00] (AI) ATLAS: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in a loop with AI or repetitive information requests.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI does not address the customer's mention of uploading the complete conversation, which may imply it did not consider the customer's prior input.",
+    "evidence": [
+      "[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no significant gaps between customer and AI interactions provided in the timeline.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence suggesting the ticket was closed prematurely or the customer was awaiting further information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence available regarding troubleshooting steps that indicate mishandling for a high-priority ticket.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response appears to provide irrelevant information, adding limited value to the customer's inquiry.\",\n    \"evidence\": [\"[2025-10-29T14:10:49+00:00] (AI) ATLAS: Component could not be determined\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in a loop with AI or repetitive information requests.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI does not address the customer's mention of uploading the complete conversation, which may imply it did not consider the customer's prior input.\",\n    \"evidence\": [\"[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no significant gaps between customer and AI interactions provided in the timeline.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence suggesting the ticket was closed prematurely or the customer was awaiting further information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence available regarding troubleshooting steps that indicate mishandling for a high-priority ticket.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60231535
+}

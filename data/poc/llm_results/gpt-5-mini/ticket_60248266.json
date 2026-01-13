@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI messages are present but there is no clear evidence in the transcript of generic filler, incorrect information, or unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear indication the AI repeatedly requested the same information or prevented escalation to a human \u2014 a human agent eventually responded.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The agent referenced the customer's approval and indicated they would add it to the main ticket; there is no explicit instance of asking for already-provided information or ignoring past ticket references.",
+    "evidence": [
+      "2025-11-25T07:43:00+00:00 (Employee) Matthew Mrosko: \"Thank you for letting us know that you have received approval. We will add this to the main ticket and share the licen\"",
+      "2025-11-24T21:50:52+00:00 (Customer) Fredrik Scheike: \"Hi team, this is approved by the BU - please execute!\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps before a human agent responded and metrics show long delays.",
+    "evidence": [
+      "Ticket metadata: \"Time to first human (hours): 88.8\", \"Max gap between responses (hours): 79.0\"",
+      "2025-11-21T14:52:03+00:00 (AI) ATLAS: AI-generated entries present, but the first human response appears later on 2025-11-25T07:42:16+00:00 (Employee) Matthew Mrosko"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, the transcript does not clearly show the ticket being closed while the customer was still waiting or that the customer abandoned the request \u2014 no explicit closure message or customer follow-up indicating unresolved work is present.",
+    "evidence": [
+      "Ticket Context: \"Status: closed\"",
+      "2025-11-24T21:50:52+00:00 (Customer) Fredrik Scheike: \"Hi team, this is approved by the BU - please execute!\"",
+      "2025-11-25T07:42:16+00:00 (Employee) Matthew Mrosko (private): \"Picked this up manually as it's rather urgent. Now I see that this is a duplicate of the main request (where I already generated t\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence this was a P1/SEV1 outage nor that only generic troubleshooting steps were provided instead of escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI messages are present but there is no clear evidence in the transcript of generic filler, incorrect information, or unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear indication the AI repeatedly requested the same information or prevented escalation to a human \u2014 a human agent eventually responded.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The agent referenced the customer's approval and indicated they would add it to the main ticket; there is no explicit instance of asking for already-provided information or ignoring past ticket references.\",\n    \"evidence\": [\n      \"2025-11-25T07:43:00+00:00 (Employee) Matthew Mrosko: \\\"Thank you for letting us know that you have received approval. We will add this to the main ticket and share the licen\\\"\",\n      \"2025-11-24T21:50:52+00:00 (Customer) Fredrik Scheike: \\\"Hi team, this is approved by the BU - please execute!\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps before a human agent responded and metrics show long delays.\",\n    \"evidence\": [\n      \"Ticket metadata: \\\"Time to first human (hours): 88.8\\\", \\\"Max gap between responses (hours): 79.0\\\"\",\n      \"2025-11-21T14:52:03+00:00 (AI) ATLAS: AI-generated entries present, but the first human response appears later on 2025-11-25T07:42:16+00:00 (Employee) Matthew Mrosko\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, the transcript does not clearly show the ticket being closed while the customer was still waiting or that the customer abandoned the request \u2014 no explicit closure message or customer follow-up indicating unresolved work is present.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Status: closed\\\"\",\n      \"2025-11-24T21:50:52+00:00 (Customer) Fredrik Scheike: \\\"Hi team, this is approved by the BU - please execute!\\\"\",\n      \"2025-11-25T07:42:16+00:00 (Employee) Matthew Mrosko (private): \\\"Picked this up manually as it's rather urgent. Now I see that this is a duplicate of the main request (where I already generated t\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence this was a P1/SEV1 outage nor that only generic troubleshooting steps were provided instead of escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60248266
+}

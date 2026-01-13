@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The interaction appears to be an auto-generated response that provides no actual support content and seems like a placeholder or system-generated message.",
+    "evidence": [
+      "[2025-12-16T11:13:24+00:00] Kayako - ticket id 60264386 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient information to determine AI wall looping, as only a single system message is present.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No context is provided to suggest context was ignored, as the interaction appears incomplete.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Cannot determine response delays with the limited interaction information available.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears to be closed without any meaningful customer support interaction, with only a generic AI-generated message.",
+    "evidence": [
+      "Status: closed",
+      "Time to first human (hours): nan"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is marked as low priority, so P1/Sev1 mishandling is not applicable.",
+    "evidence": [
+      "Priority: low"
+    ]
+  },
+  "_raw_response": "Based on the provided ticket information, here's the analysis:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The interaction appears to be an auto-generated response that provides no actual support content and seems like a placeholder or system-generated message.\",\n    \"evidence\": [\"[2025-12-16T11:13:24+00:00] Kayako - ticket id 60264386 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to determine AI wall looping, as only a single system message is present.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No context is provided to suggest context was ignored, as the interaction appears incomplete.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine response delays with the limited interaction information available.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket appears to be closed without any meaningful customer support interaction, with only a generic AI-generated message.\",\n    \"evidence\": [\"Status: closed\", \"Time to first human (hours): nan\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is marked as low priority, so P1/Sev1 mishandling is not applicable.\",\n    \"evidence\": [\"Priority: low\"]\n  }\n}\n```\n\nKey observations:\n- The ticket seems to be an incomplete or improperly handled support interaction\n- There's a generic AI response with no actual support content\n- The ticket is closed without apparent resolution\n- Minimal context is provided, making a comprehensive analysis challenging",
+  "_model": "claude-haiku",
+  "_ticket_id": 60264386
+}

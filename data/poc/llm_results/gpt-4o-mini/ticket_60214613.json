@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no clear instances of AI responses being generic or making unfulfilled promises in this interaction.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to communicate with human agents and didn't have an experience of being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asked the customer for information they had already provided, such as the Salesforce opportunity link and specific error details.",
+    "evidence": [
+      "[2025-10-06T15:26:57+00:00] (Employee) Shaquille De Lancy: Following up after 60214607. Florida Department of Health exists under 104983 already. Is this the same customer or different",
+      "[2025-10-10T08:08:29+00:00] (Employee) Raymond Guirguis: If the customer is using a new admin email (which i assume their admin needs to add it to SS portal under their company), then we"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays between responses, with a maximum gap of 25.5 hours observed without a meaningful update.",
+    "evidence": [
+      "[2025-10-10T13:42:53+00:00] (Customer) Andrew Mugisha: Hi Alexandr, The issue persists. The customer's email is Daniel.Soler@flhealth.gov",
+      "[2025-10-11T12:22:00+00:00] (Employee) Raymond Guirguis: Dear Andrew, Thank you for your continued patience."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while the customer was still expressing that the issue persisted and had not been fully resolved.",
+    "evidence": [
+      "[2025-10-10T13:42:53+00:00] (Customer) Andrew Mugisha: The issue persists. The customer's email is Daniel.Soler@flhealth.gov",
+      "[2025-10-11T12:08:50+00:00] (Employee) Raymond Guirguis: This is resolved and deployed now"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the issue was urgent, the interactions do not specifically demonstrate generic troubleshooting without proper escalation for a severity 1 issue.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no clear instances of AI responses being generic or making unfulfilled promises in this interaction.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer was able to communicate with human agents and didn't have an experience of being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support asked the customer for information they had already provided, such as the Salesforce opportunity link and specific error details.\",\n    \"evidence\": [\n      \"[2025-10-06T15:26:57+00:00] (Employee) Shaquille De Lancy: Following up after 60214607. Florida Department of Health exists under 104983 already. Is this the same customer or different\",\n      \"[2025-10-10T08:08:29+00:00] (Employee) Raymond Guirguis: If the customer is using a new admin email (which i assume their admin needs to add it to SS portal under their company), then we\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays between responses, with a maximum gap of 25.5 hours observed without a meaningful update.\",\n    \"evidence\": [\n      \"[2025-10-10T13:42:53+00:00] (Customer) Andrew Mugisha: Hi Alexandr, The issue persists. The customer's email is Daniel.Soler@flhealth.gov\",\n      \"[2025-10-11T12:22:00+00:00] (Employee) Raymond Guirguis: Dear Andrew, Thank you for your continued patience.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while the customer was still expressing that the issue persisted and had not been fully resolved.\",\n    \"evidence\": [\n      \"[2025-10-10T13:42:53+00:00] (Customer) Andrew Mugisha: The issue persists. The customer's email is Daniel.Soler@flhealth.gov\",\n      \"[2025-10-11T12:08:50+00:00] (Employee) Raymond Guirguis: This is resolved and deployed now\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the issue was urgent, the interactions do not specifically demonstrate generic troubleshooting without proper escalation for a severity 1 issue.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60214613
+}

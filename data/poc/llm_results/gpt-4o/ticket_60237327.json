@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The response from the AI is a generic message thanking the customer without addressing any specific issue.",
+    "evidence": [
+      "[2025-11-06T11:06:38+00:00] (AI) ATLAS: Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repetitive requests for the same information or customers unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no prior entries in the timeline indicating that customer information was ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The provided interactions do not show any delay between responses.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed without providing further action or resolution details.",
+    "evidence": [
+      "[2025-11-06T11:06:38+00:00] (AI) ATLAS: Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket was not classified as high priority or involving an outage, so no evidence of mishandling in this category.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The response from the AI is a generic message thanking the customer without addressing any specific issue.\",\n    \"evidence\": [\"[2025-11-06T11:06:38+00:00] (AI) ATLAS: Here is a record of your conversation for easy reference:\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repetitive requests for the same information or customers unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no prior entries in the timeline indicating that customer information was ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided interactions do not show any delay between responses.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed without providing further action or resolution details.\",\n    \"evidence\": [\"[2025-11-06T11:06:38+00:00] (AI) ATLAS: Here is a record of your conversation for easy reference:\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was not classified as high priority or involving an outage, so no evidence of mishandling in this category.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60237327
+}

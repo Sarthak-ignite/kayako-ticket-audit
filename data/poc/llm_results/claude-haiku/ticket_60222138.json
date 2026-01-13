@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No AI interaction is visible in the provided ticket snippet.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient context to determine AI interaction or looping.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Only one customer message is present, with no support response to analyze.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multiple interactions are shown to assess response timing.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket status is closed, but insufficient context is provided to determine if closure was premature.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, and no specific technical issue is described.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the limited interaction provided, here's the analysis:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No AI interaction is visible in the provided ticket snippet.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient context to determine AI interaction or looping.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one customer message is present, with no support response to analyze.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No multiple interactions are shown to assess response timing.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket status is closed, but insufficient context is provided to determine if closure was premature.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, and no specific technical issue is described.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket contains only one customer message requesting ticket reopening\n- No support responses are visible\n- Insufficient context to definitively assess any quality issues\n- More interaction details would be needed for a comprehensive analysis",
+  "_model": "claude-haiku",
+  "_ticket_id": 60222138
+}

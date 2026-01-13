@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS chat appears to follow a generic triage/template flow (license-key gating and button prompts) and does not provide any issue-specific troubleshooting for the deployment timeout problem before routing to L1.",
+    "evidence": [
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d",
+      "\u201cWhile not mandatory, it may be useful for troubleshooting if you provide me with the GFI LanGuard license key for which you are contacting us.\u201d",
+      "\u201cPlease select the option that applies below \ud83d\udc47\u201d",
+      "\u201cKayako - ticket id 60252140 // ATLAS commented privately: Action: l1\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer is not trapped in an AI-only loop; multiple human agents respond and the customer is able to request actions (logs review, remote session) directly with humans.",
+    "evidence": [
+      "\u201cKayako - ticket id 60252140 // Randall Shawver commented publicly: Dear Jonard,\u201d",
+      "\u201cKayako - ticket id 60252140 // Keyur Saxena commented publicly: Hello Jonard,\u201d",
+      "\u201cKayako - ticket id 60252140 // Andriy Rybalchenko commented publicly: Dear Jonard,\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeats/duplicates instructions and continues requesting additional/fresh logs despite the customer stating they already uploaded logs and provided prior data; there is also an outright duplicate public reply posted twice, indicating poor context handling.",
+    "evidence": [
+      "Duplicate reply posted twice by the same agent: \u201cKayako - ticket id 60252140 // Randall Shawver commented publicly: Dear Jonard, ...\u201d (appears twice at 2025-11-28T19:18:37 and 2025-11-28T19:19:08)",
+      "Customer already provided logs: \u201cHi, I\u2019ve already uploaded the logs to the FTP folder. Kindly check them.\u201d",
+      "Customer indicates repeated logging requests: \u201cHI, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible\u201d",
+      "Support still asks for another fresh set: \u201cEven though logs were shared before, we do need a scan results + fresh set after the previous log files were deleted to eliminate noise\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple multi-day gaps where the customer follows up due to lack of response (e.g., logs uploaded on Dec 3, then follow-ups on Dec 5 and Dec 10 before a substantive response; another gap after Dec 11 log submission until Dec 15).",
+    "evidence": [
+      "Customer uploads logs: \u201cHi, I\u2019ve already uploaded the logs to the FTP folder. Kindly check them.\u201d (2025-12-03)",
+      "Customer follow-up: \u201cHi is there any updates for this?\u201d (2025-12-05)",
+      "Customer follow-up again: \u201cHello, good day i just want to follow up this ticket\u201d (2025-12-10)",
+      "Customer provides/mentions PatchAgent log then waits: \u201cHi Keyur, kindly check the patch agent log\u201d (2025-12-11)",
+      "Customer follow-up: \u201cHi, any update on this.\u201d (2025-12-15)",
+      "Support acknowledges delay: \u201cApologies for the delayed response here.\u201d (2025-12-10)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows auto-closure warnings (\u201cstay open for one week\u2026\u201d) but there is no evidence the ticket was actually closed while the customer awaited an answer within the provided timeline.",
+    "evidence": [
+      "\u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue is impactful (timeouts/auto-remediation problems), but the customer never labels it as critical/outage/urgent/SEV1 and there is no explicit statement of production-down or broad business outage requiring P1 handling.",
+    "evidence": [
+      "\u201cGFI LanGuard deployment timeout for large package\u201d",
+      "\u201cJust to add, the auto-remediation is not working as well.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60252140
+}

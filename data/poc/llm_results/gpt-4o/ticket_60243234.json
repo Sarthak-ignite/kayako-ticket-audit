@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response appears to be generic and does not address any specific issue the customer might have had.",
+    "evidence": [
+      "2025-11-14T12:23:22+00:00 - Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the AI repeatedly asking for the same information or preventing the customer from reaching a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that the AI ignored any prior information provided by the customer, as no specific information was mentioned.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no significant delays between interactions as evidenced by a 'Max gap between responses' of 0.0 hours.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not seem to have been closed prematurely as there is no mention of an outstanding issue.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is not high-priority or an outage ticket since its priority is listed as 'low'.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response appears to be generic and does not address any specific issue the customer might have had.\",\n    \"evidence\": [\"2025-11-14T12:23:22+00:00 - Here is a record of your conversation for easy reference:\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the AI repeatedly asking for the same information or preventing the customer from reaching a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the AI ignored any prior information provided by the customer, as no specific information was mentioned.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no significant delays between interactions as evidenced by a 'Max gap between responses' of 0.0 hours.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not seem to have been closed prematurely as there is no mention of an outstanding issue.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is not high-priority or an outage ticket since its priority is listed as 'low'.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60243234
+}

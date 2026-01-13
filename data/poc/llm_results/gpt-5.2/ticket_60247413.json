@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible content is a meta note stating that a conversation record follows, but the actual AI conversation content is not present, so quality (generic/wrong/unkept promises) cannot be evaluated.",
+    "evidence": [
+      "[2025-11-20T14:02:32+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no back-and-forth interaction shown where the AI repeatedly asks for the same information or blocks access to a human; only a single AI private comment is visible.",
+    "evidence": [
+      "[2025-11-20T14:02:32+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer-provided context, logs, or prior-ticket references are shown in the timeline, so there is no evidence of support ignoring or re-requesting already-provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline contains only one timestamped entry, so there is no evidence of multi-day gaps between interactions.",
+    "evidence": [
+      "[2025-11-20T14:02:32+00:00] (AI) ATLAS: \"Kayako - ticket id 60247413 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is listed as closed, the interaction history shown does not include any customer messages, pending promises, or closure message indicating the customer was waiting for more information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/Sev1), and there is no troubleshooting content shown to assess mishandling of a high-severity outage.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only visible content is a meta note stating that a conversation record follows, but the actual AI conversation content is not present, so quality (generic/wrong/unkept promises) cannot be evaluated.\",\n    \"evidence\": [\n      \"[2025-11-20T14:02:32+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no back-and-forth interaction shown where the AI repeatedly asks for the same information or blocks access to a human; only a single AI private comment is visible.\",\n    \"evidence\": [\n      \"[2025-11-20T14:02:32+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer-provided context, logs, or prior-ticket references are shown in the timeline, so there is no evidence of support ignoring or re-requesting already-provided information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline contains only one timestamped entry, so there is no evidence of multi-day gaps between interactions.\",\n    \"evidence\": [\n      \"[2025-11-20T14:02:32+00:00] (AI) ATLAS: \\\"Kayako - ticket id 60247413 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is listed as closed, the interaction history shown does not include any customer messages, pending promises, or closure message indicating the customer was waiting for more information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/Sev1), and there is no troubleshooting content shown to assess mishandling of a high-severity outage.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60247413
+}

@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The public ATLAS replies provide plausibly relevant troubleshooting steps (patch DB presence, connectivity, permissions, forced updates). There is no customer-facing statement that the AI guidance was wrong or useless, and no clearly broken/garbled AI template in public replies.",
+    "evidence": [
+      "ATLAS (public): \"Since the standard manual update process did not resolve the issue, here are further troubleshooting steps and verifications...\"",
+      "ATLAS (public): \"Based on the information provided and the relevant knowledge base articles, here are the most targeted next steps and root causes to review...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although there are multiple ATLAS public messages, a human agent (Keyur Saxena) does respond later. There is no customer-facing request for a human that is followed by 2+ additional AI-only customer-facing responses.",
+    "evidence": [
+      "ATLAS (public): \"Dear Ond\u0159ej, Thank you for providing additional details...\"",
+      "Keyur Saxena (public): \"Hello Ond\u0159ej, Please force the updates...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer provided logs earlier, but the later human response asks the customer to provide agent logs again rather than acknowledging/reviewing what was already sent. This indicates support is forcing repetition / not using provided context.",
+    "evidence": [
+      "Customer (private): \"none of the proposed solutions worked so far, here are the logs from both server and agent:\"",
+      "Keyur Saxena (public): \"If the issue persists after the fix, please provide the agent logs for review: Providing Troubleshooter Logs from GFI LanGuard Agent\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The visible response cadence does not show a 5+ day gap or multiple 3+ day gaps between a customer message and the next staff reply. The handoff from 2025-12-08 to 2025-12-09 is about one day.",
+    "evidence": [
+      "Customer (private) [2025-12-08T11:24:19+00:00]: \"Please have someone look at the logs...\"",
+      "Keyur Saxena (public) [2025-12-09T13:32:09+00:00]: \"Hello Ond\u0159ej, Please force the updates...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support includes an auto-closure warning (\u201cstay open for one week unless\u2026\u201d) while the customer is still asking for log review and indicating unresolved urgency. This creates a risk of closure before resolution.",
+    "evidence": [
+      "Keyur Saxena (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Customer (private): \"Please have someone look at the logs, otherwise, there's a high risk of losing the customer's renewal, which is in two weeks.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket shows urgency around renewal timing, but it does not explicitly describe an outage/production-down scenario or label the issue as P1/SEV1/critical. Therefore there is insufficient evidence to assess mishandling of a high-severity incident.",
+    "evidence": [
+      "Customer (private): \"there's a high risk of losing the customer's renewal, which is in two weeks.\"",
+      "Keyur Saxena (public): \"You may pick a batch of a few computers to test these steps with and let us know if you are blocked during any step.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60258400
+}

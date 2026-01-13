@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI made an unhelpful or misleading action (placing the case on hold for an implausible 999 hours) which is effectively a filler/automation artifact and not a real resolution or useful instruction for the customer.",
+    "evidence": [
+      "\"[2025-11-03T13:05:17+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 999 hour(s)\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information or trapped the customer in a loop; interactions show an initial AI transcript and later human responses rather than repeated identical AI prompts.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear instance of support asking for the same screenshots/logs again or explicitly disregarding previously provided customer information in the available transcript.",
+    "evidence": [
+      "\"[2025-10-28T01:07:57+00:00] (Customer) Lucy Liu: Added files/screenshots\"",
+      "\"[2025-11-03T13:36:55+00:00] (Employee) Santhosh M: ... I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins. P\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer and human responses (customer on 2025-10-28, next human activity on 2025-11-03) and the ticket metadata shows a long time-to-first-human of 156 hours.",
+    "evidence": [
+      "\"[2025-10-28T01:07:57+00:00] (Customer) Lucy Liu: Added files/screenshots\"",
+      "\"[2025-11-03T13:36:55+00:00] (Employee) Santhosh M: Hi Lucy, ... I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins. P\"",
+      "\"Time to first human (hours): 156.0\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed while earlier automated actions placed the case on an extended 'hold' and the customer had reported issues and uploaded files without a timely human resolution; this suggests closure occurred without clear follow-up to the customer's last input.",
+    "evidence": [
+      "\"[2025-11-03T13:05:17+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 999 hour(s)\"",
+      "\"[2025-10-28T01:07:57+00:00] (Customer) Lucy Liu: Added files/screenshots\"",
+      "\"Status: closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket priority is high, the human response shows an actionable server-side operation (restarting the Atlas instance, clearing backend cache, reloading plugins) rather than only generic client-side troubleshooting; there is no evidence of inappropriate low-effort triage for a P1 in the transcript.",
+    "evidence": [
+      "\"[2025-11-03T13:36:55+00:00] (Employee) Santhosh M: ... I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins. P\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI made an unhelpful or misleading action (placing the case on hold for an implausible 999 hours) which is effectively a filler/automation artifact and not a real resolution or useful instruction for the customer.\",\n    \"evidence\": [\n      \"\\\"[2025-11-03T13:05:17+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 999 hour(s)\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information or trapped the customer in a loop; interactions show an initial AI transcript and later human responses rather than repeated identical AI prompts.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear instance of support asking for the same screenshots/logs again or explicitly disregarding previously provided customer information in the available transcript.\",\n    \"evidence\": [\n      \"\\\"[2025-10-28T01:07:57+00:00] (Customer) Lucy Liu: Added files/screenshots\\\"\",\n      \"\\\"[2025-11-03T13:36:55+00:00] (Employee) Santhosh M: ... I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins. P\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between customer and human responses (customer on 2025-10-28, next human activity on 2025-11-03) and the ticket metadata shows a long time-to-first-human of 156 hours.\",\n    \"evidence\": [\n      \"\\\"[2025-10-28T01:07:57+00:00] (Customer) Lucy Liu: Added files/screenshots\\\"\",\n      \"\\\"[2025-11-03T13:36:55+00:00] (Employee) Santhosh M: Hi Lucy, ... I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins. P\\\"\",\n      \"\\\"Time to first human (hours): 156.0\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked closed while earlier automated actions placed the case on an extended 'hold' and the customer had reported issues and uploaded files without a timely human resolution; this suggests closure occurred without clear follow-up to the customer's last input.\",\n    \"evidence\": [\n      \"\\\"[2025-11-03T13:05:17+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 999 hour(s)\\\"\",\n      \"\\\"[2025-10-28T01:07:57+00:00] (Customer) Lucy Liu: Added files/screenshots\\\"\",\n      \"\\\"Status: closed\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket priority is high, the human response shows an actionable server-side operation (restarting the Atlas instance, clearing backend cache, reloading plugins) rather than only generic client-side troubleshooting; there is no evidence of inappropriate low-effort triage for a P1 in the transcript.\",\n    \"evidence\": [\n      \"\\\"[2025-11-03T13:36:55+00:00] (Employee) Santhosh M: ... I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins. P\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60230303
+}

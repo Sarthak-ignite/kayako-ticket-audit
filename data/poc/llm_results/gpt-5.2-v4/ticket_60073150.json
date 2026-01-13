@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS did not address the customer\u2019s core question (when the 7.5.5 \u201cno policy\u201d bug will be fixed / whether a fix exists). Instead, it defaulted to a generic \u201cupload logs\u201d flow and then a vague escalation (\u201cSend to engineering\u201d) without providing any substantive information, clarifying questions about the bug, or setting expectations for next steps/timeline. This is unhelpful for a known-release bug / version-fix inquiry.",
+    "evidence": [
+      "Customer issue description: \"when will the no policy bug on the 7.5.5 exinda release be fixed\"",
+      "ATLAS response: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\" (no attempt to answer the bug/fix timeline question)",
+      "ATLAS action: \"Action: Send to engineering\" (no ETA, no acknowledgement of the specific bug, no follow-up questions)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There was only a single ATLAS interaction before humans engaged. No evidence of repeated AI prompts or the customer being blocked from reaching a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support generally engaged with the version/bug context. While there are internal notes about missing attachments, there isn\u2019t clear evidence the customer had provided necessary details that were then ignored, nor repeated requests for already-provided information.",
+    "evidence": [
+      "Internal notes: \"ITAR : Attachment not found\" (does not clearly show support ignored previously provided troubleshooting info; could be a system/attachment handling issue)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Gaps exist (e.g., ~2\u20133 days) but do not clearly meet the stated 3+ calendar day threshold from a customer message to a support response, and there is no explicit apology for delay.",
+    "evidence": [
+      "Customer follow-up: 2025-06-10T20:59:29",
+      "First public support response: 2025-06-13T13:18:30 (under 3 full calendar days)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows ongoing discussion and no explicit closure event. Although auto-close wording is present, there is no evidence it actually closed while a pending customer question remained.",
+    "evidence": [
+      "Support template: \"This ticket will stay open for one week unless you reply...\" (warning only; no closure shown)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer asked about a bugfix timeline/availability, but did not state an outage/production-down/severity context or urgency that would require P1 handling based on the provided transcript.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60073150
+}

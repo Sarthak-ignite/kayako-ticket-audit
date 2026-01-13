@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI interactions are primarily automated ticket management (hold status, side conversation tracking) rather than customer-facing responses. No evidence of AI providing incorrect information or making false promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer interacted directly with human agents (Muhammad Rizwan, Csaba Daniel, Phronesis) throughout the ticket. No evidence of customer being stuck in AI loop or unable to reach human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer reported they couldn't view Ticket #4389067 on Dec 23, but support responded as if the customer could access it, missing the access issue the customer explicitly stated.",
+    "evidence": [
+      "[2025-12-23T00:58:06+00:00] Shingo Ohkubo: 'I can't view Ticket #4389067 now. Please check the following link. https://support.ignitetech.com/hc/requests/4389067'",
+      "[2025-12-24T05:39:44+00:00] Muhammad Rizwan: 'Dear Shingo, Thank you for letting us know that you will review ticket #4389067' - responded without addressing the access issue"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Time to first human response was 667.1 hours (approximately 28 days), with a maximum gap of 667.0 hours between responses. These are significant multi-week delays.",
+    "evidence": [
+      "Time to first human (hours): 667.1",
+      "Max gap between responses (hours): 667.0",
+      "[2025-12-18T07:41:32+00:00] Csaba Daniel responded, with customer follow-up on [2025-12-23T04:43:40+00:00] indicating extended waiting period"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket was closed after customer explicitly requested closure, confirming they had checked the attachments and were satisfied with the resolution.",
+    "evidence": [
+      "[2025-12-26T00:03:31+00:00] Shingo Ohkubo: 'I have checked the attachments. Please close this ticket.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket (Priority: normal), not P1/Sev1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI interactions are primarily automated ticket management (hold status, side conversation tracking) rather than customer-facing responses. No evidence of AI providing incorrect information or making false promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer interacted directly with human agents (Muhammad Rizwan, Csaba Daniel, Phronesis) throughout the ticket. No evidence of customer being stuck in AI loop or unable to reach human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer reported they couldn't view Ticket #4389067 on Dec 23, but support responded as if the customer could access it, missing the access issue the customer explicitly stated.\",\n    \"evidence\": [\n      \"[2025-12-23T00:58:06+00:00] Shingo Ohkubo: 'I can't view Ticket #4389067 now. Please check the following link. https://support.ignitetech.com/hc/requests/4389067'\",\n      \"[2025-12-24T05:39:44+00:00] Muhammad Rizwan: 'Dear Shingo, Thank you for letting us know that you will review ticket #4389067' - responded without addressing the access issue\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Time to first human response was 667.1 hours (approximately 28 days), with a maximum gap of 667.0 hours between responses. These are significant multi-week delays.\",\n    \"evidence\": [\n      \"Time to first human (hours): 667.1\",\n      \"Max gap between responses (hours): 667.0\",\n      \"[2025-12-18T07:41:32+00:00] Csaba Daniel responded, with customer follow-up on [2025-12-23T04:43:40+00:00] indicating extended waiting period\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket was closed after customer explicitly requested closure, confirming they had checked the attachments and were satisfied with the resolution.\",\n    \"evidence\": [\n      \"[2025-12-26T00:03:31+00:00] Shingo Ohkubo: 'I have checked the attachments. Please close this ticket.'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket (Priority: normal), not P1/Sev1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60232940
+}

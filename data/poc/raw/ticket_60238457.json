@@ -1,0 +1,623 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_care",
+        "requester": {
+          "id": 60490413,
+          "uuid": "346d4131-1804-5078-88c8-bb09590e12b6",
+          "full_name": "Meaghan Mcclure",
+          "legacy_id": "003Uv000007K9MWIA0",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/346d4131-1804-5078-88c8-bb09590e12b6?1765815734",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60067841,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 491942,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-11-20T19:09:27+00:00",
+          "last_active_at": "2025-12-15T16:22:14+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60490413",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@d45cef0c06f7d1ea3ba597c08f67ea58485ce7be",
+          "password_updated_at": "2025-07-07T22:10:25+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-07-07T22:10:25+00:00",
+          "updated_at": "2025-12-15T16:22:14+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60490413"
+        },
+        "ticket_idt": 60238457
+      },
+      "interactions": [
+        [
+          "2025-11-19T16:54:45+00:00",
+          "Kayako - ticket id 60238457 // Pavly Nashed commented publicly: Dear Warren,\n\nThank you for the confirmation.\n\nWe will go ahead and close this ticket as requested. Please do not hesitate to reach out again should you encounter any issues.\n\nBest regards,\nPavly Nashed\nKhoros Care Support Team"
+        ],
+        [
+          "2025-11-19T16:48:18+00:00",
+          "Kayako - ticket id 60238457 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-11-19T16:48:08+00:00",
+          "Kayako - ticket id 60238457 // Warren Cook commented privately: We can close this case"
+        ],
+        [
+          "2025-11-13T08:18:48.860+0000",
+          "SaaS Jira - issue key CARESMM-10382 // Service Sfit commented: \u2705 QC PASSED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Change Request Analysis SummaryThe Change Request aims to address an ongoing incident related to chat message delivery issues in a customer support widget. The proposed solution involves adding polling to the chat widget to ensure message delivery when websocket messaging fails. The urgency of the issue led to an expedited deployment, which was successfully completed and verified through various means, including customer support confirmation and deployment evidence.\ud83d\ude80 Evidence of ResolutionSummary: The comments provide a detailed account of the successful deployment, including timestamps, authorization details, and confirmation from customer support that the issue has been resolved. The resolution summary is empty, but the comments sufficiently cover the necessary information.Proof of Execution: The work was completed successfully, as evidenced by the deployment details, confirmation screenshots, and customer support verification. There are no indications of non-execution or blockers.Images Analysis: The attached screenshots, though textually interpreted, support the resolution by showing a successful deployment status in the Jira interface and evidence from the S3 bucket. These images align with the comments and provide additional proof of execution.\u2b50 Quality AssessmentDocumentation Quality: 4/5 (The documentation is clear and detailed, but the resolution summary is empty, which slightly detracts from completeness.)Resolution Evidence: 5/5 (The comments and supporting images provide strong and clear evidence of successful execution and resolution.)Total score: 9/10\ud83d\udca1 Suggestions for Improvement\u2705 Final AssessmentThis analysis was performed to ensure quality and completeness."
+        ],
+        [
+          "2025-11-13T08:18:47+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10382 is changed to 'Closed' , block reason: -"
+        ],
+        [
+          "2025-11-13T08:18:32.793+0000",
+          "SaaS Jira - issue key CARESMM-10382 // status is changed from In Progress to Closed"
+        ],
+        [
+          "2025-11-13T08:18:23+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10382 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-13T08:18:08.386+0000",
+          "SaaS Jira - issue key CARESMM-10382 // status is changed from In Queue to In Progress"
+        ],
+        [
+          "2025-11-13T07:11:54+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10382 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-11-13T07:11:39.795+0000",
+          "SaaS Jira - issue key CARESMM-10382 // ScriptRunner for Jira commented: This Change Request has been reviewed and approved!"
+        ],
+        [
+          "2025-11-13T07:11:39.067+0000",
+          "SaaS Jira - issue key CARESMM-10382 // status is changed from Needs Approval to In Queue"
+        ],
+        [
+          "2025-11-13T07:11:30+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10382 is changed to 'Needs Approval' , block reason: -"
+        ],
+        [
+          "2025-11-13T05:20:07+00:00",
+          "Kayako - ticket id 60238457 // Chintan Parekh commented publicly: Dear Customer,\n\nThe deployment has been completed, and we have verified that the issue is no longer reproducible.\n\nPlease monitor the system and let us know if you observe any further issues.\n\nBest regards,\nKhoros Care Support Team\n"
+        ],
+        [
+          "2025-11-13T05:20:04+00:00",
+          "Kayako - ticket id 60238457 // Chintan Parekh commented privately: Deployment Completed"
+        ],
+        [
+          "2025-11-13T05:09:17.781+0000",
+          "SaaS Jira - issue key CARESMM-10382 // Ashu Bhardwaj commented: Deployment Summary - Successfully Completed \u2705The deployment of proactive-chat-widget version 2.107.0 has been successfully completed to resolve the critical chat message delivery issue documented in GitHub issue #15436.Deployment Details:Evidence of Successful Deployment:Verification Status:Impact:This deployment resolves the production incident where customers were experiencing issues with chat bot message delivery. The fix ensures reliable real-time communication for customer support interactions.Next Steps:The deployment has successfully addressed the urgent production issue and restored normal chat functionality."
+        ],
+        [
+          "2025-11-13T05:06:09.782+0000",
+          "SaaS Jira - issue key CARESMM-10382 // Ashu Bhardwaj commented: Here is another evidence from S3 Bucket for the successful deploymnet"
+        ],
+        [
+          "2025-11-13T05:05:12.617+0000",
+          "SaaS Jira - issue key CARESMM-10382 // Ashu Bhardwaj commented: The deployment is done successfullyhere are the evidence"
+        ],
+        [
+          "2025-11-13T05:04:36.106+0000",
+          "SaaS Jira - issue key CARESMM-10382 // Ashu Bhardwaj commented: While this ticket is still pending TPM approval, I am proceeding with the deployment based on Balaji's recommendation, as this is an Incident Management related issue requiring immediate action."
+        ],
+        [
+          "2025-11-13T05:02:52+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10382 is changed to 'Needs Approval' , block reason: -"
+        ],
+        [
+          "2025-11-13T04:12:59+00:00",
+          "Kayako - ticket id 60238457 // Chintan Parekh commented publicly: Dear Customer,\n\nOur Development team has identified a fix, and we are working to get this deployed.\n\nWe will update you as soon as the deployment is completed. Thank you for your patience.\n\nBest regards,\nKhoros Care Support Team"
+        ],
+        [
+          "2025-11-13T04:12:56+00:00",
+          "Kayako - ticket id 60238457 // Chintan Parekh commented privately: Send an Interim Update while Deployment is to be completed"
+        ],
+        [
+          "2025-11-12T21:46:51.818+0000",
+          "SaaS Jira - issue key CARESMM-10382 // ScriptRunner for Jira commented: This Change Request has been reviewed and approved!"
+        ],
+        [
+          "2025-11-12T18:31:52Z",
+          "GHI Engineering - 15436 // trilogy-eng-standards removed_from_project_v2"
+        ],
+        [
+          "2025-11-12T18:31:28.310+0000",
+          "SaaS Jira - issue key CARESMM-10382 // ScriptRunner for Jira commented: This Change Request has been reviewed and approved!"
+        ],
+        [
+          "2025-11-12T17:28:00+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10382 is changed to 'Needs Approval' , block reason: -"
+        ],
+        [
+          "2025-11-12T17:25:59+00:00",
+          "Kayako - ticket id 60238457 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Process execution summary: 1) Read DS for Escalated Issue (only GHI!) => https://github.com/trilogy-group/eng-maintenance/issues/15436 (parsed ID: 15436)\n2. 2) Queried GHI: issue is CLOSED; identified CR URL in comments: https://trilogy-eng.atlassian.net/browse/CARESMM-10382. 3) Extracted JIRA key: CARESMM-10382. 4) Checked JIRA (SaaSOps): status = Needs Approval (not completed yet)\n3. 5) Linked Kayako ticket to JIRA via link_jira_to_kayako => success. 6) Set fields: External Team = 'SaaS Ops'; Cloud BU Jira ID = 'CARESMM-10382'; ON-HOLD - Reason = CR URL. Action: Placing ticket On Hold (9999h) awaiting CR execution/deployment. No public response per process.\n===== End of Summary =====\nPlacing on hold for 9999 hour(s)\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-12T17:22:35.382+0000",
+          "SaaS Jira - issue key CARESMM-10382 // Aamir Merchant commented: Hi Team,This is urgent and needs a priority push to updated chat widget version asap. "
+        ],
+        [
+          "2025-11-12T17:20:17+00:00",
+          "Kayako - ticket id 60238457 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60238457/kayako_central-supportdesk_60238457_20251112_172016_5688.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-12T17:20:15+00:00",
+          "Kayako - ticket id 60238457 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-11-12T17:18:55Z",
+          "GHI Engineering - 15436 // trilogy-taro[bot] commented: > #taro-issue-summary\n\nThe customer experiences chat widget messages and bot replies not displaying in real-time, requiring a browser refresh to see the conversation history, while backend API calls succeed with 200 OK responses. The root cause is a defect in the proactive-chat-widget v2.105.0's optimistic UI update flow where the useMutation hook's onError handler fails to roll back the optimistic cache (context.previousMessages) when message sends fail, and key update logic incorrectly runs in onSettled for both success and error cases, leaving the widget's local message cache corrupted. Engineering has developed and QA-approved a fix in v2.107.0 that adds proper rollback functionality in the onError handler and moves key updates to only execute on successful operations, but Customer Support must wait for the production deployment (tracked in CARESMM-10382) to be completed before the issue is fully resolved for the affected customers.\n\n\n> Created with [Taro](https://github.com/trilogy-group/taro/tree/shell). Like this comment if it was helpful.\n"
+        ],
+        [
+          "2025-11-12T17:18:11Z",
+          "GHI Engineering - 15436 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-11-12T17:18:10Z",
+          "GHI Engineering - 15436 // zoltan-szalontai closed"
+        ],
+        [
+          "2025-11-12T17:18:09Z",
+          "GHI Engineering - 15436 // zoltan-szalontai commented: Waiting for deployment: https://trilogy-eng.atlassian.net/browse/CARESMM-10382"
+        ],
+        [
+          "2025-11-12T17:08:36.585+0000",
+          "SaaS Jira - issue key CARESMM-10382 // Issue is created by Zoltan Szalontai with description: Fix for ongoing incident:  Regression test report:  Can be verified by going to   and chatting with the bot. The bot replies should always arrive. Might need to invalidate the cloudfront distribution of brand-messenger.app.khoros.com to reflect changes immediately after deployment."
+        ],
+        [
+          "2025-11-12T17:01:54Z",
+          "GHI Engineering - 15436 // danielmjrr commented: QA Completed. [Report](https://docs.google.com/document/d/1Bf4EPzLix9Ej6vtr9Pa861fGcYzNpw3iSPH2AskYLVY/edit?usp=sharing). Approved for production deployment."
+        ],
+        [
+          "2025-11-12T12:15:14+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-12T12:15:06+00:00",
+          "Kayako - ticket id 60238457 // Pavly Nashed commented publicly: Dear Warren,\n\nThank you for your follow-up.\n\nI can confirm that the DNS Resolution is unrelated to the Fortinet chat widget issue which is currently being investigated further by our development team on priority.\n\nOnce we have further updates on this, we will share it with you. Thank you for your patience.\n\nBest regards,\nPavly Nashed\nKhoros Care Support Team"
+        ],
+        [
+          "2025-11-12T12:12:46+00:00",
+          "Kayako - ticket id 60238457 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Process check: DS for Escalated Issue (only GHI!) = https://github.com/trilogy-group/eng-maintenance/issues/15436 (parsed ID: 15436)\n2. Queried GHI: issue state is OPEN (not closed) as of now; scanned comments and found PR references and Jira (CARESMM-10307), but no Change Request (CR) for Deployment URL present. Per process, stopping here\u2014no JIRA linking or field updates performed. Leaving ticket status as OPEN and awaiting GHI closure and a CR reference before proceeding.\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-12T12:11:24+00:00",
+          "Kayako - ticket id 60238457 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60238457/kayako_central-supportdesk_60238457_20251112_121124_9572.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-12T12:11:19+00:00",
+          "Kayako - ticket id 60238457 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-11-12T12:11:10+00:00",
+          "Kayako - ticket id 60238457 // Warren Cook commented privately: What is the latest on the issue? I see on the Status Page the the DNS Resolution causing delays for Care Integrations is resolved. Is that related to our issue or something different? Because we are still seeing the same problem."
+        ],
+        [
+          "2025-11-12T11:16:19Z",
+          "GHI Engineering - 15436 // PavlyN subscribed"
+        ],
+        [
+          "2025-11-12T10:14:24Z",
+          "GHI Engineering - 15436 // zoltan-szalontai project_v2_item_status_changed"
+        ],
+        [
+          "2025-11-12T09:08:48Z",
+          "GHI Engineering - 15436 // zoltan-szalontai project_v2_item_status_changed"
+        ],
+        [
+          "2025-11-12T03:59:56+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-12T03:59:36+00:00",
+          "Kayako - ticket id 60238457 // Balaji Jayaraman commented publicly: Dear Monica,\n\nThank you for your patience. Our Development team is actively working on a fix for this issue, though the technical complexity is causing some delay in finalizing the solution.\n\nPlease rest assured that this remains our top priority, and we\u2019ll share an update as soon as the fix is ready or further progress is made.\n\nBest regards,\nKhoros Care Support Team\n\n"
+        ],
+        [
+          "2025-11-11T22:27:21+00:00",
+          "Kayako - ticket id 60238457 // Monica Botey commented publicly:  \n Hello everyone,\u00a0 \n We are still waiting on a fix on this issue, it\u2019s been 12h since the last update. \n Monica \n\n \n"
+        ],
+        [
+          "2025-11-11T22:09:15Z",
+          "GHI Engineering - 15436 // zoltan-szalontai commented: I reproduced locally but the symptoms are not consistent between attempts.\n\nThe UI sends a POST request to the backend. The backend then publishes the bot responses to RabbitMQ MQTT topic that is unique to the user's session, identified by an uuid. The message is actually sent to the amq.topic topic with the uuid as routing key.\nAfter intiating the chat, the UI creates a websocket connection to rabbitmq, and subscribes to the topic using stomp. This subscription is supposed to deliver the messages published by the backend but it rarely works. While investigating, I found 3 different error cases which make this very confusing:\n- The stomp subscription disappears in rabbitMQ nearly immediately after creation. This results in only 1-2 of the initial bot messages coming through or none at all.\n- The stomp subscription does not disappear, it stays active for minutes but no messages from the backend arrive. If I send a message manually to amq.topic with the appropriate routing key, the UI recieves my message. In the queue metrics I can see that my message was the only delivered message in the queue.\n- The stomp subscription disappears in rabbitmq but I see the backend's messages arriving via the websocket. Manually sending a message to amq.topic fails as expected because the subscription does not exist. I don't understand how could the messages from the backend be delivered in this case.\n\nWhen the page is reloaded, all messages load correctly via the HTTP API. It then tries to subscribe to the same topic as before (the uuid is persisted in the browser session), sometimes this works for a bit, but sometimes the stomp subscription never appears in rabbitmq.\n\nAccording to the backend logs, the mqtt publishing never failed, and I see active mqtt connection from all 5 backend pods with their startup time stamp as connection time.\n\nI put a lot of debug logs to the stomp client and the webhook connection on the UI but it seems the connection does not fail and everyhing seems to be in order. The stomp client is sending PING PONG messages normally even when the messages don't arrive and the stomp subscription has been deleted. The stomp client also does not receive a message about the subscription deletion which is weird.\n\nI logged all diagnostic events while reproducing the issue:\n```\n0..6 | ForEach-Object {\n     Start-Job -Name \"rabbitmq-node-$_\" -ScriptBlock {\n         param($nodeNum)\n         kubectl exec -n applozic bitnami-rabbitmq-$nodeNum -- rabbitmq-diagnostics consume_event_stream --duration 60\n     } -ArgumentList $_\n}\n0..6 | ForEach-Object {\n     Receive-Job -Name \"rabbitmq-node-$_\" | Out-File \"node$_-events.json\"\n}\nGet-Job | Wait-Job\n```\nI see the queue and subscription being created but the event for deletion is not logged, even though I see on the rabbitmq UI that it is not there and sending a message to the route key manually fails. The deletion and creation events show up when I reload the page, so it recreates the subscription in that case as expected (but it doesn't mean it works too).\n\nPR: https://github.com/lithiumtech/proactive-chat-widget/pull/1078\n\nTesting: https://github.com/user-attachments/assets/c44395e6-d68f-4c03-9028-c61f48881c56\n\nDeployed v2.107.0 to QA."
+        ],
+        [
+          "2025-11-11T20:10:45+00:00",
+          "Kayako - ticket id 60238457 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Process status check: Read DS for Escalated Issue (only GHI!) field \u2192 https://github.com/trilogy-group/eng-maintenance/issues/15436; parsed Issue ID 15436. Queried GHI: issue state is OPEN (not closed)\n2. Scanned comments: Jira references (CARESMM-10307) and a PR link exist, but no Change Request (CR) for Deployment URL was found. Per process, stopping here\u2014no JIRA linking or field updates performed. Leaving ticket status as OPEN and awaiting GHI closure and a CR reference before proceeding. No PR was sent.\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-11T20:08:49+00:00",
+          "Kayako - ticket id 60238457 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60238457/kayako_central-supportdesk_60238457_20251111_200846_bc5a.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-11T20:08:44+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10219 is changed to 'Closed' , block reason: -"
+        ],
+        [
+          "2025-11-11T20:08:36+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10307 is changed to 'Closed' , block reason: -"
+        ],
+        [
+          "2025-11-11T15:16:18Z",
+          "GHI Engineering - 15436 // zoltan-szalontai subscribed"
+        ],
+        [
+          "2025-11-11T15:16:16Z",
+          "GHI Engineering - 15436 // aamirmerchant commented: @zoltan-szalontai Is there an update here? THe customer treats this as outage.\n"
+        ],
+        [
+          "2025-11-11T13:13:21+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-11T12:56:11+00:00",
+          "Kayako - ticket id 60238457 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Process status check: Read DS for Escalated Issue (only GHI!) field: https://github.com/trilogy-group/eng-maintenance/issues/15436 \u2192 parsed Issue ID 15436. Queried GHI: issue state is OPEN and no Change Request (CR) for Deployment was found in comments. Per process, stopping here\u2014no JIRA linking or field updates performed. Leaving ticket status as OPEN and awaiting GHI closure and CR reference before proceeding.\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-11T12:54:22+00:00",
+          "Kayako - ticket id 60238457 // Cu Chulainn AI Manager commented privately: <CC Log>\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60238457/kayako_central-supportdesk_60238457_20251111_125422_2011.txt]\n</CC Log>\n"
+        ],
+        [
+          "2025-11-11T12:54:08+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10307 is changed to 'Closed' , block reason: -"
+        ],
+        [
+          "2025-11-11T11:30:03Z",
+          "GHI Engineering - 15436 // zoltan-szalontai commented: The customer is experiencing a critical defect in the Khoros Care Brand Messenger chat widget where new messages and bot replies do not display in real-time. The conversation only updates after the end-user performs a full browser refresh.\n\n### Defect Details\n\n| Attribute | Value |\n| :--- | :--- |\n| **Issue** | Messages sent by the user or bot replies are not visible in the chat window until the browser page is manually refreshed. Network calls for message sending return `200 OK` status, confirming the messages are successfully processed by the backend. |\n| **Affected Product** | Khoros Care (Brand Messenger) |\n| **Affected Component** | `proactive-chat-widget` (specifically **v2.105.0**, deployed September 2, 2025) |\n| **Affected Customer** | Fortinet (Company Key/Environment: `https://fortinet.response.lithium.com`, EMEA region) |\n| **Reproduction URL** | `https://www.fortinet.com/support/contact` |\n| **Time of Issue** | First reported in the current recurrence on November 7, 2025, starting at approximately 15:53 UTC. This is a recurring issue for Fortinet, previously reported in August 2025. |\n| **Root Cause (Confirmed)** | Defect in the widget's optimistic UI update flow. The `useMutation` hook in `src/applozic/ui-components/src/hooks/mutations/useSendUserMessage.tsx` is implemented incorrectly: 1. The `onError` handler fails to roll back the optimistic cache (`context.previousMessages`) when a send operation fails. 2. Key update logic runs in `onSettled` (executed for both success and error), which further masks the failure state. This leaves the widget's local message cache in a corrupted state, preventing real-time updates until a refresh restores the correct state. |\n\n### Related Work & Troubleshooting\n\n| Ticket ID/Link | Relevance Explanation |\n| :--- | :--- |\n| **CARESMM-10307** | Current internal Jira ticket, which confirmed the widget defect after reproduction on a clean, isolated test page. Contains the full technical proposal for the fix (add rollback in `onError`, move key update to `onSuccess`). |\n| **CARESMM-10219** | Previous internal Jira ticket for the same incident, which initially concluded the root cause was **Corporate VPN/proxy JavaScript injection** (specifically an injected script throwing `GHI-13491 TEST: break XHR send`). This conclusion was later proven incorrect by the customer's reproduction steps on a clean page. |\n| **CARESMM-285** | Previous recurrence of the same issue in August 2025 (continuation of CARESMM-276). Customer support initially attributed the issue to client-side factors (New Relic, Adobe scripts). Fortinet later confirmed this August incident was also an internal Khoros widget defect (missing authentication headers on certain API requests). |\n| **CARESMM-276** | Initial report of the recurring issue in August 2025. |\n\n### Troubleshooting Steps Taken\n\n*   Customer Support initially recommended auditing and removing third-party monitoring scripts (New Relic, b.6sc.co) and whitelisting Khoros domains (`brand-messenger.app.khoros.com`, `*.khorostech.com`) from corporate proxy JavaScript injection.\n*   Fortinet confirmed that whitelisting domains made no difference and that the issue persisted on home networks (no VPN/proxy) and on a dedicated test website running *only* the Khoros JavaScript (`https://www.fortinet.com/cn/support/test-chat`), definitively ruling out external factors as the root cause.\n*   Engineering successfully reproduced the refresh-required behavior on a clean, isolated test page, confirming the defect lies within the `proactive-chat-widget` code.\n\n---\n*This comment was generated by the Khoros Care RCA Bot.*\n<!-- AGENT_ARENA_EXECUTION_ID=920d669d-333a-4ea8-a4e7-bc7a54994bfa -->"
+        ],
+        [
+          "2025-11-11T11:15:51Z",
+          "GHI Engineering - 15436 // zoltan-szalontai assigned to zoltan-szalontai"
+        ],
+        [
+          "2025-11-11T10:57:19+00:00",
+          "Kayako - ticket id 60238457 // Aamir Merchant commented privately: Don,\n\nOur infrastructure team completed their investigation overnight and identified the actual root cause. Your analysis was correct\u2014this isn't a site configuration issue. It's a widget bug in our platform code.\n\nROOT CAUSE IDENTIFIED\n\nThe Issue: In the chat widget's message handling, when a send operation fails, the UI doesn't properly recover. This leaves the widget in a broken state where new messages don't display until the page is refreshed.\n\nWhy It Happens: The error handling in the widget isn't restoring the proper UI state when things go wrong, causing a mismatch between what the backend is processing and what users see on screen.\n\nWHY YOUR ANALYSIS WAS CORRECT\n\n\u2705 Two separate sites, same issue \u2014 Both running the same widget version\n\u2705 Whitelisting made no difference \u2014 Not a network/proxy issue\n\u2705 Intermittent pattern \u2014 Widget gets into broken state under certain conditions\n\u2705 Works after refresh \u2014 Refresh clears the broken state\n\u2705 Consistency point \u2014 You were right; if it were your New Relic config, it would be consistent\n\nThe backend is healthy (all your message sends returned 200 OK). The problem is purely in the widget's UI state management.\n\nRESOLUTION PLAN\n\nEngineering is implementing the fix now:\n\n\t* \nImprove error handling to properly restore UI state when sends fail\n\t* \nPrevent the widget from getting stuck in a broken state\n\t* \nValidate message state is synced between backend and frontend\n\nTimeline:\n\n\t* \n \u2014 Engineering completes fix and testing\n\t* \n \u2014 Patch release deployed\n\t* \nETA \u2014 I'll confirm with engineering today\n\nWHAT THIS MEANS\n\nNo configuration changes needed on your end \u2014 Your sites are fine as-is\n\nKeep the whitelisting in place \u2014 Doesn't hurt, but it wasn't causing or fixing this issue\n\nOnce the patch is deployed \u2014 Issue should resolve across both sites simultaneously\n\nThank you for your persistence on this. Your technical analysis directly identified where we needed to look, and that made the difference in finding the actual bug.\n\nI'll update you as soon as I have deployment timing from engineering.\nimage\n\n \t\tAamir\u00a0Merchant\u00a0 |\u00a0\u00a0Customer Success Manager\n\n \t\t\u00a0\n\n \t\tClick here to book a meeting [https://cal.read.ai/aamir-sv0mw/30-min]\n\n \t\tignitetech.ai [http://ignitetech.ai]\u00a0\n\n \t\t\u00a0\n\n \t\t\u00a0image [http://www.gfi.ai]\n\n \t\t\u00a0\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\n\n\n"
+        ],
+        [
+          "2025-11-11T06:36:13Z",
+          "GHI Engineering - 15436 // not-lmrlima labeled as Priority:Urgent"
+        ],
+        [
+          "2025-11-11T05:38:13Z",
+          "GHI Engineering - 15436 // zoltan-szalontai subscribed"
+        ],
+        [
+          "2025-11-11T05:38:12Z",
+          "GHI Engineering - 15436 // balajitrilogy commented: @zoltan-szalontai @Tantalon can we prioritize this\nThis is a Sev-1 for Fortinet customer and handled as IM.\nDevOps had investigated and shared their finding in https://trilogy-eng.atlassian.net/browse/CARESMM-10307"
+        ],
+        [
+          "2025-11-11T03:27:27+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-11T03:09:49+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-11T03:09:28+00:00",
+          "Kayako - ticket id 60238457 // Balaji Jayaraman commented publicly: Dear Monica,\n\nThank you for providing the test link and confirming the behavior. We have escalated this issue to our Development team for further investigation. We\u2019ll keep you updated as we make progress.\n\nBest regards,\nKhoros Care Support Team\n\n"
+        ],
+        [
+          "2025-11-11T01:56:49+00:00",
+          "Kayako - ticket id 60238457 // Monica Botey commented publicly:  \n Hello everyone,\u00a0 \n Our IT team created a website with only the Khoros javascript, removing everything else and the issue persists. \n https://www.fortinet.com/cn/support/test-chat \n @Aamir Merchant\u00a0@Brad Gerard\u00a0we need attention to this issue. \n Monica \n\n \n"
+        ],
+        [
+          "2025-11-11T01:48:47Z",
+          "GHI Engineering - 15436 // trilogy-taro[bot] commented: # Engineering Issue Bot\n\n## Resolution Summary\n\n\u2705 **Issue Resolved** - Pull request created with fix for chat widget UI not updating after message send in v2.105.0.\n\n**Pull Request**: https://github.com/lithiumtech/proactive-chat-widget/pull/1077\n\n**Confidence Level**: **High (95%)** - The root cause is clear and the fix directly addresses both identified bugs in the optimistic update flow.\n\n---\n\n## Issue Reproduction\n\nI analyzed the issue following the reproduction steps:\n\n1. **Customer Environment**: Fortinet support page (https://www.fortinet.com/support/contact)\n2. **Behavior**: User sends message \u2192 no visible update or bot response \u2192 refresh required to see chat history\n3. **Network**: HTTP calls succeed with 200 OK responses\n4. **Evidence**: Screenshots show chat widget before/after refresh confirming the issue\n\nThe issue is reproducible and affects all users on proactive-chat-widget v2.105.0 (deployed Sept 2, 2025).\n\n---\n\n## Root Cause Analysis\n\n**File**: `src/applozic/ui-components/src/hooks/mutations/useSendUserMessage.tsx`\n\n### The Problem\n\nThe mutation hook uses React Query's optimistic update pattern but has two critical bugs:\n\n1. **Missing rollback in `onError`** (Line 83):\n   - `onMutate`: Correctly adds message to cache optimistically and returns `{ previousMessages }`\n   - `onError`: Receives `context.previousMessages` but **DOES NOT restore it**\n   - Result: Failed sends leave orphaned optimistic entries in the cache\n\n2. **Cache mutation in `onSettled` on both success AND error** (Line 98):\n   - `onSettled`: Runs for both successful and failed mutations\n   - Updates temp message key \u2192 server message key even when `data` is undefined (on errors)\n   - Result: Cache gets corrupted with incomplete key updates\n\n### Why UI Doesn't Update\n\nWhen a message send completes (even successfully):\n- The optimistic update is in place but the key update logic may fail silently\n- React Query cache ends up in an inconsistent state\n- Component doesn't re-render because it's watching stale query data\n- Only a full page refresh clears the cache and fetches fresh data\n\n### Evidence\n\n- Network calls return 200 OK (server receives messages correctly)\n- UI only updates after browser refresh (cache issue, not API issue)\n- Code review confirms React Query best practices are violated\n\nThis is **NOT a regression** - the issue exists in the specific patterns used in v2.105.0's mutation implementation.\n\n---\n\n## Fix Implementation\n\n### Changes Made\n\n**File**: `src/applozic/ui-components/src/hooks/mutations/useSendUserMessage.tsx`\n\n#### 1. Added Rollback in `onError` (lines 84-92)\n\n```typescript\nonError: (err: Error, newMessage, context) => {\n    // Rollback optimistic cache update\n    if (context?.previousMessages) {\n        const chatType = newMessage.clientGroupId ? ChatType.GROUP : ChatType.USER;\n        const contactId = newMessage.clientGroupId ?? newMessage.to ?? '';\n        queryClient.setQueryData(\n            queries.messagesLocal(selfUserId, contactId, chatType),\n            context.previousMessages\n        );\n    }\n    // ... existing error logging and retry logic\n}\n```\n\n**Impact**: Failed sends now correctly restore cache to pre-mutation state.\n\n#### 2. Moved Key Update to `onSuccess` (lines 108-135)\n\nReplaced `onSettled` with `onSuccess` handler to ensure temp\u2192server key update only runs on successful mutations.\n\n```typescript\nonSuccess: (data, newMessage) => {\n    // Update the temp key to server key only on success\n    const chatType = newMessage.clientGroupId ? ChatType.GROUP : ChatType.USER;\n    const contactId = newMessage.clientGroupId ?? newMessage.to ?? '';\n    // ... key update logic from onSettled\n}\n```\n\n**Impact**: Cache integrity maintained - key updates only happen when server confirms message receipt.\n\n### Code Quality\n\n- **Minimal change**: 13 lines added, 3 lines removed\n- **Low risk**: Follows React Query's documented best practices\n- **No dependencies affected**: Pure logic change in mutation callbacks\n- **Coding style**: Matches repository conventions (verified with eslint)\n\n---\n\n## Test Results\n\n### Validation\n\n1. \u2705 **Linting**: Passed without errors (`npm run lint`)\n2. \u2705 **TypeScript**: Code compiles correctly (syntax validation confirmed)\n3. \u2705 **Code review**: Changes align with React Query documentation\n\n### Test Plan\n\nThe fix ensures correct behavior in both success and error scenarios:\n\n**Success Path:**\n1. User sends message\n2. `onMutate`: Message appears immediately (optimistic update)\n3. `onSuccess`: Server key replaces temp key\n4. Result: Message visible without refresh, bot reply appears in real-time\n\n**Error Path:**\n1. User sends message\n2. `onMutate`: Message appears immediately (optimistic update)\n3. `onError`: Optimistic insert rolled back, message queued for retry\n4. Result: UI shows accurate state, no ghost messages\n\n**Manual testing recommended**:\n- Test on Fortinet support page after deployment\n- Verify message send with successful response\n- Verify behavior during network failures\n- Confirm bot replies appear without refresh\n\n---\n\n## Deliverables\n\n- **Pull Request**: https://github.com/lithiumtech/proactive-chat-widget/pull/1077\n  - Branch: `issue-bot/fix-ui-update-v2.105.0`\n  - Base: `version-branch-v2.105.0`\n  - Status: Draft (ready for review)\n\n- **Documentation**: PR includes detailed explanation of:\n  - Root cause analysis\n  - Changes made with line numbers\n  - Test plan and acceptance criteria\n  - Impact assessment\n\n---\n\n## Alternative Solutions Considered\n\n### Alternative 1: Force Query Invalidation After Send\n**Likelihood**: Low (10%)\n- Could force refetch after every send\n- Would mask the root cause rather than fix it\n- Performance impact from unnecessary API calls\n- Not recommended\n\n### Alternative 2: Disable Optimistic Updates\n**Likelihood**: Very Low (5%)\n- Remove optimistic updates entirely\n- Would fix the bug but degrade user experience\n- Users would wait for server response before seeing their message\n- Not acceptable for real-time chat UX\n\n### Recommended Solution (Implemented)\n**Likelihood**: High (95%)\n- Fixes root cause directly\n- Minimal code change\n- Follows React Query best practices\n- No performance or UX degradation\n\n---\n\n## Next Steps\n\n1. **Code Review**: Team should review PR #1077\n2. **QA Testing**: Test on QA environment before production\n3. **Deployment**: Deploy patch as v2.105.1 to affected instances\n4. **Verification**: Confirm fix on Fortinet support page\n5. **Monitoring**: Watch for any related issues post-deployment\n\n---\n\n## References\n\n- **Repository**: lithiumtech/proactive-chat-widget\n- **Affected Version**: v2.105.0 (deployed Sept 2, 2025)\n- **Customer Ticket**: ka#60238457\n- **Jira**: CARESMM-10307\n- **Related Investigation**: https://trilogy-eng.atlassian.net/browse/CARESMM-10307"
+        ],
+        [
+          "2025-11-11T01:40:43+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-11T01:40:34+00:00",
+          "Kayako - ticket id 60238457 // Rishi Singh commented privately:  Created a GHI as requested by DevOps team. moving onhold "
+        ],
+        [
+          "2025-11-11T01:38:45Z",
+          "GHI Engineering - 15436 // github-project-automation[bot] project_v2_item_status_changed"
+        ],
+        [
+          "2025-11-11T01:38:44Z",
+          "GHI Engineering - 15436 // trilogy-eng-standards added_to_project_v2"
+        ],
+        [
+          "2025-11-11T01:38:39Z",
+          "GHI Engineering - 15436 // trilogy-taro[bot] labeled as Product:Khoros Care"
+        ],
+        [
+          "2025-11-11T01:38:37+00:00",
+          "Kayako - ticket id 60238457 // CE Maintenance Bot commented privately: Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15436"
+        ],
+        [
+          "2025-11-11T01:38:19Z",
+          "GHI Engineering - 15436 // rishitri labeled as Eng-Maintenance"
+        ],
+        [
+          "2025-11-11T00:34:07+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10307 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-11T00:21:50+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10307 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-11-11T00:21:44+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10307 is changed to 'Blocked' , block reason: Other Priority"
+        ],
+        [
+          "2025-11-10T22:00:57+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-10T22:00:47+00:00",
+          "Kayako - ticket id 60238457 // Carlos Encalada commented publicly: Dear Don and Warren,\n\nThank you both for your continued attention to this matter. I\u2019ve reviewed the report and can confirm that our infrastructure team is actively investigating it.\n\nPlease rest assured that this issue has been assigned the highest priority level available in our system. We will notify you immediately as soon as we have any updates or findings to share.\n\nYour continued patience and understanding are greatly appreciated.\n\nSincerely,\nKhoros Care Support Team"
+        ],
+        [
+          "2025-11-10T20:44:13+00:00",
+          "Kayako - ticket id 60238457 // Warren Cook commented privately: The issue Don is referring to occurred on August 12th. History below. Can we get written confirmation in this case that this was looked at? I asked for that previously and we have not received a confirmation.\n\nWe experienced this issue on August 12th of this year and went through the same steps where Khoros said the issue was related to client slide factors within the Fortinet environment. After many hours it was determined that was incorrect and the issue was a defect in the chat widget client side code. The chat widget failed to attach necessary authentication headers to certain API requests\nThese incomplete requests were correctly rejected by backend security filters as per standard security protocols\nThis rejection prevented the widget from establishing a persistent connection. Without this connection, the widget could not receive real-time message updates. The technical investigation confirmed this was not due to any configuration issues on Fortinet's side but was a defect in the widget code itself.\n\nThe resolution was a code change from Khoros that was supposed to deliver the following:\nCorrection of the authentication header implementation in the chat widget\nImplementation of comprehensive error logging and recovery mechanisms\nAddition of enhanced error detection to enable faster troubleshooting\nImplementation of fault tolerance measures to maintain chat experience even when partial errors occur"
+        ],
+        [
+          "2025-11-10T20:29:37+00:00",
+          "Kayako - ticket id 60238457 // Don Kempt commented privately: It should also be noted, that we have seen an issue similar to this, where as we were told it was our adobe script, but turned out to be a internal Khoros issue.\n\nI believe that is case 60164071, but I could be wrong. There is no ay to search our 310 tickets to find the exact ticket."
+        ],
+        [
+          "2025-11-10T19:48:11+00:00",
+          "Kayako - ticket id 60238457 // Don Kempt commented publicly:  \n\nHello Pavly, \n\n\u00a0\n\nThank you for the clarifications. We are currently having our development team review our configuration and provide feedback based on your feedback.\n\n\u00a0\n\nWe whitelisted as requested and it made no difference to internal users:\n\nbrand-messenger.app.khoros.com\n\n*.khorostech.com\n\n\u00a0\n\nTo add one more thing to this, We make changes to our public support portal on a quarterly basis. We have strict change management protocols.\n\nIt strikes me as odd for it to be on both Fortinet.com and support.fortinet.com. These sites are developed by different teams, hosted on different webservers. There is no code shared between either site to my knowledge. The only common thing related to chat is the embedded script provided by Khoros. We seem to work perfectly fine, for 1 to 2 weeks before we run into this issue again(having to refresh for updates). Assuming it is configuration of NewRelic Wrappers, would it not be more consistent?\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nDon Kempt\n\nSupport Operations, Support & Services\n\nimage\n\nimage\n\nE: dkempt@fortinet.com\n\nMicrosoft Teams (within tenant only): Start Chat [https://teams.microsoft.com/l/chat/0/0?users=dkempt@fortinet.com&topicname=Chat]\n\nAddress: 16 Fitzgerald Road, Ottawa, ON K2H 8R6\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-10T19:33:23+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10307 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-10T19:28:49+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10307 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-11-10T18:02:02+00:00",
+          "Kayako - ticket id 60238457 // Pavly Nashed commented privately:  What was done and tested to provide the response:\n\n\t*\nHAR analysis (multiple runs):\n\n \t*\nAll Khoros endpoints (REST + WS) return 200/101/304 \u2014 backend healthy.\n\n \t*\nIn failing runs, no call to /rest/ws/message/read occurs after a send; in working runs (after refresh), it appears and returns 200.\n\n\t*\nConsole/runtime checks on Fortinet page:\n\n \t*\nXMLHttpRequest.prototype.send initially showed New Relic wrapper (nrWrapper); same for setTimeout and addEventListener.\n\n \t*\nEven after blocking bam.nr-data.net (beacon) and js-agent.newrelic.com (loader), wrappers persisted due to inline NR bootstrap via Adobe Launch / page instrumentation.\n\n\t*\nAdditional client errors observed:\n\n \t*\nc360a.min.js: SyntaxError: Unexpected token '<' (script served as HTML/error page).\n\n \t*\nIntersectionObserver.observe invoked on non-Element in clientlib-all.min.*.\n\n\t*\nIsolation attempts:\n\n \t*\nBlocking collectors only \u2192 ineffective (agent still executed from inline/first-party loader).\n\n \t*\nManual unpatch (restoring natives from iframe) \u2192 APIs restored after init; did not fix already-broken run.\n\n \t*\nDevTools local override to remove inline NREUM \u2192 wrappers still present via other loaders (Launch).\n\n \t*\nProposed/created a minimal clean harness (chat-lite.html) to load only Khoros (loader + init) for proof without any site instrumentation.\n\n Evidence (high-confidence) \n\n \t*\nBackend health: No 5xx; message POSTs to /rest/ws/message/v2/send consistently 200 OK. WS handshake 101.\n\n \t*\nClient failure mode: Receive loop never starts (no /message/read) in failing runs; after refresh, it does.\n\n \t*\nRuntime pollution: window.NREUM truthy; setTimeout / addEventListener wrapped by nrWrapper at page start; third-party script parse error and IO observer crash present.\n\n \t*\nDevOps infrastructure logs (Nov 7 window): 100% success for message POSTs; no infra faults; aligns with a client-side failure.\n\n Current assessment \n\n \t*\nNot a Khoros platform issue.\n\n\t*\nDual factors produce the same symptom:\n\n \t*\nCorporate proxy JS injection (on VPN/corp network) \u2014 confirmed by DevOps reproduction; requires whitelist.\n\n \t*\nSite-side instrumentation on Fortinet pages (off-VPN too) \u2014 New Relic Browser + a broken third-party script and an observer bug disrupt the widget\u2019s init, preventing /message/read from starting.\n\n "
+        ],
+        [
+          "2025-11-10T17:57:00+00:00",
+          "Kayako - ticket id 60238457 // Pavly Nashed commented publicly: Dear Meaghan,\n\nThanks for the quick reply\u2014and totally fair point about testing from home. As it seems there has been a slight misunderstanding, I would like to provide more details on our analysis of your page shows and why the problem still appears off-VPN.\n\nShort answer\nTwo separate things can cause the same \u201cmessages only show after refresh\u201d symptom, and both live in the browser (not our backend):\n\n\t*\nCorporate proxy injection (on VPN/corp network) \u2013 this is why we asked for whitelisting.\n\n\t*\nSite-side instrumentation on the Fortinet page (off VPN as well). New Relic\u2019s browser agent and a third-party script error are wrapping/interrupting the code path that starts the receive stream.\n\nSo yes, you can reproduce at home with no proxy, but that points to the site scripts on the contact page, not to Khoros.\n\nWhat we\u2019re seeing on your page (from the Network and Console logs)\n\n\t*\nAll Khoros calls (including message send) return 200, and WebSocket upgrades are 101 \u2192 backend is healthy.\n\n\t*\nIn failing runs, the browser never starts the receive call (/rest/ws/message/read). After a refresh, it does\u2014hence messages suddenly appear.\n\n\t*\nYour console shows New Relic wrappers on core APIs (setTimeout, addEventListener) and window.NREUM present. That means the page is instrumented before the chat initializes.\n\n\t*\nThere\u2019s also a third-party parse error on c360a.min.js (\u201cUnexpected token \u2018<\u2019\u201d), plus an IntersectionObserver error in your client library\u2014both can break init when combined with those wrappers.\n\nThat combination is enough to reproduce the problem even off-VPN. The proxy is a separate layer that will cause the same failure inside the corporate network unless whitelisted.\n\nWhat will actually fix it (two-track plan)\nTrack A \u2014 Page (works everywhere, including home)\nPlease make these changes on the routes that host the chat widget (e.g., /support/contact):\n\n\t*\nDisable New Relic Browser on the chat page(s)\nIf you must keep NR globally, scope it so it doesn\u2019t run on the chat route or preconfigure it to avoid instrumenting timers/listeners/AJAX for Khoros domains.\n(If you prefer config over removal: add an AJAX deny-list for brand-messenger.app.khoros.com, brandmessenger.euw1.khoros.com, *.khorostech.com, *.lcloud.com.)\n\n\t*\nFix or exclude the Salesforce c360a.min.js include\nIt\u2019s returning HTML and throwing a parse error. Remove it from the chat page or correct the URL/env so it serves valid JS.\n\n\t*\nGuard the IntersectionObserver usage in your clientlib so you never call observe() on a non-Element.\n\n\t*\nLoad order + single init\nLoad the chat widget before analytics/personalization scripts and add a simple guard so it can\u2019t initialize twice:\n\nif\u00a0(!window.__khorosInited)\u00a0{\u00a0window.__khorosInited\u00a0=\u00a0true;\u00a0/*\u00a0init\u00a0widget\u00a0here\u00a0*/\u00a0}\n\nHow you\u2019ll confirm it\u2019s fixed:\n\n\t*\nDevTools \u2192 Console on page load:\n\n\t*\n!!window.NREUM \u2192 false (or at least no wrappers on core APIs)\n\n\t*\nsetTimeout.toString() \u2192 [native code]\n\n\t*\nEventTarget.prototype.addEventListener.toString() \u2192 [native code]\n\n\t*\nSend \u201cHello\u201d; DevTools \u2192 Network should immediately show /rest/ws/message/read following the send.\n\nTrack B \u2014 Corporate network (needed for users on VPN)\n[Already done] Ask your IT team to exclude these domains from JavaScript injection and SSL inspection:\n\n\t*\nbrand-messenger.app.khoros.com\n\n\t*\n*.khorostech.com\n\n\t*\n*.lcloud.com\n\nThis removes the proxy\u2019s injection layer for corporate users. (It doesn\u2019t change off-VPN behavior, which is handled by Track A.)\n\nWhy whitelisting still makes sense\nYou\u2019re right that the code executes in the end-user\u2019s browser. That\u2019s precisely where both influences act:\n\n\t*\nOn VPN, the proxy injects/rewrites before the code runs \u2192 needs the whitelist.\n\n\t*\nOn any network, your page instrumentation runs (New Relic + the failing third-party script) \u2192 needs the page changes above.\n\nAddressing both ensures the widget is reliable for all users.\n\nI hope this provides further clarification on the current state, and our proposed resolution based on our analysis and investigation. Should you have any further inquiries or encounter any issues, we would be more than happy to assist you further.\nBest regards,\nPavly Nashed\nKhoros Care Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-10T16:27:54+00:00",
+          "Kayako - ticket id 60238457 // Aamir Merchant commented privately:  Hi Team,\n\nThis ticket is till open. Can we please assign and solve this asap? \n\n"
+        ],
+        [
+          "2025-11-10T14:28:41+00:00",
+          "Kayako - ticket id 60238457 // Balaji Jayaraman commented privately:  Thanks for the follow up. \n \u00a0 \n Please keep the pressure on this, as we have been with out chat since Friday. \n An ETA for system restore would be helpful. Please continue to treat this as a P1 with the highest priority. \n\n"
+        ],
+        [
+          "2025-11-10T14:26:45+00:00",
+          "Kayako - ticket id 60238457 // Balaji Jayaraman commented privately:  From Customer \n \u00a0 \n We have put a request to whitelist the to URL\u2019s in question. \n \u00a0 \n I am not convinced that this will resolve the issue. \n \u00a0 \n We host our website, yes\u2026 but the brand messenger javascript is a called from the end users web-browser, not our webserver. \n Whitelisting it on the corporate network will have 0 effect on the end customer. \n If I access the webchat widget from my home network, I run into the exact same issue. No vpn, no proxy \nimage \n \u00a0 \n Please advise. "
+        ],
+        [
+          "2025-11-08T21:41:30+00:00",
+          "Kayako - ticket id 60238457 // Warren Cook commented privately: We are still waiting for confirmation from IT if this can be done"
+        ],
+        [
+          "2025-11-08T09:03:10+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10219 is changed to 'Closed' , block reason: -"
+        ],
+        [
+          "2025-11-08T08:57:01+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10219 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-08T05:06:32+00:00",
+          "Kayako - ticket id 60238457 // Aamir Merchant commented privately: Hi team,\n\nOur infrastructure team has completed the investigation and identified the root cause.\n\nROOT CAUSE\n\nCorporate VPN/proxy JavaScript injection is interfering with the widget XHR requests. Our team reproduced the issue\u2014it occurs when VPN is active and does not occur when VPN is disabled.\n\nSOLUTION\n\nFortinet IT Department needs to whitelist these two domains from JavaScript injection:\n\n\t* \nbrand-messenger.app.khoros.com\n\t* \n*.khorostech.com\n\nOnce the domains are whitelisted on your end, the chat widget performance should be restored.\n\nNEXT STEPS\n\nPlease coordinate with your IT team to implement the domain whitelist, then test the chat functionality. Let us know once you've completed this so we can confirm resolution.\n\nBest regards,\nAamir\nimage\n\n\n"
+        ],
+        [
+          "2025-11-08T01:38:57+00:00",
+          "Kayako - ticket id 60238457 // Harry Tasker commented publicly: Dear Meaghan,\n\nThank you for your patience.\nOur infrastructure team have thoroughly investigated this issue and identified the Root cause as Corporate VPN/proxy JavaScript injection interfering with widget.\u00a0\nThey have reproduced the issue with VPN active, and are unable to reproduce when no VPN is active.\n\nTo resolve this issue, please ask the Fortinet IT Department to whitelist these domains from JavaScript injection:\n\n\t* brand-messenger.app.khoros.com\n\t* *.khorostech.com\u00a0\n\nKindly let us know once the domains are whitelisted. Thank you!\n\nBest regards,\nHarry Samuel Tasker\nKhoros Community Classic Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-08T01:17:20+00:00",
+          "Kayako - ticket id 60238457 // Harry Tasker commented publicly: Dear Meaghan Mcclure,\n\nThank you for reaching out. We\u2019ve received your escalation regarding ticket 60238457 and will be actively working on it.\n\nYou can expect an update from us soon.\n\nBest regards,\nHarry Samuel Tasker\nKhoros Community Classic Support Team"
+        ],
+        [
+          "2025-11-08T01:09:06+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:All customers affected - no response from Infrastucture Team\n\nThe severity is: complete_outage\n\n"
+        ],
+        [
+          "2025-11-08T00:22:26+00:00",
+          "Kayako - ticket id 60238457 // Monica Botey commented privately: stop the AI responses for this case."
+        ],
+        [
+          "2025-11-07T23:15:39+00:00",
+          "Kayako - ticket id 60238457 // Xavier A Villarroel commented privately: \t* DevOPS commented: \n\n \t* Investigation complete with irrefutable evidence (AWS logs + reproduction testing). Root cause confirmed: Corporate VPN/proxy JavaScript injection interfering with widget XHR. Successfully reproduced - works without VPN, fails with VPN. Awaiting Customer Support to contact Fortinet IT Department to request domain whitelist (brand-messenger.app.khoros.com and *.khorostech.com) from JavaScript injection. All technical evidence and reproduction steps documented in comments above.\n\n"
+        ],
+        [
+          "2025-11-07T22:58:59+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10219 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-11-07T22:58:54+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10219 is changed to 'Blocked' , block reason: Waiting on Customer Support"
+        ],
+        [
+          "2025-11-07T22:56:47+00:00",
+          "Kayako - ticket id 60238457 // Warren Cook commented privately: I would like an update of what work has been done to date to resolve this issue. To date - This is what we have received - \"We are investigating the issue with the Infrastructure team.\"\n\nThat is unacceptable for a P1 case where our chat has been non functional for the majority of the US business day. What tests have been performed. Has the original issue from 2 months ago been revisited? If so, what were the results? What is the next step?"
+        ],
+        [
+          "2025-11-07T22:36:59+00:00",
+          "Kayako - ticket id 60238457 // Monica Botey commented privately: Hello, checking again, it has been 2h since the last update."
+        ],
+        [
+          "2025-11-07T21:01:07+00:00",
+          "Kayako - ticket id 60238457 // Randall Shawver commented privately:  Before I could save, customer responded. Inform customer SaaS is working on this, and place on hold. "
+        ],
+        [
+          "2025-11-07T20:58:02+00:00",
+          "Kayako - ticket id 60238457 // Don Kempt commented publicly:  \n\nHello Denis, \n\n\u00a0\n\nI appreciate the response. Please note this case was opened as a P1 at 11am EST. This is 5hrs with out a working chat.\n\nPlease keep in mind this is our customers experiencing the issue, which we can replicate in house, across 2 separate portals. \n\nWe have no control on our customers browser extensions. This being said, disabling extensions and running incognito locally has no effect. The issue persists \n\n\u00a0\n\nThe tracking and telemetry has been running on our portals since before we started using Khoros Care, when they explained it was the adobe script we run, your support team said the same thing before, upon pressing it turned out to be an issue on the Khoros side. \n\n\u00a0\n\nWe only run a script provided by Khoros in both portals for the chat ui. \n\n\u00a0\n\nI hope this adds some context. \n\n\u00a0\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nDon Kempt\n\nSupport Operations, Support & Services\n\nimage\n\nimage\n\nE: dkempt@fortinet.com\n\nMicrosoft Teams (within tenant only): Start Chat [https://teams.microsoft.com/l/chat/0/0?users=dkempt@fortinet.com&topicname=Chat]\n\nAddress: 16 Fitzgerald Road, Ottawa, ON K2H 8R6\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-07T20:55:37+00:00",
+          "Kayako - ticket id 60238457 // Randall Shawver commented privately:  What is your proposed action?\n(required: select one, delete the rest) \n\n \t* Send to external team\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n N/A \n\n Best regards, \n Randall Shawver \n Khoros Community Classic Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n Pinged IM Denis Spirin. Confirmed they are on a bridge for CARESMM-10219 \n Place on hold. "
+        ],
+        [
+          "2025-11-07T20:11:55+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10219 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-07T20:11:31+00:00",
+          "Kayako - ticket id 60238457 // Denis Spirin commented publicly: Dear everyone,\n\nWe are investigating the issue with the Infrastructure team.\n\nWe will update you once there is information available.\n\nSincerely,\nDenis Spirin\nKhoros Community Classic Support Team "
+        ],
+        [
+          "2025-11-07T20:03:39+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10219 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-07T19:53:36+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10219 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-11-07T19:03:02+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:All customers affected - no response from Infrastucture Team\n\nThe severity is: complete_outage\n\n"
+        ],
+        [
+          "2025-11-07T18:31:50+00:00",
+          "Kayako - ticket id 60238457 // Don Kempt commented publicly:  \n\nI am adding Kian for visibility. \n\n\u00a0\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nDon Kempt\n\nSupport Operations, Support & Services\n\nimage\n\nimage\n\nE: dkempt@fortinet.com\n\nMicrosoft Teams (within tenant only): Start Chat [https://teams.microsoft.com/l/chat/0/0?users=dkempt@fortinet.com&topicname=Chat]\n\nAddress: 16 Fitzgerald Road, Ottawa, ON K2H 8R6\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-07T17:35:48+00:00",
+          "Kayako - ticket id 60238457 // Monica Botey commented publicly:  \n\n AAMIR, BRAD, THIS IS THE SAME ISSUE WE HAD IN AUGUST CASE: 60164071\u00a0(THE ONE STILL PENDING RCA). THIS NEEDS TO BE ESCALATED TO YOUR INFRASTRUCTURE TEAM ASAP.\n\n This is the response back in August:\u00a0 \n image \n\n \n"
+        ],
+        [
+          "2025-11-07T17:17:52+00:00",
+          "Kayako - ticket id 60238457 // Warren Cook commented privately: I would like to see a response in this case from a named individual from Khoros ASAP. We will make people available for a phone call to get this resolved."
+        ],
+        [
+          "2025-11-07T17:17:16+00:00",
+          "Kayako - ticket id 60238457 // Aamir Merchant commented privately: Hi Don,\n\nThanks for getting your dev team's feedback. They're technically correct that async calls shouldn't block each other, but there are real-world factors creating the bottleneck:\n\nWhy Performance Issues Are Happening Now:\n\n\t* \nBrowser Main Thread Contention \u2013 While network calls are async, JavaScript execution, DOM updates, and rendering all compete on the single main thread. Multiple scripts executing simultaneously create queuing delays.\n\t* \nEvent Loop Saturation \u2013 When async operations complete around the same time, their callbacks queue up in the event loop sequentially, causing UI responsiveness delays.\n\t* \nBrowser Connection Limits \u2013 Browsers limit concurrent connections per domain (6-8 typically). Frequent beacon/tracking requests saturate these pools, queuing legitimate application requests.\n\t* \nCumulative Configuration Changes \u2013 Adobe script tracking points may have been updated, New Relic sampling rates increased, or browser updates changed resource prioritization. These combine to cross a performance threshold.\n\nThe HAR file shows frequent ongoing requests to monitoring endpoints throughout the session. While each is small, the cumulative effect during user interactions creates the delays.\n\nNext Steps:\n\nSince these Adobe scripts were added at our request, I'd like our support team to review:\n\n\t* \nWhether all tracking points are still necessary or can be optimized\n\t* \nIf beacon frequencies or sampling rates can be reduced\n\t* \nDeferred or conditional loading for non-critical monitoring scripts\n\nBest regards,\nAamir\nimage\n\n\n"
+        ],
+        [
+          "2025-11-07T17:07:32+00:00",
+          "Kayako - ticket id 60238457 // Don Kempt commented publicly: Hello Aamir, \n\n Here is the response our dev team: \n\n \"Yes, those trackers and monitoring scripts are coming from the Adobe Script that requested to add to our ticket portal and welcome page \n\n Technically, calling any api in browser level is asynchronous and it shouldn't affect any delay or waiting time for another api (unless intentionally coded by programmer to call API 1 and THEN call API 2, which is not for our case) \n\n Calling api with delay or slowness can caused by PC spec (hardware and also software) because of rendering time or calculation process or size of response or request api \" \n\n We ran into an issue like this previously. We were running the same scripts then as well, why would these become an issue today and not before? \n\n Regards, \n Don"
+        ],
+        [
+          "2025-11-07T16:52:04+00:00",
+          "Kayako - ticket id 60238457 // Meaghan Mcclure commented publicly:  \n Attaching the HAR files for chrome and edge in incognito mode. \n\nBest Regards ,\n\nMeaghan McClure\n\nCustomer Service Manager - AMER\n\nHours : 9:00am -6:00pm EST\n\nmmcclure@fortinet.com\n\nHow to Engage Customer Service [https://fortinet.sharepoint.com/sites/CustomerSupport/SitePages/Customer-Support-%26-Services-Customer-Service-Alias-Guidelines.aspx]\n\nimage\n\n-------------------------\n\n \n"
+        ],
+        [
+          "2025-11-07T16:42:51+00:00",
+          "Kayako - ticket id 60238457 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:affecting all customers\n\nThe severity is: complete_outage\n\n"
+        ],
+        [
+          "2025-11-07T16:41:02+00:00",
+          "Kayako - ticket id 60238457 // Monica Botey commented publicly:  \n Hi Aamir, Brad, \nThis is being experienced from the customer side, same issue as we had in August (case 60164225), you can go to: https://www.fortinet.com/support/contact\u00a0and experience it yourself.\u00a0 \nMonica \n\n \n"
+        ],
+        [
+          "2025-11-07T16:37:23+00:00",
+          "Kayako - ticket id 60238457 // Randall Shawver commented privately:  What is your proposed action?\n(required: select one, delete the rest) \n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Meaghan,\u00a0 \n\n Thank you for the update. We will await the results of your testing. \n\n Best regards, \n Randall Shawver \n Khoros Community Classic Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n Back to pending. "
+        ],
+        [
+          "2025-11-07T16:33:08+00:00",
+          "Kayako - ticket id 60238457 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-11-07T16:32:48+00:00",
+          "Kayako - ticket id 60238457 // Don Kempt commented publicly: Hello Aamir,\u00a0 \n\n Thank you. We will check with our dev team to see if any trackers were added. \n\n I'll also ask our cs team to run incognito to test. \n\n We will get back to you. \n\n Regards \n Don"
+        ],
+        [
+          "2025-11-07T16:28:31+00:00",
+          "Kayako - ticket id 60238457 // Aamir Merchant commented privately: Hi Donald,\n\nThanks for clarifying. Even though you're only running BrandMessenger directly, the HAR file shows additional scripts executing in your browser: New Relic (js-agent.newrelic.com [https://t.shortwave.com/links/v1/38qLNFq9KIKYz48mB_smbQR-VKpndBz5ilTUmv428qSweeJuIWgYWlfqR1StssO6kDUAwcfRyv5pxV_flt_p2fedi8ATgrSm4wjIGuNFzusDGgsd4xn6TeTwBkPL3tPDz5M8k28p13GGd_1cQ3PpdmXM_Fcs_5gdPV88TI2zBa0]), image beacons (b.6sc.co [https://t.shortwave.com/links/v1/lAsolfRue7VwFeA6EQ2cfwfgaeduEw2_n0yVSZZFZSaw9moh5yX8gJrznFuf3FTkI3dbx2HlFQKORZ67g5vCTyvaI5DHv7SGNyqRZb-sJxIf6oxXFiQnTscg0-370VzXo-SaoamS2cPivz7mPNdJjg9bTsntlm_3vV2BSM0lV18]), and other analytics requests. These are consuming resources and impacting chatbot responsiveness.\n\nThese scripts likely come from:\n\n\t* \nTag management systems (GTM, Adobe Launch, Tealium) configured at the domain level\n\t* \nAPM tools like New Relic added by your IT/infrastructure teams\n\t* \nAnalytics platforms running site-wide\n\t* \nThird-party integrations loading their own dependencies\n\nQuick troubleshooting:\n\n\t* \nAudit your browser's Network tab to see all active scripts when the chatbot loads\n\t* \nCheck with your IT/infrastructure teams on New Relic or similar APM monitoring\n\t* \nReview your tag management configuration for what's being deployed site-wide\n\t* \nTest a minimal page with only BrandMessenger to isolate the issue\n\nLet me know what you find and the support team can go from there. \n\nBest regards,\nAamir\nimage\n\n\n"
+        ],
+        [
+          "2025-11-07T16:18:18+00:00",
+          "Kayako - ticket id 60238457 // Mike Kebede commented privately:  ATLAS'S Response is enough "
+        ],
+        [
+          "2025-11-07T16:05:32+00:00",
+          "Kayako - ticket id 60238457 // ATLAS commented publicly: Dear Meaghan,\n\nThank you for your follow-up regarding the delays encountered with the chatbot in your Khoros Care Production instance, and for clarifying that only the BrandMessenger JavaScript is run on your environment.\n\nAfter analyzing the attached HAR file, the evidence points to significant browser resource usage resulting from telemetry and monitoring scripts, such as those from New Relic (js-agent.newrelic.com) and additional image beacon tracking from b.6sc.co. These scripts engage in frequent, overlapping background network requests (XHR and image beacons), which exhibit unusually high \"wait\" and total duration times (with several requests exceeding 75-100 ms). While none of these individual requests are failing, their cumulative effect can introduce browser-side congestion, potentially impacting interactive elements like chatbots by causing the UI to lag during chat initiation or response handling.\n\nEven if your direct integration is only with BrandMessenger, these monitoring scripts (e.g., New Relic for performance tracking, or other tag manager-contributed scripts) may be loaded indirectly, either as part of general site instrumentation or through dependencies introduced by your environment or configured third-party services. The observed pattern in the HAR file suggests that these external telemetry services are operating persistently, which aligns with the timing of reported chatbot delays.\n\nRecommended Steps:\n\n \t* Audit your site\u2019s active scripts, including those injected by analytics, tag managers, or monitoring services, even if these are not part of your custom JavaScript.\n \t* Consider temporarily disabling or limiting these monitoring integrations and test whether chatbot responsiveness improves. If a tag manager is in use, review which scripts are deployed across your Care instance.\n \t* Where feasible, defer or asynchronously load non-essential third-party scripts to reduce their impact on critical user interactions. This can be tested by moving script execution to after main interactive components (such as your chatbot) have initialized.\n \t* Regularly monitor client-side performance using browser developer tools, focusing on \u201cSpeed Index\u201d and \u201cLong Task\u201d indicators to measure improvements following the reduction of competing scripts.\n\nFor additional best practices on optimizing performance and the effect of third-party integrations, please refer to this helpful resource: Community SEO: Preparing for Google's Page Experience Improvements [https://khoros-classic.kayako.com/article/125133]. The article clearly notes that excessive third-party scripts may degrade actual and perceived site performance, especially for dynamic features such as chatbots.\n\nIn summary, even in scenarios where only one intended script is deployed, browser-based performance bottlenecks can still result from layered instrumentation or analytics scripts, which are often not visible at first glance. Addressing and reducing the number and frequency of background telemetry scripts is recommended as a first step in restoring predictable, responsive chatbot interactions in your Care environment.\n\nIf further clarification or guidance on auditing and isolating these external scripts is needed, please let us know.\n\nSincerely,\nAtlas\nKhoros Community Classic Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-07T16:04:47+00:00",
+          "Kayako - ticket id 60238457 // Don Kempt commented publicly:  \n\nAdding Aamir,\n\n\u00a0\n\nAamir, we only run the javascript provided from brandmessanger, please advise\n\n\u00a0\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nDon Kempt\n\nSupport Operations, Support & Services\n\nimage\n\nimage\n\nE: dkempt@fortinet.com\n\nMicrosoft Teams (within tenant only): Start Chat [https://teams.microsoft.com/l/chat/0/0?users=dkempt@fortinet.com&topicname=Chat]\n\nAddress: 16 Fitzgerald Road, Ottawa, ON K2H 8R6\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-07T15:54:15+00:00",
+          "Kayako - ticket id 60238457 // ATLAS commented publicly: Dear Meaghan,\n\nThank you for providing detailed information and the HAR file regarding the chatbot delays in your Khoros Care Production environment (EMEA region, https://fortinet.response.lithium.com). Based on our analysis of the HAR file you attached, we observed multiple telemetry and tracking requests\u2014primarily from monitoring scripts like New Relic (js-agent.newrelic.com) and other services (such as b.6sc.co)\u2014which are creating frequent background XHR and image beacon requests. These calls exhibit consistently high wait times (ranging up to 104 ms for XHRs and 68 ms for tracking pixels), and they are initiated in quick intervals, causing increased network and browser resource consumption.\n\nWhile none of these requests are outright failing (all are returning HTTP 200 statuses), their frequency and cumulative overhead can impact browser responsiveness. In this pattern, excessive third-party script activity, especially from analytics or monitoring integrations, can contribute to client-side congestion and UI lag for interactive elements like chatbots.\n\nThis aligns with best practices highlighted in our knowledge resources. As described in our article Community SEO: Preparing for Google's Page Experience Improvements [https://khoros-classic.kayako.com/article/125133], high numbers of third-party scripts (such as chatbots, analytics, and retargeting trackers) can degrade actual and perceived site performance. Multiple overlapping external requests may lead to browser resource contention, directly affecting the responsiveness of web-based chat systems such as Khoros Care.\n\nRecommended Steps to Mitigate:\n\n* Reduce the number of simultaneous third-party scripts loaded on your Care instance, especially those that generate frequent background network requests (like analytics trackers and monitoring beacons).\n \t* Where feasible, defer or asynchronously load non-critical third-party scripts to minimize their impact on interactive components.\n \t* Consider temporarily disabling or limiting telemetry and real-time monitoring integrations to test if this alleviates chat response delays.\n \t* Regularly review enabled browser plugins, tracking scripts, and tag managers for redundancy or unnecessary overlap.\n \t* Monitor the Speed Index and client-side rendering performance using browser developer tools to identify and verify improvements after reductions.\n\nThis approach generally leads to a direct improvement in perceived UI responsiveness for end-users engaging with chatbots, as excessive background processing is one of the primary factors causing these delays.\n\nFor additional context and actionable recommendations regarding optimizing page performance and limiting the impact of third-party dependencies, please review the tips outlined in our article: Community SEO: Preparing for Google's Page Experience Improvements [https://khoros-classic.kayako.com/article/125133].\n\nIf after these steps the issue persists, consider further browser profiling to pinpoint specific scripts or network interactions that remain high-impact. Please note that since there were no failed requests or server-side issues detected, the performance bottleneck is client-side and relates predominantly to the volume and frequency of third-party script activity.\n\nIf you have any further questions or need clarification regarding these optimizations, feel free to follow up.\n\nSincerely,\nAtlas\nKhoros Community Classic Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-07T15:53:54+00:00",
+          "Kayako - ticket id 60238457 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\tfortinet.response.lithium.com_Archive_Nov_7_2025.har_1608195\n\n-\u00a0Multiple\u00a0XHR\u00a0requests\u00a0(POST\u00a0to\u00a0https://bam.nr-data.net/browser/blobs\u00a0and\u00a0/jserrors\u00a0endpoints)\u00a0show\u00a0high\u00a0wait\u00a0times,\u00a0frequently\u00a0in\u00a0the\u00a0range\u00a0of\u00a049-101\u00a0ms,\u00a0with\u00a0one\u00a0instance\u00a0reaching\u00a0over\u00a077\u00a0ms,\u00a0indicating\u00a0delayed\u00a0round\u00a0trips.\n-\u00a0Several\u00a0XHR\u00a0requests\u00a0have\u00a0a\u00a0total\u00a0time\u00a0spent\u00a0(the\u00a0duration\u00a0the\u00a0request\u00a0was\u00a0open)\u00a0between\u00a053\u00a0ms\u00a0and\u00a0104\u00a0ms,\u00a0which\u00a0is\u00a0unusually\u00a0high\u00a0for\u00a0XHR\u00a0background\u00a0telemetry.\n-\u00a0Requests\u00a0initiated\u00a0by\u00a0https://js-agent.newrelic.com/nr-spa-1.266.0.min.js\u00a0(runHarvest,\u00a0scheduleHarvest,\u00a0etc.)\u00a0show\u00a0repeating\u00a0setTimeout\u00a0and\u00a0nrWrapper\u00a0send\u00a0cycles,\u00a0indicating\u00a0persistent\u00a0polling/heartbeat\u00a0actions\u00a0potentially\u00a0slowing\u00a0overall\u00a0browser/system\u00a0responsiveness.\n-\u00a0The\u00a0/v1/beacon/img.gif\u00a0requests\u00a0to\u00a0https://b.6sc.co\u00a0consistently\u00a0show\u00a0long\u00a0wait\u00a0times\u00a0(49-64\u00a0ms)\u00a0and\u00a0total\u00a0durations\u00a0up\u00a0to\u00a068\u00a0ms\u00a0for\u00a0a\u00a0simple\u00a0image\u00a0beacon;\u00a0these\u00a0see\u00a0periodic\u00a027-27\u00a0second\u00a0intervals\u00a0as\u00a0active_time_track,\u00a0showing\u00a0possible\u00a0delays\u00a0or\u00a0lag\u00a0in\u00a0regular\u00a0tracking\u00a0events.\n-\u00a0The\u00a0presence\u00a0of\u00a0multiple\u00a0telemetry/image\u00a0beacon\u00a0tracking\u00a0calls\u00a0from\u00a0different\u00a0sources\u00a0(New\u00a0Relic,\u00a06sc)\u00a0overlap\u00a0in\u00a0time\u00a0and\u00a0likely\u00a0contribute\u00a0to\u00a0client-side\u00a0processing\u00a0and\u00a0network\u00a0congestion.\n-\u00a0All\u00a0these\u00a0requests\u00a0(both\u00a0XHR\u00a0and\u00a0image/gif\u00a0beacons)\u00a0are\u00a0initiated\u00a0as\u00a0part\u00a0of\u00a0automated\u00a0tracking,\u00a0not\u00a0directly\u00a0user-driven,\u00a0but\u00a0would\u00a0compete\u00a0with/impact\u00a0UI\u00a0responsiveness\u00a0for\u00a0interactive\u00a0elements\u00a0like\u00a0chatbots.\n-\u00a0No\u00a0failed\u00a0(non-200)\u00a0HTTP\u00a0responses\u00a0are\u00a0observed,\u00a0but\u00a0performance\u00a0timings\u00a0remain\u00a0consistently\u00a0high\u00a0for\u00a0small\u00a0payload\u00a0telemetry.\n-\u00a0These\u00a0repeated\u00a0slow\u00a0telemetry\u00a0events\u00a0coincide\u00a0time-wise\u00a0with\u00a0the\u00a0period\u00a0referenced\u00a0by\u00a0the\u00a0customer\u00a0for\u00a0chatbot\u00a0delays,\u00a0indicating\u00a0end-user\u00a0browser\u00a0lag\u00a0may\u00a0be\u00a0contributed\u00a0to\u00a0by\u00a0excessive\u00a0or\u00a0delayed\u00a0background\u00a0network\u00a0requests.\n-\u00a0The\u00a0root\u00a0blocked\u00a0time\u00a0and\u00a0blocked_queueing\u00a0time\u00a0in\u00a0HAR\u00a0timings\u00a0for\u00a0related\u00a0requests\u00a0sometimes\u00a0spike\u00a0above\u00a010\u00a0ms,\u00a0suggesting\u00a0possible\u00a0browser-side\u00a0congestion\u00a0or\u00a0resource\u00a0contention.\n-\u00a0The\u00a0issue\u00a0does\u00a0not\u00a0appear\u00a0tied\u00a0to\u00a0a\u00a0single\u00a0failed\u00a0request\u00a0but\u00a0a\u00a0pattern\u00a0of\u00a0slow,\u00a0stacked\u00a0telemetry\u00a0activity\u00a0from\u00a0monitoring\u00a0scripts\u00a0which\u00a0may\u00a0overwhelm\u00a0or\u00a0interfere\u00a0with\u00a0timely\u00a0UI\u00a0updates\u00a0in\u00a0Care\u00a0chat.\n\n"
+        ],
+        [
+          "2025-11-07T15:53:05+00:00",
+          "Kayako - ticket id 60238457 // Meaghan Mcclure commented publicly:  \n Hi Team, \n\n Where we see the issue: Khoros Care Production \n Our hosting location: EMEA \n Our care instance: https://fortinet.response.lithium.com \n\n When initiating chats, the bot is showing significant delays in accepting responses, or is not moving forward.\u00a0\u00a0 \n\n Attaching HAR file.\n\n Please treat this as a P1 situation.\u00a0 \n\nBest Regards ,\n\nMeaghan McClure\n\nCustomer Service Manager - AMER\n\nHours : 9:00am -6:00pm EST\n\nmmcclure@fortinet.com\n\nHow to Engage Customer Service [https://fortinet.sharepoint.com/sites/CustomerSupport/SitePages/Customer-Support-%26-Services-Customer-Service-Alias-Guidelines.aspx]\n\nimage\n\n-------------------------\n *** Please note that this message and any attachments may contain confidential and proprietary material and information and are intended only for the use of the intended recipient(s). If you are not the intended recipient, you are hereby notified that any review, use, disclosure, dissemination, distribution or copying of this message and any attachments is strictly prohibited. If you have received this email in error, please immediately notify the sender and destroy this e-mail and any attachments and all copies, whether electronic or printed. Please also note that any views, opinions, conclusions or commitments expressed in this message are those of the individual sender and do not necessarily reflect the views of Fortinet, Inc., its affiliates, and emails are not binding on Fortinet and only a writing manually signed by Fortinet's General Counsel can be a binding commitment of Fortinet to Fortinet's customers or partners. Thank you. *** \n\n-------------------------\n "
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 95,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": true,
+          "link_value": "CARESMM-10382"
+        },
+        "github": {
+          "link_present": true,
+          "link_value": "https://github.com/trilogy-group/eng-maintenance/issues/15436"
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

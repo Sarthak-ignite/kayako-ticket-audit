@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI (ATLAS) only provided a generic system message stating 'Component could not be determined' without attempting to help the customer or gather necessary information about their issue.",
+    "evidence": [
+      "[2025-10-29T14:10:49+00:00] (AI) ATLAS: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated requests for the same information or the customer being stuck in a loop. The interaction shows only a single AI response before the ticket was closed.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is insufficient interaction history to determine if context was ignored. The ticket appears to be in its initial stages with only metadata and call information being provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occurred within a few seconds on the same day (2025-10-29T14:10:26 to 14:10:51). There are no significant delays between responses.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed (status: closed) immediately after the customer indicated that 'The complete conversation with this customer will be uploaded to this ticket shortly', meaning the ticket was closed before the promised conversation upload and before any actual support was provided.",
+    "evidence": [
+      "[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is an urgent priority ticket, but instead of immediate human escalation or meaningful assistance, it only received an AI system message stating 'Component could not be determined' and was then closed without proper triage or resolution.",
+    "evidence": [
+      "Priority: urgent",
+      "[2025-10-29T14:10:49+00:00] (AI) ATLAS: Component could not be determined",
+      "Status: closed"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI (ATLAS) only provided a generic system message stating 'Component could not be determined' without attempting to help the customer or gather necessary information about their issue.\",\n    \"evidence\": [\"[2025-10-29T14:10:49+00:00] (AI) ATLAS: Component could not be determined\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repeated requests for the same information or the customer being stuck in a loop. The interaction shows only a single AI response before the ticket was closed.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient interaction history to determine if context was ignored. The ticket appears to be in its initial stages with only metadata and call information being provided.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occurred within a few seconds on the same day (2025-10-29T14:10:26 to 14:10:51). There are no significant delays between responses.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed (status: closed) immediately after the customer indicated that 'The complete conversation with this customer will be uploaded to this ticket shortly', meaning the ticket was closed before the promised conversation upload and before any actual support was provided.\",\n    \"evidence\": [\"[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This is an urgent priority ticket, but instead of immediate human escalation or meaningful assistance, it only received an AI system message stating 'Component could not be determined' and was then closed without proper triage or resolution.\",\n    \"evidence\": [\"Priority: urgent\", \"[2025-10-29T14:10:49+00:00] (AI) ATLAS: Component could not be determined\", \"Status: closed\"]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60231535
+}

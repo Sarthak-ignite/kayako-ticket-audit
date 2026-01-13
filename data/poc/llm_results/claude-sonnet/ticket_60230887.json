@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI interactions are limited to administrative actions (placing on hold, detecting escalations, JIRA status updates) rather than substantive customer-facing responses that could be evaluated for quality failures.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was not stuck in an AI loop. After initial ticket creation, human agents (Santhosh M, then Balaji Jayaraman) responded directly to the customer. The 38.9 hour delay to first human response is notable but the customer did reach human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support staff acknowledged the customer's concerns and escalated to the appropriate team (Professional Services). There is no evidence of asking for already-provided information or ignoring context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are severe response delays throughout the ticket lifecycle. The customer waited weeks between updates despite repeated follow-ups, with a maximum gap of 589 hours (24+ days) between responses.",
+    "evidence": [
+      "[2025-10-30T08:48:32+00:00] Santhosh M: 'We've reported this issue to our Professional Services (PS) team for further investigation. We'll'",
+      "[2025-11-06T16:57:52+00:00] Varun Venkat: 'Any update on the below request from the professional services team, please let us know.'",
+      "[2025-11-13T19:22:32+00:00] Varun Venkat: 'Any update on the issue, on when we will have a resolution ??'",
+      "[2025-12-08T18:04:24+00:00] Varun Venkat: 'Any eta on this request, it's been a while since we opened this ticket.'",
+      "[2025-12-15T04:40:54+00:00] AI: '[customer_escalation] The customer escalated the Case. The customer message is:issue not resolved from last 2 months'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the support team confirmed the data file was restored and available at the SFTP location. The customer was informed of the resolution before closure.",
+    "evidence": [
+      "[2025-12-15T12:14:12+00:00] Balaji Jayaraman: 'Our team has confirmed that the LITHCOMMDAILY.zip file is now available again at the SFTP path /home/ciscosupport/commu'",
+      "[2025-12-24T06:55:48.001-0300] KPSSUPPORT-181: 'Data file has been provided in the given location and kayako ticket (60230887) is also completed.so closing this ticket.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This high-priority ticket involved missing data that had been unresolved for 2 months before customer escalation. Despite the high priority status, there were extreme delays and no sense of urgency until the customer escalated, indicating mishandling of a priority issue.",
+    "evidence": [
+      "[2025-12-15T04:40:54+00:00] AI: '[customer_escalation] The customer escalated the Case. The customer message is:issue not resolved from last 2 months'",
+      "[2025-12-15T02:27:16.742-0300] KPSSUPPORT-181: 'Can you assign someone to thisCustomer is escalating'",
+      "[2025-12-15T05:24:59+00:00] Balaji Jayaraman: 'We have received your escalation and are currently investigating the missing data from the SFTP location.'"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI interactions are limited to administrative actions (placing on hold, detecting escalations, JIRA status updates) rather than substantive customer-facing responses that could be evaluated for quality failures.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer was not stuck in an AI loop. After initial ticket creation, human agents (Santhosh M, then Balaji Jayaraman) responded directly to the customer. The 38.9 hour delay to first human response is notable but the customer did reach human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support staff acknowledged the customer's concerns and escalated to the appropriate team (Professional Services). There is no evidence of asking for already-provided information or ignoring context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are severe response delays throughout the ticket lifecycle. The customer waited weeks between updates despite repeated follow-ups, with a maximum gap of 589 hours (24+ days) between responses.\",\n    \"evidence\": [\n      \"[2025-10-30T08:48:32+00:00] Santhosh M: 'We've reported this issue to our Professional Services (PS) team for further investigation. We'll'\",\n      \"[2025-11-06T16:57:52+00:00] Varun Venkat: 'Any update on the below request from the professional services team, please let us know.'\",\n      \"[2025-11-13T19:22:32+00:00] Varun Venkat: 'Any update on the issue, on when we will have a resolution ??'\",\n      \"[2025-12-08T18:04:24+00:00] Varun Venkat: 'Any eta on this request, it's been a while since we opened this ticket.'\",\n      \"[2025-12-15T04:40:54+00:00] AI: '[customer_escalation] The customer escalated the Case. The customer message is:issue not resolved from last 2 months'\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the support team confirmed the data file was restored and available at the SFTP location. The customer was informed of the resolution before closure.\",\n    \"evidence\": [\n      \"[2025-12-15T12:14:12+00:00] Balaji Jayaraman: 'Our team has confirmed that the LITHCOMMDAILY.zip file is now available again at the SFTP path /home/ciscosupport/commu'\",\n      \"[2025-12-24T06:55:48.001-0300] KPSSUPPORT-181: 'Data file has been provided in the given location and kayako ticket (60230887) is also completed.so closing this ticket.'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This high-priority ticket involved missing data that had been unresolved for 2 months before customer escalation. Despite the high priority status, there were extreme delays and no sense of urgency until the customer escalated, indicating mishandling of a priority issue.\",\n    \"evidence\": [\n      \"[2025-12-15T04:40:54+00:00] AI: '[customer_escalation] The customer escalated the Case. The customer message is:issue not resolved from last 2 months'\",\n      \"[2025-12-15T02:27:16.742-0300] KPSSUPPORT-181: 'Can you assign someone to thisCustomer is escalating'\",\n      \"[2025-12-15T05:24:59+00:00] Balaji Jayaraman: 'We have received your escalation and are currently investigating the missing data from the SFTP location.'\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60230887
+}

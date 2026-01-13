@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is not enough information to determine the quality of AI responses as the interaction provided does not include specific content.",
+    "evidence": [
+      "[2025-10-13T08:42:38+00:00] ATLAS: Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interaction does not contain evidence of the AI repeating requests or blocking access to human support.",
+    "evidence": [
+      "[2025-10-13T08:42:38+00:00] ATLAS: Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication in the provided interaction that previous customer context was ignored.",
+    "evidence": [
+      "[2025-10-13T08:42:38+00:00] ATLAS: Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interaction notes that the maximum gap between responses was 0.0 hours, indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The interaction was closed, but there is no indication it was done prematurely according to the available context.",
+    "evidence": [
+      "[2025-10-13T08:42:38+00:00] ATLAS: Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as high-priority or an outage situation that would require immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is not enough information to determine the quality of AI responses as the interaction provided does not include specific content.\",\n    \"evidence\": [\"[2025-10-13T08:42:38+00:00] ATLAS: Here is a record of your conversation for easy reference:\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction does not contain evidence of the AI repeating requests or blocking access to human support.\",\n    \"evidence\": [\"[2025-10-13T08:42:38+00:00] ATLAS: Here is a record of your conversation for easy reference:\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication in the provided interaction that previous customer context was ignored.\",\n    \"evidence\": [\"[2025-10-13T08:42:38+00:00] ATLAS: Here is a record of your conversation for easy reference:\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction notes that the maximum gap between responses was 0.0 hours, indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction was closed, but there is no indication it was done prematurely according to the available context.\",\n    \"evidence\": [\"[2025-10-13T08:42:38+00:00] ATLAS: Here is a record of your conversation for easy reference:\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as high-priority or an outage situation that would require immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60219657
+}

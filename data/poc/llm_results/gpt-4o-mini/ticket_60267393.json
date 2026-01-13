@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses appear to follow the context provided by the customer without generic filler or unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer is not stuck in an AI loop, as there is a clear progression of interactions between the customer and AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI acknowledged the customer's messages and did not ask for the same logs/screenshots again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay of approximately 72.9 hours between interactions, indicating a possible issue with timely responses.",
+    "evidence": [
+      "[2025-12-19T17:29:10+00:00] (AI) ATLAS: ...",
+      "[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was not closed while the customer was still awaiting information; the customer acknowledged their current unavailability.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not fall under the high-priority category being assessed here, as a 'normal' priority is noted.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses appear to follow the context provided by the customer without generic filler or unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer is not stuck in an AI loop, as there is a clear progression of interactions between the customer and AI.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI acknowledged the customer's messages and did not ask for the same logs/screenshots again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay of approximately 72.9 hours between interactions, indicating a possible issue with timely responses.\",\n    \"evidence\": [\"[2025-12-19T17:29:10+00:00] (AI) ATLAS: ...\", \"[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: ...\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was not closed while the customer was still awaiting information; the customer acknowledged their current unavailability.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not fall under the high-priority category being assessed here, as a 'normal' priority is noted.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60267393
+}

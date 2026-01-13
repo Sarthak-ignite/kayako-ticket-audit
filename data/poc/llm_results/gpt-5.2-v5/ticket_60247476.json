@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided a specific workaround (keyboard shortcut) that the customer directly tested and reported as not working, indicating incorrect or misleading guidance for this case. This is a strong signal because the customer explicitly contradicted the proposed fix.",
+    "evidence": [
+      "ATLAS commented publicly: \"In the Response editor, agents can use the Ctrl + Enter (or Cmd + Return on Mac) keyboard shortcut to send a reply. This shortcut may function even if the 'Send' button is not visible.\"",
+      "Meaghan Mcclure commented publicly: \"We have tested using Ctrl + Enter to send the message when the send button disappears, and there is no change. It does not send the message, and a refresh is still required.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was not stuck in an AI-only loop: multiple human agents participated publicly (e.g., Pavly, Rishi, Amir, Don). There is no customer request for a human followed by continued AI-only replies.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "After the customer stated they had already performed many of the requested checks and provided HAR files across environments, support continued to ask for the same types of browser/network tests. The customer explicitly called out repetition and asked support to review the ticket and prior tickets.",
+    "evidence": [
+      "Don Kempt commented publicly: \"We have provided HAR\u2019s, we have checked with agents wfh and in office, used different browsers etc.\"",
+      "Don Kempt commented publicly: \"Most of these questions were already asked by the previous engineer on this case. Please review the ticket\u2026 review previous tickets.\"",
+      "Rishi Singh commented publicly: \"To help isolate and resolve this behavior, please run through the checks below on your side: * Test with multiple browsers ... * Temporarily disable all browser extensions ... * Clear cookies, cache, and site data ...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All visible customer-facing exchanges occur within the same 1\u20132 day window, and there are no multi-day gaps (>=3 days) between a customer message and the next staff reply in the provided text.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support introduced an auto-closure warning ('stay open for one week unless...') while the issue was still actively unresolved and being debated, which risks closing the ticket before resolution.",
+    "evidence": [
+      "Amir Khan commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Don Kempt commented publicly (earlier the same day): \"here we are again\u2026 on our second day 2 of the chat service not functioning as expected\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer described business impact and intermittent service degradation, there is no explicit P1/SEV1/critical/outage designation in the ticket text. Support did investigate (HAR review, WebSocket analysis) and later stated they were investigating on their side, so the evidence is insufficient to label this as clear high-severity mishandling.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60247476
+}

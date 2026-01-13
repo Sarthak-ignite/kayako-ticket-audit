@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI posted non-actionable or odd automated statements (e.g., placing the ticket on hold for an unrealistic duration) and provided terse summaries that appear as filler rather than substantive diagnostic information.",
+    "evidence": [
+      "\"(AI) Centralsupport-ai-acc: ... Placing on hold for 9999 hour(s)\" [2025-10-17T05:15:18+00:00]",
+      "\"(AI) Cu Chulainn AI Manager: ===== Operation Summary ===== 1. GHI resolved with fix in Jive 12.7 release. ===== End of Summary =====\" [2025-11-25T14:53:08+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information or prevented escalation; interactions show escalation to Engineering and final resolution messages rather than a loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no instances of the support team asking the customer to re-submit information or repeating requests for the same logs/screenshots; messages reference escalation and engineering investigation instead.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are long gaps between activity (multiple days to weeks), including a very large max gap indicated in the ticket and a long interval between Oct 16 updates and resolution messages on Nov 25.",
+    "evidence": [
+      "\"Time to first human (hours): 14.4\"",
+      "\"Max gap between responses (hours): 674.4\"",
+      "\"(AI) Cu Chulainn AI Manager... We have contacted the Engineering team...\" [2025-10-16T14:55:41+00:00]\" followed by resolution messages on \"[2025-11-25T14:53:13+00:00]\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows a resolution/fix release message from engineering and no clear customer complaint about closure or an expressed unresolved state at closing, so there's no clear evidence the ticket was closed while the customer was still waiting.",
+    "evidence": [
+      "\"(Employee) leonhardholz: The fix is now released in Jive 12.7.\" [2025-11-25T14:50:26Z]",
+      "\"(AI) Cu Chulainn AI Manager commented publicly: Dear Hemant, We're pleased to inform you that the issue with webhook creation leading to reconnection failures in Jive Cloud\" [2025-11-25T14:53:13+00:00]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "For this urgent engineering issue the record shows the item was escalated to Engineering and a code fix/release was produced rather than only surface-level troubleshooting, so handling appears appropriate.",
+    "evidence": [
+      "\"(AI) Cu Chulainn AI Manager commented publicly: We have contacted the Engineering team and will keep you informed...\" [2025-10-16T14:55:41+00:00]",
+      "\"(Employee) leonhardholz commented: The fix is now released in Jive 12.7.\" [2025-11-25T14:50:26Z]"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI posted non-actionable or odd automated statements (e.g., placing the ticket on hold for an unrealistic duration) and provided terse summaries that appear as filler rather than substantive diagnostic information.\",\n    \"evidence\": [\n      \"\\\"(AI) Centralsupport-ai-acc: ... Placing on hold for 9999 hour(s)\\\" [2025-10-17T05:15:18+00:00]\",\n      \"\\\"(AI) Cu Chulainn AI Manager: ===== Operation Summary ===== 1. GHI resolved with fix in Jive 12.7 release. ===== End of Summary =====\\\" [2025-11-25T14:53:08+00:00]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information or prevented escalation; interactions show escalation to Engineering and final resolution messages rather than a loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no instances of the support team asking the customer to re-submit information or repeating requests for the same logs/screenshots; messages reference escalation and engineering investigation instead.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are long gaps between activity (multiple days to weeks), including a very large max gap indicated in the ticket and a long interval between Oct 16 updates and resolution messages on Nov 25.\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 14.4\\\"\",\n      \"\\\"Max gap between responses (hours): 674.4\\\"\",\n      \"\\\"(AI) Cu Chulainn AI Manager... We have contacted the Engineering team...\\\" [2025-10-16T14:55:41+00:00]\\\" followed by resolution messages on \\\"[2025-11-25T14:53:13+00:00]\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows a resolution/fix release message from engineering and no clear customer complaint about closure or an expressed unresolved state at closing, so there's no clear evidence the ticket was closed while the customer was still waiting.\",\n    \"evidence\": [\n      \"\\\"(Employee) leonhardholz: The fix is now released in Jive 12.7.\\\" [2025-11-25T14:50:26Z]\",\n      \"\\\"(AI) Cu Chulainn AI Manager commented publicly: Dear Hemant, We're pleased to inform you that the issue with webhook creation leading to reconnection failures in Jive Cloud\\\" [2025-11-25T14:53:13+00:00]\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"For this urgent engineering issue the record shows the item was escalated to Engineering and a code fix/release was produced rather than only surface-level troubleshooting, so handling appears appropriate.\",\n    \"evidence\": [\n      \"\\\"(AI) Cu Chulainn AI Manager commented publicly: We have contacted the Engineering team and will keep you informed...\\\" [2025-10-16T14:55:41+00:00]\",\n      \"\\\"(Employee) leonhardholz commented: The fix is now released in Jive 12.7.\\\" [2025-11-25T14:50:26Z]\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60222765
+}

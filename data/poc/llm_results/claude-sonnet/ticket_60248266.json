@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI (ATLAS) appears to have correctly generated a ticket from a chat interaction and routed it appropriately. There's insufficient evidence of wrong information or unfulfilled promises in the limited AI content visible.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There's no evidence of the customer being stuck in an AI loop. The ticket was generated from a single AI chat interaction and then handled by human support without signs of repeated AI requests for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Matthew Mrosko acknowledged this was a duplicate and referenced the main ticket where work was already done, demonstrating awareness of context rather than ignoring it.",
+    "evidence": [
+      "[2025-11-25T07:42:16+00:00] Matthew Mrosko: 'Now I see that this is a duplicate of the main request (where I already generated t'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was an 88.8-hour delay from ticket creation to first human response, and a 79-hour gap between the customer's approval message and the agent's response, both representing significant multi-day delays for an urgent priority ticket.",
+    "evidence": [
+      "Time to first human: 88.8 hours",
+      "Gap between [2025-11-24T21:50:52+00:00] customer comment 'this is approved by the BU - please execute!' and [2025-11-25T07:42:16+00:00] agent response: ~10 hours",
+      "Max gap between responses: 79.0 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the agent acknowledged the approval and committed to action. There's no evidence the customer was left waiting for promised information or gave up in frustration.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This urgent priority ticket experienced an 88.8-hour delay before human intervention. The agent had to manually pick it up noting 'it's rather urgent,' indicating the urgent priority wasn't properly handled through automatic escalation processes.",
+    "evidence": [
+      "Priority: urgent",
+      "[2025-11-25T07:42:16+00:00] Matthew Mrosko: 'Picked this up manually as it's rather urgent.'",
+      "Time to first human (hours): 88.8"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI (ATLAS) appears to have correctly generated a ticket from a chat interaction and routed it appropriately. There's insufficient evidence of wrong information or unfulfilled promises in the limited AI content visible.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There's no evidence of the customer being stuck in an AI loop. The ticket was generated from a single AI chat interaction and then handled by human support without signs of repeated AI requests for the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Matthew Mrosko acknowledged this was a duplicate and referenced the main ticket where work was already done, demonstrating awareness of context rather than ignoring it.\",\n    \"evidence\": [\"[2025-11-25T07:42:16+00:00] Matthew Mrosko: 'Now I see that this is a duplicate of the main request (where I already generated t'\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was an 88.8-hour delay from ticket creation to first human response, and a 79-hour gap between the customer's approval message and the agent's response, both representing significant multi-day delays for an urgent priority ticket.\",\n    \"evidence\": [\"Time to first human: 88.8 hours\", \"Gap between [2025-11-24T21:50:52+00:00] customer comment 'this is approved by the BU - please execute!' and [2025-11-25T07:42:16+00:00] agent response: ~10 hours\", \"Max gap between responses: 79.0 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the agent acknowledged the approval and committed to action. There's no evidence the customer was left waiting for promised information or gave up in frustration.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This urgent priority ticket experienced an 88.8-hour delay before human intervention. The agent had to manually pick it up noting 'it's rather urgent,' indicating the urgent priority wasn't properly handled through automatic escalation processes.\",\n    \"evidence\": [\"Priority: urgent\", \"[2025-11-25T07:42:16+00:00] Matthew Mrosko: 'Picked this up manually as it's rather urgent.'\", \"Time to first human (hours): 88.8\"]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60248266
+}

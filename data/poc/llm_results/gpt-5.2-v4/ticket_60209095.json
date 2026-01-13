@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS/AI prematurely concluded the behavior was \u201cnormal\u201d (no traffic in the selected window) despite the customer repeatedly stating there was traffic and the issue started after a firmware upgrade. This downplayed a real product/service malfunction later supported by engineering-style analysis (roll-up chain issue) and logs (buffer overflow). The AI responses were long, generic, and asserted \u201cno evidence of malfunction\u201d without actually validating traffic existence via device health/rollup checks.",
+    "evidence": [
+      "[2025-11-04T18:27:14+00:00] ATLAS: \u201cThe \u2018Data not available for selected period\u2019 message occurs when no traffic has been recorded\u2026 This is a normal behavior\u2026 It does not indicate a malfunction\u2026\u201d",
+      "[2025-11-09T07:32:38+00:00] ATLAS: \u201cThis behavior is in line with normal Exinda operation; there is no evidence of a firmware or reporting engine malfunction.\u201d",
+      "[2025-11-07T06:29:38+00:00] Customer: \u201cthere was traffic over the link on the mentioned period, but it was not present on exinda subnet report.\u201d",
+      "[2025-11-14T08:54:07+00:00] Human (Rishi): \u201cproblem is almost certainly in the data-roll-up chain (datad / monitor / statisticsd) rather than capture.\u201d",
+      "[2025-11-27T09:50:56+00:00] Human (Syed): \u201ccollectord process is failing\u2026 buffer overflow\u2026 prevents data from being aggregated for the 'Last 24 Hours' reports.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer was repeatedly met with AI-authored explanations that the blank graphs were due to \u2018no traffic\u2019 and asked to keep verifying parameters, while the customer kept insisting traffic existed and requesting a call. The AI repeated the same conclusion across multiple public updates (11/04 and 11/09) without moving to deeper troubleshooting (logs/services) until much later, contributing to a loop-like experience.",
+    "evidence": [
+      "[2025-11-04T18:27:14+00:00] ATLAS concludes issue is normal \u2018when no traffic has been recorded\u2019",
+      "[2025-11-09T07:32:38+00:00] ATLAS repeats: \u201cmessage\u2026 appears only when no traffic is recorded\u2026 no evidence of\u2026 malfunction.\u201d",
+      "[2025-11-14T08:32:06+00:00] Customer: \u201ccan you schedule a call because from last 1 month we are only sharing data for verification.\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/AI did not incorporate key customer-provided context: (1) issue began after firmware upgrade, (2) affects all subnets, (3) customer asserted traffic existed during the windows that showed blank \u2018Last 24 Hours\u2019. AI continued to attribute it to \u2018no traffic.\u2019 Later, after the customer attached diagnostics/PDF, support again questioned whether files were uploaded, prompting the customer to complain about repeated requests.",
+    "evidence": [
+      "[2025-09-29T12:54:57+00:00] Issue description: \u201cnot able to get subnet reports after firmware upgradation\u2026 its a blank graph\u2026 on all the subnets\u2026 also\u2026 not geeting application wise details\u201d",
+      "[2025-11-07T06:29:38+00:00] Customer: \u201cthere was traffic over the link\u2026 but it was not present on exinda subnet report.\u201d",
+      "[2025-11-09T07:32:38+00:00] ATLAS persists: \u201cappears only when no traffic is recorded\u2026 no evidence\u2026 malfunction.\u201d (ignores customer assertion)",
+      "[2025-11-19T04:20:37+00:00] Customer: \u201ccan you tell us that how many times you need same data. Have you checked previous update on this ticket provides by us?\u201d",
+      "[2025-11-20T15:48:22+00:00] Support: \u201cDid you previously upload these, as I do not see them attached to this ticket?\u201d (customer perceives repeated request / not reviewing prior updates)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were severe response gaps (weeks) with multiple customer follow-ups asking for updates and escalation details. The ticket shows long periods of inactivity before any substantive support action occurred.",
+    "evidence": [
+      "[2025-09-30T11:54:15+00:00] Customer: \u201ckindly share update\u2026 on priority basis.\u201d (no visible support reply until November)",
+      "[2025-10-06T04:11:49+00:00] Customer: \u201cwaiting from last 6 days still, we have not received any updates\u201d",
+      "[2025-10-08T04:29:56+00:00] Customer: \u201cstill we have not received any corrective updates / response\u201d",
+      "[2025-11-04T13:27:09+00:00] Customer: \u201cIt has been now a month ago but still we haven't received any solution\u2026 can you confirm what is the current status\u201d",
+      "First clear public support response appears at [2025-11-04T13:43:09+00:00] after ~35 days from 2025-09-30 follow-up"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript does not show the case being closed; the customer is still actively requesting a call, escalation contacts, and a troubleshooting plan after receiving corrective steps.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer escalated with severity tagged as \u201cdata_loss\u201d and repeatedly stated business-impacting urgency (no reports after upgrade, all subnets, 1+ month delay). Handling remained slow, with weeks of silence and generic explanations rather than rapid escalation/engagement. Customer also requested escalation matrix/contact details and did not receive them in the provided timeline.",
+    "evidence": [
+      "[2025-11-04T13:28:08+00:00] Escalation: \u201cseverity is: data_loss\u201d",
+      "[2025-11-14T08:31:57+00:00] Escalation again: \u201cseverity is: data_loss\u201d",
+      "[2025-11-14T08:32:06+00:00] Customer: \u201cfrom last 1 month we are only sharing data for verification\u201d",
+      "[2025-10-06T04:11:49+00:00] Customer: \u201cescalation matrix\u2026 waiting from last 6 days still\u2026 no updates\u201d",
+      "[2025-11-27T15:31:47+00:00] Customer: \u201cticket has been open for over a month\u2026 we have not been provided with the escalation matrix or proper contact details\u2026 if we encounter issues during troubleshooting, how are we expected to reach you\u2026 require: \u2026 availability\u2026 escalation contacts\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60209095
+}

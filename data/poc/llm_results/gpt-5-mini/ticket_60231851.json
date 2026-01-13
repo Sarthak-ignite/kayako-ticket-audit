@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is clear customer frustration with automated/generic responses and explicit mention that messages were identical and unhelpful.",
+    "evidence": [
+      "\"Same automated message as the one below. Scroll down, exact same one and from same person \ud83d\udc4d\" [2025-11-06T18:53:10+00:00]",
+      "\"Once again\u2026 This is second time I requested support over the last 6 months due to multiple issues that are occurring.\" [2025-10-31T14:49:23+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer explicitly reports being handled only by the bot and unable to get a human; AI also posted (ATLAS) before human involvement, indicating the customer encountered automated responses.",
+    "evidence": [
+      "\"Like I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative who was suppose to contac\" [2025-11-06T15:51:03+00:00]",
+      "\"ATLAS commented publicly: Dear Ralph, Thank you for clarifying that your issue specifically involves the Information Store Protection page...\" [2025-10-31T13:51:24+00:00]"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is acknowledgement of the customer's clarified issue (Information Store Protection) and later provision of a build that addresses the Information Store; no clear evidence support repeatedly asked for the same info.",
+    "evidence": [
+      "\"ATLAS commented publicly: Dear Ralph, Thank you for clarifying that your issue specifically involves the Information Store Protection page...\" [2025-10-31T13:51:24+00:00]",
+      "\"A new build was provided here: https://github.com/trilogy-group/eng-maintenance/issues/15120 to address the Information Store issue.\" [2025-11-18T01:41:19+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Long delays are documented (very large time-to-first-human and large gaps) and customer repeatedly complained about waiting multiple times.",
+    "evidence": [
+      "\"Time to first human (hours): 450.3\"",
+      "\"STILL WAITING FOR SUPPORT..\" [2025-11-12T18:21:01+00:00]",
+      "\"Hi Ralph, We apologize for the delay on this, I ve escalated it internally for faster resolution.\" [2025-11-17T14:17:45+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is closed, but the last interactions show the agent provided a build and asked the customer to report blockers; there's no clear evidence the ticket was closed while the customer explicitly awaited promised information or had explicitly given up.",
+    "evidence": [
+      "\"The build I have shared with you should address the issue with the Information Store as well\" [2025-11-19T03:10:57+00:00]",
+      "\"Should you face any blockers, please let us know. We will be happy to assist you.\" [2025-11-20T15:50:17+00:00]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While priority is high, there is no evidence the support used generic end-user troubleshooting (cache/firewall/VPN); instead development provided a build and escalation occurred.",
+    "evidence": [
+      "\"A new build was provided here: https://github.com/trilogy-group/eng-maintenance/issues/15120 to address the Information Store issue.\" [2025-11-18T01:41:19+00:00]",
+      "\"We apologize for the delay on this, I ve escalated it internally for faster resolution.\" [2025-11-17T14:17:45+00:00]"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"There is clear customer frustration with automated/generic responses and explicit mention that messages were identical and unhelpful.\",\n    \"evidence\": [\n      \"\\\"Same automated message as the one below. Scroll down, exact same one and from same person \ud83d\udc4d\\\" [2025-11-06T18:53:10+00:00]\",\n      \"\\\"Once again\u2026 This is second time I requested support over the last 6 months due to multiple issues that are occurring.\\\" [2025-10-31T14:49:23+00:00]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer explicitly reports being handled only by the bot and unable to get a human; AI also posted (ATLAS) before human involvement, indicating the customer encountered automated responses.\",\n    \"evidence\": [\n      \"\\\"Like I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative who was suppose to contac\\\" [2025-11-06T15:51:03+00:00]\",\n      \"\\\"ATLAS commented publicly: Dear Ralph, Thank you for clarifying that your issue specifically involves the Information Store Protection page...\\\" [2025-10-31T13:51:24+00:00]\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is acknowledgement of the customer's clarified issue (Information Store Protection) and later provision of a build that addresses the Information Store; no clear evidence support repeatedly asked for the same info.\",\n    \"evidence\": [\n      \"\\\"ATLAS commented publicly: Dear Ralph, Thank you for clarifying that your issue specifically involves the Information Store Protection page...\\\" [2025-10-31T13:51:24+00:00]\",\n      \"\\\"A new build was provided here: https://github.com/trilogy-group/eng-maintenance/issues/15120 to address the Information Store issue.\\\" [2025-11-18T01:41:19+00:00]\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Long delays are documented (very large time-to-first-human and large gaps) and customer repeatedly complained about waiting multiple times.\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 450.3\\\"\",\n      \"\\\"STILL WAITING FOR SUPPORT..\\\" [2025-11-12T18:21:01+00:00]\",\n      \"\\\"Hi Ralph, We apologize for the delay on this, I ve escalated it internally for faster resolution.\\\" [2025-11-17T14:17:45+00:00]\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is closed, but the last interactions show the agent provided a build and asked the customer to report blockers; there's no clear evidence the ticket was closed while the customer explicitly awaited promised information or had explicitly given up.\",\n    \"evidence\": [\n      \"\\\"The build I have shared with you should address the issue with the Information Store as well\\\" [2025-11-19T03:10:57+00:00]\",\n      \"\\\"Should you face any blockers, please let us know. We will be happy to assist you.\\\" [2025-11-20T15:50:17+00:00]\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"While priority is high, there is no evidence the support used generic end-user troubleshooting (cache/firewall/VPN); instead development provided a build and escalation occurred.\",\n    \"evidence\": [\n      \"\\\"A new build was provided here: https://github.com/trilogy-group/eng-maintenance/issues/15120 to address the Information Store issue.\\\" [2025-11-18T01:41:19+00:00]\",\n      \"\\\"We apologize for the delay on this, I ve escalated it internally for faster resolution.\\\" [2025-11-17T14:17:45+00:00]\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60231851
+}

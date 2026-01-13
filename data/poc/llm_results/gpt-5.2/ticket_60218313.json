@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI posts canned acknowledgements/escalation language without concrete next steps or follow-through visible in the thread, and one AI message appears to be an internal routing action (\u201cAction: l1\u201d) rather than helpful customer support content.",
+    "evidence": [
+      "[2025-10-10T11:47:40+00:00] (AI) ATLAS: \"Action: l1\"",
+      "[2025-10-10T09:24:03+00:00] (AI) ATLAS: \"Dear Support,\\n\\nThank you for your update and for confirming that all suggested troubleshooting steps have already been performed. I have review\"",
+      "[2025-10-10T07:49:27+00:00] (AI) ATLAS: \"Dear Support,\\n\\nThank you for providing detailed feedback, screenshots, and a summary of the ongoing issue with GFI MailEssentials after your re\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While there are multiple AI messages, the transcript does not clearly show the AI repeatedly requesting the same information or preventing access to a human; human agents (Aditi, Arafat, Raymond, Pablo) do participate.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The visible excerpts do not show support asking again for the same logs/screenshots already provided; instead, the AI acknowledges receipt of screenshots/logs and later engineering identifies a specific file issue.",
+    "evidence": [
+      "[2025-10-10T07:49:27+00:00] (AI) ATLAS: \"Thank you for providing detailed feedback, screenshots, and a summary of the ongoing issue\"",
+      "[2025-10-12T04:12:15+00:00] (Employee) Aditi Garg: \"Our Engineering team has identified the issue, where a specific file \u2014 exploitdb.mdb \u2014\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The provided metrics show multi-day delays (max gap ~77.7 hours) and a long time to first human response (~44.4 hours), indicating significant response latency for a high-priority ticket.",
+    "evidence": [
+      "Ticket Context: \"Time to first human (hours): 44.4\"",
+      "Ticket Context: \"Max gap between responses (hours): 77.7\"",
+      "[2025-10-12T04:12:15+00:00] (Employee) Aditi Garg: \"Our Engineering team has identified the issue\" (followed by next visible employee update only at [2025-10-18T14:12:57+00:00])"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, the excerpt does not show the closure event or that the customer was waiting on a promised update when it was closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The thread shows escalation/engineering involvement and mention of a released fix; there is no clear evidence of inappropriate generic troubleshooting (e.g., cache/VPN/firewall) in the provided excerpts.",
+    "evidence": [
+      "[2025-10-12T04:12:15+00:00] (Employee) Aditi Garg: \"Our Engineering team has identified the issue\"",
+      "[2025-10-18T14:12:57+00:00] (Employee) Arafat Bakhsh: \"Our Development Team has released a new version with the fix for the current issue.\"",
+      "[2025-10-20T13:22:37+00:00] (Employee) Raymond Guirguis: \"Your escalation has been acknowledged, and the ticket's priority has been adjusted\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI posts canned acknowledgements/escalation language without concrete next steps or follow-through visible in the thread, and one AI message appears to be an internal routing action (\u201cAction: l1\u201d) rather than helpful customer support content.\",\n    \"evidence\": [\n      \"[2025-10-10T11:47:40+00:00] (AI) ATLAS: \\\"Action: l1\\\"\",\n      \"[2025-10-10T09:24:03+00:00] (AI) ATLAS: \\\"Dear Support,\\\\n\\\\nThank you for your update and for confirming that all suggested troubleshooting steps have already been performed. I have review\\\"\",\n      \"[2025-10-10T07:49:27+00:00] (AI) ATLAS: \\\"Dear Support,\\\\n\\\\nThank you for providing detailed feedback, screenshots, and a summary of the ongoing issue with GFI MailEssentials after your re\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While there are multiple AI messages, the transcript does not clearly show the AI repeatedly requesting the same information or preventing access to a human; human agents (Aditi, Arafat, Raymond, Pablo) do participate.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The visible excerpts do not show support asking again for the same logs/screenshots already provided; instead, the AI acknowledges receipt of screenshots/logs and later engineering identifies a specific file issue.\",\n    \"evidence\": [\n      \"[2025-10-10T07:49:27+00:00] (AI) ATLAS: \\\"Thank you for providing detailed feedback, screenshots, and a summary of the ongoing issue\\\"\",\n      \"[2025-10-12T04:12:15+00:00] (Employee) Aditi Garg: \\\"Our Engineering team has identified the issue, where a specific file \u2014 exploitdb.mdb \u2014\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The provided metrics show multi-day delays (max gap ~77.7 hours) and a long time to first human response (~44.4 hours), indicating significant response latency for a high-priority ticket.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Time to first human (hours): 44.4\\\"\",\n      \"Ticket Context: \\\"Max gap between responses (hours): 77.7\\\"\",\n      \"[2025-10-12T04:12:15+00:00] (Employee) Aditi Garg: \\\"Our Engineering team has identified the issue\\\" (followed by next visible employee update only at [2025-10-18T14:12:57+00:00])\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, the excerpt does not show the closure event or that the customer was waiting on a promised update when it was closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The thread shows escalation/engineering involvement and mention of a released fix; there is no clear evidence of inappropriate generic troubleshooting (e.g., cache/VPN/firewall) in the provided excerpts.\",\n    \"evidence\": [\n      \"[2025-10-12T04:12:15+00:00] (Employee) Aditi Garg: \\\"Our Engineering team has identified the issue\\\"\",\n      \"[2025-10-18T14:12:57+00:00] (Employee) Arafat Bakhsh: \\\"Our Development Team has released a new version with the fix for the current issue.\\\"\",\n      \"[2025-10-20T13:22:37+00:00] (Employee) Raymond Guirguis: \\\"Your escalation has been acknowledged, and the ticket's priority has been adjusted\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60218313
+}

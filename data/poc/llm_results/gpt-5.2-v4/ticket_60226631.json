@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No clear customer-facing ATLAS/Hermes AI reply that is wrong/misleading. The visible public responses are from named agents and are generally aligned with an outage/escalation scenario.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer was able to reach humans quickly (phone line + agents responded). No repeated AI prompts or evidence the customer was trapped in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Customer repeatedly asked for RCA and prevention of recurrence. Support responses initially focused on acknowledgement/escalation and later on 'resolved' status without addressing the explicit request for root cause and recurrence prevention until the customer followed up again the next day. This indicates the stated customer need (RCA + prevention) wasn\u2019t addressed in the first resolution communication.",
+    "evidence": [
+      "Customer (2025-10-22 10:13:07): \"Please prioritize this and investigate the root cause to ensure it is properly addressed and prevented in the future.\"",
+      "Support (2025-10-22 10:37:10): \"We have investigated the root cause of the issue, and this has been escalated to our infrastructure team...\" (no RCA details or prevention steps provided)",
+      "Support (2025-10-22 12:49:34): \"service disruption... has been resolved... identified and implemented a fix...\" (still no explanation of cause/why it happened or how recurrence will be prevented)",
+      "Customer follow-up (2025-10-23 07:56:23): \"Kindly confirm whether the fix you have implemented will prevent this issue from recurring in the future.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Responses occurred within minutes/hours during the incident and within ~40 minutes on the next-day follow-up. No 3+ day gaps or signs the customer was waiting without updates.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket conversation continued after resolution, including a customer recurrence concern and a direct support reply addressing prevention/monitoring. No evidence the Kayako ticket was closed while an unanswered customer request remained.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This appears to be handled as an outage: customer called the outage line, escalation occurred, an infra Jira was created quickly, and service was restored the same day. No evidence of inappropriate low-priority troubleshooting or failure to escalate.",
+    "evidence": [
+      "Customer (2025-10-22 10:26:32): \"I called the Outage Phone Line... he informed that the ticket is being escalated.\"",
+      "Support (2025-10-22 10:37:10): \"escalated to our infrastructure team with the highest priority\"",
+      "Jira created and acknowledged quickly (2025-10-22 ~10:34\u201310:36) and remediation actions documented thereafter"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60226631
+}

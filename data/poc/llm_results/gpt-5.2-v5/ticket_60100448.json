@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS gave incorrect product compatibility guidance (stating NG110 is not supported for 9.5.0), and the customer later reported this was wrong and that 9.5.0 was successfully installed and working on the NG110.",
+    "evidence": [
+      "ATLAS (public): \"Kerio Control Box NG110 appliances are supported up to version 9.4.x. The 9.5.0 release is not offered via automatic updates for NG110 hardware because this model is not officially supported for 9.5.0 and later versions.\"",
+      "ATLAS (public): \"As of the latest available information, the Kerio Control Box NG110 series is not supported for Kerio Control version 9.5.0 or later.\"",
+      "Customer (private): \"They claimed that informations given by your support (AI - below in this conversation) are totally wrong. Version 9.5.0 IS supported on NG110 units and CAN be installed.\"",
+      "Customer (private): \"So I downloaded 9.5.0 image and installed it on NG110 and it is working !\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer requested a human, and the ticket shows an internal escalation action (\u201cSend to l1\u201d) rather than continued customer-facing AI responses after that request.",
+    "evidence": [
+      "Customer (private): \"Please pass this ticket to human.\"",
+      "ATLAS (private): \"Action: Send to l1\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer had to clarify what image they used and the core issue, the transcript does not show ATLAS repeatedly asking for the same already-provided item after the customer explicitly said it was already provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps or explicit waiting/delay complaints are visible in the provided timeline.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no text indicating the ticket was closed/auto-closed or threatened with closure while the customer still needed help.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reports an upgrade issue and compatibility questions, but there is no explicit outage/critical/P1 language or clear business-down impact requiring P1/SEV1 handling.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60100448
+}

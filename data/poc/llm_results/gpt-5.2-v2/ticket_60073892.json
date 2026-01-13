@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses are mostly generic template prompts (ask for description/uploads) and do not analyze or address the customer\u2019s specific blocking/AD-sync issues. The interaction also appears to end by routing to L1 without any concrete troubleshooting guidance.",
+    "evidence": [
+      "Chat Support: Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.",
+      "Chat Support: If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa",
+      "Kayako - ticket id 60073892 // ATLAS commented privately: Action: Send to l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The transcript shows generic AI intake prompts, but not a repeated loop of the same questions, nor customer frustration or explicit requests for a human. The ticket was also routed to L1 quickly.",
+    "evidence": [
+      "Kayako - ticket id 60073892 // ATLAS commented privately: Action: Send to l1"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support does not address the full context: the customer reported two distinct issues (browser-specific blocking failure and AD sync/IP update problem) and referenced a prior case, but the public response only points to future IPOQUE updates and ignores the AD sync issue entirely.",
+    "evidence": [
+      "i cam facing two issues with exinda appliance\n  1- blocking issue for all application i tried to block working only in Firefox but we checked in edge and chrome not working as expected and the traffic allowed, last case opened for this issue case#60020917\n  2- issue in synch with AD, if the users ip changed the exinda database not updated the ip",
+      "Keyur Saxena commented publicly: An IPOQUE library definitions upgrade will be documented in the release notes... Please keep an eye out for the next release."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap where the customer had to follow up for a response, indicating a delay greater than 2 days between customer inquiry and support action.",
+    "evidence": [
+      "[2025-06-18T05:04:24+00:00] Wasim Eissa commented privately: any update",
+      "[2025-06-11T07:36:41+00:00] ... Issue description: ...",
+      "[2025-06-18T05:11:22+00:00] Keyur Saxena commented publicly: Hello Weissa, ... Please keep an eye out for the next release."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support introduces an auto-closure policy ('stay open for one week unless...') despite the issue being unresolved (customer is told to wait for a future release). This is a classic setup for closure without confirmation of resolution.",
+    "evidence": [
+      "Please keep an eye out for the next release.",
+      "This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue affects 'all users' and involves policy enforcement (blocking) not working consistently across major browsers, plus AD sync accuracy; despite broad impact and being a recurring problem (prior case referenced), support response is effectively 'wait for next release' with no escalation or workaround.",
+    "evidence": [
+      "blocking issue for all application ... working only in Firefox ... edge and chrome not working as expected and the traffic allowed",
+      "2- issue in synch with AD, if the users ip changed the exinda database not updated the ip",
+      "last case opened for this issue case#60020917",
+      "Please keep an eye out for the next release."
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60073892
+}

@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear evidence in the interactions showing that the AI provided generic filler responses or misinformation. The AI behavior appears consistent with the context provided.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not seem to be stuck in a loop with the AI; they were able to provide follow-up information without repeated requests for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledges customer inputs, such as when they commented on the files/screenshots added.",
+    "evidence": [
+      "[2025-10-28T01:07:57+00:00] (Customer) Lucy Liu: Added files/screenshots"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay of over 156 hours noted before the first human response, which falls under a concerning response delay for high-priority tickets.",
+    "evidence": [
+      "[2025-11-05T21:25:04+00:00] (Employee) Fang Ying Liu: Hi!"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows the last interaction from the employee thanking the customer, suggesting closure while they didn't indicate the customer was waiting for further promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The first and only human response was generic in nature, involving actions like restarting the instance and clearing cache, rather than immediately addressing the high-priority issue.",
+    "evidence": [
+      "[2025-11-03T13:36:55+00:00] (Employee) Santhosh M: I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins."
+    ]
+  },
+  "_raw_response": "{\"AI_QUALITY_FAILURES\":{\"detected\":false,\"reasoning\":\"There is no clear evidence in the interactions showing that the AI provided generic filler responses or misinformation. The AI behavior appears consistent with the context provided.\",\"evidence\":[]},\"AI_WALL_LOOPING\":{\"detected\":false,\"reasoning\":\"The customer does not seem to be stuck in a loop with the AI; they were able to provide follow-up information without repeated requests for the same information.\",\"evidence\":[]},\"IGNORING_CONTEXT\":{\"detected\":false,\"reasoning\":\"Support acknowledges customer inputs, such as when they commented on the files/screenshots added.\",\"evidence\":[\"[2025-10-28T01:07:57+00:00] (Customer) Lucy Liu: Added files/screenshots\"]},\"RESPONSE_DELAYS\":{\"detected\":true,\"reasoning\":\"There is a significant delay of over 156 hours noted before the first human response, which falls under a concerning response delay for high-priority tickets.\",\"evidence\":[\"[2025-11-05T21:25:04+00:00] (Employee) Fang Ying Liu: Hi!\"]},\"PREMATURE_CLOSURE\":{\"detected\":false,\"reasoning\":\"The ticket shows the last interaction from the employee thanking the customer, suggesting closure while they didn't indicate the customer was waiting for further promised information.\",\"evidence\":[]},\"P1_SEV1_MISHANDLING\":{\"detected\":true,\"reasoning\":\"The first and only human response was generic in nature, involving actions like restarting the instance and clearing cache, rather than immediately addressing the high-priority issue.\",\"evidence\":[\"[2025-11-03T13:36:55+00:00] (Employee) Santhosh M: I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins.\"]} }",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60230303
+}

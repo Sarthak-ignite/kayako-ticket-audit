@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only AI message provides no actionable help and appears to be a low-value internal note rather than support content, indicating a quality failure (generic/insufficient response).",
+    "evidence": [
+      "[2025-10-29T14:10:49+00:00] (AI) ATLAS: \"Component could not be determined\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated AI prompts requesting the same information or preventing access to a human; the timeline shows only a single AI entry.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support agent questions or requests are present that ignore previously provided information; the interaction log contains no follow-up questions at all.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All logged interactions occur within the same minute, showing no multi-day gaps.",
+    "evidence": [
+      "[2025-10-29T14:10:26+00:00] (Customer) \"The complete conversation with this customer will be uploaded to this ticket shortly\"",
+      "[2025-10-29T14:10:49+00:00] (AI) \"Component could not be determined\"",
+      "[2025-10-29T14:10:51+00:00] (Customer) \"Call Metadata\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed even though the customer indicated additional material would be uploaded shortly, implying closure while information was pending.",
+    "evidence": [
+      "Ticket Context: \"Status: closed\"",
+      "[2025-10-29T14:10:26+00:00] (Customer) \"The complete conversation with this customer will be uploaded to this ticket shortly\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the priority is urgent, the log contains no troubleshooting steps or refusal to escalate (no evidence of generic cache/firewall/VPN guidance vs. escalation).",
+    "evidence": [
+      "Ticket Context: \"Priority: urgent\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The only AI message provides no actionable help and appears to be a low-value internal note rather than support content, indicating a quality failure (generic/insufficient response).\",\n    \"evidence\": [\n      \"[2025-10-29T14:10:49+00:00] (AI) ATLAS: \\\"Component could not be determined\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repeated AI prompts requesting the same information or preventing access to a human; the timeline shows only a single AI entry.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support agent questions or requests are present that ignore previously provided information; the interaction log contains no follow-up questions at all.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All logged interactions occur within the same minute, showing no multi-day gaps.\",\n    \"evidence\": [\n      \"[2025-10-29T14:10:26+00:00] (Customer) \\\"The complete conversation with this customer will be uploaded to this ticket shortly\\\"\",\n      \"[2025-10-29T14:10:49+00:00] (AI) \\\"Component could not be determined\\\"\",\n      \"[2025-10-29T14:10:51+00:00] (Customer) \\\"Call Metadata\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked closed even though the customer indicated additional material would be uploaded shortly, implying closure while information was pending.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Status: closed\\\"\",\n      \"[2025-10-29T14:10:26+00:00] (Customer) \\\"The complete conversation with this customer will be uploaded to this ticket shortly\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the priority is urgent, the log contains no troubleshooting steps or refusal to escalate (no evidence of generic cache/firewall/VPN guidance vs. escalation).\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Priority: urgent\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60231535
+}

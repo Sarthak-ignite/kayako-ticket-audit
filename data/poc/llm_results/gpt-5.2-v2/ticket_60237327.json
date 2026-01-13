@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only visible AI content is generic onboarding/template text asking the customer to describe the issue, with no attempt to diagnose or address a specific problem. This is filler rather than support tailored to the ticket\u2019s issue.",
+    "evidence": [
+      "\u201cThanks for chatting earlier with our AI Support! ... Here is a record of your conversation for easy reference:\u201d",
+      "\u201cWalk me through what's happening or select from the below frequent requests.\u201d",
+      "\u201cDon't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you.\u201d",
+      "\u201cIf I'm unable to help you, I can patch you through to a Live agent...\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There\u2019s no evidence the customer requested a human or that the AI repeated questions/steps in a loop; the provided excerpt only shows the initial AI prompt.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The excerpt does not include customer-provided technical details, attachments, or prior steps that support then ignored or re-asked for.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamped entry is shown, with no visible back-and-forth gap between customer and support that would indicate multi-day delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket content shown appears to be solely an automated AI conversation record with no visible human engagement or documented resolution, which is a risk signal for closure/hand-off without solving the issue.",
+    "evidence": [
+      "\u201cThanks for chatting earlier with our AI Support! ... Here is a record of your conversation for easy reference:\u201d",
+      "The interaction shown contains only \u201c--- AI Assistant ---\u201d sections and no human agent replies (in the provided excerpt)."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No indicators of a Sev1/P1 event (outage/production down/urgent/critical business impact) are present in the provided excerpt.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60237327
+}

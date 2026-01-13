@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is clear evidence of an automated AI action applying an unrealistic hold duration (9999 hours), which is a quality failure/automation misconfiguration that can effectively stall progress and violate reasonable support expectations.",
+    "evidence": [
+      "[2025-11-20T16:27:44+00:00] (AI) Centralsupport-ai-acc ... commented privately: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The log shows human agent participation and engineering escalation; there is no clear evidence the customer was stuck interacting only with AI, nor repeated AI prompts preventing access to a human.",
+    "evidence": [
+      "[2025-11-20T16:27:04+00:00] (Employee) Mike Kebede ... commented publicly",
+      "[2025-11-20T16:24:46+00:00] (AI) CE Maintenance Bot ... Opened engineering issue ..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the public replies are truncated, there is no clear evidence that support ignored previously provided information or repeatedly asked for the same logs after the customer supplied them.",
+    "evidence": [
+      "[2025-11-20T16:27:04+00:00] (Employee) Mike Kebede ...: 'Thank you for your detailed description and for sending the new logs, configurations, and the screen recording.'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap between customer-facing updates, indicating significant response delay.",
+    "evidence": [
+      "[2025-11-20T16:27:04+00:00] (Employee) Mike Kebede ... commented publicly",
+      "[2025-11-30T18:57:23+00:00] (Employee) Mike Kebede ... commented publicly"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No explicit closure event is shown, and the later entries indicate ongoing engineering work and status changes rather than a closure while awaiting promised information.",
+    "evidence": [
+      "[2025-11-26T12:20:00Z] (Employee) daniel-wachira: The fix is now included in Control 9.6.0 RC branch.",
+      "[2025-11-30T18:37:48Z] (Employee) anujkumar-df: This will be released with Kerio Control 9.6.0."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the issue involves High Availability (potentially serious), the record shows timely escalation to engineering and concrete fix/release tracking; there is no clear evidence of generic troubleshooting in lieu of escalation.",
+    "evidence": [
+      "[2025-11-20T16:24:46+00:00] (AI) CE Maintenance Bot ... Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15673",
+      "[2025-11-24T14:52:38Z] (Employee) daniel-wachira: PR: https://github.com/trilogy-group/kerio-winroute-winroute/pull/1537",
+      "[2025-11-30T18:37:48Z] (Employee) anujkumar-df: This will be released with Kerio Control 9.6.0."
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60196166
+}

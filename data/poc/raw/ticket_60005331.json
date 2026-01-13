@@ -1,0 +1,192 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_control",
+        "requester": {
+          "id": 60148967,
+          "uuid": "1f32f98d-c1ff-434c-84e8-249565d8edfb",
+          "full_name": "Kris Cardona",
+          "legacy_id": "374676792200",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/1f32f98d-c1ff-434c-84e8-249565d8edfb?1762263399",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60048027,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 150502,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 42801,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Vienna",
+          "time_zone_offset": 3600,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-11-03T13:30:25+00:00",
+          "last_active_at": "2025-11-04T13:36:39+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60148967",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@270c80b10d07274566938e9c85f1a00d6cceaef7",
+          "password_updated_at": "2025-03-21T15:03:06+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2020-10-29T12:03:25+00:00",
+          "updated_at": "2025-11-04T13:36:39+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60148967"
+        },
+        "ticket_idt": 60005331
+      },
+      "interactions": [
+        [
+          "2025-03-28T13:15:08+00:00",
+          "Kayako - ticket id 60005331 // Ciprian Nastase commented publicly: Dear Kris,\n\u00a0\nAs far as I understand, you are already in contact with the GFI team for this DOA case. In light of this, we will proceed to close the ticket.\n\nShould you have further questions related to GFI - Kerio Control, please do not hesitate to submit an additional support request and we will be happy to assist!\n\u00a0\nPlease take a moment to tell us about your support experience; you'll be invited to our short survey in a separate email.\n\u00a0\nBest regards,\nCiprian Nastase\nGFI - Kerio Control Support Team"
+        ],
+        [
+          "2025-03-28T12:59:34+00:00",
+          "Kayako - ticket id 60005331 // Jozef Kacala commented privately:  Hi team, \n\n this can be closed, \u00a0we are in contact with Kris and Apligo and Apligo is dealing with RMA directly as its DOA. so no action is needed here. \n\n thanks "
+        ],
+        [
+          "2025-03-28T10:22:44+00:00",
+          "Kayako - ticket id 60005331 // Ciprian Nastase commented publicly: Dear Kris,\n\u00a0\nThank you for contacting GFI - Kerio Control Support, I understand that you are requesting an RMA for a hardware NG510 device.\n\nPlease accept my sincere apologies for the delay in getting back to you, I have now marked the ticket as urgent.\n\u00a0\nWhile we do the preliminary checks on our side, please note that we will also need a video showcasing the issue (even if it is a no-power condition). As indicated in Requesting RMA for hardware box - KerioControl [https://support.keriocontrol.gfi.com/article/120394-requesting-rma-for-hardware-box], It is\u00a0required\u00a0to provide a video of the physical problem or unexpected behavior. \n\nOnce you get back to us, we will be able to continue working on the ticket.\n\nBest regards,\nCiprian Nastase\nGFI - Kerio Control Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-03-28T10:20:41+00:00",
+          "Kayako - side conversation ID: 388 // ciprian.nastase@trilogy.com wrote to mmb@apligo.com, sales@gfi.com. Message: <div>Hello team,</div><div><br></div><div>We have a customer requesting an RMA for a Kerio Control NG510:</div><div>License: 20339-1IJNI-357VC</div><div>S/N: LNKR24070037</div><div><br></div><div>We are unable to find the warranty info in the GFI Accounts Portal.</div><div><br></div><div>Please help confirm the warranty here.</div><div><br></div><div>Best regards,<br>Ciprian Nastase</div>"
+        ],
+        [
+          "2025-03-28T10:15:11+00:00",
+          "Kayako - ticket id 60005331 // Ciprian Nastase commented privately:  Sorry, not to Jozef, to the GFI BU for confirming warranty "
+        ],
+        [
+          "2025-03-28T10:14:22+00:00",
+          "Kayako - ticket id 60005331 // Ciprian Nastase commented privately:  I will shoot the SC to Jozef in parallel "
+        ],
+        [
+          "2025-03-28T10:13:57+00:00",
+          "Kayako - ticket id 60005331 // Ciprian Nastase commented privately:  \t* Let the RMA fun begin....\n \t* No video was provided\n \t* https://support.keriocontrol.gfi.com/article/120524-kerio-rma-process-overview-and-special-cases \n\n"
+        ],
+        [
+          "2025-03-27T14:52:54+00:00",
+          "Kayako - ticket id 60005331 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-03-27T14:20:47+00:00",
+          "Kayako - ticket id 60005331 // Kris Cardona commented privately: Hi Hermes, any updates ?\nIt's becoming a bit ridiculous at this stage, the client needs an answer for this."
+        ],
+        [
+          "2025-03-26T14:32:04+00:00",
+          "Kayako - ticket id 60005331 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-03-26T14:31:43+00:00",
+          "Kayako - ticket id 60005331 // Kris Cardona commented privately: I need an ETA for this to be resolved, this is not normal to process an RMA. Can i have a phone number or an email to contact and cc the client accordingly."
+        ],
+        [
+          "2025-03-26T10:58:34+00:00",
+          "Kayako - ticket id 60005331 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-03-26T10:54:16+00:00",
+          "Kayako - ticket id 60005331 // Kris Cardona commented privately: Hi Hermes, i'm not sure what is it to review ?\n\nThe hardware failed and thank god it's in HA, i need to RMA it, it's brand new and we need a replacement.\n\nThis is URGENT !"
+        ],
+        [
+          "2025-03-25T13:00:41+00:00",
+          "Kayako - ticket id 60005331 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-03-25T12:28:08+00:00",
+          "Kayako - ticket id 60005331 // Kris Cardona commented privately: RMA request:\n\nYacht Living Solutions d.o.o.\nContact: Danijel Knezic\nContact number: +38598870001\nEmail: dknezic@yachtlivingsolutions.com\nAddress: \u0160ibenskih Vatrogasaca 19\nZip: 22000\nCity: Sibenik\nCroatia\n\nKerio Control Box NG510 Series\n20339-1IJNI-357VC\nLNKR24070037"
+        ],
+        [
+          "2025-03-24T12:22:15+00:00",
+          "Kayako - ticket id 60005331 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-03-24T12:10:31+00:00",
+          "Kayako - ticket id 60005331 // Kris Cardona commented privately: Hi Jan, the link you sent isn't working. Can you send me another one ?"
+        ],
+        [
+          "2025-03-23T10:29:42+00:00",
+          "Kayako - ticket id 60005331 // Jan Paraniak commented publicly: Dear Kris,\n\nThank you for reaching out.\n\nTo enable us to verify the request and optionally proceed with the RMA process for your hardware unit, please follow the steps outlined in the following article:\nRequesting RMA for Hardware Box [https://support.keriocontrol.gfi.com/hc/en-us/articles/360017701059-Requesting-RMA-for-hardware-box]\n\nIf you have any further questions or need additional assistance, please don\u2019t hesitate to reach out. We're here to help.\n\nBest regards,\nGFI - Kerio Control Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-03-21T15:43:41+00:00",
+          "Kayako - ticket id 60005331 // ATLAS commented privately: Action: Send to l1"
+        ],
+        [
+          "2025-03-21T15:08:51+00:00",
+          "Kayako - ticket id 60005331 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Kris Cardona ! \ud83d\udc4b\n\nThis is the Kerio Control ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nKris Cardona:\n\n undefined \nChat Support:\n\n Please select an option below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of Kerio Control ATLAS Support Chat [https://support.keriocontrol.gfi.com/article/117054]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nKris Cardona:\n\n human \nChat Support:\n\n I have this license key on record:\n- License: 20339-1IJNI-357VC\n- Expiry date: 2026-01-09.\n\nJust to make sure we're on the same page - is this the same system you're reaching out about today?\n\n\ud83d\udca1It's important to have to correct license file, as it could influence the resolution. \nKris Cardona:\n\n Yes, 20339-1IJNI-357VC is correct \nChat Support:\n\n Of course! I do understand some things are better handled by my human colleagues.\n\nLet me get some further help for you! \nKris Cardona:\n\n \ud83d\udcac Chat with live agent \nChat Support:\n\n Our agents are currently busy assisting other customers at the time, so we'll proceed with ticket creation \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\n\ud83d\udca1 If the reported behavior affects multiple end-customers, please do let us know the impact radius of the issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nKris Cardona:\n\n Hardware number: LNKR24070037\n1 of the 2 units in HA failed and no power, no lights tried different power ports / cords \nChat Support:\n\n I'm creating a ticket for you with the information you've provided, allow me a few moments while I work on this \u23f3 \nChat Support:\n\n I've automatically set the ticket subject to: HA Unit LNKR24070037 Not Powering On\n\nDoes that work for you?\n- If it does, simply say YES or use the below button to confirm \ud83d\udc47\n- If not, please directly type in the ticket subject of your choosing below \ud83d\ude09 "
+        ],
+        [
+          "2025-03-21T15:08:34+00:00",
+          "Kayako - ticket id 60005331 // ATLAS commented privately: --- Ticket generated by Kerio Control AI chat on behalf of Kris Cardona ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * human<br>\n  * Yes, 20339-1IJNI-357VC is correct<br>\n  * Hardware number: LNKR24070037<br>\n  1 of the 2 units in HA failed and no power, no lights tried different power ports / cords<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 20,
+          "side_conversation_items": 1
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

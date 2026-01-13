@@ -1,0 +1,239 @@
+/Users/sarthak/Desktop/Kayako-tickets-analyser/4_llm_detect.py:177: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+============================================================
+Phase 0.5-0.6: LLM Pattern Detection
+============================================================
+
+API Key Status:
+  ANTHROPIC_API_KEY: ✓ Found
+  OPENAI_API_KEY: ✓ Found
+  GEMINI_API_KEY: ✓ Found
+
+Loading metrics...
+  CSV metrics: 99 tickets
+  Ticket metrics: 99 tickets
+
+Available models: ['claude-sonnet', 'claude-haiku', 'gpt-4o', 'gpt-4o-mini', 'gemini-pro', 'gemini-flash']
+
+Running models: ['gemini-pro']
+Limit: all tickets
+
+Running gemini-pro on 99 tickets...
+  [1/99] Processing ticket 60270630... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [2/99] Processing ticket 60269018... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [3/99] Processing ticket 60269002... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [4/99] Processing ticket 60268699... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [5/99] Processing ticket 60267393... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [6/99] Processing ticket 60267287... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [7/99] Processing ticket 60264368... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [8/99] Processing ticket 60264386... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [9/99] Processing ticket 60264202... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [10/99] Processing ticket 60264009... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [11/99] Processing ticket 60261219... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [12/99] Processing ticket 60260239... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [13/99] Processing ticket 60259640... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [14/99] Processing ticket 60258962... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [15/99] Processing ticket 60258751... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [16/99] Processing ticket 60258400... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [17/99] Processing ticket 60256854... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [18/99] Processing ticket 60256250... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [19/99] Processing ticket 60256173... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [20/99] Processing ticket 60254579... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [21/99] Processing ticket 60253689... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [22/99] Processing ticket 60252864... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [23/99] Processing ticket 60252140... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [24/99] Processing ticket 60251281... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [25/99] Processing ticket 60250996... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [26/99] Processing ticket 60250793... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [27/99] Processing ticket 60250271... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [28/99] Processing ticket 60250122... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [29/99] Processing ticket 60248266... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [30/99] Processing ticket 60248265... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [31/99] Processing ticket 60247476... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [32/99] Processing ticket 60247413... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [33/99] Processing ticket 60246498... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [34/99] Processing ticket 60243765... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [35/99] Processing ticket 60243726... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [36/99] Processing ticket 60243347... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [37/99] Processing ticket 60243234... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [38/99] Processing ticket 60242868... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [39/99] Processing ticket 60242814... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [40/99] Processing ticket 60241518... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [41/99] Processing ticket 60241392... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [42/99] Processing ticket 60240989... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [43/99] Processing ticket 60239883... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [44/99] Processing ticket 60239472... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [45/99] Processing ticket 60238514... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [46/99] Processing ticket 60238457... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [47/99] Processing ticket 60238295... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [48/99] Processing ticket 60237327... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [49/99] Processing ticket 60237213... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [50/99] Processing ticket 60236962... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [51/99] Processing ticket 60235310... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [52/99] Processing ticket 60234884... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [53/99] Processing ticket 60234621... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [54/99] Processing ticket 60233855... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [55/99] Processing ticket 60233341... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [56/99] Processing ticket 60233405... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [57/99] Processing ticket 60233211... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [58/99] Processing ticket 60232940... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [59/99] Processing ticket 60232130... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [60/99] Processing ticket 60231851... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [61/99] Processing ticket 60231535... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [62/99] Processing ticket 60231299... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [63/99] Processing ticket 60230887... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [64/99] Processing ticket 60230438... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [65/99] Processing ticket 60230303... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [66/99] Processing ticket 60230003... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [67/99] Processing ticket 60229854... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [68/99] Processing ticket 60227783... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [69/99] Processing ticket 60227322... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [70/99] Processing ticket 60226631... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [71/99] Processing ticket 60225246... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [72/99] Processing ticket 60225231... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [73/99] Processing ticket 60224885... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [74/99] Processing ticket 60224201... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [75/99] Processing ticket 60223404... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [76/99] Processing ticket 60223073... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [77/99] Processing ticket 60222887... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [78/99] Processing ticket 60222765... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [79/99] Processing ticket 60222138... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [80/99] Processing ticket 60221483... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [81/99] Processing ticket 60220701... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [82/99] Processing ticket 60220499... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [83/99] Processing ticket 60219661... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [84/99] Processing ticket 60219657... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [85/99] Processing ticket 60218865... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [86/99] Processing ticket 60218313... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [87/99] Processing ticket 60218070... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [88/99] Processing ticket 60214613... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [89/99] Processing ticket 60214082... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [90/99] Processing ticket 60212784... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [91/99] Processing ticket 60212281... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [92/99] Processing ticket 60211680... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [93/99] Processing ticket 60211226... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [94/99] Processing ticket 60210541... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [95/99] Processing ticket 60210131... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [96/99] Processing ticket 60209553... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [97/99] Processing ticket 60209192... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [98/99] Processing ticket 60209095... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+  [99/99] Processing ticket 60208754... Error calling gemini-pro: 404 models/gemini-2.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+FAILED
+
+============================================================
+DETECTION SUMMARY
+============================================================
+
+Pattern                  gemini-pro     
+----------------------------------------
+AI_QUALITY_FAILURES      0 (0%)         
+AI_WALL_LOOPING          0 (0%)         
+IGNORING_CONTEXT         0 (0%)         
+RESPONSE_DELAYS          0 (0%)         
+PREMATURE_CLOSURE        0 (0%)         
+P1_SEV1_MISHANDLING      0 (0%)         

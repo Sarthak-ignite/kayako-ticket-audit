@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response (ATLAS) appears generic and does not directly address the specific PBX issue the customer is experiencing.",
+    "evidence": [
+      "[2025-09-30T15:51:35+00:00] ATLAS: Dear Jozef, Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There's no evidence of repeated AI requests for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team seems to miss the customer's key point about version 10 breaking PBX functionality and version 9.5p3 fixing it.",
+    "evidence": [
+      "[2025-09-30T15:50:42+00:00] Jozef Kacala: on Kerio control v10 we already had some reports on PBX issues, this is latest with partner Walter having issues on 10 Kerio",
+      "[2025-09-30T15:55:22+00:00] Jozef Kacala: all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer interactions, with nearly a month between some responses.",
+    "evidence": [
+      "Time between [2025-09-30T15:50:42+00:00] and [2025-10-31T13:56:18+00:00] is approximately one month"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed with a high time to first human response (742.1 hours) and max gap between responses matching that time.",
+    "evidence": [
+      "Time to first human (hours): 742.1",
+      "Max gap between responses (hours): 742.0",
+      "Was handed to BU: False"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite being a high-priority ticket about a critical PBX issue, the responses seem generic and do not show immediate escalation or urgent problem-solving.",
+    "evidence": [
+      "Priority: high",
+      "[2025-10-31T13:59:15+00:00] Ciprian Nastase: Thank you for contacting GFI - Kerio Control Support, I understand that you are reporting PBX C3X stops working after..."
+    ]
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response (ATLAS) appears generic and does not directly address the specific PBX issue the customer is experiencing.\",\n    \"evidence\": [\n      \"[2025-09-30T15:51:35+00:00] ATLAS: Dear Jozef, Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K...\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There's no evidence of repeated AI requests for the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team seems to miss the customer's key point about version 10 breaking PBX functionality and version 9.5p3 fixing it.\",\n    \"evidence\": [\n      \"[2025-09-30T15:50:42+00:00] Jozef Kacala: on Kerio control v10 we already had some reports on PBX issues, this is latest with partner Walter having issues on 10 Kerio\",\n      \"[2025-09-30T15:55:22+00:00] Jozef Kacala: all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer interactions, with nearly a month between some responses.\",\n    \"evidence\": [\n      \"Time between [2025-09-30T15:50:42+00:00] and [2025-10-31T13:56:18+00:00] is approximately one month\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed with a high time to first human response (742.1 hours) and max gap between responses matching that time.\",\n    \"evidence\": [\n      \"Time to first human (hours): 742.1\",\n      \"Max gap between responses (hours): 742.0\",\n      \"Was handed to BU: False\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite being a high-priority ticket about a critical PBX issue, the responses seem generic and do not show immediate escalation or urgent problem-solving.\",\n    \"evidence\": [\n      \"Priority: high\",\n      \"[2025-10-31T13:59:15+00:00] Ciprian Nastase: Thank you for contacting GFI - Kerio Control Support, I understand that you are reporting PBX C3X stops working after...\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku",
+  "_ticket_id": 60210541
+}

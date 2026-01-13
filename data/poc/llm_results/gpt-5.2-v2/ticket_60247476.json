@@ -1,0 +1,63 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided largely template-style troubleshooting and suggested a keyboard shortcut workaround that the customer immediately confirmed does not work, indicating mismatched/low-value guidance for the specific UI failure.",
+    "evidence": [
+      "ATLAS commented publicly: Dear Meaghan, Thank you for sharing detailed information... Here are some additional troubleshooting steps...",
+      "ATLAS: \"Keyboard Shortcut for Sending Responses: In the Response editor, agents can use the Ctrl + Enter (or Cmd + Return on Mac) keyboard shortcut to send a reply. This shortcut may function even if the 'Send' button is not visible.\"",
+      "Customer: \"We have tested using Ctrl + Enter to send the message when the send button disappears, and there is no change.  It does not send the message, and a refresh is still required.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer was pushed through repeated, generic troubleshooting and hypotheses despite already providing HAR/screenshot and confirming attempted workarounds; customer frustration indicates a loop-like experience.",
+    "evidence": [
+      "Customer: \"We have provided HAR\u2019s, we have checked with agents wfh and in office, used different browsers etc.\"",
+      "Customer: \"Most of these questions were already asked by the previous engineer on this  case.\"",
+      "Rishi (public): \"To help isolate and resolve this behavior, please run through the checks below on your side: Test with multiple browsers... private/incognito... disable all browser extensions... Clear cookies, cache...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeated requests for tests and environment checks that the customer stated were already performed, and continued to focus on network/proxy causes even after the customer provided a work-from-home HAR and stated no relevant changes were made.",
+    "evidence": [
+      "Customer (initial): \"Attached screenshot and HAR file attached from agent perspective.\"",
+      "Customer: \"We have tested using Ctrl + Enter... It does not send the message\"",
+      "Customer: \"I am attaching a HAR file from a CSR that is working from home, not in the office... firefox... she experienced the issue\"",
+      "Customer: \"This worked, until yesterday. There was no changes on our end to code or firewall.\"",
+      "Customer: \"Please review the ticket\u2026 review previous tickets.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Responses occurred the same day and within ~24 hours; there is no evidence of >2 calendar day gaps or customer follow-ups due to silence.",
+    "evidence": [
+      "[2025-11-20T15:28:29+00:00] Customer reported issue",
+      "[2025-11-20T15:32:34+00:00] ATLAS replied publicly",
+      "[2025-11-20T16:04:15+00:00] Pavly replied publicly",
+      "[2025-11-21T04:54:59+00:00] Rishi replied publicly"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support issued an auto-closure warning while the issue was clearly not resolved and while the customer was actively disputing the proposed root cause; this matches premature/auto-closure signaling.",
+    "evidence": [
+      "Amir Khan (public): \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Completed in the portal. We will write to you again to remind you.\"",
+      "Customer (same day): \"on our second day 2 of the chat service not functioning as expected\"",
+      "Customer: \"Every time we have this issue... until it turns out to be a bug on your side.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The problem is business-impacting (chat service degraded, agent replies blocked/intermittent for months, multiple agents affected) yet support largely stayed in generic client/network troubleshooting and delayed deeper engineering-side investigation until later signals appeared in logs.",
+    "evidence": [
+      "Customer (initial): \"This is causing delays in responses to customers.\"",
+      "Customer: \"We have been running into this issue intermittently for months now.\"",
+      "Customer: \"here we are again\u2026 on our second day 2 of the chat service not functioning as expected\"",
+      "Rishi (public): \"no obvious platform errors on our side... most likely drivers are local browser, network, or site/widget configuration\"",
+      "ATLAS (private): \"Action: l2\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60247476
+}

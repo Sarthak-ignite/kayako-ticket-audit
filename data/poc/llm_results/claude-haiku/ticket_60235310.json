@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient context to determine AI response quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of customer being stuck in AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No interaction details to assess context understanding.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, indicating no significant delay.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket status is closed, but no details suggest premature closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Priority is normal, no evidence of severity mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "After carefully analyzing the provided ticket context, I can only partially evaluate the patterns due to incomplete interaction details. Here's my analysis:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient context to determine AI response quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of customer being stuck in AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No interaction details to assess context understanding.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, indicating no significant delay.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket status is closed, but no details suggest premature closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Priority is normal, no evidence of severity mishandling.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket interaction seems to be an AI-generated summary\n- Most critical information is missing\n- Unable to definitively assess quality issues without full interaction transcript\n\nRecommendation: Provide complete ticket interaction details for a comprehensive quality analysis.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60235310
+}

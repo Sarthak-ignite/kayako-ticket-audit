@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS provides generally plausible licensing troubleshooting (license bound to hardware / registration server connectivity) and links to KBs. There is no clear, unambiguous factual error shown in the ticket, nor a clear AI promise of a specific deliverable that is proven to never be sent. Customer dissatisfaction is focused on wanting a human and lack of response, not that the AI guidance is definitively wrong.",
+    "evidence": [
+      "ATLAS: \"Your Kerio Control appliance is reporting \\\"Appliance does not have a valid license\\\" and \\\"The server is not responding\\\" when attempting to re-register or upload the license file.\"",
+      "ATLAS: \"This situation commonly occurs after hardware replacement, as the license file is bound to the specific hardware serial number.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly and explicitly requested a human, and describes being blocked by the support workflow (chat button not working; can\u2019t call without an open ticket; AI opened the wrong type of ticket). This indicates the customer is effectively trapped in the AI/support gate rather than being smoothly connected to a human specialist when requested.",
+    "evidence": [
+      "Customer: \"I need to talk to a human\"",
+      "Customer: \"Stop talking Hermes, I want to speak to a HUMAN.\"",
+      "Customer: \"Right now I'm trying to open a ticket but the \\\"Start Chat\\\" button isn't working, and I can't call the phone number without an open ticket.\"",
+      "Customer: \"The ATLAS AI opened a ticket with customer care, not with the technical department, and customer care said I have to open a ticket with the technical department, but I can't open a ticket because your system isn't working!\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not clearly ask for the same information repeatedly after the customer already provided it, nor does it obviously ignore previously attached logs/screenshots in a way that meets the stated criteria. There is an attachment/process problem (customer can\u2019t find the promised attached license), but that is better categorized as a fulfillment/handling issue rather than a clear 'ignored context' pattern per the provided rules.",
+    "evidence": [
+      "Customer: \"Also, where is the attached licence key? I'm using the one I've downloaded from the GFI website for that client.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a clear 3+ calendar day gap where the customer complains about no reply. The customer explicitly calls out waiting 'three days' and 'almost five days' without response, meeting the detection criteria.",
+    "evidence": [
+      "Customer (2025-06-08): \"\\\"Allow me a moment to review the matter.\\\" Three days later and still no reply.\"",
+      "Customer (2025-06-09): \"Almost five days since I opened this ticket and still no response. NOT GOOD ENOUGH!\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not show being closed. Support mentions an auto-close policy ('stay open for one week'), but there is no evidence the ticket was actually closed while an unanswered customer request remained.",
+    "evidence": [
+      "Support: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although an internal escalation marker appears (\"core_functionality_defect\"), the ticket does not clearly state P1/SEV1/Critical, nor does the customer explicitly state a full production outage ('production down', 'complete outage'). Without an explicit severity marker or unambiguous outage statement, the strict detection criteria for P1/SEV1 mishandling are not met.",
+    "evidence": [
+      "Internal note: \"The customer escalated the Case. The severity is: core_functionality_defect\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60069509
+}

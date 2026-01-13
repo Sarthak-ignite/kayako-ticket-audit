@@ -1,0 +1,104 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "avolin_tradebeam",
+        "requester": {
+          "id": 60195833,
+          "uuid": "44463a4f-89b1-47ab-a401-1e25d85b9b56",
+          "full_name": "Arturo Perez Parra",
+          "legacy_id": "19348569163666",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/44463a4f-89b1-47ab-a401-1e25d85b9b56?1764633262",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 197368,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-12-01T23:54:22+00:00",
+          "last_active_at": "2025-12-01T23:54:22+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60195833",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@e04554b6356a611f03d6b84a16a6037c0b381664",
+          "password_updated_at": "2025-03-19T21:05:59+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2024-06-04T22:38:09+00:00",
+          "updated_at": "2025-12-01T23:54:22+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60195833"
+        },
+        "ticket_idt": 60212784
+      },
+      "interactions": [
+        [
+          "2025-10-02T20:19:30+00:00",
+          "Kayako - ticket id 60212784 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Arturo Perez Parra) ---</b><br>I'd like to open a ticket<br/><br><br><b>--- AI Assistant ---</b><br>Thanks for letting me know you'd like to open a ticket! \ud83d\ude0a A human colleague will be happy to assist you further\u2014please feel free to choose from the available options to continue.<br/>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided generic troubleshooting responses despite the customer explicitly stating that proposed solutions already failed. The AI acknowledged receipt of logs but the response appears truncated/incomplete, suggesting poor quality interactions.",
+    "evidence": [
+      "Customer [2025-12-08T11:15:34]: 'none of the proposed solutions worked so far, here are the logs from both server and agent'",
+      "ATLAS [2025-12-08T11:16:26]: 'Thank you for sharing the log files and confirming that you have already attempted all the previously suggested solutions regardi[ng]...' (response truncated/incomplete)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer was trapped in AI interactions for extended period before reaching human. Multiple ATLAS responses and interactions occurred, with customer having to escalate via private messages requesting human review ('Please have someone look at the logs').",
+    "evidence": [
+      "Customer [2025-12-08T11:24:37]: 'Those steps are basically what was recommended in articles before. Please have someone look at the logs, otherwise, there's a high ris[k]' (private message indicating frustration with AI loop)",
+      "ATLAS [2025-12-08T08:24:32, 08:24:29, 08:24:24]: Multiple consecutive private system messages indicating prolonged AI chat interaction before escalation"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the ticket shows customer frustration with repeated suggestions, the available evidence does not clearly demonstrate that support re-requested the same logs/information that was already provided. The truncated responses make full assessment difficult.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant delay between customer's last substantive interaction (2025-12-08T11:24:37) and human agent response (2025-12-09T13:32:09) - approximately 26+ hours. Also, time to first human response was 29.1 hours from ticket creation.",
+    "evidence": [
+      "Customer last message [2025-12-08T11:24:37]: Private escalation request",
+      "First human response [2025-12-09T13:32:09]: Keyur Saxena responds ~26 hours later",
+      "Ticket metadata: Time to first human (hours): 29.1, Max gap between responses (hours): 26.1"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is marked as closed, the final interaction (2025-12-09T13:32:09) shows a human agent providing a substantive action ('Please force the updates'). No evidence that closure occurred while customer was waiting or had given up without resolution.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority ticket received generic troubleshooting responses from AI instead of immediate escalation to human specialist. Customer had to explicitly request human review after AI provided only standard article recommendations, and even then waited 26+ hours before human engaged.",
+    "evidence": [
+      "Ticket priority: high",
+      "Customer [2025-12-08T11:24:37]: 'Those steps are basically what was recommended in articles before. Please have someone look at the logs'",
+      "ATLAS responses [2025-12-08]: Generic troubleshooting acknowledgments without specialist escalation",
+      "Time to first human (hours): 29.1 - excessive delay for high-priority ticket"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"ATLAS provided generic troubleshooting responses despite the customer explicitly stating that proposed solutions already failed. The AI acknowledged receipt of logs but the response appears truncated/incomplete, suggesting poor quality interactions.\",\n    \"evidence\": [\n      \"Customer [2025-12-08T11:15:34]: 'none of the proposed solutions worked so far, here are the logs from both server and agent'\",\n      \"ATLAS [2025-12-08T11:16:26]: 'Thank you for sharing the log files and confirming that you have already attempted all the previously suggested solutions regardi[ng]...' (response truncated/incomplete)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer was trapped in AI interactions for extended period before reaching human. Multiple ATLAS responses and interactions occurred, with customer having to escalate via private messages requesting human review ('Please have someone look at the logs').\",\n    \"evidence\": [\n      \"Customer [2025-12-08T11:24:37]: 'Those steps are basically what was recommended in articles before. Please have someone look at the logs, otherwise, there's a high ris[k]' (private message indicating frustration with AI loop)\",\n      \"ATLAS [2025-12-08T08:24:32, 08:24:29, 08:24:24]: Multiple consecutive private system messages indicating prolonged AI chat interaction before escalation\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket shows customer frustration with repeated suggestions, the available evidence does not clearly demonstrate that support re-requested the same logs/information that was already provided. The truncated responses make full assessment difficult.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant delay between customer's last substantive interaction (2025-12-08T11:24:37) and human agent response (2025-12-09T13:32:09) - approximately 26+ hours. Also, time to first human response was 29.1 hours from ticket creation.\",\n    \"evidence\": [\n      \"Customer last message [2025-12-08T11:24:37]: Private escalation request\",\n      \"First human response [2025-12-09T13:32:09]: Keyur Saxena responds ~26 hours later\",\n      \"Ticket metadata: Time to first human (hours): 29.1, Max gap between responses (hours): 26.1\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked as closed, the final interaction (2025-12-09T13:32:09) shows a human agent providing a substantive action ('Please force the updates'). No evidence that closure occurred while customer was waiting or had given up without resolution.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority ticket received generic troubleshooting responses from AI instead of immediate escalation to human specialist. Customer had to explicitly request human review after AI provided only standard article recommendations, and even then waited 26+ hours before human engaged.\",\n    \"evidence\": [\n      \"Ticket priority: high\",\n      \"Customer [2025-12-08T11:24:37]: 'Those steps are basically what was recommended in articles before. Please have someone look at the logs'\",\n      \"ATLAS responses [2025-12-08]: Generic troubleshooting acknowledgments without specialist escalation\",\n      \"Time to first human (hours): 29.1 - excessive delay for high-priority ticket\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60258400
+}

@@ -1,0 +1,34 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided ticket excerpt contains only a single AI greeting/comment. There is no evidence of generic filler responses, incorrect information, or broken promises in the snippet.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No repeated requests or cycles between the AI and the customer are present in the supplied interactions. Only one AI message is shown, so there is no sign the customer is stuck in an AI loop or unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The excerpt does not include any instance of the support agent asking for information that the customer had already provided. There is insufficient context to conclude that context was ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only a single timestamped AI comment is provided; there is no visible sequence of interactions or gaps of multiple days between replies to evaluate response delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication in the provided excerpt that the ticket was closed while the customer was still waiting or had given up. The snippet shows only an initial AI comment.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No priority/severity information or troubleshooting content is present in the excerpt, so there is no evidence that a high-priority ticket received only generic troubleshooting rather than escalation.",
+    "evidence": []
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60169826
+}

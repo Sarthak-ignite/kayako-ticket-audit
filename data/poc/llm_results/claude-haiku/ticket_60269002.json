@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response is extremely generic and does not provide any substantive assistance or address a specific customer request.",
+    "evidence": [
+      "[2025-12-23T08:00:56+00:00] Hi Team, Your requested report is attached. Best regards, Kayako Automation"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is insufficient evidence of an AI loop, as there are only minimal AI interactions.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no customer interaction or context to suggest ignoring information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interactions appear to be almost instantaneous with no significant time gap.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication of customer dissatisfaction or unresolved issues before closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as a high-priority or severity 1 ticket.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response is extremely generic and does not provide any substantive assistance or address a specific customer request.\",\n    \"evidence\": [\n      \"[2025-12-23T08:00:56+00:00] Hi Team, Your requested report is attached. Best regards, Kayako Automation\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient evidence of an AI loop, as there are only minimal AI interactions.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no customer interaction or context to suggest ignoring information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions appear to be almost instantaneous with no significant time gap.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication of customer dissatisfaction or unresolved issues before closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as a high-priority or severity 1 ticket.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket contains only AI-generated messages\n- The AI response is extremely generic and lacks specific context\n- There's no visible customer interaction or actual problem resolution\n- The ticket appears to be an automated process with minimal meaningful communication\n\nThe primary quality issue is the AI's generic, potentially unhelpful response that provides no real support value.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60269002
+}

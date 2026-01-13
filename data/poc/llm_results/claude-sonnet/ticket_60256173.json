@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses appear to be truncated or incomplete, providing no actual helpful information to the customer, just partial sentences that cut off mid-thought.",
+    "evidence": [
+      "[2025-12-18T08:17:54+00:00] Cu Chulainn AI Manager: 'Dear Tomas, Thank you for updating us. We are pleased to hear that the DNS socket errors have been resolved after adjusting t' - message cuts off incompletely",
+      "[2025-12-16T12:05:45+00:00] Cu Chulainn AI Manager: 'Dear Tomas, Thank you for providing the recent details and logs. In order to continue the case efficiently and maintain the R' - message cuts off incompletely"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While AI was involved initially, the customer was able to reach human agents (Mike Kebede, Ciprian Nastase) relatively early in the ticket lifecycle, and the ticket progressed with human intervention.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support team appears to have reviewed the customer's provided information and core dump, with Mike Kebede explicitly confirming receipt and review of the data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a 97.5-hour maximum gap between responses, and the time to first human response was 29.7 hours for an urgent priority ticket. Significant delays occurred between Dec 6 and Dec 8, and again between Dec 14 and Dec 16.",
+    "evidence": [
+      "Time to first human (hours): 29.7 for an urgent ticket",
+      "Max gap between responses (hours): 97.5",
+      "[2025-12-06T22:05:08+00:00] Customer comments, next human response [2025-12-08T11:45:30+00:00] - approximately 37 hours delay"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows status as closed, but the last customer comment indicates they solved the DNS socket errors themselves. There's no evidence the customer was waiting for promised information when it closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is an urgent priority ticket involving system failures and crashes (WebAdmin unresponsive, unit failures requiring restarts), yet there was a 29.7-hour delay to first human response and extended gaps in communication rather than immediate escalation.",
+    "evidence": [
+      "Priority: urgent with Time to first human (hours): 29.7",
+      "[2025-12-16T07:36:26+00:00] Tomas Ruzicka: 'The Kerio failed again approx 8 hours ago. It was restarted 5 minutes ago. Customer reported that about midnigh he cannot connect to' - system down situation",
+      "[2025-12-06T17:35:48+00:00] Mike Kebede private note: 'WebAdmin became unrespo' - indicates critical system failure"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses appear to be truncated or incomplete, providing no actual helpful information to the customer, just partial sentences that cut off mid-thought.\",\n    \"evidence\": [\n      \"[2025-12-18T08:17:54+00:00] Cu Chulainn AI Manager: 'Dear Tomas, Thank you for updating us. We are pleased to hear that the DNS socket errors have been resolved after adjusting t' - message cuts off incompletely\",\n      \"[2025-12-16T12:05:45+00:00] Cu Chulainn AI Manager: 'Dear Tomas, Thank you for providing the recent details and logs. In order to continue the case efficiently and maintain the R' - message cuts off incompletely\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI was involved initially, the customer was able to reach human agents (Mike Kebede, Ciprian Nastase) relatively early in the ticket lifecycle, and the ticket progressed with human intervention.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support team appears to have reviewed the customer's provided information and core dump, with Mike Kebede explicitly confirming receipt and review of the data.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a 97.5-hour maximum gap between responses, and the time to first human response was 29.7 hours for an urgent priority ticket. Significant delays occurred between Dec 6 and Dec 8, and again between Dec 14 and Dec 16.\",\n    \"evidence\": [\n      \"Time to first human (hours): 29.7 for an urgent ticket\",\n      \"Max gap between responses (hours): 97.5\",\n      \"[2025-12-06T22:05:08+00:00] Customer comments, next human response [2025-12-08T11:45:30+00:00] - approximately 37 hours delay\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows status as closed, but the last customer comment indicates they solved the DNS socket errors themselves. There's no evidence the customer was waiting for promised information when it closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This is an urgent priority ticket involving system failures and crashes (WebAdmin unresponsive, unit failures requiring restarts), yet there was a 29.7-hour delay to first human response and extended gaps in communication rather than immediate escalation.\",\n    \"evidence\": [\n      \"Priority: urgent with Time to first human (hours): 29.7\",\n      \"[2025-12-16T07:36:26+00:00] Tomas Ruzicka: 'The Kerio failed again approx 8 hours ago. It was restarted 5 minutes ago. Customer reported that about midnigh he cannot connect to' - system down situation\",\n      \"[2025-12-06T17:35:48+00:00] Mike Kebede private note: 'WebAdmin became unrespo' - indicates critical system failure\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60256173
+}

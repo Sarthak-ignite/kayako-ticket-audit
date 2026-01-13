@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI activity appears to be internal routing/escalation notes with no actionable support content, and the customer repeatedly reports that promised contact is not happening (suggesting unkept commitments in the overall flow tied to automated escalation).",
+    "evidence": [
+      "[2025-10-02T14:08:44+00:00] (AI) ATLAS: \"Action: l2\"",
+      "[2025-09-29T22:34:48+00:00] (AI) Centralsupport-ai-acc: \"[customer_escalation] The customer escalated the Case.\"",
+      "[2025-09-29T19:50:15+00:00] (Customer) D. Middleton: \"I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence that an AI agent repeatedly asked for the same information or prevented access to a human; multiple employees replied in the thread.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asks the customer to reproduce the issue and provide details after the customer already provided serial number, backups, and support files, indicating prior information was not fully leveraged.",
+    "evidence": [
+      "[2025-09-29T18:56:27+00:00] (Customer) D. Middleton: \"The serial number of the hardware is - SN \u2013 NG520: 2522BA2324\"",
+      "[2025-09-29T19:03:14+00:00] (Customer) D. Middleton: \"Here is the backup before the downgrade to 9.5.0.\"",
+      "[2025-09-29T19:05:36+00:00] (Customer) D. Middleton: \"Here is the support file from the unit before the 9.5.0 downgrade.\"",
+      "[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: \"Please provide us with the following details after having reproduced the issue:\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket metadata indicates a very large maximum gap between responses, and the timeline shows a multi-day span from 2025-09-30 to 2025-10-03 before the next recorded agent message.",
+    "evidence": [
+      "[2025-09-30T02:48:06+00:00] (Employee) Arafat Bakhsh: \"You can reach out to jozef.kacala@gfi.com regarding your concerns.\"",
+      "[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: \"Please provide us with the following details after having reproduced the issue:\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is \"closed\" and the customer asked to keep it open, the provided interaction log does not show an explicit closure action or closure message while awaiting promised information.",
+    "evidence": [
+      "[2025-09-30T02:42:29+00:00] (Customer) D. Middleton: \"This ticket needs to remain open until I speak with someone in your management team.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite the customer reporting a complete outage and requesting immediate management call-back, responses shown are largely generic acknowledgements and version guidance rather than clear immediate live escalation/incident handling steps (e.g., confirmed bridge call, on-call engagement).",
+    "evidence": [
+      "[2025-09-29T19:50:15+00:00] (Customer) D. Middleton: \"Customer is completely down.\"",
+      "[2025-09-29T22:34:06+00:00] (Customer) D. Middleton: \"Please have a manager call me immediately... It is completely unacceptable in a network down emergency\"",
+      "[2025-09-29T18:40:35+00:00] (Employee) Denis Spirin: \"We have received your escalation... and we want to assure you that we are actively\"",
+      "[2025-09-29T23:36:55+00:00] (Employee) Harry Tasker: \"We\u2019ve received your escalation... and we are investigating the issue.\"",
+      "[2025-09-30T00:51:24+00:00] (Employee) Aditi Garg: \"The new NG models require v10 due to updated network interface\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI activity appears to be internal routing/escalation notes with no actionable support content, and the customer repeatedly reports that promised contact is not happening (suggesting unkept commitments in the overall flow tied to automated escalation).\",\n    \"evidence\": [\n      \"[2025-10-02T14:08:44+00:00] (AI) ATLAS: \\\"Action: l2\\\"\",\n      \"[2025-09-29T22:34:48+00:00] (AI) Centralsupport-ai-acc: \\\"[customer_escalation] The customer escalated the Case.\\\"\",\n      \"[2025-09-29T19:50:15+00:00] (Customer) D. Middleton: \\\"I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence that an AI agent repeatedly asked for the same information or prevented access to a human; multiple employees replied in the thread.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support asks the customer to reproduce the issue and provide details after the customer already provided serial number, backups, and support files, indicating prior information was not fully leveraged.\",\n    \"evidence\": [\n      \"[2025-09-29T18:56:27+00:00] (Customer) D. Middleton: \\\"The serial number of the hardware is - SN \u2013 NG520: 2522BA2324\\\"\",\n      \"[2025-09-29T19:03:14+00:00] (Customer) D. Middleton: \\\"Here is the backup before the downgrade to 9.5.0.\\\"\",\n      \"[2025-09-29T19:05:36+00:00] (Customer) D. Middleton: \\\"Here is the support file from the unit before the 9.5.0 downgrade.\\\"\",\n      \"[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: \\\"Please provide us with the following details after having reproduced the issue:\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket metadata indicates a very large maximum gap between responses, and the timeline shows a multi-day span from 2025-09-30 to 2025-10-03 before the next recorded agent message.\",\n    \"evidence\": [\n      \"[2025-09-30T02:48:06+00:00] (Employee) Arafat Bakhsh: \\\"You can reach out to jozef.kacala@gfi.com regarding your concerns.\\\"\",\n      \"[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: \\\"Please provide us with the following details after having reproduced the issue:\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is \\\"closed\\\" and the customer asked to keep it open, the provided interaction log does not show an explicit closure action or closure message while awaiting promised information.\",\n    \"evidence\": [\n      \"[2025-09-30T02:42:29+00:00] (Customer) D. Middleton: \\\"This ticket needs to remain open until I speak with someone in your management team.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite the customer reporting a complete outage and requesting immediate management call-back, responses shown are largely generic acknowledgements and version guidance rather than clear immediate live escalation/incident handling steps (e.g., confirmed bridge call, on-call engagement).\",\n    \"evidence\": [\n      \"[2025-09-29T19:50:15+00:00] (Customer) D. Middleton: \\\"Customer is completely down.\\\"\",\n      \"[2025-09-29T22:34:06+00:00] (Customer) D. Middleton: \\\"Please have a manager call me immediately... It is completely unacceptable in a network down emergency\\\"\",\n      \"[2025-09-29T18:40:35+00:00] (Employee) Denis Spirin: \\\"We have received your escalation... and we want to assure you that we are actively\\\"\",\n      \"[2025-09-29T23:36:55+00:00] (Employee) Harry Tasker: \\\"We\u2019ve received your escalation... and we are investigating the issue.\\\"\",\n      \"[2025-09-30T00:51:24+00:00] (Employee) Aditi Garg: \\\"The new NG models require v10 due to updated network interface\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60209553
+}

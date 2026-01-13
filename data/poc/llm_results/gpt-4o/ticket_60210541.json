@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI provided a specific response addressing the issue with Let's Encrypt SSL/TLS certificate renewal and related functionality.",
+    "evidence": [
+      "Dear Jozef, Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K [2025-09-30T15:51:35+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the AI kept asking for the same information or that the customer was unable to speak with a human representative.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer mentioned that updating to version 10 causes issues and rollback fixes them, which should have been noted in providing a resolution.",
+    "evidence": [
+      "all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it [2025-09-30T15:55:22+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay of 742.1 hours before the first human interaction.",
+    "evidence": [
+      "Time to first human (hours): 742.1"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence indicating the ticket was closed while the customer was awaiting a promise or gave up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "For a high-priority issue, the initial response doesn't indicate an immediate escalation or targeted troubleshooting related to the described outage.",
+    "evidence": [
+      "Dear Jozef, Thank you for contacting GFI - Kerio Control Support, I understand that you are reporting PBX C3X stops working after [2025-10-31T13:59:15+00:00]"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI provided a specific response addressing the issue with Let's Encrypt SSL/TLS certificate renewal and related functionality.\",\n    \"evidence\": [\"Dear Jozef, Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K [2025-09-30T15:51:35+00:00]\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the AI kept asking for the same information or that the customer was unable to speak with a human representative.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer mentioned that updating to version 10 causes issues and rollback fixes them, which should have been noted in providing a resolution.\",\n    \"evidence\": [\"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it [2025-09-30T15:55:22+00:00]\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay of 742.1 hours before the first human interaction.\",\n    \"evidence\": [\"Time to first human (hours): 742.1\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence indicating the ticket was closed while the customer was awaiting a promise or gave up.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"For a high-priority issue, the initial response doesn't indicate an immediate escalation or targeted troubleshooting related to the described outage.\",\n    \"evidence\": [\"Dear Jozef, Thank you for contacting GFI - Kerio Control Support, I understand that you are reporting PBX C3X stops working after [2025-10-31T13:59:15+00:00]\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60210541
+}

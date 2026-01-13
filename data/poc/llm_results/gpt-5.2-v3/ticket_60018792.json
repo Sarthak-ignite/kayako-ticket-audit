@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS mainly performed intake (confirming the license key and asking for supporting materials) and routed the ticket to the BU team. There is no clear evidence the AI gave incorrect product information, made unfulfilled promises, used broken templates, or provided irrelevant troubleshooting that the customer flagged as wrong/unhelpful.",
+    "evidence": [
+      "Chat Support: \"I have this license key on record: - License: QjcmHQpCsc0-zdMys0gYs6BVdL4wa-cEBF8-790951 - Expiry date: 2026-03-29. Just to make sure we're on the same page - is this the same system you're reaching out about today?\"",
+      "Kayako - ticket id 60018792 // ATLAS commented privately: \"Sending to BU\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was not stuck in an AI loop: there is no evidence of repeated requests for the same info, no explicit request for a human being denied, and no long sequence of AI-only replies.",
+    "evidence": [
+      "Alperia: \"Yes, QjcmHQpCsc0-zdMys0gYs6BVdL4wa-cEBF8-790951 is correct\"",
+      "Kayako - ticket id 60018792 // ATLAS commented privately: \"Sending to BU\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not repeatedly ask for already-provided information or ignore an explicit customer statement like 'as mentioned above.' The customer provided the license key and later only followed up about the delay; there is no clear context-ignoring behavior shown in the visible interactions.",
+    "evidence": [
+      "Kayako - ticket id 60018792 // Alperia commented privately: \"License Key: QjcmHQpCsc0-zdMys0gYs6BVdL4wa-cEBF8-790951\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant gaps (well over 3 days) between the customer's request/follow-up and a support response, and the customer explicitly complained about waiting. Support later explicitly apologized for the delay.",
+    "evidence": [
+      "Customer request (2025-04-10): \"Hey, please downgrade this license key to version 18.2\"",
+      "Customer follow-up (2025-05-02): \"Hello, we are now waiting 22 days...\"",
+      "Next public support response not until 2025-10-08: \"We sincerely apologize for the delay in processing your request to downgrade your license key to version 18.2.\"",
+      "Support (2025-10-08): \"We sincerely apologize for the delay.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The issue was resolved (new downgraded key provided) and the customer explicitly requested closure afterward, so closure would not be premature.",
+    "evidence": [
+      "Support (2025-10-08): \"License has been downgraded to GFI FaxMaker 2015 (version 18.2). New key is 6E1f-HUTS-101TmxYN6NHMccEwbvhRRr0K-790951.\"",
+      "Customer (2025-10-09): \"you can close the ticket\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit P1/SEV1/Critical marker or outage/production-down impact is present in the ticket, so high-severity mishandling cannot be concluded from the available evidence.",
+    "evidence": [
+      "Issue description: \"please downgrade this license key to version 18.2\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60018792
+}

@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support stated the vulnerability was \u201cfully resolved\u201d and that Apache was \u201csuccessfully upgraded,\u201d but the linked engineering thread indicates the change still required development review/build/test/deploy before it would actually be resolved for customers. This is potentially misleading/overpromising resolution status.",
+    "evidence": [
+      "Kayako (public, 2025-11-13): \"Engineering team has successfully upgraded the Apache version... effectively resolving the reported security vulnerability. This matter has been fully resolved.\"",
+      "GHI Eng 15431 (2025-11-13): \"Engineering has created pull request #3499... but the Development team needs to review, build, test, and deploy the changes before the security vulnerability is fully resolved.\"",
+      "GHI Eng 15431 (2025-11-13): \"This isn't part of maintenance, version upgrades always require a spec.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer was stuck in an AI loop, asked for a human, or had difficulty reaching a person. The ticket shows a single customer message and standard support/engineering updates.",
+    "evidence": [
+      "Customer (2025-11-10): \"Hi Team, GFI Langard is using Apache... outdated... high security concern and we need to fix this as soon as possible.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledged the reported issue and involved engineering; there\u2019s no clear sign they ignored the customer\u2019s provided version details or forced repetition. The responses reference the same Apache version gap the customer described.",
+    "evidence": [
+      "Kayako (public, 2025-11-10): \"We have contacted the Engineering team and will provide you with an update as soon as we receive more information from them.\"",
+      "GHI Eng 15431 (summary): \"The GFI LanGuard agent was using an outdated Apache HTTP Server version 2.4.62 instead of the latest version 2.4.65\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The CSV shows an initial response time of 126 minutes and a multi-day resolution time, indicating potentially meaningful delays for a security-related request. While the customer did not explicitly complain about waiting, the timelines suggest slower handling than \u201cas soon as possible.\u201d",
+    "evidence": [
+      "CSV: initialResponseTime=126",
+      "CSV: resolutionTime=241292",
+      "CSV: Ticket Created=2025-11-10 18:00:48",
+      "CSV: Ticket Solved=2025-11-13 13:02:20"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was marked solved/closed with messaging that the issue was fully resolved, but engineering notes suggest the fix still required downstream development steps (review/build/test/deploy). This implies closure may have occurred before the customer could actually receive/verify the remediation.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Kayako (public, 2025-11-13): \"This matter has been fully resolved.\"",
+      "GHI Eng 15431 (2025-11-13): \"Development team needs to review, build, test, and deploy the changes before the security vulnerability is fully resolved.\"",
+      "CSV: Ticket Closed=2025-11-16 13:36:53"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer described a \u201chigh security concern\u201d needing urgent remediation, and engineering labeled it Priority:High. Despite that, support communicated full resolution without confirming deployment/availability, which is risky for a high-severity security vulnerability and suggests severity handling/communication gaps (uncertain, but plausible).",
+    "evidence": [
+      "Customer (2025-11-10): \"This is a high security concern and we need to fix this as soon as possible.\"",
+      "GHI Engineering - 15431 (2025-11-10): \"labeled as Priority:High\"",
+      "Kayako (public, 2025-11-13): \"This matter has been fully resolved.\"",
+      "GHI Eng 15431 (2025-11-13): \"needs to review, build, test, and deploy... before the security vulnerability is fully resolved.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60239883
+}

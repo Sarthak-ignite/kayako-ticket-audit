@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear indication that the AI responses provided were generic, incorrect, or unfulfilled promises within the available interactions.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interactions indicate a smoothly concluded conversation without the customer being forced into repeated AI responses or unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence showing that the support failed to acknowledge the customer's previous information or requested the same data redundantly.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The data shows that responses were instantaneous with a maximum gap recorded as 0.0 hours, indicating absence of delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not indicate any unresolved issues or that the customer was waiting for information prior to closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The priority level is normal, not high-priority or outage-level, thus the criteria for mismanagement in this context does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear indication that the AI responses provided were generic, incorrect, or unfulfilled promises within the available interactions.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions indicate a smoothly concluded conversation without the customer being forced into repeated AI responses or unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence showing that the support failed to acknowledge the customer's previous information or requested the same data redundantly.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The data shows that responses were instantaneous with a maximum gap recorded as 0.0 hours, indicating absence of delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not indicate any unresolved issues or that the customer was waiting for information prior to closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The priority level is normal, not high-priority or outage-level, thus the criteria for mismanagement in this context does not apply.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60258751
+}

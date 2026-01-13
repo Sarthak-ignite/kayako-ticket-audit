@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI support responses shown in the provided interaction\u2014only a customer note referencing a prior chat\u2014so there isn\u2019t enough evidence to assess AI answer quality, correctness, or unkept promises.",
+    "evidence": [
+      "[2025-12-26T13:36:38+00:00] (Customer) \"Thanks for chatting earlier with ATLAS User manager!\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The timeline does not show repeated AI requests, repeated questions, or the customer being blocked from reaching a human; it contains only a single customer message.",
+    "evidence": [
+      "[2025-12-26T13:36:38+00:00] (Customer) \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support agent responses are present, so there is no evidence of support ignoring previously provided information or requesting the same logs/screenshots again.",
+    "evidence": [
+      "[2025-12-26T13:36:38+00:00] (Customer) \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one interaction is provided, so delays between support/customer responses cannot be evaluated from the transcript (despite metadata indicating a 0.0 max gap).",
+    "evidence": [
+      "[2025-12-26T13:36:38+00:00] (Customer) \"Kayako - ticket id 60270630 // Ray Tutnam commented privately:\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is 'closed', the transcript does not show any pending support promise, customer request awaiting follow-up, or customer indicating they are still waiting when the ticket was closed.",
+    "evidence": [
+      "[2025-12-26T13:36:38+00:00] (Customer) \"Thanks for chatting earlier with ATLAS User manager!\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is 'normal' and there are no troubleshooting steps or escalation decisions shown; therefore, there is no evidence of P1/SEV1 mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI support responses shown in the provided interaction\u2014only a customer note referencing a prior chat\u2014so there isn\u2019t enough evidence to assess AI answer quality, correctness, or unkept promises.\",\n    \"evidence\": [\n      \"[2025-12-26T13:36:38+00:00] (Customer) \\\"Thanks for chatting earlier with ATLAS User manager!\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline does not show repeated AI requests, repeated questions, or the customer being blocked from reaching a human; it contains only a single customer message.\",\n    \"evidence\": [\n      \"[2025-12-26T13:36:38+00:00] (Customer) \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support agent responses are present, so there is no evidence of support ignoring previously provided information or requesting the same logs/screenshots again.\",\n    \"evidence\": [\n      \"[2025-12-26T13:36:38+00:00] (Customer) \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one interaction is provided, so delays between support/customer responses cannot be evaluated from the transcript (despite metadata indicating a 0.0 max gap).\",\n    \"evidence\": [\n      \"[2025-12-26T13:36:38+00:00] (Customer) \\\"Kayako - ticket id 60270630 // Ray Tutnam commented privately:\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is 'closed', the transcript does not show any pending support promise, customer request awaiting follow-up, or customer indicating they are still waiting when the ticket was closed.\",\n    \"evidence\": [\n      \"[2025-12-26T13:36:38+00:00] (Customer) \\\"Thanks for chatting earlier with ATLAS User manager!\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is 'normal' and there are no troubleshooting steps or escalation decisions shown; therefore, there is no evidence of P1/SEV1 mishandling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60270630
+}

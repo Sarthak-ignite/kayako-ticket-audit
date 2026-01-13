@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI providing generic filler, incorrect information, or unfulfilled promises within the provided interactions.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The AI interactions demonstrate repetitive actions without clear progress in resolving the issue, as multiple 'Action: l1' entries occur without progressing the case.",
+    "evidence": [
+      "[2025-10-02T14:03:12+00:00] (AI) ATLAS: Action: l1",
+      "[2025-09-30T08:49:23+00:00] (AI) ATLAS: Action: l1"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence that the support staff ignored previous information provided by the customer or failed to check past similar tickets.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays between responses, particularly between the initial interaction and the next human response, which spans 668.4 hours.",
+    "evidence": [
+      "[2025-10-02T14:03:12+00:00] to [2025-10-28T12:04:02+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not appear closed prematurely, as there is no evidence of customer awaiting promised information at closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as high-priority or an outage, and there is no indication of mishandled escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI providing generic filler, incorrect information, or unfulfilled promises within the provided interactions.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI interactions demonstrate repetitive actions without clear progress in resolving the issue, as multiple 'Action: l1' entries occur without progressing the case.\",\n    \"evidence\": [\"[2025-10-02T14:03:12+00:00] (AI) ATLAS: Action: l1\", \"[2025-09-30T08:49:23+00:00] (AI) ATLAS: Action: l1\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the support staff ignored previous information provided by the customer or failed to check past similar tickets.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays between responses, particularly between the initial interaction and the next human response, which spans 668.4 hours.\",\n    \"evidence\": [\"[2025-10-02T14:03:12+00:00] to [2025-10-28T12:04:02+00:00]\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not appear closed prematurely, as there is no evidence of customer awaiting promised information at closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as high-priority or an outage, and there is no indication of mishandled escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60210131
+}

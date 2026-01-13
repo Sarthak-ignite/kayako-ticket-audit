@@ -1,0 +1,76 @@
+{
+  "notes": [
+    "This file records manual ground-truth adjustments discovered during Phase 0 review.",
+    "It is intended to be applied on top of Patterns.csv-derived expectations (collapsed into the 6 consolidated categories).",
+    "Each override should include enough evidence/justification to be auditable.",
+    "If a ticket is discovered to be out-of-universe (not present in Full_Ticket_Data_1767638152669.csv), it should be excluded here so it does not affect scoring.",
+    "Overrides may optionally include an 'add' list to enrich expected labels when Patterns.csv is incomplete for a ticket."
+  ],
+  "excluded_seed_tickets": [
+    {
+      "ticket_id": 60166415,
+      "reason": "Out-of-universe: ticket is not present in Full_Ticket_Data_1767638152669.csv (the authoritative last-quarter ticket universe). Exclude from Patterns.csv-based ground truth scoring.",
+      "evidence_files": [
+        "Full_Ticket_Data_1767638152669.csv",
+        "data/poc/raw/ticket_60166415.json",
+        "IgniteTech_Khoros_GFI - Central Support Issues we see in tickets - Patterns.csv"
+      ],
+      "created_at": "2026-01-12"
+    },
+    {
+      "ticket_id": 60193443,
+      "reason": "Out-of-universe: ticket is not present in Full_Ticket_Data_1767638152669.csv (the authoritative last-quarter ticket universe). Exclude from Patterns.csv-based ground truth scoring.",
+      "evidence_files": [
+        "Full_Ticket_Data_1767638152669.csv",
+        "data/poc/raw/ticket_60193443.json",
+        "IgniteTech_Khoros_GFI - Central Support Issues we see in tickets - Patterns.csv"
+      ],
+      "created_at": "2026-01-12"
+    }
+  ],
+  "overrides": [
+    {
+      "ticket_id": 60098171,
+      "keep": [
+        "AI_WALL_LOOPING"
+      ],
+      "remove": [
+        "RESPONSE_DELAYS"
+      ],
+      "rationale": "Patterns.csv includes 60098171 under 'Slow Ai/agent responses with gaps measured in days' (RESPONSE_DELAYS), but the fetched ticket_360 interactions for 60098171 are all on 2025-07-08 within a few hours (no multi-day gaps). The AI-wall/looping behavior is present via repeated ATLAS-only handling and customer requests for a live agent in the embedded chat transcript.",
+      "evidence_files": [
+        "data/poc/raw/ticket_60098171.json",
+        "IgniteTech_Khoros_GFI - Central Support Issues we see in tickets - Patterns.csv"
+      ],
+      "created_at": "2026-01-12"
+    },
+    {
+      "ticket_id": 60209553,
+      "add": [
+        "P1_SEV1_MISHANDLING",
+        "AI_WALL_LOOPING",
+        "RESPONSE_DELAYS",
+        "PREMATURE_CLOSURE"
+      ],
+      "rationale": "Patterns.csv seeds 60209553 only under AI_QUALITY_FAILURES ('Hermes answers are filler...'), but the ticket_360 timeline shows additional clear patterns: repeated complete-outage escalation and urgent callback requests (P1/SEV1 mishandling), repeated requests for live agent/callback with no immediate real-time engagement (AI wall), a multi-day response gap (Sep 30 -> Oct 3) (response delays), and repeated auto-closure language while the customer explicitly requests the ticket remain open amid unresolved issues (premature-closure signaling).",
+      "evidence_files": [
+        "data/poc/raw/ticket_60209553.json",
+        "IgniteTech_Khoros_GFI - Central Support Issues we see in tickets - Patterns.csv"
+      ],
+      "created_at": "2026-01-12"
+    },
+    {
+      "ticket_id": 60218313,
+      "keep": [
+        "AI_QUALITY_FAILURES"
+      ],
+      "rationale": "Patterns.csv also seeds 60218313 under AI_WALL_LOOPING ('Ai looped requests'), but the ticket_360 timeline shows rapid transition from ATLAS replies (10/10) to multiple human responders (Aditi, Arafat, Raymond, Pablo) and no clear 'AI-only wall' pattern preventing access to a human. We keep only AI_QUALITY_FAILURES as the expected label for this ticket.",
+      "evidence_files": [
+        "data/poc/raw/ticket_60218313.json",
+        "IgniteTech_Khoros_GFI - Central Support Issues we see in tickets - Patterns.csv"
+      ],
+      "created_at": "2026-01-12"
+    }
+  ]
+}
+

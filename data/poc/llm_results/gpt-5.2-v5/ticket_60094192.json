@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer explicitly states that the ATLAS AI quality is a \u201cdisaster,\u201d which is a strong signal. The ATLAS chat transcript also contains an obviously broken/garbled customer input (\u201cundefined\u201d), supporting poor AI interaction quality.",
+    "evidence": [
+      "Customer (private): \"In addition, your Atlas Ki is a disater.\"",
+      "ATLAS chat transcript: \"Christian Schmidt:  undefined\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although the customer expresses frustration about the AI, there is no customer-facing evidence that they were trapped in an AI loop or unable to reach a human. A human agent responded publicly the next day.",
+    "evidence": [
+      "Customer (private): \"In addition, your Atlas Ki is a disater.\"",
+      "Agent (public): \"Dear Christian, Thank you for reaching out... But do not worry, we can continue here with all the context from that ticket.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledged the prior ticket and explained why it was closed, then continued the discussion with that context. The request for logs is consistent with their stated prior need (logs after reproducing on the new version), and the customer does not state they already provided those logs.",
+    "evidence": [
+      "Agent (public): \"Ticket 60078199 was closed by automation due to no response for more than a week. But do not worry, we can continue here with all the context from that ticket.\"",
+      "Agent (public): \"We were waiting for the logs once the issue was reproduced with the new version.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no customer-facing complaint about waiting or delays, and the visible customer-to-agent response time is under one day (2025-07-03 to 2025-07-04). No qualifying multi-day gaps with a subsequent staff public reply are shown.",
+    "evidence": [
+      "Customer (private): \"We installed the update to version 22 on Friday...\" (2025-07-03T15:17:39+00:00)",
+      "Agent (public): \"Dear Christian, Thank you for reaching out.\" (2025-07-04T05:27:06+00:00)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support states the prior related ticket was auto-closed due to no response while support was still awaiting logs to proceed, indicating closure occurred before the issue was resolved. The customer\u2019s intent is explicitly to reopen that ticket, reinforcing that the matter was still active for them.",
+    "evidence": [
+      "Agent (public): \"Ticket 60078199 was closed by automation due to no response for more than a week.\"",
+      "Agent (public): \"We were waiting for the logs once the issue was reproduced with the new version.\"",
+      "ATLAS/private issue description: \"\u00d6ffne Das Ticket wieder: 60078199\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer describes a serious problem after an update, but there is no explicit P1/SEV1/critical/outage language in the ticket. Additionally, support indicates they will work with Engineering, which is not clear mishandling of a declared high-severity incident.",
+    "evidence": [
+      "Customer (private): \"E-mails were no longer forwarded to Kerio. We had to restore a backup to get everything running again.\"",
+      "Agent (public): \"We will work with our Engineering team... If you wish to provide logs... we can further investigate.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60094192
+}

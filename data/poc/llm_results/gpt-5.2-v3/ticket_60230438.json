@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The visible AI content is limited to standard greeting/intake prompts and does not contain any product claims, troubleshooting steps, promises to send follow-ups, or customer feedback stating the AI was wrong/unhelpful. There is not enough transcript to identify a clear AI quality failure.",
+    "evidence": [
+      "AI: \"Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one customer message shown (truncated) and no evidence of repeated requests for the same information, customer asking for a human, or multiple consecutive AI turns trapping the customer.",
+    "evidence": [
+      "Customer: \"Why is chat Ticket ID: #60230003 marked as closed w ...[truncated]...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support follow-up beyond the initial AI intake is visible, so there is no demonstrable instance of support ignoring previously provided details or asking for already-supplied information.",
+    "evidence": [
+      "Customer message is truncated and no subsequent agent responses are shown."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The log provided shows a single timestamped interaction and does not show any gap of 3+ days between customer messages and support responses, nor any complaint/apology about delays.",
+    "evidence": [
+      "[2025-10-28T08:40:01+00:00] single interaction shown; no later response timestamps provided."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the customer appears to be asking why another chat ticket was marked closed, the provided excerpt does not show this ticket being closed after an unanswered question, nor any closure event/status change. With the transcript truncated, there is insufficient evidence to confirm inappropriate closure behavior.",
+    "evidence": [
+      "Customer: \"Why is chat Ticket ID: #60230003 marked as closed w ...[truncated]...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No severity marker (P1/SEV1/Critical) or clear production/outage impact is present in the visible content, so mishandling of a high-severity issue cannot be supported.",
+    "evidence": [
+      "No mention of P1/SEV1/Critical, outage, or production down in the visible excerpt."
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60230438
+}

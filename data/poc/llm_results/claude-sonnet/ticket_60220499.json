@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS AI provided generic troubleshooting suggestions that didn't resolve the issue, and the customer had to explicitly state the suggested fix didn't work.",
+    "evidence": [
+      "[2025-10-14T08:45:32+00:00] ATLAS commented publicly: Dear Support, Thank you for describing the troubleshooting already performed and providing the screenshot for context regarding slow Apple-rel",
+      "[2025-10-15T10:31:09+00:00] ADN Support commented privately: Hi Support Team, unfortunately, the Allow rule didn't resolve the issue. [See fotos.] Apple devices are still experiencing very slow do"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer was stuck interacting with AI (ATLAS and ADN Support bot) for 15 days before reaching a human agent, with time to first human being 359.9 hours (~15 days).",
+    "evidence": [
+      "[2025-10-14T08:44:24+00:00] ADN Support commented privately: Dear GFI Support, one of our partners is experiencing an issue with Kerio Control 9.5p3",
+      "[2025-10-29T08:41:15+00:00] Zubair Farooq commented publicly: Dear Team, Thank you for contacting the Kerio Control Support Team",
+      "[2025-11-04T11:00:02+00:00] Centralsupport-ai-acc commented privately: [customer_escalation] The customer escalated the Case"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The ticket was marked as a duplicate of 60216786, but the customer explained they couldn't access that ticket and requested continued communication on this ticket, which was ignored.",
+    "evidence": [
+      "[2025-10-29T08:35:53+00:00] Zubair Farooq commented privately: Duplicate of ticket# 60216786",
+      "[2025-10-29T13:46:26+00:00] ADN Support commented publicly: \u200bHi Jozef, It looks like a reply was sent to the ticket I unfortunately don't have access to. Could you please close that ticket and con"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple significant delays between interactions, including a 138.5 hour max gap and customer explicitly mentioning two weeks without communication.",
+    "evidence": [
+      "[2025-10-27T13:00:03+00:00] ADN Support commented privately: Dear GFI Support Team, We wanted to follow up regarding our open case. It has now been two weeks since our last communication, and unfo",
+      "[2025-10-17T12:09:00+00:00] ADN Support to [2025-10-23T06:39:25+00:00] - gap of approximately 6 days",
+      "[2025-10-29T15:40:40+00:00] Jozef Kacala to [2025-10-31T12:08:58+00:00] - gap of approximately 1.7 days"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed while customer was waiting for technical response after escalation and explicitly requesting further assistance, with no resolution confirmation from customer.",
+    "evidence": [
+      "[2025-11-04T11:43:01+00:00] Mike Kebede commented publicly: Dear Carlos, We've escalated this case to the L2 team and raised the priority to High. To assist their analysis, please provide the fol",
+      "[2025-11-05T15:43:09+00:00] ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed",
+      "Status: closed - ticket closed after Mike Kebede requested information from customer"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High priority ticket with customer escalation was left for 15 days with only AI responses providing generic troubleshooting instead of immediate human engagement for a production issue affecting multiple Apple devices.",
+    "evidence": [
+      "Priority: high, Time to first human (hours): 359.9",
+      "[2025-11-04T11:00:02+00:00] Centralsupport-ai-acc commented privately: [customer_escalation] The customer escalated the Case",
+      "[2025-11-04T11:02:04+00:00] ADN Support commented privately: Dear Support Team The partner has asked me to strongly request that this ticket be escalated"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"ATLAS AI provided generic troubleshooting suggestions that didn't resolve the issue, and the customer had to explicitly state the suggested fix didn't work.\",\n    \"evidence\": [\n      \"[2025-10-14T08:45:32+00:00] ATLAS commented publicly: Dear Support, Thank you for describing the troubleshooting already performed and providing the screenshot for context regarding slow Apple-rel\",\n      \"[2025-10-15T10:31:09+00:00] ADN Support commented privately: Hi Support Team, unfortunately, the Allow rule didn't resolve the issue. [See fotos.] Apple devices are still experiencing very slow do\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer was stuck interacting with AI (ATLAS and ADN Support bot) for 15 days before reaching a human agent, with time to first human being 359.9 hours (~15 days).\",\n    \"evidence\": [\n      \"[2025-10-14T08:44:24+00:00] ADN Support commented privately: Dear GFI Support, one of our partners is experiencing an issue with Kerio Control 9.5p3\",\n      \"[2025-10-29T08:41:15+00:00] Zubair Farooq commented publicly: Dear Team, Thank you for contacting the Kerio Control Support Team\",\n      \"[2025-11-04T11:00:02+00:00] Centralsupport-ai-acc commented privately: [customer_escalation] The customer escalated the Case\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was marked as a duplicate of 60216786, but the customer explained they couldn't access that ticket and requested continued communication on this ticket, which was ignored.\",\n    \"evidence\": [\n      \"[2025-10-29T08:35:53+00:00] Zubair Farooq commented privately: Duplicate of ticket# 60216786\",\n      \"[2025-10-29T13:46:26+00:00] ADN Support commented publicly: \u200bHi Jozef, It looks like a reply was sent to the ticket I unfortunately don't have access to. Could you please close that ticket and con\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple significant delays between interactions, including a 138.5 hour max gap and customer explicitly mentioning two weeks without communication.\",\n    \"evidence\": [\n      \"[2025-10-27T13:00:03+00:00] ADN Support commented privately: Dear GFI Support Team, We wanted to follow up regarding our open case. It has now been two weeks since our last communication, and unfo\",\n      \"[2025-10-17T12:09:00+00:00] ADN Support to [2025-10-23T06:39:25+00:00] - gap of approximately 6 days\",\n      \"[2025-10-29T15:40:40+00:00] Jozef Kacala to [2025-10-31T12:08:58+00:00] - gap of approximately 1.7 days\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was closed while customer was waiting for technical response after escalation and explicitly requesting further assistance, with no resolution confirmation from customer.\",\n    \"evidence\": [\n      \"[2025-11-04T11:43:01+00:00] Mike Kebede commented publicly: Dear Carlos, We've escalated this case to the L2 team and raised the priority to High. To assist their analysis, please provide the fol\",\n      \"[2025-11-05T15:43:09+00:00] ADN Support: Kayako - ticket id 60220499 // ADN Support commented privately: Ticket can be closed\",\n      \"Status: closed - ticket closed after Mike Kebede requested information from customer\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High priority ticket with customer escalation was left for 15 days with only AI responses providing generic troubleshooting instead of immediate human engagement for a production issue affecting multiple Apple devices.\",\n    \"evidence\": [\n      \"Priority: high, Time to first human (hours): 359.9\",\n      \"[2025-11-04T11:00:02+00:00] Centralsupport-ai-acc commented privately: [customer_escalation] The customer escalated the Case\",\n      \"[2025-11-04T11:02:04+00:00] ADN Support commented privately: Dear Support Team The partner has asked me to strongly request that this ticket be escalated\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60220499
+}

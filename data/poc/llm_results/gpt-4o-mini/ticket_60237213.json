@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic AI responses or misinformation; the customer is simply pointing out a lack of replies.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer has reached out multiple times and is now directly contacting support, indicating they are not being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer noted they had previously tried to reach support multiple times without getting a response, showing that prior communications might be ignored.",
+    "evidence": [
+      "Usually when this happens, it mea"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer expresses frustration over having tried to reach out several times without a reply, indicating delays in response.",
+    "evidence": [
+      "We had tried to reach out a few times now without a reply."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked as closed despite the customer stating they were not receiving responses, suggesting it was closed prematurely.",
+    "evidence": [
+      "We had tried to reach out a few times now without a reply."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not a high-priority or outage ticket; it is classified as normal priority.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic AI responses or misinformation; the customer is simply pointing out a lack of replies.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer has reached out multiple times and is now directly contacting support, indicating they are not being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer noted they had previously tried to reach support multiple times without getting a response, showing that prior communications might be ignored.\",\n    \"evidence\": [\"Usually when this happens, it mea\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer expresses frustration over having tried to reach out several times without a reply, indicating delays in response.\",\n    \"evidence\": [\"We had tried to reach out a few times now without a reply.\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked as closed despite the customer stating they were not receiving responses, suggesting it was closed prematurely.\",\n    \"evidence\": [\"We had tried to reach out a few times now without a reply.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not a high-priority or outage ticket; it is classified as normal priority.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60237213
+}

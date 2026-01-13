@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses, while somewhat repetitive in acknowledging the customer's issue, do not contain clearly incorrect information or unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer did not appear to be stuck in a loop; there were progression interactions where the AI attempted to assist.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support failed to acknowledge prior information from the customer, reiterating the need for details already provided, particularly about the user's affected and community URL.",
+    "evidence": [
+      "[2025-12-04T09:52:04+00:00] (AI) Cu Chulainn AI Manager commented publicly: Dear Karuna, Thank you for reaching out to us. To ensure that we address your query efficiently, could you kindly specify whi"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay of over 20 hours between the customer's last comment and the subsequent AI response, potentially hindering the support process.",
+    "evidence": [
+      "[2025-12-05T06:15:08+00:00] (AI) ATLAS: Dear Karuna, Thank you for outlining the situation... [2025-12-04T09:51:12+00:00] (Customer) Karuna Sharma: As a case was not created before for this I am adding another support email."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the interactions with no strong evidence that the customer was awaiting crucial follow-up information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket's priority was normal, and there are no signs that it should have been treated as a high-priority issue requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses, while somewhat repetitive in acknowledging the customer's issue, do not contain clearly incorrect information or unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer did not appear to be stuck in a loop; there were progression interactions where the AI attempted to assist.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support failed to acknowledge prior information from the customer, reiterating the need for details already provided, particularly about the user's affected and community URL.\",\n    \"evidence\": [\n      \"[2025-12-04T09:52:04+00:00] (AI) Cu Chulainn AI Manager commented publicly: Dear Karuna, Thank you for reaching out to us. To ensure that we address your query efficiently, could you kindly specify whi\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay of over 20 hours between the customer's last comment and the subsequent AI response, potentially hindering the support process.\",\n    \"evidence\": [\n      \"[2025-12-05T06:15:08+00:00] (AI) ATLAS: Dear Karuna, Thank you for outlining the situation... [2025-12-04T09:51:12+00:00] (Customer) Karuna Sharma: As a case was not created before for this I am adding another support email.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the interactions with no strong evidence that the customer was awaiting crucial follow-up information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket's priority was normal, and there are no signs that it should have been treated as a high-priority issue requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60256250
+}

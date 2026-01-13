@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI reply is only a brief, generic acknowledgement of the reported certificate issue and provides no troubleshooting, next steps, or resolution\u2014indicating low-quality support.",
+    "evidence": [
+      "[2025-10-29T08:27:55+00:00] (AI) ATLAS: \"Dear Stefan,\\n\\nThank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne\"",
+      "[2025-10-29T08:27:13+00:00] (Customer) Stefan Gro\u00dfhauser: \"Hello,\\ntoday the certificate for\\nhttps://redirects.gfikerioconnect.com/\\nhas expired or changed? This leads to a security message fo\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI acknowledgement and no repeated requests for the same information or evidence that the customer was prevented from reaching a human.",
+    "evidence": [
+      "[2025-10-29T08:27:13+00:00] (Customer) Stefan Gro\u00dfhauser: \"Hello,\\ntoday the certificate for\\nhttps://redirects.gfikerioconnect.com/\\nhas expired or changed? This leads to a security message fo\"",
+      "[2025-10-29T08:27:55+00:00] (AI) ATLAS: \"Dear Stefan,\\n\\nThank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI referenced the same URL the customer provided (albeit truncated) and did not request repeated information; there is no clear evidence it ignored previously given context.",
+    "evidence": [
+      "[2025-10-29T08:27:13+00:00] (Customer) Stefan Gro\u00dfhauser: \"...https://redirects.gfikerioconnect.com/...\"",
+      "[2025-10-29T08:27:55+00:00] (AI) ATLAS: \"...https://redirects.gfikerioconne\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The AI responded within the same minute as the customer's message; there are no multi-day gaps in the interaction timeline.",
+    "evidence": [
+      "[2025-10-29T08:27:13+00:00] (Customer) Stefan Gro\u00dfhauser: \"Hello, ...\"",
+      "[2025-10-29T08:27:55+00:00] (AI) ATLAS: \"Dear Stefan, ...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI promised follow-up information that was not delivered, nor that the customer explicitly awaited a response before closure.",
+    "evidence": [
+      "[2025-10-29T08:27:13+00:00] (Customer) Stefan Gro\u00dfhauser: \"...This leads to a security message fo\"",
+      "[2025-10-29T08:27:55+00:00] (AI) ATLAS: \"Thank you for bringing to our attention the issue...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is 'normal' (not P1/SEV1), so there is no expectation of immediate escalation or specific high-priority handling.",
+    "evidence": [
+      "Ticket Context: Priority: normal"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI reply is only a brief, generic acknowledgement of the reported certificate issue and provides no troubleshooting, next steps, or resolution\u2014indicating low-quality support.\",\n    \"evidence\": [\n      \"[2025-10-29T08:27:55+00:00] (AI) ATLAS: \\\"Dear Stefan,\\\\n\\\\nThank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne\\\"\",\n      \"[2025-10-29T08:27:13+00:00] (Customer) Stefan Gro\u00dfhauser: \\\"Hello,\\\\ntoday the certificate for\\\\nhttps://redirects.gfikerioconnect.com/\\\\nhas expired or changed? This leads to a security message fo\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI acknowledgement and no repeated requests for the same information or evidence that the customer was prevented from reaching a human.\",\n    \"evidence\": [\n      \"[2025-10-29T08:27:13+00:00] (Customer) Stefan Gro\u00dfhauser: \\\"Hello,\\\\ntoday the certificate for\\\\nhttps://redirects.gfikerioconnect.com/\\\\nhas expired or changed? This leads to a security message fo\\\"\",\n      \"[2025-10-29T08:27:55+00:00] (AI) ATLAS: \\\"Dear Stefan,\\\\n\\\\nThank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI referenced the same URL the customer provided (albeit truncated) and did not request repeated information; there is no clear evidence it ignored previously given context.\",\n    \"evidence\": [\n      \"[2025-10-29T08:27:13+00:00] (Customer) Stefan Gro\u00dfhauser: \\\"...https://redirects.gfikerioconnect.com/...\\\"\",\n      \"[2025-10-29T08:27:55+00:00] (AI) ATLAS: \\\"...https://redirects.gfikerioconne\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responded within the same minute as the customer's message; there are no multi-day gaps in the interaction timeline.\",\n    \"evidence\": [\n      \"[2025-10-29T08:27:13+00:00] (Customer) Stefan Gro\u00dfhauser: \\\"Hello, ...\\\"\",\n      \"[2025-10-29T08:27:55+00:00] (AI) ATLAS: \\\"Dear Stefan, ...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI promised follow-up information that was not delivered, nor that the customer explicitly awaited a response before closure.\",\n    \"evidence\": [\n      \"[2025-10-29T08:27:13+00:00] (Customer) Stefan Gro\u00dfhauser: \\\"...This leads to a security message fo\\\"\",\n      \"[2025-10-29T08:27:55+00:00] (AI) ATLAS: \\\"Thank you for bringing to our attention the issue...\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is 'normal' (not P1/SEV1), so there is no expectation of immediate escalation or specific high-priority handling.\",\n    \"evidence\": [\n      \"Ticket Context: Priority: normal\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60231299
+}

@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer explicitly states the AI/bot assistance is not helping and is wasting time. Additionally, AI responses initially center on a whitelist/blocklist KB despite the customer repeatedly stating the issue is with the Information Store Protection page, indicating low-quality/irrelevant guidance in context.",
+    "evidence": [
+      "Customer (2025-10-31 14:49:23): \"The BOT AI is not helping\u2026\"",
+      "Customer (2025-11-06 15:49:34): \"Unreal and frustrating dealing with support ever since AI\u2026 Unbearable..\"",
+      "Customer (2025-10-31 13:50:38): \"My issues is not with the whitelist but with the Information Store Protection.\"",
+      "ATLAS (2025-10-29 19:58:20): \"As referenced in the article 'Error: ... when accessing the whitelist or blocklist'\" (while the reported issue is the Information Store Protection page)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer explicitly requests a human multiple times and does not receive a human response for a prolonged period; they remain effectively trapped in the AI flow despite repeated escalation requests.",
+    "evidence": [
+      "Customer (2025-10-31 14:49:23): \"So once again, CAN I SPEAK TO A HUMAN\u2026.\"",
+      "Customer (2025-11-06 15:51:03): \"Where is my support representative who was suppose to contact me as AI said so\u2026.\"",
+      "Customer (2025-11-06 15:51:49): \"STILL WAITING\u2026\"",
+      "Customer (2025-11-12 18:21:01): \"STILL WAITING FOR SUPPORT..\"",
+      "First clear human response appears later (2025-11-17 14:17:45): \"We apologize for the delay on this, I ve escalated it internally...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/AI guidance focuses on whitelist/blocklist troubleshooting and an article explicitly about whitelist/blocklist errors, despite the customer clearly stating (multiple times) the issue is confined to the Information Store Protection page. The customer then has to re-clarify the scope.",
+    "evidence": [
+      "Customer (initial description, 2025-10-29 19:57:36): \"The page at fault is the information store page\"",
+      "ATLAS (2025-10-29 19:58:20): \"...article '...when accessing the whitelist or blocklist'\"",
+      "Customer (2025-10-31 13:50:38): \"My issues is not with the whitelist but with the Information Store Protection.\"",
+      "Customer (2025-10-31 13:50:38): \"We been though all these steps already with the AI bot?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap (>3 days) between the customer's request for a human/support and an actual human response, and the customer repeatedly complains about waiting; support later apologizes for the delay.",
+    "evidence": [
+      "Customer (2025-10-31 14:49:23): \"I was suppose to be in contact with a support representative ...\"",
+      "Customer (2025-11-06 15:49:34): \"I\u2019ve been waiting for a support representative to reach out..\"",
+      "Customer (2025-11-12 18:21:01): \"STILL WAITING FOR SUPPORT..\"",
+      "Human agent (2025-11-17 14:17:45): \"We apologize for the delay on this\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket thread does not show the case being closed while a customer request was pending. Later interactions indicate ongoing engagement, delivery of a new build, and customer follow-up after installing it.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit P1/SEV1/Critical marker or clear production-down/outage statement is present. The customer even indicates it is not a down situation (mail flow appears functional), so Sev1 handling criteria are not met.",
+    "evidence": [
+      "Customer (initial description, 2025-10-29 19:57:36): \"Email seem to be flowing properly\"",
+      "Customer (2025-11-06 18:53:10): \"Thank god I'm not in a down situation.\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60231851
+}

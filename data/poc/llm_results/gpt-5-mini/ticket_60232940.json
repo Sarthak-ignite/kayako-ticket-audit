@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear instance of an AI reply providing wrong information, generic filler in customer-facing messages, or broken promises \u2014 the visible AI entries are automation notes and a hold action, not misleading customer responses.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer reached human agents and the thread contains multiple human replies; there is no evidence the customer was repeatedly asked for the same information by an AI or blocked from human help.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support indicated the request could not be acted on and that restoration was not planned despite the customer repeatedly asking for restoration of past tickets, showing they did not fully address the customer's ongoing context/need.",
+    "evidence": [
+      "[2025-12-23T04:43:40+00:00] (Customer) Shingo Ohkubo: \"This is not first time that I have requested restoration of past tickets. I understand that your migration from Zendes...\"",
+      "[2025-12-18T09:24:11+00:00] (Employee) Muhammad Rizwan: \"* Well, we can not do anything more here * This was never planned to be implemented. * The customer will have to work with the\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are very large delays between interactions and long time to first human response as recorded in ticket metadata.",
+    "evidence": [
+      "Ticket metadata: \"Time to first human (hours): 667.1\"",
+      "Ticket metadata: \"Max gap between responses (hours): 667.0\"",
+      "[2025-12-15T15:02:23+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 168 hour(s)\" and the next human replies occur days later (e.g. 2025-12-18 and 2025-12-24 entries)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer explicitly asked to close the ticket and the agent closed it after the customer confirmed they had checked attachments, so closure was at customer's request rather than premature.",
+    "evidence": [
+      "[2025-12-24T08:22:10+00:00] (Employee) Muhammad Rizwan: \"As requested, please find all the attachments related to ticket #4389067 [...]\"",
+      "[2025-12-24T08:13:57+00:00] (Customer) Shingo Ohkubo: \"Thank you for your quick response. I have checked the attachments. Please close this ticket.\"",
+      "[2025-12-26T00:03:44+00:00] (Employee) Phronesis: \"As requested, we are closing this ticket\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is marked normal priority and there is no indication of a high-severity outage or that only generic troubleshooting was applied instead of escalation.",
+    "evidence": [
+      "Ticket Context: \"Priority: normal\"",
+      "No P1/P0/escalation-handling language appears in the interaction history."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear instance of an AI reply providing wrong information, generic filler in customer-facing messages, or broken promises \u2014 the visible AI entries are automation notes and a hold action, not misleading customer responses.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer reached human agents and the thread contains multiple human replies; there is no evidence the customer was repeatedly asked for the same information by an AI or blocked from human help.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support indicated the request could not be acted on and that restoration was not planned despite the customer repeatedly asking for restoration of past tickets, showing they did not fully address the customer's ongoing context/need.\",\n    \"evidence\": [\n      \"[2025-12-23T04:43:40+00:00] (Customer) Shingo Ohkubo: \\\"This is not first time that I have requested restoration of past tickets. I understand that your migration from Zendes...\\\"\",\n      \"[2025-12-18T09:24:11+00:00] (Employee) Muhammad Rizwan: \\\"* Well, we can not do anything more here * This was never planned to be implemented. * The customer will have to work with the\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are very large delays between interactions and long time to first human response as recorded in ticket metadata.\",\n    \"evidence\": [\n      \"Ticket metadata: \\\"Time to first human (hours): 667.1\\\"\",\n      \"Ticket metadata: \\\"Max gap between responses (hours): 667.0\\\"\",\n      \"[2025-12-15T15:02:23+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 168 hour(s)\\\" and the next human replies occur days later (e.g. 2025-12-18 and 2025-12-24 entries).\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer explicitly asked to close the ticket and the agent closed it after the customer confirmed they had checked attachments, so closure was at customer's request rather than premature.\",\n    \"evidence\": [\n      \"[2025-12-24T08:22:10+00:00] (Employee) Muhammad Rizwan: \\\"As requested, please find all the attachments related to ticket #4389067 [...]\\\"\",\n      \"[2025-12-24T08:13:57+00:00] (Customer) Shingo Ohkubo: \\\"Thank you for your quick response. I have checked the attachments. Please close this ticket.\\\"\",\n      \"[2025-12-26T00:03:44+00:00] (Employee) Phronesis: \\\"As requested, we are closing this ticket\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is marked normal priority and there is no indication of a high-severity outage or that only generic troubleshooting was applied instead of escalation.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Priority: normal\\\"\",\n      \"No P1/P0/escalation-handling language appears in the interaction history.\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60232940
+}

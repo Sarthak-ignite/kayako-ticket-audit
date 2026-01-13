@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses are incomplete in the provided transcript, but what is visible shows acknowledgment of customer details and reference to diagnostic files. Cannot definitively assess quality without full response content.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of repetitive AI requests or customer unable to progress. Timeline shows initial ticket generation through AI chat, but no looping pattern detected.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "AI responses reference the customer's provided information (diagnostic file, detailed description) appropriately. No evidence of re-requesting already-provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occur within a 7-minute window (19:06:03 to 19:12:56 on 2025-12-08), with maximum gap of 0.1 hours as noted in ticket metadata. Response times are immediate.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket is marked as closed, but the interaction timeline shows only AI acknowledgments and no resolution, human handoff, or customer confirmation of fix. Customer's last substantive message was incomplete private comment about installation, with no closure confirmation from customer.",
+    "evidence": [
+      "Status: closed (ticket metadata)",
+      "Customer's last message [2025-12-08T19:12:19+00:00]: 'All CU updates fail... I can install the file ma' - incomplete/unresolved",
+      "Was handed to BU: False - no human escalation occurred before closure"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Ticket is marked high priority with a widespread issue (CU updates failing on any computer), but visible AI responses are generic acknowledgments rather than immediate escalation to human support or urgent troubleshooting. No evidence of escalation protocol being followed.",
+    "evidence": [
+      "Priority: high (ticket metadata)",
+      "Customer issue: 'All CU updates fail... This happens on any computer I try' [2025-12-08T19:12:19+00:00] - multi-system outage",
+      "Was handed to BU: False - no human escalation despite high priority"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses are incomplete in the provided transcript, but what is visible shows acknowledgment of customer details and reference to diagnostic files. Cannot definitively assess quality without full response content.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of repetitive AI requests or customer unable to progress. Timeline shows initial ticket generation through AI chat, but no looping pattern detected.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses reference the customer's provided information (diagnostic file, detailed description) appropriately. No evidence of re-requesting already-provided information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occur within a 7-minute window (19:06:03 to 19:12:56 on 2025-12-08), with maximum gap of 0.1 hours as noted in ticket metadata. Response times are immediate.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is marked as closed, but the interaction timeline shows only AI acknowledgments and no resolution, human handoff, or customer confirmation of fix. Customer's last substantive message was incomplete private comment about installation, with no closure confirmation from customer.\",\n    \"evidence\": [\n      \"Status: closed (ticket metadata)\",\n      \"Customer's last message [2025-12-08T19:12:19+00:00]: 'All CU updates fail... I can install the file ma' - incomplete/unresolved\",\n      \"Was handed to BU: False - no human escalation occurred before closure\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is marked high priority with a widespread issue (CU updates failing on any computer), but visible AI responses are generic acknowledgments rather than immediate escalation to human support or urgent troubleshooting. No evidence of escalation protocol being followed.\",\n    \"evidence\": [\n      \"Priority: high (ticket metadata)\",\n      \"Customer issue: 'All CU updates fail... This happens on any computer I try' [2025-12-08T19:12:19+00:00] - multi-system outage\",\n      \"Was handed to BU: False - no human escalation despite high priority\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60258962
+}

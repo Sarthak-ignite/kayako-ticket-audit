@@ -1,0 +1,34 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible content is an internal/private ATLAS chat greeting and a prompt for the customer to describe the issue. There is no customer feedback or follow-up showing incorrect, misleading, or broken guidance.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is not enough customer-facing interaction to show the customer being stuck in an AI loop or unable to reach a human. Only a single AI prompt is shown, and there is no customer request for a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer-provided context (symptoms, logs, prior steps) is present in the provided interactions, so there is no evidence that support ignored or re-asked for already-provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline shows only one message (an internal/private ATLAS chat prompt) and no subsequent customer/staff exchange, so response gaps cannot be established from the text.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no text indicating the ticket was closed or threatened with auto-closure while an unresolved request was pending.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No outage/SEV1 language, urgency, or multi-user impact is described in the available interactions, so mishandling of a high-severity issue cannot be determined.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60169826
+}

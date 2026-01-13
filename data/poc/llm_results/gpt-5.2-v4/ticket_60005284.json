@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Automation/AI handling did not progress the customer\u2019s RMA request and appears to have prevented meaningful action: the ticket shows repeated bot decisions to \u201cskip\u201d with no customer-facing help, despite an urgent hardware failure. This is unhelpful and effectively misleading because the customer expected active assistance after requesting an agent for RMA.",
+    "evidence": [
+      "Customer issue summary (ATLAS-generated): \"HOW TO START RMA\" / \"I NEED SUPPORT AGENT FOR RMA\"",
+      "ATLAS internal action with no subsequent visible handling: \"Action: Send to l1\" (2025-03-22T11:24:25+00:00)",
+      "Repeated automation non-action: \"ATLAS commented privately: Skipping ticket due to tags\" (2025-03-25, 2025-03-26, 2025-03-27)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer explicitly requested a support agent/RMA help and then experienced a bot-driven workflow where the ticket was repeatedly skipped (no human engagement for days). While not a classic back-and-forth loop, the automation effectively blocked timely access to a human and resolution.",
+    "evidence": [
+      "Customer request captured in the AI-generated ticket: \"I NEED SUPPORT AGENT FOR RMA\"",
+      "Customer follow-ups without human response while automation continues: \"Please anyone assist\" (2025-03-22), \"any updates\" (2025-03-26), \"this is so unproffesional\" (2025-03-27)",
+      "ATLAS repeatedly: \"Skipping ticket due to tags\" across multiple days"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is limited evidence of support asking for already-provided information or repeating troubleshooting. The main problem is lack of response/prioritization rather than explicit context being ignored in replies.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were multi-day gaps with no meaningful support response despite repeated customer follow-ups and stated urgency. Support later explicitly apologized for the delay and acknowledged incorrect prioritization.",
+    "evidence": [
+      "Customer initial urgent RMA request: \"Kerio NG510 is fautly and not stqrting... I need urgent creation of RMA\" (2025-03-21T14:08:30+00:00)",
+      "Customer follow-up: \"Please anyone assist\" (2025-03-22T11:23:44+00:00)",
+      "Further follow-ups: \"Hi Hermes, This is high priority to us... our firewall is dead\" (2025-03-25T11:22:03+00:00), \"any updates\" (2025-03-26T12:07:11+00:00)",
+      "Human response only on 2025-03-28: \"Please accept my sincere apologies for the delay in handling this! The ticket was incorrectly prioritized\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed without directly answering the customer\u2019s repeated requests for urgent RMA assistance/status updates in this thread, and without providing concrete confirmation details (e.g., RMA number/status/timeline). Closure relied on an external action (\u201creseller submitted an RMA\u201d) but the customer never confirmed resolution and had recently complained about unprofessional handling.",
+    "evidence": [
+      "Customer unresolved requests right before closure: \"any updates\" (2025-03-26) and \"this is so unproffesional\" (2025-03-27)",
+      "Closure message without providing actionable RMA status details: \"your reseller has submitted an RMA request... that is already being handled. In light of this, I will proceed to close this ticket.\" (2025-03-28)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer indicated a critical outage (firewall dead) with urgent operational impact (vessel). The ticket was mishandled via incorrect prioritization and significant delay, which support explicitly acknowledged.",
+    "evidence": [
+      "High severity impact statement: \"We are vessel and our firewall is dead. I cnat wait such long time we need solution asap.\" (2025-03-25T11:22:03+00:00)",
+      "Support admission of prioritization failure: \"The ticket was incorrectly prioritized, which led to this issue.\" (2025-03-28T14:26:04+00:00)"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60005284
+}

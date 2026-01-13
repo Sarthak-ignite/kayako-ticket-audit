@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Only a single brief automated message is present; there is no clear wrong information, unkept promise, or substantive AI reply to evaluate as a quality failure.",
+    "evidence": [
+      "[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no sequence of repeated requests or multiple AI exchanges; only one automated summary message appears, so no evidence of the customer being stuck in a loop.",
+    "evidence": [
+      "[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer messages or prior context are present in the transcript to show that information was ignored or re-requested.",
+    "evidence": [
+      "[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interactions timeline contains only a single timestamped AI message and shows no multi-day gaps between messages.",
+    "evidence": [
+      "[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed in the context, the transcript lacks any customer messages or promises left unfulfilled that would demonstrate premature closure.",
+    "evidence": [
+      "[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is normal priority and there is no troubleshooting content present to evaluate for inappropriate handling of a P1/SEV1 incident.",
+    "evidence": [
+      "[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Only a single brief automated message is present; there is no clear wrong information, unkept promise, or substantive AI reply to evaluate as a quality failure.\",\n    \"evidence\": [\n      \"[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no sequence of repeated requests or multiple AI exchanges; only one automated summary message appears, so no evidence of the customer being stuck in a loop.\",\n    \"evidence\": [\n      \"[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer messages or prior context are present in the transcript to show that information was ignored or re-requested.\",\n    \"evidence\": [\n      \"[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions timeline contains only a single timestamped AI message and shows no multi-day gaps between messages.\",\n    \"evidence\": [\n      \"[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed in the context, the transcript lacks any customer messages or promises left unfulfilled that would demonstrate premature closure.\",\n    \"evidence\": [\n      \"[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is normal priority and there is no troubleshooting content present to evaluate for inappropriate handling of a P1/SEV1 incident.\",\n    \"evidence\": [\n      \"[2025-10-23T08:03:34+00:00] (AI) ATLAS: Kayako - ticket id 60227322 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br>  <div>\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60227322
+}

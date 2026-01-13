@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence in the interaction provided for any AI responses or failures.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interaction does not provide enough information to suggest the customer was stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team did not acknowledge or address the information potentially provided by the customer in their email.",
+    "evidence": [
+      "From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no notable delays in responses evident from the provided timestamps.",
+    "evidence": [
+      "[2025-12-16T12:03:53+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence showing that the ticket was closed prematurely while the customer was awaiting further information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is marked as normal priority, and there is no evidence of mishandling related to a high-priority or outage situation.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence in the interaction provided for any AI responses or failures.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction does not provide enough information to suggest the customer was stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team did not acknowledge or address the information potentially provided by the customer in their email.\",\n    \"evidence\": [\"From: A, Anitha <anitha.a@cgi.com> Sent: Tuesday, December 16, 2025 6:56 AM\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no notable delays in responses evident from the provided timestamps.\",\n    \"evidence\": [\"[2025-12-16T12:03:53+00:00]\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence showing that the ticket was closed prematurely while the customer was awaiting further information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is marked as normal priority, and there is no evidence of mishandling related to a high-priority or outage situation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60264368
+}

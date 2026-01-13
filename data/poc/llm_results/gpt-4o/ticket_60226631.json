@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI providing generic filler, wrong information, or unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The AI did not repeatedly request the same information or prevent the customer from reaching a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team did not acknowledge the customer\u2019s reference to past similar issues or already known information.",
+    "evidence": [
+      "[2025-10-23T07:56:23+00:00] Jayashree Shetty: 'Please review the history of previously raised tickets for re...'",
+      "[2025-10-22T10:26:32+00:00] Manju Srinivasan: 'Issue is happening again now. Can you look into this on priority.'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant gap of 9.4 hours between responses in an urgent ticket situation.",
+    "evidence": [
+      "Max gap between responses (hours): 9.4"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence that the ticket was closed while the customer was awaiting a promised response.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was referenced as an urgent outage, but there is no evidence of immediate escalation or specialized handling.",
+    "evidence": [
+      "[2025-10-22T10:26:32+00:00] Manju Srinivasan: 'I called the Outage Phone Line: +1 347-282-'"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI providing generic filler, wrong information, or unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not repeatedly request the same information or prevent the customer from reaching a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team did not acknowledge the customer\u2019s reference to past similar issues or already known information.\",\n    \"evidence\": [\"[2025-10-23T07:56:23+00:00] Jayashree Shetty: 'Please review the history of previously raised tickets for re...'\", \"[2025-10-22T10:26:32+00:00] Manju Srinivasan: 'Issue is happening again now. Can you look into this on priority.'\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant gap of 9.4 hours between responses in an urgent ticket situation.\",\n    \"evidence\": [\"Max gap between responses (hours): 9.4\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the ticket was closed while the customer was awaiting a promised response.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The issue was referenced as an urgent outage, but there is no evidence of immediate escalation or specialized handling.\",\n    \"evidence\": [\"[2025-10-22T10:26:32+00:00] Manju Srinivasan: 'I called the Outage Phone Line: +1 347-282-'\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60226631
+}

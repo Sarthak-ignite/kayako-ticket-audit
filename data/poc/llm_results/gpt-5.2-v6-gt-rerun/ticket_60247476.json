@@ -1,0 +1,64 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided generic, speculative troubleshooting (e.g., keyboard shortcut) that the customer immediately reported as ineffective, and it repeated similar guidance without materially adapting to that feedback. Some ATLAS content also appears low-quality/unfinished (truncated text), which can reduce clarity and usefulness.",
+    "evidence": [
+      "Kayako - ticket id 60247476 // ATLAS commented publicly: \"Keyboard Shortcut for Sending Responses: ... agents can use the Ctrl + Enter (or Cmd + Return on Mac) keyboard shortcut to send a reply.\"",
+      "Customer: \"We have tested using Ctrl + Enter to send the message when the send button disappears, and there is no change.  It does not send the message, and a refresh is still required.\"",
+      "Kayako - ticket id 60247476 // ATLAS commented publicly: \"Recommended Immediate Actions: ... Network Segmentation ... Review Proxy or Firewall Rules ...\"",
+      "Kayako - ticket id 60247476 // ATLAS commented publicly: \"If your organization uses Age ...[truncated]...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to engage multiple human agents (Pavly, Rishi, Amir) and did not ask to reach a human or complain about being stuck with an AI loop. While ATLAS posted content, the thread shows human ownership and follow-up.",
+    "evidence": [
+      "Kayako - ticket id 60247476 // Pavly Nashed commented publicly: \"We are currently investigating this, and will get back to you shortly with further updates.\"",
+      "Kayako - ticket id 60247476 // Amir Khan commented publicly: \"Dear Don, Thank you for following up.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly stated they had already tried multiple environments/browsers and that repetitive troubleshooting requests were being re-asked, indicating prior context in the ticket was not fully incorporated. There is also internal disagreement about focusing on the customer network despite evidence from a work-from-home HAR and possible server-side log errors.",
+    "evidence": [
+      "Customer: \"We have provided HAR\u2019s, we have checked with agents wfh and in office, used different browsers etc.\"",
+      "Customer: \"Most of these questions were already asked by the previous engineer on this case.\"",
+      "Customer: \"Please review the ticket\u2026 review previous tickets.\"",
+      "Kayako - ticket id 60247476 // Pavly Nashed commented privately: \"Guys, why are we so hung on their network proxy? They shared another HAR file outside of their corporate network.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured data indicates a long initial response time and a multi-day resolution cycle. This is consistent with a meaningful delay for an issue the customer described as causing response delays and degraded service.",
+    "evidence": [
+      "CSV: initialResponseTime=247",
+      "CSV: resolutionTime=515582",
+      "CSV: Ticket Created=2025-11-20 15:28:27",
+      "CSV: Ticket Solved=2025-11-26 14:41:29",
+      "Customer: \"This is causing delays in responses to customers.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed, and the agent message included an auto-closure deadline, but the conversation excerpts do not show confirmation of resolution from the customer. Given the customer\u2019s ongoing disagreement with the proposed root cause and continued impact statements, closure may have occurred without clear customer sign-off.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Kayako - ticket id 60247476 // Amir Khan commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Customer: \"...here we are again\u2026 on our second day 2 of the chat service not functioning as expected\u2026\"",
+      "CSV: Ticket Closed=2025-11-29 15:36:43"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue impacts agents\u2019 ability to send replies (core operational functionality) and the customer describes degraded service for days, which can align with high-severity handling expectations. Despite this, the flow shows extended troubleshooting and hypothesis-shifting (network vs. possible server-side errors) without clear urgency signals (e.g., explicit escalation), though severity is not explicitly labeled in the record (uncertain).",
+    "evidence": [
+      "Customer: \"the agents are having an issue where the send button to reply to the customers is missing... This is causing delays in responses to customers.\"",
+      "Customer: \"Every time we have this issue, we spend days in a degraded level of service...\"",
+      "Customer: \"...on our second day 2 of the chat service not functioning as expected...\"",
+      "CSV: Ticket Created=2025-11-20 15:28:27",
+      "CSV: Ticket Solved=2025-11-26 14:41:29"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60247476
+}

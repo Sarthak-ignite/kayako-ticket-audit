@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no clear examples of AI responses providing wrong information or failing to deliver promised updates within the interactions.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer is stuck in an AI loop or unable to reach a human support agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support agents repeatedly ask relevant questions without acknowledging previously provided details, such as customer escalations and relevant technical context.",
+    "evidence": [
+      "[2025-10-02T12:33:54Z] (Employee) Priyanka Bhotika: We are currently reviewing the details with the team internally to confirm if the late...",
+      "[2025-10-02T03:06:19Z] (Employee) Aditi Garg: Our team is reviewing the ticket, and we are com..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays between interactions indicated, such as a maximum gap of approximately 981.8 hours.",
+    "evidence": [
+      "[2025-10-24T03:15:51+00:00] (Employee) Pablo Ambram: Thank you for your patience.",
+      "[2025-10-02T03:06:19Z] (Employee) Aditi Garg: Our team is reviewing the ticket, and we are com..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed despite the customer indicating ongoing concerns and escalations, which suggests they were not adequately addressed.",
+    "evidence": [
+      "[2025-10-24T03:15:51+00:00] (Employee) Pablo Ambram: Dear PTA Team, Thank you for your patience.",
+      "[2025-10-01T08:20:57Z] (AI) ATLAS: ...",
+      "[2025-10-24T01:50:12Z] (AI) Centralsupport-ai-acc: The customer escalated the Case."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The ticket was classified as high priority, yet responses appear generic and do not convey urgency in addressing the core issues raised by the customer.",
+    "evidence": [
+      "[2025-10-24T03:17:48+00:00] (Employee) Pablo Ambram: Our engineering team is working on updates for the Evoq 9.13 line that include security f...",
+      "[2025-10-20T15:11:43Z] (General) None: ...",
+      "[2025-10-21T07:11:10Z] (AI) CE Maintenance Bot: Reopening because Engineering issue has been completed."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no clear examples of AI responses providing wrong information or failing to deliver promised updates within the interactions.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer is stuck in an AI loop or unable to reach a human support agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support agents repeatedly ask relevant questions without acknowledging previously provided details, such as customer escalations and relevant technical context.\",\n    \"evidence\": [\n      \"[2025-10-02T12:33:54Z] (Employee) Priyanka Bhotika: We are currently reviewing the details with the team internally to confirm if the late...\",\n      \"[2025-10-02T03:06:19Z] (Employee) Aditi Garg: Our team is reviewing the ticket, and we are com...\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays between interactions indicated, such as a maximum gap of approximately 981.8 hours.\",\n    \"evidence\": [\n      \"[2025-10-24T03:15:51+00:00] (Employee) Pablo Ambram: Thank you for your patience.\",\n      \"[2025-10-02T03:06:19Z] (Employee) Aditi Garg: Our team is reviewing the ticket, and we are com...\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed despite the customer indicating ongoing concerns and escalations, which suggests they were not adequately addressed.\",\n    \"evidence\": [\n      \"[2025-10-24T03:15:51+00:00] (Employee) Pablo Ambram: Dear PTA Team, Thank you for your patience.\",\n      \"[2025-10-01T08:20:57Z] (AI) ATLAS: ...\",\n      \"[2025-10-24T01:50:12Z] (AI) Centralsupport-ai-acc: The customer escalated the Case.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was classified as high priority, yet responses appear generic and do not convey urgency in addressing the core issues raised by the customer.\",\n    \"evidence\": [\n      \"[2025-10-24T03:17:48+00:00] (Employee) Pablo Ambram: Our engineering team is working on updates for the Evoq 9.13 line that include security f...\",\n      \"[2025-10-20T15:11:43Z] (General) None: ...\",\n      \"[2025-10-21T07:11:10Z] (AI) CE Maintenance Bot: Reopening because Engineering issue has been completed.\"\n    ]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60211226
+}

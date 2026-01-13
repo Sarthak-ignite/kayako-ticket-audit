@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The visible ATLAS transcript only shows a brief misunderstanding followed by an apology, with the rest truncated. There is no clear, unambiguous incorrect product guidance, irrelevant troubleshooting, or a promise that was not fulfilled in the provided content.",
+    "evidence": [
+      "AI Assistant: \"Since it's a delicate topic, I want to make extra sure: are you seeking assistance with renewing/modifying/cancelling an existing license, or purchasing a new license...\"",
+      "Customer: \"Need tech support\"",
+      "AI Assistant: \"\ud83d\ude33 Sorry about the misunderstanding, let's try again.\"",
+      "\"...[truncated]...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence of the AI repeatedly asking for the same information, nor a customer explicit request for a human within the AI chat that was denied. The interaction with ATLAS is truncated and does not show a looping pattern.",
+    "evidence": [
+      "Customer: \"Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\"",
+      "ATLAS transcript shows only one visible clarification/misunderstanding before being truncated."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The human agent\u2019s response incorporates the key details the customer provided (license key, company name, the need to renew, reseller not responding) and does not re-request already-provided information or ignore prior context in a way that meets the detection criteria.",
+    "evidence": [
+      "Customer: \"Our license expired. Please issue us a temporary extension. Our services are down.\"",
+      "Customer: \"20339-z6jhp-2qux8\"",
+      "Agent: \"please include: Your Kerio Control license key: 20339-Z6JHP-2QUX8\"",
+      "Agent: \"Your company name: Rooster Poultry\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly signaled they were waiting for a response multiple times (e.g., 'Anyone there', repeated 'Hi', and 'we require your assistance') before a human reply arrived. Even though the gap is under 3 days, the criteria allow detection when the customer explicitly complains about waiting.",
+    "evidence": [
+      "[2025-11-29T21:42:34+00:00] Customer: \"Anyone there\"",
+      "[2025-11-29T23:34:53+00:00] Customer: \"We are facing total outage. Your assistance will be highly appreciated\"",
+      "[2025-11-30T05:38:34+00:00] Customer: \"we require your assistance\"",
+      "[2025-11-30T13:19:12+00:00] Agent response (first visible human reply) \u2014 ~15+ hours after \"Anyone there\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence the ticket was closed. The agent explicitly states the ticket will remain open for a week unless the customer requests closure or marks it completed.",
+    "evidence": [
+      "Agent: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer reports a major impact (\"services are down\" / \"total outage\"), the request is specifically for a temporary license extension/renewal handling. The agent provides the correct channel and concrete next steps for licensing (Sales/Customer Care). There is no clear evidence of inappropriate generic troubleshooting, refusal to escalate when required, or explicit severity/SLA mishandling per the defined criteria.",
+    "evidence": [
+      "Customer: \"Our services are down.\"",
+      "Customer: \"We are facing total outage.\"",
+      "Agent: \"Kerio Support does not have the ability to issue temporary licenses or extend expired licenses. All licensing actions... must be handled strictly through our Sales and Licensing channels.\"",
+      "Agent provides Sales escalation path: \"https://customercare.gfi.com/hc/en-us/requests/new\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60252864
+}

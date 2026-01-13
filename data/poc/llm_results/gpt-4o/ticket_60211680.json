@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of incorrect or generic AI fillers in the interactions.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly states needing further assistance beyond what the AI (StreetSmart ATLAS) could provide, indicating difficulty in reaching human support.",
+    "evidence": [
+      "[2025-10-01T16:35:30+00:00] (Customer) Daniel Soler: Hello, I needed further assistance than StreetSmart ATLAS could provide. Could you assist me?"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence that support asked for information the customer already provided or overlooked any part of the customer's message.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant response delays are evident, particularly a 147.6-hour gap between responses.",
+    "evidence": [
+      "Max gap between responses (hours): 147.6"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed only after the customer explicitly requested its closure.",
+    "evidence": [
+      "[2025-10-10T15:48:46+00:00] (Customer) Daniel Soler: This ticket can be closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence in the interactions of generic troubleshooting for a P1/Sev1 issue; the ticket seems to have been addressed promptly once escalated.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of incorrect or generic AI fillers in the interactions.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer explicitly states needing further assistance beyond what the AI (StreetSmart ATLAS) could provide, indicating difficulty in reaching human support.\",\n    \"evidence\": [\"[2025-10-01T16:35:30+00:00] (Customer) Daniel Soler: Hello, I needed further assistance than StreetSmart ATLAS could provide. Could you assist me?\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that support asked for information the customer already provided or overlooked any part of the customer's message.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant response delays are evident, particularly a 147.6-hour gap between responses.\",\n    \"evidence\": [\"Max gap between responses (hours): 147.6\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed only after the customer explicitly requested its closure.\",\n    \"evidence\": [\"[2025-10-10T15:48:46+00:00] (Customer) Daniel Soler: This ticket can be closed\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence in the interactions of generic troubleshooting for a P1/Sev1 issue; the ticket seems to have been addressed promptly once escalated.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60211680
+}

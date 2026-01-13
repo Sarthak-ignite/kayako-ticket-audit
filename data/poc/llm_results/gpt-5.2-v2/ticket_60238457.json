@@ -1,0 +1,68 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS initially misdiagnosed the issue as third\u2011party telemetry/script overhead and provided generic, off-target guidance (including an SEO article) while the later confirmed root cause was VPN/proxy JavaScript injection interfering with widget XHR. Several AI responses were also generic escalation fillers with no actionable progress for a P1 outage.",
+    "evidence": [
+      "ATLAS commented publicly: \"Based on our analysis of the HAR file you attached, we observed multiple telemetry and tracking requests\u2014primarily from monitoring scripts like New Relic (js-agent.newrelic.com) and other services (such as b.6sc.co)\u2014... can contribute to client-side congestion and UI lag\"",
+      "ATLAS: \"This aligns with best practices highlighted in our knowledge resources... Community SEO: Preparing for Google's Page Experience Improvements\"",
+      "Don Kempt: \"Aamir, we only run the javascript provided from brandmessanger, please advise\"",
+      "Xavier A Villarroel (DevOPS): \"Root cause confirmed: Corporate VPN/proxy JavaScript injection interfering with widget XHR.\"",
+      "Harry Tasker: \"Thank you for reaching out. We\u2019ve received your escalation... You can expect an update from us soon.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer frustration with automated responses is explicit, including a direct request to stop AI responses, and the interaction shows a prolonged period dominated by AI/templated updates rather than timely, detailed human-led incident handling for a P1.",
+    "evidence": [
+      "Monica Botey commented privately: \"stop the AI responses for this case.\"",
+      "Warren Cook: \"To date - This is what we have received - \\\"We are investigating the issue with the Infrastructure team.\\\"\"",
+      "Warren Cook: \"That is unacceptable for a P1 case... What tests have been performed... What is the next step?\"",
+      "Centralsupport-ai-acc: \"[customer_escalation] The customer escalated the Case... severity is: complete_outage\" (repeated multiple times)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/AI persisted with a third-party script/telemetry narrative despite the customer stating only BrandMessenger JS is used and despite incognito testing not helping. The ticket also references a prior identical incident (August) and the customer repeatedly flags that this previously turned out to be Khoros-side, but responses did not meaningfully incorporate that context until much later.",
+    "evidence": [
+      "Don Kempt: \"Aamir, we only run the javascript provided from brandmessanger, please advise\"",
+      "Don Kempt: \"disabling extensions and running incognito locally has no effect. The issue persists\"",
+      "Monica Botey: \"same issue as we had in August (case 60164225)...\"",
+      "Monica Botey: \"THIS IS THE SAME ISSUE WE HAD IN AUGUST CASE: 60164071 (THE ONE STILL PENDING RCA).\"",
+      "ATLAS: \"Audit your site\u2019s active scripts... injected by analytics, tag managers, or monitoring services\" (despite customer repeatedly indicating minimal/unchanged scripts and incognito tests)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Although the strict '2+ days' gap is not consistently met, the customer repeatedly had to chase for updates during a declared P1/complete outage, indicating effective response delay/insufficient update cadence for severity level.",
+    "evidence": [
+      "Don Kempt: \"Please note this case was opened as a P1 at 11am EST. This is 5hrs with out a working chat.\"",
+      "Monica Botey: \"Hello, checking again, it has been 2h since the last update.\"",
+      "Warren Cook: \"I would like an update of what work has been done to date to resolve this issue... That is unacceptable for a P1 case\"",
+      "Centralsupport-ai-acc: \"[customer_escalation]... severity is: complete_outage\" (escalations repeated, implying lack of timely response)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Work was effectively marked closed on the engineering side (JIRA) while the customer explicitly stated they were still waiting on IT confirmation and later challenged the root-cause validity, indicating closure/near-closure without customer-confirmed resolution.",
+    "evidence": [
+      "Centralsupport-ai-acc: \"JIRA Issue CARESMM-10219 is changed to 'Closed'\"",
+      "Warren Cook commented privately: \"We are still waiting for confirmation from IT if this can be done\"",
+      "From Customer (via Balaji Jayaraman): \"I am not convinced that this will resolve the issue... If I access the webchat widget from my home network, I run into the exact same issue. No vpn, no proxy\"",
+      "Harry Tasker: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite clear P1/complete outage language and 'all customers affected', the initial handling focused on generic client-side/third-party script guidance and troubleshooting rather than immediate incident escalation and frequent, concrete P1-grade updates. The customer also cites a recurring prior incident, further increasing the need for rapid escalation and RCA-driven handling.",
+    "evidence": [
+      "Customer: \"Please treat this as a P1 situation.\"",
+      "Centralsupport-ai-acc: \"severity is: complete_outage\"",
+      "Centralsupport-ai-acc: \"The customer escalated the Case... message is:affecting all customers\"",
+      "ATLAS: \"Recommended Steps to Mitigate: Reduce the number of simultaneous third-party scripts...\" (generic guidance during outage)",
+      "Don Kempt: \"This is 5hrs with out a working chat.\"",
+      "Monica Botey: \"THIS NEEDS TO BE ESCALATED TO YOUR INFRASTRUCTURE TEAM ASAP.\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60238457
+}

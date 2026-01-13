@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI response is somewhat generic and leans on KB links/workarounds, but there isn\u2019t enough evidence in the ticket to prove it is wrong, broken, or misleading, nor is there customer feedback stating it was useless/incorrect.",
+    "evidence": [
+      "ATLAS commented publicly: \"While the knowledge base article ... describes how a similar message appears in client applications and can sometimes be bypassed...\"",
+      "Customer: \"please fix this quickly!\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI/public staff response shown and no evidence the customer requested a human or got stuck in repeated AI replies.",
+    "evidence": [
+      "Kayako - ticket id 60231299 // ATLAS commented publicly: \"Dear Stefan, Thank you for bringing to our attention the issue...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not ask the customer to re-provide information they already gave, and the customer does not complain about having to repeat details.",
+    "evidence": [
+      "Customer: \"today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed?\"",
+      "ATLAS: \"If the certificate has changed or expired for a central Kerio Connect redirection endpoint, this issue can occur until the certificate is updated and propagated.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The staff reply appears within about a minute of the customer\u2019s message, with no long gaps mentioned or visible in the provided text.",
+    "evidence": [
+      "Customer timestamp: \"[2025-10-29T08:27:13+00:00]\"",
+      "ATLAS timestamp: \"[2025-10-29T08:27:55+00:00]\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no text indicating the ticket was closed or auto-closed, and no closure warning language is shown.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer expresses urgency and implies multi-user impact, but there is no explicit outage/SEV1 language, and the short excerpt does not show prolonged generic troubleshooting or a missed escalation over time.",
+    "evidence": [
+      "Customer: \"This leads to a security message for users of the Kerio Connect Desktop Mail Client\"",
+      "Customer: \"please fix this quickly!\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60231299
+}

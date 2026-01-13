@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS misinterprets the customer\u2019s technical error string as a license key and starts an irrelevant license-validation flow. This is clearly incorrect and not aligned with the customer\u2019s stated issue (Outlook Connector restore causing a script error).",
+    "evidence": [
+      "Customer: \"using the outlook connector and trying to restore an email I get a script error. Line :15 Char: 16485 Error: sys.webforms.pagerequestmanagerservererrorexception.\"",
+      "AI: \"Checking the validity of this license key: pagerequestmanagerservererrorexception\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only one visible customer input and one AI response; no evidence of repeated questioning, requests for a human, or looping behavior.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the AI response is irrelevant, there is no evidence of the agent repeatedly asking for already-provided info or the customer explicitly stating they already provided/covered it (as required by the pattern criteria).",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The provided excerpt does not show any 3+ day gaps, complaints about waiting, or apologies for delay.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No closure event or closing message is shown in the excerpt, so premature closure cannot be confirmed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit severity (P1/SEV1/Critical), outage language, or time-sensitive/SLA context is present in the provided content.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60163212
+}

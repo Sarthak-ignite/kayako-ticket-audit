@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is strong evidence that bot-driven analysis and messaging misled the case, including an explicitly identified hallucination about segfaults/crashes that later had to be retracted. Customer also perceived the responses as generic/bot-like (\u201ctime-kill mode\u201d), indicating AI output degraded trust and clarity.",
+    "evidence": [
+      "Engineering: \u201cThe above statement appears to be a hallucination. There is 0 evidence of any crashes in the log analysis output from what I can tell.\u201d",
+      "Engineering: \u201cThere are two bots at play here... This is the root of the confusion here:\u201d (re: the segfault/collectord crash claim)",
+      "Agent to customer: \u201cAfter reviewing the logs again, the initial diagnosis was incorrect.\u201d",
+      "Customer: \u201cSo many responses from your replies are saying \\\"feedback and the information you have shared will be carefully reviewed...\\\" Is this so-called support still operated by the ChatBot?\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer requested a live agent and the interaction did progress into a ticket/handover; the main failure was delay/handling, not repeated AI loops asking the same questions or preventing escalation.",
+    "evidence": [
+      "Customer: \u201cYes, I request a live agent transfer in this chat,\u201d",
+      "Customer: \u201cButton selection: [\ud83d\udcac Chat with live agent]\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asked for information the customer had already provided at ticket creation (reason for upgrade / prior issues). The initial issue description clearly states URL categorization problems pre-upgrade, yet later support re-asks this context instead of acknowledging it.",
+    "evidence": [
+      "Initial issue description: \u201cexperiencing specific issues with URL catagorisation\u201d + \u201cmost URLs not being categorized\u201d",
+      "Agent later: \u201cPrior to the upgrade, were you experiencing issues? Is this why you performed the upgrade?\u201d",
+      "Customer response calling this out: \u201cPrior to the upgrade, I was experiencing issues with URL categorization. Most of the connections show unclassified...\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Customer reported a critical case with no response for ~24 hours and repeatedly followed up due to lack of engagement. Even if under 3 calendar days, the ticket contains explicit customer complaints about waiting and lack of timely response, which materially harmed the experience.",
+    "evidence": [
+      "Customer: \u201cThe case was raised in Critical Priority, and no show for 24 hours.\u201d",
+      "Timeline gap: customer provided details 2025-10-30 09:13, first substantive human public response appears 2025-10-31 14:34 (~29 hours later).",
+      "Customer follow-ups during wait: \u201cCan someone take it on a serious note, OR is your support also in AI time-kill mode?\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket thread provided does not show closure of the customer-facing ticket while unresolved (it remains active with continued customer responses).",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer described a business-critical, critical-priority situation (CPU pegged/high alarms) yet experienced a ~24-hour lack of response. Additionally, the system/bot action placed the case on hold for an extreme duration (\u201c9999 hour(s)\u201d), which is incompatible with P1 handling and signals process breakdown.",
+    "evidence": [
+      "ATLAS transcript: \u201cIt's business critical & needs human support intervention\u201d",
+      "Customer: \u201cThe case was raised in Critical Priority, and no show for 24 hours.\u201d",
+      "Automation: \u201cCentralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60232130
+}

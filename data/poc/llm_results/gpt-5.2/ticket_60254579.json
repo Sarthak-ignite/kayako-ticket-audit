@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only AI content shown is an incomplete transcript snippet and an internal action tag; there is not enough visible AI response text to verify generic filler, incorrect guidance, or broken promises.",
+    "evidence": [
+      "[2025-12-02T15:22:44+00:00] (AI) ATLAS: \"Here is a transcript of the customer's recent interaction with ATLAS chat: --- AI Assistant ---  Hi, Alejandro Antu\u00f1a ! \ud83d\udc4b  This is the Kerio\"",
+      "[2025-12-02T15:23:15+00:00] (AI) ATLAS: \"Action: l1\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer explicitly requests help beyond ATLAS, and a human agent replies later the same day; there\u2019s no evidence of repeated AI requests for the same info or inability to reach a human.",
+    "evidence": [
+      "[2025-12-02T15:22:37+00:00] (Customer) Alejandro Antu\u00f1a: \"Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\"",
+      "[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: \"Dear Alejandro, Based on the screenshots you provided...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The agent references and uses the screenshots the customer provided; while additional logs are requested later, the ticket view does not show the customer already provided those logs, so re-asking cannot be confirmed.",
+    "evidence": [
+      "[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: \"Based on the screenshots you provided...\"",
+      "[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: \"To continue the investigation, we need the Support Information file and a short set of Debug logs...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long gap between the employee\u2019s response on Dec 2 and the next employee update on Dec 4, consistent with the provided max response gap being very high.",
+    "evidence": [
+      "[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: \"Dear Alejandro, Based on the screenshots you provided...\"",
+      "[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: \"To continue the investigation, we need the Support Information file and a short set of Debug logs...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is listed as closed, the interaction history provided does not include the closure event or any indication the customer was awaiting a promised response when it was closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Despite urgent priority, the visible agent guidance is specific to a filtering rule (\u201cBanned URLs\u201d rule scope) and requests diagnostic files; there is no clear evidence of generic troubleshooting or failure to escalate for an outage.",
+    "evidence": [
+      "[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: \"Based on the screenshots you provided, the filtering rule is not being applied because the \u201cBanned URLs\u201d rule is limited\"",
+      "[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: \"To continue the investigation, we need the Support Information file and a short set of Debug logs...\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only AI content shown is an incomplete transcript snippet and an internal action tag; there is not enough visible AI response text to verify generic filler, incorrect guidance, or broken promises.\",\n    \"evidence\": [\n      \"[2025-12-02T15:22:44+00:00] (AI) ATLAS: \\\"Here is a transcript of the customer's recent interaction with ATLAS chat: --- AI Assistant ---  Hi, Alejandro Antu\u00f1a ! \ud83d\udc4b  This is the Kerio\\\"\",\n      \"[2025-12-02T15:23:15+00:00] (AI) ATLAS: \\\"Action: l1\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer explicitly requests help beyond ATLAS, and a human agent replies later the same day; there\u2019s no evidence of repeated AI requests for the same info or inability to reach a human.\",\n    \"evidence\": [\n      \"[2025-12-02T15:22:37+00:00] (Customer) Alejandro Antu\u00f1a: \\\"Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\\\"\",\n      \"[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: \\\"Dear Alejandro, Based on the screenshots you provided...\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The agent references and uses the screenshots the customer provided; while additional logs are requested later, the ticket view does not show the customer already provided those logs, so re-asking cannot be confirmed.\",\n    \"evidence\": [\n      \"[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: \\\"Based on the screenshots you provided...\\\"\",\n      \"[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: \\\"To continue the investigation, we need the Support Information file and a short set of Debug logs...\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a long gap between the employee\u2019s response on Dec 2 and the next employee update on Dec 4, consistent with the provided max response gap being very high.\",\n    \"evidence\": [\n      \"[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: \\\"Dear Alejandro, Based on the screenshots you provided...\\\"\",\n      \"[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: \\\"To continue the investigation, we need the Support Information file and a short set of Debug logs...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is listed as closed, the interaction history provided does not include the closure event or any indication the customer was awaiting a promised response when it was closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Despite urgent priority, the visible agent guidance is specific to a filtering rule (\u201cBanned URLs\u201d rule scope) and requests diagnostic files; there is no clear evidence of generic troubleshooting or failure to escalate for an outage.\",\n    \"evidence\": [\n      \"[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: \\\"Based on the screenshots you provided, the filtering rule is not being applied because the \u201cBanned URLs\u201d rule is limited\\\"\",\n      \"[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: \\\"To continue the investigation, we need the Support Information file and a short set of Debug logs...\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60254579
+}

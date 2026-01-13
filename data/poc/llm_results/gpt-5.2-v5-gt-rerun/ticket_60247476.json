@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS provided troubleshooting guidance that did not resolve the issue (e.g., keyboard shortcut), but it was phrased as a possible workaround rather than a definite fix, and there is no clear customer statement that the AI content was wrong/hallucinated. The thread also includes substantive human investigation of HAR/WebSocket behavior.",
+    "evidence": [
+      "ATLAS commented publicly: \"In the Response editor, agents can use the Ctrl + Enter (or Cmd + Return on Mac) keyboard shortcut to send a reply.\"",
+      "Customer commented publicly: \"We have tested using Ctrl + Enter to send the message when the send button disappears, and there is no change.  It does not send the message, and a refresh is still required.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was not trapped in an AI-only loop; multiple human agents replied publicly throughout the interaction (e.g., Pavly, Rishi, Amir). There are not 3+ consecutive AI-only public messages and no explicit request for a human that was ignored.",
+    "evidence": [
+      "Pavly Nashed commented publicly: \"We are currently investigating this, and will get back to you shortly with further updates.\"",
+      "Rishi Singh commented publicly: \"Hello Meaghan, Thank you again for the detailed information and HAR files...\"",
+      "Amir Khan commented publicly: \"Could you check the following on your side?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly stated they had already performed the same troubleshooting (browsers, WFH vs office, provided HARs) and that the questions were repeats, yet support continued to request similar checks again. This indicates the customer was forced to repeat information/steps already provided.",
+    "evidence": [
+      "Don Kempt commented publicly: \"We have provided HAR\u2019s, we have checked with agents wfh and in office, used different browsers etc.\"",
+      "Don Kempt commented publicly: \"Most of these questions were already asked by the previous engineer on this case.\"",
+      "Rishi Singh commented publicly: \"Test with multiple browsers (latest Chrome, Firefox, Edge) and in a private/incognito window... Temporarily disable all browser extensions... Clear cookies, cache, and site data...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The visible conversation shows same-day and next-day engagement from support, and there is no customer-facing follow-up like 'any update' after a long silence. While the CSV shows a long overall resolutionTime, the provided interaction excerpts do not include a clear customer-facing wait/lag complaint about support response gaps.",
+    "evidence": [
+      "CSV: resolutionTime=515582",
+      "Customer commented publicly: \"This is causing delays in responses to customers.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket ultimately closed (per CSV) and a one-week auto-close warning was stated, the provided excerpts do not show the customer stating the issue remained unresolved at the time of solve/close, nor do they show a closure occurring immediately after an unresolved customer request in the visible log.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Amir Khan commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue impacted agent workflow and was described as degraded service, but there is no explicit P1/SEV1/critical/outage designation in the customer-facing text. Support did perform HAR review and investigation rather than only giving generic troubleshooting with no escalation.",
+    "evidence": [
+      "Customer commented publicly: \"This is causing delays in responses to customers.\"",
+      "Don Kempt commented publicly: \"here we are again\u2026 on our second day 2 of the chat service not functioning as expected\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60247476
+}

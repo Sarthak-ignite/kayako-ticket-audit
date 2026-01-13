@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The eventual response is largely template-style and redirects to a link without addressing the customer\u2019s stated problem (can\u2019t track the message / no license received). It also provides limited actionable troubleshooting beyond \u201ctry a different email,\u201d which doesn\u2019t resolve the tracking/feedback complaint.",
+    "evidence": [
+      "Customer: \"I did as asked, but I can't track the message I've sent properly.\"",
+      "Customer: \"I have not received a licence or any helpful feedback.\"",
+      "Support: \"the support team is unable to help with obtaining new licenses or adjusting any other license, and the correct avenue for solving this would be contacting the GFI Customer Care team here: https://customercare.gfi.com/hc/en-us/requests/new.\"",
+      "Support: \"the prospect customer can try obtaining a new trial, with an email address different from  daniel.fasshauer@tel-ka.de\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer expresses frustration and lack of progress (\u201cAre you actually working on this?\u201d) and the interaction shows workflow gating/hand-off friction (being told to use a portal / different team) that can function like an AI wall even if the final reply is human.",
+    "evidence": [
+      "Customer: \"Would you mind keeping us posted?\"",
+      "Customer: \"Are you actually working on this?\"",
+      "Included prior message: \"the next step must be completed directly by you through the GFI Customer Care portal.\"",
+      "Support: \"the correct avenue for solving this would be contacting the GFI Customer Care team\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support does not acknowledge or answer the customer\u2019s specific context about not being able to track the message they sent and not receiving helpful feedback; instead it restates the license/piracy-warning context and redirects to Customer Care.",
+    "evidence": [
+      "Customer: \"I did as asked, but I can't track the message I've sent properly.\"",
+      "Customer: \"I have not received a licence or any helpful feedback.\"",
+      "Support: \"As previously indicated, the support team is unable to help... the correct avenue... contacting the GFI Customer Care team\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer updates and support response (well over 2 days), and the customer had to follow up. Support explicitly apologizes for the delay.",
+    "evidence": [
+      "[2025-11-07T12:48:27+00:00] Customer message followed by next public support response only at [2025-11-24T12:15:38+00:00]",
+      "[2025-11-11T13:25:41+00:00] Customer follow-up: \"Are you actually working on this?\"",
+      "Support: \"Please accept my sincere apologies for the delay in getting back to you; since the ticket was raised via email follow-up, it attained a low priority.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The provided transcript does not show the ticket being closed or auto-closed while the customer was awaiting a response; it ends with a support reply.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit indicators of a Sev1/P1 outage (e.g., production down/critical/urgent/business-wide impact) appear in the customer\u2019s messages; this appears to be a trial license/piracy warning workflow issue.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60238295
+}

@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS chat content appears generic/misdirected (e.g., focusing on license key rather than the duplicate-email POP3 connector issue) and does not meaningfully address the customer\u2019s stated request/context.",
+    "evidence": [
+      "Christian Schmidt: \"Hast Du den Letzten chatverlauf\"",
+      "Chat Support: \"I have this license key on record... Just to make sure we're on the same page - is this the same system you're reaching out about today?\"",
+      "Christian Schmidt:\n\n undefined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer is repeatedly asked for logs/samples despite already uploading/attaching materials, creating a loop where progress depends on re-submitting similar artifacts.",
+    "evidence": [
+      "Muhammad Rizwan: \"please provide... A screenshot of your POP3 connector configuration... The ME logs...\"",
+      "Christian Schmidt: \"The logs and screenshots are already in the ticket!\"",
+      "Arafat Bakhsh: \"We will require the complete set of logs... Please ensure that all of the old debug logs are deleted, tracing is enabled and the issue is reproduced...\"",
+      "Qasim Ali: \"To proceed effectively, we kindly ask you to reproduce the issue again... and then share the updated logs along with a sample .eml file\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asks for items the customer states were already provided (logs/screenshots), and discounts the existing log set even though the customer claims the issue happens for every relevant message (so examples should exist in later logs).",
+    "evidence": [
+      "Christian Schmidt: \"The logs and screenshots are already in the ticket!\"",
+      "Arafat Bakhsh: \"We will require the complete set of logs in order to investigate the matter further.\"",
+      "Christian Schmidt: \"I created the logs... and sent them. And the screenshots.\"",
+      "Christian Schmidt: \"Because for EVERY mail that has at least 2 recipients in the same domain, the mails come twice. the logs should be full of examples.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a gap of more than 2 calendar days between the customer\u2019s initial detailed report and the first substantive support response.",
+    "evidence": [
+      "[2025-06-16T11:04:01+00:00] Christian Schmidt: \"Bug in MailEsstainels in the Pop3 conector...\"",
+      "[2025-06-23T03:38:59+00:00] Muhammad Rizwan: \"To help us investigate this further, please provide the following:\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed in the provided timeline; the latest message requests future logs after an upgrade, with no closure event recorded.",
+    "evidence": [
+      "Arafat Bakhsh: \"We look forward to the logs once the issue is reproduced with the new version.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer describes a broad, systematic mail-flow defect affecting all emails with multiple internal recipients (potentially organization-wide impact), yet handling remains standard log-collection and upgrade gating rather than rapid escalation/containment guidance.",
+    "evidence": [
+      "Christian Schmidt: \"Because mails are retrieved twice or even more. If several recipients within the domain...\"",
+      "Christian Schmidt: \"Because for EVERY mail that has at least 2 recipients in the same domain, the mails come twice.\"",
+      "Qasim Ali: \"To escalate this matter to our development team, we will need the issue to be reproduced on the latest version of MailEssentials (v22).\"",
+      "Support suggestion focuses on workaround outside ME: \"If you are using Kerio Connect, you may disable duplicate messages...\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60078199
+}

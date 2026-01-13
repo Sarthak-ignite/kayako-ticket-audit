@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses provide relevant information but do not contain filler or unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was stuck in a loop with the AI; the conversation eventually progressed to a human response.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI and human responses appeared to acknowledge the customer's request for a license without unnecessary repetition of previously provided details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays between responses, particularly with the time to first human being 454.6 hours and a max gap of 367.4 hours between interactions.",
+    "evidence": [
+      "Time to first human: 454.6 hours",
+      "Max gap between responses: 367.4 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was completed only after the issue was addressed with responses from a human agent, indicating no premature closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket does not seem to pertain to a high-priority or outage situation requiring immediate escalation or specific troubleshooting.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses provide relevant information but do not contain filler or unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was stuck in a loop with the AI; the conversation eventually progressed to a human response.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI and human responses appeared to acknowledge the customer's request for a license without unnecessary repetition of previously provided details.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays between responses, particularly with the time to first human being 454.6 hours and a max gap of 367.4 hours between interactions.\",\n    \"evidence\": [\"Time to first human: 454.6 hours\", \"Max gap between responses: 367.4 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was completed only after the issue was addressed with responses from a human agent, indicating no premature closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket does not seem to pertain to a high-priority or outage situation requiring immediate escalation or specific troubleshooting.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60260239
+}

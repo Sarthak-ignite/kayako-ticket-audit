@@ -1,0 +1,108 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_connect",
+        "requester": {
+          "id": 60181233,
+          "uuid": "56c4716e-cf16-4c23-b3c4-91b01b34cfa5",
+          "full_name": "Stefan Gro\u00dfhauser",
+          "legacy_id": "393580833560",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/56c4716e-cf16-4c23-b3c4-91b01b34cfa5?1762475740",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 182768,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-10-31T13:24:34+00:00",
+          "last_active_at": "2025-11-07T00:35:40+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60181233",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@76d19a7b9915b02a904b8d0683c722891e6dc1fc",
+          "password_updated_at": null,
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2022-05-02T06:10:19+00:00",
+          "updated_at": "2025-11-07T00:35:40+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60181233"
+        },
+        "ticket_idt": 60231299
+      },
+      "interactions": [
+        [
+          "2025-10-29T08:27:55+00:00",
+          "Kayako - ticket id 60231299 // ATLAS commented publicly: Dear Stefan,\n\nThank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconnect.com/ and the resulting security warning in the Kerio Connect Desktop Mail Client.\n\nThis type of warning typically appears when a client detects that an SSL/TLS certificate is either expired or does not match expectations. In general, this may lead to security prompts or warning messages for users when accessing the affected service.\n\nWhile the knowledge base article \"The security certificate for the server is invalid or expired\" When Setting up Email on Spark [https://support.kerioconnect.gfi.com/article/113552] describes how a similar message appears in client applications and can sometimes be bypassed, in the context of Kerio Connect Desktop Mail Client and hosted services, it is crucial to ensure that you are connecting to a trusted and valid endpoint.\n\nIf the certificate has changed or expired for a central Kerio Connect redirection endpoint, this issue can occur until the certificate is updated and propagated. In the meantime, you may advise your users that this warning arises from an expired or untrusted certificate, which affects secure connections. As a workaround, users may be able to bypass the message (if local policy and security guidelines permit), but this is not recommended for long-term use due to potential security concerns.\n\nTo ensure continued secure access, we strongly recommend:\n\n \t* Verifying that you and your users access Kerio Connect services using URLs with valid, up-to-date certificates issued by a trusted CA.\n \t* If using your own Kerio Connect installation, periodically reviewing and renewing SSL certificates as covered in your server configuration. For more information, refer to the article: Accessing Kerio Connect Webmail [https://support.kerioconnect.gfi.com/article/113400] and ensure that your server utilizes a trusted CA certificate.\n\nIf you experience continued issues or if certificate warnings persist after reconfirming server certificate validity, please ensure your Kerio Connect client and server are fully updated and configured for best security practices.\n\nIf you need additional clarification on enabling or renewing certificates on your Kerio Connect installation, please refer to the documentation mentioned above or let us know if you need guidance on certificate configurations.\n\nSincerely,\nAtlas\nGFI - Kerio Connect Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-29T08:27:13+00:00",
+          "Kayako - ticket id 60231299 // Stefan Gro\u00dfhauser commented publicly: Hello,\ntoday the certificate for\nhttps://redirects.gfikerioconnect.com/\nhas expired or changed? This leads to a security message for users of the Kerio Connect Desktop Mail Client:\nimage\n\nplease fix this quickly!\n\nStefan Gro\u00dfhauser\nLeitung IT\n\nTelefon\u00a0\u00a0 +49 (0) 9181 2592-83\nE-Mail \u00a0\u00a0\u00a0 stefan.grosshauser@hammerbacher.com\n\n"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 2,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

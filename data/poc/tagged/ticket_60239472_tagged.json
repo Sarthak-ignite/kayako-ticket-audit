@@ -1,0 +1,162 @@
+[
+  {
+    "index": 0,
+    "actor_name": "Jens Weber",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-13 09:19:12",
+    "timestamp_str": "2025-11-13T09:19:12+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Jens Weber commented privately: Guten Morgen aus Frankfurt,\nsieht gut aus.\nIch bin allerdings doch \u00fcberrascht, dass der Fehler nicht schon fr\u00fcher entdeckt wurde.\nIst ja ",
+    "text_length": 476
+  },
+  {
+    "index": 1,
+    "actor_name": "Keyur Saxena",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-12 07:24:25",
+    "timestamp_str": "2025-11-12T07:24:25+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Keyur Saxena commented publicly: Hello Jens,\n\nPlease apply this fix on all new and existing agents: Fixing the \"You are no longer entitled to product updates\" error in p",
+    "text_length": 891
+  },
+  {
+    "index": 2,
+    "actor_name": "Jens Weber",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-11 15:40:50",
+    "timestamp_str": "2025-11-11T15:40:50+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Jens Weber commented privately: Ich habe drei Clients gepr\u00fcft und auf keinem liegt unter C:\\ProgramData\\GFI\\LanGuard 12\\PatchManagement\ndie Datei lanss_xx_patchmngmt.mdb",
+    "text_length": 200
+  },
+  {
+    "index": 3,
+    "actor_name": "Jens Weber",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-11 15:32:30",
+    "timestamp_str": "2025-11-11T15:32:30+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Jens Weber commented privately: Auf dem Server:\nC:\\ProgramData\\GFI\\LanGuard 12\\PatchManagement\\lanss_12_patchmngmt.mdb\nist vorhanden",
+    "text_length": 163
+  },
+  {
+    "index": 4,
+    "actor_name": "Jens Weber",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-11 15:28:22",
+    "timestamp_str": "2025-11-11T15:28:22+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Jens Weber commented privately: Handling Error \"The patch management database is unavailable\"\nhttps://support.gfi.com/article/115552-languard-agent-s-status-is-listed-as",
+    "text_length": 413
+  },
+  {
+    "index": 5,
+    "actor_name": "Jens Weber",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-11 14:24:18",
+    "timestamp_str": "2025-11-11T14:24:18+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Jens Weber commented privately: Client attendantservice.csv: 2025-11-11,15:11:31,059,3,\"#00005e38\",\"#000035ac\",\"debug \",\"Attendant\",\"CMsecattApp::ServiceStart - Looping.",
+    "text_length": 14908
+  },
+  {
+    "index": 6,
+    "actor_name": "Jens Weber",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-11 14:24:08",
+    "timestamp_str": "2025-11-11T14:24:08+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Jens Weber commented privately: Server attendantservice.csv: 2025-11-11,15:07:38,774,3,\"#00001640\",\"#000014b0\",\"debug \",\"CrmiModule\",\"CMSPAccountsManagerConfig::get_Last",
+    "text_length": 1996
+  },
+  {
+    "index": 7,
+    "actor_name": "Jens Weber",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-11 14:23:56",
+    "timestamp_str": "2025-11-11T14:23:56+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Jens Weber commented privately: 1. Woher wei\u00df ich, welche xml noch in dem Ordner C:\\ProgramData\\GFI\\LanGuard 12\\PatchManagement\\ fehlen?\n2. Nach wie vor nur Patch-Manage",
+    "text_length": 435
+  },
+  {
+    "index": 8,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "Atlas",
+    "timestamp": "2025-11-11 12:11:13",
+    "timestamp_str": "2025-11-11T12:11:13+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // ATLAS commented privately: Action: l1",
+    "text_length": 68
+  },
+  {
+    "index": 9,
+    "actor_name": "Jens Weber",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-11 12:10:52",
+    "timestamp_str": "2025-11-11T12:10:52+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Jens Weber commented privately: Herunterladen mit http://LanGuardServerIP:Port/files/update/wsusscn2.cab klappt.\n(In meinem Fall http://10.10.10.5:1072/files/update/wsus",
+    "text_length": 209
+  },
+  {
+    "index": 10,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "Atlas",
+    "timestamp": "2025-11-11 12:06:56",
+    "timestamp_str": "2025-11-11T12:06:56+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // ATLAS commented publicly: Dear Jens,\n\nThank you for your detailed update and for systematically working through the previous recommendations. From your report, after rei",
+    "text_length": 4970
+  },
+  {
+    "index": 11,
+    "actor_name": "Jens Weber",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-11 12:06:08",
+    "timestamp_str": "2025-11-11T12:06:08+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Jens Weber commented privately: Ich versuche es mal auf Deutsch,\n\nich habe, nachdem ich alle Punkte unten abgearbeitet habe, Languard deinstalliert, durchgestartet, Lang",
+    "text_length": 657
+  },
+  {
+    "index": 12,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "Atlas",
+    "timestamp": "2025-11-10 10:36:00",
+    "timestamp_str": "2025-11-10T10:36:00+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // ATLAS commented publicly: Dear Jens,\n\nThank you for providing such a detailed description of the issue with scheduled scans in GFI LanGuard. I understand that after a fu",
+    "text_length": 4554
+  },
+  {
+    "index": 13,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "Atlas",
+    "timestamp": "2025-11-10 10:35:12",
+    "timestamp_str": "2025-11-10T10:35:12+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, Jens Weber ! \ud83d\udc4b\n\nThis is the GFI LanGuar",
+    "text_length": 26658
+  },
+  {
+    "index": 14,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "Atlas",
+    "timestamp": "2025-11-10 10:35:09",
+    "timestamp_str": "2025-11-10T10:35:09+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // ATLAS commented privately: Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction, which means that they may have uploaded some files for AI an",
+    "text_length": 400
+  },
+  {
+    "index": 15,
+    "actor_name": "Jens Weber",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-11-10 10:35:05",
+    "timestamp_str": "2025-11-10T10:35:05+00:00",
+    "text_preview": "Kayako - ticket id 60239472 // Jens Weber commented privately: --- Ticket generated by GFI LanGuard AI chat on behalf of Jens Weber - <a href=\"mailto:weber@ws-fra.de\" rel=\"nofollow\">weber@ws-fra.de</a",
+    "text_length": 3440
+  }
+]

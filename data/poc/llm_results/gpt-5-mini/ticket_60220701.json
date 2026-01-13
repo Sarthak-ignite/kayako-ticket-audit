@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Interactions are from human agents; there is no AI-generated content in the transcript to evaluate for generic/wrong promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no sign the customer was stuck interacting with an AI that repeatedly asked for the same information; exchanges are between customer and human agents and progress to scheduling a meeting.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support references and acts on the customer's provided logs (e.g., advising deletion of diagnostic files) and schedules a meeting rather than repeatedly requesting the same attachments.",
+    "evidence": [
+      "\"[2025-10-29T20:25:20+00:00] (Employee) Randall Shawver: Dear Eswaramoorthy,\\n\\nThank you for providing the logs. You can delete all of the diagnostic files that appear in your screenshot. You\"",
+      "\"[2025-10-29T05:37:50+00:00] (Customer) Eswaramoorthy P: \\n\\nThanks for the key. Requested logs and diagnostic files attached to the case.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer messages and agent responses (time to first human ~195.6 hours and long gaps in the timeline).",
+    "evidence": [
+      "\"Time to first human (hours): 195.6\"",
+      "\"[2025-10-29T05:37:50+00:00] (Customer) Eswaramoorthy P: \\n\\nThanks for the key. Requested logs and diagnostic files attached to the case.\"",
+      "\"[2025-11-04T11:35:20+00:00] (Employee) Syed Haider: Kayako - ticket id 60220701 // Syed Haider commented publicly: Dear Eshwar,\\n\\nThank you for joining me on the call today, and I sincerely apologize for the delayed response on this ticket.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript shows ongoing follow-up (meeting scheduling and agent actions) and no clear evidence the ticket was closed while the customer awaited promised information or had given up.",
+    "evidence": [
+      "\"[2025-11-04T11:35:20+00:00] (Employee) Syed Haider: \\n\\nThank you for joining me on the call today, and I sincerely apologize for the delayed response on this ticket.\"",
+      "\"[2025-11-04T11:00:06+00:00] (Employee) Syed Haider: \\n\\nPlease join me for your scheduled meeting using this link, which was also sent to you via our scheduling automati\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "For an urgent ticket the agents pursued log review and scheduled a call/meeting rather than only giving generic end-user troubleshooting; no evidence of inappropriate generic troubleshooting for a P1/Sev1.",
+    "evidence": [
+      "\"[2025-10-29T20:25:20+00:00] (Employee) Randall Shawver: \\n\\nThank you for providing the logs. You can delete all of the diagnostic files that appear in your screenshot.\"",
+      "\"[2025-11-04T10:55:43+00:00] (Employee) Syed Haider: Kayako - ticket id 60220701 // Syed Haider commented privately:  agenda: \\n\\n \\t* Check UI, delete extra stuff\\n \\t* Check log rotation settings\\n \\t* in cmd try df -h to check disk usage\\n \\t* Check sys dump \""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Interactions are from human agents; there is no AI-generated content in the transcript to evaluate for generic/wrong promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no sign the customer was stuck interacting with an AI that repeatedly asked for the same information; exchanges are between customer and human agents and progress to scheduling a meeting.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support references and acts on the customer's provided logs (e.g., advising deletion of diagnostic files) and schedules a meeting rather than repeatedly requesting the same attachments.\",\n    \"evidence\": [\n      \"\\\"[2025-10-29T20:25:20+00:00] (Employee) Randall Shawver: Dear Eswaramoorthy,\\\\n\\\\nThank you for providing the logs. You can delete all of the diagnostic files that appear in your screenshot. You\\\"\",\n      \"\\\"[2025-10-29T05:37:50+00:00] (Customer) Eswaramoorthy P: \\\\n\\\\nThanks for the key. Requested logs and diagnostic files attached to the case.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between customer messages and agent responses (time to first human ~195.6 hours and long gaps in the timeline).\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 195.6\\\"\",\n      \"\\\"[2025-10-29T05:37:50+00:00] (Customer) Eswaramoorthy P: \\\\n\\\\nThanks for the key. Requested logs and diagnostic files attached to the case.\\\"\",\n      \"\\\"[2025-11-04T11:35:20+00:00] (Employee) Syed Haider: Kayako - ticket id 60220701 // Syed Haider commented publicly: Dear Eshwar,\\\\n\\\\nThank you for joining me on the call today, and I sincerely apologize for the delayed response on this ticket.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The transcript shows ongoing follow-up (meeting scheduling and agent actions) and no clear evidence the ticket was closed while the customer awaited promised information or had given up.\",\n    \"evidence\": [\n      \"\\\"[2025-11-04T11:35:20+00:00] (Employee) Syed Haider: \\\\n\\\\nThank you for joining me on the call today, and I sincerely apologize for the delayed response on this ticket.\\\"\",\n      \"\\\"[2025-11-04T11:00:06+00:00] (Employee) Syed Haider: \\\\n\\\\nPlease join me for your scheduled meeting using this link, which was also sent to you via our scheduling automati\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"For an urgent ticket the agents pursued log review and scheduled a call/meeting rather than only giving generic end-user troubleshooting; no evidence of inappropriate generic troubleshooting for a P1/Sev1.\",\n    \"evidence\": [\n      \"\\\"[2025-10-29T20:25:20+00:00] (Employee) Randall Shawver: \\\\n\\\\nThank you for providing the logs. You can delete all of the diagnostic files that appear in your screenshot.\\\"\",\n      \"\\\"[2025-11-04T10:55:43+00:00] (Employee) Syed Haider: Kayako - ticket id 60220701 // Syed Haider commented privately:  agenda: \\\\n\\\\n \\\\t* Check UI, delete extra stuff\\\\n \\\\t* Check log rotation settings\\\\n \\\\t* in cmd try df -h to check disk usage\\\\n \\\\t* Check sys dump \\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60220701
+}

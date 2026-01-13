@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI providing incorrect information or making promises it couldn't keep; however, the use of 'Placing on hold for 9999 hour(s)' could be misleading.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The AI keeps placing the ticket on hold for '9999 hour(s)' without providing substantial progress, leading to potential looping and blocking human interaction.",
+    "evidence": [
+      "[2025-12-16T13:25:13+00:00] 'Placing on hold for 9999 hour(s)'",
+      "[2025-12-15T13:22:46+00:00] 'Placing on hold for 9999 hour(s)'"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team ignored the customer's statement about not downgrading to version 7.5.7 and proceeded with this assumption.",
+    "evidence": [
+      "[2025-12-16T13:25:03+00:00] 'Thank you for confirming that you have downgraded to version 7.5.7.'",
+      "[2025-12-17T04:15:39+00:00] 'Who said we have downgraded to version 7.5.7 ? No, we have not.'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay of several days between responses, despite the ticket's urgent priority.",
+    "evidence": [
+      "Gap from [2025-12-16T13:25:13+00:00] to [2025-12-17T07:17:54+00:00], among others"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no specific evidence that the ticket was closed prematurely while awaiting promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was urgent and critical, yet excessively delayed and involved unresolved task placement by AI instead of immediate escalation or resolution efforts.",
+    "evidence": [
+      "[2025-12-16T01:44:38+00:00] 'Customer already now not having trust and here I am putting last effort'",
+      "[2025-12-15T13:22:46+00:00] 'Placing on hold for 9999 hour(s)'"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI providing incorrect information or making promises it couldn't keep; however, the use of 'Placing on hold for 9999 hour(s)' could be misleading.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI keeps placing the ticket on hold for '9999 hour(s)' without providing substantial progress, leading to potential looping and blocking human interaction.\",\n    \"evidence\": [\"[2025-12-16T13:25:13+00:00] 'Placing on hold for 9999 hour(s)'\", \"[2025-12-15T13:22:46+00:00] 'Placing on hold for 9999 hour(s)'\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team ignored the customer's statement about not downgrading to version 7.5.7 and proceeded with this assumption.\",\n    \"evidence\": [\"[2025-12-16T13:25:03+00:00] 'Thank you for confirming that you have downgraded to version 7.5.7.'\", \"[2025-12-17T04:15:39+00:00] 'Who said we have downgraded to version 7.5.7 ? No, we have not.'\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay of several days between responses, despite the ticket's urgent priority.\",\n    \"evidence\": [\"Gap from [2025-12-16T13:25:13+00:00] to [2025-12-17T07:17:54+00:00], among others\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no specific evidence that the ticket was closed prematurely while awaiting promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The issue was urgent and critical, yet excessively delayed and involved unresolved task placement by AI instead of immediate escalation or resolution efforts.\",\n    \"evidence\": [\"[2025-12-16T01:44:38+00:00] 'Customer already now not having trust and here I am putting last effort'\", \"[2025-12-15T13:22:46+00:00] 'Placing on hold for 9999 hour(s)'\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60232130
+}

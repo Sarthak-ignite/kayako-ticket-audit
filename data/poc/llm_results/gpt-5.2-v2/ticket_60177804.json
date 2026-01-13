@@ -1,0 +1,64 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Multiple responses are generic escalation fillers with no technical progress, and later guidance appears misaligned with the customer\u2019s description (issue affects all mail flow, not just specific accounts). Support also falls back to link-only/log-request responses instead of analyzing the previously provided data.",
+    "evidence": [
+      "Carlos Encalada commented publicly: Dear Bennett Neves Duarte, Thank you for reaching out. We\u2019ve received your escalation regarding ticket 60177804 and are actively working on it. You can expect an update from us shortly.",
+      "Deniz Yavas commented publicly: We have received your escalation and we are currently working on it. Rest assured, our team is looking into the matter...",
+      "Shaquille De Lancy commented publicly: Please Gather New Log Files ... Additionally, kindly review Troubleshooting Performance Issues in Kerio Connect ...",
+      "Customer: \"it is not having an authentication problem, and when it stops, it stops for everyone\" (support continued to focus on \"repeated authentication attempts\")"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly escalates and asks for a meeting/closer look, but support loops back to requesting more logs and provides repeated escalation acknowledgements rather than enabling real-time help. This creates a cycle of escalation \u2192 template response \u2192 more log requests.",
+    "evidence": [
+      "Centralsupport-ai-acc commented privately: [customer_escalation] The customer escalated the Case.",
+      "Carlos Encalada commented publicly (twice): \"We\u2019ve received your escalation... You can expect an update from us shortly.\"",
+      "Customer: \"Could we have a meeting to take a closer look? Customer really needs this working\"",
+      "Customer: \"Can't we schedule a meeting for next monday? It is freezing very often and affecting their workflow.\"",
+      "Carlos: \"A meeting is not necessary at this stage... Please provide a fresh set of diagnostics...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support requests new diagnostics and reiterates a POP3-authentication narrative after the customer already provided files/logs and explicitly challenged that diagnosis. The interaction does not clearly acknowledge what was already uploaded and re-asks for similar information.",
+    "evidence": [
+      "Customer: \"Here are some files...\"",
+      "Support (later): \"Please Gather New Log Files ...\"",
+      "Customer: \"the customer told us that it is not having an authentication problem, and when it stops, it stops for everyone\"",
+      "Support (later): \"We note the repeated authentication attempts on two particular user accounts.\"",
+      "Carlos: \"Please provide a fresh set of diagnostics covering the most recent freeze\" (after earlier logs had already been reviewed and a findings list was produced)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "While the customer escalated multiple times, the visible gaps between customer updates and support responses generally remain under the stated >2-day threshold.",
+    "evidence": [
+      "[2025-08-26T19:34:11+00:00] Customer sent files; [2025-08-28T08:22:10+00:00] Support responded (~<2 days).",
+      "[2025-09-02T16:18:33+00:00] Customer asked for meeting; [2025-09-02T18:47:43+00:00] Support responded (same day)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support introduces auto-closure language (\u201cstay open for one week unless\u2026\u201d) despite the customer reporting ongoing freezing and requesting urgent help, which risks closing while unresolved.",
+    "evidence": [
+      "Shaquille De Lancy: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed...\"",
+      "Carlos Encalada: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed...\"",
+      "Customer: \"It is still freezing and just froze now.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is effectively a production mail outage recurring multiple times per day (\u201cemails stop arriving\u201d for everyone, requiring server restart) impacting workflow, yet support proceeds with standard log-gathering and even declines a requested meeting rather than treating as a critical incident with rapid escalation.",
+    "evidence": [
+      "Customer: \"Several times a day, both internal and external emails stop arriving.\"",
+      "Customer: \"Only when we restart the entire server and start the Kerio Connect service do emails start arriving again.\"",
+      "Customer: \"It is still freezing and just froze now.\"",
+      "Customer: \"Customer really needs this working\" / \"affecting their workflow.\"",
+      "Carlos: \"A meeting is not necessary at this stage... Please provide a fresh set of diagnostics...\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60177804
+}

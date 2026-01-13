@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The visible AI public replies appear to be largely templated/boilerplate (\u201cThank you\u2026\u201d, \u201cWe understand\u2026\u201d) with little concrete, ticket-specific troubleshooting detail shown in the excerpts, which is indicative of generic filler rather than actionable guidance.",
+    "evidence": [
+      "[2025-09-09T11:06:55+00:00] (AI) ATLAS commented publicly: \"Dear asim.mehmood, Thank you for contacting us. We understand that scheduled scanning is not working...\"",
+      "[2025-09-09T11:15:01+00:00] (AI) ATLAS commented publicly: \"Dear asim.mehmood, Thank you for your candid feedback. We understand how disruptive...\"",
+      "[2025-09-09T11:30:59+00:00] (AI) ATLAS commented publicly: \"Dear asim.mehmood, Thank you for your detailed feedback...\"",
+      "[2025-09-16T06:12:00+00:00] (AI) ATLAS commented publicly: \"Dear asim.mehmood, Thank you for your continued updates and for providing detailed diagnostic information...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "There are repeated internal AI notes of \u201cRequesting more information,\u201d alongside customer frustration that all steps were already followed, suggesting the customer is being cycled through AI requests rather than progressed to a human resolution path.",
+    "evidence": [
+      "[2025-09-09T11:06:39+00:00] (AI) ATLAS commented privately: \"Requesting more information\"",
+      "[2025-09-09T11:14:38+00:00] (AI) ATLAS commented privately: \"Requesting more information\"",
+      "[2025-09-09T11:14:01+00:00] (Employee) asim.mehmood commented privately: \"Our partners have already followed every single step and troubleshooting process as advised by your team.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The ticket shows the customer stating that troubleshooting steps were already completed, yet the AI continues to request more information, which indicates previously provided context may not be incorporated before asking again.",
+    "evidence": [
+      "[2025-09-09T11:14:01+00:00] (Employee) asim.mehmood commented privately: \"Our partners have already followed every single step and troubleshooting process as advised by your team.\"",
+      "[2025-09-09T11:06:39+00:00] (AI) ATLAS commented privately: \"Requesting more information\"",
+      "[2025-09-09T11:14:38+00:00] (AI) ATLAS commented privately: \"Requesting more information\"",
+      "[2025-09-09T11:29:21+00:00] (Employee) asim.mehmood commented privately: \"Please find attached the image... We have already performed all the steps provided...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap between AI communications on 2025-09-09 and the next AI public update on 2025-09-16, indicating a significant response delay within the ticket timeline shown.",
+    "evidence": [
+      "Last activity on 2025-09-09T11:30:59+00:00 (AI public comment) then next activity on 2025-09-16T06:12:00+00:00 (AI public comment)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The provided interaction log does not show the ticket being closed; in fact, an employee explicitly instructs to keep it open. There is no clear evidence of closure while awaiting promised information.",
+    "evidence": [
+      "[2025-09-16T06:10:59+00:00] (Employee) asim.mehmood commented privately: \"Keep this ticket open.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue is described as disruptive and occurring in a banking environment, the ticket excerpt does not explicitly indicate a P1/Sev1 classification, required SLA/urgency, or a clear failure to escalate a formally high-priority case.",
+    "evidence": [
+      "[2025-09-09T11:15:01+00:00] (AI) ATLAS commented publicly: \"...disruptive... in a banking environment...\""
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60193443
+}

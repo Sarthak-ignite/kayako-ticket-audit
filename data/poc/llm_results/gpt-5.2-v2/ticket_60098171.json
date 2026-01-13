@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses are largely templated, repetitive link-dumps with minimal case-specific diagnosis, and it repeatedly suggests generic folder/path checks even after the customer indicates configuration hasn\u2019t changed and the core symptom is persistent VSE failures. The customer explicitly states the replies are \u201csame replies from a machine,\u201d indicating perceived low quality/unhelpful AI support.",
+    "evidence": [
+      "ATLAS commented publicly: \"Below are some targeted troubleshooting steps and references to help resolve the issue:\"",
+      "ATLAS commented publicly: \"Verify Pickup and Replay Folder Configuration\" (repeated across multiple ATLAS replies)",
+      "Customer: \"As i stated, nothing changed on configuration. Has been the same for years.\"",
+      "Customer: \"Amazing how I'm paying for support and get told to constant same replies form a machine....\"",
+      "ATLAS: \"Based on your observations and the information available in our knowledge base, here are comprehensive steps...\" (repeated phrasing without new, decisive next action)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer requests a live support rep and repeatedly expresses frustration while ATLAS continues to respond with the same troubleshooting loop; no human engagement is shown. The interaction is a long chain of AI-only replies, and the customer calls out they are getting repetitive machine responses.",
+    "evidence": [
+      "Customer: \"Can we get a support rep online.... I've been looking at this for 3 hours now\"",
+      "Customer: \"Amazing how I'm paying for support and get told to constant same replies form a machine....\"",
+      "Multiple consecutive entries: \"ATLAS commented publicly\" with no human responder present throughout the ticket"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS continues to propose the same pickup/replay folder and generic queue-folder checks even after the customer states configuration is unchanged for years and provides new, specific evidence (Failed VSE for all scanned inbound emails). The customer repeatedly says \u201cas I stated,\u201d signaling they are having to restate key context.",
+    "evidence": [
+      "Customer: \"As I stated, all emails are flowing into building... Once I disable email scanning, email is aujtomatically received by user.\"",
+      "Customer: \"As i stated, nothing changed on configuration. Has been the same for years. Only thing I noticed today was the Failed (VSE) errors for all scanned inbound emails\"",
+      "ATLAS (after this): continues with \"Review Pickup, Replay, and Queue Folder Configuration\" and \"Inspect BadMail, FailedMails, and Temp Directories\" rather than pivoting to concrete VSE-engine specific remediation/escalation",
+      "Customer: \"Seems like emails are stuck in the SMTP queue\" (ATLAS repeats the same folder/path checklist again)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All visible back-and-forth occurs within the same day and mostly within minutes; there are no multi-day gaps or customer \u201cstill waiting\u201d follow-ups due to time delays.",
+    "evidence": [
+      "[2025-07-08T19:26:43+00:00] ATLAS reply followed by [2025-07-08T19:28:32+00:00] customer response (minutes apart)",
+      "Multiple subsequent responses occur within minutes (e.g., 20:04 customer -> 20:05 ATLAS; 21:22 customer -> 21:23 ATLAS)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Although an explicit closure message is not shown, the customer clearly gives up and threatens replacement due to lack of human help and unresolved outage symptoms; the ticket shows only AI interactions with no handoff to a human, which is a closure/abandonment risk pattern.",
+    "evidence": [
+      "Customer: \"I'm out... If this continues, I'll be looking at replacing the product by another one.\"",
+      "Customer: \"Amazing how I'm paying for support and get told to constant same replies form a machine....\"",
+      "Entire ticket shows only \"ATLAS commented\" responses and no human intervention"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is effectively a mail-flow outage: all inbound emails stop reaching user inboxes when MailEssentials is enabled, forcing the customer to disable/uninstall security scanning to restore business-critical email delivery. Despite the severity and time sensitivity (\u201c3 hours\u201d), ATLAS stays in standard KB troubleshooting instead of urgent escalation/human takeover.",
+    "evidence": [
+      "Customer: \"Email not sent to exchange server\" and \"All emails.\"",
+      "Customer: \"Once I disable email scanning, email is automatically received by user. Thus bypassing GFI SPAM scan\"",
+      "Customer: \"I've uninstalled it again to get proper email flowing.\"",
+      "Customer: \"Failed (VSE) errors for all scanned inbound emails, which in turn stopped all email flow going through GFI\"",
+      "Customer: \"Can we get a support rep online.... I've been looking at this for 3 hours now\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60098171
+}

@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No clear AI-generated troubleshooting content was sent to the customer. The visible support replies with analysis/action plan appear to be written by human agents. The internal 'Centralsupport-ai-acc' entries are escalation tags only, not customer-facing AI guidance.",
+    "evidence": [
+      "Centralsupport-ai-acc commented privately: [customer_escalation]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was not stuck interacting only with AI. Multiple human agents responded (Carlos, Deniz, Arafat, Shaquille, Pablo).",
+    "evidence": [
+      "Carlos Encalada commented publicly...",
+      "Deniz Yavas commented publicly...",
+      "Arafat Bakhsh commented publicly...",
+      "Shaquille De Lancy commented publicly..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support did not directly address key context/questions the customer provided (empty queue concern, 'stops for everyone', doubt about the earlier 'corrupted queue' conclusion). Instead, they reverted to requesting logs/articles and continued emphasizing authentication failures, which the customer explicitly disputed.",
+    "evidence": [
+      "Customer (2025-09-01): \"the customer told us that it is not having an authentication problem, and when it stops, it stops for everyone\"",
+      "Customer (2025-09-01): \"If they have empty queues than it is correct to say that those are corrupted as you mentioned?\"",
+      "Support (2025-09-02): \"We note the repeated authentication attempts on two particular user accounts. Please Gather New Log Files... Additionally, kindly review Troubleshooting Performance Issues...\" (does not answer the queue/corruption question, and reiterates auth focus)",
+      "Customer (initial): \"Several times a day, both internal and external emails stop arriving. The Kerio email queue is empty\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No clear 3+ calendar day gap where the customer was awaiting a support response. Most agent responses occurred same day or within ~1\u20132 days.",
+    "evidence": [
+      "Customer files sent (2025-08-26) and substantive response (2025-08-28) occurred within ~2 days"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket log does not show the case being closed/resolved while unanswered customer requests remained. It remains in-progress with ongoing requests for diagnostics.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer described a recurring, service-impacting outage (mail stops for all users multiple times/day; requires server restart) and requested a meeting due to business impact. Support handled it with standard troubleshooting cadence, declined a meeting, and did not show clear urgent escalation/SEV handling beyond generic 'received your escalation' acknowledgments.",
+    "evidence": [
+      "Customer (2025-08-25): \"Several times a day, both internal and external emails stop arriving... Only when we restart the entire server... do emails start arriving again.\"",
+      "Customer (2025-09-02): \"It is still freezing and just froze now.\"",
+      "Customer (2025-09-02): \"Could we have a meeting to take a closer look? Customer really needs this working\"",
+      "Customer (2025-09-05): \"Can't we schedule a meeting for next monday? It is freezing very often and affecting their workflow.\"",
+      "Support (2025-09-05): \"A meeting is not necessary at this stage... Please provide a fresh set of diagnostics...\" (standard process despite repeated outage/business impact)"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60177804
+}

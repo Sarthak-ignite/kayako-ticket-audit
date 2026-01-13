@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No evidence of AI providing incorrect or misleading information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the AI repeatedly asked the same information or prevented access to human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The context provided by the customer appears to have been acknowledged and considered in responses.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays between interactions, indicating a lack of timely responses.",
+    "evidence": [
+      "[2025-11-25T15:27:36+00:00] - Customer's message",
+      "[2025-12-01T04:36:21+00:00] - Next response from AI (over 5 days later)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is placed on hold, but it was not closed prematurely.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket was not marked as high-priority or an outage, thus not applicable for mishandling as a P1/Sev1 issue.",
+    "evidence": []
+  },
+  "_raw_response": "\n  {\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of AI providing incorrect or misleading information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the AI repeatedly asked the same information or prevented access to human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The context provided by the customer appears to have been acknowledged and considered in responses.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays between interactions, indicating a lack of timely responses.\",\n    \"evidence\": [\n      \"[2025-11-25T15:27:36+00:00] - Customer's message\",\n      \"[2025-12-01T04:36:21+00:00] - Next response from AI (over 5 days later)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is placed on hold, but it was not closed prematurely.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was not marked as high-priority or an outage, thus not applicable for mishandling as a P1/Sev1 issue.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60250122
+}

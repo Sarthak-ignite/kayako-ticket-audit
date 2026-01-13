@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses repeat the same generic acknowledgments and do not progress the resolution.",
+    "evidence": [
+      "2025-10-10T09:24:03+00:00 - 'Thank you for your update and for confirming that all suggested troubleshooting steps have already been performed.'",
+      "2025-10-10T07:49:27+00:00 - 'Thank you for providing detailed feedback, screenshots, and a summary of the ongoing issue with GFI MailEssentials.'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The AI is looping by acknowledging resolution attempts without facilitating further support.",
+    "evidence": [
+      "2025-10-10T09:24:03+00:00 - 'Thank you for your update and for confirming that all suggested troubleshooting steps have already been performed.'",
+      "2025-10-10T07:49:27+00:00 - The AI repeats acknowledgements without providing new actionable steps."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The issue is not ignoring context but rather failing to offer resolution beyond acknowledging past actions.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant response delays between interactions, especially the time to first human response.",
+    "evidence": [
+      "The time to first human was 44.4 hours, and the max gap between responses was 77.7 hours."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence of the ticket being closed prematurely while the customer awaited specific promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite the high priority, the interactions focused more on acknowledgment than actionable and immediate escalation steps.",
+    "evidence": [
+      "2025-10-10T09:24:03+00:00 - Generic acknowledgment without escalation of the technical issue to a higher level.",
+      "2025-10-16T11:10:31+00:00 - 'our partner asked if we can plan a remote session together with one of your technicians' indicating inadequate direct intervention for high severity."
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses repeat the same generic acknowledgments and do not progress the resolution.\",\n    \"evidence\": [\n      \"2025-10-10T09:24:03+00:00 - 'Thank you for your update and for confirming that all suggested troubleshooting steps have already been performed.'\",\n      \"2025-10-10T07:49:27+00:00 - 'Thank you for providing detailed feedback, screenshots, and a summary of the ongoing issue with GFI MailEssentials.'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI is looping by acknowledging resolution attempts without facilitating further support.\",\n    \"evidence\": [\n      \"2025-10-10T09:24:03+00:00 - 'Thank you for your update and for confirming that all suggested troubleshooting steps have already been performed.'\",\n      \"2025-10-10T07:49:27+00:00 - The AI repeats acknowledgements without providing new actionable steps.\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The issue is not ignoring context but rather failing to offer resolution beyond acknowledging past actions.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant response delays between interactions, especially the time to first human response.\",\n    \"evidence\": [\n      \"The time to first human was 44.4 hours, and the max gap between responses was 77.7 hours.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the ticket being closed prematurely while the customer awaited specific promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite the high priority, the interactions focused more on acknowledgment than actionable and immediate escalation steps.\",\n    \"evidence\": [\n      \"2025-10-10T09:24:03+00:00 - Generic acknowledgment without escalation of the technical issue to a higher level.\",\n      \"2025-10-16T11:10:31+00:00 - 'our partner asked if we can plan a remote session together with one of your technicians' indicating inadequate direct intervention for high severity.\"\n    ]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60218313
+}

@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS responses are generic and repetitive, but there is not clear, unambiguous evidence of factual product misinformation or broken templating. The customer dissatisfaction appears tied to repetition/lack of log review rather than a clearly incorrect AI statement.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer indicates the advice is repetitive, but the strict looping criteria are not met: there are not 3+ consecutive AI responses without a human after an explicit request for a human, and AI does not ask for the same specific information 2+ times. A human responds on 2025-12-09.",
+    "evidence": [
+      "Customer (2025-12-08T11:24:19+00:00): \"Those steps are basically what was recommended in articles before.\"",
+      "Customer (2025-12-08T11:24:19+00:00): \"Please have someone look at the logs\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeats already-tried guidance and asks for logs that were already provided in the same ticket. The customer explicitly flags that the suggested steps are the same as previous articles, and they already shared server/agent logs via links; the later human response still requests agent logs for review.",
+    "evidence": [
+      "Customer (2025-12-08T08:24:24+00:00): \"I have already sent them the article here: ... but performing the actions there has not resulted in any change.\"",
+      "Customer (2025-12-08T11:15:34+00:00): \"none of the proposed solutions worked so far, here are the logs from both server and agent: https://...\"",
+      "Customer (2025-12-08T11:24:19+00:00): \"Those steps are basically what was recommended in articles before.\"",
+      "Support (Keyur Saxena, 2025-12-09T13:32:09+00:00): \"If the issue persists after the fix, please provide the agent logs for review\" (despite logs already being provided the prior day)."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No 3+ calendar-day gap is shown between a customer message and a support response. The longest gap is ~1 day (2025-12-08 to 2025-12-09).",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed, and there is no evidence of closure while a customer request remained pending.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer mentions renewal risk and time sensitivity, but there is no explicit P1/SEV1/critical marker, no statement of production outage, and no clear SLA breach. While the handling appears generic, it does not meet the strict criteria for P1/SEV1 mishandling.",
+    "evidence": [
+      "Customer (2025-12-08T11:24:19+00:00): \"otherwise, there's a high risk of losing the customer's renewal, which is in two weeks.\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60258400
+}

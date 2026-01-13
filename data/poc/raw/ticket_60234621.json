@@ -1,0 +1,243 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_care",
+        "requester": {
+          "id": 60490438,
+          "uuid": "316c37a4-61b0-5f65-a364-8f0b84e74c5b",
+          "full_name": "Jayashree Shetty",
+          "legacy_id": "003Uv000007K9NDIA0",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/316c37a4-61b0-5f65-a364-8f0b84e74c5b?1766561806",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60067841,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 491967,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-12-23T05:47:26+00:00",
+          "last_active_at": "2025-12-24T07:36:46+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60490438",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@7788cc12dcbf2424d9c05703bd229caa1ad35a25",
+          "password_updated_at": "2025-07-07T22:12:42+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-07-07T22:12:42+00:00",
+          "updated_at": "2025-12-24T07:36:46+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60490438"
+        },
+        "ticket_idt": 60234621
+      },
+      "interactions": [
+        [
+          "2025-11-03T15:53:40.754+0000",
+          "SaaS Jira - issue key CARESMM-9956 // Service Sfit commented: \u2705 QC PASSED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis SummaryThe incident involved multiple reports of customers being unable to initiate chats via widgets on their websites, traced to expired SSL certificates for Brand Messenger services in the usw2 and euw1 regions. The expired certificates caused SSLCertVerificationError messages and failed HTTPS connections, disrupting customer chat functionalities.\ud83d\ude80 Resolution EffectivenessRoot Cause: The root cause was clearly identified as expired SSL certificates on the AWS ALB for Brand Messenger services.Actions Taken: New SSL certificates were generated and updated in AWS ACM for both usw2 and euw1 regions. The certificates were committed to the repository, uploaded, and attached to the load balancers. Post-update verification confirmed the resolution.Evidence: The resolution is supported by logs showing SSLCertVerificationError messages, comments detailing the certificate renewal process, and openssl verification confirming the new certificates' validity through July 2026.Monitoring: The incident was detected through customer reports rather than automated monitoring. A ticket should be created in the MONAUTO project to enhance monitoring for SSL certificate expirations.Non-Execution: Not applicable, as the resolution was executed successfully.\ud83d\udcdd Process AdherenceCommunication: The communication in the comments and resolution summary was clear and timely, detailing the steps taken and confirming resolution.Documentation: The documentation was comprehensive, including logs, screenshots, and detailed comments on the resolution process.Runbook Usage/Creation: There is no mention of a runbook. Given the nature of the incident, a runbook should be created to guide future SSL certificate renewals and prevent similar incidents.\ud83d\udcca MetricsInvestigation Quality: 5/5 (The root cause analysis was thorough and accurate.)Documentation Quality: 5/5 (Comments and resolution summary were clear and complete.)Resolution Effectiveness: 5/5 (Actions taken were effective and supported by evidence.)Total score: 15/15\ud83d\udca1 Suggestions for Improvement1. Implement automated monitoring for SSL certificate expirations to prevent similar incidents.2. Create a runbook for SSL certificate management, including renewal processes and verification steps.3. Enhance communication protocols to ensure timely detection and reporting of similar issues.\u2705 Final AssessmentThis analysis was performed to ensure quality and completeness."
+        ],
+        [
+          "2025-11-03T15:53:07+00:00",
+          "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9956 is changed to 'Closed' , block reason: -"
+        ],
+        [
+          "2025-11-03T15:53:00.789+0000",
+          "SaaS Jira - issue key CARESMM-9956 // status is changed from In Progress to Closed"
+        ],
+        [
+          "2025-11-03T15:50:44+00:00",
+          "Kayako - ticket id 60234621 // Chintan Parekh commented publicly: Dear Customer,\n\nWe have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor the system closely to ensure everything remains stable and no further issues occur.\n\nThank you for your patience and understanding.\n\nBest regards,\nKhoros Care Support Team"
+        ],
+        [
+          "2025-11-03T15:50:40+00:00",
+          "Kayako - ticket id 60234621 // Chintan Parekh commented privately: An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate on brandmessenger.usw2.khoros.com, resulting in SSLCertVerificationError messages and failed HTTPS connections. Investigation confirmed that the AWS ALB was still serving an expired GoDaddy-issued certificate. New Starfield (GoDaddy Group) certificates were generated for both usw2 and euw1 regions (brandmessenger.usw2.khoros.com.71ff5-active and brandmessenger.euw1.khoros.com.06f1b-active), committed to the repository, and successfully uploaded and attached in AWS ACM. Post-update verification using openssl confirmed that the renewed certificates (valid through July 2026) are now active on the load balancers, restoring secure connectivity and resolving all customer chat access issues."
+        ],
+        [
+          "2025-11-03T15:47:54.923+0000",
+          "SaaS Jira - issue key CARESMM-9956 // Muhammad Waqar commented: An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate on brandmessenger.usw2.khoros.com, resulting in SSLCertVerificationError messages and failed HTTPS connections. Investigation confirmed that the AWS ALB was still serving an expired GoDaddy-issued certificate. New Starfield (GoDaddy Group) certificates were generated for both usw2 and euw1 regions (brandmessenger.usw2.khoros.com.71ff5-active and brandmessenger.euw1.khoros.com.06f1b-active), committed to the repository, and successfully uploaded and attached in AWS ACM. Post-update verification using openssl confirmed that the renewed certificates (valid through July 2026) are now active on the load balancers, restoring secure connectivity and resolving all customer chat access issues."
+        ],
+        [
+          "2025-11-03T15:46:19.971+0000",
+          "SaaS Jira - issue key CARESMM-9956 // Muhammad Waqar commented: bash-4.2$ \nbash-4.2$ # For euw1\nbash-4.2$ export NEW_CERT=brandmessenger.euw1.khoros.com.06f1b\nbash-4.2$ git mv ${NEW_CERT}.crt ${NEW_CERT}-active.crt\nbash-4.2$ git mv ${NEW_CERT}.csr ${NEW_CERT}-active.csr\nbash-4.2$ git mv ${NEW_CERT}.key ${NEW_CERT}-active.key\nbash-4.2$ git mv ${NEW_CERT}.ca ${NEW_CERT}-active.ca\nbash-4.2$ git commit -m \"CARESMM-9956 - Emergency Rotation for expired euw1 cert\" ${NEW_CERT}*\n[master c7a7879] CARESMM-9956 - Emergency Rotation for expired euw1 cert\n 4 files changed, 167 insertions(+)\n create mode 100644 brandmessenger.euw1.khoros.com.06f1b-active.ca\n create mode 100644 brandmessenger.euw1.khoros.com.06f1b-active.crt\n create mode 100644 brandmessenger.euw1.khoros.com.06f1b-active.csr\n create mode 100644 brandmessenger.euw1.khoros.com.06f1b-active.key\nbash-4.2$ \nbash-4.2$ # For `usw2`:**Bash\nbash-4.2$ export NEW_CERT=brandmessenger.usw2.khoros.com.71ff5\nbash-4.2$ git mv ${NEW_CERT}.crt ${NEW_CERT}-active.crt\nbash-4.2$ git mv ${NEW_CERT}.csr ${NEW_CERT}-active.csr\nbash-4.2$ git mv ${NEW_CERT}.key ${NEW_CERT}-active.key\nbash-4.2$ git mv ${NEW_CERT}.ca ${NEW_CERT}-active.ca\nbash-4.2$ git commit -m \"CARESMM-9956 - Emergency Rotation for expired usw2 cert\" ${NEW_CERT}*`\n> \n> ^C\nbash-4.2$ git commit -m \"CARESMM-9956 - Emergency Rotation for expired usw2 cert\" ${NEW_CERT}*\n[master 2698359] CARESMM-9956 - Emergency Rotation for expired usw2 cert\n 4 files changed, 167 insertions(+)\n create mode 100644 brandmessenger.usw2.khoros.com.71ff5-active.ca\n create mode 100644 brandmessenger.usw2.khoros.com.71ff5-active.crt\n create mode 100644 brandmessenger.usw2.khoros.com.71ff5-active.csr\n create mode 100644 brandmessenger.usw2.khoros.com.71ff5-active.key\nbash-4.2$ "
+        ],
+        [
+          "2025-11-03T15:38:45.905+0000",
+          "SaaS Jira - issue key CARESMM-9956 // Pavly Nashed commented: Confirmed fixed on one of the reported customers' websites:"
+        ],
+        [
+          "2025-11-03T14:55:30.614+0000",
+          "SaaS Jira - issue key CARESMM-9956 // Muhammad Waqar commented: Renewed certificate for https://brandmessenger.usw2.khoros.com/"
+        ],
+        [
+          "2025-11-03T14:21:47+00:00",
+          "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9956 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-03T14:17:02+00:00",
+          "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-03T14:16:53+00:00",
+          "Kayako - ticket id 60234621 // Pavly Nashed commented publicly: Dear Jayashree,\n\nThank you for your patience.\n\nWe have done a preliminary investigation to determine the root cause, and have escalated this to our infrastructure team with the highest priority.\n\nOnce we have further updates on this, we will share with you.\n\nBest regards,\nPavly Nashed\nKhoros Care Support Team"
+        ],
+        [
+          "2025-11-03T14:15:24+00:00",
+          "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9956 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-03T14:15:18.466+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com"
+        ],
+        [
+          "2025-11-03T14:15:18.163+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - ticket status changed to In Progress"
+        ],
+        [
+          "2025-11-03T14:15:18.157+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - ticket status changed to In Progress"
+        ],
+        [
+          "2025-11-03T14:15:17.919+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com"
+        ],
+        [
+          "2025-11-03T14:15:17.862+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - Assigned from Jira: muhammad.waqar@trilogy.com"
+        ],
+        [
+          "2025-11-03T14:15:17.394+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - ticket status changed to In Progress"
+        ],
+        [
+          "2025-11-03T14:15:17.290+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - Assigned from Jira: muhammad.waqar@trilogy.com"
+        ],
+        [
+          "2025-11-03T14:15:17.229+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com"
+        ],
+        [
+          "2025-11-03T14:15:16.917+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: note: Alert API - Assigned from Jira: muhammad.waqar@trilogy.com"
+        ],
+        [
+          "2025-11-03T14:15:16.830+0000",
+          "SaaS Jira - issue key CARESMM-9956 // status is changed from In Queue to In Progress"
+        ],
+        [
+          "2025-11-03T14:15:16.761+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com"
+        ],
+        [
+          "2025-11-03T14:15:16.220+0000",
+          "SaaS Jira - issue key CARESMM-9956 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com"
+        ],
+        [
+          "2025-11-03T14:13:02+00:00",
+          "Kayako - ticket id 60234621 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9956 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-11-03T14:12:50.310+0000",
+          "SaaS Jira - issue key CARESMM-9956 // Issue is created by Pavly Nashed with description: Multiple reports of not being able to raise chats on the customer-side widgets (on their websites).Example:Console logs provided by one of the customers:Recording:  =======Our Analysis points to an Expired SSL Certificate for Brand Messenger:[app.py:742] HTTPSConnectionPool(host='brandmessenger.usw2.khoros.com', port=443): Max retries exceeded with url: /rest/ws/user/preregister (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1147)'))) [app.py:742] HTTPSConnectionPool(host='brandmessenger.euw1.khoros.com', port=443): Max retries exceeded with url: /rest/ws/user/preregister (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1147)')))Search RunPossibly related alarm:  "
+        ],
+        [
+          "2025-11-03T13:55:50+00:00",
+          "Kayako - ticket id 60234621 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-11-03T13:55:16+00:00",
+          "Kayako - ticket id 60234621 // Meaghan Mcclure commented publicly:  \n Adding ISE alias for leadership visibility. \n\n Khoros ticket number 60234621. \n ISE FortiCare Ticket number 11241084\u00a0 \n\nBest Regards ,\n\nMeaghan McClure\n\nCustomer Service Manager - AMER\n\nHours : 9:00am -6:00pm EST\n\nmmcclure@fortinet.com\n\nHow to Engage Customer Service [https://fortinet.sharepoint.com/sites/CustomerSupport/SitePages/Customer-Support-%26-Services-Customer-Service-Alias-Guidelines.aspx]\n\nimage\n\n-------------------------\n\nFrom: Jayashree Shetty <jshetty@fortinet.com>\nSent: Monday, November 3, 2025 8:20 AM\nTo: outage@khoros.com <outage@khoros.com>; support@khoros-care.kayako.com <support@khoros-care.kayako.com>\nCc: CSS Operations <CSS_Operations@fortinet.com>; Chat_alert_TA <Chat_alert_TA@fortinet.com>; Intl CS MGMT <intl_cs_mgmt@fortinet.com>; AMER_CS_Mmgt <amer_cs_mmgt@fortinet.com>\nSubject: Severity 1- Fortinet-Khoros Outage \n\u00a0 \n\nHello Team,\n\n\u00a0\n\nWe have not received any chat for the past 35minutes, Unable to create a chat via Fortinet.com or Support.fortinet.com as well.\n\nPage does not load beyond \u201cHow can we help\u201d . Please find the recording attached for your reference.\n\n\u00a0\n\nimage\n\n\u00a0\n\nimage\n\n\u00a0\n\n\u00a0\n\nimage\n\n\u00a0\n\n\u00a0\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\nRegards\n\nJayashree Shetty\n\n\u00a0\n\n-------------------------\n *** Please note that this message and any attachments may contain confidential and proprietary material and information and are intended only for the use of the intended recipient(s). If you are not the intended recipient, you are hereby notified that any review, use, disclosure, dissemination, distribution or copying of this message and any attachments is strictly prohibited. If you have received this email in error, please immediately notify the sender and destroy this e-mail and any attachments and all copies, whether electronic or printed. Please also note that any views, opinions, conclusions or commitments expressed in this message are those of the individual sender and do not necessarily reflect the views of Fortinet, Inc., its affiliates, and emails are not binding on Fortinet and only a writing manually signed by Fortinet's General Counsel can be a binding commitment of Fortinet to Fortinet's customers or partners. Thank you. *** \n\n-------------------------\n "
+        ],
+        [
+          "2025-11-03T13:53:23+00:00",
+          "Kayako - ticket id 60234621 // Priyanka Bhotika commented publicly: Dear Customer,\n\nWe have received your escalation, and our team is currently reviewing the issue.\n\nWe will share an update with you shortly.\n\nKhoros Support Team"
+        ],
+        [
+          "2025-11-03T13:44:48+00:00",
+          "Kayako - ticket id 60234621 // Aamir Merchant commented privately:  Here is the ticket number:\u00a0 60234621 [https://central-supportdesk.kayako.com/agent/conversations/60234621]\u00a0 "
+        ],
+        [
+          "2025-11-03T13:37:55+00:00",
+          "Kayako - ticket id 60234621 // Jayashree Shetty commented publicly:  \n\n\u00a0\n\nHello Team,\n\n\u00a0\n\nPlease share the ticket number and please keep everyone in the initial email in loop for visibility.\n\n\u00a0\n\n\u00a0\n\nRegards\n\nJayashree Shetty\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-03T13:28:21+00:00",
+          "Kayako - ticket id 60234621 // Warren Cook commented privately: this is across all browsers: chrome, firefox, edge, bravo, safari"
+        ],
+        [
+          "2025-11-03T13:23:12+00:00",
+          "Kayako - ticket id 60234621 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-11-03T13:22:34+00:00",
+          "Kayako - ticket id 60234621 // Jayashree Shetty commented publicly:  \n\nHello Team,\n\n\u00a0\n\nWe have not received any chat for the past 35minutes, Unable to create a chat via Fortinet.com or Support.fortinet.com as well.\n\nPage does not load beyond \u201cHow can we help\u201d . Please find the recording attached for your reference.\n\n\u00a0\n\nimage\n\n\u00a0\n\nimage\n\n\u00a0\n\n\u00a0\n\nimage\n\n\u00a0\n\n\u00a0\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\nRegards\n\nJayashree Shetty\n\n\u00a0\n\n-------------------------\n *** Please note that this message and any attachments may contain confidential and proprietary material and information and are intended only for the use of the intended recipient(s). If you are not the intended recipient, you are hereby notified that any review, use, disclosure, dissemination, distribution or copying of this message and any attachments is strictly prohibited. If you have received this email in error, please immediately notify the sender and destroy this e-mail and any attachments and all copies, whether electronic or printed. Please also note that any views, opinions, conclusions or commitments expressed in this message are those of the individual sender and do not necessarily reflect the views of Fortinet, Inc., its affiliates, and emails are not binding on Fortinet and only a writing manually signed by Fortinet's General Counsel can be a binding commitment of Fortinet to Fortinet's customers or partners. Thank you. *** \n\n-------------------------\n "
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 16,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": true,
+          "link_value": "CARESMM-9956"
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

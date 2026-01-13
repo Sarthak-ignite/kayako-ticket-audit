@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are repetitive and generic, providing no substantive technical assistance for the server error issue.",
+    "evidence": [
+      "[2025-10-17T13:38:49+00:00] Dear Tyron, Thank you for providing clear details and a screenshot regarding the intermittent 500 Internal Server Error messages encountered w",
+      "[2025-10-17T13:37:28+00:00] Dear Tyron, Thank you for contacting us regarding the intermittent internal server error 500 issues you and your team have been experiencing."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "AI keeps requesting more information without providing meaningful assistance or escalating the high-priority ticket.",
+    "evidence": [
+      "[2025-10-17T13:37:19+00:00] Requesting more information",
+      "[2025-10-17T13:37:04+00:00] Here is a transcript of the customer's recent interaction with ATLAS chat"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There's insufficient evidence that context was explicitly ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occurred within the same minute, showing no significant response delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket appears closed without resolving the critical 500 Internal Server Error issue.",
+    "evidence": [
+      "Status: closed",
+      "Time to first human (hours): nan"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority ticket with server errors received generic AI responses instead of immediate technical investigation or human escalation.",
+    "evidence": [
+      "Priority: high",
+      "[2025-10-17T13:37:19+00:00] Requesting more information"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are repetitive and generic, providing no substantive technical assistance for the server error issue.\",\n    \"evidence\": [\n      \"[2025-10-17T13:38:49+00:00] Dear Tyron, Thank you for providing clear details and a screenshot regarding the intermittent 500 Internal Server Error messages encountered w\",\n      \"[2025-10-17T13:37:28+00:00] Dear Tyron, Thank you for contacting us regarding the intermittent internal server error 500 issues you and your team have been experiencing.\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"AI keeps requesting more information without providing meaningful assistance or escalating the high-priority ticket.\",\n    \"evidence\": [\n      \"[2025-10-17T13:37:19+00:00] Requesting more information\",\n      \"[2025-10-17T13:37:04+00:00] Here is a transcript of the customer's recent interaction with ATLAS chat\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There's insufficient evidence that context was explicitly ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occurred within the same minute, showing no significant response delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket appears closed without resolving the critical 500 Internal Server Error issue.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"Time to first human (hours): nan\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority ticket with server errors received generic AI responses instead of immediate technical investigation or human escalation.\",\n    \"evidence\": [\n      \"Priority: high\",\n      \"[2025-10-17T13:37:19+00:00] Requesting more information\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku",
+  "_ticket_id": 60223404
+}

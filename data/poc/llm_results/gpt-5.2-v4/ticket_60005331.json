@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS involvement is minimal and there is no clear evidence of ATLAS providing incorrect/misleading troubleshooting. The most visible ATLAS entries are internal workflow notes (\u201cSend to l1\u201d, \u201cSkipping ticket due to tags\u201d), not customer-facing guidance.",
+    "evidence": [
+      "Kayako - ticket id 60005331 // ATLAS commented privately: Action: Send to l1",
+      "Kayako - ticket id 60005331 // ATLAS commented privately: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer requested a human and the case was routed to L1; the main problem afterward is lack of response rather than being trapped in repeated AI interactions.",
+    "evidence": [
+      "Kris Cardona: human",
+      "Chat Support: Of course! I do understand some things are better handled by my human colleagues. Let me get some further help for you!",
+      "Kayako - ticket id 60005331 // ATLAS commented privately: Action: Send to l1"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support did not acknowledge or address key customer-provided context/requests (broken link preventing RMA submission; repeated requests for ETA/contact). The customer had to continue without the requested fix/answer and repeatedly follow up.",
+    "evidence": [
+      "Customer: \"Hi Jan, the link you sent isn't working. Can you send me another one ?\"",
+      "Customer: \"I need an ETA for this to be resolved, this is not normal to process an RMA. Can i have a phone number or an email to contact and cc the client accordingly.\"",
+      "Customer: \"Hi Hermes, any updates ? It's becoming a bit ridiculous at this stage, the client needs an answer for this.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps with no support response while the issue is active and urgent (hardware no-power/HA unit failed). The customer follows up multiple times, and support later apologizes for delay.",
+    "evidence": [
+      "Customer initial issue: [2025-03-21] \"1 of the 2 units in HA failed and no power, no lights\" \u2192 first human reply only on [2025-03-23]",
+      "Customer reports broken link on [2025-03-24] \u2192 next meaningful public support reply on [2025-03-28]",
+      "Support acknowledgement: \"Please accept my sincere apologies for the delay in getting back to you\" (2025-03-28)",
+      "Customer follow-ups indicating waiting: \"This is URGENT !\" (2025-03-26), \"any updates ?\" (2025-03-27)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support requested a required video to proceed with RMA, but then closed the ticket the same day without the customer providing the video or confirming resolution. Closure is justified internally (\u201calready in contact with GFI team / Apligo dealing with RMA\u201d), but it is not evidenced/confirmed by the customer in the ticket and risks leaving the customer without an active support path.",
+    "evidence": [
+      "Support request (blocking item): \"we will also need a video showcasing the issue... It is required to provide a video\" (2025-03-28 10:22)",
+      "Internal note: \"this can be closed, we are in contact with Kris and Apligo and Apligo is dealing with RMA directly\" (2025-03-28 12:59)",
+      "Closure to customer without customer confirmation: \"we will proceed to close the ticket\" (2025-03-28 13:15)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "A hardware no-power failure in an HA pair is time-sensitive, and the customer explicitly flags urgency. Despite this, the case follows a slow, standard RMA intake flow with multi-day inactivity and urgency only being applied after repeated escalations by the customer.",
+    "evidence": [
+      "Severity/impact indicator: \"1 of the 2 units in HA failed and no power, no lights\" (2025-03-21)",
+      "Explicit urgency: \"This is URGENT !\" (2025-03-26)",
+      "Ongoing business pressure: \"the client needs an answer for this\" (2025-03-27)",
+      "Urgency only applied late: \"I have now marked the ticket as urgent\" (2025-03-28)"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60005331
+}

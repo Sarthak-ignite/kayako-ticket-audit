@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response appears misaligned with the customer\u2019s direct question about the upgrade path (9.2 to 9.5), instead pivoting to license details and asking to confirm the system. This suggests the AI may not be addressing the actual request and could be adding unnecessary steps before providing the relevant upgrade guidance.",
+    "evidence": [
+      "Customer: \"what is the correct upgrade path from version 9.2 to 9.5\"",
+      "AI Assistant: \"I have this license key on record... Just to make sure we're on the same page - is this the same system you're reaching out about today?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was stuck in a loop, repeatedly redirected, or explicitly requested a human agent. The snippet shows only an initial question and a single AI follow-up question.",
+    "evidence": [
+      "AI Assistant: \"If I'm not able to resolve your issue, I can connect you with one of our support specialists...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer provided a clear, specific request (upgrade path from 9.2 to 9.5). The AI did not acknowledge that request directly and instead asked about a license/system confirmation, which can be interpreted as not using the already-provided context to answer the question.",
+    "evidence": [
+      "Customer: \"what is the correct upgrade path from version 9.2 to 9.5\"",
+      "AI Assistant: \"I have this license key on record... is this the same system you're reaching out about today?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No explicit waiting complaints or large response gaps are shown in the provided interaction snippet, and the ticket lifecycle appears to complete within a relatively short window (~72 minutes).",
+    "evidence": [
+      "CSV: resolutionTime=4344",
+      "CSV: Ticket Created=2025-11-11 21:25:04",
+      "CSV: Ticket Closed=2025-11-11 22:37:28"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, the provided transcript is truncated and does not show whether a correct upgrade path answer was delivered or whether the customer indicated unresolved issues at the time of closure. With the available evidence, premature closure cannot be established.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-11 22:37:28"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The request concerns an upgrade path and does not indicate an outage, major business impact, or urgent severity requiring escalation. No P1/Sev1 signals are present in the provided content.",
+    "evidence": [
+      "Customer: \"what is the correct upgrade path from version 9.2 to 9.5\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60240989
+}

@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no evident instances of AI responses providing generic filler, incorrect information, or unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer successfully interacted with a human representative without getting stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support staff repeatedly requested logs and information already provided by the customer, indicating a lack of context awareness.",
+    "evidence": [
+      "[2025-12-30T06:29:11+00:00] (Employee) Astha Kapoor: The email bounced, I am not sure how to proceed in this case, we only have one email on this ticket.",
+      "[2025-12-27T15:06:53+00:00] (Employee) Amir Khan: Customer is unreachable on call as well. I have sent them a voicemail to reply to this ticket with an alternate email or check the ticket."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays between responses, with a maximum gap of nearly 120 hours, which is unacceptable for a high-priority ticket.",
+    "evidence": [
+      "[2026-01-06T09:18:28+00:00] (Employee) Sandeep Gajula: Instructions [...]",
+      "[2025-12-31T14:07:45+00:00] (Employee) Manuel da Silva: Hi Kevin, Thanks for following up with that. We'll wait to hear back from you soon."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence to suggest that the ticket was closed prematurely; it remains in pending status.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The high-priority nature of this ticket was not addressed with the urgency required, opting for troubleshooting instead of escalation.",
+    "evidence": [
+      "[2025-12-31T14:06:44+00:00] (Employee) Manuel da Silva: I can't say much more than state that it makes sense as a general note. Testing this myself to validate the theory is unfeasible."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no evident instances of AI responses providing generic filler, incorrect information, or unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer successfully interacted with a human representative without getting stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support staff repeatedly requested logs and information already provided by the customer, indicating a lack of context awareness.\",\n    \"evidence\": [\n      \"[2025-12-30T06:29:11+00:00] (Employee) Astha Kapoor: The email bounced, I am not sure how to proceed in this case, we only have one email on this ticket.\",\n      \"[2025-12-27T15:06:53+00:00] (Employee) Amir Khan: Customer is unreachable on call as well. I have sent them a voicemail to reply to this ticket with an alternate email or check the ticket.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays between responses, with a maximum gap of nearly 120 hours, which is unacceptable for a high-priority ticket.\",\n    \"evidence\": [\n      \"[2026-01-06T09:18:28+00:00] (Employee) Sandeep Gajula: Instructions [...]\", \n      \"[2025-12-31T14:07:45+00:00] (Employee) Manuel da Silva: Hi Kevin, Thanks for following up with that. We'll wait to hear back from you soon.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence to suggest that the ticket was closed prematurely; it remains in pending status.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The high-priority nature of this ticket was not addressed with the urgency required, opting for troubleshooting instead of escalation.\",\n    \"evidence\": [\n      \"[2025-12-31T14:06:44+00:00] (Employee) Manuel da Silva: I can't say much more than state that it makes sense as a general note. Testing this myself to validate the theory is unfeasible.\"\n    ]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60267287
+}

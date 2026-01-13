@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence that ATLAS/Hermes provided incorrect or misleading guidance. The only public agent message is about delay and closing due to an existing reseller RMA, not AI content quality.",
+    "evidence": [
+      "\u201cPlease accept my sincere apologies for the delay in handling this! The ticket was incorrectly prioritized, which led to this issue.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket shows internal ATLAS actions/notes, but there is no customer-facing evidence of the customer being trapped in an AI loop or repeatedly blocked from reaching a human after requesting one.",
+    "evidence": [
+      "\u201cPlease accept my sincere apologies for the delay in handling this! The ticket was incorrectly prioritized, which led to this issue.\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer-facing exchange shows support asking the customer to repeat information already provided, or proceeding as if prior context didn\u2019t exist. The public reply acknowledges the situation and references an already-submitted reseller RMA.",
+    "evidence": [
+      "\u201cAs far as I can see, your reseller has submitted an RMA request for this same appliance, and that is already being handled.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Support explicitly apologized for a delay and stated the ticket was incorrectly prioritized, which is a strong signal of response delay. The customer also repeatedly asked for assistance/updates while waiting (seen in ticket interactions).",
+    "evidence": [
+      "\u201cPlease accept my sincere apologies for the delay in handling this! The ticket was incorrectly prioritized, which led to this issue.\u201d",
+      "\u201cPlease anyone assist\u201d",
+      "\u201cany updates\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Closure is mentioned, but the agent explains that an RMA for the same appliance is already being handled via the reseller; there is no explicit customer-facing indication that the request remained unresolved at the time of closure.",
+    "evidence": [
+      "\u201cyour reseller has submitted an RMA request for this same appliance, and that is already being handled. In light of this, I will proceed to close this ticket.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer describes an urgent outage scenario in the interaction history, there is no customer-facing evidence of support responding with inappropriate generic troubleshooting instead of escalation; the main visible issue is the delay, which is captured under RESPONSE_DELAYS.",
+    "evidence": [
+      "\u201cThis is high priority to us. We are vessel and our firewall is dead.\u201d",
+      "\u201cPlease accept my sincere apologies for the delay in handling this! The ticket was incorrectly prioritized, which led to this issue.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60005284
+}

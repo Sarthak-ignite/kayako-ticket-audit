@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI-generated responses in the thread are generic and appear to have failed to address the customer's core concern; the customer explicitly reports being dissatisfied with the answer. Examples include short/formulaic replies from ATLAS and a private comment 'Action: l1' that provides no customer-facing resolution or substantive analysis.",
+    "evidence": [
+      "[2025-09-24T16:18:51+00:00] (AI) ATLAS: ... Thank you for your follow-up and for sharing detailed feedback regarding your expectations on the analysis of the ...",
+      "[2025-09-02T21:21:42+00:00] (AI) ATLAS: Kayako - ticket id 60185126 // ATLAS commented privately: Action: l1",
+      "[2025-09-02T19:13:32+00:00] (AI) ATLAS: ... Thank you for reaching out. I understand Kerio Control has been repeatedly crashing and that you\u2019ve already colle..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While the AI asked for more information in at least one private note, there is no clear evidence the customer was trapped in a repetitive loop of identical requests with no human involvement. The thread contains both AI and human employee interactions.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly asked whether dumps and logs from previous crashes were analyzed and expressed dissatisfaction with the answer, indicating the support responses did not address that specific request. The customer's private comment asks directly 'Did you analyze the dump and logs from previous crashes?' which suggests that prior responses failed to confirm or demonstrate that analysis.",
+    "evidence": [
+      "[2025-09-04T12:14:51+00:00] (Employee) servis.prerov@comit.cz (customer): 'We are very dissatisfied with your answer. Did you analyze the dump and logs from previous crashes? If you wrote, yes,'",
+      "[2025-09-02T19:13:32+00:00] (AI) ATLAS: '... that you\u2019ve already colle...' (generic reply that does not confirm analysis of logs/dumps)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple-day gaps between interactions and follow-ups over weeks (e.g., exchanges span from 2025-09-02 to 2025-09-24) indicating significant delays in the thread.",
+    "evidence": [
+      "[2025-09-02T19:12:07+00:00] (AI) ATLAS initial messages",
+      "[2025-09-04T12:04:05+00:00] (Employee) Mike Kebede response (two days later)",
+      "[2025-09-24T16:18:51+00:00] (AI) ATLAS follow-up (three weeks later)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no explicit indication in the provided transcript that the ticket was closed prematurely, that promised information was not delivered because of closure, or that the customer gave up and the ticket was closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The transcript does not label the issue as P1/SEV1 or otherwise indicate an urgent severity level; while crashes are reported, there is no clear evidence that a high-priority escalation was required and instead handled only with generic troubleshooting.",
+    "evidence": [
+      "No explicit P1/SEV1 tag or urgent escalation instruction is present in the provided interactions."
+    ]
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60185126
+}

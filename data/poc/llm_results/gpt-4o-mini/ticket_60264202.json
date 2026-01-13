@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI response provided a relevant and specific action by attaching the requested report, indicating it did not serve generic filler or misleading information.",
+    "evidence": [
+      "Hi Team, Your requested report is attached. Best regards, Kayako Automation [2025-12-16T08:00:55+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was stuck in an AI loop or unable to reach a human as the communication appears to be straightforward.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI did not ask for the same information repeatedly; instead, it provided the necessary report based on the initial ticket.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between responses was 0.0 hours, indicating immediate responses without delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the AI provided the requested report, indicating it was not closed while awaiting customer input.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The provided ticket does not indicate any high-priority or severe issue that would necessitate immediate escalation or specific handling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI response provided a relevant and specific action by attaching the requested report, indicating it did not serve generic filler or misleading information.\",\n    \"evidence\": [\"Hi Team, Your requested report is attached. Best regards, Kayako Automation [2025-12-16T08:00:55+00:00]\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was stuck in an AI loop or unable to reach a human as the communication appears to be straightforward.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not ask for the same information repeatedly; instead, it provided the necessary report based on the initial ticket.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between responses was 0.0 hours, indicating immediate responses without delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the AI provided the requested report, indicating it was not closed while awaiting customer input.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided ticket does not indicate any high-priority or severe issue that would necessitate immediate escalation or specific handling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60264202
+}

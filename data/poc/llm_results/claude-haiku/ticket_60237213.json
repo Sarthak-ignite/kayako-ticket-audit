@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient evidence as the interaction appears incomplete.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a partial customer message with no visible AI interaction yet.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No previous context or responses are visible to assess this pattern.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly mentions they have tried to reach out multiple times without a reply, suggesting significant response delays.",
+    "evidence": [
+      "[2025-11-06T08:30:23+00:00] Customer states: 'We had tried to reach out a few times now without a reply.'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "With only a partial customer message, there's not enough context to confirm premature closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal, and there's insufficient information about the issue's severity.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient evidence as the interaction appears incomplete.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a partial customer message with no visible AI interaction yet.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No previous context or responses are visible to assess this pattern.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer explicitly mentions they have tried to reach out multiple times without a reply, suggesting significant response delays.\",\n    \"evidence\": [\n      \"[2025-11-06T08:30:23+00:00] Customer states: 'We had tried to reach out a few times now without a reply.'\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"With only a partial customer message, there's not enough context to confirm premature closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal, and there's insufficient information about the issue's severity.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "claude-haiku",
+  "_ticket_id": 60237213
+}

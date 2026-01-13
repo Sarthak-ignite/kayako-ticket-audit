@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The interaction appears to be an auto-generated summary with no actual customer issue or resolution visible.",
+    "evidence": [
+      "[2025-10-05T06:47:57+00:00] Kayako - ticket id 60214082 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient context to determine AI looping behavior.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer interaction or context is visible to assess this pattern.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Cannot determine response delays with the limited information provided.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Insufficient context to determine if ticket was closed prematurely.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is marked as low priority, and no technical details are present.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the limited information provided, I'll analyze the quality patterns:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The interaction appears to be an auto-generated summary with no actual customer issue or resolution visible.\",\n    \"evidence\": [\"[2025-10-05T06:47:57+00:00] Kayako - ticket id 60214082 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient context to determine AI looping behavior.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer interaction or context is visible to assess this pattern.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine response delays with the limited information provided.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient context to determine if ticket was closed prematurely.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is marked as low priority, and no technical details are present.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket contains only an AI-generated summary\n- No actual customer interaction or support resolution is visible\n- Most patterns cannot be definitively assessed due to lack of context\n- The only detectable issue is a potentially generic AI response\n\nRecommendation: More complete ticket details would be needed for a comprehensive quality analysis.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60214082
+}

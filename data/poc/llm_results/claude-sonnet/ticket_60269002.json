@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI automation successfully delivered the requested report as promised. There is no evidence of generic filler, wrong information, or unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer interaction visible in this ticket. The automation created the ticket and immediately provided the report without any looping or requests for information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No context was ignored as there were no customer interactions or previously provided information in this automated report delivery ticket.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The report was delivered within 3 seconds of ticket creation. There were no delays in this automated process.",
+    "evidence": [
+      "[2025-12-23T08:00:53+00:00] Initial ticket creation",
+      "[2025-12-23T08:00:56+00:00] Your requested report is attached"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "This appears to be an automated report delivery system that completed its intended function. There is no evidence of a customer waiting for information or giving up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket for an automated report delivery, not a P1/Sev1 outage ticket requiring escalation.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI automation successfully delivered the requested report as promised. There is no evidence of generic filler, wrong information, or unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no customer interaction visible in this ticket. The automation created the ticket and immediately provided the report without any looping or requests for information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No context was ignored as there were no customer interactions or previously provided information in this automated report delivery ticket.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The report was delivered within 3 seconds of ticket creation. There were no delays in this automated process.\",\n    \"evidence\": [\"[2025-12-23T08:00:53+00:00] Initial ticket creation\", \"[2025-12-23T08:00:56+00:00] Your requested report is attached\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"This appears to be an automated report delivery system that completed its intended function. There is no evidence of a customer waiting for information or giving up.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket for an automated report delivery, not a P1/Sev1 outage ticket requiring escalation.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60269002
+}

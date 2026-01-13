@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear example of the AI giving incorrect facts, filler generic promises, or unkept promises in the transcript; ATLAS posted a short transcript/action but did not provide misleading guidance.",
+    "evidence": [
+      "[2025-12-02T15:23:15+00:00] (AI) ATLAS: Action: l1",
+      "[2025-12-02T15:22:44+00:00] (AI) ATLAS: Here is a transcript of the customer's recent interaction with ATLAS chat:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer explicitly asked for human assistance and ATLAS logged a handoff/action; a human agent (Mike) responded the same day, so there is no prolonged AI-only loop.",
+    "evidence": [
+      "[2025-12-02T15:22:37+00:00] (Customer) Alejandro Antu\u00f1a: Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?",
+      "[2025-12-02T15:23:15+00:00] (AI) ATLAS: Action: l1",
+      "[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: Dear Alejandro, Based on the screenshots you provided, the filtering rule is not being applied..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The agent referenced the customer's screenshots in a prior reply and later requested additional Support Information and debug logs (which are different artifacts), so there's no clear repeat request for the same files the customer already supplied.",
+    "evidence": [
+      "[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: Based on the screenshots you provided, the filtering rule is not being applied...",
+      "[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep",
+      "[2025-12-02T15:33:40+00:00] (Customer) Alejandro Antu\u00f1a: capturas.docx"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer and agent messages; the max gap reported is 44.3 hours and an agent follow-up came ~44 hours after the customer's messages.",
+    "evidence": [
+      "[2025-12-02T18:15:10+00:00] (Customer) Alejandro Antu\u00f1a: capturas.docx",
+      "[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep",
+      "Ticket metadata: Max gap between responses (hours): 44.3"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is closed, there is no explicit evidence the customer was left waiting after a promised action or that they abandoned the ticket; the last agent action requested more logs but no explicit closure while the customer awaited a response is shown.",
+    "evidence": [
+      "[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep",
+      "Ticket Context: Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The agent provided a targeted explanation about the 'Banned URLs' rule and requested specific support/debug files rather than only offering generic low-effort troubleshooting, so there is no clear mis-handling for a high-severity issue.",
+    "evidence": [
+      "[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: Based on the screenshots you provided, the filtering rule is not being applied because the \u201cBanned URLs\u201d rule is limited",
+      "[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear example of the AI giving incorrect facts, filler generic promises, or unkept promises in the transcript; ATLAS posted a short transcript/action but did not provide misleading guidance.\",\n    \"evidence\": [\"[2025-12-02T15:23:15+00:00] (AI) ATLAS: Action: l1\", \"[2025-12-02T15:22:44+00:00] (AI) ATLAS: Here is a transcript of the customer's recent interaction with ATLAS chat:\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer explicitly asked for human assistance and ATLAS logged a handoff/action; a human agent (Mike) responded the same day, so there is no prolonged AI-only loop.\",\n    \"evidence\": [\"[2025-12-02T15:22:37+00:00] (Customer) Alejandro Antu\u00f1a: Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\", \"[2025-12-02T15:23:15+00:00] (AI) ATLAS: Action: l1\", \"[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: Dear Alejandro, Based on the screenshots you provided, the filtering rule is not being applied...\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The agent referenced the customer's screenshots in a prior reply and later requested additional Support Information and debug logs (which are different artifacts), so there's no clear repeat request for the same files the customer already supplied.\",\n    \"evidence\": [\"[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: Based on the screenshots you provided, the filtering rule is not being applied...\", \"[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep\", \"[2025-12-02T15:33:40+00:00] (Customer) Alejandro Antu\u00f1a: capturas.docx\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between customer and agent messages; the max gap reported is 44.3 hours and an agent follow-up came ~44 hours after the customer's messages.\",\n    \"evidence\": [\"[2025-12-02T18:15:10+00:00] (Customer) Alejandro Antu\u00f1a: capturas.docx\", \"[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep\", \"Ticket metadata: Max gap between responses (hours): 44.3\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is closed, there is no explicit evidence the customer was left waiting after a promised action or that they abandoned the ticket; the last agent action requested more logs but no explicit closure while the customer awaited a response is shown.\",\n    \"evidence\": [\"[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep\", \"Ticket Context: Status: closed\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The agent provided a targeted explanation about the 'Banned URLs' rule and requested specific support/debug files rather than only offering generic low-effort troubleshooting, so there is no clear mis-handling for a high-severity issue.\",\n    \"evidence\": [\"[2025-12-02T17:37:29+00:00] (Employee) Mike Kebede: Based on the screenshots you provided, the filtering rule is not being applied because the \u201cBanned URLs\u201d rule is limited\", \"[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep\"]\n}}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60254579
+}

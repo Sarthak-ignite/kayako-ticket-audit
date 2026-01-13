@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses appear to provide relevant information and do not make unrealistic promises or offer incorrect advice.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interactions show the customer was able to communicate directly with the support team and did not get stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support representatives recognized the customer's inputs and focused on addressing the existing issues without asking for previously provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between responses, with a maximum delay of 97.5 hours, which indicates poor response times.",
+    "evidence": [
+      "AI commented privately 2025-12-18T08:17:54+00:00 and customer last commented 2025-12-16T12:02:35+00:00 (97.5 hours)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while the customer was still active in the ticket process, indicating potential unanswered concerns.",
+    "evidence": [
+      "AI commented publicly 2025-12-18T08:17:54+00:00: 'Thank you for updating us.' - this implies ongoing communication while the ticket closed."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Responses were generic and did not address the urgency of the situation adequately, resorting to standard troubleshooting steps.",
+    "evidence": [
+      "Employee commented publicly 2025-12-16T10:56:01+00:00: 'You would need to enable the Watchdog autorestart using the steps from the article.' - suggesting a standard response."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses appear to provide relevant information and do not make unrealistic promises or offer incorrect advice.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions show the customer was able to communicate directly with the support team and did not get stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support representatives recognized the customer's inputs and focused on addressing the existing issues without asking for previously provided information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between responses, with a maximum delay of 97.5 hours, which indicates poor response times.\",\n    \"evidence\": [\"AI commented privately 2025-12-18T08:17:54+00:00 and customer last commented 2025-12-16T12:02:35+00:00 (97.5 hours)\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while the customer was still active in the ticket process, indicating potential unanswered concerns.\",\n    \"evidence\": [\"AI commented publicly 2025-12-18T08:17:54+00:00: 'Thank you for updating us.' - this implies ongoing communication while the ticket closed.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Responses were generic and did not address the urgency of the situation adequately, resorting to standard troubleshooting steps.\",\n    \"evidence\": [\"Employee commented publicly 2025-12-16T10:56:01+00:00: 'You would need to enable the Watchdog autorestart using the steps from the article.' - suggesting a standard response.\"]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60256173
+}

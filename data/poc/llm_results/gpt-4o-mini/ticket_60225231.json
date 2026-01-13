@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No significant AI-generated responses were present in the interactions that failed to provide relevant information or made unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to engage with human representatives and did not experience repeated requests for the same information without progression.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Responses from the support staff indicate that they acknowledged previous information provided by the customer without requesting duplicates.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant response delay of 76.8 hours between interactions, which is excessive for a high-priority ticket.",
+    "evidence": [
+      "Max gap between responses: 76.8 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not appear to have been closed prematurely, as there is no evidence the customer was waiting for promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Support staff actively engaged with troubleshooting specific to the ticket, thus not exhibiting generic handling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No significant AI-generated responses were present in the interactions that failed to provide relevant information or made unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer was able to engage with human representatives and did not experience repeated requests for the same information without progression.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Responses from the support staff indicate that they acknowledged previous information provided by the customer without requesting duplicates.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant response delay of 76.8 hours between interactions, which is excessive for a high-priority ticket.\",\n    \"evidence\": [\"Max gap between responses: 76.8 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not appear to have been closed prematurely, as there is no evidence the customer was waiting for promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Support staff actively engaged with troubleshooting specific to the ticket, thus not exhibiting generic handling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60225231
+}

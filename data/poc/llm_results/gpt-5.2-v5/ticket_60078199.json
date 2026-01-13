@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence that ATLAS provided incorrect/misleading guidance or produced broken/garbled outputs. The ATLAS transcript shows normal intake/triage behavior (license confirmation, request for uploads) and the case was routed to L1.",
+    "evidence": [
+      "Chat Support: \"Please select from the below or give me a detailed description of what\u2019s happening.\"",
+      "Kayako - ticket id 60078199 // ATLAS commented privately: \"Action: Send to l1\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No customer-facing signs show the customer being trapped in an AI loop or requesting a human and receiving only AI replies afterward. The ticket proceeds to human agents who respond publicly.",
+    "evidence": [
+      "Kayako - ticket id 60078199 // Muhammad Rizwan commented publicly: \"To help us investigate this further, please provide the following:\"",
+      "Kayako - ticket id 60078199 // Qasim Ali commented publicly: \"Dear Christian, Thank you for sharing the logs and the email sample.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Although the customer states (in a private note) that logs/screenshots were already provided, there is not enough customer-facing (public) evidence showing support ignored already-provided information; support later acknowledges receipt and explains why the provided sample wasn\u2019t in the log window.",
+    "evidence": [
+      "Kayako - ticket id 60078199 // Qasim Ali commented publicly: \"Thank you for sharing the logs and the email sample.\"",
+      "Kayako - ticket id 60078199 // Qasim Ali commented publicly: \"We reviewed the logs, and it appears that they start from June 23rd. However, the email sample you provided ... is dated June 16th, and as such, it is not present in the current log set.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is one long gap (about 7 days) between the customer\u2019s initial report and the first public agent response, but the rubric requires either an explicit customer complaint/apology for delay, or multiple qualifying gaps; only one qualifying gap is visible.",
+    "evidence": [
+      "Kayako - ticket id 60078199 // Christian Schmidt commented privately: \"Bug in MailEsstainels in the Pop3 conector. Because mails are retrieved twice or even more.\"",
+      "Kayako - ticket id 60078199 // Muhammad Rizwan commented publicly: \"[2025-06-23T03:38:59+00:00] ... To help us investigate this further, please provide the following:\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Closure-warning language appears, but there is no explicit statement that the ticket was actually closed/auto-closed while the issue was unresolved.",
+    "evidence": [
+      "Muhammad Rizwan (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Arafat Bakhsh (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket describes duplicate emails, but there is no explicit P1/SEV1/critical/outage language or business-blocking urgency. Support requests logs, reproduction steps, and version update before escalation, which is consistent with standard troubleshooting.",
+    "evidence": [
+      "Christian Schmidt (private): \"Because for EVERY mail that has at least 2 recipients in the same domain, the mails come twice.\"",
+      "Qasim Ali (public): \"To escalate this matter to our development team, we will need the issue to be reproduced on the latest version of MailEssentials (v22).\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60078199
+}

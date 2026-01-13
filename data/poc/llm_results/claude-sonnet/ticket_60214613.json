@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI (ATLAS) only performed initial ticket classification and didn't provide customer-facing responses that could be evaluated for quality issues.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer was not stuck in an AI loop. The ticket was quickly routed to human agents after initial AI classification, with first human response within 4.7 hours.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asked Andrew to provide the correct Salesforce opportunity, which he provided on 2025-10-06. However, on 2025-10-07, Raymond still stated the automation wasn't functioning due to missing Salesforce fields, without acknowledging Andrew had already updated them.",
+    "evidence": [
+      "[2025-10-06T18:26:46+00:00] Andrew Mugisha: 'This is the correct Salesforce opportunity: https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000'",
+      "[2025-10-07T10:00:54+00:00] Andrew Mugisha: 'I have updated the salesforce fields'",
+      "[2025-10-07T08:55:52+00:00] Raymond Guirguis: 'The ATLAS automation for this customer is currently not functioning because the required Salesforce fields that store'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a 25.5-hour gap between customer reporting the persistent issue on 2025-10-09 and the team responding on 2025-10-10, despite this being marked as an urgent priority ticket.",
+    "evidence": [
+      "[2025-10-09T13:30:55+00:00] Andrew Mugisha: 'The customer reports still seeing the following error'",
+      "[2025-10-10T03:21:05+00:00] Alexandr Oliynyk: 'We were unable to reproduce the issue impersonating one of the admin accounts'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed after Raymond's public comment stating the issue was resolved, but that comment appears incomplete ('related to case sensitivity in the customer's') and there's no evidence of customer confirmation that the issue was actually fixed.",
+    "evidence": [
+      "[2025-10-11T12:22:00+00:00] Raymond Guirguis: 'We identified that the issue was related to case sensitivity in the customer's' [message appears cut off]",
+      "[2025-10-11T12:08:50+00:00] Raymond Guirguis (private): 'This is resolved and deployed now'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While this was marked urgent and involved a customer unable to add devices, the support team appropriately worked on backend automation fixes and onboarding issues rather than generic troubleshooting. No evidence of inappropriate generic troubleshooting steps.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI (ATLAS) only performed initial ticket classification and didn't provide customer-facing responses that could be evaluated for quality issues.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer was not stuck in an AI loop. The ticket was quickly routed to human agents after initial AI classification, with first human response within 4.7 hours.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support asked Andrew to provide the correct Salesforce opportunity, which he provided on 2025-10-06. However, on 2025-10-07, Raymond still stated the automation wasn't functioning due to missing Salesforce fields, without acknowledging Andrew had already updated them.\",\n    \"evidence\": [\n      \"[2025-10-06T18:26:46+00:00] Andrew Mugisha: 'This is the correct Salesforce opportunity: https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000'\",\n      \"[2025-10-07T10:00:54+00:00] Andrew Mugisha: 'I have updated the salesforce fields'\",\n      \"[2025-10-07T08:55:52+00:00] Raymond Guirguis: 'The ATLAS automation for this customer is currently not functioning because the required Salesforce fields that store'\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a 25.5-hour gap between customer reporting the persistent issue on 2025-10-09 and the team responding on 2025-10-10, despite this being marked as an urgent priority ticket.\",\n    \"evidence\": [\n      \"[2025-10-09T13:30:55+00:00] Andrew Mugisha: 'The customer reports still seeing the following error'\",\n      \"[2025-10-10T03:21:05+00:00] Alexandr Oliynyk: 'We were unable to reproduce the issue impersonating one of the admin accounts'\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed after Raymond's public comment stating the issue was resolved, but that comment appears incomplete ('related to case sensitivity in the customer's') and there's no evidence of customer confirmation that the issue was actually fixed.\",\n    \"evidence\": [\n      \"[2025-10-11T12:22:00+00:00] Raymond Guirguis: 'We identified that the issue was related to case sensitivity in the customer's' [message appears cut off]\",\n      \"[2025-10-11T12:08:50+00:00] Raymond Guirguis (private): 'This is resolved and deployed now'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"While this was marked urgent and involved a customer unable to add devices, the support team appropriately worked on backend automation fixes and onboarding issues rather than generic troubleshooting. No evidence of inappropriate generic troubleshooting steps.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60214613
+}

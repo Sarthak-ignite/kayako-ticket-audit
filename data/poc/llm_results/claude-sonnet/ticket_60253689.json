@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No substantive AI response was provided to evaluate quality. The only AI action was a private internal note closing the ticket.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There was no loop or repeated AI requests. The ticket consisted of a single customer message followed by immediate closure.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No context was ignored as there was no support interaction or troubleshooting attempt. The ticket appears to be a misdirected unsubscribe request.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket was closed within 18 seconds of the customer's message. No delays occurred.",
+    "evidence": [
+      "[2025-12-01T14:44:11+00:00] customer message",
+      "[2025-12-01T14:44:29+00:00] ticket closed"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed as non-billable without any public response to the customer or verification that their unsubscribe request was addressed.",
+    "evidence": [
+      "[2025-12-01T14:44:11+00:00] Aven Saren commented publicly: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.",
+      "[2025-12-01T14:44:29+00:00] ATLAS commented privately: Closing as non-billable"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not a P1/Sev1 issue, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No substantive AI response was provided to evaluate quality. The only AI action was a private internal note closing the ticket.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There was no loop or repeated AI requests. The ticket consisted of a single customer message followed by immediate closure.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No context was ignored as there was no support interaction or troubleshooting attempt. The ticket appears to be a misdirected unsubscribe request.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed within 18 seconds of the customer's message. No delays occurred.\",\n    \"evidence\": [\"[2025-12-01T14:44:11+00:00] customer message\", \"[2025-12-01T14:44:29+00:00] ticket closed\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed as non-billable without any public response to the customer or verification that their unsubscribe request was addressed.\",\n    \"evidence\": [\"[2025-12-01T14:44:11+00:00] Aven Saren commented publicly: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.\", \"[2025-12-01T14:44:29+00:00] ATLAS commented privately: Closing as non-billable\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not a P1/Sev1 issue, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60253689
+}

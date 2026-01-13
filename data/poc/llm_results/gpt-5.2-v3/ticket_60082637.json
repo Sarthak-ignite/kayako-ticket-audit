@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided transcript is truncated immediately after the AI begins responding (\"Based on your stated intent, it is ...[truncated]\"). With no visible AI troubleshooting content, there is no clear, unambiguous evidence that ATLAS gave incorrect, irrelevant, or broken-template guidance, or that the customer stated the AI was wrong/unhelpful.",
+    "evidence": [
+      "Chat Support: Got it! \ud83d\udc4c\n\nBased on your stated intent, it is ...[truncated]..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only one customer message and one (truncated) AI response are shown. There is no evidence the customer asked for a human, no repeated requests for the same info, and no looping behavior visible.",
+    "evidence": [
+      "Stanley Wanyoike: Gfi instance is not scanning emails. I have restarted all services, excluded GFI folders from scanning by the anti-virus, manually forced update by clicking download update to no avail."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The visible portion does not show support asking the customer to repeat steps already tried, nor does it show the customer stating they already provided information that was ignored. The AI response content is truncated, so context-ignoring cannot be confirmed.",
+    "evidence": [
+      "Stanley Wanyoike: ...I have restarted all services, excluded GFI folders from scanning by the anti-virus, manually forced update..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps are visible in the provided snippet, and there are no customer complaints about waiting or support apologies for delay.",
+    "evidence": [
+      "[2025-06-20T08:54:12+00:00] ... record of your conversation ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication in the provided content that the ticket was closed, auto-closed, or closed while an unanswered customer request remained pending.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not explicitly indicate SEV1/P1/Critical/Urgent status, nor does the customer explicitly state a production-wide outage, SLA/time-critical impact, or multi-user impact requiring escalation.",
+    "evidence": [
+      "Stanley Wanyoike: Gfi instance is not scanning emails."
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60082637
+}

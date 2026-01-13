@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI made a single terse statement but did not provide incorrect information, filler responses, or unkept promises; there is insufficient evidence of quality failures.",
+    "evidence": [
+      "[2025-10-29T14:10:49+00:00] (AI) ATLAS: Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one AI response and no repeated requests for the same information or evidence the customer was prevented from reaching a human.",
+    "evidence": [
+      "[2025-10-29T14:10:49+00:00] (AI) ATLAS: Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined",
+      "[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear instance of support asking for information already provided or ignoring referenced past tickets; the interactions are minimal and do not show repeated requests.",
+    "evidence": [
+      "[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly",
+      "[2025-10-29T14:10:49+00:00] (AI) ATLAS: Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All recorded interactions occurred within seconds of each other; there is no evidence of multi-day response delays in the timeline provided.",
+    "evidence": [
+      "[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly",
+      "[2025-10-29T14:10:49+00:00] (AI) ATLAS: Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined",
+      "[2025-10-29T14:10:51+00:00] (Customer) Xavier A Villarroel: Call Metadata [ SESSION ] : CA20c8936ea480568c29d3583fd5757945 [ RECORDING URL ] : [ SERVER-A 10/29/20"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket status is listed as closed, there is no explicit evidence in the interactions that the ticket was closed while the customer was still waiting for promised information or that the customer abandoned the ticket.",
+    "evidence": [
+      "Ticket Context: Status: closed",
+      "[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The AI did not provide generic troubleshooting steps for a high-priority outage; it only reported that a component could not be determined, so there is no evidence of improper P1/Priority handling.",
+    "evidence": [
+      "[2025-10-29T14:10:49+00:00] (AI) ATLAS: Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined",
+      "Ticket Context: Priority: urgent"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI made a single terse statement but did not provide incorrect information, filler responses, or unkept promises; there is insufficient evidence of quality failures.\",\n    \"evidence\": [\n      \"[2025-10-29T14:10:49+00:00] (AI) ATLAS: Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one AI response and no repeated requests for the same information or evidence the customer was prevented from reaching a human.\",\n    \"evidence\": [\n      \"[2025-10-29T14:10:49+00:00] (AI) ATLAS: Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined\",\n      \"[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear instance of support asking for information already provided or ignoring referenced past tickets; the interactions are minimal and do not show repeated requests.\",\n    \"evidence\": [\n      \"[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\",\n      \"[2025-10-29T14:10:49+00:00] (AI) ATLAS: Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All recorded interactions occurred within seconds of each other; there is no evidence of multi-day response delays in the timeline provided.\",\n    \"evidence\": [\n      \"[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\",\n      \"[2025-10-29T14:10:49+00:00] (AI) ATLAS: Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined\",\n      \"[2025-10-29T14:10:51+00:00] (Customer) Xavier A Villarroel: Call Metadata [ SESSION ] : CA20c8936ea480568c29d3583fd5757945 [ RECORDING URL ] : [ SERVER-A 10/29/20\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket status is listed as closed, there is no explicit evidence in the interactions that the ticket was closed while the customer was still waiting for promised information or that the customer abandoned the ticket.\",\n    \"evidence\": [\n      \"Ticket Context: Status: closed\",\n      \"[2025-10-29T14:10:26+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not provide generic troubleshooting steps for a high-priority outage; it only reported that a component could not be determined, so there is no evidence of improper P1/Priority handling.\",\n    \"evidence\": [\n      \"[2025-10-29T14:10:49+00:00] (AI) ATLAS: Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined\",\n      \"Ticket Context: Priority: urgent\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60231535
+}

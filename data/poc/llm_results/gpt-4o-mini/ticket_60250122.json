@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Two AI responses noted, but none demonstrate misinformation or unfulfilled promises; responses seem relevant to the ticket context.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although there are many AI interactions, there is no evidence that the customer is unable to reach a human support agent or that the AI is looping.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI does not acknowledge the customer\u2019s previous message about trying incognito mode while experiencing issues, suggesting a lack of context awareness.",
+    "evidence": [
+      "[2025-11-25T15:27:36+00:00] (Customer) Sheena Kenny: Hi, the same issue occurs using incognito mode, cookies are enabled...",
+      "[2025-11-25T11:32:25+00:00] (AI) ATLAS commented publicly: Thank you for reaching out regarding the intermittent repeated login prompts..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The time to first human was 763.9 hours, and maximum gaps exceeded 600 hours, indicating significant delays.",
+    "evidence": [
+      "[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-12-01T04:38:30+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication that the ticket was closed or that the customer was left waiting for promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The interactions do not indicate a high-priority situation requiring immediate escalation; issues appear routine.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Two AI responses noted, but none demonstrate misinformation or unfulfilled promises; responses seem relevant to the ticket context.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although there are many AI interactions, there is no evidence that the customer is unable to reach a human support agent or that the AI is looping.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI does not acknowledge the customer\u2019s previous message about trying incognito mode while experiencing issues, suggesting a lack of context awareness.\",\n    \"evidence\": [\n      \"[2025-11-25T15:27:36+00:00] (Customer) Sheena Kenny: Hi, the same issue occurs using incognito mode, cookies are enabled...\",\n      \"[2025-11-25T11:32:25+00:00] (AI) ATLAS commented publicly: Thank you for reaching out regarding the intermittent repeated login prompts...\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The time to first human was 763.9 hours, and maximum gaps exceeded 600 hours, indicating significant delays.\",\n    \"evidence\": [\n      \"[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-12-01T04:38:30+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the ticket was closed or that the customer was left waiting for promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions do not indicate a high-priority situation requiring immediate escalation; issues appear routine.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60250122
+}

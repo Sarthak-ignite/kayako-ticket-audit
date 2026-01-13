@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible AI content is meta-routing/escalation notes and a truncated chat transcript; there is no clear AI troubleshooting guidance or promises in the provided excerpts to judge as wrong/generic/unkept.",
+    "evidence": [
+      "[2025-10-20T19:36:44+00:00] (AI) Centralsupport-ai-acc: \"[customer_escalation] The customer escalated the Case.\"",
+      "[2025-10-20T19:28:49+00:00] (AI) ATLAS: \"Action: l1\"",
+      "[2025-10-20T19:28:17+00:00] (AI) ATLAS: \"Here is a transcript of the customer's recent interaction with ATLAS chat:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer reached human agents quickly and multiple employees responded; there\u2019s no evidence the AI repeatedly requested the same information or blocked access to a human.",
+    "evidence": [
+      "[2025-10-21T03:11:27+00:00] (Employee) Carlo Koh: \"Dear Milos, Thank you for contacting the Kerio Control Support Team...\"",
+      "[2025-10-23T11:51:44+00:00] (Employee) Mike Kebede: \"Dear Milos, Thank you for your update...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Agents appear to reference prior customer-provided materials (logs, license file) rather than re-asking for the same items; no clear repeated requests are shown in the excerpts.",
+    "evidence": [
+      "[2025-10-23T17:34:03+00:00] (Employee) Mike Kebede: \"Thank you for sending the log files. After reviewing them...\"",
+      "[2025-10-23T11:51:44+00:00] (Employee) Mike Kebede: \"The license.key file has already been attached to this ticket.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap between an employee update and the next visible customer reply, consistent with the provided 'Max gap between responses (hours): 76.8' for an urgent ticket.",
+    "evidence": [
+      "[2025-10-24T10:12:04+00:00] (Employee) Mike Kebede: \"Outbound access to appmanager.gfi.com is confirmed to be working...\"",
+      "[2025-10-27T14:59:02+00:00] (Employee) Mike Kebede: \"Dear Milos, You've confirmed that DNS, outbound connectivity, and network access are all working properly...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is marked closed, the excerpts do not show a closure message from support or that the customer was waiting on promised information when it was closed.",
+    "evidence": [
+      "[2025-10-28T17:58:27+00:00] (Customer) Milos Hofman: \"Hi, your colleague solve this problem, but on the second trying...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The provided snippets show targeted troubleshooting (license validation, DNS/outbound connectivity, AppManager contact error) and internal discussion; there is no clear evidence of generic low-value steps (cache/VPN/etc.) instead of escalation.",
+    "evidence": [
+      "[2025-10-23T17:34:03+00:00] (Employee) Mike Kebede: \"After reviewing them, we can confirm that your license file is valid...\"",
+      "[2025-10-27T14:59:02+00:00] (Employee) Mike Kebede: \"You've confirmed that DNS, outbound connectivity, and network access are all working properly.\"",
+      "[2025-10-23T18:58:03+00:00] (Customer) Milos Hofman: \"1. test DNS, ok ... 3. outbond access is ok\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only visible AI content is meta-routing/escalation notes and a truncated chat transcript; there is no clear AI troubleshooting guidance or promises in the provided excerpts to judge as wrong/generic/unkept.\",\n    \"evidence\": [\n      \"[2025-10-20T19:36:44+00:00] (AI) Centralsupport-ai-acc: \\\"[customer_escalation] The customer escalated the Case.\\\"\",\n      \"[2025-10-20T19:28:49+00:00] (AI) ATLAS: \\\"Action: l1\\\"\",\n      \"[2025-10-20T19:28:17+00:00] (AI) ATLAS: \\\"Here is a transcript of the customer's recent interaction with ATLAS chat:\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer reached human agents quickly and multiple employees responded; there\u2019s no evidence the AI repeatedly requested the same information or blocked access to a human.\",\n    \"evidence\": [\n      \"[2025-10-21T03:11:27+00:00] (Employee) Carlo Koh: \\\"Dear Milos, Thank you for contacting the Kerio Control Support Team...\\\"\",\n      \"[2025-10-23T11:51:44+00:00] (Employee) Mike Kebede: \\\"Dear Milos, Thank you for your update...\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Agents appear to reference prior customer-provided materials (logs, license file) rather than re-asking for the same items; no clear repeated requests are shown in the excerpts.\",\n    \"evidence\": [\n      \"[2025-10-23T17:34:03+00:00] (Employee) Mike Kebede: \\\"Thank you for sending the log files. After reviewing them...\\\"\",\n      \"[2025-10-23T11:51:44+00:00] (Employee) Mike Kebede: \\\"The license.key file has already been attached to this ticket.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a multi-day gap between an employee update and the next visible customer reply, consistent with the provided 'Max gap between responses (hours): 76.8' for an urgent ticket.\",\n    \"evidence\": [\n      \"[2025-10-24T10:12:04+00:00] (Employee) Mike Kebede: \\\"Outbound access to appmanager.gfi.com is confirmed to be working...\\\"\",\n      \"[2025-10-27T14:59:02+00:00] (Employee) Mike Kebede: \\\"Dear Milos, You've confirmed that DNS, outbound connectivity, and network access are all working properly...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked closed, the excerpts do not show a closure message from support or that the customer was waiting on promised information when it was closed.\",\n    \"evidence\": [\n      \"[2025-10-28T17:58:27+00:00] (Customer) Milos Hofman: \\\"Hi, your colleague solve this problem, but on the second trying...\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided snippets show targeted troubleshooting (license validation, DNS/outbound connectivity, AppManager contact error) and internal discussion; there is no clear evidence of generic low-value steps (cache/VPN/etc.) instead of escalation.\",\n    \"evidence\": [\n      \"[2025-10-23T17:34:03+00:00] (Employee) Mike Kebede: \\\"After reviewing them, we can confirm that your license file is valid...\\\"\",\n      \"[2025-10-27T14:59:02+00:00] (Employee) Mike Kebede: \\\"You've confirmed that DNS, outbound connectivity, and network access are all working properly.\\\"\",\n      \"[2025-10-23T18:58:03+00:00] (Customer) Milos Hofman: \\\"1. test DNS, ok ... 3. outbond access is ok\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60225231
+}

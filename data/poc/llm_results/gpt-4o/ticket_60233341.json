@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no specific evidence of AI providing generic filler, wrong information, or making promises that aren't kept based on the available interaction logs.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interactions do not show any cycles or repeated requests for information, nor does the customer appear to be stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no clear indications that support ignored previously provided information or asked for the same information multiple times.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket indicates a maximum gap of 0.0 hours between responses, showing no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket status is closed, but the available interactions do not show a resolution was communicated or a confirmation from the customer.",
+    "evidence": [
+      "[2025-10-31T14:57:34+00:00] Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is not high or identified as an outage, so this category is not applicable.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no specific evidence of AI providing generic filler, wrong information, or making promises that aren't kept based on the available interaction logs.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions do not show any cycles or repeated requests for information, nor does the customer appear to be stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no clear indications that support ignored previously provided information or asked for the same information multiple times.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket indicates a maximum gap of 0.0 hours between responses, showing no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket status is closed, but the available interactions do not show a resolution was communicated or a confirmation from the customer.\",\n    \"evidence\": [\"[2025-10-31T14:57:34+00:00] Status: closed\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is not high or identified as an outage, so this category is not applicable.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60233341
+}

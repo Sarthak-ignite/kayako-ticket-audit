@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear evidence of AI responses being generic filler or providing incorrect information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was stuck in an AI loop or repeatedly asked for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask for information that the customer had already provided, and there is no evidence of past information being disregarded.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays between interactions, with over 15 days elapsed before the first human response and an additional delay between AI and human actions.",
+    "evidence": [
+      "[2025-12-10T06:21:10+00:00] (Customer) Kyoko Yamada",
+      "[2025-12-25T13:50:09+00:00] (AI) Centralsupport-ai-acc",
+      "[2025-12-29T04:58:26+00:00] (Employee) Muhammad Rizwan"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was completed after providing the requested license, and there is no indication of the customer awaiting further information.",
+    "evidence": [
+      "[2025-12-29T04:58:26+00:00] (Employee) Muhammad Rizwan: 'Thank you for your patience. As requested, please find the license attached.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket was not marked as high-priority or related to an outage, and there were no generic troubleshooting steps provided.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence of AI responses being generic filler or providing incorrect information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was stuck in an AI loop or repeatedly asked for the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support did not ask for information that the customer had already provided, and there is no evidence of past information being disregarded.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays between interactions, with over 15 days elapsed before the first human response and an additional delay between AI and human actions.\",\n    \"evidence\": [\n      \"[2025-12-10T06:21:10+00:00] (Customer) Kyoko Yamada\",\n      \"[2025-12-25T13:50:09+00:00] (AI) Centralsupport-ai-acc\",\n      \"[2025-12-29T04:58:26+00:00] (Employee) Muhammad Rizwan\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was completed after providing the requested license, and there is no indication of the customer awaiting further information.\",\n    \"evidence\": [\n      \"[2025-12-29T04:58:26+00:00] (Employee) Muhammad Rizwan: 'Thank you for your patience. As requested, please find the license attached.'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was not marked as high-priority or related to an outage, and there were no generic troubleshooting steps provided.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60260239
+}

@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI posted largely boilerplate acknowledgements and then effectively paused the ticket for an extreme duration (\u201c9999 hours\u201d), which is not a meaningful next step for the customer and is not followed by a substantive resolution in the visible thread.",
+    "evidence": [
+      "[2025-12-01T04:38:30+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-11-25T11:32:25+00:00] (AI) ATLAS: \"Dear Sheena,\\n\\nThank you for reaching out regarding the intermittent repeated login prompts on your staging environment at https://forum-stage.d\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There isn\u2019t clear evidence the AI repeatedly asked for the same information or trapped the customer in repeated AI-only steps; the timeline shows only initial AI acknowledgements and internal automation notes.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer provided additional details (incognito, cookies enabled, multiple users affected), the provided excerpts do not show support asking again for the same details/logs or explicitly ignoring them.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows multi-day to multi-week gaps between meaningful interactions, consistent with the provided metrics (max gap 613.5 hours and time to first human 763.9 hours).",
+    "evidence": [
+      "[2025-11-25T15:27:36+00:00] (Customer) Sheena Kenny: \"Hi, the same issue occurs using incognito mode, cookies are enabled, and confirmed that multiple users are experiencing the same issue,\"",
+      "[2025-12-01T04:36:17.661+0000] (General) None: \"SaaS Jira - issue key AURORA-840 // Issue is created...\"",
+      "[2025-12-27T07:23:12+00:00] (Employee) Santhosh M: \"The clone https://trilogy-eng.atlassian.net/browse/AURORA-872 seems to have been closed. Will link ticket with the correct LIA: https://\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket itself is not shown as closed in the interaction log (it\u2019s currently listed as \u201chold\u201d), and there\u2019s no explicit closure message to the customer; a linked JIRA being closed is not clear evidence of ticket closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is \u201cnormal,\u201d so Sev1/P1 handling expectations don\u2019t apply based on the provided context.",
+    "evidence": [
+      "Ticket Context: \"Priority: normal\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI posted largely boilerplate acknowledgements and then effectively paused the ticket for an extreme duration (\u201c9999 hours\u201d), which is not a meaningful next step for the customer and is not followed by a substantive resolution in the visible thread.\",\n    \"evidence\": [\n      \"[2025-12-01T04:38:30+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-12-27T07:23:42+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-11-25T11:32:25+00:00] (AI) ATLAS: \\\"Dear Sheena,\\\\n\\\\nThank you for reaching out regarding the intermittent repeated login prompts on your staging environment at https://forum-stage.d\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There isn\u2019t clear evidence the AI repeatedly asked for the same information or trapped the customer in repeated AI-only steps; the timeline shows only initial AI acknowledgements and internal automation notes.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"While the customer provided additional details (incognito, cookies enabled, multiple users affected), the provided excerpts do not show support asking again for the same details/logs or explicitly ignoring them.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket shows multi-day to multi-week gaps between meaningful interactions, consistent with the provided metrics (max gap 613.5 hours and time to first human 763.9 hours).\",\n    \"evidence\": [\n      \"[2025-11-25T15:27:36+00:00] (Customer) Sheena Kenny: \\\"Hi, the same issue occurs using incognito mode, cookies are enabled, and confirmed that multiple users are experiencing the same issue,\\\"\",\n      \"[2025-12-01T04:36:17.661+0000] (General) None: \\\"SaaS Jira - issue key AURORA-840 // Issue is created...\\\"\",\n      \"[2025-12-27T07:23:12+00:00] (Employee) Santhosh M: \\\"The clone https://trilogy-eng.atlassian.net/browse/AURORA-872 seems to have been closed. Will link ticket with the correct LIA: https://\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket itself is not shown as closed in the interaction log (it\u2019s currently listed as \u201chold\u201d), and there\u2019s no explicit closure message to the customer; a linked JIRA being closed is not clear evidence of ticket closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is \u201cnormal,\u201d so Sev1/P1 handling expectations don\u2019t apply based on the provided context.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Priority: normal\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60250122
+}

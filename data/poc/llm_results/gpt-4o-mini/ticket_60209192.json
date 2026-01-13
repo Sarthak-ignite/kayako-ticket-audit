@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI provided a vague response indicating that the component could not be determined, which does not address the customer's specific issue.",
+    "evidence": [
+      "[2025-09-29T14:02:50+00:00] (AI) ATLAS: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer did not seem to be stuck in a loop with the AI, as they were able to communicate directly with a human afterwards.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support agent's request for error details disregarded the customer's initial report of having issues creating locations.",
+    "evidence": [
+      "[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant gap of 16.9 hours before the first human responded to the customer's ticket.",
+    "evidence": [
+      "Time to first human: 16.9 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was waiting for promised information before the ticket was closed, nor did the customer indicate frustration for not receiving a follow-up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "As this is a high-priority ticket, the generic prompts used by the AI and the initial human response fail to address urgent troubleshooting needs effectively.",
+    "evidence": [
+      "[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI provided a vague response indicating that the component could not be determined, which does not address the customer's specific issue.\",\n    \"evidence\": [\"[2025-09-29T14:02:50+00:00] (AI) ATLAS: Component could not be determined\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer did not seem to be stuck in a loop with the AI, as they were able to communicate directly with a human afterwards.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support agent's request for error details disregarded the customer's initial report of having issues creating locations.\",\n    \"evidence\": [\"[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant gap of 16.9 hours before the first human responded to the customer's ticket.\",\n    \"evidence\": [\"Time to first human: 16.9 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer was waiting for promised information before the ticket was closed, nor did the customer indicate frustration for not receiving a follow-up.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"As this is a high-priority ticket, the generic prompts used by the AI and the initial human response fail to address urgent troubleshooting needs effectively.\",\n    \"evidence\": [\"[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?\"]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60209192
+}

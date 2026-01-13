@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The public reply appears to be a broken/incorrect template and does not directly address the customer\u2019s explicit request to speak to support or the request for an update on an existing ticket. The salutation error (\u201cDear ATLAS\u201d) strongly indicates an AI/template malfunction, which harms credibility and customer experience.",
+    "evidence": [
+      "Customer: \"Speak to support team please\"",
+      "Customer: \"ticket open - #60010193 update on case\"",
+      "ATLAS public reply: \"Dear ATLAS,\"",
+      "ATLAS public reply is largely a list of article links/questions without addressing the requested update on #60010193."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer asked to speak to the support team, but the next response is still an AI-driven information request rather than connecting to a human or acknowledging/initiating escalation. While not a prolonged loop, it matches the pattern of a human request being met with more AI gating.",
+    "evidence": [
+      "Customer: \"Speak to support team please\"",
+      "ATLAS public reply: requests logs/articles and ends with process language rather than routing to a human (e.g., \"could you please provide the following information\")."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly referenced an already-open ticket and asked for an update; support did not acknowledge the prior case or provide continuity. The response treats the issue as a new, standalone troubleshooting flow.",
+    "evidence": [
+      "Customer: \"ticket open - #60010193 update on case\"",
+      "Customer: \"I have a ticket open already\"",
+      "ATLAS public reply: does not reference ticket #60010193 or indicate it reviewed/linked the existing case; instead asks generic setup questions and for logs."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No meaningful delay is visible in the provided timeline; responses occur within seconds.",
+    "evidence": [
+      "Customer message at 2025-04-02T09:07:30+00:00 and public response at 2025-04-02T09:08:03+00:00."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication the ticket was closed, auto-closed, or marked resolved in the provided interactions.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer reports a service-impacting outage (emails not archiving since Monday) and requests to speak to someone urgently. The response follows a standard troubleshooting template with links and a one-week wait framing, with no visible escalation/priority handling or immediate human engagement.",
+    "evidence": [
+      "Customer: \"The journaling mailbox is not connecting and emails are not archiving\"",
+      "Customer: \"emails are not archiving since Monday and i need to speak to someone\"",
+      "ATLAS public reply: provides multiple KB links/questions and states, \"If you need more time, rest assured that the ticket will remain open for one additional week.\" (no escalation/urgent handling indicated)"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60011782
+}

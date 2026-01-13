@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI automation successfully delivered the requested report as intended. There is no evidence of generic filler, wrong information, or unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer interaction visible in this ticket. The AI automation simply delivered a report without any loop or barrier to human contact.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No context was ignored as there are no customer messages or previous interactions to reference. This appears to be an automated report delivery.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket shows only automated responses occurring within 2 seconds of each other. There are no significant delays between interactions.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "This appears to be an automated report delivery ticket that was appropriately closed after the report was delivered. There is no evidence of a customer waiting for information or giving up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is marked as 'normal', not P1/Sev1. This pattern does not apply to normal priority tickets.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI automation successfully delivered the requested report as intended. There is no evidence of generic filler, wrong information, or unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no customer interaction visible in this ticket. The AI automation simply delivered a report without any loop or barrier to human contact.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No context was ignored as there are no customer messages or previous interactions to reference. This appears to be an automated report delivery.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows only automated responses occurring within 2 seconds of each other. There are no significant delays between interactions.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"This appears to be an automated report delivery ticket that was appropriately closed after the report was delivered. There is no evidence of a customer waiting for information or giving up.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is marked as 'normal', not P1/Sev1. This pattern does not apply to normal priority tickets.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60264202
+}

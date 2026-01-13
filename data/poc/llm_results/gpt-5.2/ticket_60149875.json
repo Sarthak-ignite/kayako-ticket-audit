@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The visible AI replies are largely templated acknowledgements (e.g., repeated thanks/apologies) with no clear substantive troubleshooting, resolution, or concrete next steps shown in the excerpts. One AI message appears cut off mid-sentence, which also suggests low-quality/unfinished output in the public reply.",
+    "evidence": [
+      "[2025-08-07T18:45:23+00:00] (AI) ... commented publicly: \"Dear Jessica, Thank you for your follow-up regarding the persistent issue ...\" (generic filler; excerpt shows no actual action/answer)",
+      "[2025-07-31T23:19:26+00:00] (AI) ... commented publicly: \"Thank you for your detailed update...\" (acknowledgement without visible solution in excerpt)",
+      "[2025-07-22T20:50:05+00:00] (AI) ... commented publicly: \"Thank you for your continued patience... We understand the urgency...\" (generic reassurance; no visible concrete step in excerpt)",
+      "[2025-08-07T18:45:23+00:00] (AI) ... ends with: \"...in Community Analytics for the\" (message appears truncated/incomplete)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is not clear evidence that the customer is unable to reach a human or that the AI repeatedly cycles the customer through the same prompts. The log shows multiple AI and customer messages, but no explicit indication that human escalation was blocked or that identical questions were repeatedly asked.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer references providing screenshots/CSV exports and later reports the issue persists, the excerpts do not clearly show the AI re-requesting the same artifacts or ignoring already-provided details. A private note indicates a request for more information, but we cannot confirm it duplicated what was already provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly reports long waiting times without resolution/response, and the timeline shows multi-day gaps between interactions (e.g., from 7/23 to 7/31, and from 7/31 to 8/7).",
+    "evidence": [
+      "[2025-07-22T20:49:37+00:00] (Employee): \"...ASAP? This has now been open for 18 days without resoluti\"",
+      "[2025-08-07T18:44:40+00:00] (Employee): \"I have not received a response ... after reaching out last week\"",
+      "Interaction gaps: 2025-07-23 to 2025-07-31 (~8 days); 2025-07-31 to 2025-08-07 (~7 days)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The customer explicitly asks to reopen the ticket, indicating it was closed while the issue was still unresolved.",
+    "evidence": [
+      "[2025-07-31T23:18:28+00:00] (Employee): \"I would like to reopen this ticket. I am still having trouble...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer indicates urgency and long duration, there is no clear evidence in the excerpts that the issue was formally treated as P1/Sev1, nor that required immediate escalation procedures were skipped.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60149875
+}

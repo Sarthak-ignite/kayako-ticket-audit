@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI reply is generic filler and appears to be an incomplete transcript (includes HTML tags and a boilerplate thank-you) rather than a substantive support response.",
+    "evidence": [
+      "[2025-11-26T09:13:20+00:00] (AI) ATLAS: Kayako - ticket id 60250793 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI message and no repeated requests for the same information, so there is no evidence of the customer being stuck in a loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer messages or prior context are present that the AI could have ignored; the transcript shows only a generic AI note.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline contains a single AI entry and metadata shows max gap 0.0 hours, so there is no evidence of multi-day response delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is closed but there is no evidence the customer was waiting for promised information or that the customer had responded and given up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is normal priority and contains no troubleshooting steps; there is no evidence of mishandling a P1/SEV1 incident.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI reply is generic filler and appears to be an incomplete transcript (includes HTML tags and a boilerplate thank-you) rather than a substantive support response.\",\n    \"evidence\": [\n      \"[2025-11-26T09:13:20+00:00] (AI) ATLAS: Kayako - ticket id 60250793 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\\n  <div>\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI message and no repeated requests for the same information, so there is no evidence of the customer being stuck in a loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer messages or prior context are present that the AI could have ignored; the transcript shows only a generic AI note.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline contains a single AI entry and metadata shows max gap 0.0 hours, so there is no evidence of multi-day response delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is closed but there is no evidence the customer was waiting for promised information or that the customer had responded and given up.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is normal priority and contains no troubleshooting steps; there is no evidence of mishandling a P1/SEV1 incident.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60250793
+}

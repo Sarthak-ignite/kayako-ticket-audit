@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI appropriately escalated to engineering, created a GHI issue, and provided accurate updates when the issue was resolved. The responses were specific to the Apache version upgrade request.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer submitted one request, AI immediately escalated to engineering without requesting additional information or creating a loop. Customer was not stuck interacting with AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI and engineering team addressed the specific Apache version issue mentioned by the customer (upgrade from 2.4.62 to 2.4.65) without ignoring any provided context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a 67-hour delay before any human involvement, and the time to first human response aligns with significant gaps in the timeline. Customer reported on Nov 10 at 18:00, but the ticket shows extended processing time.",
+    "evidence": [
+      "[2025-11-10T18:00:48+00:00] (Customer) Jozef Kacala: Hi Team, GFI Langard is using Apache...",
+      "Time to first human (hours): 67.0",
+      "Max gap between responses (hours): 64.4"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after engineering successfully completed the Apache upgrade and AI informed the customer of the resolution. There's no evidence the customer was waiting for additional information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While this is a high-priority ticket, it's a component version upgrade request, not an outage. The AI appropriately escalated to engineering rather than attempting generic troubleshooting.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI appropriately escalated to engineering, created a GHI issue, and provided accurate updates when the issue was resolved. The responses were specific to the Apache version upgrade request.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer submitted one request, AI immediately escalated to engineering without requesting additional information or creating a loop. Customer was not stuck interacting with AI.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI and engineering team addressed the specific Apache version issue mentioned by the customer (upgrade from 2.4.62 to 2.4.65) without ignoring any provided context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a 67-hour delay before any human involvement, and the time to first human response aligns with significant gaps in the timeline. Customer reported on Nov 10 at 18:00, but the ticket shows extended processing time.\",\n    \"evidence\": [\"[2025-11-10T18:00:48+00:00] (Customer) Jozef Kacala: Hi Team, GFI Langard is using Apache...\", \"Time to first human (hours): 67.0\", \"Max gap between responses (hours): 64.4\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after engineering successfully completed the Apache upgrade and AI informed the customer of the resolution. There's no evidence the customer was waiting for additional information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"While this is a high-priority ticket, it's a component version upgrade request, not an outage. The AI appropriately escalated to engineering rather than attempting generic troubleshooting.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60239883
+}

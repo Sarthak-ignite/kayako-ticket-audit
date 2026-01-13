@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is insufficient information to evaluate AI response quality. The interaction only shows a summary message indicating a conversation occurred, but doesn't include the actual AI conversation content or customer responses.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Cannot determine if the customer was stuck in an AI loop. The ticket only contains a single post-conversation summary message, with no evidence of repeated requests or inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of context being ignored. The ticket contains only one interaction which is a summary of a previous AI chat, with no subsequent exchanges where context could be ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No response delays detected. The ticket shows a max gap of 0.0 hours between responses, and only contains a single interaction timestamp, indicating no delays occurred.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Cannot definitively determine premature closure. While the ticket is closed after only an AI summary post, it's marked as low priority and there's no evidence the customer was waiting for additional information or expressed dissatisfaction.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is not a high-priority ticket. The ticket is marked as 'low' priority and status shows it was handled appropriately for its priority level.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient information to evaluate AI response quality. The interaction only shows a summary message indicating a conversation occurred, but doesn't include the actual AI conversation content or customer responses.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if the customer was stuck in an AI loop. The ticket only contains a single post-conversation summary message, with no evidence of repeated requests or inability to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of context being ignored. The ticket contains only one interaction which is a summary of a previous AI chat, with no subsequent exchanges where context could be ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No response delays detected. The ticket shows a max gap of 0.0 hours between responses, and only contains a single interaction timestamp, indicating no delays occurred.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot definitively determine premature closure. While the ticket is closed after only an AI summary post, it's marked as low priority and there's no evidence the customer was waiting for additional information or expressed dissatisfaction.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is not a high-priority ticket. The ticket is marked as 'low' priority and status shows it was handled appropriately for its priority level.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60214082
+}

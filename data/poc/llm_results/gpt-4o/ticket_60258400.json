@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses are incomplete and fail to address the specific issue raised by the customer, leading to a lack of clarity.",
+    "evidence": [
+      "2025-12-08T11:16:26+00:00 - 'Thank you for sharing the log files and confirming that you have already attempted all the previously suggested solutions regardi'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer's issue persists despite AI interactions, and they request human intervention that does not promptly occur.",
+    "evidence": [
+      "2025-12-08T11:15:34+00:00 - 'none of the proposed solutions worked so far, here are the logs...'"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence that the support ignored previously provided information or asked for the same data repeatedly.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay of over a day in human intervention after the initial AI interactions.",
+    "evidence": [
+      "Time to first human (hours): 29.1"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence the ticket was closed prematurely while waiting for promised information from support.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "For a high-priority ticket, there was insufficient immediate escalation and more reliance on earlier troubleshooting steps.",
+    "evidence": [
+      "2025-12-08T11:24:37+00:00 - 'Action: l1'"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses are incomplete and fail to address the specific issue raised by the customer, leading to a lack of clarity.\",\n    \"evidence\": [\"2025-12-08T11:16:26+00:00 - 'Thank you for sharing the log files and confirming that you have already attempted all the previously suggested solutions regardi'\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer's issue persists despite AI interactions, and they request human intervention that does not promptly occur.\",\n    \"evidence\": [\"2025-12-08T11:15:34+00:00 - 'none of the proposed solutions worked so far, here are the logs...'\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the support ignored previously provided information or asked for the same data repeatedly.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay of over a day in human intervention after the initial AI interactions.\",\n    \"evidence\": [\"Time to first human (hours): 29.1\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the ticket was closed prematurely while waiting for promised information from support.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"For a high-priority ticket, there was insufficient immediate escalation and more reliance on earlier troubleshooting steps.\",\n    \"evidence\": [\"2025-12-08T11:24:37+00:00 - 'Action: l1'\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60258400
+}

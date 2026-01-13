@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS repeated generic/standard troubleshooting even after the customer indicated those steps had already been done, and the customer later stated support had been \"no useful\" for the ongoing problems. This suggests low-quality AI assistance that did not progress the case effectively early on.",
+    "evidence": [
+      "Customer: \"Followed steps, still same issues. The updates are failing every other hour or so\"",
+      "ATLAS (public): \"Please follow these step-by-step instructions to resolve the BitDefender update issue: ... Delete Version Files ... Restart ... Trigger a Manual Update\"",
+      "Customer (public): \"I have already performed these steps but will try again.\"",
+      "Customer (public): \"We have received no useful support on the multiple issues we\u2019ve experienced since being forced to upgrade MailEssentials UnifiedProtection Edition.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer request to \"connect to live agent\" appears only in an ATLAS private ticket-generation note, not as a direct customer-facing request followed by multiple AI-only replies. In the public thread, there is no clear customer request for a human that is then ignored by 2+ AI responses.",
+    "evidence": [
+      "ATLAS (private ticket-generation note): \"Please open ticket and connect to live agent\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While some early guidance may have been repetitive, there is not enough customer-facing evidence that support explicitly asked for the same information/steps again after the customer stated they had already provided/done them (in the strong-signal sense), nor is there a clear public complaint about being forced to repeat information.",
+    "evidence": [
+      "Customer (public): \"I have already performed these steps but will try again.\"",
+      "ATLAS (public): \"Since you have already performed the standard recovery steps for BitDefender updates...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were at least two separate multi-day gaps where the customer posted updates/questions and did not receive a staff response for well over 3 days (including a gap over 5 days).",
+    "evidence": [
+      "Customer (public, 2025-09-11): \"I really need a solution to this new software install...\"",
+      "Staff (public, 2025-09-18): \"To help us investigate this further, we will need a copy of the MailEssentials troubleshooting logs...\"",
+      "Customer (private, 2025-09-30): \"Still waiting on a response on failing updates.\"",
+      "Staff (public, 2025-10-11): \"We have reached out to our Development Team for assistance in resolving the issue.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although staff included a standard warning about the ticket staying open for one week unless the customer responds, the transcript does not show an explicit closure/auto-closure event while the issue remained unresolved.",
+    "evidence": [
+      "Staff (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer described serious recurring issues and blocklisting concerns, but there is no explicit P1/SEV1/outage declaration in the customer-facing ticket text. Also, support ultimately escalated to Development/Engineering rather than remaining in only generic troubleshooting.",
+    "evidence": [
+      "Customer (public): \"Every since being forced to add antivirus to MailEssentials we have had nothing but problems... we have been added to the senderscore.org block list 3 times.\"",
+      "Staff (public): \"We have reached out to our Development Team for assistance in resolving the issue.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60190547
+}

@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses are repetitive and process-heavy, but they are coherent and tied to the reported symptoms (recurring unresponsive Web UI/WAN). There is no explicit customer statement that the AI guidance was wrong/useless, and no clearly incorrect technical instruction is shown being corrected by later ticket content.",
+    "evidence": [
+      "\u201cSince the unit powers on and recovers after rebooting, indicating no obvious hardware failure, please complete the following to eliminate software, storage, or database issues before we escalate:\u201d",
+      "\u201cWe can assist with a Firebird database check/repair today during your specified windows (until 11:30 CET or between 12:30\u201316:00 CET).\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "After the customer provided the serial number via attachment, support continued to request the serial number again, creating a loop where the customer indicates it was already provided. This fits the strong signal: customer says they already provided X and AI asks for the same X again.",
+    "evidence": [
+      "Customer: \u201cSN is in attachment.\u201d",
+      "Support (public): \u201cSerial Number (found at the back) \u2014 the two SN photos were unreadable, so please either type the Serial Number in your message or send a close-up photo clearly showing the Model and S/N\u201d",
+      "Customer: \u201cSN is cleary readable from the photo - green sticker. Do you mean something else?\u201d",
+      "Support (public): \u201cSerial Number (please ensure it is typed exactly as printed on the device label; our system was unable to read it from the photos)\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer stated they provided the serial number in an attachment, but support repeatedly asked for it again rather than using what was provided (or clearly acknowledging it and moving forward). The customer explicitly pushed back that it was readable, indicating forced repetition.",
+    "evidence": [
+      "Customer: \u201cSN is in attachment.\u201d",
+      "Support (public): \u201cSerial Number (found at the back) \u2014 the two SN photos were unreadable, so please either type the Serial Number in your message or send a close-up photo clearly showing the Model and S/N\u201d",
+      "Customer: \u201cSN is cleary readable from the photo - green sticker. Do you mean something else?\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All visible interactions occur within the same day and within minutes; no multi-day gaps or delay apologies appear in the provided text.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no language indicating the ticket was closed, will be closed, or auto-closed while the customer was still awaiting resolution.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer reports an outage impact (WAN down/VPN down), support does engage with next-step troubleshooting (diagnostics, recovery, and offering a same-day Firebird check/repair window). The ticket content does not show clear evidence that support treated a critical outage with irrelevant generic checks or refused escalation.",
+    "evidence": [
+      "Customer: \u201cThe webUI was unresponsive, WAN was not working - no VPN connection from our side and clients in the office could not reach the internet via WAN.\u201d",
+      "Support (public): \u201cWe can assist with a Firebird database check/repair today during your specified windows (until 11:30 CET or between 12:30\u201316:00 CET).\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60256173
+}

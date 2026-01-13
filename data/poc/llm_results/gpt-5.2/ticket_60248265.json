@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI entries shown are internal workflow notes (ticket split/hold) rather than customer-facing answers, and there is no clear wrong guidance or broken promise attributable to AI in the provided text.",
+    "evidence": [
+      "[2025-11-24T10:20:29+00:00] (AI) Centralsupport-ai-acc commented privately: \"Placing on hold for 48 hour(s)\"",
+      "[2025-11-21T14:50:44+00:00] (AI) Centralsupport-ai-acc commented privately: \"This ticket was split from 60243519\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the AI repeatedly asking the customer for the same information or blocking access to a human; a human agent responds publicly on 2025-11-24 and 2025-11-26.",
+    "evidence": [
+      "[2025-11-24T10:19:33+00:00] (Employee) Andriy Rybalchenko commented privately: \"Yes, similar question was sent...\"",
+      "[2025-11-26T09:15:17+00:00] (Employee) Andriy Rybalchenko commented publicly: \"Dear Antonio,  Thank you for your patience. We\u2019ve reached out to our Product VP...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The agent appears to reference related context (a similar ticket/question) rather than ignoring it, and there are no repeated requests for the same logs/screenshots in the provided interaction snippets.",
+    "evidence": [
+      "[2025-11-24T10:19:33+00:00] (Employee) Andriy Rybalchenko commented privately: \"Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket metadata indicates multi-day delays, including a very long time to first human response and a maximum response gap of 67.5 hours.",
+    "evidence": [
+      "Ticket Context: \"Time to first human (hours): 67.5\"",
+      "Ticket Context: \"Max gap between responses (hours): 67.5\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, the provided timeline does not include a closure event or show the customer waiting on promised info when the ticket was closed.",
+    "evidence": [
+      "Ticket Context: \"Status: closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/Sev1), and there is no evidence of outage-level mishandling or generic troubleshooting in lieu of escalation.",
+    "evidence": [
+      "Ticket Context: \"Priority: normal\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI entries shown are internal workflow notes (ticket split/hold) rather than customer-facing answers, and there is no clear wrong guidance or broken promise attributable to AI in the provided text.\",\n    \"evidence\": [\n      \"[2025-11-24T10:20:29+00:00] (AI) Centralsupport-ai-acc commented privately: \\\"Placing on hold for 48 hour(s)\\\"\",\n      \"[2025-11-21T14:50:44+00:00] (AI) Centralsupport-ai-acc commented privately: \\\"This ticket was split from 60243519\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the AI repeatedly asking the customer for the same information or blocking access to a human; a human agent responds publicly on 2025-11-24 and 2025-11-26.\",\n    \"evidence\": [\n      \"[2025-11-24T10:19:33+00:00] (Employee) Andriy Rybalchenko commented privately: \\\"Yes, similar question was sent...\\\"\",\n      \"[2025-11-26T09:15:17+00:00] (Employee) Andriy Rybalchenko commented publicly: \\\"Dear Antonio,  Thank you for your patience. We\u2019ve reached out to our Product VP...\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The agent appears to reference related context (a similar ticket/question) rather than ignoring it, and there are no repeated requests for the same logs/screenshots in the provided interaction snippets.\",\n    \"evidence\": [\n      \"[2025-11-24T10:19:33+00:00] (Employee) Andriy Rybalchenko commented privately: \\\"Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket metadata indicates multi-day delays, including a very long time to first human response and a maximum response gap of 67.5 hours.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Time to first human (hours): 67.5\\\"\",\n      \"Ticket Context: \\\"Max gap between responses (hours): 67.5\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, the provided timeline does not include a closure event or show the customer waiting on promised info when the ticket was closed.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Status: closed\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/Sev1), and there is no evidence of outage-level mishandling or generic troubleshooting in lieu of escalation.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Priority: normal\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60248265
+}

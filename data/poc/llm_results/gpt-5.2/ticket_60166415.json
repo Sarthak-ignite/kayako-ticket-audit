@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI entries shown are limited to internal tagging ([customer_escalation]) and placing the ticket on hold. There is no clear evidence of the AI providing generic filler, incorrect technical guidance, or making/breaking promises to the customer.",
+    "evidence": [
+      "[2025-09-09T10:59:42+00:00] (AI) Centralsupport-ai-acc: ... commented privately: [customer_escalation] ...",
+      "[2025-09-01T07:39:39+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 9999 hour(s)",
+      "[2025-08-28T11:13:41+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped in an AI-only loop or repeatedly blocked from reaching a human. Human agents posted public updates and technical instructions.",
+    "evidence": [
+      "[2025-09-04T17:13:12+00:00] (Employee) Keyur Saxena: ... Development team has provided a potential fix with this build...",
+      "[2025-09-05T08:34:41+00:00] (Employee) Keyur Saxena: ... 1. Completely wipe the agents ... 2. Upgrade LanGuard ..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The transcript does not clearly show support repeatedly asking for information already provided (e.g., same logs) or ignoring previously shared details. The back-and-forth appears to be clarification about which EXE applies and what steps to take.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple multi-day gaps between customer requests and responses/updates, indicating significant delays in progress/communication.",
+    "evidence": [
+      "Gap from [2025-08-28T11:13:35+00:00] (Employee) Keyur Saxena: \"No updates yet.\" to [2025-09-01T06:06:02+00:00] (Employee) Adam Bangash: \"Update?\" (~3 days).",
+      "Gap from [2025-09-05T08:34:41+00:00] (Employee) Keyur Saxena: instructions provided to next public update [2025-09-09T04:02:37+00:00] (Employee) Keyur Saxena (~4 days)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No clear closure event is shown for the support ticket while the customer was waiting. In fact, there is an internal note to keep the ticket open.",
+    "evidence": [
+      "[2025-09-16T06:11:34+00:00] (Employee) Adam Bangash commented privately: Keep this ticket open"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While an escalation/severity indicator appears internally (\u201cCore Functionality Defect\u201d), the handling shown includes engagement with Development and a provided build/fix link, which does not clearly indicate mishandling (e.g., purely generic troubleshooting with no escalation).",
+    "evidence": [
+      "[2025-09-09T10:59:42+00:00] (AI) Centralsupport-ai-acc: ... The customer message is:Core Functionality Defect",
+      "[2025-09-04T17:13:12+00:00] (Employee) Keyur Saxena: ... Development team has provided a potential fix with this build: https://drive.google.com/..."
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60166415
+}

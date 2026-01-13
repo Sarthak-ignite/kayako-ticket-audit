@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI provided relevant information and updates regarding the ticket, with no clear evidence of incorrect or unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer appears to be communicating directly with human agents and not stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI did not maintain continuity with the previous communications, as seen when it requested information that had already been provided by the customer.",
+    "evidence": [
+      "Robert Maislinger commented privately: 'I will try it with the file from the website.' (2025-11-20T08:20:58+00:00)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays in responses, with a maximum gap of 94.5 hours noted between interactions.",
+    "evidence": [
+      "Time to first human response: 115.9 hours."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while the customer was still engaged in seeking resolution, indicating that the closure may have been premature.",
+    "evidence": [
+      "Ticket Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The urgency of the issue was not appropriately handled according to the established priority, as there was a delay in response and the situation escalated without the necessary immediate action.",
+    "evidence": [
+      "Time to first human: 115.9 hours, indicating a failure to escalate at an appropriate speed for a high-priority outage."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI provided relevant information and updates regarding the ticket, with no clear evidence of incorrect or unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer appears to be communicating directly with human agents and not stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI did not maintain continuity with the previous communications, as seen when it requested information that had already been provided by the customer.\",\n    \"evidence\": [\"Robert Maislinger commented privately: 'I will try it with the file from the website.' (2025-11-20T08:20:58+00:00)\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays in responses, with a maximum gap of 94.5 hours noted between interactions.\",\n    \"evidence\": [\"Time to first human response: 115.9 hours.\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while the customer was still engaged in seeking resolution, indicating that the closure may have been premature.\",\n    \"evidence\": [\"Ticket Status: closed\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The urgency of the issue was not appropriately handled according to the established priority, as there was a delay in response and the situation escalated without the necessary immediate action.\",\n    \"evidence\": [\"Time to first human: 115.9 hours, indicating a failure to escalate at an appropriate speed for a high-priority outage.\"]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60241392
+}

@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses did not provide irrelevant or incorrect information but rather indicated that they skipped ticket processing due to tagging.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence suggesting that the customer was stuck in an AI loop or unable to progress to human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The responses acknowledged prior context and did not repeat requests for information already provided by the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays between the responses (over 146 hours), indicating a lack of timely support.",
+    "evidence": [
+      "[2025-11-27T14:32:53+00:00] (Employee) Pavly Nashed commented publicly: Dear Briamel, Thank you for your email.",
+      "[2025-12-03T16:42:39+00:00] (Employee) Phronesis: Dear Erika, Thank you for your message and for confirming that the issue is resolved."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed after the customer confirmed that the issue was resolved, indicating that there was a possibility that the customer was still waiting for other information.",
+    "evidence": [
+      "[2025-12-03T16:42:39+00:00] (Employee) Phronesis: Dear Erika, Thank you for your message and for confirming that the issue is resolved.",
+      "[2025-11-27T14:32:53+00:00] (Employee) Pavly Nashed: Dear Briamel, Thank you for your email."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket in question is not marked as a P1/Sev1, nor does it show any signs of generic troubleshooting inappropriate for the severity level.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses did not provide irrelevant or incorrect information but rather indicated that they skipped ticket processing due to tagging.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence suggesting that the customer was stuck in an AI loop or unable to progress to human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The responses acknowledged prior context and did not repeat requests for information already provided by the customer.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays between the responses (over 146 hours), indicating a lack of timely support.\",\n    \"evidence\": [\"[2025-11-27T14:32:53+00:00] (Employee) Pavly Nashed commented publicly: Dear Briamel, Thank you for your email.\", \"[2025-12-03T16:42:39+00:00] (Employee) Phronesis: Dear Erika, Thank you for your message and for confirming that the issue is resolved.\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed after the customer confirmed that the issue was resolved, indicating that there was a possibility that the customer was still waiting for other information.\",\n    \"evidence\": [\"[2025-12-03T16:42:39+00:00] (Employee) Phronesis: Dear Erika, Thank you for your message and for confirming that the issue is resolved.\", \"[2025-11-27T14:32:53+00:00] (Employee) Pavly Nashed: Dear Briamel, Thank you for your email.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket in question is not marked as a P1/Sev1, nor does it show any signs of generic troubleshooting inappropriate for the severity level.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60250271
+}

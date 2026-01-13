@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI (ATLAS) only provided a generic system message stating 'Component could not be determined' without providing any meaningful assistance or context to the customer.",
+    "evidence": [
+      "[2025-10-18T21:59:59+00:00] ATLAS commented privately: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in a loop or repeatedly being asked for the same information. The interaction timeline is too brief to establish a pattern.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence of support ignoring previously provided information, as there are no follow-up interactions where context would be ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occurred within approximately 24 seconds of each other, and the max gap between responses is 0.0 hours. No significant delays are present.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed immediately after the customer indicated a full conversation would be uploaded shortly, without waiting for that content or providing any resolution.",
+    "evidence": [
+      "[2025-10-18T21:59:37+00:00] Xavier A Villarroel commented privately: The complete conversation with this customer will be uploaded to this ticket shortly",
+      "Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is an urgent priority ticket that was closed without any substantive troubleshooting or escalation. The AI failed to determine the component, and no human agent provided assistance despite the urgent status.",
+    "evidence": [
+      "Priority: urgent",
+      "[2025-10-18T21:59:59+00:00] ATLAS commented privately: Component could not be determined",
+      "Status: closed",
+      "Was handed to BU: False"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI (ATLAS) only provided a generic system message stating 'Component could not be determined' without providing any meaningful assistance or context to the customer.\",\n    \"evidence\": [\"[2025-10-18T21:59:59+00:00] ATLAS commented privately: Component could not be determined\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in a loop or repeatedly being asked for the same information. The interaction timeline is too brief to establish a pattern.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of support ignoring previously provided information, as there are no follow-up interactions where context would be ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occurred within approximately 24 seconds of each other, and the max gap between responses is 0.0 hours. No significant delays are present.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed immediately after the customer indicated a full conversation would be uploaded shortly, without waiting for that content or providing any resolution.\",\n    \"evidence\": [\"[2025-10-18T21:59:37+00:00] Xavier A Villarroel commented privately: The complete conversation with this customer will be uploaded to this ticket shortly\", \"Status: closed\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This is an urgent priority ticket that was closed without any substantive troubleshooting or escalation. The AI failed to determine the component, and no human agent provided assistance despite the urgent status.\",\n    \"evidence\": [\"Priority: urgent\", \"[2025-10-18T21:59:59+00:00] ATLAS commented privately: Component could not be determined\", \"Status: closed\", \"Was handed to BU: False\"]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60224201
+}

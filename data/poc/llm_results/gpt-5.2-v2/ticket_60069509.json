@@ -1,0 +1,68 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided a long, partially generic response with questionable assumptions (e.g., hardware-binding explanation) and relied heavily on KB links rather than directly resolving the reported licensing server/registration failure. The customer later reports the suggested actions still don\u2019t work, indicating low effectiveness/fit.",
+    "evidence": [
+      "ATLAS commented publicly: \"Dear Alex, Thank you for providing detailed information... here is a comprehensive analysis and guidance...\"",
+      "\"This situation commonly occurs after hardware replacement, as the license file is bound to the specific hardware serial number.\"",
+      "\"Recommended Solution: * Obtain an Updated License File...\"",
+      "Customer: \"I think your licensing server is down\"",
+      "Customer (after steps): \"Still not working.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly asked to speak to a human and expressed frustration with AI (Hermes/ATLAS). They also reported being blocked by broken authentication tokens and the support flow, indicating an AI wall preventing timely human assistance.",
+    "evidence": [
+      "User Queries: \"I need to talk to a human\"",
+      "Customer: \"Stop talking Hermes, I want to speak to a HUMAN.\"",
+      "Customer: \"Right now I'm trying to open a ticket but the 'Start Chat' button isn't working...\"",
+      "Customer: \"The ATLAS AI opened a ticket with customer care, not with the technical department...\"",
+      "Customer: \"One hour later and no reply...\" / \"2.5 hours later, no reply...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support did not effectively incorporate key context already provided (token failure blocking uploads; screenshots already uploaded; customer already tried licensing actions). Additionally, support told the customer to use an 'attached license file' that was not actually attached, forcing the customer to re-ask for what was already implied/provided.",
+    "evidence": [
+      "Customer: \"I'm trying to upload the screenshots to you\"",
+      "Customer: \"I can't upload them because the link says the authentication token has failed\"",
+      "Multiple uploads by customer: \"unnamed (4).png\" / \"image (22).png\" / \"image (23).png\" / \"Egmont_License_Issue04.jpg\"",
+      "Support (Mike): \"please apply the attached license.key file offline\"",
+      "Customer: \"Also, where is the attached licence key?\"",
+      "Customer: \"Still not working.\" (after being told to retry/apply license again)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are clear multi-day gaps and explicit customer complaints about waiting several days without response, meeting the >2 calendar day delay criteria and showing repeated follow-ups due to no reply.",
+    "evidence": [
+      "Customer: \"One hour later and no reply...\"",
+      "Customer: \"2.5 hours later, no reply...\"",
+      "Customer (2025-06-08): \"Three days later and still no reply.\"",
+      "Customer (2025-06-09): \"Almost five days since I opened this ticket and still no response. NOT GOOD ENOUGH!\"",
+      "Escalation marker: \"[customer_escalation] The customer escalated the Case.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket contains an auto-close warning (\u201cstay open for one week...\u201d), but there is no evidence the ticket was actually closed, and the customer continued to reply with the issue still failing.",
+    "evidence": [
+      "Support: \"This ticket will stay open for one week unless you reply with 'This ticket can be closed'...\"",
+      "Customer: \"The license you have provided is still failing to update\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue blocks core licensing/registration after hardware replacement and was explicitly escalated as a core functionality defect, with indications of a server-side/intermittent platform problem (\u201cserver not responding\u201d, \u201clicensing server is down\u201d). Despite this, the handling shows long delays and mostly standard troubleshooting rather than immediate coordinated escalation/ownership to resolution.",
+    "evidence": [
+      "Customer: \"When I try to re-register it with AppManager I see the error message 'Appliance does not have a valid license'... 'The server is not responding'\"",
+      "Customer: \"I think your licensing server is down\"",
+      "Escalation: \"The severity is: core_functionality_defect\"",
+      "Support: \"We were able to reproduce the issue... Which would suggest the issue is intermittent.\"",
+      "Customer impact + delay: \"Almost five days since I opened this ticket and still no response.\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60069509
+}

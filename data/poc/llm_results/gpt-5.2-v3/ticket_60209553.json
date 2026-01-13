@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No clear, customer-facing ATLAS/Hermes reply shows factual product misinformation or irrelevant troubleshooting. The responses that contain technical guidance (e.g., v10 being required for NG520/NG521) are not unambiguously incorrect based on the ticket record, and there are no explicit customer statements that an AI response itself was wrong (the customer\u2019s frustration is about delay/lack of contact).",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested a live agent / phone contact multiple times and repeatedly stated they could not reach anyone, yet the thread shows only asynchronous written replies (no evidence of an actual live connection/call occurring). This matches the \u2018asked for a human and doesn\u2019t get one\u2019 trap condition.",
+    "evidence": [
+      "[2025-09-29T17:38:44+00:00] Customer: \u201cYes please connect me to a live agent. Thank you.\u201d",
+      "[2025-09-29T19:50:15+00:00] Customer: \u201cI cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\u201d",
+      "[2025-09-29T22:34:06+00:00] Customer: \u201cPlease have a manager call me immediately. +31648422032\u201d",
+      "[2025-09-30T00:43:21+00:00] Customer: \u201cCall me immediately\u2026 +31648422032 I AM WAITING FOR YOUR CALL>>>>>>>>>\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support\u2019s repeated log requests appear to be follow-ups where the customer had not provided the requested items (despite earlier mention of a support file/backup). There is no clear instance where support asks for the exact same artifact after the customer explicitly confirmed it was already provided in the ticket, nor a clear \u201cI already tried that\u201d being ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "While the customer complained about responsiveness (particularly about phone/live contact), the ticket does not show a clear 3+ calendar-day gap between a customer message and a support response. The visible response gaps are hours to ~1 day, not meeting the defined \u2018significant delay\u2019 threshold.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed. Support states it will remain open for 7 days unless the customer requests closure; there is no closure event while a customer request is pending.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "A complete outage is explicitly reported/escalated, and the customer repeatedly states they are \u2018completely down\u2019 and cannot reach anyone. The early support replies are generic \u2018we are investigating\u2019 messages without immediate actionable recovery steps or real-time engagement, despite the severity and repeated requests for urgent contact.",
+    "evidence": [
+      "[2025-09-29T19:39:54+00:00] Internal escalation: \u201cThe severity is: complete_outage\u201d",
+      "[2025-09-29T19:50:15+00:00] Customer: \u201cCustomer is completely down.\u201d",
+      "[2025-09-29T22:34:06+00:00] Customer: \u201cIt is completely unacceptable in a network down emergency to be unable to reach anyone in your support team.\u201d",
+      "[2025-09-29T23:36:55+00:00] Support: \u201cWe\u2019ve received your escalation\u2026 we are investigating the issue\u2026 Once we have completed our analysis, we may request a meeting.\u201d",
+      "[2025-09-30T00:43:21+00:00] Customer: \u201cProvide me with v10 rescue immediately and call me immediately\u2026 It is 3AM in the morning here\u2026\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60209553
+}

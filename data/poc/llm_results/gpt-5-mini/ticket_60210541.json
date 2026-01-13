@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response appears to address a different issue (Let's Encrypt renewal) than the customer's described PBX/VoIP problem, indicating incorrect or off-target content.",
+    "evidence": [
+      "[2025-09-30T15:51:35+00:00] (AI) ATLAS: \"Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K\"",
+      "[2025-09-30T15:50:42+00:00] (Customer) Jozef Kacala: \"on Kerio control v10 we already had some reports on PBX issues, this is latest with partner Walter having issues on  10 Kerio\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information or trapped the customer in a loop; interactions show single AI reply and subsequent human responses.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI reply references Let's Encrypt certificate renewal, which does not match the customer's repeated emphasis that updating to v10 breaks PBX and downgrading fixes it, indicating the AI ignored the core context provided.",
+    "evidence": [
+      "[2025-09-30T15:50:42+00:00] (Customer) Jozef Kacala: \"on Kerio control v10 we already had some reports on PBX issues...\"",
+      "[2025-09-30T15:51:35+00:00] (AI) ATLAS: \"Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a very large gap between customer messages and the first human response\u2014metrics show ~742 hours to first human and max gap of ~742 hours, with human reply coming about a month later.",
+    "evidence": [
+      "Ticket metadata: \"Time to first human (hours): 742.1\", \"Max gap between responses (hours): 742.0\"",
+      "[2025-09-30T15:50:42+00:00] (Customer) Jozef Kacala: ...",
+      "[2025-10-31T13:59:15+00:00] (Employee) Ciprian Nastase: \"Thank you for contacting GFI - Kerio Control Support...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed, there is no clear evidence in the interaction snippets that the ticket was closed while the customer was waiting for promised information or that the customer explicitly gave up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no visible evidence of generic, inappropriate troubleshooting (e.g., cache/firewall/VPN checks) for a high-priority outage; the interactions do not show escalation decisions or such misguided steps.",
+    "evidence": [
+      "[2025-09-30T15:51:35+00:00] (AI) ATLAS: \"Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response appears to address a different issue (Let's Encrypt renewal) than the customer's described PBX/VoIP problem, indicating incorrect or off-target content.\",\n    \"evidence\": [\n      \"[2025-09-30T15:51:35+00:00] (AI) ATLAS: \\\"Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K\\\"\",\n      \"[2025-09-30T15:50:42+00:00] (Customer) Jozef Kacala: \\\"on Kerio control v10 we already had some reports on PBX issues, this is latest with partner Walter having issues on  10 Kerio\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information or trapped the customer in a loop; interactions show single AI reply and subsequent human responses.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI reply references Let's Encrypt certificate renewal, which does not match the customer's repeated emphasis that updating to v10 breaks PBX and downgrading fixes it, indicating the AI ignored the core context provided.\",\n    \"evidence\": [\n      \"[2025-09-30T15:50:42+00:00] (Customer) Jozef Kacala: \\\"on Kerio control v10 we already had some reports on PBX issues...\\\"\",\n      \"[2025-09-30T15:51:35+00:00] (AI) ATLAS: \\\"Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a very large gap between customer messages and the first human response\u2014metrics show ~742 hours to first human and max gap of ~742 hours, with human reply coming about a month later.\",\n    \"evidence\": [\n      \"Ticket metadata: \\\"Time to first human (hours): 742.1\\\", \\\"Max gap between responses (hours): 742.0\\\"\",\n      \"[2025-09-30T15:50:42+00:00] (Customer) Jozef Kacala: ...\",\n      \"[2025-10-31T13:59:15+00:00] (Employee) Ciprian Nastase: \\\"Thank you for contacting GFI - Kerio Control Support...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed, there is no clear evidence in the interaction snippets that the ticket was closed while the customer was waiting for promised information or that the customer explicitly gave up.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no visible evidence of generic, inappropriate troubleshooting (e.g., cache/firewall/VPN checks) for a high-priority outage; the interactions do not show escalation decisions or such misguided steps.\",\n    \"evidence\": [\n      \"[2025-09-30T15:51:35+00:00] (AI) ATLAS: \\\"Thank you for detailing the issue encountered with Let's Encrypt SSL/TLS certificate renewal and VoIP trunk/PBX functionality on K\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60210541
+}

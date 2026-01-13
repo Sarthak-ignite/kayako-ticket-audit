@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI interactions were primarily system notifications about JIRA status changes and internal workflow automation. No AI provided customer-facing support responses that were generic, incorrect, or unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of customers being stuck in an AI loop. The customer interaction went directly to human support (Priyanka Bhotika at 13:53:23) with time to first human of 0.1 hours, indicating immediate human engagement.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledged the escalation and worked on the issue without requesting information already provided. The team investigated and resolved the SSL certificate issue without asking redundant questions.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket metadata shows max gap between responses was only 0.7 hours, and all interactions occurred on the same day (2025-11-03) within approximately 2 hours from initial response to resolution.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the fix was implemented and confirmed working. Support provided a final update explaining the resolution before closure.",
+    "evidence": [
+      "[2025-11-03T15:50:44+00:00] Chintan Parekh commented publicly: Dear Customer, We have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor the sy",
+      "[2025-11-03T15:38:45.905+0000] Pavly Nashed commented: Confirmed fixed on one of the reported customers' websites"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This was an urgent priority outage affecting multiple customers' chat widgets. The team immediately escalated to engineering (JIRA created at 14:12:50), diagnosed an expired SSL certificate, and implemented a fix within approximately 90 minutes. No generic troubleshooting was attempted.",
+    "evidence": [
+      "[2025-11-03T14:16:53+00:00] Pavly Nashed commented publicly: Dear Jayashree, Thank you for your patience. We have done a preliminary investigation to determine the root cause, and have escalated",
+      "[2025-11-03T14:55:30.614+0000] Muhammad Waqar commented: Renewed certificate for https://brandmessenger.usw2.khoros.com/"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI interactions were primarily system notifications about JIRA status changes and internal workflow automation. No AI provided customer-facing support responses that were generic, incorrect, or unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of customers being stuck in an AI loop. The customer interaction went directly to human support (Priyanka Bhotika at 13:53:23) with time to first human of 0.1 hours, indicating immediate human engagement.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support acknowledged the escalation and worked on the issue without requesting information already provided. The team investigated and resolved the SSL certificate issue without asking redundant questions.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket metadata shows max gap between responses was only 0.7 hours, and all interactions occurred on the same day (2025-11-03) within approximately 2 hours from initial response to resolution.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the fix was implemented and confirmed working. Support provided a final update explaining the resolution before closure.\",\n    \"evidence\": [\"[2025-11-03T15:50:44+00:00] Chintan Parekh commented publicly: Dear Customer, We have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor the sy\", \"[2025-11-03T15:38:45.905+0000] Pavly Nashed commented: Confirmed fixed on one of the reported customers' websites\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This was an urgent priority outage affecting multiple customers' chat widgets. The team immediately escalated to engineering (JIRA created at 14:12:50), diagnosed an expired SSL certificate, and implemented a fix within approximately 90 minutes. No generic troubleshooting was attempted.\",\n    \"evidence\": [\"[2025-11-03T14:16:53+00:00] Pavly Nashed commented publicly: Dear Jayashree, Thank you for your patience. We have done a preliminary investigation to determine the root cause, and have escalated\", \"[2025-11-03T14:55:30.614+0000] Muhammad Waqar commented: Renewed certificate for https://brandmessenger.usw2.khoros.com/\"]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60234621
+}

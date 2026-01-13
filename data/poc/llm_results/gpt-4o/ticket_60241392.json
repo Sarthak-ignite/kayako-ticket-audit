@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence that AI responses were generic or provided incorrect information as they seem to follow a logical process.",
+    "evidence": [
+      "Dear Robert, Thank you for your understanding and patience. We have escalated your issue within our team and are actively wor [2025-11-12T14:37:09+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although AI requested some information, it handed over interaction flow properly, and the customer managed to interact with an employee.",
+    "evidence": [
+      "Dear Robert, Thank you for your update\u2014it's wonderful to hear that the NG120 device has stabilized following the application [2025-11-19T09:01:28+00:00]"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence that the support ignored prior information from the customer.",
+    "evidence": [
+      "You can download the image in question from this location:  v10:9072 (NG120/320/520/521/720) [2025-11-17T09:35:24+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay between the initial query and the first human response, exceeding 115 hours.",
+    "evidence": [
+      "Time to first human (hours): 115.9"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is closed after the issue was resolved with device stabilization, and a new ticket was created for further issues.",
+    "evidence": [
+      "Ticket 60241392 has been split into 60246396 [2025-11-19T09:05:13+00:00]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of mishandling as the issue was treated as urgent and addressed appropriately.",
+    "evidence": [
+      "Priority already set to URGENT.  [2025-11-17T08:29:08+00:00]"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that AI responses were generic or provided incorrect information as they seem to follow a logical process.\",\n    \"evidence\": [\"Dear Robert, Thank you for your understanding and patience. We have escalated your issue within our team and are actively wor [2025-11-12T14:37:09+00:00]\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although AI requested some information, it handed over interaction flow properly, and the customer managed to interact with an employee.\",\n    \"evidence\": [\"Dear Robert, Thank you for your update\u2014it's wonderful to hear that the NG120 device has stabilized following the application [2025-11-19T09:01:28+00:00]\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the support ignored prior information from the customer.\",\n    \"evidence\": [\"You can download the image in question from this location:  v10:9072 (NG120/320/520/521/720) [2025-11-17T09:35:24+00:00]\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay between the initial query and the first human response, exceeding 115 hours.\",\n    \"evidence\": [\"Time to first human (hours): 115.9\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is closed after the issue was resolved with device stabilization, and a new ticket was created for further issues.\",\n    \"evidence\": [\"Ticket 60241392 has been split into 60246396 [2025-11-19T09:05:13+00:00]\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of mishandling as the issue was treated as urgent and addressed appropriately.\",\n    \"evidence\": [\"Priority already set to URGENT.  [2025-11-17T08:29:08+00:00]\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60241392
+}

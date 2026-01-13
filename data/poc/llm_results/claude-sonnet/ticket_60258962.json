@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses appear to be cut off in the transcript, but there's no clear evidence of wrong information, generic filler, or unkept promises. The AI acknowledges receiving detailed information and diagnostic files.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interaction timeline shows a single chat session that resulted in ticket creation. There's no evidence of the customer being stuck in loops or repeatedly asked for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer provided information in a private comment at 19:12:19 stating 'All CU updates fail. Other Microsoft and 3rd party updates install fine. This happens on any computer I try.' However, the AI's subsequent public response at 19:12:56 appears to simply acknowledge what was already provided without addressing the specific issue.",
+    "evidence": [
+      "[2025-12-08T19:12:19+00:00] Robert Murray: All CU updates fail. Other Microsoft and 3rd party updates install fine. This happens on any computer I try.",
+      "[2025-12-08T19:12:56+00:00] ATLAS: Thank you for providing such a detailed description of your situation and attaching your diagnostic file. Your summary confirms:"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occurred within the same hour on December 8th, 2025. The max gap between responses was only 0.1 hours (6 minutes), indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked as closed and shows a high priority status. The last AI response at 19:12:56 appears incomplete ('Your summary confirms:' with no follow-up), suggesting the ticket was closed before providing the promised information or resolution.",
+    "evidence": [
+      "[2025-12-08T19:12:56+00:00] ATLAS: Thank you for providing such a detailed description of your situation and attaching your diagnostic file. Your summary confirms:",
+      "Status: closed, Priority: high"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While this is a high-priority ticket, there's insufficient evidence in the transcript to determine if generic troubleshooting was provided instead of escalation. The interactions are too brief and truncated to assess the quality of the technical response.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses appear to be cut off in the transcript, but there's no clear evidence of wrong information, generic filler, or unkept promises. The AI acknowledges receiving detailed information and diagnostic files.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction timeline shows a single chat session that resulted in ticket creation. There's no evidence of the customer being stuck in loops or repeatedly asked for the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer provided information in a private comment at 19:12:19 stating 'All CU updates fail. Other Microsoft and 3rd party updates install fine. This happens on any computer I try.' However, the AI's subsequent public response at 19:12:56 appears to simply acknowledge what was already provided without addressing the specific issue.\",\n    \"evidence\": [\n      \"[2025-12-08T19:12:19+00:00] Robert Murray: All CU updates fail. Other Microsoft and 3rd party updates install fine. This happens on any computer I try.\",\n      \"[2025-12-08T19:12:56+00:00] ATLAS: Thank you for providing such a detailed description of your situation and attaching your diagnostic file. Your summary confirms:\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occurred within the same hour on December 8th, 2025. The max gap between responses was only 0.1 hours (6 minutes), indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked as closed and shows a high priority status. The last AI response at 19:12:56 appears incomplete ('Your summary confirms:' with no follow-up), suggesting the ticket was closed before providing the promised information or resolution.\",\n    \"evidence\": [\n      \"[2025-12-08T19:12:56+00:00] ATLAS: Thank you for providing such a detailed description of your situation and attaching your diagnostic file. Your summary confirms:\",\n      \"Status: closed, Priority: high\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"While this is a high-priority ticket, there's insufficient evidence in the transcript to determine if generic troubleshooting was provided instead of escalation. The interactions are too brief and truncated to assess the quality of the technical response.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60258962
+}

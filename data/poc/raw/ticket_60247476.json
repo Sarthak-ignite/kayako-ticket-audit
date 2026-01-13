@@ -1,0 +1,367 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_care",
+        "requester": {
+          "id": 60490413,
+          "uuid": "346d4131-1804-5078-88c8-bb09590e12b6",
+          "full_name": "Meaghan Mcclure",
+          "legacy_id": "003Uv000007K9MWIA0",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/346d4131-1804-5078-88c8-bb09590e12b6?1765815734",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60067841,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 491942,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-11-20T19:09:27+00:00",
+          "last_active_at": "2025-12-15T16:22:14+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60490413",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@d45cef0c06f7d1ea3ba597c08f67ea58485ce7be",
+          "password_updated_at": "2025-07-07T22:10:25+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-07-07T22:10:25+00:00",
+          "updated_at": "2025-12-15T16:22:14+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60490413"
+        },
+        "ticket_idt": 60247476
+      },
+      "interactions": [
+        [
+          "2025-11-26T14:33:53+00:00",
+          "Kayako - ticket id 60247476 // Don Kempt commented publicly:  \n\nHello Crprian, \n\n\u00a0\n\nWe have not received any further complaints. Please go ahead and close this this case. \n\n\u00a0\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nDon Kempt\n\nSupport Operations, Support & Services\n\nimage\n\nimage\n\nE: dkempt@fortinet.com\n\nMicrosoft Teams (within tenant only): Start Chat [https://teams.microsoft.com/l/chat/0/0?users=dkempt@fortinet.com&topicname=Chat]\n\nAddress: 16 Fitzgerald Road, Ottawa, ON K2H 8R6\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-26T14:31:55+00:00",
+          "Kayako - ticket id 60247476 // Ciprian Nastase commented publicly: Dear Meaghan,\n\nCan you please let us know if the issue is resolved on your end? We would really appreciate a hard confirmation from your side!\n\nWe will look forward to hearing back from you!\n\nBest regards,\nCiprian Nastase\nKhoros Care Support Team\n\n"
+        ],
+        [
+          "2025-11-22T03:21:26.006+0000",
+          "SaaS Jira - issue key CARESMM-10815 // Service Sfit commented: \u2705 QC PASSED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis SummaryThe incident involved agents in Fortinet's Khoros Care instance being unable to send responses due to MySQL temporary tables becoming full. This issue prevented responding tokens from being loaded, thus hiding the \"Send\" button in the UI. The incident affected multiple tenants and was classified as a Showstopper SaaS Incident due to its impact on customer support operations.\ud83d\ude80 Resolution EffectivenessRoot Cause: The root cause was clearly identified as the MySQL temp storage being configured too small (1GB) on most production clusters, leading to temp table exhaustion during complex queries.Actions Taken: The resolution involved increasing the `temptable_max_mmap` parameter from 1GB to 5GB across all affected clusters, a fix previously applied successfully to one cluster (pod7) in a similar incident ().Evidence: The resolution was supported by detailed logs, AWS RDS commands, and a comparison to previous incidents. The comments provided a comprehensive analysis of the issue and the steps taken.Monitoring: The incident was detected through monitoring, and there is a recommendation to enhance monitoring for configuration drift.Non-Execution: Not applicable as the resolution was executed.\ud83d\udcdd Process AdherenceCommunication: The communication was clear and timely, with detailed comments explaining the investigation and resolution process.Documentation: The documentation was thorough, including logs, AWS commands, and references to related incidents. However, the resolution summary was initially empty, relying on comments for details.Runbook Usage/Creation: There was no mention of an existing runbook. Creating a runbook for temp table troubleshooting is recommended to prevent future recurrences.\ud83d\udcca MetricsInvestigation Quality: 5/5 (The root cause analysis was thorough and accurate.)Documentation Quality: 4/5 (Comments were clear and complete, but the resolution summary was initially empty.)Resolution Effectiveness: 5/5 (The actions taken were effective and supported by evidence.)Total score: 14/15\ud83d\udca1 Suggestions for Improvement\u2705 Final AssessmentThis analysis was performed to ensure quality and completeness."
+        ],
+        [
+          "2025-11-22T03:21:09+00:00",
+          "Kayako - ticket id 60247476 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10815 is changed to 'Closed' , block reason: -"
+        ],
+        [
+          "2025-11-22T03:21:04.606+0000",
+          "SaaS Jira - issue key CARESMM-10815 // status is changed from In Progress to Closed"
+        ],
+        [
+          "2025-11-22T03:19:53+00:00",
+          "Kayako - ticket id 60247476 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10815 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-22T03:19:50.435+0000",
+          "SaaS Jira - issue key CARESMM-10815 // status is changed from In Queue to In Progress"
+        ],
+        [
+          "2025-11-22T03:19:45+00:00",
+          "Kayako - ticket id 60247476 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10815 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-11-22T03:19:38.691+0000",
+          "SaaS Jira - issue key CARESMM-10815 // status is changed from Blocked to In Queue"
+        ],
+        [
+          "2025-11-22T00:11:53+00:00",
+          "Kayako - ticket id 60247476 // Harry Tasker commented publicly: Dear Meaghan,\n\nThank you for your response.\nPlease let us know if the issue is resolved on your end. We will look forward to hearing back from you!\n\nBest regards,\nHarry Samuel Tasker\nKhoros Care Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-22T00:10:06+00:00",
+          "Kayako - ticket id 60247476 // Harry Tasker commented privately: image"
+        ],
+        [
+          "2025-11-21T21:38:26+00:00",
+          "Kayako - ticket id 60247476 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10815 is changed to 'Blocked' , block reason: Waiting on Customer Support"
+        ],
+        [
+          "2025-11-21T21:38:19.932+0000",
+          "SaaS Jira - issue key CARESMM-10815 // status is changed from In Progress to Blocked"
+        ],
+        [
+          "2025-11-21T21:38:19.916+0000",
+          "SaaS Jira - issue key CARESMM-10815 // Nitin Manik commented: Waiting on confirmation from Customer via CS and once confirmed we will raise a CR to roll out the same solution to all Pods in both regions (US + EU)"
+        ],
+        [
+          "2025-11-21T21:03:54+00:00",
+          "Kayako - ticket id 60247476 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-21T20:05:20+00:00",
+          "Kayako - ticket id 60247476 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10815 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-21T18:27:29+00:00",
+          "Kayako - ticket id 60247476 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-11-21T18:27:21+00:00",
+          "Kayako - ticket id 60247476 // Don Kempt commented publicly:  \n\nThank you Pavly, \n\n\u00a0\n\nWe have informed the team, and communicated what to if we run into an issue.\n\nWe will update if we see anything. \n\n\u00a0\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nDon Kempt\n\nSupport Operations, Support & Services\n\nimage\n\nimage\n\nE: dkempt@fortinet.com\n\nMicrosoft Teams (within tenant only): Start Chat [https://teams.microsoft.com/l/chat/0/0?users=dkempt@fortinet.com&topicname=Chat]\n\nAddress: 16 Fitzgerald Road, Ottawa, ON K2H 8R6\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-21T18:10:05+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented publicly: Dear Meaghan and Fortinet team,\n\nWe wanted to\u00a0let you know that the underlying issue causing the\u00a0Send\u00a0button to disappear in your Khoros Care instance has now been resolved on our\u00a0side. We have been closely monitoring your environment for the last\u00a040 minutes and have\u00a0not\u00a0seen any\u00a0further\u00a0errors or\u00a0recurrences in\u00a0our\u00a0logs.\nAt this point, the feature should be working as expected. Could you please have your team test and monitor on your side and confirm that the Send button is consistently available without needing to refresh?\nIf you do encounter the issue again, please share:\n\n\t* The\u00a0exact\u00a0timestamp\u00a0when it\u00a0occurred\u00a0(including\u00a0time\u00a0zone), and\n\t* The\u00a0conversation ID\u00a0where\u00a0it\u00a0happened\n\nThis will allow us to immediately correlate with our backend logs and investigate further if needed.\n\nWe appreciate your continued effort and collaboration in fixing this.\n\nBest regards,\nPavly Nashed\nKhoros Care Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-21T18:07:29+00:00",
+          "Kayako - ticket id 60247476 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-11-21T18:07:20+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented privately:  Confirmed fixed, updating the customer. \nimage \nimage"
+        ],
+        [
+          "2025-11-21T16:37:26+00:00",
+          "Kayako - ticket id 60247476 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10815 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-21T16:37:19.904+0000",
+          "SaaS Jira - issue key CARESMM-10815 // Eric Magutu commented: Changed for pod2"
+        ],
+        [
+          "2025-11-21T16:07:19+00:00",
+          "Kayako - ticket id 60247476 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-21T16:06:32.719+0000",
+          "SaaS Jira - issue key CARESMM-10815 // Vikranth Tirumuru commented: \ud83d\udd0d Investigation Complete - Root Cause IdentifiedExecutive SummaryRoot Cause: This is a recurrence of CARESMM-9369. The fix (increasing temptable_max_mmap from 1GB to 5GB) was only applied to 1 out of 8 production clusters (pod7). The remaining 7 clusters (pod1-6, pod8) still have the default 1GB temp table limit, causing MySQL temp table exhaustion during complex queries.Impact: Agents cannot send responses in Fortinet (COMPANY.23) and other tenants because OAuth token fetch queries fail with \"temp table full\" errors.Solution: Apply the same parameter change from CARESMM-9369 to all 7 remaining clusters. This is a proven fix with zero downtime and no additional cost.Detailed Root Cause Analysis1. MySQL Temp Table Configuration IssueInvestigated all 8 production Aurora clusters backing prod-lswcore:Verification Command Used:aws rds describe-db-cluster-parameters --region us-west-2 \\  --db-cluster-parameter-group-name <param-group-name> \\  --query 'Parameters[?ParameterName==temptable_max_mmap]'Why This Matters:2. Aurora Serverless V2 ConfigurationAll clusters have serverless read replicas, but most are undersized:Why 0.5 ACU is Problematic:Evidence of Auto-Scaling:3. Failing Query AnalysisFrom the ticket description, two main query types are failing:Query 1: OAuth Token Fetch (Most frequent failure)SELECT DISTINCT oat_oauth_token.*FROM oat_oauth_tokenINNER JOIN eaa_external_api_access ON oat_oauth_token.id = eaa_right_idWHERE oat_com_id = :companyId  AND eaa_com_id = oat_com_id  AND oat_deleted = 0  AND eaa_right_type = :rightType  AND oat_type IN (:access, :page_access)  AND (    (eaa_left_type = :leftType1 AND eaa_left_id = :leftId1)    OR (eaa_left_type = :leftType2 AND eaa_left_id = :leftId2)    OR (eaa_left_type = 'workgroup' AND eaa_left_id IN (...))  )Query 2: Case ReindexingSELECT DISTINCT cas_id, cas_uuid, cas_cur_doc_id, ..., dob_content, quo_quoted_document.*FROM cas_caseINNER JOIN doc_document ON cas_cur_doc_id=doc_idLEFT JOIN quo_quoted_document ON quo_com_id = doc_com_id AND quo_doc_id = doc_idLEFT JOIN dob_doc_body ON dob_doc_id = doc_idLEFT JOIN cam_case_meta ON cam_cas_id = cas_idLEFT JOIN elo_event_log ON elo_cas_id = cas_id AND elo_sta_id = :csatStatTypeIdWHERE cas_com_id=:companyId AND cas_id IN (...)ORDER BY FIELD(cas_id, ...)Why These Fail with 1GB Temp Tables:Error Pattern:Why This Matters:2. Aurora Serverless V2 ConfigurationAll clusters have serverless read replicas, but most are undersized:Why 0.5 ACU is Problematic:Evidence of Auto-Scaling:3. Failing Query AnalysisFrom the ticket description, two main query types are failing:Query 1: OAuth Token Fetch (Most frequent failure)SELECT DISTINCT oat_oauth_token.*FROM oat_oauth_tokenINNER JOIN eaa_external_api_access ON oat_oauth_token.id = eaa_right_idWHERE oat_com_id = :companyId  AND eaa_com_id = oat_com_id  AND oat_deleted = 0  AND eaa_right_type = :rightType  AND oat_type IN (:access, :page_access)  AND (    (eaa_left_type = :leftType1 AND eaa_left_id = :leftId1)    OR (eaa_left_type = :leftType2 AND eaa_left_id = :leftId2)    OR (eaa_left_type = 'workgroup' AND eaa_left_id IN (...))  )r conversationsComparison to CARESMM-9369 (Previous Resolution)Key Insight: The fix from CARESMM-9369 was only applied to the pod3 cluster that was experiencing issues at the time. It was not rolled out to the other 7 production clusters, leaving them vulnerable to the same issue.\ud83d\udd27 Remediation PlanIMMEDIATE FIX (Required)Apply the proven fix from CARESMM-9369 to all 7 remaining clusters:Step 1: Update Parameter GroupsPod1aws rds modify-db-cluster-parameter-group \\  --region us-west-2 \\  --db-cluster-parameter-group-name prod-lswcore-aurora-pod1-rdsdbclusterparametergro-7sfwsk44wbyu-80 \\  --parameters \"ParameterName=temptable_max_mmap,ParameterValue=5368709120,ApplyMethod=immediate\"Pod2aws rds modify-db-cluster-parameter-group \\  --region us-west-2 \\  --db-cluster-parameter-group-name prod-lswcore-aurora-pod2-rdsdbclusterparametergro-12n584fhkkup4-80 \\  --parameters \"ParameterName=temptable_max_mmap,ParameterValue=5368709120,ApplyMethod=immediate\"Pod3aws rds modify-db-cluster-parameter-group \\  --region us-west-2 \\  --db-cluster-parameter-group-name prod-lswcore-aurora-pod3-rdsdbclusterparametergro-dy4tzlqyeh1u-80 \\  --parameters \"ParameterName=temptable_max_mmap,ParameterValue=5368709120,ApplyMethod=immediate\"Pod4aws rds modify-db-cluster-parameter-group \\  --region us-west-2 \\  --db-cluster-parameter-group-name prod-lswcore-aurora-pod4-rdsdbclusterparametergro-16ids9buj322w-80 \\  --parameters \"ParameterName=temptable_max_mmap,ParameterValue=5368709120,ApplyMethod=immediate\"Pod5aws rds modify-db-cluster-parameter-group \\  --region us-west-2 \\  --db-cluster-parameter-group-name prod-lswcore-aurora-pod5-rdsdbclusterparametergro-m77hpbmrwj2n-80 \\  --parameters \"ParameterName=temptable_max_mmap,ParameterValue=5368709120,ApplyMethod=immediate\"Pod6aws rds modify-db-cluster-parameter-group \\  --region us-west-2 \\  --db-cluster-parameter-group-name prod-lswcore-aurora-pod6-rdsdbclusterparametergro-1pu0knnmvr35n-80 \\  --parameters \"ParameterName=temptable_max_mmap,ParameterValue=5368709120,ApplyMethod=immediate\"Pod8aws rds modify-db-cluster-parameter-group \\  --region us-west-2 \\  --db-cluster-parameter-group-name prod-lswcore-aurora-pod8-rdsdbclusterparametergro-1bvxwzgwp2880-80 \\  --parameters \"ParameterName=temptable_max_mmap,ParameterValue=5368709120,ApplyMethod=immediate\"Step 2: Restart or Reboot InstancesThe parameter change requires a restart. Options:Example reboot with failover (zero downtime)aws rds reboot-db-instance \\  --region us-west-2 \\  --db-instance-identifier prod-lswcore-aurora-pod3-instance3 \\  --force-failoverChange Summary:OPTIONAL: Increase Serverless Min ACUFor additional safety margin on high-traffic clusters:Example for pod3 (adjust for other pods as needed)aws rds modify-db-cluster \\  --region us-west-2 \\  --db-cluster-identifier prod-lswcore-aurora-pod3-cluster \\  --serverless-v2-scaling-configuration MinCapacity=3.0,MaxCapacity=64.0 \\  --apply-immediatelyBenefits:Cost Impact:Recommendation: Apply parameter fix first, then evaluate ACU increase based on monitoring.\u2705 Verification StepsAfter applying the parameter change:1. Verify Parameter Updateaws rds describe-db-cluster-parameters \\  --region us-west-2 \\  --db-cluster-parameter-group-name <param-group-name> \\  --query 'Parameters[?ParameterName==temptable_max_mmap]'2. Expected: \"Value\": \"5368709120\", \"Source\": \"user\"2. Monitor Application Logs3. Test Affected Cases4. Monitor for 24-48 Hours\ud83d\udcdd Recommendations\ud83d\udd17 Related Documentation"
+        ],
+        [
+          "2025-11-21T16:05:05+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented privately:  @Rishi Singh, @Daniel Bosman\u00a0 and @Amir Khan\u00a0 \n Please review the above. We should have not kept insisting on network proxy issues on their side when they shared a HAR file of an agent working outside of their corporate network. \n We had a clear conversation ID, just looking this up on Sumo Logic would have pointed you to the issue. "
+        ],
+        [
+          "2025-11-21T16:04:57+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented privately:  @Rishi Singh, @Daniel Bosman\u00a0 and @Amir Khan\u00a0 \n Please review the above. We should have not kept insisting on network proxy issues on their side when they shared a HAR file of an agent working outside of their corporate network. \n We had a clear conversation ID, just looking this up on Sumo Logic would have pointed you to the issue. "
+        ],
+        [
+          "2025-11-21T16:03:07+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented publicly: Dear Meaghan and Don,\n\nThank you very much for your patience and for all the detailed information you\u2019ve shared so far, including multiple HAR files and screenshots. I sincerely apologize for the inconvenience this issue has caused your team and for the back and forth over the last day\u2014especially given how critical timely responses are for your customers.\n\nYesterday, because we were initially unable to reproduce the problem on our side, possibly due to the intermittent nature of the issue, we needed additional data from your environment before we could move forward. Once you provided the requested information, the underlying cause should have been identified more quickly. After reviewing the responses to the initial inquiry alongside the new HAR file and our backend logs, we have now confirmed that the Send button was missing because Khoros is intermittently unable to load the responding tokens needed for your agents to reply, which resulted in \u201cNo account available for responding\u201d and only the Save Draft option being shown.\n\nWe have escalated this now to our infrastructure team with the highest priority, and they are actively working to resolve the issue so that responding accounts load reliably and the Send button is always available without needing to refresh the page.\n\nYour continued effort and collaboration on this ticket are highly appreciated. We will keep you updated as soon as we have further progress or a confirmed resolution timeline to share.\n\nBest regards,\nPavly Nashed\nKhoros Care Support Team"
+        ],
+        [
+          "2025-11-21T15:49:34+00:00",
+          "Kayako - ticket id 60247476 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10815 is changed to 'In Progress' , block reason: -"
+        ],
+        [
+          "2025-11-21T15:49:29.907+0000",
+          "SaaS Jira - issue key CARESMM-10815 // SaaS Portal commented: note: Alert API - Assigned from Jira: vikranth.tirumuru@trilogy.com"
+        ],
+        [
+          "2025-11-21T15:49:29.886+0000",
+          "SaaS Jira - issue key CARESMM-10815 // SaaS Portal commented: note: Alert API - ticket status changed to In Progress"
+        ],
+        [
+          "2025-11-21T15:49:29.564+0000",
+          "SaaS Jira - issue key CARESMM-10815 // SaaS Portal commented: the alert has been acknowledged by vikranth.tirumuru@trilogy.com"
+        ],
+        [
+          "2025-11-21T15:49:29.524+0000",
+          "SaaS Jira - issue key CARESMM-10815 // SaaS Portal commented: note: Alert API - ticket status changed to In Progress"
+        ],
+        [
+          "2025-11-21T15:49:28.924+0000",
+          "SaaS Jira - issue key CARESMM-10815 // SaaS Portal commented: note: Alert API - Assigned from Jira: vikranth.tirumuru@trilogy.com"
+        ],
+        [
+          "2025-11-21T15:49:28.650+0000",
+          "SaaS Jira - issue key CARESMM-10815 // status is changed from In Queue to In Progress"
+        ],
+        [
+          "2025-11-21T15:49:27.746+0000",
+          "SaaS Jira - issue key CARESMM-10815 // SaaS Portal commented: the alert has been acknowledged by vikranth.tirumuru@trilogy.com"
+        ],
+        [
+          "2025-11-21T15:45:50+00:00",
+          "Kayako - ticket id 60247476 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-10815 is changed to 'In Queue' , block reason: -"
+        ],
+        [
+          "2025-11-21T15:45:43.985+0000",
+          "SaaS Jira - issue key CARESMM-10815 // Issue is created by Pavly Nashed with description: Similar to     ProblemThis incident mirrors previous issues tracked in CARESMM-9318 and CARESMM-9369: agents in Fortinet's Khoros Care instance intermittently cannot send responses because no responding account is available. The backend logs show MySQL temporary tables becoming full when fetching case and OAuth token data, preventing responding tokens from being loaded for the agent.Reproduction StepsActual BehaviorRepresentative error snippets:1) Reindex / case fetch failure2025-11-21 15:35:25,398 ERROR [CaseReindexing-update.pipeline-0] services.CaseService:[1015] - [v:205.0] Exception encountered while reindexing cases from queue update.pipeline: {COMPANY.23=[{\"companyId\":23,\"caseId\":18599877,...}], COMPANY.37=[{\"companyId\":37,\"caseId\":18599875,...}]}\n\norg.skife.jdbi.v2.exceptions.UnableToExecuteStatementException: java.sql.SQLException: The table '/rdsdbdata/tmp/#sql167_f6640_0' is full [statement:\"SELECT DISTINCT  cas_id, ... from cas_case inner join doc_document ... where  cas_com_id=:companyId  and cas_id in  ( 18599875 )  order by FIELD(cas_id, 18599875)\", ...]\nCaused by: java.sql.SQLException: The table '/rdsdbdata/tmp/#sql167_f6640_0' is full2) Responding token fetch failures (Fortinet, COMPANY.23, caseId 18596151 \u2013 multiple occurrences)2025-11-20 19:14:52,853 ERROR [play-thread-44] services.CaseService:[1015] - [v:205.0] An error occurred while fetching responding tokens / integration handles for COMPANY.23 caseId: 18596151 org.skife.jdbi.v2.exceptions.UnableToExecuteStatementException: java.sql.SQLException: The table '/rdsdbdata/tmp/#sql167_de898_2f2' is full [statement:\"SELECT DISTINCT oat_oauth_token.* FROM oat_oauth_token INNER JOIN eaa_external_api_access ON oat_oauth_token.id = eaa_right_id WHERE oat_com_id = :companyId AND eaa_com_id = oat_com_id AND oat_deleted = 0 AND eaa_right_type = :rightType AND oat_type IN (:access, :page_access) AND (  (eaa_left_type = :leftType1 AND eaa_left_id = :leftId1)  OR (eaa_left_type = :leftType2 AND eaa_left_id = :leftId2)  OR (eaa_left_type = 'workgroup' AND eaa_left_id IN (208,535))) \", ...]\nCaused by: java.sql.SQLException: The table '/rdsdbdata/tmp/#sql167_de898_2f2' is full3) Similar token fetch failure on another tenant (COMPANY.28 caseId 37168898)2025-11-21 15:41:00,052 ERROR [play-thread-28] services.CaseService:[1015] - [v:205.0] An error occurred while fetching responding tokens / integration handles for COMPANY.28 caseId: 37168898\norg.skife.jdbi.v2.exceptions.UnableToExecuteStatementException: java.sql.SQLException: The table '/rdsdbdata/tmp/#sql167_f6614_39' is full [statement:\"SELECT DISTINCT oat_oauth_token.* FROM oat_oauth_token INNER JOIN eaa_external_api_access ON oat_oauth_token.id = eaa_right_id WHERE oat_com_id = :companyId AND eaa_com_id = oat_com_id AND oat_deleted = 0 AND eaa_right_type = :rightType AND oat_type IN (:access, :page_access) AND (  (eaa_left_type = :leftType1 AND eaa_left_id = :leftId1)  OR (eaa_left_type = :leftType2 AND eaa_left_id = :leftId2)  OR (eaa_left_type = 'workgroup' AND eaa_left_id IN (556,637))) \", ...]\nCaused by: java.sql.SQLException: The table '/rdsdbdata/tmp/#sql167_f6614_39' is fullThese errors indicate that the MySQL temp space (/rdsdbdata/tmp) is exhausted on the production cluster, causing key case and OAuth token queries to fail.Expected BehaviorImpact / SeverityKnown Related TicketsInitial HypothesisRequested ActionsRelevant Search Runs:An error occurred while fetching responding tokens / integration handlesException encountered while reindexing cases from queue"
+        ],
+        [
+          "2025-11-21T15:40:16+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented privately:  Essentially, Khoros couldn't fetch the token used for responding from the DB due to DB exhaustion, so the Send button never showed up. \n The 2nd part is normal behavior for Khoros, if no token > No account available for responding and no Send button "
+        ],
+        [
+          "2025-11-21T15:38:33+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented privately:  The websocket error for staging is not the culprit here "
+        ],
+        [
+          "2025-11-21T15:38:11+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented privately:  I copied the logs from the wrong ticket - this is the correct one \n\n>\u00a0025-11-20\u00a019:14:52,853\u00a0ERROR\u00a0[play-thread-44]\u00a0services.CaseService:[1015]\u00a0-\u00a0[v:205.0]\u00a0An\u00a0error\u00a0occurred\u00a0while\u00a0fetching\u00a0responding\u00a0tokens\u00a0/\u00a0integration\u00a0handles\u00a0for\u00a0COMPANY.23\u00a0caseId:\u00a018596151\n\n And FYI (Search Run [https://service.sumologic.com/log-search/create?id=O7X3HaiPDc67uJK0AcuvDhMmX3VIpjQYqhhn71Zq]) \nimage \n\n This should have been escalated as an SS. I just didn't have a ticket to trace back with so needed to ask for a sample. \n Also, this is an issue we had before. \n\n This was raised before on CARESMM-9318 [https://trilogy-eng.atlassian.net/browse/CARESMM-9318] \n This also led to CARESMM-9351 [https://trilogy-eng.atlassian.net/browse/CARESMM-9351] as an SS \n\n And the other error (Exception encountered while reindexing cases from queue) is there as well -- Search Run [https://service.sumologic.com/log-search/create?id=krK9FzkM0VSclbCKgiBYGFiaf7PQoWTyfjFi6Qwz] \nimage \n\n Raising an SS "
+        ],
+        [
+          "2025-11-21T15:37:53+00:00",
+          "Kayako - ticket id 60247476 // Pablo Fernandez commented privately:  please check if v2.107.0 accidentally included staging/test environment references. (https://github.com/trilogy-group/eng-maintenance/issues/13307) "
+        ],
+        [
+          "2025-11-21T15:29:21+00:00",
+          "Kayako - ticket id 60247476 // Don Kempt commented publicly:  \n\nHello Amir, \n\n\u00a0\n\nOur Webfilter policy has not changed in years. It was working perfectly fine. \n\nAgain it should be noted, that the issue is intermittent, it does not happen all the time for every engineer. Regardless of in office or wfh, over vpn or direct connect.\n\n\u00a0\n\nDeep inspection typically only causes an issue when using a unsigned certificate, as it breaks the cert chain and can flag it as a MITM attack. This would not be a \u201csometimes it works\u201d and \u201csometimes it does not\u201d work type of scenario. If deep inspection was the root cause, it would be consistent.\n\nThis being said, we do not use deep inspection.\n\n\u00a0\n\nI did check the web filter categorization, both url\u2019s do not fall under restricted traffic. \n\n\u00a0\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nDon Kempt\n\nSupport Operations, Support & Services\n\nimage\n\nimage\n\nE: dkempt@fortinet.com\n\nMicrosoft Teams (within tenant only): Start Chat [https://teams.microsoft.com/l/chat/0/0?users=dkempt@fortinet.com&topicname=Chat]\n\nAddress: 16 Fitzgerald Road, Ottawa, ON K2H 8R6\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-21T15:26:59+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented publicly: Dear Team,\n\nThank you for your continued patience, and apologize for any inconvenience caused.\n\nI want to update you that we are investigating this further on our side. We will get back to you shortly with more details.\n\nBest regards,\nPavly Nashed\nKhoros Care Support Team"
+        ],
+        [
+          "2025-11-21T15:25:44+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented privately:  Guys, why are we so hung on their network proxy? They shared another HAR file outside of their corporate network. \n I don't think we checked the ticket they shared or its logs?\nI can clearly see this now (which is why I requested more info): \n\n>\u00a02025-11-21\u00a015:24:21,885\u00a0ERROR\u00a0[play-thread-62]\u00a0services.CaseService:[1015]\u00a0-\u00a0[v:205.0]\u00a0An\u00a0error\u00a0occurred\u00a0while\u00a0fetching\u00a0responding\u00a0tokens\u00a0/\u00a0integration\u00a0handles\u00a0for\u00a0COMPANY.55\u00a0caseId:\u00a024268450\n"
+        ],
+        [
+          "2025-11-21T15:03:47+00:00",
+          "Kayako - ticket id 60247476 // Amir Khan commented publicly: Dear Don,\n\nThank you for following up.\n\nLooking at the HAR Meaghan shared on Nov 20 (ID 18596151), the WebSocket failures appear to be happening at the network layer. Since you're Fortinet, it's safe to assume traffic is going through your FortiGate stack \u2014 and in our experience, SSL Deep Inspection and Web Filtering can interfere with WebSocket connections, especially when staging domains are involved.\n\nCould you check the following on your side?\n\n\t* Is SSL Deep Inspection enabled on your FortiGate policy?\n\n\t* If yes, try bypassing it temporarily for:\n\n\t* spredchat-staging.spredfast.com\n\t* app.flow.ai\n\n\t* Check your Web Filter logs \u2014 are these domains being blocked or miscategorized?\n\t* Also, when opening HTTPS sites, do you see a Fortinet-issued certificate? That\u2019ll confirm if SSL interception is in place.\n\nLet us know what you find \u2014 it\u2019ll help us confirm if the network layer is the root cause.\n\nBest regards,\nAmir Khan\nKhoros Care Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-21T14:05:44+00:00",
+          "Kayako - ticket id 60247476 // Daniel Bosman commented privately:  Instructions [https://docs.google.com/document/d/1w6pg-Lqz1Y5n8Gah7JXTRAnNEgnLGDgQn0p4EE_DdyU/edit#bookmark=id.nmtleyh2xrkb] \n\nWHAT IS YOUR PROPOSED ACTION?\n(REQUIRED: SELECT ONE, DELETE THE REST)\n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Hi, \n Looking at the HAR Meaghan shared on Nov 20 (ID 18596151), the WebSocket failures appear to be happening at the network layer. Since you're Fortinet, it's safe to assume traffic is going through your FortiGate stack \u2014 and in our experience, SSL Deep Inspection and Web Filtering can interfere with WebSocket connections, especially when staging domains are involved. \n Could you check the following on your side? \n\n \t* Is SSL Deep Inspection enabled on your FortiGate policy?\n\n\t* If yes, try bypassing it temporarily for: \n\n \t* spredchat-staging.spredfast.com\n \t* app.flow.ai\n\n \t* Check your Web Filter logs \u2014 are these domains being blocked or miscategorized?\n \t* Also, when opening HTTPS sites, do you see a Fortinet-issued certificate? That\u2019ll confirm if SSL interception is in place.\n\n Let us know what you find \u2014 it\u2019ll help us confirm if the network layer is the root cause. \n Best regards, \n Daniel Bosman \n Khoros Care Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n Zscaler, Fortinet, Palo Alto, and similar products often break WebSockets unless explicitly allowed. Wouldn't be a bad idea to check. "
+        ],
+        [
+          "2025-11-21T13:59:00+00:00",
+          "Kayako - ticket id 60247476 // Daniel Bosman commented privately:  Given they are Fortinet, there is a high chance they are behind a Fortinet security stack \u2014 typically a FortiGate firewall with SSL Deep Inspection and Web Filtering enabled. "
+        ],
+        [
+          "2025-11-21T13:56:33+00:00",
+          "Kayako - ticket id 60247476 // Daniel Bosman commented privately:  Checked HAR shared on Nov 20 [https://central-supportdesk.kayako.com/agent/conversations/60247476?postId=24324426] \n\nQuick findings:\n\n \t*\nWebSockets to spredchat-staging fail w/ status 0 \u2192 no response at all. That usually means network-side block (FW/proxy/SSL inspection).\n\n \t*\nOne WS (app.flow.ai) does connect (101) but then goes dead \u2192 likely getting dropped after handshake.\n\n \t*\nPattern matches firewall/inspection interference, esp. since it\u2019s a staging domain.\n\n"
+        ],
+        [
+          "2025-11-21T12:54:38+00:00",
+          "Kayako - ticket id 60247476 // ATLAS commented privately: Action: l2"
+        ],
+        [
+          "2025-11-21T12:54:15+00:00",
+          "Kayako - ticket id 60247476 // Don Kempt commented publicly:  \n\nHello Rishi, \n\n\u00a0\n\nWe have been running into this issue intermittently for months now.\n\n\u00a0\n\nThis worked, until yesterday. There was no changes on our end to code or firewall.\n\nEvery time we have this issue, we spend days in a degraded level of service jumping through hoops until it turns out to be a bug on your side.\n\n\u00a0\n\nWe have provided HAR\u2019s, we have checked with agents wfh and in office, used different browsers etc. \n\nWe have no problem assisting in troubleshooting, but here we are again\u2026 on our second day 2 of the chat service not functioning as expected\u2026 asked to run the same tests\u00a0 pointing to our network or we changed the code.\n\n\u00a0\n\nIf it was a code change, or a firewall change, it would not be intermittent.\n\n\u00a0\n\nMost of these questions were already asked by the previous engineer on this\u00a0 case.\n\n\u00a0\n\nPlease review the ticket\u2026 review previous tickets. \n\n@Aamir Merchant @Brad Gerard Please follow up with this. \n\n\u00a0\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nDon Kempt\n\nSupport Operations, Support & Services\n\nimage\n\nimage\n\nE: dkempt@fortinet.com\n\nMicrosoft Teams (within tenant only): Start Chat [https://teams.microsoft.com/l/chat/0/0?users=dkempt@fortinet.com&topicname=Chat]\n\nAddress: 16 Fitzgerald Road, Ottawa, ON K2H 8R6\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-21T04:54:59+00:00",
+          "Kayako - ticket id 60247476 // Rishi Singh commented publicly: Hello Meaghan,\n\nThank you again for the detailed information and HAR files regarding the missing Send/Post option in Khoros Care. Based on what we see so far, there are no obvious platform errors on our side during the times you reproduced the issue, so the most likely drivers are local browser, network, or site/widget configuration.\nTo help isolate and resolve this behavior, please run through the checks below on your side:\n\n\t* \nBrowser / local environment checks\n\n\t* Test with multiple browsers (latest Chrome, Firefox, Edge) and in a private/incognito window to rule out cached scripts and old sessions.\n\t* Temporarily disable all browser extensions (especially ad\u2011blockers, script\u2011blockers, privacy or security plugins) and whitelist https://fortinet.response.lithium.com if any such tools are in use.\n\t* Clear cookies, cache, and site data specifically for https://fortinet.response.lithium.com, then sign back into Care and test again.\n\n\t* \nNetwork / proxy / firewall checks\n\n\t* Ask your network/security team to verify that WebSocket (wss://) traffic from agents\u2019 browsers to Khoros Care and related services is not being blocked, terminated, or heavily inspected by corporate firewalls, proxies, or SSL inspection devices.\n\t* Have at least one affected agent try the same workflow from two different networks (e.g., corporate/VPN vs. home Wi\u2011Fi or a mobile hotspot) and note whether the missing Send/Post behavior occurs on both or only on the corporate side.\n\t* If you are using Brand Messenger / Modern Chat widgets, confirm that all documented Brand Messenger SDK endpoints are allowlisted so that real\u2011time messaging traffic can flow without interference. Ref: Brand Messenger SDK Allowlist [https://khoros-care.kayako.com/article/124593]\n\n\t* \nWidget / site integration checks for your web pages\n\n\t* On https://www.fortinet.com/support/contact and https://support.fortinet.com/, have your web team review the embedded chat/contact widget JavaScript.\n\n\t* Confirm that:\n\n\t* The widget implementation matches the current Modern Chat / Brand Messenger configuration for your account (for example, using the documented JS snippet/approach).\n\t* There are no references to outdated, test, or legacy environments in the widget code.\n\n\t* If any differences are found between the widget configuration on those pages and your intended production setup, please align them and then have an agent retest.\n\n\t* \nFresh data when the issue occurs\n\n\t* If the behavior persists after the above checks, please capture:\n\n\t* A fresh HAR file and\n\t* A browser console log\nright when the Send/Post option is missing (start recording, reproduce the issue once, then stop).\n\n\t* Include the exact conversation ID, timestamp, agent username, browser, and network type (VPN vs. non\u2011VPN) for each example so you can compare patterns between working and failing cases.\n\nOnce you have the results of these checks, we would be able to further investigate this issue.\n\nBest regards,\nRishi Singh\nKhoros Care Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-21T04:41:47+00:00",
+          "Kayako - ticket id 60247476 // Rishi Singh commented privately:  I tried to reproduce-- \n\n I don't have a send button \nimage \n\n I will refresh and see-- \n It did not come back even after refresh-- \n It could be because of this\u00a0 \nimage \n\n I checked in other communites-- post button is generally available for our users \nimage \n\n ----- \n\n I pulled and analyzed all three HAR attachments: \n\n \t* fortinet.response.lithium.com_-_11202025.har (1621799) \u2013 from the initial affected agent\n \t* fortinet.response.lithium.com.har (1621938) \u2013 from Pavly (non\u2011repro)\n \t* fortinet.response.lithium.com_Archive_[25-11-20_11-03-45].har (1622049) \u2013 from CSR at home (affected, Firefox, chat #18596151)\n\n 1 Pavly\u2019s HAR\u00a0 \n In the \u201cgood\u201d HAR from Pavly: \n\n\t* There are no references to: \n\n \t* spredchat-staging.spredfast.com\n \t* static.qa.app.khoros.com\n\n\t* There are references to Flow/Agent Assist: \n\n \t* Requests to https://app.flow.ai/agent-assist-gateway-web/socket.info?... with HTTP 200 responses.\n \t* These come from origin https://fortinet.response.lithium.com and return the Agent Assist WebSocket endpoint (wss://app.flow.ai/agent-assist-gateway-web/ws/...).\n\n\t* In this scenario, Pavly reports: \n\n \t* The Send button is always available.\n \t* No server\u2011side errors around that time.\n\n This is our \u201cknown good\u201d baseline: normal Care + Flow Agent Assist integration behavior. \n\n 2 Initial agent HAR (affected \u2013 1621799) \n In the first customer HAR (from an agent seeing the issue): \n\n\t* \n There are WebSocket attempts to a staging endpoint: \n\n \t* URL:\nwss://spredchat-staging.spredfast.com/socket.io/?EIO=3&transport=websocket\n \t* HAR shows an associated message:\nWebSocket is closed before the connection is established.\n \t* So the browser is trying (and failing) to open a Socket.IO [http://socket.io/] WebSocket to our Spredchat staging environment, from origin https://fortinet.response.lithium.com. \n\n\t* \n There is a configuration blob that includes: \n\n \t* flowAiUrl:https://app.flow.ai\n \t* flowAiV2Url:https://static.qa.app.khoros.com/index.html\n\n \t* \n That flowAiV2Url pointing to static.qa.app.khoros.com is particularly suspicious: it suggests that in this failing session, the browser is being told to load the Flow \u201cv2\u201d UI from a QA static host, not production. \n\n\t* \n Importantly, in this HAR: \n\n \t* My earlier scan shows no agent-assist-gateway-web entries; i.e., it does not appear to be successfully hitting the normal app.flow.ai/agent-assist-gateway-web/socket.info path.\n\n So in this failing session we see: \n\n\t* A mix of prod and QA / staging endpoints: \n\n \t* Prod: https://app.flow.ai\n \t* QA static: https://static.qa.app.khoros.com/index.html\n \t* Staging websocket: wss://spredchat-staging.spredfast.com/socket.io/...\n\n \t* The Spredchat staging websocket repeatedly fails to establish.\n \t* The Flow gateway endpoint that works in Pavly\u2019s HAR is not clearly visible here.\n\n This is very different from Pavly\u2019s clean, production-only HAR. \n\n 3 Home CSR HAR (affected \u2013 1622049) \n In the home CSR HAR (Firefox, remote network, also affected): \n\n\t* \n WebSocket calls to Spredchat staging: \n\n\t* Multiple entries such as: \n\n \t* wss://spredchat-staging.spredfast.com/socket.io/?EIO=3&transport=websocket\n\n\t* All with: \n\n \t* status: 0\n \t* serverIPAddress: null\n \t* No established connection.\n\n \t* Each request has Origin: https://fortinet.response.lithium.com.\n \t* So regardless of network (office vs home), the Care UI is trying to open WebSockets to spredchat-staging, and those connections are never established.\n\n\t* \n Flow Agent Assist gateway still works: \n\n\t* There is a request: \n\n \t* https://app.flow.ai/agent-assist-gateway-web/socket.info?authorId=fortinet_...\n\n \t* It returns HTTP 200.\n \t* Origin and Referer are https://fortinet.response.lithium.com/.\n\n \t* \n This HAR does not show the flowAiV2Url \u2192 static.qa.app.khoros.com string (so that QA static config may have been transient or specific to the earlier agent). However, it still shows the spredchat-staging WebSocket attempts with status: 0. \n\n So, on an affected home agent: \n\n \t* The Flow gateway path looks healthy (same as Pavly\u2019s).\n \t* But the UI also tries to open a WebSocket to spredchat-staging.spredfast.com, which fails every time.\n \t* This behavior does not occur in Pavly\u2019s HAR.\n\n -------- \n\n"
+        ],
+        [
+          "2025-11-20T19:09:28+00:00",
+          "Kayako - ticket id 60247476 // Meaghan Mcclure commented publicly:  \n Hi Team, \n\n I am attaching a HAR file from a CSR that is working from home, not in the office.\u00a0 The browser this time is firefox, and she experienced the issue at 10:59am PST on chat #18596151.\u00a0\u00a0 \n\n Let me know if this satisfies the requirements.\u00a0\u00a0 \n\nBest Regards ,\n\nMeaghan McClure\n\nCustomer Service Manager - AMER\n\nHours : 9:00am -6:00pm EST\n\nmmcclure@fortinet.com\n\nHow to Engage Customer Service [https://fortinet.sharepoint.com/sites/CustomerSupport/SitePages/Customer-Support-%26-Services-Customer-Service-Alias-Guidelines.aspx]\n\nimage\n\n-------------------------\n\n \n"
+        ],
+        [
+          "2025-11-20T17:59:04+00:00",
+          "Kayako - ticket id 60247476 // ATLAS commented publicly: Dear Meaghan,\nThank you for the detailed updates and for providing a screenshot and HAR file, which have been very helpful in our analysis of the issue with the missing \"Send\" button in Khoros Care.\nBased on your description, file analysis, and our review of the HAR file, here is what we have observed and what you may consider next:\n\nKey Observations:\n\n \t* Agents experience a missing \"Send\" button when replying to customers. Only the \"Save Draft\" option is available until they refresh the browser.\n \t* This occurs for conversations initiated via Fortinet's support contact [https://www.fortinet.com/support/contact] and support portal [https://support.fortinet.com/].\n \t* Attempts to use the Ctrl + Enter shortcut do not resolve the issue.\n \t* The HAR file shows a failed WebSocket connection attempt to spredchat-staging.spredfast.com. This is unusual since a functional environment would typically establish a healthy WebSocket to the active agent assist gateway (e.g., app.flow.ai).\n\nTechnical Hypothesis:\n\n \t* It appears that your affected agents\u2019 environment is still attempting to connect to a legacy or staging chat endpoint (spredchat-staging.spredfast.com), which fails and can leave the reply composer in a state where only \"Save Draft\" is available.\n \t* This could be related to a cached legacy script, a network/proxy configuration, or an outdated reference in the agent\u2019s browser or network stack. Our tests in your instance (from an external network) did not reproduce this behavior, and logs do not show any server-side errors at the relevant time.\n\nRecommended Immediate Actions:\n\n \t* Network Segmentation: Please check whether this problem only appears on specific networks (for example, agents on VPN/corporate network versus agents working remotely or on a different network, such as a mobile hotspot).\n \t* Review Proxy or Firewall Rules: Ensure the network is not blocking or modifying WebSocket traffic to Khoros or related services. Specifically, check for any firewall or proxy rules that could block wss://spredchat-staging.spredfast.com or any other WebSocket endpoints used by Khoros Care.\n \t* Tenant Configuration: There may be lingering references to legacy chat integrations. From the Khoros Care Admin Console, navigate to Admin > Integrations > Source Integrations and confirm there are no enabled legacy or staging sources related to Spredchat. Reviewing Modern Chat setup tasks [https://khoros-care.kayako.com/article/127240] could be helpful to ensure only current integrations are active.\n \t* Browser Cache and Version: Although you've already tried a refresh, in some cases, clearing the browser cache or testing with a newly installed browser (preferably Chrome, Firefox, or Edge) can force reload of the latest integration scripts and eliminate cached legacy code.\n \t* Console and HAR Capture: If the issue persists, capturing both a HAR and browser console log immediately upon the button missing, together with the time and affected conversation ID, can help identify whether there are script errors or blocked requests in real-time.\n\nFor further details related to widget deployment and chat integration settings, you may wish to reference these articles:\n\n \t* Widget Deployment [https://khoros-care.kayako.com/article/124534]\n \t* Modern Chat setup tasks [https://khoros-care.kayako.com/article/127240]\n\nIf after these steps the issue still persists only on certain networks or endpoints, it would suggest the root cause is environmental or configuration-related rather than a Khoros Care platform defect.\n\nIf you have responses to the segmentation tests, network checks, or can provide updated HAR/console logs from affected scenarios, please share them so we can assist with a more targeted analysis of your environment.\n\nThank you for your collaboration and for providing comprehensive context around the issue.\n\nSincerely,\nAtlas\nKhoros Care Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-20T17:58:00+00:00",
+          "Kayako - ticket id 60247476 // Don Kempt commented publicly:  \n\nHello Pavly, \n\n\u00a0\n\nResponses inline. \n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-20T17:17:02+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented publicly: Dear Meaghan,\n\nThank you\u00a0again\u00a0for the screenshot\u00a0and\u00a0HAR\u00a0file\u00a0\u2013 they were\u00a0very\u00a0helpful.\nHere is what we have found so far:\n\n\t* Your HAR shows normal\u00a0traffic\u00a0to\u00a0fortinet.response.lithium.com\u00a0with\u00a0no\u00a0HTTP\u00a0errors.\n\t* The\u00a0only\u00a0clear\u00a0issue is a\u00a0failed WebSocket\u00a0to `wss://spredchat-staging.spredfast.com/socket.io/...` with\u00a0the message\u00a0\u201cWebSocket\u00a0is\u00a0closed before\u00a0the\u00a0connection is established.\u201d\n\t* When\u00a0I\u00a0run the\u00a0same steps\u00a0in your instance\u00a0using my\u00a0own user\u00a0and\u00a0network, I\u00a0do not\u00a0see\u00a0this WebSocket\u00a0at\u00a0all. Instead, I\u00a0see\u00a0a\u00a0healthy\u00a0WebSocket\u00a0to `wss://app.flow.ai/agent-assist-gateway-web/...`, and\u00a0in my\u00a0tests the\u00a0Send\u00a0button is\u00a0always\u00a0available.\n\t* Upon tracing the logs for the same time period, we could not find any server errors on our side that would explain this observed behavior.\n\nOur current hypothesis:\n\n\t* Some\u00a0part\u00a0of the configuration or network path\u00a0used\u00a0by\u00a0your affected agents\u00a0is\u00a0still\u00a0trying\u00a0to\u00a0connect to this\u00a0Spredchat\u00a0staging\u00a0endpoint, and\u00a0that\u00a0connection fails.\n\t* If the\u00a0UI\u00a0expects this real\u2011time connection to be ready\u00a0before\u00a0fully enabling replies, the failed WebSocket\u00a0could\u00a0leave the composer in a state\u00a0where\u00a0only\u00a0Save Draft\u00a0is\u00a0available and\u00a0Send\u00a0is missing until the page is refreshed.\n\nSince it is not reproducible on our side, even on your instance, we kindly request the following from you:\n\n\t* Please confirm whether\u00a0the\u00a0issue only happens for agents\u00a0on\u00a0certain networks (for example, on VPN / corporate network vs. off\u2011VPN\u00a0or\u00a0remote).\n\t* Please confirm if this is only happening for Brand Messenger conversations, or is it only impacting Community ones.\n\t* Could you also please check with your IT/network team whether any recent firewall, proxy, or SSL inspection changes might be blocking or rewriting WebSocket (wss://) connections, particularly to external services such as Khoros/Spredfast?\n\t* Could you also please confirm when this issue started happening, or was first observed?\n\t* From an affected agent, could you capture another HAR plus browser console log at the exact time the Send button is missing, and share the approximate time and conversation ID?\n\t* If possible, have one affected agent try the same workflow from a different network (such as a mobile hotspot) and let us know if the problem still occurs.\n\nThis will help us pinpoint where exactly this is failing, and what might be causing the issue with the Send button.\n\nThank you for your continued patience and cooperation.\n\nThank you f\n\nBest regards,\nPavly Nashed\nKhoros Care Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-20T17:10:36+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented privately:  Issue is not reproducible. Find repro file attached. \n Their HAR shows only 1 issue with WebSocket (wss://spredchat-staging.spredfast.com/socket.io/) \n This took me some time as I'm on an IM call. Let's ask the customer if it's a network issue maybe. "
+        ],
+        [
+          "2025-11-20T16:04:15+00:00",
+          "Kayako - ticket id 60247476 // Pavly Nashed commented publicly: Dear Meaghan,\n\nThank you for reaching out and reporting this issue.\n\nWe are currently investigating this, and will get back to you shortly with further updates.\n\nBest regards,\nPavly Nashed\nKhoros Care Support Team"
+        ],
+        [
+          "2025-11-20T15:55:31+00:00",
+          "Kayako - ticket id 60247476 // Meaghan Mcclure commented publicly:  \n We have tested using Ctrl + Enter\u00a0to send the message when the send button disappears, and there is no change.\u00a0 It does not send the message, and a refresh is still required.\u00a0\u00a0 \n\nBest Regards ,\n\nMeaghan McClure\n\nCustomer Service Manager - AMER\n\nHours : 9:00am -6:00pm EST\n\nmmcclure@fortinet.com\n\nHow to Engage Customer Service [https://fortinet.sharepoint.com/sites/CustomerSupport/SitePages/Customer-Support-%26-Services-Customer-Service-Alias-Guidelines.aspx]\n\nimage\n\n-------------------------\n\n \n"
+        ],
+        [
+          "2025-11-20T15:34:30+00:00",
+          "Kayako - ticket id 60247476 // Don Kempt commented publicly:  \n\nAdding Brad and Aamir\n\n\u00a0\n\nPlease be advised\n\n\u00a0\n\nRegards,\n\n\u00a0\n\nDon Kempt\n\nSupport Operations, Support & Services\n\nimage\n\nimage\n\nE: dkempt@fortinet.com\n\nMicrosoft Teams (within tenant only): Start Chat [https://teams.microsoft.com/l/chat/0/0?users=dkempt@fortinet.com&topicname=Chat]\n\nAddress: 16 Fitzgerald Road, Ottawa, ON K2H 8R6\n\nimage\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-20T15:32:34+00:00",
+          "Kayako - ticket id 60247476 // ATLAS commented publicly: Dear Meaghan,\n\nThank you for sharing detailed information, including the screenshot and HAR file analysis, regarding your agents' inability to see the \"Send\" button when replying to customers in Khoros Care. The current workaround requiring a browser refresh to display the \"Send\" button is understandably disruptive to workflow.\n\nBased on your report and file analysis:\n\n \t* The \"Send\" button is missing from the agent reply view after drafting a response, with only the \"Save Draft\" option visible.\n \t* This affects conversations created via Fortinet's support contact [https://www.fortinet.com/support/contact] and support portal [https://support.fortinet.com/].\n \t* Refreshing the browser restores the \"Send\" option temporarily.\n\nHere are some additional troubleshooting steps and relevant best practices that may help minimize disruption while this behavior persists:\n\n1. Keyboard Shortcut for Sending Responses:\nIn the Response editor, agents can use the Ctrl + Enter (or Cmd + Return on Mac) keyboard shortcut to send a reply. This shortcut may function even if the \"Send\" button is not visible. For more keyboard shortcuts and tips, refer to the Khoros Care Keyboard Shortcuts Article [https://khoros-care.kayako.com/article/126807].\n\n2. Browser Behavior:\nSince a refresh (which reloads all client scripts) restores the button, the behavior could be related to browser caching, session timeouts, or temporary UI script loading failures. While the hard reload (Ctrl+F5) and clearing browser cache/cookies may help, using keyboard shortcuts as above can bypass the missing button without needing to reload the page.\n\n3. Review Existing Extensions:\nBrowser extensions that manipulate web content (such as privacy, script-blocking, or ad-blocking tools) may interfere with functionality. Ensuring that Khoros Care's domain is whitelisted may help mitigate UI inconsistencies.\n\n4. Agent Assist/Response Locked:\nIf your organization uses Agent Assist and the response field is locked, agents may see a \"Reply manually\" button, which must be clicked to enable sending. For further details, see the Agent Assist Article [https://khoros-care.kayako.com/article/126970].\n\nSummary and Provisional Workarounds:\n\n \t* Try sending responses using Ctrl + Enter / Cmd + Return when the button is unavailable.\n \t* If consistent, check for browser extensions or security configurations that may affect UI rendering.\n \t* Refer to keyboard shortcut guides to streamline response workflows while this visual glitch persists: Keyboard Shortcuts in Khoros Care [https://khoros-care.kayako.com/article/126807].\n\nPlease let us know if the keyboard shortcut works for your agents or if you identify a specific browser environment where the issue does not occur.\n\nSincerely,\nAtlas\nKhoros Care Support Team.\n\n-------------------------\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-20T15:31:49+00:00",
+          "Kayako - ticket id 60247476 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\timage_(99).png_1621798\n\n-\u00a0Agents\u00a0are\u00a0unable\u00a0to\u00a0see\u00a0the\u00a0Send\u00a0button\u00a0when\u00a0attempting\u00a0to\u00a0reply\u00a0to\u00a0customers\u00a0in\u00a0Khoros\u00a0Care;\u00a0only\u00a0the\u00a0Save\u00a0Draft\u00a0button\u00a0is\u00a0visible.\n-\u00a0Agents\u00a0must\u00a0refresh\u00a0their\u00a0browser\u00a0for\u00a0the\u00a0Send\u00a0button\u00a0to\u00a0become\u00a0available.\n-\u00a0This\u00a0issue\u00a0occurs\u00a0when\u00a0conversations\u00a0are\u00a0created\u00a0by\u00a0customers\u00a0on\u00a0https://www.fortinet.com/support/contact\u00a0and/or\u00a0https://support.fortinet.com/.\n-\u00a0The\u00a0Khoros\u00a0Care\u00a0instance\u00a0affected\u00a0is\u00a0https://fortinet.response.lithium.com.\n-\u00a0The\u00a0screenshot\u00a0confirms\u00a0that\u00a0only\u00a0the\u00a0Save\u00a0Draft\u00a0option\u00a0is\u00a0available\u00a0after\u00a0a\u00a0response\u00a0is\u00a0drafted,\u00a0and\u00a0the\u00a0Send\u00a0button\u00a0is\u00a0missing.\n\n \t\tfortinet.response.lithium.com_-_11202025.har_1621799\n\nHi\u00a0Meaghan,\n\nThank\u00a0you\u00a0for\u00a0reporting\u00a0this\u00a0issue\u00a0and\u00a0providing\u00a0the\u00a0HAR\u00a0file\u00a0and\u00a0screenshot.\u00a0I\u00a0understand\u00a0that\u00a0your\u00a0agents\u00a0are\u00a0seeing\u00a0the\u00a0\u201cSend\u201d\u00a0button\u00a0missing\u00a0when\u00a0replying\u00a0to\u00a0customers\u00a0in\u00a0Khoros\u00a0Care,\u00a0and\u00a0a\u00a0browser\u00a0refresh\u00a0is\u00a0required\u00a0to\u00a0make\u00a0it\u00a0appear.\u00a0I\u00a0realize\u00a0this\u00a0is\u00a0causing\u00a0delays\u00a0for\u00a0your\u00a0team,\u00a0so\u00a0I\u00a0want\u00a0to\u00a0make\u00a0sure\u00a0we\u00a0resolve\u00a0it\u00a0as\u00a0quickly\u00a0as\u00a0possible.\n\n**A\u00a0few\u00a0questions\u00a0to\u00a0help\u00a0us\u00a0investigate\u00a0further:**\n-\u00a0When\u00a0did\u00a0this\u00a0issue\u00a0first\u00a0start\u00a0occurring?\u00a0Has\u00a0anything\u00a0changed\u00a0recently\u00a0in\u00a0your\u00a0environment\u00a0or\u00a0with\u00a0agent\u00a0workstations?\n-\u00a0Is\u00a0this\u00a0affecting\u00a0all\u00a0agents,\u00a0or\u00a0only\u00a0some?\u00a0If\u00a0partial,\u00a0are\u00a0there\u00a0any\u00a0browser\u00a0extensions,\u00a0different\u00a0browsers,\u00a0or\u00a0network\u00a0differences?\n-\u00a0Does\u00a0it\u00a0affect\u00a0replies\u00a0to\u00a0every\u00a0conversation\u00a0type/channel\u00a0(e.g.\u00a0email,\u00a0web\u00a0form,\u00a0chat,\u00a0social)\u00a0or\u00a0only\u00a0certain\u00a0ones?\n-\u00a0Has\u00a0your\u00a0organization\u00a0recently\u00a0updated\u00a0your\u00a0browser\u00a0or\u00a0security\u00a0settings?\n-\u00a0Is\u00a0the\u00a0issue\u00a0reproducible\u00a0in\u00a0a\u00a0private/incognito\u00a0browser\u00a0window?\n\n**Next\u00a0Steps:**\n1.\u00a0We\u00a0will\u00a0review\u00a0the\u00a0attached\u00a0HAR\u00a0file\u00a0and\u00a0screenshot\u00a0for\u00a0errors\u00a0or\u00a0scripting\u00a0issues.\n2.\u00a0While\u00a0we\u00a0investigate,\u00a0as\u00a0a\u00a0temporary\u00a0workaround,\u00a0please\u00a0confirm\u00a0if\u00a0the\u00a0Send\u00a0button\u00a0shows\u00a0up\u00a0after\u00a0a\u00a0hard\u00a0reload\u00a0(Ctrl+F5)\u00a0or\u00a0if\u00a0another\u00a0browser\u00a0(Chrome,\u00a0Firefox,\u00a0Edge)\u00a0still\u00a0shows\u00a0the\u00a0issue.\n3.\u00a0If\u00a0possible,\u00a0please\u00a0clear\u00a0cache/cookies\u00a0and\u00a0let\u00a0us\u00a0know\u00a0if\u00a0that\u00a0makes\u00a0any\u00a0difference.\n\nWe'll\u00a0keep\u00a0you\u00a0updated\u00a0as\u00a0soon\u00a0as\u00a0we\u00a0have\u00a0more\u00a0information,\u00a0but\u00a0please\u00a0let\u00a0us\u00a0know\u00a0the\u00a0answers\u00a0to\u00a0the\u00a0above\u00a0questions\u00a0so\u00a0we\u00a0can\u00a0narrow\u00a0this\u00a0down\u00a0more\u00a0quickly.\n\nThanks\u00a0for\u00a0your\u00a0patience\u00a0and\u00a0partnership\u2014please\u00a0let\u00a0us\u00a0know\u00a0if\u00a0you\u00a0have\u00a0additional\u00a0details.\n\nBest\u00a0regards,\u00a0\u00a0\n[Your\u00a0Name]\u00a0\u00a0\nKhoros\u00a0Support\u00a0Team\n\n"
+        ],
+        [
+          "2025-11-20T15:31:26+00:00",
+          "Kayako - ticket id 60247476 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Brand set to Khoros Care. Rationale: Customer explicitly mentions 'Khoros Care platform'; issue context is conversations and the agent reply composer ('Send' button missing, only 'Save draft' until refresh), which are Care Agent View behaviors; Care instance URL provided: https://fortinet.response.lithium.com. Actions taken: 1) Changed brand to Khoros Care. 2) Added tag 'atlas-ticket-backlog'\n2. No public reply sent as this step only classifies and tags the ticket.\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-20T15:28:59+00:00",
+          "Kayako - ticket id 60247476 // Cu Chulainn AI Manager commented privately: <CC Log>\n\nPackage URL: https://cs.cu-chulainn.csaiautomations.com/marketplace/packages/edit/PACKAGE-b076d16e-40d5-4397-87c7-25b52aca9e5b\nPackage Name: KhorosGenericRouter\n\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60247476/kayako_central-supportdesk_60247476_20251120_152858_e987.txt]\n\n</CC Log>\n"
+        ],
+        [
+          "2025-11-20T15:28:29+00:00",
+          "Kayako - ticket id 60247476 // Meaghan Mcclure commented publicly:  \n Hi team, \n\n We are currently experiencing a an issue with our Khoros Care platform, conversations \n can be created by customers in https://www.fortinet.com/support/contact [https://www.fortinet.com/support/contact]\u00a0and/or https://support.fortinet.com/ [https://support.fortinet.com/], however the agents are having an issue where the send button to reply to the customers is missing and they only have the option to save a draft.\u00a0 Agents must refresh their browser window in order to for the send button to become available.\u00a0 \n\n Our Khoros Care instance: https://fortinet.response.lithium.com \n Attached screenshot and HAR file attached from agent perspective. \n\n This is causing delays in responses to customers.\u00a0\u00a0 \n\nBest Regards ,\n\nMeaghan McClure\n\nCustomer Service Manager - AMER\n\nHours : 9:00am -6:00pm EST\n\nmmcclure@fortinet.com\n\nHow to Engage Customer Service [https://fortinet.sharepoint.com/sites/CustomerSupport/SitePages/Customer-Support-%26-Services-Customer-Service-Alias-Guidelines.aspx]\n\nimage\n\n-------------------------\n *** Please note that this message and any attachments may contain confidential and proprietary material and information and are intended only for the use of the intended recipient(s). If you are not the intended recipient, you are hereby notified that any review, use, disclosure, dissemination, distribution or copying of this message and any attachments is strictly prohibited. If you have received this email in error, please immediately notify the sender and destroy this e-mail and any attachments and all copies, whether electronic or printed. Please also note that any views, opinions, conclusions or commitments expressed in this message are those of the individual sender and do not necessarily reflect the views of Fortinet, Inc., its affiliates, and emails are not binding on Fortinet and only a writing manually signed by Fortinet's General Counsel can be a binding commitment of Fortinet to Fortinet's customers or partners. Thank you. *** \n\n-------------------------\n "
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 50,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": true,
+          "link_value": "CARESMM-10815"
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The transcript shows only an AI private comment documenting that a conversation occurred, but does not include the actual AI interaction content to evaluate quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in a loop or unable to reach a human. The ticket shows the customer successfully chatted with AI support and the ticket was closed.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The transcript does not contain sufficient interaction content to determine if context was ignored, as only the AI's private comment is visible.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no significant delays evident. The max gap between responses is 0.0 hours, indicating no delay issues.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is insufficient evidence to determine premature closure. The ticket was closed with status 'closed' but no customer frustration or waiting for information is evident in the limited transcript provided.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not a P1/Sev1 issue, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The transcript shows only an AI private comment documenting that a conversation occurred, but does not include the actual AI interaction content to evaluate quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in a loop or unable to reach a human. The ticket shows the customer successfully chatted with AI support and the ticket was closed.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The transcript does not contain sufficient interaction content to determine if context was ignored, as only the AI's private comment is visible.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no significant delays evident. The max gap between responses is 0.0 hours, indicating no delay issues.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient evidence to determine premature closure. The ticket was closed with status 'closed' but no customer frustration or waiting for information is evident in the limited transcript provided.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not a P1/Sev1 issue, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60259640
+}

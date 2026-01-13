@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI (ATLAS) response was perceived by the customer as not addressing the core context (issue introduced only by upgrading to v10 and resolved by downgrading, with no config changes). The customer explicitly stated the guidance was \"not to the point,\" indicating the AI troubleshooting was unhelpful/misaligned to the reported scenario.",
+    "evidence": [
+      "Customer: \"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it. there are no config changes at all. Only version is chaning.\"",
+      "Customer: \"there has to be some difference in handling packets.\"",
+      "ATLAS provided generic firewall/ports/inspection guidance despite the customer\u2019s claim that only the version changed: \"Ensure that ... have explicit firewall rules allowing incoming HTTP/HTTPS... Verify that port 80 (HTTP) and port 443 (HTTPS) are accessible...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one customer-facing AI interaction shown, and no evidence the AI repeatedly requested the same information or that the customer asked for a human and was denied.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer disagreed with the AI direction, support did not clearly ask for the same steps/info multiple times after the customer stated they had already done them, nor did support request attachments already provided in the ticket.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap (over 3 days) between the customer's last message and the next support response.",
+    "evidence": [
+      "Customer message: [2025-09-30T15:55:22+00:00] \"all those steps are not to the point...\"",
+      "Next public support response: [2025-10-31T13:59:15+00:00] \"Dear Jozef, Thank you for contacting GFI - Kerio Control Support...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer confirmed the issue was solved and indicated closure was acceptable; there is no evidence of an unanswered final question followed by closure.",
+    "evidence": [
+      "Customer: \"yes, it was related ... we can consider this as solved.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not explicitly indicate P1/SEV1/Critical severity, a complete outage, SLA/time-critical language, or a clearly production-down situation requiring escalation.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60210541
+}

@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No AI responses with content are present to evaluate for quality issues. ATLAS only skipped the ticket due to tags.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of customer stuck in AI loop. ATLAS skipped the ticket rather than engaging with the customer.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support agent interactions present to evaluate for context awareness. Only AI skip and customer metadata uploads are visible.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occur within a 23-second window (23:49:36 to 23:49:59 UTC), showing no delay between responses.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket is marked as closed but appears to have been abandoned without human agent engagement. The customer indicated conversation would be uploaded 'shortly' but ticket was closed before substantive support resolution.",
+    "evidence": [
+      "Status: closed - ticket marked closed without human support interaction",
+      "[2025-12-15T23:49:36+00:00] Customer: 'The complete conversation with this customer will be uploaded to this ticket shortly' - indicates pending action before closure",
+      "[2025-12-15T23:49:47+00:00] ATLAS: 'Skipping ticket due to tags' - AI declined to process, blocking support flow"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Urgent priority ticket was skipped by AI and never escalated to human support. No troubleshooting or escalation occurred despite high priority status.",
+    "evidence": [
+      "Priority: urgent - high priority ticket",
+      "[2025-12-15T23:49:47+00:00] ATLAS: 'Skipping ticket due to tags' - AI skipped without escalation despite urgent priority",
+      "Was handed to BU: False - ticket never escalated to business unit despite urgent status"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No AI responses with content are present to evaluate for quality issues. ATLAS only skipped the ticket due to tags.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of customer stuck in AI loop. ATLAS skipped the ticket rather than engaging with the customer.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support agent interactions present to evaluate for context awareness. Only AI skip and customer metadata uploads are visible.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occur within a 23-second window (23:49:36 to 23:49:59 UTC), showing no delay between responses.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is marked as closed but appears to have been abandoned without human agent engagement. The customer indicated conversation would be uploaded 'shortly' but ticket was closed before substantive support resolution.\",\n    \"evidence\": [\n      \"Status: closed - ticket marked closed without human support interaction\",\n      \"[2025-12-15T23:49:36+00:00] Customer: 'The complete conversation with this customer will be uploaded to this ticket shortly' - indicates pending action before closure\",\n      \"[2025-12-15T23:49:47+00:00] ATLAS: 'Skipping ticket due to tags' - AI declined to process, blocking support flow\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Urgent priority ticket was skipped by AI and never escalated to human support. No troubleshooting or escalation occurred despite high priority status.\",\n    \"evidence\": [\n      \"Priority: urgent - high priority ticket\",\n      \"[2025-12-15T23:49:47+00:00] ATLAS: 'Skipping ticket due to tags' - AI skipped without escalation despite urgent priority\",\n      \"Was handed to BU: False - ticket never escalated to business unit despite urgent status\"\n    ]\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60264009
+}

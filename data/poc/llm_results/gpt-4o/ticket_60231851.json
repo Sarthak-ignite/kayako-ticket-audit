@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses were initially generic and did not address the issue effectively, as evidenced by multiple customer follow-ups expressing dissatisfaction.",
+    "evidence": [
+      "[2025-11-06T18:53:10+00:00] Ralph Venturino: Wow, Same automated message as the one below.",
+      "[2025-10-31T13:51:24+00:00] ATLAS: Thank you for clarifying that your issue specifically involves the Information Store Protection page in GFI MailEssentials, rather"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer expressed frustration at not reaching a human and being stuck in a loop with the AI bot.",
+    "evidence": [
+      "[2025-11-06T15:51:03+00:00] Ralph Venturino: THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative who was supposed to contact"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team did not initially act upon the information the customer provided about previous tickets, leading to escalated frustration.",
+    "evidence": [
+      "[2025-10-31T14:49:23+00:00] Ralph Venturino: This is the second time I requested support over the last 6 months due to multiple issues that are occurring."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays in response times, with the time to first human response being over 450 hours and max gaps between responses reaching 145 hours.",
+    "evidence": [
+      "Time to first human (hours): 450.3",
+      "Max gap between responses (hours): 145.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no clear evidence in the timeline that the ticket was closed prematurely while waiting for promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket seems to have been escalated appropriately, and responses addressed specific software issues rather than generic troubleshooting.",
+    "evidence": [
+      "[2025-11-17T14:17:45+00:00] Mohammed Amer: I\u2019ve escalated it internally for faster resolution."
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses were initially generic and did not address the issue effectively, as evidenced by multiple customer follow-ups expressing dissatisfaction.\",\n    \"evidence\": [\"[2025-11-06T18:53:10+00:00] Ralph Venturino: Wow, Same automated message as the one below.\", \"[2025-10-31T13:51:24+00:00] ATLAS: Thank you for clarifying that your issue specifically involves the Information Store Protection page in GFI MailEssentials, rather\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer expressed frustration at not reaching a human and being stuck in a loop with the AI bot.\",\n    \"evidence\": [\"[2025-11-06T15:51:03+00:00] Ralph Venturino: THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative who was supposed to contact\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team did not initially act upon the information the customer provided about previous tickets, leading to escalated frustration.\",\n    \"evidence\": [\"[2025-10-31T14:49:23+00:00] Ralph Venturino: This is the second time I requested support over the last 6 months due to multiple issues that are occurring.\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays in response times, with the time to first human response being over 450 hours and max gaps between responses reaching 145 hours.\",\n    \"evidence\": [\"Time to first human (hours): 450.3\", \"Max gap between responses (hours): 145.0\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence in the timeline that the ticket was closed prematurely while waiting for promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket seems to have been escalated appropriately, and responses addressed specific software issues rather than generic troubleshooting.\",\n    \"evidence\": [\"[2025-11-17T14:17:45+00:00] Mohammed Amer: I\u2019ve escalated it internally for faster resolution.\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60231851
+}

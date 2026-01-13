@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No evidence of AI providing incorrect information or making unfulfilled promises was found.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in a loop with the AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "There is evidence that an AI response failed to acknowledge customer escalations and context.",
+    "evidence": [
+      "[2025-10-02T01:42:22+00:00] (AI) Centralsupport-ai-acc: The customer escalated the Case. The customer message is:We need a better answer from the team directly"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap of approximately 981.8 hours between responses.",
+    "evidence": [
+      "Max gap between responses (hours): 981.8"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No clear evidence indicates that the ticket was closed before the customer received necessary information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not explicitly show generic troubleshooting for a high-priority ticket instead of escalation.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of AI providing incorrect information or making unfulfilled promises was found.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in a loop with the AI.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"There is evidence that an AI response failed to acknowledge customer escalations and context.\",\n    \"evidence\": [\"[2025-10-02T01:42:22+00:00] (AI) Centralsupport-ai-acc: The customer escalated the Case. The customer message is:We need a better answer from the team directly\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant gap of approximately 981.8 hours between responses.\",\n    \"evidence\": [\"Max gap between responses (hours): 981.8\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence indicates that the ticket was closed before the customer received necessary information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not explicitly show generic troubleshooting for a high-priority ticket instead of escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60211226
+}

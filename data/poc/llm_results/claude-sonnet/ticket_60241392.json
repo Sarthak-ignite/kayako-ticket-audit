@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI made a promise to provide a rescue image 'soon' but failed to deliver it for 4 days, forcing the customer to follow up twice and eventually use an alternative file from the website.",
+    "evidence": [
+      "[2025-11-13T09:51:35+00:00] Cu Chulainn AI Manager: 'The recommended next step is to complete a factory reset using the NG120 rescue image'",
+      "[2025-11-17T08:29:12+00:00] Cu Chulainn AI Manager: 'You will receive the NG120 rescue image build 10:9072 soon through this ticket'",
+      "[2025-11-17T08:20:58+00:00] Robert Maislinger: 'Hello, I'm still waiting for the NG120 rescue image. I will try it with the file from the website'",
+      "[2025-11-17T08:27:10+00:00] Robert Maislinger: 'Great, please send me the NG120 rescue image build 10:9072 as soon as possible. The image at the website is kerio-control-rescue-9'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer was stuck waiting for the AI to deliver a promised rescue image for 4 days (Nov 13-17), and took 115.9 hours to reach a human despite the urgent priority. The AI repeatedly acknowledged the request but failed to fulfill it.",
+    "evidence": [
+      "[2025-11-13T09:48:00+00:00] Robert Maislinger: 'Hello, where can i find the NG120 rescue image? I cannot find it in the software archive'",
+      "[2025-11-17T08:20:58+00:00] Robert Maislinger: 'Hello, I'm still waiting for the NG120 rescue image'",
+      "[2025-11-17T08:29:12+00:00] Cu Chulainn AI Manager: 'You will receive the NG120 rescue image build 10:9072 soon through this ticket'",
+      "[2025-11-17T09:35:24+00:00] Ciprian Nastase: 'You can download the image in question from this location: v10:9072'"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While there were delays in providing the rescue image, the support team and AI did acknowledge the customer's requests and the context of the issue. No clear evidence of ignoring previously provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant 4-day delay (Nov 13 to Nov 17) between when the customer first asked for the rescue image and when they followed up. The max gap between responses was 94.5 hours, and time to first human was 115.9 hours for an urgent ticket.",
+    "evidence": [
+      "[2025-11-13T09:48:00+00:00] Robert Maislinger: 'where can i find the NG120 rescue image?'",
+      "[2025-11-17T08:20:58+00:00] Robert Maislinger: 'Hello, I'm still waiting for the NG120 rescue image'",
+      "[2025-11-17T09:35:24+00:00] Ciprian Nastase: 'You can download the image in question from this location'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the customer confirmed the hardware was stable and a new ticket was created for the new issue with traffic rules. This appears to be an appropriate closure.",
+    "evidence": [
+      "[2025-11-19T08:51:56+00:00] Robert Maislinger: 'After the rescue image the hardware runs now stable'",
+      "[2025-11-19T09:00:14+00:00] Robert Maislinger: 'Yes this is correct and please creata a new ticket'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This was an urgent priority ticket marked as urgent/outage, but there was a 115.9-hour delay to first human response and a 4-day delay in providing critical recovery resources. The AI handled it instead of immediate human escalation.",
+    "evidence": [
+      "[2025-11-13T09:51:29+00:00] Cu Chulainn AI Manager: 'Step 0 Priority: Set to URGENT'",
+      "[2025-11-17T08:29:08+00:00] Cu Chulainn AI Manager: 'Priority already set to URGENT'",
+      "[2025-11-17T08:22:35+00:00] Cu Chulainn AI Manager: 'Treating as URGENT due to outage impact'",
+      "[2025-11-17T08:20:58+00:00] Robert Maislinger: 'I'm still waiting for the NG120 rescue image'"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI made a promise to provide a rescue image 'soon' but failed to deliver it for 4 days, forcing the customer to follow up twice and eventually use an alternative file from the website.\",\n    \"evidence\": [\n      \"[2025-11-13T09:51:35+00:00] Cu Chulainn AI Manager: 'The recommended next step is to complete a factory reset using the NG120 rescue image'\",\n      \"[2025-11-17T08:29:12+00:00] Cu Chulainn AI Manager: 'You will receive the NG120 rescue image build 10:9072 soon through this ticket'\",\n      \"[2025-11-17T08:20:58+00:00] Robert Maislinger: 'Hello, I'm still waiting for the NG120 rescue image. I will try it with the file from the website'\",\n      \"[2025-11-17T08:27:10+00:00] Robert Maislinger: 'Great, please send me the NG120 rescue image build 10:9072 as soon as possible. The image at the website is kerio-control-rescue-9'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer was stuck waiting for the AI to deliver a promised rescue image for 4 days (Nov 13-17), and took 115.9 hours to reach a human despite the urgent priority. The AI repeatedly acknowledged the request but failed to fulfill it.\",\n    \"evidence\": [\n      \"[2025-11-13T09:48:00+00:00] Robert Maislinger: 'Hello, where can i find the NG120 rescue image? I cannot find it in the software archive'\",\n      \"[2025-11-17T08:20:58+00:00] Robert Maislinger: 'Hello, I'm still waiting for the NG120 rescue image'\",\n      \"[2025-11-17T08:29:12+00:00] Cu Chulainn AI Manager: 'You will receive the NG120 rescue image build 10:9072 soon through this ticket'\",\n      \"[2025-11-17T09:35:24+00:00] Ciprian Nastase: 'You can download the image in question from this location: v10:9072'\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"While there were delays in providing the rescue image, the support team and AI did acknowledge the customer's requests and the context of the issue. No clear evidence of ignoring previously provided information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant 4-day delay (Nov 13 to Nov 17) between when the customer first asked for the rescue image and when they followed up. The max gap between responses was 94.5 hours, and time to first human was 115.9 hours for an urgent ticket.\",\n    \"evidence\": [\n      \"[2025-11-13T09:48:00+00:00] Robert Maislinger: 'where can i find the NG120 rescue image?'\",\n      \"[2025-11-17T08:20:58+00:00] Robert Maislinger: 'Hello, I'm still waiting for the NG120 rescue image'\",\n      \"[2025-11-17T09:35:24+00:00] Ciprian Nastase: 'You can download the image in question from this location'\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the customer confirmed the hardware was stable and a new ticket was created for the new issue with traffic rules. This appears to be an appropriate closure.\",\n    \"evidence\": [\n      \"[2025-11-19T08:51:56+00:00] Robert Maislinger: 'After the rescue image the hardware runs now stable'\",\n      \"[2025-11-19T09:00:14+00:00] Robert Maislinger: 'Yes this is correct and please creata a new ticket'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This was an urgent priority ticket marked as urgent/outage, but there was a 115.9-hour delay to first human response and a 4-day delay in providing critical recovery resources. The AI handled it instead of immediate human escalation.\",\n    \"evidence\": [\n      \"[2025-11-13T09:51:29+00:00] Cu Chulainn AI Manager: 'Step 0 Priority: Set to URGENT'\",\n      \"[2025-11-17T08:29:08+00:00] Cu Chulainn AI Manager: 'Priority already set to URGENT'\",\n      \"[2025-11-17T08:22:35+00:00] Cu Chulainn AI Manager: 'Treating as URGENT due to outage impact'\",\n      \"[2025-11-17T08:20:58+00:00] Robert Maislinger: 'I'm still waiting for the NG120 rescue image'\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60241392
+}

@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is clear evidence of an AI-generated public reply that appears templated and incorrect/misaligned (addressed to the AI itself), suggesting low-quality/generic filler rather than a coherent customer-facing response.",
+    "evidence": [
+      "[2025-07-12T18:59:02+00:00] (AI) ATLAS commented publicly: \"Dear ATLAS, Thank you for reaching out regarding your concerns about ticket #60094199...\" (wrong addressee / generic template start, truncated)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket shows a human agent responding publicly the next day, and there is no clear pattern of the customer being stuck with the AI repeatedly or unable to reach a human.",
+    "evidence": [
+      "[2025-07-13T19:11:48+00:00] (Employee) Randall Shawver commented publicly to the customer"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer states the issue is not solved and questions a closure, there is not enough detail showing support repeatedly asking for the same logs/steps already provided. Randall asks a clarifying question rather than re-requesting prior information.",
+    "evidence": [
+      "[2025-07-13T19:11:48+00:00] (Employee) Randall Shawver: \"Is the only issue that the duplicate emails are occurring when downloading\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The visible timestamps show roughly a ~24 hour gap between the customer's message and the next human reply, which does not meet the described threshold of 'multiple days between responses.'",
+    "evidence": [
+      "Customer private note: [2025-07-12T18:59:16+00:00]",
+      "Human public reply: [2025-07-13T19:11:48+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The customer explicitly indicates a prior ticket was closed even though the problem was not solved, which is direct evidence of a closure before resolution (at least from the customer's perspective).",
+    "evidence": [
+      "[2025-07-12T18:59:16+00:00] (Employee) Christian Schmidt (customer context): \"Why is ticket #60094199 closed? The problem has not been solved by GFI.\"",
+      "[2025-07-13T19:11:48+00:00] (Employee) Randall Shawver: \"My apologies. This ticket will stay open.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no explicit severity/priority (P1/Sev1) indicated in the provided excerpt, nor evidence of required immediate escalation being missed for a high-priority incident.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60101543
+}

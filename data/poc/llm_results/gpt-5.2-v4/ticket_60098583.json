@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer reported a functional problem (users cannot approve emails and see a specific message). The AI response shown does not address the symptom, provide troubleshooting steps, or even ask a targeted clarifying question; instead it pivots to license details, which appears generic/irrelevant to the immediate issue and risks slowing resolution.",
+    "evidence": [
+      "Customer: \"Users are not able to approve emails. They get a message that the email has been deleted or approved\"",
+      "AI: \"I have this license key on record: ... Expiry date: ...[truncated]...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only a single AI exchange is visible. There is no evidence the customer requested a human agent, nor repeated questions/answers indicating the customer was stuck in a loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is not enough visible back-and-forth to show support repeatedly asking for already-provided info or re-suggesting already-tried steps. The AI response is off-target, but not a clear case of repeatedly ignoring provided context across multiple turns.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The excerpt does not show timestamps for support replies beyond the initial customer message, nor any multi-day gaps or customer follow-ups indicating delay.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The provided interaction is truncated and does not show the ticket being closed or resolved, nor an unanswered final customer request followed by closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue affects 'Users' (plural), the snippet does not explicitly indicate a full production outage, critical severity, or urgent escalation request/SLA breach. Also, the conversation is incomplete, so escalation handling cannot be assessed.",
+    "evidence": [
+      "Customer: \"Users are not able to approve emails.\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60098583
+}

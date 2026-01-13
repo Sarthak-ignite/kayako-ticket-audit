@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS produced a clearly broken/incorrect customer-facing reply (wrong addressee) and gave an irrelevant response that did not address the customer\u2019s stated issue (why a previous ticket was closed), instead deflecting to an unrelated incident after the customer explicitly said it was not related.",
+    "evidence": [
+      "ATLAS (public): \"Dear ATLAS,\"",
+      "Customer: \"\ud83d\udc4e No. My issue is not related\"",
+      "ATLAS (public): \"Please refer to our status page for the latest updates on the current incident affecting the Avira Virus Scanner Engine, which may be related to your case.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer requested a human and was denied, nor that ATLAS repeatedly asked for the same information. A human agent responded shortly after escalation to L1.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer\u2019s core question was why ticket #60094199 was closed; ATLAS did not answer that question and instead pointed to an Avira incident despite the customer stating their issue was not related.",
+    "evidence": [
+      "Customer: \"Why is ticket #60094199 closed? The problem has not been solved by GFI.\"",
+      "Customer: \"\ud83d\udc4e No. My issue is not related\"",
+      "ATLAS (public): \"Please refer to our status page for the latest updates on the current incident affecting the Avira Virus Scanner Engine, which may be related to your case.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Time from the customer\u2019s follow-up (2025-07-12 18:59:16) to the human response (2025-07-13 19:11:48) is ~24 hours, under the 3-day threshold.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "This ticket was not shown as closed, and the latest support response indicates it will remain open. The customer complains about a different ticket being closed, but this pattern requires closure behavior within the analyzed ticket.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit P1/SEV1/Critical marker or clear production-down/outage language is present in this ticket\u2019s customer messages.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60101543
+}

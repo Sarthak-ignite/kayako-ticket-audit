@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses provide specific updates about the ticket status and resolution without offering irrelevant information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer is stuck in a loop with AI or facing repetitive prompts without human assistance.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support team acknowledges and addresses the issue as reported without asking for previously provided information repetitively.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between responses is 0.7 hours, which does not indicate significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the issue was resolved, and there is no evidence that the customer was waiting for additional information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The case involved a critical outage due to an expired SSL certificate, but the initial responses do not indicate an immediate escalation or urgent measures taken to resolve it.",
+    "evidence": [
+      "[2025-11-03T15:50:40+00:00] (Employee) Chintan Parekh: An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate on brandmessenger.usw2.khoros.com."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses provide specific updates about the ticket status and resolution without offering irrelevant information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer is stuck in a loop with AI or facing repetitive prompts without human assistance.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support team acknowledges and addresses the issue as reported without asking for previously provided information repetitively.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between responses is 0.7 hours, which does not indicate significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the issue was resolved, and there is no evidence that the customer was waiting for additional information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The case involved a critical outage due to an expired SSL certificate, but the initial responses do not indicate an immediate escalation or urgent measures taken to resolve it.\",\n    \"evidence\": [\n      \"[2025-11-03T15:50:40+00:00] (Employee) Chintan Parekh: An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate on brandmessenger.usw2.khoros.com.\"\n    ]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60234621
+}

@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI interactions are only automated hold placements and process management logs. No AI provided actual customer-facing support responses that could be evaluated for quality failures.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of customer being stuck in an AI loop. All customer interactions were with human support agents, and AI only performed backend automation tasks.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support agent Randall Shawver stated customer had downgraded to 7.5.7, but customer explicitly denied this and corrected the misunderstanding, indicating the agent didn't properly check the actual status.",
+    "evidence": [
+      "[2025-12-16T13:25:03+00:00] Randall Shawver: 'Dear Udai, Thank you for confirming that you have downgraded to version 7.5.7.'",
+      "[2025-12-17T04:15:39+00:00] Santosh Shinde: 'Who said we have downgraded to version 7.5.7 ? No, we have not. We do not have access to that image either.'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple significant delays occurred, including a 7+ day gap (174 hours max) between the last meaningful response on Dec 17 and the final response on Dec 24, despite urgent priority status.",
+    "evidence": [
+      "Time to first human (hours): 30.4",
+      "Max gap between responses (hours): 174.0",
+      "[2025-12-17T09:02:13+00:00] Muhammad Rizwan provided response, then [2025-12-24T15:01:08+00:00] Syed Haider responded - 7 day gap"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket status shows closed, the final interaction indicates engineering provided a test build to the customer, suggesting the ticket reached a resolution attempt rather than premature closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This urgent priority ticket shows signs of mishandling - customer expressed extreme frustration about patience running out and loss of trust, development team was slow to respond, and there were extended delays despite the critical nature of the issue.",
+    "evidence": [
+      "[2025-12-16T02:09:53+00:00] Udai Narayan Singh: 'This patience waiting time is getting over now and you are not ready to understand and make understand to development team. I have downgraded today and this is my last effort'",
+      "[2025-12-16T01:44:38+00:00] Udai Narayan Singh: 'Customer already now not having trust and here I am putting last effort to get the appliance run whatever option you guys provide.'",
+      "[2025-12-16T01:24:08+00:00] Udai Narayan Singh: 'What is the issue now? Why you are delaying on this ?'"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI interactions are only automated hold placements and process management logs. No AI provided actual customer-facing support responses that could be evaluated for quality failures.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of customer being stuck in an AI loop. All customer interactions were with human support agents, and AI only performed backend automation tasks.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support agent Randall Shawver stated customer had downgraded to 7.5.7, but customer explicitly denied this and corrected the misunderstanding, indicating the agent didn't properly check the actual status.\",\n    \"evidence\": [\n      \"[2025-12-16T13:25:03+00:00] Randall Shawver: 'Dear Udai, Thank you for confirming that you have downgraded to version 7.5.7.'\",\n      \"[2025-12-17T04:15:39+00:00] Santosh Shinde: 'Who said we have downgraded to version 7.5.7 ? No, we have not. We do not have access to that image either.'\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple significant delays occurred, including a 7+ day gap (174 hours max) between the last meaningful response on Dec 17 and the final response on Dec 24, despite urgent priority status.\",\n    \"evidence\": [\n      \"Time to first human (hours): 30.4\",\n      \"Max gap between responses (hours): 174.0\",\n      \"[2025-12-17T09:02:13+00:00] Muhammad Rizwan provided response, then [2025-12-24T15:01:08+00:00] Syed Haider responded - 7 day gap\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket status shows closed, the final interaction indicates engineering provided a test build to the customer, suggesting the ticket reached a resolution attempt rather than premature closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This urgent priority ticket shows signs of mishandling - customer expressed extreme frustration about patience running out and loss of trust, development team was slow to respond, and there were extended delays despite the critical nature of the issue.\",\n    \"evidence\": [\n      \"[2025-12-16T02:09:53+00:00] Udai Narayan Singh: 'This patience waiting time is getting over now and you are not ready to understand and make understand to development team. I have downgraded today and this is my last effort'\",\n      \"[2025-12-16T01:44:38+00:00] Udai Narayan Singh: 'Customer already now not having trust and here I am putting last effort to get the appliance run whatever option you guys provide.'\",\n      \"[2025-12-16T01:24:08+00:00] Udai Narayan Singh: 'What is the issue now? Why you are delaying on this ?'\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60232130
+}

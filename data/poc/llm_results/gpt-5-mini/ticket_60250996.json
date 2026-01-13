@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI responses in the provided interaction to evaluate for quality, filler, incorrect information, or unkept promises.",
+    "evidence": [
+      "[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No repeated AI requests or back-and-forth from the AI are present \u2014 only a single customer message is shown, so there is no evidence of a loop or inability to reach a human.",
+    "evidence": [
+      "[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no follow-up support messages shown that repeat requests or ignore previously provided information; only the customer's single comment is available.",
+    "evidence": [
+      "[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline contains only one interaction and the provided metadata shows no multi-day gaps between messages, so there is no evidence of significant response delays.",
+    "evidence": [
+      "[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is noted as closed in the context, there is no interaction evidence that the customer was left waiting for promised information or that they abandoned the ticket; the sole message is a thank-you.",
+    "evidence": [
+      "[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is marked normal priority and there is no evidence of an outage or high-severity incident nor any troubleshooting by support in the interaction provided.",
+    "evidence": [
+      "[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI responses in the provided interaction to evaluate for quality, filler, incorrect information, or unkept promises.\",\n    \"evidence\": [\n      \"[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No repeated AI requests or back-and-forth from the AI are present \u2014 only a single customer message is shown, so there is no evidence of a loop or inability to reach a human.\",\n    \"evidence\": [\n      \"[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no follow-up support messages shown that repeat requests or ignore previously provided information; only the customer's single comment is available.\",\n    \"evidence\": [\n      \"[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline contains only one interaction and the provided metadata shows no multi-day gaps between messages, so there is no evidence of significant response delays.\",\n    \"evidence\": [\n      \"[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is noted as closed in the context, there is no interaction evidence that the customer was left waiting for promised information or that they abandoned the ticket; the sole message is a thank-you.\",\n    \"evidence\": [\n      \"[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is marked normal priority and there is no evidence of an outage or high-severity incident nor any troubleshooting by support in the interaction provided.\",\n    \"evidence\": [\n      \"[2025-11-26T13:31:43+00:00] (Customer) Patel, Bhavin (US): Kayako - ticket id 60250996 // Patel, Bhavin (US) commented privately: Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:<br>  <br\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60250996
+}

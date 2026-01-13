@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI activity is limited to internal automation/hold notices; there is no clear AI-authored customer-facing response with wrong info, generic filler, or broken promises.",
+    "evidence": [
+      "[2025-12-15T15:02:23+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 168 hour(s)\"",
+      "[2025-12-09T13:31:56+00:00] (AI) Centralsupport-ai-acc: \"ticket was set to hold until 2025-12-09T13:30:16.000Z. Placing ticket back to open\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer is interacting with named employees and progressing through the issue; there is no evidence the AI repeatedly asked for the same information or prevented access to a human.",
+    "evidence": [
+      "[2025-12-18T07:41:32+00:00] (Employee) Csaba Daniel: \"Our product team has confirmed...\"",
+      "[2025-12-24T08:22:10+00:00] (Employee) Muhammad Rizwan: \"As requested, please find all the attachments...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer states this is a repeat request and references prior tickets; the agent\u2019s internal note indicates they believe nothing more can be done rather than leveraging that historical context to address the customer\u2019s concerns.",
+    "evidence": [
+      "[2025-12-23T04:43:40+00:00] (Customer) Shingo Ohkubo: \"This is not first time that I have requested restoration of past tickets.\"",
+      "[2025-12-18T09:24:11+00:00] (Employee) Muhammad Rizwan (private): \"Well, we can not do anything more here\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Ticket metadata shows an extremely long time to first human and max gap between responses (multiple weeks). The automation entries also show long hold periods (e.g., 168 hours).",
+    "evidence": [
+      "Ticket Context: \"Time to first human (hours): 667.1\"",
+      "Ticket Context: \"Max gap between responses (hours): 667.0\"",
+      "[2025-12-15T15:02:23+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 168 hour(s)\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer explicitly asked to close the ticket after confirming they checked the attachments, and the employee closed it accordingly.",
+    "evidence": [
+      "[2025-12-26T00:03:31+00:00] (Customer) Shingo Ohkubo: \"I have checked the attachments. Please close this ticket.\"",
+      "[2025-12-26T00:03:44+00:00] (Employee) Phronesis: \"As requested, we are closing this ticket\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Priority is normal (not P1/SEV1), and there is no outage-style urgent scenario requiring immediate escalation.",
+    "evidence": [
+      "Ticket Context: \"Priority: normal\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI activity is limited to internal automation/hold notices; there is no clear AI-authored customer-facing response with wrong info, generic filler, or broken promises.\",\n    \"evidence\": [\n      \"[2025-12-15T15:02:23+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 168 hour(s)\\\"\",\n      \"[2025-12-09T13:31:56+00:00] (AI) Centralsupport-ai-acc: \\\"ticket was set to hold until 2025-12-09T13:30:16.000Z. Placing ticket back to open\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer is interacting with named employees and progressing through the issue; there is no evidence the AI repeatedly asked for the same information or prevented access to a human.\",\n    \"evidence\": [\n      \"[2025-12-18T07:41:32+00:00] (Employee) Csaba Daniel: \\\"Our product team has confirmed...\\\"\",\n      \"[2025-12-24T08:22:10+00:00] (Employee) Muhammad Rizwan: \\\"As requested, please find all the attachments...\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer states this is a repeat request and references prior tickets; the agent\u2019s internal note indicates they believe nothing more can be done rather than leveraging that historical context to address the customer\u2019s concerns.\",\n    \"evidence\": [\n      \"[2025-12-23T04:43:40+00:00] (Customer) Shingo Ohkubo: \\\"This is not first time that I have requested restoration of past tickets.\\\"\",\n      \"[2025-12-18T09:24:11+00:00] (Employee) Muhammad Rizwan (private): \\\"Well, we can not do anything more here\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket metadata shows an extremely long time to first human and max gap between responses (multiple weeks). The automation entries also show long hold periods (e.g., 168 hours).\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Time to first human (hours): 667.1\\\"\",\n      \"Ticket Context: \\\"Max gap between responses (hours): 667.0\\\"\",\n      \"[2025-12-15T15:02:23+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 168 hour(s)\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer explicitly asked to close the ticket after confirming they checked the attachments, and the employee closed it accordingly.\",\n    \"evidence\": [\n      \"[2025-12-26T00:03:31+00:00] (Customer) Shingo Ohkubo: \\\"I have checked the attachments. Please close this ticket.\\\"\",\n      \"[2025-12-26T00:03:44+00:00] (Employee) Phronesis: \\\"As requested, we are closing this ticket\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Priority is normal (not P1/SEV1), and there is no outage-style urgent scenario requiring immediate escalation.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Priority: normal\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60232940
+}

@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "While AI (ATLAS) was involved in ticket generation, there is no evidence of AI providing wrong information, generic filler, or broken promises in customer-facing interactions.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The AI chat system appears to have successfully generated the ticket and transferred to human support. There is no evidence of the customer being stuck in a loop or unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support staff acknowledged and responded appropriately to customer updates, including the retirement notification and colleague involvement. No requests for information already provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were multiple significant delays: 408.3 hours (17 days) to first human response, and a 12-day gap between customer's follow-up question and the answer.",
+    "evidence": [
+      "[2025-11-18T21:45:39+00:00] Michael Healy: 'Hello, I still have not received an answer to my question.'",
+      "[2025-11-30T22:38:09+00:00] Carlos Encalada: 'Thank you for your patience, and I apologize for the delay in providing a clear answer to your question.' (12 days after customer's follow-up)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the customer informed support they had retired and teammates would follow up. Support acknowledged this appropriately before closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not marked as P1/Sev1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI (ATLAS) was involved in ticket generation, there is no evidence of AI providing wrong information, generic filler, or broken promises in customer-facing interactions.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI chat system appears to have successfully generated the ticket and transferred to human support. There is no evidence of the customer being stuck in a loop or unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support staff acknowledged and responded appropriately to customer updates, including the retirement notification and colleague involvement. No requests for information already provided.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were multiple significant delays: 408.3 hours (17 days) to first human response, and a 12-day gap between customer's follow-up question and the answer.\",\n    \"evidence\": [\n      \"[2025-11-18T21:45:39+00:00] Michael Healy: 'Hello, I still have not received an answer to my question.'\",\n      \"[2025-11-30T22:38:09+00:00] Carlos Encalada: 'Thank you for your patience, and I apologize for the delay in providing a clear answer to your question.' (12 days after customer's follow-up)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the customer informed support they had retired and teammates would follow up. Support acknowledged this appropriately before closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not marked as P1/Sev1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60242814
+}

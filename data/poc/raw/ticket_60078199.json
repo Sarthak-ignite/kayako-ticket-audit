@@ -1,0 +1,172 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_mailessentials",
+        "requester": {
+          "id": 60213519,
+          "uuid": "9707fa9a-075a-4fcd-b92f-473a20f18606",
+          "full_name": "Christian Schmidt",
+          "legacy_id": "23347079500178",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/9707fa9a-075a-4fcd-b92f-473a20f18606?1752521699",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 215054,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-07-12T18:58:59+00:00",
+          "last_active_at": "2025-07-14T19:34:59+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60213519",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@07026b23264aa2202ef2edaf6488f02200ce8720",
+          "password_updated_at": "2025-05-19T07:41:16+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2024-12-17T09:33:56+00:00",
+          "updated_at": "2025-07-14T19:34:59+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60213519"
+        },
+        "ticket_idt": 60078199
+      },
+      "interactions": [
+        [
+          "2025-06-25T10:09:39+00:00",
+          "Kayako - ticket id 60078199 // Arafat Bakhsh commented publicly: Dear Christian,\n\nThank you for your response.\n\nWe look forward to the logs once the issue is reproduced with the new version.\n\nBest regards,\nArafat Bakhsh\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-06-25T08:55:36+00:00",
+          "Kayako - ticket id 60078199 // Christian Schmidt commented privately: The problem has existed since we started using MailEssentail.\nI will install the new version on Friday. And then I will create the logs etc. again.\n\nThe mails in the provider mailbox only exist once, see screenshot. That is not the problem. From the moment MailEssentails retrieves them, they are duplicated. So there is an error in MailEssentails. And because there are not many setting options for the POP3 download. The error must be in the software code during processing.\n\nThe Kerio setting for duplicate mail is nice but does not work so that the mals come from MailEssentails to Kerio via relay. So not an option."
+        ],
+        [
+          "2025-06-24T16:01:09+00:00",
+          "Kayako - ticket id 60078199 // Qasim Ali commented publicly: Dear Christian,\n\nThank you for your patience.\n\nI have reviewed the logs, but unfortunately, I could not find any entries that capture the issue you are experiencing. Based on our findings, it appears this problem is not occurring for other customers using the same version.\n\nTo escalate this matter to our development team, we will need the issue to be reproduced on the latest version of MailEssentials (v22). You can find the release information here:\nMailEssentials Product Releases [https://gfi.ai/products-and-solutions/network-security-solutions/mailessentials/resources/documentation/product-releases]\n\nTo better understand the issue, could you please provide the following information:\nQuestions:\n\n\t* When did the issue start?\n\t* Are emails in your POP3 mailbox single or already duplicated?\n\t* Do you have any POP3 logs we can review?\n\t* Have there been any recent changes on the POP3 side?\n\nSuggestion:\nIf you are using Kerio Connect, you may disable duplicate messages using the guidance provided here:\nConfiguring the Drop Duplicate Messages Option [https://support.kerioconnect.gfi.com/article/114417-configuring-the-drop-duplicate-messages-option]\n\nBest regards,\nQasim Ali\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-06-24T15:49:31+00:00",
+          "Kayako - ticket id 60078199 // Qasim Ali commented privately: \t* customer is on 21.8, which is not the latest version since a new version has been released in last week\u00a0 \n\n \t* https://gfi.ai/products-and-solutions/network-security-solutions/mailessentials/resources/documentation/product-releases \n \t* to escalate and engage development team, we will need them to be on the latest version\u00a0\n\n\t* last time similar issues occurred, they were bugs \n\n \t* https://support.mailessentials.gfi.com/article/120264-external-users-sending-to-discussion-list-get-back-multiple-duplicates-of-emails-from-the-list \n \t* https://support.mailessentials.gfi.com/article/116920-imported-items-into-keyword-filtering-are-duplicated \n\n\t* as per my findings from the logs, pop2service is not loading duplicates. There are occurrences of one tmp file 2 to 4 times but there are no the emails otherwise we should see other numbers like 1, 3, 5, or more \n\n \t* I see that there is a ticket for duplicate emails in the KConnect https://central-supportdesk.kayako.com/agent/conversations/60075820 \n \t* and it was suggested to drop duplicate emails as well https://support.kerioconnect.gfi.com/article/114417-configuring-the-drop-duplicate-messages-option \n\n\t* when did the issue start? I do not think this is s bug, if this were another customer's would have created tickets, but I do not see tickets from other customers \n\n \t* are emails in the pop3 single or multiple since GFI provides pop2 which gets emails from the customer's pop3 see https://support.mailessentials.gfi.com/article/119271-troubleshooting-the-gfi-pop2exchange-service \n \t* as per this we need the copies of the emails to see the message id to see the duplicates\n \t* can they share their pop3 logs since in current logs for the gfi pop2exchange service we do not see anything for duplicate entries\n\n"
+        ],
+        [
+          "2025-06-24T14:21:11+00:00",
+          "Kayako - ticket id 60078199 // Christian Schmidt commented privately: Yes, the logs are from later, but that doesn't matter.\nBecause for EVERY mail that has at least 2 recipients in the same domain, the mails come twice. the logs should be full of examples.\n\nThe error is in the internal processing of MailEssentails. I have sent you the mails in msg format. An export in eml did not work in Outlook.\n\nSince no setting is responsible for the problem, the error must be in the software code."
+        ],
+        [
+          "2025-06-24T14:04:26+00:00",
+          "Kayako - ticket id 60078199 // Qasim Ali commented publicly: Dear Christian,\n\nThank you for sharing the logs and the email sample.\n\nWe reviewed the logs, and it appears that they start from June 23rd. However, the email sample you provided (Message-ID: 6172de69-2460-433d-a6fb-3ada0a849d2d@uweelectronic.de) is dated June 16th, and as such, it is not present in the current log set.\n\nTo proceed effectively, we kindly ask you to reproduce the issue again (i.e., receive duplicate emails), ensure that tracing is enabled, and then share the updated logs along with a sample .eml file of the duplicated message.\n\nThis will help us capture the issue in the logs and perform a detailed analysis.\n\nBest regards,\nQasim Ali\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-06-24T14:03:12+00:00",
+          "Kayako - ticket id 60078199 // Qasim Ali commented privately:  \t* as per https://central-supportdesk.kayako.com/agent/conversations/4618640 their logs name should start with \\\\10.244.50.150\\LogAnalyzer\\SupportLog_MAIL-GW_ \n\n\t* logs download are taking time \n\n \t* logs are here https://drive.google.com/drive/u/0/folders/1KfoAuEKCMoryDVL3dGDl_M-qblRTOA5O \n\n\t* customer shared a email with header, that is not present in the logs \n\n\t* 6172de69-2460-433d-a6fb-3ada0a849d2d@uweelectronic.de \n\n \t* image\n\n \t* it is understandable since logs start from 23 June and sample is from 16 June\n\n \t* replying the customer\n\n"
+        ],
+        [
+          "2025-06-24T11:21:55+00:00",
+          "Kayako - ticket id 60078199 // Christian Schmidt commented privately: I created the logs: \u201cThe ME logs by following the article Creating and submitting troubleshooting logs & other relevant information for GFI MailEssentials.\u201d and sent them.\n\nAnd the screenshots. Attached is the mail"
+        ],
+        [
+          "2025-06-24T06:39:42+00:00",
+          "Kayako - ticket id 60078199 // Arafat Bakhsh commented publicly: Dear Christian,\n\nThank you for your response.\n\nWe will require the complete set of logs in order to investigate the matter further.\n\nPlease ensure that all of the old debug logs are deleted, tracing is enabled and the issue is reproduced at least 2 to 3 times. After that has been done, please gather the logs as per the article: Creating and Submitting Troubleshooting Logs & other relevant info for GFI MailEssentials [https://support.mailessentials.gfi.com/article/118509-creating-and-submitting-troubleshooting-logs-other-relevant-info-for-gfi-mailessentials]. Please also provide us with the sample .eml files that were part of the reproduction of the issue.\n\nBest regards,\nArafat Bakhsh\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-06-24T06:36:57+00:00",
+          "Kayako - ticket id 60078199 // Arafat Bakhsh commented privately:  \t* We need the complete set of logs that should capture the entire mail flow.\n\n"
+        ],
+        [
+          "2025-06-23T11:54:39+00:00",
+          "Kayako - ticket id 60078199 // Christian Schmidt commented privately: The logs and screenshots are already in the ticket!"
+        ],
+        [
+          "2025-06-23T03:38:59+00:00",
+          "Kayako - ticket id 60078199 // Muhammad Rizwan commented publicly: Dear Christian,\n\nThank you for your patience.\n\nTo help us investigate this further, please provide the following:\n\n1. A sample `.eml` file of a duplicated message exported from an affected mailbox.\n2. Confirmation that the message was delivered only once to the POP3 mailbox.\n3. A screenshot of your POP3 connector configuration.\n4. The ME logs by following the Creating and Submitting Troubleshooting Logs & other relevant info for GFI MailEssentials [https://support.mailessentials.gfi.com/article/118509-creating-and-submitting-troubleshooting-logs-other-relevant-info-for-gfi-mailessentials] article.\n\nWe look forward to hearing back from you soon. If you have any questions or concerns, please let us know and we will be happy to address them.\n\nBest regards,\nMuhammad Rizwan\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-06-16T11:28:33+00:00",
+          "Kayako - ticket id 60078199 // Christian Schmidt commented privately: POP Log\u00b4s"
+        ],
+        [
+          "2025-06-16T11:04:01+00:00",
+          "Kayako - ticket id 60078199 // Christian Schmidt commented privately: Bug in MailEsstainels in the Pop3 conector. Because mails are retrieved twice or even more. If several recipients within the domain e.g. u.burkhartsmaier@uwe..., m.buchmueller@uwe...., uwe-team@uweele.....\n\nI have checked everything against the mail provider because the mails only arrive once."
+        ],
+        [
+          "2025-06-16T10:39:05+00:00",
+          "Kayako - ticket id 60078199 // ATLAS commented privately: Action: Send to l1"
+        ],
+        [
+          "2025-06-16T10:38:41+00:00",
+          "Kayako - ticket id 60078199 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Christian Schmidt ! \ud83d\udc4b\n\nThis is the GFI MailEssentials ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nChristian Schmidt:\n\n undefined \nChat Support:\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of GFI MailEssentials ATLAS Support Chat [https://support.mailessentials.gfi.com/article/120018]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nChristian Schmidt:\n\n Hast Du den Letzten chatverlauf \nChat Support:\n\n I have this license key on record:\n- License: w6DYY1GmWuX3-4b6qm6PeTq-jDztWfcyNPt-1011405\n- Expiry date: 2028-01-09.\n\nJust to make sure we're on the same page - is this the same system you're reaching out about today?\n\n\ud83d\udca1It's important to have to correct license file, as it could influence the resolution. \nChristian Schmidt:\n\n yes \nChat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiIxYWIyYWViNS0wNmViLTQ5ZjYtYjAwOC0yMWRiZjlkNGY0ZGYiLCJzZXNzaW9uX3VpZCI6IjFhYjJhZWI1LTA2ZWItNDlmNi1iMDA4LTIxZGJmOWQ0ZjRkZiIsImVtYWlsIjoiaXRAdXdlZWxlY3Ryb25pYy5kZSIsImN1c3RvbV9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoiYXVyZWFfbWFpbGVzc2VudGlhbHMiLCJxdWVyeSI6IiIsImV4cCI6MTc1MDA3NzMzNH0.S5LlkSWA7oVcEU_q4rjaG46h4szsBhxCSOmKSoKgMBA]\n\nYou should see the following:\n- User: it@uweelectronic.de\n- Session ID: 1ab2aeb5-06eb-49f6-b008-21dbf9d4f4df \nChristian Schmidt:\n\n hast du den letzten chat verlauf \nChat Support:\n\n Danke f\u00fcr die Nachfrage! \ud83d\ude0a\n\nIch kann den Verlauf unserer aktuellen Unterhaltung sehen, solange wir in dieser Sitzung bleiben. Sobald unser Chat beendet ist, wird der Verlauf jedoch nicht dauerhaft gespeichert oder in zuk\u00fcnftigen Sitzungen automatisch angezeigt.\n\nWenn du nach einer vollst\u00e4ndigen Aufzeichnung aller bisherigen Chats suchst:\nDu findest ein Protokoll aller unserer Interaktionen in deinem Support-Portal-Account, sobald unser Chat beendet ist. Es kann etwa 1\u20132 Minuten dauern, bis das dort angezeigt wird.\n\nKann ich dir sonst noch weiterhelfen? \nChristian Schmidt:\n\n Mach ein Ticket auf zum Thema Doppelte E-mails \nChat Support:\n\n Danke f\u00fcr die Info! Damit ich das Ticket zum Thema \u201eDoppelte E-Mails\u201c m\u00f6glichst zielf\u00fchrend weitergeben kann, brauche ich noch ein paar Details:\n\n- Seit wann tritt das Problem mit den doppelten E-Mails auf?\n- Betrifft es alle E-Mails oder nur bestimmte Absender/Empf\u00e4nger?\n- Passiert das bei allen Nutzern oder nur bei einzelnen?\n- Wurde k\u00fcrzlich etwas an der Konfiguration, am Server oder an den Filtern ge\u00e4ndert?\n- Nutzt ihr eine Multi-Server-Umgebung oder ist nur ein Server betroffen?\n\nJe mehr Details du mir gibst, desto schneller kann unser Support-Team helfen! \ud83d\ude0a\n\nKannst du mir bitte diese Fragen beantworten? \nChristian Schmidt:\n\n Ich kl\u00e4re das selbst im Ticket \nChat Support:\n\n Verstanden, danke f\u00fcr die R\u00fcckmeldung! \ud83d\ude0a Ein Kollege aus dem Support-Team wird sich gerne weiter um dein Anliegen k\u00fcmmern \u2013 du kannst gerne eine der verf\u00fcgbaren \u00dcbergabeoptionen ausw\u00e4hlen. \nChristian Schmidt:\n\n \ud83d\udce9 Raise a ticket \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nChristian Schmidt:\n\n mach das ticket auf \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nChristian Schmidt:\n\n nein \nChat Support:\n\n I'm creating a ticket for you with the information you've provided.\n\nTicket subject: Doppelte E-Mails im System\n\nAllow me a few moments while I work on this \u23f3 \nChat Support:\n\n \ud83d\ude80 I've successfully created a ticket for you.\n\nYour ticket number is: 60078199\n\nYou can see it and update it in this link [https://support.mailessentials.gfi.com/conversation/view/60078199]\n\nFor a faster resolution, please be sure to include and attach to the ticket all relevant context such as screenshots, recordings, and logs.\n\nOur agents will work on it and you will receive a response in your email \ud83d\udce8: it@uweelectronic.de "
+        ],
+        [
+          "2025-06-16T10:38:36+00:00",
+          "Kayako - ticket id 60078199 // ATLAS commented privately: **Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction, which means that they may have uploaded some files for AI analysis.** Please login to UPLOAD using your Devfactory AD credentials to verify: https://files.eswsecuretransfers.com/agents/?user_id=it@uweelectronic.de&session_uuid=1ab2aeb5-06eb-49f6-b008-21dbf9d4f4df"
+        ],
+        [
+          "2025-06-16T10:38:34+00:00",
+          "Kayako - ticket id 60078199 // ATLAS commented privately: --- Ticket generated by GFI MailEssentials AI chat on behalf of Christian Schmidt ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * Hast Du den Letzten chatverlauf<br>\n  * Mach ein Ticket auf zum Thema Doppelte E-mails<br>\n  * Ich kl\u00e4re das selbst im Ticket<br>\n  * mach das ticket auf<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 18,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

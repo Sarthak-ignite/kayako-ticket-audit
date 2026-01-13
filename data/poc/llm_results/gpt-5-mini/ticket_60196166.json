@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI-generated entries contain generic or questionable content (e.g. overly generic operation summary and an implausible 'Placing on hold for 9999 hour(s)' entry), indicating low-quality or filler AI responses.",
+    "evidence": [
+      "[2025-11-30T18:47:54+00:00] (AI) Cu Chulainn AI Manager: ... ===== Operation Summary ===== 1. Process halted per Step 3. Validation and findings: 2. - DS for Escalated Issue (only GHI!)",
+      "[2025-11-20T16:27:44+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was stuck in a repetitive AI loop or that the AI repeatedly asked for the same information preventing escalation.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Interactions show engineers acknowledging received logs and working on fixes (e.g. thanking for logs, engineering reproductions, PR and RC branch references). There is no clear instance of support asking the customer to re-submit information already provided.",
+    "evidence": [
+      "[2025-11-20T16:27:04+00:00] (Employee) Mike Kebede: ... Thank you for your detailed description and for sending the new logs, configurations, and the screen recording.",
+      "[2025-11-24T14:52:38Z] (Employee) daniel-wachira: PR: https://github.com/... RC build artifacts will be made available once the fix is verified and buil",
+      "[2025-11-24T14:40:11Z] (Employee) daniel-wachira: ### Findings & RCA ... After rebooting the HA is now stable, no issues."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between interactions (several days to over a week) which indicate significant delays between replies or progress updates.",
+    "evidence": [
+      "[2025-11-20T16:27:04+00:00] (Employee) Mike Kebede commented publicly",
+      "[2025-11-30T18:57:23+00:00] (Employee) Mike Kebede commented publicly",
+      "[2025-12-10T15:48:26Z] (General) None: daniel-wachira unassigned"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no explicit evidence the ticket was closed prematurely or that the customer abandoned the ticket while awaiting promised information. The log shows engineering actions, PRs, RCs, and public updates rather than a closure while waiting.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the issue is High Availability-related, the ticket shows engineering involvement, reproduction, RCA, PR and an RC release \u2014 not simple generic troubleshooting in place of escalation. No clear evidence of mishandling a P1/SEV1 by providing only generic steps instead of escalation.",
+    "evidence": [
+      "[2025-11-24T14:52:38Z] (Employee) daniel-wachira: PR: https://github.com/...",
+      "[2025-11-24T14:40:11Z] (Employee) daniel-wachira: ### Findings & RCA ... After rebooting the HA is now stable, no issues.",
+      "[2025-11-26T12:20:00Z] (Employee) daniel-wachira: The fix is now included in Control 9.6.0 RC branch."
+    ]
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60196166
+}

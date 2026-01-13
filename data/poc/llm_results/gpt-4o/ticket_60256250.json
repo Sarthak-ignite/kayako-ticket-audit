@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses appear to be directly addressing the issues presented by the customer without providing filler or incorrect information.",
+    "evidence": [
+      "Thank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoro - [2025-12-05T06:15:08+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence to suggest that the customer is repeatedly asked for the same information or unable to proceed beyond AI interaction.",
+    "evidence": [
+      "Thank you for reaching out to us. To ensure that we address your query efficiently, could you kindly specify whi - [2025-12-04T09:52:33+00:00]"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI asks for clarification but does not appear to ignore or request already provided information from the customer.",
+    "evidence": [
+      "Thank you for providing the additional details regarding the issue where users must refresh the page to reply to a post within yo - [2025-12-05T06:13:52+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay between interactions as the max gap is over 20 hours.",
+    "evidence": [
+      "Max gap between responses (hours): 20.3"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication that the ticket was closed prematurely while the customer was waiting for additional promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is of normal priority and there is no evidence of it being a high-priority outage or similar situation requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses appear to be directly addressing the issues presented by the customer without providing filler or incorrect information.\",\n    \"evidence\": [\"Thank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoro - [2025-12-05T06:15:08+00:00]\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence to suggest that the customer is repeatedly asked for the same information or unable to proceed beyond AI interaction.\",\n    \"evidence\": [\"Thank you for reaching out to us. To ensure that we address your query efficiently, could you kindly specify whi - [2025-12-04T09:52:33+00:00]\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI asks for clarification but does not appear to ignore or request already provided information from the customer.\",\n    \"evidence\": [\"Thank you for providing the additional details regarding the issue where users must refresh the page to reply to a post within yo - [2025-12-05T06:13:52+00:00]\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay between interactions as the max gap is over 20 hours.\",\n    \"evidence\": [\"Max gap between responses (hours): 20.3\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the ticket was closed prematurely while the customer was waiting for additional promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is of normal priority and there is no evidence of it being a high-priority outage or similar situation requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60256250
+}

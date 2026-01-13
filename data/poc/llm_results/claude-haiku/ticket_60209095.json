@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are repetitive and provide no substantive information, repeatedly placing the ticket 'on hold' without meaningful action.",
+    "evidence": [
+      "[2026-01-05T10:55:52+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2026-01-05T10:39:47+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While AI interactions are present, they do not prevent human interaction.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeatedly asks for updates or promises investigation without acknowledging the customer's repeated complaints about long-standing issues.",
+    "evidence": [
+      "[2026-01-05T08:31:09+00:00] Vaibhav Jha: I wanted to bring to your attention that the issue we reported has been persisting for the past two months.",
+      "[2026-01-03T14:09:35+00:00] Sajeedali Kazi: Is there any update from your development team. This issue has been pending for a long time"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant gaps between customer follow-ups and support responses, with multiple days passing between interactions.",
+    "evidence": [
+      "Time to first human (hours): 864.8",
+      "Max gap between responses (hours): 657.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket remains open and has not been prematurely closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority ticket is not being treated with urgency, with multiple vague responses about 'development team investigation'.",
+    "evidence": [
+      "[2026-01-05T10:55:34+00:00] Andriy Rybalchenko: At this time, we don't have a confirmed timeline to share. The resolution depends on the Development team's queue",
+      "[2026-01-03T14:09:35+00:00] Sajeedali Kazi: This issue has been pending for a long time"
+    ]
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are repetitive and provide no substantive information, repeatedly placing the ticket 'on hold' without meaningful action.\",\n    \"evidence\": [\n      \"[2026-01-05T10:55:52+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2026-01-05T10:39:47+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI interactions are present, they do not prevent human interaction.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support repeatedly asks for updates or promises investigation without acknowledging the customer's repeated complaints about long-standing issues.\",\n    \"evidence\": [\n      \"[2026-01-05T08:31:09+00:00] Vaibhav Jha: I wanted to bring to your attention that the issue we reported has been persisting for the past two months.\",\n      \"[2026-01-03T14:09:35+00:00] Sajeedali Kazi: Is there any update from your development team. This issue has been pending for a long time\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant gaps between customer follow-ups and support responses, with multiple days passing between interactions.\",\n    \"evidence\": [\n      \"Time to first human (hours): 864.8\",\n      \"Max gap between responses (hours): 657.0\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket remains open and has not been prematurely closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority ticket is not being treated with urgency, with multiple vague responses about 'development team investigation'.\",\n    \"evidence\": [\n      \"[2026-01-05T10:55:34+00:00] Andriy Rybalchenko: At this time, we don't have a confirmed timeline to share. The resolution depends on the Development team's queue\",\n      \"[2026-01-03T14:09:35+00:00] Sajeedali Kazi: This issue has been pending for a long time\"\n    ]\n  }\n}\n```\n\nKey observations:\n1. The ticket shows significant quality issues with prolonged resolution time\n2. Multiple AI interactions add no value\n3. Customer has been waiting for months without clear resolution\n4. Support team provides generic, non-committal responses\n5. The high-priority ticket is not being handled with appropriate urgency",
+  "_model": "claude-haiku",
+  "_ticket_id": 60209095
+}

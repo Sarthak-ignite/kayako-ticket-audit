@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI (Hermes/ATLAS) produced largely non-actionable, template-style responses and did not answer the customer\u2019s core question (is this a product bug / have you reproduced it). Hermes twice acknowledged receipt without giving next steps or conclusions. ATLAS provided a long narrative that appears to attribute/steer toward configuration/virtual-environment angle (per customer\u2019s reaction) without definitively addressing reproducibility, and the customer explicitly pushed back asking if support actually tested it.",
+    "evidence": [
+      "[2025-09-15] Hermes: \u201cYour input will be carefully reviewed to better understand the situation and determine the most appropriate next steps.\u201d (no next steps, no timeline, no technical direction)",
+      "[2025-09-16] Customer follow-up after Hermes message: \u201cCould I kindly ask for an update? The customer is waiting for information\u2026\u201d (indicates AI response didn\u2019t progress the case)",
+      "[2025-09-24] ATLAS: \u201cI can confirm the following findings and offer the most relevant guidance\u2026\u201d followed by generic observations; customer later challenges the implication it\u2019s config/virtual-related rather than confirming a bug",
+      "[2025-09-25] Customer to ATLAS: \u201cHave you tested this on your end?\u2026 Could you confirm whether we found an issue in the product/release?\u201d (AI response did not provide the confirmation the customer needed)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer initially asked to reach tech support, but the ticket did transition to human agents. While there were multiple AI acknowledgements, the customer was not permanently blocked from a human.",
+    "evidence": [
+      "[2025-09-13] Human agent Zubair responds with KB and request for screenshots",
+      "[2025-10-02] Escalation acknowledged by human (Atilla Onay)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support provided a workaround that was not validated against the customer\u2019s appliance/filesystem and did not reconcile with the customer\u2019s HA/WAN-IP conflict concerns. The customer reported the proposed file path doesn\u2019t exist, and also raised IP-conflict and inconsistent flag-retention behavior; the subsequent response simply acknowledged and deferred to engineering rather than addressing the practical mismatch or clarifying correct steps for the customer\u2019s platform/version.",
+    "evidence": [
+      "[2025-10-02] Support workaround: \u201cEdit the file /etc/opt/kerio/winroute/kr.conf \u2026 Add \u2026 DisableInternetInterfaces=0\u201d",
+      "[2025-10-06] Customer: \u201cThe proposed solution is impossible to set up. I do not have the /etc/opt/kerio/winroute/kr.conf file. There is also no kr.conf file in /opt/kerio/winroute.\u201d",
+      "[2025-10-06] Customer: \u201cAfter blocking this disabling mechanism, will there be an IP conflict because both devices will have the same WAN link addresses and the links will be active on both devices?\u201d (key concern not addressed)",
+      "[2025-10-13] Support: \u201cWe acknowledge that the suggested workaround is not feasible in your environment. Engineering is now actively working on a permanent fix.\u201d (no correction to the path/steps, no alternative validated workaround)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple >3-day gaps while the customer is actively asking for updates, including an 8-day gap after a direct request for status and a ~2-week gap while waiting for engineering progress. The customer explicitly states the customer has been waiting almost two months.",
+    "evidence": [
+      "[2025-09-16] Customer: \u201cCould I kindly ask for an update?\u201d \u2192 next substantive update appears [2025-09-24] (8 calendar days)",
+      "[2025-10-13] Support: engineering working on fix \u2192 [2025-10-27] Customer asks again: \u201cprogress\u2026 waiting\u2026 almost two months\u201d (14 calendar days without progress update)",
+      "[2025-10-27] Customer follow-up \u2192 [2025-10-30] Support replies with beta build (3 calendar days)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows continued engagement and culminates in a beta build being provided. There is no clear evidence the ticket was closed without resolution in the provided timeline.",
+    "evidence": [
+      "[2025-10-30] Support provides a beta build for validation rather than closing the ticket"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue affects core HA failover/WAN connectivity (\u201cWAN links not working as expected\u201d after failover; \u201cProblem with default gateway\u201d), and the customer asked early for an engineer/developer due to suspected bug. Despite this, the case initially received generic KB guidance and multiple non-committal AI acknowledgements, with formal escalation only occurring weeks later (10/02). This handling pace and lack of urgency indicators suggest high-severity handling was delayed.",
+    "evidence": [
+      "[2025-09-12] Customer: \u201cAfter Failover\u2026 WAN links not working as expected\u2026 I want to talk to Support Engineer / Developer because it looks like a bug\u2026\u201d",
+      "[2025-09-13] Support response is primarily KB/standard checks: \u201cPlease remember that Master and Slave version should be the same\u2026\u201d",
+      "[2025-09-16] Customer asks for update due to waiting customer (no urgent escalation shown at that time)",
+      "[2025-10-02] Escalation record: \u201cseverity is: core_functionality_defect\u201d (formal escalation happens ~20 days after initial report)"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60196166
+}

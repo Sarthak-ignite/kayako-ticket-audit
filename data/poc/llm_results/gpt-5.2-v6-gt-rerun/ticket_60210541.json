@@ -1,0 +1,61 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The ATLAS reply appears generic and prescriptive (ports/rules/SSL inspection) despite the customer clearly stating the issue is triggered only by upgrading to v10 and resolved by downgrading, with no config changes. The customer explicitly says the suggested steps are \u201cnot to the point,\u201d indicating the AI guidance was not effective or appropriately tailored.",
+    "evidence": [
+      "ATLAS: \"Based on the log details provided\u2014especially the timeout during the Let's Encrypt certificate authorization process\u2014the most likely root cause relates to firewall or network routing impacting connectivity\"",
+      "ATLAS: \"Ensure that port 80 (HTTP) and port 443 (HTTPS) are accessible from the internet to the PBX server for the duration of certificate issuance.\"",
+      "Customer: \"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it. there are no config changes at all. Only version is chaning.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was trapped in an AI loop, repeatedly receiving the same AI responses, or requesting a human. The conversation transitions to a human agent (Ciprian) without the customer expressing difficulty reaching a person.",
+    "evidence": [
+      "Kayako - ticket id 60210541 // Ciprian Nastase commented publicly: \"Dear Jozef, ... please provide us with some additional details\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS largely focuses on generic firewall/NAT/port accessibility steps even though the customer already reported that disabling multiple security features did not help and that only the version change (v10 vs 9.5 SP3) correlates with the failure. This indicates the response did not adequately incorporate key context already provided in the ticket.",
+    "evidence": [
+      "Customer: \"voip trunk and plesk ssl certificate renew with version 10 build 9018 doesnt work, after a downgrade to 9.5 SP3 it will solved.\"",
+      "Customer: \"the problem also occurred with all ips/geoip/antivirus/appfilter disabled.\"",
+      "ATLAS: \"The most likely root cause relates to firewall or network routing impacting connectivity\"",
+      "Customer: \"there are no config changes at all. Only version is chaning.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a substantial gap between the last customer message on 2025-09-30 and the next support update on 2025-10-31 (about a month). The structured data also shows a very long overall resolution time, supporting that the case sat without meaningful progress for an extended period.",
+    "evidence": [
+      "Customer: \"Hi Atlas, ...\" [2025-09-30T15:55:22+00:00]",
+      "Ciprian Nastase: \"Dear Jozef, ...\" [2025-10-31T13:59:15+00:00]",
+      "CSV: resolutionTime=2678192",
+      "CSV: Ticket Created=2025-09-30 15:50:42",
+      "CSV: Ticket Solved=2025-10-31 15:47:14"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the agent mentions the ticket will stay open for one week unless the customer responds, the customer then confirms the issue was related to a known incident and says it can be considered solved. The ticket being closed afterward aligns with customer confirmation rather than closure while help was still needed.",
+    "evidence": [
+      "Ciprian Nastase: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed\"",
+      "Customer: \"we can consider this as solved.\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The reported impact involves PBX/VoIP trunk failures across multiple Kerio Control installations and a production certificate renewal failure, which could represent high-severity business disruption. Handling appears slow (about a month to connect it to a known UDP traffic incident), and support states they lack v10 appliances for troubleshooting, suggesting possible insufficient urgency/ownership; severity is inferred and may be uncertain.",
+    "evidence": [
+      "Customer: \"we already had some reports on PBX issues, this is latest with partner Walter having issues on  10 Kerio controls.\"",
+      "Customer: \"voip trunk and plesk ssl certificate renew with version 10 build 9018 doesnt work\"",
+      "Ciprian Nastase (private): \"I wonder if this has anything to do with  GFI Software Status - Kerio Control UDP Traffic Issue\"",
+      "Ciprian Nastase: \"especially as we don't have any Kerio Control v10 appliances available for support\"",
+      "CSV: resolutionTime=2678192"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60210541
+}

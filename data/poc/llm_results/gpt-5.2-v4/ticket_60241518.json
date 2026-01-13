@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI customer-facing update is largely templated and doesn\u2019t address the customer\u2019s core operational blocker (disk space consumed by accumulated gfiagent temp folders preventing upgrade) with any actionable mitigation (e.g., safe cleanup/workaround, how to reclaim space now, whether existing folders will be cleaned). It also requests generic \u201cenable logging and debugging\u2026send logs\u201d even though Engineering had already identified root cause and fix, which can feel like boilerplate rather than helpful next steps.",
+    "evidence": [
+      "AI message: \u201cWe kindly ask you to update to the latest version once it becomes available and check if the issue has been resolved.\u201d",
+      "AI message: \u201cShould the problem persist after the update, we request that you enable logging and debugging, reproduce the issue, and send us the new set of logs\u2026\u201d",
+      "Customer\u2019s original impact: \u201cagents are piling up in the Exinda var folder\u2026 occupy too much space and block Exinda from successful update to the newer version.\u201d (No immediate workaround provided in support comms)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no repeated AI back-and-forth requesting the same information, and the ticket was ultimately escalated to Engineering and resolved with a clear status update.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support/Engineering acknowledged the described symptom (gfiagent directories filling /var) and escalated appropriately. There\u2019s no clear instance where support asks for information already provided or repeats prior troubleshooting.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a major gap between the customer\u2019s initial request/follow-up and the first visible support action/escalation. The customer followed up asking for escalation, then waited ~18 days for progress/response.",
+    "evidence": [
+      "Customer initial report: 2025-11-12T15:24:17+00:00 \u201cagents are piling up\u2026 block Exinda from successful update\u2026 Please move this ticket to Engineering\u201d",
+      "Customer follow-up: 2025-11-12T19:07:57+00:00 \u201cplease pass this to engineering\u201d",
+      "First escalation activity: 2025-11-30T14:52:10Z \u201cGHI Engineering - 15824 \u2026 labeled as Eng-Maintenance\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Customer explicitly confirmed closure (\u201cthanks, we can close this ticket\u201d), and support closed accordingly.",
+    "evidence": [
+      "Customer: \u201cthanks, we can close this ticket\u201d",
+      "Support: \u201cwe are closing this ticket as requested.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue blocks upgrades due to disk usage (potentially serious), the ticket does not explicitly state an outage/production down scenario, a defined P1/Sev1, or urgent SLA impact that was ignored. The primary failure here is delay, not clearly severity mishandling.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60241518
+}

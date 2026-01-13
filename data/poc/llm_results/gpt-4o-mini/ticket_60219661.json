@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI-generated responses in the ticket that provide wrong information or are generic fillers.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to interact with human agents without being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support agents acknowledged the customer's issue and provided relevant responses based on the information shared without asking for repeated information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay of 44.3 hours between the customer\u2019s responses and the support team's replies.",
+    "evidence": [
+      "[2025-10-15T11:00:31+00:00] (Customer) Daniel An: Sent with Kayako [https://kayako.com]",
+      "[2025-10-16T12:31:05+00:00] (Employee) Balaji Jayaraman: Dear Daniel, Thanks for the update."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the agent's final communication, and there was no indication that the customer was waiting on promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket was marked as normal priority, and there were no indications of high-priority mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI-generated responses in the ticket that provide wrong information or are generic fillers.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer was able to interact with human agents without being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support agents acknowledged the customer's issue and provided relevant responses based on the information shared without asking for repeated information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay of 44.3 hours between the customer\u2019s responses and the support team's replies.\",\n    \"evidence\": [\n      \"[2025-10-15T11:00:31+00:00] (Customer) Daniel An: Sent with Kayako [https://kayako.com]\",\n      \"[2025-10-16T12:31:05+00:00] (Employee) Balaji Jayaraman: Dear Daniel, Thanks for the update.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the agent's final communication, and there was no indication that the customer was waiting on promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was marked as normal priority, and there were no indications of high-priority mishandling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60219661
+}

@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only visible AI message is generic filler and does not provide any substantive help or the promised \u201crecord of your conversation\u201d (it appears blank/truncated).",
+    "evidence": [
+      "[2025-11-11T21:25:05+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference: ... <b>--- AI Assistant -\n\n\n---\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI comment shown and no repeated questioning or evidence the customer was prevented from reaching a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer-provided details or prior context are visible in the timeline, so there is no clear evidence of support ignoring previously provided information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline shows only one interaction and the provided metric indicates a 0.0 hour max gap between responses; there is no evidence of multi-day delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, the interaction history does not show an unresolved customer request, a promise of follow-up, or the customer waiting when closure occurred.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is low and there is no evidence of an outage/high-severity incident requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The only visible AI message is generic filler and does not provide any substantive help or the promised \u201crecord of your conversation\u201d (it appears blank/truncated).\",\n    \"evidence\": [\n      \"[2025-11-11T21:25:05+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference: ... <b>--- AI Assistant -\\n\\n\\n---\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI comment shown and no repeated questioning or evidence the customer was prevented from reaching a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer-provided details or prior context are visible in the timeline, so there is no clear evidence of support ignoring previously provided information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline shows only one interaction and the provided metric indicates a 0.0 hour max gap between responses; there is no evidence of multi-day delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, the interaction history does not show an unresolved customer request, a promise of follow-up, or the customer waiting when closure occurred.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is low and there is no evidence of an outage/high-severity incident requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60240989
+}

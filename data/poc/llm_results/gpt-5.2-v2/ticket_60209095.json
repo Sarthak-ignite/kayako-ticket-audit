@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS repeatedly concluded the blank graphs are \u201cnormal behavior\u201d due to no traffic in the selected time range, despite the customer later stating there was traffic; this is likely an incorrect diagnosis and reads like a generic explanation rather than issue-specific troubleshooting.",
+    "evidence": [
+      "ATLAS commented publicly: \"The 'Data not available for selected period' message occurs when no traffic has been recorded... This is a normal behavior in Exinda reporting. It does not indicate a malfunction...\"",
+      "Customer: \"We would like to inform you that there was traffic over the link on the mentioned period, but it was not present on exinda subnet report.\"",
+      "ATLAS commented publicly: \"This behavior is in line with normal Exinda operation; there is no evidence of a firmware or reporting engine malfunction.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer is stuck in repetitive cycles of providing information and asking for real-time help (call), while support keeps requesting the same artifacts (sysdump/PDF) and the customer expresses frustration about repeated asks and lack of corrective action.",
+    "evidence": [
+      "Customer: \"can you schedule a call because from last 1 month we are only sharing data for verification .\"",
+      "Customer: \"can you tell us that how many times you need same data. Have you checked previous update on this ticket provides by us?\"",
+      "Customer: \"Kindly confirm are you able to initiate a call for troubleshooting or not . Please clarify because from last 1 month we are just providing updates on your requirement, but we have not received a single recommendation / corrective action from your side.\"",
+      "Support (Rishi/Randall) repeatedly: \"Generate a diagnostics file (sysdump) and PDF report... Attach both files to this ticket.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support actions and requests indicate prior customer-provided material was not fully acknowledged/leveraged (customer states they already provided data), and support asked again for uploads while saying they cannot see them, forcing repetition.",
+    "evidence": [
+      "Customer: \"can you tell us that how many times you need same data. Have you checked previous update on this ticket provides by us?\"",
+      "Randall: \"Did you previously upload these, as I do not see them attached to this ticket? If not, please provide these...\"",
+      "Customer: \"from last 1 month we are only sharing data for verification\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple multi-day gaps without support responses, prompting repeated customer follow-ups and escalations (6 days, one month).",
+    "evidence": [
+      "Customer (2025-09-30): \"kindly share update on the reported issue on priority basis.\"",
+      "Customer (2025-10-06): \"As we are waiting from last 6 days still, we have not received any updates\"",
+      "Customer (2025-11-04): \"It has been now a month ago but still we haven't received any solution\"",
+      "Customer (2025-10-08): \"still we have not received any corrective updates / response\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No explicit ticket closure is shown in the provided timeline; while there is a warning about keeping the ticket open for one week, the ticket continues with subsequent customer replies and support responses.",
+    "evidence": [
+      "Rishi: \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The case was escalated with severity marked as \"data_loss\" and the customer repeatedly requested priority handling and escalation contacts, yet experienced long delays and slow escalation/coordination, indicating mishandling for a potentially high-severity impact.",
+    "evidence": [
+      "Centralsupport-ai-acc: \"[customer_escalation] ... The severity is: data_loss\"",
+      "Customer: \"kindly share update on the reported issue on priority basis.\"",
+      "Customer: \"Issue is dragging from 1 month but we have not received any update and solutions.\"",
+      "Customer: \"we have not been provided with the escalation matrix or proper contact details for your support team.\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60209095
+}

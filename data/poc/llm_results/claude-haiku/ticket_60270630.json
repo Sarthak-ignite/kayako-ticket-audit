@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient evidence of AI interaction or quality issues.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of AI loop or repeated information requests.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Limited interaction details prevent assessment of context ignorance.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is closed, but no clear evidence of premature closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, not a P1/Sev1 issue.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the provided ticket context and interaction, here's the analysis:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient evidence of AI interaction or quality issues.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of AI loop or repeated information requests.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Limited interaction details prevent assessment of context ignorance.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is closed, but no clear evidence of premature closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, not a P1/Sev1 issue.\",\n    \"evidence\": []\n  }\n}\n```\n\nNote: The provided interaction is extremely limited, containing only a metadata-like message from the customer referencing a previous conversation. There's insufficient context to definitively assess any of the quality issues. A more complete ticket transcript would be needed for a comprehensive analysis.\n\nKey observations:\n- Ticket status is closed\n- Priority is normal\n- No detailed support interactions are visible\n- Time to first human response is not available (nan)\n\nTo properly evaluate these quality patterns, I would need:\n1. Full conversation transcript\n2. Detailed interactions between support and customer\n3. More context about the initial support request",
+  "_model": "claude-haiku",
+  "_ticket_id": 60270630
+}

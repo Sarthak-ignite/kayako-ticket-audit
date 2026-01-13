@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided a generic incident/status-page template that did not answer the customer\u2019s actual question (why the prior ticket was closed). It also appears to use a broken template (\u201cDear ATLAS\u201d) and incorrectly implied the Avira incident may be related despite the customer explicitly saying it was not. This is misleading/unhelpful and increases frustration.",
+    "evidence": [
+      "Customer issue: \"Why is ticket #60094199 closed? The problem has not been solved by GFI.\"",
+      "Customer response to incident suggestion: \"\ud83d\udc4e No. My issue is not related\"",
+      "ATLAS reply (generic/misdirected): \"Please refer to our status page for the latest updates on the current incident affecting the Avira Virus Scanner Engine, which may be related to your case.\"",
+      "Broken template/salutation: \"Dear ATLAS,\"",
+      "Deflection instead of answering closure question: no explanation of why #60094199 was closed; only an incident link and auto-closure policy text"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a brief AI interaction before escalation to L1 and a human agent responds. No evidence the customer was trapped in repeated AI-only loops.",
+    "evidence": [
+      "ATLAS internal action: \"Action: Send to l1\"",
+      "Human response follows: \"Randall Shawver commented publicly...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS ignored key context the customer provided (that the issue is not related to the active Avira incident) and failed to address the stated purpose of the ticket (closure of #60094199 without resolution).",
+    "evidence": [
+      "Customer: \"\ud83d\udc4e No. My issue is not related\"",
+      "ATLAS: \"...incident affecting the Avira Virus Scanner Engine, which may be related to your case.\"",
+      "Customer repeats core context immediately after: \"Why is ticket #60094199 closed? The problem has not been solved by GFI.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Response times shown are within ~24 hours, with no multi-day gaps or customer follow-ups about waiting.",
+    "evidence": [
+      "Customer follow-up: 2025-07-12T18:59:16+00:00",
+      "Human response: 2025-07-13T19:11:48+00:00"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The customer explicitly reports that ticket #60094199 was closed while the problem was not solved. Even though this ticket remains open, the experience described is a premature closure issue impacting the customer.",
+    "evidence": [
+      "\"Why is ticket #60094199 closed? The problem has not been solved by GFI.\"",
+      "\"The ticket remains open until the problem is solved.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No clear indication of a production outage/critical business impact requiring P1 handling; discussion centers on duplicate emails/POP3 and an Avira incident mention without stated severity or escalation need.",
+    "evidence": [
+      "Human agent frames issue as: \"duplicate emails are occurring when downloading via Pop3\"",
+      "No customer statements like 'production down', 'all users impacted', or urgent/SLA language"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60101543
+}

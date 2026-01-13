@@ -1,0 +1,130 @@
+{
+  "notes": {
+    "source_patterns_csv": "IgniteTech_Khoros_GFI - Central Support Issues we see in tickets - Patterns.csv",
+    "source_universe_csv": "Full_Ticket_Data_1767638152669.csv",
+    "source_overrides_json": "/Users/sarthak/Desktop/Kayako-tickets-analyser/data/poc/ground_truth_overrides.json",
+    "excluded_seed_tickets_count": 2,
+    "tickets_after_filtering": 30,
+    "our_patterns": [
+      "AI_QUALITY_FAILURES",
+      "AI_WALL_LOOPING",
+      "IGNORING_CONTEXT",
+      "RESPONSE_DELAYS",
+      "PREMATURE_CLOSURE",
+      "P1_SEV1_MISHANDLING"
+    ]
+  },
+  "expected_by_ticket": {
+    "60247476": [
+      "AI_QUALITY_FAILURES",
+      "AI_WALL_LOOPING",
+      "IGNORING_CONTEXT",
+      "P1_SEV1_MISHANDLING"
+    ],
+    "60238457": [
+      "AI_QUALITY_FAILURES",
+      "AI_WALL_LOOPING",
+      "IGNORING_CONTEXT",
+      "P1_SEV1_MISHANDLING",
+      "PREMATURE_CLOSURE",
+      "RESPONSE_DELAYS"
+    ],
+    "60209553": [
+      "AI_QUALITY_FAILURES",
+      "AI_WALL_LOOPING",
+      "P1_SEV1_MISHANDLING",
+      "PREMATURE_CLOSURE",
+      "RESPONSE_DELAYS"
+    ],
+    "60238295": [
+      "AI_QUALITY_FAILURES",
+      "RESPONSE_DELAYS"
+    ],
+    "60231851": [
+      "AI_QUALITY_FAILURES",
+      "IGNORING_CONTEXT",
+      "RESPONSE_DELAYS"
+    ],
+    "60218313": [
+      "AI_QUALITY_FAILURES"
+    ],
+    "60220499": [
+      "AI_QUALITY_FAILURES",
+      "RESPONSE_DELAYS"
+    ],
+    "60232130": [
+      "AI_QUALITY_FAILURES"
+    ],
+    "60209095": [
+      "AI_QUALITY_FAILURES",
+      "RESPONSE_DELAYS"
+    ],
+    "60230003": [
+      "PREMATURE_CLOSURE"
+    ],
+    "60230438": [
+      "PREMATURE_CLOSURE"
+    ],
+    "60239883": [
+      "PREMATURE_CLOSURE"
+    ],
+    "60252864": [
+      "PREMATURE_CLOSURE"
+    ],
+    "60237327": [
+      "AI_WALL_LOOPING"
+    ],
+    "60256173": [
+      "AI_QUALITY_FAILURES",
+      "AI_WALL_LOOPING"
+    ],
+    "60258400": [
+      "AI_WALL_LOOPING"
+    ],
+    "60241518": [
+      "RESPONSE_DELAYS"
+    ],
+    "60211680": [
+      "PREMATURE_CLOSURE"
+    ],
+    "60214613": [
+      "PREMATURE_CLOSURE"
+    ],
+    "60227783": [
+      "AI_QUALITY_FAILURES",
+      "P1_SEV1_MISHANDLING",
+      "PREMATURE_CLOSURE"
+    ],
+    "60210541": [
+      "IGNORING_CONTEXT"
+    ],
+    "60242814": [
+      "AI_QUALITY_FAILURES"
+    ],
+    "60240989": [
+      "AI_QUALITY_FAILURES"
+    ],
+    "60231299": [
+      "AI_QUALITY_FAILURES"
+    ],
+    "60225231": [
+      "AI_QUALITY_FAILURES"
+    ],
+    "60220701": [
+      "RESPONSE_DELAYS"
+    ],
+    "60252140": [
+      "RESPONSE_DELAYS"
+    ],
+    "60241392": [
+      "AI_QUALITY_FAILURES"
+    ],
+    "60234621": [
+      "IGNORING_CONTEXT",
+      "P1_SEV1_MISHANDLING"
+    ],
+    "60226631": [
+      "IGNORING_CONTEXT"
+    ]
+  }
+}

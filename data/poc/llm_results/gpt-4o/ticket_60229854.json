@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no interaction from an AI in the provided timeline, so quality failures by AI can't be assessed.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI responses or looping based on the single customer interaction provided.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly references a previous request, but there is no evidence of an attempt to address it or acknowledgment of prior related information.",
+    "evidence": [
+      "'Our previous request[#60169878]' [2025-10-27T14:07:15+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket has a 'Max gap between responses' of 0.0 hours, indicating no response delays recorded.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed without any visible response or resolution to the customer's query, considering the lack of a visible support reply in the data provided.",
+    "evidence": [
+      "'Ticket ID: 60229854' with status closed without follow-up interaction."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication that this is a high-priority or outage ticket that required immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\"AI_QUALITY_FAILURES\":{\"detected\":false,\"reasoning\":\"There is no interaction from an AI in the provided timeline, so quality failures by AI can't be assessed.\",\"evidence\":[]},\"AI_WALL_LOOPING\":{\"detected\":false,\"reasoning\":\"There is no evidence of AI responses or looping based on the single customer interaction provided.\",\"evidence\":[]},\"IGNORING_CONTEXT\":{\"detected\":true,\"reasoning\":\"The customer explicitly references a previous request, but there is no evidence of an attempt to address it or acknowledgment of prior related information.\",\"evidence\":[\"'Our previous request[#60169878]' [2025-10-27T14:07:15+00:00]\"]},\"RESPONSE_DELAYS\":{\"detected\":false,\"reasoning\":\"The ticket has a 'Max gap between responses' of 0.0 hours, indicating no response delays recorded.\",\"evidence\":[]},\"PREMATURE_CLOSURE\":{\"detected\":true,\"reasoning\":\"The ticket was closed without any visible response or resolution to the customer's query, considering the lack of a visible support reply in the data provided.\",\"evidence\":[\"'Ticket ID: 60229854' with status closed without follow-up interaction.\"]},\"P1_SEV1_MISHANDLING\":{\"detected\":false,\"reasoning\":\"There is no indication that this is a high-priority or outage ticket that required immediate escalation.\",\"evidence\":[]}}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60229854
+}

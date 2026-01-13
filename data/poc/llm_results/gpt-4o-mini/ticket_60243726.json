@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no indications that AI responses provided incorrect information or unkept promises in the ticket.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer did not seem to be stuck in a loop with the AI and successfully interacted with human agents.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear evidence that the support team ignored context or requested the same information unnecessarily.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The time to first human response was excessively long at 384.9 hours and there were significant gaps between responses.",
+    "evidence": [
+      "Time to first human response: 384.9 hours",
+      "Max gap between responses: 151.9 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed without the customer indicating they had received all necessary information, as they simply said 'Thank you' in their last response.",
+    "evidence": [
+      "Ben Smith commented privately: 'Thank you. You can close out this ticket.' (2025-12-09T15:49:39+00:00)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been handled appropriately despite its high priority, with no evidence of generic troubleshooting.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no indications that AI responses provided incorrect information or unkept promises in the ticket.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer did not seem to be stuck in a loop with the AI and successfully interacted with human agents.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence that the support team ignored context or requested the same information unnecessarily.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The time to first human response was excessively long at 384.9 hours and there were significant gaps between responses.\",\n    \"evidence\": [\"Time to first human response: 384.9 hours\", \"Max gap between responses: 151.9 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed without the customer indicating they had received all necessary information, as they simply said 'Thank you' in their last response.\",\n    \"evidence\": [\"Ben Smith commented privately: 'Thank you. You can close out this ticket.' (2025-12-09T15:49:39+00:00)\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to have been handled appropriately despite its high priority, with no evidence of generic troubleshooting.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60243726
+}

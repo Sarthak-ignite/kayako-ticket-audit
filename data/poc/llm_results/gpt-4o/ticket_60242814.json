@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence in the text indicating that AI provided generic or incorrect information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was repeatedly asked for the same information or stuck interacting only with AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support team seemed to follow up on the information provided by the customer without repeatedly asking for previously shared details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays between interactions, particularly the 18-day delay before the employee responded.",
+    "evidence": [
+      "Time to first human (hours): 408.3",
+      "Max gap between responses (hours): 288.8",
+      "[2025-11-18T21:45:39+00:00] to [2025-11-30T22:38:09+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been closed with a proper closing message acknowledging the customer's retirement.",
+    "evidence": [
+      "[2025-12-09T19:20:09+00:00] Carlos: Thank you for the update..."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket does not indicate it was of high-priority or related to an outage that required immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence in the text indicating that AI provided generic or incorrect information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was repeatedly asked for the same information or stuck interacting only with AI.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support team seemed to follow up on the information provided by the customer without repeatedly asking for previously shared details.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays between interactions, particularly the 18-day delay before the employee responded.\",\n    \"evidence\": [\"Time to first human (hours): 408.3\", \"Max gap between responses (hours): 288.8\", \"[2025-11-18T21:45:39+00:00] to [2025-11-30T22:38:09+00:00]\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to have been closed with a proper closing message acknowledging the customer's retirement.\",\n    \"evidence\": [\"[2025-12-09T19:20:09+00:00] Carlos: Thank you for the update...\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not indicate it was of high-priority or related to an outage that required immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60242814
+}

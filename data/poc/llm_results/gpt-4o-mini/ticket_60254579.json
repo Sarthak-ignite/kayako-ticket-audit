@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI provided a transcript of the customer's interaction but did not fulfill the customer's query adequately.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer successfully transitioned from AI to human support and was able to communicate directly with Mike Kebede.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The human agent repeated the request for support information and debug logs without acknowledging the files already provided by the customer.",
+    "evidence": [
+      "[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep",
+      "[2025-12-02T18:15:10+00:00] (Customer) Alejandro Antu\u00f1a: capturas.docx",
+      "[2025-12-02T15:33:40+00:00] (Customer) Alejandro Antu\u00f1a: capturas.docx"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant gap of 44.3 hours between responses, which indicates a delay in communication.",
+    "evidence": [
+      "[2025-12-02T18:15:10+00:00] (Customer) Alejandro Antu\u00f1a: capturas.docx",
+      "[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the last customer response, and there was no indication that the customer was waiting for specific information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The interactions included proper technical responses relevant to the issue without generic troubleshooting.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI provided a transcript of the customer's interaction but did not fulfill the customer's query adequately.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer successfully transitioned from AI to human support and was able to communicate directly with Mike Kebede.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The human agent repeated the request for support information and debug logs without acknowledging the files already provided by the customer.\",\n    \"evidence\": [\n      \"[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep\",\n      \"[2025-12-02T18:15:10+00:00] (Customer) Alejandro Antu\u00f1a: capturas.docx\",\n      \"[2025-12-02T15:33:40+00:00] (Customer) Alejandro Antu\u00f1a: capturas.docx\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant gap of 44.3 hours between responses, which indicates a delay in communication.\",\n    \"evidence\": [\n      \"[2025-12-02T18:15:10+00:00] (Customer) Alejandro Antu\u00f1a: capturas.docx\",\n      \"[2025-12-04T14:34:33+00:00] (Employee) Mike Kebede: To continue the investigation, we need the Support Information file and a short set of Debug logs while the issue is rep\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the last customer response, and there was no indication that the customer was waiting for specific information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions included proper technical responses relevant to the issue without generic troubleshooting.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60254579
+}

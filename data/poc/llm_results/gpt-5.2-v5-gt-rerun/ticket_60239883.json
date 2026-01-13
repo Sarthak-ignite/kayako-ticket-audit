@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Customer-facing AI messages are coherent, relevant (acknowledges escalation and later confirms the Apache upgrade), and there is no customer complaint about incorrect or useless AI guidance. No promised deliverable is shown as missing in the public thread.",
+    "evidence": [
+      "Cu Chulainn AI Manager commented publicly: \"We have contacted the Engineering team and will provide you with an update as soon as we receive more information from them.\"",
+      "Cu Chulainn AI Manager commented publicly: \"our Engineering team has successfully upgraded the Apache version in the GFI LanGuard agent to 2.4.65, effectively resolving the reported security vulnerability.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer asked for a human or got stuck in repetitive AI loops. Only two customer-facing AI updates were posted, and the ticket progressed to an engineering-backed resolution.",
+    "evidence": [
+      "Cu Chulainn AI Manager commented publicly: \"We have contacted the Engineering team and will provide you with an update as soon as we receive more information from them.\"",
+      "Cu Chulainn AI Manager commented publicly: \"our Engineering team has successfully upgraded the Apache version in the GFI LanGuard agent to 2.4.65\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to repeat information already provided, and there is no customer statement indicating support ignored prior details. The response directly acknowledges the reported outdated Apache version and escalates to engineering.",
+    "evidence": [
+      "Customer commented publicly: \"GFI Langard is using Apache... we are running Apache version 2.4.62. The latest version of Apache is 2.4.65.\"",
+      "Cu Chulainn AI Manager commented publicly: \"our Engineering team has successfully upgraded the Apache version in the GFI LanGuard agent to 2.4.65\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The first public support response came within minutes of ticket creation, and there is no customer-facing follow-up indicating they were waiting or impacted by silence. While resolution took a few days, no delay complaints or repeated 'any update' messages appear.",
+    "evidence": [
+      "CSV: initialResponseTime=126",
+      "Cu Chulainn AI Manager commented publicly [2025-11-10T18:02:54+00:00]: \"We have contacted the Engineering team and will provide you with an update as soon as we receive more information from them.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is closed, the last customer-facing update states the vulnerability is fully resolved, and there is no customer-facing evidence of an outstanding request at the time of closure.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Cu Chulainn AI Manager commented publicly: \"This matter has been fully resolved. Should you have any additional questions, please feel free to reach out.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer raised a high security concern, and support promptly escalated to engineering rather than keeping the customer in generic troubleshooting. The public resolution message indicates the component was upgraded to address the vulnerability.",
+    "evidence": [
+      "Customer commented publicly: \"This is a high security concern and we need to fix this as soon as possible.\"",
+      "Cu Chulainn AI Manager commented publicly: \"We have contacted the Engineering team\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60239883
+}

@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No clear, unambiguous evidence that ATLAS provided factually incorrect product information, made unfulfilled promises, used broken templates, or gave irrelevant troubleshooting. The explicit dissatisfaction in the thread is directed at the support response content/timeliness, but it is not clearly attributable to an AI failure per the provided criteria.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer is not shown requesting a human or being trapped in repeated AI loops. After ATLAS\u2019 initial clarifying question, a human agent (Mike) responds.",
+    "evidence": [
+      "2025-09-04T12:04:05+00:00 Mike Kebede commented publicly"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asked for artifacts that the customer had already indicated they had (watchdog dump/logs), and did not address the customer\u2019s primary request to analyze the already-available dump/logs. This is reinforced by the customer explicitly calling out that support did not analyze prior dump/logs and asking whether they were reviewed.",
+    "evidence": [
+      "Customer (initial): \"Now I have Dump by Watchdog: https://prerov.comit.cz/files/Netopil/KerioFW/VHS/\"",
+      "Customer (initial): \"Logs collected\"",
+      "Customer (2025-09-02T21:17:02+00:00): \"But we already have a dump created by the watchdog. Tonight we installed patch 3. Please analyze it\"",
+      "Support (2025-09-04T12:04:05+00:00): \"If you experience any further crashes or unexpected restarts, please collect and upload the following... * The watchdog dump from /var/crash/winroute/\"",
+      "Customer (2025-09-04T12:14:51+00:00): \"Did you analyze the dump and logs from previous crashes?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Although the measured gap between the customer\u2019s detailed update (Sep 2) and the first human response (Sep 4) is under 3 calendar days, the detection criteria explicitly include when the customer complains about waiting. The customer explicitly complained about the response taking 2 days.",
+    "evidence": [
+      "Customer (2025-09-04T12:14:51+00:00): \"It took you 2 days to even answer!\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence in the provided transcript that the ticket was closed, auto-closed, or otherwise ended while an unanswered customer request remained.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue impacts connectivity (\"internet was unavailable for approx. 4 minutes\"), the ticket is not explicitly marked P1/SEV1/Critical, and the support actions requested (dumps/support info/dmesg, monitoring after patch) are not clearly inappropriate or irrelevant for repeated service crashes.",
+    "evidence": [
+      "Customer (2025-09-02T21:17:02+00:00): \"The internet was unavailable for approx. 4 minutes.\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60185126
+}

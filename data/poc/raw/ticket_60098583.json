@@ -1,0 +1,112 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_mailessentials",
+        "requester": {
+          "id": 60186186,
+          "uuid": "167cb11b-e48c-4c7f-8912-e9050e9083c9",
+          "full_name": "Stanley Wanyoike",
+          "legacy_id": "11499989106322",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/167cb11b-e48c-4c7f-8912-e9050e9083c9?1752062818",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60059663,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 187721,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 50003,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-07-09T12:06:58+00:00",
+          "last_active_at": "2025-07-09T12:06:58+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60186186",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@2d9af44fde411ffb66cb4bbc841d1fe341f801b3",
+          "password_updated_at": "2025-06-20T08:52:10+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2023-05-16T05:57:20+00:00",
+          "updated_at": "2025-07-09T12:06:58+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60186186"
+        },
+        "ticket_idt": 60098583
+      },
+      "interactions": [
+        [
+          "2025-07-09T06:09:20+00:00",
+          "Kayako - ticket id 60098583 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>Chat Support:</b><br>Hi, Stanley Wanyoike ! \ud83d\udc4b<br><br>This is the GFI MailEssentials ATLAS support chat.<br><br><hr><br><div style=\"line-height: 1.3; margin-top: 8px; font-size: 0.9rem; color: #666666;\"><b>Please note:</b> ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" target=\"_blank\">these terms and conditions</a>. <br>If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.</div><br><br><b>Chat Support:</b><br>Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\r<br>\r\ud83d\udca1<a href=\"https://support.mailessentials.gfi.com/article/120018 \" target=\"_blank\">Getting the most out of GFI MailEssentials ATLAS Support Chat</a>\r<br>\r\ud83d\udca1Tip: Aim to give us a bit more context than just a quick \"It's not working.\" The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\r<br>\rIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa<br><br><b>Stanley Wanyoike:</b><br>Users are not able to approve emails. They get a message that the email has been deleted or approved<br><br><b>Chat Support:</b><br>I have this license key on record: <br>- <strong>License:</strong> *CRRmyQKzAqD2Ngv6VnjJRZS-sN1C1-x0QK9-534675*<br>- <strong>Expiry date:</strong> *2025-09-30*.<br><br>Just to make sure we're on the same page - is this the same system you're reaching out about today?<br><br>\ud83d\udca1It's important to have to correct license file, as it could influence the resolution.<br><br><b>Stanley Wanyoike:</b><br>Yes, CRRmyQKzAqD2Ngv6VnjJRZS-sN1C1-x0QK9-534675 is correct<br><br><b>Chat Support:</b><br>If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa<br><br>\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.<br><br>\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow. <br><br>\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.<br><br>\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it: <br>\ud83d\udc49 <a href=\"https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiIzYTYzMzJkYS0yY2JjLTQ5YmUtOTJkMS1hMzdlZjNkMmY4M2QiLCJzZXNzaW9uX3VpZCI6IjNhNjMzMmRhLTJjYmMtNDliZS05MmQxLWEzN2VmM2QyZjgzZCIsImVtYWlsIjoic3RhbmxleS53YW55b2lrZUBrYWxyby5vcmciLCJjdXN0b21fcGFyc2VyIjp7fSwiY2FsbGJhY2siOnsiY2FsbGJhY2tfdXJsIjpudWxsLCJjYWxsYmFja19lbWFpbCI6ImNpcHJpYW4ubmFzdGFzZUB0cmlsb2d5LmNvbSJ9LCJwcm9kdWN0X3RhZyI6ImF1cmVhX21haWxlc3NlbnRpYWxzIiwicXVlcnkiOiIiLCJleHAiOjE3NTIwNDg2MzR9.Ay5kWMh5sSc8cU6TWnDacxlwC_oJa3U416wN1hdgYQg  \" target=\"_blank\">Secure File Upload</a><br><br>You should see the following:<br>- User: stanley.wanyoike@kalro.org <br>- Session ID: 3a6332da-2cbc-49be-92d1-a37ef3d2f83d<br><br><b>Stanley Wanyoike:</b><br>\ud83d\udd19 Continue without file upload <br><br><b>Chat Support:</b><br>Thanks for confirming the license! Let\u2019s dig into the issue where users are unable to approve emails and see a message that the email has been deleted or approved.<br><br>Based on our knowledge base, this can sometimes happen if the recipient of the quarantined email is a secondary email address (an alias or additional address, not the user\u2019s primary address). In these cases, users may not be able to approve or delete the email from their quarantine, but administrators can.<br><br>Here are a few questions to help narrow this down:<br>1. Are the affected users trying to approve emails where the recipient is a secondary (alias) email address, or is this happening for primary addresses as well?<br>2. Are administrators able to approve or delete these emails from the quarantine, or is the issue affecting admins too?<br>3. What version of GFI MailEssentials are you currently running?<br><br>This will help me determine if you\u2019re running into the known scenario described in this article: <a href=\"https://support.mailessentials.gfi.com/article/119418\" target=\"_blank\">Emails cannot be approved nor deleted in the quarantine if the recipient is a secondary email address</a>.<br><br>Let me know about the above, and we\u2019ll figure out the next steps!<br><br><b>Stanley Wanyoike:</b><br>1. Primary, 2. admins can approve on mailessentials configuration. 3. version 21.8<br><br><b>Chat Support:</b><br>Thanks for the details! So, to recap:<br>- The issue happens for users with their <strong>primary</strong> email addresses.<br>- <strong>Admins</strong> can approve emails from the MailEssentials configuration.<br>- You're running <strong>version 21.8</strong>.<br><br>Since this isn't limited to secondary addresses and admins can approve, but regular users cannot, let's try a few targeted troubleshooting steps:<br><br>1. <strong>Browser/Cache Issue</strong>  <br>   Sometimes, the quarantine web interface can have session or cache issues.  <br>   - Could you ask one of the affected users to sign out of the quarantine portal, clear their browser cache, and sign back in?  <br>   - Does the issue persist after that?<br><br>2. <strong>User Permissions</strong>  <br>   - Have there been any recent changes to user permissions or Active Directory (if integrated)?  <br>   - Are all users affected, or just a subset?<br><br>3. <strong>Spam Quarantine Patch for 21.8</strong>  <br>   There is a known issue in version 21.8 where spam quarantine items may be blank or missing, and a patch is available to resolve related issues. Even if your items are visible, this patch may help with underlying quarantine problems.<br><br>   <strong>Please follow these steps:</strong><br>   1. Download the ZIP file: <a href=\"https://drive.google.com/file/d/11DwRmJwXnNXS8hTHkkIChv8hpT3yPbZR/view?usp=sharing\" target=\"_blank\">Spam Quarantine Patch for 21.8</a><br>   2. Extract the contents to a preferred location.<br>   3. Right-click on `GFIPatchExecuter.exe` and choose \"Run as Administrator.\"<br>   4. In the patch tool, click \"Patch\" to deploy the update.<br>   5. Check if users can now approve emails from their quarantine.<br><br>Let me know the results after trying these steps, especially after applying the patch. If the issue persists, we\u2019ll dig deeper!"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

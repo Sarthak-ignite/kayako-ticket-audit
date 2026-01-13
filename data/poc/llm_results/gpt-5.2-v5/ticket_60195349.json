@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is some AI chat transcript content in private notes, but no customer-facing (public) evidence shows ATLAS/Hermes providing broken/incorrect guidance or the customer reporting that the AI was wrong/useless. The public responses contain troubleshooting links and follow-up questions, which is not sufficient to mark an AI quality failure.",
+    "evidence": [
+      "Customer: \"I cannot Install on exchange 2019\"",
+      "Agent (public): \"Based on the error in the screenshot, please apply the troubleshooting steps in the article...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer did not explicitly request a human and then receive multiple subsequent AI-only responses; a human agent responded publicly on 2025-09-18. While the customer followed up multiple times, this appears to be due to response delay rather than being trapped in an AI loop.",
+    "evidence": [
+      "Customer: \"Please open case support ticket technical\"",
+      "Agent (public): \"Dear Customer, Thank you for your patience.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Although the customer shared installation logs in a private comment, there is no public statement from the customer that they already provided specific items (logs/screenshot/steps) and were asked to provide the exact same items again. Support\u2019s requests for additional artifacts (event logs/screenshot) are not clearly redundant based on public content alone.",
+    "evidence": [
+      "Agent (public): \"In case of issues, please share Windows Event logs, Installation logs, and a Screenshot of the issue.\"",
+      "Customer: \"Thank you for providing the link to the system prerequisites guide.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer repeatedly followed up over multiple days asking for findings and a timeline, indicating they experienced a long wait without a meaningful update. The sequence of \u201clooking forward to hearing from you\u201d messages culminating in a request for a projected deadline is a strong signal of response delay.",
+    "evidence": [
+      "Customer (2025-09-15): \"Dear Hermes, I look forward to hearing from you and the team with your findings.\"",
+      "Customer (2025-09-17): \"Dear Hermes, I look forward to hearing from you and the team with your findings.\"",
+      "Customer (2025-09-18): \"we need a projected deadline from your end to manage our project timeline. Could you please let us know when we can expect a resolution or a more detailed update?\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support included auto-closure language (\u201cstay open for one week unless\u2026\u201d) while the customer still had unresolved questions about compatibility/version and installation outcome. This is visible in public text and appears before clear resolution/confirmation from the customer.",
+    "evidence": [
+      "Agent (public, 2025-09-18): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Customer (public, 2025-09-18): \"Before we proceed with the installation again, could you please confirm which version of GFI MailEssentials we should use for full compatibility with our environment?\"",
+      "Agent (public, 2025-09-18): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reports an installation problem but does not describe an outage/production-down scenario, nor use explicit P1/critical/severity language. Therefore, there is not enough evidence to assess this as a high-severity mishandling case.",
+    "evidence": [
+      "Customer: \"I cannot \u00ednstall on exchange 2019\"",
+      "Customer: \"We want to ensure we are using the correct version to ensure a smooth installation process.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60195349
+}

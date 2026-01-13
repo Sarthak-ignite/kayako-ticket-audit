@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI (Cu Chulainn) pulled an andon cord citing a failure, indicating it could not properly handle the customer's request to pass the issue to engineering. The AI system failed to complete its automation task.",
+    "evidence": [
+      "[2025-11-12T15:25:04+00:00] (AI) Cu Chulainn AI Manager: The process has failed and andon cord has been pulled for the following reason: **Requester 'j",
+      "[2025-11-12T15:24:42+00:00] (AI) Cu Chulainn AI Manager: Cu Chulainn has been initiated for this ticket."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While AI was involved, the customer was able to get past it to reach human support after one failed AI interaction. There was no repetitive loop of AI requesting the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledged the customer's request and escalated to engineering as requested. The customer provided information once and it was acted upon.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was an 18-day delay (431.5 hours to first human response) between the customer's initial report on Nov 12 and the first human response on Nov 30. Additionally, there was a 16-day gap between the engineering escalation and the resolution update.",
+    "evidence": [
+      "[2025-11-12T15:24:17+00:00] (Customer) Jozef Kacala: Hi team, As seen on the screenshot, GFI App Manager agents are piling up in the Exinda var folder.",
+      "[2025-11-30T14:53:32+00:00] (Employee) Randall Shawver: Dear Jozef, Thank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed only after the customer explicitly requested closure, confirming satisfaction with the resolution.",
+    "evidence": [
+      "[2025-12-17T15:02:18+00:00] (Customer) Jozef Kacala: thanks, we can close this ticket"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This was a high-priority ticket where disk space was being consumed, yet it took 18 days for a human to respond and escalate to engineering. There was no immediate escalation or urgent handling despite the priority status.",
+    "evidence": [
+      "[2025-11-12T15:24:17+00:00] (Customer) Jozef Kacala: As seen on the screenshot, GFI App Manager agents are piling up in the Exinda var folder. As a result, they will occupy too mu",
+      "[2025-11-30T14:53:32+00:00] (Employee) Randall Shawver: Thank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review."
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI (Cu Chulainn) pulled an andon cord citing a failure, indicating it could not properly handle the customer's request to pass the issue to engineering. The AI system failed to complete its automation task.\",\n    \"evidence\": [\n      \"[2025-11-12T15:25:04+00:00] (AI) Cu Chulainn AI Manager: The process has failed and andon cord has been pulled for the following reason: **Requester 'j\",\n      \"[2025-11-12T15:24:42+00:00] (AI) Cu Chulainn AI Manager: Cu Chulainn has been initiated for this ticket.\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI was involved, the customer was able to get past it to reach human support after one failed AI interaction. There was no repetitive loop of AI requesting the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support acknowledged the customer's request and escalated to engineering as requested. The customer provided information once and it was acted upon.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was an 18-day delay (431.5 hours to first human response) between the customer's initial report on Nov 12 and the first human response on Nov 30. Additionally, there was a 16-day gap between the engineering escalation and the resolution update.\",\n    \"evidence\": [\n      \"[2025-11-12T15:24:17+00:00] (Customer) Jozef Kacala: Hi team, As seen on the screenshot, GFI App Manager agents are piling up in the Exinda var folder.\",\n      \"[2025-11-30T14:53:32+00:00] (Employee) Randall Shawver: Dear Jozef, Thank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed only after the customer explicitly requested closure, confirming satisfaction with the resolution.\",\n    \"evidence\": [\n      \"[2025-12-17T15:02:18+00:00] (Customer) Jozef Kacala: thanks, we can close this ticket\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This was a high-priority ticket where disk space was being consumed, yet it took 18 days for a human to respond and escalate to engineering. There was no immediate escalation or urgent handling despite the priority status.\",\n    \"evidence\": [\n      \"[2025-11-12T15:24:17+00:00] (Customer) Jozef Kacala: As seen on the screenshot, GFI App Manager agents are piling up in the Exinda var folder. As a result, they will occupy too mu\",\n      \"[2025-11-30T14:53:32+00:00] (Employee) Randall Shawver: Thank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review.\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60241518
+}

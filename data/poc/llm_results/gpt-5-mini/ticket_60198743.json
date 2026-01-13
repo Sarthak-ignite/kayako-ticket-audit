@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is clear evidence that AI responses were low-quality or generic and produced incorrect/unsatisfactory guidance, as complained about by the customer and reflected in agent replies.",
+    "evidence": [
+      "Stefan Gro\u00dfhauser (2025-10-31): \"I do not want to get any more responses from an AI Bot in #60198743 . I thought that this was escalated to Level2...\"",
+      "Stefan Gro\u00dfhauser (2025-09-16): \"Dear Kerio AI, I have already, in the very beginning of this conversation, shown that all our custom spam rules...\" (customer disputing AI claims)",
+      "ATLAS (2025-09-16T12:13:38+00:00) AI message: generically thanking and restating behavior \u2014 suggests canned reply style"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly reports being stuck with AI responses and unable to reach a human; they explicitly request escalation and complain about repeated AI replies over weeks.",
+    "evidence": [
+      "Stefan Gro\u00dfhauser (2025-10-31): \"I do not want to get any more responses from an AI Bot in #60198743 . I thought that this was escalated to Level2...\"",
+      "Stefan Gro\u00dfhauser (2025-10-06): \"another afternoon has passed, and I still have not received a reply. I want this to be escalated to the team lead, please.\"",
+      "Stefan Gro\u00dfhauser (2025-10-02): \"for two weeks again I have not received any answer from a human. Please continue on this ticket, with a higher priority.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Multiple messages indicate agents/AI re-sent or repeated advice the customer said was already addressed; the customer explicitly says the replies repeat prior content and ignore provided evidence.",
+    "evidence": [
+      "Stefan Gro\u00dfhauser (2025-10-06T12:07:01+00:00): \"your reply is just the same as the one from 19. september.\"",
+      "Stefan Gro\u00dfhauser (2025-09-16T12:12:32+00:00): \"I have already, in the very beginning of this conversation, shown that all our custom spam rules...\" (customer indicates previous info was ignored)",
+      "Daniel Nutz (2025-11-05): \"I am sorry to inform you, that the custom rule we created yesterday is not working properly. Attached to this mail I send ...\" (shows iterative troubleshooting but earlier notes indicate repeated tests)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple long gaps and requests for escalation over weeks; explicit customer complaints about waiting and multiple dated interactions spanning months indicate significant delays.",
+    "evidence": [
+      "Customer complaints across dates: 2025-09-16 -> 2025-10-02 -> 2025-10-06 -> 2025-10-31 -> 2025-11-05 showing protracted timeline and recurring complaints about no timely human response.",
+      "Stefan Gro\u00dfhauser (2025-10-02): \"for two weeks again I have not received any answer from a human.\"",
+      "Stefan Gro\u00dfhauser (2025-10-06): \"another afternoon has passed, and I still have not received a reply.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no explicit evidence in the interaction log that the ticket was closed prematurely or marked resolved while the customer was still waiting or had given up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket contains escalation requests and complaints about delays/AI replies, but there is no explicit label or statement that this was a P1/SEV1 incident that received only generic troubleshooting instead of immediate escalation.",
+    "evidence": []
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60198743
+}

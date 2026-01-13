@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient information to assess AI quality. The ticket only shows a private comment indicating a conversation occurred, but the actual AI conversation content is not provided.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of looping or customer being stuck with AI. The ticket shows only one interaction which is a private comment summarizing a completed AI chat.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of context being ignored. There are no subsequent interactions where previously provided information was requested again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No delays detected. The ticket shows only a single interaction timestamp with a max gap of 0.0 hours between responses.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Cannot determine if closure was premature without seeing the customer's issue resolution status. The ticket was closed, but there's insufficient information about whether the issue was resolved or if promises were unfulfilled.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not P1/SEV1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to assess AI quality. The ticket only shows a private comment indicating a conversation occurred, but the actual AI conversation content is not provided.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of looping or customer being stuck with AI. The ticket shows only one interaction which is a private comment summarizing a completed AI chat.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of context being ignored. There are no subsequent interactions where previously provided information was requested again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No delays detected. The ticket shows only a single interaction timestamp with a max gap of 0.0 hours between responses.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if closure was premature without seeing the customer's issue resolution status. The ticket was closed, but there's insufficient information about whether the issue was resolved or if promises were unfulfilled.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not P1/SEV1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60250793
+}

@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses provide generic actions ('Action: l1') without contextual support for the customer's specific issue, demonstrating a lack of helpful information or relevance.",
+    "evidence": [
+      "[2025-10-02T14:03:12+00:00] ATLAS commented privately: Action: l1",
+      "[2025-09-30T08:49:23+00:00] ATLAS commented privately: Action: l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence suggesting that the customer was unable to progress to a human representative, as the last human response from Randall is not indicative of any looping.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support did not address the customer's prior communications, specifically the request made earlier in the ticket.",
+    "evidence": [
+      "[2025-10-28T05:13:06+00:00] Astha Kapoor commented privately: What is your proposed action?"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays between interactions, with the time to first human response being over 668 hours and the max gap being over 615 hours, indicating slow response times.",
+    "evidence": [
+      "Time to first human response: 668.4 hours",
+      "Max gap between responses: 615.2 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed after a human response yet it appears that the customer may not have received sufficient information or resolution before that closure.",
+    "evidence": [
+      "[2025-10-28T12:04:02+00:00] Randall Shawver: Thank you for reaching out to us regarding this issue."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence that this was a high-priority or outage ticket, and responses do not reflect mishandling of such severity.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses provide generic actions ('Action: l1') without contextual support for the customer's specific issue, demonstrating a lack of helpful information or relevance.\",\n    \"evidence\": [\"[2025-10-02T14:03:12+00:00] ATLAS commented privately: Action: l1\", \"[2025-09-30T08:49:23+00:00] ATLAS commented privately: Action: l1\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence suggesting that the customer was unable to progress to a human representative, as the last human response from Randall is not indicative of any looping.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support did not address the customer's prior communications, specifically the request made earlier in the ticket.\",\n    \"evidence\": [\"[2025-10-28T05:13:06+00:00] Astha Kapoor commented privately: What is your proposed action?\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays between interactions, with the time to first human response being over 668 hours and the max gap being over 615 hours, indicating slow response times.\",\n    \"evidence\": [\"Time to first human response: 668.4 hours\", \"Max gap between responses: 615.2 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed after a human response yet it appears that the customer may not have received sufficient information or resolution before that closure.\",\n    \"evidence\": [\"[2025-10-28T12:04:02+00:00] Randall Shawver: Thank you for reaching out to us regarding this issue.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that this was a high-priority or outage ticket, and responses do not reflect mishandling of such severity.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60210131
+}

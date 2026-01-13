@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI produced a terse, unhelpful response ('Skipping ticket due to tags') instead of addressing the customer's note about uploading the conversation, indicating a quality failure to assist.",
+    "evidence": [
+      "[2025-12-15T23:49:47+00:00] (AI) ATLAS: Kayako - ticket id 60264009 // ATLAS commented privately: Skipping ticket due to tags",
+      "[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: Kayako - ticket id 60264009 // Xavier A Villarroel commented privately: Full conversation with customer 14136293927\nThe complete conversation with this customer will be uploaded to this ticket shortly"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information or trapped the customer in a loop; it simply skipped the ticket once.",
+    "evidence": [
+      "[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly",
+      "[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI did not ask for previously provided logs/screenshots or repeat requests; it issued a skip rather than re-requesting information, so there is no clear evidence of ignoring context.",
+    "evidence": [
+      "[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly",
+      "[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occurred within the same minute (timestamps span 23:49:36 to 23:49:59), and ticket metadata shows no significant gaps.",
+    "evidence": [
+      "[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: Full conversation with customer 14136293927",
+      "[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-12-15T23:49:59+00:00] (Customer) Xavier A Villarroel: Call Metadata\n[ SESSION ] : CA8640be11aae942cdb21a20331f6aad1b\n[ RECORDING URL ] : [ 12/15/2025 23:47:"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, there is no explicit interaction showing the ticket was closed while the customer was awaiting promised information or that the customer gave up; the record only shows the customer stating they will upload the conversation and the AI skipping the ticket.",
+    "evidence": [
+      "[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly",
+      "[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic troubleshooting advice (cache, firewall, VPN) or escalation steps being taken; the AI simply skipped the ticket, so specific mishandling cannot be confirmed.",
+    "evidence": [
+      "[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags",
+      "[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI produced a terse, unhelpful response ('Skipping ticket due to tags') instead of addressing the customer's note about uploading the conversation, indicating a quality failure to assist.\",\n    \"evidence\": [\n      \"[2025-12-15T23:49:47+00:00] (AI) ATLAS: Kayako - ticket id 60264009 // ATLAS commented privately: Skipping ticket due to tags\",\n      \"[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: Kayako - ticket id 60264009 // Xavier A Villarroel commented privately: Full conversation with customer 14136293927\\nThe complete conversation with this customer will be uploaded to this ticket shortly\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information or trapped the customer in a loop; it simply skipped the ticket once.\",\n    \"evidence\": [\n      \"[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\",\n      \"[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not ask for previously provided logs/screenshots or repeat requests; it issued a skip rather than re-requesting information, so there is no clear evidence of ignoring context.\",\n    \"evidence\": [\n      \"[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\",\n      \"[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occurred within the same minute (timestamps span 23:49:36 to 23:49:59), and ticket metadata shows no significant gaps.\",\n    \"evidence\": [\n      \"[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: Full conversation with customer 14136293927\",\n      \"[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags\",\n      \"[2025-12-15T23:49:59+00:00] (Customer) Xavier A Villarroel: Call Metadata\\n[ SESSION ] : CA8640be11aae942cdb21a20331f6aad1b\\n[ RECORDING URL ] : [ 12/15/2025 23:47:\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, there is no explicit interaction showing the ticket was closed while the customer was awaiting promised information or that the customer gave up; the record only shows the customer stating they will upload the conversation and the AI skipping the ticket.\",\n    \"evidence\": [\n      \"[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\",\n      \"[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic troubleshooting advice (cache, firewall, VPN) or escalation steps being taken; the AI simply skipped the ticket, so specific mishandling cannot be confirmed.\",\n    \"evidence\": [\n      \"[2025-12-15T23:49:47+00:00] (AI) ATLAS: Skipping ticket due to tags\",\n      \"[2025-12-15T23:49:36+00:00] (Customer) Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60264009
+}

@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no indication of generic filler or incorrect information in the AI's response.",
+    "evidence": [
+      "[2025-12-11T08:54:19+00:00] (AI) ATLAS: Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in a loop with the AI or having issues reaching a human.",
+    "evidence": [
+      "[2025-12-11T08:54:19+00:00] (AI) ATLAS: Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence that the support team ignored any previously provided information.",
+    "evidence": [
+      "[2025-12-11T08:54:19+00:00] (AI) ATLAS: Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between responses is noted as 0.0 hours, indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence that the ticket was closed prematurely while the customer was awaiting further action.",
+    "evidence": [
+      "[2025-12-11T08:54:19+00:00] (AI) ATLAS: Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is marked with low priority, so there is no indication of mishandling of a high-priority or outage ticket.",
+    "evidence": [
+      "Ticket ID: 60261219",
+      "Priority: low"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication of generic filler or incorrect information in the AI's response.\",\n    \"evidence\": [\"[2025-12-11T08:54:19+00:00] (AI) ATLAS: Thanks for chatting earlier with our AI Support!\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in a loop with the AI or having issues reaching a human.\",\n    \"evidence\": [\"[2025-12-11T08:54:19+00:00] (AI) ATLAS: Here is a record of your conversation for easy reference:\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the support team ignored any previously provided information.\",\n    \"evidence\": [\"[2025-12-11T08:54:19+00:00] (AI) ATLAS: Here is a record of your conversation for easy reference:\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between responses is noted as 0.0 hours, indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the ticket was closed prematurely while the customer was awaiting further action.\",\n    \"evidence\": [\"[2025-12-11T08:54:19+00:00] (AI) ATLAS: Thanks for chatting earlier with our AI Support!\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is marked with low priority, so there is no indication of mishandling of a high-priority or outage ticket.\",\n    \"evidence\": [\"Ticket ID: 60261219\", \"Priority: low\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60261219
+}

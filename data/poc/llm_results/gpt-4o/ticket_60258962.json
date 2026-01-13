@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI did not provide any incorrect information or generic responses; it acknowledged receipt of details and diagnostic files appropriately.",
+    "evidence": [
+      "Thank you for providing such a detailed description of your situation and attaching your diagnostic file. Your summary confirms:",
+      "[2025-12-08T19:12:56+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not appear stuck in an AI loop, as there is no repetitive request for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI seems unaware of customer's statements about the issue happening on all computers, repeating request for info without acknowledging prior details.",
+    "evidence": [
+      "All CU updates fail. Other Microsoft and 3rd party updates install fine. This happens on any computer I try.",
+      "[2025-12-08T19:12:19+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There were no significant delays between interactions, as indicated by the maximum gap of 0.1 hours.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence to suggest that the ticket was closed prematurely while awaiting further information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic troubleshooting or mishandling; rather, it seems focused on collecting necessary information.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not provide any incorrect information or generic responses; it acknowledged receipt of details and diagnostic files appropriately.\",\n    \"evidence\": [\"Thank you for providing such a detailed description of your situation and attaching your diagnostic file. Your summary confirms:\", \"[2025-12-08T19:12:56+00:00]\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer does not appear stuck in an AI loop, as there is no repetitive request for the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI seems unaware of customer's statements about the issue happening on all computers, repeating request for info without acknowledging prior details.\",\n    \"evidence\": [\"All CU updates fail. Other Microsoft and 3rd party updates install fine. This happens on any computer I try.\", \"[2025-12-08T19:12:19+00:00]\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There were no significant delays between interactions, as indicated by the maximum gap of 0.1 hours.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence to suggest that the ticket was closed prematurely while awaiting further information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic troubleshooting or mishandling; rather, it seems focused on collecting necessary information.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60258962
+}

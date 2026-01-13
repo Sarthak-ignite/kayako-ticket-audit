@@ -1,0 +1,283 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_care",
+        "requester": {
+          "id": 60508401,
+          "uuid": "3f4104f5-cdfd-5f92-b1f8-f251a8fe7a19",
+          "full_name": "Marcus Brewer",
+          "legacy_id": "0032E00002lu85QQAQ",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/3f4104f5-cdfd-5f92-b1f8-f251a8fe7a19?1767726173",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60068667,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 509932,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "172.59.34.24",
+          "last_seen_at": "2026-01-06T13:45:44+00:00",
+          "last_active_at": "2026-01-06T19:02:53+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60508401",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@709c49f696e696f742433c23852b7c823e6eaecc",
+          "password_updated_at": "2025-07-08T19:09:35+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T13:33:16+00:00",
+          "last_activity_at": "2026-01-06T13:33:16+00:00",
+          "created_at": "2025-07-08T19:09:35+00:00",
+          "updated_at": "2026-01-06T19:02:53+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60508401"
+        },
+        "ticket_idt": 60144719
+      },
+      "interactions": [
+        [
+          "2025-07-23T09:44:47+00:00",
+          "Kayako - ticket id 60144719 // Balaji Jayaraman commented privately:  Note from AM\n--\nThank you, Dereck!\n\nI've reached out to the customer. I'll let you know once I hear back.\n\nBest,\nBharath S. "
+        ],
+        [
+          "2025-07-22T10:52:27+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented privately: \ud83d\udcce\ud83d\udcc1\ud83d\udcce Original Case Attachments from Salesforce:\n\n\ud83d\udcce Normal Attachments\n1ws_email.png\n02CareAnalytics.png\nCommunityPermissions1.png\n01CareAnalytics.png\nCommunityPermissions.png\nCommunityAnalytics.png\n"
+        ],
+        [
+          "2025-07-17T14:29:34+00:00",
+          "Kayako - ticket id 60144719 // ATLAS commented publicly: Dear Customer, \nAs part of our enhanced Khoros Care Support Portal launch, we are excited to let you know that your ticket has been successfully migrated to our new enhanced Support platform as #60144719! \nYou can now enjoy improved ticket tracking, streamlined request management, and instant assistance from our AI-powered Support Assistant\u2014all in your preferred language\u2014through our updated portal: https://community.khoros.com/caseportal. \nFeel free to continue the conversation by logging into the portal or simply replying to this email. If you have any questions or need help, we are here for you. \nBest regards, \nCustomer Support Team"
+        ],
+        [
+          "2025-07-17T13:33:56+00:00",
+          "Kayako - ticket id 60144719 // Centralsupport-ai-acc commented privately: ticket was set to hold until 2025-07-17T13:30:17.000Z. Placing ticket back to open"
+        ],
+        [
+          "2025-07-16T13:52:56+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented privately: *** Ticket Attachments referred from comments or linked in Salesforce:\n"
+        ],
+        [
+          "2025-07-16T13:52:55+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello Bharath,\n\nI've been investigating this behavior and without a HAR file I'm not finding any cause for the behavior to occur for the user. \n\nTheir user in Care seems to have all the permissions that they'd need to access this, with the Community side having \"Access reports in Community Analytics\" set to Allow, and \"Provide admin access to Community Analytics\" permission set to Allow Grant in the screenshot you provided. \n\nAs you've said that we cannot get HAR file due to security concerns, would it be possible to ask the user to check their browser console and see if any errors appear there when they click to view Community Analytics? \n\nIf a screenshot is not possible, if they could just check and let us know if they see any particular error that would help move this forward. \n\nThank you for your time,"
+        ],
+        [
+          "2025-07-08T13:20:02+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello Bharath,\n\nThanks for this, without a HAR file this will be a bit more difficult to find the root cause, but I'm working with this info and will update you as soon as I can with my findings. \n\nThank you for your time,"
+        ],
+        [
+          "2025-07-08T12:20:13+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: From: Bharath Subramani [bharath.subramani@khoros.com]\r\nTo: support@khoros.com\r\n[Attachments: 1ws_email.png]\r\n\r\nHi Dereck,\r\n\r\nHere's the response from the customer:\r\n[image: 1ws_email.png]\r\nI couldn't figure out why Mark noticed the login screen despite having all\r\nthe required permissions.\r\n\r\nThank you,\r\nBharath S."
+        ],
+        [
+          "2025-07-07T14:29:00+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello Bharath,\n\nJust checking in on this case to see if there were any questions I could help answer while we work on getting the information requested previously. \n\nThank you for your time,"
+        ],
+        [
+          "2025-07-02T19:30:10+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: A final automated reminder was sent on 2 July 2025 to all recipients of the case. If your issue has been resolved, please feel free to close the case by clicking the close button in the top right corner."
+        ],
+        [
+          "2025-07-01T18:30:10+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: An automated reminder was sent on 1 July 2025 to all recipients of the case.  A further automated reminder will be sent in 1 business day if no response to the previous comment is received."
+        ],
+        [
+          "2025-06-27T16:30:14+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: A final automated reminder was sent on 27 June 2025 to all recipients of the case. If your issue has been resolved, please feel free to close the case by clicking the close button in the top right corner."
+        ],
+        [
+          "2025-06-26T15:30:07+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: An automated reminder was sent on 26 June 2025 to all recipients of the case.  A further automated reminder will be sent in 1 business day if no response to the previous comment is received."
+        ],
+        [
+          "2025-06-25T14:31:10+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello Bharath,\n\nSure thing, I'll keep this open until I hear back from you. \n\nThank you for your time,"
+        ],
+        [
+          "2025-06-25T10:31:00+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: From: Bharath Subramani [bharath.subramani@khoros.com]\r\nTo: support@khoros.com\r\nCC: vaibhav.upadhyay@khoros.com\r\n\r\nHi Dereck and Team,\r\n\r\nPlease keep this ticket open for now. I'll share the logs as soon as\r\npossible.\r\n\r\nBest regards,\r\nBharath S."
+        ],
+        [
+          "2025-06-24T17:30:11+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: Hello Bharath,\n\nBased on previous information received, your case has been marked as resolved.\n\nIf this issue has indeed been resolved then you don't need to do anything further. If you want to help us out, you can click the close button in the top right corner. Otherwise this case will be automatically closed for you after 3 business days.\n\nIf this case has not been resolved you can respond with a request for additional information or investigation needed.\n\nFor your reference, here is the basic information in this case:\nCase Subject: [1WorldSync] Unable to access Community Analytics data in Care Analytics\nCase Description: From: Bharath Subramani [bharath.subramani@khoros.com]\nTo: support@khoros.com\nCC: vaibhav.upadhyay@khoros.com, kishore.kumar@khoros.com\nHi Team,\n\nMarcus (Mark) Brewer (Care & Community admin) from 1WorldSync cannot access\nthe Community Analytics in Care Analytics.\n\n[image: 01CareAnalytics.png]\n\n   1. *Care instance*: 1worldsync.app.khoros.com\n   2. *Community URL*: https://community.1worldsync.com\n   3. *Internal Instance ID*: oneworldsync\n   4. *Email*: mbrewer@1worldsync.com\n   5. *Community username*: CommunityJedi22\n\nMark also tried to log in using Khoros Care and other credentials, but it\ndidn't work. The message \"You have access to 0 workspaces\" appeared.\n[image: 02CareAnalytics.png]\nMark can access Community Analytics natively without any issues: (he's the\nadmin)\n[image: CommunityAnalytics.png]\n\nMark has a Community Analytics role in Care and is also the account admin.\nAs the admin, Mark has all the permissions in the Community.\n[image: CommunityPermissions1.png]\n\nWe tried manually changing the Analytics permission to Grant from Default,\nbut that didn't work either.\n[image: CommunityPermissions.png]\n\nNote: Mark is the only Community Admin who uses Care.\n\nCould anyone please investigate this issue further and help with the\nsolution? I'd appreciate it if you could prioritize this. Also, please let\nme know if you need any additional information. Please do not loop the\ncustomer directly to this thread.\n\ncc: @Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nThank you,\n[image: Khoros]\n[https://khoros.com/?utm_source=employee-email-signature&utm_medium=email&utm_campaign=khoros]\nBharath Subramani\n(he/him)\nenablement advisor, PROFESSIONAL SERVICES\nbharath.subramani@khoros.com\n\nwww.khoros.com\n[https://khoros.com/?utm_source=employee-email-signature&utm_medium=email&utm_campaign=khoros]\n\nKhoros is an AI powered, award-winning CX partner.\n[image: Instagram]\n[https://www.instagram.com/khorosllc/?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=instagram&utm_content=social-icon]\n[image:\nX]\n[https://twitter.com/khoros?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=twitter&utm_content=social-icon]\n[image:\nLinkedIn]\n[https://www.linkedin.com/company/khoros/?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=linkedin&utm_content=social-icon]\n\nTo unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com."
+        ],
+        [
+          "2025-06-20T15:30:08+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: A final automated reminder was sent on 20 June 2025 to all recipients of the case. If your issue has been resolved, please feel free to close the case by clicking the close button in the top right corner."
+        ],
+        [
+          "2025-06-19T14:30:32+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: An automated reminder was sent on 19 June 2025 to all recipients of the case.  A further automated reminder will be sent in 1 business day if no response to the previous comment is received."
+        ],
+        [
+          "2025-06-18T13:48:16+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello Team,\n\nI've been investigating this issue and wanted to confirm with you if there are any other widgets that are not working as expected for if is it just the Community Analytics widget. \n\nFrom reviewing the different settings that are normally required to view the data in this widget, it seems like Mark's user is setup correctly and should have the required permissions. \n\nAs such, I'd like to ask if it would be possible to get a screenshot from Mark of their browser console, on the console tab, when they load into Analytics to view the widget. Alternatively, a HAR file would be good as well to see if there are any issues recorded from this action. \n\nPlease let me know if you have any questions on the above and I'll be happy to answer them. \n\nThank you for your time,"
+        ],
+        [
+          "2025-06-16T13:10:22+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello Team,\n\nThis is Dereck Clark, and I'll be assisting you with this case going forward. \n\nI'm currently reviewing the behavior and the work that has been done thus far, and will update you with our next steps as soon as I can. \n\nThank you for your time,"
+        ],
+        [
+          "2025-06-12T11:33:12+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented privately: we have asked for the credentials in the slack thread awaiting for Bharath to provide them so the we can test this further \n\nhttps://khoros.slack.com/archives/C08V1JVMKFC/p1749654243005679"
+        ],
+        [
+          "2025-06-11T16:37:59+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello Subramani,\n\nThank you for the update.\n\nWe are currently reviewing it and discussing it with our internal team. We are committed to keeping you updated as soon as more information becomes available.\n\nIn the meantime, please feel free to reach out if you have any questions.\n\nKind Regards,"
+        ],
+        [
+          "2025-06-11T14:58:54+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: From: Bharath Subramani [bharath.subramani@khoros.com]\r\nTo: support@khoros.com\r\nCC: kishore.kumar@khoros.com, vaibhav.upadhyay@khoros.com\r\n\r\nHi Huzaif,\r\n\r\nMark updated the Kh-Naresh profile to include admin access. Could you\r\nplease connect with Naresh for the login? Please let me know if you have\r\nany difficulty. I'm happy to help!\r\n\r\nBest,\r\nBharath S.\r\n\r\n\r\n\r\n\r\nOn Tue, Jun 10, 2025 at 10:28\u202fPM Bharath Subramani ["
+        ],
+        [
+          "2025-06-10T16:59:20+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: From: Bharath Subramani [bharath.subramani@khoros.com]\r\nTo: support@khoros.com\r\nCC: kishore.kumar@khoros.com, vaibhav.upadhyay@khoros.com\r\n\r\nThank you, Huzaif.\r\n\r\nI've asked the customer about creating a test account with the same\r\npermissions as their account. I'm yet to hear back from them. I'll keep you\r\nposted. Please keep this case open.\r\n\r\nBest,\r\nBharath S."
+        ],
+        [
+          "2025-06-10T16:31:43+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello Subramani,\n\nThank you for your response.\n\nWe will reopen this case. As mentioned in my previous email, please provide us with a community test account that has an administrator role and access to community analytics, similar to Marcus's role in Care. Once we receive this account, we can better understand the issue and work towards a potential solution.\n\nIf you have any questions, please feel free to let me know.\n\nKind Regards,"
+        ],
+        [
+          "2025-06-10T12:46:38+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: From: Bharath Subramani [bharath.subramani@khoros.com]\r\nTo: support@khoros.com\r\nCC: vaibhav.upadhyay@khoros.com, kishore.kumar@khoros.com\r\n\r\nHi,\r\n\r\nPlease reopen this case. The issue is yet to be resolved.\r\n\r\nThank you,\r\nBharath S."
+        ],
+        [
+          "2025-06-10T09:02:20+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: Bharath,\n\nWe appreciate your partnership in resolution of Khoros support case 00447584.  This case has now been closed. As always, a full history of your closed cases is available via the case portal, located here: (https://community.khoros.com/t5/crmsupport/page)\n\nIf you have any further questions, concerns, or need any additional information, this case can be reopened within 30 days by replying to this email or responding via the case portal. If any assistance on this issue is required after 30 days, please create a new case and reference this case number 00447584 so we can resume work on the issue as quickly as possible.\n\nFor your reference, here is the most recent information in this case\nCase Number: 00447584\nCase Subject: [1WorldSync] Unable to access Community Analytics data in Care Analytics\nMost recent update: \n\nA final automated reminder was sent on 6 June 2025 to all recipients of the case. If your issue has been resolved, please feel free to close the case by clicking the close button in the top right corner."
+        ],
+        [
+          "2025-06-06T10:30:11+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: A final automated reminder was sent on 6 June 2025 to all recipients of the case. If your issue has been resolved, please feel free to close the case by clicking the close button in the top right corner."
+        ],
+        [
+          "2025-06-05T09:30:28+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: An automated reminder was sent on 5 June 2025 to all recipients of the case.  A further automated reminder will be sent in 1 business day if no response to the previous comment is received."
+        ],
+        [
+          "2025-06-04T08:45:50+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented privately: We have initiated the slack discussion with subramani : https://khoros.slack.com/archives/C08V1JVMKFC/p1748874519682169"
+        ],
+        [
+          "2025-06-04T08:41:06+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello Subramani,\n\n \n\nThank you for your response. \n\nAs we discussed, we will need a community test account with administrator role and access to community analytics, similar to Marcus's role in Care. Once we receive this account, we can further map out the issue and work towards finding a probable solution. \n\nProviding this information will help us conduct a thorough investigation. We will keep you updated with any developments. \n\nI look forward to your response. \n\nPlease don't hesitate to reach out if you have any questions.\n\nKind Regards,"
+        ],
+        [
+          "2025-06-02T12:30:12+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: From: Bharath Subramani [bharath.subramani@khoros.com]\r\nTo: support@khoros.com\r\nCC: kishore.kumar@khoros.com\r\n\r\nHi Huzaif,\r\n\r\nIt's inconvenient for them to create a test account in the PROD community\r\nenvironment, create an SSO login, and provide admin permissions. It's not\r\nonly this customer, I'm afraid it's the same with others I've worked with.\r\nEven I and others on my team don't have access to the customer's community\r\nenvironments.\r\n\r\nAs I've already shared the steps and the error, have you had a chance to\r\nreplicate this in internal test instances? This is for the Classic\r\ncommunity. Also, were you able to access the Community data in Care? I'd\r\nappreciate it if you could share your findings or observations so far, so I\r\ncan share them with the customer.\r\n\r\nAlso, please let me know your availability if you have any additional\r\nquestions. I'd be happy to jump on a call and provide any information you'd\r\nlike, as it could save some time and help with your investigation.\r\n\r\nThank you,\r\n[image: Khoros]\r\n[https://khoros.com/?utm_source=employee-email-signature&utm_medium=email&utm_campaign=khoros]\r\nBharath Subramani\r\n(he/him)\r\nenablement advisor, PROFESSIONAL SERVICES\r\nbharath.subramani@khoros.com\r\n\r\nwww.khoros.com\r\n[https://khoros.com/?utm_source=employee-email-signature&utm_medium=email&utm_campaign=khoros]\r\n\r\nKhoros is an AI powered, award-winning CX partner.\r\n[image: Instagram]\r\n[https://www.instagram.com/khorosllc/?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=instagram&utm_content=social-icon]\r\n[image:\r\nX]\r\n[https://twitter.com/khoros?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=twitter&utm_content=social-icon]\r\n[image:\r\nLinkedIn]\r\n[https://www.linkedin.com/company/khoros/?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=linkedin&utm_content=social-icon]"
+        ],
+        [
+          "2025-05-30T17:08:37+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello  Subramani,\n\nThank you for sharing the details. We appreciate the time and effort you put into gathering and sharing this information.\n\nAfter further investigation and discussions with our internal team, we kindly request that you create a test account in the native community with the administrator role and community analytics access, similar to Marcus's role in Care. Please provide us with the credentials for this test account once it has been created. This will help us map and test the behavior in Care analytics, allowing us to find a probable solution for the issue at hand. \n\nIf you have any questions, please feel free to let me know. \n\nKind Regards,"
+        ],
+        [
+          "2025-05-29T18:28:03+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: From: Bharath Subramani [bharath.subramani@khoros.com]\r\nTo: support@khoros.com\r\nCC: kishore.kumar@khoros.com, vaibhav.upadhyay@khoros.com\r\n\r\nHi Huzaif,\r\n\r\n1. Marcus has the Community Manager role. Please feel free to refer to the\r\nscreenshots of the Community settings in the initial email.\r\n2. He's the only Community Manager & Admin who has access to Care. There's\r\nno plan to onboard any Community Managers or Admins to Care. The only other\r\nperson who has access to Care is Justin West (Community username: JustinW),\r\nwho has a moderator role in Community. Marcus mentioned he cannot change\r\nhis role to Moderator, and also has the required Analytics permissions on\r\nCommunity (screenshot attached in initial email). Marcus has no issues\r\naccessing the Analytics dashboard on Community (Screenshot attached in the\r\ninitial email)\r\n3. N/A\r\n4. 1WorldSync is new to Khoros Care. Marcus initially tried to access the\r\nCommunity Analytics in Care this month.\r\n\r\nThank you!\r\nBharath S."
+        ],
+        [
+          "2025-05-29T18:15:39+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHello Subramani, \n\nMy name is Huzaif, and I will be assisting you with this case moving forward. We understand that Marcus is currently unable to access Community Analytics in Care Analytics. We will investigate this matter, but in the meantime, could you please provide the following information to help us understand the issue better? \n\n1. What role does Marcus have in the native community? \n\n2. Can you provide the name of another user with a similar role in the community who can access Community Analytics in Care Analytics? \n\n3. We would appreciate it if you could share screenshots of the other user who has similar access in native Community Analytics. \n\n4. When did this issue first occur? Was it when Marcus's account was created in Care? \n\nProviding this information will assist us in conducting a thorough investigation. We will keep you in the loop with the updates. \n\nI am waiting for your response.\n\nPlease don't hesitate to reach out if you have any questions.\n\nKind Regards,"
+        ],
+        [
+          "2025-05-29T09:38:35+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: From: Bharath Subramani [bharath.subramani@khoros.com]\r\nTo: support@khoros.com\r\nCC: kishore.kumar@khoros.com, vaibhav.upadhyay@khoros.com\r\n\r\nThank you!"
+        ],
+        [
+          "2025-05-29T09:13:06+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHi Subramani, \n\nThank you for your detailed information. I have assigned this case to the care team so that they can assist you. \n\nRegards,"
+        ],
+        [
+          "2025-05-29T09:11:04+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented privately: [internal]\n\nassigning"
+        ],
+        [
+          "2025-05-28T13:15:34+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: From: Bharath Subramani [bharath.subramani@khoros.com]\r\nTo: support@khoros.com\r\nCC: vaibhav.upadhyay@khoros.com, kishore.kumar@khoros.com\r\n\r\nHi Ponkiran,\r\n\r\nThis has never worked for the customer.\r\n\r\nSteps to reproduce:\r\n\r\n   - Login to Care.\r\n   - Navigate to Analytics\r\n   - Go to the Community Dashboard at the bottom left. The screenshots I\r\n   included in my previous email show this.\r\n\r\nNote: You won't be able to access the customer's community dashboards as\r\nyou don't have the account in their community, but you may test in your\r\ninternal test instance.\r\n\r\nIn my previous email, I've attached the necessary screenshots showing the\r\nerror and where they noticed the problem was noticed. Please let me know if\r\nyou need any details.\r\n\r\nThank you!\r\nBharath S."
+        ],
+        [
+          "2025-05-28T12:30:05+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: An automated reminder was sent on 28 May 2025 to all recipients of the case.  A further automated reminder will be sent in 1 business day if no response to the previous comment is received."
+        ],
+        [
+          "2025-05-27T11:54:57+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHi Bharath,\n\nAppreciate your patience with this case.\n\nCan you please tell when the customer started facing this issue? Also, could be please share the steps to reproduce and a screen recording of the issue from the customer account. It will help us to troubleshoot further.\n\nPlease reach out to us if you have any questions or concerns.\n\nKind Regards"
+        ],
+        [
+          "2025-05-27T10:37:20+00:00",
+          "Kayako - ticket id 60144719 // Khoros TechSupport commented publicly: To: Bharath Subramani [bharath.subramani@khoros.com]\nCC: Kishore Kumar [kishore.kumar@khoros.com], Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nHi Bharath,\n\nThank you for reaching Khoros support.\n\nWe want to inform you that we have acknowledged your request. I have reviewed your description and understand that user couldn't able to access Community Analytics in Care Analytics. We are looking into this and will inform you as soon as we have an update to share.\n\nPlease feel free to reach out if you have any additional questions or concerns.\n\nKind Regards,"
+        ],
+        [
+          "2025-05-27T10:30:38+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: [Attachments: 01CareAnalytics.png, CommunityAnalytics.png, CommunityPermissions.png, 02CareAnalytics.png, CommunityPermissions1.png]\r\n\r\nFrom: Bharath Subramani [bharath.subramani@khoros.com]\r\nTo: support@khoros.com\r\nCC: vaibhav.upadhyay@khoros.com, kishore.kumar@khoros.com\r\nHi Team,\r\n\r\nMarcus (Mark) Brewer (Care & Community admin) from 1WorldSync cannot access\r\nthe Community Analytics in Care Analytics.\r\n\r\n[image: 01CareAnalytics.png]\r\n\r\n   1. *Care instance*: 1worldsync.app.khoros.com\r\n   2. *Community URL*: https://community.1worldsync.com\r\n   3. *Internal Instance ID*: oneworldsync\r\n   4. *Email*: mbrewer@1worldsync.com\r\n   5. *Community username*: CommunityJedi22\r\n\r\nMark also tried to log in using Khoros Care and other credentials, but it\r\ndidn't work. The message \"You have access to 0 workspaces\" appeared.\r\n[image: 02CareAnalytics.png]\r\nMark can access Community Analytics natively without any issues: (he's the\r\nadmin)\r\n[image: CommunityAnalytics.png]\r\n\r\nMark has a Community Analytics role in Care and is also the account admin.\r\nAs the admin, Mark has all the permissions in the Community.\r\n[image: CommunityPermissions1.png]\r\n\r\nWe tried manually changing the Analytics permission to Grant from Default,\r\nbut that didn't work either.\r\n[image: CommunityPermissions.png]\r\n\r\nNote: Mark is the only Community Admin who uses Care.\r\n\r\nCould anyone please investigate this issue further and help with the\r\nsolution? I'd appreciate it if you could prioritize this. Also, please let\r\nme know if you need any additional information. Please do not loop the\r\ncustomer directly to this thread.\r\n\r\ncc: @Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\r\n\r\nThank you,\r\n[image: Khoros]\r\n[https://khoros.com/?utm_source=employee-email-signature&utm_medium=email&utm_campaign=khoros]\r\nBharath Subramani\r\n(he/him)\r\nenablement advisor, PROFESSIONAL SERVICES\r\nbharath.subramani@khoros.com\r\n\r\nwww.khoros.com\r\n[https://khoros.com/?utm_source=employee-email-signature&utm_medium=email&utm_campaign=khoros]\r\n\r\nKhoros is an AI powered, award-winning CX partner.\r\n[image: Instagram]\r\n[https://www.instagram.com/khorosllc/?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=instagram&utm_content=social-icon]\r\n[image:\r\nX]\r\n[https://twitter.com/khoros?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=twitter&utm_content=social-icon]\r\n[image:\r\nLinkedIn]\r\n[https://www.linkedin.com/company/khoros/?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=linkedin&utm_content=social-icon]\r\n\r\nTo unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com."
+        ],
+        [
+          "2025-05-27T10:30:33+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: Hello Bharath,\n\nThank you for reaching out to Khoros Customer Support. Based on your recent request we have created the case 00447584. Please keep this case number handy as we will be communicating all the updates through this case until it is resolved.\n\nThis is what you can expect going forward:\n - The case will be reviewed and assigned to the appropriate product support team.\n - A team member will be in touch with you shortly during standard business hours.\n - You can find out about how support operates including business hours via our support contact page. (https://community.khoros.com/t5/Contact-Khoros-Support/bd-p/contact-support)\n\nNOTE: If you feel this issue qualifies as a Severity 1 incident, please contact us at outage@khoros.com for immediate attention.\n\nWe encourage the use of the Khoros Case Portal for reaching out to us. Some of the many benefits of adopting the Khoros Case Portal are:\n -  Faster resolution and triaging of your cases.\n -  Quick access to our product knowledge based on your case.\n - Keep track of all your reported cases in one place.\n - Add your teammates to a case who would like to be notified.\n\nLink to the Khoros Case Portal:\nhttps://community.khoros.com/t5/crmsupport/page\n\nKhoros Case Portal Access:\n -  If you do not have access to the Khoros Case Portal then reach out to Maia, Khoros\u2019s virtual assistant, on the Atlas homepage (https://community.khoros.com) and type \u201cAdd Case Portal access\u201d. This is an easy and quick way to request access.\n - Alternatively, you can request access by contacting Khoros Support at support@khoros.com.\n - Please do visit the Khoros Case Portal information page:\nhttps://community.khoros.com/t5/Support-Information/Using-the-Khoros-Community-Case-Portal/ta-p/181211.\n\nThank you again for reaching out to Khoros Support, we will be in touch soon.\n\nFor your reference, here is the basic information in this case:\nCase Subject: [1WorldSync] Unable to access Community Analytics data in Care Analytics\nCase Description: \nFrom: Bharath Subramani [bharath.subramani@khoros.com]\nTo: support@khoros.com\nCC: vaibhav.upadhyay@khoros.com, kishore.kumar@khoros.com\nHi Team,\n\nMarcus (Mark) Brewer (Care & Community admin) from 1WorldSync cannot access\nthe Community Analytics in Care Analytics.\n\n[image: 01CareAnalytics.png]\n\n   1. *Care instance*: 1worldsync.app.khoros.com\n   2. *Community URL*: https://community.1worldsync.com\n   3. *Internal Instance ID*: oneworldsync\n   4. *Email*: mbrewer@1worldsync.com\n   5. *Community username*: CommunityJedi22\n\nMark also tried to log in using Khoros Care and other credentials, but it\ndidn't work. The message \"You have access to 0 workspaces\" appeared.\n[image: 02CareAnalytics.png]\nMark can access Community Analytics natively without any issues: (he's the\nadmin)\n[image: CommunityAnalytics.png]\n\nMark has a Community Analytics role in Care and is also the account admin.\nAs the admin, Mark has all the permissions in the Community.\n[image: CommunityPermissions1.png]\n\nWe tried manually changing the Analytics permission to Grant from Default,\nbut that didn't work either.\n[image: CommunityPermissions.png]\n\nNote: Mark is the only Community Admin who uses Care.\n\nCould anyone please investigate this issue further and help with the\nsolution? I'd appreciate it if you could prioritize this. Also, please let\nme know if you need any additional information. Please do not loop the\ncustomer directly to this thread.\n\ncc: @Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nThank you,\n[image: Khoros]\n[https://khoros.com/?utm_source=employee-email-signature&utm_medium=email&utm_campaign=khoros]\nBharath Subramani\n(he/him)\nenablement advisor, PROFESSIONAL SERVICES\nbharath.subramani@khoros.com\n\nwww.khoros.com\n[https://khoros.com/?utm_source=employee-email-signature&utm_medium=email&utm_campaign=khoros]\n\nKhoros is an AI powered, award-winning CX partner.\n[image: Instagram]\n[https://www.instagram.com/khorosllc/?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=ins"
+        ],
+        [
+          "2025-05-27T10:30:28+00:00",
+          "Kayako - ticket id 60144719 // AI-CS Integration commented publicly: From: Bharath Subramani [bharath.subramani@khoros.com]\nTo: support@khoros.com\nCC: vaibhav.upadhyay@khoros.com, kishore.kumar@khoros.com\nHi Team,\n\nMarcus (Mark) Brewer (Care & Community admin) from 1WorldSync cannot access\nthe Community Analytics in Care Analytics.\n\n[image: 01CareAnalytics.png]\n\n   1. *Care instance*: 1worldsync.app.khoros.com\n   2. *Community URL*: https://community.1worldsync.com\n   3. *Internal Instance ID*: oneworldsync\n   4. *Email*: mbrewer@1worldsync.com\n   5. *Community username*: CommunityJedi22\n\nMark also tried to log in using Khoros Care and other credentials, but it\ndidn't work. The message \"You have access to 0 workspaces\" appeared.\n[image: 02CareAnalytics.png]\nMark can access Community Analytics natively without any issues: (he's the\nadmin)\n[image: CommunityAnalytics.png]\n\nMark has a Community Analytics role in Care and is also the account admin.\nAs the admin, Mark has all the permissions in the Community.\n[image: CommunityPermissions1.png]\n\nWe tried manually changing the Analytics permission to Grant from Default,\nbut that didn't work either.\n[image: CommunityPermissions.png]\n\nNote: Mark is the only Community Admin who uses Care.\n\nCould anyone please investigate this issue further and help with the\nsolution? I'd appreciate it if you could prioritize this. Also, please let\nme know if you need any additional information. Please do not loop the\ncustomer directly to this thread.\n\ncc: @Vaibhav Upadhyay [vaibhav.upadhyay@khoros.com]\n\nThank you,\n[image: Khoros]\n[https://khoros.com/?utm_source=employee-email-signature&utm_medium=email&utm_campaign=khoros]\nBharath Subramani\n(he/him)\nenablement advisor, PROFESSIONAL SERVICES\nbharath.subramani@khoros.com\n\nwww.khoros.com\n[https://khoros.com/?utm_source=employee-email-signature&utm_medium=email&utm_campaign=khoros]\n\nKhoros is an AI powered, award-winning CX partner.\n[image: Instagram]\n[https://www.instagram.com/khorosllc/?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=instagram&utm_content=social-icon]\n[image:\nX]\n[https://twitter.com/khoros?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=twitter&utm_content=social-icon]\n[image:\nLinkedIn]\n[https://www.linkedin.com/company/khoros/?utm_source=marketo&utm_medium=email&utm_campaign=footer&utm_term=linkedin&utm_content=social-icon]\n\nTo unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com."
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 45,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

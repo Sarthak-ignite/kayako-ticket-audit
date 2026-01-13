@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI replies are generic and appear truncated/unfinished, indicating low-quality or filler responses rather than substantive troubleshooting or resolution.",
+    "evidence": [
+      "[2025-12-22T18:23:12+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\n\nThank you for your update. We appreciate you letting us know about your current availability and your intention to review the sugges",
+      "[2025-12-19T17:29:37+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\n\nThank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information or trapped the customer; the AI acknowledged the screenshots and the customer responded about PTO.",
+    "evidence": [
+      "[2025-12-19T17:29:37+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\n\nThank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you",
+      "[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: Kayako - ticket id 60267393 // Liz Mech commented publicly:  \n\nHi There,\n\n \n\nThanks for the response and troubleshooting advice. Right now, due to PTO, we are unable to troubleshoot. We will be able t"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI references the customer's provided screenshots and acknowledges the update, so it did not ignore the context or re-request attachments in the visible logs.",
+    "evidence": [
+      "[2025-12-19T17:29:37+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\n\nThank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you",
+      "[2025-12-19T17:27:04+00:00] (Customer) Liz Mech: Kayako - ticket id 60267393 // Liz Mech commented publicly:  \n\nHello,\n\n \n\nWe\u2019re experiencing an issue in our Khoros Care dashboard.\n\n \n\nI\u2019ve attached two screenshots, both from yesterday. One is of Le"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between interactions (roughly three days), indicating significant response delays.",
+    "evidence": [
+      "[2025-12-19T17:29:37+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\n\nThank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you",
+      "[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: Kayako - ticket id 60267393 // Liz Mech commented publicly:  \n\nHi There,\n\n \n\nThanks for the response and troubleshooting advice. Right now, due to PTO, we are unable to troubleshoot. We will be able t"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, there is no clear evidence in the thread that the customer was left waiting for promised information or explicitly abandoned the ticket prior to closure.",
+    "evidence": [
+      "Ticket Context: Status: closed",
+      "[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: Kayako - ticket id 60267393 // Liz Mech commented publicly:  \n\nHi There,\n\n \n\nThanks for the response and troubleshooting advice. Right now, due to PTO, we are unable to troubleshoot. We will be able t",
+      "[2025-12-22T18:23:12+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\n\nThank you for your update. We appreciate you letting us know about your current availability and your intention to review the sugges"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is marked normal priority and there is no evidence it described a P1/SEV1 outage or that generic troubleshooting was used in lieu of escalation.",
+    "evidence": [
+      "Ticket Context: Priority: normal",
+      "[2025-12-19T17:27:04+00:00] (Customer) Liz Mech: Kayako - ticket id 60267393 // Liz Mech commented publicly:  \n\nHello,\n\n \n\nWe\u2019re experiencing an issue in our Khoros Care dashboard.\n\n \n\nI\u2019ve attached two screenshots, both from yesterday. One is of Le"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI replies are generic and appear truncated/unfinished, indicating low-quality or filler responses rather than substantive troubleshooting or resolution.\",\n    \"evidence\": [\n      \"[2025-12-22T18:23:12+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\\n\\nThank you for your update. We appreciate you letting us know about your current availability and your intention to review the sugges\",\n      \"[2025-12-19T17:29:37+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\\n\\nThank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information or trapped the customer; the AI acknowledged the screenshots and the customer responded about PTO.\",\n    \"evidence\": [\n      \"[2025-12-19T17:29:37+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\\n\\nThank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you\",\n      \"[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: Kayako - ticket id 60267393 // Liz Mech commented publicly:  \\n\\nHi There,\\n\\n \\n\\nThanks for the response and troubleshooting advice. Right now, due to PTO, we are unable to troubleshoot. We will be able t\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI references the customer's provided screenshots and acknowledges the update, so it did not ignore the context or re-request attachments in the visible logs.\",\n    \"evidence\": [\n      \"[2025-12-19T17:29:37+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\\n\\nThank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you\",\n      \"[2025-12-19T17:27:04+00:00] (Customer) Liz Mech: Kayako - ticket id 60267393 // Liz Mech commented publicly:  \\n\\nHello,\\n\\n \\n\\nWe\u2019re experiencing an issue in our Khoros Care dashboard.\\n\\n \\n\\nI\u2019ve attached two screenshots, both from yesterday. One is of Le\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between interactions (roughly three days), indicating significant response delays.\",\n    \"evidence\": [\n      \"[2025-12-19T17:29:37+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\\n\\nThank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you\",\n      \"[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: Kayako - ticket id 60267393 // Liz Mech commented publicly:  \\n\\nHi There,\\n\\n \\n\\nThanks for the response and troubleshooting advice. Right now, due to PTO, we are unable to troubleshoot. We will be able t\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, there is no clear evidence in the thread that the customer was left waiting for promised information or explicitly abandoned the ticket prior to closure.\",\n    \"evidence\": [\n      \"Ticket Context: Status: closed\",\n      \"[2025-12-22T18:22:29+00:00] (Customer) Liz Mech: Kayako - ticket id 60267393 // Liz Mech commented publicly:  \\n\\nHi There,\\n\\n \\n\\nThanks for the response and troubleshooting advice. Right now, due to PTO, we are unable to troubleshoot. We will be able t\",\n      \"[2025-12-22T18:23:12+00:00] (AI) ATLAS: Kayako - ticket id 60267393 // ATLAS commented publicly: Dear Liz,\\n\\nThank you for your update. We appreciate you letting us know about your current availability and your intention to review the sugges\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is marked normal priority and there is no evidence it described a P1/SEV1 outage or that generic troubleshooting was used in lieu of escalation.\",\n    \"evidence\": [\n      \"Ticket Context: Priority: normal\",\n      \"[2025-12-19T17:27:04+00:00] (Customer) Liz Mech: Kayako - ticket id 60267393 // Liz Mech commented publicly:  \\n\\nHello,\\n\\n \\n\\nWe\u2019re experiencing an issue in our Khoros Care dashboard.\\n\\n \\n\\nI\u2019ve attached two screenshots, both from yesterday. One is of Le\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60267393
+}

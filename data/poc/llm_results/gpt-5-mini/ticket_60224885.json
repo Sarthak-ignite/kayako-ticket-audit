@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI or agent responses in the provided timeline to evaluate for quality, incorrect information, or unkept promises.",
+    "evidence": [
+      "[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The timeline contains only a single customer message and no repeated AI requests or looped prompts demanding the same information.",
+    "evidence": [
+      "[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no support or AI message present that re-requests information or ignores prior context, so ignoring context cannot be confirmed.",
+    "evidence": [
+      "[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No sequence of responses or timestamps showing multi-day gaps are present; only a single customer comment is in the timeline.",
+    "evidence": [
+      "[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, there is no evidence in the provided timeline that the customer was left waiting for promised information or explicitly abandoned the ticket.",
+    "evidence": [
+      "Ticket metadata: Status: closed",
+      "[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is marked normal priority and there are no troubleshooting steps or escalation actions recorded, so mishandling of a P1/SEV1 cannot be assessed.",
+    "evidence": [
+      "Ticket metadata: Priority: normal",
+      "[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI or agent responses in the provided timeline to evaluate for quality, incorrect information, or unkept promises.\",\n    \"evidence\": [\n      \"[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline contains only a single customer message and no repeated AI requests or looped prompts demanding the same information.\",\n    \"evidence\": [\n      \"[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no support or AI message present that re-requests information or ignores prior context, so ignoring context cannot be confirmed.\",\n    \"evidence\": [\n      \"[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No sequence of responses or timestamps showing multi-day gaps are present; only a single customer comment is in the timeline.\",\n    \"evidence\": [\n      \"[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, there is no evidence in the provided timeline that the customer was left waiting for promised information or explicitly abandoned the ticket.\",\n    \"evidence\": [\n      \"Ticket metadata: Status: closed\",\n      \"[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is marked normal priority and there are no troubleshooting steps or escalation actions recorded, so mishandling of a P1/SEV1 cannot be assessed.\",\n    \"evidence\": [\n      \"Ticket metadata: Priority: normal\",\n      \"[2025-10-20T13:34:14+00:00] (Customer) Kjell Skoglund: Kayako - ticket id 60224885 // Kjell Skoglund commented privately: Thanks for chatting earlier with our AI Support!<br>\\n  <br>\\n  Here is a record of your conversation for easy reference:<br>\\n  <br>\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60224885
+}

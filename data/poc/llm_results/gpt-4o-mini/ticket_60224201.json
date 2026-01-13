@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response did not provide useful information regarding the ticket and merely stated that the component could not be determined, which is generic and unhelpful.",
+    "evidence": [
+      "[2025-10-18T21:59:59+00:00] (AI) ATLAS: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was stuck in an AI loop, as the customer provided additional information about contacting another customer without indication of needing further assistance from AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interactions do not show that the AI ignored previous information provided by the customer, as there is no repetition of requests for logs or screenshots.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There were no significant delays in responses, with a max gap of 0.0 hours indicated.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed but there is no indication that the customer was waiting for follow-up information or had expressed frustration.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Given that this was an urgent ticket, the AI's generic response indicated that further escalation was necessary instead of delivering reliable troubleshooting steps.",
+    "evidence": [
+      "[2025-10-18T21:59:59+00:00] (AI) ATLAS: Component could not be determined"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response did not provide useful information regarding the ticket and merely stated that the component could not be determined, which is generic and unhelpful.\",\n    \"evidence\": [\"[2025-10-18T21:59:59+00:00] (AI) ATLAS: Component could not be determined\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer was stuck in an AI loop, as the customer provided additional information about contacting another customer without indication of needing further assistance from AI.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions do not show that the AI ignored previous information provided by the customer, as there is no repetition of requests for logs or screenshots.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There were no significant delays in responses, with a max gap of 0.0 hours indicated.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed but there is no indication that the customer was waiting for follow-up information or had expressed frustration.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Given that this was an urgent ticket, the AI's generic response indicated that further escalation was necessary instead of delivering reliable troubleshooting steps.\",\n    \"evidence\": [\"[2025-10-18T21:59:59+00:00] (AI) ATLAS: Component could not be determined\"]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60224201
+}

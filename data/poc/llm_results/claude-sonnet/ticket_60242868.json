@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient information to evaluate AI quality. The interaction shows only a reference to an AI conversation that occurred earlier, but the actual AI responses and their quality are not included in the transcript.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Cannot determine if customer was stuck in an AI loop as the actual AI conversation content is not provided in the transcript, only a reference that it occurred.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of context being ignored. The ticket shows only one interaction which is a record of an earlier AI conversation, with no follow-up interactions where context could have been ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No response delays detected. The max gap between responses is 0.0 hours, and only one interaction is recorded in the timeline.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Cannot determine if closure was premature without seeing the actual conversation content or any indication that the customer was waiting for additional information. The ticket is marked as closed but context is insufficient.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a low priority ticket, not a P1/SEV1 issue, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to evaluate AI quality. The interaction shows only a reference to an AI conversation that occurred earlier, but the actual AI responses and their quality are not included in the transcript.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if customer was stuck in an AI loop as the actual AI conversation content is not provided in the transcript, only a reference that it occurred.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of context being ignored. The ticket shows only one interaction which is a record of an earlier AI conversation, with no follow-up interactions where context could have been ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No response delays detected. The max gap between responses is 0.0 hours, and only one interaction is recorded in the timeline.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if closure was premature without seeing the actual conversation content or any indication that the customer was waiting for additional information. The ticket is marked as closed but context is insufficient.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a low priority ticket, not a P1/SEV1 issue, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60242868
+}

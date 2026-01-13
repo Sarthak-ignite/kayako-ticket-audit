@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There are signs of low-quality/generic support communication and at least one instance where the agent\u2019s guidance appears unreliable/incomplete (broken/unfinished URL; internal note indicating a KB was not relevant). These are clear quality issues even if we cannot confirm the full content due to truncation.",
+    "evidence": [
+      "[2025-06-22T23:28:35+00:00] (Employee) Alex Fogerty: \"Using the following website has worked... https://support.ap\" (link appears truncated/broken)",
+      "[2025-06-13T06:30:09+00:00] (Employee) Syed Haider (private): \"This KB is not relevant as its for conenction issues to app manager: https://support.appmanager.gfi.\" (indicates prior/considered troubleshooting content was not relevant)",
+      "[2025-06-16T22:34:59+00:00] (Employee) Harry Tasker (private): \"WHAT IS\" (internal note appears incomplete/unprofessional in its current form)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No clear evidence the customer was stuck in a repetitive loop or blocked from reaching a human; the conversation shows multiple human agents and progression (SSH access, upgrades, AppManager domain).",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The thread does not clearly show agents repeatedly asking for the same information after it was provided. The customer clarifies environment details and the ticket appears to proceed to different troubleshooting steps rather than re-requesting identical logs/details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between interactions, and the customer explicitly references being unable to reply due to a long weekend, implying the ticket cadence suffered noticeable delays.",
+    "evidence": [
+      "Gap: [2025-06-19T06:29:30+00:00] to [2025-06-22T22:08:45+00:00] (~3+ days)",
+      "Gap: [2025-06-13T06:46:48+00:00] to [2025-06-15T21:08:18+00:00] (~2+ days)",
+      "[2025-06-22T22:08:45+00:00] (Employee) Alex Fogerty: \"We had a three day weekend and I haven't had a chance to reply.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The provided transcript does not show the ticket being closed or the customer giving up while awaiting promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no explicit indication of P1/SEV1 priority or business-critical outage requiring immediate escalation; therefore mishandling cannot be concluded from the transcript.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60069509
+}

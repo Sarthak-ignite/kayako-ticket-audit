@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI message is generic filler (a short template thanking the user and stating it is providing a record) without any substantive help or troubleshooting.",
+    "evidence": [
+      "[2025-11-13T22:32:20+00:00] (AI) ATLAS: Kayako - ticket id 60242868 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI message and no repeated requests or back-and-forth that would indicate a loop preventing escalation to a human.",
+    "evidence": [
+      "[2025-11-13T22:32:20+00:00] (AI) ATLAS: Kayako - ticket id 60242868 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer inputs or prior context are present in the transcript to show the AI ignored provided information or requested duplicates.",
+    "evidence": [
+      "Ticket context shows no customer interactions in the provided timeline; only the AI message at [2025-11-13T22:32:20+00:00]."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Metadata indicates no gaps between responses and the timeline contains only one AI entry, so there is no evidence of multi-day delays.",
+    "evidence": [
+      "Max gap between responses (hours): 0.0",
+      "[2025-11-13T22:32:20+00:00] (AI) ATLAS: Kayako - ticket id 60242868 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, there is no evidence the customer was left waiting for promised information or abandoned after a promise.",
+    "evidence": [
+      "Status: closed",
+      "No customer replies or outstanding requests are present in the provided timeline beyond the AI's record message at [2025-11-13T22:32:20+00:00]."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is low, so P1/SEV1 handling rules do not apply; there is no evidence of improper escalation for a critical incident.",
+    "evidence": [
+      "Priority: low"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI message is generic filler (a short template thanking the user and stating it is providing a record) without any substantive help or troubleshooting.\",\n    \"evidence\": [\n      \"[2025-11-13T22:32:20+00:00] (AI) ATLAS: Kayako - ticket id 60242868 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI message and no repeated requests or back-and-forth that would indicate a loop preventing escalation to a human.\",\n    \"evidence\": [\n      \"[2025-11-13T22:32:20+00:00] (AI) ATLAS: Kayako - ticket id 60242868 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!...\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer inputs or prior context are present in the transcript to show the AI ignored provided information or requested duplicates.\",\n    \"evidence\": [\n      \"Ticket context shows no customer interactions in the provided timeline; only the AI message at [2025-11-13T22:32:20+00:00].\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Metadata indicates no gaps between responses and the timeline contains only one AI entry, so there is no evidence of multi-day delays.\",\n    \"evidence\": [\n      \"Max gap between responses (hours): 0.0\",\n      \"[2025-11-13T22:32:20+00:00] (AI) ATLAS: Kayako - ticket id 60242868 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!...\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, there is no evidence the customer was left waiting for promised information or abandoned after a promise.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"No customer replies or outstanding requests are present in the provided timeline beyond the AI's record message at [2025-11-13T22:32:20+00:00].\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is low, so P1/SEV1 handling rules do not apply; there is no evidence of improper escalation for a critical incident.\",\n    \"evidence\": [\n      \"Priority: low\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60242868
+}

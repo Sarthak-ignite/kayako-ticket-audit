@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI does not address the customer\u2019s reported approval/deleted-email issue and instead pivots to license information, which is irrelevant to the symptom described and provides no actionable troubleshooting.",
+    "evidence": [
+      "Users are not able to approve emails. They get a message that the email has been deleted or approved",
+      "I have this license key on record: - License: CRRmyQKzAqD2Ngv6VnjJRZS-sN1C1-x0QK9-534675 - Expiry date: ...[truncated]..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The provided excerpt shows only a short initial exchange and does not show repeated questioning, repeated steps, or customer attempts to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI appears to ignore the customer\u2019s problem statement (email approval failing with deleted/approved message) and responds with unrelated license details rather than acknowledging or investigating the described behavior.",
+    "evidence": [
+      "Users are not able to approve emails. They get a message that the email has been deleted or approved",
+      "I have this license key on record:"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps or follow-up complaints are visible in the excerpt; only a single timestamped interaction is shown.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Only AI interactions are visible and there is no indication of human engagement or that the issue was resolved/confirmed; this is a risk signal for AI-only handling ending without resolution.",
+    "evidence": [
+      "Thanks for chatting earlier with our AI Support!",
+      "Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reports multiple users impacted (\u201cUsers are not able...\u201d), which can indicate a broad operational impact; AI response does not triage severity or move toward escalation and instead provides license info.",
+    "evidence": [
+      "Users are not able to approve emails.",
+      "I have this license key on record:"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60098583
+}

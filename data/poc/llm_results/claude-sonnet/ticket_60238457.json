@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI systems (ATLAS, Centralsupport-ai-acc, Cu Chulainn) performed automated tasks like status updates and ticket routing. No evidence of AI providing wrong information or making unkept promises to the customer.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No customer interactions are visible in this ticket timeline. All communications are internal or from employees to customer. There's no evidence of a customer being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The ticket shows a continuous workflow where the development team identified a fix, deployed it, and verified resolution. No evidence of support ignoring previously provided information or requesting duplicate data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a 6+ day gap (152.5 hours maximum) between the deployment completion on Nov 13 and the final closure on Nov 19, indicating significant delay in closing out the ticket after resolution.",
+    "evidence": [
+      "[2025-11-13T05:20:07+00:00] Chintan Parekh: 'The deployment has been completed, and we have verified that the issue is no longer reproducible. Please monitor the'",
+      "[2025-11-19T16:48:08+00:00] Warren Cook: 'We can close this case'",
+      "[2025-11-19T16:54:45+00:00] Pavly Nashed: 'We will go ahead and close this ticket as requested'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed only after internal confirmation from Warren Cook that it could be closed, and after deployment was completed and verified. The customer was asked to monitor, and closure appears appropriate.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This urgent priority ticket was escalated appropriately to development, a fix was identified and deployed quickly, and the issue was marked as urgent by the team. No generic troubleshooting steps were used; immediate technical action was taken.",
+    "evidence": [
+      "[2025-11-12T17:22:35.382+0000] Aamir Merchant: 'Hi Team,This is urgent and needs a priority push to updated chat widget version asap.'",
+      "[2025-11-13T05:04:36.106+0000] Ashu Bhardwaj: 'While this ticket is still pending TPM approval, I am proceeding with the deployment based on Balaji's recommendation, as this is an Inc'"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI systems (ATLAS, Centralsupport-ai-acc, Cu Chulainn) performed automated tasks like status updates and ticket routing. No evidence of AI providing wrong information or making unkept promises to the customer.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer interactions are visible in this ticket timeline. All communications are internal or from employees to customer. There's no evidence of a customer being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows a continuous workflow where the development team identified a fix, deployed it, and verified resolution. No evidence of support ignoring previously provided information or requesting duplicate data.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a 6+ day gap (152.5 hours maximum) between the deployment completion on Nov 13 and the final closure on Nov 19, indicating significant delay in closing out the ticket after resolution.\",\n    \"evidence\": [\n      \"[2025-11-13T05:20:07+00:00] Chintan Parekh: 'The deployment has been completed, and we have verified that the issue is no longer reproducible. Please monitor the'\",\n      \"[2025-11-19T16:48:08+00:00] Warren Cook: 'We can close this case'\",\n      \"[2025-11-19T16:54:45+00:00] Pavly Nashed: 'We will go ahead and close this ticket as requested'\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed only after internal confirmation from Warren Cook that it could be closed, and after deployment was completed and verified. The customer was asked to monitor, and closure appears appropriate.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This urgent priority ticket was escalated appropriately to development, a fix was identified and deployed quickly, and the issue was marked as urgent by the team. No generic troubleshooting steps were used; immediate technical action was taken.\",\n    \"evidence\": [\n      \"[2025-11-12T17:22:35.382+0000] Aamir Merchant: 'Hi Team,This is urgent and needs a priority push to updated chat widget version asap.'\",\n      \"[2025-11-13T05:04:36.106+0000] Ashu Bhardwaj: 'While this ticket is still pending TPM approval, I am proceeding with the deployment based on Balaji's recommendation, as this is an Inc'\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60238457
+}

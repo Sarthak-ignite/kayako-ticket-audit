@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI response is minimal but appears to be fulfilling the customer's request appropriately by providing an attached report.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only two automated messages present with no evidence of repeated requests or customer trapped in AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Insufficient interaction history to assess context ignoring; only automated responses present.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Responses occurred within seconds of each other (08:00:56 and 08:00:53), with no customer wait times evident.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket is marked as closed with no customer confirmation or follow-up interaction visible. The AI provided a report attachment but there is no evidence the customer received or confirmed satisfaction with the resolution.",
+    "evidence": [
+      "Status: closed - with only two automated system messages and no customer interaction confirming receipt or acceptance of the report"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is normal priority, not P1/SEV1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI response is minimal but appears to be fulfilling the customer's request appropriately by providing an attached report.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Only two automated messages present with no evidence of repeated requests or customer trapped in AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction history to assess context ignoring; only automated responses present.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Responses occurred within seconds of each other (08:00:56 and 08:00:53), with no customer wait times evident.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is marked as closed with no customer confirmation or follow-up interaction visible. The AI provided a report attachment but there is no evidence the customer received or confirmed satisfaction with the resolution.\",\n    \"evidence\": [\n      \"Status: closed - with only two automated system messages and no customer interaction confirming receipt or acceptance of the report\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is normal priority, not P1/SEV1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60269002
+}

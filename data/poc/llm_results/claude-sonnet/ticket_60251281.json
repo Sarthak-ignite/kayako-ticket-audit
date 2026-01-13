@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI actions in this ticket are primarily automated status updates and hold placements. No evidence of AI providing incorrect information or generic filler responses to customer queries.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer was not stuck in an AI loop. The customer interacted primarily with human agents (Harry Tasker and Roger King), and AI only performed backend automation tasks.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Muhammad Rizwan appeared to close the ticket stating the request was already completed by Roger, but Roger had only sent 1 of 4 licenses on Dec 5, leaving 3 G2 2011 licenses unfulfilled. The ticket was closed while work was still incomplete.",
+    "evidence": [
+      "[2025-12-25T09:01:38+00:00] Muhammad Rizwan: This request has already been completed * Roger has already sent the PR and shared the licenses.",
+      "[2025-12-05T10:16:54+00:00] Roger King: Please find attached the remaining 3 subscription G2 licenses",
+      "[2025-12-02T20:09:40+00:00] Harry Tasker: The other 3 licenses are for G2 2011, which is no longe [message appears cut off, indicating incomplete resolution]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple significant delays occurred: 34.4 hours to first human response, and a massive 477.5-hour (nearly 20-day) gap between Roger's Dec 5 response and Muhammad's Dec 25 response. The customer waited from Nov 28 to Dec 2 for initial response.",
+    "evidence": [
+      "Time to first human (hours): 34.4",
+      "Max gap between responses (hours): 477.5",
+      "[2025-11-28T12:13:13+00:00] Sales approval received, but no response until [2025-12-02T20:09:40+00:00] Harry Tasker - 4+ day delay",
+      "[2025-12-05T10:16:54+00:00] Roger King sent licenses, then no customer communication until [2025-12-25T09:04:32+00:00] - 20 day gap"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while 3 of 4 requested G2 2011 licenses remained undelivered. Harry indicated G2 2011 was 'no longer' supported (message cut off), but the request was never fully resolved or alternative solution provided.",
+    "evidence": [
+      "[2025-12-02T20:09:40+00:00] Harry Tasker: The other 3 licenses are for G2 2011, which is no longe [incomplete message]",
+      "[2025-12-25T09:01:38+00:00] Muhammad Rizwan: This request has already been completed * Roger has already sent the PR and shared the licenses.",
+      "Status: closed - despite only 1 of 4 licenses being delivered for G2 2024, and 3 G2 2011 licenses unresolved"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite urgent priority status and sales approval, the ticket took 34.4 hours for first human response and experienced massive delays. Roger escalated urgency on Dec 1 but still experienced delays, contrary to proper urgent ticket handling.",
+    "evidence": [
+      "Priority: urgent",
+      "Time to first human (hours): 34.4",
+      "[2025-12-01T18:13:28+00:00] Roger King: This ticket is set as Urgent and the Sales team has approved the request, so can you please progress this to send the new licenses",
+      "[2025-11-28T12:13:13+00:00] Sales approval received, but response delayed until Dec 2"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI actions in this ticket are primarily automated status updates and hold placements. No evidence of AI providing incorrect information or generic filler responses to customer queries.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer was not stuck in an AI loop. The customer interacted primarily with human agents (Harry Tasker and Roger King), and AI only performed backend automation tasks.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Muhammad Rizwan appeared to close the ticket stating the request was already completed by Roger, but Roger had only sent 1 of 4 licenses on Dec 5, leaving 3 G2 2011 licenses unfulfilled. The ticket was closed while work was still incomplete.\",\n    \"evidence\": [\n      \"[2025-12-25T09:01:38+00:00] Muhammad Rizwan: This request has already been completed * Roger has already sent the PR and shared the licenses.\",\n      \"[2025-12-05T10:16:54+00:00] Roger King: Please find attached the remaining 3 subscription G2 licenses\",\n      \"[2025-12-02T20:09:40+00:00] Harry Tasker: The other 3 licenses are for G2 2011, which is no longe [message appears cut off, indicating incomplete resolution]\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple significant delays occurred: 34.4 hours to first human response, and a massive 477.5-hour (nearly 20-day) gap between Roger's Dec 5 response and Muhammad's Dec 25 response. The customer waited from Nov 28 to Dec 2 for initial response.\",\n    \"evidence\": [\n      \"Time to first human (hours): 34.4\",\n      \"Max gap between responses (hours): 477.5\",\n      \"[2025-11-28T12:13:13+00:00] Sales approval received, but no response until [2025-12-02T20:09:40+00:00] Harry Tasker - 4+ day delay\",\n      \"[2025-12-05T10:16:54+00:00] Roger King sent licenses, then no customer communication until [2025-12-25T09:04:32+00:00] - 20 day gap\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while 3 of 4 requested G2 2011 licenses remained undelivered. Harry indicated G2 2011 was 'no longer' supported (message cut off), but the request was never fully resolved or alternative solution provided.\",\n    \"evidence\": [\n      \"[2025-12-02T20:09:40+00:00] Harry Tasker: The other 3 licenses are for G2 2011, which is no longe [incomplete message]\",\n      \"[2025-12-25T09:01:38+00:00] Muhammad Rizwan: This request has already been completed * Roger has already sent the PR and shared the licenses.\",\n      \"Status: closed - despite only 1 of 4 licenses being delivered for G2 2024, and 3 G2 2011 licenses unresolved\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite urgent priority status and sales approval, the ticket took 34.4 hours for first human response and experienced massive delays. Roger escalated urgency on Dec 1 but still experienced delays, contrary to proper urgent ticket handling.\",\n    \"evidence\": [\n      \"Priority: urgent\",\n      \"Time to first human (hours): 34.4\",\n      \"[2025-12-01T18:13:28+00:00] Roger King: This ticket is set as Urgent and the Sales team has approved the request, so can you please progress this to send the new licenses\",\n      \"[2025-11-28T12:13:13+00:00] Sales approval received, but response delayed until Dec 2\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60251281
+}

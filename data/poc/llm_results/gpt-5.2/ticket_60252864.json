@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only visible AI content is an incomplete/generic transcript snippet that does not address the urgent expired-license outage, suggesting low-quality or non-actionable AI output.",
+    "evidence": [
+      "[2025-11-29T21:02:45+00:00] (AI) ATLAS: \"Here is a transcript of the customer's recent interaction with ATLAS chat:\\n\\n--- AI Assistant ---\\n\\n Hi, Ashraaz Nadeem Yusuf ! \ud83d\udc4b\\n\\nThis is the K\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly states the AI could not help and repeatedly tries to get assistance, indicating difficulty getting past the AI to reach a human.",
+    "evidence": [
+      "[2025-11-29T21:02:32+00:00] (Customer) Ashraaz Nadeem Yusuf: \"Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\\n\\nUser Queries\\n- Expired license\"",
+      "[2025-11-29T21:42:34+00:00] (Customer) Ashraaz Nadeem Yusuf: \"Anyone there\"",
+      "[2025-11-29T23:15:34+00:00] (Customer) Ashraaz Nadeem Yusuf: \"Hi\"",
+      "[2025-11-30T05:38:34+00:00] (Customer) Ashraaz Nadeem Yusuf: \"we require your assistance\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is not enough agent dialogue shown to confirm the support team asked for already-provided information or ignored prior context; the single employee message is truncated and contains no repeated requests.",
+    "evidence": [
+      "[2025-11-30T13:19:12+00:00] (Employee) Mike Kebede: \"Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps are present in the visible timeline; interactions occur within ~1 day. (While first human response appears slow, the pattern definition specifies multiple days.)",
+    "evidence": [
+      "[2025-11-29T21:03:39+00:00] (Customer) Ashraaz Nadeem Yusuf: \"Our license expired. Please issue us a temporary extension. Our services are down.\"",
+      "[2025-11-30T13:19:12+00:00] (Employee) Mike Kebede: \"Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is shown as closed, the provided interaction log does not show a closure message or that the agent promised follow-up and then closed without delivering.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The visible employee response is truncated and does not show inappropriate generic troubleshooting or failure to escalate; therefore mishandling cannot be confirmed from the provided text.",
+    "evidence": [
+      "[2025-11-29T23:34:53+00:00] (Customer) Ashraaz Nadeem Yusuf: \"We are facing total outage. Your assistance will be highly appreciated\"",
+      "[2025-11-30T13:19:12+00:00] (Employee) Mike Kebede: \"Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The only visible AI content is an incomplete/generic transcript snippet that does not address the urgent expired-license outage, suggesting low-quality or non-actionable AI output.\",\n    \"evidence\": [\n      \"[2025-11-29T21:02:45+00:00] (AI) ATLAS: \\\"Here is a transcript of the customer's recent interaction with ATLAS chat:\\\\n\\\\n--- AI Assistant ---\\\\n\\\\n Hi, Ashraaz Nadeem Yusuf ! \ud83d\udc4b\\\\n\\\\nThis is the K\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer explicitly states the AI could not help and repeatedly tries to get assistance, indicating difficulty getting past the AI to reach a human.\",\n    \"evidence\": [\n      \"[2025-11-29T21:02:32+00:00] (Customer) Ashraaz Nadeem Yusuf: \\\"Hello, I needed further assistance than Kerio Control ATLAS could provide. Could you assist me?\\\\n\\\\nUser Queries\\\\n- Expired license\\\"\",\n      \"[2025-11-29T21:42:34+00:00] (Customer) Ashraaz Nadeem Yusuf: \\\"Anyone there\\\"\",\n      \"[2025-11-29T23:15:34+00:00] (Customer) Ashraaz Nadeem Yusuf: \\\"Hi\\\"\",\n      \"[2025-11-30T05:38:34+00:00] (Customer) Ashraaz Nadeem Yusuf: \\\"we require your assistance\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is not enough agent dialogue shown to confirm the support team asked for already-provided information or ignored prior context; the single employee message is truncated and contains no repeated requests.\",\n    \"evidence\": [\n      \"[2025-11-30T13:19:12+00:00] (Employee) Mike Kebede: \\\"Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No multi-day gaps are present in the visible timeline; interactions occur within ~1 day. (While first human response appears slow, the pattern definition specifies multiple days.)\",\n    \"evidence\": [\n      \"[2025-11-29T21:03:39+00:00] (Customer) Ashraaz Nadeem Yusuf: \\\"Our license expired. Please issue us a temporary extension. Our services are down.\\\"\",\n      \"[2025-11-30T13:19:12+00:00] (Employee) Mike Kebede: \\\"Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is shown as closed, the provided interaction log does not show a closure message or that the agent promised follow-up and then closed without delivering.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The visible employee response is truncated and does not show inappropriate generic troubleshooting or failure to escalate; therefore mishandling cannot be confirmed from the provided text.\",\n    \"evidence\": [\n      \"[2025-11-29T23:34:53+00:00] (Customer) Ashraaz Nadeem Yusuf: \\\"We are facing total outage. Your assistance will be highly appreciated\\\"\",\n      \"[2025-11-30T13:19:12+00:00] (Employee) Mike Kebede: \\\"Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60252864
+}

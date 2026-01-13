@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only AI-labeled entries are internal workflow/status updates (hold/open) and do not contain customer-facing troubleshooting, promises, or guidance that can be evaluated for correctness.",
+    "evidence": [
+      "[2025-12-27T15:07:01+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 48 hour(s)\"",
+      "[2025-12-29T15:16:56+00:00] (AI) Centralsupport-ai-acc: \"ticket was set to hold until 2025-12-29T15:15:17.000Z. Placing ticket back to open\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of an AI repeatedly requesting the same information or blocking the customer from reaching a human; multiple human agents actively respond throughout the thread.",
+    "evidence": [
+      "[2025-12-26T16:39:31+00:00] (Employee) Amir Khan: \"Dear Kevin,\\n\\nThank you for sharing the logs. After thorough analysis...\"",
+      "[2025-12-29T21:13:44+00:00] (Employee) Randall Shawver: \"Thank you for the updated logs and the Outlook registry exports.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Agents reference and act on information already provided (logs, registry exports) rather than asking for the same items again; no clear repeated requests for identical data are shown in the excerpts.",
+    "evidence": [
+      "[2025-12-29T21:13:44+00:00] (Employee) Randall Shawver: \"Thank you for the updated logs and the Outlook registry exports.\"",
+      "[2025-12-27T14:52:13+00:00] (Employee) Amir Khan: \"After thorough analysis of both the logs and the Import/Export Tool code, we have identified...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between interactions, including a nearly 5-day gap (consistent with the provided max gap of ~119.8 hours).",
+    "evidence": [
+      "[2026-01-05T17:30:17+00:00] (Customer) Kevin Gragert: \"the bitness reg key resolved the issue...\"",
+      "[2026-01-06T09:18:28+00:00] (Employee) Sandeep Gajula: \"Instructions ... WHAT\"",
+      "[2025-12-31T17:43:09+00:00] (Employee) Qasim Ali: \"We've completed a full review...\"",
+      "[2026-01-05T17:30:17+00:00] (Customer) Kevin Gragert: \"the bitness reg key resolved the issue...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is shown as pending and repeatedly reopened/held, but there is no evidence it was closed while the customer awaited promised information or that the customer gave up due to closure.",
+    "evidence": [
+      "[2025-12-27T15:07:01+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 48 hour(s)\"",
+      "[2025-12-29T15:16:56+00:00] (AI) Centralsupport-ai-acc: \"Placing ticket back to open\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although priority is high, the visible guidance is focused on logs, registry/bitness, and import tooling behavior; there is no clear evidence of irrelevant generic steps (cache/VPN/firewall) instead of escalation.",
+    "evidence": [
+      "[2025-12-29T21:13:44+00:00] (Employee) Randall Shawver: \"From your Import/Export Tool logs...\"",
+      "[2026-01-05T17:30:17+00:00] (Customer) Kevin Gragert: \"the bitness reg key resolved the issue...\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only AI-labeled entries are internal workflow/status updates (hold/open) and do not contain customer-facing troubleshooting, promises, or guidance that can be evaluated for correctness.\",\n    \"evidence\": [\n      \"[2025-12-27T15:07:01+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 48 hour(s)\\\"\",\n      \"[2025-12-29T15:16:56+00:00] (AI) Centralsupport-ai-acc: \\\"ticket was set to hold until 2025-12-29T15:15:17.000Z. Placing ticket back to open\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of an AI repeatedly requesting the same information or blocking the customer from reaching a human; multiple human agents actively respond throughout the thread.\",\n    \"evidence\": [\n      \"[2025-12-26T16:39:31+00:00] (Employee) Amir Khan: \\\"Dear Kevin,\\\\n\\\\nThank you for sharing the logs. After thorough analysis...\\\"\",\n      \"[2025-12-29T21:13:44+00:00] (Employee) Randall Shawver: \\\"Thank you for the updated logs and the Outlook registry exports.\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Agents reference and act on information already provided (logs, registry exports) rather than asking for the same items again; no clear repeated requests for identical data are shown in the excerpts.\",\n    \"evidence\": [\n      \"[2025-12-29T21:13:44+00:00] (Employee) Randall Shawver: \\\"Thank you for the updated logs and the Outlook registry exports.\\\"\",\n      \"[2025-12-27T14:52:13+00:00] (Employee) Amir Khan: \\\"After thorough analysis of both the logs and the Import/Export Tool code, we have identified...\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between interactions, including a nearly 5-day gap (consistent with the provided max gap of ~119.8 hours).\",\n    \"evidence\": [\n      \"[2026-01-05T17:30:17+00:00] (Customer) Kevin Gragert: \\\"the bitness reg key resolved the issue...\\\"\",\n      \"[2026-01-06T09:18:28+00:00] (Employee) Sandeep Gajula: \\\"Instructions ... WHAT\\\"\",\n      \"[2025-12-31T17:43:09+00:00] (Employee) Qasim Ali: \\\"We've completed a full review...\\\"\",\n      \"[2026-01-05T17:30:17+00:00] (Customer) Kevin Gragert: \\\"the bitness reg key resolved the issue...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is shown as pending and repeatedly reopened/held, but there is no evidence it was closed while the customer awaited promised information or that the customer gave up due to closure.\",\n    \"evidence\": [\n      \"[2025-12-27T15:07:01+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 48 hour(s)\\\"\",\n      \"[2025-12-29T15:16:56+00:00] (AI) Centralsupport-ai-acc: \\\"Placing ticket back to open\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although priority is high, the visible guidance is focused on logs, registry/bitness, and import tooling behavior; there is no clear evidence of irrelevant generic steps (cache/VPN/firewall) instead of escalation.\",\n    \"evidence\": [\n      \"[2025-12-29T21:13:44+00:00] (Employee) Randall Shawver: \\\"From your Import/Export Tool logs...\\\"\",\n      \"[2026-01-05T17:30:17+00:00] (Customer) Kevin Gragert: \\\"the bitness reg key resolved the issue...\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60267287
+}

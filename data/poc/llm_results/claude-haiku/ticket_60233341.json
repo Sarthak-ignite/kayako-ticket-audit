@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI interaction appears to be a generic ticket summary/wrap-up with no substantive support content.",
+    "evidence": [
+      "[2025-10-31T14:57:34+00:00] ATLAS comment: 'Thanks for chatting earlier with our AI Support!'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient interaction details to confirm AI looping.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No clear evidence of context ignorance due to limited ticket information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket status is closed, but without full context of customer satisfaction.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, not a P1/Sev1 scenario.",
+    "evidence": []
+  },
+  "_raw_response": "After carefully analyzing the provided ticket context, I'll complete the analysis:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI interaction appears to be a generic ticket summary/wrap-up with no substantive support content.\",\n    \"evidence\": [\n      \"[2025-10-31T14:57:34+00:00] ATLAS comment: 'Thanks for chatting earlier with our AI Support!'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction details to confirm AI looping.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence of context ignorance due to limited ticket information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket status is closed, but without full context of customer satisfaction.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, not a P1/Sev1 scenario.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket has very limited interaction details\n- Only an AI summary/wrap-up message is visible\n- Insufficient context to fully evaluate most quality patterns\n- Recommend retrieving full ticket conversation for comprehensive analysis",
+  "_model": "claude-haiku",
+  "_ticket_id": 60233341
+}

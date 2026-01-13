@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI responses providing misinformation or making unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was stuck in a loop with AI responses preventing them from reaching a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team asked for confirmation of information that the customer already provided, suggesting previous interactions were not taken into account.",
+    "evidence": [
+      "[2025-09-30T00:55:16+00:00] (Customer) D. Middleton: How about you look back through the comments in this case, and you tell me what my concerns are..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay of nearly 44.8 hours between customer comments and the employee's responses.",
+    "evidence": [
+      "Max gap between responses (hours): 44.8"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was not closed while the customer was awaiting further information, as the status was marked closed after the issue was handed to business unit.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer escalated the case multiple times due to a complete outage, yet there are repeated delays and lack of immediate critical response.",
+    "evidence": [
+      "[2025-09-29T19:50:24+00:00] (AI) Centralsupport-ai-acc: The customer escalated the Case. The severity is: complete_outage"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI responses providing misinformation or making unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was stuck in a loop with AI responses preventing them from reaching a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team asked for confirmation of information that the customer already provided, suggesting previous interactions were not taken into account.\",\n    \"evidence\": [\"[2025-09-30T00:55:16+00:00] (Customer) D. Middleton: How about you look back through the comments in this case, and you tell me what my concerns are...\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay of nearly 44.8 hours between customer comments and the employee's responses.\",\n    \"evidence\": [\"Max gap between responses (hours): 44.8\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was not closed while the customer was awaiting further information, as the status was marked closed after the issue was handed to business unit.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer escalated the case multiple times due to a complete outage, yet there are repeated delays and lack of immediate critical response.\",\n    \"evidence\": [\"[2025-09-29T19:50:24+00:00] (AI) Centralsupport-ai-acc: The customer escalated the Case. The severity is: complete_outage\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60209553
+}

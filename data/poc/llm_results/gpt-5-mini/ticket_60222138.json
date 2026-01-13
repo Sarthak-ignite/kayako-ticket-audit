@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI or agent responses in the ticket to evaluate for quality failures.",
+    "evidence": [
+      "[2025-10-15T21:23:16+00:00] (Customer) Brandon Heugly: Need this ticket reopened.",
+      "Time to first human (hours): nan"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only a single customer message appears and there are no repeated AI requests or back-and-forth preventing escalation to a human.",
+    "evidence": [
+      "[2025-10-15T21:23:16+00:00] (Customer) Brandon Heugly: Need this ticket reopened.",
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support replies are present that could have ignored provided information or asked for repeated logs/screenshots.",
+    "evidence": [
+      "[2025-10-15T21:23:16+00:00] (Customer) Brandon Heugly: Need this ticket reopened.",
+      "Was handed to BU: False"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is only a single customer interaction in the timeline and no multi-day response gaps to demonstrate significant delays.",
+    "evidence": [
+      "[2025-10-15T21:23:16+00:00] (Customer) Brandon Heugly: Need this ticket reopened.",
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Customer explicitly requested the ticket be reopened but the ticket is marked closed, indicating it was closed while the customer awaited action.",
+    "evidence": [
+      "[2025-10-15T21:23:16+00:00] (Customer) Brandon Heugly: Need this ticket reopened.",
+      "Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal (not P1/SEV1), so P1/SEV1 handling rules do not apply and no generic escalation handling is present.",
+    "evidence": [
+      "Priority: normal"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI or agent responses in the ticket to evaluate for quality failures.\",\n    \"evidence\": [\n      \"[2025-10-15T21:23:16+00:00] (Customer) Brandon Heugly: Need this ticket reopened.\",\n      \"Time to first human (hours): nan\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Only a single customer message appears and there are no repeated AI requests or back-and-forth preventing escalation to a human.\",\n    \"evidence\": [\n      \"[2025-10-15T21:23:16+00:00] (Customer) Brandon Heugly: Need this ticket reopened.\",\n      \"Max gap between responses (hours): 0.0\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support replies are present that could have ignored provided information or asked for repeated logs/screenshots.\",\n    \"evidence\": [\n      \"[2025-10-15T21:23:16+00:00] (Customer) Brandon Heugly: Need this ticket reopened.\",\n      \"Was handed to BU: False\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single customer interaction in the timeline and no multi-day response gaps to demonstrate significant delays.\",\n    \"evidence\": [\n      \"[2025-10-15T21:23:16+00:00] (Customer) Brandon Heugly: Need this ticket reopened.\",\n      \"Max gap between responses (hours): 0.0\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer explicitly requested the ticket be reopened but the ticket is marked closed, indicating it was closed while the customer awaited action.\",\n    \"evidence\": [\n      \"[2025-10-15T21:23:16+00:00] (Customer) Brandon Heugly: Need this ticket reopened.\",\n      \"Status: closed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal (not P1/SEV1), so P1/SEV1 handling rules do not apply and no generic escalation handling is present.\",\n    \"evidence\": [\n      \"Priority: normal\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60222138
+}

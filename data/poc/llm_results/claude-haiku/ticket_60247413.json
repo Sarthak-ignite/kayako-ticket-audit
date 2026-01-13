@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient interaction details to assess AI response quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of AI repeatedly requesting information or trapping customer.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No context of customer's original inquiry or subsequent interactions is provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, indicating no significant delay.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No indication that the ticket was closed inappropriately or without resolution.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Priority is marked as 'normal', not a high-severity incident.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the limited context provided, here's the analysis:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction details to assess AI response quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of AI repeatedly requesting information or trapping customer.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No context of customer's original inquiry or subsequent interactions is provided.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, indicating no significant delay.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"No indication that the ticket was closed inappropriately or without resolution.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Priority is marked as 'normal', not a high-severity incident.\",\n    \"evidence\": []\n  }\n}\n```\n\nNote: The provided ticket context is extremely limited. The only interaction is an AI-generated summary message that appears to be a standard ticket closure/reference note. Without the full conversation history, previous interactions, or customer's original issue, a comprehensive quality analysis is not possible. More context would be needed to make definitive assessments about support quality.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60247413
+}

@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The visible AI message content is truncated, so there isn\u2019t clear evidence it was incorrect, overly generic filler, or that it made/failed to keep specific promises.",
+    "evidence": [
+      "[2025-10-23T18:46:04+00:00] (AI) ATLAS: \"Dear Brad,  Thank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform (\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly asked for the same information or prevented access to a human; a human employee later added RCA notes.",
+    "evidence": [
+      "[2025-10-27T06:05:46+00:00] (Employee) Balaji Jayaraman: \"RCA : https://www.notion.so/trilogy-enterprises/RCA-for-Khoros-Platform-Outage-CARESMM-9147-29085e927d3181fabca9eb5066e1f95f?sourc\"",
+      "[2025-10-29T11:35:33+00:00] (Employee) Balaji Jayaraman: \"Please find attached the customer-facing RCA for the Khoros Care incident.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interaction excerpts do not show the agent/AI asking for already-provided information (e.g., repeating requests for logs/screenshots) or ignoring referenced prior tickets.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket metadata indicates multi-day gaps and very long time to first human response, consistent with significant response delays.",
+    "evidence": [
+      "Ticket Context: \"Time to first human (hours): 83.3\"",
+      "Ticket Context: \"Max gap between responses (hours): 74.0\"",
+      "[2025-10-23T18:46:04+00:00] (AI) ATLAS ... and next human update not until [2025-10-27T06:05:46+00:00] (Employee) Balaji Jayaraman"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, the provided timeline does not show the customer awaiting promised info at the moment of closure or expressing that they gave up; closure timing/action isn\u2019t shown.",
+    "evidence": [
+      "Ticket Context: \"Status: closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The excerpts do not show inappropriate generic troubleshooting (e.g., cache/VPN/firewall) for an urgent/outage scenario; the AI references a service disruption and the team produced an RCA.",
+    "evidence": [
+      "[2025-10-23T18:46:04+00:00] (AI) ATLAS: \"Thank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform\"",
+      "[2025-10-29T11:35:33+00:00] (Employee) Balaji Jayaraman: \"Please find attached the customer-facing RCA for the Khoros Care incident.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The visible AI message content is truncated, so there isn\u2019t clear evidence it was incorrect, overly generic filler, or that it made/failed to keep specific promises.\",\n    \"evidence\": [\n      \"[2025-10-23T18:46:04+00:00] (AI) ATLAS: \\\"Dear Brad,  Thank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform (\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly asked for the same information or prevented access to a human; a human employee later added RCA notes.\",\n    \"evidence\": [\n      \"[2025-10-27T06:05:46+00:00] (Employee) Balaji Jayaraman: \\\"RCA : https://www.notion.so/trilogy-enterprises/RCA-for-Khoros-Platform-Outage-CARESMM-9147-29085e927d3181fabca9eb5066e1f95f?sourc\\\"\",\n      \"[2025-10-29T11:35:33+00:00] (Employee) Balaji Jayaraman: \\\"Please find attached the customer-facing RCA for the Khoros Care incident.\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction excerpts do not show the agent/AI asking for already-provided information (e.g., repeating requests for logs/screenshots) or ignoring referenced prior tickets.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket metadata indicates multi-day gaps and very long time to first human response, consistent with significant response delays.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Time to first human (hours): 83.3\\\"\",\n      \"Ticket Context: \\\"Max gap between responses (hours): 74.0\\\"\",\n      \"[2025-10-23T18:46:04+00:00] (AI) ATLAS ... and next human update not until [2025-10-27T06:05:46+00:00] (Employee) Balaji Jayaraman\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, the provided timeline does not show the customer awaiting promised info at the moment of closure or expressing that they gave up; closure timing/action isn\u2019t shown.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Status: closed\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The excerpts do not show inappropriate generic troubleshooting (e.g., cache/VPN/firewall) for an urgent/outage scenario; the AI references a service disruption and the team produced an RCA.\",\n    \"evidence\": [\n      \"[2025-10-23T18:46:04+00:00] (AI) ATLAS: \\\"Thank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform\\\"\",\n      \"[2025-10-29T11:35:33+00:00] (Employee) Balaji Jayaraman: \\\"Please find attached the customer-facing RCA for the Khoros Care incident.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60227783
+}

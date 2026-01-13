@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI (ATLAS) provided a completely unhelpful response stating 'Component could not be determined' instead of attempting to assist the customer or route them appropriately.",
+    "evidence": [
+      "[2025-09-29T14:02:50+00:00] ATLAS: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one AI interaction and the customer successfully reached a human agent, so no looping pattern is evident.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The human agent appropriately asked for clarification about the specific error, which was not included in the customer's initial brief description. This is a reasonable follow-up question.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a 16.9-hour delay between the customer's issue report and the first human response, which is significant for a high-priority ticket.",
+    "evidence": [
+      "[2025-09-29T14:02:55+00:00] Anthony Marlow: I am having an issue creating new locations",
+      "[2025-09-30T06:53:48+00:00] Alexandr Oliynyk: Dear Anthony, Thank you for your patience. Could you please let us know what error you are getting while creating a location?"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked as closed, but the last interaction shows the agent asking a follow-up question and waiting for the customer's response about the error details. The ticket should remain open pending customer reply.",
+    "evidence": [
+      "Status: closed",
+      "[2025-09-30T06:53:48+00:00] Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is a high-priority ticket with a 16.9-hour delay to first human response. For high-priority issues, this delay is excessive and suggests inadequate priority handling.",
+    "evidence": [
+      "Priority: high",
+      "Time to first human (hours): 16.9"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI (ATLAS) provided a completely unhelpful response stating 'Component could not be determined' instead of attempting to assist the customer or route them appropriately.\",\n    \"evidence\": [\"[2025-09-29T14:02:50+00:00] ATLAS: Component could not be determined\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one AI interaction and the customer successfully reached a human agent, so no looping pattern is evident.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The human agent appropriately asked for clarification about the specific error, which was not included in the customer's initial brief description. This is a reasonable follow-up question.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a 16.9-hour delay between the customer's issue report and the first human response, which is significant for a high-priority ticket.\",\n    \"evidence\": [\"[2025-09-29T14:02:55+00:00] Anthony Marlow: I am having an issue creating new locations\", \"[2025-09-30T06:53:48+00:00] Alexandr Oliynyk: Dear Anthony, Thank you for your patience. Could you please let us know what error you are getting while creating a location?\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked as closed, but the last interaction shows the agent asking a follow-up question and waiting for the customer's response about the error details. The ticket should remain open pending customer reply.\",\n    \"evidence\": [\"Status: closed\", \"[2025-09-30T06:53:48+00:00] Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This is a high-priority ticket with a 16.9-hour delay to first human response. For high-priority issues, this delay is excessive and suggests inadequate priority handling.\",\n    \"evidence\": [\"Priority: high\", \"Time to first human (hours): 16.9\"]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60209192
+}

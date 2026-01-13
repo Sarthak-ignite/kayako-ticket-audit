@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI-generated internal notes appear to be incomplete template/filler content (e.g., escalation form with missing severity and no actionable summary). This adds no value and can mislead the team about what the customer actually said.",
+    "evidence": [
+      "[2025-09-02T18:35:21+00:00] (AI) Centralsupport-ai-acc commented privately: \"[customer_escalation] ... The customer message is:  The severity is:\" (blank/incomplete)",
+      "[2025-08-27T17:47:34+00:00] (AI) Centralsupport-ai-acc commented privately: \"[customer_escalation] ... The customer message is:  The severity is:\" (blank/incomplete)",
+      "[2025-08-26T19:56:53+00:00] (AI) Centralsupport-ai-acc commented privately: \"[customer_escalation] ... The customer message is:  The severity is:\" (blank/incomplete)",
+      "[2025-08-25T20:18:50+00:00] (AI) Centralsupport-ai-acc commented privately: \"[customer_escalation] ... The customer message is:  The severity is:\" (blank/incomplete)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer is trapped interacting with an AI that blocks access to a human, nor evidence of repeated AI questioning/loops. The visible AI entries are internal escalation stubs, not a customer-facing conversation loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the thread is truncated, there is not clear, explicit evidence that support repeatedly asked for the same logs/info after the customer already provided them. The ticket shows logs were sent and reviewed, but no repeated requests are visible.",
+    "evidence": [
+      "[2025-08-26T19:34:11+00:00] (Employee) Bennett Duarte commented privately: \"Here are some files...\"",
+      "[2025-08-28T08:22:10+00:00] (Employee) Arafat Bakhsh commented publicly: \"Thank you for sending the logs and support info. We\u2019ve reviewed them...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between updates in the timeline, suggesting the case may have experienced meaningful delays in progress/communication.",
+    "evidence": [
+      "Gap from [2025-08-29T18:12:40+00:00] to [2025-09-01T19:13:29+00:00] (~3 days)",
+      "Gap from [2025-09-02T21:15:28+00:00] to [2025-09-05T16:36:54+00:00] (~3 days)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The provided interaction log does not show the ticket being closed/resolved, nor a situation where the customer is left waiting on a promised next step at the moment of closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket indicates frequent freezing and multiple escalations, but the log does not clearly establish that the case was formally treated as P1/SEV1 (severity fields are blank), nor that support explicitly mishandled a confirmed high-priority process (e.g., refusing escalation when required).",
+    "evidence": [
+      "AI escalation stubs show severity not captured: \"The severity is:\" (blank) in multiple entries (e.g., [2025-09-02T18:35:21+00:00])",
+      "[2025-09-02T16:18:01+00:00] (Employee) Bennett Duarte commented privately: \"It is still freezing and just froze now.\""
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60177804
+}

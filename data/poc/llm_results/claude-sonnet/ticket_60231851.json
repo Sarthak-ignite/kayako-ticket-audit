@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI provided generic troubleshooting about whitelists when the customer's issue was specifically about Information Store Protection, showing the AI misunderstood the core problem.",
+    "evidence": [
+      "[2025-10-31T13:50:38+00:00] Ralph Venturino: 'My issues is not with the whitelist but with the Information Store Protection. We been though all these ste'",
+      "[2025-10-29T19:58:20+00:00] ATLAS: 'Dear Ralph, Thank you for providing detailed information about the error encountered when accessing the Information Store Protection page in G'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer was stuck interacting with the AI bot and explicitly complained multiple times about not being able to reach a human support representative, having to wait 450.3 hours for first human response.",
+    "evidence": [
+      "[2025-11-06T15:51:03+00:00] Ralph Venturino: 'Like I've stated\u2026. THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative who was suppose to contac'",
+      "[2025-11-06T18:53:10+00:00] Ralph Venturino: 'Wow, Same automated message as the one below. Scroll down, exact same one and from same person \ud83d\udc4d Thank god I'm not in a down s'",
+      "[2025-10-31T14:49:23+00:00] Ralph Venturino: 'Once again\u2026 This is second time I requested support over the last 6 months due to multiple issues that are occurring.'"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI initially misidentified the issue as being about whitelists despite the customer clarifying it was about Information Store Protection, showing failure to properly understand the provided context.",
+    "evidence": [
+      "[2025-10-31T13:50:38+00:00] Ralph Venturino: 'My issues is not with the whitelist but with the Information Store Protection. We been though all these ste'",
+      "[2025-10-31T13:51:24+00:00] ATLAS: 'Dear Ralph, Thank you for clarifying that your issue specifically involves the Information Store Protection page in GFI MailEssentials, rather'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Massive delays including 450.3 hours to first human response, 145 hours max gap between responses, and customer waited 6 days (Oct 29 to Nov 6) without human support intervention despite multiple complaints.",
+    "evidence": [
+      "[2025-11-12T18:21:01+00:00] Ralph Venturino: 'STILL WAITING FOR SUPPORT..'",
+      "[2025-11-06T15:51:49+00:00] Ralph Venturino: 'STILL WAITING\u2026'",
+      "[2025-11-06T15:49:34+00:00] Ralph Venturino: 'So I guess support on this ticket is going to go nowhere like my last one. I've been waiting for a support representative t'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was eventually resolved with a dev build provided on Nov 18, customer tested it and confirmed it was functioning properly on Nov 20, and support followed up appropriately before closure.",
+    "evidence": [
+      "[2025-11-20T15:46:49+00:00] Ralph Venturino: 'The DEV version that was loaded seemed to be functioning properly from what I was seeing. This morning 22.3 appeare'",
+      "[2025-11-20T15:50:17+00:00] Arafat Bakhsh: 'Should you face any blockers, please let us know. We will be happy to assist you.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This was a high-priority ticket but customer was left in AI loop for over 18 days with generic troubleshooting instead of immediate human escalation to engineering team.",
+    "evidence": [
+      "[2025-11-17T14:17:45+00:00] Mohammed Amer: 'Hi Ralph, We apologize for the delay on this, I ve escalated it internally for faster resolution.'",
+      "[2025-11-12T18:21:01+00:00] Ralph Venturino: 'STILL WAITING FOR SUPPORT..'",
+      "[2025-11-06T15:49:34+00:00] Ralph Venturino: 'So I guess support on this ticket is going to go nowhere like my last one. I've been waiting for a support representative t'"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI provided generic troubleshooting about whitelists when the customer's issue was specifically about Information Store Protection, showing the AI misunderstood the core problem.\",\n    \"evidence\": [\n      \"[2025-10-31T13:50:38+00:00] Ralph Venturino: 'My issues is not with the whitelist but with the Information Store Protection. We been though all these ste'\",\n      \"[2025-10-29T19:58:20+00:00] ATLAS: 'Dear Ralph, Thank you for providing detailed information about the error encountered when accessing the Information Store Protection page in G'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer was stuck interacting with the AI bot and explicitly complained multiple times about not being able to reach a human support representative, having to wait 450.3 hours for first human response.\",\n    \"evidence\": [\n      \"[2025-11-06T15:51:03+00:00] Ralph Venturino: 'Like I've stated\u2026. THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative who was suppose to contac'\",\n      \"[2025-11-06T18:53:10+00:00] Ralph Venturino: 'Wow, Same automated message as the one below. Scroll down, exact same one and from same person \ud83d\udc4d Thank god I'm not in a down s'\",\n      \"[2025-10-31T14:49:23+00:00] Ralph Venturino: 'Once again\u2026 This is second time I requested support over the last 6 months due to multiple issues that are occurring.'\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI initially misidentified the issue as being about whitelists despite the customer clarifying it was about Information Store Protection, showing failure to properly understand the provided context.\",\n    \"evidence\": [\n      \"[2025-10-31T13:50:38+00:00] Ralph Venturino: 'My issues is not with the whitelist but with the Information Store Protection. We been though all these ste'\",\n      \"[2025-10-31T13:51:24+00:00] ATLAS: 'Dear Ralph, Thank you for clarifying that your issue specifically involves the Information Store Protection page in GFI MailEssentials, rather'\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Massive delays including 450.3 hours to first human response, 145 hours max gap between responses, and customer waited 6 days (Oct 29 to Nov 6) without human support intervention despite multiple complaints.\",\n    \"evidence\": [\n      \"[2025-11-12T18:21:01+00:00] Ralph Venturino: 'STILL WAITING FOR SUPPORT..'\",\n      \"[2025-11-06T15:51:49+00:00] Ralph Venturino: 'STILL WAITING\u2026'\",\n      \"[2025-11-06T15:49:34+00:00] Ralph Venturino: 'So I guess support on this ticket is going to go nowhere like my last one. I've been waiting for a support representative t'\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was eventually resolved with a dev build provided on Nov 18, customer tested it and confirmed it was functioning properly on Nov 20, and support followed up appropriately before closure.\",\n    \"evidence\": [\n      \"[2025-11-20T15:46:49+00:00] Ralph Venturino: 'The DEV version that was loaded seemed to be functioning properly from what I was seeing. This morning 22.3 appeare'\",\n      \"[2025-11-20T15:50:17+00:00] Arafat Bakhsh: 'Should you face any blockers, please let us know. We will be happy to assist you.'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This was a high-priority ticket but customer was left in AI loop for over 18 days with generic troubleshooting instead of immediate human escalation to engineering team.\",\n    \"evidence\": [\n      \"[2025-11-17T14:17:45+00:00] Mohammed Amer: 'Hi Ralph, We apologize for the delay on this, I ve escalated it internally for faster resolution.'\",\n      \"[2025-11-12T18:21:01+00:00] Ralph Venturino: 'STILL WAITING FOR SUPPORT..'\",\n      \"[2025-11-06T15:49:34+00:00] Ralph Venturino: 'So I guess support on this ticket is going to go nowhere like my last one. I've been waiting for a support representative t'\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60231851
+}

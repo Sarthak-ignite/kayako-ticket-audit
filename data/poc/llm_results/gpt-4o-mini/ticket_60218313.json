@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses provided relevant context and information specific to the customer's situation, indicating they were not generic fillers.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was stuck in an AI loop; interactions indicate escalation and progress with human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that support ignored previously provided information or repeated requests for the same logs/screenshots.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The time to the first human response was excessively long at 44.4 hours and there were large gaps of 77.7 hours between responses.",
+    "evidence": [
+      "Time to first human (hours): 44.4",
+      "Max gap between responses (hours): 77.7"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket closure does not indicate that the customer was waiting for promised information; the ticket was marked closed appropriately.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The responses do not include generic troubleshooting steps and instead directly address the advanced nature of the issue, which is appropriate for high-priority tickets.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses provided relevant context and information specific to the customer's situation, indicating they were not generic fillers.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer was stuck in an AI loop; interactions indicate escalation and progress with human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that support ignored previously provided information or repeated requests for the same logs/screenshots.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The time to the first human response was excessively long at 44.4 hours and there were large gaps of 77.7 hours between responses.\",\n    \"evidence\": [\"Time to first human (hours): 44.4\", \"Max gap between responses (hours): 77.7\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket closure does not indicate that the customer was waiting for promised information; the ticket was marked closed appropriately.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The responses do not include generic troubleshooting steps and instead directly address the advanced nature of the issue, which is appropriate for high-priority tickets.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60218313
+}

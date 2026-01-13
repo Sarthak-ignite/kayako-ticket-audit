@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS interaction is minimal and mostly intake/licensing routing; no clear incorrect/misleading troubleshooting guidance attributable to AI is shown in the transcript provided (it is also truncated).",
+    "evidence": [
+      "[2025-11-28T05:10:37+00:00] ATLAS asks for license key / offers options; no substantive diagnostic guidance shown."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer is routed to human support quickly; there is no evidence the customer requested a human and was kept in repeated AI loops.",
+    "evidence": [
+      "[2025-11-28T05:11:11+00:00] ATLAS Action: l1 (handoff).",
+      "[2025-11-28T19:18:37+00:00] Human agent (Randall) responds publicly with troubleshooting steps."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "There are signs support did not fully absorb/validate key context before concluding, leading to misalignment: (a) support treated the customer\u2019s video as proof the client machine had the updates installed, but the customer later clarified the video was from their own machine; (b) duplicate identical public responses were posted, suggesting poor attention/handling and adding noise for the customer.",
+    "evidence": [
+      "[2025-12-15T17:00:13+00:00] Support: \"Your video confirms these updates are installed in Windows Update.\"",
+      "[2025-12-17T04:50:57+00:00] Customer: \"just to clarify, the video was taken on my machine, not on the client\u2019s machine. On the client\u2019s side, the client/end user mentioned that the remediation was not successful.\"",
+      "[2025-11-28T19:18:37+00:00] Randall Shawver public reply posted.",
+      "[2025-11-28T19:19:08+00:00] The same Randall Shawver public reply appears duplicated again with the same content."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple multi-day gaps occurred while the customer was waiting for analysis/next steps, prompting repeated follow-ups. Support also explicitly apologized for delayed response.",
+    "evidence": [
+      "[2025-12-03T08:56:57+00:00] Customer: \"I\u2019ve already uploaded the logs to the FTP folder. Kindly check them.\"",
+      "[2025-12-05T02:49:18+00:00] Customer: \"Hi is there any updates for this?\"",
+      "[2025-12-10T01:35:17+00:00] Customer: \"Hello, good day i just want to follow up this ticket\"",
+      "[2025-12-10T07:14:25+00:00] Support: \"Apologies for the delayed response here.\"",
+      "[2025-12-11T02:21:19+00:00] Customer: \"kindly check the patch agent log\"",
+      "[2025-12-15T05:05:16+00:00] Customer: \"Hi, any update on this.\"",
+      "[2025-12-15T17:00:13+00:00] Support provides findings (multi-day gap between Dec 11 and Dec 15)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence the ticket was closed without resolution; conversation continues with ongoing troubleshooting requests.",
+    "evidence": [
+      "[2025-12-18T06:46:43+00:00] Support continues engagement and requests fresh logs; no closure event shown."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket describes patch deployment timeouts and remediation reporting inconsistencies, but does not clearly indicate a production outage/critical business impact requiring P1/S1 handling or escalation.",
+    "evidence": [
+      "Customer reports deployment timeout/remediation inconsistencies but no explicit statements like \"production down\", \"all users impacted\", or urgent SLA language."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60252140
+}

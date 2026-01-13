@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS sends a templated, generic response heavy on links and questions rather than addressing the customer\u2019s request for an update on the existing case, and it uses a broken template salutation (\u201cDear ATLAS\u201d).",
+    "evidence": [
+      "\"Kayako - ticket id 60011782 // ATLAS commented publicly: Dear ATLAS,\"",
+      "\"Thank you for reaching out regarding the issue with the journaling mailbox not connecting and emails not archiving. We understand the urgency of the situation\"",
+      "\"could you please provide the following information:\"",
+      "\"Have you attempted to connect the journal mailbox as per the instructions in this article...\"",
+      "\"If you are using Office 365, did you follow the steps outlined in this article...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly asks to speak to the support team and notes an existing open ticket, but the AI flow continues and creates/handles a separate ticket while requesting more info instead of routing to a human/update path.",
+    "evidence": [
+      "\"Speak to support team please\"",
+      "\"ticket open - #60010193 update on case\"",
+      "\"I have a ticket open already\"",
+      "\"Kayako - ticket id 60011782 // ATLAS commented privately: Requesting more information\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support does not acknowledge the existing ticket number or provide the requested update, and instead asks generic setup/log questions, effectively ignoring the stated context that this is a follow-up to an existing case.",
+    "evidence": [
+      "\"ticket open - #60010193 update on case\"",
+      "\"I have a ticket open already\"",
+      "\"To help us resolve this issue more efficiently, could you please provide the following information:\"",
+      "\"Have you shared the server logs as per the instructions in this article...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All visible interactions occur within the same minute; there is no multi-day gap between customer message and support response in the provided timeline.",
+    "evidence": [
+      "[2025-04-02T09:07:30+00:00]",
+      "[2025-04-02T09:08:03+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The AI includes an auto-closure warning (\u201cstay open for one week\u201d) even though the customer\u2019s issue is not resolved and they asked to speak to someone; this is a premature closure/auto-close pattern risk.",
+    "evidence": [
+      "\"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Closed in the portal.\"",
+      "\"If you need more time, rest assured that the ticket will remain open for one additional week.\"",
+      "\"emails are not archiving since Monday and i need to speak to someone\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reports an ongoing service-impacting failure (emails not archiving since Monday) and requests immediate human contact, but support responds with standard article links/questions rather than escalation/urgent handling.",
+    "evidence": [
+      "\"The journaling mailbox is not connecting and emails are not archiving\"",
+      "\"emails are not archiving since Monday and i need to speak to someone\"",
+      "\"Speak to support team please\"",
+      "\"To help us resolve this issue more efficiently, could you please provide the following information:\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60011782
+}

@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS makes a clearly incorrect claim about the customer\u2019s configuration (that there is no broad *.apple.com entry), despite the attached screenshot analysis showing *.apple.com already present. This undermines troubleshooting because it recommends adding something that is already configured.",
+    "evidence": [
+      "ATLAS (public, 2025-10-15T10:32:12+00:00): \"Most relevant Apple CDN and update domains are included ... but there is no broad *.apple.com entry.\"",
+      "ATLAS file analysis (private, 2025-10-15T10:31:44+00:00) on Adressgroup.jpeg: \"Multiple Apple-related domains are included ... appldnld.apple.com, *.apple.com, apple.com, *.cdn-apple.com ...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There are only two customer-facing ATLAS responses, and later human agents respond and escalate to L2. The customer is not stuck in a long AI-only loop, and the AI is not shown requesting the same exact information repeatedly.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/ATLAS recommends changes based on a mistaken premise that a wildcard Apple domain is missing, despite evidence in the provided screenshots showing it already exists. This indicates the response did not properly incorporate the customer-provided configuration.",
+    "evidence": [
+      "Customer provided updated screenshots/config context (2025-10-15T10:31:09+00:00): \"unfortunately, the Allow rule didn\u2019t resolve the issue. [See fotos.]\"",
+      "ATLAS file analysis (2025-10-15T10:31:44+00:00): \"*.apple.com\" is present in the HTTPS exclusions address group.",
+      "ATLAS (public, 2025-10-15T10:32:12+00:00): \"The absence of a blanket *.apple.com entry... Action: Add *.apple.com...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple gaps of 3+ days between customer follow-ups and any substantive support reply, and the customer explicitly complains about the lack of updates.",
+    "evidence": [
+      "Customer (2025-10-17T12:09:00+00:00): requests technical team to take a closer look; no support response until 2025-10-29.",
+      "Customer (2025-10-23T06:39:25+00:00): forwards config for review; no support response until 2025-10-29.",
+      "Customer (2025-10-27T13:00:03+00:00): \"It has now been two weeks since our last communication, and unfortunately, we have not received any concrete feedback on the issue.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support attempted to close the ticket as a duplicate while the customer was still awaiting help and later stated they could not access the referenced duplicate ticket, meaning closure would have cut off their support path.",
+    "evidence": [
+      "Support (Zubair, 2025-10-29T08:41:15+00:00): \"We will close this ticket... kindly reply on ticket# 60216786\"",
+      "Customer (2025-10-29T13:46:26+00:00): \"It looks like a reply was sent to the ticket I unfortunately don\u2019t have access to... continue the communication using Ticket #60220499\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer later escalates and an internal note marks severity as core_functionality_defect, support does escalate to L2 and raises priority to High. The ticket is not clearly labeled P1/SEV1/Critical in the customer-visible flow, and escalation is visible once severity is raised.",
+    "evidence": [
+      "Mike Kebede (2025-11-04T11:43:01+00:00): \"We\u2019ve escalated this case to the L2 team and raised the priority to High.\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60220499
+}

@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is insufficient information to evaluate AI response quality. The ticket only shows a private comment by ATLAS indicating a conversation occurred, but the actual AI responses and conversation content are not provided.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Cannot determine if customer was stuck in an AI loop as the actual conversation content between the customer and AI is not visible in the provided interactions.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is only one interaction visible in the timeline (an AI private comment), with no evidence of support ignoring previously provided information or asking for duplicate information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket metadata shows a max gap between responses of 0.0 hours, indicating no significant delays. The ticket appears to have been handled in a single interaction session.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed, there is no evidence that the customer was waiting for promised information or that they gave up. The single interaction suggests the issue may have been resolved during the AI chat session.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket (not P1/Sev1), so this quality issue pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient information to evaluate AI response quality. The ticket only shows a private comment by ATLAS indicating a conversation occurred, but the actual AI responses and conversation content are not provided.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if customer was stuck in an AI loop as the actual conversation content between the customer and AI is not visible in the provided interactions.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one interaction visible in the timeline (an AI private comment), with no evidence of support ignoring previously provided information or asking for duplicate information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket metadata shows a max gap between responses of 0.0 hours, indicating no significant delays. The ticket appears to have been handled in a single interaction session.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed, there is no evidence that the customer was waiting for promised information or that they gave up. The single interaction suggests the issue may have been resolved during the AI chat session.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket (not P1/Sev1), so this quality issue pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60222887
+}

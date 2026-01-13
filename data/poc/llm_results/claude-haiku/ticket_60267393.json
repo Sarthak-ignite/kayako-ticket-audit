@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are truncated and seem partially cut off, suggesting potentially incomplete or low-quality automated responses.",
+    "evidence": [
+      "[2025-12-22T18:23:12+00:00] Dear Liz, Thank you for your update. We appreciate you letting us know about your current availability and your intention to review the sugges [truncated]",
+      "[2025-12-19T17:29:37+00:00] Dear Liz, Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you [truncated]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There's no evidence of AI repeatedly asking for the same information or preventing human interaction.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "AI responses seem to acknowledge the customer's screenshots and specific Khoros Care dashboard issue.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple days between customer interactions, with a gap of about 3 days between initial issue report and follow-up.",
+    "evidence": [
+      "Customer initial report: [2025-12-19T17:27:04+00:00]",
+      "Customer follow-up: [2025-12-22T18:22:29+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Customer indicates they are on PTO and unable to troubleshoot immediately, but ticket appears to be closed without full resolution.",
+    "evidence": [
+      "[2025-12-22T18:22:29+00:00] Liz Mech: 'Right now, due to PTO, we are unable to troubleshoot. We will be able t[truncated]'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as a high-priority/severity ticket, and seems to be a standard dashboard issue.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are truncated and seem partially cut off, suggesting potentially incomplete or low-quality automated responses.\",\n    \"evidence\": [\n      \"[2025-12-22T18:23:12+00:00] Dear Liz, Thank you for your update. We appreciate you letting us know about your current availability and your intention to review the sugges [truncated]\",\n      \"[2025-12-19T17:29:37+00:00] Dear Liz, Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and you [truncated]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There's no evidence of AI repeatedly asking for the same information or preventing human interaction.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses seem to acknowledge the customer's screenshots and specific Khoros Care dashboard issue.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multiple days between customer interactions, with a gap of about 3 days between initial issue report and follow-up.\",\n    \"evidence\": [\n      \"Customer initial report: [2025-12-19T17:27:04+00:00]\",\n      \"Customer follow-up: [2025-12-22T18:22:29+00:00]\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer indicates they are on PTO and unable to troubleshoot immediately, but ticket appears to be closed without full resolution.\",\n    \"evidence\": [\n      \"[2025-12-22T18:22:29+00:00] Liz Mech: 'Right now, due to PTO, we are unable to troubleshoot. We will be able t[truncated]'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as a high-priority/severity ticket, and seems to be a standard dashboard issue.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket shows signs of AI response quality issues with truncated messages\n- There's a significant delay between interactions\n- The ticket appears to be closed prematurely while the customer is still planning to troubleshoot\n- No evidence of severe mishandling or AI looping",
+  "_model": "claude-haiku",
+  "_ticket_id": 60267393
+}

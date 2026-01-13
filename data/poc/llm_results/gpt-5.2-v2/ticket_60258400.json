@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provides largely generic, KB-driven troubleshooting checklists without showing any log-based analysis, and repeats common steps the customer already tried, which the customer flags as unhelpful.",
+    "evidence": [
+      "ATLAS commented publicly: \"Since the standard manual update process did not resolve the issue, here are further troubleshooting steps and verifications based on the most common root causes identified in the GFI LanGuard knowledge base:\"",
+      "ATLAS commented publicly: \"Based on the information provided and the relevant knowledge base articles, here are the most targeted next steps and root causes to review...\"",
+      "Customer: \"Those steps are basically what was recommended in articles before. Please have someone look at the logs\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly indicates they already performed the suggested steps and provided needed details/logs, but support/AI continues to push the same KB steps and requests instead of moving to human log review, causing a loop.",
+    "evidence": [
+      "Customer: \"I already provided all the relevant details I have right now\"",
+      "Customer: \"none of the proposed solutions worked so far, here are the logs from both server and agent:\"",
+      "Customer: \"Those steps are basically what was recommended in articles before. Please have someone look at the logs\"",
+      "Keyur Saxena: \"Please force the updates... Then, apply this fix... If the issue persists after the fix, please provide the agent logs for review\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support does not meaningfully acknowledge or analyze the provided logs and keeps recommending steps/articles the customer already tried, including asking again for logs after the customer already shared them.",
+    "evidence": [
+      "Customer: \"I have already sent them the article... but performing the actions there has not resulted in any change.\"",
+      "Customer: \"none of the proposed solutions worked so far, here are the logs from both server and agent:\"",
+      "Customer: \"Please have someone look at the logs\"",
+      "Keyur Saxena: \"If the issue persists after the fix, please provide the agent logs for review\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No gap exceeds 2 calendar days; the longest visible gap is about one day between the customer's escalation request and the human agent reply.",
+    "evidence": [
+      "Customer (2025-12-08T11:24:19+00:00): \"Please have someone look at the logs\"",
+      "Support (2025-12-09T13:32:09+00:00): \"Please force the updates...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support includes an auto-closure warning while the issue is clearly unresolved and the customer is requesting log review; this is a strong signal of potential closure without confirmed resolution.",
+    "evidence": [
+      "Customer: \"Please have someone look at the logs, otherwise, there's a high risk of losing the customer's renewal\"",
+      "Keyur Saxena: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer flags significant business urgency (renewal risk in two weeks) and asks for log review, but support continues with standard KB steps rather than expediting escalation or performing immediate log analysis.",
+    "evidence": [
+      "Customer: \"Please have someone look at the logs, otherwise, there's a high risk of losing the customer's renewal, which is in two weeks.\"",
+      "Keyur Saxena: \"Please force the updates... apply this fix... If the issue persists... provide the agent logs for review\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60258400
+}

@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ATLAS transcript mainly shows intake/triage (priority selection and request for details). No customer-facing statements indicate ATLAS gave incorrect guidance, hallucinated, or broke templates, and the customer never says the AI was wrong or unhelpful.",
+    "evidence": [
+      "Customer (Andrew Mugisha): \"Ticket 60147163 requested for activation of licenses for Florida Department of Health. Please note this is a first time activation, not a renewal.\"",
+      "ATLAS transcript: \"What's the priority of the issue?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer asked for a human and was kept in an AI loop, nor are there repeated AI replies preventing human assistance. The ticket contains multiple human public responses (Shaquille, Alexandr, Raymond).",
+    "evidence": [
+      "Shaquille De Lancy commented publicly: \"Dear Andrew, Thank you for contacting the StreetSmart Support Team...\"",
+      "Alexandr Oliynyk commented publicly: \"Dear Andrew, Thank you for your message.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to re-provide the same information after it was already supplied. When Andrew corrected the Salesforce opportunity link, the team adapted and continued troubleshooting/escalation rather than repeating the same requests.",
+    "evidence": [
+      "Andrew Mugisha commented publicly: \"This is the correct Salesforce opportunity: https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000004fwJXIAY/view\"",
+      "Alexandr Oliynyk commented publicly: \"If the issue persists, could you please provide email address of the affected user?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The conversation shows regular same-day or next-day responses from support. There are no visible gaps meeting the defined multi-day thresholds, and no customer complaint about waiting days.",
+    "evidence": [
+      "Andrew Mugisha commented publicly [2025-10-09T13:30:55+00:00]: \"The customer reports still seeing the following error\"",
+      "Alexandr Oliynyk commented publicly [2025-10-10T03:21:05+00:00]: \"We were unable to reproduce the issue...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While multiple messages include an auto-closure warning (\u201cstay open for one week unless...\u201d), there is no explicit closure notice shown, and the ticket continues to be actively worked after those warnings.",
+    "evidence": [
+      "Shaquille De Lancy commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Raymond Guirguis commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the issue was marked \u201cUrgent\u201d in the ATLAS intake, there is no explicit P1/SEV1/outage language in the customer-facing thread (e.g., production down, all users impacted). Support engaged internal onboarding/automation fixes and ultimately deployed a code-side fix, which does not match the defined mishandling pattern.",
+    "evidence": [
+      "ATLAS transcript: \"Button selection: [\ud83d\udd34 Urgent]\"",
+      "Raymond Guirguis commented publicly: \"We identified that the issue was related to case sensitivity in the customer's email address during the automation process. This has now been resolved.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60214613
+}

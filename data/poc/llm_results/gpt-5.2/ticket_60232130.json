@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI repeatedly put the ticket on hold for an extreme duration, which effectively stalls progress and is inappropriate for an urgent ticket.",
+    "evidence": [
+      "[2025-12-15T13:22:46+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-12-16T01:54:05+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-12-16T13:25:13+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-12-17T09:02:25+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While AI actions placed the case on hold multiple times, there is no evidence the AI interacted with the customer in a back-and-forth loop or repeatedly requested the same information from the customer.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support stated the customer had downgraded to 7.5.7 and proceeded with that assumption, but the customer explicitly denied it, indicating prior context was misunderstood/ignored.",
+    "evidence": [
+      "[2025-12-16T13:25:03+00:00] (Employee) Randall Shawver: \"Thank you for confirming that you have downgraded to version 7.5.7.\"",
+      "[2025-12-17T04:15:39+00:00] (Customer) Santosh Shinde: \"Who said we have downgraded to version 7.5.7 ? No, we have not.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a multi-day gap between updates (nearly a week), which is a significant response delay for an urgent ticket.",
+    "evidence": [
+      "[2025-12-17T09:02:25+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\"",
+      "[2025-12-24T15:01:08+00:00] (Employee) Syed Haider: \"Thank you for your patience. Engineering has provided an experimental test build...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, the provided interaction log does not show the closure event or that it was closed while the customer was awaiting a promised follow-up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The thread shows escalation/coordination with engineering and downgrade guidance rather than generic client-side troubleshooting; no clear evidence of inappropriate generic steps for a P1/urgent outage is present in the excerpts.",
+    "evidence": [
+      "[2025-12-15T13:12:32Z] (Employee) rshawver: \"Should we recommend a downgrade to 7.6.0 for customers who are having a major impact?\"",
+      "[2025-12-16T13:01:50+00:00] (Employee) Jozef Kacala: \"I spoke with engineering team and we are suggesting to downgrade to version 7.5.7...\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI repeatedly put the ticket on hold for an extreme duration, which effectively stalls progress and is inappropriate for an urgent ticket.\",\n    \"evidence\": [\n      \"[2025-12-15T13:22:46+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-12-16T01:54:05+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-12-16T13:25:13+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-12-17T09:02:25+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI actions placed the case on hold multiple times, there is no evidence the AI interacted with the customer in a back-and-forth loop or repeatedly requested the same information from the customer.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support stated the customer had downgraded to 7.5.7 and proceeded with that assumption, but the customer explicitly denied it, indicating prior context was misunderstood/ignored.\",\n    \"evidence\": [\n      \"[2025-12-16T13:25:03+00:00] (Employee) Randall Shawver: \\\"Thank you for confirming that you have downgraded to version 7.5.7.\\\"\",\n      \"[2025-12-17T04:15:39+00:00] (Customer) Santosh Shinde: \\\"Who said we have downgraded to version 7.5.7 ? No, we have not.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a multi-day gap between updates (nearly a week), which is a significant response delay for an urgent ticket.\",\n    \"evidence\": [\n      \"[2025-12-17T09:02:25+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 9999 hour(s)\\\"\",\n      \"[2025-12-24T15:01:08+00:00] (Employee) Syed Haider: \\\"Thank you for your patience. Engineering has provided an experimental test build...\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, the provided interaction log does not show the closure event or that it was closed while the customer was awaiting a promised follow-up.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The thread shows escalation/coordination with engineering and downgrade guidance rather than generic client-side troubleshooting; no clear evidence of inappropriate generic steps for a P1/urgent outage is present in the excerpts.\",\n    \"evidence\": [\n      \"[2025-12-15T13:12:32Z] (Employee) rshawver: \\\"Should we recommend a downgrade to 7.6.0 for customers who are having a major impact?\\\"\",\n      \"[2025-12-16T13:01:50+00:00] (Employee) Jozef Kacala: \\\"I spoke with engineering team and we are suggesting to downgrade to version 7.5.7...\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60232130
+}

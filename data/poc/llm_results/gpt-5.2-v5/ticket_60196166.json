@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer-facing AI replies (Hermes) are largely non-actionable boilerplate repeated across updates, with no concrete next steps until much later. Additionally, the customer explicitly disputes ATLAS\u2019s apparent implication that the issue is due to configuration/virtual environment rather than a product defect.",
+    "evidence": [
+      "Hermes (public, 2025-09-15): \"Your input will be carefully reviewed to better understand the situation and determine the most appropriate next steps.\"",
+      "Hermes (public, 2025-09-16 quoted email): \"Your input will be carefully reviewed to better understand the situation and determine the most appropriate next steps.\"",
+      "Customer (public, 2025-09-25): \"I disagree that the problem is related to the configuration or the fact that I ran the tests in a virtual environment.\"",
+      "Customer (public, 2025-09-25): \"Have you tested this on your end? ... Could you confirm whether we found an issue in the product/release?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although the ticket originated from an AI chat, the subsequent customer-facing thread includes multiple human-agent responses (e.g., Zubair, Atilla, Carlos, Mike, Aditi). There is no clear instance where the customer asked for a human and then received 2+ subsequent AI-only public responses without a human reply.",
+    "evidence": [
+      "Zubair Farooq (public, 2025-09-13): \"Thank you for contacting the Kerio Control Support Team.\"",
+      "Atilla Onay (public, 2025-10-02): \"We have received your escalation and we are working on it.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support requested screenshots and the customer provided them; later the customer provided a video as well. There is no clear customer-facing pattern of support repeatedly asking for the same information after the customer stated it was already provided.",
+    "evidence": [
+      "Zubair Farooq (public, 2025-09-13): \"If the issue is still not resolved, please send us the screenshots of the configuration\"",
+      "Customer (public, 2025-09-13): \"Please find attached screenshots.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple long gaps where the customer explicitly asks for an update after waiting. Notably, the customer asked for an update on 2025-09-16 and the next customer-facing response appears on 2025-09-24; later the customer replied on 2025-10-06 and the next staff response was 2025-10-13.",
+    "evidence": [
+      "Customer (public, 2025-09-16): \"Could I kindly ask for an update?\"",
+      "Customer (public, 2025-10-27): \"Could you please let me know if there has been any progress on my case? The customer has been waiting for a solution for almost two months.\"",
+      "Mike Kebede (public, 2025-10-13): \"Engineering is now actively working on a permanent fix.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While there is standard language about the ticket staying open for one week unless closed, the provided transcript does not show an actual closure/auto-closure happening while the issue remains unresolved.",
+    "evidence": [
+      "Zubair Farooq (public, 2025-09-13): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"\"",
+      "Aditi Garg (public, 2025-10-30): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer describes a significant HA defect, but the ticket does not include explicit P1/SEV1/critical outage language in customer-facing messages. Support also escalated to Engineering and later provided a beta build, which is not indicative of treating an explicit SEV1 as routine without escalation.",
+    "evidence": [
+      "Atilla Onay (public, 2025-10-02): \"We have received your escalation and we are working on it.\"",
+      "Carlos Encalada (public, 2025-10-02): \"we have confirmed that this case requires further investigation by our Engineering team. We have escalated the matter accordingly.\"",
+      "Aditi Garg (public, 2025-10-30): \"Our Engineering team has implemented a fix ... We\u2019ve prepared a beta build for you to evaluate\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60196166
+}

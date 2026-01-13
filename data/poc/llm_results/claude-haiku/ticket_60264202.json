@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are extremely generic and appear to be automated boilerplate messages with no specific problem-solving content.",
+    "evidence": [
+      "[2025-12-16T08:00:55+00:00] Hi Team, Your requested report is attached. Best regards, Kayako Automation"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient interaction evidence to suggest an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Limited interaction data prevents context assessment.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Interactions appear to have happened within seconds, so no significant delay detected.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No clear evidence that ticket was closed inappropriately or that customer was unsatisfied.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, and no specific technical troubleshooting is shown.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are extremely generic and appear to be automated boilerplate messages with no specific problem-solving content.\",\n    \"evidence\": [\n      \"[2025-12-16T08:00:55+00:00] Hi Team, Your requested report is attached. Best regards, Kayako Automation\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction evidence to suggest an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Limited interaction data prevents context assessment.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Interactions appear to have happened within seconds, so no significant delay detected.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence that ticket was closed inappropriately or that customer was unsatisfied.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, and no specific technical troubleshooting is shown.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-haiku",
+  "_ticket_id": 60264202
+}

@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is insufficient interaction content to evaluate AI response quality. Only a summary notification is visible, not the actual AI conversation.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of looping behavior. The ticket shows the AI conversation ended and was logged, suggesting the interaction concluded rather than looped.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence of support ignoring previously provided information, as no actual support interaction content is available beyond the initial AI conversation summary.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket metadata shows 'Max gap between responses: 0.0 hours', indicating no significant delays occurred during the interaction.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Cannot definitively determine premature closure. While the ticket is closed, there's no evidence the customer was waiting for information or that promises were unfulfilled, as the full conversation content is not available.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not P1/Sev1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient interaction content to evaluate AI response quality. Only a summary notification is visible, not the actual AI conversation.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of looping behavior. The ticket shows the AI conversation ended and was logged, suggesting the interaction concluded rather than looped.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of support ignoring previously provided information, as no actual support interaction content is available beyond the initial AI conversation summary.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket metadata shows 'Max gap between responses: 0.0 hours', indicating no significant delays occurred during the interaction.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot definitively determine premature closure. While the ticket is closed, there's no evidence the customer was waiting for information or that promises were unfulfilled, as the full conversation content is not available.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not P1/Sev1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60219657
+}

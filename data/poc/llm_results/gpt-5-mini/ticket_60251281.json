@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI posted inappropriate/generic administrative actions (unrealistic hold duration) and repeated boilerplate JIRA status messages that do not add useful customer-facing information.",
+    "evidence": [
+      "\"[2025-12-03T19:08:19+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 9999 hour(s)\"",
+      "\"[2025-12-25T07:45:13+00:00] (AI) Centralsupport-ai-acc: ... JIRA Issue GENSYMBSE-28 is changed to 'Done' , block reason: -\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information or trapped the customer; human agents (Roger, Muhammad) are present and provided license info.",
+    "evidence": [
+      "\"[2025-12-05T10:16:54+00:00] (Employee) Roger King: ... Please find attached the remaining 3 subscription G2 licenses\"",
+      "\"[2025-12-25T09:04:32+00:00] (Employee) Muhammad Rizwan: ... As Roger has already shared the license with you in the previous response\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support staff referenced and acted on prior work (Roger shared licenses; BU was engaged). There is no clear instance of repeating requests for the same information from the customer.",
+    "evidence": [
+      "\"[2025-12-05T10:16:54+00:00] (Employee) Roger King: ... Please find attached the remaining 3 subscription G2 licenses\"",
+      "\"[2025-12-25T09:01:38+00:00] (Employee) Muhammad Rizwan: * This request has already been completed * Roger has already sent the PR and shared the licenses.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day (and multi-week) gaps between human responses; metadata shows time to first human 34.4 hours and a max gap of 477.5 hours.",
+    "evidence": [
+      "\"Time to first human (hours): 34.4\"",
+      "\"Max gap between responses (hours): 477.5\"",
+      "\"[2025-12-05T10:16:54+00:00] (Employee) Roger King: ...\" vs \"[2025-12-25T09:04:32+00:00] (Employee) Muhammad Rizwan: ...\" (~20 days gap)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows completion actions (licenses attached and BU involvement) and a final employee statement referencing licenses being shared; no clear sign the customer was left waiting or that closure occurred before promised information.",
+    "evidence": [
+      "\"[2025-12-05T10:16:54+00:00] (Employee) Roger King: ... Please find attached the remaining 3 subscription G2 licenses\"",
+      "\"[2025-12-25T09:04:32+00:00] (Employee) Muhammad Rizwan: ... As Roger has already shared the license with you in the previous response\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket concerns license generation and delivery, not a P1/outage; there is no evidence of generic P1 troubleshooting steps (cache, firewall, VPN) or failure to escalate.",
+    "evidence": [
+      "\"Ticket Context - Vertical: IgniteTech\"",
+      "\"[2025-12-03T11:43:26+00:00] (Employee) Roger King: ... All four requests are now with the Gensym BU team for generation of G2 2011 subscription licenses.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI posted inappropriate/generic administrative actions (unrealistic hold duration) and repeated boilerplate JIRA status messages that do not add useful customer-facing information.\",\n    \"evidence\": [\n      \"\\\"[2025-12-03T19:08:19+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 9999 hour(s)\\\"\",\n      \"\\\"[2025-12-25T07:45:13+00:00] (AI) Centralsupport-ai-acc: ... JIRA Issue GENSYMBSE-28 is changed to 'Done' , block reason: -\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information or trapped the customer; human agents (Roger, Muhammad) are present and provided license info.\",\n    \"evidence\": [\n      \"\\\"[2025-12-05T10:16:54+00:00] (Employee) Roger King: ... Please find attached the remaining 3 subscription G2 licenses\\\"\",\n      \"\\\"[2025-12-25T09:04:32+00:00] (Employee) Muhammad Rizwan: ... As Roger has already shared the license with you in the previous response\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support staff referenced and acted on prior work (Roger shared licenses; BU was engaged). There is no clear instance of repeating requests for the same information from the customer.\",\n    \"evidence\": [\n      \"\\\"[2025-12-05T10:16:54+00:00] (Employee) Roger King: ... Please find attached the remaining 3 subscription G2 licenses\\\"\",\n      \"\\\"[2025-12-25T09:01:38+00:00] (Employee) Muhammad Rizwan: * This request has already been completed * Roger has already sent the PR and shared the licenses.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day (and multi-week) gaps between human responses; metadata shows time to first human 34.4 hours and a max gap of 477.5 hours.\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 34.4\\\"\",\n      \"\\\"Max gap between responses (hours): 477.5\\\"\",\n      \"\\\"[2025-12-05T10:16:54+00:00] (Employee) Roger King: ...\\\" vs \\\"[2025-12-25T09:04:32+00:00] (Employee) Muhammad Rizwan: ...\\\" (~20 days gap)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows completion actions (licenses attached and BU involvement) and a final employee statement referencing licenses being shared; no clear sign the customer was left waiting or that closure occurred before promised information.\",\n    \"evidence\": [\n      \"\\\"[2025-12-05T10:16:54+00:00] (Employee) Roger King: ... Please find attached the remaining 3 subscription G2 licenses\\\"\",\n      \"\\\"[2025-12-25T09:04:32+00:00] (Employee) Muhammad Rizwan: ... As Roger has already shared the license with you in the previous response\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket concerns license generation and delivery, not a P1/outage; there is no evidence of generic P1 troubleshooting steps (cache, firewall, VPN) or failure to escalate.\",\n    \"evidence\": [\n      \"\\\"Ticket Context - Vertical: IgniteTech\\\"\",\n      \"\\\"[2025-12-03T11:43:26+00:00] (Employee) Roger King: ... All four requests are now with the Gensym BU team for generation of G2 2011 subscription licenses.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60251281
+}

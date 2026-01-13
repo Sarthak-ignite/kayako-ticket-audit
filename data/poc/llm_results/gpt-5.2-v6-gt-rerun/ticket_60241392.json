@@ -1,0 +1,64 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS appears to have gotten stuck repeating an incorrect license key back to the customer instead of acknowledging the key the customer provided. The customer also reported the chatbot \u201ccrashes\u201d when trying to check the serial number, which indicates poor AI experience/handling. This is enough to flag AI quality issues even though the full chat transcript is truncated.",
+    "evidence": [
+      "ATLAS: \"I have this license key on record: * License: 20339-8LMFV-3J3LZ ... Just to make sure we're on the same page - is this the same system...\"",
+      "Customer: \"It is this: 20339-1LQWD-4A2PV\"",
+      "ATLAS: \"I have this license key on record: * License: 20339-8LMFV-3J3LZ ...\"",
+      "Customer: \"Hello the chatbot crashes because he cant check the serial number from my kerio ng120\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly asked to 'create me a ticket' and explicitly stated the chatbot couldn't complete the needed RMA workflow. The ATLAS behavior shown is repetitive (same license-check prompt), suggesting a loop that hindered reaching effective human help.",
+    "evidence": [
+      "Customer (User Queries): \"Please create me a ticket\"",
+      "Customer (User Queries): \"Create me a ticket we aleready have all data you need\"",
+      "Customer: \"Hello the chatbot crashes because he cant check the serial number from my kerio ng120\"",
+      "ATLAS: \"I have this license key on record... Just to make sure we're on the same page...\" (repeated after customer provided a different key)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "There are signs the workflow required the customer to re-provide/justify information that was already stated in the chat (e.g., video claimed uploaded, then requested again with specific attachment/link requirements). Also, ATLAS did not adapt to the customer-provided license key and continued using the on-record key, indicating missed context. Some of this may be process-driven, but it still reflects context not being effectively used.",
+    "evidence": [
+      "Customer (User Queries): \"Video uploaded\"",
+      "Public reply: \"To proceed further, we require... 1) A video recording... You can attach this video to the ticket or share a direct downloadable link\"",
+      "Customer: \"You have aleready all data you need\"",
+      "ATLAS: \"I have this license key on record: 20339-8LMFV-3J3LZ\" after customer said \"It is this: 20339-1LQWD-4A2PV\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows a long overall resolution time in the structured data, suggesting delays before being solved/closed. Even though the visible conversation is concentrated on 2025-11-12, the CSV indicates it remained open for days before solve/close.",
+    "evidence": [
+      "CSV: resolutionTime=587884",
+      "CSV: Ticket Created=2025-11-12 13:43:24",
+      "CSV: Ticket Solved=2025-11-19 09:01:28",
+      "CSV: Ticket Closed=2025-11-22 09:42:30"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed, but the thread shown does not include a clear customer-facing final resolution (especially after internal guidance that RMA was not approved and a rescue image should be used). Given the customer\u2019s original request (RMA / non-booting firewall), closing without an explicit documented resolution to the customer is a reasonable risk indicator of premature closure (uncertain due to truncated later interactions).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-22 09:42:30",
+      "Side conversation: \"RMA is NOT approved.\"",
+      "Side conversation: \"customer needs to use rescue image 9072 and deploy on the box, after that the issue will be resolved.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is a firewall that will not boot (likely an outage), and while the ticket was marked urgent, the handling appears to have initially pushed an RMA path before internal feedback stated the issue was a known driver/software problem resolved by a specific rescue image. If the customer did not receive that corrective action promptly (not shown in public replies) and the ticket later closed, that would constitute mishandling; evidence is suggestive but incomplete due to truncated end-of-ticket communication.",
+    "evidence": [
+      "Customer (User Queries): \"The firewall dosent boot i get a error message from ubuntu\"",
+      "Private summary: \"Set priority to URGENT as this is a hardware outage preventing the firewall from booting.\"",
+      "Side conversation: \"RMA is NOT approved... stems from driver issues and was resolved in v10:9072\"",
+      "CSV: Ticket Solved=2025-11-19 09:01:28"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60241392
+}

@@ -1,0 +1,107 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_classic",
+        "requester": {
+          "id": 60544085,
+          "uuid": "91e15f4c-84cd-504f-b100-018680de98df",
+          "full_name": "Zaid Haddad",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/91e15f4c-84cd-504f-b100-018680de98df?1765819360",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60059489,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 545663,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-10-15T07:48:32+00:00",
+          "last_active_at": "2025-12-15T17:22:40+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60544085",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@cdfb85d62af1c3c32c55f197c454e39188777c36",
+          "password_updated_at": "2025-10-15T07:43:06+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-10-15T07:42:06+00:00",
+          "updated_at": "2025-12-15T17:22:40+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60544085"
+        },
+        "ticket_idt": 60221483
+      },
+      "interactions": [
+        [
+          "2025-10-15T07:53:24+00:00",
+          "Kayako - ticket id 60221483 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Hi, Zaid Haddad ! \ud83d\udc4b</p>\n      <p>This is the <strong>Khoros Classic</strong> AI Support Agent \ud83e\udd16.</p>\n      <hr>\n      <div style=\"line-height: 1.3; margin-top: 8px; font-size: 0.9rem; color: #666666;\">\n        <b>Please note:</b> The AI Support Agent is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" rel=\"nofollow\">these terms and conditions</a>. If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.\n      </div>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Walk me through what's happening or select from the below frequent requests.</p>\n      <p>Don't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you. \ud83d\udcaa</p>\n      <p>\ud83d\udca1Tip: Aim to give us a bit more context than just a quick \"It's not working.\" The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f</p>\n      <p>\ud83d\udca1<a href=\"https://khoros-classic.kayako.com/article/128087\" rel=\"nofollow\">Getting the most out of Khoros Classic AI Support Agent</a></p>\n      <p>If I'm unable to help you, I can patch you through to a Live agent, along with the information you supply to me during this session, so that our team has something to work with from the get-go.</p>\n    </div><br>\n    <p><strong>--- Customer (Zaid Haddad) ---</strong></p>\n    <div>\n      <p>I need access to Atlas. my email is <a href=\"mailto:zhaddad@graphisoft.com\" rel=\"nofollow\">zhaddad@graphisoft.com</a>. my full name is: zaid haddad</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa</p>\n      <p>\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.</p>\n      <p>\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.</p>\n      <p>\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:<br>\n      \ud83d\udc49 <a href=\"https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI4Yzg0NTNiYi03NDY5LTQ2MmMtYmI0OC0zYjE5NDE5ZjJhZjYiLCJzZXNzaW9uX3VpZCI6IjhjODQ1M2JiLTc0NjktNDYyYy1iYjQ4LTNiMTk0MTlmMmFmNiIsImVtYWlsIjoiemhhZGRhZEBncmFwaGlzb2Z0LmNvbSIsImN1c3RvbV9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoia2hvcm9zX2NsYXNzaWMiLCJxdWVyeSI6IiIsImV4cCI6MTc2MDUyMTU3M30.j-vgISvhT6RPFQdsJz4AibbnA3LkHcWXLaP3QdtvbI8\" rel=\"nofollow\">Secure File Upload</a></p>\n      <p>You should see the following:</p>\n      <ul>\n        <li>User: <a href=\"mailto:zhaddad@graphisoft.com\" rel=\"nofollow\">zhaddad@graphisoft.com</a>\n        </li>\n        <li>Session ID: 8c8453bb-7469-462c-bb48-3b19419f2af6</li>\n      </ul>\n    </div><br>\n    <p><strong>--- Customer (Zaid Haddad) ---</strong></p>\n    <div>\n      <p>I need atlas access</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>I understand you need access to Atlas! \ud83c\udfdb\ufe0f</p>\n      <p>Based on the information I found, it looks like you're referring to the <strong>Khoros Atlas Community</strong> (<a href=\"https://community.khoros.com\" rel=\"nofollow\">https://community.khoros.com</a>) and the <strong>Khoros Developer portal</strong> (<a href=\"https://developer.khoros.com\" rel=\"nofollow\">https://developer.khoros.com</a>). These are great resources for developers working with the Khoros platform.</p>\n      <p>To grant you access to these resources, I'll need your <strong>username</strong> for the Khoros Community platform. I see you've provided your email (<a href=\"mailto:zhaddad@graphisoft.com\" rel=\"nofollow\">zhaddad@graphisoft.com</a>), but for security and data handling reasons, I specifically need your registered username on the community platform.</p>\n      <p>A couple of questions to help you get set up:</p>\n      <ol>\n        <li>\n          <p><strong>Do you already have a registered username on <a href=\"https://community.khoros.com\" rel=\"nofollow\">https://community.khoros.com</a>?</strong> If so, what is it?</p>\n        </li>\n        <li>\n          <p><strong>If you don't have an account yet</strong>, you'll need to register first at <a href=\"https://community.khoros.com\" rel=\"nofollow\">https://community.khoros.com</a>, and then I can help grant you the appropriate customer role to access all the developer resources.</p>\n        </li>\n      </ol>\n      <p>Once you have a username, I can use our system to grant you the \"Customer\" role, which will give you access to:</p>\n      <ul>\n        <li>The <a href=\"https://khoros-classic.kayako.com/article/124983\" rel=\"nofollow\">Getting Started as a Developer</a> guide\n        </li>\n        <li>Developer Discussion Forum</li>\n        <li>Developer Blog with technical walkthroughs</li>\n        <li>All customer-facing resources and documentation</li>\n      </ul>\n      <p>Let me know your username when you have it, and I'll get you set up right away! \ud83d\ude80</p>\n    </div><br>\n    <p><strong>--- Customer (Zaid Haddad) ---</strong></p>\n    <div>\n      <ol>\n        <li>Zaid_haddad</li>\n      </ol>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Perfect! \u2705 I've successfully granted you the \"Customer\" role in the Khoros Community.</p>\n      <p><strong>Great news, Zaid!</strong> Your username <code>Zaid_haddad</code> has been found and updated with the appropriate permissions. You now have access to all customer-facing resources including:</p>\n      <p>\ud83c\udfaf <strong>What you can now access:</strong></p>\n      <ul>\n        <li>\n          <strong>Khoros Atlas Community</strong>: <a href=\"https://community.khoros.com\" rel=\"nofollow\">https://community.khoros.com</a>\n        </li>\n        <li>\n          <strong>Khoros Developer Portal</strong>: <a href=\"https://developer.khoros.com\" rel=\"nofollow\">https://developer.khoros.com</a>\n        </li>\n        <li>Developer Discussion Forum for troubleshooting and community support</li>\n        <li>Developer Blog with technical walkthroughs and \"How We Built It\" series</li>\n        <li>All developer guides and reference documents</li>\n      </ul>\n      <p>\ud83d\udcda <strong>I'd recommend starting with:</strong></p>\n      <ul>\n        <li>The <a href=\"https://khoros-classic.kayako.com/article/124983\" rel=\"nofollow\">Getting Started as a Developer</a> guide to get oriented\n        </li>\n        <li>Learning about API keys and prerequisites</li>\n        <li>Checking out the Developer Discussion Forum where you'll find an active community of developers ready to help</li>\n      </ul>\n      <p>You should be able to log in now with your existing credentials and access all these resources. If you run into any issues accessing the portals, just let me know!</p>\n      <p>Is there anything specific you're looking to accomplish with Atlas, or do you have any other questions about getting started with the developer resources? \ud83d\ude80</p>\n    </div><br>\n  </div>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

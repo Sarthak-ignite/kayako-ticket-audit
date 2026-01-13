@@ -1,0 +1,230 @@
+============================================================
+Phase 0.5-0.6: LLM Pattern Detection
+============================================================
+
+API Key Status:
+  ANTHROPIC_API_KEY: ✓ Found
+  OPENAI_API_KEY: ✓ Found
+  GEMINI_API_KEY: ✓ Found
+
+Loading metrics...
+  CSV metrics: 99 tickets
+  Ticket metrics: 99 tickets
+
+Available models: ['claude-sonnet', 'claude-haiku', 'gpt-4o', 'gpt-4o-mini', 'gemini-pro', 'gemini-flash']
+
+Running models: ['claude-haiku']
+Limit: all tickets
+
+Running claude-haiku on 99 tickets...
+  [1/99] Processing ticket 60270630... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvdjoUrpW7oDuGKeZ5v'}
+FAILED
+  [2/99] Processing ticket 60269018... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvdoNJ1MSQwgAZjbkYU'}
+FAILED
+  [3/99] Processing ticket 60269002... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvdrv7MiemWimwS8Jar'}
+FAILED
+  [4/99] Processing ticket 60268699... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvdvZtHdwercPVt9NR7'}
+FAILED
+  [5/99] Processing ticket 60267393... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvdzsqjb5JbrVUni5Xr'}
+FAILED
+  [6/99] Processing ticket 60267287... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsve4b5yjBwxzzmzKUgf'}
+FAILED
+  [7/99] Processing ticket 60264368... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsve8DrmJpK9piBu5qoW'}
+FAILED
+  [8/99] Processing ticket 60264386... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsveBrPhNrEg1nwLU969'}
+FAILED
+  [9/99] Processing ticket 60264202... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsveFzSCHk9VLg9FVjx7'}
+FAILED
+  [10/99] Processing ticket 60264009... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsveLZmYRVRaCQ4rb5YS'}
+FAILED
+  [11/99] Processing ticket 60261219... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsveQBZBty7H3rH2tFFG'}
+FAILED
+  [12/99] Processing ticket 60260239... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsveTmrGnCsxoiNS7u1i'}
+FAILED
+  [13/99] Processing ticket 60259640... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsveY3pwPCtmPz8pr4sA'}
+FAILED
+  [14/99] Processing ticket 60258962... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvefmuze7nZgQeppC4x'}
+FAILED
+  [15/99] Processing ticket 60258751... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvejuxYng15MgeVWsTQ'}
+FAILED
+  [16/99] Processing ticket 60258400... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvepKNdoxpxq64vU88a'}
+FAILED
+  [17/99] Processing ticket 60256854... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvesvfPQqobPrsUhuLB'}
+FAILED
+  [18/99] Processing ticket 60256250... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvewYhTu7LuHYwmW9dh'}
+FAILED
+  [19/99] Processing ticket 60256173... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvf1DTPnrbWkENEvHXj'}
+FAILED
+  [20/99] Processing ticket 60254579... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvf4sE8yEfWqaNUgeKR'}
+FAILED
+  [21/99] Processing ticket 60253689... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvf8msp18BxNMbdSBMj'}
+FAILED
+  [22/99] Processing ticket 60252864... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfCnjCNySPkLMRRzWm'}
+FAILED
+  [23/99] Processing ticket 60252140... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfGJZNDesvED39Rd4n'}
+FAILED
+  [24/99] Processing ticket 60251281... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfKt7cmRLxUsPQCvRK'}
+FAILED
+  [25/99] Processing ticket 60250996... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfPjJ4cqjmrBR3oqDa'}
+FAILED
+  [26/99] Processing ticket 60250793... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfTaiuZmWVTnsAWUNc'}
+FAILED
+  [27/99] Processing ticket 60250271... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfXtBZSubasBHGW1Bs'}
+FAILED
+  [28/99] Processing ticket 60250122... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfcB9bYUBoNYH4u6AP'}
+FAILED
+  [29/99] Processing ticket 60248266... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvffmCdNXrceABvmJ26'}
+FAILED
+  [30/99] Processing ticket 60248265... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfjMkXB2yxuwENQcdg'}
+FAILED
+  [31/99] Processing ticket 60247476... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfoFQQ9CErLv4Ly9Zp'}
+FAILED
+  [32/99] Processing ticket 60247413... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfs94bdgBF3SASiRDH'}
+FAILED
+  [33/99] Processing ticket 60246498... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfvjN3Zxr1FEWMrDj7'}
+FAILED
+  [34/99] Processing ticket 60243765... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvfzgVQv9omJ2Jj5DEa'}
+FAILED
+  [35/99] Processing ticket 60243726... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvg53fyu4ZrvUZZ2pLN'}
+FAILED
+  [36/99] Processing ticket 60243347... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvg9NsQwDS9TshRFgys'}
+FAILED
+  [37/99] Processing ticket 60243234... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgD1uCS3KKoBZmHog2'}
+FAILED
+  [38/99] Processing ticket 60242868... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgGcgxgH1BnsHXazfe'}
+FAILED
+  [39/99] Processing ticket 60242814... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgLTsG9v2Z4xr5rEJQ'}
+FAILED
+  [40/99] Processing ticket 60241518... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgQbQjE9QHPopvcAA1'}
+FAILED
+  [41/99] Processing ticket 60241392... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgULe2tjBMEoxuhMpB'}
+FAILED
+  [42/99] Processing ticket 60240989... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgY9LbQiPn19KCnJ8K'}
+FAILED
+  [43/99] Processing ticket 60239883... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgcBRpUThTisDNZiMz'}
+FAILED
+  [44/99] Processing ticket 60239472... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgfkEfk596NtbtfNg3'}
+FAILED
+  [45/99] Processing ticket 60238514... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgjNGtVSt4r4Ei6vTx'}
+FAILED
+  [46/99] Processing ticket 60238457... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgnyKPGAoGY8cmtKGf'}
+FAILED
+  [47/99] Processing ticket 60238295... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgrc6X4GJuTTx7AZ74'}
+FAILED
+  [48/99] Processing ticket 60237327... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgvvJVH4JMZHKhnboF'}
+FAILED
+  [49/99] Processing ticket 60237213... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvgzz88Sm2M1QBGxdcj'}
+FAILED
+  [50/99] Processing ticket 60236962... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvh4Zvgd57RPYYU1zNi'}
+FAILED
+  [51/99] Processing ticket 60235310... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvh8jTKb311gyxN97fH'}
+FAILED
+  [52/99] Processing ticket 60234884... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhCSwtc2iiCWwGgScg'}
+FAILED
+  [53/99] Processing ticket 60234621... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhGBvRFPM9VNGCr9Xf'}
+FAILED
+  [54/99] Processing ticket 60233855... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhL3bPeqw16jw9GFX8'}
+FAILED
+  [55/99] Processing ticket 60233341... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhPf8uST2zFzia9Ga7'}
+FAILED
+  [56/99] Processing ticket 60233405... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhTTLXweghfKxvdg5W'}
+FAILED
+  [57/99] Processing ticket 60233211... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhXB58mezShMSv1Bfc'}
+FAILED
+  [58/99] Processing ticket 60232940... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhancftfN5gWMF9bLh'}
+FAILED
+  [59/99] Processing ticket 60232130... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvheV7ERVoazyWdNS8K'}
+FAILED
+  [60/99] Processing ticket 60231851... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhiwFeDcBVFXcZwwop'}
+FAILED
+  [61/99] Processing ticket 60231535... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhnrQBiqcwnqFCyw1f'}
+FAILED
+  [62/99] Processing ticket 60231299... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhrTBzLz1Rox3Vjoxr'}
+FAILED
+  [63/99] Processing ticket 60230887... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhuy2gim44dVk9J1wk'}
+FAILED
+  [64/99] Processing ticket 60230438... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvhybK3FRgkgbJ4G66V'}
+FAILED
+  [65/99] Processing ticket 60230303... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvi3PG8nNKPTucaBD6U'}
+FAILED
+  [66/99] Processing ticket 60230003... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvi6yoyJT1Q3c2QPFXt'}
+FAILED
+  [67/99] Processing ticket 60229854... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviAacFdgr9TfTCG5dQ'}
+FAILED
+  [68/99] Processing ticket 60227783... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviEC9P1CrCkik2pxnW'}
+FAILED
+  [69/99] Processing ticket 60227322... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviHy75V86xYix5oGWS'}
+FAILED
+  [70/99] Processing ticket 60226631... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviMvEVnhnA4JCv6Wok'}
+FAILED
+  [71/99] Processing ticket 60225246... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviRrdAQC6Z6KprZ67b'}
+FAILED
+  [72/99] Processing ticket 60225231... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviVepefiqoi7qCwZ1W'}
+FAILED
+  [73/99] Processing ticket 60224885... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviamQ6XD4GDtwoWn7h'}
+FAILED
+  [74/99] Processing ticket 60224201... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviebqSJ1R5GKXwhaa7'}
+FAILED
+  [75/99] Processing ticket 60223404... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviibwPP4Zo4bwSwHpa'}
+FAILED
+  [76/99] Processing ticket 60223073... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvinEUQoFBqf5W7yzyQ'}
+FAILED
+  [77/99] Processing ticket 60222887... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvir9cPyN1JTbmdtapk'}
+FAILED
+  [78/99] Processing ticket 60222765... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviuv5d6kQX3gNQzXRs'}
+FAILED
+  [79/99] Processing ticket 60222138... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsviyoVTHvCsUe7uCkqu'}
+FAILED
+  [80/99] Processing ticket 60221483... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvj4fwCsyZJfxajGxJf'}
+FAILED
+  [81/99] Processing ticket 60220701... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvj8XrXFjStYzpALUod'}
+FAILED
+  [82/99] Processing ticket 60220499... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjCS1aE8gJTE37pWYK'}
+FAILED
+  [83/99] Processing ticket 60219661... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjGY4mdyTvuXJbWEYv'}
+FAILED
+  [84/99] Processing ticket 60219657... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjLmJqTF4gEr9q6S4a'}
+FAILED
+  [85/99] Processing ticket 60218865... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjQTZcY2hBVNNaPUck'}
+FAILED
+  [86/99] Processing ticket 60218313... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjUuT9vWJpraZotvEk'}
+FAILED
+  [87/99] Processing ticket 60218070... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjYsKkf4Nk9AwxLqrE'}
+FAILED
+  [88/99] Processing ticket 60214613... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjcR9KQbpmE9YjRiFT'}
+FAILED
+  [89/99] Processing ticket 60214082... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjg3RfGo6XfkLvMeRz'}
+FAILED
+  [90/99] Processing ticket 60212784... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjjbzfaYK8mnwpsQ3F'}
+FAILED
+  [91/99] Processing ticket 60212281... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjoZNAhJTSeAuak2th'}
+FAILED
+  [92/99] Processing ticket 60211680... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjsBQK6A6sqbfhK9wk'}
+FAILED
+  [93/99] Processing ticket 60211226... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjvrupHgZacdaxH4h4'}
+FAILED
+  [94/99] Processing ticket 60210541... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvjze7mey8QSti3bX3f'}
+FAILED
+  [95/99] Processing ticket 60210131... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvk4LNUL8QCfZVccGnz'}
+FAILED
+  [96/99] Processing ticket 60209553... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvk7qiB3RTb9q2HGi6w'}
+FAILED
+  [97/99] Processing ticket 60209192... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvkBSkY8LLSz7QDoLxf'}
+FAILED
+  [98/99] Processing ticket 60209095... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvkF2ojhpMdFabyLPwV'}
+FAILED
+  [99/99] Processing ticket 60208754... Error calling claude-haiku: Error code: 404 - {'type': 'error', 'error': {'type': 'not_found_error', 'message': 'model: claude-haiku-4-5-20251015'}, 'request_id': 'req_011CWsvkJdbshbi1JHGWy7dj'}
+FAILED
+
+============================================================
+DETECTION SUMMARY
+============================================================
+
+Pattern                  claude-haiku   
+----------------------------------------
+AI_QUALITY_FAILURES      0 (0%)         
+AI_WALL_LOOPING          0 (0%)         
+IGNORING_CONTEXT         0 (0%)         
+RESPONSE_DELAYS          0 (0%)         
+PREMATURE_CLOSURE        0 (0%)         
+P1_SEV1_MISHANDLING      0 (0%)         

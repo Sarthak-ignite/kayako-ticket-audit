@@ -1,0 +1,151 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_languard",
+        "requester": {
+          "id": 60343759,
+          "uuid": "966a8535-38a8-5ade-b36e-427680089afa",
+          "full_name": "asim.mehmood",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/966a8535-38a8-5ade-b36e-427680089afa?1758090947",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60059481,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 345361,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-09-16T06:10:26+00:00",
+          "last_active_at": "2025-09-17T06:35:47+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60343759",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@92fc5461731adb6354282234838e5bd94da60f44",
+          "password_updated_at": "2025-09-09T10:56:07+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-06-19T07:00:44+00:00",
+          "updated_at": "2025-09-17T06:35:47+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60343759"
+        },
+        "ticket_idt": 60193443
+      },
+      "interactions": [
+        [
+          "2025-09-16T06:12:00+00:00",
+          "Kayako - ticket id 60193443 // ATLAS commented publicly: Dear asim.mehmood,\n\nThank you for your continued updates and for providing detailed diagnostic information and feedback regarding your ongoing GFI LanGuard scheduled scanning issue. Based on your input, the attached reference image, and extensive troubleshooting already completed, I want to summarize the situation and provide actionable, targeted recommendations to help restore the scanning functionality across your endpoints without requiring a full redeployment of all agents.\n\nKey Findings from Diagnostics and your Description:\n\n \t* Repeated scans and schedule failures on your endpoints are directly associated with date corruption inside the <LastRecurringScan> tag in toolcfg_agent.xml files.\n \t* The previously suggested workaround has required replacing this file on problematic agents with a fresh version.\n \t* Full redeployment or mass agent reinstallations are not feasible in your enterprise banking context with over 300 endpoints, nor are they appropriate given the root cause identified.\n\nImmediate, Targeted Actions to Resolve Agent Scheduling Issues:\n\n \t* Repair Corrupted Agent Configuration Files: \nFor endpoints affected by the toolcfg_agent.xml date corruption, continue the targeted replacement of this file on those machines only. This addresses the specific recurrence issue without impacting all endpoints. \n\n\t* Re-Register Core Server Modules to Ensure Scheduling Functionality: \nIf multiple agents continue to fail scheduled scans, it\u2019s important to ensure the agentmanagercom.dll module is correctly registered on your central LanGuard server. Follow the steps below: \n\n \t* Stop all LanGuard services via services.msc.\n \t* Open an elevated Command Prompt (Run as Administrator).\n \t* Run the command:\nregsvr32 \"C:\\Program Files (x86)\\GFI\\LanGuard xx\\agentmanagercom.dll\"\nNote: Replace xx with your installed version number. \n \t* Restart LanGuard services and reopen the console.\n \t* Schedule a new scan and observe if the issue persists.\n\nMore detailed steps can be found at: Scheduled Scans and Patch Deployments Not Running [https://support.languard.gfi.com/article/122473].\n\n\t* Verify Permissions for Scanning and Communication: \nScheduled scans may fail if the required permissions are missing for service or scanning accounts. It\u2019s essential to ensure: \n\n \t* Scanning and communication accounts are included in the Replace a process level token and Logon as a batch job Windows local security policies on both server and endpoints.\n \t* Correct account assignments for scheduled scans as detailed in: Why is the Activity Monitor Not Showing Scheduled Scans and Remediation Results? [https://support.languard.gfi.com/article/122194]\n\n \t* Performance Optimization for Slow Agents: \nIf agents remain slow after correcting schedule files, refer to: Resolving a Slow Scanning Issue [https://support.languard.gfi.com/article/122502] for performance best practices. \n\nSummary of Best Practices:\n\n \t* Avoid full agent redeployment\u2014focus on targeted file replacement and server module validation as above.\n \t* If issues localize to certain machines, restrict corrective actions to those endpoints only.\n \t* If persistent failures continue, systematically re-validate configuration, permissions, and DLL registration as per outlined articles.\n\nAll instructions in this response are based on support analysis of your submitted files and knowledge base best practices for resolving enterprise-scale scheduling defects. There is no requirement for mass redeployment based on the current evidence; solutions can and should be implemented selectively to limit any disruption to your environment.\n\nIf the problem remains unresolved after these corrective actions on your affected endpoints and central server, monitoring diagnostic logs for new patterns may provide additional actionable details. Please feel free to reach out if specific error codes or behaviors continue on particular agents.\n\nFor reference and further reading:\n\n \t* Why is the Activity Monitor Not Showing Scheduled Scans and Remediation Results? [https://support.languard.gfi.com/article/122194]\n \t* Scheduled Scans and Patch Deployments Not Running [https://support.languard.gfi.com/article/122473]\n \t* Creating, Editing, and Configuring a Scheduled Scan [https://support.languard.gfi.com/article/123266]\n \t* Why are few agents not scanning according to the schedule? [https://support.languard.gfi.com/article/123151]\n\nPlease let us know how the outlined approaches work in your environment. We understand the urgency and remain committed to helping you achieve reliable scheduled scanning with the least disruption.\n\nSincerely,\nAtlas\nGFI - LanGuard Support Team.\n\n-------------------------\n\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-16T06:10:59+00:00",
+          "Kayako - ticket id 60193443 // asim.mehmood commented privately: Keep this ticket open."
+        ],
+        [
+          "2025-09-09T11:30:59+00:00",
+          "Kayako - ticket id 60193443 // ATLAS commented publicly: Dear asim.mehmood,\n\nThank you for your detailed feedback and for sharing the reference image and diagnostic logs from your environment. I understand the critical impact this ongoing scheduled scan failure is having in your banking operations, especially with over 300 endpoints, and your concerns about proposed redeployment steps. I want to provide detailed guidance based on your situation and the technical findings so far.\n\nKey observations from your attachment:\n\n \t* The repeated scans and scheduling issues are linked to a date corruption in the <LastRecurringScan> tag within the toolcfg_agent.xml file on affected agents.\n \t* The current recommended workaround has involved replacing this XML file on problematic endpoints with a new version provided by support.\n\nUnderstanding Your Situation: You have already completed all standard troubleshooting, including log reviews, environmental checks, and communications with your partner and our support. The issue persists even after advanced troubleshooting steps advised by the development team. The request to redeploy or reinstall agents across your entire infrastructure is not practical or acceptable for your environment, particularly given the scale and business sensitivity.\n\nPlausible Root Causes Based on Our Knowledge Base:\n\n \t* Agent-side configuration corruption: Damaged or inconsistent agent configuration files may cause persistent scan scheduling errors and recurrences. In your specific case, the date corruption in toolcfg_agent.xml validates this concern.\n \t* Agent-server communication or permission issues: The scheduling subsystem can also be affected by insufficient permissions or intermittent connectivity between agents and the LanGuard server. Ensure all security permissions for scanning accounts, as referenced here: Activity Monitor Not Showing Scheduled Scans and Remediation Results [https://support.languard.gfi.com/article/122194].\n \t* Corruption of critical modules or DLLs on the LanGuard server: If issues are affecting multiple agents after an update, re-registering core components on the LanGuard server itself can sometimes resolve persistent issues without redeploying agents. Detailed steps for this are found here: Scheduled Scans and Patch Deployments Not Running [https://support.languard.gfi.com/article/122473].\n\nRecommended Actions to Avoid Full Redeployment:\n\n \t* Validate agent configuration files: Since the toolcfg_agent.xml corruption is confirmed, continue restoring this file on affected endpoints as a targeted action. This avoids broad redeployment and addresses known XML date inconsistencies directly.\n \t* Re-register server DLLs and services: On your LanGuard server, perform these steps to ensure all key modules are properly registered: \n\u2014 Stop all LanGuard services (services.msc). \n\u2014 Open an elevated command prompt and run: regsvr32 \"C:\\Program Files (x86)\\GFI\\LanGuard xx\\agentmanagercom.dll\" (replace xx with your LanGuard version). \n\u2014 Start all LanGuard services and reopen the console. \n\u2014 Schedule and verify a scan to check if the problem persists. \n \t* Review permissions and connectivity: Ensure scanning accounts and the LNSSCommunicator module have Replace a process level token and Logon as a batch job rights as described in: this article [https://support.languard.gfi.com/article/122194]. \n \t* Avoid mass uninstallation/reinstallation: There is no evidence that a full redeployment is the only solution. The above targeted remediation steps should resolve configuration-level issues for affected endpoints only. \n \t* Troubleshoot agent performance issues: If agents remain slow even after fixing schedule/corruption problems, review best practices in: Resolving a Slow Scanning Issue [https://support.languard.gfi.com/article/122502] for recommendations on improving performance without redeployment. \n\nIf the steps above do not resolve the issue for specific agents, continue to replace only the corrupted configuration file (toolcfg_agent.xml) or perform an agent repair on those individual machines rather than all endpoints. Monitoring logs for recurring or new error codes will further help target the exact cause without impacting your entire environment.\n\nSummary:\n- Avoid full environment redeployment; focus on targeted remediation of agent configuration or XML corruption.\n- Re-register DLLs and confirm service credentials on the LanGuard server.\n- Ensure all required permissions and network exclusions are present.\n- Refer to the linked knowledge base articles above for stepwise resolution procedures.\n\nIf new or different symptoms appear that are not covered in these recommendations, feel free to update this case with those details and relevant logs for further guidance.\n\nSincerely,\nAtlas\nGFI - LanGuard Support Team.\n\n-------------------------\nThis response contains information generated with 3rd party components for which we disclaim all responsibility. For more details, you can check the terms and conditions at: chattbotterms.trilogy.com [https://chatbotterms.trilogy.com]\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-09T11:30:19+00:00",
+          "Kayako - ticket id 60193443 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\tReference.png_1551197\n\n-\u00a0The\u00a0repeated\u00a0scans\u00a0are\u00a0linked\u00a0to\u00a0a\u00a0date\u00a0corruption\u00a0in\u00a0the\u00a0\u00a0tag\u00a0within\u00a0the\u00a0toolcfg_agent.xml\u00a0file.\n-\u00a0The\u00a0recommended\u00a0workaround\u00a0involved\u00a0replacing\u00a0the\u00a0toolcfg_agent.xml\u00a0file\u00a0on\u00a0the\u00a0problematic\u00a0agent\u00a0with\u00a0a\u00a0new\u00a0version\u00a0provided\u00a0by\u00a0GFI\u00a0LanGuard\u00a0Support.\n-\u00a0The\u00a0customer\u00a0provided\u00a0an\u00a0agent\u00a0log\u00a0file\u00a0named\u00a0SupportLog_HO-IT-002-LT_8-15-2025-7-55-15-AM_YQBzAGkAbQAuAG0AZQBoAG0AbwBvAGQAQABsAG8AbABjAC4AYwBvAG0ALgBwAGsA.7z\u00a0for\u00a0analysis.\n-\u00a0GFI\u00a0LanGuard\u00a0Support\u00a0requested\u00a0both\u00a0agent\u00a0logs\u00a0and\u00a0the\u00a0toolcfg_agentrecurrence.xml\u00a0file\u00a0from\u00a0the\u00a0agent\u00a0not\u00a0following\u00a0the\u00a0schedule.\n-\u00a0The\u00a0support\u00a0team\u2019s\u00a0investigation\u00a0has\u00a0been\u00a0centered\u00a0on\u00a0diagnosing\u00a0scheduling\u00a0and\u00a0scan\u00a0recurrence\u00a0issues\u00a0at\u00a0the\u00a0agent\u00a0level.\n\n"
+        ],
+        [
+          "2025-09-09T11:29:21+00:00",
+          "Kayako - ticket id 60193443 // asim.mehmood commented privately: Please find attached the image shared by our partners for reference. We have already performed all the steps provided by the support team, but unfortunately, the issue remains unresolved.\n\nAfter the development team got involved, we were advised to redeploy the agents by uninstalling the current ones and upgrading them using the provided executable file.\n\nConsidering the scale of deployment and the criticality of the environment, we kindly request your assistance in reviewing this again and helping us find an alternative solution that avoids a full redeployment, if possible.\n\nHowever, we would like to highlight that we are not satisfied with the product\u2019s performance. Our license is close to expiry, yet we have been unable to fully utilize it due to this ongoing issue. We are still unable to properly clear even a single machine within our organization, as the product is slow and not functioning as expected.\n\nWe request your immediate attention and a session with your team and expect a workable resolution at the earliest to avoid further business impact."
+        ],
+        [
+          "2025-09-09T11:15:01+00:00",
+          "Kayako - ticket id 60193443 // ATLAS commented publicly: Dear asim.mehmood,\n\nThank you for your candid feedback. We understand how disruptive the scheduled scan failure is in a banking environment with 300+ endpoints, and we acknowledge that a mass redeployment is not a feasible path forward. Our priority is to identify the root cause and a corrective approach that avoids unnecessary redeployment.\n\nTo move quickly, please share the following so we can perform a focused analysis:\n- GFI LanGuard diagnostic logs from the LanGuard console\n- Diagnostic logs from the affected endpoints (at least two representative machines)\n\nYou can collect these via Help > Support > Troubleshooter, or follow this article: Collecting diagnostic information for GFI LanGuard [https://support.gfi.com/hc/en-us/articles/360015147740-Collecting-diagnostic-information-for-GFI-LanGuard].\n\nIf your partner has already uploaded these under ticket 60166415, please confirm the upload date/time so we can locate and use the same data internally, avoiding duplication.\n\nOnce we receive the diagnostics, we will prioritize analysis and update you with our findings. If you need more time to gather the information, the ticket will remain open for one additional week. If you encounter any issues collecting the logs, please let us know.\n\nSincerely,\nATLAS\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-09T11:14:38+00:00",
+          "Kayako - ticket id 60193443 // ATLAS commented privately: Requesting more information"
+        ],
+        [
+          "2025-09-09T11:14:01+00:00",
+          "Kayako - ticket id 60193443 // asim.mehmood commented privately: Our partners have already followed every single step and troubleshooting process as advised by your team. Despite this, your team is now suggesting a complete redeployment using the provided solution package and performing an uninstall/install of all agents again.\n\nLet me be very clear \u2014 this is NOT acceptable. This is not how enterprise-level solutions work, especially when dealing with a banking environment. With 300+ endpoints across multiple branches, a full redeployment is absolutely not feasible and shows a serious flaw in the product\u2019s reliability.\n\nThis is clearly a product issue, and we expect your team to take full ownership and provide a proper resolution without forcing us into repetitive deployments. Frankly, we are extremely dissatisfied with the product behavior and the proposed solution.\n\nWe need your senior technical team involved immediately and a clear, executable action plan to resolve this issue without any further unnecessary redeployment."
+        ],
+        [
+          "2025-09-09T11:06:55+00:00",
+          "Kayako - ticket id 60193443 // ATLAS commented publicly: Dear asim.mehmood,\n\nThank you for contacting us. We understand that scheduled scanning is not working and that this is causing significant business impact. We also note your reference to partner ticket 60166415 and the urgency of the situation.\n\nTo investigate and address this as quickly as possible, please provide the following:\n\n- GFI LanGuard diagnostic logs from both the affected machine(s) and the LanGuard console. You can collect these via the LanGuard Troubleshooter (Help > Support > Troubleshooter) or follow this article: Collecting diagnostic information for GFI LanGuard [https://support.gfi.com/hc/en-us/articles/360015147740-Collecting-diagnostic-information-for-GFI-LanGuard].\n\nOnce we receive the logs, we will proceed with our analysis.\n\nIf you need more time to gather the information, the ticket will remain open for one additional week. If you encounter any issues collecting the logs, please let us know.\n\nSincerely,\nATLAS\nGFI - LanGuard Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-09T11:06:39+00:00",
+          "Kayako - ticket id 60193443 // ATLAS commented privately: Requesting more information"
+        ],
+        [
+          "2025-09-09T11:05:46+00:00",
+          "Kayako - ticket id 60193443 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, asim.mehmood ! \ud83d\udc4b\n\nThis is the GFI LanGuard ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nasim.mehmood:\n\n undefined \nChat Support:\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of GFI LanGuard ATLAS Support Chat [https://support.languard.gfi.com/article/122307]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nasim.mehmood:\n\n Hello \nChat Support:\n\n I have this license key on record:\n- License: hV9Uf3p8L41Uw-gARR0L-pF17DYUxNbe67m-1011537\n- Expiry date: 2026-03-18.\n\nJust to make sure we're on the same page - is this the same system you're reaching out about today?\n\n\ud83d\udca1It's important to have to correct license file, as it could influence the resolution. \nasim.mehmood:\n\n Yes, hV9Uf3p8L41Uw-gARR0L-pF17DYUxNbe67m-1011537 is correct \nChat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI2NWMzNGQ0ZC0yNWU3LTQyZDEtYjk0Ny04MDg0MDI5OGRmNmQiLCJzZXNzaW9uX3VpZCI6IjY1YzM0ZDRkLTI1ZTctNDJkMS1iOTQ3LTgwODQwMjk4ZGY2ZCIsImVtYWlsIjoiYXNpbS5tZWhtb29kQGxvbGMuY29tLnBrIiwiY3VzdG9tX3BhcnNlciI6e30sImNhbGxiYWNrIjp7ImNhbGxiYWNrX3VybCI6bnVsbCwiY2FsbGJhY2tfZW1haWwiOiJjaXByaWFuLm5hc3Rhc2VAdHJpbG9neS5jb20ifSwicHJvZHVjdF90YWciOiJhdXJlYV9sYW5ndWFyZCIsInF1ZXJ5IjoiIiwiZXhwIjoxNzU3NDIyODk3fQ.KpysCkC9uCMAsKA7MauyY74MxcWYktVCKD9Ax-S1vtk]\n\nYou should see the following:\n- User: asim.mehmood@lolc.com.pk\n- Session ID: 65c34d4d-25e7-42d1-b947-80840298df6d \nChat Support:\n\n No problem, we can continue without any file uploads. \ud83d\ude0a\n\nHow can I help you today with your GFI LanGuard license or installation? Are you experiencing any issues, or do you have questions about setup, configuration, or something else? Please let me know a bit more about what you need help with. \nChat Support:\n\n Just to confirm... you are asking for information or an update on a previous ticket you raised with us, correct? \nChat Support:\n\n Thank you for clarifying\u2014let me make sure I understand your situation correctly.\n\nYou\u2019re experiencing a core functionality defect in GFI LanGuard that\u2019s causing business loss, and you want to open a new urgent (Priority: Urgent) ticket, even though your partner has already created ticket 60166415 and shared all relevant information. Is that right?\n\nCould you please describe the specific core functionality that\u2019s not working? For example, is it a scanning issue, patch deployment failure, or something else? This will help me escalate your request appropriately and ensure the right team addresses your urgent issue.\n\nOnce I have those details, I\u2019ll proceed with escalating this as a Priority Urgent case. \nChat Support:\n\n Just to confirm... you are saying that you are currently facing an outage, correct? \nasim.mehmood:\n\n \u2705 Yes, correct \nChat Support:\n\n I'm sorry to hear about that!\nLet's get you some help straight away! \ud83d\udea8 \nasim.mehmood:\n\n \ud83d\udce9 Raise a ticket \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nasim.mehmood:\n\n Ticket Priority Urgent \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nasim.mehmood:\n\n a.hussain@agilemitservices.ae\nu.frasat@agilemitservices.ae \nChat Support:\n\n \ud83d\udc4c Got it!\n\nThese email addresses will be added to the ticket CC: a.hussain@agilemitservices.ae, u.frasat@agilemitservices.ae \nChat Support:\n\n I'm creating a ticket for you with the information you've provided.\n\nTicket subject: GFI LanGuard issue\n\nAllow me a few moments while I work on this \u23f3 \nChat Support:\n\n \ud83d\ude80 I've successfully created a ticket for you.\n\nYour ticket number is: 60193443\n\nYou can see it and update it in this link [https://support.languard.gfi.com/conversation/view/60193443]\n\nFor a faster resolution, please be sure to include and attach to the ticket all relevant context such as screenshots, recordings, and logs.\n\nOur agents will work on it and you will receive a response in your email \ud83d\udce8: asim.mehmood@lolc.com.pk "
+        ],
+        [
+          "2025-09-09T11:05:40+00:00",
+          "Kayako - ticket id 60193443 // ATLAS commented privately: --- Ticket generated by GFI LanGuard AI chat on behalf of asim.mehmood ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * Hello<br>\n  * Hello, i am facing a core functionality defect in GFI Languard. Our Partner has already created a ticket 60166415 for the required and already have shared all the relevant information. We would like to open a ticket Priority Urgent as this is causing business loss.<br>\n  * Hello, i am facing a core functionality defect in GFI Languard. Our Partner has already created a ticket 60166415 for the required and already have shared all the relevant information. We would like to open a ticket Priority Urgent as this is causing business loss.<br>\n  * Scheduled Scanning is not working causing extreme business loss.<br>\n  * Scheduled Scanning is not working causing extreme business loss.<br>\n  * Ticket Priority Urgent<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 12,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

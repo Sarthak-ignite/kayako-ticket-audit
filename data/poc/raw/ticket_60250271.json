@@ -1,0 +1,203 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_marketing",
+        "requester": {
+          "id": 60440855,
+          "uuid": "f1a9a5d9-4486-57c3-bf74-84bafd94f1e1",
+          "full_name": "Erika Heredia",
+          "legacy_id": "003Uv00000Lf1QfIAJ",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/f1a9a5d9-4486-57c3-bf74-84bafd94f1e1?1767724802",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60063088,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 442384,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-12-08T16:44:42+00:00",
+          "last_active_at": "2026-01-06T18:40:02+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60440855",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@6ef39e41ea1473a063181afa6e65f2f50e17af92",
+          "password_updated_at": "2025-07-17T15:08:33+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-07-07T02:08:07+00:00",
+          "updated_at": "2026-01-06T18:40:02+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60440855"
+        },
+        "ticket_idt": 60250271
+      },
+      "interactions": [
+        [
+          "2025-12-03T16:42:39+00:00",
+          "Kayako - ticket id 60250271 // Phronesis commented publicly: Dear Erika,\n\nThank you for your message and for confirming that the issue is resolved.\n\nAs requested, we are closing this ticket. If you have any further questions or encounter any other issues, please open a new ticket and we will be happy to assist.\n\nSincerely, \nPhronesis \nKhoros Marketing Support Team \n\n\u200c"
+        ],
+        [
+          "2025-12-03T16:42:38+00:00",
+          "Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-12-03T16:42:28+00:00",
+          "Kayako - ticket id 60250271 // Erika Heredia commented privately: Hello,\n\nWe can close this ticket.\n\nThank you for all your help!"
+        ],
+        [
+          "2025-11-27T14:32:53+00:00",
+          "Kayako - ticket id 60250271 // Pavly Nashed commented publicly: Dear Briamel,\n\nThank you for your email.\n\nWe remain at your disposal should you encounter any further issues.\nBest regards,\nPavly Nashed\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-27T14:24:09+00:00",
+          "Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-11-27T14:23:59+00:00",
+          "Kayako - ticket id 60250271 // Briamel Gonzalez Zambrano commented publicly:  \nProprietary\n\n Ok Pavly. \u00a0Thank you for all the details! \n\n Regards.\u00a0 \n\n Briamel\u00a0 \n\n\u00a0\n\n\u00a0\n\n De: Pavly Nashed (Khoros Marketing) <support@khoros-marketing.kayako.com>\nFecha: jueves, 27 de noviembre de 2025, 15:18\nPara: Heredia, Erika [C] <erika.heredia@merck.com>\nCC: Aamir Merchant <aamir.merchant@ignitetech.com>, Brad Gerard <brad.gerard@ignitetech.ai>, Gonzalez Zambrano, Briamel [C] <briamel.gonzalez.zambrano@msd.com>\nAsunto: Re: URGENT: Khoros Marketing Login issue\n\nEXTERNAL EMAIL\u2013 Use caution with any links or file attachments. \n\n Dear\u00a0Briamel, \n\n Thank you for sharing the\u00a0screenshot. The message you see\u00a0in Spanish,\u00a0\u201cNo se puede acceder a este\u00a0sitio web\u00a0\u2013 ERR_CONNECTION_RESET\u201d, is\u00a0a generic\u00a0Chrome\u00a0network error. It\u00a0does\u00a0not\u00a0come\u00a0from\u00a0Khoros itself; it\u00a0means that something\u00a0on the\u00a0way\u00a0between\u00a0your\u00a0browser and\u00a0login.app.khoros.com\u00a0is\u00a0closing\u00a0or\u00a0interrupting\u00a0the connection\u00a0before it\u00a0can be\u00a0established\u2014typically\u00a0a\u00a0local firewall, security software, VPN/proxy configuration, or a browser\u00a0extension. \n\n The fact that you can access Khoros Marketing in an incognito window on the same computer confirms that your Khoros account and our platform are working correctly, and that the problem is specific to your standard browser profile. In most cases this is caused by cached data or an extension/security control that only runs in normal mode. In most cases, this can be resolved by refreshing the page or navigating to the URL in a new tab. Alternatively, please try the following: \n\n \t* Clear\u00a0cookies\u00a0and\u00a0cached data\u00a0only for\u00a0login.app.khoros.com\u00a0and\u00a0*.khoros.com, then retry.\n\t* Temporarily\u00a0disable browser\u00a0extensions (especially VPN, security, or corporate\u00a0plug\u2011ins) and test\u00a0again.\n\t* If\u00a0the\u00a0error\u00a0persists, please share this information\u00a0and\u00a0the screenshot with your\u00a0local IT team so they can\u00a0check\u00a0any\u00a0MSD Spain firewall or proxy\u00a0rules\u00a0that might\u00a0be resetting\u00a0the connection to\u00a0login.app.khoros.com.\n\nApart from this temporarily network issue, in case you encounter any issues again logging in to Marketing, please try to log in to Care before logging in to Marketing. We are looking into this further on our end, as we do not have direct access to reproduce the issue on our side, and will work on a permanent fix. \n\n Should logging in to Care first does not resolve the issue, please reach out to us, we have a temporary workaround in place that should solve this until the permanent issue is fixed. \n\nBest regards,\nPavly Nashed\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you. \n\n Sent with Kayako [https://kayako.com] \nimage \n\nThis e-mail message, together with any attachments, contains\u00a0information of\u00a0Merck & Co., Inc.,Rahway, NJ, USA, \u00a0and/or its affiliates,\u00a0known as MSD outside of the United States and Canada, that may be confidential, proprietary, copyrighted and/or legally privileged.\u00a0(Direct contact information for affiliates is available at\u00a0-\u00a0Contact us - MSD [https://www.msd.com/contact-us/].)\u00a0\u00a0It is intended solely for the use of the individual or entity named on this message. If you are\u00a0not the intended recipient, and have received this message in error,\u00a0please notify us immediately by reply e-mail and then delete it from\u00a0your system.\n\n \n"
+        ],
+        [
+          "2025-11-27T14:18:20+00:00",
+          "Kayako - ticket id 60250271 // Pavly Nashed commented publicly: Dear\u00a0Briamel,\n\nThank you for sharing the\u00a0screenshot. The message you see\u00a0in Spanish,\u00a0\u201cNo se puede acceder a este\u00a0sitio web\u00a0\u2013 ERR_CONNECTION_RESET\u201d, is\u00a0a generic\u00a0Chrome\u00a0network error. It\u00a0does\u00a0not\u00a0come\u00a0from\u00a0Khoros itself; it\u00a0means that something\u00a0on the\u00a0way\u00a0between\u00a0your\u00a0browser and\u00a0login.app.khoros.com\u00a0is\u00a0closing\u00a0or\u00a0interrupting\u00a0the connection\u00a0before it\u00a0can be\u00a0established\u2014typically\u00a0a\u00a0local firewall, security software, VPN/proxy configuration, or a browser\u00a0extension.\n\nThe fact that you can access Khoros Marketing in an incognito window on the same computer confirms that your Khoros account and our platform are working correctly, and that the problem is specific to your standard browser profile. In most cases this is caused by cached data or an extension/security control that only runs in normal mode. In most cases, this can be resolved by refreshing the page or navigating to the URL in a new tab. Alternatively, please try the following:\n\n\t* Clear\u00a0cookies\u00a0and\u00a0cached data\u00a0only for\u00a0login.app.khoros.com\u00a0and\u00a0*.khoros.com, then retry.\n\t* Temporarily\u00a0disable browser\u00a0extensions (especially VPN, security, or corporate\u00a0plug\u2011ins) and test\u00a0again.\n\t* If\u00a0the\u00a0error\u00a0persists, please share this information\u00a0and\u00a0the screenshot with your\u00a0local IT team so they can\u00a0check\u00a0any\u00a0MSD Spain firewall or proxy\u00a0rules\u00a0that might\u00a0be resetting\u00a0the connection to\u00a0login.app.khoros.com.\n\nApart from this temporarily network issue, in case you encounter any issues again logging in to Marketing, please try to log in to Care before logging in to Marketing. We are looking into this further on our end, as we do not have direct access to reproduce the issue on our side, and will work on a permanent fix.\n\nShould logging in to Care first does not resolve the issue, please reach out to us, we have a temporary workaround in place that should solve this until the permanent issue is fixed.\nBest regards,\nPavly Nashed\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-27T13:57:31+00:00",
+          "Kayako - ticket id 60250271 // Briamel Gonzalez Zambrano commented publicly:  \nProprietary\n\n Now I have tried to access into an incognito window and I can access. So, tell me if you know what the issue is.\u00a0 \n\n Regards \n\n Briamel\u00a0 \n\n\u00a0\n\n\u00a0\n\n De: Gonzalez Zambrano, Briamel [C] <briamel.gonzalez.zambrano@msd.com>\nFecha: jueves, 27 de noviembre de 2025, 14:49\nPara: support@khoros-marketing.kayako.com <support@khoros-marketing.kayako.com>, Heredia, Erika [C] <erika.heredia@merck.com>\nCC: Aamir Merchant <aamir.merchant@ignitetech.com>, Brad Gerard <brad.gerard@ignitetech.ai>\nAsunto: Re: URGENT: Khoros Marketing Login issue\n\n Hi, Pavly! \n\n I did what you have suggested. When I tried to access again to Khoros Marketing, I got the message you can see below. It is in Spanish, but it says I cannot access to this website.\u00a0 \n\n I don\u2019t know what to do now. \u00a0I don\u2019t know if it is in connection with all the IT firewalls we have in MSD Spain or what happened.\u00a0 \n\n Regards.\u00a0 \n\n Briamel\u00a0 \n\n\u00a0\n\n\u00a0image\n\n De: Pavly Nashed (Khoros Marketing) <support@khoros-marketing.kayako.com>\nFecha: mi\u00e9rcoles, 26 de noviembre de 2025, 18:19\nPara: Heredia, Erika [C] <erika.heredia@merck.com>\nCC: Aamir Merchant <aamir.merchant@ignitetech.com>, Brad Gerard <brad.gerard@ignitetech.ai>, Gonzalez Zambrano, Briamel [C] <briamel.gonzalez.zambrano@msd.com>\nAsunto: Re: URGENT: Khoros Marketing Login issue\n\nEXTERNAL EMAIL\u2013 Use caution with any links or file attachments. \n\n Dear Briamel, \n\n Thank you for following the steps and your confirmation. I am happy to hear that you were able to access both now. \n\n Just in order to pinpoint the root cause and resolve it for good, can you please confirm if you do the following: \n\n \t* Log out from Markerting\n\t* Log out from Care\n\t* Log in back to Marketing\n\n you are still able to log in to Marketing? \n\n Thank you for your continued effort and cooperation. \n\nBest regards,\nPavly Nashed\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you. \n\n Sent with Kayako [https://kayako.com] \nimage \n\nThis e-mail message, together with any attachments, contains\u00a0information of\u00a0Merck & Co., Inc.,Rahway, NJ, USA, \u00a0and/or its affiliates,\u00a0known as MSD outside of the United States and Canada, that may be confidential, proprietary, copyrighted and/or legally privileged.\u00a0(Direct contact information for affiliates is available at\u00a0-\u00a0Contact us - MSD [https://www.msd.com/contact-us/].)\u00a0\u00a0It is intended solely for the use of the individual or entity named on this message. If you are\u00a0not the intended recipient, and have received this message in error,\u00a0please notify us immediately by reply e-mail and then delete it from\u00a0your system.\n\n \n"
+        ],
+        [
+          "2025-11-27T13:50:11+00:00",
+          "Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-11-27T13:50:01+00:00",
+          "Kayako - ticket id 60250271 // Briamel Gonzalez Zambrano commented publicly:  \nProprietary\n\n Hi, Pavly! \n\n I did what you have suggested. When I tried to access again to Khoros Marketing, I got the message you can see below. It is in Spanish, but it says I cannot access to this website.\u00a0 \n\n I don\u2019t know what to do now. \u00a0I don\u2019t know if it is in connection with all the IT firewalls we have in MSD Spain or what happened.\u00a0 \n\n Regards.\u00a0 \n\n Briamel\u00a0 \n\n\u00a0\n\n\u00a0image\n\n De: Pavly Nashed (Khoros Marketing) <support@khoros-marketing.kayako.com>\nFecha: mi\u00e9rcoles, 26 de noviembre de 2025, 18:19\nPara: Heredia, Erika [C] <erika.heredia@merck.com>\nCC: Aamir Merchant <aamir.merchant@ignitetech.com>, Brad Gerard <brad.gerard@ignitetech.ai>, Gonzalez Zambrano, Briamel [C] <briamel.gonzalez.zambrano@msd.com>\nAsunto: Re: URGENT: Khoros Marketing Login issue\n\nEXTERNAL EMAIL\u2013 Use caution with any links or file attachments. \n\n Dear Briamel, \n\n Thank you for following the steps and your confirmation. I am happy to hear that you were able to access both now. \n\n Just in order to pinpoint the root cause and resolve it for good, can you please confirm if you do the following: \n\n \t* Log out from Markerting\n\t* Log out from Care\n\t* Log in back to Marketing\n\n you are still able to log in to Marketing? \n\n Thank you for your continued effort and cooperation. \n\nBest regards,\nPavly Nashed\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you. \n\n Sent with Kayako [https://kayako.com] \nimage \n\nThis e-mail message, together with any attachments, contains\u00a0information of\u00a0Merck & Co., Inc.,Rahway, NJ, USA, \u00a0and/or its affiliates,\u00a0known as MSD outside of the United States and Canada, that may be confidential, proprietary, copyrighted and/or legally privileged.\u00a0(Direct contact information for affiliates is available at\u00a0-\u00a0Contact us - MSD [https://www.msd.com/contact-us/].)\u00a0\u00a0It is intended solely for the use of the individual or entity named on this message. If you are\u00a0not the intended recipient, and have received this message in error,\u00a0please notify us immediately by reply e-mail and then delete it from\u00a0your system.\n\n \n"
+        ],
+        [
+          "2025-11-26T17:19:35+00:00",
+          "Kayako - ticket id 60250271 // Pavly Nashed commented publicly: Dear Briamel,\n\nThank you for following the steps and your confirmation. I am happy to hear that you were able to access both now.\n\nJust in order to pinpoint the root cause and resolve it for good, can you please confirm if you do the following:\n\n\t* Log out from Markerting\n\t* Log out from Care\n\t* Log in back to Marketing\n\nyou are still able to log in to Marketing?\n\nThank you for your continued effort and cooperation.\nBest regards,\nPavly Nashed\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-26T17:13:31+00:00",
+          "Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-11-26T17:13:22+00:00",
+          "Kayako - ticket id 60250271 // Briamel Gonzalez Zambrano commented publicly:  \nProprietary\n\n Hi, Pavly: \n\n I have done the process you suggested. I finally can access (Both, Care and Marketing). \n\n Thank you! \n\n @Heredia, Erika [C], I believe I have reauthenticated the Youtube Account finally. Please, check and let me know if it is done.\u00a0 \n\n Thank you all! \n\n Regards! \n\n Briamel\u00a0 \n\n\u00a0\n\n\u00a0\n\n De: Pavly Nashed (Khoros Marketing) <support@khoros-marketing.kayako.com>\nFecha: mi\u00e9rcoles, 26 de noviembre de 2025, 17:59\nPara: Heredia, Erika [C] <erika.heredia@merck.com>\nCC: Aamir Merchant <aamir.merchant@ignitetech.com>, Brad Gerard <brad.gerard@ignitetech.ai>, Gonzalez Zambrano, Briamel [C] <briamel.gonzalez.zambrano@msd.com>\nAsunto: Re: URGENT: Khoros Marketing Login issue\n\nEXTERNAL EMAIL\u2013 Use caution with any links or file attachments. \n\n Dear Briamel, \n\n Thank you for your update and the provided details. We sincerely apologize for the experience you had when attempting to raise a ticket. \n\n In the meantime, the best way to do this would be to access the support portal (https://khoros-care.kayako.com/\u00a0or https://khoros-marketing.kayako.com/ [https://khoros-marketing.kayako.com/%20]) outside of your corporate network/browser to be able to see the Chat option. \n\n That being said, based on your detailed explanation, I have a theory on what might have caused this, so let's test it: \n\n \t* I have made a tiny change on our side now for your account. I believe if you try to log in to Marketing now, it should work.\n\t* If logging to Marketing works now, please log out. Then, log in to Care, and log out.\n\t* Attempt to log in to Marketing again, it should fail again.\n\n Please let me know once you complete the above. I will do a temporary fix again to allow you to log in to Marketing again, and we will work on a permanent fix for this. The results of the above test will confirm the theory. \n\n I remain at your disposal. \n\nBest regards,\nPavly Nashed\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you. \n\n Sent with Kayako [https://kayako.com] \nimage \n\nThis e-mail message, together with any attachments, contains\u00a0information of\u00a0Merck & Co., Inc.,Rahway, NJ, USA, \u00a0and/or its affiliates,\u00a0known as MSD outside of the United States and Canada, that may be confidential, proprietary, copyrighted and/or legally privileged.\u00a0(Direct contact information for affiliates is available at\u00a0-\u00a0Contact us - MSD [https://www.msd.com/contact-us/].)\u00a0\u00a0It is intended solely for the use of the individual or entity named on this message. If you are\u00a0not the intended recipient, and have received this message in error,\u00a0please notify us immediately by reply e-mail and then delete it from\u00a0your system.\n\n \n"
+        ],
+        [
+          "2025-11-26T16:59:25+00:00",
+          "Kayako - ticket id 60250271 // Pavly Nashed commented publicly: Dear Briamel,\n\nThank you for your update and the provided details. We sincerely apologize for the experience you had when attempting to raise a ticket.\n\nIn the meantime, the best way to do this would be to access the support portal (https://khoros-care.kayako.com/ or https://khoros-marketing.kayako.com/) outside of your corporate network/browser to be able to see the Chat option.\n\nThat being said, based on your detailed explanation, I have a theory on what might have caused this, so let's test it:\n\n\t* I have made a tiny change on our side now for your account. I believe if you try to log in to Marketing now, it should work.\n\t* If logging to Marketing works now, please log out. Then, log in to Care, and log out.\n\t* Attempt to log in to Marketing again, it should fail again.\n\nPlease let me know once you complete the above. I will do a temporary fix again to allow you to log in to Marketing again, and we will work on a permanent fix for this. The results of the above test will confirm the theory.\n\nI remain at your disposal.\nBest regards,\nPavly Nashed\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-26T16:51:59+00:00",
+          "Kayako - ticket id 60250271 // Pavly Nashed commented privately:  Okay, the same ongoing MSD thing. \n I suspect something.. and it would be very silly. \n So I keep traces of analysis on the different tickets opened, I will compile them. But my current suspicion is with the Brand Key misdirecting to Care IF the customer's last access was to Care because the Unified Access still has traces of this and both are linked to the same Brand Key. \n Based on this, when I impersonate a customer, the last accessed is Marketing and the issue is resolved for them until they log in back to Care. \n\n Let's test this suspicion.\u00a0 "
+        ],
+        [
+          "2025-11-26T16:44:03+00:00",
+          "Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-11-26T16:43:54+00:00",
+          "Kayako - ticket id 60250271 // Briamel Gonzalez Zambrano commented publicly:  \nProprietary\n\n Hi, Erika and Khoros team: \n\nThis is the case: \n\nYou solved\u00a0my login problem last week. \nThen, Erika asked me that I reauthenticate the Youtube account.\u00a0 \nI tried to switch from Khoros Marketing to Khoros Care. Erika explained to me that it is not possible anymore, so we need to have different links to Care and Marketing. I got that. I \n\u00a0finally can access to Care, then when I tried to access to Khoros Marketing (other link, incognito user, etc) it failed, the tool gave me the message with \u201cthere has been an error with login\u201d. And it says that you can write to a support mail, apparently this mail it is not working anymore, and it sent me to \u201cKhoros help center\u201d. I finally access to this help center without receiving\u00a0any help, because the chat bot is not available. So, this is the summery of the case.\u00a0 \nI have tried to access again two minutes ago. You can see the message below.\u00a0 \nI appreciate anything you can do to help me resolve this.\u00a0 \nThank you! \nBriamel \n\nimage \n\n\u00a0\n\n De: Ciprian Nastase (Khoros Marketing) <support@khoros-marketing.kayako.com>\nFecha: mi\u00e9rcoles, 26 de noviembre de 2025, 16:57\nPara: Heredia, Erika [C] <erika.heredia@merck.com>\nCC: Aamir Merchant <aamir.merchant@ignitetech.com>, Brad Gerard <brad.gerard@ignitetech.ai>, Gonzalez Zambrano, Briamel [C] <briamel.gonzalez.zambrano@msd.com>\nAsunto: Re: URGENT: Khoros Marketing Login issue\n\nEXTERNAL EMAIL\u2013 Use caution with any links or file attachments. \n\nDear Erika,\n\n You are most welcome! \n\n We look forward to hearing back from Briamel with the requested information so we can further investigate.\n\n Best regards, \n Ciprian Nastase \n Khoros Marketing Support Team \n\n This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you. \n\n Sent with Kayako [https://kayako.com] \nimage \n\nThis e-mail message, together with any attachments, contains\u00a0information of\u00a0Merck & Co., Inc.,Rahway, NJ, USA, \u00a0and/or its affiliates,\u00a0known as MSD outside of the United States and Canada, that may be confidential, proprietary, copyrighted and/or legally privileged.\u00a0(Direct contact information for affiliates is available at\u00a0-\u00a0Contact us - MSD [https://www.msd.com/contact-us/].)\u00a0\u00a0It is intended solely for the use of the individual or entity named on this message. If you are\u00a0not the intended recipient, and have received this message in error,\u00a0please notify us immediately by reply e-mail and then delete it from\u00a0your system.\n\n \n"
+        ],
+        [
+          "2025-11-26T15:57:23+00:00",
+          "Kayako - ticket id 60250271 // Ciprian Nastase commented publicly: Dear Erika,\n\nYou are most welcome!\n\nWe look forward to hearing back from Briamel with the requested information so we can further investigate.\n\nBest regards,\nCiprian Nastase\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-26T14:28:45+00:00",
+          "Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags"
+        ],
+        [
+          "2025-11-26T14:28:37+00:00",
+          "Kayako - ticket id 60250271 // Erika Heredia commented publicly:  \nProprietary\n\nHi Pavly, \n\n\u00a0\n\nThank you so much for your help. \n\n\u00a0\n\n@Gonzalez Zambrano, Briamel [C]can you please confirm if there were some modifications done to your environment? It would be great if you could record how you are logging in and sending it to support so they can see what the problem is. \n\n\u00a0\n\nThanks & Best Regards, \n\nErika Heredia\n\n\u00a0\n\nSocial Media Operations\n\nEnterprise Social Media Group\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-25T17:57:34+00:00",
+          "Kayako - ticket id 60250271 // Pavly Nashed commented publicly: Dear Erika,\n\nThank you for reaching out and reporting this.\n\nI can confirm that the issue was previously resolved under case #60237228, and there have been no changes on the Khoros side, nor on Merck/MSD\u2019s access configuration, since that resolution.\n\nCould you please check whether any changes were made on Briamel\u2019s side? For example, switching networks, using a different browser, or adjusting any local system settings.\n\nBased on the history of the previous tickets, Briamel also gained access to Care, but this should not impact their login unless they are attempting to use SSO or using the wrong login URL. The correct URL remains:\nhttps://login.app.khoros.com/user/login?forceLogin=true\n\nTo be clear: we did not apply any fix on our end during the last incident. The issue was resolved solely due to adjustments made by Briamel on their side, likely including network-related changes.\n\nAt this point, we need more information about any recent modifications on their environment so we can proceed with deeper investigation. Reviewing the current behavior, it appears identical to what we saw before the previous fix\u2014meaning Briamel may need to reapply the same changes that resolved the issue previously.\n\nPlease provide details on any updates or changes made on their side since the last resolution.\n\nBest regards,\nPavly Nashed\nKhoros Marketing Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-11-25T15:11:52+00:00",
+          "Kayako - ticket id 60250271 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Internal note (for Cu Chulainn): Brand determined as Khoros Marketing. Evidence: Subject explicitly says 'Khoros Marketing Login issue' and the body references 'Marketing instance' and needing to 'reauthenticate the YouTube account in the Khoros Marketing backend'\u2014all Marketing-specific. No indicators of Care, Aurora, Classic, or Flow. Actions taken: 1) Changed brand to Khoros Marketing (initial attempt with product_name failed; succeeded using brand_name)\n2. 2) Added tag 'atlas-ticket-backlog'\n===== End of Summary =====\n\nNo PR was sent"
+        ],
+        [
+          "2025-11-25T15:11:34+00:00",
+          "Kayako - ticket id 60250271 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-11-25T15:09:39+00:00",
+          "Kayako - ticket id 60250271 // Cu Chulainn AI Manager commented privately: <CC Log>\n\nPackage URL: https://cs.cu-chulainn.csaiautomations.com/marketplace/packages/edit/PACKAGE-b076d16e-40d5-4397-87c7-25b52aca9e5b\nPackage Name: KhorosGenericRouter\n\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https://us-east-1.console.aws.amazon.com/s3/object/cu-chulainn-files?region=us-east-1&bucketType=general&prefix=agent-conversation-logs/environment%3Dcs/partition_id%3Dkayako_central-supportdesk_60250271/kayako_central-supportdesk_60250271_20251125_150939_8470.txt]\n\n</CC Log>\n"
+        ],
+        [
+          "2025-11-25T15:09:18+00:00",
+          "Kayako - ticket id 60250271 // Erika Heredia commented publicly:  \nProprietary\n\nHello, \n\n\u00a0\n\nOur CM cc\u2019d in this email cannot login into Marketing instance. She has already created tickets before and either they did not get created/no response/ or AI chatbot response that was not helpful: Conversation ID: 60248119, Conversation ID:60248118, Conversation ID:60237525. This other ticket was created and helped solve the issue but not she cannot login again Conversation ID:60237228\n\n\u00a0\n\nimage\n\n\u00a0\n\nPlease help with the next steps so she can login as she needs to reauthenticate the YouTube account that is disconnected in the Khoros Marketing backend.\n\n\u00a0\n\n\u00a0\n\nThanks & Best Regards, \n\nErika Heredia\n\n\u00a0\n\nSocial Media Operations\n\nEnterprise Social Media Group\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\nThis e-mail message, together with any attachments, contains\u00a0information of\u00a0Merck & Co., Inc.,Rahway, NJ, USA, \u00a0and/or its affiliates,\u00a0known as MSD outside of the United States and Canada, that may be confidential, proprietary, copyrighted and/or legally privileged.\u00a0(Direct contact information for affiliates is available at\u00a0-\u00a0Contact us - MSD [https://www.msd.com/contact-us/].)\u00a0\u00a0It is intended solely for the use of the individual or entity named on this message. If you are\u00a0not the intended recipient, and have received this message in error,\u00a0please notify us immediately by reply e-mail and then delete it from\u00a0your system.\n\n "
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 25,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

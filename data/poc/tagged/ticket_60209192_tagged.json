@@ -1,0 +1,42 @@
+[
+  {
+    "index": 0,
+    "actor_name": "Alexandr Oliynyk",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-09-30 06:53:48",
+    "timestamp_str": "2025-09-30T06:53:48+00:00",
+    "text_preview": "Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: Dear Anthony,\n\nThank you for your patience.\n\nCould you please let us know what error you are getting while creating a location?\u00a0\nKin",
+    "text_length": 754
+  },
+  {
+    "index": 1,
+    "actor_name": "Anthony Marlow",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-09-29 14:02:55",
+    "timestamp_str": "2025-09-29T14:02:55+00:00",
+    "text_preview": "Kayako - ticket id 60209192 // Anthony Marlow commented privately: I am having an issue creating new locations",
+    "text_length": 110
+  },
+  {
+    "index": 2,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "Atlas",
+    "timestamp": "2025-09-29 14:02:50",
+    "timestamp_str": "2025-09-29T14:02:50+00:00",
+    "text_preview": "Kayako - ticket id 60209192 // ATLAS commented privately: Component could not be determined",
+    "text_length": 91
+  },
+  {
+    "index": 3,
+    "actor_name": "Anthony Marlow",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-09-29 14:02:21",
+    "timestamp_str": "2025-09-29T14:02:21+00:00",
+    "text_preview": "Kayako - ticket id 60209192 // Anthony Marlow commented privately: Good Morning",
+    "text_length": 79
+  }
+]

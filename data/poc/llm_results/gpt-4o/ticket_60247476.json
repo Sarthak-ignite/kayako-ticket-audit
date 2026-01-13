@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI responses that appear as filler or provide incorrect information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The AI responses shown do not indicate repetitive requests or an inability to escalate to a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Multiple employees ask the customer to confirm resolution multiple times, indicating a possible lack of context utilization.",
+    "evidence": [
+      "[2025-11-22T00:11:53+00:00] Harry Tasker asks: 'Please let us know if the issue is resolved on your end.'",
+      "[2025-11-26T14:31:55+00:00] Ciprian Nastase asks: 'Can you please let us know if the issue is resolved on your end?'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap of 107.2 hours noted between responses.",
+    "evidence": [
+      "Max gap between responses (hours): 107.2"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed without proper confirmation from the customer that the issue was resolved.",
+    "evidence": [
+      "[2025-11-26T14:33:53+00:00] Don Kempt: 'We have not received any further complaints. Please go ahead and close this this case.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket context does not explicitly show mishandling through generic troubleshooting steps for a high-priority issue.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI responses that appear as filler or provide incorrect information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses shown do not indicate repetitive requests or an inability to escalate to a human agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple employees ask the customer to confirm resolution multiple times, indicating a possible lack of context utilization.\",\n    \"evidence\": [\"[2025-11-22T00:11:53+00:00] Harry Tasker asks: 'Please let us know if the issue is resolved on your end.'\", \"[2025-11-26T14:31:55+00:00] Ciprian Nastase asks: 'Can you please let us know if the issue is resolved on your end?'\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant gap of 107.2 hours noted between responses.\",\n    \"evidence\": [\"Max gap between responses (hours): 107.2\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was closed without proper confirmation from the customer that the issue was resolved.\",\n    \"evidence\": [\"[2025-11-26T14:33:53+00:00] Don Kempt: 'We have not received any further complaints. Please go ahead and close this this case.'\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket context does not explicitly show mishandling through generic troubleshooting steps for a high-priority issue.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60247476
+}

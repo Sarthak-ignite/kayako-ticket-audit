@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI response addresses the issue reported by the customer without providing generic or incorrect information.",
+    "evidence": [
+      "[2025-10-29T08:27:55+00:00] (AI) ATLAS: Thank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in a loop or having repeated information requests.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI appropriately acknowledges the issue reported by the customer, without ignoring the information provided.",
+    "evidence": [
+      "[2025-10-29T08:27:55+00:00] (AI) ATLAS: Thank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no significant delays in the response time given the timestamp of the customer query and the AI response.",
+    "evidence": [
+      "Customer at [2025-10-29T08:27:13+00:00]",
+      "AI at [2025-10-29T08:27:55+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There are no indications that the ticket was closed prematurely while the customer was waiting for a response.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as high-priority or an outage, so immediate escalation protocols were not needed.",
+    "evidence": [
+      "Priority: normal"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI response addresses the issue reported by the customer without providing generic or incorrect information.\",\n    \"evidence\": [\"[2025-10-29T08:27:55+00:00] (AI) ATLAS: Thank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in a loop or having repeated information requests.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI appropriately acknowledges the issue reported by the customer, without ignoring the information provided.\",\n    \"evidence\": [\"[2025-10-29T08:27:55+00:00] (AI) ATLAS: Thank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no significant delays in the response time given the timestamp of the customer query and the AI response.\",\n    \"evidence\": [\"Customer at [2025-10-29T08:27:13+00:00]\", \"AI at [2025-10-29T08:27:55+00:00]\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no indications that the ticket was closed prematurely while the customer was waiting for a response.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as high-priority or an outage, so immediate escalation protocols were not needed.\",\n    \"evidence\": [\"Priority: normal\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60231299
+}

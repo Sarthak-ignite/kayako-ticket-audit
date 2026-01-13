@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible ATLAS interaction is a generic intake flow (asking for details/log uploads). There is no clear incorrect product guidance, broken templating, or unfulfilled AI promise shown in the transcript.",
+    "evidence": [
+      "ATLAS: \"Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\"",
+      "ATLAS: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer is not shown repeatedly interacting with AI, nor requesting a human and being blocked. The ticket quickly transitions to human agents.",
+    "evidence": [
+      "Kayako // ATLAS commented privately: \"Action: l1\" (single AI flow indicator; subsequent handling is by human agents)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support references the previous ticket and its diagnostics, and requests additional specific command outputs and sysdump. There is no clear instance of asking for the same logs already attached earlier in this same ticket, nor repeating steps after the customer explicitly said they already did them.",
+    "evidence": [
+      "Randall: \"From the diagnostic output you provided in ticket #60192334... I've identified some specific concerns\"",
+      "Randall: \"To properly resolve this recurring issue, I need you to run the following commands and provide the output\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple >3 calendar day gaps where the customer asked for action (shell key; Webex scheduling) and/or chased for updates before support responded. Support also explicitly apologizes for delay.",
+    "evidence": [
+      "Customer (2025-10-23): \"Please provide us with the shell license key to execute these commands.\"",
+      "Support provides key only on 2025-10-27: \"LK2-RESTRICTED_CMDS-45A0-86MQ-JP7C-F423-KWB8-6GT6-11UP-6B5Y-C0TG-1Q77-TCPP-K3N7-L\"",
+      "Customer escalation during wait (2025-10-26): \"Please any update here? Can you provide the below request ASAP.\"",
+      "Customer (2025-10-30): \"Please let us know if we can have a Webex to check further.\"",
+      "Customer chase (2025-11-02): \"Please can you get back to us ASAP on the requested Webex call?\"",
+      "Support responds (2025-11-03): \"I am sending a meeting scheduler link.\"",
+      "Support apology (2025-11-04): \"I sincerely apologize for the delayed response on this ticket.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence the ticket was actually closed while an open customer question/request was pending. The messages include a standard 'ticket will stay open for one week unless...' notice, but the conversation continues with a meeting and troubleshooting.",
+    "evidence": [
+      "Randall: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\"",
+      "Subsequent activity occurs after that notice (meeting and follow-up on 2025-11-04)."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer expresses urgency ('critical stage' / 'ASAP'), but the ticket is not explicitly marked P1/SEV1/Critical, and there is no explicit statement of production down/complete outage. Support ultimately schedules a live session and takes corrective actions, so there is insufficient clear evidence of P1/SEV1 mishandling.",
+    "evidence": [
+      "Customer-side urgency (internal stakeholder) (2025-10-26): \"We are at critical stage and must expediate all the tasks and activities along with closing this project within this month itself.\"",
+      "No explicit severity marker like \"P1\", \"SEV1\", \"Critical\", or \"Production down\" appears in the ticket text provided."
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60220701
+}

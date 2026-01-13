@@ -1,0 +1,69 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support responses include generic escalation templates with no actionable help during an outage, plus some sloppy/incorrect templating (wrong signature) and link-dumping (Google Drive installer) instead of controlled, validated recovery guidance.",
+    "evidence": [
+      "\u201cWe have received your escalation regarding the GFI AppManager issue... We understand the urgency... You can expect an update...\u201d",
+      "\u201cWe\u2019ve received your escalation regarding ticket 60209553 and we are investigating the issue... Once we have completed our analysis, we may request a meeting.\u201d",
+      "\u201cYou can download the installer here: Kerio Control v10 Installer [https://drive.google.com/drive/u/1/folders/...]\u201d",
+      "Aditi Garg message signed: \u201cBest regards, Harry Samuel Tasker\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly requests live/phone support and reports nobody is responding; support keeps circling back with more requests/steps rather than establishing real-time engagement, creating a 'wall' experience.",
+    "evidence": [
+      "\u201cYes please connect me to a live agent. Thank you.\u201d",
+      "\u201cI cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\u201d",
+      "\u201cPlease have a manager call me immediately.\u201d",
+      "\u201cWhat resolution are you working on Hermes? If no one has been in contact with me?\u201d",
+      "\u201cHow about someone contacts me like I have asked now 5 times...\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asks for confirmations and artifacts without acknowledging that the customer already downgraded, provided a support file/backup, and restored with a rescue image; repeated broad log requests ignore earlier context and urgency.",
+    "evidence": [
+      "Customer: \u201cWe attempted to downgrade to 9.5.0 patch 3 build 9017 but now it appears the NG520 is not booting.\u201d",
+      "Customer: \u201cHere is the backup before the downgrade to 9.5.0... Awaiting instructions.\u201d",
+      "Customer: \u201cHere is the support file from the unit before the 9.5.0 downgrade.\u201d",
+      "Support later: \u201cPlease confirm that the appliance has been upgraded to V10.\u201d",
+      "Customer: \u201cWe have restored with the rescue image, but AppManager still does not register the serial...\u201d",
+      "Support repeats same data request set: \u201cPlease provide us with the following details...\u201d (requested on 2025-09-30 and again on 2025-10-03)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Customer explicitly complains about non-responsiveness during a critical outage and support apologizes for delay; multiple hours pass during the reported downtime before meaningful guidance (v10 requirement) is shared.",
+    "evidence": [
+      "Customer (19:50): \u201cno one is responding to escalation requests. Customer is completely down.\u201d",
+      "Customer: \u201cIt is completely unacceptable in a network down emergency to be unable to reach anyone in your support team.\u201d",
+      "Customer: \u201cCall me immediately... It is 3AM...\u201d",
+      "Support: \u201cI apologize for the delay.\u201d",
+      "Customer: \u201cYou should have in the worst case come back to me within 4 hours... 6 hours I asked the question about downgrading.\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support repeatedly introduces auto-closure language ('will stay open for one week') despite unresolved issues and while the customer is requesting management contact; this is premature-closure signaling before resolution/confirmation.",
+    "evidence": [
+      "\u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed...\u201d",
+      "Customer: \u201cThis ticket needs to remain open until I speak with someone in your management team.\u201d",
+      "Customer: \u201cSerial number still reporting UNKNOWN... ALSO updates are reporting to fail>\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The case reaches complete outage and urgent escalation, but support response is largely templated and asynchronous (investigating/meeting later) rather than immediate incident handling and live engagement; the key v10 hardware requirement was communicated only after downtime and downgrade-induced failure.",
+    "evidence": [
+      "Escalation tag: \u201cThe severity is: complete_outage\u201d",
+      "Customer: \u201cCustomer is completely down.\u201d",
+      "Customer: \u201cPlease have a manager call me immediately.\u201d",
+      "Support (during outage): \u201cwe are investigating the issue... Once we have completed our analysis, we may request a meeting.\u201d",
+      "Customer: \u201cWe attempted to downgrade... now it appears the NG520 is not booting.\u201d",
+      "Support later: \u201cNew Kerio Control NG appliances (NG 520 and NG 521) ship with Kerio Control v10 preinstalled... There is no need to downgrade...\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60209553
+}

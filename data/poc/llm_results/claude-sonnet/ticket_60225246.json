@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI (ATLAS) only made one comment indicating it was skipping the ticket due to tags. There were no substantive AI responses that could be evaluated for quality issues like generic filler or wrong information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in an AI loop. The AI explicitly skipped the ticket, and the customer interactions appear to be internal documentation of a call.",
+    "evidence": [
+      "[2025-10-20T19:34:48+00:00] ATLAS commented privately: Skipping ticket due to tags"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no support agent responses that would demonstrate ignoring context. The ticket only contains customer comments and an AI skip message.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions occurred within the same minute (19:34:39 to 19:34:58), with a max gap of 0.0 hours as indicated in the metadata. There were no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked as closed and urgent priority, but there is no evidence of any human support agent providing assistance or resolution. The customer posted call metadata indicating a conversation would be uploaded, but the ticket was closed without any visible support response.",
+    "evidence": [
+      "[2025-10-20T19:34:39+00:00] Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly",
+      "Status: closed",
+      "Priority: urgent"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is an urgent priority ticket that was closed without any human agent interaction or troubleshooting. The AI skipped it and no escalation or proper handling occurred despite the urgent priority status.",
+    "evidence": [
+      "Priority: urgent",
+      "Status: closed",
+      "[2025-10-20T19:34:48+00:00] ATLAS commented privately: Skipping ticket due to tags",
+      "Time to first human (hours): nan"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI (ATLAS) only made one comment indicating it was skipping the ticket due to tags. There were no substantive AI responses that could be evaluated for quality issues like generic filler or wrong information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in an AI loop. The AI explicitly skipped the ticket, and the customer interactions appear to be internal documentation of a call.\",\n    \"evidence\": [\"[2025-10-20T19:34:48+00:00] ATLAS commented privately: Skipping ticket due to tags\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no support agent responses that would demonstrate ignoring context. The ticket only contains customer comments and an AI skip message.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All interactions occurred within the same minute (19:34:39 to 19:34:58), with a max gap of 0.0 hours as indicated in the metadata. There were no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked as closed and urgent priority, but there is no evidence of any human support agent providing assistance or resolution. The customer posted call metadata indicating a conversation would be uploaded, but the ticket was closed without any visible support response.\",\n    \"evidence\": [\"[2025-10-20T19:34:39+00:00] Xavier A Villarroel: The complete conversation with this customer will be uploaded to this ticket shortly\", \"Status: closed\", \"Priority: urgent\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This is an urgent priority ticket that was closed without any human agent interaction or troubleshooting. The AI skipped it and no escalation or proper handling occurred despite the urgent priority status.\",\n    \"evidence\": [\"Priority: urgent\", \"Status: closed\", \"[2025-10-20T19:34:48+00:00] ATLAS commented privately: Skipping ticket due to tags\", \"Time to first human (hours): nan\"]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60225246
+}

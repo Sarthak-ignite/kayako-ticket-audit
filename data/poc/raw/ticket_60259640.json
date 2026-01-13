@@ -1,0 +1,112 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_classic",
+        "requester": {
+          "id": 60526542,
+          "uuid": "bb0d2aee-7cfd-584d-bc01-b8daa983b75a",
+          "full_name": "Aamir Merchant",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 3,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/bb0d2aee-7cfd-584d-bc01-b8daa983b75a?1767763774",
+          "agent_case_access": "ALL",
+          "organization_case_access": null,
+          "organization": {
+            "id": 60000019,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 2,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 528077,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "UTC",
+          "time_zone_offset": 0,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "103.148.138.252",
+          "last_seen_at": "2026-01-07T05:29:34+00:00",
+          "last_active_at": "2026-01-07T05:29:34+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60526542",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@ca3dffb44d2438e709aa1e537f5307cf5a979c5f",
+          "password_updated_at": "2025-08-18T11:13:33+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T18:38:04+00:00",
+          "last_activity_at": "2026-01-07T05:29:34+00:00",
+          "created_at": "2025-07-28T10:40:47+00:00",
+          "updated_at": "2026-01-07T05:29:34+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60526542"
+        },
+        "ticket_idt": 60259640
+      },
+      "interactions": [
+        [
+          "2025-12-09T15:41:54+00:00",
+          "Kayako - ticket id 60259640 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>\n    <p><strong>--- Customer (Aamir Merchant) ---</strong></p>\n    <div>\n      <p><em>Button selection:</em> [\ud83d\udce9 Raise a Ticket]</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>What's the priority of the issue?</p>\n    </div><br>\n    <p><strong>--- Customer (Aamir Merchant) ---</strong></p>\n    <div>\n      <p><em>Button selection:</em> [\ud83d\udfe0 High]</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>I found instance URLs on file. Please select yours or provide a different one:</p>\n    </div><br>\n  </div>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

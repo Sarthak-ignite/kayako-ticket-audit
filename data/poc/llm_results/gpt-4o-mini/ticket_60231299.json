@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response is generic and does not provide a clear solution to the customer's issue regarding the expired certificate.",
+    "evidence": [
+      "Dear Stefan, Thank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne (2025-10-29T08:27:55+00:00)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interactions do not indicate that the customer was stuck in an AI loop; there was a clear response from the AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI did not fully address the customer's concern about the expiration or change of the certificate despite the customer clearly stating the issue.",
+    "evidence": [
+      "Hello, today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed? (2025-10-29T08:27:13+00:00)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There were no significant delays in responses as the max gap between interactions is recorded as 0.0 hours.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication that the ticket was closed prematurely; closure status is present but the context of interactions does not suggest the customer was waiting for further information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The priority of the ticket is normal, not high-priority or outage related, hence this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response is generic and does not provide a clear solution to the customer's issue regarding the expired certificate.\",\n    \"evidence\": [\"Dear Stefan, Thank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne (2025-10-29T08:27:55+00:00)\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions do not indicate that the customer was stuck in an AI loop; there was a clear response from the AI.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI did not fully address the customer's concern about the expiration or change of the certificate despite the customer clearly stating the issue.\",\n    \"evidence\": [\"Hello, today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed? (2025-10-29T08:27:13+00:00)\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There were no significant delays in responses as the max gap between interactions is recorded as 0.0 hours.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the ticket was closed prematurely; closure status is present but the context of interactions does not suggest the customer was waiting for further information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The priority of the ticket is normal, not high-priority or outage related, hence this pattern does not apply.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60231299
+}

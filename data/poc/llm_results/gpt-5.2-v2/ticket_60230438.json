@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses shown are generic onboarding/template prompts and do not address the customer\u2019s specific question about why a prior chat ticket was closed.",
+    "evidence": [
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d",
+      "\u201cIf I'm not able to resolve your issue, I can connect you with one of our support specialists\u2026\u201d",
+      "Customer: \u201cWhy is chat Ticket ID: #60230003 marked as closed w...[truncated]...\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The excerpt does not show repeated AI requests, customer frustration about AI, or an explicit request to reach a human; only the initial AI intake messages are visible.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There isn\u2019t enough visible back-and-forth to confirm that support ignored previously provided information or asked for the same details multiple times.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only a single timestamped interaction is shown, so there\u2019s no demonstrable multi-day gap between customer messages and responses in this excerpt.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The customer\u2019s core complaint indicates a prior related chat ticket was marked closed, which is a direct signal of potential premature/incorrect closure without resolution.",
+    "evidence": [
+      "Customer: \u201cWhy is chat Ticket ID: #60230003 marked as closed w...[truncated]...\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No indicators of a SEV1/P1/critical outage, business stoppage, or urgent production impact appear in the provided excerpt.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60230438
+}

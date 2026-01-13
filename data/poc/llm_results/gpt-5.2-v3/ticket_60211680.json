@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided clearly incorrect account/license information. The AI told the customer the company had 0 licenses and 0 active devices, but later internal support notes explicitly state the company has many devices (indicating the AI\u2019s data/assessment was wrong).",
+    "evidence": [
+      "ATLAS: \"It seems your company is already using all of the licensed seats. Active Devices: 0 Total Licenses: 0\"",
+      "Alexandr Oliynyk (internal): \"104983 has a lot of devices. they moved from FFM.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer did request an agent, and the case appears to have been handed to human support (L1 actions and subsequent human responses). There is no clear evidence of repeated AI prompts for the same info or the customer being trapped in an AI loop without human access.",
+    "evidence": [
+      "Customer ATLAS interaction: \"representative\" / \"\ud83d\udde8\ufe0f Contact an Agent\"",
+      "ATLAS internal note: \"Action: l1\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not repeatedly ask for already-provided information, nor is there an explicit customer statement like \"I already provided that\" directed at support. The main issue was delay and a mistaken assumption about the customer having access to a different COID, but this is not clearly a pattern of ignoring previously provided details within the ticket.",
+    "evidence": [
+      "Customer: \"102817 is not our company ID so I do not have the login for it.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay (over 3 days) between the customer\u2019s reply and the next support response, and the customer explicitly complained that the request had been open over a week (escalation).",
+    "evidence": [
+      "Customer (2025-10-03T09:34:36+00:00): \"102817 is not our company ID so I do not have the login for it. 7868153707 is our number which needs to be added to 104983.\"",
+      "Next support public response (2025-10-09T14:01:39+00:00): \"We have received your escalation and we are currently working on it.\"",
+      "Escalation note (2025-10-09T13:12:00+00:00): \"The customer message is:Request has been opened over a week\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was not closed while an open customer request remained. The customer explicitly confirmed resolution/closure after support processed the request.",
+    "evidence": [
+      "Support (2025-10-09T15:02:06+00:00): \"We have processed your request\"",
+      "Customer (2025-10-10T15:48:46+00:00): \"This ticket can be closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although an escalation includes a severity label, the ticket does not contain an explicit P1/SEV1/Critical designation from support nor clear outage/production-down language from the customer. The handling shown is not clearly a mishandling of a confirmed P1/SEV1 incident.",
+    "evidence": [
+      "Escalation meta (internal): \"The severity is: core_functionality_defect\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60211680
+}

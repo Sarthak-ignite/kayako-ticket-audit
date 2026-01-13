@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support told the customer the vulnerability was \u201cfully resolved,\u201d but the linked engineering thread indicates the change still required development review/build/test/deploy before it would actually be resolved in released software. This makes the customer-facing update misleading/incorrect based on later context in the ticket.",
+    "evidence": [
+      "Cu Chulainn AI Manager commented publicly: \"We are pleased to inform you that our Engineering team has successfully upgraded the Apache version in the GFI LanGuard agent to 2.4.65, effectively resolving the reported security vulnerability. This matter has been fully resolved.\"",
+      "GHI Engineering - 15431 // trilogy-taro[bot] commented: \"Engineering has created pull request #3499 with updated Apache 2.4.65 binaries and OpenSSL 3.5.1, but the Development team needs to review, build, test, and deploy the changes before the security vulnerability is fully resolved.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no sign the customer was stuck in an AI loop or asked for a human while receiving repeated AI-only responses. Only two public support updates were posted and the flow progressed to engineering escalation.",
+    "evidence": [
+      "Cu Chulainn AI Manager commented publicly: \"We have contacted the Engineering team and will provide you with an update as soon as we receive more information from them.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to repeat information already provided, and there is no customer complaint about having to re-share details. The responses acknowledged the issue and escalated it.",
+    "evidence": [
+      "Customer commented publicly: \"GFI Langard is using Apache... we are running Apache version 2.4.62. The latest version of Apache is 2.4.65.\"",
+      "Cu Chulainn AI Manager commented publicly: \"We have contacted the Engineering team...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Support replied within minutes of the initial customer message, and there are no customer statements about waiting or apologies for delays. The later update occurred a few days later but does not meet the defined delay signals on its own.",
+    "evidence": [
+      "Customer commented publicly: \"[2025-11-10T18:00:48+00:00] ...\"",
+      "Cu Chulainn AI Manager commented publicly: \"[2025-11-10T18:02:54+00:00] ... We have contacted the Engineering team...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No message indicates the ticket was closed or auto-closed. Although support said it was resolved, there is no explicit closure notice in the customer-facing thread.",
+    "evidence": [
+      "Cu Chulainn AI Manager commented publicly: \"This matter has been fully resolved. Should you have any additional questions, please feel free to reach out.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer flagged a high security concern, and support immediately escalated to engineering by opening an engineering issue rather than keeping the customer in generic troubleshooting. This does not match mishandling criteria.",
+    "evidence": [
+      "Customer commented publicly: \"This is a high security concern and we need to fix this as soon as possible.\"",
+      "CE Maintenance Bot commented privately: \"Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15431\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60239883
+}

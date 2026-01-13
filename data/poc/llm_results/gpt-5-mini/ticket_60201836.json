@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Multiple AI/system-generated messages are present that are low-quality or contain odd/partial content (generic wording, truncated summaries, and an unreasonable automated action). This indicates AI responses that are filler, broken, or not helpful.",
+    "evidence": [
+      "ATLAS AI message is generic: 'Thank you for reaching out...' with no substantive troubleshooting detail visible (2025-09-19T09:11:08+00:00).",
+      "trilogy-taro[bot] messages include truncated/partial content (e.g., 'GFI AppManager incorrectly flags active units as offline when health metrics from the GFI Agent experience ingestion dela'), suggesting broken/truncated output (2025-10-23T12:09:29Z).",
+      "Centralsupport-ai-acc/bot placed the ticket 'on hold for 9999 hour(s)', which is an unreasonable automated action and indicates poor AI handling (2025-10-23T07:29:02+00:00 and 2025-10-23T07:23:02+00:00)."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer communicates with human agents throughout the thread and engineering engagement is visible. There's no clear evidence the customer was trapped in repeated AI-only exchanges asking the same thing.",
+    "evidence": [
+      "Multiple human employees responded (Garima Agrawal, Arafat Bakhsh, Andriy Rybalchenko, etc.).",
+      "Engineering issue was opened and commented on by humans (anujkumar-df, CE Maintenance Bot opened issue but humans involved)."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear instance where support explicitly asked the customer to re-submit information already provided or otherwise ignored provided context; the thread shows acknowledgement of known issue and engineering involvement.",
+    "evidence": [
+      "Customer provided video/details earlier (2025-09-19) and support referenced the known-architecture issue and raised to engineering rather than repeatedly requesting the same logs.",
+      "Messages show responses addressing the underlying cause (engineering re-architecture) rather than repeated asks for same data."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Customer explicitly calls out a 23-day response time, and the timeline between initial customer messages (late Sept) and substantive engineering/agent responses (late Oct) shows multi-week delays.",
+    "evidence": [
+      "Customer: '23 days response time is not great.' (2025-10-23T07:26:33+00:00).",
+      "Initial customer message with details on 2025-09-19 and substantive engineer/employee responses and actions appearing around 2025-10-23 \u2014 > 30 days delay."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Agent closed the ticket stating no actions left on Support side, but engineering indicated this is a known architectural issue in progress (re-architecture), and the customer earlier stated they expected a resolution or steps to follow. Closing while the underlying engineering fix is in progress suggests premature closure without customer-facing resolution.",
+    "evidence": [
+      "Andriy Rybalchenko: 'I will close this ticket then, as there are no actions left on the Support team side at the moment.' (2025-10-27T06:04:54+00:00).",
+      "Engineering notes: 'Re-architecting of agent will resolve this issue... this has been a known issue in the current architecture' (anujkumar-df, 2025-10-23T12:08:33Z), indicating a fix is in progress rather than completed.",
+      "Customer earlier: 'you stated it is known issue so I am expecting resolution or steps to follow to resolve.' (2025-09-22T10:16:14+00:00) \u2014 customer expectation of resolution not clearly met before closure."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no clear indication this ticket was marked P1/SEV1 or that the issue required immediate escalation. In fact, the issue was escalated to Engineering and an engineering issue was opened, which is appropriate handling rather than generic troubleshooting.",
+    "evidence": [
+      "CE Maintenance Bot opened an engineering issue: 'Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15018' (2025-10-23T07:20:44+00:00).",
+      "Engineering personnel commented and indicated re-architecture is the resolution path (anujkumar-df and trilogy-taro messages).",
+      "No priority/severity label or customer statement indicating this was a P1/SEV1 emergency is present in the thread."
+    ]
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60201836
+}

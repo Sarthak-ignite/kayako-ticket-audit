@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses contain generic filler and at least one apparent factual mismatch (claiming a missing *.apple.com entry while the customer\u2019s later screenshot analysis shows *.apple.com already present). The guidance is broad/speculative and does not decisively address the specific throughput symptom.",
+    "evidence": [
+      "ATLAS commented publicly: \"Possible Causes and Solutions ... Kerio Control is designed as a UTM firewall, and some features\u2014even when disabled\u2014can interact with specific CDN behaviors (like those used by Apple).\"",
+      "ATLAS commented publicly: \"but there is no broad *.apple.com entry.\"",
+      "ATLAS file analysis (later): \"Multiple Apple-related domains are included in the HTTPS exclusions IP address group: appldnld.apple.com, *.apple.com, apple.com, *.cdn-apple.com...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly requests a technician/technical team involvement after trying suggested steps, indicating they are stuck in troubleshooting loops before reaching effective human escalation.",
+    "evidence": [
+      "Customer: \"Could a technician from your team please take a closer look at this issue?\"",
+      "Customer: \"Given that the customer has been experiencing this problem for over a week now, could someone from your technical team please take a closer look at this case?\"",
+      "Customer (after GRO suggestion): \"we already tried that. Unfortunately, it didn\u2019t work. Do you or the Technical Team have any more ideas?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/AI suggests steps that the customer had already performed (or that were already reflected in the provided configuration), forcing repetition and indicating missed context from prior messages/screenshots.",
+    "evidence": [
+      "Customer initial troubleshooting: \"Content filtering: disabled ... Intrusion Prevention (IPS): disabled ... Antivirus and Geo-Blocking: disabled ...\"",
+      "Customer: \"We have already disabled both the HTTPS Inspector and HTTP Inspector under Services, but unfortunately, that did not make any difference.\"",
+      "ATLAS recommendation: \"The absence of a blanket *.apple.com entry ... Action: Add *.apple.com\" (despite later evidence *.apple.com was already in the exclusions group)",
+      "Jozef: \"disable GRO\" followed by Customer: \"we already tried that. Unfortunately, it didn\u2019t work.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day to multi-week gaps without meaningful support response, and the customer explicitly follows up due to lack of feedback.",
+    "evidence": [
+      "Customer (2025-10-27): \"It has now been two weeks since our last communication, and unfortunately, we have not received any concrete feedback on the issue.\"",
+      "Timeline gap: last substantive support message from ATLAS on 2025-10-15, next support update/closure action appears 2025-10-29 (duplicate) and escalation only 2025-11-04."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears headed to closure without confirmation that the issue was resolved; the customer requests closure after prolonged friction and unresolved troubleshooting, suggesting \u201cgive up\u201d rather than fix.",
+    "evidence": [
+      "Customer (after repeated failures): \"we already tried that. Unfortunately, it didn\u2019t work. Do you or the Technical Team have any more ideas?\"",
+      "Support: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"\"",
+      "Customer: \"Ticket can be closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue is described as business-blocking/core functionality and is escalated as high severity, yet it languishes for over a week/two weeks with standard troubleshooting and delayed escalation.",
+    "evidence": [
+      "Customer: \"the customer is currently unable to perform updates\"",
+      "Customer: \"According to the partner, it is currently not possible to work with this product.\"",
+      "System note: \"[customer_escalation] ... severity is: core_functionality_defect\"",
+      "Customer: \"Given that the customer has been experiencing this problem for over a week now\"",
+      "Customer: \"It has now been two weeks since our last communication\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60220499
+}

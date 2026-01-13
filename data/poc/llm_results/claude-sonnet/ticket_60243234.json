@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is insufficient information in the provided interactions to assess AI response quality. Only a summary message about a prior AI chat is visible, not the actual AI conversation content.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of looping or customers being stuck with AI. The interaction shows only a post-chat summary being recorded, with no indication of repetitive requests or inability to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence of support ignoring previously provided information, as only one system message is present in the timeline with no back-and-forth interactions.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No delays detected. The ticket shows a max gap of 0.0 hours between responses and contains only a single interaction timestamp.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Cannot determine if closure was premature as the actual conversation content is not provided. The ticket is marked closed with low priority, but without seeing the full AI chat transcript, there's no evidence the customer was waiting for information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a low priority ticket, not a P1/SEV1 case, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient information in the provided interactions to assess AI response quality. Only a summary message about a prior AI chat is visible, not the actual AI conversation content.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of looping or customers being stuck with AI. The interaction shows only a post-chat summary being recorded, with no indication of repetitive requests or inability to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of support ignoring previously provided information, as only one system message is present in the timeline with no back-and-forth interactions.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No delays detected. The ticket shows a max gap of 0.0 hours between responses and contains only a single interaction timestamp.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if closure was premature as the actual conversation content is not provided. The ticket is marked closed with low priority, but without seeing the full AI chat transcript, there's no evidence the customer was waiting for information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a low priority ticket, not a P1/SEV1 case, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60243234
+}

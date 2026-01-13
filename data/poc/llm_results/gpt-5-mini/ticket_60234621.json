@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI and human messages are specific (identified expired SSL, showed certificate renewal and fix) and do not contain generic filler or broken promises.",
+    "evidence": [
+      "[2025-11-03T15:46:19.971+0000] (Employee) Muhammad Waqar: \"bash-4.2$ # For euw1 export NEW_CERT=brandmessenger.euw1.khoros.com.06f1b git mv ${NEW_CERT}.crt ${NEW_CE\"",
+      "[2025-11-03T14:55:30.614+0000] (Employee) Muhammad Waqar: \"Renewed certificate for https://brandmessenger.usw2.khoros.com/\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was repeatedly asked for the same information or stuck interacting only with AI; humans engaged quickly and progressed to a resolution.",
+    "evidence": [
+      "[2025-11-03T14:16:53+00:00] (Employee) Pavly Nashed: \"Dear Jayashree, Thank you for your patience. We have done a preliminary investigation to determine the root cause, and have escalated \"",
+      "[2025-11-03T15:50:44+00:00] (Employee) Chintan Parekh: \"We have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor the sy\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support references and acts on the specific cause the customer reported (expired SSL certificate) and performs corrective actions rather than asking for repeated context.",
+    "evidence": [
+      "[2025-11-03T15:47:54.923+0000] (Employee) Muhammad Waqar: \"An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate on brandmessenger.usw2.khoros.com, re\"",
+      "[2025-11-03T14:55:30.614+0000] (Employee) Muhammad Waqar: \"Renewed certificate for https://brandmessenger.usw2.khoros.com/\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All activity occurred within the same hour (first human response ~0.1 hours) with maximum gaps under an hour; no multi-day delays are present.",
+    "evidence": [
+      "[2025-11-03T14:15:17.862+0000] (AI) SaaS Portal: \"the alert has been acknowledged by muhammad.waqar@trilogy.com\"",
+      "[2025-11-03T15:50:44+00:00] (Employee) Chintan Parekh: \"We have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor the sy\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket was closed after the cause was identified, certificate renewed, fix implemented and monitoring communicated to the customer \u2014 indicating resolution prior to closure.",
+    "evidence": [
+      "[2025-11-03T14:55:30.614+0000] (Employee) Muhammad Waqar: \"Renewed certificate for https://brandmessenger.usw2.khoros.com/\"",
+      "[2025-11-03T15:53:40.754+0000] (AI) Service Sfit: \"\u2705 QC PASSED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis SummaryThe incident involved multiple reports of customers being unable to initiate \""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The team performed targeted technical remediation (renewed SSL certificate, deployed certs, and confirmed fixes) rather than generic end-user troubleshooting.",
+    "evidence": [
+      "[2025-11-03T15:47:54.923+0000] (Employee) Muhammad Waqar: \"An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate on brandmessenger.usw2.khoros.com, re\"",
+      "[2025-11-03T15:46:19.971+0000] (Employee) Muhammad Waqar: \"bash-4.2$ # For euw1 export NEW_CERT=brandmessenger.euw1.khoros.com.06f1b git mv ${NEW_CERT}.crt ${NEW_CE\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI and human messages are specific (identified expired SSL, showed certificate renewal and fix) and do not contain generic filler or broken promises.\",\n    \"evidence\": [\n      \"[2025-11-03T15:46:19.971+0000] (Employee) Muhammad Waqar: \\\"bash-4.2$ # For euw1 export NEW_CERT=brandmessenger.euw1.khoros.com.06f1b git mv ${NEW_CERT}.crt ${NEW_CE\\\"\",\n      \"[2025-11-03T14:55:30.614+0000] (Employee) Muhammad Waqar: \\\"Renewed certificate for https://brandmessenger.usw2.khoros.com/\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the customer was repeatedly asked for the same information or stuck interacting only with AI; humans engaged quickly and progressed to a resolution.\",\n    \"evidence\": [\n      \"[2025-11-03T14:16:53+00:00] (Employee) Pavly Nashed: \\\"Dear Jayashree, Thank you for your patience. We have done a preliminary investigation to determine the root cause, and have escalated \\\"\",\n      \"[2025-11-03T15:50:44+00:00] (Employee) Chintan Parekh: \\\"We have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor the sy\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support references and acts on the specific cause the customer reported (expired SSL certificate) and performs corrective actions rather than asking for repeated context.\",\n    \"evidence\": [\n      \"[2025-11-03T15:47:54.923+0000] (Employee) Muhammad Waqar: \\\"An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate on brandmessenger.usw2.khoros.com, re\\\"\",\n      \"[2025-11-03T14:55:30.614+0000] (Employee) Muhammad Waqar: \\\"Renewed certificate for https://brandmessenger.usw2.khoros.com/\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All activity occurred within the same hour (first human response ~0.1 hours) with maximum gaps under an hour; no multi-day delays are present.\",\n    \"evidence\": [\n      \"[2025-11-03T14:15:17.862+0000] (AI) SaaS Portal: \\\"the alert has been acknowledged by muhammad.waqar@trilogy.com\\\"\",\n      \"[2025-11-03T15:50:44+00:00] (Employee) Chintan Parekh: \\\"We have identified the cause of the chat widget outage and implemented a fix. Our team will continue to monitor the sy\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket was closed after the cause was identified, certificate renewed, fix implemented and monitoring communicated to the customer \u2014 indicating resolution prior to closure.\",\n    \"evidence\": [\n      \"[2025-11-03T14:55:30.614+0000] (Employee) Muhammad Waqar: \\\"Renewed certificate for https://brandmessenger.usw2.khoros.com/\\\"\",\n      \"[2025-11-03T15:53:40.754+0000] (AI) Service Sfit: \\\"\u2705 QC PASSED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis SummaryThe incident involved multiple reports of customers being unable to initiate \\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The team performed targeted technical remediation (renewed SSL certificate, deployed certs, and confirmed fixes) rather than generic end-user troubleshooting.\",\n    \"evidence\": [\n      \"[2025-11-03T15:47:54.923+0000] (Employee) Muhammad Waqar: \\\"An outage affecting Brand Messenger customer chat widgets was traced to an expired SSL certificate on brandmessenger.usw2.khoros.com, re\\\"\",\n      \"[2025-11-03T15:46:19.971+0000] (Employee) Muhammad Waqar: \\\"bash-4.2$ # For euw1 export NEW_CERT=brandmessenger.euw1.khoros.com.06f1b git mv ${NEW_CERT}.crt ${NEW_CE\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60234621
+}

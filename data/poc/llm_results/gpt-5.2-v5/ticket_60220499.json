@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS responses are somewhat generic and include broad suggestions, but there is no customer-facing evidence that the AI guidance was incorrect/useless, nor any clear contradiction corrected in the public thread. The only explicit \u201cdidn\u2019t work\u201d feedback is about actions taken, not that ATLAS hallucinated or produced broken output.",
+    "evidence": [
+      "ADN Support commented privately: \"unfortunately, the Allow rule didn\u2019t resolve the issue.\"",
+      "ATLAS commented publicly: \"Recommendations and Next Steps: * Broaden the Allow/Exclusion Rules for Apple\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "After the customer requested a technician to look closer, the next substantive response later in the ticket is from a human agent (Mike Kebede) who escalates to L2. There is no evidence of the customer being trapped in repeated AI-only replies after requesting a human.",
+    "evidence": [
+      "ADN Support commented privately: \"Could a technician from your team please take a closer look at this issue?\"",
+      "Mike Kebede commented publicly: \"We\u2019ve escalated this case to the L2 team and raised the priority to High.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support requests additional diagnostics and comparison data (before/after GRO) rather than re-asking for the exact same steps already provided. The ticket does not show a customer-facing pattern where the customer says they already provided specific logs/files and support asks for those same items again without acknowledging.",
+    "evidence": [
+      "Mike Kebede commented publicly: \"please provide the following: Speed test results before and after the GRO modification\"",
+      "ADN Support commented privately: \"we already tried that. Unfortunately, it didn\u2019t work.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a clear, customer-stated long wait without \u201cconcrete feedback,\u201d and the timeline shows a long gap between customer follow-ups and the next staff response. The customer explicitly calls out a two-week silence and asks for an update.",
+    "evidence": [
+      "ADN Support commented privately (2025-10-27): \"It has now been two weeks since our last communication, and unfortunately, we have not received any concrete feedback on the issue.\"",
+      "ADN Support commented privately (2025-10-17): \"Given that the customer has been experiencing this problem for over a week now, could someone from your technical team please take a closer look at this case?\"",
+      "Zubair Farooq commented publicly (2025-10-29): \"This ticket is a duplicate of ticket# 60216786... We will close this ticket\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support stated they would close the ticket as a duplicate while the customer still needed assistance and explicitly could not access the other ticket, requesting to continue on this one. This indicates an attempted closure before the customer\u2019s issue was actually resolved for them.",
+    "evidence": [
+      "Zubair Farooq commented publicly: \"This ticket is a duplicate of ticket# 60216786... We will close this ticket\"",
+      "ADN Support commented publicly: \"It looks like a reply was sent to the ticket I unfortunately don\u2019t have access to. Could you please close that ticket and continue the communication using Ticket #60220499\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer/partner describes severe impact and requests escalation, support ultimately escalates to L2 and raises priority to High. The strongest \u201cseverity\u201d labeling (core_functionality_defect) appears in an internal note, not customer-facing evidence of mishandling.",
+    "evidence": [
+      "ADN Support commented privately: \"According to the partner, it is currently not possible to work with this product.\"",
+      "Mike Kebede commented publicly: \"We\u2019ve escalated this case to the L2 team and raised the priority to High.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60220499
+}

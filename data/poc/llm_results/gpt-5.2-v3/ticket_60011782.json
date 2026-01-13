@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The public-facing reply contains a clear templating/automation error where the AI addresses itself (\u201cDear ATLAS\u201d), which is explicitly listed as a quality failure criterion.",
+    "evidence": [
+      "[2025-04-02T09:08:03+00:00] Kayako // ATLAS commented publicly: \"Dear ATLAS,\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested to speak with the support team/human, but the next customer-facing response did not connect them to a human and instead continued with AI-driven information requests and documentation links.",
+    "evidence": [
+      "Issue description: \"Speak to support team please\"",
+      "Issue description: \"emails are not archiving since Monday and i need to speak to someone\"",
+      "Chat transcript: Customer: \"Speak to support team please\"",
+      "Public reply continues with questions/links rather than routing to a person: \"To help us resolve this issue more efficiently, could you please provide the following information:\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer referenced an already-open ticket and asked for an update, but the response does not acknowledge or address the existing case and instead restarts troubleshooting/data collection as if it were a new issue.",
+    "evidence": [
+      "Issue description: \"ticket open - #60010193 update on case\"",
+      "Issue description: \"I have a ticket open already\"",
+      "Public reply does not reference ticket #60010193 or provide an update; it asks for setup/log details instead."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No 3+ day gap is visible in the provided timeline; responses occur within minutes on the same day.",
+    "evidence": [
+      "Customer/AI timestamps are within ~1 minute: 09:07:30 to 09:08:03 on 2025-04-02."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication the ticket was closed; the last message requests information and states it will remain open for a week unless the customer closes it.",
+    "evidence": [
+      "Public reply: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Closed...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue sounds urgent (archiving not working since Monday), the ticket is not explicitly marked P1/SEV1/Critical, and there is not enough unambiguous evidence of a declared production-wide outage or SLA/priority handling requirement to classify as clear SEV1 mishandling.",
+    "evidence": [
+      "Customer: \"emails are not archiving since Monday\" (urgency implied but no explicit P1/SEV1/Critical marker shown)."
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60011782
+}

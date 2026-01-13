@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only apparent AI quality issue (a garbled/empty user input) appears in an internal ATLAS transcript, not in customer-facing/public content. The customer did not report the AI being wrong or unhelpful in any public reply.",
+    "evidence": [
+      "ATLAS commented privately: \"Here is a transcript of the customer's recent interaction with ATLAS chat:\"",
+      "ATLAS chat transcript (private): \"Ian DeMoss:\\n\\n undefined\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence that the customer asked for a human and remained stuck with AI responses. The AI interaction shown is in a private transcript and the subsequent substantive replies are from human agents.",
+    "evidence": [
+      "ATLAS chat transcript (private): \"Ian DeMoss:\\n\\n raise a ticket\"",
+      "Marcio (public): \"Hi Ian,\\n\\nThank you for contacting the Exinda Support Team.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support engaged with the customer\u2019s question about whether a release fixes the 'no policy' issue and checked release notes; there\u2019s no clear instance of requesting the same information after the customer said it was already provided, nor an explicit customer complaint about repetition.",
+    "evidence": [
+      "Customer (public): \"Can you confirm that the 7.6.0 version fixes the \u2018no policy\u2019 bug that is shown when clustering is enabled...\"",
+      "Support (public): \"There is no mention of a specific \\\"no policy\\\" bugfix.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The visible customer-to-staff reply gaps are under the thresholds (no 5+ day gap; no two separate 3+ day gaps). The customer asked for movement once, but the next staff response came within ~3 days.",
+    "evidence": [
+      "Customer (private): \"Has there been any movement on generating an updated Exinda code version...\"",
+      "Support (public, ~2.7 days later): \"Exinda version 7.6.0 is now available...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Support included an auto-closure warning, but there is no text indicating the ticket actually closed/was closed while the customer still awaited a pending answer. The warning is conditional and repeated, without a subsequent closure notice in the provided interactions.",
+    "evidence": [
+      "Support (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed...\"",
+      "Support (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer did not describe an outage, production-down condition, or explicitly label severity (P1/SEV1/critical). Support\u2019s responses focused on release notes/upgrade guidance rather than treating an explicitly critical incident as routine.",
+    "evidence": [
+      "Customer (public): \"...the \u2018no policy\u2019 bug that is shown when clustering is enabled...\"",
+      "Support (public): \"The only clustering-related bugfix I see in the release notes... There is no mention of a specific \\\"no policy\\\" bugfix.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60073150
+}

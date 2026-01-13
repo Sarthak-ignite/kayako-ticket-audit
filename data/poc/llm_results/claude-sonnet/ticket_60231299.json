@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response is cut off mid-sentence and appears incomplete, showing 'https://redirects.gfikerioconne' which is truncated. This suggests the AI provided a malformed or incomplete response that doesn't properly address the certificate expiration issue.",
+    "evidence": [
+      "[2025-10-29T08:27:55+00:00] (AI) ATLAS: Thank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one interaction from the AI and one from the customer, so there is no evidence of a loop or the customer being stuck trying to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI acknowledges the specific issue mentioned by the customer (certificate expiration at the specific URL), though the response is incomplete.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The AI responded within 1 minute of the customer's message (42 seconds), which is extremely fast and shows no delay.",
+    "evidence": [
+      "Customer message at [2025-10-29T08:27:13+00:00], AI response at [2025-10-29T08:27:55+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked as closed despite the AI providing an incomplete response that was cut off mid-sentence, and there is no evidence the certificate issue was resolved or that any solution was provided to the customer.",
+    "evidence": [
+      "Status: closed",
+      "[2025-10-29T08:27:55+00:00] (AI) ATLAS: ...certificate at https://redirects.gfikerioconne [incomplete/truncated]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is marked as 'normal', not P1/Sev1, so this pattern does not apply even though a certificate expiration could be considered a security/availability issue.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response is cut off mid-sentence and appears incomplete, showing 'https://redirects.gfikerioconne' which is truncated. This suggests the AI provided a malformed or incomplete response that doesn't properly address the certificate expiration issue.\",\n    \"evidence\": [\"[2025-10-29T08:27:55+00:00] (AI) ATLAS: Thank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconne\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one interaction from the AI and one from the customer, so there is no evidence of a loop or the customer being stuck trying to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI acknowledges the specific issue mentioned by the customer (certificate expiration at the specific URL), though the response is incomplete.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responded within 1 minute of the customer's message (42 seconds), which is extremely fast and shows no delay.\",\n    \"evidence\": [\"Customer message at [2025-10-29T08:27:13+00:00], AI response at [2025-10-29T08:27:55+00:00]\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked as closed despite the AI providing an incomplete response that was cut off mid-sentence, and there is no evidence the certificate issue was resolved or that any solution was provided to the customer.\",\n    \"evidence\": [\"Status: closed\", \"[2025-10-29T08:27:55+00:00] (AI) ATLAS: ...certificate at https://redirects.gfikerioconne [incomplete/truncated]\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is marked as 'normal', not P1/Sev1, so this pattern does not apply even though a certificate expiration could be considered a security/availability issue.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60231299
+}

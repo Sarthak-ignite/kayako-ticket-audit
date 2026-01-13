@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS sends a generic, templated greeting/intake prompt without addressing any specific customer problem (no issue analysis, only boilerplate and a link). This matches the signal of template responses that don't address the issue and link-forwarding without troubleshooting.",
+    "evidence": [
+      "\u201cThis is the Kerio Connect ATLAS support chat.\u201d",
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d",
+      "\u201c\ud83d\udca1Getting the most out of Kerio Connect ATLAS Support Chat\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI prompt shown and no back-and-forth indicating repeated questions, customer frustration, or requests to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer has not provided any issue details yet in the visible interaction, so there is no context for support to ignore or repeat.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one timestamped message is present, so there is no measurable gap between customer input and support response.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket content shows only AI/chat boilerplate and no evidence of a human agent engagement; this matches the listed signal 'Only AI interactions exist (no human ever engaged)', which is a risk indicator for premature/auto resolution paths.",
+    "evidence": [
+      "\u201cKayako - ticket id 60169826 // ATLAS commented privately:\u201d",
+      "\u201cThis is the Kerio Connect ATLAS support chat.\u201d",
+      "No human agent replies are present in the provided ticket interactions."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No language indicating a Sev1/P1, outage, urgent business impact, or production-down scenario appears in the provided text.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60169826
+}

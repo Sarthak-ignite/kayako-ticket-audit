@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses requested specific information needed for troubleshooting and the customer provided it. No evidence of wrong information or unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The AI requested clarification once about which product (Classic vs Aurora), and the customer provided the requested information without getting stuck in a loop.",
+    "evidence": [
+      "[2025-12-04T09:52:33+00:00] Cu Chulainn AI Manager: could you kindly specify whi...",
+      "[2025-12-04T09:10:37+00:00] Karuna Sharma: Community URL:https://community.se.com User Affected... Communi..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI appropriately requested product specification when it wasn't clear from the initial message, and the customer provided additional context. No evidence of repeated requests for the same information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a 20.3-hour gap between the customer's response on Dec 4th and the next AI interaction on Dec 5th, representing a significant delay.",
+    "evidence": [
+      "[2025-12-04T09:10:37+00:00] Karuna Sharma: Hi team, Community URL:https://community.se.com",
+      "[2025-12-05T06:10:37+00:00] (next interaction) - gap of approximately 20.3 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked as closed but the last AI responses appear to be incomplete (cut off mid-sentence), and there's no evidence of resolution confirmation or customer acknowledgment that the issue was resolved.",
+    "evidence": [
+      "[2025-12-05T06:15:08+00:00] ATLAS: Thank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoro",
+      "Status: closed - with no customer confirmation of resolution"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not P1/SEV1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses requested specific information needed for troubleshooting and the customer provided it. No evidence of wrong information or unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI requested clarification once about which product (Classic vs Aurora), and the customer provided the requested information without getting stuck in a loop.\",\n    \"evidence\": [\n      \"[2025-12-04T09:52:33+00:00] Cu Chulainn AI Manager: could you kindly specify whi...\",\n      \"[2025-12-04T09:10:37+00:00] Karuna Sharma: Community URL:https://community.se.com User Affected... Communi...\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI appropriately requested product specification when it wasn't clear from the initial message, and the customer provided additional context. No evidence of repeated requests for the same information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a 20.3-hour gap between the customer's response on Dec 4th and the next AI interaction on Dec 5th, representing a significant delay.\",\n    \"evidence\": [\n      \"[2025-12-04T09:10:37+00:00] Karuna Sharma: Hi team, Community URL:https://community.se.com\",\n      \"[2025-12-05T06:10:37+00:00] (next interaction) - gap of approximately 20.3 hours\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked as closed but the last AI responses appear to be incomplete (cut off mid-sentence), and there's no evidence of resolution confirmation or customer acknowledgment that the issue was resolved.\",\n    \"evidence\": [\n      \"[2025-12-05T06:15:08+00:00] ATLAS: Thank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoro\",\n      \"Status: closed - with no customer confirmation of resolution\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not P1/SEV1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60256250
+}

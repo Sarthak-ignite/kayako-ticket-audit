@@ -1,0 +1,107 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_generic",
+        "requester": {
+          "id": 60467087,
+          "uuid": "fc125bc8-e546-565f-81b9-fb67b49269ff",
+          "full_name": "Erika Dominguez",
+          "legacy_id": "0034W00003QaS4uQAF",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/fc125bc8-e546-565f-81b9-fb67b49269ff?1767728071",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60067127,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 468616,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "170.85.200.205",
+          "last_seen_at": "2026-01-06T19:34:31+00:00",
+          "last_active_at": "2026-01-06T19:34:31+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60467087",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@7aecfb4da3c7075884277fc268b8bb52cda9f19e",
+          "password_updated_at": "2025-07-31T20:11:59+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T18:00:46+00:00",
+          "last_activity_at": "2026-01-06T19:34:31+00:00",
+          "created_at": "2025-07-07T12:24:32+00:00",
+          "updated_at": "2026-01-06T19:34:31+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60467087"
+        },
+        "ticket_idt": 60243765
+      },
+      "interactions": [
+        [
+          "2025-11-14T21:57:37+00:00",
+          "Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erika Dominguez) ---</b><br>it's not custom code, it exists in classic<br/><br><br><b>--- AI Assistant ---</b><br>Ah, thank you for the correction! You're absolutely right - I found it. The feature you're referring to is <strong>\"Report Inappropriate Content\"</strong> (which may also appear as \"Request Moderator Assistance\" in the Options menu depending on your configuration).<br><br>According to the documentation I found, this is indeed a native Khoros Classic feature. Here's what I learned:<br><br>The <strong>inappropriate content reporting feature</strong> allows community members to report undesirable content through the Options menu on posts. The feature shows as \"Report Inappropriate Content\" and includes a \"Notify Moderator\" button.<br><br><strong>Important note from the documentation:</strong> According to the <a href=\"https://khoros-classic.kayako.com/article/125788\" target=\"_blank\">Reporting inappropriate content and user profile</a> article, it states:<br><br>> <strong>NOTE: To enable this feature, contact Support</strong><br><br>This means that enabling this feature for additional roles (like your 'Workday' role) requires configuration changes that need to be handled by the Support team. It's not something you can enable directly through the Admin UI permissions.<br><br>Since you need to make this option available to users with the 'Workday' role, I'd recommend connecting with a support agent who can help enable this feature for that specific role in your community configuration.<br><br>Would you like me to connect you with a support agent to get this set up?<br/><br><br><b>--- Customer (Erika Dominguez) ---</b><br>it's not report inappropriate content, that is different. I'm talking about Request Moderator Assistance <br/><br><br><b>--- AI Assistant ---</b><br>Perfect! I found it - thank you for your patience. \"Request Moderator Assistance\" is actually the <strong>Escalate Topic</strong> feature in Khoros Classic.<br><br>According to the documentation, here's how to enable this for your 'Workday' role:<br><br><strong>Step 1: Enable Manual Escalations</strong><br>- Go to <strong>Community Admin > Mod Tools > Escalations</strong><br>- Turn on <strong>manual thread-level escalations</strong> (this enables the option in the Topic Options menu)<br><br><strong>Step 2: Grant the Permission</strong><br>Users need one of these permissions to see \"Escalate Topic\" (which may appear as \"Request Moderator Assistance\") in the Options menu:<br>- <strong>\"Escalate a topic or tweet to a CRM system\"</strong> - allows escalating any topic<br>- <strong>\"Escalate own topic to a CRM system\"</strong> - allows escalating only their own topics<br><br>To grant this permission to the 'Workday' role:<br>1. Go to <strong>Community Admin > Users > Permissions > Roles</strong><br>2. Find and edit the <strong>'Workday'</strong> role<br>3. Look for the escalation permissions and grant the appropriate one<br>4. Click <strong>Save</strong><br><br>Once you've enabled manual escalations and granted the permission to the 'Workday' role, users with that role should see the escalation option in the Topic Options menu.<br><br>Does this help clarify what you need to configure?<br/>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

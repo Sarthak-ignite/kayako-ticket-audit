@@ -1,0 +1,112 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_control",
+        "requester": {
+          "id": 60157816,
+          "uuid": "95d20750-0165-46e4-8170-1c328ed60cd5",
+          "full_name": "Javier Pineda",
+          "legacy_id": "382335923579",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/95d20750-0165-46e4-8170-1c328ed60cd5?1763692459",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60038438,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 159351,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 44988,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-11-17T22:30:59+00:00",
+          "last_active_at": "2025-11-21T02:34:19+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60157816",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@d61033dc077f5c56a821ed7dcc70ce4f21f2714d",
+          "password_updated_at": "2025-06-04T14:43:08+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2021-05-07T15:04:03+00:00",
+          "updated_at": "2025-11-21T02:34:19+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60157816"
+        },
+        "ticket_idt": 60236962
+      },
+      "interactions": [
+        [
+          "2025-11-05T21:44:23+00:00",
+          "Kayako - ticket id 60236962 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Hi, Javier Pineda ! \ud83d\udc4b</p>\n      <p>This is the Kerio Control ATLAS support chat.</p>\n      <hr>\n      <div style=\"line-height: 1.3; margin-top: 8px; font-size: 0.9rem; color: #666666;\">\n        <b>Please note:</b> ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" rel=\"nofollow\">these terms and conditions</a>. If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.\n      </div>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.</p>\n      <p>\ud83d\udca1<a href=\"https://support.keriocontrol.gfi.com/article/117054\" rel=\"nofollow\">Getting the most out of Kerio Control ATLAS Support Chat</a></p>\n      <p>\ud83d\udca1Tip: Aim to give us a bit more context than just a quick \"It's not working.\" The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f</p>\n      <p>If I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa</p>\n    </div><br>\n    <p><strong>--- Customer (Javier Pineda) ---</strong></p>\n    <div>\n      <p>How do I find the ikelifetime setting in Kerio using SSH?</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Got it! \ud83d\udc4c</p>\n      <p>Based on your stated intent, it is mandatory that we check the support eligibility through the product license \ud83d\udd11 before moving forward</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Please provide me with your <strong>Kerio Control</strong> license key.<br>\n      (Trial license keys are also accepted, but in the case of trial licenses, please make sure to wait for at least 1 hour after obtaining it before contacting us).</p>\n      <p>\u2753Don't know where to get the license key from? Check the resource below \ud83d\udc47<br>\n      \u2753 <a href=\"https://support.gfi.com/article/109025-obtaining-your-gfi-license-key\" rel=\"nofollow\">How to Obtain Your GFI License Key</a></p>\n    </div><br>\n    <p><strong>--- Customer (Javier Pineda) ---</strong></p>\n    <div>\n      <p>20339-7D699-ZLMR6</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Checking the validity of this license key: <strong>20339-7D699-ZLMR6</strong> ...</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>\u2728 Good news, you've got a valid license, which is due to expire at: <strong>2028-10-13</strong>.</p>\n      <p>Now that we're done with the formalities, let's start troubleshooting!</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa</p>\n      <p>\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.</p>\n      <p>\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.</p>\n      <p>\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.</p>\n      <p>\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:<br>\n      \ud83d\udc49 <a href=\"https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI2MGU1YzJhZi0yNzJiLTRkZDYtOTJmOC01NWIzMDNjMjBlMGUiLCJzZXNzaW9uX3VpZCI6IjYwZTVjMmFmLTI3MmItNGRkNi05MmY4LTU1YjMwM2MyMGUwZSIsImVtYWlsIjoiamF2aWVyLnIucGluZWRhQHhjZWxlbmVyZ3kuY29tIiwiY3VzdG9tX3BhcnNlciI6e30sImNhbGxiYWNrIjp7ImNhbGxiYWNrX3VybCI6bnVsbCwiY2FsbGJhY2tfZW1haWwiOiJjaXByaWFuLm5hc3Rhc2VAdHJpbG9neS5jb20ifSwicHJvZHVjdF90YWciOiJhdXJlYV9rZXJpb19jb250cm9sIiwicXVlcnkiOiIiLCJleHAiOjE3NjIzODQ1Njl9.7fr3gE8_sVe78y00O5Qed4i2Csv1B7xatDpyiPPQXVw\" rel=\"nofollow\">Secure File Upload</a></p>\n      <p>You should see the following:</p>\n      <ul>\n        <li>User: <a href=\"mailto:javier.r.pineda@xcelenergy.com\" rel=\"nofollow\">javier.r.pineda@xcelenergy.com</a>\n        </li>\n        <li>Session ID: 60e5c2af-272b-4dd6-92f8-55b303c20e0e</li>\n      </ul>\n    </div><br>\n    <p><strong>--- Customer (Javier Pineda) ---</strong></p>\n    <div>\n      <p>No files to upload. Just need to find out how to find the ikelifetime setting in Kerio control.</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Perfect! Let me look that up for you. \ud83d\udd0d</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Great! I found the information you need. \ud83c\udfaf</p>\n      <p>The <strong>ikelifetime</strong> setting in Kerio Control is stored in the <code>/etc/ipsec.conf</code> file. Here's how to find and modify it:</p>\n      <h2>Finding the ikelifetime Setting via SSH:</h2>\n      <ol>\n        <li>\n          <p><strong>Log in via SSH</strong> to your Kerio Control console</p>\n        </li>\n        <li>\n          <p><strong>View the current configuration</strong> by checking the <code>/etc/ipsec.conf</code> file:</p>\n          <pre><code>cat /etc/ipsec.conf\n</code></pre>\n        </li>\n        <li>\n          <p><strong>To modify the ikelifetime setting</strong>, you'll need to use the tinydbclient command for your specific IPSec tunnel:</p>\n          <pre><code>/opt/kerio/winroute/tinydbclient \"update VpnTunnels_v2 set CustomOptions={'rekey=\\\"no\\\"', 'reauth=\\\"no\\\"', 'lifetime=\\\"1h\\\"','ikelifetime=\\\"8h\\\"'} where name='YourTunnelName'\"\n</code></pre>\n          <p><strong>Important notes:</strong></p>\n          <ul>\n            <li>Replace <code>'YourTunnelName'</code> with the actual name of your VPN tunnel</li>\n            <li>The time values are in hourly units (e.g., \"8h\" = 8 hours)</li>\n            <li>If your tunnel name contains special characters like periods (.), asterisks (*), parentheses, brackets, etc., you'll need to escape them with a backslash (\\)</li>\n          </ul>\n        </li>\n        <li>\n          <p><strong>(Optional)</strong> Restart Kerio Control if the settings don't propagate immediately</p>\n        </li>\n        <li>\n          <p><strong>Reconnect the VPN tunnel</strong> from the Kerio Control WebAdmin to confirm the changes are persistent</p>\n        </li>\n      </ol>\n      <h2>What is ikelifetime?</h2>\n      <p>The <strong>ikelifetime</strong> variable corresponds to how long the keying channel of a connection (ISAKMP or IKE SA) should last before being renegotiated.</p>\n      <p>For more detailed information, check out this article: <a href=\"https://support.keriocontrol.gfi.com/article/118693\" rel=\"nofollow\">Adjusting Values for IPSec VPN Using Kerio Control</a></p>\n      <p>Does this help? Do you need assistance with modifying a specific tunnel's ikelifetime value? \ud83d\ude0a</p>\n    </div><br>\n    <p><strong>--- Customer (Javier Pineda) ---</strong></p>\n    <div>\n      <p>I ran the cat command, but the ikelifetime setting does not show up</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Hmm, that's interesting. Let me clarify a few things to help you locate the setting. \ud83e\udd14</p>\n      <p>A few questions:</p>\n      <ol>\n        <li>\n          <p><strong>Do you have any IPSec VPN tunnels configured</strong> in your Kerio Control? The <code>ikelifetime</code> setting is specific to IPSec VPN tunnels, so it would only appear if you have active tunnels configured.</p>\n        </li>\n        <li>\n          <p><strong>What do you see in the <code>/etc/ipsec.conf</code> file?</strong> Is the file empty, or does it show some configuration but just without the <code>ikelifetime</code> parameter?</p>\n        </li>\n        <li>\n          <p><strong>Are you looking to view an existing ikelifetime value, or are you trying to set a custom one?</strong></p>\n        </li>\n      </ol>\n      <p>Here's why it might not be showing up:</p>\n      <ul>\n        <li>\n          <p><strong>Default behavior</strong>: If you haven't explicitly set custom IPSec options using the <code>tinydbclient</code> command, Kerio Control uses <strong>default values</strong> from the Strongswan library. These defaults might not be explicitly written in the config file.</p>\n        </li>\n        <li>\n          <p><strong>The setting only appears after customization</strong>: The <code>ikelifetime</code> parameter typically only shows up in <code>/etc/ipsec.conf</code> <strong>after</strong> you've manually set it using the <code>CustomOptions</code> command I mentioned earlier.</p>\n        </li>\n      </ul>\n      <p>If you want to <strong>check what the current effective value is</strong> or <strong>set a custom ikelifetime</strong>, you would need to use the tinydbclient command to explicitly configure it for your tunnel.</p>\n      <p>Could you let me know if you have IPSec tunnels configured and what you're seeing in the file? That will help me guide you better! \ud83d\udc4d</p>\n    </div><br>\n    <p><strong>--- Customer (Javier Pineda) ---</strong></p>\n    <div>\n      <p>I have not set ikelifetime values, what are the default ikelifetime values?</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Good question! Based on the documentation, I can see that Kerio Control mentions a <strong>Lifetime</strong> default of <strong>60 minutes</strong> for IPSec VPN tunnels, but unfortunately, the specific <strong>default ikelifetime value</strong> isn't explicitly stated in the available documentation.</p>\n      <p>Here's what I know:</p>\n      <h2>What the Documentation Shows:</h2>\n      <ul>\n        <li><strong>Lifetime</strong> (for the connection itself): Default is <strong>60 minutes</strong></li>\n        <li><strong>Ikelifetime</strong> (for the IKE/ISAKMP SA): The default value is <strong>not explicitly documented</strong></li>\n      </ul>\n      <h2>What This Means:</h2>\n      <p>Since Kerio Control uses the <strong>Strongswan</strong> library for IPSec VPN, it would be using Strongswan's default values when not explicitly configured. According to Strongswan documentation, their typical defaults are:</p>\n      <ul>\n        <li><strong>ikelifetime</strong>: Usually <strong>3 hours</strong> (but this can vary)</li>\n        <li><strong>lifetime</strong>: <strong>1 hour</strong></li>\n      </ul>\n      <p>However, to get the <strong>exact default value</strong> that your specific Kerio Control installation is using, you have a couple of options:</p>\n      <ol>\n        <li>\n          <p><strong>Check the Strongswan documentation</strong> directly: <a href=\"https://docs.strongswan.org/docs/5.9/config/IKEv2CipherSuites.html\" rel=\"nofollow\">Strongswan IPSec.conf reference</a></p>\n        </li>\n        <li>\n          <p><strong>Contact support</strong> for confirmation of the exact default values used in your version of Kerio Control</p>\n        </li>\n      </ol>\n      <p>Would you like me to help you set a specific ikelifetime value, or do you need this information for troubleshooting a particular VPN issue? \ud83d\ude0a</p>\n    </div><br>\n    <p><strong>--- Customer (Javier Pineda) ---</strong></p>\n    <div>\n      <p>show me how to set the ikelifetime value for Phase 1 and 2</p>\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      <p>Perfect! Let me show you how to set the lifetime values for both Phase 1 and Phase 2. \ud83c\udfaf</p>\n      <h2>Understanding Phase 1 vs Phase 2:</h2>\n      <ul>\n        <li><strong>Phase 1 (IKE SA)</strong>: Uses <strong><code>ikelifetime</code></strong> - This is the keying channel that establishes the secure tunnel</li>\n        <li><strong>Phase 2 (CHILD_SA/IPSec SA)</strong>: Uses <strong><code>lifetime</code></strong> - This is the actual data connection</li>\n      </ul>\n      <h2>How to Set Both Values via SSH:</h2>\n      <h3>Step 1: Log in via SSH</h3>\n      <p>Connect to your Kerio Control console via SSH.</p>\n      <h3>Step 2: Execute the tinydbclient Command</h3>\n      <p>Use this command to set both Phase 1 and Phase 2 lifetime values:</p>\n      <pre><code>/opt/kerio/winroute/tinydbclient \"update VpnTunnels_v2 set CustomOptions={'ikelifetime=\\\"8h\\\"','lifetime=\\\"1h\\\"'} where name='YourTunnelName'\"\n</code></pre>\n      <p><strong>Replace <code>'YourTunnelName'</code></strong> with your actual tunnel name.</p>\n      <h3>Breaking Down the Parameters:</h3>\n      <table>\n        <thead>\n          <tr>\n            <th>Parameter</th>\n            <th>Phase</th>\n            <th>Description</th>\n            <th>Example Value</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <td><strong><code>ikelifetime</code></strong></td>\n            <td>Phase 1 (IKE)</td>\n            <td>How long the IKE SA lasts before renegotiation</td>\n            <td><code>\"8h\"</code> (8 hours)</td>\n          </tr>\n          <tr>\n            <td><strong><code>lifetime</code></strong></td>\n            <td>Phase 2 (IPSec)</td>\n            <td>How long the IPSec SA lasts before renegotiation</td>\n            <td><code>\"1h\"</code> (1 hour)</td>\n          </tr>\n        </tbody>\n      </table>\n      <h3>Step 3: Additional Options (Optional)</h3>\n      <p>You can also include rekey and reauth settings:</p>\n      <pre><code>/opt/kerio/winroute/tinydbclient \"update VpnTunnels_v2 set CustomOptions={'rekey=\\\"no\\\"', 'reauth=\\\"no\\\"', 'lifetime=\\\"1h\\\"','ikelifetime=\\\"8h\\\"'} where name='YourTunnelName'\"\n</code></pre>\n      <h3>Step 4: Apply the Changes</h3>\n      <ol>\n        <li>\n          <p><strong>(Optional)</strong> Restart Kerio Control if settings don't propagate:</p>\n          <pre><code>systemctl restart winroute\n</code></pre>\n        </li>\n        <li>\n          <p><strong>Reconnect the VPN tunnel</strong> from the Kerio Control WebAdmin to confirm the changes are persistent.</p>\n        </li>\n      </ol>\n      <h3>Step 5: Verify the Settings</h3>\n      <p>Check the <code>/etc/ipsec.conf</code> file to confirm your settings:</p>\n      <pre><code>cat /etc/ipsec.conf\n</code></pre>\n      <p>You should now see your custom <code>ikelifetime</code> and <code>lifetime</code> values in the configuration.</p>\n      <hr>\n      <h2>Important Notes:</h2>\n      <p>\u26a0\ufe0f <strong>Special Characters</strong>: If your tunnel name contains special characters like periods (.), asterisks (*), parentheses, brackets, etc., you need to escape them with a backslash (\\).</p>\n      <p><strong>Example</strong>: A tunnel named <code>\"VPN (external)\"</code> should be written as <code>\"VPN \\\\(external\\\\)\"</code> in the command.</p>\n      <p>\u23f0 <strong>Time Format</strong>: Values are in hourly units by default (e.g., \"8h\" = 8 hours, \"1h\" = 1 hour).</p>\n      <p>For more details, check out: <a href=\"https://support.keriocontrol.gfi.com/article/118693\" rel=\"nofollow\">Adjusting Values for IPSec VPN Using Kerio Control</a></p>\n      <hr>\n      <p>Do you have a specific tunnel you'd like to configure, or would you like help with setting specific lifetime values? \ud83d\ude0a</p>\n    </div><br>\n  </div>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

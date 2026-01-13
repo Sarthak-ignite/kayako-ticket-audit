@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are highly generic and repetitive, using template language without addressing specific customer needs.",
+    "evidence": [
+      "[2025-12-03T08:17:17+00:00] ATLAS: Dear Ben, Thank you for your continued patience and for following up regarding your vendor due diligence request.",
+      "[2025-12-03T08:02:14+00:00] ATLAS: Dear Ben, Thank you for your continued patience and your follow-ups regarding your vendor due diligence request."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "AI repeatedly places ticket on hold and requests information, creating a cyclical process that prevents resolution.",
+    "evidence": [
+      "[2025-12-08T22:31:58+00:00] Centralsupport-ai-acc: Placing on hold for 168 hour(s)",
+      "[2025-12-03T08:31:50+00:00] Centralsupport-ai-acc: ticket was set to hold until 2025-12-03T08:30:17.000Z. Placing ticket back to open",
+      "[2025-12-03T08:02:08+00:00] ATLAS: Requesting more information"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No clear evidence of ignoring previous context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant time gaps between interactions, with multiple days passing without substantive resolution.",
+    "evidence": [
+      "Time to first human (hours): 384.9",
+      "Max gap between responses (hours): 151.9"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket was closed without fully addressing the customer's original vendor due diligence document request.",
+    "evidence": [
+      "[2025-12-09T15:49:49+00:00] Phronesis: Thank you for your update; we are closing this ticket as requested.",
+      "[2025-12-08T17:20:21+00:00] Ben Smith: Below is a list of the documents we are needing. Security review (ex. SOC1 SOC2/SSAE 16 report) and/or Gap Letter"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is not clearly identified as a P1/Severity 1 technical issue.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are highly generic and repetitive, using template language without addressing specific customer needs.\",\n    \"evidence\": [\n      \"[2025-12-03T08:17:17+00:00] ATLAS: Dear Ben, Thank you for your continued patience and for following up regarding your vendor due diligence request.\",\n      \"[2025-12-03T08:02:14+00:00] ATLAS: Dear Ben, Thank you for your continued patience and your follow-ups regarding your vendor due diligence request.\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"AI repeatedly places ticket on hold and requests information, creating a cyclical process that prevents resolution.\",\n    \"evidence\": [\n      \"[2025-12-08T22:31:58+00:00] Centralsupport-ai-acc: Placing on hold for 168 hour(s)\",\n      \"[2025-12-03T08:31:50+00:00] Centralsupport-ai-acc: ticket was set to hold until 2025-12-03T08:30:17.000Z. Placing ticket back to open\",\n      \"[2025-12-03T08:02:08+00:00] ATLAS: Requesting more information\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence of ignoring previous context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant time gaps between interactions, with multiple days passing without substantive resolution.\",\n    \"evidence\": [\n      \"Time to first human (hours): 384.9\",\n      \"Max gap between responses (hours): 151.9\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was closed without fully addressing the customer's original vendor due diligence document request.\",\n    \"evidence\": [\n      \"[2025-12-09T15:49:49+00:00] Phronesis: Thank you for your update; we are closing this ticket as requested.\",\n      \"[2025-12-08T17:20:21+00:00] Ben Smith: Below is a list of the documents we are needing. Security review (ex. SOC1 SOC2/SSAE 16 report) and/or Gap Letter\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is not clearly identified as a P1/Severity 1 technical issue.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket demonstrates significant process issues with AI interactions\n- Multiple automated hold/loop cycles prevented timely resolution\n- Large response delays (384.9 hours to first human response)\n- Premature closure without addressing customer's specific document request\n- AI responses are generic and non-specific\n\nThe ticket appears to be a vendor due diligence document request that got caught in an automated process loop, ultimately being closed without proper resolution.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60243726
+}

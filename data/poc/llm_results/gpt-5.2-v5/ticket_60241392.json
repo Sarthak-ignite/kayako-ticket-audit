@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS appears to malfunction and loop on incorrect license-key verification despite the customer correcting it, preventing progress. The customer explicitly reports the chatbot \u201ccrashes\u201d and that they needed assistance beyond what ATLAS could provide.",
+    "evidence": [
+      "Customer: \"Hello the chatbot crashes because he cant check the serial number from my kerio ng120\"",
+      "ATLAS transcript: \"I have this license key on record: * License: 20339-8LMFV-3J3LZ ... Just to make sure we're on the same page - is this the same system you're reaching out about today?\" (after customer provided a different key)",
+      "ATLAS transcript: Customer: \"It is this: 20339-1LQWD-4A2PV\" \u2192 ATLAS: \"I have this license key on record: * License: 20339-8LMFV-3J3LZ ... is this the same system you're reaching out about today?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly asks to create a ticket and indicates the needed data was already provided, while the ATLAS interaction shows repetitive questioning (license key loop) and the customer reports the bot crashing\u2014suggesting the customer was stuck in an AI loop before reaching support via Kayako.",
+    "evidence": [
+      "Customer (ATLAS chat recap): \"Please create me a ticket\"",
+      "Customer (ATLAS chat recap): \"Create me a ticket we aleready have all data you need\"",
+      "ATLAS transcript: Customer: \"It is this: 20339-1LQWD-4A2PV\" \u2192 ATLAS repeats: \"I have this license key on record: * License: 20339-8LMFV-3J3LZ ... is this the same system you're reaching out about today?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support requested a video and back-label photo because they were not available on the ticket at the time; once the customer provided the link and photo, support acknowledged receipt and moved to warranty/RMA steps. No clear instance shows support asking again for the same item after acknowledging it was already provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All visible exchanges occur within the same day and within minutes/hours, and there is no customer complaint about waiting or staff apology for delay in the provided text.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While standard language warns the ticket may stay open for one week unless updated, there is no explicit closure/auto-closure notice shown, and the case continues with active processing.",
+    "evidence": [
+      "Support (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the device not booting is a serious outage, support treated it as urgent, gathered RMA-required artifacts, initiated warranty verification, and proceeded toward RMA approval rather than leaving it in generic troubleshooting for an extended period.",
+    "evidence": [
+      "Support (private ops summary): \"Set priority to URGENT as this is a hardware outage preventing the firewall from booting.\"",
+      "Support (public): \"We have commenced the warranty verification process with our internal team. You can expect an update from us once we receive their confirmation, which is usually within 48 hours.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60241392
+}

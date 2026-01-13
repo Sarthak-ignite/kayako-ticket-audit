@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no indication that AI responses were generic filler or contained wrong information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interactions do not show repetitive requests for the same information from the AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support appears to overlook or not consider information provided by the customer, such as similar issues or previous ticket references.",
+    "evidence": [
+      "[2025-10-14T12:33:30+00:00] Eswaramoorthy P referenced previous ticket#60192334."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a substantial delay between initial contact and subsequent responses.",
+    "evidence": [
+      "[2025-10-14T12:30:43+00:00] Customer comments.",
+      "[2025-10-22T16:05:35+00:00] Next employee response."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence suggesting the ticket was closed prematurely or while the customer was awaiting information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of generic troubleshooting rather than escalation for a high-priority issue.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that AI responses were generic filler or contained wrong information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions do not show repetitive requests for the same information from the AI.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support appears to overlook or not consider information provided by the customer, such as similar issues or previous ticket references.\",\n    \"evidence\": [\n      \"[2025-10-14T12:33:30+00:00] Eswaramoorthy P referenced previous ticket#60192334.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a substantial delay between initial contact and subsequent responses.\",\n    \"evidence\": [\n      \"[2025-10-14T12:30:43+00:00] Customer comments.\",\n      \"[2025-10-22T16:05:35+00:00] Next employee response.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence suggesting the ticket was closed prematurely or while the customer was awaiting information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of generic troubleshooting rather than escalation for a high-priority issue.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60220701
+}

@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses lacked relevant context and did not progress the ticket towards resolution, not addressing the customer's urgent concerns adequately.",
+    "evidence": [
+      "[2025-09-29T22:34:06+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60209553 // Centralsupport-ai-acc commented privately: [customer_escalation] The customer escalated the Case. The customer message is:Complete Outage"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly requested escalation and intervention from a human representative but was ensnared in multiple AI-generated responses that did not address their queries.",
+    "evidence": [
+      "[2025-09-29T19:50:24+00:00] (Customer) D. Middleton: I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.",
+      "[2025-09-29T22:34:21+00:00] (Customer) D. Middleton: Please have a manager call me immediately."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support staff did not address the information already provided by the customer regarding their technical issues and repeatedly asked for similar details.",
+    "evidence": [
+      "[2025-09-30T00:55:16+00:00] (Customer) D. Middleton: How about you look back through the comments in this case, and you tell me what my concerns are. . . This is a complete failure of support"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay of 44.8 hours between some responses, which is unacceptable for an urgent ticket.",
+    "evidence": [
+      "[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: Dear Drew, Thank you for your response. Please provide us with the following details after having reproduced the issue:",
+      "[2025-10-02T18:16:04+00:00] (Customer) D. Middleton: What are next steps on this issue?"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was marked as closed, but the analysis does not show if the customer was waiting for critical information as it seemed open until the end of the interaction.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The urgent nature of the issue related to a complete outage was not responded to with immediate escalation, instead receiving general responses.",
+    "evidence": [
+      "[2025-09-29T19:50:24+00:00] (Customer) D. Middleton: I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.",
+      "[2025-09-29T22:34:06+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60209553 // Centralsupport-ai-acc commented privately: [customer_escalation] The customer escalated the Case."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses lacked relevant context and did not progress the ticket towards resolution, not addressing the customer's urgent concerns adequately.\",\n    \"evidence\": [\"[2025-09-29T22:34:06+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60209553 // Centralsupport-ai-acc commented privately: [customer_escalation] The customer escalated the Case. The customer message is:Complete Outage\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer repeatedly requested escalation and intervention from a human representative but was ensnared in multiple AI-generated responses that did not address their queries.\",\n    \"evidence\": [\"[2025-09-29T19:50:24+00:00] (Customer) D. Middleton: I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\", \"[2025-09-29T22:34:21+00:00] (Customer) D. Middleton: Please have a manager call me immediately.\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support staff did not address the information already provided by the customer regarding their technical issues and repeatedly asked for similar details.\",\n    \"evidence\": [\"[2025-09-30T00:55:16+00:00] (Customer) D. Middleton: How about you look back through the comments in this case, and you tell me what my concerns are. . . This is a complete failure of support\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay of 44.8 hours between some responses, which is unacceptable for an urgent ticket.\",\n    \"evidence\": [\"[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: Dear Drew, Thank you for your response. Please provide us with the following details after having reproduced the issue:\", \"[2025-10-02T18:16:04+00:00] (Customer) D. Middleton: What are next steps on this issue?\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was marked as closed, but the analysis does not show if the customer was waiting for critical information as it seemed open until the end of the interaction.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The urgent nature of the issue related to a complete outage was not responded to with immediate escalation, instead receiving general responses.\",\n    \"evidence\": [\"[2025-09-29T19:50:24+00:00] (Customer) D. Middleton: I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\", \"[2025-09-29T22:34:06+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60209553 // Centralsupport-ai-acc commented privately: [customer_escalation] The customer escalated the Case.\"]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60209553
+}

@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI entries are internal automation notes (\u201cskipping due to tags\u201d) and do not provide customer-facing guidance, claims, or promises that could be assessed as generic/wrong/unkept.",
+    "evidence": [
+      "[2025-11-12T17:20:15+00:00] (AI) ATLAS: \"Skipping ticket due to tags\"",
+      "[2025-11-19T16:48:18+00:00] (AI) ATLAS: \"Skipping ticket due to tags\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being repeatedly prompted by AI for the same information or being blocked from reaching a human; the visible customer-facing updates are from employees.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No agent messages show requests for already-provided logs/screenshots or repetition of questions; the agent updates indicate progress (fix identified, deployment completed) rather than re-asking for inputs.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The timeline shows a multi-day gap (over 6 days) between the last substantive public update and the closure confirmation, aligning with the provided max response gap of 152.5 hours.",
+    "evidence": [
+      "[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: \"The deployment has been completed, and we have verified that the issue is no longer reproducible.\"",
+      "[2025-11-19T16:54:45+00:00] (Employee) Pavly Nashed: \"We will go ahead and close this ticket as requested.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Closure appears to be explicitly requested/confirmed internally, and there is no evidence the customer was still awaiting promised information at the time of closure.",
+    "evidence": [
+      "[2025-11-19T16:48:08+00:00] (Employee) Warren Cook: \"We can close this case\"",
+      "[2025-11-19T16:54:45+00:00] (Employee) Pavly Nashed: \"Thank you for the confirmation. We will go ahead and close this ticket as requested.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "For an urgent ticket, the responses shown indicate escalation to development and a deployment/fix, not generic end-user troubleshooting (cache/VPN/firewall).",
+    "evidence": [
+      "[2025-11-13T04:12:59+00:00] (Employee) Chintan Parekh: \"Our Development team has identified a fix, and we are working to get this deployed.\"",
+      "[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: \"The deployment has been completed, and we have verified that the issue is no longer reproducible.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI entries are internal automation notes (\u201cskipping due to tags\u201d) and do not provide customer-facing guidance, claims, or promises that could be assessed as generic/wrong/unkept.\",\n    \"evidence\": [\n      \"[2025-11-12T17:20:15+00:00] (AI) ATLAS: \\\"Skipping ticket due to tags\\\"\",\n      \"[2025-11-19T16:48:18+00:00] (AI) ATLAS: \\\"Skipping ticket due to tags\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being repeatedly prompted by AI for the same information or being blocked from reaching a human; the visible customer-facing updates are from employees.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No agent messages show requests for already-provided logs/screenshots or repetition of questions; the agent updates indicate progress (fix identified, deployment completed) rather than re-asking for inputs.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The timeline shows a multi-day gap (over 6 days) between the last substantive public update and the closure confirmation, aligning with the provided max response gap of 152.5 hours.\",\n    \"evidence\": [\n      \"[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: \\\"The deployment has been completed, and we have verified that the issue is no longer reproducible.\\\"\",\n      \"[2025-11-19T16:54:45+00:00] (Employee) Pavly Nashed: \\\"We will go ahead and close this ticket as requested.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Closure appears to be explicitly requested/confirmed internally, and there is no evidence the customer was still awaiting promised information at the time of closure.\",\n    \"evidence\": [\n      \"[2025-11-19T16:48:08+00:00] (Employee) Warren Cook: \\\"We can close this case\\\"\",\n      \"[2025-11-19T16:54:45+00:00] (Employee) Pavly Nashed: \\\"Thank you for the confirmation. We will go ahead and close this ticket as requested.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"For an urgent ticket, the responses shown indicate escalation to development and a deployment/fix, not generic end-user troubleshooting (cache/VPN/firewall).\",\n    \"evidence\": [\n      \"[2025-11-13T04:12:59+00:00] (Employee) Chintan Parekh: \\\"Our Development team has identified a fix, and we are working to get this deployed.\\\"\",\n      \"[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: \\\"The deployment has been completed, and we have verified that the issue is no longer reproducible.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60238457
+}

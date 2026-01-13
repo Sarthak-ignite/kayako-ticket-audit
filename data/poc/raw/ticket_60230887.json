@@ -1,0 +1,247 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_classic",
+        "requester": {
+          "id": 60458388,
+          "uuid": "df24ea54-757d-57b5-9ece-ba44854e1cdd",
+          "full_name": "Varun Venkat",
+          "legacy_id": "0032E00002asoRdQAI",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/df24ea54-757d-57b5-9ece-ba44854e1cdd?1766570241",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60066830,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 459917,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+          "last_seen_ip": "151.186.177.21",
+          "last_seen_at": "2025-12-16T04:33:29+00:00",
+          "last_active_at": "2025-12-24T09:57:21+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60458388",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@6e8296a3222b78f65660e6a8f40483125bf6a06e",
+          "password_updated_at": "2025-12-15T04:39:15+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2025-12-15T04:39:30+00:00",
+          "last_activity_at": "2025-12-15T11:02:20+00:00",
+          "created_at": "2025-07-07T09:01:46+00:00",
+          "updated_at": "2025-12-24T09:57:21+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60458388"
+        },
+        "ticket_idt": 60230887
+      },
+      "interactions": [
+        [
+          "2025-12-24T09:57:21+00:00",
+          "Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: JIRA Issue KPSSUPPORT-181 is changed to 'Done' , block reason: -"
+        ],
+        [
+          "2025-12-24T06:57:19.102-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // status is changed from On Hold to Done"
+        ],
+        [
+          "2025-12-24T06:55:48.001-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // Abhishek Chandel commented: Data file has been provided in the given location and kayako ticket (60230887) is also completed.so closing this ticket.  please reopen if required."
+        ],
+        [
+          "2025-12-15T12:14:12+00:00",
+          "Kayako - ticket id 60230887 // Balaji Jayaraman commented publicly: Dear Varun,\n\nOur team has confirmed that the LITHCOMMDAILY.zip file is now available again at the SFTP path /home/ciscosupport/communityexport/.\n\nCould you please verify that you can access the file and confirm whether the data appears complete on your end?\u00a0\n\nBest regards,\nKhoros Community Classic Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-12-15T09:10:26+00:00",
+          "Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: JIRA Issue KPSSUPPORT-181 is changed to 'On Hold' , block reason: -"
+        ],
+        [
+          "2025-12-15T06:14:50.330-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // Abhishek Chandel commented:  Thanks for update.  please ask customer to verify the data and update."
+        ],
+        [
+          "2025-12-15T06:10:23.515-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // status is changed from To Do to On Hold"
+        ],
+        [
+          "2025-12-15T06:10:21.370-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // Jiya Haq commented: The LITHCOMMDAILY.zip file is now present in the SFTP location.sftp> cd /home/ciscosupport/communityexport/\nsftp> ls -la\ndrwxr-xr-x    2 15056    5933         4096 Dec 13 22:51 .\ndrwxr-xr-x    3 15056    5933         4096 Sep 23  2021 ..\n-rw-r--r--    1 15056    5933     69903640 Dec 13 22:51 LITHCOMMDAILY.zip Action Required from Customer, Please confirm they can now access the LITHCOMMDAILY.zip file from the SFTP location.cc:   "
+        ],
+        [
+          "2025-12-15T05:26:40.535-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // Angelika Devine commented: following up with  for latest update herecc  "
+        ],
+        [
+          "2025-12-15T05:24:59+00:00",
+          "Kayako - ticket id 60230887 // Balaji Jayaraman commented publicly: Dear Varun,\n\nWe have received your escalation and are currently investigating the missing data from the SFTP location. Our Infrastructure team is analyzing the situation, and we will update you as soon as they complete their analysis.\n\nBest regards,\nKhoros Classic Support Team"
+        ],
+        [
+          "2025-12-15T04:40:54+00:00",
+          "Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:issue not resolved from last 2 months\n\nThe severity is: core_functionality_defect\n\n"
+        ],
+        [
+          "2025-12-15T02:27:16.742-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // CS-ALL commented:   - Can you assign someone to thisCustomer is escalating"
+        ],
+        [
+          "2025-12-09T04:46:13+00:00",
+          "Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-12-09T04:45:59+00:00",
+          "Kayako - ticket id 60230887 // Balaji Jayaraman commented publicly: Dear Varun,\n\nThank you for your patience. We are coordinating with our Professional Services team on this request and will provide an update as soon as we have meaningful progress to share.\n\nBest regards,\nKhoros Community Classic Support Team\n\n"
+        ],
+        [
+          "2025-12-08T18:04:24+00:00",
+          "Kayako - ticket id 60230887 // Varun Venkat commented publicly:  \n\nHi Team, \n\n\u00a0\n\nAny eta on this request, it\u2019s been a while since we opened this ticket.\n\n\u00a0\n\nThanks,\n\nVarun\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-14T05:01:53+00:00",
+          "Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 8888 hour(s)"
+        ],
+        [
+          "2025-11-13T19:22:32+00:00",
+          "Kayako - ticket id 60230887 // Varun Venkat commented publicly:  \n\nHi Hermes,\n\n\u00a0\n\n\u00a0\n\nAny update on the issue, on when we will have a resolution ??\n\n\u00a0\n\nThanks,\n\nVarun\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-11-07T03:49:26+00:00",
+          "Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-11-07T03:49:17+00:00",
+          "Kayako - ticket id 60230887 // Rishi Singh commented privately:  left a note on the jira for update--\u00a0 "
+        ],
+        [
+          "2025-11-07T00:48:51.489-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // CS-ALL commented: Dear Team, any update on this?"
+        ],
+        [
+          "2025-11-06T21:42:33+00:00",
+          "Kayako - ticket id 60230887 // Andres Ledesma commented privately:  Instructions [https://docs.google.com/document/d/1w6pg-Lqz1Y5n8Gah7JXTRAnNEgnLGDgQn0p4EE_DdyU/edit#bookmark=id.nmtleyh2xrkb] \n\nWHAT IS YOUR PROPOSED ACTION?\n(REQUIRED: SELECT ONE, DELETE THE REST)\n\n \t* Send to external team -> Place back on hold\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n N/A (previous PR by Hermes) \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n https://ignitetechpm.atlassian.net/browse/KPSSUPPORT-181 still pending. "
+        ],
+        [
+          "2025-11-06T16:57:52+00:00",
+          "Kayako - ticket id 60230887 // Varun Venkat commented publicly:  \n\nHi Santhosh,\n\n\u00a0\n\nAny update on the below request from the professional services team, please let us know.\n\n\u00a0\n\nThanks,\n\nVarun\n\n\u00a0\n\nCisco Confidential\n\n \n"
+        ],
+        [
+          "2025-10-30T09:14:54.100-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // Abhishek Chandel commented: , Can you please look into this."
+        ],
+        [
+          "2025-10-30T08:57:48+00:00",
+          "Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: JIRA Issue KPSSUPPORT-181 is changed to 'To Do' , block reason: -"
+        ],
+        [
+          "2025-10-30T08:49:05+00:00",
+          "Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-10-30T08:48:32+00:00",
+          "Kayako - ticket id 60230887 // Santhosh M commented publicly: Hi Varun,\n\nI hope you are doing well. \u00a0\nWe\u2019ve reported this issue to our Professional Services (PS) team for further investigation. We\u2019ll keep you informed and share an update as soon as we hear back from them.\n\nRespectfully,\nSanthosh M\nKhoros Community Classic Support Team"
+        ],
+        [
+          "2025-10-30T08:43:45+00:00",
+          "Kayako - ticket id 60230887 // Santhosh M commented privately: We could find past references where PS used to handle these requests for the Cisco Support community:\n\n \t*\nhttps://jira.dev.lithium.com/browse/PSS-3113\n\n \t*\nhttps://jira.dev.lithium.com/browse/PSS-1823\n\n \t*\nhttps://jira.dev.lithium.com/browse/PSS-1941\n\n \t*\nhttps://jira.dev.lithium.com/browse/PSO-17837\n\n Filed https://ignitetechpm.atlassian.net/browse/KPSSUPPORT-181\u00a0for PS investigation. "
+        ],
+        [
+          "2025-10-30T08:41:28+00:00",
+          "Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: JIRA Issue KPSSUPPORT-181 is changed to 'To Do' , block reason: -"
+        ],
+        [
+          "2025-10-30T08:25:21.173-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // Muhammad Talha Riaz commented: After validating and creating a connection, as shown in the picture below, the last entry is of 17 Oct in the communityexport folder, and none after that.Connection details:sftp ciscosupport@sftp-2.usw2.prod.hosted.lithcloud.comPassword: PDrDy0vTwcd /home/ciscosupport/communityexport/ls -laKindly assign engineer for the fixCC:  "
+        ],
+        [
+          "2025-10-30T05:58:33.622-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // Abhishek Chandel commented: Hi  can you please do the triaging here."
+        ],
+        [
+          "2025-10-30T05:41:24.418-0300",
+          "KPS Support - issue key KPSSUPPORT-181 // Issue is created by CS-ALL with description: We could find past references where PS used to handle these requests for the Cisco Support community:Customer description:We have noticed the csv data file is missing from the sftp location starting 10/20/2025, we do a weekly pull of this file to have an aggregate dataset for all the community posts. Can you please help restoring the file.\u00a0Below are the details we use for sftp connection.\u00a0myHostname = \"sftp-2.usw2.prod.hosted.lithcloud.com\"\nremoteFilePath = '/home/ciscosupport/communityexport/LITHCOMMDAILY.zip'\u00a0Below steps is to show the directory is empty In the SFTP location.C:\\Users\\vtanneru>sftp ciscosupport@sftp-2.usw2.prod.hosted.lithcloud.com\nciscosupport@sftp-2.usw2.prod.hosted.lithcloud.com's password:\nConnected to sftp-2.usw2.prod.hosted.lithcloud.com.\nsftp> dir\nciscosupport     communityexport  dump\nsftp> pwd\nRemote working directory: /home\nsftp> cd\nsftp> cd ciscosupport\nsftp> pwd\nRemote working directory: /home/ciscosupport\nsftp> ls\ncommunityexport\nsftp> cd communityexport\nsftp> ls\nsftp> dir\nsftp>"
+        ],
+        [
+          "2025-10-29T19:08:08+00:00",
+          "Kayako - ticket id 60230887 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-10-29T19:07:32+00:00",
+          "Kayako - ticket id 60230887 // Varun Venkat commented publicly:  \n\nThe issue is still there we haven\u2019t been able to download the data, I was waiting for you guys to confirm if there was any fix?? \n\nNot sure what you wanted from me.. \n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-10-28T17:51:47+00:00",
+          "Kayako - ticket id 60230887 // ATLAS commented publicly: Dear Varun,\n\nThank you for bringing this to our attention. We are currently aware of an ongoing incident affecting Community Analytics data for the EMEA region, which may be impacting your ability to access the csv data files via SFTP since October 21st, 2025.\n\nFor the latest updates and information on the progress of this incident, please refer to our status page [https://stspg.io/7tn8nft5gjjh]. Our teams are actively working on backfilling the missing data and restoring normal operations.\n\nIf you continue to experience issues after the incident has been resolved, please feel free to reach out to us again. We are here to help.\n\nSincerely, \nATLAS \nKhoros Community Classic Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-28T17:51:39+00:00",
+          "Kayako - ticket id 60230887 // ATLAS commented privately: Responding to active incident"
+        ],
+        [
+          "2025-10-28T17:51:28+00:00",
+          "Kayako - ticket id 60230887 // Varun Venkat commented publicly:  \n\nHi Team,\n\n\u00a0\n\nWe have noticed the csv data file is missing from the sftp location starting 10/20/2025, we do a weekly pull of this file to have an aggregate dataset for all the community posts. Can you please help restoring the file.\n\n\u00a0\n\nBelow are the details we use for sftp connection.\n\n\u00a0\n\nmyHostname = sftp-2.usw2.prod.hosted.lithcloud.com\nremoteFilePath = '/home/ciscosupport/communityexport/LITHCOMMDAILY.zip'\n\n\u00a0\n\nBelow steps is to show the directory is empty In the SFTP location.\n\n\u00a0\n\nC:\\Users\\vtanneru>sftp ciscosupport@sftp-2.usw2.prod.hosted.lithcloud.com\n\nciscosupport@sftp-2.usw2.prod.hosted.lithcloud.com's password:\n\nConnected to sftp-2.usw2.prod.hosted.lithcloud.com.\n\nsftp> dir\n\nciscosupport\u00a0\u00a0\u00a0\u00a0 communityexport\u00a0 dump\n\nsftp> pwd\n\nRemote working directory: /home\n\nsftp> cd\n\nsftp> cd ciscosupport\n\nsftp> pwd\n\nRemote working directory: /home/ciscosupport\n\nsftp> ls\n\ncommunityexport\n\nsftp> cd communityexport\n\nsftp> ls\n\nsftp> dir\n\nsftp>\n\n\u00a0\n\nThanks,\n\nVarun\n "
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 24,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": true,
+          "link_value": "KPSSUPPORT-181"
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

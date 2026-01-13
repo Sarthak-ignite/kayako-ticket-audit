@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are highly formulaic and incomplete, with truncated messages and private logs that don't provide clear guidance.",
+    "evidence": [
+      "[2025-12-18T08:17:54+00:00] Dear Tomas, Thank you for updating us... (message abruptly cuts off)",
+      "[2025-12-16T12:05:45+00:00] In order to continue the case efficiently and maintain the R... (message incomplete)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Multiple AI interactions (ATLAS, Cu Chulainn AI Manager) seem to be cycling without resolving the issue, with repeated error messages about sending to L1.",
+    "evidence": [
+      "[2025-12-15T16:25:31+00:00] CC returned an error undefined Sending to L1",
+      "[2025-12-10T07:10:34+00:00] CC returned an error undefined Sending to L1",
+      "[2025-12-08T12:10:24+00:00] CC returned an error undefined Sending to L1"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support seems to repeatedly ask for or reference information the customer has already provided, without acknowledging previous context.",
+    "evidence": [
+      "[2025-12-14T09:14:13+00:00] Mike Kebede asks about error logs despite customer having already shared multiple logs",
+      "[2025-12-08T11:34:02+00:00] Jan Paraniak asks 'What is your proposed action?' even though customer has been actively troubleshooting"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer interactions, with some delays spanning several days.",
+    "evidence": [
+      "Time between [2025-12-06T22:05:08+00:00] and [2025-12-08T11:34:02+00:00] is multiple days",
+      "Time to first human response was 29.7 hours",
+      "Max gap between responses was 97.5 hours (over 4 days)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket has long response times, there's no clear evidence of premature closure. The ticket appears to still be active.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite an urgent ticket with repeated system failures, support provides generic troubleshooting steps instead of immediate comprehensive investigation.",
+    "evidence": [
+      "[2025-12-16T10:56:01+00:00] Ciprian Nastase suggests enabling Watchdog autorestart as primary solution",
+      "[2025-12-06T17:52:59+00:00] Mike Kebede provides a generic confirmation without clear resolution strategy"
+    ]
+  },
+  "_raw_response": "Here's the detailed analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are highly formulaic and incomplete, with truncated messages and private logs that don't provide clear guidance.\",\n    \"evidence\": [\n      \"[2025-12-18T08:17:54+00:00] Dear Tomas, Thank you for updating us... (message abruptly cuts off)\",\n      \"[2025-12-16T12:05:45+00:00] In order to continue the case efficiently and maintain the R... (message incomplete)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple AI interactions (ATLAS, Cu Chulainn AI Manager) seem to be cycling without resolving the issue, with repeated error messages about sending to L1.\",\n    \"evidence\": [\n      \"[2025-12-15T16:25:31+00:00] CC returned an error undefined Sending to L1\",\n      \"[2025-12-10T07:10:34+00:00] CC returned an error undefined Sending to L1\",\n      \"[2025-12-08T12:10:24+00:00] CC returned an error undefined Sending to L1\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support seems to repeatedly ask for or reference information the customer has already provided, without acknowledging previous context.\",\n    \"evidence\": [\n      \"[2025-12-14T09:14:13+00:00] Mike Kebede asks about error logs despite customer having already shared multiple logs\",\n      \"[2025-12-08T11:34:02+00:00] Jan Paraniak asks 'What is your proposed action?' even though customer has been actively troubleshooting\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer interactions, with some delays spanning several days.\",\n    \"evidence\": [\n      \"Time between [2025-12-06T22:05:08+00:00] and [2025-12-08T11:34:02+00:00] is multiple days\",\n      \"Time to first human response was 29.7 hours\",\n      \"Max gap between responses was 97.5 hours (over 4 days)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket has long response times, there's no clear evidence of premature closure. The ticket appears to still be active.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite an urgent ticket with repeated system failures, support provides generic troubleshooting steps instead of immediate comprehensive investigation.\",\n    \"evidence\": [\n      \"[2025-12-16T10:56:01+00:00] Ciprian Nastase suggests enabling Watchdog autorestart as primary solution\",\n      \"[2025-12-06T17:52:59+00:00] Mike Kebede provides a generic confirmation without clear resolution strategy\"\n    ]\n  }\n}\n```\n\nKey observations:\n- The ticket shows multiple systemic support quality issues\n- AI and human interactions are fragmented and ineffective\n- High-priority issue is not being addressed with appropriate urgency\n- Customer is clearly frustrated with communication quality",
+  "_model": "claude-haiku",
+  "_ticket_id": 60256173
+}

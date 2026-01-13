@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS only guided the customer to upload files and proceed with ticket creation/escalation. No clearly incorrect product information, broken templating, irrelevant troubleshooting, or unfulfilled AI promise is shown in the customer-facing AI text.",
+    "evidence": [
+      "Chat Support: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\"",
+      "Kayako - ticket id 60073150 // ATLAS commented privately: Action: Send to engineering"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer asked for a human and was denied, nor repeated AI requests for the same info, nor multiple consecutive AI turns trapping the customer.",
+    "evidence": [
+      "Ian DeMoss: \"raise a ticket\"",
+      "Chat Support provides upload instructions once; no repeated loops are shown."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support responses are not strongly evidenced as ignoring previously provided details per the criteria (e.g., re-asking for already-provided info/attachments, or the customer explicitly stating 'I already explained'). While the initial support reply didn\u2019t directly confirm the specific 'no policy' bug fix, the ticket does not show the explicit 'already provided/see above' signals required to detect this pattern.",
+    "evidence": [
+      "Customer question (specific): \"when will the no policy bug on the 7.5.5 exinda release be fixed\"",
+      "Support reply recommends upgrade and release details: \"Exinda version 7.6.0 is now available... We recommend... considering the upgrade...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a 3-calendar-day gap between the customer\u2019s follow-up request for an update and the first substantive public support response.",
+    "evidence": [
+      "[2025-06-10T20:59:29+00:00] Customer: \"Has there been any movement on generating an updated Exinda code version; where it resolves the 'no policy' bug that is currently affecting the 7.5.5 release?\"",
+      "[2025-06-13T13:18:30+00:00] Support: \"Exinda version 7.6.0 is now available...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript does not show the ticket being closed. It contains a standard notice about staying open for a week, but no closure event is recorded here.",
+    "evidence": [
+      "Support message includes: \"This ticket will stay open for one week unless you reply with 'This ticket can be closed'...\" (no actual closure shown)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit P1/SEV1/Critical severity, outage, SLA breach, or clear production-down statement is present. The issue is framed as a bug inquiry and release fix question.",
+    "evidence": [
+      "Customer: \"when will the no policy bug on the 7.5.5 exinda release be fixed\" (no severity/production-down claim)"
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60073150
+}

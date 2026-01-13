@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses were procedural and not engaged directly with the customer but did not show quality failures in terms of misinformation.",
+    "evidence": [
+      "\"[2025-11-12T17:20:15+00:00] (AI) ATLAS: Kayako - ticket id 60238457 // ATLAS commented privately: Skipping ticket due to tags\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in an AI loop requesting repetitive information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence that the support team ignored previously provided information by the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a notable delay exceeding six days between responses in key updates.",
+    "evidence": [
+      "[2025-11-13T05:20:07+00:00] and [2025-11-19T16:48:08+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed upon the customer's request to do so.",
+    "evidence": [
+      "[2025-11-19T16:48:08+00:00] (Employee) Warren Cook: We can close this case"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket showed appropriate escalation and handling due to references to ongoing incident management and change request procedures.",
+    "evidence": [
+      "[2025-11-12T17:22:35.382+0000] (Employee) Aamir Merchant: This is urgent and needs a priority push to updated chat widget version asap."
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses were procedural and not engaged directly with the customer but did not show quality failures in terms of misinformation.\",\n    \"evidence\": [\n      \"\\\"[2025-11-12T17:20:15+00:00] (AI) ATLAS: Kayako - ticket id 60238457 // ATLAS commented privately: Skipping ticket due to tags\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in an AI loop requesting repetitive information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the support team ignored previously provided information by the customer.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a notable delay exceeding six days between responses in key updates.\",\n    \"evidence\": [\n      \"[2025-11-13T05:20:07+00:00] and [2025-11-19T16:48:08+00:00]\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed upon the customer's request to do so.\",\n    \"evidence\": [\n      \"[2025-11-19T16:48:08+00:00] (Employee) Warren Cook: We can close this case\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket showed appropriate escalation and handling due to references to ongoing incident management and change request procedures.\",\n    \"evidence\": [\n      \"[2025-11-12T17:22:35.382+0000] (Employee) Aamir Merchant: This is urgent and needs a priority push to updated chat widget version asap.\"\n    ]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60238457
+}

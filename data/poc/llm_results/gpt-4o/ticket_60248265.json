@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses logged are procedural, handling administrative tasks such as placing the ticket on hold and logging the ticket split.",
+    "evidence": [
+      "[2025-11-24T10:20:29+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)",
+      "[2025-11-21T14:50:44+00:00] (AI) Centralsupport-ai-acc: This ticket was split from 60243519"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in a repetitive AI loop without eventually reaching a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support team did not ask the customer to provide the same information again or ignore previous context referenced by the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay of over five days between the initial AI comment and the first human response, as well as a delay between customer follow-up and response.",
+    "evidence": [
+      "[2025-11-21T14:50:41+00:00] (AI) initial request",
+      "[2025-11-26T09:15:17+00:00] (Employee) response from human",
+      "[2025-11-25T22:24:20+00:00] (Customer) follow-up",
+      "[2025-11-26T09:56:08+00:00] (Employee) final response"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the customer was given instructions to contact a different department, not prematurely.",
+    "evidence": [
+      "[2025-11-26T09:56:08+00:00] (Employee) Andriy Rybalchenko: Please reach out directly to sales@ignitetech.com"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal, and there is no indication of a high-priority or outage scenario that would require immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses logged are procedural, handling administrative tasks such as placing the ticket on hold and logging the ticket split.\",\n    \"evidence\": [\"[2025-11-24T10:20:29+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)\", \"[2025-11-21T14:50:44+00:00] (AI) Centralsupport-ai-acc: This ticket was split from 60243519\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in a repetitive AI loop without eventually reaching a human agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support team did not ask the customer to provide the same information again or ignore previous context referenced by the customer.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay of over five days between the initial AI comment and the first human response, as well as a delay between customer follow-up and response.\",\n    \"evidence\": [\"[2025-11-21T14:50:41+00:00] (AI) initial request\", \"[2025-11-26T09:15:17+00:00] (Employee) response from human\", \"[2025-11-25T22:24:20+00:00] (Customer) follow-up\", \"[2025-11-26T09:56:08+00:00] (Employee) final response\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the customer was given instructions to contact a different department, not prematurely.\",\n    \"evidence\": [\"[2025-11-26T09:56:08+00:00] (Employee) Andriy Rybalchenko: Please reach out directly to sales@ignitetech.com\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal, and there is no indication of a high-priority or outage scenario that would require immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60248265
+}

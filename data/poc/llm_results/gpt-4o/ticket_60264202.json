@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI provided a specific response by attaching the requested report, which does not constitute a quality failure.",
+    "evidence": [
+      "2025-12-16T08:00:55+00:00: Your requested report is attached."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of looping or requests for information from the customer.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI addressed the ticket by providing the requested report without ignoring previous information.",
+    "evidence": [
+      "2025-12-16T08:00:55+00:00: Your requested report is attached."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no delays between responses; the timeline indicates automated and immediate actions.",
+    "evidence": [
+      "Time to first human (hours): nan",
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the requested report was provided, indicating no premature closure.",
+    "evidence": [
+      "2025-12-16T08:00:55+00:00: Your requested report is attached."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as high priority or an outage, and there is no indication of mishandling.",
+    "evidence": [
+      "Priority: normal"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI provided a specific response by attaching the requested report, which does not constitute a quality failure.\",\n    \"evidence\": [\"2025-12-16T08:00:55+00:00: Your requested report is attached.\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of looping or requests for information from the customer.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI addressed the ticket by providing the requested report without ignoring previous information.\",\n    \"evidence\": [\"2025-12-16T08:00:55+00:00: Your requested report is attached.\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no delays between responses; the timeline indicates automated and immediate actions.\",\n    \"evidence\": [\"Time to first human (hours): nan\", \"Max gap between responses (hours): 0.0\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the requested report was provided, indicating no premature closure.\",\n    \"evidence\": [\"2025-12-16T08:00:55+00:00: Your requested report is attached.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as high priority or an outage, and there is no indication of mishandling.\",\n    \"evidence\": [\"Priority: normal\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60264202
+}

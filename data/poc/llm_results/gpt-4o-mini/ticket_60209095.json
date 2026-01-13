@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses are overly generic and do not provide tangible help or relevant information for the customer's issue.",
+    "evidence": [
+      "[2026-01-05T10:55:52+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2026-01-03T19:43:33+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2026-01-02T23:20:26+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While there are multiple AI interactions, they do not request the same information repeatedly nor impede the customer from reaching a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support does not acknowledge previous customer comments that mention the ongoing issue has lasted for two months.",
+    "evidence": [
+      "[2026-01-05T09:17:54+00:00] (Employee) Manoranjan Rana: Is there any timeline to close this.",
+      "[2026-01-05T10:55:34+00:00] (Employee) Andriy Rybalchenko: At this time, we don\u2019t have a confirmed timeline to share."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are notably long gaps between responses, with instances of 657 hours without replies.",
+    "evidence": [
+      "[2026-01-05T10:55:52+00:00] (AI) Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "[2026-01-06T22:03:21Z] (Employee) daniel-wachira: I believe this is a performance-related problem."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is insufficient evidence that the ticket was closed while the customer was actively waiting for information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Given that this ticket is marked high-priority, the responses lack urgency and do not escalate the issue properly; generic statements are made instead.",
+    "evidence": [
+      "[2026-01-05T10:55:34+00:00] (Employee) Andriy Rybalchenko: The resolution depends on the Development team's queue.",
+      "[2026-01-05T10:39:28+00:00] (Employee) Andriy Rybalchenko: The issue is still with the Development team."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses are overly generic and do not provide tangible help or relevant information for the customer's issue.\",\n    \"evidence\": [\n      \"[2026-01-05T10:55:52+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2026-01-03T19:43:33+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2026-01-02T23:20:26+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While there are multiple AI interactions, they do not request the same information repeatedly nor impede the customer from reaching a human agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support does not acknowledge previous customer comments that mention the ongoing issue has lasted for two months.\",\n    \"evidence\": [\n      \"[2026-01-05T09:17:54+00:00] (Employee) Manoranjan Rana: Is there any timeline to close this.\",\n      \"[2026-01-05T10:55:34+00:00] (Employee) Andriy Rybalchenko: At this time, we don\u2019t have a confirmed timeline to share.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are notably long gaps between responses, with instances of 657 hours without replies.\",\n    \"evidence\": [\n      \"[2026-01-05T10:55:52+00:00] (AI) Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)\",\n      \"[2026-01-06T22:03:21Z] (Employee) daniel-wachira: I believe this is a performance-related problem.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient evidence that the ticket was closed while the customer was actively waiting for information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Given that this ticket is marked high-priority, the responses lack urgency and do not escalate the issue properly; generic statements are made instead.\",\n    \"evidence\": [\n      \"[2026-01-05T10:55:34+00:00] (Employee) Andriy Rybalchenko: The resolution depends on the Development team's queue.\",\n      \"[2026-01-05T10:39:28+00:00] (Employee) Andriy Rybalchenko: The issue is still with the Development team.\"\n    ]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60209095
+}

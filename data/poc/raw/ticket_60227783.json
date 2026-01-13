@@ -1,0 +1,136 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_care",
+        "requester": {
+          "id": 60535039,
+          "uuid": "ccb18044-903c-59a3-a7ad-e56abce3510a",
+          "full_name": "Brad Gerard",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 3,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/ccb18044-903c-59a3-a7ad-e56abce3510a?1767781385",
+          "agent_case_access": "ALL",
+          "organization_case_access": null,
+          "organization": {
+            "id": 60000019,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 2,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 536594,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "UTC",
+          "time_zone_offset": 0,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "41.13.220.103",
+          "last_seen_at": "2026-01-07T10:23:05+00:00",
+          "last_active_at": "2026-01-07T10:23:05+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60535039",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@88ef91a7a0821f57e3c4fefb419e4730b876477c",
+          "password_updated_at": "2025-08-21T16:50:04+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T21:59:13+00:00",
+          "last_activity_at": "2026-01-06T21:59:13+00:00",
+          "created_at": "2025-08-21T12:57:04+00:00",
+          "updated_at": "2026-01-07T10:23:05+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60535039"
+        },
+        "ticket_idt": 60227783
+      },
+      "interactions": [
+        [
+          "2025-10-29T11:35:33+00:00",
+          "Kayako - ticket id 60227783 // Balaji Jayaraman commented publicly: Dear Brad,\n\nPlease find attached the customer-facing RCA for the Khoros Care incident.\nThe document details the root cause, resolution steps, and preventive measures implemented to avoid recurrence.\n\nBest regards,\nKhoros Care Support Team\n\n"
+        ],
+        [
+          "2025-10-27T06:05:46+00:00",
+          "Kayako - ticket id 60227783 // Balaji Jayaraman commented privately:  RCA : https://www.notion.so/trilogy-enterprises/RCA-for-Khoros-Platform-Outage-CARESMM-9147-29085e927d3181fabca9eb5066e1f95f?source=copy_link\nWaiting QC "
+        ],
+        [
+          "2025-10-24T04:04:01+00:00",
+          "Kayako - ticket id 60227783 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+        ],
+        [
+          "2025-10-23T18:46:04+00:00",
+          "Kayako - ticket id 60227783 // ATLAS commented publicly: Dear Brad,\n\nThank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform (https://fortinet.response.lithium.com). We understand how important uninterrupted service is for your operations, and we appreciate your detailed report and patience during this time.\n\nFor the most up-to-date information, including the root cause analysis, event timelines, affected system components, and implemented preventive measures, we kindly ask you to refer to our official status page: Khoros Platform Service Disruption [https://stspg.io/yd97f1j9hvh7]. We continually update this page as more details become available.\n\nIf you continue to experience any issues after the incident has been resolved, please do not hesitate to contact us again so we can assist you further.\n\nSincerely,\n\nATLAS\n\nKhoros Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-23T18:45:54+00:00",
+          "Kayako - ticket id 60227783 // ATLAS commented privately: Responding to active incident"
+        ],
+        [
+          "2025-10-23T18:45:45+00:00",
+          "Kayako - ticket id 60227783 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, Brad Gerard ! \ud83d\udc4b\n\nThis is the Khoros Care AI Support Agent \ud83e\udd16. \n-------------------------\n\n Please note: The AI Support Agent is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \n\n--- AI Assistant ---\n\n Welcome to the menu for internal employees.\n\nHow can I help? \n\n--- Customer (Brad Gerard) ---\n\n Button selection: [\ud83d\udce9 Raise a Ticket] \n\n--- AI Assistant ---\n\n What's the priority of the issue? \n\n--- Customer (Brad Gerard) ---\n\n Button selection: [\ud83d\udd34 Urgent] \n\n--- AI Assistant ---\n\n Could you please provide the URL of your Khoros instance? This is necessary to properly raise and route your ticket for urgent issues. The URL typically starts with https:// and includes your community or platform domain. \n\n--- Customer (Brad Gerard) ---\n\n https://fortinet.response.lithium.com/ \n\n--- AI Assistant ---\n\n I've noted down your base instance URL\ud83d\udd17: https://fortinet.response.lithium.com \n\n--- AI Assistant ---\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\n\ud83d\udca1 If the reported behavior affects multiple end-customers, please do let us know the impact radius of the issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \n\n--- AI Assistant ---\n\n It looks like you might not have anything to add?\nJust a reminder a ticket will be automatically created in 3 minutes, I'll proceed with the information I already have \ud83d\ude03 \n\n--- Customer (Brad Gerard) ---\n\n Customer Fortinet (Ticket #60226631 [https://khoros-care.kayako.com/conversation/view/60226631] / JIRA CARESMM-9351) has requested a detailed RCA following repeated chat queue delays and system latency on the EMEA production instance (https://fortinet.response.lithium.com\n).\n\nThe customer reports that the same issue occurred on October 18th (13:30\u201313:45 IST) and again on October 22nd (10:10\u201310:50 IST), during which chats were not visible or claimable, manual refresh was required, and new chats were delayed by more than 10 minutes.\n\nThey believe the outages are related and are asking for a detailed explanation of the root cause, what occurred, and what measures are being implemented to prevent recurrence.\n\nPlease include in the RCA:\n\u2022 Confirmation of the technical root cause and whether both incidents are connected.\n\u2022 A detailed event timeline (detection \u2192 mitigation \u2192 recovery).\n\u2022 The affected system components and contributing factors.\n\u2022 Preventive actions and infrastructure improvements applied or planned.\n\nNo data loss was reported, but the customer experienced significant operational impact due to delayed chat handling and manual assignment.\n\nInstance: https://fortinet.response.lithium.com\n\nHosting Region: EMEA\nLinked JIRA: CARESMM-9351\nPrimary Ticket: 60226631 \n\n--- AI Assistant ---\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \n\n--- Customer (Brad Gerard) ---\n\n balaji.jayaraman@trilogy.com \n\n--- AI Assistant ---\n\n \ud83d\udc4c Got it!\n\nThese email addresses will be added to the ticket CC: balaji.jayaraman@trilogy.com \n\n--- AI Assistant ---\n\n I've automatically set the ticket subject to: Chat Queue Delays and Latency on EMEA Instance\n\nDoes that work for you?\n\n \t* If it does, simply say YES or use the below button to confirm \ud83d\udc47\n \t* If not, please directly type in the ticket subject of your choosing below \ud83d\ude09\n\n"
+        ],
+        [
+          "2025-10-23T18:45:42+00:00",
+          "Kayako - ticket id 60227783 // Brad Gerard commented privately: --- Ticket generated by Khoros Care AI chat on behalf of Brad Gerard - <a href=\"mailto:brad.gerard@ignitetech.com\" rel=\"nofollow\">brad.gerard@ignitetech.com</a> ---<br>\n  <br>\n  <b>Issue/request description:</b>\n  <ul>\n    <li>https://fortinet.response.lithium.com/</li>\n    <li>Customer Fortinet (Ticket #60226631 / JIRA CARESMM-9351) has requested a detailed RCA following repeated chat queue delays and system latency on the EMEA production instance (https://fortinet.response.lithium.com<br>\n    ).<br>\n    <br>\n    The customer reports that the same issue occurred on October 18th (13:30\u201313:45 IST) and again on October 22nd (10:10\u201310:50 IST), during which chats were not visible or claimable, manual refresh was required, and new chats were delayed by more than 10 minutes.<br>\n    <br>\n    They believe the outages are related and are asking for a detailed explanation of the root cause, what occurred, and what measures are being implemented to prevent recurrence.<br>\n    <br>\n    Please include in the RCA:<br>\n    \u2022 Confirmation of the technical root cause and whether both incidents are connected.<br>\n    \u2022 A detailed event timeline (detection \u2192 mitigation \u2192 recovery).<br>\n    \u2022 The affected system components and contributing factors.<br>\n    \u2022 Preventive actions and infrastructure improvements applied or planned.<br>\n    <br>\n    No data loss was reported, but the customer experienced significant operational impact due to delayed chat handling and manual assignment.<br>\n    <br>\n    Instance: https://fortinet.response.lithium.com<br>\n    <br>\n    Hosting Region: EMEA<br>\n    Linked JIRA: CARESMM-9351<br>\n    Primary Ticket: 60226631</li>\n  </ul><br>\n  <br>\n  <b>Khoros Instance Details:</b><br>\n  <ul>\n    <li>\n      <b>Instance URL:</b> <a href=\"https://fortinet.response.lithium.com\" rel=\"nofollow\">https://fortinet.response.lithium.com</a>\n    </li>\n  </ul>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 7,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

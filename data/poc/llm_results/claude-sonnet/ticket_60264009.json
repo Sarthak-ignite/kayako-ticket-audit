@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI (ATLAS) did not provide any substantive response to the customer. It only commented that it was skipping the ticket due to tags, which is a system behavior rather than a quality failure in customer-facing communication.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in an AI loop. The AI skipped the ticket immediately, and there are no repeated requests for the same information or attempts by the customer to escalate past the AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence of support ignoring previously provided information. The ticket appears to be a call log upload without any back-and-forth support interaction where context could have been ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The max gap between responses was 0.0 hours according to the metadata, and all interactions occurred within a 23-second window on the same date. There are no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is marked as closed, there is no evidence the customer was actively waiting for information or that promises were made and not kept. The ticket appears to be related to a call recording upload with the AI skipping due to tags.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked as urgent priority, there is no evidence of generic troubleshooting being applied instead of escalation. The AI skipped the ticket, and there's no indication this was an active outage requiring immediate escalation that was mishandled.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI (ATLAS) did not provide any substantive response to the customer. It only commented that it was skipping the ticket due to tags, which is a system behavior rather than a quality failure in customer-facing communication.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in an AI loop. The AI skipped the ticket immediately, and there are no repeated requests for the same information or attempts by the customer to escalate past the AI.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of support ignoring previously provided information. The ticket appears to be a call log upload without any back-and-forth support interaction where context could have been ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The max gap between responses was 0.0 hours according to the metadata, and all interactions occurred within a 23-second window on the same date. There are no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked as closed, there is no evidence the customer was actively waiting for information or that promises were made and not kept. The ticket appears to be related to a call recording upload with the AI skipping due to tags.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked as urgent priority, there is no evidence of generic troubleshooting being applied instead of escalation. The AI skipped the ticket, and there's no indication this was an active outage requiring immediate escalation that was mishandled.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60264009
+}

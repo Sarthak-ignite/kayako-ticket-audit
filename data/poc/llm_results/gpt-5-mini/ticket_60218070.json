@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI manager posts contain truncated, vague/error messages and appear to signal a failed automated action rather than provide useful guidance to the customer or the agent.",
+    "evidence": [
+      "\"[2025-10-10T18:03:35+00:00] (AI) Cu Chulainn AI Manager: ===== Operation Summary =====\\nThe process has failed and andon cord has been pulled for the following reason:\\n\\n**Pulling Ando\"",
+      "\"[2025-10-10T18:02:18+00:00] (AI) Cu Chulainn AI Manager: <CC Log>\\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI repeatedly asked for the same information or prevented escalation; interactions show human agents responding and customer providing requested HAR/logs.",
+    "evidence": [
+      "\"[2025-10-13T17:33:00+00:00] (Customer) Matthew Hart: I followed your instructions to get the HAR files, and DNN logs, and attached them to this ticket.\"",
+      "\"[2025-10-11T22:12:09+00:00] (Employee) Carlos Encalada: Hi Matthew, Thank you for the information provided so far, it seems that the issue could be local to your DNN installation.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Agents reference and acknowledge customer-provided artifacts (HAR and logs) and there is no clear repeated request for the same attachments shown in the transcript.",
+    "evidence": [
+      "\"[2025-10-13T17:33:00+00:00] (Customer) Matthew Hart: I followed your instructions to get the HAR files, and DNN logs, and attached them to this ticket.\"",
+      "\"[2025-10-13T20:08:44+00:00] (Employee) Pablo Ambram: Hi Matthew, Thanks for the details and the HAR. We can see the Licensing page loads the DNN \u201cLicensing\u201d module, but not the Evoq Licens\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket metadata shows long delays (time to first human and large max gaps), and the timeline spans many days between interactions.",
+    "evidence": [
+      "\"Time to first human (hours): 50.7\"",
+      "\"Max gap between responses (hours): 171.4\"",
+      "\"[2025-10-10T18:03:35+00:00] (AI) Cu Chulainn AI Manager...\" (AI message) vs human replies appearing later on 2025-10-11 and beyond"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The final customer message on 2025-10-22 indicates appreciation and no outstanding complaints, suggesting the ticket was resolved before closure.",
+    "evidence": [
+      "\"[2025-10-22T17:34:06+00:00] (Customer) Matthew Hart: Thank you, you guys were great! -Matt\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence in the transcript of only generic troubleshooting for a high-severity incident or lack of escalation; agents investigated logs and asked for HAR files.",
+    "evidence": [
+      "\"[2025-10-13T17:33:00+00:00] (Customer) Matthew Hart: I followed your instructions to get the HAR files, and DNN logs, and attached them to this ticket.\"",
+      "\"[2025-10-13T20:08:44+00:00] (Employee) Pablo Ambram: ...We can see the Licensing page loads the DNN \u201cLicensing\u201d module, but not the Evoq Licens\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI manager posts contain truncated, vague/error messages and appear to signal a failed automated action rather than provide useful guidance to the customer or the agent.\",\n    \"evidence\": [\n      \"\\\"[2025-10-10T18:03:35+00:00] (AI) Cu Chulainn AI Manager: ===== Operation Summary =====\\\\nThe process has failed and andon cord has been pulled for the following reason:\\\\n\\\\n**Pulling Ando\\\"\",\n      \"\\\"[2025-10-10T18:02:18+00:00] (AI) Cu Chulainn AI Manager: <CC Log>\\\\nCu Chulainn has been initiated for this ticket. AI conversation logs can be found in the following location: [https:\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI repeatedly asked for the same information or prevented escalation; interactions show human agents responding and customer providing requested HAR/logs.\",\n    \"evidence\": [\n      \"\\\"[2025-10-13T17:33:00+00:00] (Customer) Matthew Hart: I followed your instructions to get the HAR files, and DNN logs, and attached them to this ticket.\\\"\",\n      \"\\\"[2025-10-11T22:12:09+00:00] (Employee) Carlos Encalada: Hi Matthew, Thank you for the information provided so far, it seems that the issue could be local to your DNN installation.\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Agents reference and acknowledge customer-provided artifacts (HAR and logs) and there is no clear repeated request for the same attachments shown in the transcript.\",\n    \"evidence\": [\n      \"\\\"[2025-10-13T17:33:00+00:00] (Customer) Matthew Hart: I followed your instructions to get the HAR files, and DNN logs, and attached them to this ticket.\\\"\",\n      \"\\\"[2025-10-13T20:08:44+00:00] (Employee) Pablo Ambram: Hi Matthew, Thanks for the details and the HAR. We can see the Licensing page loads the DNN \u201cLicensing\u201d module, but not the Evoq Licens\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket metadata shows long delays (time to first human and large max gaps), and the timeline spans many days between interactions.\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 50.7\\\"\",\n      \"\\\"Max gap between responses (hours): 171.4\\\"\",\n      \"\\\"[2025-10-10T18:03:35+00:00] (AI) Cu Chulainn AI Manager...\\\" (AI message) vs human replies appearing later on 2025-10-11 and beyond\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The final customer message on 2025-10-22 indicates appreciation and no outstanding complaints, suggesting the ticket was resolved before closure.\",\n    \"evidence\": [\n      \"\\\"[2025-10-22T17:34:06+00:00] (Customer) Matthew Hart: Thank you, you guys were great! -Matt\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence in the transcript of only generic troubleshooting for a high-severity incident or lack of escalation; agents investigated logs and asked for HAR files.\",\n    \"evidence\": [\n      \"\\\"[2025-10-13T17:33:00+00:00] (Customer) Matthew Hart: I followed your instructions to get the HAR files, and DNN logs, and attached them to this ticket.\\\"\",\n      \"\\\"[2025-10-13T20:08:44+00:00] (Employee) Pablo Ambram: ...We can see the Licensing page loads the DNN \u201cLicensing\u201d module, but not the Evoq Licens\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60218070
+}

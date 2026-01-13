@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses do not contain any clearly identifiable generic filler, misinformation, or unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer is caught in a loop with the AI; the interactions suggest the customer is reaching out for assistance without repeated requests to the AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support did address the customer\u2019s concern and provided information, with no evidence of redundant requests for the same information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays in responses, with the first human response occurring 407.4 hours after the initial inquiry, and a maximum gap of 310.8 hours between responses.",
+    "evidence": [
+      "[2025-11-11T13:25:41+00:00] (AI) ADN Support: Hi support, I have not received a licence or any helpful feedback. Are you actually working on this?\u200b",
+      "[2025-11-24T12:15:38+00:00] (Employee) Ciprian Nastase: Dear ADN, Thank you for contacting GFI - Kerio Connect Support, I understand that a prospect customer is facing issues with the tria"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket status is marked as closed, but there is no indication from the evidences that the customer was waiting for promised information or expressed a need for follow-up before closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is classified as normal priority; thus, the handling of its issues does not fall under P1 severity criteria.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses do not contain any clearly identifiable generic filler, misinformation, or unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer is caught in a loop with the AI; the interactions suggest the customer is reaching out for assistance without repeated requests to the AI.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support did address the customer\u2019s concern and provided information, with no evidence of redundant requests for the same information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays in responses, with the first human response occurring 407.4 hours after the initial inquiry, and a maximum gap of 310.8 hours between responses.\",\n    \"evidence\": [\n      \"[2025-11-11T13:25:41+00:00] (AI) ADN Support: Hi support, I have not received a licence or any helpful feedback. Are you actually working on this?\u200b\",\n      \"[2025-11-24T12:15:38+00:00] (Employee) Ciprian Nastase: Dear ADN, Thank you for contacting GFI - Kerio Connect Support, I understand that a prospect customer is facing issues with the tria\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket status is marked as closed, but there is no indication from the evidences that the customer was waiting for promised information or expressed a need for follow-up before closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is classified as normal priority; thus, the handling of its issues does not fall under P1 severity criteria.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60238295
+}

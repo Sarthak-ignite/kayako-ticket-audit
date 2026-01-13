@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only AI message provides no actionable help and is effectively a non-answer that does not advance resolution.",
+    "evidence": [
+      "[2025-09-29T14:02:50+00:00] (AI) ATLAS: \"Component could not be determined\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one AI message and no repeated AI questioning or evidence the customer was prevented from reaching a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer only states they have an issue creating new locations; the agent asks for the specific error message, which is not information already provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The largest gap shown is under a day (about 16.9 hours) and not \"multiple days between interactions.\"",
+    "evidence": [
+      "[2025-09-29T14:02:55+00:00] (Customer) Anthony Marlow: \"I am having an issue creating new locations\"",
+      "[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: \"Could you please let us know what error you are getting while creating a location?\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is marked closed, the timeline does not show a closure action/message or an unmet promise while the customer was waiting.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No generic troubleshooting (cache/VPN/firewall) is suggested and there is no evidence of outage severity details requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The only AI message provides no actionable help and is effectively a non-answer that does not advance resolution.\",\n    \"evidence\": [\n      \"[2025-09-29T14:02:50+00:00] (AI) ATLAS: \\\"Component could not be determined\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one AI message and no repeated AI questioning or evidence the customer was prevented from reaching a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer only states they have an issue creating new locations; the agent asks for the specific error message, which is not information already provided.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The largest gap shown is under a day (about 16.9 hours) and not \\\"multiple days between interactions.\\\"\",\n    \"evidence\": [\n      \"[2025-09-29T14:02:55+00:00] (Customer) Anthony Marlow: \\\"I am having an issue creating new locations\\\"\",\n      \"[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: \\\"Could you please let us know what error you are getting while creating a location?\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is marked closed, the timeline does not show a closure action/message or an unmet promise while the customer was waiting.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"No generic troubleshooting (cache/VPN/firewall) is suggested and there is no evidence of outage severity details requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60209192
+}

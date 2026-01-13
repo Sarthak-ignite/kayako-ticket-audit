@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses provide relevant updates and escalate issues appropriately without making unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to communicate with human agents and receive escalations, indicating they were not stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The issue of slow downloads had already been reported multiple times without acknowledged resolution attempts, leading to repetitive requests from the AI for further troubleshooting.",
+    "evidence": [
+      "[2025-10-15T10:31:09+00:00] (AI) ADN Support: unfortunately, the Allow rule didn\u2019t resolve the issue.",
+      "[2025-10-17T12:09:00+00:00] (AI) ADN Support: I just spoke again with our partner, and unfortunately the issue still persists."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The time to first human interaction was excessive (359.9 hours), indicating a significant delay in response.",
+    "evidence": [
+      "[2025-11-05T15:43:09+00:00] (AI) ADN Support: Ticket can be closed",
+      "[2025-10-27T13:00:03+00:00] (AI) ADN Support: It has now been two weeks since our last communication."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed despite ongoing issues and lack of customer confirmation, suggesting it was closed prematurely.",
+    "evidence": [
+      "[2025-11-05T15:43:09+00:00] (AI) ADN Support: Ticket can be closed",
+      "[2025-10-15T10:31:09+00:00] (AI) ADN Support: unfortunately, the Allow rule didn\u2019t resolve the issue."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority issues were handled with insufficient urgency, focusing on standard troubleshooting methods instead of immediate escalation.",
+    "evidence": [
+      "[2025-10-15T10:32:12+00:00] (AI) ATLAS: Thank you for your detailed follow-up, the updated screenshots, and confirmation that the dedicated Allow rule did not resolve the issue."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses provide relevant updates and escalate issues appropriately without making unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer was able to communicate with human agents and receive escalations, indicating they were not stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The issue of slow downloads had already been reported multiple times without acknowledged resolution attempts, leading to repetitive requests from the AI for further troubleshooting.\",\n    \"evidence\": [\n      \"[2025-10-15T10:31:09+00:00] (AI) ADN Support: unfortunately, the Allow rule didn\u2019t resolve the issue.\",\n      \"[2025-10-17T12:09:00+00:00] (AI) ADN Support: I just spoke again with our partner, and unfortunately the issue still persists.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The time to first human interaction was excessive (359.9 hours), indicating a significant delay in response.\",\n    \"evidence\": [\n      \"[2025-11-05T15:43:09+00:00] (AI) ADN Support: Ticket can be closed\",\n      \"[2025-10-27T13:00:03+00:00] (AI) ADN Support: It has now been two weeks since our last communication.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed despite ongoing issues and lack of customer confirmation, suggesting it was closed prematurely.\",\n    \"evidence\": [\n      \"[2025-11-05T15:43:09+00:00] (AI) ADN Support: Ticket can be closed\",\n      \"[2025-10-15T10:31:09+00:00] (AI) ADN Support: unfortunately, the Allow rule didn\u2019t resolve the issue.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority issues were handled with insufficient urgency, focusing on standard troubleshooting methods instead of immediate escalation.\",\n    \"evidence\": [\n      \"[2025-10-15T10:32:12+00:00] (AI) ATLAS: Thank you for your detailed follow-up, the updated screenshots, and confirmation that the dedicated Allow rule did not resolve the issue.\"\n    ]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60220499
+}

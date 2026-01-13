@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided largely generic KB-style troubleshooting that the customer later stated had already been done, suggesting low adaptation to the case context. The early guidance also suggested using the UI to disable engines even though the ticket reported the UI section itself was throwing an exception and not loading, making parts of the advice potentially impractical. This is recall-first; while not definitively wrong, the quality appears mismatched and repetitive.",
+    "evidence": [
+      "ATLAS: \"Ensure that temporary folders (%temp% and C:\\Windows\\Temp) are not full... Add firewall exclusions for update servers...\"",
+      "ATLAS: \"If the problem persists, temporarily disable the Virus Scanning Engines one by one in the MailEssentials configuration UI (under Email Security > Virus Scanning Engines)\"",
+      "Customer: \"Please note that all the suggested steps have already been completed. Unfortunately, these actions did not resolve the issue\"",
+      "ATLAS file analysis: \"Die betroffene Seite (Informationsspeicherschutz unter Virenscan-Engines) wird nicht geladen... Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer/partner explicitly requested a remote session with a technician, implying difficulty progressing via asynchronous scripted steps. While a human agent later engaged, the experience indicates a need to break out of the back-and-forth troubleshooting loop to live assistance; it\u2019s not proven they were blocked from a human, but the request itself is a signal.",
+    "evidence": [
+      "ADN Support (private): \"our partner asked if we can plan a remote session together with one of your technicians... Could you please let us know when a technician would be available for a quick remote session?\"",
+      "ADN Support (private): \"The customer has been without email protection for about a week now, so we really need to get this issue fixed soon.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support continued with standard troubleshooting and KB references after the customer stated those steps were already completed. Additionally, early advice relied on navigating UI areas that the ticket evidence indicated were failing to load due to a null-reference error. This indicates partial failure to incorporate already-provided constraints and progress.",
+    "evidence": [
+      "Customer: \"Please note that all the suggested steps have already been completed.\"",
+      "Customer: \"Unfortunately, these actions did not resolve the issue, the problem still persists.\"",
+      "ATLAS: \"Below is a comprehensive overview and targeted guidance...\" (followed by more KB-driven guidance after the customer said steps were done)",
+      "ATLAS file analysis: \"Die betroffene Seite ... wird nicht geladen.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows a very long overall resolution time in the structured data, consistent with extended time-to-fix. There are also multi-day gaps between key updates (e.g., 10/12 workaround to further progress/escalation on 10/18\u201310/20). Even if some time was customer-side, the duration is significant for an email-security outage scenario.",
+    "evidence": [
+      "CSV: resolutionTime=1493578",
+      "CSV: Ticket Created=2025-10-10 07:48:26",
+      "CSV: Ticket Solved=2025-10-27 14:41:24",
+      "ADN Support (private, 2025-10-16): \"The customer has been without email protection for about a week now\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in CSV, yet the last recorded interaction in the provided timeline (10/20) is still in active troubleshooting (requesting additional artifacts after reproducing the UI error). Multiple agent messages also include a one-week auto-close warning, increasing the risk of closure without confirmed resolution. It\u2019s not explicitly shown that the customer confirmed resolution before closure, so there is some uncertainty but enough signal to flag recall-first.",
+    "evidence": [
+      "CSV: Status=closed",
+      "ATLAS/Arafat/Pablo boilerplate: \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Completed in the portal.\"",
+      "Last visible support action (2025-10-20): \"Could you please share the following after reproducing the UI error once more?\" (indicates ongoing troubleshooting at that time)",
+      "CSV: Ticket Closed=2025-10-30 15:37:59"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer escalated with 'No Mail Security' and severity labeled 'core_functionality_defect', indicating high impact. Despite this, the handling continued as routine log-gathering and asynchronous checks, with no clear rapid containment, workaround validation plan, or confirmed technician remote session scheduling in the provided text. The duration until solved (per CSV) is also long for a security/outage condition.",
+    "evidence": [
+      "CentralSupport internal note: \"[customer_escalation] The customer escalated the Case... The customer message is:No Mail Security... The severity is: core_functionality_defect\"",
+      "ADN Support (private): \"The customer has been without email protection for about a week now\"",
+      "Pablo (public): \"Could you please share the following after reproducing the UI error once more?... Export Application.evtx... File versions... Fresh logs\"",
+      "CSV: Ticket Solved=2025-10-27 14:41:24"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60218313
+}

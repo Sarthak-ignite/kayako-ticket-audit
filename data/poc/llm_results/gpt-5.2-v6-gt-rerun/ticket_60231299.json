@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The ATLAS reply is largely generic and reads like template SSL guidance rather than addressing the specific GFI-hosted redirect endpoint certificate problem. It suggests user-side bypass/workarounds and links to somewhat tangential articles instead of confirming ownership, scope, or an action to renew/fix the redirects.gfikerioconnect.com certificate.",
+    "evidence": [
+      "Customer: \"today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed?... please fix this quickly!\"",
+      "ATLAS: \"While the knowledge base article ... on Spark ... describes how a similar message appears...\"",
+      "ATLAS: \"As a workaround, users may be able to bypass the message ... but this is not recommended...\"",
+      "ATLAS: \"If using your own Kerio Connect installation, periodically reviewing and renewing SSL certificates...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped in an AI loop, asked for a human, or faced repeated automated messages. The log shows only a single ATLAS response.",
+    "evidence": [
+      "Kayako - ticket id 60231299 // ATLAS commented publicly (single visible agent message)."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer reported a certificate issue on a central GFI Kerio redirect endpoint and requested a quick fix, but the response pivots to general SSL/TLS explanations and guidance for customers managing their own Kerio Connect installations. This does not directly acknowledge that the affected URL appears to be GFI-controlled and needs backend remediation.",
+    "evidence": [
+      "Customer: \"today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed?\"",
+      "Customer: \"This leads to a security message for users of the Kerio Connect Desktop Mail Client\"",
+      "ATLAS: \"If using your own Kerio Connect installation, periodically reviewing and renewing SSL certificates...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The CSV shows a long overall resolution time (multiple days) for a certificate/trust warning impacting users, which suggests delay relative to the urgency implied. Even though the initial response was fairly quick, the end-to-end time is prolonged.",
+    "evidence": [
+      "CSV: initialResponseTime=44",
+      "CSV: resolutionTime=605501",
+      "CSV: Ticket Created=2025-10-29 08:27:11",
+      "CSV: Ticket Solved=2025-11-05 08:38:52"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed, but the provided interaction history does not show a confirmed fix, customer validation, or a clear resolution statement. With recall-first criteria, this suggests a possibility of closure without explicit customer confirmation (uncertain due to missing later messages).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-08 09:40:54",
+      "Customer: \"please fix this quickly!\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "A certificate issue on a central redirect endpoint can broadly impact client connectivity/trust for many users, and the customer explicitly requested urgent remediation. The response does not indicate escalation/incident handling or ownership of fixing the GFI-hosted certificate, and the multi-day resolution time supports potential under-triage.",
+    "evidence": [
+      "Customer: \"today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed?...\"",
+      "Customer: \"This leads to a security message for users of the Kerio Connect Desktop Mail Client\"",
+      "Customer: \"please fix this quickly!\"",
+      "CSV: resolutionTime=605501"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60231299
+}

@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The interaction appears to be an auto-generated AI summary with no substantive support resolution.",
+    "evidence": [
+      "[2025-12-22T17:00:55+00:00] Kayako - ticket id 60268699 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient context to determine AI looping behavior.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of context ignorance due to lack of full ticket details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, indicating no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket appears to be closed without a clear resolution, with only an AI-generated summary.",
+    "evidence": [
+      "Status: closed",
+      "Time to first human (hours): nan"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is low priority, so severity mishandling is not applicable.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the limited information provided, here's the analysis:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The interaction appears to be an auto-generated AI summary with no substantive support resolution.\",\n    \"evidence\": [\n      \"[2025-12-22T17:00:55+00:00] Kayako - ticket id 60268699 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient context to determine AI looping behavior.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of context ignorance due to lack of full ticket details.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, indicating no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket appears to be closed without a clear resolution, with only an AI-generated summary.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"Time to first human (hours): nan\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is low priority, so severity mishandling is not applicable.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket seems to be an incomplete or auto-closed interaction\n- There's no actual customer communication visible\n- The only interaction is an AI-generated summary\n- The ticket is marked as closed with no human intervention\n- Low priority status suggests this might be a system-generated or test ticket\n\nRecommendations:\n1. Review the full ticket details\n2. Investigate why the ticket was closed without human interaction\n3. Verify if this is a valid support interaction or a system glitch",
+  "_model": "claude-haiku",
+  "_ticket_id": 60268699
+}

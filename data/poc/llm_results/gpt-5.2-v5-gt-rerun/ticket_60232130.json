@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer repeatedly indicates the responses felt like chatbot/boilerplate rather than effective help, and support later publicly admits the initial diagnosis was incorrect, indicating low-quality/incorrect guidance was provided at least initially.",
+    "evidence": [
+      "So many responses from your replies are saying \"feedback and the information you have shared will be carefully reviewed as we continue to address your situation. \"",
+      "Is this so-called support still operated by the ChatBot?",
+      "After reviewing the logs again, the initial diagnosis was incorrect."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested a live agent/human support and the interaction shows the AI continued the flow (no immediate human) and the customer later complains that support is chatbot-based.",
+    "evidence": [
+      "Yes, I request a live agent transfer in this chat,",
+      "Our agents are currently busy assisting other customers at the time, so we'll proceed with ticket creation",
+      "Can someone take it on a serious note, OR is your support also in AI time-kill mode?"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer provided substantial technical details, there is no clear customer-facing evidence that support forced repetition of the same information or asked for something the customer explicitly said was already provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly reports waiting 24 hours with no response on a critical case, indicating a meaningful response delay (regardless of internal activity).",
+    "evidence": [
+      "The case was raised in Critical Priority, and no show for 24 hours.",
+      "Can someone take it on a serious note, OR is your support also in AI time-kill mode?"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in the authoritative CSV context, and the public auto-closure warning appears while the customer is still questioning whether the proposed downgrade is actually a solution (i.e., unresolved concerns remain).",
+    "evidence": [
+      "CSV: Status=closed",
+      "This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.",
+      "Is the \" firmware downgrade\" the solution?"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer describes the case as critical/business-impacting, the agent did escalate to engineering and provided an immediate mitigation (rollback). This does not match a pattern of treating a P1/SEV1 like routine troubleshooting without escalation.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60232130
+}

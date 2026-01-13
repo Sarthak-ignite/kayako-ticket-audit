@@ -1,0 +1,144 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_mailessentials",
+        "requester": {
+          "id": 60213519,
+          "uuid": "9707fa9a-075a-4fcd-b92f-473a20f18606",
+          "full_name": "Christian Schmidt",
+          "legacy_id": "23347079500178",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/9707fa9a-075a-4fcd-b92f-473a20f18606?1752521699",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 215054,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-07-12T18:58:59+00:00",
+          "last_active_at": "2025-07-14T19:34:59+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60213519",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@07026b23264aa2202ef2edaf6488f02200ce8720",
+          "password_updated_at": "2025-05-19T07:41:16+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2024-12-17T09:33:56+00:00",
+          "updated_at": "2025-07-14T19:34:59+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60213519"
+        },
+        "ticket_idt": 60094192
+      },
+      "interactions": [
+        [
+          "2025-07-10T13:02:58+00:00",
+          "Kayako - ticket id 60094192 // Qasim Ali commented privately:  The customer has opened https://central-supportdesk.kayako.com/agent/conversations/60094192 as well for the same issue, and we have been waiting for the logs. I will merge both, since we cannot move forward without logs "
+        ],
+        [
+          "2025-07-07T14:35:11+00:00",
+          "Kayako - ticket id 60094192 // Christian Schmidt commented privately: am no longer interested in version 22. GFi must now solve the problem in version 21 with the duplicate e-mails. The error is clearly in the MailEssentails."
+        ],
+        [
+          "2025-07-04T16:37:28+00:00",
+          "Kayako - ticket id 60094192 // Randall Shawver commented publicly: Dear Christian,\n\nThank you for contacting the GFI MailEssentials Support Team. We apologize for the inconvenience you have experienced.\n\nWe will work with our Engineering team as we have many installations on SMTP servers that are not having issues. If you wish to provide logs that were collected when the issue occurred, we can further investigate.\n\nBest regards,\nRandall Shawver\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-07-04T16:36:54+00:00",
+          "Kayako - ticket id 60094192 // Randall Shawver commented privately:  What is your proposed action?\n(required: select one, delete the rest) \n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Christian, \n\n Thank you for contacting the GFI MailEssentials Support Team. We apologize for the inconvenience you have experienced. \n\n We will work with our Engineering team as we have many installations on SMTP servers that are not having issues. If you wish to provide logs that were collected when the issue occurred, we can further investigate. \n\n Best regards, \n Randall Shawver \n Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n =============================================================== \n GPT \n Did you use GPT: Yes/No \n\n If No, add the reason below. "
+        ],
+        [
+          "2025-07-04T05:27:06+00:00",
+          "Kayako - ticket id 60094192 // Andriy Rybalchenko commented publicly: Dear Christian,\n\nThank you for reaching out. Ticket 60078199 was closed by automation due to no response for more than a week. But do not worry, we can continue here with all the context from that ticket.\n\nWe were waiting for the logs once the issue was reproduced with the new version. Could you please confirm the current state - whether you have reproduced the issue using the new version of MailEssentials? If so, kindly provide the updated logs and a sample duplicated email so we can proceed with further analysis.\n\nBest regards,\nAndriy Rybalchenko\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-07-03T15:17:39+00:00",
+          "Kayako - ticket id 60094192 // Christian Schmidt commented privately: We installed the update to version 22 on Friday. In short, it is a disaster. Apparently the SMTP supplied with the update was not implemented correctly.\nE-mails were no longer forwarded to Kerio.\nWe had to restore a backup to get everything running again.\nSo we will not install the update in the foreseeable future. This means that the problem has to be solved by GFI.\n\nIn addition, your Atlas Ki is a disater."
+        ],
+        [
+          "2025-07-03T15:16:43+00:00",
+          "Kayako - ticket id 60094192 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Christian Schmidt ! \ud83d\udc4b\n\nThis is the GFI MailEssentials ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nChristian Schmidt:\n\n undefined \nChat Support:\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of GFI MailEssentials ATLAS Support Chat [https://support.mailessentials.gfi.com/article/120018]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nChristian Schmidt:\n\n \u00d6ffne Das TIcket: #60078199 \nChat Support:\n\n I have this license key on record:\n- License: w6DYY1GmWuX3-4b6qm6PeTq-jDztWfcyNPt-1011405\n- Expiry date: 2028-01-09.\n\nJust to make sure we're on the same page - is this the same system you're reaching out about today?\n\n\ud83d\udca1It's important to have to correct license file, as it could influence the resolution. \nChristian Schmidt:\n\n Yes, w6DYY1GmWuX3-4b6qm6PeTq-jDztWfcyNPt-1011405 is correct \nChat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiIyNmE4NDk0Zi0xMTkzLTQ3MDgtOTVkMS1lNzIxOGEwNDZjNWUiLCJzZXNzaW9uX3VpZCI6IjI2YTg0OTRmLTExOTMtNDcwOC05NWQxLWU3MjE4YTA0NmM1ZSIsImVtYWlsIjoiaXRAdXdlZWxlY3Ryb25pYy5kZSIsImN1c3RvbV9wYXJzZXIiOnt9LCJjYWxsYmFjayI6eyJjYWxsYmFja191cmwiOm51bGwsImNhbGxiYWNrX2VtYWlsIjoiY2lwcmlhbi5uYXN0YXNlQHRyaWxvZ3kuY29tIn0sInByb2R1Y3RfdGFnIjoiYXVyZWFfbWFpbGVzc2VudGlhbHMiLCJxdWVyeSI6IiIsImV4cCI6MTc1MTU2Mjg5Mn0.dXvUXg0v0AhaocoqQCV23FE9TfWiTYZOHgXrtM1dVXc]\n\nYou should see the following:\n- User: it@uweelectronic.de\n- Session ID: 26a8494f-1193-4708-95d1-e7218a046c5e \nChristian Schmidt:\n\n \u00d6ffne Das TIcket: #60078199 \nChat Support:\n\n Just to confirm... you are asking for information or an update on a previous ticket you raised with us, correct? \nChristian Schmidt:\n\n \u2705 Yes, correct \nChat Support:\n\n Here is a link for you:\n\n\ud83d\udc4960078199 [https://support.mailessentials.gfi.com/conversation/view/60078199]\n\nThere you can check its status, follow up on it, and escalate it if its not closed.\n\nAlso, you can see all your GFI MailEssentials tickets here [https://support.mailessentials.gfi.com/conversations].\n\nAre you able to open the above link? \nChristian Schmidt:\n\n \ud83d\udc4d Yes. I see the ticket \nChat Support:\n\n Do you need anything else about ticket 60078199?\n\nNOTE: if the ticket is already closed, you can only create a follow-up ticket.\n\nUse one of the below options \ud83d\udc47 \nChristian Schmidt:\n\n \ud83c\udfab I need to create a follow-up ticket \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nChristian Schmidt:\n\n \u00d6ffne Das TIcket: #60078199 \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nChristian Schmidt:\n\n No additional email addresses required in CC \nChat Support:\n\n I'm creating a ticket for you with the information you've provided.\n\nTicket subject: GFI MailEssentials issue\n\nAllow me a few moments while I work on this \u23f3 \nChat Support:\n\n \ud83d\ude80 I've successfully created a ticket for you.\n\nYour ticket number is: 60094199\n\nYou can see it and update it in this link [https://support.mailessentials.gfi.com/conversation/view/60094199]\n\nFor a faster resolution, please be sure to include and attach to the ticket all relevant context such as screenshots, recordings, and logs.\n\nOur agents will work on it and you will receive a response in your email \ud83d\udce8: it@uweelectronic.de "
+        ],
+        [
+          "2025-07-03T15:16:39+00:00",
+          "Kayako - ticket id 60094192 // ATLAS commented privately: **Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction, which means that they may have uploaded some files for AI analysis.** Please login to UPLOAD using your Devfactory AD credentials to verify: https://files.eswsecuretransfers.com/agents/?user_id=it@uweelectronic.de&session_uuid=26a8494f-1193-4708-95d1-e7218a046c5e"
+        ],
+        [
+          "2025-07-03T15:16:37+00:00",
+          "Kayako - ticket id 60094192 // ATLAS commented privately: --- Ticket generated by GFI MailEssentials AI chat on behalf of Christian Schmidt ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * \u00d6ffne Das TIcket: #60078199<br>\n  * \u00d6ffne Das TIcket: #60078199<br>\n  * \u00d6ffne Das TIcket: #60078199<br>\n  <br>"
+        ],
+        [
+          "2025-07-03T15:12:45+00:00",
+          "Kayako - ticket id 60094192 // ATLAS commented privately: **Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction, which means that they may have uploaded some files for AI analysis.** Please login to UPLOAD using your Devfactory AD credentials to verify: https://files.eswsecuretransfers.com/agents/?user_id=it@uweelectronic.de&session_uuid=4221629e-4d5a-4cbe-bf8c-5952fdbbfcbe"
+        ],
+        [
+          "2025-07-03T15:12:43+00:00",
+          "Kayako - ticket id 60094192 // ATLAS commented privately: --- Ticket generated by GFI MailEssentials AI chat on behalf of Christian Schmidt ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * \u00d6ffne Das Ticket wieder: 60078199<br>\n  * \u00d6ffne das TIcket 60078199 wieder<br>\n  * Erstelle das Ticket<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 11,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

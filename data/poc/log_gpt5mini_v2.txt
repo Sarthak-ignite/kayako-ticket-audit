@@ -1,0 +1,132 @@
+============================================================
+Phase 0.5-0.6: LLM Pattern Detection
+============================================================
+
+API Key Status:
+  ANTHROPIC_API_KEY: ✓ Found
+  OPENAI_API_KEY: ✓ Found
+  GEMINI_API_KEY: ✓ Found
+
+Loading metrics...
+  CSV metrics: 99 tickets
+  Ticket metrics: 99 tickets
+
+Available models: ['claude-sonnet', 'claude-haiku', 'claude-haiku-4-5', 'gpt-4o', 'gpt-4o-mini', 'gpt-5.2', 'gpt-5-mini']
+
+Running models: ['gpt-5-mini']
+Limit: all tickets
+
+Running gpt-5-mini on 99 tickets...
+  [1/99] Processing ticket 60270630... FAILED
+  [2/99] Processing ticket 60269018... FAILED
+  [3/99] Processing ticket 60269002... OK
+  [4/99] Processing ticket 60268699... OK
+  [5/99] Processing ticket 60267393... OK
+  [6/99] Processing ticket 60267287... FAILED
+  [7/99] Processing ticket 60264368... FAILED
+  [8/99] Processing ticket 60264386... OK
+  [9/99] Processing ticket 60264202... OK
+  [10/99] Processing ticket 60264009... FAILED
+  [11/99] Processing ticket 60261219... OK
+  [12/99] Processing ticket 60260239... FAILED
+  [13/99] Processing ticket 60259640... OK
+  [14/99] Processing ticket 60258962... FAILED
+  [15/99] Processing ticket 60258751... OK
+  [16/99] Processing ticket 60258400... FAILED
+  [17/99] Processing ticket 60256854... OK
+  [18/99] Processing ticket 60256250... FAILED
+  [19/99] Processing ticket 60256173... FAILED
+  [20/99] Processing ticket 60254579... FAILED
+  [21/99] Processing ticket 60253689... FAILED
+  [22/99] Processing ticket 60252864... FAILED
+  [23/99] Processing ticket 60252140... FAILED
+  [24/99] Processing ticket 60251281... FAILED
+  [25/99] Processing ticket 60250996... OK
+  [26/99] Processing ticket 60250793... FAILED
+  [27/99] Processing ticket 60250271... FAILED
+  [28/99] Processing ticket 60250122... FAILED
+  [29/99] Processing ticket 60248266... FAILED
+  [30/99] Processing ticket 60248265... FAILED
+  [31/99] Processing ticket 60247476... FAILED
+  [32/99] Processing ticket 60247413... OK
+  [33/99] Processing ticket 60246498... OK
+  [34/99] Processing ticket 60243765... OK
+  [35/99] Processing ticket 60243726... FAILED
+  [36/99] Processing ticket 60243347... OK
+  [37/99] Processing ticket 60243234... OK
+  [38/99] Processing ticket 60242868... OK
+  [39/99] Processing ticket 60242814... FAILED
+  [40/99] Processing ticket 60241518... FAILED
+  [41/99] Processing ticket 60241392... FAILED
+  [42/99] Processing ticket 60240989... OK
+  [43/99] Processing ticket 60239883... FAILED
+  [44/99] Processing ticket 60239472... FAILED
+  [45/99] Processing ticket 60238514... FAILED
+  [46/99] Processing ticket 60238457... FAILED
+  [47/99] Processing ticket 60238295... FAILED
+  [48/99] Processing ticket 60237327... FAILED
+  [49/99] Processing ticket 60237213... FAILED
+  [50/99] Processing ticket 60236962... OK
+  [51/99] Processing ticket 60235310... OK
+  [52/99] Processing ticket 60234884... FAILED
+  [53/99] Processing ticket 60234621... FAILED
+  [54/99] Processing ticket 60233855... FAILED
+  [55/99] Processing ticket 60233341... OK
+  [56/99] Processing ticket 60233405... OK
+  [57/99] Processing ticket 60233211... OK
+  [58/99] Processing ticket 60232940... FAILED
+  [59/99] Processing ticket 60232130... FAILED
+  [60/99] Processing ticket 60231851... FAILED
+  [61/99] Processing ticket 60231535... FAILED
+  [62/99] Processing ticket 60231299... OK
+  [63/99] Processing ticket 60230887... FAILED
+  [64/99] Processing ticket 60230438... OK
+  [65/99] Processing ticket 60230303... FAILED
+  [66/99] Processing ticket 60230003... OK
+  [67/99] Processing ticket 60229854... FAILED
+  [68/99] Processing ticket 60227783... FAILED
+  [69/99] Processing ticket 60227322... OK
+  [70/99] Processing ticket 60226631... Error calling gpt-5-mini: Error code: 400 - {'error': {'message': 'Could not finish the message because max_tokens or model output limit was reached. Please try again with higher max_tokens.', 'type': 'invalid_request_error', 'param': None, 'code': None}}
+FAILED
+  [71/99] Processing ticket 60225246... FAILED
+  [72/99] Processing ticket 60225231... FAILED
+  [73/99] Processing ticket 60224885... OK
+  [74/99] Processing ticket 60224201... OK
+  [75/99] Processing ticket 60223404... FAILED
+  [76/99] Processing ticket 60223073... OK
+  [77/99] Processing ticket 60222887... OK
+  [78/99] Processing ticket 60222765... FAILED
+  [79/99] Processing ticket 60222138... OK
+  [80/99] Processing ticket 60221483... FAILED
+  [81/99] Processing ticket 60220701... FAILED
+  [82/99] Processing ticket 60220499... FAILED
+  [83/99] Processing ticket 60219661... FAILED
+  [84/99] Processing ticket 60219657... FAILED
+  [85/99] Processing ticket 60218865... OK
+  [86/99] Processing ticket 60218313... FAILED
+  [87/99] Processing ticket 60218070... FAILED
+  [88/99] Processing ticket 60214613... FAILED
+  [89/99] Processing ticket 60214082... OK
+  [90/99] Processing ticket 60212784... OK
+  [91/99] Processing ticket 60212281... OK
+  [92/99] Processing ticket 60211680... FAILED
+  [93/99] Processing ticket 60211226... FAILED
+  [94/99] Processing ticket 60210541... FAILED
+  [95/99] Processing ticket 60210131... FAILED
+  [96/99] Processing ticket 60209553... FAILED
+  [97/99] Processing ticket 60209192... FAILED
+  [98/99] Processing ticket 60209095... FAILED
+  [99/99] Processing ticket 60208754... FAILED
+
+============================================================
+DETECTION SUMMARY
+============================================================
+
+Pattern                  gpt-5-mini     
+----------------------------------------
+AI_QUALITY_FAILURES      20 (46.5%)     
+AI_WALL_LOOPING          0 (0.0%)       
+IGNORING_CONTEXT         1 (2.3%)       
+RESPONSE_DELAYS          3 (7.0%)       
+PREMATURE_CLOSURE        2 (4.7%)       
+P1_SEV1_MISHANDLING      0 (0.0%)       

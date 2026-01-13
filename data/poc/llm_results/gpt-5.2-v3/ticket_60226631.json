@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No customer-facing AI response is present. The only AI-related entries are internal status comments (e.g., Centralsupport-ai-acc), so there is no evidence of AI giving incorrect/irrelevant information or making unfulfilled promises to the customer.",
+    "evidence": [
+      "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9351 is changed to 'In Progress'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer is not shown interacting with an AI agent repeatedly, nor requesting a human and being refused. Human agents respond and escalate the issue.",
+    "evidence": [
+      "Deepanshu Dewan commented publicly: \"As discussed, your ticket has been assigned to an agent.\"",
+      "Pavly Nashed commented publicly: \"this has been escalated to our infrastructure team with the highest priority\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not re-ask for information already provided, and they do address the customer\u2019s concern about recurrence by providing an explanation and stating preventive actions (monitoring/controls/isolation).",
+    "evidence": [
+      "Jayashree Shetty: \"We have been encountering this issue repeatedly... Kindly confirm whether the fix you have implemented will prevent this issue from recurring\"",
+      "Balaji Jayaraman: \"The disruption was triggered by background data processing placing unexpected load on our search infrastructure... We\u2019re strengthening monitoring and controls... to prevent recurrence.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No gap of 3+ calendar days between a customer message and a support response is present in the excerpt. Customer messages receive same-day responses.",
+    "evidence": [
+      "Customer 2025-10-23T07:56:23+00:00 and support response 2025-10-23T08:36:12+00:00"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown being closed in the customer-facing system after an unanswered customer question. Instead, support explicitly states it will remain open for a week unless the customer confirms closure.",
+    "evidence": [
+      "Balaji Jayaraman: \"This ticket will stay open for one week unless you reply with 'This ticket can be closed'\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue is clearly production-impacting, the ticket is not explicitly marked P1/SEV1/Critical in the provided interactions, and support behavior shows escalation and infrastructure engagement rather than generic end-user troubleshooting.",
+    "evidence": [
+      "Customer: \"We are unable to view or claim any new incoming chats... Manager are currently assigning chats to the team manually.\"",
+      "Pavly Nashed: \"escalated to our infrastructure team with the highest priority\"",
+      "Jira/Infra notes indicate active remediation: \"Elasticsearch service was restarted... It is being worked on in an IM call, Escalating to DevOps\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60226631
+}

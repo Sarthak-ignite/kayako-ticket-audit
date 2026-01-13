@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS AI provided generic troubleshooting steps despite the customer explicitly stating all suggested steps had already been completed, showing lack of understanding of the context.",
+    "evidence": [
+      "[2025-10-10T07:49:27+00:00] ATLAS: Thank you for providing detailed feedback, screenshots, and a summary of the ongoing issue with GFI MailEssentials after your re... (provided generic troubleshooting after customer said steps were done)",
+      "[2025-10-10T09:23:11+00:00] ADN Support: Please note that all the suggested steps have already been completed. Unfortunately, th...",
+      "[2025-10-10T09:24:03+00:00] ATLAS: Thank you for your update and for confirming that all suggested troubleshooting steps have already been performed. I have review... (acknowledged but had already given generic steps)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer had to repeatedly communicate through AI intermediaries (ADN Support, ATLAS) before reaching human support, with AI providing unhelpful generic responses while customer needed escalation for a critical issue.",
+    "evidence": [
+      "[2025-10-20T12:24:30+00:00] Centralsupport-ai-acc: [customer_escalation] The customer escalated the Case. The customer message is:No Mail Security",
+      "[2025-10-20T12:27:19+00:00] ADN Support: our partner has followed all the steps provided in your previous message",
+      "[2025-10-10T11:46:34+00:00] ADN Support: as confirmed, the customer's installation of GFI MailEssentials is already up to date"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS provided troubleshooting steps after customer had already confirmed through ADN Support that all suggested steps were completed, ignoring the clearly stated context.",
+    "evidence": [
+      "[2025-10-10T09:23:11+00:00] ADN Support: Please note that all the suggested steps have already been completed. Unfortunately, th...",
+      "[2025-10-10T07:49:27+00:00] ATLAS: Thank you for providing detailed feedback, screenshots, and a summary of the ongoing issue with GFI MailEssentials after your re... (provided troubleshooting despite prior completion)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant delays throughout the ticket with 44.4 hours to first human response and 77.7 hours maximum gap. Multiple days passed between critical interactions on a high-priority ticket.",
+    "evidence": [
+      "Time to first human (hours): 44.4",
+      "Max gap between responses (hours): 77.7",
+      "[2025-10-12T04:12:15+00:00] Aditi Garg response, then [2025-10-15T09:54:31+00:00] ADN Support (3 days)",
+      "[2025-10-18T14:12:57+00:00] Arafat Bakhsh response, then [2025-10-20T12:24:30+00:00] escalation (2 days)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows status as closed, but the timeline shows the issue was addressed with a fix release and escalation acknowledgment. No evidence customer was waiting for promised information when closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is a high-priority ticket with 'No Mail Security' as the severity indicator, representing a core functionality failure. Customer had to wait 44.4 hours for human support and received generic AI troubleshooting instead of immediate escalation.",
+    "evidence": [
+      "Priority: high",
+      "Time to first human (hours): 44.4",
+      "[2025-10-20T12:24:30+00:00] Centralsupport-ai-acc: The customer message is:No Mail Security The severity is: core_funct...",
+      "[2025-10-16T11:10:31+00:00] ADN Support: The customer has been without... (suggesting extended outage)"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"ATLAS AI provided generic troubleshooting steps despite the customer explicitly stating all suggested steps had already been completed, showing lack of understanding of the context.\",\n    \"evidence\": [\n      \"[2025-10-10T07:49:27+00:00] ATLAS: Thank you for providing detailed feedback, screenshots, and a summary of the ongoing issue with GFI MailEssentials after your re... (provided generic troubleshooting after customer said steps were done)\",\n      \"[2025-10-10T09:23:11+00:00] ADN Support: Please note that all the suggested steps have already been completed. Unfortunately, th...\",\n      \"[2025-10-10T09:24:03+00:00] ATLAS: Thank you for your update and for confirming that all suggested troubleshooting steps have already been performed. I have review... (acknowledged but had already given generic steps)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer had to repeatedly communicate through AI intermediaries (ADN Support, ATLAS) before reaching human support, with AI providing unhelpful generic responses while customer needed escalation for a critical issue.\",\n    \"evidence\": [\n      \"[2025-10-20T12:24:30+00:00] Centralsupport-ai-acc: [customer_escalation] The customer escalated the Case. The customer message is:No Mail Security\",\n      \"[2025-10-20T12:27:19+00:00] ADN Support: our partner has followed all the steps provided in your previous message\",\n      \"[2025-10-10T11:46:34+00:00] ADN Support: as confirmed, the customer's installation of GFI MailEssentials is already up to date\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"ATLAS provided troubleshooting steps after customer had already confirmed through ADN Support that all suggested steps were completed, ignoring the clearly stated context.\",\n    \"evidence\": [\n      \"[2025-10-10T09:23:11+00:00] ADN Support: Please note that all the suggested steps have already been completed. Unfortunately, th...\",\n      \"[2025-10-10T07:49:27+00:00] ATLAS: Thank you for providing detailed feedback, screenshots, and a summary of the ongoing issue with GFI MailEssentials after your re... (provided troubleshooting despite prior completion)\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant delays throughout the ticket with 44.4 hours to first human response and 77.7 hours maximum gap. Multiple days passed between critical interactions on a high-priority ticket.\",\n    \"evidence\": [\n      \"Time to first human (hours): 44.4\",\n      \"Max gap between responses (hours): 77.7\",\n      \"[2025-10-12T04:12:15+00:00] Aditi Garg response, then [2025-10-15T09:54:31+00:00] ADN Support (3 days)\",\n      \"[2025-10-18T14:12:57+00:00] Arafat Bakhsh response, then [2025-10-20T12:24:30+00:00] escalation (2 days)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows status as closed, but the timeline shows the issue was addressed with a fix release and escalation acknowledgment. No evidence customer was waiting for promised information when closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This is a high-priority ticket with 'No Mail Security' as the severity indicator, representing a core functionality failure. Customer had to wait 44.4 hours for human support and received generic AI troubleshooting instead of immediate escalation.\",\n    \"evidence\": [\n      \"Priority: high\",\n      \"Time to first human (hours): 44.4\",\n      \"[2025-10-20T12:24:30+00:00] Centralsupport-ai-acc: The customer message is:No Mail Security The severity is: core_funct...\",\n      \"[2025-10-16T11:10:31+00:00] ADN Support: The customer has been without... (suggesting extended outage)\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60218313
+}

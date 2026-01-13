@@ -1,0 +1,252 @@
+[
+  {
+    "index": 0,
+    "actor_name": "Balaji Jayaraman",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-23 08:36:12",
+    "timestamp_str": "2025-10-23T08:36:12+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Balaji Jayaraman commented publicly: Dear Jayashree,\n\nThe disruption was triggered by background data processing placing unexpected load on our search infrastructure, wh",
+    "text_length": 697
+  },
+  {
+    "index": 1,
+    "actor_name": "Jayashree Shetty",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-23 07:56:23",
+    "timestamp_str": "2025-10-23T07:56:23+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Jayashree Shetty commented publicly:  \n\nHello Chintan,\n\n\u00a0\n\nWe have been encountering this issue repeatedly. Please review the history of previously raised tickets for re",
+    "text_length": 579
+  },
+  {
+    "index": 2,
+    "actor_name": "Service Sfit",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-23 04:36:53.092000",
+    "timestamp_str": "2025-10-23T04:36:53.092+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // Service Sfit commented: \u274c QC FAILED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis SummaryThe incident involved recurring error messages related to Elasticsearch index",
+    "text_length": 2858
+  },
+  {
+    "index": 3,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-23 04:36:35",
+    "timestamp_str": "2025-10-23T04:36:35+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9351 is changed to 'Closed' , block reason: -",
+    "text_length": 138
+  },
+  {
+    "index": 4,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-10-23 04:36:31.968000",
+    "timestamp_str": "2025-10-23T04:36:31.968+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // status is changed from In Progress to Closed",
+    "text_length": 82
+  },
+  {
+    "index": 5,
+    "actor_name": "Quang Vo",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-23 04:36:06.199000",
+    "timestamp_str": "2025-10-23T04:36:06.199+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // Quang Vo commented: Closing this ticket as the issue was resolved.This is my understanding of what  had done to restart the ES service:ssh -i <khoros_ad_username>",
+    "text_length": 681
+  },
+  {
+    "index": 6,
+    "actor_name": "Muhammad Umer",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 22:13:02.111000",
+    "timestamp_str": "2025-10-22T22:13:02.111+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // Muhammad Umer commented:    shows that the cluster is healthy could you please share the runbook to cater this kind of issue in future.",
+    "text_length": 173
+  },
+  {
+    "index": 7,
+    "actor_name": "Chintan Parekh",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 12:49:34",
+    "timestamp_str": "2025-10-22T12:49:34+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Chintan Parekh commented publicly: Dear Customer,\n\nWe\u2019re pleased to inform you that the recent service disruption affecting the Khoros Care platform has been resolved.\n\n",
+    "text_length": 680
+  },
+  {
+    "index": 8,
+    "actor_name": "Chintan Parekh",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 12:49:31",
+    "timestamp_str": "2025-10-22T12:49:31+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Chintan Parekh commented privately: Bulk status update by IM after solving CARESMM-9147",
+    "text_length": 118
+  },
+  {
+    "index": 9,
+    "actor_name": "Deniz Yavas",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 11:47:54.076000",
+    "timestamp_str": "2025-10-22T11:47:54.076+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // Deniz Yavas commented:  please prepare a playbook on how to fix this issue for any further occurences.",
+    "text_length": 140
+  },
+  {
+    "index": 10,
+    "actor_name": "Muhammad Waqar",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 11:39:07.819000",
+    "timestamp_str": "2025-10-22T11:39:07.819+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // Muhammad Waqar commented: Elasticsearch service was restarted on the following nodes by  Elected Master:\nInstance ID: i-04c393d36f390adae\nPrivate IP: 10.221.125.1",
+    "text_length": 617
+  },
+  {
+    "index": 11,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:42:01",
+    "timestamp_str": "2025-10-22T10:42:01+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9351 is changed to 'In Progress' , block reason: -",
+    "text_length": 143
+  },
+  {
+    "index": 12,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:37:17",
+    "timestamp_str": "2025-10-22T10:37:17+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+    "text_length": 106
+  },
+  {
+    "index": 13,
+    "actor_name": "Pavly Nashed",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:37:10",
+    "timestamp_str": "2025-10-22T10:37:10+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Pavly Nashed commented publicly: Dear Manju,\n\nThank you for your reaching out and reporting this issue.\n\nWe have investigated the root cause of the issue, and this has b",
+    "text_length": 389
+  },
+  {
+    "index": 14,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:36:22",
+    "timestamp_str": "2025-10-22T10:36:22+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9351 is changed to 'In Progress' , block reason: -",
+    "text_length": 143
+  },
+  {
+    "index": 15,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:36:18.737000",
+    "timestamp_str": "2025-10-22T10:36:18.737+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // SaaS Portal commented: note: Alert API - ticket status changed to In Progress",
+    "text_length": 115
+  },
+  {
+    "index": 16,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:36:18.280000",
+    "timestamp_str": "2025-10-22T10:36:18.280+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // SaaS Portal commented: note: Alert API - Assigned from Jira: muhammad.waqar@trilogy.com",
+    "text_length": 125
+  },
+  {
+    "index": 17,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:36:18.164000",
+    "timestamp_str": "2025-10-22T10:36:18.164+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // status is changed from In Queue to In Progress",
+    "text_length": 84
+  },
+  {
+    "index": 18,
+    "actor_name": "SaaS Portal",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:36:17.664000",
+    "timestamp_str": "2025-10-22T10:36:17.664+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // SaaS Portal commented: the alert has been acknowledged by muhammad.waqar@trilogy.com",
+    "text_length": 122
+  },
+  {
+    "index": 19,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:34:21",
+    "timestamp_str": "2025-10-22T10:34:21+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Centralsupport-ai-acc commented privately: JIRA Issue CARESMM-9351 is changed to 'In Queue' , block reason: -",
+    "text_length": 140
+  },
+  {
+    "index": 20,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:34:18.380000",
+    "timestamp_str": "2025-10-22T10:34:18.380+0000",
+    "text_preview": "SaaS Jira - issue key CARESMM-9351 // Issue is created by Pavly Nashed with description: The same error message (with same symptoms) from   showed up again \u2013 Search Run:Error Message:2025-10-22 10:32:",
+    "text_length": 2679
+  },
+  {
+    "index": 21,
+    "actor_name": "Deepanshu Dewan",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:26:48",
+    "timestamp_str": "2025-10-22T10:26:48+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Deepanshu Dewan commented publicly: Dear Manju,\n\nThank you for calling Khoros Care Support.\n\nAs discussed, your ticket has been assigned to an agent. You will receive an",
+    "text_length": 348
+  },
+  {
+    "index": 22,
+    "actor_name": "Manju Srinivasan",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:26:32",
+    "timestamp_str": "2025-10-22T10:26:32+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Manju Srinivasan commented publicly:  \n\nHello Hermes,\n\n\u00a0\n\nIssue is happening again now. Can you look into this on priority. \n\nI called the Outage Phone Line: +1 347-282-",
+    "text_length": 670
+  },
+  {
+    "index": 23,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "Atlas",
+    "timestamp": "2025-10-22 10:13:46",
+    "timestamp_str": "2025-10-22T10:13:46+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // ATLAS commented privately: Action: l1",
+    "text_length": 68
+  },
+  {
+    "index": 24,
+    "actor_name": "Manju Srinivasan",
+    "actor_type": "Customer",
+    "ai_subtype": null,
+    "timestamp": "2025-10-22 10:13:07",
+    "timestamp_str": "2025-10-22T10:13:07+00:00",
+    "text_preview": "Kayako - ticket id 60226631 // Manju Srinivasan commented publicly:  \n\nHello Team,\n\nWe are unable to view or claim any new incoming chats in Khoros Care Production. Manager are currently assigning cha",
+    "text_length": 2211
+  }
+]

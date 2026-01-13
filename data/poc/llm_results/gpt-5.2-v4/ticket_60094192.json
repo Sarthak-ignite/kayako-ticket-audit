@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer explicitly reports ATLAS AI was a \"disaster,\" indicating the AI experience was poor/unhelpful. The transcript also shows the AI interaction didn\u2019t meaningfully address the customer\u2019s request to reopen a specific ticket and instead pivoted to license confirmation/log upload prompts.",
+    "evidence": [
+      "Customer: \"In addition, your Atlas Ki is a disater.\"",
+      "Chat transcript: Customer: \"\u00d6ffne Das TIcket: #60078199\" \u2192 ATLAS: \"I have this license key on record... Just to make sure we're on the same page...\" (does not address reopening the ticket)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single ATLAS chat interaction shown and the case is handled by human agents shortly after. No clear evidence the customer was trapped in an AI-only loop or repeatedly asked the same questions by AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "After the customer clearly states they will not use v22 and demands a fix in v21 for duplicate emails, internal handling continues to frame progress as blocked on logs (implicitly tied to prior reproduction/upgrade context) without acknowledging or adapting to the customer\u2019s new position (focus on v21).",
+    "evidence": [
+      "Customer (2025-07-07): \"am no longer interested in version 22. GFi must now solve the problem in version 21 with the duplicate e-mails.\"",
+      "Agent internal note (2025-07-10): \"...we have been waiting for the logs. I will merge both, since we cannot move forward without logs\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Customer message on 2025-07-07 receives no visible public agent response in the provided timeline. Next activity is an internal note on 2025-07-10, indicating a 3+ calendar day gap without a customer-facing reply.",
+    "evidence": [
+      "Customer (2025-07-07T14:35:11): \"am no longer interested in version 22...\"",
+      "Next ticket activity (2025-07-10T13:02:58) is internal only: \"...we have been waiting for the logs...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The customer\u2019s original ticket was auto-closed due to no response while the underlying issue was still unresolved (support was waiting on logs). This forced the customer to reopen/continue in a new ticket, which is a negative experience and aligns with premature/automation closure without resolution.",
+    "evidence": [
+      "Agent (2025-07-04): \"Ticket 60078199 was closed by automation due to no response for more than a week.\"",
+      "Agent (2025-07-04): \"We were waiting for the logs once the issue was reproduced with the new version.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer describes a major mail flow outage after upgrading (emails not forwarded; required restoring backup). Responses remain standard/log-request oriented without visible urgent triage, mitigation guidance, or escalation path\u2014especially given the customer\u2019s statement that v22 was a 'disaster' and service impact occurred.",
+    "evidence": [
+      "Customer (2025-07-03): \"E-mails were no longer forwarded to Kerio. We had to restore a backup to get everything running again.\"",
+      "Agent (2025-07-04): \"Could you please confirm... whether you have reproduced the issue using the new version... provide the updated logs...\" (no urgency/escalation visible)",
+      "Agent (2025-07-04): \"We will work with our Engineering team as we have many installations on SMTP servers that are not having issues. If you wish to provide logs...\" (standard handling despite outage impact)"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60094192
+}

@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided suggested workarounds and guidance that were not validated for the customer\u2019s scenario and quickly proved ineffective (keyboard shortcut). ATLAS also largely generated generic troubleshooting/best-practice content rather than using the customer\u2019s concrete evidence (HAR/screenshot) to drive a targeted action plan, which prolonged time to meaningful investigation.",
+    "evidence": [
+      "ATLAS (public): \"Keyboard Shortcut for Sending Responses: ... Ctrl + Enter ... This shortcut may function even if the 'Send' button is not visible.\"",
+      "Customer: \"We have tested using Ctrl + Enter to send the message when the send button disappears, and there is no change. It does not send the message, and a refresh is still required.\"",
+      "ATLAS (later public): repeats largely the same hypothesis/troubleshooting framing instead of progressing to a clear next diagnostic or escalation path: \"Recommended Immediate Actions: Network Segmentation...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The ticket shows a loop of repeated, template-like troubleshooting requests (browsers/incognito/extensions/network checks) even after the customer states these were already done, creating a \u201cstuck\u201d experience. While humans did engage, the AI-driven responses contributed to repetitive cycles rather than forward progress.",
+    "evidence": [
+      "Don Kempt: \"We have provided HAR\u2019s, we have checked with agents wfh and in office, used different browsers etc.\"",
+      "Don Kempt: \"Most of these questions were already asked by the previous engineer on this case.\"",
+      "Rishi Singh (public): reiterates the same checks again: \"Test with multiple browsers ... private/incognito ... disable all browser extensions ... Clear cookies, cache...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeatedly asked for/recommended steps the customer had already performed and provided evidence for (HARs from multiple locations, multiple browsers, shortcut already tested). The customer explicitly called out that the team was re-asking previously covered questions and not reviewing prior context/tickets.",
+    "evidence": [
+      "Customer: \"Attached screenshot and HAR file attached from agent perspective.\" (initial report already includes key artifacts)",
+      "Customer: \"We have tested using Ctrl + Enter... and there is no change.\" (yet the workflow continues with similar generic suggestions)",
+      "Don Kempt: \"Please review the ticket\u2026 review previous tickets.\"",
+      "Don Kempt: \"We have provided HAR\u2019s, we have checked with agents wfh and in office, used different browsers etc.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Responses occurred the same day and next day; no clear 3+ calendar-day gaps attributable to support are visible in the provided timeline.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not show closure/resolution; instead it remains under investigation with continued back-and-forth.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer described an operationally impactful, recurring production issue (\u201cchat service not functioning as expected\u201d, ongoing for months, causing response delays). The handling remained largely standard troubleshooting and network-deflection without clear urgency signals (e.g., explicit severity acknowledgment, incident-style escalation, or coordinated engineering ownership) until later when internal notes finally mention platform-side errors/version concerns.",
+    "evidence": [
+      "Customer (initial): \"This is causing delays in responses to customers.\"",
+      "Don Kempt: \"We have been running into this issue intermittently for months now.\"",
+      "Don Kempt: \"here we are again\u2026 on our second day 2 of the chat service not functioning as expected\u2026\"",
+      "Support focus despite evidence across environments: Amir: \"WebSocket failures appear to be happening at the network layer... safe to assume traffic is going through your FortiGate stack\" vs. customer providing WFH HAR and stating it happens across VPN/direct, office/home.",
+      "Internal later pivot suggests possible product-side issue: Pablo (private): \"please check if v2.107.0 accidentally included staging/test environment references.\" and Pavly (private): logs show platform error: \"ERROR ... error occurred while fetching responding tokens / integration handles\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60247476
+}

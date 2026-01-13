@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI message is brief and appears to fulfill a request by stating a report is attached; there\u2019s no clear wrong info or unkept promise visible in the provided interactions.",
+    "evidence": [
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: \"Hi Team, Your requested report is attached. Best regards, Kayako Automation\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no repeated questioning or looping behavior; only an initial creation note and a single public response.",
+    "evidence": [
+      "[2025-12-23T08:00:53+00:00] (AI) Kayako Automations: \"Initial ticket creation.\"",
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: \"Hi Team, Your requested report is attached.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI does not ask for additional information or repeat requests; it references the customer's request and claims to provide the requested report.",
+    "evidence": [
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: \"Your requested report is attached.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The only two events occur within seconds of each other, so there is no evidence of multi-day or significant response delays.",
+    "evidence": [
+      "[2025-12-23T08:00:53+00:00] (AI) Kayako Automations: \"Initial ticket creation.\"",
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: \"Hi Team, Your requested report is attached.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket status is closed, the interaction log does not show the customer waiting for promised information, disputing closure, or any follow-up left unanswered.",
+    "evidence": [
+      "[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: \"Your requested report is attached.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/Sev1) and there is no outage context or generic troubleshooting in the messages.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI message is brief and appears to fulfill a request by stating a report is attached; there\u2019s no clear wrong info or unkept promise visible in the provided interactions.\",\n    \"evidence\": [\n      \"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: \\\"Hi Team, Your requested report is attached. Best regards, Kayako Automation\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no repeated questioning or looping behavior; only an initial creation note and a single public response.\",\n    \"evidence\": [\n      \"[2025-12-23T08:00:53+00:00] (AI) Kayako Automations: \\\"Initial ticket creation.\\\"\",\n      \"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: \\\"Hi Team, Your requested report is attached.\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI does not ask for additional information or repeat requests; it references the customer's request and claims to provide the requested report.\",\n    \"evidence\": [\n      \"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: \\\"Your requested report is attached.\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The only two events occur within seconds of each other, so there is no evidence of multi-day or significant response delays.\",\n    \"evidence\": [\n      \"[2025-12-23T08:00:53+00:00] (AI) Kayako Automations: \\\"Initial ticket creation.\\\"\",\n      \"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: \\\"Hi Team, Your requested report is attached.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket status is closed, the interaction log does not show the customer waiting for promised information, disputing closure, or any follow-up left unanswered.\",\n    \"evidence\": [\n      \"[2025-12-23T08:00:56+00:00] (AI) Kayako Automations: \\\"Your requested report is attached.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/Sev1) and there is no outage context or generic troubleshooting in the messages.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60269002
+}

@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI-generated entries shown are internal status sync/QA notes rather than customer-facing troubleshooting or commitments; there is no clear evidence of wrong info, generic filler to the customer, or unkept promises by AI in the provided excerpts.",
+    "evidence": [
+      "[2025-11-22T03:21:09+00:00] (AI) Centralsupport-ai-acc: \"JIRA Issue CARESMM-10815 is changed to 'Closed'\"",
+      "[2025-11-22T03:21:26.006+0000] (AI) Service Sfit: \"\u2705 QC PASSED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis Summary...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped interacting with AI or repeatedly asked for the same info by AI; the customer received human responses and updates.",
+    "evidence": [
+      "[2025-11-21T18:10:05+00:00] (Employee) Pavly Nashed: \"We wanted to let you know that the underlying issue...\"",
+      "[2025-11-22T00:11:53+00:00] (Employee) Harry Tasker: \"Please let us know if the issue is resolved on your end.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Internal notes indicate the team previously insisted on an incorrect network/proxy angle despite the situation/context, suggesting earlier customer-provided info was not appropriately incorporated.",
+    "evidence": [
+      "[2025-11-21T16:05:05+00:00] (Employee) Pavly Nashed (private): \"Please review the above. We should have not kept insisting on network proxy issues...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap between the last customer-facing update request and the next customer-facing message, consistent with the ticket metadata indicating a very large maximum response gap.",
+    "evidence": [
+      "[2025-11-22T00:11:53+00:00] (Employee) Harry Tasker: \"Please let us know if the issue is resolved on your end.\"",
+      "[2025-11-26T14:31:55+00:00] (Employee) Ciprian Nastase: \"Can you please let us know if the issue is resolved on your end?\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket closure is explicitly requested by an employee stating there were no further complaints and asking to close, rather than being closed while waiting on promised info from support or due to customer abandonment.",
+    "evidence": [
+      "[2025-11-26T14:33:53+00:00] (Employee) Don Kempt: \"We have not received any further complaints. Please go ahead and close this this case.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The visible excerpt shows escalation/engineering activity (Jira incident workflow, root-cause identification, pod changes) rather than generic cache/VPN/firewall troubleshooting; no clear evidence of P1 mishandling is present in the provided text.",
+    "evidence": [
+      "[2025-11-21T16:06:32.719+0000] (Employee) Vikranth Tirumuru: \"\ud83d\udd0d Investigation Complete - Root Cause Identified... This is a recurrence of CARESMM-9369.\"",
+      "[2025-11-21T16:37:19.904+0000] (Employee) Eric Magutu: \"Changed for pod2\"",
+      "[2025-11-21T21:38:19.916+0000] (Employee) Nitin Manik: \"Waiting on confirmation from Customer... once confirmed we will raise a CR to roll out the same solution...\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI-generated entries shown are internal status sync/QA notes rather than customer-facing troubleshooting or commitments; there is no clear evidence of wrong info, generic filler to the customer, or unkept promises by AI in the provided excerpts.\",\n    \"evidence\": [\n      \"[2025-11-22T03:21:09+00:00] (AI) Centralsupport-ai-acc: \\\"JIRA Issue CARESMM-10815 is changed to 'Closed'\\\"\",\n      \"[2025-11-22T03:21:26.006+0000] (AI) Service Sfit: \\\"\u2705 QC PASSED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Incident Analysis Summary...\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the customer was trapped interacting with AI or repeatedly asked for the same info by AI; the customer received human responses and updates.\",\n    \"evidence\": [\n      \"[2025-11-21T18:10:05+00:00] (Employee) Pavly Nashed: \\\"We wanted to let you know that the underlying issue...\\\"\",\n      \"[2025-11-22T00:11:53+00:00] (Employee) Harry Tasker: \\\"Please let us know if the issue is resolved on your end.\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Internal notes indicate the team previously insisted on an incorrect network/proxy angle despite the situation/context, suggesting earlier customer-provided info was not appropriately incorporated.\",\n    \"evidence\": [\n      \"[2025-11-21T16:05:05+00:00] (Employee) Pavly Nashed (private): \\\"Please review the above. We should have not kept insisting on network proxy issues...\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a multi-day gap between the last customer-facing update request and the next customer-facing message, consistent with the ticket metadata indicating a very large maximum response gap.\",\n    \"evidence\": [\n      \"[2025-11-22T00:11:53+00:00] (Employee) Harry Tasker: \\\"Please let us know if the issue is resolved on your end.\\\"\",\n      \"[2025-11-26T14:31:55+00:00] (Employee) Ciprian Nastase: \\\"Can you please let us know if the issue is resolved on your end?\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket closure is explicitly requested by an employee stating there were no further complaints and asking to close, rather than being closed while waiting on promised info from support or due to customer abandonment.\",\n    \"evidence\": [\n      \"[2025-11-26T14:33:53+00:00] (Employee) Don Kempt: \\\"We have not received any further complaints. Please go ahead and close this this case.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The visible excerpt shows escalation/engineering activity (Jira incident workflow, root-cause identification, pod changes) rather than generic cache/VPN/firewall troubleshooting; no clear evidence of P1 mishandling is present in the provided text.\",\n    \"evidence\": [\n      \"[2025-11-21T16:06:32.719+0000] (Employee) Vikranth Tirumuru: \\\"\ud83d\udd0d Investigation Complete - Root Cause Identified... This is a recurrence of CARESMM-9369.\\\"\",\n      \"[2025-11-21T16:37:19.904+0000] (Employee) Eric Magutu: \\\"Changed for pod2\\\"\",\n      \"[2025-11-21T21:38:19.916+0000] (Employee) Nitin Manik: \\\"Waiting on confirmation from Customer... once confirmed we will raise a CR to roll out the same solution...\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60247476
+}

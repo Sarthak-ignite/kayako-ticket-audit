@@ -1,0 +1,108 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "khoros_generic",
+        "requester": {
+          "id": 60550107,
+          "uuid": "5233902c-d693-52cf-b2a9-b6feaa76c254",
+          "full_name": "Aven Saren",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/5233902c-d693-52cf-b2a9-b6feaa76c254?1764600249",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 551718,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Asia/Kolkata",
+          "time_zone_offset": 19800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": null,
+          "last_seen_ip": null,
+          "last_seen_at": "2025-12-01T14:44:09+00:00",
+          "last_active_at": "2025-12-01T14:44:09+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60550107",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@5015dd2a63f3335387dbc7145bbfdbf63a5c858e",
+          "password_updated_at": "2025-12-01T14:44:09+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": null,
+          "last_activity_at": null,
+          "created_at": "2025-12-01T14:44:09+00:00",
+          "updated_at": "2025-12-01T14:44:09+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60550107"
+        },
+        "ticket_idt": 60253689
+      },
+      "interactions": [
+        [
+          "2025-12-01T14:44:29+00:00",
+          "Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable"
+        ],
+        [
+          "2025-12-01T14:44:11+00:00",
+          "Kayako - ticket id 60253689 // Aven Saren commented publicly: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.\n"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 2,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

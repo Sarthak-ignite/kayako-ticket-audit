@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses provide generic hold messages without meaningful progression in the support process.",
+    "evidence": [
+      "[2025-11-26T09:15:37+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)",
+      "[2025-11-24T10:20:29+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer did not seem to be caught in a loop with AI, as they received responses from a human after their inquiries.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "There is evidence that similar questions were referenced without addressing the customer's previous inquiries effectively.",
+    "evidence": [
+      "[2025-11-24T10:19:33+00:00] (Employee) Andriy Rybalchenko: Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays in responses, with over 67 hours to first human response and prolonged gaps between follow-ups.",
+    "evidence": [
+      "Time to first human: 67.5 hours",
+      "Max gap between responses: 67.5 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed without ensuring the customer had all the necessary information to proceed.",
+    "evidence": [
+      "[2025-11-26T09:56:08+00:00] (Employee) Andriy Rybalchenko: Please reach out directly to sales@ignitetech.com to proceed with the"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication that this ticket was a high-priority or outage situation requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses provide generic hold messages without meaningful progression in the support process.\",\n    \"evidence\": [\"[2025-11-26T09:15:37+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)\", \"[2025-11-24T10:20:29+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 48 hour(s)\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer did not seem to be caught in a loop with AI, as they received responses from a human after their inquiries.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"There is evidence that similar questions were referenced without addressing the customer's previous inquiries effectively.\",\n    \"evidence\": [\"[2025-11-24T10:19:33+00:00] (Employee) Andriy Rybalchenko: Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays in responses, with over 67 hours to first human response and prolonged gaps between follow-ups.\",\n    \"evidence\": [\"Time to first human: 67.5 hours\", \"Max gap between responses: 67.5 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed without ensuring the customer had all the necessary information to proceed.\",\n    \"evidence\": [\"[2025-11-26T09:56:08+00:00] (Employee) Andriy Rybalchenko: Please reach out directly to sales@ignitetech.com to proceed with the\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that this ticket was a high-priority or outage situation requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60248265
+}

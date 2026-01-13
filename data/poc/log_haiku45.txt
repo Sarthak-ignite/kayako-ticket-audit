@@ -1,0 +1,216 @@
+============================================================
+Phase 0.5-0.6: LLM Pattern Detection
+============================================================
+
+API Key Status:
+  ANTHROPIC_API_KEY: ✓ Found
+  OPENAI_API_KEY: ✓ Found
+  GEMINI_API_KEY: ✓ Found
+
+Loading metrics...
+  CSV metrics: 99 tickets
+  Ticket metrics: 99 tickets
+
+Available models: ['claude-sonnet', 'claude-haiku', 'claude-haiku-4-5', 'gpt-4o', 'gpt-4o-mini', 'gpt-5.2', 'gpt-5-mini']
+
+Running models: ['claude-haiku-4-5']
+Limit: all tickets
+
+Running claude-haiku-4-5 on 99 tickets...
+  [1/99] Processing ticket 60270630... OK
+  [2/99] Processing ticket 60269018... OK
+  [3/99] Processing ticket 60269002... OK
+  [4/99] Processing ticket 60268699... Error parsing response: Expecting ',' delimiter: line 31 column 3 (char 1719)
+FAILED
+  [5/99] Processing ticket 60267393... OK
+  [6/99] Processing ticket 60267287... OK
+  [7/99] Processing ticket 60264368... OK
+  [8/99] Processing ticket 60264386... OK
+  [9/99] Processing ticket 60264202... OK
+  [10/99] Processing ticket 60264009... OK
+  [11/99] Processing ticket 60261219... Error parsing response: Expecting ',' delimiter: line 31 column 3 (char 1384)
+FAILED
+  [12/99] Processing ticket 60260239... OK
+  [13/99] Processing ticket 60259640... OK
+  [14/99] Processing ticket 60258962... OK
+  [15/99] Processing ticket 60258751... Error parsing response: Expecting ',' delimiter: line 31 column 3 (char 1404)
+FAILED
+  [16/99] Processing ticket 60258400... OK
+  [17/99] Processing ticket 60256854... Error calling claude-haiku-4-5: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': 'This request would exceed the rate limit for your organization (9e9019a8-466b-4231-a983-a180b98bff8b) of 5 requests per minute. For details, refer to: https://docs.claude.com/en/api/rate-limits. You can see the response headers for current usage. Please reduce the prompt length or the maximum tokens requested, or try again later. You may also contact sales at https://www.anthropic.com/contact-sales to discuss your options for a rate limit increase.'}, 'request_id': 'req_011CWsy6MxpBmtSPgHGPxAM8'}
+FAILED
+  [18/99] Processing ticket 60256250... OK
+  [19/99] Processing ticket 60256173... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsy9u5QY4GunbQt2WT63'}
+FAILED
+  [20/99] Processing ticket 60254579... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyA34sTtBwHx7gZ4WMs'}
+FAILED
+  [21/99] Processing ticket 60253689... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyA7Hsca7ZKiDt2zAaG'}
+FAILED
+  [22/99] Processing ticket 60252864... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAArSLHGffFMCrQg45'}
+FAILED
+  [23/99] Processing ticket 60252140... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAEcuNq7RfVDjRzAh3'}
+FAILED
+  [24/99] Processing ticket 60251281... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAKSrxnWPcgZtLUBGe'}
+FAILED
+  [25/99] Processing ticket 60250996... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyASP5mprULB4h3MdJK'}
+FAILED
+  [26/99] Processing ticket 60250793... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAWEkSPGTA9aeymFn8'}
+FAILED
+  [27/99] Processing ticket 60250271... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAZjbcTxvN7xdParMV'}
+FAILED
+  [28/99] Processing ticket 60250122... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAeS7tQQg72souxmo4'}
+FAILED
+  [29/99] Processing ticket 60248266... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAi3ATc5gWubKEvakH'}
+FAILED
+  [30/99] Processing ticket 60248265... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAmgwMkomEi2BaYcEE'}
+FAILED
+  [31/99] Processing ticket 60247476... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAr1e7tbcxTbqqqNj8'}
+FAILED
+  [32/99] Processing ticket 60247413... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAux2DVpVt6kSBCCde'}
+FAILED
+  [33/99] Processing ticket 60246498... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyAynx7WjUQcntDpVzG'}
+FAILED
+  [34/99] Processing ticket 60243765... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyB3dsytYj1o7azTQcD'}
+FAILED
+  [35/99] Processing ticket 60243726... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyB7AxZQbHnbJnkbwdh'}
+FAILED
+  [36/99] Processing ticket 60243347... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBAmFkk75gjsp3Rok5'}
+FAILED
+  [37/99] Processing ticket 60243234... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBEn6r8T7mukrrw4o4'}
+FAILED
+  [38/99] Processing ticket 60242868... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBNJHjNHi2ET6W7pGt'}
+FAILED
+  [39/99] Processing ticket 60242814... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBRtqa1qREGs4JcN6r'}
+FAILED
+  [40/99] Processing ticket 60241518... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBVVdqa5FJJNHCNcRu'}
+FAILED
+  [41/99] Processing ticket 60241392... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBZFMitBWUMSSPE7DC'}
+FAILED
+  [42/99] Processing ticket 60240989... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBd3JxNZBSVkdVGN6n'}
+FAILED
+  [43/99] Processing ticket 60239883... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBgcrueWy8QvQQrycj'}
+FAILED
+  [44/99] Processing ticket 60239472... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBk8T4crGDHD6St3Lb'}
+FAILED
+  [45/99] Processing ticket 60238514... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBohkrjyLSfSiQNSXa'}
+FAILED
+  [46/99] Processing ticket 60238457... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBsPWk9EhmvBv31252'}
+FAILED
+  [47/99] Processing ticket 60238295... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBw4XWwVWCRqVUndCe'}
+FAILED
+  [48/99] Processing ticket 60237327... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyBzpk875nZEw1KukBN'}
+FAILED
+  [49/99] Processing ticket 60237213... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyC4XV3LTg68RMEZJ9o'}
+FAILED
+  [50/99] Processing ticket 60236962... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyC8CkG1nYeT4wv8wbV'}
+FAILED
+  [51/99] Processing ticket 60235310... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCBvV6hdnJTHD2wvtE'}
+FAILED
+  [52/99] Processing ticket 60234884... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCGNNmdtvp82rhTfft'}
+FAILED
+  [53/99] Processing ticket 60234621... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCL1u7fsJe4S73HgaG'}
+FAILED
+  [54/99] Processing ticket 60233855... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCPevXAyyKiXEqmBXi'}
+FAILED
+  [55/99] Processing ticket 60233341... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCTj17WSrt9vMQhWve'}
+FAILED
+  [56/99] Processing ticket 60233405... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCYUzgqjiHVzR2Shu3'}
+FAILED
+  [57/99] Processing ticket 60233211... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCcAkGRLVad6tpXNMm'}
+FAILED
+  [58/99] Processing ticket 60232940... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCfq1kJep5dt8VxcBL'}
+FAILED
+  [59/99] Processing ticket 60232130... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCjaVbo3Bwxn9MHgm1'}
+FAILED
+  [60/99] Processing ticket 60231851... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCpGGbzXTRcBR6LpjV'}
+FAILED
+  [61/99] Processing ticket 60231535... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCt8wUH38Zv35diwb5'}
+FAILED
+  [62/99] Processing ticket 60231299... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyCx3b7rjFjrVhjZ31g'}
+FAILED
+  [63/99] Processing ticket 60230887... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyD1fsKKaBG4QbgkyTV'}
+FAILED
+  [64/99] Processing ticket 60230438... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyD5GAhKBZPNqxcKQ4V'}
+FAILED
+  [65/99] Processing ticket 60230303... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyD99KxDeGkQfEAho58'}
+FAILED
+  [66/99] Processing ticket 60230003... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDCrKsAMpJuS1tXdtM'}
+FAILED
+  [67/99] Processing ticket 60229854... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDGLvJHUAx6xXScvee'}
+FAILED
+  [68/99] Processing ticket 60227783... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDLF51uYP7fVrSuqwn'}
+FAILED
+  [69/99] Processing ticket 60227322... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDPu6EcsA4fRMsBJx5'}
+FAILED
+  [70/99] Processing ticket 60226631... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDTdpRp1zQ1zWgJTPe'}
+FAILED
+  [71/99] Processing ticket 60225246... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDXU148yj8ak36EMdU'}
+FAILED
+  [72/99] Processing ticket 60225231... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDb8GiBPcFHtSgE51q'}
+FAILED
+  [73/99] Processing ticket 60224885... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDepmV85e3Ayaw81d5'}
+FAILED
+  [74/99] Processing ticket 60224201... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDiSoe17JXuFRejnne'}
+FAILED
+  [75/99] Processing ticket 60223404... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDpC5rDp76GxR4KhNp'}
+FAILED
+  [76/99] Processing ticket 60223073... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDsx42LYPdwAmtv3fa'}
+FAILED
+  [77/99] Processing ticket 60222887... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyDwf3WZZ6CVCQ7qDqG'}
+FAILED
+  [78/99] Processing ticket 60222765... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyE21jSuftcRcNHfigF'}
+FAILED
+  [79/99] Processing ticket 60222138... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyE8wwmkUspC6DUCoyi'}
+FAILED
+  [80/99] Processing ticket 60221483... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyECj9zx6WJMpvZysnb'}
+FAILED
+  [81/99] Processing ticket 60220701... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyEGdZKieXeCovkVsqe'}
+FAILED
+  [82/99] Processing ticket 60220499... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyELG6Ci1B3Wo97q2sE'}
+FAILED
+  [83/99] Processing ticket 60219661... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyEQPt4r5agaGsfdA3S'}
+FAILED
+  [84/99] Processing ticket 60219657... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyETzg4GKm8RoVB3Yq2'}
+FAILED
+  [85/99] Processing ticket 60218865... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyEXayZv4wNCMy5EH8a'}
+FAILED
+  [86/99] Processing ticket 60218313... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyEbNgKeFh2bxCjdURQ'}
+FAILED
+  [87/99] Processing ticket 60218070... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyEfLJsWedfqmHVWjd3'}
+FAILED
+  [88/99] Processing ticket 60214613... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyEj5HM4eCWfJUbNyf4'}
+FAILED
+  [89/99] Processing ticket 60214082... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyEr6TgtfgHhDnzYLjk'}
+FAILED
+  [90/99] Processing ticket 60212784... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyEuuuQgVrDx1EsHF1k'}
+FAILED
+  [91/99] Processing ticket 60212281... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyEygcd6bRJyg8BBABp'}
+FAILED
+  [92/99] Processing ticket 60211680... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyF3Chck9HcJnjC97MJ'}
+FAILED
+  [93/99] Processing ticket 60211226... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyF7xCf9M9Wz1A5EEEh'}
+FAILED
+  [94/99] Processing ticket 60210541... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyFBS3vTNB1dmCmpmDZ'}
+FAILED
+  [95/99] Processing ticket 60210131... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyFGSBGCcJNyF2eWcNh'}
+FAILED
+  [96/99] Processing ticket 60209553... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyFL3DyLvRXosm6Y1WA'}
+FAILED
+  [97/99] Processing ticket 60209192... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyFPt9tEsMuvnaaE9PP'}
+FAILED
+  [98/99] Processing ticket 60209095... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyFYJRBKPpiZ1sbCiok'}
+FAILED
+  [99/99] Processing ticket 60208754... Error calling claude-haiku-4-5: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CWsyFdYBhbFUN5b3fYUME'}
+FAILED
+
+============================================================
+DETECTION SUMMARY
+============================================================
+
+Pattern                  claude-haiku-4-5
+----------------------------------------
+AI_QUALITY_FAILURES      4 (23.5%)      
+AI_WALL_LOOPING          4 (23.5%)      
+IGNORING_CONTEXT         2 (11.8%)      
+RESPONSE_DELAYS          6 (35.3%)      
+PREMATURE_CLOSURE        6 (35.3%)      
+P1_SEV1_MISHANDLING      5 (29.4%)      

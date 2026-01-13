@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no indication of generic filler responses or wrong information based on the provided interaction timeline.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was stuck in an AI loop or could not reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI response does not indicate that it ignored previous customer information or requested the same data again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The max gap between responses is 0.0 hours, indicating no delays occurred.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence provided that suggests the ticket was closed while the customer was awaiting further information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This issue cannot be assessed as there is no information indicating this ticket involved a high-priority or outage situation.",
+    "evidence": []
+  },
+  "_raw_response": "{\"AI_QUALITY_FAILURES\":{\"detected\":false,\"reasoning\":\"There is no indication of generic filler responses or wrong information based on the provided interaction timeline.\",\"evidence\":[]},\"AI_WALL_LOOPING\":{\"detected\":false,\"reasoning\":\"There is no evidence that the customer was stuck in an AI loop or could not reach a human.\",\"evidence\":[]},\"IGNORING_CONTEXT\":{\"detected\":false,\"reasoning\":\"The AI response does not indicate that it ignored previous customer information or requested the same data again.\",\"evidence\":[]},\"RESPONSE_DELAYS\":{\"detected\":false,\"reasoning\":\"The max gap between responses is 0.0 hours, indicating no delays occurred.\",\"evidence\":[]},\"PREMATURE_CLOSURE\":{\"detected\":false,\"reasoning\":\"There is no evidence provided that suggests the ticket was closed while the customer was awaiting further information.\",\"evidence\":[]},\"P1_SEV1_MISHANDLING\":{\"detected\":false,\"reasoning\":\"This issue cannot be assessed as there is no information indicating this ticket involved a high-priority or outage situation.\",\"evidence\":[]}}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60233341
+}

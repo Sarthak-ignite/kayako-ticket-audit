@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI interactions were primarily automated escalation triggers and routing actions (l2). No evidence of AI providing wrong information or making unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While AI systems logged escalations, the customer was able to reach human support agents. No evidence of being stuck in an AI loop or repeated automated requests.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Despite multiple escalations and the customer explaining they'd already downgraded and describing ongoing issues, support agents repeatedly asked the customer to confirm or explain their concerns instead of reviewing the ticket history.",
+    "evidence": [
+      "[2025-09-30T00:55:16+00:00] (Customer) D. Middleton: How about you look back through the comments in this case, and you tell me what my concerns are. . . This is a complete failure of supp",
+      "[2025-09-29T23:40:58+00:00] (Customer) D. Middleton: Hi Harry. How about someone contacts me like I have asked now 5 times",
+      "[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: Please provide us with the following details after having reproduced the issue"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The max gap between responses was 44.8 hours, and there was a notable gap between Oct 2 (customer asking about next steps) and Oct 3 (support response asking for details again).",
+    "evidence": [
+      "[2025-10-02T18:16:04+00:00] (Customer) D. Middleton: What are next steps on this issue?",
+      "[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: Dear Drew, Thank you for your response. Please provide us with the following details"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed (status: closed) after the customer reported the issue was still occurring (serial number unknown, updates failing) and never received a resolution or confirmation that the issue was resolved.",
+    "evidence": [
+      "[2025-10-01T23:35:41+00:00] (Customer) D. Middleton: Serial number still reporting UNKNOWN> unknown Serial number ALSO updates are reporting to fail> Kerio Control Update failed",
+      "[2025-10-02T18:16:04+00:00] (Customer) D. Middleton: What are next steps on this issue?"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This was an urgent ticket with complete outage and multiple customer escalations requesting immediate manager contact. Instead of immediate escalation, agents provided generic responses about investigating the issue and requiring v10 upgrade without immediate phone support.",
+    "evidence": [
+      "[2025-09-29T19:50:15+00:00] (Customer) D. Middleton: I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.",
+      "[2025-09-29T22:34:06+00:00] (Customer) D. Middleton: Please have a manager call me immediately. +31648422032 It is completely unacceptable in a network down emergency to be unable to reac",
+      "[2025-09-30T00:34:21+00:00] (Employee) Aditi Garg: Dear D. Middleton | MarineSecure, I apologize for the delay. We've received your escalation regarding ticket 60209553 and are working on"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI interactions were primarily automated escalation triggers and routing actions (l2). No evidence of AI providing wrong information or making unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI systems logged escalations, the customer was able to reach human support agents. No evidence of being stuck in an AI loop or repeated automated requests.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite multiple escalations and the customer explaining they'd already downgraded and describing ongoing issues, support agents repeatedly asked the customer to confirm or explain their concerns instead of reviewing the ticket history.\",\n    \"evidence\": [\n      \"[2025-09-30T00:55:16+00:00] (Customer) D. Middleton: How about you look back through the comments in this case, and you tell me what my concerns are. . . This is a complete failure of supp\",\n      \"[2025-09-29T23:40:58+00:00] (Customer) D. Middleton: Hi Harry. How about someone contacts me like I have asked now 5 times\",\n      \"[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: Please provide us with the following details after having reproduced the issue\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The max gap between responses was 44.8 hours, and there was a notable gap between Oct 2 (customer asking about next steps) and Oct 3 (support response asking for details again).\",\n    \"evidence\": [\n      \"[2025-10-02T18:16:04+00:00] (Customer) D. Middleton: What are next steps on this issue?\",\n      \"[2025-10-03T02:26:46+00:00] (Employee) Arafat Bakhsh: Dear Drew, Thank you for your response. Please provide us with the following details\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed (status: closed) after the customer reported the issue was still occurring (serial number unknown, updates failing) and never received a resolution or confirmation that the issue was resolved.\",\n    \"evidence\": [\n      \"[2025-10-01T23:35:41+00:00] (Customer) D. Middleton: Serial number still reporting UNKNOWN> unknown Serial number ALSO updates are reporting to fail> Kerio Control Update failed\",\n      \"[2025-10-02T18:16:04+00:00] (Customer) D. Middleton: What are next steps on this issue?\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This was an urgent ticket with complete outage and multiple customer escalations requesting immediate manager contact. Instead of immediate escalation, agents provided generic responses about investigating the issue and requiring v10 upgrade without immediate phone support.\",\n    \"evidence\": [\n      \"[2025-09-29T19:50:15+00:00] (Customer) D. Middleton: I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\",\n      \"[2025-09-29T22:34:06+00:00] (Customer) D. Middleton: Please have a manager call me immediately. +31648422032 It is completely unacceptable in a network down emergency to be unable to reac\",\n      \"[2025-09-30T00:34:21+00:00] (Employee) Aditi Garg: Dear D. Middleton | MarineSecure, I apologize for the delay. We've received your escalation regarding ticket 60209553 and are working on\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60209553
+}

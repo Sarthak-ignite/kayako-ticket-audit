@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI system repeatedly placed the ticket on hold for 9999 hours without providing meaningful context or resolution.",
+    "evidence": [
+      "[2025-10-14T05:10:35+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-10-13T10:06:36+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While AI interactions were present, the customer was able to reach human agents and the ticket progressed.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support agents seemed to split the ticket and create new tickets without fully addressing the customer's complete set of issues.",
+    "evidence": [
+      "[2025-10-13T10:00:34+00:00] Ticket 60208754 has been splitted to 60219722",
+      "[2025-10-09T12:21:44+00:00] Raditya Perdhevi: Thank you for the update. We understand that all issues have been resolved except for the disconnection issue with Face"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer interactions and support responses, with some delays extending to multiple days.",
+    "evidence": [
+      "Gap between [2025-10-13T04:13:05+00:00] (Customer comment) and [2025-10-13T10:05:02+00:00] (First support response)",
+      "Large time gaps between interactions spanning several days"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket remained open and was actively worked on until customer's issues were addressed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "For a high-priority ticket, the engineering team actively investigated and deployed fixes for the reported issues.",
+    "evidence": [
+      "[2025-10-16T15:38:31Z] MohammadAzhari-Trilogy: This change has been deployed",
+      "[2025-10-16T17:58:43+00:00] Pavly Nashed: Development team has implemented a solution"
+    ]
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI system repeatedly placed the ticket on hold for 9999 hours without providing meaningful context or resolution.\",\n    \"evidence\": [\n      \"[2025-10-14T05:10:35+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-10-13T10:06:36+00:00] Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI interactions were present, the customer was able to reach human agents and the ticket progressed.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support agents seemed to split the ticket and create new tickets without fully addressing the customer's complete set of issues.\",\n    \"evidence\": [\n      \"[2025-10-13T10:00:34+00:00] Ticket 60208754 has been splitted to 60219722\",\n      \"[2025-10-09T12:21:44+00:00] Raditya Perdhevi: Thank you for the update. We understand that all issues have been resolved except for the disconnection issue with Face\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer interactions and support responses, with some delays extending to multiple days.\",\n    \"evidence\": [\n      \"Gap between [2025-10-13T04:13:05+00:00] (Customer comment) and [2025-10-13T10:05:02+00:00] (First support response)\",\n      \"Large time gaps between interactions spanning several days\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket remained open and was actively worked on until customer's issues were addressed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"For a high-priority ticket, the engineering team actively investigated and deployed fixes for the reported issues.\",\n    \"evidence\": [\n      \"[2025-10-16T15:38:31Z] MohammadAzhari-Trilogy: This change has been deployed\",\n      \"[2025-10-16T17:58:43+00:00] Pavly Nashed: Development team has implemented a solution\"\n    ]\n  }\n}\n```\n\nKey observations:\n- The ticket had significant AI and support handling issues\n- Multiple AI hold actions and ticket splits\n- Substantial response delays\n- Eventually, the engineering team resolved the technical issues\n- The customer was patient but experienced frustration with support process",
+  "_model": "claude-haiku",
+  "_ticket_id": 60208754
+}

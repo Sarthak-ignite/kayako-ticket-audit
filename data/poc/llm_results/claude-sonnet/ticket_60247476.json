@@ -1,0 +1,49 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI interactions are primarily automated system notifications about JIRA status changes and hold placements, not customer-facing support responses. No evidence of wrong information or broken promises from AI.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of customer being stuck in AI loop. Human employees (Pavly, Harry, Don, Ciprian) handled all customer-facing communications. AI only posted internal status updates.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Pavly acknowledges in internal comments that support kept insisting on network proxy issues when they should not have, suggesting earlier troubleshooting ignored the actual root cause that was already known from a previous ticket.",
+    "evidence": [
+      "[2025-11-21T16:05:05+00:00] Pavly Nashed: '@Rishi Singh, @Daniel Bosman and @Amir Khan Please review the above. We should have not kept insisting on network proxy issues'",
+      "[2025-11-21T16:06:32.719+0000] Vikranth Tirumuru: 'Root Cause: This is a recurrence of CARESMM-9369. The fix (increasi...'",
+      "[2025-11-21T16:03:07+00:00] Pavly Nashed: 'Thank you very much for your patience and for all the detailed information you've shared so far, including multip...'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Maximum gap between responses was 107.2 hours (approximately 4.5 days), and there's a significant gap between the last customer update on Nov 21st and the final follow-up on Nov 26th (5 days).",
+    "evidence": [
+      "Max gap between responses: 107.2 hours",
+      "[2025-11-21T18:10:05+00:00] Pavly Nashed update to customer, then [2025-11-26T14:31:55+00:00] Ciprian Nastase follows up - 5 day gap"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket was closed after customer (Don Kempt) explicitly stated they had not received further complaints and requested closure. Support also requested confirmation before closing.",
+    "evidence": [
+      "[2025-11-26T14:33:53+00:00] Don Kempt: 'We have not received any further complaints. Please go ahead and close this this case.'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "For an urgent priority ticket affecting agents' ability to use a core feature (Send button disappearing), support insisted on generic network/proxy troubleshooting instead of recognizing it as a recurrence of a known issue (CARESMM-9369).",
+    "evidence": [
+      "Priority: urgent",
+      "[2025-11-21T16:05:05+00:00] Pavly Nashed: 'We should have not kept insisting on network proxy issues'",
+      "[2025-11-21T16:06:32.719+0000] Vikranth Tirumuru: 'Root Cause: This is a recurrence of CARESMM-9369'",
+      "[2025-11-21T18:10:05+00:00] Pavly Nashed: 'the underlying issue causing the Send button to disappear in your Khoros'"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI interactions are primarily automated system notifications about JIRA status changes and hold placements, not customer-facing support responses. No evidence of wrong information or broken promises from AI.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of customer being stuck in AI loop. Human employees (Pavly, Harry, Don, Ciprian) handled all customer-facing communications. AI only posted internal status updates.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Pavly acknowledges in internal comments that support kept insisting on network proxy issues when they should not have, suggesting earlier troubleshooting ignored the actual root cause that was already known from a previous ticket.\",\n    \"evidence\": [\n      \"[2025-11-21T16:05:05+00:00] Pavly Nashed: '@Rishi Singh, @Daniel Bosman and @Amir Khan Please review the above. We should have not kept insisting on network proxy issues'\",\n      \"[2025-11-21T16:06:32.719+0000] Vikranth Tirumuru: 'Root Cause: This is a recurrence of CARESMM-9369. The fix (increasi...'\",\n      \"[2025-11-21T16:03:07+00:00] Pavly Nashed: 'Thank you very much for your patience and for all the detailed information you've shared so far, including multip...'\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Maximum gap between responses was 107.2 hours (approximately 4.5 days), and there's a significant gap between the last customer update on Nov 21st and the final follow-up on Nov 26th (5 days).\",\n    \"evidence\": [\n      \"Max gap between responses: 107.2 hours\",\n      \"[2025-11-21T18:10:05+00:00] Pavly Nashed update to customer, then [2025-11-26T14:31:55+00:00] Ciprian Nastase follows up - 5 day gap\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket was closed after customer (Don Kempt) explicitly stated they had not received further complaints and requested closure. Support also requested confirmation before closing.\",\n    \"evidence\": [\n      \"[2025-11-26T14:33:53+00:00] Don Kempt: 'We have not received any further complaints. Please go ahead and close this this case.'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"For an urgent priority ticket affecting agents' ability to use a core feature (Send button disappearing), support insisted on generic network/proxy troubleshooting instead of recognizing it as a recurrence of a known issue (CARESMM-9369).\",\n    \"evidence\": [\n      \"Priority: urgent\",\n      \"[2025-11-21T16:05:05+00:00] Pavly Nashed: 'We should have not kept insisting on network proxy issues'\",\n      \"[2025-11-21T16:06:32.719+0000] Vikranth Tirumuru: 'Root Cause: This is a recurrence of CARESMM-9369'\",\n      \"[2025-11-21T18:10:05+00:00] Pavly Nashed: 'the underlying issue causing the Send button to disappear in your Khoros'\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60247476
+}

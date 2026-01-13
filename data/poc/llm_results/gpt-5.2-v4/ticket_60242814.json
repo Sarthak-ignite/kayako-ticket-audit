@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only visible ATLAS content is an intake/greeting plus a truncated transcript; there is no AI-provided solution or guidance in the ticket that can be evaluated as wrong/misleading. The substantive answer was provided by a human agent (Carlos).",
+    "evidence": [
+      "ATLAS transcript shows only an intro and request for details: \"Please select from the below or give me a detailed description of what\u2019s happening.\"",
+      "No AI answer to the port-out question is shown; the first clear answer is from Carlos on 2025-11-30."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer was not stuck with repeated AI prompts; the interaction moves to human response (though delayed). No evidence the customer requested a human and was blocked by AI, and no repeated AI requests for the same info are shown.",
+    "evidence": [
+      "Only one ATLAS interaction is logged (transcript + routing action): \"Action: l1\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support ultimately addressed the customer\u2019s specific questions (porting out feasibility, process, and fees) and referenced that numbers originally ported in are eligible. No clear instance of support re-asking already-provided details or disregarding previously stated constraints.",
+    "evidence": [
+      "Carlos acknowledges the stated context: \"Since you mentioned that these were numbers you ported in during your initial setup, they are eligible to be ported out.\"",
+      "Carlos answers the fee question directly: \"There is no fee from GFI/FaxMaker Online to port your numbers out.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant gap (over two weeks) between the initial request and a substantive support response. The customer had to follow up indicating no answer was received, and the agent explicitly apologized for the delay.",
+    "evidence": [
+      "Initial request: 2025-11-13T22:15:03+00:00 (customer asks about porting numbers back and any fee).",
+      "Customer follow-up due to no answer: 2025-11-18T21:45:39+00:00 \u2014 \"Hello, I still have not received an answer to my question.\"",
+      "First substantive support answer: 2025-11-30T22:38:09+00:00 (Carlos provides process + fees).",
+      "Agent acknowledges delay: \"Thank you for your patience, and I apologize for the delay in providing a clear answer to your question.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer\u2019s primary question was answered before any closure is shown. Although agents mention auto-closure timelines, the ticket remains in active conversation with additional questions being addressed (e.g., Darrell\u2019s access question). No evidence of closure while an unanswered request remained.",
+    "evidence": [
+      "Port-out question answered on 2025-11-30.",
+      "Later inquiry addressed: 2025-12-07 \u2014 \"You can access the support case by authenticating in our helpcenter...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a planning/billing/process question about future number porting, not an outage or urgent production issue. No P1/Sev1 indicators (e.g., service down, business blocked) appear in the ticket.",
+    "evidence": [
+      "Customer frames it as a future migration: \"In the early summer 2026 (next year) we will be migrating over to a new Zoom Phone phone system.\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60242814
+}

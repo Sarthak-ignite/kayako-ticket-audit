@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI actions are primarily administrative (placing tickets on hold, logging operations). No evidence of AI providing wrong information or making unfulfilled promises to customers.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of customer being stuck in an AI loop. Human agents responded to customer inquiries directly without AI interference preventing escalation.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support agent asked for upgrade history information despite it likely being available in system logs or previous interactions, and customer had to confirm they already provided all available history.",
+    "evidence": [
+      "[2025-12-31T11:15:27Z] sh136708 commented: @daniel-wachira **1) 'Initial version installed' (first recorded image boot) \u2014 2017/04/25 exinda-v7.4.4 update 1 (0076)**",
+      "[2026-01-02T10:56:22+00:00] Sajeedali Kazi: Hi Syed, Kindly proceed with this history only, there is no other history regarding to the appliances."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple significant delays occurred: 864.8 hours (36 days) to first human response, and maximum gap of 657 hours (27 days) between responses. Customer complained about issue persisting for two months.",
+    "evidence": [
+      "[2026-01-05T08:31:09+00:00] Vaibhav Jha: Dear DNN Support Team, I wanted to bring to your attention that the issue we reported has been persisting for the past two months.",
+      "[2026-01-03T14:09:35+00:00] Sajeedali Kazi: Dear Team, Is there any update from your development team. This issue has been pending for a long time"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket status is 'hold', not closed. While there are delays, the ticket remains open and support continues to provide updates about development team progress.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority ticket took 864.8 hours (36 days) for first human response, and customer experienced massive delays with repeated generic 'monitoring development team' responses instead of urgent handling appropriate for high-priority status.",
+    "evidence": [
+      "[2026-01-05T10:39:28+00:00] Andriy Rybalchenko: Dear Rana, Thank you for following up. The issue is still with the Development team. We are monitoring their progress and will up",
+      "[2026-01-05T10:55:34+00:00] Andriy Rybalchenko: Dear Rana, At this time, we don't have a confirmed timeline to share. The resolution depends on the Development team's queue"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI actions are primarily administrative (placing tickets on hold, logging operations). No evidence of AI providing wrong information or making unfulfilled promises to customers.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of customer being stuck in an AI loop. Human agents responded to customer inquiries directly without AI interference preventing escalation.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support agent asked for upgrade history information despite it likely being available in system logs or previous interactions, and customer had to confirm they already provided all available history.\",\n    \"evidence\": [\n      \"[2025-12-31T11:15:27Z] sh136708 commented: @daniel-wachira **1) 'Initial version installed' (first recorded image boot) \u2014 2017/04/25 exinda-v7.4.4 update 1 (0076)**\",\n      \"[2026-01-02T10:56:22+00:00] Sajeedali Kazi: Hi Syed, Kindly proceed with this history only, there is no other history regarding to the appliances.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Multiple significant delays occurred: 864.8 hours (36 days) to first human response, and maximum gap of 657 hours (27 days) between responses. Customer complained about issue persisting for two months.\",\n    \"evidence\": [\n      \"[2026-01-05T08:31:09+00:00] Vaibhav Jha: Dear DNN Support Team, I wanted to bring to your attention that the issue we reported has been persisting for the past two months.\",\n      \"[2026-01-03T14:09:35+00:00] Sajeedali Kazi: Dear Team, Is there any update from your development team. This issue has been pending for a long time\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket status is 'hold', not closed. While there are delays, the ticket remains open and support continues to provide updates about development team progress.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority ticket took 864.8 hours (36 days) for first human response, and customer experienced massive delays with repeated generic 'monitoring development team' responses instead of urgent handling appropriate for high-priority status.\",\n    \"evidence\": [\n      \"[2026-01-05T10:39:28+00:00] Andriy Rybalchenko: Dear Rana, Thank you for following up. The issue is still with the Development team. We are monitoring their progress and will up\",\n      \"[2026-01-05T10:55:34+00:00] Andriy Rybalchenko: Dear Rana, At this time, we don't have a confirmed timeline to share. The resolution depends on the Development team's queue\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60209095
+}

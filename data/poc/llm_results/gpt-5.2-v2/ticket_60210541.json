@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided mostly generic firewall/NAT/port-access troubleshooting that did not address the customer's core claim (regression introduced only by upgrading to v10 with no config changes). The customer explicitly indicated the guidance was off-target.",
+    "evidence": [
+      "ATLAS: \"Based on the log details provided\u2014especially the timeout during the Let's Encrypt certificate authorization process\u2014the most likely root cause relates to firewall or network routing...\"",
+      "ATLAS: \"Ensure that ... have explicit firewall rules allowing incoming HTTP/HTTPS ... Verify that port 80 (HTTP) and port 443 (HTTPS) are accessible...\"",
+      "Customer: \"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it. there are no config changes at all. Only version is chaning.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer shows friction/blocked progress due to AI output that repeats standard steps despite the customer emphasizing it\u2019s version-specific; this matches the 'frustration at AI responses / I already tried that' signal even without multiple AI turns.",
+    "evidence": [
+      "Customer: \"all those steps are not to the point... there are no config changes at all.\"",
+      "Customer: \"the problem also occurred with all ips/geoip/antivirus/appfilter disabled.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS overlooked key context already provided: the issue occurs only after upgrading to v10 and persists even with multiple security features disabled, yet ATLAS still focused on generic firewall/inspection causes rather than version/regression analysis.",
+    "evidence": [
+      "Customer: \"after a downgrade to 9.5 SP3 it will solved.\"",
+      "Customer: \"the problem also occurred with all ips/geoip/antivirus/appfilter disabled.\"",
+      "ATLAS: \"If you have SSL filtering or HTTPS inspection enabled, consider temporarily excluding Let's Encrypt domains...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a major gap (about one month) between the customer's last message and the next support response, indicating a significant delay.",
+    "evidence": [
+      "[2025-09-30T15:55:22+00:00] Customer: \"there has to be some difference in handling packets.\"",
+      "[2025-10-31T13:59:15+00:00] Support: \"Dear Jozef, Thank you for contacting GFI - Kerio Control Support...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While support mentions an auto-close policy, the customer confirmed the issue was solved and did not leave an unanswered question waiting for follow-up in the final message.",
+    "evidence": [
+      "Support: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\"",
+      "Customer: \"yes, it was related... we can consider this as solved.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This appears to affect business-critical services (PBX/VoIP trunk and certificate renewals) across multiple appliances ('10 Kerio controls'), and the issue was ultimately tied to a known incident; initial handling stayed at generic troubleshooting and the response cadence was slow rather than expedited/escalated.",
+    "evidence": [
+      "Customer: \"PBX issues... partner Walter having issues on  10 Kerio controls.\"",
+      "Customer: \"voip trunk and plesk ssl certificate renew with version 10 build 9018 doesnt work\"",
+      "Internal note: \"GFI Software Status - Kerio Control UDP Traffic Issue... This was logged in late Sep\"",
+      "ATLAS: generic checks such as \"Verify that port 80... and port 443... are accessible\" despite customer stating it regressed only on v10"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60210541
+}

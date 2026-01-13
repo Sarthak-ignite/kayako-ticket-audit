@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responds with generic SSL/TLS advice and a KB link instead of addressing the specific reported problem (a central redirect endpoint certificate for redirects.gfikerioconnect.com) or taking concrete action to fix/escalate it.",
+    "evidence": [
+      "Thank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconnect.com/ and the resulting security warning...",
+      "While the knowledge base article ... describes how a similar message appears in client applications and can sometimes be bypassed...",
+      "As a workaround, users may be able to bypass the message ... but this is not recommended for long-term use...",
+      "To ensure continued secure access, we strongly recommend: * Verifying that you and your users access Kerio Connect services using URLs with valid, up-to-date certificates..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI response and no back-and-forth showing repeated requests, user frustration about the bot, or attempts to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer reports a server-side certificate problem on a GFI/Kerio redirect endpoint and requests urgent remediation, but ATLAS pivots to client-side guidance and generic certificate renewal advice (including 'your own Kerio Connect installation'), which does not fit the hosted redirect URL context.",
+    "evidence": [
+      "today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed? This leads to a security message for users ... please fix this quickly!",
+      "If using your own Kerio Connect installation, periodically reviewing and renewing SSL certificates..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Support responded within minutes of the customer report, with no multi-day gaps shown.",
+    "evidence": [
+      "[2025-10-29T08:27:13+00:00] ... customer reported issue",
+      "[2025-10-29T08:27:55+00:00] ... ATLAS responded"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Only AI interactions are present and there is no indication of human ownership or an actual fix/escalation for a likely platform-managed certificate; this is a strong risk pattern for abandonment/auto-close without resolution.",
+    "evidence": [
+      "Kayako - ticket id 60231299 // ATLAS commented publicly...",
+      "If the certificate has changed or expired for a central Kerio Connect redirection endpoint, this issue can occur until the certificate is updated and propagated."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer indicates an urgent, multi-user impacting security failure (certificate expired on a shared redirect endpoint) and asks for immediate fixing, but ATLAS provides standard troubleshooting/workaround guidance and no explicit escalation to engineering/infra to renew the certificate.",
+    "evidence": [
+      "please fix this quickly!",
+      "This leads to a security message for users of the Kerio Connect Desktop Mail Client",
+      "If the certificate has changed or expired for a central Kerio Connect redirection endpoint...",
+      "As a workaround, users may be able to bypass the message..."
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60231299
+}

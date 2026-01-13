@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The initial ATLAS reply was largely generic and directed the customer to a status page for \u201clatest updates,\u201d but the customer pointed out the incident was not listed there and asked for concrete resolution steps. This indicates the AI guidance was not useful/actionable in context and may have been misleading about where to track the issue.",
+    "evidence": [
+      "ATLAS commented publicly: \"Based on your description and our current knowledge, this is a known display issue impacting status visibility within AppManager\u2026 We are actively monitoring and addressing this incident. For the latest updates\u2026 follow our status page at https://status.gfi.com/.\"",
+      "Customer commented publicly: \"and what should I reply? you stated it is known issue so I am expecting resolution or steps to follow to resolve.\"",
+      "Customer commented publicly: \"Atlas should know if this incident is not on status.gfi.com it pointless to refer to this.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer was trapped in an AI-only loop or repeatedly blocked from reaching a human. After the initial ATLAS message, subsequent meaningful replies came from named support agents.",
+    "evidence": [
+      "Garima Agrawal commented publicly: \"How it works : The health status shown on the Account Page depends on the \\\"Health\\\" registered in the database\u2026\"",
+      "Arafat Bakhsh commented publicly: \"We have raised this issue with the Development Team.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to re-send information already provided (e.g., the Loom video), and the customer did not explicitly complain that provided evidence was ignored. The thread progresses to analysis of metrics/health status rather than repeating the same requests.",
+    "evidence": [
+      "Customer commented publicly: \"Please also review the video with evidence.\"",
+      "ATLAS commented publicly: \"Thank you for reaching out and providing detailed information, including the video\u2026\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were long gaps between customer messages and the next staff response, including a 7-day gap (Sep 22 \u2192 Sep 29) and a ~23-day gap (Sep 30 \u2192 Oct 23). The customer explicitly complained about the 23-day response time, which is a strong delay signal.",
+    "evidence": [
+      "Customer commented publicly [2025-09-30T11:41:07+00:00]: \"can we ensure it will be stable?\"",
+      "Arafat Bakhsh commented publicly [2025-10-23T07:22:56+00:00]: \"We have raised this issue with the Development Team.\"",
+      "Customer commented publicly: \"23 days response time is not great.\"",
+      "Customer commented publicly [2025-09-22T10:16:14+00:00]: \"and what should I reply?\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although support stated they would close the ticket, this occurred after the customer replied \"thank you\" and there is no explicit customer objection or pending unanswered request at the time of closure notice in the text.",
+    "evidence": [
+      "Customer commented publicly: \"thank you\"",
+      "Andriy Rybalchenko commented publicly: \"I will close this ticket then, as there are no actions left on the Support team side at the moment.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer did not describe an explicit P1/SEV1/critical outage or production-down scenario. Support ultimately escalated to engineering, which is inconsistent with treating it as a purely routine issue.",
+    "evidence": [
+      "Customer commented publicly: \"My unit in AppManager is reporting as offline while it is online.\"",
+      "Arafat Bakhsh commented publicly: \"We have raised this issue with the Development Team.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60201836
+}

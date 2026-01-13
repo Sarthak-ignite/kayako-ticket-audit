@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses relate to the reopening of the ticket due to engineering issues and do not contain filler or incorrect information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was stuck in an AI loop, as the interactions transition to human responses.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team requested information multiple times, suggesting they did not fully consider the prior communication from the customer.",
+    "evidence": [
+      "[2025-10-14T05:10:35+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60208754 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "[2025-10-13T10:06:36+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60208754 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay (270 hours) between responses indicating that the customer may have experienced a prolonged wait without updates.",
+    "evidence": [
+      "[2025-10-21T21:27:51Z] (Employee) Tasker-AI: GHI Engineering - 14145 // Tasker-AI commented: @MohammadAzhari-Trilogy",
+      "[2025-10-20T19:58:12+00:00] (AI) CE Maintenance Bot: Kayako - ticket id 60208754 // CE Maintenance Bot commented privately: Reopening because Engineering issue ... has been completed."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while the customer was still engaging and potentially waiting for further responses or confirmations.",
+    "evidence": [
+      "[2025-10-22T01:57:17+00:00] (Customer) Patti Sebastiao: Kayako - ticket id 60208754 // Patti Sebastiao commented publicly: Hi Pavly, ... I will keep an eye on it and let you know if the issue comes back."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The interactions did not indicate generic troubleshooting steps being utilized for the high-priority issues, as the focus was on resolving engineering problems.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses relate to the reopening of the ticket due to engineering issues and do not contain filler or incorrect information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer was stuck in an AI loop, as the interactions transition to human responses.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team requested information multiple times, suggesting they did not fully consider the prior communication from the customer.\",\n    \"evidence\": [\n      \"[2025-10-14T05:10:35+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60208754 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)\",\n      \"[2025-10-13T10:06:36+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60208754 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay (270 hours) between responses indicating that the customer may have experienced a prolonged wait without updates.\",\n    \"evidence\": [\n      \"[2025-10-21T21:27:51Z] (Employee) Tasker-AI: GHI Engineering - 14145 // Tasker-AI commented: @MohammadAzhari-Trilogy\",\n      \"[2025-10-20T19:58:12+00:00] (AI) CE Maintenance Bot: Kayako - ticket id 60208754 // CE Maintenance Bot commented privately: Reopening because Engineering issue ... has been completed.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while the customer was still engaging and potentially waiting for further responses or confirmations.\",\n    \"evidence\": [\n      \"[2025-10-22T01:57:17+00:00] (Customer) Patti Sebastiao: Kayako - ticket id 60208754 // Patti Sebastiao commented publicly: Hi Pavly, ... I will keep an eye on it and let you know if the issue comes back.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions did not indicate generic troubleshooting steps being utilized for the high-priority issues, as the focus was on resolving engineering problems.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60208754
+}

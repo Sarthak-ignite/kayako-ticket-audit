@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is insufficient information to assess AI quality. The interaction shown is only a summary notification stating a conversation occurred, with the actual conversation content cut off.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Cannot determine if customer was stuck in an AI loop. The transcript only shows a post-conversation summary comment, not the actual interaction content.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of context being ignored. The ticket timeline only contains one truncated message that references a prior chat without showing the actual support conversation.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No delays detected. The ticket has a max gap of 0.0 hours between responses, indicating prompt interaction timing.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Cannot confirm premature closure. While the ticket is closed and marked low priority, there's no evidence showing the customer was waiting for information or expressed dissatisfaction. The conversation appears to have been completed via AI chat.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Not applicable. This is a low priority ticket, not a P1/SEV1 issue requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient information to assess AI quality. The interaction shown is only a summary notification stating a conversation occurred, with the actual conversation content cut off.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if customer was stuck in an AI loop. The transcript only shows a post-conversation summary comment, not the actual interaction content.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of context being ignored. The ticket timeline only contains one truncated message that references a prior chat without showing the actual support conversation.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No delays detected. The ticket has a max gap of 0.0 hours between responses, indicating prompt interaction timing.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot confirm premature closure. While the ticket is closed and marked low priority, there's no evidence showing the customer was waiting for information or expressed dissatisfaction. The conversation appears to have been completed via AI chat.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Not applicable. This is a low priority ticket, not a P1/SEV1 issue requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60233405
+}

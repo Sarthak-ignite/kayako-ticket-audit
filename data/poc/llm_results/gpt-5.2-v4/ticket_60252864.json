@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS initially misunderstood the customer\u2019s intent and did not provide a direct path to resolution (temporary extension/urgent licensing help). The bot\u2019s response focused on categorizing the request instead of progressing the customer toward a human/licensing solution, despite the customer stating the license is expired and they need help.",
+    "evidence": [
+      "Customer: \"Expired license\"",
+      "ATLAS: \"Since it's a delicate topic, I want to make extra sure: are you seeking assistance with renewing/modifying/cancelling an existing license, or purchasing a new license... correct?\"",
+      "Customer: \"Need tech support\"",
+      "ATLAS: \"\ud83d\ude33 Sorry about the misunderstanding, let's try again.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The transcript shows a short AI interaction with a misunderstanding, but there isn\u2019t clear evidence of repeated AI loops (same questions asked multiple times by AI) or the customer explicitly requesting a human and being kept in AI-only responses. The main issue appears to be lack of timely human response rather than AI looping.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "When a human agent responded, they used key context provided by the customer (company name, license key, situation) and did not ask for information already provided.",
+    "evidence": [
+      "Agent: \"please include: Your Kerio Control license key: 20339-Z6JHP-2QUX8\" (customer previously provided \"20339-z6jhp-2qux8\")",
+      "Agent: \"Your company name: Rooster Poultry\" (customer previously stated they are \"Manager IT from Rooster Poultry\")"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Customer reported a full service outage and repeatedly followed up for hours with no support response. First human reply arrived ~16 hours after initial request, during an active outage, which materially worsened the experience even if it\u2019s under 3 calendar days.",
+    "evidence": [
+      "[2025-11-29T21:03:39+00:00] Customer: \"Our license expired. Please issue us a temporary extension. Our services are down.\"",
+      "[2025-11-29T21:42:34+00:00] Customer: \"Anyone there\"",
+      "[2025-11-29T23:34:53+00:00] Customer: \"We are facing total outage. Your assistance will be highly appreciated\"",
+      "[2025-11-30T00:33:44+00:00] Customer: \"Hello\"",
+      "[2025-11-30T05:38:34+00:00] Customer: \"we require your assistance\"",
+      "[2025-11-30T13:19:12+00:00] First human response from Mike Kebede"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence the ticket was closed/resolved without addressing the request; the provided excerpt ends after the first human response and does not show closure actions.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Customer explicitly reported a total outage/service down and requested an urgent temporary extension. Support did not show urgency/escalation; response came much later and simply redirected to sales channels without any visible emergency workaround/escalation path for an active outage.",
+    "evidence": [
+      "Customer: \"Our license expired... Our services are down.\"",
+      "Customer: \"We are facing total outage.\"",
+      "Agent: \"Kerio Support does not have the ability to issue temporary licenses or extend expired licenses... must be handled strictly through our Sales and Licensing channels.\"",
+      "No visible escalation/urgent handling steps despite outage; customer had to post multiple times before any human reply."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60252864
+}

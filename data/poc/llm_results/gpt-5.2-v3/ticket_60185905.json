@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI response is generally aligned with the reported symptom (AD auth works after restart then fails) and references a specific LDAP error from logs. There is no clear, unambiguous evidence in the ticket that the guidance is factually wrong, irrelevant, or that the customer disputes it. No broken-template/self-addressing is shown in customer-facing text.",
+    "evidence": [
+      "ATLAS (public, 2025-09-24T16:19:04+00:00): \"The debug log reveals the root cause: a critical LDAP connectivity failure occurs about one hour after Kerio Connect is restarted, indicated by the log: {ldapdb} Connections to LDAP servers were forbidden.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not request a human, and there are not multiple repeated requests for the same information. There is only one substantive customer-facing AI reply.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not re-request the same logs/files already provided, and the customer does not complain that support ignored previously provided details. The AI references reviewing the attached support_info and debug logs, which is consistent with the context.",
+    "evidence": [
+      "Customer (2025-09-03T13:56:24+00:00): \"I attached the support info file and the debug log...\"",
+      "ATLAS (public, 2025-09-24T16:19:04+00:00): \"Based on our review of both your support_info.txt and debug.log files...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap (over 3 calendar days) between the customer's follow-up and the next support response.",
+    "evidence": [
+      "Customer follow-up (2025-09-04T13:41:10+00:00): \"the reseller increased the RAM... but the AD integration stops working after about one hour again.\"",
+      "Next support reply (2025-09-24T16:19:04+00:00): ATLAS provides troubleshooting guidance (20-day gap)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The provided transcript does not show the ticket being closed, auto-closed, or otherwise ended without answering a pending customer question.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no explicit P1/SEV1/Critical marker, no mention of 'production down' or total outage, and no explicit SLA/time-critical escalation request. The issue is serious (AD auth failure) but severity and mishandling criteria are not clearly met from the text provided.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60185905
+}

@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is insufficient information in the ticket to evaluate AI response quality. Only a transcript placeholder message is visible, without the actual AI conversation content.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Cannot determine if the customer was stuck in an AI loop as the actual conversation content is not provided, only a reference that an AI chat occurred.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of support ignoring context. Only one interaction is visible, which is an automated transcript message with no follow-up requiring context.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No delays detected. The ticket shows only one interaction and has a maximum gap of 0.0 hours between responses, indicating immediate handling.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Insufficient information to determine if closure was premature. The ticket is closed but we cannot see the actual conversation content or whether the issue was resolved.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a low priority ticket, not a P1/SEV1 issue, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient information in the ticket to evaluate AI response quality. Only a transcript placeholder message is visible, without the actual AI conversation content.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if the customer was stuck in an AI loop as the actual conversation content is not provided, only a reference that an AI chat occurred.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of support ignoring context. Only one interaction is visible, which is an automated transcript message with no follow-up requiring context.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No delays detected. The ticket shows only one interaction and has a maximum gap of 0.0 hours between responses, indicating immediate handling.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to determine if closure was premature. The ticket is closed but we cannot see the actual conversation content or whether the issue was resolved.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a low priority ticket, not a P1/SEV1 issue, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60243347
+}

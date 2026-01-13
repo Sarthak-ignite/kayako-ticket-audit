@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The visible AI content is limited to a standard greeting and a request for details. There is no product guidance or troubleshooting shown that could be evaluated as incorrect/irrelevant, and no customer feedback indicating the AI was wrong or unhelpful.",
+    "evidence": [
+      "AI: \"Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only one customer message is visible and there is no evidence the customer requested a human, nor repeated requests for the same information by the AI.",
+    "evidence": [
+      "Customer: \"After updating to ME 22.2 the outlook spam handler ...[truncated]...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no back-and-forth shown where support repeats questions or ignores information already provided. The customer text is truncated, and no subsequent support response is available to assess context handling.",
+    "evidence": [
+      "Customer: \"After updating to ME 22.2 the outlook spam handler ...[truncated]...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The provided transcript does not show any timestamps for a support response after the customer message, nor any explicit customer complaint about waiting. A 3+ day gap cannot be established from the excerpt.",
+    "evidence": [
+      "Only visible timestamp is the initial record: \"[2025-10-27T16:22:12+00:00]\" with no subsequent replies shown."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No closure event/status or final support action is included. The excerpt does not show the ticket being closed or abandoned while a customer question remained unanswered.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No severity designation (P1/SEV1/Critical/Urgent) or explicit statements indicating a production outage are visible in the provided text.",
+    "evidence": [
+      "Customer message references an Outlook spam handler issue post-upgrade, but no explicit outage/severity marker is shown: \"After updating to ME 22.2 the outlook spam handler ...[truncated]...\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60230003
+}

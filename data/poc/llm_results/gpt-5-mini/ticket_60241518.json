@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI messages present status/operation summaries and a developer fix; there is no clear evidence of generic filler, incorrect facts, or unkept promises in the provided excerpts.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the AI repeatedly requested the same information or blocked escalation to a human; the thread shows escalation to engineering and human responses.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No messages ask the customer to re-submit information or ignore previously-provided details in the supplied timeline.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between human interactions and the metadata shows a very long time-to-first-human and large max gaps between responses.",
+    "evidence": [
+      "Time to first human (hours): 431.5",
+      "Max gap between responses (hours): 427.7",
+      "2025-11-30T14:53:32+00:00 (Employee) Randall Shawver: \"Dear Jozef, Thank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review. We will inf\"",
+      "2025-12-17T15:02:18+00:00 (Customer) Jozef Kacala: \"thanks, we can close this ticket\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the customer explicitly asked to close it, and there is an engineering fix/confirmation in the thread rather than evidence the customer was left waiting without resolution.",
+    "evidence": [
+      "2025-12-17T15:02:18+00:00 (Customer) Jozef Kacala: \"thanks, we can close this ticket\"",
+      "2025-12-17T15:02:30+00:00 (Employee) Phronesis: \"Thank you for your update; we are closing this ticket as requested.\"",
+      "2025-12-16T11:23:02+00:00 (AI) Cu Chulainn AI Manager: \"We are pleased to inform you that our Development Team has successfully addressed the issue concerning the GFI Ap\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The thread shows escalation to Engineering rather than only generic end-user troubleshooting; there is no evidence of inappropriate generic triage for a high-priority issue.",
+    "evidence": [
+      "2025-11-30T14:53:32+00:00 (Employee) Randall Shawver: \"We have escalated this to our Engineering team for review.\"",
+      "2025-12-02T19:55:04Z (Employee) daniel-wachira: \"### RCA The temp directory is created but not removed correctly...\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI messages present status/operation summaries and a developer fix; there is no clear evidence of generic filler, incorrect facts, or unkept promises in the provided excerpts.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication the AI repeatedly requested the same information or blocked escalation to a human; the thread shows escalation to engineering and human responses.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No messages ask the customer to re-submit information or ignore previously-provided details in the supplied timeline.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between human interactions and the metadata shows a very long time-to-first-human and large max gaps between responses.\",\n    \"evidence\": [\n      \"Time to first human (hours): 431.5\",\n      \"Max gap between responses (hours): 427.7\",\n      \"2025-11-30T14:53:32+00:00 (Employee) Randall Shawver: \\\"Dear Jozef, Thank you for contacting the Exinda Support Team. We have escalated this to our Engineering team for review. We will inf\\\"\",\n      \"2025-12-17T15:02:18+00:00 (Customer) Jozef Kacala: \\\"thanks, we can close this ticket\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the customer explicitly asked to close it, and there is an engineering fix/confirmation in the thread rather than evidence the customer was left waiting without resolution.\",\n    \"evidence\": [\n      \"2025-12-17T15:02:18+00:00 (Customer) Jozef Kacala: \\\"thanks, we can close this ticket\\\"\",\n      \"2025-12-17T15:02:30+00:00 (Employee) Phronesis: \\\"Thank you for your update; we are closing this ticket as requested.\\\"\",\n      \"2025-12-16T11:23:02+00:00 (AI) Cu Chulainn AI Manager: \\\"We are pleased to inform you that our Development Team has successfully addressed the issue concerning the GFI Ap\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The thread shows escalation to Engineering rather than only generic end-user troubleshooting; there is no evidence of inappropriate generic triage for a high-priority issue.\",\n    \"evidence\": [\n      \"2025-11-30T14:53:32+00:00 (Employee) Randall Shawver: \\\"We have escalated this to our Engineering team for review.\\\"\",\n      \"2025-12-02T19:55:04Z (Employee) daniel-wachira: \\\"### RCA The temp directory is created but not removed correctly...\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60241518
+}

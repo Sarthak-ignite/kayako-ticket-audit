@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI interaction appears to be a generic template message with no actual support content, providing no meaningful assistance to the customer.",
+    "evidence": [
+      "[2025-10-02T11:27:35+00:00] (AI) ATLAS: Kayako - ticket id 60212281 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient information to determine AI wall looping, as only a single AI interaction is visible.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No context is provided to determine if information was ignored, as the ticket contains minimal information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket shows no significant time gaps between interactions based on the provided information.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Insufficient context to determine if the ticket was closed prematurely, as only a minimal AI interaction is shown.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as a P1/Sev1 ticket, and no technical troubleshooting is visible.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI interaction appears to be a generic template message with no actual support content, providing no meaningful assistance to the customer.\",\n    \"evidence\": [\"[2025-10-02T11:27:35+00:00] (AI) ATLAS: Kayako - ticket id 60212281 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to determine AI wall looping, as only a single AI interaction is visible.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No context is provided to determine if information was ignored, as the ticket contains minimal information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows no significant time gaps between interactions based on the provided information.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient context to determine if the ticket was closed prematurely, as only a minimal AI interaction is shown.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as a P1/Sev1 ticket, and no technical troubleshooting is visible.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "claude-haiku",
+  "_ticket_id": 60212281
+}

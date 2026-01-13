@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI\u2019s public response appears to be a generic intake template requesting information without reflecting the specific license-transfer request and deadline the customer already provided.",
+    "evidence": [
+      "[2025-12-10T06:21:44+00:00] (AI) ATLAS: \"Thank you for reaching out regarding your request for a new G2 license. To process your request efficiently, we kindly ask you to\"",
+      "[2025-12-10T06:23:05+00:00] (Customer) Kyoko Yamada: \"G2-2023 Standard 32bit License request Please issue it by January 7, 2026. Notice: This request is not new purchase but license transf\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one visible AI prompt requesting more information; the timeline does not show repeated AI requests for the same information or the customer being repeatedly blocked from reaching a human.",
+    "evidence": [
+      "[2025-12-10T06:21:34+00:00] (AI) ATLAS: \"Requesting more information\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer\u2019s details are visible, but the AI message is truncated and does not clearly show it asked for information already provided; there is not enough explicit evidence of repeated requests for the same logs/details.",
+    "evidence": [
+      "[2025-12-10T06:23:05+00:00] (Customer) Kyoko Yamada: \"G2-2023 Standard 32bit License request Please issue it by January 7, 2026.\"",
+      "[2025-12-10T06:21:44+00:00] (AI) ATLAS: \"...we kindly ask you to\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer submission and subsequent meaningful updates, consistent with significant response delays.",
+    "evidence": [
+      "[2025-12-10T06:23:05+00:00] (Customer) Kyoko Yamada: \"G2-2023 Standard 32bit License request...\"",
+      "[2025-12-25T13:50:09+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 72 hour(s)\"",
+      "[2025-12-29T04:58:26+00:00] (Employee) Muhammad Rizwan: \"As requested, please find the license attached.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked completed, the interaction log shows the license was ultimately provided; there is no clear evidence the ticket was closed while the customer was still waiting for promised information.",
+    "evidence": [
+      "[2025-12-29T04:58:26+00:00] (Employee) Muhammad Rizwan: \"As requested, please find the license attached.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal and the issue is a license request, not an outage/P1 scenario requiring immediate escalation.",
+    "evidence": [
+      "[2025-12-10T06:23:05+00:00] (Customer) Kyoko Yamada: \"G2-2023 Standard 32bit License request\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI\u2019s public response appears to be a generic intake template requesting information without reflecting the specific license-transfer request and deadline the customer already provided.\",\n    \"evidence\": [\n      \"[2025-12-10T06:21:44+00:00] (AI) ATLAS: \\\"Thank you for reaching out regarding your request for a new G2 license. To process your request efficiently, we kindly ask you to\\\"\",\n      \"[2025-12-10T06:23:05+00:00] (Customer) Kyoko Yamada: \\\"G2-2023 Standard 32bit License request Please issue it by January 7, 2026. Notice: This request is not new purchase but license transf\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only one visible AI prompt requesting more information; the timeline does not show repeated AI requests for the same information or the customer being repeatedly blocked from reaching a human.\",\n    \"evidence\": [\n      \"[2025-12-10T06:21:34+00:00] (AI) ATLAS: \\\"Requesting more information\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer\u2019s details are visible, but the AI message is truncated and does not clearly show it asked for information already provided; there is not enough explicit evidence of repeated requests for the same logs/details.\",\n    \"evidence\": [\n      \"[2025-12-10T06:23:05+00:00] (Customer) Kyoko Yamada: \\\"G2-2023 Standard 32bit License request Please issue it by January 7, 2026.\\\"\",\n      \"[2025-12-10T06:21:44+00:00] (AI) ATLAS: \\\"...we kindly ask you to\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between customer submission and subsequent meaningful updates, consistent with significant response delays.\",\n    \"evidence\": [\n      \"[2025-12-10T06:23:05+00:00] (Customer) Kyoko Yamada: \\\"G2-2023 Standard 32bit License request...\\\"\",\n      \"[2025-12-25T13:50:09+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 72 hour(s)\\\"\",\n      \"[2025-12-29T04:58:26+00:00] (Employee) Muhammad Rizwan: \\\"As requested, please find the license attached.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked completed, the interaction log shows the license was ultimately provided; there is no clear evidence the ticket was closed while the customer was still waiting for promised information.\",\n    \"evidence\": [\n      \"[2025-12-29T04:58:26+00:00] (Employee) Muhammad Rizwan: \\\"As requested, please find the license attached.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal and the issue is a license request, not an outage/P1 scenario requiring immediate escalation.\",\n    \"evidence\": [\n      \"[2025-12-10T06:23:05+00:00] (Customer) Kyoko Yamada: \\\"G2-2023 Standard 32bit License request\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60260239
+}

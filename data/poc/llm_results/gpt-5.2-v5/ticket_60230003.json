@@ -1,0 +1,36 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ticket text only shows the AI\u2019s greeting/intake and the customer\u2019s initial problem statement. The AI\u2019s actual troubleshooting content is truncated, and there is no customer feedback indicating the AI was wrong or unhelpful.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer requested a human or was stuck in a repetitive AI loop. The visible interaction shows only initial AI prompts and the customer\u2019s first issue description.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No later support responses are visible that repeat questions or ignore information already provided by the customer. The record contains only the initial problem statement from the customer.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The provided excerpt does not show multiple timestamped exchanges that would allow measuring gaps, nor does it include any customer complaint about waiting or staff apologies for delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no message indicating the ticket was closed or would be auto-closed, and no closure warning language is present in the visible text.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer reports the Outlook spam handler add-on is effectively blocked, there is no explicit P1/SEV1/critical/outage language or clear multi-user production-down impact shown in the provided content.",
+    "evidence": [
+      "After updating to ME 22.2 the outlook spam handler keeps asking for credentials that are already entered and stored, so the add on is essentilly blocked"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60230003
+}

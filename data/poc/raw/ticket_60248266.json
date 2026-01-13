@@ -1,0 +1,136 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "northplains_pdct_xinet",
+        "requester": {
+          "id": 60001368,
+          "uuid": "355b3e49-1bd1-437e-880f-bed315ce1343",
+          "full_name": "Fredrik Scheike",
+          "legacy_id": "22790050806162",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 3,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/355b3e49-1bd1-437e-880f-bed315ce1343?1767629048",
+          "agent_case_access": "ALL",
+          "organization_case_access": null,
+          "organization": {
+            "id": 60000014,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 2,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000013,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 2903,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "83.39.112.105",
+          "last_seen_at": "2026-01-05T15:53:55+00:00",
+          "last_active_at": "2026-01-05T16:04:08+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60001368",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@168a93c1534bb7a073fb5c48233753e7b6a9fb25",
+          "password_updated_at": "2025-03-19T14:31:32+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-05T12:33:50+00:00",
+          "last_activity_at": "2026-01-05T13:25:34+00:00",
+          "created_at": "2024-11-22T00:48:22+00:00",
+          "updated_at": "2026-01-05T16:04:08+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60001368"
+        },
+        "ticket_idt": 60248266
+      },
+      "interactions": [
+        [
+          "2025-11-25T07:43:00+00:00",
+          "Kayako - ticket id 60248266 // Matthew Mrosko commented publicly: Dear Fredrik,\n\nThank you for letting us know that you have received approval.\n\nWe will add this to the main ticket and share the license with the customer there: \u00a060248261\u00a0\n\nBest Regards,\nMatthew Mrosko\nNorthplains - Xinet Support Team"
+        ],
+        [
+          "2025-11-25T07:42:16+00:00",
+          "Kayako - ticket id 60248266 // Matthew Mrosko commented privately:  Picked this up manually as it's rather urgent. \n Now I see that this is a duplicate of the main request (where I already generated the license) "
+        ],
+        [
+          "2025-11-24T21:50:52+00:00",
+          "Kayako - ticket id 60248266 // Fredrik Scheike commented privately:  Hi team, this is approved by the BU - please execute! "
+        ],
+        [
+          "2025-11-21T14:52:57+00:00",
+          "Kayako - ticket id 60248266 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-11-21T14:52:07+00:00",
+          "Kayako - ticket id 60248266 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, Fredrik Scheike ! \ud83d\udc4b\n\nThis is the Xinet ATLAS support chat. \n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \n\n--- AI Assistant ---\n\n Welcome to the menu for internal employees.\n\nHow can I help? \n\n--- Customer (Fredrik Scheike) ---\n\n Button selection: [\ud83d\udce9 Raise a Ticket] \n\n--- AI Assistant ---\n\n What's the priority of the issue? \n\n--- Customer (Fredrik Scheike) ---\n\n Button selection: [\ud83d\udd34 Urgent] \n\n--- AI Assistant ---\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\n\ud83d\udca1 If the reported behavior affects multiple end-customers, please do let us know the impact radius of the issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \n\n--- Customer (Fredrik Scheike) ---\n\n Hi! Xinet reseller Ventum's Christian Swanepoel has not been able to raise a ticket and has asked me to do it on behalf of their EU Hirt & Carter: His email: Hirt and Carter have completed their internal tests of the newer Xinet and would like to process the license swap. Current (RHEL.6.2): This is the server we just supplied full production licensing to. This server will be retired at the end of this procedure. Hardware ID: pNHnQYMjQeHR Serial Number: 39165 License key: CyPXgebyaMxbaSxbDjjg New Production Server (RHEL 9): This is the DEMO license you supplied for testing the newer version of Xinet, Allowing us to license the server for a full year. Hardware ID: imfztvtppicq Serial Number: D19295 License key: YPARMTbMjumIktGqoKvRASfEqFAy You can use the above info to cross reference the licenses supplied the past month - should you have any further hardware and version queries. Please help as soon as possible and provide cs@ventum.co.za with an answer. \n\n--- AI Assistant ---\n\n I'm creating a ticket for you with the information you've provided, allow me a few moments while I work on this \u23f3 \n\n--- AI Assistant ---\n\n I've automatically set the ticket subject to: License swap request for Hirt Carter\n\nDoes that work for you?\n\n \t* If it does, simply say YES or use the below button to confirm \ud83d\udc47\n \t* If not, please directly type in the ticket subject of your choosing below \ud83d\ude09\n\n"
+        ],
+        [
+          "2025-11-21T14:52:03+00:00",
+          "Kayako - ticket id 60248266 // ATLAS commented privately: --- Ticket generated by Xinet AI chat on behalf of Fredrik Scheike ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * Hi! Xinet reseller Ventum's Christian Swanepoel has not been able to raise a ticket and has asked me to do it on behalf of their EU Hirt & Carter: His email: Hirt and Carter have completed their internal tests of the newer Xinet and would like to process the license swap. Current (RHEL.6.2): This is the server we just supplied full production licensing to. This server will be retired at the end of this procedure. Hardware ID: pNHnQYMjQeHR Serial Number: 39165 License key: CyPXgebyaMxbaSxbDjjg New Production Server (RHEL 9): This is the DEMO license you supplied for testing the newer version of Xinet, Allowing us to license the server for a full year. Hardware ID: imfztvtppicq Serial Number: D19295 License key: YPARMTbMjumIktGqoKvRASfEqFAy You can use the above info to cross reference the licenses supplied the past month - should you have any further hardware and version queries. Please help as soon as possible and provide cs@ventum.co.za with an answer.<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 6,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

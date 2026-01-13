@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI messages in the thread are brief or automated status updates but there is no clear instance of generic filler providing incorrect information or unkept promises.",
+    "evidence": [
+      "[2025-11-19T16:48:18+00:00] (AI) ATLAS: Kayako - ticket id 60238457 // ATLAS commented privately: Skipping ticket due to tags",
+      "[2025-11-13T08:18:48.860+0000] (AI) Service Sfit: SaaS Jira - issue key CARESMM-10382 // Service Sfit commented: \u2705 QC PASSED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Change Request Analysis SummaryThe Change Request aims to address an ongoing incident related to chat"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There are no repeated AI requests for the same information and the customer was able to reach human agents and have the case progressed and closed.",
+    "evidence": [
+      "[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: Kayako - ticket id 60238457 // Chintan Parekh commented publicly: The deployment has been completed, and we have verified that the issue is no longer reproducible.",
+      "[2025-11-19T16:54:45+00:00] (Employee) Pavly Nashed: Kayako - ticket id 60238457 // Pavly Nashed commented publicly: Dear Warren, Thank you for the confirmation. We will go ahead and close this ticket as requested."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support messages reference deployment completion and closure; there is no clear example of asking for information the customer already provided or ignoring past notes.",
+    "evidence": [
+      "[2025-11-13T05:09:17.781+0000] (Employee) Ashu Bhardwaj: SaaS Jira - issue key CARESMM-10382 // Ashu Bhardwaj commented: Deployment Summary - Successfully Completed \u2705The deployment of proactive-chat-widget version 2.107.0 has been successfully completed",
+      "[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: Kayako - ticket id 60238457 // Chintan Parekh commented publicly: The deployment has been completed, and we have verified that the issue is no longer reproducible."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap between updates \u2014 the timeline shows several days between the deployment confirmation and final closure messages.",
+    "evidence": [
+      "[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: The deployment has been completed, and we have verified that the issue is no longer reproducible.",
+      "[2025-11-19T16:54:45+00:00] (Employee) Pavly Nashed: Dear Warren, Thank you for the confirmation. We will go ahead and close this ticket as requested."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after a human confirmed closure (\u2018We can close this case\u2019) and after deployment verification, so there is no evidence the customer was left waiting for promised information.",
+    "evidence": [
+      "[2025-11-19T16:48:08+00:00] (Employee) Warren Cook: Kayako - ticket id 60238457 // Warren Cook commented privately: We can close this case",
+      "[2025-11-19T16:54:45+00:00] (Employee) Pavly Nashed: Kayako - ticket id 60238457 // Pavly Nashed commented publicly: Dear Warren, Thank you for the confirmation. We will go ahead and close this ticket as requested."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication this was handled with only generic low-effort troubleshooting; the thread shows a deployment, verification that the issue is no longer reproducible, and normal change management updates.",
+    "evidence": [
+      "[2025-11-13T05:09:17.781+0000] (Employee) Ashu Bhardwaj: Deployment Summary - Successfully Completed \u2705The deployment of proactive-chat-widget version 2.107.0 has been successfully completed",
+      "[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: The deployment has been completed, and we have verified that the issue is no longer reproducible."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI messages in the thread are brief or automated status updates but there is no clear instance of generic filler providing incorrect information or unkept promises.\",\n    \"evidence\": [\n      \"[2025-11-19T16:48:18+00:00] (AI) ATLAS: Kayako - ticket id 60238457 // ATLAS commented privately: Skipping ticket due to tags\",\n      \"[2025-11-13T08:18:48.860+0000] (AI) Service Sfit: SaaS Jira - issue key CARESMM-10382 // Service Sfit commented: \u2705 QC PASSED\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\ud83d\udccb Change Request Analysis SummaryThe Change Request aims to address an ongoing incident related to chat\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no repeated AI requests for the same information and the customer was able to reach human agents and have the case progressed and closed.\",\n    \"evidence\": [\n      \"[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: Kayako - ticket id 60238457 // Chintan Parekh commented publicly: The deployment has been completed, and we have verified that the issue is no longer reproducible.\",\n      \"[2025-11-19T16:54:45+00:00] (Employee) Pavly Nashed: Kayako - ticket id 60238457 // Pavly Nashed commented publicly: Dear Warren, Thank you for the confirmation. We will go ahead and close this ticket as requested.\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support messages reference deployment completion and closure; there is no clear example of asking for information the customer already provided or ignoring past notes.\",\n    \"evidence\": [\n      \"[2025-11-13T05:09:17.781+0000] (Employee) Ashu Bhardwaj: SaaS Jira - issue key CARESMM-10382 // Ashu Bhardwaj commented: Deployment Summary - Successfully Completed \u2705The deployment of proactive-chat-widget version 2.107.0 has been successfully completed\",\n      \"[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: Kayako - ticket id 60238457 // Chintan Parekh commented publicly: The deployment has been completed, and we have verified that the issue is no longer reproducible.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a multi-day gap between updates \u2014 the timeline shows several days between the deployment confirmation and final closure messages.\",\n    \"evidence\": [\n      \"[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: The deployment has been completed, and we have verified that the issue is no longer reproducible.\",\n      \"[2025-11-19T16:54:45+00:00] (Employee) Pavly Nashed: Dear Warren, Thank you for the confirmation. We will go ahead and close this ticket as requested.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after a human confirmed closure (\u2018We can close this case\u2019) and after deployment verification, so there is no evidence the customer was left waiting for promised information.\",\n    \"evidence\": [\n      \"[2025-11-19T16:48:08+00:00] (Employee) Warren Cook: Kayako - ticket id 60238457 // Warren Cook commented privately: We can close this case\",\n      \"[2025-11-19T16:54:45+00:00] (Employee) Pavly Nashed: Kayako - ticket id 60238457 // Pavly Nashed commented publicly: Dear Warren, Thank you for the confirmation. We will go ahead and close this ticket as requested.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication this was handled with only generic low-effort troubleshooting; the thread shows a deployment, verification that the issue is no longer reproducible, and normal change management updates.\",\n    \"evidence\": [\n      \"[2025-11-13T05:09:17.781+0000] (Employee) Ashu Bhardwaj: Deployment Summary - Successfully Completed \u2705The deployment of proactive-chat-widget version 2.107.0 has been successfully completed\",\n      \"[2025-11-13T05:20:07+00:00] (Employee) Chintan Parekh: The deployment has been completed, and we have verified that the issue is no longer reproducible.\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60238457
+}

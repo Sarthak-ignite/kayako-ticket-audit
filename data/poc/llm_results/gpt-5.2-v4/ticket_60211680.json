@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided likely incorrect/misleading licensing/device status (showing zero licenses and zero active devices while claiming all licensed seats are used). This is confusing and not actionable, and later internal notes indicate the company actually has many devices and can add devices with later billing.",
+    "evidence": [
+      "ATLAS: \"It seems your company is already using all of the licensed seats. Active Devices: 0 Total Licenses: 0\"",
+      "Alexandr (internal): \"104983 has a lot of devices. they moved from FFM.\"",
+      "Alexandr (internal): \"Saurish also approved adding new devices and have the users be billed later\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer reached human support and the case progressed; no clear evidence the customer was trapped in an AI-only loop or repeated prompts.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support\u2019s initial reply did not directly ignore previously provided details; they investigated and found the number tied to another COID. While the guidance to log into COID 102817 was problematic, it is better captured as a process/ownership issue and subsequent response delay rather than repeated requests for already-provided info.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "After the customer stated they could not access the referenced COID, there was a multi-day gap with no support response until the customer escalated, indicating a significant delay impacting resolution time.",
+    "evidence": [
+      "Customer (2025-10-03T09:34:36+00:00): \"102817 is not our company ID so I do not have the login for it.\"",
+      "Next support response only after escalation: (2025-10-09T14:01:39+00:00) \"We have received your escalation and we are currently working on it.\"",
+      "Escalation note (2025-10-09T13:12:00+00:00): \"Request has been opened over a week\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket appears resolved (number moved/added) and customer explicitly requested closure.",
+    "evidence": [
+      "Support (2025-10-09T15:02:06+00:00): \"We have processed your request\"",
+      "Customer (2025-10-10T15:48:46+00:00): \"This ticket can be closed\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the escalation labeled severity as \"core_functionality_defect,\" the underlying issue is a device/number move request rather than a clear production outage affecting many users, and the case was worked and resolved the same day as the escalation.",
+    "evidence": [
+      "Escalation severity: \"core_functionality_defect\"",
+      "Resolution action same day: internal note (2025-10-09T15:00:15+00:00) \"moved the number\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60211680
+}

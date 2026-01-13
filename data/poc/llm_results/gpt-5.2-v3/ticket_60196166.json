@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS/Hermes responses shown are largely acknowledgements and summary analysis. There is no clear, unambiguous evidence in the visible text that ATLAS/Hermes provided factually incorrect product guidance, made an unfulfilled promise, or delivered irrelevant troubleshooting. Customer disagreement appears directed at conclusions in a truncated ATLAS message, so it is not provable from the provided transcript.",
+    "evidence": [
+      "Customer disagreement exists but references a truncated ATLAS reply: \"Thank you for your reply. I disagree that the problem is related to the configuration or the fact that I ran the tests in a virtual environment.\" (2025-09-25)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer requested to talk to tech support, and the ticket transitioned to human responses shortly after (Zubair responded on 2025-09-13). There is no evidence of 3+ consecutive AI-only replies trapping the customer, nor repeated requests for the same info by AI.",
+    "evidence": [
+      "\"I want to talk to Tech support\" (Customer via ATLAS transcript, 2025-09-12) followed by a human agent response: \"Dear Slawomir...\" from Zubair Farooq (2025-09-13)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support requested screenshots once and the customer provided them. There is no clear instance where support asked again for the same already-provided artifacts or repeated a step after the customer explicitly said it had already been done (within the defined criteria).",
+    "evidence": [
+      "Support: \"If the issue is still not resolved, please send us the screenshots of the configuration\" (2025-09-13)",
+      "Customer: \"Please find attached screenshots.\" (2025-09-13)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple customer-to-support gaps exceeding 3 calendar days, and the customer explicitly asks for updates due to waiting.",
+    "evidence": [
+      "Customer asked for an update on 2025-09-16: \"Could I kindly ask for an update? The customer is waiting...\" and the next substantive support response appears on 2025-09-24 (ATLAS file analysis/results) \u2014 ~8 days gap.",
+      "Customer replied on 2025-10-06: \"The proposed solution is impossible to set up...\" and support responded on 2025-10-13: \"We acknowledge that the suggested workaround is not feasible...\" \u2014 ~7 days gap.",
+      "Customer again on 2025-10-27: \"Could you please let me know if there has been any progress... waiting for a solution for almost two months.\" (Explicit waiting complaint)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence the ticket was closed while pending questions were unanswered. The log shows \u201con hold\u201d actions, but not closure, and later support continued to respond (e.g., beta build offered on 2025-10-30).",
+    "evidence": [
+      "Later support activity indicates the case remained active: \"Our Engineering team has implemented a fix... prepared a beta build\" (2025-10-30)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although an internal escalation note labels severity as \"core_functionality_defect,\" the transcript does not explicitly mark the case as P1/SEV1/Critical, and support did escalate to Engineering (engineering issue opened) and provided interim steps. This does not meet the strict mishandling criteria.",
+    "evidence": [
+      "Internal note: \"The severity is: core_functionality_defect\" (2025-10-02)",
+      "Escalation/engagement shown: \"confirmed that this case requires further investigation by our Engineering team. We have escalated the matter accordingly.\" (2025-10-02)",
+      "Engineering tracking created: \"Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/14502\" (2025-10-02)"
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60196166
+}

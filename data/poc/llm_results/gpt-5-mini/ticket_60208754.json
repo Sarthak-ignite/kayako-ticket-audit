@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Automated replies include generic, filler actions (long artificial hold) rather than substantive updates and one bot message uses a clearly inappropriate hold duration.",
+    "evidence": [
+      "[2025-10-14T05:10:35+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-10-13T10:06:36+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-10-13T03:57:17+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-10-09T12:23:03+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer was repeatedly met with the same automated 'placing on hold' messages rather than progression to human action, creating a loop of automated status messages.",
+    "evidence": [
+      "[2025-10-09T12:23:03+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-10-13T03:57:17+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-10-13T10:06:36+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)",
+      "[2025-10-14T05:10:35+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear instance of agents asking for information the customer already provided; engineers and agents reference deployments and opened related tickets, indicating context was considered.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer messages and agent/engineering updates, and ticket metadata shows a very long max gap (270 hours).",
+    "evidence": [
+      "Ticket metadata: Max gap between responses (hours): 270.0",
+      "[2025-10-13T04:13:05+00:00] (Customer) Patti Sebastiao: ... (customer reports issues)",
+      "[2025-10-16T17:58:43+00:00] (Employee) Pavly Nashed: Dear Patti, Thank you for your patience while we investigated the issue...",
+      "[2025-10-22T12:47:56+00:00] (AI) CE Maintenance Bot: Reopening because Engineering issue ... has been completed."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows follow-up engineering work and a reopening note; there is no clear evidence the ticket was closed while the customer was still awaiting promised information or had explicitly given up.",
+    "evidence": [
+      "[2025-10-22T12:47:56+00:00] (AI) CE Maintenance Bot: Reopening because Engineering issue https://github.com/trilogy-group/eng-maintenance/issues/14145 has been completed.",
+      "[2025-10-16T17:58:43+00:00] (Employee) Pavly Nashed: Dear Patti, Thank you for your patience while we investigated the issue with the failed Instagram post."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although priority is high, there is no evidence in the thread of generic end-user troubleshooting (cache/firewall/VPN) being suggested instead of escalation; engineering involvement is present.",
+    "evidence": [
+      "[2025-10-16T15:38:31Z] (Employee) MohammadAzhari-Trilogy: This change has been deployed",
+      "[2025-10-16T19:44:23Z] (Employee) MohammadAzhari-Trilogy: The issue seems to be resolved after the deployment, no new occurrences after the deployment:"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"Automated replies include generic, filler actions (long artificial hold) rather than substantive updates and one bot message uses a clearly inappropriate hold duration.\",\n    \"evidence\": [\n      \"[2025-10-14T05:10:35+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-10-13T10:06:36+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-10-13T03:57:17+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-10-09T12:23:03+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer was repeatedly met with the same automated 'placing on hold' messages rather than progression to human action, creating a loop of automated status messages.\",\n    \"evidence\": [\n      \"[2025-10-09T12:23:03+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-10-13T03:57:17+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-10-13T10:06:36+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\",\n      \"[2025-10-14T05:10:35+00:00] (AI) Centralsupport-ai-acc: Placing on hold for 9999 hour(s)\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear instance of agents asking for information the customer already provided; engineers and agents reference deployments and opened related tickets, indicating context was considered.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between customer messages and agent/engineering updates, and ticket metadata shows a very long max gap (270 hours).\",\n    \"evidence\": [\n      \"Ticket metadata: Max gap between responses (hours): 270.0\",\n      \"[2025-10-13T04:13:05+00:00] (Customer) Patti Sebastiao: ... (customer reports issues)\",\n      \"[2025-10-16T17:58:43+00:00] (Employee) Pavly Nashed: Dear Patti, Thank you for your patience while we investigated the issue...\",\n      \"[2025-10-22T12:47:56+00:00] (AI) CE Maintenance Bot: Reopening because Engineering issue ... has been completed.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket shows follow-up engineering work and a reopening note; there is no clear evidence the ticket was closed while the customer was still awaiting promised information or had explicitly given up.\",\n    \"evidence\": [\n      \"[2025-10-22T12:47:56+00:00] (AI) CE Maintenance Bot: Reopening because Engineering issue https://github.com/trilogy-group/eng-maintenance/issues/14145 has been completed.\",\n      \"[2025-10-16T17:58:43+00:00] (Employee) Pavly Nashed: Dear Patti, Thank you for your patience while we investigated the issue with the failed Instagram post.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although priority is high, there is no evidence in the thread of generic end-user troubleshooting (cache/firewall/VPN) being suggested instead of escalation; engineering involvement is present.\",\n    \"evidence\": [\n      \"[2025-10-16T15:38:31Z] (Employee) MohammadAzhari-Trilogy: This change has been deployed\",\n      \"[2025-10-16T19:44:23Z] (Employee) MohammadAzhari-Trilogy: The issue seems to be resolved after the deployment, no new occurrences after the deployment:\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60208754
+}

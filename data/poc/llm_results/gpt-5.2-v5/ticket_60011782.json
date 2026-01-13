@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS produced a broken/incorrect template in a public reply by addressing itself (\u201cDear ATLAS\u201d), which is a strong signal of AI output quality failure. The chat transcript also contains garbled content (\u201cundefined\u201d).",
+    "evidence": [
+      "Kayako - ticket id 60011782 // ATLAS commented publicly: Dear ATLAS,",
+      "Michelle Donnelly:\n\n undefined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer asked to speak to the support team (human), but subsequently received multiple AI responses instead (in the chat transcript and then a public ATLAS reply), indicating the customer was kept in the AI flow after requesting a person.",
+    "evidence": [
+      "Michelle Donnelly:\n\n Speak to support team please",
+      "Chat Support:\n\n I have this license key on record:\n- License: 0TPnrqfFFsAv78cdFHh9-8fWmfG-SmUtceK-751962\n- Expiry date: 2025-06-29.",
+      "Kayako - ticket id 60011782 // ATLAS commented publicly: Dear ATLAS,\n\nThank you for reaching out regarding the issue with the journaling mailbox not connecting and emails not archiving."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer\u2019s mention of an existing ticket (#60010193) appears only in a private/internal ticket-generation note, and there is no customer-facing evidence that support ignored that context or forced repetition after the customer stated it publicly in this ticket."
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All recorded interactions occur within the same minute, and there is no customer-facing indication of waiting on this specific ticket timeline."
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "ATLAS includes an auto-closure warning (\u201cstay open for one week unless...\u201d) while the issue is still unresolved and the customer is seeking urgent assistance, which is visible in the public message.",
+    "evidence": [
+      "Kayako - ticket id 60011782 // ATLAS commented publicly: Thank you for reaching out regarding the issue with the journaling mailbox not connecting and emails not archiving.",
+      "Kayako - ticket id 60011782 // ATLAS commented publicly: This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer reports emails not archiving, the ticket does not contain explicit P1/SEV1/outage language or clear multi-user/business-wide impact statements in customer-facing messages that would require treating it as a confirmed high-severity incident."
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60011782
+}

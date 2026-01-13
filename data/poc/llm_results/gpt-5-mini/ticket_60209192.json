@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI reply is a one-line, generic, unhelpful statement that does not address the customer's reported issue.",
+    "evidence": [
+      "[2025-09-29T14:02:50+00:00] (AI) ATLAS: Kayako - ticket id 60209192 // ATLAS commented privately: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single short AI response and the customer subsequently received a human reply; there is no repeated cycle of the AI requesting the same information.",
+    "evidence": [
+      "[2025-09-29T14:02:50+00:00] (AI) ATLAS: Kayako - ticket id 60209192 // ATLAS commented privately: Component could not be determined",
+      "[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: Dear Anthony, Thank you for your patience. Could you please let us know what error you are getting while creating a location?  Kin"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The agent's follow-up asks for the specific error when creating a location, which is a reasonable request given the customer's initial brief report rather than a repetition of previously provided details.",
+    "evidence": [
+      "[2025-09-29T14:02:55+00:00] (Customer) Anthony Marlow: Kayako - ticket id 60209192 // Anthony Marlow commented privately: I am having an issue creating new locations",
+      "[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: Could you please let us know what error you are getting while creating a location?  Kin"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long delay (~16.9 hours) between the customer's report and the first human response on a high-priority ticket.",
+    "evidence": [
+      "[2025-09-29T14:02:55+00:00] (Customer) Anthony Marlow: Kayako - ticket id 60209192 // Anthony Marlow commented privately: I am having an issue creating new locations",
+      "[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: Dear Anthony, Thank you for your patience. Could you please let us know what error you are getting while creating a location?  Kin",
+      "Ticket Context: Time to first human (hours): 16.9"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, there is no evidence in the conversation that the customer was left waiting for a promised action or explicitly gave up before resolution.",
+    "evidence": [
+      "Ticket Context: Status: closed",
+      "[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?  Kin"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Despite the ticket being high priority, the agent asked for the specific error rather than performing generic low-value troubleshooting (no evidence of 'clear cache' style suggestions); there's no sign of improper handling or misdirected generic steps.",
+    "evidence": [
+      "Ticket Context: Priority: high",
+      "[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?  Kin"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI reply is a one-line, generic, unhelpful statement that does not address the customer's reported issue.\",\n    \"evidence\": [\n      \"[2025-09-29T14:02:50+00:00] (AI) ATLAS: Kayako - ticket id 60209192 // ATLAS commented privately: Component could not be determined\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single short AI response and the customer subsequently received a human reply; there is no repeated cycle of the AI requesting the same information.\",\n    \"evidence\": [\n      \"[2025-09-29T14:02:50+00:00] (AI) ATLAS: Kayako - ticket id 60209192 // ATLAS commented privately: Component could not be determined\",\n      \"[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: Dear Anthony, Thank you for your patience. Could you please let us know what error you are getting while creating a location?  Kin\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The agent's follow-up asks for the specific error when creating a location, which is a reasonable request given the customer's initial brief report rather than a repetition of previously provided details.\",\n    \"evidence\": [\n      \"[2025-09-29T14:02:55+00:00] (Customer) Anthony Marlow: Kayako - ticket id 60209192 // Anthony Marlow commented privately: I am having an issue creating new locations\",\n      \"[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: Could you please let us know what error you are getting while creating a location?  Kin\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a long delay (~16.9 hours) between the customer's report and the first human response on a high-priority ticket.\",\n    \"evidence\": [\n      \"[2025-09-29T14:02:55+00:00] (Customer) Anthony Marlow: Kayako - ticket id 60209192 // Anthony Marlow commented privately: I am having an issue creating new locations\",\n      \"[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: Dear Anthony, Thank you for your patience. Could you please let us know what error you are getting while creating a location?  Kin\",\n      \"Ticket Context: Time to first human (hours): 16.9\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, there is no evidence in the conversation that the customer was left waiting for a promised action or explicitly gave up before resolution.\",\n    \"evidence\": [\n      \"Ticket Context: Status: closed\",\n      \"[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?  Kin\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Despite the ticket being high priority, the agent asked for the specific error rather than performing generic low-value troubleshooting (no evidence of 'clear cache' style suggestions); there's no sign of improper handling or misdirected generic steps.\",\n    \"evidence\": [\n      \"Ticket Context: Priority: high\",\n      \"[2025-09-30T06:53:48+00:00] (Employee) Alexandr Oliynyk: Could you please let us know what error you are getting while creating a location?  Kin\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60209192
+}

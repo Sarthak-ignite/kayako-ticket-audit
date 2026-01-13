@@ -1,0 +1,602 @@
+[
+  {
+    "index": 0,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-12-10 15:48:26",
+    "timestamp_str": "2025-12-10T15:48:26Z",
+    "text_preview": "GHI Engineering - 15673 // daniel-wachira unassigned",
+    "text_length": 52
+  },
+  {
+    "index": 1,
+    "actor_name": "bot",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-12-01 00:00:45",
+    "timestamp_str": "2025-12-01T00:00:45Z",
+    "text_preview": "GHI Engineering - 15673 // trilogy-taro[bot] removed_from_project_v2",
+    "text_length": 68
+  },
+  {
+    "index": 2,
+    "actor_name": "Mike Kebede",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 18:57:23",
+    "timestamp_str": "2025-11-30T18:57:23+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Mike Kebede commented publicly: Dear Slawek,\n\nThank you for your patience.\n\nOur Engineering team has completed the fixes for the High Availability issues you reported, i",
+    "text_length": 954
+  },
+  {
+    "index": 3,
+    "actor_name": "Cu Chulainn AI Manager",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 18:47:54",
+    "timestamp_str": "2025-11-30T18:47:54+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Cu Chulainn AI Manager commented privately: ===== Operation Summary =====\n1. Process halted per Step 3. Validation and findings:\n2. - DS for Escalated Issue (only GHI!) ",
+    "text_length": 1181
+  },
+  {
+    "index": 4,
+    "actor_name": "Cu Chulainn AI Manager",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 18:40:50",
+    "timestamp_str": "2025-11-30T18:40:50+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Cu Chulainn AI Manager commented privately: <CC Log>\n\nPackage URL: https://cs.cu-chulainn.csaiautomations.com/marketplace/packages/edit/PACKAGE-7f2d168a-c392-4bbe-806b-1",
+    "text_length": 638
+  },
+  {
+    "index": 5,
+    "actor_name": "trilogy-taro[bot]",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 18:38:37",
+    "timestamp_str": "2025-11-30T18:38:37Z",
+    "text_preview": "GHI Engineering - 15673 // trilogy-taro[bot] commented: > #taro-issue-summary\n\nThe customer experiences a defect where the passive node in a High Availability setup loses its license and becomes locke",
+    "text_length": 981
+  },
+  {
+    "index": 6,
+    "actor_name": "bot",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 18:37:50",
+    "timestamp_str": "2025-11-30T18:37:50Z",
+    "text_preview": "GHI Engineering - 15673 // github-project-automation[bot] project_v2_item_status_changed",
+    "text_length": 88
+  },
+  {
+    "index": 7,
+    "actor_name": "anujkumar-df",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-30 18:37:48",
+    "timestamp_str": "2025-11-30T18:37:48Z",
+    "text_preview": "GHI Engineering - 15673 // anujkumar-df commented: This will be released with Kerio Control 9.6.0.",
+    "text_length": 98
+  },
+  {
+    "index": 8,
+    "actor_name": "daniel-wachira",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-26 12:20:00",
+    "timestamp_str": "2025-11-26T12:20:00Z",
+    "text_preview": "GHI Engineering - 15673 // daniel-wachira commented: The fix is now included in Control 9.6.0 RC branch.",
+    "text_length": 104
+  },
+  {
+    "index": 9,
+    "actor_name": "daniel-wachira",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-24 14:52:38",
+    "timestamp_str": "2025-11-24T14:52:38Z",
+    "text_preview": "GHI Engineering - 15673 // daniel-wachira commented: PR: https://github.com/trilogy-group/kerio-winroute-winroute/pull/1537\n\nRC build artifacts will be made available once the fix is verified and buil",
+    "text_length": 202
+  },
+  {
+    "index": 10,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-24 14:48:45",
+    "timestamp_str": "2025-11-24T14:48:45Z",
+    "text_preview": "GHI Engineering - 15673 // daniel-wachira parent_issue_added",
+    "text_length": 60
+  },
+  {
+    "index": 11,
+    "actor_name": "daniel-wachira",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-24 14:40:11",
+    "timestamp_str": "2025-11-24T14:40:11Z",
+    "text_preview": "GHI Engineering - 15673 // daniel-wachira commented: ### Findings & RCA\nI upgraded both to 9.6.0-9121 (current RC) and shut down both machines. After rebooting the HA is now stable, no issues.\nI now u",
+    "text_length": 1129
+  },
+  {
+    "index": 12,
+    "actor_name": "daniel-wachira",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-22 13:37:20",
+    "timestamp_str": "2025-11-22T13:37:20Z",
+    "text_preview": "GHI Engineering - 15673 // daniel-wachira commented: Ok, I am experiencing a regression in HA where the link state is very unstable. It synchronizes fine but then constantly drops the link. The status",
+    "text_length": 445
+  },
+  {
+    "index": 13,
+    "actor_name": "daniel-wachira",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-22 12:19:02",
+    "timestamp_str": "2025-11-22T12:19:02Z",
+    "text_preview": "GHI Engineering - 15673 // daniel-wachira commented: > Attempt online activation and activation via license file \u2192 both fail\n\nThis is because the slave always has it's WAN interfaces turned off. It ca",
+    "text_length": 419
+  },
+  {
+    "index": 14,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-22 11:17:26",
+    "timestamp_str": "2025-11-22T11:17:26Z",
+    "text_preview": "GHI Engineering - 15673 // daniel-wachira project_v2_item_status_changed",
+    "text_length": 72
+  },
+  {
+    "index": 15,
+    "actor_name": "daniel-wachira",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-22 10:37:27",
+    "timestamp_str": "2025-11-22T10:37:27Z",
+    "text_preview": "GHI Engineering - 15673 // daniel-wachira commented: Control 9.6 completely dropped support for unregistered trial licenses, that could be the culprit here.",
+    "text_length": 156
+  },
+  {
+    "index": 16,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-22 10:35:46",
+    "timestamp_str": "2025-11-22T10:35:46Z",
+    "text_preview": "GHI Engineering - 15673 // daniel-wachira assigned to daniel-wachira",
+    "text_length": 68
+  },
+  {
+    "index": 17,
+    "actor_name": "trilogy-taro[bot]",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-20 16:39:07",
+    "timestamp_str": "2025-11-20T16:39:07Z",
+    "text_preview": "GHI Engineering - 15673 // trilogy-taro[bot] commented: # Engineering Issue Bot\n\n## Issue Reproduction\nI analyzed the provided debug logs and Kayako ticket ka#60196166. The issue manifests as follows:",
+    "text_length": 8199
+  },
+  {
+    "index": 18,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-20 16:27:44",
+    "timestamp_str": "2025-11-20T16:27:44+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+    "text_length": 106
+  },
+  {
+    "index": 19,
+    "actor_name": "Mike Kebede",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-20 16:27:04",
+    "timestamp_str": "2025-11-20T16:27:04+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Mike Kebede commented publicly: Dear Slawek,\n\nThank you for your detailed description and for sending the new logs, configurations, and the screen recording.\n\nThe behavi",
+    "text_length": 1231
+  },
+  {
+    "index": 20,
+    "actor_name": "bot",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-20 16:24:56",
+    "timestamp_str": "2025-11-20T16:24:56Z",
+    "text_preview": "GHI Engineering - 15673 // github-project-automation[bot] project_v2_item_status_changed",
+    "text_length": 88
+  },
+  {
+    "index": 21,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-20 16:24:54",
+    "timestamp_str": "2025-11-20T16:24:54Z",
+    "text_preview": "GHI Engineering - 15673 // trilogy-eng-standards added_to_project_v2",
+    "text_length": 68
+  },
+  {
+    "index": 22,
+    "actor_name": "bot",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-20 16:24:48",
+    "timestamp_str": "2025-11-20T16:24:48Z",
+    "text_preview": "GHI Engineering - 15673 // trilogy-taro[bot] labeled as Product:Kerio Control",
+    "text_length": 77
+  },
+  {
+    "index": 23,
+    "actor_name": "CE Maintenance Bot",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-20 16:24:46",
+    "timestamp_str": "2025-11-20T16:24:46+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // CE Maintenance Bot commented privately: Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15673",
+    "text_length": 157
+  },
+  {
+    "index": 24,
+    "actor_name": null,
+    "actor_type": "General",
+    "ai_subtype": null,
+    "timestamp": "2025-11-20 16:24:27",
+    "timestamp_str": "2025-11-20T16:24:27Z",
+    "text_preview": "GHI Engineering - 15673 // mike-kebede labeled as Eng-Maintenance",
+    "text_length": 65
+  },
+  {
+    "index": 25,
+    "actor_name": "Ciprian Nastase",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-20 15:36:48",
+    "timestamp_str": "2025-11-20T15:36:48+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Ciprian Nastase commented privately:  Reopening per Aditi's request \n We should've reviewed and clarified whatever was weird for the customer ",
+    "text_length": 173
+  },
+  {
+    "index": 26,
+    "actor_name": "Jan Paraniak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-19 12:23:35",
+    "timestamp_str": "2025-11-19T12:23:35+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Jan Paraniak commented privately: What is your proposed action?\n\nSend to customer (just apply the macro)\n\nor close\n\nAdditional Context:\n\nWas reviewing the ticket, seems ",
+    "text_length": 287
+  },
+  {
+    "index": 27,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-19 07:21:00",
+    "timestamp_str": "2025-11-19T07:21:00+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: Hello,\n\u00a0\nI don't understand what response you are expecting from me.\n\u00a0\nI have nothing else to test right now.\n\nRegards. \nSlawek Burak ",
+    "text_length": 1319
+  },
+  {
+    "index": 28,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-11-17 22:51:49",
+    "timestamp_str": "2025-11-17T22:51:49+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Centralsupport-ai-acc commented privately: Hour Offset is Empty, opening",
+    "text_length": 103
+  },
+  {
+    "index": 29,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "atlas",
+    "timestamp": "2025-11-17 22:50:53",
+    "timestamp_str": "2025-11-17T22:50:53+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // ATLAS commented publicly: Dear Slawomir,\n\nThank you for your follow-up and for clarifying your HA test setup using a brand-new Kerio Control virtual device and the lates",
+    "text_length": 3209
+  },
+  {
+    "index": 30,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-14 08:17:26",
+    "timestamp_str": "2025-11-14T08:17:26+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: Hello,\n\nThank you for your reply.\n\u00a0\nIt was a completely new virtual device, set up from scratch using a BETA version ISO image. I wrot",
+    "text_length": 1694
+  },
+  {
+    "index": 31,
+    "actor_name": "Carlos Encalada",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-09 04:14:41",
+    "timestamp_str": "2025-11-09T04:14:41+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Carlos Encalada commented publicly: Dear Slawek,\n\nThank you for your detailed update and for taking the time to test the beta version in your environment. I understand y",
+    "text_length": 2198
+  },
+  {
+    "index": 32,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "atlas",
+    "timestamp": "2025-11-09 04:04:26",
+    "timestamp_str": "2025-11-09T04:04:26+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\t2025-10-06_10-31-50.flv_1575334\n\nFile\u00a0analysis\u00a0missing.\n\n \t\tdebug.log_SLAVE.txt_15753",
+    "text_length": 20221
+  },
+  {
+    "index": 33,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-11-03 14:28:23",
+    "timestamp_str": "2025-11-03T14:28:23+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: Hello Team,\n\nI have just tested the new version of Kerio Control and unfortunately, the HighAvailability configuration still does not ",
+    "text_length": 2365
+  },
+  {
+    "index": 34,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-31 13:10:11",
+    "timestamp_str": "2025-10-31T13:10:11+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: Hello Team,\n\nI am having trouble updating my test machines to the 9.6.0 beta version.\n\u00a0\nI will try setting up the test environment aga",
+    "text_length": 1230
+  },
+  {
+    "index": 35,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-30 12:54:45",
+    "timestamp_str": "2025-10-30T12:54:45+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: \u200bHello.\n\nThank you for the information. I'll test the beta version tomorrow and let you know how it goes.\n\nRegards. \nSlawek Burak \u00a0 \u00a0 ",
+    "text_length": 1530
+  },
+  {
+    "index": 36,
+    "actor_name": "Aditi Garg",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-30 11:45:06",
+    "timestamp_str": "2025-10-30T11:45:06+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Aditi Garg commented publicly: Dear Slawek,\n\nOur Engineering team has implemented a fix for the issue you reported. We\u2019ve prepared a beta build for you to evaluate and c",
+    "text_length": 809
+  },
+  {
+    "index": 37,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-27 11:26:23",
+    "timestamp_str": "2025-10-27T11:26:23+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: Hello,\n\u00a0\nCould you please let me know if there has been any progress on my case? The customer has been waiting for a solution for almo",
+    "text_length": 1160
+  },
+  {
+    "index": 38,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-13 11:24:15",
+    "timestamp_str": "2025-10-13T11:24:15+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+    "text_length": 106
+  },
+  {
+    "index": 39,
+    "actor_name": "Mike Kebede",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-13 11:23:52",
+    "timestamp_str": "2025-10-13T11:23:52+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Mike Kebede commented publicly: Dear Slawek,\n\nThank you for your feedback.\n\nWe acknowledge that the suggested workaround is not feasible in your environment. Engineering",
+    "text_length": 382
+  },
+  {
+    "index": 40,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-06 09:13:47",
+    "timestamp_str": "2025-10-06T09:13:47+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: Hello,\n\nThe proposed solution is impossible to set up. I do not have the /etc/opt/kerio/winroute/kr.conf file. There is also no kr.con",
+    "text_length": 2778
+  },
+  {
+    "index": 41,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-02 15:49:36",
+    "timestamp_str": "2025-10-02T15:49:36+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+    "text_length": 106
+  },
+  {
+    "index": 42,
+    "actor_name": "Carlos Encalada",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-02 15:49:30",
+    "timestamp_str": "2025-10-02T15:49:30+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Carlos Encalada commented publicly: Dear Slawek,\n\nThank you for your patience while we reviewed the High Availability (HA) behavior you reported. After analyzing your se",
+    "text_length": 1291
+  },
+  {
+    "index": 43,
+    "actor_name": "CE Maintenance Bot",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-02 15:49:21",
+    "timestamp_str": "2025-10-02T15:49:21+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // CE Maintenance Bot commented privately: Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/14502",
+    "text_length": 157
+  },
+  {
+    "index": 44,
+    "actor_name": "Mike Kebede",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-02 15:37:59",
+    "timestamp_str": "2025-10-02T15:37:59+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Mike Kebede commented privately: @Carlos Encalada as per https://support.keriocontrol.gfi.com/article/116372-configuring-high-availability-in-kerio-control it is actuall",
+    "text_length": 267
+  },
+  {
+    "index": 45,
+    "actor_name": "Carlos Encalada",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-02 15:15:12",
+    "timestamp_str": "2025-10-02T15:15:12+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Carlos Encalada commented privately: :: Info ::\n\nWan IPs need to be different, if they are the same, then how would the main link know to which appliance the routing mus",
+    "text_length": 217
+  },
+  {
+    "index": 46,
+    "actor_name": "Mike Kebede",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-02 10:38:44",
+    "timestamp_str": "2025-10-02T10:38:44+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Mike Kebede commented privately:  Instructions [https://docs.google.com/document/d/1w6pg-Lqz1Y5n8Gah7JXTRAnNEgnLGDgQn0p4EE_DdyU/edit#bookmark=id.nmtleyh2xrkb] \n\nWHAT IS ",
+    "text_length": 4374
+  },
+  {
+    "index": 47,
+    "actor_name": "Atilla Onay",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-10-02 06:19:55",
+    "timestamp_str": "2025-10-02T06:19:55+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Atilla Onay commented publicly: Dear Slawek,\n\nWe have received your escalation and we are working on it.\n\nOur team will review the details related to the HA configuratio",
+    "text_length": 442
+  },
+  {
+    "index": 48,
+    "actor_name": "Centralsupport-ai-acc",
+    "actor_type": "AI",
+    "ai_subtype": null,
+    "timestamp": "2025-10-02 06:17:37",
+    "timestamp_str": "2025-10-02T06:17:37+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:The customer is waiting for confirmation that",
+    "text_length": 275
+  },
+  {
+    "index": 49,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-09-25 07:52:16",
+    "timestamp_str": "2025-09-25T07:52:16+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: Hello.\n\nThank you for your reply. I disagree that the problem is related to the configuration or the fact that I ran the tests in a vi",
+    "text_length": 6795
+  },
+  {
+    "index": 50,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "atlas",
+    "timestamp": "2025-09-24 12:46:32",
+    "timestamp_str": "2025-09-24T12:46:32+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // ATLAS commented publicly: Dear Slawomir,\n\nThank you for providing comprehensive diagnostic information and detailed documentation regarding the issue with missing Primar",
+    "text_length": 5529
+  },
+  {
+    "index": 51,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "atlas",
+    "timestamp": "2025-09-24 12:45:42",
+    "timestamp_str": "2025-09-24T12:45:42+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\tkerio_support_info_Master.txt_1554396\n \t\tHigh Availability (HA) synchronization and i",
+    "text_length": 26889
+  },
+  {
+    "index": 52,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-09-16 08:27:38",
+    "timestamp_str": "2025-09-16T08:27:38+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: Hello.\n\nCould I kindly ask for an update? The customer is waiting for information on whether they will be able to activate HA or they ",
+    "text_length": 1527
+  },
+  {
+    "index": 53,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-09-15 09:50:34",
+    "timestamp_str": "2025-09-15T09:50:34+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: Hello.\n\nPlease find attached a video from my test environment. In the video, you can see how the HA establishment process causes a los",
+    "text_length": 1430
+  },
+  {
+    "index": 54,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-09-13 13:21:43",
+    "timestamp_str": "2025-09-13T13:21:43+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented publicly: Hello.\n\u00a0\nPlease find attached screenshots.\n\u00a0\nYou can see that after HA failover, Slave device has Internet Connection set to Multiple ",
+    "text_length": 2295
+  },
+  {
+    "index": 55,
+    "actor_name": "Zubair Farooq",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-09-13 13:08:12",
+    "timestamp_str": "2025-09-13T13:08:12+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Zubair Farooq commented publicly: Dear Slawomir,\n\nThank you for contacting the Kerio Control Support Team. I understand that you are using 2 internet connections on conf",
+    "text_length": 1203
+  },
+  {
+    "index": 56,
+    "actor_name": "Slawomir Burak",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-09-12 07:32:02",
+    "timestamp_str": "2025-09-12T07:32:02+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // Slawomir Burak commented privately: Please find out a Support Info files from my test setup.",
+    "text_length": 123
+  },
+  {
+    "index": 57,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "atlas",
+    "timestamp": "2025-09-12 07:14:08",
+    "timestamp_str": "2025-09-12T07:14:08+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, Slawomir Burak ! \ud83d\udc4b\n\nThis is the Kerio Control ",
+    "text_length": 15354
+  },
+  {
+    "index": 58,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "atlas",
+    "timestamp": "2025-09-12 07:14:02",
+    "timestamp_str": "2025-09-12T07:14:02+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // ATLAS commented privately: **Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction, which means that they may have uploaded some files for AI ",
+    "text_length": 406
+  },
+  {
+    "index": 59,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "atlas",
+    "timestamp": "2025-09-12 07:13:56",
+    "timestamp_str": "2025-09-12T07:13:56+00:00",
+    "text_preview": "Kayako - ticket id 60196166 // ATLAS commented privately: --- Ticket generated by Kerio Control AI chat on behalf of Slawomir Burak ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * I want to talk to",
+    "text_length": 1146
+  }
+]

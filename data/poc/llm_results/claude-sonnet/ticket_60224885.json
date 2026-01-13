@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no AI conversation content provided in the ticket to evaluate for quality failures. Only a header message indicates an AI conversation occurred, but the actual transcript is missing.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of looping or the customer being unable to reach a human. The ticket shows only a single automated message acknowledging a prior AI chat occurred.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no support interactions that ignore previously provided information, as the ticket contains only one automated acknowledgment message.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket has only one timestamp and shows max gap of 0.0 hours between responses, indicating no delays occurred.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed, there is insufficient evidence to determine if closure was premature. The ticket appears to be an automated record of an AI chat with no follow-up needed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket (not P1/Sev1), so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no AI conversation content provided in the ticket to evaluate for quality failures. Only a header message indicates an AI conversation occurred, but the actual transcript is missing.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of looping or the customer being unable to reach a human. The ticket shows only a single automated message acknowledging a prior AI chat occurred.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no support interactions that ignore previously provided information, as the ticket contains only one automated acknowledgment message.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket has only one timestamp and shows max gap of 0.0 hours between responses, indicating no delays occurred.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed, there is insufficient evidence to determine if closure was premature. The ticket appears to be an automated record of an AI chat with no follow-up needed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket (not P1/Sev1), so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60224885
+}

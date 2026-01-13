@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There were no indications of generic responses or promises that were not kept by the AI.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer interacted directly with human representatives and there is no evidence of being stuck in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support agent did not acknowledge the customer's repeated request for a remote session after the customer provided ample logs, suggesting a lack of context.",
+    "evidence": [
+      "[2025-12-18T06:30:52+00:00] (Customer) Jonard Umerez: Hi, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible.",
+      "[2025-12-15T05:19:05+00:00] (Customer) Jonard Umerez: Hi keyur, can we request a remote session for this issue?"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The analysis shows significant gaps in response times, with a maximum response gap of nearly 119 hours.",
+    "evidence": [
+      "Time to first human: 13.6 hours",
+      "Max gap between responses: 118.8 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while the customer was still actively requesting a remote session, indicating that the issue may not have been fully resolved.",
+    "evidence": [
+      "[2025-12-18T06:30:52+00:00] (Customer) Jonard Umerez: Hi, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Given the urgent priority of the ticket, the support representatives provided generic responses and troubleshooting steps without escalated support.",
+    "evidence": [
+      "[2025-12-10T09:11:47+00:00] (Employee) Keyur Saxena: That looks like a corporate firewall blocking the connection.",
+      "[2025-12-10T07:14:25+00:00] (Employee) Keyur Saxena: Apologies for the delayed response here. Please upload the same log archive in this SFTP location..."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There were no indications of generic responses or promises that were not kept by the AI.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer interacted directly with human representatives and there is no evidence of being stuck in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support agent did not acknowledge the customer's repeated request for a remote session after the customer provided ample logs, suggesting a lack of context.\",\n    \"evidence\": [\"[2025-12-18T06:30:52+00:00] (Customer) Jonard Umerez: Hi, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible.\", \"[2025-12-15T05:19:05+00:00] (Customer) Jonard Umerez: Hi keyur, can we request a remote session for this issue?\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The analysis shows significant gaps in response times, with a maximum response gap of nearly 119 hours.\",\n    \"evidence\": [\"Time to first human: 13.6 hours\", \"Max gap between responses: 118.8 hours\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while the customer was still actively requesting a remote session, indicating that the issue may not have been fully resolved.\",\n    \"evidence\": [\"[2025-12-18T06:30:52+00:00] (Customer) Jonard Umerez: Hi, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible.\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Given the urgent priority of the ticket, the support representatives provided generic responses and troubleshooting steps without escalated support.\",\n    \"evidence\": [\"[2025-12-10T09:11:47+00:00] (Employee) Keyur Saxena: That looks like a corporate firewall blocking the connection.\", \"[2025-12-10T07:14:25+00:00] (Employee) Keyur Saxena: Apologies for the delayed response here. Please upload the same log archive in this SFTP location...\"]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60252140
+}

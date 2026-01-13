@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are generic and formulaic, offering thanks and restating the issue without providing specific troubleshooting steps or next actions.",
+    "evidence": [
+      "[2025-12-05T06:15:08+00:00] (AI) ATLAS: \"Dear Karuna,\\n\\nThank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoro\"",
+      "[2025-12-05T06:13:52+00:00] (AI) ATLAS: \"Dear Karuna,\\n\\nThank you for providing the additional details regarding the issue where users must refresh the page to reply to a post within yo\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is one clear AI request for clarification and the customer later supplied details; there is no evidence the AI repeatedly requested the same information trapping the customer.",
+    "evidence": [
+      "[2025-12-04T09:52:33+00:00] (AI) Cu Chulainn AI Manager: \"Dear Karuna,\\n\\nThank you for reaching out to us. To ensure that we address your query efficiently, could you kindly specify whi\"",
+      "[2025-12-05T06:10:37+00:00] (Customer) Karuna Sharma: \"Community URL:https://community.se.com\\nUser Affected: https://community.se.com/t5/user/viewprofilepage/user-id/27891\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "AI asked for clarification before the customer provided details, but there is no clear instance of the support ignoring information the customer already supplied or re-requesting the same attachments/logs.",
+    "evidence": [
+      "[2025-12-04T09:52:33+00:00] (AI) Cu Chulainn AI Manager: \"...could you kindly specify whi\"",
+      "[2025-12-05T06:10:37+00:00] (Customer) Karuna Sharma: \"Community URL:https://community.se.com\\nUser Affected: https://community.se.com/t5/user/viewprofilepage/user-id/27891\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are ~20 hour gaps between AI and customer interactions spanning multiple days, indicating slow turnaround for a normal-priority ticket.",
+    "evidence": [
+      "[2025-12-04T09:52:33+00:00] (AI) Cu Chulainn AI Manager: \"Dear Karuna,\\n\\nThank you for reaching out to us...\"",
+      "[2025-12-05T06:10:37+00:00] (Customer) Karuna Sharma: \"Community URL:https://community.se.com...\"",
+      "Ticket metadata: \"Max gap between responses (hours): 20.3\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is closed but there is no explicit evidence the customer was awaiting a promised action or that the customer indicated they gave up; no closing message or unresolved promise is shown.",
+    "evidence": [
+      "Ticket status: closed",
+      "No AI message promising further work or a resolution deadline is present in the provided logs."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is normal priority and there is no evidence of P1 handling or generic troubleshooting instructions for a high-severity outage.",
+    "evidence": [
+      "Ticket Context: Priority: normal",
+      "No messages suggesting generic P1 troubleshooting (e.g., 'clear cache, check firewall') appear in the interaction logs."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are generic and formulaic, offering thanks and restating the issue without providing specific troubleshooting steps or next actions.\",\n    \"evidence\": [\n      \"[2025-12-05T06:15:08+00:00] (AI) ATLAS: \\\"Dear Karuna,\\\\n\\\\nThank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoro\\\"\",\n      \"[2025-12-05T06:13:52+00:00] (AI) ATLAS: \\\"Dear Karuna,\\\\n\\\\nThank you for providing the additional details regarding the issue where users must refresh the page to reply to a post within yo\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is one clear AI request for clarification and the customer later supplied details; there is no evidence the AI repeatedly requested the same information trapping the customer.\",\n    \"evidence\": [\n      \"[2025-12-04T09:52:33+00:00] (AI) Cu Chulainn AI Manager: \\\"Dear Karuna,\\\\n\\\\nThank you for reaching out to us. To ensure that we address your query efficiently, could you kindly specify whi\\\"\",\n      \"[2025-12-05T06:10:37+00:00] (Customer) Karuna Sharma: \\\"Community URL:https://community.se.com\\\\nUser Affected: https://community.se.com/t5/user/viewprofilepage/user-id/27891\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"AI asked for clarification before the customer provided details, but there is no clear instance of the support ignoring information the customer already supplied or re-requesting the same attachments/logs.\",\n    \"evidence\": [\n      \"[2025-12-04T09:52:33+00:00] (AI) Cu Chulainn AI Manager: \\\"...could you kindly specify whi\\\"\",\n      \"[2025-12-05T06:10:37+00:00] (Customer) Karuna Sharma: \\\"Community URL:https://community.se.com\\\\nUser Affected: https://community.se.com/t5/user/viewprofilepage/user-id/27891\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are ~20 hour gaps between AI and customer interactions spanning multiple days, indicating slow turnaround for a normal-priority ticket.\",\n    \"evidence\": [\n      \"[2025-12-04T09:52:33+00:00] (AI) Cu Chulainn AI Manager: \\\"Dear Karuna,\\\\n\\\\nThank you for reaching out to us...\\\"\",\n      \"[2025-12-05T06:10:37+00:00] (Customer) Karuna Sharma: \\\"Community URL:https://community.se.com...\\\"\",\n      \"Ticket metadata: \\\"Max gap between responses (hours): 20.3\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is closed but there is no explicit evidence the customer was awaiting a promised action or that the customer indicated they gave up; no closing message or unresolved promise is shown.\",\n    \"evidence\": [\n      \"Ticket status: closed\",\n      \"No AI message promising further work or a resolution deadline is present in the provided logs.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is normal priority and there is no evidence of P1 handling or generic troubleshooting instructions for a high-severity outage.\",\n    \"evidence\": [\n      \"Ticket Context: Priority: normal\",\n      \"No messages suggesting generic P1 troubleshooting (e.g., 'clear cache, check firewall') appear in the interaction logs.\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60256250
+}

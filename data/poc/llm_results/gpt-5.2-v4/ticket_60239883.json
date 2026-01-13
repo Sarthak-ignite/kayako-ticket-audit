@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support (AI manager) communicated that the vulnerability was \"fully resolved\" after Engineering upgraded Apache, but Engineering notes indicate the change still required development review/build/test/deploy before the vulnerability would be fully resolved for customers. This is misleading and overstates completion status.",
+    "evidence": [
+      "Kayako public (2025-11-13T13:02:20+00:00): \"...successfully upgraded the Apache version... effectively resolving the reported security vulnerability. This matter has been fully resolved.\"",
+      "Engineering note (2025-11-13T13:00:18Z): \"Engineering has created pull request #3499... but the Development team needs to review, build, test, and deploy the changes before the security vulnerability is fully resolved.\"",
+      "Engineering comment (2025-11-13T12:59:31Z): \"This isn't part of maintenance, version upgrades always require a spec.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of the customer being trapped in repetitive AI interactions or requesting a human and being denied. The ticket shows a small number of AI updates and an engineering escalation.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask for already-provided information or repeat troubleshooting. The customer provided context (outdated Apache), and support escalated to Engineering accordingly.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a ~3-day gap between the initial acknowledgement/escalation and the next customer-facing update. Given the customer described this as a \"high security concern\" needing to be fixed ASAP, the absence of interim updates is a negative experience indicator.",
+    "evidence": [
+      "Customer (2025-11-10T18:00:48+00:00): \"This is a high security concern and we need to fix this as soon as possible.\"",
+      "First support acknowledgement (2025-11-10T18:02:54+00:00): \"We have contacted the Engineering team and will provide you with an update as soon as we receive more information from them.\"",
+      "Next customer-facing update only on (2025-11-13T13:02:20+00:00) (~3 days later): \"...upgraded the Apache version... This matter has been fully resolved.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support declared the issue \"fully resolved\" and indicated the linked engineering issue was closed, despite Engineering stating deployment steps were still pending (review/build/test/deploy). Closing/communicating resolution before delivery to customers is premature.",
+    "evidence": [
+      "Kayako private summary (2025-11-13T13:02:15+00:00): \"The GFI LanGuard agent's Apache version was successfully upgraded to 2.4.65... The GHI has been closed.\"",
+      "Kayako public (2025-11-13T13:02:20+00:00): \"This matter has been fully resolved.\"",
+      "Engineering (2025-11-13T13:00:18Z): \"...created pull request #3499... but the Development team needs to review, build, test, and deploy the changes before the security vulnerability is fully resolved.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer described the issue as a high security concern, support did escalate to Engineering quickly and did not perform irrelevant troubleshooting. The main problem appears to be misleading closure/communication rather than lack of escalation.",
+    "evidence": [
+      "Engineering issue opened quickly (2025-11-10T18:02:48+00:00): \"Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15431\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60239883
+}

@@ -1,0 +1,65 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses are largely template-style and recycle generic KB troubleshooting despite the customer stating KBs did not apply and steps were already completed, with limited case-specific diagnosis of the null-reference/UI failure.",
+    "evidence": [
+      "Mr Dederding reports that none of the knowledge base entries (KBs) provided by ADN solved the problem or applied to his case.",
+      "Kayako - ticket id 60218313 // ATLAS commented publicly: Dear Support, Thank you for providing detailed feedback... (then mostly generic steps and KB link)",
+      "Please note that all the suggested steps have already been completed. Unfortunately, these actions did not resolve the issue, the problem still persists.",
+      "Kayako - ticket id 60218313 // ATLAS commented publicly: ...Below is a comprehensive overview and targeted guidance... (continues to reference the same KB and generic causes like 'permissions', 'update failures', 'dependencies')"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer is repeatedly asked to perform or re-confirm troubleshooting and provide additional diagnostics after already indicating steps were done and logs were sent, and they request a technician/remote session to move forward.",
+    "evidence": [
+      "Please note that all the suggested steps have already been completed.",
+      "Mr. Dedering has confirmed that he followed the instructions provided, but unfortunately, this has not resolved the issue.",
+      "our partner has followed all the steps provided... Unfortunately, the issue still persists... I\u2019ve attached a fresh set of logs as requested for further analysis.",
+      "our partner asked if we can plan a remote session together with one of your technicians... so we really need to get this issue fixed soon."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support continues to propose already-completed actions/KB articles and later requests more information without clearly acknowledging and leveraging the logs and prior troubleshooting context already provided.",
+    "evidence": [
+      "Mr Dederding reports that none of the knowledge base entries (KBs) provided by ADN solved the problem or applied to his case.",
+      "Please note that all the suggested steps have already been completed.",
+      "Actions already taken: Mr. Dedering has confirmed that he followed the instructions provided, but unfortunately, this has not resolved the issue. Instructions provided: https://support.mailessentials.gfi.com/article/117808-...",
+      "I\u2019ve attached a fresh set of logs as requested for further analysis.",
+      "Could you please share the following after reproducing the UI error once more? ... Export Application.evtx ... Fresh logs (zip after one reproduction)..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer updates and support replies (e.g., Oct 15 to Oct 18), while the customer reports being without protection and requests urgent assistance/remote session.",
+    "evidence": [
+      "[2025-10-15T09:54:31+00:00] ... recurring error ... Could you please clarify whether this recurring error is actually related ...",
+      "[2025-10-18T14:12:57+00:00] ... Our Development Team has released a new version with the fix ...",
+      "[2025-10-16T11:10:31+00:00] ... plan a remote session ... customer has been without email protection for about a week now ...",
+      "[2025-10-18T14:12:57+00:00] (no visible response to the Oct 16 remote-session request before this date)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support repeatedly includes auto-closure messaging ('ticket will stay open for one week') despite the issue being unresolved and actively escalating, which risks premature closure behavior.",
+    "evidence": [
+      "This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.",
+      "This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you.",
+      "The customer has been without email protection for about a week now, so we really need to get this issue fixed soon."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue impacts core email security (customer without protection; 'No Mail Security'; multiple customers affected) yet the early handling relies on standard KB troubleshooting and delays before effective engineering-level remediation and escalation acknowledgment.",
+    "evidence": [
+      "an error remains that prevents the email security and content filtering function from working.",
+      "This issue could be resolved by disabling the virus scanning engines. However, the emails are still being moved to the Security FailedMail folder.",
+      "The customer has been without email protection for about a week now, so we really need to get this issue fixed soon.",
+      "[customer_escalation] The customer escalated the Case. The customer message is:No Mail Security The severity is: core_functionality_defect",
+      "Version 22.1 ... the problem started with this version. ... installed on all affected customers ... Engine errors persist ... E-Mail Security module not functioning properly"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60218313
+}

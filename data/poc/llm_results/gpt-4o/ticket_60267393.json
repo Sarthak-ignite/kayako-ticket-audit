@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses acknowledge the customer's situation and do not provide incorrect or generic information.",
+    "evidence": [
+      "Thank you for your update. We appreciate you letting us know about your current availability and your intention to review the sugges [2025-12-22T18:23:12+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in a loop requesting the same information.",
+    "evidence": [
+      "Thank you for reaching out and for providing detailed screenshots... [2025-12-19T17:29:37+00:00]"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support team acknowledges the screenshots and information provided by the customer without requesting it again.",
+    "evidence": [
+      "Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy... [2025-12-19T17:29:37+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay of approximately three days between the AI team responses to the customer's initial outreach.",
+    "evidence": [
+      "Customer messages on [2025-12-19T17:27:04+00:00]",
+      "AI responds on [2025-12-22T18:23:12+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is closed after acknowledging the customer\u2019s intention to follow up post-PTO without any open requests from the customer.",
+    "evidence": [
+      "...your current availability and your intention to review the sugges [2025-12-22T18:23:12+00:00]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue does not appear to be a high-priority or outage scenario requiring immediate escalation.",
+    "evidence": [
+      "We\u2019re experiencing an issue in our Khoros Care dashboard. [2025-12-19T17:27:04+00:00]"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses acknowledge the customer's situation and do not provide incorrect or generic information.\",\n    \"evidence\": [\"Thank you for your update. We appreciate you letting us know about your current availability and your intention to review the sugges [2025-12-22T18:23:12+00:00]\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in a loop requesting the same information.\",\n    \"evidence\": [\"Thank you for reaching out and for providing detailed screenshots... [2025-12-19T17:29:37+00:00]\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support team acknowledges the screenshots and information provided by the customer without requesting it again.\",\n    \"evidence\": [\"Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy... [2025-12-19T17:29:37+00:00]\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay of approximately three days between the AI team responses to the customer's initial outreach.\",\n    \"evidence\": [\"Customer messages on [2025-12-19T17:27:04+00:00]\", \"AI responds on [2025-12-22T18:23:12+00:00]\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is closed after acknowledging the customer\u2019s intention to follow up post-PTO without any open requests from the customer.\",\n    \"evidence\": [\"...your current availability and your intention to review the sugges [2025-12-22T18:23:12+00:00]\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The issue does not appear to be a high-priority or outage scenario requiring immediate escalation.\",\n    \"evidence\": [\"We\u2019re experiencing an issue in our Khoros Care dashboard. [2025-12-19T17:27:04+00:00]\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60267393
+}

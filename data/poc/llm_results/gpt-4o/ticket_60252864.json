@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response is incomplete and potentially left the customer without resolution.",
+    "evidence": [
+      "[2025-11-29T21:02:45+00:00] - 'Here is a transcript of the customer's recent interaction with ATLAS chat: --- AI Assistant --- Hi, Ashraaz Nadeem Yusuf ! \ud83d\udc4b This is the K'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was repeatedly interacting with AI without resolution or without moving past AI to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support staff appears to acknowledge the license expiry situation and customer's request without asking for redundant information.",
+    "evidence": [
+      "[2025-11-30T13:19:12+00:00] - 'Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry. I understand the impact this\u2026'"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay between the first customer message and the first human response.",
+    "evidence": [
+      "[2025-11-29T21:02:32+00:00] - Customer Message",
+      "[2025-11-30T13:19:12+00:00] - First Human Response"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after addressing the customer's concern about the expired license; no indication of leftover queries.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The urgent ticket indicating a total outage was not escalated promptly, suggesting mishandling of the severity.",
+    "evidence": [
+      "[2025-11-29T23:34:53+00:00] - 'We are facing total outage. Your assistance will be highly appreciated'",
+      "First human response delayed significantly."
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response is incomplete and potentially left the customer without resolution.\",\n    \"evidence\": [\"[2025-11-29T21:02:45+00:00] - 'Here is a transcript of the customer's recent interaction with ATLAS chat: --- AI Assistant --- Hi, Ashraaz Nadeem Yusuf ! \ud83d\udc4b This is the K'\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer was repeatedly interacting with AI without resolution or without moving past AI to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support staff appears to acknowledge the license expiry situation and customer's request without asking for redundant information.\",\n    \"evidence\": [\"[2025-11-30T13:19:12+00:00] - 'Thank you for contacting us regarding the expired Kerio Control license for Rooster Poultry. I understand the impact this\u2026'\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay between the first customer message and the first human response.\",\n    \"evidence\": [\"[2025-11-29T21:02:32+00:00] - Customer Message\", \"[2025-11-30T13:19:12+00:00] - First Human Response\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after addressing the customer's concern about the expired license; no indication of leftover queries.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The urgent ticket indicating a total outage was not escalated promptly, suggesting mishandling of the severity.\",\n    \"evidence\": [\"[2025-11-29T23:34:53+00:00] - 'We are facing total outage. Your assistance will be highly appreciated'\", \"First human response delayed significantly.\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60252864
+}

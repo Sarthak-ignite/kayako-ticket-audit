@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI made a promise to update the customer once more information is available but the issue was marked as resolved without further communication.",
+    "evidence": [
+      "2025-12-23T08:19:50+00:00: 'Thank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive fu'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in a loop of AI responses requesting the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ignore any context provided by the customer nor asked for the same information multiple times.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between responses in the ticket is 3.4 hours, which is not considered a significant delay.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed without further follow-up despite initially indicating that the customer would receive more information.",
+    "evidence": [
+      "2025-12-23T08:29:23+00:00: 'The GHI issue was closed as it was triggered from a test ticket. The customer has been informed'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication that this was a high-priority or outage ticket that required immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI made a promise to update the customer once more information is available but the issue was marked as resolved without further communication.\",\n    \"evidence\": [\"2025-12-23T08:19:50+00:00: 'Thank you for your patience. We have contacted the Engineering team and will inform you as soon as we receive fu'\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in a loop of AI responses requesting the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support did not ignore any context provided by the customer nor asked for the same information multiple times.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between responses in the ticket is 3.4 hours, which is not considered a significant delay.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed without further follow-up despite initially indicating that the customer would receive more information.\",\n    \"evidence\": [\"2025-12-23T08:29:23+00:00: 'The GHI issue was closed as it was triggered from a test ticket. The customer has been informed'\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that this was a high-priority or outage ticket that required immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60269018
+}

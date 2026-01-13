@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient context to determine AI response quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of repeated AI interactions or customer frustration.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Incomplete ticket details prevent contextual analysis.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Max gap between responses is 0.0 hours, suggesting no significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is closed, but no clear indication of unresolved customer issue.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, no evidence of severity mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the limited ticket information provided, I'll analyze the quality patterns:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient context to determine AI response quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of repeated AI interactions or customer frustration.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Incomplete ticket details prevent contextual analysis.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Max gap between responses is 0.0 hours, suggesting no significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is closed, but no clear indication of unresolved customer issue.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, no evidence of severity mishandling.\",\n    \"evidence\": []\n  }\n}\n```\n\nNote: The provided ticket snippet is extremely limited. There's only a single customer comment that appears to be a summary of a previous AI conversation, with no actual interaction details. A comprehensive quality analysis would require:\n1. Full conversation transcript\n2. Complete customer issue description\n3. Full resolution details\n\nWithout more context, I cannot confidently detect any quality issues.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60250996
+}

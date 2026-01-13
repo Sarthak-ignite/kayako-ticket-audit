@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI made definitive statements promising a resolution and claimed the development team 'addressed' the issue, while internal logs show termination/holding and no clear delivered resolution \u2014 indicating misleading or overconfident responses.",
+    "evidence": [
+      "[2025-11-02T09:42:05+00:00] (AI) Cu Chulainn AI Manager: \"Dear Customer,\\n\\nThank you for your continued patience. We are delighted to inform you that our Development team has addressed \"",
+      "[2025-11-02T08:31:34+00:00] (AI) Cu Chulainn AI Manager: \"Dear Andriy,\\n\\nI wanted to provide you with a quick update on your escalation: the solution is planned to be included in the Kh\"",
+      "[2025-11-02T10:22:50+00:00] (AI) Cu Chulainn AI Manager: \"The process has failed and andon cord has been pulled for the following reason:\\n\\n**Terminating \""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI repeatedly requested the same information or prevented escalation to a human; interactions show AI/system comments and handoff to business unit rather than a looping request pattern.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Ticket logs do not contain examples of the support agent asking for previously-provided details, logs, or screenshots; messages are status updates rather than repeated requests for the same customer-supplied information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Ticket metadata shows very long delays to first human response and large gaps between responses, indicating significant response latency.",
+    "evidence": [
+      "Time to first human (hours): 1588.5",
+      "Max gap between responses (hours): 1025.8"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket is marked closed while AI messages alternately claim the issue was addressed, that a solution is planned, and that the process failed \u2014 suggesting closure happened without a clear, confirmed resolution to the customer.",
+    "evidence": [
+      "Status: closed",
+      "[2025-11-02T09:42:05+00:00] (AI) Cu Chulainn AI Manager: \"Dear Customer,\\n\\nThank you for your continued patience. We are delighted to inform you that our Development team has addressed \"",
+      "[2025-11-02T10:22:50+00:00] (AI) Cu Chulainn AI Manager: \"The process has failed and andon cord has been pulled for the following reason:\\n\\n**Terminating \""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is Normal and there is no evidence of high-priority/outage handling or generic troubleshooting being applied in place of escalation.",
+    "evidence": [
+      "Priority: normal"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI made definitive statements promising a resolution and claimed the development team 'addressed' the issue, while internal logs show termination/holding and no clear delivered resolution \u2014 indicating misleading or overconfident responses.\",\n    \"evidence\": [\n      \"[2025-11-02T09:42:05+00:00] (AI) Cu Chulainn AI Manager: \\\"Dear Customer,\\\\n\\\\nThank you for your continued patience. We are delighted to inform you that our Development team has addressed \\\"\",\n      \"[2025-11-02T08:31:34+00:00] (AI) Cu Chulainn AI Manager: \\\"Dear Andriy,\\\\n\\\\nI wanted to provide you with a quick update on your escalation: the solution is planned to be included in the Kh\\\"\",\n      \"[2025-11-02T10:22:50+00:00] (AI) Cu Chulainn AI Manager: \\\"The process has failed and andon cord has been pulled for the following reason:\\\\n\\\\n**Terminating \\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI repeatedly requested the same information or prevented escalation to a human; interactions show AI/system comments and handoff to business unit rather than a looping request pattern.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket logs do not contain examples of the support agent asking for previously-provided details, logs, or screenshots; messages are status updates rather than repeated requests for the same customer-supplied information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket metadata shows very long delays to first human response and large gaps between responses, indicating significant response latency.\",\n    \"evidence\": [\n      \"Time to first human (hours): 1588.5\",\n      \"Max gap between responses (hours): 1025.8\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is marked closed while AI messages alternately claim the issue was addressed, that a solution is planned, and that the process failed \u2014 suggesting closure happened without a clear, confirmed resolution to the customer.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"[2025-11-02T09:42:05+00:00] (AI) Cu Chulainn AI Manager: \\\"Dear Customer,\\\\n\\\\nThank you for your continued patience. We are delighted to inform you that our Development team has addressed \\\"\",\n      \"[2025-11-02T10:22:50+00:00] (AI) Cu Chulainn AI Manager: \\\"The process has failed and andon cord has been pulled for the following reason:\\\\n\\\\n**Terminating \\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is Normal and there is no evidence of high-priority/outage handling or generic troubleshooting being applied in place of escalation.\",\n    \"evidence\": [\n      \"Priority: normal\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60233855
+}

@@ -1,0 +1,135 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "fogbugz",
+        "requester": {
+          "id": 60548099,
+          "uuid": "690ddf72-7b25-5d6a-924b-6553f80ae6fe",
+          "full_name": "Antonio Orellano",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/690ddf72-7b25-5d6a-924b-6553f80ae6fe?1767646254",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60057448,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 549702,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+          "last_seen_ip": "72.2.12.179",
+          "last_seen_at": "2026-01-05T20:50:54+00:00",
+          "last_active_at": "2026-01-05T20:50:54+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60548099",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@b3e19ad63f8acf0919d3fa73ab9013cfb4723883",
+          "password_updated_at": "2025-11-13T15:22:34+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-05T15:42:41+00:00",
+          "last_activity_at": "2026-01-05T20:50:54+00:00",
+          "created_at": "2025-11-13T15:21:22+00:00",
+          "updated_at": "2026-01-05T20:50:54+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60548099"
+        },
+        "ticket_idt": 60248265
+      },
+      "interactions": [
+        [
+          "2025-11-26T09:56:08+00:00",
+          "Kayako - ticket id 60248265 // Andriy Rybalchenko commented publicly: Dear Antonio,\n\nWe\u2019ve received an update from the Product VP. Please reach out directly to sales@ignitetech.com to proceed with the next steps, including feasibility and pricing discussions.\n\nAs there are no actions left with the Support Team, we\u2019ll proceed with the ticket closure. If you need any further assistance after speaking with the sales team, feel free to reach out again.\n\nBest regards,\nAndriy Rybalchenko\nFogBugz Support Team"
+        ],
+        [
+          "2025-11-26T09:15:37+00:00",
+          "Kayako - ticket id 60248265 // Centralsupport-ai-acc commented privately: Placing on hold for 48 hour(s)"
+        ],
+        [
+          "2025-11-26T09:15:17+00:00",
+          "Kayako - ticket id 60248265 // Andriy Rybalchenko commented publicly: Dear Antonio,\n\nThank you for your patience. We\u2019ve reached out to our Product VP, who is currently discussing the details of the migration process with the relevant internal teams. We\u2019ll update you as soon as we get news to share.\n\nBest regards,\nAndriy Rybalchenko\nFogBugz Support Team\n"
+        ],
+        [
+          "2025-11-25T22:24:20+00:00",
+          "Kayako - ticket id 60248265 // Antonio Orellano commented privately: Hello Hermes,\n\nWould like to follow-up this request.\n\nThank you.\nAntonio"
+        ],
+        [
+          "2025-11-24T10:20:29+00:00",
+          "Kayako - ticket id 60248265 // Centralsupport-ai-acc commented privately: Placing on hold for 48 hour(s)"
+        ],
+        [
+          "2025-11-24T10:19:33+00:00",
+          "Kayako - ticket id 60248265 // Andriy Rybalchenko commented privately:  Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073 \n I will ping Csaba about both tickets, and on hold for now. "
+        ],
+        [
+          "2025-11-21T14:50:44+00:00",
+          "Kayako - ticket id 60248265 // Centralsupport-ai-acc commented privately: This ticket was split from 60243519 [https://central-supportdesk.kayako.com/agent/conversations/60243519]"
+        ],
+        [
+          "2025-11-21T14:50:41+00:00",
+          "Kayako - ticket id 60248265 // Centralsupport-ai-acc commented privately:  The customer (Antonio Orellano) is requesting additional information about migrating their instance to the cloud. Specifically, he wants to understand what the migration process involves, what type of assistance we can provide during the migration, and whether there are any associated professional service costs. \n\n The most recent ticket about OD migration that has been escalated to product VP for confirmation:\u00a0https://central-supportdesk.kayako.com/agent/conversations/60248073 "
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 8,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

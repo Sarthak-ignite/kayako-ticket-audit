@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI message is generic boilerplate and does not contain any actual conversation record or actionable support content, implying a failure to deliver the promised information.",
+    "evidence": [
+      "[2025-12-16T11:13:24+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\n\n\n---\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI interaction shown, with no repeated requests for information or evidence the customer was unable to reach a human due to looping.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer-provided context, prior ticket references, or AI requests for additional materials are present in the provided timeline, so this cannot be confirmed.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline shows only one interaction and the metadata indicates a max gap of 0.0 hours, so there is no evidence of multi-day response delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is closed, the interaction log does not show any customer waiting on promised follow-up or any closure message/action to substantiate premature closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is low (not P1/Sev1), and there is no outage/high-severity troubleshooting content to evaluate for mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI message is generic boilerplate and does not contain any actual conversation record or actionable support content, implying a failure to deliver the promised information.\",\n    \"evidence\": [\n      \"[2025-12-16T11:13:24+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant -\\n\\n\\n---\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI interaction shown, with no repeated requests for information or evidence the customer was unable to reach a human due to looping.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer-provided context, prior ticket references, or AI requests for additional materials are present in the provided timeline, so this cannot be confirmed.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline shows only one interaction and the metadata indicates a max gap of 0.0 hours, so there is no evidence of multi-day response delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is closed, the interaction log does not show any customer waiting on promised follow-up or any closure message/action to substantiate premature closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is low (not P1/Sev1), and there is no outage/high-severity troubleshooting content to evaluate for mishandling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60264386
+}

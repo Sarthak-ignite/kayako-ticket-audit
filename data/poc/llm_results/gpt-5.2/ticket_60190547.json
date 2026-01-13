@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "An AI automation applied an extreme/likely incorrect hold duration (9999 hours), which is not a customer-appropriate action and risks stalling the case without clear benefit or explanation.",
+    "evidence": [
+      "[2025-10-18T02:41:48+00:00] (AI) Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was trapped in an AI-only loop or repeatedly interacting with AI while being unable to reach a human. Public replies are from employees, and the AI actions shown are internal automation notes.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The agent response appears to address the customer's stated issue (\u201cAccess denied\u201d) by advising admin rights; there is no clear repeated request for the same information/logs after it was provided within the customer-facing thread excerpt.",
+    "evidence": [
+      "[2025-10-13T15:15:48+00:00] (Employee) Robert Hill: When trying to copy I get \u201cAccess denied\u201d",
+      "[2025-10-16T08:48:55+00:00] (Employee) Arafat Bakhsh: Please ensure that the user has administrator rights for the target folder."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap between the customer's update and the next employee public response, indicating a significant delay in customer-facing follow-up.",
+    "evidence": [
+      "[2025-10-13T15:15:48+00:00] (Employee) Robert Hill: When trying to copy I get \u201cAccess denied\u201d ...",
+      "[2025-10-16T08:48:55+00:00] (Employee) Arafat Bakhsh: Dear Robert, Thank you for your feedback. Please ensure that the user has administrator rights..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The excerpt shows multiple reopen events and ongoing engagement, but no clear instance of the ticket being closed while the customer was awaiting promised information or before resolution.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer reports a serious symptom (email/spam flow abnormal), the case shows engineering involvement and patch/new build activity; there is not clear evidence that a high-severity issue was handled only with generic troubleshooting instead of escalation.",
+    "evidence": [
+      "[2025-10-18T06:44:28Z] (Employee) krystian-lieber: New build available...",
+      "[2025-10-18T11:22:14+00:00] (Employee) Arafat Bakhsh: Our Development Team has released a new version with the fix..."
+    ]
+  },
+  "_model": "gpt-5.2",
+  "_ticket_id": 60190547
+}

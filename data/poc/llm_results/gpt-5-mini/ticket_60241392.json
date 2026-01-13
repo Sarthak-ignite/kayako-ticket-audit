@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI posts contain generic/placeholder text and unfulfilled promises or deleted content, indicating low-quality or unreliable AI contributions.",
+    "evidence": [
+      "\"This message is deleted by the author.\" [2025-11-19T08:54:04+00:00]",
+      "\"- Step 0 (Priority): Ticket handled as URGE\" [2025-11-19T09:01:22+00:00]",
+      "\"You will receive the NG120 rescue image build 10:9072 soon through this tick\" [2025-11-17T08:29:12+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI repeatedly requested the same information or prevented escalation to a human; human employees are present in the thread.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Responses reference actions the customer reported (e.g., deployment of new image and that hardware runs stable), indicating context was considered rather than ignored.",
+    "evidence": [
+      "\"After the rescue image the hardware runs now stable.\" [2025-11-19T08:51:56+00:00]",
+      "\"Just to clarify, you have now deployed the new image, so the initial issue is gone, but you are now facing another i\" [2025-11-19T08:57:04+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant delays are shown by long time-to-first-human and large gaps between interactions (multiple days).",
+    "evidence": [
+      "Time to first human (hours): 115.9",
+      "Max gap between responses (hours): 94.5",
+      "Earliest listed interaction 2025-11-17T08:29:12+00:00 and later activity on 2025-11-19T09:05:13+00:00 (multi-day gaps)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed and was split, there's no clear evidence the ticket was closed while the customer was still waiting for promised deliverables or had given up\u2014customer acknowledged and requested a new ticket.",
+    "evidence": [
+      "\"Yes this is correct and please creata a new ticket.\" [2025-11-19T09:00:14+00:00]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The thread shows targeted actions (rescue image, image download link) appropriate for device issues rather than generic, inappropriate troubleshooting for a high-severity ticket.",
+    "evidence": [
+      "\"You can download the image in question from this location:  v10:9072 (NG120/320/520/521/720) [https://drive.google.c...\" [2025-11-17T09:35:24+00:00]",
+      "\"After the rescue image the hardware runs now stable.\" [2025-11-19T08:51:56+00:00]"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI posts contain generic/placeholder text and unfulfilled promises or deleted content, indicating low-quality or unreliable AI contributions.\",\n    \"evidence\": [\n      \"\\\"This message is deleted by the author.\\\" [2025-11-19T08:54:04+00:00]\",\n      \"\\\"- Step 0 (Priority): Ticket handled as URGE\\\" [2025-11-19T09:01:22+00:00]\",\n      \"\\\"You will receive the NG120 rescue image build 10:9072 soon through this tick\\\" [2025-11-17T08:29:12+00:00]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI repeatedly requested the same information or prevented escalation to a human; human employees are present in the thread.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Responses reference actions the customer reported (e.g., deployment of new image and that hardware runs stable), indicating context was considered rather than ignored.\",\n    \"evidence\": [\n      \"\\\"After the rescue image the hardware runs now stable.\\\" [2025-11-19T08:51:56+00:00]\",\n      \"\\\"Just to clarify, you have now deployed the new image, so the initial issue is gone, but you are now facing another i\\\" [2025-11-19T08:57:04+00:00]\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant delays are shown by long time-to-first-human and large gaps between interactions (multiple days).\",\n    \"evidence\": [\n      \"Time to first human (hours): 115.9\",\n      \"Max gap between responses (hours): 94.5\",\n      \"Earliest listed interaction 2025-11-17T08:29:12+00:00 and later activity on 2025-11-19T09:05:13+00:00 (multi-day gaps)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed and was split, there's no clear evidence the ticket was closed while the customer was still waiting for promised deliverables or had given up\u2014customer acknowledged and requested a new ticket.\",\n    \"evidence\": [\n      \"\\\"Yes this is correct and please creata a new ticket.\\\" [2025-11-19T09:00:14+00:00]\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The thread shows targeted actions (rescue image, image download link) appropriate for device issues rather than generic, inappropriate troubleshooting for a high-severity ticket.\",\n    \"evidence\": [\n      \"\\\"You can download the image in question from this location:  v10:9072 (NG120/320/520/521/720) [https://drive.google.c...\\\" [2025-11-17T09:35:24+00:00]\",\n      \"\\\"After the rescue image the hardware runs now stable.\\\" [2025-11-19T08:51:56+00:00]\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60241392
+}

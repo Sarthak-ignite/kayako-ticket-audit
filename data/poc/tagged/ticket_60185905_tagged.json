@@ -1,0 +1,52 @@
+[
+  {
+    "index": 0,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "atlas",
+    "timestamp": "2025-09-24 16:19:04",
+    "timestamp_str": "2025-09-24T16:19:04+00:00",
+    "text_preview": "Kayako - ticket id 60185905 // ATLAS commented publicly: Dear Sandro,\n\nThank you for providing the detailed logs and support information regarding the Kerio Connect Active Directory (AD) authenticatio",
+    "text_length": 4637
+  },
+  {
+    "index": 1,
+    "actor_name": "Sandro",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-09-04 13:41:10",
+    "timestamp_str": "2025-09-04T13:41:10+00:00",
+    "text_preview": "Kayako - ticket id 60185905 // Sandro commented publicly: Dear Hermes,\n\nthe reseller increased the RAM for the Kerio Connect VM to 12GB, but the AD integration stops working after about one hour again",
+    "text_length": 260
+  },
+  {
+    "index": 2,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "atlas",
+    "timestamp": "2025-09-03 14:02:10",
+    "timestamp_str": "2025-09-03T14:02:10+00:00",
+    "text_preview": "Kayako - ticket id 60185905 // ATLAS commented privately: Action: l2",
+    "text_length": 68
+  },
+  {
+    "index": 3,
+    "actor_name": "ATLAS",
+    "actor_type": "AI",
+    "ai_subtype": "atlas",
+    "timestamp": "2025-09-03 13:58:13",
+    "timestamp_str": "2025-09-03T13:58:13+00:00",
+    "text_preview": "Kayako - ticket id 60185905 // ATLAS commented privately: :: FILE ANALYSIS RESULTS ::\n\n \t\tFILE\n \t\tOBSERVATIONS\n\n \t\tsupport_info.txt_1535504\n \t\tKerio Connect is running as a native process on Ubuntu, n",
+    "text_length": 5650
+  },
+  {
+    "index": 4,
+    "actor_name": "Sandro",
+    "actor_type": "Employee",
+    "ai_subtype": null,
+    "timestamp": "2025-09-03 13:56:24",
+    "timestamp_str": "2025-09-03T13:56:24+00:00",
+    "text_preview": "Kayako - ticket id 60185905 // Sandro commented privately: Dear Sirs,\nsorry to bother you, but one of our resellers updated to 10.0.8 a Kerio Connect that is running on linux Ubuntu.\nAfter the upgrade",
+    "text_length": 660
+  }
+]

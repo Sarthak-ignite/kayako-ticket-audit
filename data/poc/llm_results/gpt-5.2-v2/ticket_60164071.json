@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided generic, templated troubleshooting and even referenced Khoros Communities/notifications rather than the reported Khoros Care chat issue, creating low-signal guidance without concrete investigation. The customer escalation explicitly calls out generic AI responses and requests human assistance.",
+    "evidence": [
+      "ATLAS commented publicly: Dear Firdous,\n\nThank you for bringing this issue to our attention... This behavior is commonly associated with browser caching issues, network connectivity interruptions, or conflicts with browser extensions. Here are some steps you can follow...",
+      "ATLAS commented publicly: \"Khoros Community is designed to work best with the latest versions... For reference, see the Preferred Browsers for Khoros Communities...\"",
+      "Centralsupport-ai-acc commented privately: \"Platform is not working. AI responses are generic. We need real human assistance now.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly escalated due to generic AI responses and asked for a real human, indicating they were stuck in an AI loop. The interaction begins with multiple ATLAS messages before meaningful human-led troubleshooting/escalation occurs.",
+    "evidence": [
+      "Centralsupport-ai-acc commented privately: \"Platform is not working. AI responses are generic. We need real human assistance now.\"",
+      "Customer: \"We have tried all the below steps and issue is persistent.\" (after ATLAS provided generic steps)",
+      "ATLAS commented publicly (multiple times) with troubleshooting/checklists before human escalation: \"Clear Browser Cache and Cookies... Test in Incognito/Private Mode... Disable Browser Extensions...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/AI recommended steps the customer had already completed and initially focused on the wrong product area (Communities vs Care), forcing the customer to repeat that cache/incognito/multiple browsers were already tried. This indicates poor use of context and repeated/irrelevant troubleshooting.",
+    "evidence": [
+      "Customer: \"We have tried all the below steps and issue is persistent.\"",
+      "Customer: \"Console also don\u2019t give any specific error message. We have tried multiple browsers and cleared cache, tried incognito etc\"",
+      "ATLAS: \"Here are some steps you can follow... Clear Browser Cache and Cookies... Test in Incognito/Private Mode... Disable Browser Extensions...\"",
+      "Monica Botey (private): \"this is not a Community issue, is it Khoros Care\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a >2-day gap between a customer request for an update and the next substantive public support reply. Customers repeatedly followed up with 'Any update?' / 'Any news?' indicating delay impact.",
+    "evidence": [
+      "Monica Botey commented publicly [2025-08-09T00:38:26+00:00]: \"Hi Mike, Any news? Our customers are still experiencing the same issue.\"",
+      "Rishi Singh commented publicly [2025-08-11T04:15:40+00:00]: \"Thank you for your patience... perform the following diagnostic tests.\"",
+      "Don Kempt commented publicly: \"I am just following up on this. Any update?\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not show the support case being closed while the customer is still awaiting resolution; instead, it remains open with a note about staying open for one week. Although the linked JIRA moved to 'Closed', the support ticket itself was not closed in the provided timeline.",
+    "evidence": [
+      "Rishi Singh commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Centralsupport-ai-acc commented privately: \"JIRA Issue CARESMM-276 is changed to 'Closed'\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was reported as broadly impacting customers/critical chat functionality, yet it was initially treated as non-outage with standard browser troubleshooting and delayed clear P1/showstopper escalation. Customers explicitly described service-down impact and requested P1 confirmation/phone call.",
+    "evidence": [
+      "Monica Botey commented publicly: \"please escalate, this issue is affecting all our customers trying to create a chat.\"",
+      "Warren Cook commented privately: \"Our chat service has been down for 4 hours.\"",
+      "Warren Cook commented privately: \"Can we get confirmation this is classified as an escalated P1?\"",
+      "Vetrivelayutham M (private): \"Outage Validity: Non-outage\"",
+      "ATLAS initial response: \"Clear Browser Cache and Cookies... Test in Incognito/Private Mode... Disable Browser Extensions...\" (standard troubleshooting despite broad impact)"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60164071
+}

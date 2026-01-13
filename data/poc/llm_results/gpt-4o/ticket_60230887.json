@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses do not appear to provide incorrect information or make unfulfilled promises. They primarily indicate status changes and handle private comments.",
+    "evidence": [
+      "Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: JIRA Issue KPSSUPPORT-181 is changed to 'Done' , block reason: - [2025-12-24T09:57:21+00:00]",
+      "Placing on hold for 9999 hour(s) [2025-12-09T04:46:13+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication that the customer was caught in a repetitive cycle with the AI preventing access to a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence that the support team ignored previously provided information or requested repeated data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay in response, with at least 589 hours (over 24 days) gap between responses noted in the ticket.",
+    "evidence": [
+      "Max gap between responses (hours): 589.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after confirming the issue was resolved; there was no indication of the customer waiting for unresolved information.",
+    "evidence": [
+      "Data file has been provided in the given location and kayako ticket (60230887) is also completed.so closing this ticket. [2025-12-24T06:55:48.001-0300]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite being a high-priority ticket, the issue took an excessively long duration to resolve and was placed on hold for a long time without immediate escalation.",
+    "evidence": [
+      "Placing on hold for 9999 hour(s) [2025-11-14T05:01:53+00:00]",
+      "The customer escalated the Case. The customer message is:issue not resolved from last 2 months [2025-12-15T04:40:54+00:00]"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses do not appear to provide incorrect information or make unfulfilled promises. They primarily indicate status changes and handle private comments.\",\n    \"evidence\": [\"Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: JIRA Issue KPSSUPPORT-181 is changed to 'Done' , block reason: - [2025-12-24T09:57:21+00:00]\", \"Placing on hold for 9999 hour(s) [2025-12-09T04:46:13+00:00]\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the customer was caught in a repetitive cycle with the AI preventing access to a human agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the support team ignored previously provided information or requested repeated data.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay in response, with at least 589 hours (over 24 days) gap between responses noted in the ticket.\",\n    \"evidence\": [\"Max gap between responses (hours): 589.0\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after confirming the issue was resolved; there was no indication of the customer waiting for unresolved information.\",\n    \"evidence\": [\"Data file has been provided in the given location and kayako ticket (60230887) is also completed.so closing this ticket. [2025-12-24T06:55:48.001-0300]\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite being a high-priority ticket, the issue took an excessively long duration to resolve and was placed on hold for a long time without immediate escalation.\",\n    \"evidence\": [\"Placing on hold for 9999 hour(s) [2025-11-14T05:01:53+00:00]\", \"The customer escalated the Case. The customer message is:issue not resolved from last 2 months [2025-12-15T04:40:54+00:00]\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60230887
+}

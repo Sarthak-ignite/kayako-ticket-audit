@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer explicitly states the AI responses are incorrect/unhelpful and that the AI is wasting time, which is a strong signal of poor AI quality. Customer also calls out that the bot provides generic text and misunderstands the issue.",
+    "evidence": [
+      "Customer (public, 2025-09-16T12:53:34+00:00): \"And also you are wrong that \\\"Custom whitelists are not overriding the Spam Filter [...]\\\" is consistent with the behaviour discussed here in this ticket.\"",
+      "Customer (public, 2025-09-16T12:53:34+00:00): \"Please, I want to talk to a human, not an AI! ... This is a waste of time.\"",
+      "Customer (public, 2025-10-29T07:52:13+00:00): \"In the mean time, \\\"Hermes\\\" has answered, too. I assume that Hermes is a bot, because it only produces very general and not helpful text.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly requests a human, and the ticket continues in an AI loop for an extended period before a human response appears. The customer later complains that an AI (\u201cHermes\u201d) is still responding even after escalation was requested.",
+    "evidence": [
+      "Customer (public, 2025-09-16T12:53:34+00:00): \"Please, I want to talk to a human, not an AI! Please, I want to talk to a human, not an AI! Please, I want to talk to a human, not an AI!\"",
+      "Customer (public, 2025-10-02T07:30:42+00:00): \"for two weeks again I have not received any answer from a human.\"",
+      "Customer (public, 2025-10-31T13:24:34+00:00): \"I do not want to get any more responses from an AI Bot in #60198743 . I thought that this was escalated to Level2 support? Why does the Hermes bot then still answer?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Although the customer expresses that support missed a question and reiterates previously shared details, there is not clear customer-facing evidence that support repeatedly asked for the same already-provided information or treated the case as new without acknowledging prior context.",
+    "evidence": [
+      "Customer (public, 2025-09-16T12:12:32+00:00): \"You seem to have missed that I have asked a second question in the beginning of this ticket\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a major customer-reported silence (\u201ctwo weeks\u201d) and the visible timeline shows a long gap between the customer\u2019s 2025-10-06 messages and the next staff public reply on 2025-10-22. This meets the strong signal threshold (customer explicitly calls out the delay).",
+    "evidence": [
+      "Customer (public, 2025-10-02T07:30:42+00:00): \"for two weeks again I have not received any answer from a human.\"",
+      "Customer (public, 2025-10-06T15:05:27+00:00): \"another afternoon has passed, and I still have not received a reply.\"",
+      "Staff (public, 2025-10-22T14:23:50+00:00): \"Due to the nature of the request, this ticket is now elevated to the L2 Support tier.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Auto-closure warning language appears, but there is no explicit indication in the provided text that the ticket was actually closed/auto-closed while the issue was unresolved.",
+    "evidence": [
+      "Staff (public, 2025-11-03T09:45:29+00:00): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer describes an important need (allow phishing simulation emails), but there is no explicit P1/SEV1/critical outage language or evidence of production-down impact handled with purely generic checks without escalation (the case is eventually elevated to L2 and a live troubleshooting session is offered).",
+    "evidence": [
+      "Customer (public, 2025-10-02T07:30:42+00:00): \"I need a solution, to be able to allow external phishing simulation.\"",
+      "Staff (public, 2025-10-22T14:23:50+00:00): \"Due to the nature of the request, this ticket is now elevated to the L2 Support tier.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60198743
+}

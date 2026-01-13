@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient information to assess AI quality. Only a private comment acknowledging a previous AI chat session is visible, with no actual AI responses or customer interactions shown.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of looping behavior. The interaction timeline only shows a single private comment referencing a previous AI chat, with no visible repeated requests or attempts to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of context being ignored. The timeline shows only one interaction and no follow-up communications where previously provided information could have been ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No delays evident. The max gap between responses is 0.0 hours, and only one timestamp is shown in the timeline, indicating no prolonged waiting periods.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Cannot determine premature closure. While the ticket status is 'closed', there is no visible customer communication or indication they were waiting for information or expecting further assistance.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Not applicable. This is a normal priority ticket, not a P1/Sev1 incident requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to assess AI quality. Only a private comment acknowledging a previous AI chat session is visible, with no actual AI responses or customer interactions shown.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of looping behavior. The interaction timeline only shows a single private comment referencing a previous AI chat, with no visible repeated requests or attempts to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of context being ignored. The timeline shows only one interaction and no follow-up communications where previously provided information could have been ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No delays evident. The max gap between responses is 0.0 hours, and only one timestamp is shown in the timeline, indicating no prolonged waiting periods.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine premature closure. While the ticket status is 'closed', there is no visible customer communication or indication they were waiting for information or expecting further assistance.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Not applicable. This is a normal priority ticket, not a P1/Sev1 incident requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60223073
+}

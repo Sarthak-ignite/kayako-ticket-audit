@@ -1,0 +1,34 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The visible AI responses are standard intake/clarification (asking for details and confirming the license) and do not show broken templates, obviously incorrect guidance, or customer complaints about wrong/useless answers. The ticket content is truncated, so there is not enough evidence to assess whether the AI ultimately provided correct/incorrect upgrade-path guidance.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer asked for a human, expressed frustration about AI, or got stuck in a repetitive loop. Only a short initial exchange is visible before the conversation truncates.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "In the visible text, the customer only asks a single question about upgrade path and the AI asks a clarifying question about the license; there is no sign the customer said they already provided information or that support asked for the same thing again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps, delay apologies, or customer follow-ups like 'any update' are present in the provided interactions (only one timestamped public transcript excerpt is shown).",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no closure/auto-closure language visible in the provided text (no statements indicating the ticket was or will be closed).",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer request is informational (upgrade path from 9.2 to 9.5) and does not include P1/SEV1, outage, or urgent multi-user impact language; therefore there is no basis to assess mishandling of a high-severity incident.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60240989
+}

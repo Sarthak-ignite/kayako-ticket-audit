@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI provides a non-actionable internal note (\u201cSkipping ticket due to tags\u201d) instead of any support response, which is effectively filler and does not progress the urgent ticket.",
+    "evidence": [
+      "[2025-10-20T19:34:48+00:00] (AI) ATLAS: \"Skipping ticket due to tags\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI message and no repeated back-and-forth where the AI requests the same info or blocks access to a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI does not ask for additional information or repeat requests; it simply states it is skipping the ticket, so there is no clear evidence of ignoring provided logs/details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All visible interactions occur within seconds of each other on the same timestamp range, showing no multi-day gaps.",
+    "evidence": [
+      "[2025-10-20T19:34:39+00:00] (Customer) \"The complete conversation with this customer will be uploaded to this ticket shortly\"",
+      "[2025-10-20T19:34:48+00:00] (AI) \"Skipping ticket due to tags\"",
+      "[2025-10-20T19:34:58+00:00] (Customer) \"Call Metadata\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed despite the customer indicating additional information would be uploaded shortly, suggesting closure occurred before the promised content arrived/was reviewed.",
+    "evidence": [
+      "Ticket Context: \"Status: closed\"",
+      "[2025-10-20T19:34:39+00:00] (Customer) \"The complete conversation with this customer will be uploaded to this ticket shortly\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket is urgent, there is no evidence of generic troubleshooting steps (cache/VPN/firewall) or mishandling actions; the only AI action is skipping the ticket.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI provides a non-actionable internal note (\u201cSkipping ticket due to tags\u201d) instead of any support response, which is effectively filler and does not progress the urgent ticket.\",\n    \"evidence\": [\n      \"[2025-10-20T19:34:48+00:00] (AI) ATLAS: \\\"Skipping ticket due to tags\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI message and no repeated back-and-forth where the AI requests the same info or blocks access to a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI does not ask for additional information or repeat requests; it simply states it is skipping the ticket, so there is no clear evidence of ignoring provided logs/details.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All visible interactions occur within seconds of each other on the same timestamp range, showing no multi-day gaps.\",\n    \"evidence\": [\n      \"[2025-10-20T19:34:39+00:00] (Customer) \\\"The complete conversation with this customer will be uploaded to this ticket shortly\\\"\",\n      \"[2025-10-20T19:34:48+00:00] (AI) \\\"Skipping ticket due to tags\\\"\",\n      \"[2025-10-20T19:34:58+00:00] (Customer) \\\"Call Metadata\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket is marked closed despite the customer indicating additional information would be uploaded shortly, suggesting closure occurred before the promised content arrived/was reviewed.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Status: closed\\\"\",\n      \"[2025-10-20T19:34:39+00:00] (Customer) \\\"The complete conversation with this customer will be uploaded to this ticket shortly\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is urgent, there is no evidence of generic troubleshooting steps (cache/VPN/firewall) or mishandling actions; the only AI action is skipping the ticket.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60225246
+}

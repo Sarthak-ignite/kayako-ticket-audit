@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support responses contain generic template language and make broad claims (e.g., \u201croot cause investigated\u201d) without providing concrete findings, timelines, or customer-facing RCA, which the customer explicitly requested.",
+    "evidence": [
+      "\u201cThank you for calling Khoros Care Support... You will receive an update soon with the preliminary analysis completed so far.\u201d",
+      "\u201cWe have investigated the root cause of the issue, and this has been escalated to our infrastructure team with the highest priority...\u201d",
+      "\u201cWe\u2019re pleased to inform you that the recent service disruption... has been resolved. Our infrastructure team has identified and implemented a fix...\u201d",
+      "Customer: \u201cPlease prioritize this and investigate the root cause to ensure it is properly addressed and prevented in the future.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear loop of AI repeatedly asking for the same information, nor customer complaints about being unable to reach a human; the customer reached an agent via the outage phone line and received human responses.",
+    "evidence": [
+      "\u201cI called the Outage Phone Line... spoke to Deebanshu; he informed that the ticket is being escalated.\u201d",
+      "Deepanshu Dewan commented publicly and subsequent replies came from named agents (Pavly, Chintan, Balaji)."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer highlighted recurrence and asked for confirmation that the fix prevents future incidents, but support did not directly confirm prevention nor reference the prior incidents/tickets as requested, instead giving a high-level explanation.",
+    "evidence": [
+      "Customer: \u201cWe have been encountering this issue repeatedly. Please review the history of previously raised tickets for reference.\u201d",
+      "Customer: \u201cKindly confirm whether the fix you have implemented will prevent this issue from recurring in the future.\u201d",
+      "Support: \u201cThe disruption was triggered by background data processing placing unexpected load... We\u2019re strengthening monitoring and controls... to prevent recurrence.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No customer-to-support response gap exceeds 2 calendar days; responses occur within minutes to hours across the timeline shown.",
+    "evidence": [
+      "Customer 2025-10-22T10:26:32+00:00 \u2192 Support 2025-10-22T10:26:48+00:00",
+      "Customer 2025-10-23T07:56:23+00:00 \u2192 Support 2025-10-23T08:36:12+00:00"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The internal incident/Jira was closed with an incomplete RCA/runbook (QC failed; runbook requested), while the customer was still asking about recurrence prevention\u2014indicating closure before fully addressing requested follow-up information.",
+    "evidence": [
+      "SaaS Jira: \u201cstatus is changed from In Progress to Closed\u201d",
+      "SaaS Jira (QC): \u201c\u274c QC FAILED... However, the exact root cause is not clearly documented... A runbook was requested but not provided.\u201d",
+      "Customer (after \u201cresolved\u201d message): \u201cKindly confirm whether the fix you have implemented will prevent this issue from recurring in the future.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This was a production-impacting, time-sensitive outage affecting the ability to handle chats; despite escalation, the ticket was put on hold for an extreme duration during the incident and customer-facing communications lacked actionable outage handling details (ETA/mitigation), suggesting suboptimal Sev1 handling.",
+    "evidence": [
+      "Customer: \u201cWe are unable to view or claim any new incoming chats in Khoros Care Production.\u201d",
+      "Customer: \u201cIssue is happening again now. Can you look into this on priority.\u201d",
+      "\u201cThe issue persisted for about 30 minutes and resolved on its own.\u201d (recurring/unstable behavior)",
+      "Kayako (system): \u201cPlacing on hold for 9999 hour(s)\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60226631
+}

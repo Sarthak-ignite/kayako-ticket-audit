@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI made/echoed commitments about sending the rescue image, but the customer later stated they were still waiting for it, indicating the promise wasn\u2019t fulfilled in a timely manner. There is also a generic \u201cwe escalated\u201d message without actionable next steps or delivery details.",
+    "evidence": [
+      "[2025-11-12T14:37:09+00:00] (AI) Cu Chulainn AI Manager: \"We have escalated your issue within our team and are actively wor\"",
+      "[2025-11-17T08:29:12+00:00] (AI) Cu Chulainn AI Manager: \"You will receive the NG120 rescue image build 10:9072 soon through this tick\"",
+      "[2025-11-17T08:20:58+00:00] (Customer) Robert Maislinger: \"I'm still waiting for the NG120 rescue image.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There isn\u2019t clear evidence that the AI repeatedly asked for the same information or prevented access to a human; a human employee (Ciprian) did respond and provided a download link.",
+    "evidence": [
+      "[2025-11-17T09:35:24+00:00] (Employee) Ciprian Nastase: \"You can download the image in question from this location:  v10:9072 (NG120/320/520/521/720)\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The thread does not show repeated requests for the same logs/details after the customer provided them; later messaging shifts to a new issue and the ticket is explicitly split rather than ignored.",
+    "evidence": [
+      "[2025-11-19T09:05:13+00:00] (AI) Centralsupport-ai-acc: \"Ticket 60241392 has been split into 60246396\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The metadata indicates very long response gaps and time to first human, consistent with multi-day delays on an urgent ticket.",
+    "evidence": [
+      "Ticket Context: \"Time to first human (hours): 115.9\"",
+      "Ticket Context: \"Max gap between responses (hours): 94.5\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is marked closed, the interaction shows the issue being split into a new ticket at the customer\u2019s request rather than being closed while awaiting promised info.",
+    "evidence": [
+      "[2025-11-19T09:00:14+00:00] (Customer) Robert Maislinger: \"Yes this is correct and please creata a new ticket.\"",
+      "[2025-11-19T09:05:13+00:00] (AI) Centralsupport-ai-acc: \"Ticket 60241392 has been split into 60246396\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket is urgent, the visible responses focus on providing the requested rescue image and link; there is no clear evidence of inappropriate generic troubleshooting (e.g., cache/VPN) instead of escalation.",
+    "evidence": [
+      "[2025-11-17T09:35:24+00:00] (Employee) Ciprian Nastase: \"You can download the image in question from this location:  v10:9072 (NG120/320/520/521/720)\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI made/echoed commitments about sending the rescue image, but the customer later stated they were still waiting for it, indicating the promise wasn\u2019t fulfilled in a timely manner. There is also a generic \u201cwe escalated\u201d message without actionable next steps or delivery details.\",\n    \"evidence\": [\n      \"[2025-11-12T14:37:09+00:00] (AI) Cu Chulainn AI Manager: \\\"We have escalated your issue within our team and are actively wor\\\"\",\n      \"[2025-11-17T08:29:12+00:00] (AI) Cu Chulainn AI Manager: \\\"You will receive the NG120 rescue image build 10:9072 soon through this tick\\\"\",\n      \"[2025-11-17T08:20:58+00:00] (Customer) Robert Maislinger: \\\"I'm still waiting for the NG120 rescue image.\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There isn\u2019t clear evidence that the AI repeatedly asked for the same information or prevented access to a human; a human employee (Ciprian) did respond and provided a download link.\",\n    \"evidence\": [\n      \"[2025-11-17T09:35:24+00:00] (Employee) Ciprian Nastase: \\\"You can download the image in question from this location:  v10:9072 (NG120/320/520/521/720)\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The thread does not show repeated requests for the same logs/details after the customer provided them; later messaging shifts to a new issue and the ticket is explicitly split rather than ignored.\",\n    \"evidence\": [\n      \"[2025-11-19T09:05:13+00:00] (AI) Centralsupport-ai-acc: \\\"Ticket 60241392 has been split into 60246396\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The metadata indicates very long response gaps and time to first human, consistent with multi-day delays on an urgent ticket.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Time to first human (hours): 115.9\\\"\",\n      \"Ticket Context: \\\"Max gap between responses (hours): 94.5\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked closed, the interaction shows the issue being split into a new ticket at the customer\u2019s request rather than being closed while awaiting promised info.\",\n    \"evidence\": [\n      \"[2025-11-19T09:00:14+00:00] (Customer) Robert Maislinger: \\\"Yes this is correct and please creata a new ticket.\\\"\",\n      \"[2025-11-19T09:05:13+00:00] (AI) Centralsupport-ai-acc: \\\"Ticket 60241392 has been split into 60246396\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is urgent, the visible responses focus on providing the requested rescue image and link; there is no clear evidence of inappropriate generic troubleshooting (e.g., cache/VPN) instead of escalation.\",\n    \"evidence\": [\n      \"[2025-11-17T09:35:24+00:00] (Employee) Ciprian Nastase: \\\"You can download the image in question from this location:  v10:9072 (NG120/320/520/521/720)\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60241392
+}

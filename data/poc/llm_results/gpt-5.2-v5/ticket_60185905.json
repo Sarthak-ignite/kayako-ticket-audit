@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only customer-facing staff reply provides a concrete log symptom and proposes plausible AD/Kerberos/DNS troubleshooting steps. There is no customer feedback indicating the guidance was incorrect or unhelpful, and no obviously broken/garbled template output is visible.",
+    "evidence": [
+      "\u201cthe debug log reveals the root cause: a critical LDAP connectivity failure occurs about one hour after Kerio Connect is restarted, indicated by the log: {ldapdb} Connections to LDAP servers were forbidden.\u201d",
+      "\u201cRecommended step-by-step troubleshooting: * DNS Configuration: \u2026 * Kerberos Authentication Test: \u2026\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one customer-facing AI/staff response shown, and the customer does not request a human agent or complain about being stuck with AI. No repetitive AI loop is evidenced in the public thread.",
+    "evidence": [
+      "\u201cDear Sandro, Thank you for providing the detailed logs and support information\u2026\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support explicitly acknowledges receipt/review of the provided logs and describes a specific log finding. There is no instance where the customer says they already provided information and support asks for the same thing again.",
+    "evidence": [
+      "Customer: \u201cI attached the support info file and the debug log with user athentication and directory server messages enabled.\u201d",
+      "Support: \u201cBased on our review of both your support_info.txt and debug.log files\u2026\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is one long gap (well over 5 days) between the customer\u2019s public update and the next staff public response, but the policy requires either a strong signal (e.g., customer complains about waiting / apology for delay) or 2+ weak signals. Only a single weak signal is present.",
+    "evidence": [
+      "[2025-09-04T13:41:10+00:00] Customer: \u201cthe reseller increased the RAM\u2026 but the AD integration stops working after about one hour again.\u201d",
+      "[2025-09-24T16:19:04+00:00] Staff: \u201cThank you for providing the detailed logs\u2026\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No message indicates the ticket was closed, will be closed, or was auto-closed while the customer was still awaiting a resolution.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reports AD authentication failures, but there is no explicit P1/SEV1 language, outage statement, or urgency indicators (e.g., production-down, business-blocking) in the provided text. As such, P1/SEV1 mishandling cannot be substantiated from the ticket content.",
+    "evidence": [
+      "Customer: \u201cAfter the upgrade the Kerio Connect is no more able to authenticate users agaist AD server.\u201d",
+      "Customer: \u201cthe authentication works for an hour and the they have again the same error.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60185905
+}

@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no customer-facing indication that ATLAS provided incorrect or misleading guidance, and the ticket\u2019s substantive answer was ultimately delivered by a human agent. The visible ATLAS transcript is truncated and contains no clearly wrong instruction that is later corrected.",
+    "evidence": [
+      "Kayako - ticket id 60242814 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat: ...[truncated]...",
+      "Kayako - ticket id 60242814 // Carlos Encalada commented publicly: \"Yes \u2014 it is possible to port your fax numbers away from FaxMaker Online...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer did not ask to reach a human and then get stuck with multiple AI-only replies. After the initial ATLAS capture, subsequent substantive responses are from named agents (Carlos/Syed).",
+    "evidence": [
+      "Kayako - ticket id 60242814 // ATLAS commented privately: Action: l1",
+      "Kayako - ticket id 60242814 // Carlos Encalada commented publicly: \"Dear Michael, Thank you for your patience...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support\u2019s eventual response directly addresses the customer\u2019s original questions (whether porting out is possible and whether there is a fee). There is no evidence that support asked the customer to repeat information they had already provided.",
+    "evidence": [
+      "Kayako - ticket id 60242814 // Michael Healy commented publicly: \"Is it possible to please port our numbers back to us. If there is a fee, how much would that be?\"",
+      "Kayako - ticket id 60242814 // Carlos Encalada commented publicly: \"There is no fee from GFI/FaxMaker Online to port your numbers out.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly reported they still had not received an answer, and the agent later apologized for the delay. The timestamps show a long gap between the customer\u2019s follow-up and the first substantive staff reply.",
+    "evidence": [
+      "Kayako - ticket id 60242814 // Michael Healy commented publicly: \"Hello, I still have not received an answer to my question.\"",
+      "Kayako - ticket id 60242814 // Carlos Encalada commented publicly: \"Thank you for your patience, and I apologize for the delay in providing a clear answer to your question.\"",
+      "CSV: initialResponseTime=85225",
+      "CSV: resolutionTime=2895763"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although agents mention an auto-closure policy and the ticket is closed in CSV, the customer\u2019s primary question appears answered on 2025-11-30 and later messages do not show an unresolved request awaiting action from support at the time of closure.",
+    "evidence": [
+      "Kayako - ticket id 60242814 // Carlos Encalada commented publicly: \"There is no fee from GFI/FaxMaker Online to port your numbers out.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-20 11:37:42"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is an informational/administrative request about number porting and fees, with no outage, production-down, or critical severity language.",
+    "evidence": [
+      "Kayako - ticket id 60242814 // Michael Healy commented privately: \"My question: Is it possible to please port our numbers back to us. If there is a fee, how much would that be?\"",
+      "Kayako - ticket id 60242814 // Carlos Encalada commented publicly: \"Port-outs from FaxMaker Online are always initiated by your new carrier.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60242814
+}

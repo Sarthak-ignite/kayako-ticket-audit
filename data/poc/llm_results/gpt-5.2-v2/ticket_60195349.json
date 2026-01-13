@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Responses are largely link-dumps with minimal analysis, and guidance appears mismatched/low-confidence (e.g., directing to an Exchange 2013-focused article for an Exchange 2019 install issue). There is also a questionable practice of providing a \u201ctemporary\u201d Google Drive build rather than an official distribution channel.",
+    "evidence": [
+      "\u201cBased on the error in the screenshot, please apply the troubleshooting steps in the article: 'Installation Completed with Errors...\u2019\u201d",
+      "\u201cThis KBA may or not help resolve the issue... The article is for Exchange 2013.\u201d",
+      "\u201cPlease find the compatibility guide here https://support.mailessentials.gfi.com/article/119127-gfi-mailessentials-system-prerequisites.\u201d",
+      "\u201cAdditionally, version 22.1 has been released but is not yet hosted on the official CDN... you can download it from the following temporary location: * GFI MailEssentials v22.1 (Google Drive)\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly asks the same core question (which version to install) and is bounced between generic prerequisite links and requests for logs/screenshots, creating a loop rather than directly answering. Support also reiterates license upgrade messaging without resolving the immediate version/compatibility question.",
+    "evidence": [
+      "Customer: \u201cBefore we proceed with the installation again, could you please confirm which version of GFI MailEssentials we should use for full compatibility with our environment?\u201d",
+      "Support: \u201cPlease find the compatibility guide here...\u201d",
+      "Customer: \u201ccould you please let me know which version of GFI MailEssentials you recommend we use for this first-time installation?\u201d",
+      "Customer: \u201cTo be sure, could you please let me know the specific version number of the 'latest available version'... Additionally, could you please provide me with a direct download link...\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asks for logs/screenshots even though the customer already provided installation logs early in the ticket, and the responses do not clearly acknowledge/consume the uploaded material. The customer\u2019s repeated \u201cwhich version\u201d question is also not answered promptly despite being clearly stated multiple times.",
+    "evidence": [
+      "Customer (private): \u201cThis is log install GFI MailEssential 21.6 on Exchange 2019. Also I can not install GFI MailEssential version 22.0 on Exchange 2019\u201d",
+      "ATLAS system note: \u201cCustomer interacted with ATLAS-UPLOAD system... they may have uploaded some files for AI analysis.\u201d",
+      "Support: \u201cIn case of issues, please share Windows Event logs, Installation logs, and a Screenshot of the issue.\u201d",
+      "Customer: \u201ccould you please confirm which version of GFI MailEssentials we should use for full compatibility with our environment?\u201d (asked repeatedly across multiple messages)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps with the customer repeatedly following up for updates before support responds, indicating a response delay beyond 2 calendar days.",
+    "evidence": [
+      "[2025-09-12] Customer: \u201cI look forward to hearing from you and the team with your findings.\u201d",
+      "[2025-09-15] Customer: \u201cI look forward to hearing from you and the team with your findings.\u201d",
+      "[2025-09-17] Customer: \u201cI look forward to hearing from you and the team with your findings.\u201d",
+      "[2025-09-18] Customer: \u201cwe need a projected deadline... Could you please let us know when we can expect a resolution...\u201d",
+      "[2025-09-18] First substantive support reply appears at 09:37:53 from Arafat Bakhsh (after repeated follow-ups)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket transcript shows auto-close warnings (\u201cstay open for one week...\u201d) but does not show the ticket actually being closed while questions remain unanswered within the provided timeline.",
+    "evidence": [
+      "\u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer indicates project timeline pressure, but there are no explicit SEV1/P1/critical/outage indicators or statements that production/business operations are down; the issue is an installation block rather than a described active outage.",
+    "evidence": [
+      "Customer: \u201cwe need a projected deadline from your end to manage our project timeline.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60195349
+}

@@ -1,0 +1,42 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI generated a ticket without clear resolution steps or pertinent actions.",
+    "evidence": [
+      "[2025-10-28T01:06:40+00:00] (AI) ATLAS: Here is a transcript of the customer's recent interaction with ATLAS chat:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was repeatedly asked for the same information or unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interactions did not show repeated requests for the same information or disregard for previous inputs.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay between responses, as evident by the gaps between timestamps.",
+    "evidence": [
+      "Time to first human (hours): 156.0",
+      "Max gap between responses (hours): 156.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed, but there is no evidence of it being closed while awaiting promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue seemed to be investigated with appropriate actions taken, such as restarting the instance.",
+    "evidence": [
+      "[2025-11-03T13:36:55+00:00] (Employee) Santhosh M: I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins."
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI generated a ticket without clear resolution steps or pertinent actions.\",\n    \"evidence\": [\"[2025-10-28T01:06:40+00:00] (AI) ATLAS: Here is a transcript of the customer's recent interaction with ATLAS chat:\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer was repeatedly asked for the same information or unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions did not show repeated requests for the same information or disregard for previous inputs.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant delay between responses, as evident by the gaps between timestamps.\",\n    \"evidence\": [\"Time to first human (hours): 156.0\", \"Max gap between responses (hours): 156.0\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed, but there is no evidence of it being closed while awaiting promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The issue seemed to be investigated with appropriate actions taken, such as restarting the instance.\",\n    \"evidence\": [\"[2025-11-03T13:36:55+00:00] (Employee) Santhosh M: I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins.\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60230303
+}

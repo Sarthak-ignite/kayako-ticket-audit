@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI replies are truncated/generic and include filler/operational summaries rather than helpful, complete guidance.",
+    "evidence": [
+      "[2025-12-18T08:17:54+00:00] (AI) Cu Chulainn AI Manager: \"Dear Tomas,\\n\\nThank you for updating us. We are pleased to hear that the DNS socket errors have been resolved after adjusting t\"",
+      "[2025-12-18T08:17:45+00:00] (AI) Cu Chulainn AI Manager: \"===== Operation Summary =====\\nProcess log and decisioning:\\n1) Step 0 \u2013 Priority: Ticket already marked URGENT in prior update\"",
+      "[2025-12-16T12:05:45+00:00] (AI) Cu Chulainn AI Manager: \"Dear Tomas,\\n\\nThank you for providing the recent details and logs. In order to continue the case efficiently and maintain the R\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear pattern of the AI repeatedly requesting the same information or preventing escalation; interactions show some AI messages and human responses but not a looping ask.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "I don't see explicit repeated requests for the same logs/screenshots or clear evidence that provided information was ignored; agents referenced logs and suggested actions.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant gaps exist between customer and human/AI responses and metadata shows long delays to first human and large max gap.",
+    "evidence": [
+      "Ticket metadata: \"Time to first human (hours): 29.7\", \"Max gap between responses (hours): 97.5\"",
+      "[2025-12-14T09:14:13+00:00] (Employee) Mike Kebede ...",
+      "[2025-12-16T10:56:01+00:00] (Employee) Ciprian Nastase ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is closed but the timeline shows the customer reported the issue was resolved and the AI acknowledged it; no clear evidence the ticket was closed while the customer was still waiting for promised info.",
+    "evidence": [
+      "[2025-12-18T08:14:40+00:00] (Customer) Tomas Ruzicka: \"Hi. Any update?\\n\\nWe solved [16/Dec/2025 15:45:26] (22) Socket error: Failed to send DNS reply to 192.168.74.103. by changing DNS serve\"",
+      "[2025-12-18T08:17:54+00:00] (AI) Cu Chulainn AI Manager: \"...We are pleased to hear that the DNS socket errors have been resolved...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Ticket was marked URGENT but responses show standard troubleshooting instructions (e.g., enabling watchdog) rather than clear immediate escalation for an outage.",
+    "evidence": [
+      "Ticket metadata: \"Priority: urgent\"",
+      "[2025-12-16T10:56:01+00:00] (Employee) Ciprian Nastase: \"You would need to enable the Watchdog autorestart using the steps from the article Watchdog Features in Kerio Control [h\"",
+      "[2025-12-18T08:17:45+00:00] (AI) Cu Chulainn AI Manager: \"1) Step 0 \u2013 Priority: Ticket already marked URGENT in prior update\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI replies are truncated/generic and include filler/operational summaries rather than helpful, complete guidance.\",\n    \"evidence\": [\n      \"[2025-12-18T08:17:54+00:00] (AI) Cu Chulainn AI Manager: \\\"Dear Tomas,\\\\n\\\\nThank you for updating us. We are pleased to hear that the DNS socket errors have been resolved after adjusting t\\\"\",\n      \"[2025-12-18T08:17:45+00:00] (AI) Cu Chulainn AI Manager: \\\"===== Operation Summary =====\\\\nProcess log and decisioning:\\\\n1) Step 0 \u2013 Priority: Ticket already marked URGENT in prior update\\\"\",\n      \"[2025-12-16T12:05:45+00:00] (AI) Cu Chulainn AI Manager: \\\"Dear Tomas,\\\\n\\\\nThank you for providing the recent details and logs. In order to continue the case efficiently and maintain the R\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear pattern of the AI repeatedly requesting the same information or preventing escalation; interactions show some AI messages and human responses but not a looping ask.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"I don't see explicit repeated requests for the same logs/screenshots or clear evidence that provided information was ignored; agents referenced logs and suggested actions.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant gaps exist between customer and human/AI responses and metadata shows long delays to first human and large max gap.\",\n    \"evidence\": [\n      \"Ticket metadata: \\\"Time to first human (hours): 29.7\\\", \\\"Max gap between responses (hours): 97.5\\\"\",\n      \"[2025-12-14T09:14:13+00:00] (Employee) Mike Kebede ...\",\n      \"[2025-12-16T10:56:01+00:00] (Employee) Ciprian Nastase ...\" \n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is closed but the timeline shows the customer reported the issue was resolved and the AI acknowledged it; no clear evidence the ticket was closed while the customer was still waiting for promised info.\",\n    \"evidence\": [\n      \"[2025-12-18T08:14:40+00:00] (Customer) Tomas Ruzicka: \\\"Hi. Any update?\\\\n\\\\nWe solved [16/Dec/2025 15:45:26] (22) Socket error: Failed to send DNS reply to 192.168.74.103. by changing DNS serve\\\"\",\n      \"[2025-12-18T08:17:54+00:00] (AI) Cu Chulainn AI Manager: \\\"...We are pleased to hear that the DNS socket errors have been resolved...\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket was marked URGENT but responses show standard troubleshooting instructions (e.g., enabling watchdog) rather than clear immediate escalation for an outage.\",\n    \"evidence\": [\n      \"Ticket metadata: \\\"Priority: urgent\\\"\",\n      \"[2025-12-16T10:56:01+00:00] (Employee) Ciprian Nastase: \\\"You would need to enable the Watchdog autorestart using the steps from the article Watchdog Features in Kerio Control [h\\\"\",\n      \"[2025-12-18T08:17:45+00:00] (AI) Cu Chulainn AI Manager: \\\"1) Step 0 \u2013 Priority: Ticket already marked URGENT in prior update\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60256173
+}

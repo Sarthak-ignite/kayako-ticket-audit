@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The agent messages are template-heavy and repeat RMA/diagnostic requests, but they also engage with the reported symptoms (recurring UI/WAN outage) and propose a concrete next step (Firebird DB check/repair) with impact disclosure. There is no explicit customer statement that the AI guidance was wrong/useless, and no clearly incorrect technical guidance is shown in the provided excerpts.",
+    "evidence": [
+      "Cu Chulainn AI Manager commented publicly: \"We can assist with a Firebird database check/repair today during your specified windows... Please note this process requires stopping Kerio Control services, which may lead to a brief service interruption.\"",
+      "Cu Chulainn AI Manager commented publicly: \"Since the unit powers on and functions after a reboot (indicating no clear hardware failure), please undertake the following checks to rule out software, storage, or database issues...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although multiple staff replies appear to be AI-authored, the customer does not ask to reach a human agent, and the conversation progresses (customer provides incident time, SN via attachment, shipping/contact info, and discusses scheduling a DB repair). Repetition alone here is better captured as context/duplication rather than a 'can\u2019t reach a human' loop.",
+    "evidence": [
+      "Cu Chulainn AI Manager commented publicly: \"To proceed with warranty verification and a potential RMA, we kindly request the following details...\"",
+      "Customer (private): \"We can do Firebird fix today if it doesnt involne service distruption. I have time till 11:30 then about 12:30 - 16:00 CET.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer states they already provided the serial number via the attached photo, but support continues to request it be typed/resent because they claim it\u2019s unreadable, prompting the customer to push back that it is clearly readable. This is a customer-facing repetition/forced re-provisioning of the same info.",
+    "evidence": [
+      "Customer (private): \"SN is in attachment.\"",
+      "Cu Chulainn AI Manager commented publicly: \"Serial Number ... \u2014 the two SN photos were unreadable, so please either type the Serial Number in your message or send a close-up photo clearly showing the Model and S/N\"",
+      "Customer (private): \"SN is cleary readable from the photo - green sticker. Do you mean something else?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Within the provided interaction log (all on 2025-12-04), staff replies follow within minutes of customer updates. There are no customer-facing follow-ups indicating they were waiting for days, and no visible multi-day reply gaps in the excerpt.",
+    "evidence": [
+      "CSV: initialResponseTime=138",
+      "Timeline shows rapid back-and-forth on 2025-12-04 (e.g., customer 08:52:52 then staff public 08:59:43; customer 09:11:03 then staff public 09:14:22)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The CSV confirms the ticket is closed, but the provided conversation excerpt does not include any customer-facing closure notice nor evidence that the ticket was closed while the customer was still awaiting an agent action (the later interactions leading up to 2025-12-25/28 are not shown). Without text evidence of unresolved status at closure, this cannot be concluded.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-28 09:34:44"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reports an outage impact (WAN/VPN down), but there is no explicit P1/SEV1 declaration, and support does not respond with irrelevant generic checks; instead they request diagnostics, discuss database repair, and explain the service-impact of the proposed fix. The excerpt does not show prolonged low-urgency handling in the face of explicitly declared critical severity.",
+    "evidence": [
+      "Customer (private): \"The webUI was unresponsive, WAN was not working - no VPN connection from our side and clients in the office could not reach the internet via WAN.\"",
+      "Cu Chulainn AI Manager commented publicly: \"We can assist with a Firebird database check/repair today... Please note this process requires stopping Kerio Control services, which may lead to a brief service interruption.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60256173
+}

@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response indicates a failure to engage with the ticket meaningfully, as it simply states 'Skipping ticket due to tags', providing no helpful information.",
+    "evidence": [
+      "[2025-10-20T19:34:48+00:00] (AI) ATLAS: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication from the interaction that the customer is stuck in a loop with the AI, as the AI did not repeat requests for information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI did not ask for logs/screenshots that had previously been provided; rather, it skipped the ticket altogether.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There were no significant delays noted in the response times as all interactions occurred nearly simultaneously.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed without any indication of the customer's expectations not being met, as the customer had not expressed a need for further information following the AI's response.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The AI did not provide generic troubleshooting; it simply bypassed the ticket, so there's no evidence of mishandling for this critical priority.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response indicates a failure to engage with the ticket meaningfully, as it simply states 'Skipping ticket due to tags', providing no helpful information.\",\n    \"evidence\": [\"[2025-10-20T19:34:48+00:00] (AI) ATLAS: Skipping ticket due to tags\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication from the interaction that the customer is stuck in a loop with the AI, as the AI did not repeat requests for information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not ask for logs/screenshots that had previously been provided; rather, it skipped the ticket altogether.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There were no significant delays noted in the response times as all interactions occurred nearly simultaneously.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed without any indication of the customer's expectations not being met, as the customer had not expressed a need for further information following the AI's response.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI did not provide generic troubleshooting; it simply bypassed the ticket, so there's no evidence of mishandling for this critical priority.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60225246
+}

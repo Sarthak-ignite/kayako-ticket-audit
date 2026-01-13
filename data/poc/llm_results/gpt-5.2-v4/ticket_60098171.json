@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS repeatedly provided generic, templated KB-style guidance (pickup/replay folders, temp files, FailedMails) without progressing diagnosis of the specific 'Failed (VSE)' condition that was blocking all inbound mail. The responses largely recycle the same bullets and links and do not request the key artifacts needed to troubleshoot VSE failure (exact ME version/build, AV engine status, VSE logs, services status, definition update errors, specific error text). The customer explicitly states the AI replies are repetitive and unhelpful.",
+    "evidence": [
+      "Customer: \"Amazing how I'm paying for support and get told to constant same replies form a machine....\"",
+      "ATLAS repeats the same guidance multiple times: \"Verify Pickup and Replay Folder Configuration\" / \"Check for FailedMails or Temporary Files\" even after the issue narrows to \"Failed (VSE)\" for all inbound mail.",
+      "Customer: \"As i stated, nothing changed on configuration. Has been the same for years. Only thing I noticed today was the Failed (VSE) errors for all scanned inbound emails\" (ATLAS continues with broad reinstallation/backup boilerplate rather than VSE-specific next steps)."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer asked for a support rep online early on, but the ticket stays in an AI-only loop with repeated ATLAS responses and no visible handoff to a human. The AI reiterates similar troubleshooting steps across multiple messages, contributing to the customer being stuck and escalating frustration.",
+    "evidence": [
+      "Initial issue description: \"Can we get a support rep online.... I've been looking at this for 3 hours now\"",
+      "All subsequent public responses are from ATLAS; no human agent intervention is shown.",
+      "Customer: \"Amazing how I'm paying for support and get told to constant same replies form a machine....\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS repeatedly suggests checking pickup/replay folder configuration and general queue folder access despite the customer repeatedly stating configuration has not changed for years and later identifying a specific failure mode ('Failed (VSE)' on all scanned inbound email). The AI does not meaningfully adapt the troubleshooting to the new evidence (VSE failure) and continues recycling earlier steps.",
+    "evidence": [
+      "Customer: \"As I stated... Once I disable email scanning, email is aujtomatically received\" (ATLAS continues to focus on pickup/replay folder paths and temp files rather than the scanning engine failure).",
+      "Customer: \"As i stated, nothing changed on configuration. Has been the same for years. Only thing I noticed today was the Failed (VSE) errors\"",
+      "ATLAS continues with: \"Review Pickup, Replay, and Queue Folder Configuration\" even after VSE is identified as the consistent failure point."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Responses occur within minutes throughout the timeline; there is no 3+ day gap or customer waiting for updates indicated in the ticket excerpt.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "While an explicit 'closed' status is not shown, the interaction ends with the customer giving up and threatening to replace the product due to lack of effective support/human assistance. This matches the pattern criterion where the customer indicates they are abandoning the process without resolution.",
+    "evidence": [
+      "Customer: \"I'm out... If this continues, I'll be looking at replacing the product by another one.\"",
+      "No resolution is documented; issue remains: \"constant failed VSE\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is effectively a mail-flow outage affecting all inbound emails when MailEssentials is enabled (business-critical). Customer reports spending hours and confirms all mail is blocked unless scanning is disabled. Despite severity, there is no visible escalation, no human engagement, and the AI continues standard generic troubleshooting rather than prioritizing urgent containment/escalation steps.",
+    "evidence": [
+      "Issue description: \"Email not sent to exchange server\" / \"All emails.\"",
+      "Customer: \"Once I disable email scanning, email is automatically received by user. Thus bypassing GFI SPAM scan\" (indicates production-impacting workaround and all mail affected).",
+      "Customer: \"Failed (VSE) errors for all scanned inbound emails, which in turn stopped all email flow going through GFI\"",
+      "Customer: \"I've been looking at this for 3 hours now\" + request for live rep: \"Can we get a support rep online\" (no escalation/handoff shown)."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60098171
+}

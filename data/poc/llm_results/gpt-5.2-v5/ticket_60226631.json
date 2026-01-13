@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no customer-facing ATLAS/Hermes AI messages showing broken templates, incorrect guidance, or undelivered promises. The public replies are coherent human responses focused on escalation and resolution.",
+    "evidence": [
+      "Deepanshu Dewan commented publicly: \"As discussed, your ticket has been assigned to an agent. You will receive an update soon with the preliminary analysis completed so far.\"",
+      "Pavly Nashed commented publicly: \"We have investigated the root cause of the issue, and this has been escalated to our infrastructure team with the highest priority\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was not trapped in an AI loop; after requesting priority help, a human agent responded promptly and continued engagement. There are not 3+ consecutive customer-facing AI messages, and no customer complaint about being unable to reach a human.",
+    "evidence": [
+      "Customer: \"Issue is happening again now. Can you look into this on priority.\"",
+      "Deepanshu Dewan: \"your ticket has been assigned to an agent. You will receive an update soon\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to re-provide the same information or ignore previously shared details; they acknowledged the disruption and later addressed the recurrence concern with an explanation and prevention steps. The customer\u2019s recurrence concern received a direct response rather than being treated as a brand-new issue.",
+    "evidence": [
+      "Customer: \"We have been encountering this issue repeatedly. Please review the history of previously raised tickets for reference.\"",
+      "Balaji Jayaraman: \"The disruption was triggered by background data processing placing unexpected load on our search infrastructure... We\u2019re strengthening monitoring and controls... to prevent recurrence.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All customer-facing replies occur within hours (same day or next day) and there are no multi-day silences, no customer 'any update' after days, and no apology for delay.",
+    "evidence": [
+      "Customer [2025-10-22T10:26:32+00:00]: \"Issue is happening again now.\"",
+      "Pavly Nashed [2025-10-22T10:37:10+00:00]: \"We have investigated... escalated to our infrastructure team with the highest priority\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While support included a closure-warning policy statement, there is no visible message indicating the ticket was actually closed/auto-closed while a customer request remained unanswered. The customer\u2019s main follow-up question (recurrence prevention) was answered after the warning language.",
+    "evidence": [
+      "Balaji Jayaraman: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Balaji Jayaraman: \"We\u2019re strengthening monitoring and controls... to prevent recurrence.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue was production-impacting and urgent, and support treated it as such by escalating to infrastructure with highest priority and communicating resolution; there is no evidence of extended generic end-user troubleshooting (e.g., cache/browser/VPN) without escalation.",
+    "evidence": [
+      "Customer: \"We are unable to view or claim any new incoming chats in Khoros Care Production.\"",
+      "Pavly Nashed: \"this has been escalated to our infrastructure team with the highest priority\"",
+      "Chintan Parekh: \"the recent service disruption affecting the Khoros Care platform has been resolved.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60226631
+}

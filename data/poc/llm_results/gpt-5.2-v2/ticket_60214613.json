@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support/automation responses include templated filler and generic troubleshooting that did not match the actual backend defect (email case-sensitivity). This created misdirection before the real root cause was found and fixed.",
+    "evidence": [
+      "\u201cDear Andrew, Thank you for contacting the StreetSmart Support Team. We understand that the customer Florida Department of Health is unable to add devices using ATLAS.\u201d",
+      "\u201cCould you please ask the user to clear cache and cookies, restart the browser and relogin to support portal and try again (or possibly try from another browser)?\u201d",
+      "\u201cWe identified that the issue was related to case sensitivity in the customer's email address during the automation process. This has now been resolved.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer was routed into repeated/basic steps (e.g., cache/browser resets) and additional information requests after support couldn\u2019t reproduce, despite the issue being account/email mapping related\u2014creating a loop before escalation/fix.",
+    "evidence": [
+      "\u201cWe were unable to reproduce the issue impersonating one of the admin accounts for COID 104983.\u201d",
+      "\u201cCould you please ask the user to clear cache and cookies, restart the browser and relogin\u2026 (or possibly try from another browser)?\u201d",
+      "Customer: \u201cI cleared the cache, installed Google Chrome, tested with Chrome, and still get the same error.  Tried different computers as well.\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support suggested client-side cache/browser troubleshooting even after internal notes indicated there is no caching for the email/gsheet mapping, and the symptom pointed to backend identity handling rather than browser state.",
+    "evidence": [
+      "Support: \u201cCould you please ask the user to clear cache and cookies, restart the browser\u2026\u201d",
+      "Internal note: \u201cNo kind of refresh is needed after updating the gsheet. There is no caching for the gsheet anywhere.\u201d",
+      "Customer: \u201cTried different computers as well. I would be happy to replicate it for them on a call\u2026 since they weren\u2019t able to replicate it.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No customer-to-support response gap exceeds 2 calendar days; replies generally occurred within the same day or next day.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was not closed while the customer was awaiting action; the thread continues through investigation and a deployed fix.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was marked urgent and described as blocking device additions/licensing, yet initial handling included standard client-side troubleshooting and extended back-and-forth before identifying a clear server-side automation defect.",
+    "evidence": [
+      "ATLAS transcript: \u201cButton selection: [\ud83d\udd34 Urgent]\u201d",
+      "Customer: \u201cThe customer is unable to add any devices\u2026 I need the licenses activated so they can proceed.\u201d",
+      "Support: \u201cCould you please ask the user to clear cache and cookies\u2026 try from another browser)?\u201d",
+      "Resolution indicates backend defect: \u201cissue was related to case sensitivity in the customer's email address during the automation process. This has now been resolved.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60214613
+}

@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No AI interactions are visible in the provided ticket snippet.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Insufficient information to determine AI interaction or looping.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The ticket snippet is incomplete and lacks sufficient context to assess context ignorance.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No response timeline is visible to confirm significant delays.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed, there's insufficient context to determine if it was closed prematurely.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is marked as normal priority, and no technical details are provided.",
+    "evidence": []
+  },
+  "_raw_response": "Based on the limited ticket context provided, I'll analyze the quality issues:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No AI interactions are visible in the provided ticket snippet.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to determine AI interaction or looping.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket snippet is incomplete and lacks sufficient context to assess context ignorance.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No response timeline is visible to confirm significant delays.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed, there's insufficient context to determine if it was closed prematurely.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is marked as normal priority, and no technical details are provided.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The provided ticket snippet is extremely limited\n- Only shows a partial email header from Anitha\n- No actual support interactions or resolution details are visible\n- Cannot definitively assess any quality issues without more context\n\nI recommend providing the full ticket transcript to perform a comprehensive quality analysis.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60264368
+}

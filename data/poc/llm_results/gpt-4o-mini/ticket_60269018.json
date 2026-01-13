@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI gave a vague explanation of the issue being a test-triggered incident without addressing the customer's concern effectively.",
+    "evidence": [
+      "Dear Andriy, We have identified the issue you experienced as a test-triggered incident rather than a true product defect. You (2025-12-23T08:29:28+00:00)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to communicate directly with support and did not seem to be caught in a loop with the AI system.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI and support team did not reference the customer's specific concern about downloading the December patches, effectively ignoring the context provided.",
+    "evidence": [
+      "We are unable to download the December patches from the GFI console. (2025-12-23T08:18:31+00:00)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no evidence of significant delays; the interactions occurred within short intervals.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed based on a test-triggered incident without fulfilling the customer's request for a thorough resolution, likely while they were still awaiting more information.",
+    "evidence": [
+      "Triggered from a test ticket. Closing (2025-12-23T08:21:34Z)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This issue did not qualify as a P1 or SEV1 case according to the details provided, as it was tied to a test incident rather than a critical product failure.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI gave a vague explanation of the issue being a test-triggered incident without addressing the customer's concern effectively.\",\n    \"evidence\": [\"Dear Andriy, We have identified the issue you experienced as a test-triggered incident rather than a true product defect. You (2025-12-23T08:29:28+00:00)\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer was able to communicate directly with support and did not seem to be caught in a loop with the AI system.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI and support team did not reference the customer's specific concern about downloading the December patches, effectively ignoring the context provided.\",\n    \"evidence\": [\"We are unable to download the December patches from the GFI console. (2025-12-23T08:18:31+00:00)\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of significant delays; the interactions occurred within short intervals.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed based on a test-triggered incident without fulfilling the customer's request for a thorough resolution, likely while they were still awaiting more information.\",\n    \"evidence\": [\"Triggered from a test ticket. Closing (2025-12-23T08:21:34Z)\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This issue did not qualify as a P1 or SEV1 case according to the details provided, as it was tied to a test incident rather than a critical product failure.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60269018
+}

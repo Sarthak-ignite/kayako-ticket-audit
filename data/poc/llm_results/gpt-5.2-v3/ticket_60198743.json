@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer explicitly states the AI responses are wrong/unhelpful and requests to stop interacting with AI. There is also a likely product-behavior misstatement by ATLAS about rule evaluation stopping once a message is rejected, which the customer challenges as contradicting the documented purpose of \u201cTreat as non-spam (overrides the SpamAssassin score).\u201d",
+    "evidence": [
+      "Customer: \"Please, I want to talk to a human, not an AI! ... This is a waste of time.\"",
+      "Customer: \"First, it is your task to clarify that, and secondly the score does not matter regardless of its value because it should be overridden by my rules.\"",
+      "ATLAS: \"If a message is already rejected by the spam filter ... subsequent rules \u2013 including those set to 'Treat as non-spam' further down \u2013 will not be evaluated.\"",
+      "Customer: \"And also you are wrong that 'Custom whitelists are not overriding the Spam Filter' is consistent with the behaviour discussed here in this ticket.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly asks for a human and indicates they are stuck with AI/bot replies for an extended period before meaningful human engagement. The customer explicitly reports multiple bot replies and lack of human response.",
+    "evidence": [
+      "Customer: \"Please, I want to talk to a human, not an AI! Please, I want to talk to a human, not an AI! Please, I want to talk to a human, not an AI!\"",
+      "Customer (2025-10-02): \"for two weeks again I have not received any answer from a human.\"",
+      "Customer (2025-10-06): \"I want to talk to a human. Please call me, to clarify.\"",
+      "Customer (2025-10-29): \"In the mean time, 'Hermes' has answered, too. I assume that Hermes is a bot, because it only produces very general and not helpful text.\"",
+      "Customer (2025-10-31): \"I do not want to get any more responses from an AI Bot in #60198743 . I thought that this was escalated to Level2 support? Why does the Hermes bot then still answer?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support responses (especially AI) repeatedly lean on generic explanations (rule order, whitelists) despite the customer explicitly stating they already validated/remediated those points and explicitly calling out that a second question was missed. The customer clearly indicates provided info was not incorporated.",
+    "evidence": [
+      "Customer: \"I have already, in the very beginning of this conversation, shown that all our custom spam rules with 'Deny' action have the value 'Unused'...\"",
+      "Customer: \"To make clear that there is no second bug involved I have now removed all action=Deny rules... -> Same effect.\"",
+      "Customer: \"You seem to have missed that I have asked a second question in the beginning of this ticket: There is a UUID for every rule... How can I treat this UUID when I edit the XML...\"",
+      "Customer: \"I have already provided a screenshot of an example of my custom 'Received'-header line rule, and I do it again here... There is no regex or wildcard involved.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are explicit customer complaints about multi-week and multi-day waits without a human response, which meets the significant-delay criteria.",
+    "evidence": [
+      "Customer (2025-10-02): \"for two weeks again I have not received any answer from a human.\"",
+      "Customer (2025-10-06): \"another afternoon has passed, and I still have not received a reply.\"",
+      "Customer (2025-10-31): \"I have not gotten a reply for more than one week from a human, on this, after sending additional logs.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket content shows warnings about auto-closure (\u201cThis ticket will stay open for one week\u2026\u201d) but does not show the ticket actually being closed while an open customer request remained unanswered.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer expresses urgency, but there is no explicit P1/SEV1/Critical designation, no report of a full outage/production-down scenario, and escalation to L2 plus a remote session is eventually initiated.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60198743
+}

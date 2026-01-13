@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI's responses are predominantly generic, indicating a lack of meaningful engagement or problem-solving, notably stating tickets are placed on hold for unrealistic durations (9999 hours).",
+    "evidence": [
+      "[2025-12-09T04:45:59+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)",
+      "[2025-11-14T05:01:53+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 8888 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The AI responses do not appear to repeat the same questions or keep the customer in a loop, as there is a mix of employee and customer interactions.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support agents repeatedly ask for updates or escalate issues without acknowledging the customer's previous information or requests for data verification.",
+    "evidence": [
+      "[2025-12-15T06:14:50.330-0300] (General) KPS Support - issue key KPSSUPPORT-181 // CS-ALL commented: Thanks for update. please ask customer to verify the data and update.",
+      "[2025-11-13T19:22:32+00:00] (Customer) Varun Venkat: Hi Hermes, Any update on the issue, on when we will have a resolution ??"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between responses, notably a 589-hour gap which suggests a high level of response delay.",
+    "evidence": [
+      "[2025-12-24T09:57:21+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: JIRA Issue KPSSUPPORT-181 is changed to 'Done' , block reason: -"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed while the customer was still awaiting confirmation on the resolution and had expressed dissatisfaction regarding ongoing issues.",
+    "evidence": [
+      "[2025-12-15T05:24:59+00:00] (Employee) Balaji Jayaraman: Kayako - ticket id 60230887 // Balaji Jayaraman commented publicly: Dear Varun, We have received your escalation and are currently investigating the missing data from the SFTP location."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Given the high priority status of the ticket, there was a failure to provide immediate escalation or effective troubleshooting, and support seemed to be primarily reactive rather than proactive.",
+    "evidence": [
+      "[2025-10-30T08:48:32+00:00] (Employee) Santhosh M: Kayako - ticket id 60230887 // Santhosh M commented publicly: We\u2019ve reported this issue to our Professional Services (PS) team for further investigation."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI's responses are predominantly generic, indicating a lack of meaningful engagement or problem-solving, notably stating tickets are placed on hold for unrealistic durations (9999 hours).\",\n    \"evidence\": [\n      \"[2025-12-09T04:45:59+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)\",\n      \"[2025-11-14T05:01:53+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: Placing on hold for 8888 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses do not appear to repeat the same questions or keep the customer in a loop, as there is a mix of employee and customer interactions.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support agents repeatedly ask for updates or escalate issues without acknowledging the customer's previous information or requests for data verification.\",\n    \"evidence\": [\n      \"[2025-12-15T06:14:50.330-0300] (General) KPS Support - issue key KPSSUPPORT-181 // CS-ALL commented: Thanks for update. please ask customer to verify the data and update.\",\n      \"[2025-11-13T19:22:32+00:00] (Customer) Varun Venkat: Hi Hermes, Any update on the issue, on when we will have a resolution ??\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between responses, notably a 589-hour gap which suggests a high level of response delay.\",\n    \"evidence\": [\n      \"[2025-12-24T09:57:21+00:00] (AI) Centralsupport-ai-acc: Kayako - ticket id 60230887 // Centralsupport-ai-acc commented privately: JIRA Issue KPSSUPPORT-181 is changed to 'Done' , block reason: -\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed while the customer was still awaiting confirmation on the resolution and had expressed dissatisfaction regarding ongoing issues.\",\n    \"evidence\": [\n      \"[2025-12-15T05:24:59+00:00] (Employee) Balaji Jayaraman: Kayako - ticket id 60230887 // Balaji Jayaraman commented publicly: Dear Varun, We have received your escalation and are currently investigating the missing data from the SFTP location.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Given the high priority status of the ticket, there was a failure to provide immediate escalation or effective troubleshooting, and support seemed to be primarily reactive rather than proactive.\",\n    \"evidence\": [\n      \"[2025-10-30T08:48:32+00:00] (Employee) Santhosh M: Kayako - ticket id 60230887 // Santhosh M commented publicly: We\u2019ve reported this issue to our Professional Services (PS) team for further investigation.\"\n    ]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60230887
+}

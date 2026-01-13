@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No customer-facing ATLAS/Hermes response is shown with incorrect/irrelevant guidance, broken templates, or unmet AI promises. The only AI-related item is an internal routing note (\u201cAction: l1\u201d).",
+    "evidence": [
+      "[2025-11-07T12:49:08+00:00] Kayako - ticket id 60238295 // ATLAS commented privately: Action: l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated AI questioning, a request for a human being ignored, or 3+ consecutive AI interactions trapping the customer. Customer-facing reply comes from a human agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer indicates they already followed the instructed process but cannot track what they submitted; support\u2019s later response does not address the tracking/status concern and instead reiterates the same route (Customer Care portal) without acknowledging the customer\u2019s stated attempt or providing a way to verify/track the existing request.",
+    "evidence": [
+      "Customer: \u201cI did as asked, but I can't track the message I've sent properly. Would you mind keeping us posted?\u201d",
+      "Support: \u201cthe correct avenue for solving this would be contacting the GFI Customer Care team here: https://customercare.gfi.com/hc/en-us/requests/new.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant gap (>3 calendar days) between the customer\u2019s follow-up and support\u2019s response, the customer complains about lack of progress, and support explicitly apologizes for the delay.",
+    "evidence": [
+      "Customer [2025-11-11T13:25:41+00:00]: \u201cI have not received a licence or any helpful feedback. Are you actually working on this?\u201d",
+      "Support response only on [2025-11-24T12:15:38+00:00]",
+      "Support: \u201cPlease accept my sincere apologies for the delay in getting back to you; since the ticket was raised via email follow-up, it attained a low priority.\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript does not show the ticket being closed, auto-closed, or otherwise ended with an unanswered final customer message.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No explicit P1/SEV1/Critical markers, outage language, or time-critical/production-down impact are present. The issue appears to be a trial license/piracy warning scenario.",
+    "evidence": [
+      "Support internal note: \u201cissue is a piracy warning that the customer is getting for trial license  10512-Z56RC-71G7M\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60238295
+}

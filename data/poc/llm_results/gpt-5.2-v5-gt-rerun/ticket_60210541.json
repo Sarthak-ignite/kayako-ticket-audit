@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The initial ATLAS response provided generic firewall/port guidance that did not engage with the customer\u2019s key point (issue appears only after upgrading to v10 with no config changes). The customer explicitly indicated the AI guidance was not relevant to the reported regression behavior.",
+    "evidence": [
+      "ATLAS: \"Based on the log details provided\u2014especially the timeout during the Let's Encrypt certificate authorization process\u2014the most likely root cause relates to firewall or network routing impacting connectivity during certificate validation.\"",
+      "ATLAS: \"Verify that port 80 (HTTP) and port 443 (HTTPS) are accessible from the internet to the PBX server for the duration of certificate issuance.\"",
+      "Customer: \"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it. there are no config changes at all. Only version is chaning.\"",
+      "Customer: \"there has to be some difference in handling packets.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one customer-facing AI reply (ATLAS), and later a human agent (Ciprian) responds. No evidence the customer was stuck in repeated AI loops or was unable to reach a human.",
+    "evidence": [
+      "Kayako - ticket id 60210541 // ATLAS commented publicly: \"Dear Jozef, Thank you for detailing the issue...\"",
+      "Kayako - ticket id 60210541 // Ciprian Nastase commented publicly: \"Dear Jozef, Thank you for contacting GFI - Kerio Control Support...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer emphasized it was a v10-only regression with no config changes, support did not clearly repeat a request for information already provided or ask the customer to redo previously completed steps in a way that meets the detection criteria.",
+    "evidence": [
+      "Customer: \"there are no config changes at all. Only version is chaning.\"",
+      "Ciprian Nastase: \"If it isn't, please provide us with some additional details that we can use to troubleshoot... Support Information File... logs... Configuration backup export\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is a long gap between the customer\u2019s last Sept 30 message and the next staff public reply on Oct 31, but the customer did not post follow-ups about waiting and support did not acknowledge/apologize for delay; only one qualifying gap is present per the rules.",
+    "evidence": [
+      "Customer (2025-09-30T15:55:22+00:00): \"all those steps are not to the point...\"",
+      "Ciprian Nastase (2025-10-31T13:59:15+00:00): \"Thank you for contacting GFI - Kerio Control Support...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the agent mentioned an auto-closure policy, the customer confirmed the issue was solved and explicitly agreed it could be considered resolved; the closure does not appear premature.",
+    "evidence": [
+      "Ciprian Nastase: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Customer: \"yes, it was related... we can consider this as solved.\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reported multiple affected Kerio Controls, but there is no explicit P1/SEV1/critical/outage language or clear production-down urgency; therefore the criteria for P1/SEV1 mishandling are not met.",
+    "evidence": [
+      "Customer: \"this is latest with partner Walter having issues on  10 Kerio controls.\"",
+      "Customer: \"voip trunk and plesk ssl certificate renew with version 10 build 9018 doesnt work\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60210541
+}

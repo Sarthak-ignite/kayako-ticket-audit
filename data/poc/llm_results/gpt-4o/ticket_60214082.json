@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response appears to be a generic filler without specific information or action items relevant to the customer's issue.",
+    "evidence": [
+      "[2025-10-05T06:47:57+00:00] ATLAS: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence suggesting the customer was stuck in a loop with the AI or unable to reach a human support agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The available interaction log doesn't indicate that the customer's previously provided information was ignored or requested again.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The data indicates that there were no significant gaps between responses as the max gap is 0.0 hours.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed but there is no evidence that the customer was waiting for further information or assistance.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is low priority, thus it doesn't require immediate escalation associated with high-priority handling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response appears to be a generic filler without specific information or action items relevant to the customer's issue.\",\n    \"evidence\": [\"[2025-10-05T06:47:57+00:00] ATLAS: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence suggesting the customer was stuck in a loop with the AI or unable to reach a human support agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The available interaction log doesn't indicate that the customer's previously provided information was ignored or requested again.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The data indicates that there were no significant gaps between responses as the max gap is 0.0 hours.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed but there is no evidence that the customer was waiting for further information or assistance.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is low priority, thus it doesn't require immediate escalation associated with high-priority handling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60214082
+}

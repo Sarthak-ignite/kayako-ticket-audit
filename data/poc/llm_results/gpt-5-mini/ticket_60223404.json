@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responses are generic and incomplete (truncated), offering thanks and requesting more info but not providing substantive troubleshooting or next steps.",
+    "evidence": [
+      "[2025-10-17T13:38:49+00:00] (AI) ATLAS: \"Dear Tyron,\\n\\nThank you for providing clear details and a screenshot regarding the intermittent 500 Internal Server Error messages encountered w\"",
+      "[2025-10-17T13:37:28+00:00] (AI) ATLAS: \"Dear Tyron,\\n\\nThank you for contacting us regarding the intermittent internal server error 500 issues you and your team have been experiencing.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information or trapped the customer; only a single 'Requesting more information' private note appears.",
+    "evidence": [
+      "[2025-10-17T13:37:19+00:00] (AI) ATLAS: \"Requesting more information\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI acknowledged the customer's screenshot and error report (file analysis and public acknowledgement), so there is no clear sign it ignored provided context or asked for duplicate artifacts.",
+    "evidence": [
+      "[2025-10-17T13:38:24+00:00] (AI) ATLAS: \":: FILE ANALYSIS RESULTS ::\\n\\n\\t\\tFILE\\n\\t\\tOBSERVATIONS\\n\\n\\t\\timage.png_1586519\\n\\n-\\u00a0Intermittent\\u00a0500\\u00a0Internal\\u00a0Server\\u00a0Errors\\u00a0are\\u00a0being\\u00a0experienced.\"",
+      "[2025-10-17T13:38:49+00:00] (AI) ATLAS: \"Thank you for providing clear details and a screenshot regarding the intermittent 500 Internal Server Error messages...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All entries in the interaction timeline occur within a short time window (minutes), so there are no multi-day response delays.",
+    "evidence": [
+      "[2025-10-17T13:36:58+00:00] (Customer) Tyron: ...",
+      "[2025-10-17T13:38:49+00:00] (AI) ATLAS: ... (all interactions within ~2 minutes)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, there is no explicit evidence the ticket was closed while the customer awaited promised information or had indicated they gave up.",
+    "evidence": [
+      "Ticket metadata: \"Status: closed\"",
+      "[2025-10-17T13:38:49+00:00] (AI) ATLAS: public acknowledgement but no promise left unfulfilled in the transcript."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "For this high-priority issue there are no visible generic troubleshooting steps (cache/VPN/etc.) being recommended, nor evidence of escalation or explicit mishandling in the log snippet.",
+    "evidence": [
+      "Priority listed as \"high\" in ticket context",
+      "AI interactions show acknowledgement and request for more information but no generic client-side troubleshooting steps are present in the transcript."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI responses are generic and incomplete (truncated), offering thanks and requesting more info but not providing substantive troubleshooting or next steps.\",\n    \"evidence\": [\n      \"[2025-10-17T13:38:49+00:00] (AI) ATLAS: \\\"Dear Tyron,\\\\n\\\\nThank you for providing clear details and a screenshot regarding the intermittent 500 Internal Server Error messages encountered w\\\"\",\n      \"[2025-10-17T13:37:28+00:00] (AI) ATLAS: \\\"Dear Tyron,\\\\n\\\\nThank you for contacting us regarding the intermittent internal server error 500 issues you and your team have been experiencing.\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information or trapped the customer; only a single 'Requesting more information' private note appears.\",\n    \"evidence\": [\n      \"[2025-10-17T13:37:19+00:00] (AI) ATLAS: \\\"Requesting more information\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI acknowledged the customer's screenshot and error report (file analysis and public acknowledgement), so there is no clear sign it ignored provided context or asked for duplicate artifacts.\",\n    \"evidence\": [\n      \"[2025-10-17T13:38:24+00:00] (AI) ATLAS: \\\":: FILE ANALYSIS RESULTS ::\\\\n\\\\n\\\\t\\\\tFILE\\\\n\\\\t\\\\tOBSERVATIONS\\\\n\\\\n\\\\t\\\\timage.png_1586519\\\\n\\\\n-\\\\u00a0Intermittent\\\\u00a0500\\\\u00a0Internal\\\\u00a0Server\\\\u00a0Errors\\\\u00a0are\\\\u00a0being\\\\u00a0experienced.\\\"\",\n      \"[2025-10-17T13:38:49+00:00] (AI) ATLAS: \\\"Thank you for providing clear details and a screenshot regarding the intermittent 500 Internal Server Error messages...\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"All entries in the interaction timeline occur within a short time window (minutes), so there are no multi-day response delays.\",\n    \"evidence\": [\n      \"[2025-10-17T13:36:58+00:00] (Customer) Tyron: ...\",\n      \"[2025-10-17T13:38:49+00:00] (AI) ATLAS: ... (all interactions within ~2 minutes)\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, there is no explicit evidence the ticket was closed while the customer awaited promised information or had indicated they gave up.\",\n    \"evidence\": [\n      \"Ticket metadata: \\\"Status: closed\\\"\",\n      \"[2025-10-17T13:38:49+00:00] (AI) ATLAS: public acknowledgement but no promise left unfulfilled in the transcript.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"For this high-priority issue there are no visible generic troubleshooting steps (cache/VPN/etc.) being recommended, nor evidence of escalation or explicit mishandling in the log snippet.\",\n    \"evidence\": [\n      \"Priority listed as \\\"high\\\" in ticket context\",\n      \"AI interactions show acknowledgement and request for more information but no generic client-side troubleshooting steps are present in the transcript.\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60223404
+}

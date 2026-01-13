@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI (ATLAS) response appears generic and attributes the issue to firewall/routing, while the customer explicitly states the guidance is not relevant because the only change is upgrading to v10 (and downgrading fixes it). This is a strong customer-facing signal that the AI answer was not useful/fit-for-context.",
+    "evidence": [
+      "ATLAS commented publicly: \"Based on the log details provided\u2014especially the timeout during the Let's Encrypt certificate authorization process\u2014the most likely root cause relates to firewall or network routing impacting connectivity during certificate validation.\"",
+      "Customer commented publicly: \"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it. there are no config changes at all. Only version is chaning.\"",
+      "Customer commented publicly: \"there has to be some difference in handling packets.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one AI public response (ATLAS) and later a human agent responds publicly. No evidence of repeated AI loops or the customer requesting a human and being blocked by AI.",
+    "evidence": [
+      "ATLAS commented publicly: \"Recommended Steps:\"",
+      "Ciprian Nastase commented publicly: \"Thank you for contacting GFI - Kerio Control Support, I understand that you are reporting PBX C3X stops working after an upgrade to Kerio Control V10.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer disagrees with the direction of ATLAS\u2019s troubleshooting, there is no clear instance where support asks for the exact same information after the customer explicitly said it was already provided/tried (per the definition). Later requests (support info file/logs/config export) are new asks.",
+    "evidence": [
+      "Customer commented publicly: \"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it.\"",
+      "Ciprian Nastase commented publicly: \"If it isn't, please provide us with some additional details that we can use to troubleshoot... Support Information File... Error, warning and debug logs... Configuration backup export\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is one long gap (about a month) between the customer\u2019s reply and the next staff public response, but the rubric requires either a strong signal (customer complaint/apology) or 2+ weak signals; only one weak signal is present.",
+    "evidence": [
+      "[2025-09-30T15:55:22+00:00] Customer: \"all those steps are not to the point...\"",
+      "[2025-10-31T13:59:15+00:00] Staff: \"Dear Jozef, Thank you for contacting GFI - Kerio Control Support...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although support includes an auto-closure warning, the customer then confirms the issue is solved and explicitly agrees it can be considered resolved, so there\u2019s no sign the ticket was closed while the customer still needed help.",
+    "evidence": [
+      "Ciprian Nastase commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed...\"",
+      "Customer commented publicly: \"we can consider this as solved.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reports issues affecting multiple Kerio Control instances, but there is no explicit P1/SEV1/critical/outage language or urgency indicators (e.g., production down, business blocking) that would qualify for this pattern under the rubric.",
+    "evidence": [
+      "Customer commented publicly: \"this is latest with partner Walter having issues on  10 Kerio controls.\"",
+      "Customer commented publicly: \"voip trunk and plesk ssl certificate renew with version 10 build 9018 doesnt work, after a downgrade to 9.5 SP3 it will solved.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60210541
+}

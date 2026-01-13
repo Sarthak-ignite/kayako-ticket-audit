@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS content in this ticket is only shown in private/internal transcript form, and there is no customer-facing evidence that AI guidance was wrong, misleading, or broken. No customer statement indicates the AI responses were incorrect or unhelpful.",
+    "evidence": [
+      "Kayako - ticket id 60252140 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence that the customer was stuck interacting with AI or unable to reach a human. The public conversation contains multiple human agent replies (e.g., Randall, Deepanshu, Keyur, Ibiso, Andriy).",
+    "evidence": [
+      "Kayako - ticket id 60252140 // Randall Shawver commented publicly: Dear Jonard, Thank you for contacting the GFI - LanGuard Support Team.",
+      "Kayako - ticket id 60252140 // Keyur Saxena commented publicly: Hello Jonard, Apologies for the delayed response here."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer notes they already sent many logs, support\u2019s subsequent requests are for a fresh/clean set of logs after deleting previous data and reproducing the issue, which is additional diagnostic data rather than repeating the same request without acknowledgment.",
+    "evidence": [
+      "Kayako - ticket id 60252140 // Jonard Umerez commented privately: HI, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible",
+      "Kayako - ticket id 60252140 // Andriy Rybalchenko commented publicly: Even though logs were shared before, we do need a scan results + fresh set after the previous log files were deleted to eliminate noise and concentrate on the current flow."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a clear delay after the customer uploaded logs and requested updates multiple times; the agent later explicitly apologizes for the delayed response. The gap from the customer's log-upload note (Dec 3) to the next public staff response (Dec 10) is about 7 days.",
+    "evidence": [
+      "Kayako - ticket id 60252140 // Jonard Umerez commented privately: Hi, I\u2019ve already uploaded the logs to the FTP folder. Kindly check them.",
+      "Kayako - ticket id 60252140 // Jonard Umerez commented privately: Hi is there any updates for this?",
+      "Kayako - ticket id 60252140 // Jonard Umerez commented privately: Hello, good day i just want to follow up this ticket",
+      "Kayako - ticket id 60252140 // Keyur Saxena commented publicly: Hello Jonard,\n\nApologies for the delayed response here."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although multiple messages include an auto-closure warning (\u201cticket will stay open for one week unless\u2026\u201d), there is no text indicating the ticket actually closed/auto-closed while the issue was unresolved.",
+    "evidence": [
+      "Kayako - ticket id 60252140 // Deepanshu Dewan commented publicly: This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.",
+      "Kayako - ticket id 60252140 // Andriy Rybalchenko commented publicly: This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer describes deployment/remediation problems but does not label the issue as P1/SEV1/critical/outage or indicate production is down/multi-user outage. The handling shown is standard troubleshooting and log collection.",
+    "evidence": [
+      "Kayako - ticket id 60252140 // Jonard Umerez commented privately: GFI LanGuard deployment timeout for large package",
+      "Kayako - ticket id 60252140 // Andriy Rybalchenko commented publicly: These files will help us confirm whether the issue occurs during patch verification or in communication between the PatchAgent and the LanGuard server."
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60252140
+}

@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses contain vague generic statements and do not appear to effectively contribute to the resolution.",
+    "evidence": [
+      "[2025-10-31T12:08:58+00:00] - 'we already tried that. Unfortunately, it didn\u2019t work. Do you or the Technical Team have any more ideas?'",
+      "[2025-10-15T10:32:12+00:00] - 'Thank you for your detailed follow-up, ... confirmation that the dedicated Allow rule did not resolve ...'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was stuck in a loop or kept repeating the same information to the AI.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that previous information was ignored or that repeated requests for the same data occurred.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between responses, indicating delays in addressing the ticket.",
+    "evidence": [
+      "Time to first human (hours): 359.9",
+      "Max gap between responses (hours): 138.5"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after being escalated and reviewed, with no evidence the closure was premature.",
+    "evidence": [
+      "[2025-11-05T15:43:09+00:00] - 'Ticket can be closed'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of mishandling; the case was escalated and the severity addressed.",
+    "evidence": [
+      "[2025-11-04T11:43:01+00:00] - 'We\u2019ve escalated this case to the L2 team and raised the priority to High.'"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses contain vague generic statements and do not appear to effectively contribute to the resolution.\",\n    \"evidence\": [\"[2025-10-31T12:08:58+00:00] - 'we already tried that. Unfortunately, it didn\u2019t work. Do you or the Technical Team have any more ideas?'\", \"[2025-10-15T10:32:12+00:00] - 'Thank you for your detailed follow-up, ... confirmation that the dedicated Allow rule did not resolve ...'\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer was stuck in a loop or kept repeating the same information to the AI.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that previous information was ignored or that repeated requests for the same data occurred.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between responses, indicating delays in addressing the ticket.\",\n    \"evidence\": [\"Time to first human (hours): 359.9\", \"Max gap between responses (hours): 138.5\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after being escalated and reviewed, with no evidence the closure was premature.\",\n    \"evidence\": [\"[2025-11-05T15:43:09+00:00] - 'Ticket can be closed'\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of mishandling; the case was escalated and the severity addressed.\",\n    \"evidence\": [\"[2025-11-04T11:43:01+00:00] - 'We\u2019ve escalated this case to the L2 team and raised the priority to High.'\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60220499
+}

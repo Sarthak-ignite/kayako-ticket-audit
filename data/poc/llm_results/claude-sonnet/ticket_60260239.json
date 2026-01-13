@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI requested information that the customer had already provided in their initial private comment, showing failure to process available context.",
+    "evidence": [
+      "[2025-12-10T06:23:05+00:00] Kyoko Yamada: G2-2023 Standard 32bit License request Please issue it by January 7, 2026. Notice: This request is not new purchase but license transf",
+      "[2025-12-10T06:21:44+00:00] ATLAS: Dear Kyoko, Thank you for reaching out regarding your request for a new G2 license. To process your request efficiently, we kindly ask you to"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer provided details in private comment at 06:23:05, but AI immediately requested more information at 06:21:44, preventing direct human contact for over 19 days (454.6 hours to first human response).",
+    "evidence": [
+      "[2025-12-10T06:23:05+00:00] Kyoko Yamada: G2-2023 Standard 32bit License request Please issue it by January 7, 2026.",
+      "[2025-12-10T06:21:44+00:00] ATLAS: Thank you for reaching out regarding your request for a new G2 license. To process your request efficiently, we kindly ask you to",
+      "[2025-12-10T06:21:34+00:00] ATLAS: Requesting more information"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While AI may have missed initial context, the human agent processed the request appropriately once involved. No evidence of repeatedly asking for the same information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Massive delays throughout the ticket: 15 days between customer request (Dec 10) and approval (Dec 26), and another 3 days before license delivery (Dec 29). Max gap was 367.4 hours (~15 days).",
+    "evidence": [
+      "[2025-12-10T06:23:05+00:00] Kyoko Yamada: G2-2023 Standard 32bit License request Please issue it by January 7, 2026.",
+      "[2025-12-26T14:07:19+00:00] byron.trivett@ignitetech.ai: Approved",
+      "[2025-12-29T04:58:26+00:00] Muhammad Rizwan: As requested, please find the license attached."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket was completed with license delivered to customer and status shows 'completed'. No evidence customer was waiting for additional information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is 'normal', not P1/Sev1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI requested information that the customer had already provided in their initial private comment, showing failure to process available context.\",\n    \"evidence\": [\n      \"[2025-12-10T06:23:05+00:00] Kyoko Yamada: G2-2023 Standard 32bit License request Please issue it by January 7, 2026. Notice: This request is not new purchase but license transf\",\n      \"[2025-12-10T06:21:44+00:00] ATLAS: Dear Kyoko, Thank you for reaching out regarding your request for a new G2 license. To process your request efficiently, we kindly ask you to\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer provided details in private comment at 06:23:05, but AI immediately requested more information at 06:21:44, preventing direct human contact for over 19 days (454.6 hours to first human response).\",\n    \"evidence\": [\n      \"[2025-12-10T06:23:05+00:00] Kyoko Yamada: G2-2023 Standard 32bit License request Please issue it by January 7, 2026.\",\n      \"[2025-12-10T06:21:44+00:00] ATLAS: Thank you for reaching out regarding your request for a new G2 license. To process your request efficiently, we kindly ask you to\",\n      \"[2025-12-10T06:21:34+00:00] ATLAS: Requesting more information\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI may have missed initial context, the human agent processed the request appropriately once involved. No evidence of repeatedly asking for the same information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Massive delays throughout the ticket: 15 days between customer request (Dec 10) and approval (Dec 26), and another 3 days before license delivery (Dec 29). Max gap was 367.4 hours (~15 days).\",\n    \"evidence\": [\n      \"[2025-12-10T06:23:05+00:00] Kyoko Yamada: G2-2023 Standard 32bit License request Please issue it by January 7, 2026.\",\n      \"[2025-12-26T14:07:19+00:00] byron.trivett@ignitetech.ai: Approved\",\n      \"[2025-12-29T04:58:26+00:00] Muhammad Rizwan: As requested, please find the license attached.\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket was completed with license delivered to customer and status shows 'completed'. No evidence customer was waiting for additional information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is 'normal', not P1/Sev1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60260239
+}

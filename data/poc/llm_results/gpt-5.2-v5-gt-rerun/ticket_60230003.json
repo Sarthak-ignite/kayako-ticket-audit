@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The available text shows the AI greeting and asking the customer to describe the issue, but the AI\u2019s actual troubleshooting/content is truncated, and the customer does not state the AI was wrong or unhelpful. There isn\u2019t enough evidence of incorrect, misleading, or broken guidance.",
+    "evidence": [
+      "Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.",
+      "I have this\n...[truncated]..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer asked for a human, nor evidence of a repetitive AI loop (e.g., repeated requests for the same info). Only a short initial AI intake is visible before the transcript is truncated.",
+    "evidence": [
+      "Please select from the below or give me a detailed description of what\u2019s happening.",
+      "After updating to ME 22.2 the outlook spam handler keeps asking for credentials that are already entered and stored, so the add on is essentilly blocked"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The transcript does not show the customer saying they already provided specific items (logs/steps) and then being asked again, nor does it show repeated troubleshooting requests. The visible content is limited and does not demonstrate context being ignored.",
+    "evidence": [
+      "After updating to ME 22.2 the outlook spam handler keeps asking for credentials that are already entered and stored, so the add on is essentilly blocked",
+      "Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket lifecycle is extremely short with no evidence of waiting or follow-ups. The structured context shows closure within about a minute of creation/solve.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-27 16:21:13",
+      "CSV: Ticket Closed=2025-10-27 16:22:15",
+      "CSV: resolutionTime=62"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed almost immediately even though the customer reported an active, blocking problem and there is no visible resolution or confirmation of fix in the available interaction text. This indicates closure occurred while the issue still appeared unresolved.",
+    "evidence": [
+      "After updating to ME 22.2 the outlook spam handler keeps asking for credentials that are already entered and stored, so the add on is essentilly blocked",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-27 16:22:15",
+      "CSV: Ticket Solved=2025-10-27 16:22:15"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer describes a blocked add-on, there is no explicit P1/SEV1/critical outage language, and the limited transcript does not show prolonged generic troubleshooting without escalation.",
+    "evidence": [
+      "After updating to ME 22.2 the outlook spam handler keeps asking for credentials that are already entered and stored, so the add on is essentilly blocked"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60230003
+}

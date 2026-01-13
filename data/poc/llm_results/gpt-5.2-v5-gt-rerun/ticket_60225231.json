@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "While there was incorrect troubleshooting guidance earlier in the case, it was sent by a human agent in public replies and is not clearly attributable to ATLAS/Hermes AI output. The only ATLAS content shown is a truncated transcript that does not contain a clear incorrect recommendation that is later corrected.",
+    "evidence": [
+      "Kayako - ticket id 60225231 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat: ...[truncated]...",
+      "Kayako - ticket id 60225231 // Mike Kebede commented publicly: \"The Root Cause: The license file information is incorrect or incompatible with your new Proxmox virtual environment...\"",
+      "Kayako - ticket id 60225231 // Mike Kebede commented publicly: \"The message you are seeing: \\\"Unable to contact AppManager: appliance does not have a valid license\\\" is not related to the validity of your license... it is necessary to reset the AppManager agent.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer did reach human agents (multiple public replies from named support staff) and was not stuck in a repeated AI-only loop after requesting a human.",
+    "evidence": [
+      "Kayako - ticket id 60225231 // Carlo Koh commented publicly: \"Dear Milos, Thank you for contacting the Kerio Control Support Team...\"",
+      "Kayako - ticket id 60225231 // Mike Kebede commented publicly: \"Please follow these steps...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support generally responded to the customer\u2019s updates and logs, and the later requests (offline registration, DNS tests, Support Information File) were incremental troubleshooting rather than repeating the exact same request after the customer stated it was already provided.",
+    "evidence": [
+      "Kayako - ticket id 60225231 // Milos Hofman commented publicly: \"The problem still persist... I sent you screenshots with log.\"",
+      "Kayako - ticket id 60225231 // Mike Kebede commented publicly: \"Thank you for sending the log files. After reviewing them, we can confirm that your license file is valid and correctly installed.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no clear multi-day response gaps meeting the defined thresholds, and there is no explicit customer-facing statement about waiting for days. The structured metrics also do not indicate long L1/L2 open time.",
+    "evidence": [
+      "CSV: initialResponseTime=2539",
+      "CSV: timeSpentOpenL1=0",
+      "Kayako - ticket id 60225231 // Milos Hofman commented privately: \"Hello,do you have some solution for me?\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is closed in the CSV, the customer explicitly confirmed the issue was solved before closure, so closure does not appear premature.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Kayako - ticket id 60225231 // Milos Hofman commented publicly: \"Hi, your colleague solve this problem... Thank you and have a nice day.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Customer-facing messages do not describe a clear outage/production-down/P1 scenario (e.g., \u201call users down\u201d, \u201ccritical\u201d, \u201cSEV1\u201d). The issue is license/AppManager registration during migration, handled with standard troubleshooting and a documented fix.",
+    "evidence": [
+      "Kayako - ticket id 60225231 // Milos Hofman commented publicly: \"The problem still persist. I cannot update license...\"",
+      "Kayako - ticket id 60225231 // Mike Kebede commented publicly: \"To resolve this, it is necessary to reset the AppManager agent. This is the only valid solution.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60225231
+}

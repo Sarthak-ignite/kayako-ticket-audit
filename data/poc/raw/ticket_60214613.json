@@ -1,0 +1,244 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "streetsmart",
+        "requester": {
+          "id": 60001362,
+          "uuid": "fa1e0fb2-b359-4a3e-8ff1-0e8f0821a852",
+          "full_name": "Andrew Mugisha",
+          "legacy_id": "22280647267730",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 3,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/fa1e0fb2-b359-4a3e-8ff1-0e8f0821a852?1767781497",
+          "agent_case_access": "INHERIT-FROM-ROLE",
+          "organization_case_access": null,
+          "organization": {
+            "id": 60058483,
+            "resource_type": "organization"
+          },
+          "teams": [
+            {
+              "id": 60000013,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000013,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000100,
+              "resource_type": "team"
+            },
+            {
+              "id": 60000239,
+              "resource_type": "team"
+            }
+          ],
+          "emails": [
+            {
+              "id": 2897,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "197.239.11.170",
+          "last_seen_at": "2026-01-07T10:24:57+00:00",
+          "last_active_at": "2026-01-07T10:24:57+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60001362",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@e227b38a3dcbdd772ecd8114fa7554076c2fb75a",
+          "password_updated_at": "2025-10-20T08:38:13+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T14:48:45+00:00",
+          "last_activity_at": "2026-01-06T14:48:45+00:00",
+          "created_at": "2024-10-29T13:59:00+00:00",
+          "updated_at": "2026-01-07T10:24:57+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60001362"
+        },
+        "ticket_idt": 60214613
+      },
+      "interactions": [
+        [
+          "2025-10-11T12:22:00+00:00",
+          "Kayako - ticket id 60214613 // Raymond Guirguis commented publicly: Dear Andrew,\n\nThank you for your continued patience.\nWe identified that the issue was related to case sensitivity in the customer's email address during the automation process. This has now been resolved.\nCould you please ask the customer to try again?\u00a0 Please let us know in case they face any further issues.\n\nBest regards,\nRaymond Guirguis\nStreetSmart Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-11T12:08:50+00:00",
+          "Kayako - ticket id 60214613 // Raymond Guirguis commented privately:  This is resolved and deployed now "
+        ],
+        [
+          "2025-10-11T11:05:06+00:00",
+          "Kayako - ticket id 60214613 // Raymond Guirguis commented privately:  im working on this.. it is a case sensitivity issue with the automation. will fix it in few minutes. "
+        ],
+        [
+          "2025-10-10T13:42:53+00:00",
+          "Kayako - ticket id 60214613 // Andrew Mugisha commented publicly: Hi Alexandr,\n\nThe issue persists. The customer's email is Daniel.Soler@flhealth.gov\n\nMost recent feedback from the customer:\n\nI cleared the cache, installed Google Chrome, tested with Chrome, and still get the same error.\u00a0 Tried different computers as well.\u00a0 I would be happy to replicate it for them on a call if they\u2019d like since they weren\u2019t able to replicate it.\u00a0\nimage\nimage\n\n\n"
+        ],
+        [
+          "2025-10-10T08:08:29+00:00",
+          "Kayako - ticket id 60214613 // Raymond Guirguis commented privately:  If the customer is using a new admin email (which i assume their admin needs to add it to SS portal under their company), then we just need to append that email address under: API - Streetsmart - GetCoID v2 [https://docs.google.com/spreadsheets/d/1Absz90TWyFAlC5fy-YVKnDdeEECHTOrEqVjbXk_75mY/edit?gid=2084404212#gid=2084404212]\n\u00a0No kind of refresh is needed after updating the gsheet. There is no caching for the gsheet anywhere. "
+        ],
+        [
+          "2025-10-10T03:21:05+00:00",
+          "Kayako - ticket id 60214613 // Alexandr Oliynyk commented publicly: Dear Andrew,\n\nThank you for your message.\n\nWe were unable to reproduce the issue impersonating one of the admin accounts for COID 104983.\n\nCould you please ask the user to clear cache and cookies, restart the browser and relogin to support portal and try again (or possibly try from another browser)?\nIf the issue persists, could you please provide email address of the affected user?\u00a0\n\nBest regards,\nAlexandr Oliynyk\nStreetSmart Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-10T03:18:30+00:00",
+          "Kayako - ticket id 60214613 // Alexandr Oliynyk commented privately:  admin users are here https://docs.google.com/spreadsheets/d/1Absz90TWyFAlC5fy-YVKnDdeEECHTOrEqVjbXk_75mY/edit?gid=2084404212#gid=2084404212&range=B609 "
+        ],
+        [
+          "2025-10-10T03:17:52+00:00",
+          "Kayako - ticket id 60214613 // Alexandr Oliynyk commented privately: Not able to reproduce this issue with one of the FLorida health users\nimage"
+        ],
+        [
+          "2025-10-09T13:30:55+00:00",
+          "Kayako - ticket id 60214613 // Andrew Mugisha commented publicly: Hi Raymond, \n\nThe customer reports still seeing the following error: \nimage\n\nKindly assist.\n\nBest regards,\nimage\n\n \t\tAndrew\u00a0Mugisha\u00a0 |\u00a0\u00a0AI Innovation Specialist - Sales\n\n \t\t\u00a0\n\n \t\tClick here to book a meeting [https://cal.read.ai/andrew-mugisha/15-min]\n\n \t\t+256785277748\n\n \t\tignitetech.ai [http://ignitetech.ai]\u00a0\u00a0|\u00a0\u00a0image [https://x.com/andrew_mug40178/photo]\u00a0\u00a0https://x.com/andrew_mug40178/photo [https://x.com/andrew_mug40178/photo]\u00a0\u00a0\u00a0image [https://www.linkedin.com/in/andrew-mugisha/]\u00a0LinkedIn [https://www.linkedin.com/in/andrew-mugisha/]\n\n \t\t\u00a0\n\n \t\t\u00a0image [http://www.gfi.ai]\n\n \t\t\u00a0\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\n\n\n"
+        ],
+        [
+          "2025-10-08T12:01:58+00:00",
+          "Kayako - ticket id 60214613 // Raymond Guirguis commented publicly: Dear Andrew,\n\nThank you for your patience.\n\nWe have updated the automation backend on our end to onboard the company: 104983\nAdmin users can now perform automated admin actions through ATLAS chatbot, including the following:\n\u2795 Add New Device\n\ud83d\udd04 Reassign Device to Worker (in same company)\n\u274c Delete Device\n\ud83d\udd11 Retrieve PIN for Activation\n\ud83d\udcca Device count and License details\n\nIt is also recommended to onboard all other FFM companies in bulk, rather than responding to individual company issues like the above.\nTo proceed with the onboarding of other companies in bulk, please provide the following:\n\n\t* Please update these two fields for each company \u2014 \u201cStreetSmart License Count\u201d and \u201cStreetSmart CompanyID\u201d (unless the license is managed through 2Checkout, in this case, we just need the 2checkout reference number for each companyID to enable its automation).\n\t* Let us know the list of CompanyIDs which are recently updated on Salesforce, in order to onboard them on our backend (once the license information is in place).\u00a0\n\nLooking forward for your feedback.\n\nBest regards,\nRaymond Guirguis\nStreetSmart Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-08T11:54:54+00:00",
+          "Kayako - ticket id 60214613 // Raymond Guirguis commented privately:  I worked on onboarding the company.\nTesting using ATlas Chat (internal employee menu should allow agents to impersonate customer email) :\n- Tested adding a device, then removing it, and counting active devices and licenses:\n\nimage\n\nOnboarding steps for reference: https://docs.google.com/document/d/1dqbsltP37DOC1Fa11Z-shugYeKvH9u9n_1SDD1eY9rg/edit?tab=t.0#bookmark=id.su057q50jqziApplying steps to other companies will require Account: coresupport-aws (899084202472) - admin (or maybe poweruser) access. You can contact me if no access, or if steps are not clear.\n\n"
+        ],
+        [
+          "2025-10-08T11:54:42+00:00",
+          "Kayako - ticket id 60214613 // Raymond Guirguis commented privately:  test comment "
+        ],
+        [
+          "2025-10-08T08:31:58+00:00",
+          "Kayako - ticket id 60214613 // Centralsupport-ai-acc commented privately: ticket was set to hold until 2025-10-08T08:30:17.000Z. Placing ticket back to open"
+        ],
+        [
+          "2025-10-07T20:21:30+00:00",
+          "Kayako - ticket id 60214613 // Centralsupport-ai-acc commented privately: Placing on hold for 12 hour(s)"
+        ],
+        [
+          "2025-10-07T20:21:22+00:00",
+          "Kayako - ticket id 60214613 // Shaquille De Lancy commented publicly: Dear Andrew,\n\nThank you for updating the necessary fields on Salesforce.\nWe are in the process of completing the onboarding steps on the CS side and will confirm with you once that has been done for this company.\n\nIn the meantime, we will be sure to reach out to the customer again on #60211680 [https://support.streetsmartmobile.com/conversation/view/60211680] to address their request.\n\nBest regards,\nShaquille De Lancy\nStreetSmart Support Team"
+        ],
+        [
+          "2025-10-07T20:19:37+00:00",
+          "Kayako - ticket id 60214613 // Shaquille De Lancy commented privately:  What is your proposed action? \n\n \t* Send to external team\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Andrew, \n\n Thank you for updating the necessary fields on Salesforce. \n We are in the process of completing the onboarding steps on the CS side and will confirm with you once that has been done for this company. \n\n In the meantime, we will be sure to reach out to the customer again on #60211680 [https://support.streetsmartmobile.com/conversation/view/60211680] to address their request. \n\n Best regards, \n Shaquille De Lancy \n Support Team \n =============================================================== \n\nADDITIONAL CONTEXT?\n\n Raymond has asked that we put the ticket on hold until his next shift when he can do the DB work necessary for the onboarding. \n Placing on short hold. \n\n =============================================================== \n GPT \n Did you use GPT: Yes/No \n\n If No, add the reason below. "
+        ],
+        [
+          "2025-10-07T10:00:54+00:00",
+          "Kayako - ticket id 60214613 // Andrew Mugisha commented publicly: Hi Raymond, \n\nI have updated the salesforce fields:\nimage\n\nThe customer has also sent me the following message:\n\"I opened support ticket #60211680 on 10/1 to move 7868153707 to our company ID (104983).\u00a0 That is the only one we have pending at the moment.\"\n\nBest regards, \nimage\n\n \t\tAndrew\u00a0Mugisha\u00a0 |\u00a0\u00a0AI Innovation Specialist - Sales\n\n \t\t\u00a0\n\n \t\tClick here to book a meeting [https://cal.read.ai/andrew-mugisha/15-min]\n\n \t\t+256785277748\n\n \t\tignitetech.ai [http://ignitetech.ai]\u00a0\u00a0|\u00a0\u00a0image [https://x.com/andrew_mug40178/photo]\u00a0\u00a0https://x.com/andrew_mug40178/photo [https://x.com/andrew_mug40178/photo]\u00a0\u00a0\u00a0image [https://www.linkedin.com/in/andrew-mugisha/]\u00a0LinkedIn [https://www.linkedin.com/in/andrew-mugisha/]\n\n \t\t\u00a0\n\n \t\t\u00a0image [http://www.gfi.ai]\n\n \t\t\u00a0\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\n\n\n"
+        ],
+        [
+          "2025-10-07T08:55:52+00:00",
+          "Kayako - ticket id 60214613 // Raymond Guirguis commented publicly: Dear Andrew,\n\nThe ATLAS automation for this customer is currently not functioning because the required Salesforce fields that store license data are not populated. \n\nThese two fields \u2014 \u201cStreetSmart License Count\u201d and \u201cStreetSmart CompanyID\u201d \u2014 are essential for the automation to retrieve the license and device counts (unless the license is managed through 2Checkout, in this case, we just need the 2checkout reference number for each companyID to enable its automation).\nYou can view and populate them directly in Salesforce at the following link: https://trilogy-sales.lightning.force.com/lightning/r/Account/0012x00000A4hSzAAJ/view\n\nThese fields are currently not populated:\nimage\n\nPlease update these two fields for this customer, and ideally for all FFM and new customers to ensure smooth onboarding.\nOnce completed, kindly share the list of companyIDs that were updated \u2014 we\u2019ll then proceed with completing the onboarding steps on the CS side to activate automation through the ATLAS chatbot.\n\nThank you for your help in moving this forward.\n\nBest regards,\nRaymond Guirguis\nStreetSmart Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-07T08:43:31+00:00",
+          "Kayako - ticket id 60214613 // Raymond Guirguis commented privately:  The answer would depend on the level of details you wanna get into.. \n For the above ticket for instance, the message says: 0 active devices and 0 licensed, so will focus on these only. \n Normal flow: \n\n \t* a company admin enters ATlas chat, the bot will check his email through this mapping sheet: API - Streetsmart - GetCoID v2, [https://docs.google.com/spreadsheets/d/1Absz90TWyFAlC5fy-YVKnDdeEECHTOrEqVjbXk_75mY/edit?usp=sharing] if found, Atlas will show the company ID to the user and allow admin actions. So if a customer doesnt get the admin options, you just need to add his email in this sheet (which is not the issue here, since he got the admin menu (as per the other ticket linked here, correct COID is 104983). \n\n\t* To get count of active licenses , bot searches 2 places:\u00a0 \n\n \t* Salesforce using the 2 fields shared on the ticket (this requires no onboarding effort from CS, should be done by BU),\nexample from another customer:\nimage\n\n \t* then 2checkout, using a mapping Dynamo DB table (this requires onboarding effort for FFM or new companies, you can contact me for more details).\n\n \t* To get count of active devices, we use the same mapping Dynamo DB table (this requires onboarding effort for FFM or new companies). From that mapping table, Chatbot API gets the creds of an API user which has access to check active devices count, and add devices.\n\n So based on the errors in the ticket, we have 2 issues here: \n1. SF is not populated with the 2 fields mentioned, we need to ask BU to populate it.\nhttps://trilogy-sales.lightning.force.com/lightning/r/Account/0012x00000A4hSzAAJ/view\nimage \n 2. This companyID is not onboarded on Dynamo DB. You can let me know if you need to add one or more company IDs which need to be onboarded, and I can onboard them, preferably in bulk. \n\n Note that we requested the same from BU side many times before, last time was 24th Sep, in a mail thread with saurish.savant@ignitetech.com. \n\n Will get back to requester, hoping he could help with the task from BU side . "
+        ],
+        [
+          "2025-10-07T02:42:42+00:00",
+          "Kayako - ticket id 60214613 // Centralsupport-ai-acc commented privately: Placing on hold for 12 hour(s)"
+        ],
+        [
+          "2025-10-07T02:42:14+00:00",
+          "Kayako - ticket id 60214613 // Alexandr Oliynyk commented publicly: Dear Andrew,\n\nThank you for sharing the correct Salesforce opportunity. We are reaching out internally concerning the ATLAS automation that allows customers to add and remove devices themselves and to check where the number of licenses is being pulled for customers transitioned from FFM (possibly it is not adjusted yet for accounts transitioned from FFM to StreetSmart). We will get back to you once we have more information.\n\nIn the meantime, please share the number(s) to be added to the customer's account and we will fulfill this request on their behalf.\n\nBest regards,\nStreetSmart Support Team\n\n"
+        ],
+        [
+          "2025-10-07T02:40:06+00:00",
+          "Kayako - ticket id 60214613 // Alexandr Oliynyk commented privately:  As far as I remember, the number of licenses was pulled from SF and 2checkout for streetsmart, but for FFM customers we were unable to add numbers from automation since it was done by Verizon. If they are fully moved to SF, it should be more or less easy to fix for Raymond\u00a0 "
+        ],
+        [
+          "2025-10-06T20:13:07+00:00",
+          "Kayako - ticket id 60214613 // Shaquille De Lancy commented privately:  What is your proposed action? \n\n \t* Send to external team\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Andrew, \n\n Thank you for sharing the correct Salesforce opportunity. We are reaching out internally concerning the ATLAS automation that allows customers to add and remove devices themselves. \n In the meantime, please share the number(s) to be added to the customer's account and we will fulfill this request on their behalf. \n\n Best regards, \n Shaquille De Lancy \n Support Team \n\n =============================================================== \n\nADDITIONAL CONTEXT?\n\n Pinged Raymond earlier for info here, but I believe he's offshift so no response yet. \n\nimage \n\n I don't think CS has access to adjust the necessary fields on https://trilogy-sales.lightning.force.com/lightning/r/Account/0012x00000A4hSzAAJ/view\u00a0 \n Suggesting short hold \n =============================================================== \n GPT \n Did you use GPT: Yes/No \n\n If No, add the reason below. "
+        ],
+        [
+          "2025-10-06T18:26:46+00:00",
+          "Kayako - ticket id 60214613 // Andrew Mugisha commented publicly: Hi Shaquille, \n\nThis is the correct Salesforce opportunity: https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000004fwJXIAY/view [https://t.shortwave.com/links/v1/-Hj_vcc2QidLpJghqEAHCn6FSpAyoHCxr7xVIFEdRCH3JqjALKzfbUpI4TA7rc5Th1TtUrlf7hSKSHkVsiVr-hJcdVnQrFLvGFW3MElEt0nnv_m_R0eIuKWM3NAgTWaknNIoJLRykEe-bPO_7VIL2NOZdxEZGwyRHc6y7ms8hqA]\n\nThe customer is unable to add any devices (see screenshot below). I need the licenses activated so they can proceed.\n\nimage\nimage\n\n \t\tAndrew\u00a0Mugisha\u00a0 |\u00a0\u00a0AI Innovation Specialist - Sales\n\n \t\t\u00a0\n\n \t\tClick here to book a meeting [https://cal.read.ai/andrew-mugisha/15-min]\n\n \t\t+256785277748\n\n \t\tignitetech.ai [http://ignitetech.ai]\u00a0\u00a0|\u00a0\u00a0image [https://x.com/andrew_mug40178/photo]\u00a0\u00a0https://x.com/andrew_mug40178/photo [https://x.com/andrew_mug40178/photo]\u00a0\u00a0\u00a0image [https://www.linkedin.com/in/andrew-mugisha/]\u00a0LinkedIn [https://www.linkedin.com/in/andrew-mugisha/]\n\n \t\t\u00a0\n\n \t\t\u00a0image [http://www.gfi.ai]\n\n \t\t\u00a0\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\n\n\n"
+        ],
+        [
+          "2025-10-06T15:48:04+00:00",
+          "Kayako - ticket id 60214613 // Shaquille De Lancy commented publicly: Dear Andrew,\n\nThank you for contacting the StreetSmart Support Team. We understand that the customer Florida Department of Health is unable to add devices using ATLAS.\nWe note that, at least partially, this issue is due to StreetSmart-specific fields on the customer's Salesforce instance [https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/0062x000008o1lQAAQ/view] not being set. Specifically, the \"StreetSmart License Count\" and \"StreetSmart CompanyID\" fields.\nAs an example, see the Graybar customer account [https://trilogy-sales.lightning.force.com/lightning/r/Account/0012x00000lpPvCAAU/view] with StreetSmart-specific fields filled.\n\nWhile automation-related concerns are resolved, the customer can reach out to the Support Team to provide line numbers and request manual provisioning; it seems that the customer is in the process of this on ticket #60211680 [https://central-supportdesk.kayako.com/agent/conversations/60211680].\nPlease let us know if you have any other questions or concerns.\n\nBest regards,\nShaquille De Lancy\nStreetSmart Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-10-06T15:46:45+00:00",
+          "Kayako - ticket id 60214613 // Shaquille De Lancy commented privately:  What is your proposed action? \n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Andrew, \n\n Thank you for contacting the StreetSmart Support Team. We understand that the customer Florida Department of Health is unable to add devices using ATLAS. \n We note that, at least partially, this issue is due to StreetSmart-specific fields on the customer's Salesforce instance [https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/0062x000008o1lQAAQ/view] not being set. Specifically, the StreetSmart License Count and StreetSmart CompanyID fields. \n As an example, see the Graybar customer account [https://trilogy-sales.lightning.force.com/lightning/r/Account/0012x00000lpPvCAAU/view] with StreetSmart-specific fields filled. \n\n While this issue is resolved, the customer can reach out to the Support Team to provide line numbers and request manual provisioning; it seems that the customer is in the process of this on ticket #60211680 [https://central-supportdesk.kayako.com/agent/conversations/60211680]. \n Please let us know if you have any other questions or concerns. \n\n Best regards, \n Shaquille De Lancy \n Support Team \n =============================================================== \n\nADDITIONAL CONTEXT?\n\n Or does first time activation mean that they're provisioning new devices as opposed to renewing subscriptions? \n\n =============================================================== \n GPT \n Did you use GPT: Yes/No \n\n If No, add the reason below. "
+        ],
+        [
+          "2025-10-06T15:26:57+00:00",
+          "Kayako - ticket id 60214613 // Shaquille De Lancy commented privately:  Following up after 60214607. \n\n Florida Department of Health exists under 104983 already. Is this the same customer or different? Ticket says new activation as opposed to renewal. \n https://support.streetsmartmobile.com/article/63480-onboarding-new-customer potentially. That they got to that point in the ATLAS interaction means they must already have a COID though. \n\n https://mail.google.com/mail/u/0/#chat/space/AAAAVHenLVk/iPy5R0bPCHg/iPy5R0bPCHg suggests that at least part of the issue here is that the Salesforce license count field isn't filled for the customer. \n E.g from Graybar (for whom the automation works) https://trilogy-sales.lightning.force.com/lightning/r/Account/0012x00000lpPvCAAU/view \nimage \n\n For other customers with this issue, we're currently manually provisioning devices. We can do that here in the meantime. \n\n"
+        ],
+        [
+          "2025-10-06T10:45:20+00:00",
+          "Kayako - ticket id 60214613 // Andrew Mugisha commented privately: The customer, Florida Department of Health, is not able to add devices as per the attached screenshot."
+        ],
+        [
+          "2025-10-06T10:44:30+00:00",
+          "Kayako - ticket id 60214613 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-10-06T10:43:36+00:00",
+          "Kayako - ticket id 60214613 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, Andrew Mugisha ! \ud83d\udc4b\n\nThis is the StreetSmart ATLAS support chat.\n\n\u2757 IMPORTANT NOTICE \u2757\n\ud83d\udcc5 Effective Date: July 22, 2025\n\n\ud83d\udeab White-labeled versions of StreetSmart will no longer function after this date.\n\u2705 If the version you're using is called StreetSmart, no action is needed.\n\n\ud83d\udd0d Not using StreetSmart?\n\ud83d\udc49 Click here for your options and next steps. \n\n--- AI Assistant ---\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \n\n--- AI Assistant ---\n\n Welcome to the menu for internal employees.\n\nHow can I help? \n\n--- Customer (Andrew Mugisha) ---\n\n Ticket 60147163 requested for activation of licenses for Florida Department of Health. Please note this is a first time activation, not a renewal. The customer has shared screenshots where they are not able to add devices as they have no active licenses.\nhttps://trilogy-sales.lightning.force.com/lightning/r/Opportunity/0062x000008o1lQAAQ/view\nKindly assist.\n\n--- AI Assistant ---\n\n What's the priority of the issue? \n\n--- Customer (Andrew Mugisha) ---\n\n Button selection: [\ud83d\udd34 Urgent] \n\n--- AI Assistant ---\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\n\ud83d\udca1 If the reported behavior affects multiple end-customers, please do let us know the impact radius of the issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \n\n--- Customer (Andrew Mugisha) ---\n\n https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/0062x000008o1lQAAQ/view\nhttps://4914352.app.netsuite.com/app/accounting/subscription/subscription.nl?id=1740980 \n\n--- AI Assistant ---\n\n I'm creating a ticket for you with the information you've provided, allow me a few moments while I work on this \u23f3 \n\n--- AI Assistant ---\n\n I've automatically set the ticket subject to: License Activation Request for Florida Department of Health\n\nDoes that work for you?\n\n \t* If it does, simply say YES or use the below button to confirm \ud83d\udc47\n \t* If not, please directly type in the ticket subject of your choosing below \ud83d\ude09\n\n"
+        ],
+        [
+          "2025-10-06T10:43:33+00:00",
+          "Kayako - ticket id 60214613 // ATLAS commented privately: --- Ticket generated by StreetSmart AI chat ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/0062x000008o1lQAAQ/view<br>\n  https://4914352.app.netsuite.com/app/accounting/subscription/subscription.nl?id=1740980<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 31,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

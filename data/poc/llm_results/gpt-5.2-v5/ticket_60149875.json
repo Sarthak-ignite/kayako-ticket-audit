@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS repeatedly provides generic documentation/limitations and workarounds without progressing to a concrete investigation or fix, even after the customer states those recommendations were attempted and did not resolve the issue for the specific forum. This results in repetitive, low-action guidance rather than effective troubleshooting/resolution.",
+    "evidence": [
+      "Customer (2025-07-31): \"I attempted all the solutions recommended in the previous email, and while clearing browsing cache worked for the other communities (Atria, LPL Innovators), none of these worked for the Emerging Leaders.\"",
+      "ATLAS (2025-08-07): \"Relevant Product Behavior and Limitations: ... there are known limitations when users have multiple roles assigned... This is consistent with the behavior you are experiencing.\"",
+      "ATLAS (2025-08-07): \"Recommended Workaround: As a reliable workaround, you can export the full member data for the Emerging Leaders Forum and apply additional fi...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although the customer offers to get on a call / asks for someone to investigate, the ticket text does not show the customer explicitly requesting a human agent and then receiving 2+ subsequent AI-only responses. The conversation alternates between customer and ATLAS, not an AI-only loop with repeated re-requests.",
+    "evidence": [
+      "Customer (2025-07-31): \"Can we please have someone investigate this urgently? Happy to get on a call to walk through if needed.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "ATLAS generally acknowledges the customer\u2019s described symptoms, screenshots, and exports when provided. There is no clear instance where the customer says they already provided specific information and ATLAS asks for the same information again.",
+    "evidence": [
+      "ATLAS (2025-07-31): \"Thank you for your detailed update and for providing both screenshots and CSV exports...\"",
+      "ATLAS (2025-08-07): \"We understand the urgency and appreciate the detailed information, screenshots, and CSV exports you have provided.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Customer-facing messages explicitly call out long waits without response, and ATLAS apologizes for the delayed response. The customer repeats lack-of-response concerns later, indicating ongoing response delays.",
+    "evidence": [
+      "Customer (2025-07-22): \"This has now been open for 18 days without resolution\"",
+      "Customer (quoted in initial thread): \"This issue has been outstanding for 12 days without any response\"",
+      "ATLAS (2025-07-22): \"we apologize for the delay in our response.\"",
+      "Customer (2025-08-07): \"This request has now been open for over a month without resolution.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "ATLAS includes auto-closure language while the issue is still unresolved, and the customer later explicitly asks to reopen the ticket because the problem persists. This indicates an effective closure/closure-threat before resolution.",
+    "evidence": [
+      "ATLAS (2025-07-22): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Closed in the portal.\"",
+      "Customer (2025-07-31): \"I would like to reopen this ticket. I am still having trouble with the Emerging Leaders Forum...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer expresses urgency and business impact, but there is no explicit P1/SEV1/critical/outage language in the ticket text. Without explicit severity designation or clear production-down/outage indicators, it is not evidence-based to label this as P1/SEV1 mishandling.",
+    "evidence": [
+      "Customer (2025-07-22): \"Community Managers are unable to conduct metric analysis.\"",
+      "Customer (2025-07-31): \"Can we please have someone investigate this urgently?\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60149875
+}

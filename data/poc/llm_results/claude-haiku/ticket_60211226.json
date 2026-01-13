@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS AI provides a generic, templated response without substantive technical details about the security issue.",
+    "evidence": [
+      "[2025-10-01T08:22:14+00:00] Dear PTA, Thank you for your detailed inquiry regarding the current security advisories affecting Evoq 9.13.9 and possible remediation options"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer escalated multiple times, indicating inability to get a meaningful resolution through initial AI/automated channels.",
+    "evidence": [
+      "[2025-10-24T01:50:12+00:00] The customer escalated the Case. The customer message is: Slow response",
+      "[2025-10-02T01:42:22+00:00] The customer escalated the Case. The customer message is: We need a better answer from the team directly"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support team seems disconnected from previous context, with multiple employees giving generic responses without addressing specific security concerns.",
+    "evidence": [
+      "[2025-10-02T03:06:19+00:00] We have received your escalation and we are currently working on it. Our team is reviewing the ticket, and we are com[pleting]",
+      "[2025-10-24T02:04:36+00:00] We have received your escalation and we are currently working on it. Our team is actively reviewing the concerns re[garding]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Large gaps between responses, with nearly 24 days between initial escalation and meaningful updates.",
+    "evidence": [
+      "Time to first human (hours): 18.8",
+      "Max gap between responses (hours): 981.8"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket appears closed without definitive resolution of the security issue, with ongoing discussions about potential fixes.",
+    "evidence": [
+      "[2025-10-07T19:57:45Z] We need to reach an agreement with the open source community to hand down security fixes",
+      "[2025-10-21T07:10:01Z] An Evoq 9.13 release with security fixes is in the making and will be published short term"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "High-priority security ticket with repeated generic responses instead of direct, urgent technical resolution.",
+    "evidence": [
+      "Priority: high",
+      "[2025-10-02T08:02:33+00:00] We are currently reviewing the details with the team internally to confirm if the late[st issues]"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"ATLAS AI provides a generic, templated response without substantive technical details about the security issue.\",\n    \"evidence\": [\n      \"[2025-10-01T08:22:14+00:00] Dear PTA, Thank you for your detailed inquiry regarding the current security advisories affecting Evoq 9.13.9 and possible remediation options\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer escalated multiple times, indicating inability to get a meaningful resolution through initial AI/automated channels.\",\n    \"evidence\": [\n      \"[2025-10-24T01:50:12+00:00] The customer escalated the Case. The customer message is: Slow response\",\n      \"[2025-10-02T01:42:22+00:00] The customer escalated the Case. The customer message is: We need a better answer from the team directly\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support team seems disconnected from previous context, with multiple employees giving generic responses without addressing specific security concerns.\",\n    \"evidence\": [\n      \"[2025-10-02T03:06:19+00:00] We have received your escalation and we are currently working on it. Our team is reviewing the ticket, and we are com[pleting]\",\n      \"[2025-10-24T02:04:36+00:00] We have received your escalation and we are currently working on it. Our team is actively reviewing the concerns re[garding]\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Large gaps between responses, with nearly 24 days between initial escalation and meaningful updates.\",\n    \"evidence\": [\n      \"Time to first human (hours): 18.8\",\n      \"Max gap between responses (hours): 981.8\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket appears closed without definitive resolution of the security issue, with ongoing discussions about potential fixes.\",\n    \"evidence\": [\n      \"[2025-10-07T19:57:45Z] We need to reach an agreement with the open source community to hand down security fixes\",\n      \"[2025-10-21T07:10:01Z] An Evoq 9.13 release with security fixes is in the making and will be published short term\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"High-priority security ticket with repeated generic responses instead of direct, urgent technical resolution.\",\n    \"evidence\": [\n      \"Priority: high\",\n      \"[2025-10-02T08:02:33+00:00] We are currently reviewing the details with the team internally to confirm if the late[st issues]\"\n    ]\n  }\n}\n```\n\nThe analysis reveals comprehensive support quality failures across multiple dimensions. The ticket demonstrates significant systemic issues in handling a high-priority security vulnerability, with prolonged delays, ineffective AI and human interactions, and a lack of substantive technical resolution.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60211226
+}

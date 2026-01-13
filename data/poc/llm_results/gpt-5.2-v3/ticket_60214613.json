@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No clear, customer-facing AI (ATLAS/Hermes) response is shown providing incorrect product info, making unfulfilled promises, or being called wrong/unhelpful by the customer. The visible ATLAS content is mainly a routing/intake transcript (priority + request for details), after which humans handled the case.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence the customer was trapped in an AI loop: no explicit request for a human, no repeated requests for the same info by AI, and the ticket quickly transitions to human handling.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support acknowledged new information when the customer corrected the Salesforce opportunity link and continued investigation. There is no clear instance of support asking for the same item after the customer stated it was already provided/tried, nor ignoring the referenced related ticket.",
+    "evidence": [
+      "Customer: \"This is the correct Salesforce opportunity: https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000004fwJXIAY/view\"",
+      "Support: \"Thank you for sharing the correct Salesforce opportunity. We are reaching out internally...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No 3+ calendar day gap between a customer message and the next support response is visible. Responses occur within ~0\u20132 days throughout the timeline, and no one complains about waiting or apologizes for a delay.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed; support continues responding through the latest customer-reported issue and ultimately provides a fix and asks the customer to retry.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ATLAS intake shows the customer selected \"Urgent,\" there is no explicit P1/SEV1/Critical/outage statement. Support performed appropriate investigation/escalation internally (SF fields, backend onboarding, email case-sensitivity fix) rather than only generic troubleshooting.",
+    "evidence": [
+      "ATLAS transcript: \"Button selection: [\ud83d\udd34 Urgent]\"",
+      "Support: \"We identified that the issue was related to case sensitivity in the customer's email address during the automation process. This has now been resolved.\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60214613
+}

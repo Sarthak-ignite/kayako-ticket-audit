@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI (ATLAS) repeatedly commented 'Skipping ticket due to tags' without providing meaningful assistance or routing the ticket effectively.",
+    "evidence": [
+      "[2025-12-03T16:42:38+00:00] ATLAS commented privately: Skipping ticket due to tags",
+      "[2025-11-27T14:24:09+00:00] ATLAS commented privately: Skipping ticket due to tags"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "While AI responses were minimal, the ticket was quickly escalated to human agents without apparent customer frustration.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support agents seemed to follow the context of the login issue and build upon previous interactions.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer and support interactions, with some delays spanning multiple days.",
+    "evidence": [
+      "First customer message: [2025-11-25T15:09:18+00:00]",
+      "Last interaction before closure: [2025-12-03T16:42:39+00:00]",
+      "Max gap between responses: 146.2 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed with customer confirmation and after the login issue appeared to be resolved.",
+    "evidence": [
+      "[2025-12-03T16:42:38+00:00] Erika Heredia: 'We can close this ticket. Thank you for all your help!'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket was a login access issue, not a critical system outage, and received appropriate troubleshooting.",
+    "evidence": []
+  },
+  "_raw_response": "Here's the analysis of the support ticket for the specified quality issues:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI (ATLAS) repeatedly commented 'Skipping ticket due to tags' without providing meaningful assistance or routing the ticket effectively.\",\n    \"evidence\": [\n      \"[2025-12-03T16:42:38+00:00] ATLAS commented privately: Skipping ticket due to tags\",\n      \"[2025-11-27T14:24:09+00:00] ATLAS commented privately: Skipping ticket due to tags\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"While AI responses were minimal, the ticket was quickly escalated to human agents without apparent customer frustration.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support agents seemed to follow the context of the login issue and build upon previous interactions.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer and support interactions, with some delays spanning multiple days.\",\n    \"evidence\": [\n      \"First customer message: [2025-11-25T15:09:18+00:00]\",\n      \"Last interaction before closure: [2025-12-03T16:42:39+00:00]\",\n      \"Max gap between responses: 146.2 hours\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed with customer confirmation and after the login issue appeared to be resolved.\",\n    \"evidence\": [\n      \"[2025-12-03T16:42:38+00:00] Erika Heredia: 'We can close this ticket. Thank you for all your help!'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was a login access issue, not a critical system outage, and received appropriate troubleshooting.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- AI performance was poor with repetitive, unhelpful comments\n- There were significant response delays\n- The ticket was ultimately resolved and closed with customer agreement\n- No evidence of critical mishandling or systemic support failures",
+  "_model": "claude-haiku",
+  "_ticket_id": 60250271
+}

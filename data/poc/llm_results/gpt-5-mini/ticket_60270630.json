@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI or agent responses in the interaction timeline to evaluate for quality failures.",
+    "evidence": [
+      "[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No repeated AI/agent requests or loops are present because only a single customer message appears in the timeline.",
+    "evidence": [
+      "[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no support replies asking for information or ignoring prior context; only the customer's note is present.",
+    "evidence": [
+      "[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day response gaps are evident in the timeline; only a single customer entry exists and metadata shows no recorded human response time.",
+    "evidence": [
+      "Time to first human (hours): nan",
+      "Max gap between responses (hours): 0.0",
+      "[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, there is no evidence the customer was left waiting for promised information or that they abandoned the ticket; the timeline contains only a single customer comment.",
+    "evidence": [
+      "Status: closed",
+      "[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ..."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is not a P1/SEV1 ticket (priority is normal) and there are no agent responses showing generic troubleshooting rather than escalation.",
+    "evidence": [
+      "Priority: normal",
+      "[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ..."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI or agent responses in the interaction timeline to evaluate for quality failures.\",\n    \"evidence\": [\n      \"[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ...\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No repeated AI/agent requests or loops are present because only a single customer message appears in the timeline.\",\n    \"evidence\": [\n      \"[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ...\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no support replies asking for information or ignoring prior context; only the customer's note is present.\",\n    \"evidence\": [\n      \"[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ...\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No multi-day response gaps are evident in the timeline; only a single customer entry exists and metadata shows no recorded human response time.\",\n    \"evidence\": [\n      \"Time to first human (hours): nan\",\n      \"Max gap between responses (hours): 0.0\",\n      \"[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ...\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, there is no evidence the customer was left waiting for promised information or that they abandoned the ticket; the timeline contains only a single customer comment.\",\n    \"evidence\": [\n      \"Status: closed\",\n      \"[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ...\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is not a P1/SEV1 ticket (priority is normal) and there are no agent responses showing generic troubleshooting rather than escalation.\",\n    \"evidence\": [\n      \"Priority: normal\",\n      \"[2025-12-26T13:36:38+00:00] (Customer) Ray Tutnam: Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>  <br> Here is a record of your conversation for easy reference:<br>  <br>  ...\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60270630
+}

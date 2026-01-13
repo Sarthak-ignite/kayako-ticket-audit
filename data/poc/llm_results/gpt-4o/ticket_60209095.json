@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI placed the ticket on hold for an excessive 9999 hours without providing a resolution or plan for further action.",
+    "evidence": [
+      "Kayako - ticket id 60209095 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s) [2026-01-05T10:55:52+00:00]",
+      "Kayako - ticket id 60209095 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s) [2026-01-02T23:20:26+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the AI is repeatedly asking for the same information or preventing access to human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no instances of the support team ignoring previously provided information or asking for duplicate information.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant delays in responses, with a noted max gap of 657 hours between interactions.",
+    "evidence": [
+      "Time to first human (hours): 864.8",
+      "Max gap between responses (hours): 657.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket remains open and has not been closed prematurely while waiting for information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The ticket, marked as high priority, has been placed on hold without immediate action or escalation.",
+    "evidence": [
+      "Status: hold",
+      "Was handed to BU: False",
+      "Kayako - ticket id 60209095 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s) [2026-01-05T10:55:52+00:00]"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI placed the ticket on hold for an excessive 9999 hours without providing a resolution or plan for further action.\",\n    \"evidence\": [\n      \"Kayako - ticket id 60209095 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s) [2026-01-05T10:55:52+00:00]\",\n      \"Kayako - ticket id 60209095 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s) [2026-01-02T23:20:26+00:00]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the AI is repeatedly asking for the same information or preventing access to human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no instances of the support team ignoring previously provided information or asking for duplicate information.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant delays in responses, with a noted max gap of 657 hours between interactions.\",\n    \"evidence\": [\n      \"Time to first human (hours): 864.8\",\n      \"Max gap between responses (hours): 657.0\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket remains open and has not been closed prematurely while waiting for information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket, marked as high priority, has been placed on hold without immediate action or escalation.\",\n    \"evidence\": [\n      \"Status: hold\",\n      \"Was handed to BU: False\",\n      \"Kayako - ticket id 60209095 // Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s) [2026-01-05T10:55:52+00:00]\"\n    ]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60209095
+}

@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided timeline contains only a customer note referencing a prior AI chat, but no actual AI responses are included to evaluate for generic filler, incorrect info, or unkept promises.",
+    "evidence": [
+      "[2025-10-20T13:34:14+00:00] (Customer) \"Thanks for chatting earlier with our AI Support!\"",
+      "[2025-10-20T13:34:14+00:00] (Customer) \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no back-and-forth conversation shown (only a single customer entry), so there is no evidence of repeated AI requests or inability to reach a human.",
+    "evidence": [
+      "[2025-10-20T13:34:14+00:00] (Customer) \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support/AI replies are present in the excerpt, so it cannot be shown that support ignored previously provided information or asked for duplicate logs/screenshots.",
+    "evidence": [
+      "[2025-10-20T13:34:14+00:00] (Customer) \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The timeline shows only one interaction timestamp; without subsequent replies, there is no measurable multi-day gap between interactions.",
+    "evidence": [
+      "[2025-10-20T13:34:14+00:00] (Customer) \"Kayako - ticket id 60224885\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket status is 'closed', the interaction log provided does not show any promised follow-up, waiting state, or customer attempting to continue the conversation before closure.",
+    "evidence": [
+      "[2025-10-20T13:34:14+00:00] (Customer) \"Thanks for chatting earlier with our AI Support!\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is 'normal' (not P1/Sev1), and there is no troubleshooting or escalation content shown to assess mishandling.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided timeline contains only a customer note referencing a prior AI chat, but no actual AI responses are included to evaluate for generic filler, incorrect info, or unkept promises.\",\n    \"evidence\": [\n      \"[2025-10-20T13:34:14+00:00] (Customer) \\\"Thanks for chatting earlier with our AI Support!\\\"\",\n      \"[2025-10-20T13:34:14+00:00] (Customer) \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no back-and-forth conversation shown (only a single customer entry), so there is no evidence of repeated AI requests or inability to reach a human.\",\n    \"evidence\": [\n      \"[2025-10-20T13:34:14+00:00] (Customer) \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No support/AI replies are present in the excerpt, so it cannot be shown that support ignored previously provided information or asked for duplicate logs/screenshots.\",\n    \"evidence\": [\n      \"[2025-10-20T13:34:14+00:00] (Customer) \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline shows only one interaction timestamp; without subsequent replies, there is no measurable multi-day gap between interactions.\",\n    \"evidence\": [\n      \"[2025-10-20T13:34:14+00:00] (Customer) \\\"Kayako - ticket id 60224885\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket status is 'closed', the interaction log provided does not show any promised follow-up, waiting state, or customer attempting to continue the conversation before closure.\",\n    \"evidence\": [\n      \"[2025-10-20T13:34:14+00:00] (Customer) \\\"Thanks for chatting earlier with our AI Support!\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is 'normal' (not P1/Sev1), and there is no troubleshooting or escalation content shown to assess mishandling.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60224885
+}

@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses were largely template-like and did not meaningfully progress troubleshooting after the customer stated the steps were already done. There is also likely misleading/unsupported speculation that AV update failures/notifications could be contributing to \u201cunusually high volume of emails,\u201d which conflates internal update checks with outbound email volume/blocklist behavior.",
+    "evidence": [
+      "Customer: \"Followed steps, still same issues. The updates are failing every other hour or so\" (2025-09-06)",
+      "ATLAS: provides standard delete-version-files/restart-services steps (2025-09-06) and then more manual-update steps after customer already said they did them (2025-09-08).",
+      "Support message (later adopted by human, but originally drafted in internal note): \"Since you are receiving repeated failure notifications, this setting could be contributing to the unusually high volume of emails.\" (Ibiso internal draft 2025-09-18; repeated to customer by Randall 2025-09-18)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer explicitly requested a live agent but initially received ATLAS-only responses and repeated troubleshooting content. A human did not engage until 9/18, after multiple AI replies and customer follow-ups.",
+    "evidence": [
+      "Customer: \"Please open ticket and connect to live agent\" (2025-09-06)",
+      "ATLAS responds publicly with troubleshooting instead of connecting to an agent (2025-09-06; 2025-09-08)",
+      "Customer: \"I have already performed these steps but will try again.\" (2025-09-08) followed by ATLAS giving additional steps rather than transitioning to human ownership (2025-09-08)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeatedly recommended steps the customer said were already performed, and later pivoted to an unrelated product installer/CDN explanation while the customer explicitly stated they were still waiting for an answer on failing AV updates. Customer also referenced continuing a prior ticket, but there\u2019s no visible acknowledgement/continuity handling in responses.",
+    "evidence": [
+      "Customer: \"I need to continue with Ticket #60163300\" (2025-09-06) \u2014 no visible acknowledgement/continuity handling in subsequent responses.",
+      "Customer: \"I have already performed these steps\" (2025-09-08) yet support continues with similar manual update guidance rather than acknowledging what was tried and narrowing based on new data (2025-09-08).",
+      "Customer: \"Still waiting on a response on failing updates.\" (2025-09-30 private) after support answered about v22.2 download/CDN propagation rather than the failing update issue (2025-09-29/2025-09-30)."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Multiple 3+ day gaps occurred while the issue was ongoing and escalating (deliverability/blocklist concern, inability to upload logs, request for solution). These delays likely worsened customer frustration and business impact.",
+    "evidence": [
+      "Customer escalation: \"Hello, I really need a solution...\" (2025-09-11) \u2192 next support response not until 2025-09-18 (~7 days).",
+      "Customer provides pattern update (2025-09-22) \u2192 next support response 2025-09-29 (~7 days).",
+      "Customer: \"Still waiting on a response on failing updates.\" (2025-09-30) \u2192 next substantive support update 2025-10-11 (~11 days)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket contains auto-close language and an internal 'hold for 9999 hours' action, there isn\u2019t clear evidence that the ticket was actually closed with an outstanding customer request unanswered at the moment of closure (the log shows continued activity afterwards).",
+    "evidence": [
+      "Support warning: \"This ticket will stay open for one week unless you reply with 'This ticket can be closed'\" (2025-09-29; repeated 2025-10-11)",
+      "Internal action: \"Placing on hold for 9999 hour(s)\" (2025-10-11) \u2014 but subsequent customer/support activity continues."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reported serious deliverability impact (repeat blocklisting and apparent high outbound volume) and later indicated disabling MailEssentials to resume mail flow (per engineering note). Handling remained slow and largely procedural (logs/standard articles) rather than visibly triaged as urgent early on. Escalation to development appears only after prolonged back-and-forth and delays.",
+    "evidence": [
+      "Customer: \"Since the change we have been added to the senderscore.org block list 3 times.\" (2025-09-11)",
+      "Customer: \"It shows my email IP address sending 3000 to 12000 emails a day. This started as soon as we upgraded...\" (2025-09-11)",
+      "Engineering note: \"The customer has had to disable MailEssentials to resume mail flow.\" (2025-10-10 engineering comment)",
+      "Escalation occurs late: \"We have reached out to our Development Team\" (2025-10-11), after weeks of issues and multiple long response gaps."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60190547
+}

@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is minimal AI content in the log (a short ATLAS transcript and an 'Action: l1' note) but no clear generic filler, incorrect information, or broken promises from the AI.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No repeated AI requests asking the customer for the same information or preventing escalation to a human are present in the interaction history.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Agents acknowledge the customer's retirement and teammates (and provide access link to a colleague); there is no clear instance of asking for information already provided.",
+    "evidence": [
+      "2025-12-09T12:40:33+00:00 (Customer) Michael Healy: \"Hello, I have retired. I\u2019ve copied my teammates Darrell, John and Aaron on this email thread. Please work with them.\"",
+      "2025-12-07T22:09:33+00:00 (Employee) Carlos Encalada: \"Hello Darrell, You can access the support case by authenticating in our helpcenter at  https://support.faxmakeronline.gfi.com/\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day to multi-week gaps between customer messages and agent responses; system metrics also show long delays to first human and long max gaps.",
+    "evidence": [
+      "Ticket metadata: \"Time to first human (hours): 408.3\" and \"Max gap between responses (hours): 288.8\"",
+      "2025-11-13T22:15:03+00:00 (Customer) Michael Healy: (initial AI/chat ticket) and no substantive agent reply until 2025-11-30T22:38:09+00:00 (Employee) Carlos Encalada: \"Thank you for your patience, and I apologize for the delay...\"",
+      "2025-11-18T21:45:39+00:00 (Customer) Michael Healy: \"Hello, I still have not received an answer to my question.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is closed but there is no explicit evidence the ticket was closed while the customer was still actively waiting for promised information or that the customer abandoned the request due to closure.",
+    "evidence": [
+      "2025-12-09T19:20:09+00:00 (Employee) Carlos Encalada: \"Thank you for the update. We wish you all the best in your retirement...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is normal priority (not P1/SEV1) and there is no evidence of high-severity mishandling or inappropriate generic troubleshooting.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is minimal AI content in the log (a short ATLAS transcript and an 'Action: l1' note) but no clear generic filler, incorrect information, or broken promises from the AI.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No repeated AI requests asking the customer for the same information or preventing escalation to a human are present in the interaction history.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Agents acknowledge the customer's retirement and teammates (and provide access link to a colleague); there is no clear instance of asking for information already provided.\",\n    \"evidence\": [\n      \"2025-12-09T12:40:33+00:00 (Customer) Michael Healy: \\\"Hello, I have retired. I\u2019ve copied my teammates Darrell, John and Aaron on this email thread. Please work with them.\\\"\",\n      \"2025-12-07T22:09:33+00:00 (Employee) Carlos Encalada: \\\"Hello Darrell, You can access the support case by authenticating in our helpcenter at  https://support.faxmakeronline.gfi.com/\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day to multi-week gaps between customer messages and agent responses; system metrics also show long delays to first human and long max gaps.\",\n    \"evidence\": [\n      \"Ticket metadata: \\\"Time to first human (hours): 408.3\\\" and \\\"Max gap between responses (hours): 288.8\\\"\",\n      \"2025-11-13T22:15:03+00:00 (Customer) Michael Healy: (initial AI/chat ticket) and no substantive agent reply until 2025-11-30T22:38:09+00:00 (Employee) Carlos Encalada: \\\"Thank you for your patience, and I apologize for the delay...\\\"\",\n      \"2025-11-18T21:45:39+00:00 (Customer) Michael Healy: \\\"Hello, I still have not received an answer to my question.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is closed but there is no explicit evidence the ticket was closed while the customer was still actively waiting for promised information or that the customer abandoned the request due to closure.\",\n    \"evidence\": [\n      \"2025-12-09T19:20:09+00:00 (Employee) Carlos Encalada: \\\"Thank you for the update. We wish you all the best in your retirement...\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is normal priority (not P1/SEV1) and there is no evidence of high-severity mishandling or inappropriate generic troubleshooting.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60242814
+}

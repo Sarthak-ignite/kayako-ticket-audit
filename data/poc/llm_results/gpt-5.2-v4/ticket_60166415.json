@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS stated the case was flagged as priority/urgent, but the workflow did not reflect urgent handling (ticket repeatedly put on long hold; urgency label applied much later). This created a mismatch between what AI promised and what happened, which can be experienced as misleading.",
+    "evidence": [
+      "[2025-08-12T05:55:54+00:00] ATLAS: \"We recognize the urgency and have flagged your case as a priority.\"",
+      "[2025-08-20T11:47:58+00:00] Centralsupport-ai-acc: \"Placing on hold for 9999 hour(s)\" (recurs multiple times afterwards)",
+      "[2025-08-25T06:03:37Z] Engineering issue labeled as \"Priority:Urgent\" (urgency applied ~13 days after customer requested urgent priority)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "After the initial ATLAS intake, human agents (Keyur/Marcio/Andriy/Matthew) actively engaged. There is no indication the customer was prevented from reaching a human or stuck in repeated AI-only loops.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support did not adequately address/fulfill the customer's repeated request for a detailed step-by-step procedure; instead, they redirected to an earlier link and implied instructions were already provided, despite the customer explicitly stating the client found them unclear. This fails to incorporate the context of the customer's need (banking client, large deployment, need for precise change steps).",
+    "evidence": [
+      "[2025-09-08T05:54:47+00:00] Customer: \"Client needs step by step procedure... Kindly help us out in it and provided us each step in detail\"",
+      "[2025-09-09T04:02:37+00:00] Support: \"The instructions were already provided earlier\" (no expanded step-by-step provided in-response)",
+      "[2025-09-09T10:59:51+00:00] Customer: \"We are talking about a banking client here, with over 300+ endpoints... Asking for a complete redeployment is not a feasible solution\" (context not meaningfully incorporated into the proposed path forward)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a clear >3 calendar day gap with no support update while the issue remained unresolved, prompting the customer to complain about lack of response.",
+    "evidence": [
+      "[2025-08-21T07:21:54+00:00] Support: acknowledges issue persists and says dev investigating",
+      "[2025-08-25T05:41:38+00:00] Customer: \"Its been 4 days and no response on this.\" (gap from 8/21 to 8/25)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket conversation shows ongoing engagement and escalation; there is no evidence the case was closed without resolution within the provided timeline.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly emphasized urgency and broad impact (many machines/branches, banking client, 300+ endpoints). Handling included long 'on hold' states, repeated 'no updates yet' replies, and reliance on disruptive workarounds/redeployment without a clear expedited resolution plan. This reads as standard-process handling for an urgent, high-impact defect.",
+    "evidence": [
+      "[2025-08-12T05:54:29+00:00] Customer: \"I want to raise a ticket on urgent priority\" and \"On Many Agents simultaneously\"",
+      "[2025-08-21T05:38:58+00:00] Customer: \"Please look into it on priority.\" (issue persists after workaround)",
+      "[2025-08-26T06:15:49+00:00] Support: \"No updates yet.\" (repeated again on 2025-08-28 and 2025-09-01)",
+      "[2025-09-09T10:59:51+00:00] Customer: \"banking client... over 300+ endpoints... complete redeployment is not a feasible solution\"",
+      "[2025-08-20T11:47:58+00:00] and recurring: \"Placing on hold for 9999 hour(s)\" (signals non-urgent workflow despite stated urgency)"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60166415
+}

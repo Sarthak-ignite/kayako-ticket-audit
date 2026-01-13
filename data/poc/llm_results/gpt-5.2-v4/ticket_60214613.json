@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ATLAS chat transcript is mostly intake/triage and does not show the AI giving incorrect technical guidance or making promises that were not followed. The substantive troubleshooting and decisions were handled by human agents.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer was able to reach human agents quickly after ticket creation, and the thread shows ongoing human engagement rather than repeated AI prompts or inability to reach a person.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support initially anchored on an incorrect Salesforce opportunity link and diagnosis, requiring the customer to correct them. Later, support suggested browser cache/cookie troubleshooting even though internal context indicated the issue was likely automation/onboarding/email-mapping related (not a client-side cache issue). This created unnecessary back-and-forth and delayed addressing the real root cause.",
+    "evidence": [
+      "Customer: \"This is the correct Salesforce opportunity: https://trilogy-sales.lightning.force.com/lightning/r/Opportunity/006Ih000004fwJXIAY/view\" (after support referenced a different opportunity earlier).",
+      "Support (Alexandr): \"Could you please ask the user to clear cache and cookies, restart the browser and relogin to support portal and try again\"",
+      "Internal (Raymond): \"No kind of refresh is needed after updating the gsheet. There is no caching for the gsheet anywhere.\"",
+      "Customer (after following cache advice): \"I cleared the cache, installed Google Chrome, tested with Chrome, and still get the same error. Tried different computers as well.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No clear 3+ calendar day gaps between a customer message and a support response are visible. Responses generally occur within hours to ~1 day.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows continued troubleshooting through to a stated fix deployment; there is no indication it was closed while the customer still had an unanswered request.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was marked Urgent and was blocking first-time activation (customer could not add any devices due to 0 licenses/devices). Despite being a backend automation/onboarding defect, handling included long 'hold' periods and generic client-side troubleshooting (cache/cookies) after automation was said to be fixed, rather than immediate escalation/owner-driven investigation. Root cause ultimately was a backend case-sensitivity bug, reinforcing that earlier standard troubleshooting was not appropriately prioritized.",
+    "evidence": [
+      "ATLAS intake: \"Button selection: [\ud83d\udd34 Urgent]\"",
+      "Customer impact: \"The customer is unable to add any devices... I need the licenses activated so they can proceed.\"",
+      "System action: \"Placing on hold for 12 hour(s)\" (multiple times: 2025-10-07 and 2025-10-07).",
+      "Support (Alexandr) after customer still blocked: \"clear cache and cookies... try from another browser\" (generic troubleshooting for what became a backend defect).",
+      "Internal (Raymond): \"it is a case sensitivity issue with the automation. will fix it in few minutes.\"",
+      "Resolution note: \"This has now been resolved.\" (indicating platform-side bug, not a user/browser issue)."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60214613
+}

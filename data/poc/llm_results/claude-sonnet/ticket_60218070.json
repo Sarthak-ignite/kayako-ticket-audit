@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI provided broken/404 links that wasted customer time, and the AI eventually failed requiring human intervention ('Andon cord has been pulled').",
+    "evidence": [
+      "[2025-10-10T16:43:55+00:00] Matthew Hart: 'Support, every link/URL you give us is bad, or returns a 404 HTTP error. We don't know how to respond to this?'",
+      "[2025-10-10T18:03:35+00:00] Cu Chulainn AI Manager: 'The process has failed and andon cord has been pulled for the following reason: **Pulling Ando'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer was trapped interacting with AI (Cu Chulainn) from Oct 10 00:40 to Oct 10 18:03, receiving multiple AI responses with broken links before AI finally failed and human took over on Oct 11.",
+    "evidence": [
+      "[2025-10-10T16:43:55+00:00] Matthew Hart: 'Support, every link/URL you give us is bad, or returns a 404 HTTP error.'",
+      "[2025-10-10T18:01:46+00:00] Matthew Hart: 'thank you for this reply. Maybe we should have a meeting? On Zoom or Teams? This is because, we cannot install these licenses you've j'",
+      "[2025-10-10T18:03:35+00:00] Cu Chulainn AI Manager: 'The process has failed and andon cord has been pulled'"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No clear evidence of support ignoring previously provided information or requesting duplicate data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Time to first human response was 50.7 hours (over 2 days), and max gap between responses was 171.4 hours (over 7 days), despite urgent priority and looming deadline.",
+    "evidence": [
+      "[2025-10-11T06:07:24+00:00] Matthew Hart: 'When can expect actual help with this issue? We know the deadline. Can you guarantee you'll help us before the night of October'",
+      "[2025-10-11T05:48:47+00:00] Matthew Hart: 'Guys, our current DNN licenses expire on Tuesday night at 11 pm, October 14, 2025.'"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket was closed after customer confirmed satisfaction and thanked the team, indicating proper resolution.",
+    "evidence": [
+      "[2025-10-22T17:34:06+00:00] Matthew Hart: 'Thank you, you guys were great! -Matt'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This was an urgent priority ticket with a hard deadline (licenses expiring Oct 14), but customer was stuck with AI providing broken links for ~24 hours before human intervention, despite expressing urgency and requesting escalation.",
+    "evidence": [
+      "[2025-10-11T06:07:24+00:00] Matthew Hart: 'When can expect actual help with this issue? We know the deadline. Can you guarantee you'll help us before the night of October'",
+      "[2025-10-11T05:48:47+00:00] Matthew Hart: 'Guys, our current DNN licenses expire on Tuesday night at 11 pm, October 14, 2025.'",
+      "[2025-10-10T18:29:43+00:00] Matthew Hart: 'Also, I think we need to escalate this issue. I can't click the escalate button though, it's greyed out.'"
+    ]
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI provided broken/404 links that wasted customer time, and the AI eventually failed requiring human intervention ('Andon cord has been pulled').\",\n    \"evidence\": [\n      \"[2025-10-10T16:43:55+00:00] Matthew Hart: 'Support, every link/URL you give us is bad, or returns a 404 HTTP error. We don't know how to respond to this?'\",\n      \"[2025-10-10T18:03:35+00:00] Cu Chulainn AI Manager: 'The process has failed and andon cord has been pulled for the following reason: **Pulling Ando'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer was trapped interacting with AI (Cu Chulainn) from Oct 10 00:40 to Oct 10 18:03, receiving multiple AI responses with broken links before AI finally failed and human took over on Oct 11.\",\n    \"evidence\": [\n      \"[2025-10-10T16:43:55+00:00] Matthew Hart: 'Support, every link/URL you give us is bad, or returns a 404 HTTP error.'\",\n      \"[2025-10-10T18:01:46+00:00] Matthew Hart: 'thank you for this reply. Maybe we should have a meeting? On Zoom or Teams? This is because, we cannot install these licenses you've j'\",\n      \"[2025-10-10T18:03:35+00:00] Cu Chulainn AI Manager: 'The process has failed and andon cord has been pulled'\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No clear evidence of support ignoring previously provided information or requesting duplicate data.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Time to first human response was 50.7 hours (over 2 days), and max gap between responses was 171.4 hours (over 7 days), despite urgent priority and looming deadline.\",\n    \"evidence\": [\n      \"[2025-10-11T06:07:24+00:00] Matthew Hart: 'When can expect actual help with this issue? We know the deadline. Can you guarantee you'll help us before the night of October'\",\n      \"[2025-10-11T05:48:47+00:00] Matthew Hart: 'Guys, our current DNN licenses expire on Tuesday night at 11 pm, October 14, 2025.'\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket was closed after customer confirmed satisfaction and thanked the team, indicating proper resolution.\",\n    \"evidence\": [\n      \"[2025-10-22T17:34:06+00:00] Matthew Hart: 'Thank you, you guys were great! -Matt'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"This was an urgent priority ticket with a hard deadline (licenses expiring Oct 14), but customer was stuck with AI providing broken links for ~24 hours before human intervention, despite expressing urgency and requesting escalation.\",\n    \"evidence\": [\n      \"[2025-10-11T06:07:24+00:00] Matthew Hart: 'When can expect actual help with this issue? We know the deadline. Can you guarantee you'll help us before the night of October'\",\n      \"[2025-10-11T05:48:47+00:00] Matthew Hart: 'Guys, our current DNN licenses expire on Tuesday night at 11 pm, October 14, 2025.'\",\n      \"[2025-10-10T18:29:43+00:00] Matthew Hart: 'Also, I think we need to escalate this issue. I can't click the escalate button though, it's greyed out.'\"\n    ]\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60218070
+}

@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS provides a generic explanation and links, but there is not enough ticket text to confirm it is incorrect, misleading, or part of repeated boilerplate. There is also no customer feedback indicating the response was wrong or unhelpful.",
+    "evidence": [
+      "ATLAS commented publicly: \"This type of warning typically appears when a client detects that an SSL/TLS certificate is either expired or does not match expectations.\"",
+      "ATLAS commented publicly: \"As a workaround, users may be able to bypass the message (if local policy and security guidelines permit), but this is not recommended for long-term use due to potential security concerns.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one AI (ATLAS) public response and no evidence the customer asked for a human or got stuck in a repetitive AI loop.",
+    "evidence": [
+      "Kayako - ticket id 60231299 // ATLAS commented publicly: \"Dear Stefan, Thank you for bringing to our attention the issue regarding the expired or changed certificate...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not ask the customer to repeat already-provided information, and the customer does not complain about having to repeat details or that prior information was ignored.",
+    "evidence": [
+      "Customer commented publicly: \"today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed? This leads to a security message for users of the Kerio Connect Desktop Mail Client\"",
+      "ATLAS commented publicly: \"Thank you for bringing to our attention the issue regarding the expired or changed certificate at https://redirects.gfikerioconnect.com/\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The interaction log shows an initial response within the same hour, and there is no customer-facing follow-up indicating they waited days for an update. CSV metrics alone are insufficient to mark delays without customer-facing evidence of waiting/impact during silence.",
+    "evidence": [
+      "CSV: initialResponseTime=44",
+      "Customer [2025-10-29T08:27:13+00:00] ... ATLAS [2025-10-29T08:27:55+00:00]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in CSV, but the customer\u2019s public request is for GFI to fix an expired/changed certificate urgently, and the visible conversation does not show confirmation that the certificate issue was fixed before closure.",
+    "evidence": [
+      "Customer commented publicly: \"please fix this quickly!\"",
+      "Customer commented publicly: \"today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed? This leads to a security message for users of the Kerio Connect Desktop Mail Client\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-08 09:40:54"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer expresses urgency and mentions multiple users seeing a security warning, but there is no explicit P1/SEV1/outage/production-down language, and there is not enough evidence of prolonged generic handling or failure to escalate.",
+    "evidence": [
+      "Customer commented publicly: \"This leads to a security message for users of the Kerio Connect Desktop Mail Client\"",
+      "Customer commented publicly: \"please fix this quickly!\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60231299
+}

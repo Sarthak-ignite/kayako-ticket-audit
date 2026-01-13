@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses contain repetitive, generic boilerplate (thanking the customer, stating understanding) and short private notes like 'Requesting more information' without actionable next steps. The public replies are high-level and do not show tailored troubleshooting or resolution steps despite multiple customer updates.",
+    "evidence": [
+      "[2025-09-09T11:15:01+00:00] (AI) ATLAS: \"Thank you for your candid feedback. We understand...\" (generic acknowledgement)",
+      "[2025-09-09T11:06:55+00:00] (AI) ATLAS: \"Thank you for contacting us. We understand that scheduled scanning is not working...\" (generic acknowledgement)",
+      "[2025-09-09T11:14:38+00:00] (AI) ATLAS: \"Requesting more information\" (private \u2014 minimal content)",
+      "[2025-09-09T11:06:39+00:00] (AI) ATLAS: \"Requesting more information\" (private \u2014 minimal content)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "AI repeatedly asks for more information and produces similar canned replies, while the customer reports they have already provided diagnostics and followed steps. This indicates the customer may be stuck in an AI loop rather than progressing toward human intervention or resolution.",
+    "evidence": [
+      "[2025-09-09T11:29:21+00:00] (Employee) asim.mehmood: \"Please find attached the image... We have already performed all the steps provided by the support te...\"",
+      "[2025-09-09T11:14:38+00:00] (AI) ATLAS: \"Requesting more information\"",
+      "[2025-09-09T11:06:39+00:00] (AI) ATLAS: \"Requesting more information\"",
+      "[2025-09-16T06:12:00+00:00] (AI) ATLAS: public: another generic reply \u2014 indicates repeated, similar AI interactions"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Customer explicitly stated that partners followed all advised steps and attached a reference image and logs, yet AI still posts 'Requesting more information' and generic replies, indicating it did not acknowledge or act on the provided artifacts.",
+    "evidence": [
+      "[2025-09-09T11:29:21+00:00] (Employee) asim.mehmood: \"Please find attached the image shared by our partners for reference. We have already performed all the steps provided by your team...\"",
+      "[2025-09-09T11:14:38+00:00] (AI) ATLAS: \"Requesting more information\"",
+      "[2025-09-09T11:06:39+00:00] (AI) ATLAS: \"Requesting more information\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a gap of several days between AI/public responses. Initial exchange on 2025-09-09 includes multiple messages, then next public AI message is on 2025-09-16 \u2014 a 7-day gap, which is a significant delay for a disruptive scheduled-scan issue described by the customer.",
+    "evidence": [
+      "[2025-09-09T11:06:55+00:00] (AI) ATLAS: public message about scheduled scanning issue",
+      "[2025-09-16T06:12:00+00:00] (AI) ATLAS: public reply (seven days later)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence in the provided interaction log that the ticket was closed prematurely or that the customer gave up. The customer explicitly asked to keep the ticket open.",
+    "evidence": [
+      "[2025-09-16T06:10:59+00:00] (Employee) asim.mehmood: \"Keep this ticket open.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer mentions significant business impact and a banking environment, the ticket does not explicitly state a P1/SEV1 classification. While AI replies are generic, there is no clear, explicit evidence that a declared P1/SEV1 incident was mishandled (i.e., lack of escalation) in the log provided.",
+    "evidence": [
+      "[2025-09-09T11:15:01+00:00] (AI) ATLAS: mentions disruption in a banking environment (shows impact) but no explicit P1 tag or documented failed escalation"
+    ]
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60193443
+}

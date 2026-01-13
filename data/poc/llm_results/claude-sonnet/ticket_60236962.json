@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient information to assess AI quality. The ticket only shows a private comment acknowledging a conversation occurred, but doesn't include the actual AI conversation content.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of looping or customer being stuck. The ticket shows the AI conversation concluded and a summary was provided, suggesting the interaction completed.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No evidence of context being ignored. The ticket only contains one interaction acknowledging a prior conversation.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No delays detected. The ticket metadata shows max gap between responses is 0.0 hours, and only one timestamped interaction is visible.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Cannot definitively determine premature closure. While the ticket is closed, there's no evidence the customer was waiting for information or expressed dissatisfaction. The AI conversation appears to have concluded.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Not applicable. This is a normal priority ticket, not P1/Sev1, so high-priority handling criteria don't apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient information to assess AI quality. The ticket only shows a private comment acknowledging a conversation occurred, but doesn't include the actual AI conversation content.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of looping or customer being stuck. The ticket shows the AI conversation concluded and a summary was provided, suggesting the interaction completed.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of context being ignored. The ticket only contains one interaction acknowledging a prior conversation.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"No delays detected. The ticket metadata shows max gap between responses is 0.0 hours, and only one timestamped interaction is visible.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot definitively determine premature closure. While the ticket is closed, there's no evidence the customer was waiting for information or expressed dissatisfaction. The AI conversation appears to have concluded.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Not applicable. This is a normal priority ticket, not P1/Sev1, so high-priority handling criteria don't apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60236962
+}

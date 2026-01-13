@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI/automation activity appears to spam internal notes and repeatedly put the ticket on hold without progressing the customer request; the compliance automation also reports an error rather than producing documents.",
+    "evidence": [
+      "[2025-12-03T08:34:08+00:00] (AI) Cu Chulainn AI Manager: \"Attempted to run compliance_documents_provider for this ticket. Received response: \\\"Executio\"",
+      "[2025-12-08T22:36:14+00:00] (AI) Cu Chulainn AI Manager: \"Received response from compliance_documents_provider: \\\"Execution completed. Error: This is a\"",
+      "[2025-12-08T04:06:54+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 168 hour(s)\"",
+      "[2025-12-08T22:31:58+00:00] (AI) Centralsupport-ai-acc: \"Placing on hold for 168 hour(s)\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The AI posts essentially the same public follow-up twice and logs the same internal action ('Requesting more information'), indicating a loop rather than forward movement.",
+    "evidence": [
+      "[2025-12-03T08:02:08+00:00] (AI) ATLAS commented privately: \"Requesting more information\"",
+      "[2025-12-03T08:17:10+00:00] (AI) ATLAS commented privately: \"Requesting more information\"",
+      "[2025-12-03T08:02:14+00:00] (AI) ATLAS commented publicly: \"Thank you for your continued patience and your follow-ups regarding your vendor due diligence request...\"",
+      "[2025-12-03T08:17:28+00:00] (AI) ATLAS commented publicly: \"Thank you for your continued patience and for following up regarding your vendor due diligence request...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The visible excerpts do not show support explicitly re-asking for the same documents/logs after the customer provided them; while the AI says 'Requesting more information,' the specific repeated ask is not shown in the provided text.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket context shows extremely long wait times (time to first human and large maximum gaps), indicating multi-day delays between meaningful interactions.",
+    "evidence": [
+      "Ticket Context: \"Time to first human (hours): 384.9\"",
+      "Ticket Context: \"Max gap between responses (hours): 151.9\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The customer explicitly requested closure and the agent closed the ticket accordingly; there is no clear evidence the customer was still awaiting promised information at the time of closure.",
+    "evidence": [
+      "[2025-12-09T15:49:39+00:00] (Customer) Ben Smith: \"Thank you. You can close out this ticket.\"",
+      "[2025-12-09T15:49:49+00:00] (Employee) Phronesis: \"Thank you for your update; we are closing this ticket as requested.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked high priority, the issue appears to be a vendor due diligence/document request rather than an outage, and there is no evidence of inappropriate generic troubleshooting (cache/VPN/firewall) instead of escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI/automation activity appears to spam internal notes and repeatedly put the ticket on hold without progressing the customer request; the compliance automation also reports an error rather than producing documents.\",\n    \"evidence\": [\n      \"[2025-12-03T08:34:08+00:00] (AI) Cu Chulainn AI Manager: \\\"Attempted to run compliance_documents_provider for this ticket. Received response: \\\\\\\"Executio\\\"\",\n      \"[2025-12-08T22:36:14+00:00] (AI) Cu Chulainn AI Manager: \\\"Received response from compliance_documents_provider: \\\\\\\"Execution completed. Error: This is a\\\"\",\n      \"[2025-12-08T04:06:54+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 168 hour(s)\\\"\",\n      \"[2025-12-08T22:31:58+00:00] (AI) Centralsupport-ai-acc: \\\"Placing on hold for 168 hour(s)\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI posts essentially the same public follow-up twice and logs the same internal action ('Requesting more information'), indicating a loop rather than forward movement.\",\n    \"evidence\": [\n      \"[2025-12-03T08:02:08+00:00] (AI) ATLAS commented privately: \\\"Requesting more information\\\"\",\n      \"[2025-12-03T08:17:10+00:00] (AI) ATLAS commented privately: \\\"Requesting more information\\\"\",\n      \"[2025-12-03T08:02:14+00:00] (AI) ATLAS commented publicly: \\\"Thank you for your continued patience and your follow-ups regarding your vendor due diligence request...\\\"\",\n      \"[2025-12-03T08:17:28+00:00] (AI) ATLAS commented publicly: \\\"Thank you for your continued patience and for following up regarding your vendor due diligence request...\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The visible excerpts do not show support explicitly re-asking for the same documents/logs after the customer provided them; while the AI says 'Requesting more information,' the specific repeated ask is not shown in the provided text.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket context shows extremely long wait times (time to first human and large maximum gaps), indicating multi-day delays between meaningful interactions.\",\n    \"evidence\": [\n      \"Ticket Context: \\\"Time to first human (hours): 384.9\\\"\",\n      \"Ticket Context: \\\"Max gap between responses (hours): 151.9\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer explicitly requested closure and the agent closed the ticket accordingly; there is no clear evidence the customer was still awaiting promised information at the time of closure.\",\n    \"evidence\": [\n      \"[2025-12-09T15:49:39+00:00] (Customer) Ben Smith: \\\"Thank you. You can close out this ticket.\\\"\",\n      \"[2025-12-09T15:49:49+00:00] (Employee) Phronesis: \\\"Thank you for your update; we are closing this ticket as requested.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked high priority, the issue appears to be a vendor due diligence/document request rather than an outage, and there is no evidence of inappropriate generic troubleshooting (cache/VPN/firewall) instead of escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60243726
+}

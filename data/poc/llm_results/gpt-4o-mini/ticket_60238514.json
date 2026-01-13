@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There are no AI responses that exhibit generic filler or unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interaction does not indicate the customer was stuck in an AI loop and was able to communicate with a support agent.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support agent repeated a request for information that the customer had already provided multiple times, indicating a lack of awareness of previous details.",
+    "evidence": [
+      "Dear David, We've noticed that there is already a very similar number on your account: [2025-11-10T14:26:44+00:00]",
+      "the correct number is 5512175999 [2025-11-10T14:30:09+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant gap of over 26 hours between responses from the support agent, which could indicate a delay.",
+    "evidence": [
+      "[2025-11-09T20:44:55+00:00] (Customer) David OBrien: I still need number 5512175899 reactivated...",
+      "[2025-11-10T14:26:44+00:00] (Employee) Shaquille De Lancy: Dear David, Thank you for following up on this issue."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed appropriately after providing direction, and there is no evidence of the customer expressing dissatisfaction with the closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket does not relate to a high-priority or severe issue as defined by the format and context.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no AI responses that exhibit generic filler or unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction does not indicate the customer was stuck in an AI loop and was able to communicate with a support agent.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support agent repeated a request for information that the customer had already provided multiple times, indicating a lack of awareness of previous details.\",\n    \"evidence\": [\"Dear David, We've noticed that there is already a very similar number on your account: [2025-11-10T14:26:44+00:00]\", \"the correct number is 5512175999 [2025-11-10T14:30:09+00:00]\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There was a significant gap of over 26 hours between responses from the support agent, which could indicate a delay.\",\n    \"evidence\": [\"[2025-11-09T20:44:55+00:00] (Customer) David OBrien: I still need number 5512175899 reactivated...\", \"[2025-11-10T14:26:44+00:00] (Employee) Shaquille De Lancy: Dear David, Thank you for following up on this issue.\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed appropriately after providing direction, and there is no evidence of the customer expressing dissatisfaction with the closure.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket does not relate to a high-priority or severe issue as defined by the format and context.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60238514
+}

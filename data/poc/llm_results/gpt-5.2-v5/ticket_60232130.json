@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Support provided a definitive root-cause statement (segmentation faults/firmware defect) and then later publicly retracted it as incorrect. This is customer-facing contradictory diagnosis, indicating the earlier analysis was wrong/misleading.",
+    "evidence": [
+      "\u201cThe sysdump shows 3,851 segmentation faults where collectord repeatedly crashes and restarts, consuming excessive CPU resources.\u201d",
+      "\u201cAfter reviewing the logs again, the initial diagnosis was incorrect.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The only clear evidence of the customer requesting a live agent and interacting with AI afterward appears in private/internal ATLAS transcript notes, not in customer-facing/public ticket updates. A human agent did later respond publicly in the ticket.",
+    "evidence": [
+      "\u201cKayako - ticket id 60232130 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\u201d",
+      "\u201cKayako - ticket id 60232130 // Randall Shawver commented publicly: Dear Santosh,\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no customer-facing evidence that support asked the customer to re-provide the same information after the customer stated it was already provided, nor a clear instance of support proceeding as if key provided context did not exist.",
+    "evidence": [
+      "\u201cPrior to the upgrade, were you experiencing issues? Is this why you performed the upgrade?\u201d",
+      "\u201cDid you receive any errors or encounter any issues during the upgrade to v7.6.3?\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "While the customer complains (in private comments) about a 24-hour lack of response, there is no public/support-facing acknowledgement or apology for delay, and the strong delay evidence is not present in public comments.",
+    "evidence": [
+      "\u201cThe case was raised in Critical Priority, and no show for 24 hours.\u201d",
+      "\u201cDear Santosh,\n\nI've completed the analysis of your sysdump and identified the root cause.\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The agent includes a standard warning about the ticket staying open for one week unless the customer responds, but there is no visible closure/auto-closure event in the text, and no explicit statement that the case was closed while the issue remained unresolved.",
+    "evidence": [
+      "\u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.\u201d",
+      "\u201cPlease inform us if you have any issues with the downgrade.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the situation is described as critical/business-impacting (mostly in private notes), the public handling includes analysis, a concrete mitigation (rollback), and escalation to engineering, rather than prolonged generic low-severity troubleshooting.",
+    "evidence": [
+      "\u201cLONG-TERM FIX:\n\nI have escalated this to our engineering team as an Urgent defect.\u201d",
+      "\u201cI recommend we rollback your firmware to the previous version immediately:\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60232130
+}

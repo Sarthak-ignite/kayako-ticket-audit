@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear evidence in the provided interactions that AI responses were generic, provided wrong information, or made unfulfilled promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The interactions do not show the customer being stuck in an AI loop; there is human intervention present.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear indication that the support staff ignored prior information from the customer; the agent acknowledged the customer's request.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were substantial delays between interactions, particularly the time to first human response of 88.8 hours.",
+    "evidence": [
+      "[2025-11-21T14:52:57+00:00] (Customer) Fredrik Scheike: Hi team, this is approved by the BU - please execute!",
+      "[2025-11-25T07:42:16+00:00] (Employee) Matthew Mrosko: Picked this up manually as it's rather urgent."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not appear to be closed prematurely; the last employee comment indicates action was being taken after the customer's request.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of mishandling of a high-priority issue; while there were delays, the context does not suggest trivial troubleshooting.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence in the provided interactions that AI responses were generic, provided wrong information, or made unfulfilled promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions do not show the customer being stuck in an AI loop; there is human intervention present.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear indication that the support staff ignored prior information from the customer; the agent acknowledged the customer's request.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were substantial delays between interactions, particularly the time to first human response of 88.8 hours.\",\n    \"evidence\": [\"[2025-11-21T14:52:57+00:00] (Customer) Fredrik Scheike: Hi team, this is approved by the BU - please execute!\", \"[2025-11-25T07:42:16+00:00] (Employee) Matthew Mrosko: Picked this up manually as it's rather urgent.\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not appear to be closed prematurely; the last employee comment indicates action was being taken after the customer's request.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of mishandling of a high-priority issue; while there were delays, the context does not suggest trivial troubleshooting.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60248266
+}

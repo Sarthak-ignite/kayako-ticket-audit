@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS clearly misunderstands the customer\u2019s technical error and responds with an irrelevant license-key validation flow, which does not address the Outlook Connector restore script error.",
+    "evidence": [
+      "Daniel Riek: using the outlook connector and trying to restore an email I get a script error. Line :15 Char: 16485 Error: sys.webforms.pagerequestmanagerservererrorexception.",
+      "Chat Support: Checking the validity of this license key: pagerequestmanagerservererrorexception ..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The provided excerpt shows only a single AI mis-response; there\u2019s no visible repeated questioning, looping steps, or explicit customer frustration / request for a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer gives specific context (Outlook Connector restore operation + script error details), but ATLAS ignores that context and treats the error text as a license key.",
+    "evidence": [
+      "using the outlook connector and trying to restore an email I get a script error. Line :15 Char: 16485 Error: sys.webforms.pagerequestmanagerservererrorexception.",
+      "Checking the validity of this license key: pagerequestmanagerservererrorexception"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps are visible in the snippet; the interaction appears to be within the same chat transcript.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket content shown is exclusively an AI chat transcript with no evidence of human follow-up; this matches the provided detection signal that only AI interactions exist (risk of unresolved issue being left without human engagement).",
+    "evidence": [
+      "Kayako - ticket id 60163212 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!",
+      "Here is a record of your conversation for easy reference: Chat Support:"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There are no explicit severity/urgency indicators (SEV1/P1/outage/production down) or statements of business-wide impact in the provided text.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60163212
+}

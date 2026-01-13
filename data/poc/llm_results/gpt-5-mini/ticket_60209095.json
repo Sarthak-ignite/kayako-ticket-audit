@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI posted repeated, unhelpful 'Placing on hold for 9999 hour(s)' messages which are generic, make an unrealistic promise, and do not advance the ticket.",
+    "evidence": [
+      "\"Placing on hold for 9999 hour(s)\" [2026-01-05T10:55:52+00:00]",
+      "\"Placing on hold for 9999 hour(s)\" [2026-01-05T10:39:47+00:00]",
+      "\"Placing on hold for 9999 hour(s)\" [2026-01-03T19:43:33+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the AI repeatedly requested the same information or prevented escalation to a human; humans are participating in the thread.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support responses reference escalation and development investigation; there are no requests for already-provided logs/screenshots or signs of ignoring customer-provided details.",
+    "evidence": [
+      "\"The issue is still with the Development team. We are monitoring their progress and will up\" [2026-01-05T10:39:28+00:00]",
+      "\"We want to let you know that this issue has now been escalated and is actively being investigated by our development\" [2026-01-03T19:43:22+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between messages and the ticket metadata indicates long delays; examples show AI hold actions on 2026-01-03 and human engineering comments appearing days later.",
+    "evidence": [
+      "\"Placing on hold for 9999 hour(s)\" [2026-01-03T19:43:33+00:00]",
+      "\"Dear Rana, At this time, we don\u2019t have a confirmed timeline to share. The resolution depends on the Development team's queue and\" [2026-01-05T10:55:34+00:00]",
+      "\"GHI Engineering - 16366 // daniel-wachira commented: I believe this is a performance-related problem.\" [2026-01-06T22:03:21Z]"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is on hold but not closed in the logs, and there is no explicit closure while the customer was awaiting promised info.",
+    "evidence": [
+      "\"Placing on hold for 9999 hour(s)\" [2026-01-05T10:55:52+00:00]",
+      "\"The issue is still with the Development team. We are monitoring their progress and will up\" [2026-01-05T10:39:28+00:00]"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence of only generic end-user troubleshooting for a high-priority issue; the thread shows escalation to development and engineering analysis.",
+    "evidence": [
+      "\"We want to let you know that this issue has now been escalated and is actively being investigated by our development\" [2026-01-03T19:43:22+00:00]",
+      "\"For the KERNELNOTIFICATIONS warnings, I'll prepare a fix. That one is caused by excessive amount of blocked traffic\" [2026-01-06T18:46:00Z]"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI posted repeated, unhelpful 'Placing on hold for 9999 hour(s)' messages which are generic, make an unrealistic promise, and do not advance the ticket.\",\n    \"evidence\": [\n      \"\\\"Placing on hold for 9999 hour(s)\\\" [2026-01-05T10:55:52+00:00]\",\n      \"\\\"Placing on hold for 9999 hour(s)\\\" [2026-01-05T10:39:47+00:00]\",\n      \"\\\"Placing on hold for 9999 hour(s)\\\" [2026-01-03T19:43:33+00:00]\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence the AI repeatedly requested the same information or prevented escalation to a human; humans are participating in the thread.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support responses reference escalation and development investigation; there are no requests for already-provided logs/screenshots or signs of ignoring customer-provided details.\",\n    \"evidence\": [\n      \"\\\"The issue is still with the Development team. We are monitoring their progress and will up\\\" [2026-01-05T10:39:28+00:00]\",\n      \"\\\"We want to let you know that this issue has now been escalated and is actively being investigated by our development\\\" [2026-01-03T19:43:22+00:00]\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between messages and the ticket metadata indicates long delays; examples show AI hold actions on 2026-01-03 and human engineering comments appearing days later.\",\n    \"evidence\": [\n      \"\\\"Placing on hold for 9999 hour(s)\\\" [2026-01-03T19:43:33+00:00]\",\n      \"\\\"Dear Rana, At this time, we don\u2019t have a confirmed timeline to share. The resolution depends on the Development team's queue and\\\" [2026-01-05T10:55:34+00:00]\",\n      \"\\\"GHI Engineering - 16366 // daniel-wachira commented: I believe this is a performance-related problem.\\\" [2026-01-06T22:03:21Z]\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is on hold but not closed in the logs, and there is no explicit closure while the customer was awaiting promised info.\",\n    \"evidence\": [\n      \"\\\"Placing on hold for 9999 hour(s)\\\" [2026-01-05T10:55:52+00:00]\",\n      \"\\\"The issue is still with the Development team. We are monitoring their progress and will up\\\" [2026-01-05T10:39:28+00:00]\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of only generic end-user troubleshooting for a high-priority issue; the thread shows escalation to development and engineering analysis.\",\n    \"evidence\": [\n      \"\\\"We want to let you know that this issue has now been escalated and is actively being investigated by our development\\\" [2026-01-03T19:43:22+00:00]\",\n      \"\\\"For the KERNELNOTIFICATIONS warnings, I'll prepare a fix. That one is caused by excessive amount of blocked traffic\\\" [2026-01-06T18:46:00Z]\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60209095
+}

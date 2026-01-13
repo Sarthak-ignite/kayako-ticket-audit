@@ -1,0 +1,151 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "northplains_pdct_xinet",
+        "requester": {
+          "id": 60322272,
+          "uuid": "1b226070-c661-5f3d-a6b4-87547a77d400",
+          "full_name": "John Kingsbury",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/1b226070-c661-5f3d-a6b4-87547a77d400?1767709409",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60033565,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 323812,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "73.114.44.11",
+          "last_seen_at": "2026-01-06T14:23:29+00:00",
+          "last_active_at": "2026-01-06T14:23:29+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60322272",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@ef02660c30a40a8a9e2e1eaa8841c9131b35e4d5",
+          "password_updated_at": "2025-10-28T17:04:42+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T14:23:29+00:00",
+          "last_activity_at": "2026-01-06T14:23:29+00:00",
+          "created_at": "2025-03-17T14:51:39+00:00",
+          "updated_at": "2026-01-06T14:23:29+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60322272"
+        },
+        "ticket_idt": 60234884
+      },
+      "interactions": [
+        [
+          "2025-11-11T08:40:11+00:00",
+          "Kayako - ticket id 60234884 // Matthew Mrosko commented privately:  Found the errant run from November 7th: https://us-east-1.console.aws.amazon.com/cloudwatch/home?region=us-east-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Fcs-ai-xinet-license/log-events/2025$252F11$252F07$252F$255B$2524LATEST$255D6058d347bc54432aaf18ae0e95d9d430 \n\n It's weird, the request just ends after finding a partial match with the previous license. \n\n Then they do the exact same thing later, and it gives the same result. \u00a0 \n\n It looks like Voiceflow checks for any previous license, previous licenses are found, then it just gives up. \u00a0I need to understand why. \n\n The code doesn't have any issues. \n\n I'm testing this with the customer's payload in Voiceflow... \n\n I was able to generate an emergency license using Voiceflow: \nimage \n It's possible the customer is having some other issues, but without an execution log, we can't really know. "
+        ],
+        [
+          "2025-11-11T08:09:28+00:00",
+          "Kayako - ticket id 60234884 // Matthew Mrosko commented publicly: Dear john,\n\nWe apologize for the delay in providing this license. \u00a0We will look into the conditions for the chatbot to try and understand why it did not provide an emergency license.\n\nPlease find below the details for your new Xinet license key that you can start using immediately.\n\nCustomer Name: CGX Solutions\nSerial Number: 45873\nHardware ID: XgIUlSoAqbLA\nLicense Key: KSvzHppcObsHYQYEBHZmTxNEwTLs\nNo. of Users & Version: 10 v20\nExpiration Date: 11/25/2025\n\nThank you for using Xinet and wish you a great day!\n\nBest Regards,\nMatthew Mrosko\nXinet Support Team "
+        ],
+        [
+          "2025-11-11T08:07:47+00:00",
+          "Kayako - ticket id 60234884 // Matthew Mrosko commented privately:  So this is for a change in Hardware ID. \u00a0No idea why the ATLAS chat one couldn't find it. \u00a0It's there. \n\n License Generated successfully: \nimage \n License Spreadsheet updated successfully. \n\n Maybe I should review the context of why this failed? \u00a0That would be take yet even more time. \n\n"
+        ],
+        [
+          "2025-11-10T15:37:21+00:00",
+          "Kayako - ticket id 60234884 // Xavier A Villarroel commented publicly: Dear John Kingsbury,\n\nWe have received your escalation and we are currently working on it.\n\nPlease rest assured that we understand the urgency of your request regarding the emergency license associated with Serial 45873. Our team is actively reviewing all relevant details and will ensure that we address this matter as efficiently as possible.\n\nBest regards,\nNorthplains Xinet Support Team"
+        ],
+        [
+          "2025-11-10T15:26:35+00:00",
+          "Kayako - ticket id 60234884 // Centralsupport-ai-acc commented privately: [customer_escalation]\n\nThe customer escalated the Case.\n\nThe customer message is:No Response\n\nThe severity is: complete_outage\n\n"
+        ],
+        [
+          "2025-11-10T15:25:47+00:00",
+          "Kayako - ticket id 60234884 // John Kingsbury commented privately: Please, Please, Please can we get an emergency license for CGX with serial number 45873 and hardwareID XgIUlSoAqbLA with 10 users on version 2023.6.1? I can not use your AI chat for this as it says it can not locate a license for Serial number 45873. Ive tried when i opened this and today for both emergency license and Demo license all with the same results."
+        ],
+        [
+          "2025-11-07T17:16:38+00:00",
+          "Kayako - ticket id 60234884 // John Kingsbury commented privately: Can we please get an emergency license cut for CGX with serial number 45873 and hardwareID XgIUlSoAqbLA with 10 users on version 2023.6.1? I can not use your AI chat for this as it says it can not locate a license for Serial number 45873. Ive tried when i opened this and today for both emergency license and Demo license all with the same results."
+        ],
+        [
+          "2025-11-05T16:42:10+00:00",
+          "Kayako - ticket id 60234884 // Dave Lawrence commented privately: What is the holdup?"
+        ],
+        [
+          "2025-11-03T16:42:04+00:00",
+          "Kayako - ticket id 60234884 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-11-03T16:41:03+00:00",
+          "Kayako - ticket id 60234884 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\n--- AI Assistant ---\n\n Hi, john kingsbury ! \ud83d\udc4b\n\nThis is the Xinet ATLAS support chat. \n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \n\n--- AI Assistant ---\n\n Please select an option below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of Xinet ATLAS Support Chat [https://xinet.support.northplains.com/article/50198]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \n\n--- Customer (john kingsbury) ---\n\n Button selection: [\ud83d\udd27 I need Technical Support] \n\n--- AI Assistant ---\n\n Walk me through what's happening.\n\nDon't hold back on the details \u2013 the more you can share about the issue, any error messages you're seeing, or steps you've already tried, the better equipped I'll be to assist you. \ud83d\udcaa\n\nTalk to me like you would talk to a real agent. Please, aim for more than 10 words so my answers can be relevant to your specific issue.\n\ud83d\udca1Getting the most out of Xinet ATLAS Support Chat [https://xinet.support.northplains.com/article/50198]\n\nIf I'm unable to help you, I can patch you through to a Live agent, along with the information you supply to me during this session, so that our team has something to work with from the get-go. \n\n--- Customer (john kingsbury) ---\n\n Why can i not generate an emergency license for Serial number 45873 at CGX? \n\n--- AI Assistant ---\n\n Just to confirm... do you need help generating a license? \n\n--- Customer (john kingsbury) ---\n\n Button selection: [\u2757 No, you misunderstood] \n\n--- AI Assistant ---\n\n Sorry for the misunderstanding.\nLet me try to find something about this in my knowledge base. \ud83e\udde0 \n\n--- AI Assistant ---\n\n I understand you're having trouble generating an emergency license for Serial number 45873 at CGX.\n\nBased on our information, emergency licenses cannot be self-generated. To request an emergency license, you'll need to submit a ticket to NorthPlains Xinet Support. Here's what you should do:\n\n \t* Submit a ticket selecting Licensing > Emergency License as the request type\n \t* Set the priority to highest\n \t* Include the following information in your request:\n\n- Reseller Name\n- Customer Company Name\n- Email address to receive the license key\n- Account Manager Name\n- Hardware ID\n- Serial Number (45873 in your case)\n- Number of users that will authenticate against the system\n- Xinet Version\n- Studio (telescope): Yes or No\n- License Type: Standard, Redundant, B, C, or SDK\n\nEmergency licenses are typically issued for 45 days to address situations where your production Xinet server becomes unlicensed or your license has expired.\n\nIf you need immediate assistance with this process, please ask for a support agent in this chat. \n-------------------------\n For more details check:\n\ud83d\udc49 Getting an Emergency License [https://xinet.support.northplains.com/article/49549]\n\ud83d\udc49 \u200b\u200bHow to request or renew a license as a Xinet Customer [https://xinet.support.northplains.com/article/49558] \n\n--- AI Assistant ---\n\n Take all the time you need to read through the provided resources \u261d\ufe0f\nI'll stay here in case you need anything else \ud83d\ude00 \n-------------------------\n Was this helpful? \n\n--- Customer (john kingsbury) ---\n\n Button selection: [\u274c No, it didn't help] \n\n--- AI Assistant ---\n\n Checking to see if I have a better answer in store, based on historical tickets and any files you may have uploaded earlier \ud83d\ude09\n\n\u2139\ufe0f The advanced analysis takes a bit of time, but no more than 5 minutes. If you can't wait any longer and you wish to abort, simply say: ABORT \n\n--- AI Assistant ---\n\n \ud83d\udd0dResearch progress at 0\n\n\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\n\nNext update in \u23f1\ufe0f 30 seconds. Please stand by... \n\n--- AI Assistant ---\n\n \ud83d\udd0dResearch progress at 0\n\n\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\u2591\n\nNext update in \u23f1\ufe0f 30 seconds. Please stand by... \n\n--- Customer (john kingsbury) ---\n\n open a ticket please \n\n--- AI Assistant ---\n\n Of course! I do understand some things are better handled by my human colleagues.\n\nLet me get some further help for you! \n\n--- Customer (john kingsbury) ---\n\n Button selection: [\ud83d\udce9 Raise a ticket] \n\n--- AI Assistant ---\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \n\n--- AI Assistant ---\n\n It looks like you might not have anything to add?\nJust a reminder a ticket will be automatically created in 3 minutes, I'll proceed with the information I already have \ud83d\ude03 \n\n--- Customer (john kingsbury) ---\n\n Unable to get an emergency license for 45873 for CGX with hardwareID XgIUlSoAqbLA. The emergency license is supposed to allow you to get licenses for when the hardwareID changes. They are on 2023.6.1 with 10 users. The reseller is BPX. \n\n--- AI Assistant ---\n\n I'm creating a ticket for you with the information you've provided, allow me a few moments while I work on this \u23f3 \n\n--- AI Assistant ---\n\n I've automatically set the ticket subject to: Emergency license request for Serial 45873\n\nDoes that work for you?\n\n \t* If it does, simply say YES or use the below button to confirm \ud83d\udc47\n \t* If not, please directly type in the ticket subject of your choosing below \ud83d\ude09\n\n"
+        ],
+        [
+          "2025-11-03T16:41:00+00:00",
+          "Kayako - ticket id 60234884 // ATLAS commented privately: **Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction, which means that they may have uploaded some files for AI analysis.** Please login to UPLOAD using your Devfactory AD credentials to verify: https://files.eswsecuretransfers.com/agents/?user_id=john.kingsbury@bluprintx.com&session_uuid=ab3cf66c-5188-4fcb-8b87-ec48352d8e0e"
+        ],
+        [
+          "2025-11-03T16:40:58+00:00",
+          "Kayako - ticket id 60234884 // ATLAS commented privately: --- Ticket generated by Xinet AI chat on behalf of john kingsbury ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * Why can i not generate an emergency license for Serial number 45873 at CGX?<br>\n  * open a ticket please<br>\n  * Unable to get an emergency license for 45873 for CGX with hardwareID XgIUlSoAqbLA. The emergency license is supposed to allow you to get licenses for when the hardwareID changes. They are on 2023.6.1 with 10 users. The reseller is BPX.<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 12,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

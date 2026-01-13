@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses are largely generic documentation/link dumps and speculative explanations (\u201cknown limitation / multi-role\u201d) without actually investigating the forum-specific inconsistency the customer demonstrated (works in other communities, fails only in Emerging Leaders). The customer repeatedly asked for \u201cnext steps\u201d and \u201cinvestigate urgently,\u201d but support provided no concrete action plan (e.g., reproduce internally, collect tenant/report IDs, escalate to engineering, confirm bug/defect ID, provide workaround that actually changes outcome).",
+    "evidence": [
+      "Customer: \"Can we please receive a response on the following ASAP? This has now been open for 18 days without resolution and Community Managers are unable to conduct metric analysis.\"",
+      "ATLAS: \"Refer to our article Apply filters to Community Analytics reports... Tips on using advanced filters...\" (links + generic guidance rather than confirming root cause or validating bug for the specific forum)",
+      "ATLAS: \"This is a known limitation of the filtering logic in Community Analytics.\" (asserted without showing verification steps or confirming it explains the forum-specific behavior)",
+      "Customer: \"I attempted all the solutions recommended in the previous email... none of these worked for the Emerging Leaders.\"",
+      "Customer: \"Can we please have someone investigate this urgently? Happy to get on a call to walk through if needed.\" (request for investigation, not more generic tips)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The ticket appears to be handled exclusively by ATLAS, with repeated, near-duplicate responses that restate the same \u201cknown limitation/multi-role/case sensitivity\u201d guidance even after the customer confirmed they tried the recommendations and provided screenshots/exports. No clear human handoff or escalation is visible despite repeated urgency and follow-ups.",
+    "evidence": [
+      "Repeated ATLAS pattern: \"Relevant Product Behavior and Limitations... known limitations when users have multiple roles assigned...\" (appears in multiple ATLAS replies, including 2025-07-23, 2025-07-31, 2025-08-07)",
+      "Customer: \"I attempted all the solutions recommended in the previous email... none of these worked for the Emerging Leaders.\" followed by another ATLAS response reiterating the same limitations/guidance.",
+      "Customer: \"Can you please provide a response on next steps to resolve?\" then ATLAS responds with another summary/limitations block rather than a concrete next-step investigation plan."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support continues to suggest previously attempted troubleshooting (e.g., cache/refresh) and leans on multi-role/role-name hygiene despite the customer already testing and isolating the issue to one forum and providing exports/screenshots demonstrating the logical contradiction (Role= works; Role!= fails). The responses do not incorporate the key context: forum-specific failure after cache fix succeeded elsewhere, indicating a potential data/config/reporting bug rather than user misunderstanding.",
+    "evidence": [
+      "Customer: \"...while clearing browsing cache worked for the other communities (Atria, LPL Innovators), none of these worked for the Emerging Leaders.\"",
+      "ATLAS (later): \"Sometimes, refreshing the report or clearing your browser cache can help apply the latest filter settings.\" (re-suggests a step the customer already said didn\u2019t work for Emerging Leaders)",
+      "Customer provided a controlled comparison: \"Role = ... Includes the correct individuals\" vs. \"Role does not equal ... Still includes these individuals\" (support does not pivot to deeper investigation based on this)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is clear evidence of prolonged non-response periods prompting multiple follow-ups. The customer explicitly reports extended time without any support response (12\u201318 days) and later \u201cover a month without resolution.\u201d Even if some of that time may relate to the prior referenced case, the experience documented here is of repeated chasing for updates.",
+    "evidence": [
+      "Embedded prior follow-up: \"This issue has been outstanding for 12 days without any response (Case #00448892).\"",
+      "Customer: \"This has now been open for 18 days without resolution\" (2025-07-22)",
+      "Customer: \"I have not received a response on the following after reaching out last week\" and \"open for over a month without resolution.\" (2025-08-07)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The customer states they are \u201creopen[ing] this ticket,\u201d strongly indicating the case was closed/auto-closed despite ongoing impact and without a confirmed resolution. Additionally, ATLAS set an auto-close expectation (\u201cone additional week\u201d) early, which increases the risk of closure while the customer is still validating and the issue persists.",
+    "evidence": [
+      "Customer: \"I would like to reopen this ticket. I am still having trouble...\" (2025-07-31)",
+      "ATLAS: \"If you require additional time to gather this information, please note that we will keep this ticket open for one additional week to accommodate your response.\" (sets closure window while problem is unresolved)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly communicates business impact and urgency (\u201cunable to conduct metric analysis,\u201d \u201cASAP,\u201d \u201cinvestigate urgently,\u201d \u201cover a month without resolution\u201d), yet support response remains standard/templated (requesting info, generic tips, documentation links) with no visible escalation, ownership, or time-bound plan. This reads like an urgent/product-bug scenario handled as routine troubleshooting.",
+    "evidence": [
+      "Customer: \"Community Managers are unable to conduct metric analysis.\"",
+      "Customer: \"Can we please have someone investigate this urgently?\"",
+      "Customer: \"...open for over a month without resolution.\"",
+      "ATLAS response style: long \u201cdocumentation/limitations\u201d explanation without stated escalation, engineering investigation, or target timeline for resolution."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60149875
+}

@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS replies with a generic acknowledgement and mainly points the customer to a status page instead of providing the requested detailed RCA (timeline, components, linkage between incidents). This does not address the specific asks in the ticket.",
+    "evidence": [
+      "Customer Fortinet ... has requested a detailed RCA following repeated chat queue delays and system latency ...",
+      "Please include in the RCA: \u2022 Confirmation of the technical root cause and whether both incidents are connected. \u2022 A detailed event timeline (detection \u2192 mitigation \u2192 recovery). \u2022 The affected system components and contributing factors. \u2022 Preventive actions and infrastructure improvements applied or planned.",
+      "ATLAS commented publicly: \"Thank you for reaching out... We understand how important uninterrupted service is...\"",
+      "ATLAS commented publicly: \"For the most up-to-date information, including the root cause analysis... we kindly ask you to refer to our official status page\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being trapped in repeated AI prompts, asking for a human, or being asked for the same information multiple times within the ticket.",
+    "evidence": [
+      "Customer (Brad Gerard) -- Button selection: [\ud83d\udce9 Raise a Ticket]",
+      "AI Assistant -- \"Could you please provide the URL of your Khoros instance?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support does not explicitly ask the customer to repeat already-provided details or repeat troubleshooting steps; the main failure is generic/non-actionable response rather than repeated requests for the same info.",
+    "evidence": [
+      "The customer reports that the same issue occurred on October 18th ... and again on October 22nd ...",
+      "ATLAS commented publicly: \"refer to our official status page\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer\u2019s initial request (10/23) asked for a detailed RCA, but the substantive/customer-facing RCA was not delivered until 10/29\u2014nearly 6 days later\u2014indicating a significant lag in providing the requested deliverable.",
+    "evidence": [
+      "[2025-10-23T18:45:42+00:00] \"has requested a detailed RCA...\"",
+      "[2025-10-29T11:35:33+00:00] \"Please find attached the customer-facing RCA for the Khoros Care incident.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown as closed; although there is an auto-closure warning, the interaction ends with an RCA being provided rather than closure without resolution.",
+    "evidence": [
+      "ATLAS commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\"",
+      "[2025-10-29T11:35:33+00:00] \"Please find attached the customer-facing RCA...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is an urgent, production-impacting, recurring incident request; the initial response routes the customer to a status page instead of providing direct incident handling/ownership and the ticket is placed on an extremely long hold, suggesting weak P1 handling.",
+    "evidence": [
+      "Customer (Brad Gerard) -- Button selection: [\ud83d\udd34 Urgent]",
+      "\"recent service disruption affecting your EMEA production instance\"",
+      "\"repeated chat queue delays and system latency\" ... \"again on October 22nd\" (recurrence)",
+      "ATLAS commented publicly: \"refer to our official status page\"",
+      "[2025-10-24T04:04:01+00:00] \"Placing on hold for 9999 hour(s)\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60227783
+}

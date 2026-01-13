@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is not enough clear evidence that AI responses are generic filler, factually wrong, or contain broken promises. The transcript shows several AI-generated replies and a file analysis snippet, but the visible content is truncated rather than demonstrably incorrect or filler. No explicit wrong facts or empty placeholders are present in the excerpts provided.",
+    "evidence": [
+      "Multiple AI responses are present (e.g., 2025-07-11T07:56:50, 08:06:30, 08:06:06) but the content is truncated rather than clearly incorrect."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer explicitly requested escalation to a human ('Please pass this ticket to human.') and an AI action 'Send to l1' was recorded shortly afterward (2025-07-11T08:11:46). That indicates escalation was initiated rather than the customer being stuck in a repeating AI loop.",
+    "evidence": [
+      "Customer: 'Please pass this ticket to human.' (2025-07-11T08:11:18+00:00)",
+      "AI action: 'Action: Send to l1' (2025-07-11T08:11:46+00:00)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear example of the support asking for information the customer already provided or ignoring provided logs in the excerpts. The interactions show the customer providing details and the AI producing file analysis and follow-ups, but no repeated requests for the same data are visible.",
+    "evidence": [
+      "Customer supplied details and a screenshot (multiple messages at 07:14\u201307:56).",
+      "AI produced a 'FILE ANALYSIS RESULTS' message (2025-07-11T08:06:06+00:00), suggesting the AI processed provided files rather than ignoring them."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All interactions in the ticket transcript occur within the same day and within a few hours (timestamps between 2025-07-11T07:14 and 2025-07-11T11:17). There is no evidence of multi-day delays.",
+    "evidence": [
+      "Earliest shown interaction: 2025-07-11T07:14:40+00:00",
+      "Latest shown interaction: 2025-07-11T11:17:08+00:00"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication in the provided transcript that the ticket was closed prematurely or that the customer gave up while waiting for promised information. The latest message is the employee's follow-up and there is no closure entry.",
+    "evidence": [
+      "No 'ticket closed' or similar status entries are present in the interaction excerpts.",
+      "Customer continued to post follow-ups (e.g., 2025-07-11T11:17:08+00:00)."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The transcript does not label the ticket as P1/SEV1 nor show signs of a high-priority incident receiving inadequate handling. The AI escalated to L1 when requested, and no evidence indicates that an urgent ticket was given only generic troubleshooting in lieu of immediate escalation.",
+    "evidence": [
+      "No priority/severity flag appears in the provided transcript.",
+      "AI action to 'Send to l1' (2025-07-11T08:11:46+00:00) indicates escalation rather than mishandling."
+    ]
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60100448
+}

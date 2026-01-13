@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI responses seem to acknowledge customer input and provide follow-up, rather than being purely generic or incorrect.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in an AI loop; interactions indicate proper human involvement.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI requested logs again despite the customer already providing them, which shows a lack of context awareness.",
+    "evidence": [
+      "[2025-12-08T11:24:19+00:00] (Customer) Ond\u0159ej \u0160abata: Please have someone look at the logs, otherwise, there's a high risk",
+      "[2025-12-08T11:16:26+00:00] (AI) ATLAS: Thank you for sharing the log files and confirming that you have already attempted all the previously suggested solutions"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The time to first human response (29.1 hours) and maximum gap between responses (26.1 hours) indicate significant delays in support.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed without following up on the customer's last request for support, indicating a lack of resolution.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "For a high-priority ticket, the response focused on generic solutions rather than appropriate escalation and immediate help.",
+    "evidence": [
+      "[2025-12-09T13:32:09+00:00] (Employee) Keyur Saxena: Please force the updates: Forcing an update for the patch definitions on the LanGuard server"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI responses seem to acknowledge customer input and provide follow-up, rather than being purely generic or incorrect.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in an AI loop; interactions indicate proper human involvement.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI requested logs again despite the customer already providing them, which shows a lack of context awareness.\",\n    \"evidence\": [\n      \"[2025-12-08T11:24:19+00:00] (Customer) Ond\u0159ej \u0160abata: Please have someone look at the logs, otherwise, there's a high risk\",\n      \"[2025-12-08T11:16:26+00:00] (AI) ATLAS: Thank you for sharing the log files and confirming that you have already attempted all the previously suggested solutions\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The time to first human response (29.1 hours) and maximum gap between responses (26.1 hours) indicate significant delays in support.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed without following up on the customer's last request for support, indicating a lack of resolution.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"For a high-priority ticket, the response focused on generic solutions rather than appropriate escalation and immediate help.\",\n    \"evidence\": [\n      \"[2025-12-09T13:32:09+00:00] (Employee) Keyur Saxena: Please force the updates: Forcing an update for the patch definitions on the LanGuard server\"\n    ]\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60258400
+}

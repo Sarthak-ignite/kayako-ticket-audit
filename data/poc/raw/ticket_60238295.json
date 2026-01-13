@@ -1,0 +1,123 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_connect",
+        "requester": {
+          "id": 60341018,
+          "uuid": "0ce05e1b-cb3c-5fa9-8033-3bab873c9461",
+          "full_name": "ADN Support",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/0ce05e1b-cb3c-5fa9-8033-3bab873c9461?1767715363",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60057846,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 342616,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "89.245.183.229",
+          "last_seen_at": "2026-01-06T08:47:21+00:00",
+          "last_active_at": "2026-01-06T16:02:43+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60341018",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@86485c7d9ef439f1b6d9db93932bb69c5563ed91",
+          "password_updated_at": "2025-08-27T12:56:22+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T08:47:21+00:00",
+          "last_activity_at": "2026-01-06T08:47:21+00:00",
+          "created_at": "2025-06-05T09:00:05+00:00",
+          "updated_at": "2026-01-06T16:02:43+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60341018"
+        },
+        "ticket_idt": 60238295
+      },
+      "interactions": [
+        [
+          "2025-11-24T12:15:38+00:00",
+          "Kayako - ticket id 60238295 // Ciprian Nastase commented publicly: Dear ADN,\n\nThank you for contacting\u00a0GFI - Kerio Connect Support, I understand that a prospect customer is facing issues with the trial license they were issued: \u00a010512-Z56RC-71G7M.\n\nPlease accept my sincere apologies for the delay in getting back to you; since the ticket was raised via email follow-up, it attained a low priority.\n\nAs previously indicated, the support team is unable to help with obtaining new licenses or adjusting any other license, and the correct avenue for solving this would be contacting the GFI Customer Care team here: https://customercare.gfi.com/hc/en-us/requests/new.\n\nHowever, since we are talking about a trial license, the prospect customer can try obtaining a new trial, with an email address different from \u00a0daniel.fasshauer@tel-ka.de and try to see if the issue is solved with a new trial license. If the issue persists, please contact the GFI Customer Care team using the above URL.\n\u00a0\n\nShould you have further questions related to GFI - Kerio Connect, please do not hesitate to submit an additional support request and we will be happy to assist!\n\n\u00a0\n\nPlease take a moment to tell us about your support experience; you'll be invited to our short survey in a separate email.\n\n\u00a0\n\nBest regards,\n\nCiprian Nastase\n\nGFI - Kerio Connect Support Team\n"
+        ],
+        [
+          "2025-11-24T12:12:20+00:00",
+          "Kayako - ticket id 60238295 // Ciprian Nastase commented privately:  \t* so the issue is a piracy warning that the customer is getting for trial license \u00a010512-Z56RC-71G7M\u00a0\n \t* we advised to reach out to the Customer Care team - no idea if they did that\n \t* they can try requesting a new trial license with a different email than \u00a0daniel.fasshauer@tel-ka.de\u00a0\n\n"
+        ],
+        [
+          "2025-11-11T13:25:41+00:00",
+          "Kayako - ticket id 60238295 // ADN Support commented publicly: Hi support,\n\nI have not received a licence or any helpful feedback.\n\nAre you actually working on this?\u200b\n\nMit freundlichen Gr\u00fc\u00dfen \n\nLale Erdmann\n\n\n"
+        ],
+        [
+          "2025-11-07T12:49:08+00:00",
+          "Kayako - ticket id 60238295 // ATLAS commented privately: Action: l1"
+        ],
+        [
+          "2025-11-07T12:48:27+00:00",
+          "Kayako - ticket id 60238295 // ADN Support commented publicly: Hi support,\n\nI did as asked, but I can't track the message I've sent properly.\nWould you mind keeping us posted?\u200b\n\nMit freundlichen Gr\u00fc\u00dfen \n\nLale Erdmann\n\n------- Urspr\u00fcngliche Nachricht -------\nVon: customersupport-kerioconnect@gfi.com <customersupport-kerioconnect@gfi.com>\nGesendet: Freitag, 07.11.2025 - 11:41 Uhr\nAn: support@adn.de\nBetreff: Reminder: Please reply to ticket #60228241 \u2014 [ADN-Ticket #228963] Re: Reminder: Please reply to ticket #60223459 \u2014 Kerio Connect trial license piracy warning issue\n\nHello Support,\n\nWe're awaiting your response regarding ticket #60228241 \u2014 \u201c[ADN-Ticket #228963] Re: Reminder: Please reply to ticket #60223459 \u2014 Kerio Connect trial license piracy warning issue.\u201d To continue the conversation, reply to this email or via the following Help Center link to the case:\nhttps://support.kerioconnect.gfi.com/conversation/view/60228241 [https://atpscan.global.hornetsecurity.com?d=KdOBBsrjXDH692r5TO5ULiduKHiSqOuWBAXDTjptb6A&f=tPn2fYQy8UiAL4hkccOziwndMausy1R4L-p8WS8NkGLwI0Oh9JlYPMDcEzOWLWss&i=&k=4NNf&m=RQMLCc0jWuyCR2WiyJiaEE3DEtwiYRA_j7aB9pJMY5b9t-nqUT99Dytodz3FZHHm_mK4hAy3rw1tgsQDCBgEnCfic80pSjHK72pUdLdkLdDVuEGKkkqiJ2erD9VScJx6&n=Qvy5TsmSKGgltSzdtlBrpoRAHzxSXFjYr1lVh_R8bslcziJU01bGqlICtaDbGwZf&r=U8igIU2C3555dNg83xDqEekszULA5FM8bXd20U2MTJI&s=03df713253394e56c286da77aa8cda9f1a7208116bd950f64e0f90290322edb8&u=https%3A%2F%2Fsupport.kerioconnect.gfi.com%2Fconversation%2Fview%2F60228241]\n\nLatest ticket message:\n\n>\u00a0Dear\u00a0Lale,\n>\u00a0\n>\u00a0As\u00a0confirmed\u00a0in\u00a0GFI\u2019s\u00a0process,\u00a0the\u00a0next\u00a0step\u00a0must\u00a0be\u00a0completed\u00a0directly\u00a0by\u00a0you\u00a0through\u00a0the\u00a0GFI\u00a0Customer\u00a0Care\u00a0portal.\u00a0Please\u00a0follow\u00a0the\u00a0steps\u00a0below\u00a0to\u00a0resolve\u00a0your\u00a0Kerio\u00a0Connect\u00a0trial\u00a0license\u00a0issue.\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0Go\u00a0to\u00a0https://customercare.gfi.com/hc/en-us/requests/new\u00a0[https://atpscan.global.hornetsecurity.com?d=dJyorFheXwdFIVSH4H9jY_U9jWMU7-XnZvZM332i9MA&f=aUTNcO_Gr_4Z5Lb0q9ctrdSU8E7QvwyFPXjajQwZDhYnc1ZBmmwCpbTBOdI0jkud&i=&k=Hlhl&m=RQ8TN_XW9Esj3mTK5RJZB7KMLAA-gO6JQKNbvYnzO6SKqJ2qcM35V_F6RJRY9UhsHu-dl7dX9ooirq828Dj_aIozzGN12Ne0a5V3WArF_krm_qWgmW96awPSxLrij2HJ&n=19lEIKW0fZPu2dbsff1bUrIaTaAPJ80rj0uiC3tJ9oTfPXLMnckS7h1qfNGaHSQw&r=vosGGLx03TNXNBFmOaa00nk77eIv5fqle9IB6YbCcvQ&s=ca9af4cedf86ba26670fbabb176b18f4f5df9b1a28037bde439eef74538705b3&u=https%3A%2F%2Fcustomercare.gfi.com%2Fhc%2Fen-us%2Frequests%2Fnew]\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0Under\u00a0Product,\u00a0select\u00a0Kerio\u00a0Connect.\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0Under\u00a0Request\u00a0Type,\u00a0select\u00a0Licensing\u00a0Problem\u00a0/\u00a0Trial\u00a0Key\u00a0Issue.\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0In\u00a0the\u00a0Subject\u00a0field,\u00a0enter:\u00a0\u201cRequest\u00a0for\u00a0replacement\u00a0trial\u00a0license\u00a0\u2014\u00a0Kerio\u00a0Connect\u00a0key\u00a010512-Z56RC-71G7M\u201d.\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0In\u00a0the\u00a0Description,\u00a0include:\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0That\u00a0the\u00a0trial\u00a0license\u00a0(10512-Z56RC-71G7M)\u00a0is\u00a0showing\u00a0\u201cServer\u00a0license\u00a0expired\u201d\u00a0and\u00a0\u201cPiracy\u00a0warning\u201d\u00a0errors.\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0Request\u00a0a\u00a0replacement\u00a0or\u00a0extended\u00a0trial\u00a0license.\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0Company:\u00a0Telefon-\u00a0&\u00a0Fernmelde-Service\u00a0GmbH\u00a0&\u00a0Co.KG\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0Contact:\u00a0daniel.fasshauer@tel-ka.de\u00a0[/#]\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0Partner:\u00a0ADN\u00a0Distribution\u00a0GmbH\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0Reference:\u00a0Support\u00a0Ticket\u00a0#60223459\u00a0[https://atpscan.global.hornetsecurity.com?d=yWUJUWO0NDQy6PvUqcbytZpSED9fWbQ549Tuix6VQt4&f=bYIOtej3fpQtBGc91E4ierwHvE9qXmKPeERssk8hfPRKlwZkmQM-LhGOM70qQOth&i=&k=fNcI&m=_0nHegu2g03nim9k4YixSuJUE-gWwOcStZgfg7Iwd-ATcgJMdH5Yq8Rtk1hZX_7attjVKrOZCGd06Ard8f3zHhEvglF7IoboGV_guE4FdE_7mOXd8SxTBBV_MiR45tLw&n=_iJnoFWsVCAjLsNkeEt99YTBRPamqv3zB8KYfhI9WVrtY03QNhVM3vLRGorkLPXG&r=XQdP-T4adJ7OC1IJyjYreEO8YrnX-AnzsAOjX3DOpnM&s=d1d40abfdbb710772185726146cb9dc7b63673b6dc4fbff44183f6e7d8a692a4&u=https%3A%2F%2Fsupport.kerioconnect.gfi.com%2Fconversation%2Fview%2F60223459]\u00a0/\u00a0ADN-Ticket\u00a0#228963\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0Attach\u00a0the\u00a0screenshot\u00a0showing\u00a0the\u00a0license\u00a0error\u00a0(gfi-licence.jfif).\n>\u00a0\n>\u00a0\u00a0\u00a0\u00a0\u00a0*\n>\u00a0Submit\u00a0the\u00a0request.\n>\u00a0\n>\u00a0The\u00a0GFI\u00a0Customer\u00a0Care\u00a0team\u00a0will\u00a0verify\u00a0your\u00a0details\u00a0and\u00a0provide\u00a0a\u00a0new\u00a0or\u00a0extended\u00a0trial\u00a0license\u00a0directly.\u00a0If\u00a0you\u00a0have\u00a0any\u00a0difficulty\u00a0submitting\u00a0the\u00a0request\u00a0or\u00a0accessing\u00a0the\u00a0portal,\u00a0please\u00a0let\u00a0us\u00a0know\u00a0immediately.\n>\u00a0\n>\u00a0Best\u00a0regards,\n>\u00a0Mike\u00a0Kebede\n>\u00a0GFI\u00a0-\u00a0Kerio\u00a0Connect\u00a0Support\u00a0Team\n>\u00a0\n>\u00a0This\u00a0ticket\u00a0will\u00a0stay\u00a0open\u00a0for\u00a0one\u00a0week\u00a0unless\u00a0you\u00a0reply\u00a0with\u00a0This\u00a0ticket\u00a0can\u00a0be\u00a0closed\u00a0or\u00a0update\u00a0the\u00a0status\u00a0to\u00a0Completed\u00a0in\u00a0the\u00a0portal.\u00a0We\u00a0will\u00a0write\u00a0to\u00a0you\u00a0again\u00a0to\u00a0remind\u00a0you.\n\nIf we don't hear from you, we'll automatically close the ticket in about 7 days after our last message due to inactivity. If that occurs, you can continue the conversation by creating a new ticket in the Help Center referencing ticket #60228241; we'll pick up where we left off.\n\nBest regards,\nGFI - Kerio Connect Support Team \n\nThis is a KerioConnect message delivered by Kayako [https://atpscan.global.hornetsecurity.com?d=i-olK-wYdcA7Efw9_tzauEGnsmIQb0AICFHGDGjs5mc&f=utrybhKeEPi-T3AUxmuDyRnqwjkoshLMaGiXx9CExRwotVQfR00ynf2P9lLiebAf&i=&k=awPe&m=VsocnKvHZQ7Esl8XdMCTboMSty7iSW1DE64u8OZ9o0wuHUFA4TCx7yNL8_NlM6XVmmMKLanN-nxcMsqb_BIgkgL5I8mZhZMFqQ3WFMj8F0RqhdlgNnJT2eu_SnJ7eSvf&n=e_oGb2kwpL14rIHg9WNj-V5pf-hmJS_YORHjLJJiE9RVIQ2lT3hyMz1O4aCyZ4hu&r=MbgktylbrZgD02aPflbEt0zu67iu7k8jzW_3s1enbBk&s=089355129a46152126d6fec5340cd71990dbcaba24ba954aa2464f039ac14f2a&u=https%3A%2F%2Fkayako.com].\n\nimage"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 5,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

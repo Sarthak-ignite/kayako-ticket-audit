@@ -1,0 +1,120 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "streetsmart",
+        "requester": {
+          "id": 60126666,
+          "uuid": "c2c4be3d-e86f-4a18-bb1f-a87686f606d4",
+          "full_name": "Ray Tutnam",
+          "legacy_id": "375699681679",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/c2c4be3d-e86f-4a18-bb1f-a87686f606d4?1767447513",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60033428,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 128201,
+              "resource_type": "identity_email"
+            },
+            {
+              "id": 554628,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 33945,
+              "resource_type": "identity_phone"
+            },
+            {
+              "id": 62448,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "50.200.160.74",
+          "last_seen_at": "2025-12-31T12:47:13+00:00",
+          "last_active_at": "2026-01-03T13:38:33+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60126666",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@78a83aab65bd15e1530fc8b4583d396ca22f8323",
+          "password_updated_at": "2025-12-26T17:50:49+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2025-12-29T14:28:00+00:00",
+          "last_activity_at": "2025-12-29T14:28:00+00:00",
+          "created_at": "2020-11-23T23:30:37+00:00",
+          "updated_at": "2026-01-03T13:38:33+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60126666"
+        },
+        "ticket_idt": 60270630
+      },
+      "interactions": [
+        [
+          "2025-12-26T13:36:38+00:00",
+          "Kayako - ticket id 60270630 // Ray Tutnam commented privately: Thanks for chatting earlier with ATLAS User manager!<br>\n  <br>\n  Here is a record of your conversation for easy reference:<br>\n  <br>\n  <div>\n    <p><strong>--- Customer ---</strong></p>\n    <div>\n      The street smart application is not opening on our phones\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      You didn't provide an email address, it seems?\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      \u2139\ufe0f Note that I am only able to check if an email address already exists in the support instance, and trigger verification/password reset emails.<br>\n      <br>\n      \ud83d\udca1If you need technical support, please click Sign in at the top and you will be through to support.<br>\n      <br>\n      Please provide me with your email address:\n    </div><br>\n    <p><strong>--- Customer ---</strong></p>\n    <div>\n      ray@maestranzi.com\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      Hi there, Ray Tutnam! \ud83d\udc4b<br>\n      <br>\n      As far as I can see, your email address is already validated, so now you only need to reset your password.<br>\n      A password reset email has already been sent your way.<br>\n      <br>\n      Remember to also check your SPAM folder if you can't see the email in your inbox.<br>\n      <br>\n      \ud83d\udca1The password reset email may take a few minutes to arrive, so please be patient.\n      <hr>\n      \u2139\ufe0f For privacy and security reasons, you will need to search for the email in your inbox, and click the verification link; I won't be able to supply with the password reset link here\n    </div><br>\n    <p><strong>--- Customer ---</strong></p>\n    <div>\n      <em>Button selection:</em> [\ud83d\udc4d I received the email, thanks!]\n    </div><br>\n    <p><strong>--- AI Assistant ---</strong></p>\n    <div>\n      That's great news! Happy to help!<br>\n      <br>\n      Make sure you now follow the steps from the email to create/verify your account, and you're all set!<br>\n      <br>\n      \ud83d\udca1Refresh this window, so that the authentication kicks in and so that you're able to see the support widget \ud83d\ude09\n    </div><br>\n  </div>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

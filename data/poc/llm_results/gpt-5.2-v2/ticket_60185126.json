@@ -1,0 +1,63 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS and the agent responses are largely template/generic (thank-you + request more info/monitoring) and do not actually analyze the provided crash dump/logs; the customer explicitly calls out the response as unhelpful and non-analytical.",
+    "evidence": [
+      "ATLAS: \"Thank you for reaching out. I understand Kerio Control has been repeatedly crashing...\"",
+      "ATLAS: \"To help us proceed, could you please let us know: - What troubleshooting steps you have already tried...\"",
+      "Mike Kebede: \"At this stage, it will be important to monitor the system closely to see whether the crashes continue under this latest update.\"",
+      "Customer: \"We are very dissatisfied with your answer. Did you analyze the dump and logs from previous crashes?\"",
+      "Customer: \"What should we give the customer in response? That GFI is not able to analyze anything from the logs and dump?\"",
+      "ATLAS (later): \"According to the Kerio Control knowledge base regarding crash analysis...\" (KB/link-style response rather than confirming any actual dump analysis)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Support repeatedly asks for logs/dumps and more information despite the customer stating they already collected/uploaded a watchdog dump, creating a loop that drives customer frustration.",
+    "evidence": [
+      "Ticket description: \"Now I have Dump by Watchdog: https://prerov.comit.cz/files/Netopil/KerioFW/VHS/\"",
+      "Ticket description: \"Logs collected\"",
+      "Mike Kebede: \"If you experience any further crashes... please collect and upload... The watchdog dump from /var/crash/winroute/\"",
+      "Customer: \"Did you analyze the dump and logs from previous crashes?\"",
+      "Customer: \"It took you 2 days to even answer!\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer already provided a watchdog dump link and detailed history (patches, hardware replacement, watchdog activation, log excerpts), but support responds as if no dump/logs were available and requests collection again rather than acknowledging/reviewing what was provided.",
+    "evidence": [
+      "Customer (initial): \"Now I have Dump by Watchdog: https://prerov.comit.cz/files/Netopil/KerioFW/VHS/\"",
+      "Customer: \"Kerio v. 9.5.0... All hardware was replaced... patch 1... patch 2... watchdog activation... Tonight we installed patch 3. Please analyze it\"",
+      "Mike Kebede: \"If you experience any further crashes... please collect and upload... The watchdog dump from /var/crash/winroute/\"",
+      "Customer: \"Did you analyze the dump and logs from previous crashes?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a major multi-day gap (about 20 days) between the customer's complaint and the next support response, and the customer explicitly complains about response time.",
+    "evidence": [
+      "Customer (2025-09-04T12:14:51+00:00): \"It took you 2 days to even answer!\"",
+      "Timestamp gap: Customer message at \"[2025-09-04T12:14:51+00:00]\" and next support response at \"[2025-09-24T16:18:51+00:00]\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript shows auto-messages about a 1-week open period, but no actual closure event is shown, and the ticket is still being responded to later.",
+    "evidence": [
+      "ATLAS: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\"",
+      "Mike Kebede: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue involves repeated firewall/service crashes causing internet outages and business risk (customer considering replacing the technology), yet support provides standard 'monitor and collect logs if it happens again' guidance rather than urgent escalation/clear RCA from the existing dump.",
+    "evidence": [
+      "Customer: \"Kerio Control repeately crashed.\"",
+      "Customer: \"The internet was unavailable for approx. 4 minutes.\"",
+      "Customer: \"Please analyze it, because the customer is already talking about replacing the technology.\"",
+      "Mike Kebede: \"At this stage, it will be important to monitor the system closely to see whether the crashes continue\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60185126
+}

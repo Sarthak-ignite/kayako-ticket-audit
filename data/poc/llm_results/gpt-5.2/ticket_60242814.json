@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only visible AI-generated agent reply appears truncated/incomplete, which is a quality failure (generic filler/unfinished response).",
+    "evidence": [
+      "[2025-12-01T07:15:14+00:00] (Employee) Syed Haider: \"Dear Michael,\n\nWe appreciate your response and are glad to hear that your colleagues will get back to us. To accommodate your schedule, w\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repeated AI prompts requesting the same information or preventing access to a human; the thread shows human employee responses after the AI-created ticket.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Agents do not clearly re-ask for information already provided or ignore prior details; instead they acknowledge retirement and direct a colleague to the helpcenter.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer messages and agent replies, consistent with significant response delays (also reflected by the metadata: very long time to first human and large max gap).",
+    "evidence": [
+      "[2025-11-18T21:45:39+00:00] (Customer) Michael Healy: \"Hello, I still have not received an answer to my question.\"",
+      "[2025-11-30T22:38:09+00:00] (Employee) Carlos Encalada: \"Thank you for your patience, and I apologize for the delay in providing a clear answer to your question.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The final interactions indicate the customer retired and the agent wished them well; there is no explicit evidence the ticket was closed while the customer was still awaiting promised information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/Sev1), and there is no outage/high-severity scenario described requiring immediate escalation.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The only visible AI-generated agent reply appears truncated/incomplete, which is a quality failure (generic filler/unfinished response).\",\n    \"evidence\": [\n      \"[2025-12-01T07:15:14+00:00] (Employee) Syed Haider: \\\"Dear Michael,\\n\\nWe appreciate your response and are glad to hear that your colleagues will get back to us. To accommodate your schedule, w\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repeated AI prompts requesting the same information or preventing access to a human; the thread shows human employee responses after the AI-created ticket.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Agents do not clearly re-ask for information already provided or ignore prior details; instead they acknowledge retirement and direct a colleague to the helpcenter.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between customer messages and agent replies, consistent with significant response delays (also reflected by the metadata: very long time to first human and large max gap).\",\n    \"evidence\": [\n      \"[2025-11-18T21:45:39+00:00] (Customer) Michael Healy: \\\"Hello, I still have not received an answer to my question.\\\"\",\n      \"[2025-11-30T22:38:09+00:00] (Employee) Carlos Encalada: \\\"Thank you for your patience, and I apologize for the delay in providing a clear answer to your question.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The final interactions indicate the customer retired and the agent wished them well; there is no explicit evidence the ticket was closed while the customer was still awaiting promised information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/Sev1), and there is no outage/high-severity scenario described requiring immediate escalation.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60242814
+}

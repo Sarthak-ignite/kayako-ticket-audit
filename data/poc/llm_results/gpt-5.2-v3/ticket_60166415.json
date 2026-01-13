@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS\u2019 customer-facing messages are generally accurate (requests logs, summarizes issue, provides next steps). No clear factual product misinformation, broken templates, or unfulfilled promises that can be proven from the transcript.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer is not shown being trapped with repeated AI-only interactions. After the initial ATLAS response, humans (Keyur/Marcio/Andriy/Matthew) take over. Also, no clear case of ATLAS asking for the exact same specific info 2+ times after the customer states it was already provided.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support corrected misunderstandings (server logs vs. affected agent logs) and continued with targeted requests. While the customer wanted more detailed step-by-step guidance later, support did respond (even if not as detailed as desired), so there is not clear, unambiguous evidence of ignoring already-provided information or repeating the same step after the customer confirmed completion in a way that meets the detection criteria.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a clear 3+ day gap between the customer\u2019s update that the workaround failed and the next substantive support response, and the customer explicitly complained about the lack of response.",
+    "evidence": [
+      "[2025-08-21T05:38:58+00:00] Customer: \"The issue of automatic scanning still exist. The scan started again after replacing the XML file provided. Please look into it on priority.\"",
+      "[2025-08-25T05:41:38+00:00] Customer: \"Its been 4 days and no response on this.\"",
+      "[2025-08-25T06:05:37+00:00] Support (Keyur): \"Once we have an update from the Development team, we will inform you in this ticket.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is not shown being closed while a customer question/request was pending. The conversation continues with ongoing troubleshooting and escalation updates.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer requested urgency and later emphasized severe business impact, support did escalate to Development (engineering issue created/updated and later a special build provided). The criteria require clear evidence that a P1/SEV1 was mishandled (e.g., no escalation visible, wildly generic/irrelevant steps, or explicit SLA breach), which is not unambiguously present here.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60166415
+}

@@ -1,0 +1,47 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is only a single AI private comment that contains no substantive guidance, claims, or troubleshooting steps, so there isn\u2019t clear evidence of incorrect info, broken promises, or generic filler as a response to a customer issue.",
+    "evidence": [
+      "[2025-10-02T11:27:35+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The timeline shows only one AI message and no repeated requests for the same information or back-and-forth indicating the customer is trapped in an AI loop.",
+    "evidence": [
+      "[2025-10-02T11:27:35+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer-provided details, logs, screenshots, or prior ticket references are present in the provided interactions, so it cannot be shown that support ignored context or asked for duplicate information.",
+    "evidence": [
+      "[2025-10-02T11:27:35+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one interaction is provided; there is no evidence of multi-day gaps between messages within the ticket timeline.",
+    "evidence": [
+      "[2025-10-02T11:27:35+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, the interaction log does not show the customer waiting on promised follow-up or requesting further help before closure.",
+    "evidence": [
+      "[2025-10-02T11:27:35+00:00] (AI) ATLAS: \"Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket priority is normal (not P1/SEV1), and there is no evidence of outage handling or inappropriate generic troubleshooting in the single message shown.",
+    "evidence": [
+      "[2025-10-02T11:27:35+00:00] (AI) ATLAS: \"Thanks for chatting earlier with our AI Support!\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI private comment that contains no substantive guidance, claims, or troubleshooting steps, so there isn\u2019t clear evidence of incorrect info, broken promises, or generic filler as a response to a customer issue.\",\n    \"evidence\": [\n      \"[2025-10-02T11:27:35+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!<br>  <br>  Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The timeline shows only one AI message and no repeated requests for the same information or back-and-forth indicating the customer is trapped in an AI loop.\",\n    \"evidence\": [\n      \"[2025-10-02T11:27:35+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer-provided details, logs, screenshots, or prior ticket references are present in the provided interactions, so it cannot be shown that support ignored context or asked for duplicate information.\",\n    \"evidence\": [\n      \"[2025-10-02T11:27:35+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one interaction is provided; there is no evidence of multi-day gaps between messages within the ticket timeline.\",\n    \"evidence\": [\n      \"[2025-10-02T11:27:35+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, the interaction log does not show the customer waiting on promised follow-up or requesting further help before closure.\",\n    \"evidence\": [\n      \"[2025-10-02T11:27:35+00:00] (AI) ATLAS: \\\"Here is a record of your conversation for easy reference:\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket priority is normal (not P1/SEV1), and there is no evidence of outage handling or inappropriate generic troubleshooting in the single message shown.\",\n    \"evidence\": [\n      \"[2025-10-02T11:27:35+00:00] (AI) ATLAS: \\\"Thanks for chatting earlier with our AI Support!\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60212281
+}

@@ -1,0 +1,46 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses appear relevant and attentive to the issue being discussed without any indications of wrong information or filler content.",
+    "evidence": [
+      "Thank you for providing such a detailed description of the issue with scheduled scans in GFI LanGuard. [2025-11-10T10:36:00+00:00]"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear indication of the customer being repeatedly prompted for the same information by the AI.",
+    "evidence": [
+      "Customer interacted with ATLAS-UPLOAD system... [2025-11-10T10:35:09+00:00]"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The support staff seem to build on the provided context and do not ask for repeated logs or overlook customer information.",
+    "evidence": [
+      "Please apply this fix on all new and existing agents... [2025-11-12T07:24:25+00:00]"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is evidence of significant delays, including 44.8 hours for the first response and a 25.9-hour gap between responses.",
+    "evidence": [
+      "Time to first human (hours): 44.8",
+      "Max gap between responses (hours): 25.9"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence to suggest the ticket was closed prematurely while waiting for information or that the customer gave up.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The responses provided, such as applying fixes, appear appropriate for a high-priority ticket without unnecessary generic troubleshooting.",
+    "evidence": [
+      "Please apply this fix on all new and existing agents: Fixing the 'You are no longer entitled to product updates' error... [2025-11-12T07:24:25+00:00]"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses appear relevant and attentive to the issue being discussed without any indications of wrong information or filler content.\",\n    \"evidence\": [\"Thank you for providing such a detailed description of the issue with scheduled scans in GFI LanGuard. [2025-11-10T10:36:00+00:00]\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear indication of the customer being repeatedly prompted for the same information by the AI.\",\n    \"evidence\": [\"Customer interacted with ATLAS-UPLOAD system... [2025-11-10T10:35:09+00:00]\"]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The support staff seem to build on the provided context and do not ask for repeated logs or overlook customer information.\",\n    \"evidence\": [\"Please apply this fix on all new and existing agents... [2025-11-12T07:24:25+00:00]\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is evidence of significant delays, including 44.8 hours for the first response and a 25.9-hour gap between responses.\",\n    \"evidence\": [\"Time to first human (hours): 44.8\", \"Max gap between responses (hours): 25.9\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence to suggest the ticket was closed prematurely while waiting for information or that the customer gave up.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The responses provided, such as applying fixes, appear appropriate for a high-priority ticket without unnecessary generic troubleshooting.\",\n    \"evidence\": [\"Please apply this fix on all new and existing agents: Fixing the 'You are no longer entitled to product updates' error... [2025-11-12T07:24:25+00:00]\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60239472
+}

@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only AI content is a brief thank-you and transcript notice; there is no clear evidence of wrong information, filler responses, or unkept promises in the available interaction.",
+    "evidence": [
+      "[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik",
+      "Priority: low"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only a single AI message shown and no repeated requests for the same information or indication the customer was unable to progress past the AI.",
+    "evidence": [
+      "[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik",
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No follow-up questions or requests for repeated logs/screenshots appear in the provided excerpt, so there is no clear evidence that prior customer context was ignored.",
+    "evidence": [
+      "[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik",
+      "Time to first human (hours): nan"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Metadata shows no gaps between responses (Max gap 0.0 hours) and only one timestamped AI message is present, so there is no evidence of multi-day response delays.",
+    "evidence": [
+      "[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik",
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed, there is no evidence in the provided interaction that the customer was waiting for promised information or had given up prior to closure.",
+    "evidence": [
+      "[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik",
+      "Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is low, so P1/SEV1 escalation handling is not applicable and there is no evidence of inappropriate generic triage for a high-severity outage.",
+    "evidence": [
+      "[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik",
+      "Priority: low"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The only AI content is a brief thank-you and transcript notice; there is no clear evidence of wrong information, filler responses, or unkept promises in the available interaction.\",\n    \"evidence\": [\n      \"[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik\",\n      \"Priority: low\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is only a single AI message shown and no repeated requests for the same information or indication the customer was unable to progress past the AI.\",\n    \"evidence\": [\n      \"[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik\",\n      \"Max gap between responses (hours): 0.0\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No follow-up questions or requests for repeated logs/screenshots appear in the provided excerpt, so there is no clear evidence that prior customer context was ignored.\",\n    \"evidence\": [\n      \"[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik\",\n      \"Time to first human (hours): nan\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Metadata shows no gaps between responses (Max gap 0.0 hours) and only one timestamped AI message is present, so there is no evidence of multi-day response delays.\",\n    \"evidence\": [\n      \"[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik\",\n      \"Max gap between responses (hours): 0.0\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked closed, there is no evidence in the provided interaction that the customer was waiting for promised information or had given up prior to closure.\",\n    \"evidence\": [\n      \"[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik\",\n      \"Status: closed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is low, so P1/SEV1 escalation handling is not applicable and there is no evidence of inappropriate generic triage for a high-severity outage.\",\n    \"evidence\": [\n      \"[2025-11-14T21:57:37+00:00] (AI) ATLAS: Kayako - ticket id 60243765 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- Customer (Erik\",\n      \"Priority: low\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60243765
+}

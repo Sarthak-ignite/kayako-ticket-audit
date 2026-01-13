@@ -1,0 +1,40 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "AI interactions are primarily automated maintenance bot actions and ticket management (placing on hold, reopening). No evidence of AI providing incorrect information or generic responses to customer queries.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Customer interactions show direct engagement with human agents (Raditya, Pavly, Hermes). No evidence of customer being stuck in AI loop or unable to reach human support.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support agents demonstrate awareness of ongoing issues and customer updates. When customer reports new information about Instagram failures continuing, agent acknowledges and responds appropriately.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The max gap between responses is 270 hours (over 11 days). There's a significant delay between October 9 customer update and October 16 resolution update.",
+    "evidence": [
+      "[2025-10-09T01:08:06+00:00] (Customer) Patti Sebastiao: Thanks for your response. It seems that the other issues have resolved, except for Facebook disconnecting from Khoros",
+      "[2025-10-16T17:58:43+00:00] (Employee) Pavly Nashed: Dear Patti, Thank you for your patience while we investigated the issue with the failed Instagram post. Our Development team has imple"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket was closed after customer acknowledged the resolution and stated they would monitor the situation. Customer's final message shows satisfaction with the update.",
+    "evidence": [
+      "[2025-10-22T01:57:17+00:00] (Customer) Patti Sebastiao: Hi Pavly, Thanks for the update. I will keep an eye on it and let you know if the issue comes back."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Despite high priority status, the ticket was escalated to engineering team for proper investigation and code fix deployment. No evidence of generic troubleshooting like clearing cache or checking firewall.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"AI interactions are primarily automated maintenance bot actions and ticket management (placing on hold, reopening). No evidence of AI providing incorrect information or generic responses to customer queries.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Customer interactions show direct engagement with human agents (Raditya, Pavly, Hermes). No evidence of customer being stuck in AI loop or unable to reach human support.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support agents demonstrate awareness of ongoing issues and customer updates. When customer reports new information about Instagram failures continuing, agent acknowledges and responds appropriately.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The max gap between responses is 270 hours (over 11 days). There's a significant delay between October 9 customer update and October 16 resolution update.\",\n    \"evidence\": [\n      \"[2025-10-09T01:08:06+00:00] (Customer) Patti Sebastiao: Thanks for your response. It seems that the other issues have resolved, except for Facebook disconnecting from Khoros\",\n      \"[2025-10-16T17:58:43+00:00] (Employee) Pavly Nashed: Dear Patti, Thank you for your patience while we investigated the issue with the failed Instagram post. Our Development team has imple\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket was closed after customer acknowledged the resolution and stated they would monitor the situation. Customer's final message shows satisfaction with the update.\",\n    \"evidence\": [\n      \"[2025-10-22T01:57:17+00:00] (Customer) Patti Sebastiao: Hi Pavly, Thanks for the update. I will keep an eye on it and let you know if the issue comes back.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Despite high priority status, the ticket was escalated to engineering team for proper investigation and code fix deployment. No evidence of generic troubleshooting like clearing cache or checking firewall.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60208754
+}

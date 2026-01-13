@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The customer-facing AI message provides a clear status update (engineering fixed; release timing) and reasonable next steps. There is no customer complaint about incorrect/garbled AI content, and the ticket proceeds to closure at the customer's request.",
+    "evidence": [
+      "Cu Chulainn AI Manager commented publicly: \"We are pleased to inform you that our Development Team has successfully addressed the issue... This fix is slated for release next weekend.\"",
+      "Customer commented publicly: \"thanks, we can close this ticket\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "When the customer asked to involve engineering, a human agent responded with an escalation confirmation rather than repeated AI-only loops. There is no evidence the customer was blocked from reaching a human.",
+    "evidence": [
+      "Customer commented publicly: \"please pass this to engineering\"",
+      "Randall Shawver commented publicly: \"We have escalated this to our Engineering team for review.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not ask the customer to re-provide the same screenshot/logs or repeat steps already provided. The responses acknowledge the issue and proceed with escalation and a fix announcement.",
+    "evidence": [
+      "Customer commented publicly: \"As seen on the screenshot, GFI App Manager agents are piling up in the Exinda var folder.\"",
+      "Randall Shawver commented publicly: \"We have escalated this to our Engineering team for review.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is one long gap between a customer follow-up and the next customer-facing staff reply, but the detection rules require either a strong signal (e.g., customer complaining about waiting) or multiple weak signals. The customer did not express waiting/impact due to silence in subsequent messages.",
+    "evidence": [
+      "Customer commented publicly [2025-11-12T19:07:57+00:00]: \"please pass this to engineering\"",
+      "Randall Shawver commented publicly [2025-11-30T14:53:32+00:00]: \"We have escalated this to our Engineering team for review.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the customer explicitly requested closure, not while an unresolved request was pending.",
+    "evidence": [
+      "Customer commented publicly: \"thanks, we can close this ticket\"",
+      "Phronesis commented publicly: \"Thank you for your update; we are closing this ticket as requested.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-20 15:40:03"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the issue could impact upgrades, the customer did not declare P1/SEV1/critical outage, and support appropriately escalated to engineering rather than only providing generic troubleshooting.",
+    "evidence": [
+      "Customer commented publicly: \"they will occupy too much space and block Exinda from successful update to the newer version.\"",
+      "Randall Shawver commented publicly: \"We have escalated this to our Engineering team for review.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60241518
+}

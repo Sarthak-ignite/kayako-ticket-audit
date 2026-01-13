@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI systems like ATLAS and Centralsupport-ai-acc are making repetitive, non-substantive comments that add no value to the ticket resolution.",
+    "evidence": [
+      "[2025-11-19T16:48:18+00:00] ATLAS: 'Skipping ticket due to tags'",
+      "[2025-11-13T08:18:47+00:00] Centralsupport-ai-acc: 'JIRA Issue CARESMM-10382 is changed to 'Closed' , block reason: -'"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There's no evidence of the customer being stuck in an AI loop or repeatedly asked for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support team appears to be tracking the issue and providing updates about the deployment process.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between interactions, with over 152 hours (6.3 days) between some responses.",
+    "evidence": [
+      "Gap between [2025-11-12T17:20:15+00:00] and [2025-11-13T04:12:59+00:00]",
+      "Max gap between responses: 152.5 hours"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed quickly with a generic confirmation, potentially before the customer's full issue was resolved.",
+    "evidence": [
+      "[2025-11-19T16:54:45+00:00] Pavly Nashed: 'We will go ahead and close this ticket as requested'",
+      "[2025-11-19T16:48:08+00:00] Warren Cook: 'We can close this case'"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket appears to be a technical deployment issue that was escalated and addressed through proper channels.",
+    "evidence": []
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI systems like ATLAS and Centralsupport-ai-acc are making repetitive, non-substantive comments that add no value to the ticket resolution.\",\n    \"evidence\": [\n      \"[2025-11-19T16:48:18+00:00] ATLAS: 'Skipping ticket due to tags'\",\n      \"[2025-11-13T08:18:47+00:00] Centralsupport-ai-acc: 'JIRA Issue CARESMM-10382 is changed to 'Closed' , block reason: -'\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There's no evidence of the customer being stuck in an AI loop or repeatedly asked for the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"Support team appears to be tracking the issue and providing updates about the deployment process.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between interactions, with over 152 hours (6.3 days) between some responses.\",\n    \"evidence\": [\n      \"Gap between [2025-11-12T17:20:15+00:00] and [2025-11-13T04:12:59+00:00]\",\n      \"Max gap between responses: 152.5 hours\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket was closed quickly with a generic confirmation, potentially before the customer's full issue was resolved.\",\n    \"evidence\": [\n      \"[2025-11-19T16:54:45+00:00] Pavly Nashed: 'We will go ahead and close this ticket as requested'\",\n      \"[2025-11-19T16:48:08+00:00] Warren Cook: 'We can close this case'\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to be a technical deployment issue that was escalated and addressed through proper channels.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket involves a chat widget deployment\n- There are significant response delays\n- AI interactions are largely mechanical and non-informative\n- The ticket was closed somewhat abruptly\n- The priority was urgent, but resolution took several days",
+  "_model": "claude-haiku",
+  "_ticket_id": 60238457
+}

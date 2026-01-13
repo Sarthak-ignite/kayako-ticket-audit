@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI responses provide accurate upgrade information without any apparent filler or unmet promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in an AI loop, and they received responses from human and AI sources.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI responses acknowledged the ticket history and provided relevant updates that aligned with the customer's initial query.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays between interactions, indicated by a 67-hour wait for the first human response and a max gap of 64.4 hours between responses.",
+    "evidence": [
+      "Time to first human (hours): 67.0",
+      "Max gap between responses (hours): 64.4"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not appear to have been closed prematurely as it contained updates and a resolution.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of generic troubleshooting or mishandling for this high-priority ticket; the responses were directly related to the ticket's specific issue.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses provide accurate upgrade information without any apparent filler or unmet promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the customer being stuck in an AI loop, and they received responses from human and AI sources.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI responses acknowledged the ticket history and provided relevant updates that aligned with the customer's initial query.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays between interactions, indicated by a 67-hour wait for the first human response and a max gap of 64.4 hours between responses.\",\n    \"evidence\": [\"Time to first human (hours): 67.0\", \"Max gap between responses (hours): 64.4\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket does not appear to have been closed prematurely as it contained updates and a resolution.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication of generic troubleshooting or mishandling for this high-priority ticket; the responses were directly related to the ticket's specific issue.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60239883
+}

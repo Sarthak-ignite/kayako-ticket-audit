@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS handled the core request by capturing/confirming the license key and routing the ticket to the correct BU team. The transcript contains minor artifacts (e.g., an 'undefined' message and truncated content), but there is no clear evidence that ATLAS provided incorrect guidance, made false promises, or prevented resolution.",
+    "evidence": [
+      "ATLAS: \"I have this license key on record: ... QjcmHQpCsc0-zdMys0gYs6BVdL4wa-cEBF8-790951 ... Just to make sure we're on the same page - is this the same system you're reaching out about today?\"",
+      "Customer: \"Yes, QjcmHQpCsc0-zdMys0gYs6BVdL4wa-cEBF8-790951 is correct\"",
+      "System note: \"Sending to BU\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is only one short ATLAS interaction followed by immediate routing to the BU team. No repeated questioning or inability to reach a human is shown.",
+    "evidence": [
+      "System note shortly after chat: \"Sending to BU\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer\u2019s key and downgrade request were captured and later acted upon. There\u2019s no clear back-and-forth where support repeatedly asks for already-provided information or ignores prior details.",
+    "evidence": [
+      "Ticket contains license key early: \"License Key: QjcmHQpCsc0-zdMys0gYs6BVdL4wa-cEBF8-790951\"",
+      "Later fulfillment references same customer/key context and provides new downgraded key."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows extremely long gaps with no support response while the customer was waiting. Customer explicitly followed up after 22 days, and the actual resolution occurred ~6 months after the initial request.",
+    "evidence": [
+      "[2025-04-10] Customer request: \"Hey, please downgrade this license key to version 18.2\"",
+      "[2025-05-02] Customer follow-up: \"Hello, we are now waiting 22 days...\"",
+      "Next visible action/resolution not until [2025-10-08] (email to bizops and downgrade confirmation).",
+      "[2025-10-08] Agent: \"We sincerely apologize for the delay in processing your request\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The downgrade was completed and communicated with the new key, and the customer explicitly confirmed the ticket can be closed.",
+    "evidence": [
+      "Agent: \"License has been downgraded... New key is 6E1f-HUTS-101TmxYN6NHMccEwbvhRRr0K-790951.\"",
+      "Customer: \"you can close the ticket\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer did not indicate an outage/production-down scenario or explicit severity/urgency. The main failure is delay rather than mishandling of a declared P1/Sev1 incident.",
+    "evidence": [
+      "Customer request is a licensing downgrade request without stated business outage impact."
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60018792
+}

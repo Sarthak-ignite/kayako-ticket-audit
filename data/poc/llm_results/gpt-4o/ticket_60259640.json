@@ -1,0 +1,38 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response consists solely of a boilerplate thank you message and a placeholder for conversation history, providing no actual assistance or specific information.",
+    "evidence": [
+      "[2025-12-09T15:41:54+00:00] (AI) ATLAS: Thanks for chatting earlier with our AI Support!",
+      "[2025-12-09T15:41:54+00:00] (AI) ATLAS: Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence suggesting the customer was stuck in an AI loop or prevented from reaching a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interaction does not provide information indicating that context was ignored, as no specific customer input or issue information is shown.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no indication of a delayed response as the timestamps show a consistent return without gaps.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The evidence doesn't indicate the ticket was closed while awaiting further promised information from the support side.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of mishandling a high-priority issue as the ticket is marked with normal priority and lacks any detailed customer problem statement.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response consists solely of a boilerplate thank you message and a placeholder for conversation history, providing no actual assistance or specific information.\",\n    \"evidence\": [\"[2025-12-09T15:41:54+00:00] (AI) ATLAS: Thanks for chatting earlier with our AI Support!\", \"[2025-12-09T15:41:54+00:00] (AI) ATLAS: Here is a record of your conversation for easy reference:\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence suggesting the customer was stuck in an AI loop or prevented from reaching a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction does not provide information indicating that context was ignored, as no specific customer input or issue information is shown.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication of a delayed response as the timestamps show a consistent return without gaps.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The evidence doesn't indicate the ticket was closed while awaiting further promised information from the support side.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication of mishandling a high-priority issue as the ticket is marked with normal priority and lacks any detailed customer problem statement.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60259640
+}

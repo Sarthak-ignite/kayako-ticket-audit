@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided mismatched/generic guidance (whitelist/blocklist article) for a different failing page (Information Store Protection), and the customer explicitly stated the bot was not helpful. The AI also set expectations about connecting to a specialist, but the customer experienced repeated AI replies and long time-to-human.",
+    "evidence": [
+      "Customer: \"My issues is not with the whitelist but with the Information Store Protection. We been though all these steps already with the AI bot?\"",
+      "ATLAS (public): references whitelist KB for a different issue: \"As referenced in the article 'Error: ... when accessing the whitelist or blocklist' ...\"",
+      "Customer: \"The BOT AI is not helping\u2026\"",
+      "ATLAS chat transcript: \"If I'm not able to resolve your issue, I can connect you with one of our support specialists...\" (customer later indicates this did not happen in a timely manner)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly requested a human and reported being stuck with AI/automated responses and no representative contact, indicating an AI wall/loop before a human finally engaged.",
+    "evidence": [
+      "Customer: \"So once again, CAN I SPEAK TO A HUMAN\u2026.\"",
+      "Customer: \"I was suppose to be in contact with a support representative on this request after hour on this one, not AI again\u2026\"",
+      "Customer: \"I\u2019ve been waiting for a support representative to reach out..\"",
+      "Customer: \"Where is my support representative who was suppose to contact me as AI said so\u2026.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support/AI did not adequately incorporate the customer\u2019s clarifications and prior troubleshooting. The customer clearly stated the issue was not whitelist-related and that suggested steps had already been performed via the bot, yet guidance continued along the prior track.",
+    "evidence": [
+      "Customer: \"My issues is not with the whitelist but with the Information Store Protection.\"",
+      "Customer: \"We been though all these steps already with the AI bot?\"",
+      "Customer: \"Like I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026 Not helpful\u2026\"",
+      "ATLAS earlier response anchored on whitelist/blocklist KB despite the reported failing page being isoptions.aspx (Information Store Protection)."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a significant delay (over 2 weeks) between the customer\u2019s explicit request for a human and an actual human response. Multiple customer follow-ups indicate they were waiting without engagement.",
+    "evidence": [
+      "Customer (2025-10-31): \"CAN I SPEAK TO A HUMAN\"",
+      "Customer follow-ups (2025-11-06): \"I\u2019ve been waiting for a support representative to reach out..\" / \"STILL WAITING\u2026\"",
+      "Customer (2025-11-12): \"STILL WAITING FOR SUPPORT..\"",
+      "Human reply only on 2025-11-17 (Mohammed Amer): \"We apologize for the delay on this\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket shows continued engagement and eventual provision of a dev build, followed by customer confirmation of installation and ongoing monitoring. No clear evidence the ticket was closed without resolution.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Customer stated mail flow was working and the issue was limited to a configuration page; no explicit outage/production-down severity was indicated. The main failure was delay/AI loop rather than mishandling an acknowledged P1/SEV1 incident.",
+    "evidence": [
+      "Customer initial summary: \"Email seem to be flowing properly\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60231851
+}

@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ticket transcript only shows the customer's problem statement and the start of the AI response, but the AI's actual troubleshooting content is truncated (\"...[truncated]...\"). With the AI guidance missing, there isn't enough evidence to conclude the AI was wrong, generic, or misleading.",
+    "evidence": [
+      "Customer: \"Gfi instance is not scanning emails. I have restarted all services, excluded GFI folders from scanning by the anti-virus, manually forced update by clicking download update to no avail.\"",
+      "AI: \"Got it! \ud83d\udc4c Based on your stated intent, it is ...[truncated]...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Only a single customer message and an initial AI acknowledgement are visible. There is no evidence of repeated questions, repeated troubleshooting, or the customer requesting a human and being kept in an AI loop.",
+    "evidence": [
+      "Only one visible customer problem description followed by a single AI response start."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support follow-up questions or troubleshooting steps are visible (AI response is truncated), so we cannot verify whether support ignored what the customer already tried.",
+    "evidence": [
+      "Customer already listed steps tried: \"restarted all services\", \"excluded GFI folders\", \"manually forced update\"."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No multi-day gaps or follow-ups are shown; only one timestamped interaction is visible.",
+    "evidence": [
+      "[2025-06-20T08:54:12+00:00] single interaction shown"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication of ticket status/closure or whether the issue was resolved. The provided excerpt does not show the end of the conversation or any closure event.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While 'not scanning emails' could be business-impacting, the customer did not explicitly state scope (all users vs. subset), urgency, or outage severity, and we cannot see how support handled it because the AI response content is truncated.",
+    "evidence": [
+      "Customer: \"Gfi instance is not scanning emails.\""
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60082637
+}

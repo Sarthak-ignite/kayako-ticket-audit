@@ -1,0 +1,63 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Responses are largely template-driven (apologies + long checklists + KB links) with limited concrete investigation, and they include mismatched/low-value asks (e.g., repeated video request) rather than progressing the case. The AI also asserts the issue is 'not an obvious hardware failure' repeatedly without demonstrating analysis beyond 'it rebooted'.",
+    "evidence": [
+      "\u201cDear Tomas, Thank you for following up... We will prioritize resolving this issue for you. To proceed, we kindly ask you to provide the following details for a comprehensive RMA assessment:\u201d",
+      "\u201cFor a complete list of required information, please review the instructions on Requesting RMA for a Hardware Box [https://support.keriocontrol.gfi.com/article/120394].\u201d",
+      "\u201cSince the unit powers on and recovers after a reboot (indicating no clear hardware failure), please perform the following: 1) Run the Kerio Control hardware diagnostic tool...\u201d",
+      "\u201cTo advance with warranty verification/RMA and expedite resolution, kindly provide the following details: ... A video recording depicting the reported behavior...\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer is repeatedly asked for the same RMA details and artifacts even after providing attachments and later providing shipping/contact info; the customer explicitly pushes back that they already provided/it is readable, and expresses frustration about the process for a remote site.",
+    "evidence": [
+      "Customer: \u201cThis in unacceptable. The unit is located remote and we cannot drive there every week to do some HW diagnostics tools.\u201d",
+      "Customer: \u201cI have no idea SN. You can propably find it via last ticket 60235438 where was RMA located.\u201d",
+      "Support (later, again): \u201cTo proceed with warranty verification and a potential RMA, we kindly request the following details: ... Serial number ... A video recording...\u201d",
+      "Customer: \u201cSN is cleary readable from the photo - green sticker. Do you mean something else?\u201d",
+      "Support (again): \u201cSerial Number ... please either type the Serial Number in your message or send a close-up photo...\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeatedly requests information that was already provided in-ticket (attachments for S/N, then shipping/contact details) and does not effectively acknowledge constraints (remote location, no video captured during incident) while continuing to require the same items.",
+    "evidence": [
+      "Customer: \u201cSN is in attachment.\u201d",
+      "Support: \u201cthe two SN photos were unreadable, so please either type the Serial Number... or send a close-up photo...\u201d",
+      "Customer: \u201cNo video/photo from this incident was taken.\u201d",
+      "Support (still): \u201cA video recording depicting the reported behavior (a brief phone video capturing LED status and the unresponsive Web UI will be sufficient)\u201d",
+      "Customer: \u201cWe do all the IT issues for them. So the RMA shipping and all the thing is to our company address as in last ticket.\u201d",
+      "Customer (later provides it anyway): \u201cShipping: ApSo spol. s r.o., Tomas Ruzicka ... Czech republic ... +420604915369\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "All exchanges occur within the same day with responses occurring within minutes to ~1 hour; there are no multi-day gaps or 'still waiting' follow-ups.",
+    "evidence": [
+      "[2025-12-04T08:52:52+00:00] Customer update followed by [2025-12-04T08:59:43+00:00] support reply",
+      "[2025-12-04T09:18:26+00:00] Customer message followed by [2025-12-04T09:20:17+00:00] internal summary"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript does not show the ticket being closed or auto-closed; the interaction is ongoing with the customer asking scheduling questions and providing shipping info.",
+    "evidence": [
+      "Customer: \u201cCan the firebird be done via VPN or it must be from computer onsite?... Are you 24/7 service or do we have some time window?\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is a recurring outage affecting WAN/VPN/Internet access at a customer office shortly after an RMA replacement, yet support primarily follows a standard RMA checklist and repeats diagnostic/factory reset steps rather than visibly escalating or offering a high-touch immediate remediation path (e.g., rapid escalation/engineering review, replacement authorization given repeat failure).",
+    "evidence": [
+      "Customer: \u201cWeb UI unresponsive. WAN down.\u201d",
+      "Customer: \u201cno VPN connection from our side and clients in the office could not reach the internet via WAN.\u201d",
+      "Customer: \u201cWe have NG120 from RMA and it failed after week again.\u201d",
+      "Support: \u201cSince the unit powers on and recovers after rebooting... please complete the following... Run the ... diagnostic tool... perform a factory reset and full system recovery...\u201d",
+      "Customer: \u201cThis in unacceptable. The unit is located remote and we cannot drive there every week...\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60256173
+}

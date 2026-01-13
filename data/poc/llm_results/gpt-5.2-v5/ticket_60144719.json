@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The AI-CS Integration messages are largely standard case-creation/auto-reminder templates. There is no customer-facing statement that the AI was wrong/misleading, and no clearly incorrect AI guidance is shown being corrected in-thread.",
+    "evidence": [
+      "\u201cBased on your recent request we have created the case 00447584.\u201d",
+      "\u201cAn automated reminder was sent on 28 May 2025 to all recipients of the case.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer is not stuck interacting only with AI; multiple human agents respond and request details. There is no request for a human followed by continued AI-only responses.",
+    "evidence": [
+      "\u201cHi Bharath, Thank you for reaching Khoros support\u2026 We are looking into this\u2026\u201d",
+      "\u201cHello Subramani, My name is Huzaif, and I will be assisting you with this case moving forward.\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asks for information that the requester indicates was already provided in earlier emails/screenshots (and repeats the 'when did this start' question after being told it never worked). This forces the requester to re-point support back to already-shared context.",
+    "evidence": [
+      "Support: \u201cCan you please tell when the customer started facing this issue? Also, could be please share the steps to reproduce and a screen recording of the issue\u2026\u201d",
+      "Customer: \u201cThis has never worked for the customer.\u201d",
+      "Customer: \u201cIn my previous email, I've attached the necessary screenshots showing the error\u2026 Please let me know if you need any details.\u201d",
+      "Support (later): \u201cWhen did this issue first occur? Was it when Marcus's account was created in Care?\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The visible staff responses generally occur within 0\u20132 days after customer-facing updates, and longer gaps appear driven by waiting for customer-provided items (e.g., test account/logs) rather than silence after a customer message.",
+    "evidence": [
+      "Customer: \u201cHi Huzaif,\u2026 I'll keep you posted. Please keep this case open.\u201d (2025-06-10T16:59:20+00:00)",
+      "Support: \u201cThank you for the update. We are currently reviewing it\u2026\u201d (2025-06-11T16:37:59+00:00)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The case was closed/marked resolved via automation while the customer indicated the issue was not resolved and the investigation was still pending requested items (test account/logs). The customer explicitly requested reopening and later asked to keep it open while preparing logs.",
+    "evidence": [
+      "Support: \u201cThis case has now been closed.\u201d (2025-06-10T09:02:20+00:00)",
+      "Customer: \u201cPlease reopen this case. The issue is yet to be resolved.\u201d (2025-06-10T12:46:38+00:00)",
+      "Automation: \u201cBased on previous information received, your case has been marked as resolved.\u201d (2025-06-24T17:30:11+00:00)",
+      "Customer: \u201cPlease keep this ticket open for now. I'll share the logs as soon as possible.\u201d (2025-06-25T10:31:00+00:00)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the requester asked to prioritize, there is no explicit P1/SEV1/critical/outage language or clear multi-user production-down impact described that would require incident-style handling based on the ticket text.",
+    "evidence": [
+      "\u201cI'd appreciate it if you could prioritize this.\u201d",
+      "\u201cMarcus (Mark) Brewer\u2026 cannot access the Community Analytics in Care Analytics.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60144719
+}

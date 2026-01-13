@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The visible portion of the transcript shows ATLAS introducing the chat and asking clarifying questions. There is no customer-facing statement that the AI was wrong/useless, and the provided content is truncated before any substantive guidance can be evaluated as incorrect.",
+    "evidence": [
+      "Customer (Guenter Weidlich): \"what is the correct upgrade path from version 9.2 to 9.5\"",
+      "AI Assistant: \"Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Although multiple consecutive AI messages appear, there is no evidence the customer requested a human, expressed frustration about being stuck with AI, or that the AI repeatedly asked for the same information after the customer said it was already provided. The transcript is also truncated, limiting confirmation of any loop.",
+    "evidence": [
+      "Kayako - ticket id 60240989 // ATLAS commented publicly: \"Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\"",
+      "AI Assistant: \"If I'm not able to resolve your issue, I can connect you with one of our support specialists...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no customer-facing indication that the customer already provided specific information (logs/steps) and was asked for it again, or that prior context was ignored. The AI appears to ask an initial clarifying question after the upgrade-path request.",
+    "evidence": [
+      "Customer (Guenter Weidlich): \"what is the correct upgrade path from version 9.2 to 9.5\"",
+      "AI Assistant: \"Just to make sure we're on the same page - is this the same system you're reaching out about today?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket lifecycle indicates it was created and solved/closed within about 1.2 hours, and there are no customer-facing follow-ups indicating they were waiting days or asking for updates after silence.",
+    "evidence": [
+      "CSV: Ticket Created=2025-11-11 21:25:04",
+      "CSV: Ticket Closed=2025-11-11 22:37:28"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is closed in CSV, but there is no customer-facing evidence in the provided text that the customer still had an unresolved request at the time of closure or that closure/auto-closure was announced while something was pending. The interaction log is truncated before any resolution context is shown.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Customer (Guenter Weidlich): \"what is the correct upgrade path from version 9.2 to 9.5\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No severity cues (P1/SEV1/critical outage, production down, urgent business impact) are present in the customer\u2019s message, so there is no basis to assess high-severity mishandling.",
+    "evidence": [
+      "Customer (Guenter Weidlich): \"what is the correct upgrade path from version 9.2 to 9.5\"",
+      "AI Assistant: \"Please select from the below or give me a detailed description of what\u2019s happening.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60240989
+}

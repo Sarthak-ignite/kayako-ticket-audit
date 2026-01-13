@@ -1,0 +1,39 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI providing incorrect information or promises not kept in the available interaction.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The provided interaction log does not show the AI repeatedly asking for the same information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no indication that support ignored relevant context or asked for information already provided by the customer in this interaction.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The maximum gap between responses is noted as 0.0 hours, indicating no significant delays between interactions.",
+    "evidence": [
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence provided that suggests the ticket was closed prematurely with customer still awaiting a response.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is marked as low priority, so P1_SEV1 handling criteria do not apply.",
+    "evidence": [
+      "Priority: low"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI providing incorrect information or promises not kept in the available interaction.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided interaction log does not show the AI repeatedly asking for the same information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that support ignored relevant context or asked for information already provided by the customer in this interaction.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The maximum gap between responses is noted as 0.0 hours, indicating no significant delays between interactions.\",\n    \"evidence\": [\"Max gap between responses (hours): 0.0\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence provided that suggests the ticket was closed prematurely with customer still awaiting a response.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is marked as low priority, so P1_SEV1 handling criteria do not apply.\",\n    \"evidence\": [\"Priority: low\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60243765
+}

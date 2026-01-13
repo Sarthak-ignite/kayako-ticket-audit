@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responded with generic/supportive prompts (e.g., requesting logs/screenshots) that don\u2019t match a straightforward licensing downgrade request, and the chat flow contains a broken/empty customer input (\u201cundefined\u201d), indicating low-quality AI handling without progressing the actual request.",
+    "evidence": [
+      "Issue description: * Hey, please downgrade this license key to version 18.2",
+      "Chat Support: If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help ...[truncated]...",
+      "Alperia:\n\n undefined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There isn\u2019t a long, repetitive AI-only loop or repeated re-asking for the same info; the interaction quickly moved to ticket creation/escalation rather than trapping the customer in an AI back-and-forth.",
+    "evidence": [
+      "Kayako - ticket id 60018792 // ATLAS commented privately: Sending to BU"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not repeatedly ask for information already provided within the ticket; the license key was provided and later used to process the downgrade without visible re-requests by agents.",
+    "evidence": [
+      "Alperia commented privately: License Key: QjcmHQpCsc0-zdMys0gYs6BVdL4wa-cEBF8-790951",
+      "License  has been downgraded to GFI FaxMaker 2015 (version 18.2). New key is 6E1f-HUTS-101TmxYN6NHMccEwbvhRRr0K-790951."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are major gaps between customer request/follow-up and meaningful support action, including a customer complaint after 22 days and an overall multi-month delay before resolution.",
+    "evidence": [
+      "Alperia (2025-05-02T13:10:11+00:00): Hello,\n\nwe are now waiting 22 days...",
+      "Initial request (2025-04-10T14:00:36+00:00) ... Resolution actions/response (2025-10-08T10:06:10+00:00)",
+      "Aditi Garg: We sincerely apologize for the delay in processing your request to downgrade your license key to version 18.2."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was not closed before resolution; the customer received the downgraded key and then explicitly confirmed closure.",
+    "evidence": [
+      "License  has been downgraded to GFI FaxMaker 2015 (version 18.2). New key is 6E1f-HUTS-101TmxYN6NHMccEwbvhRRr0K-790951.",
+      "Alperia: you can close the ticket"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The request is a licensing downgrade, with no indication of an outage/critical production impact (no 'P1/SEV1/urgent/outage/production down' language).",
+    "evidence": [
+      "Hey, please downgrade this license key to version 18.2"
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60018792
+}

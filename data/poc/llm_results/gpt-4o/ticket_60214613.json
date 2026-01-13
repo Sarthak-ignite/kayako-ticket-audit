@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI responses being generic filler or providing wrong information.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer is not stuck in an AI loop and was able to interact with human agents promptly.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team seems to have overlooked previous customer inputs about persistent issues.",
+    "evidence": [
+      "2025-10-09T13:30:55+00:00: 'The customer reports still seeing the following error: image' while the issue persists despite previous communication of the problem."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant delay in response time noted in the ticket interaction timeline.",
+    "evidence": [
+      "Max gap between responses (hours): 25.5"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication that the ticket was closed while the customer was waiting for further information.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The handling of the issue seems to be directly related to identifying the root cause rather than engaging in generic troubleshooting.",
+    "evidence": [
+      "2025-10-11T11:05:06+00:00: 'im working on this.. it is a case sensitivity issue with the automation. will fix it in few minutes.'"
+    ]
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI responses being generic filler or providing wrong information.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer is not stuck in an AI loop and was able to interact with human agents promptly.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team seems to have overlooked previous customer inputs about persistent issues.\",\n    \"evidence\": [\"2025-10-09T13:30:55+00:00: 'The customer reports still seeing the following error: image' while the issue persists despite previous communication of the problem.\"]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant delay in response time noted in the ticket interaction timeline.\",\n    \"evidence\": [\"Max gap between responses (hours): 25.5\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no indication that the ticket was closed while the customer was waiting for further information.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The handling of the issue seems to be directly related to identifying the root cause rather than engaging in generic troubleshooting.\",\n    \"evidence\": [\"2025-10-11T11:05:06+00:00: 'im working on this.. it is a case sensitivity issue with the automation. will fix it in few minutes.'\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60214613
+}

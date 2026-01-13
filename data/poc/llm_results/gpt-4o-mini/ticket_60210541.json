@@ -1,0 +1,41 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "While the AI responses are somewhat generic, there is no clear evidence that they provided wrong information or made unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence that the customer was stuck in an AI loop; they had responses from a human representative after AI interaction.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The employee's response does not acknowledge the customer's detailed comments regarding previous issues with Kerio control, thus ignoring the context provided.",
+    "evidence": [
+      "[2025-10-31T13:59:15+00:00] (Employee) Ciprian Nastase: Dear Jozef, Thank you for contacting GFI - Kerio Control Support, I understand that you are reporting PBX C3X stops working after",
+      "[2025-09-30T15:55:22+00:00] (Customer) Jozef Kacala: all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays in responses, with the first human interaction occurring 742.1 hours after the ticket was created.",
+    "evidence": [
+      "[2025-10-31T14:06:39+00:00] (Customer) Jozef Kacala: Hi Ciprian, yes, it was related - of course at that time we did not know as this was the only report we got.",
+      "[2025-09-30T15:50:42+00:00] (Customer) Jozef Kacala: Hi team, on Kerio control v10 we already had some reports on PBX issues, this is latest with partner Walter having issues on 10 Kerio"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed but there's no clear indication that the customer was waiting on promised information when it was closed.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The responses do not include generic troubleshooting steps for high-priority issues; the handling seems appropriate given the context.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"While the AI responses are somewhat generic, there is no clear evidence that they provided wrong information or made unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence that the customer was stuck in an AI loop; they had responses from a human representative after AI interaction.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The employee's response does not acknowledge the customer's detailed comments regarding previous issues with Kerio control, thus ignoring the context provided.\",\n    \"evidence\": [\n      \"[2025-10-31T13:59:15+00:00] (Employee) Ciprian Nastase: Dear Jozef, Thank you for contacting GFI - Kerio Control Support, I understand that you are reporting PBX C3X stops working after\",\n      \"[2025-09-30T15:55:22+00:00] (Customer) Jozef Kacala: all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant delays in responses, with the first human interaction occurring 742.1 hours after the ticket was created.\",\n    \"evidence\": [\n      \"[2025-10-31T14:06:39+00:00] (Customer) Jozef Kacala: Hi Ciprian, yes, it was related - of course at that time we did not know as this was the only report we got.\",\n      \"[2025-09-30T15:50:42+00:00] (Customer) Jozef Kacala: Hi team, on Kerio control v10 we already had some reports on PBX issues, this is latest with partner Walter having issues on 10 Kerio\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed but there's no clear indication that the customer was waiting on promised information when it was closed.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The responses do not include generic troubleshooting steps for high-priority issues; the handling seems appropriate given the context.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o-mini",
+  "_ticket_id": 60210541
+}

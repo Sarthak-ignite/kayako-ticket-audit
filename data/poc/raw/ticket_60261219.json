@@ -1,0 +1,112 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_kerio_control",
+        "requester": {
+          "id": 60141169,
+          "uuid": "f98bb4be-0b52-4558-941f-c84830b33253",
+          "full_name": "Michael Pubantz",
+          "legacy_id": "369062211539",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/f98bb4be-0b52-4558-941f-c84830b33253?1767691546",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": {
+            "id": 60046287,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 142704,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [
+            {
+              "id": 40305,
+              "resource_type": "identity_phone"
+            }
+          ],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+          "last_seen_ip": "87.193.133.114",
+          "last_seen_at": "2026-01-06T09:25:46+00:00",
+          "last_active_at": "2026-01-06T09:25:46+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60141169",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@6c355c0d1ac2e6e71b6306f3b00703b30d2ac560",
+          "password_updated_at": "2025-07-17T07:05:15+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-06T09:19:36+00:00",
+          "last_activity_at": "2026-01-06T09:19:36+00:00",
+          "created_at": "2020-04-01T10:13:03+00:00",
+          "updated_at": "2026-01-06T09:25:46+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60141169"
+        },
+        "ticket_idt": 60261219
+      },
+      "interactions": [
+        [
+          "2025-12-11T08:54:19+00:00",
+          "Kayako - ticket id 60261219 // ATLAS commented publicly: Thanks for chatting earlier with our AI Support!<br><br>Here is a record of your conversation for easy reference: <br><br><b>--- AI Assistant ---</b><br>Hi, Michael Pubantz ! \ud83d\udc4b<br><br>This is the Kerio Control ATLAS support chat.<br><br><hr><br><div style=\"line-height: 1.3; margin-top: 8px; font-size: 0.9rem; color: #666666;\"><b>Please note:</b> ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to <a href=\"https://chatbotterms.trilogy.com/\" target=\"_blank\">these terms and conditions</a>. <br>If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.</div><br/><br><br><b>--- AI Assistant ---</b><br>Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\r<br>\r\ud83d\udca1<a href=\"https://support.keriocontrol.gfi.com/article/117054 \" target=\"_blank\">Getting the most out of Kerio Control ATLAS Support Chat</a>\r<br>\r\ud83d\udca1Tip: Aim to give us a bit more context than just a quick \"It's not working.\" The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\r<br>\rIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa<br/><br><br><b>--- Customer (Michael Pubantz) ---</b><br>i want a VPN Connection over ipv6 (open SSL or Kerio VPN)<br/><br><br><b>--- AI Assistant ---</b><br>Michael Pubantz , I see that you are an active GFI reseller/distributor.<br>While not mandatory, it may be useful for troubleshooting if you provide me with the <strong>Kerio Control license key</strong> for which you are contacting us. \ud83d\ude0a.<br>Please select the option that applies below \ud83d\udc47<br/><br><br><b>--- Customer (Michael Pubantz) ---</b><br>20339-AUZP1-5KVV4<br/><br><br><b>--- AI Assistant ---</b><br>Given your reseller/distributor status, that's alright, so let's get down to business! \ud83d\udedf<br/><br><br><b>--- AI Assistant ---</b><br>If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa<br><br>\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.<br><br>\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow. <br><br>\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.<br><br>\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it: <br>\ud83d\udc49 <a href=\"https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiJkYjc2MGM2Yi01YzFiLTQ5ZTctYmI2OS00MTE2MjdiNmE3MWEiLCJzZXNzaW9uX3VpZCI6ImRiNzYwYzZiLTVjMWItNDllNy1iYjY5LTQxMTYyN2I2YTcxYSIsImVtYWlsIjoibXB1YmFudHpAZHRsLWNvbXB1dGVyLmRlIiwiY3VzdG9tX3BhcnNlciI6e30sImNhbGxiYWNrIjp7ImNhbGxiYWNrX3VybCI6bnVsbCwiY2FsbGJhY2tfZW1haWwiOiJjaXByaWFuLm5hc3Rhc2VAdHJpbG9neS5jb20ifSwicHJvZHVjdF90YWciOiJhdXJlYV9rZXJpb19jb250cm9sIiwicXVlcnkiOiIiLCJleHAiOjE3NjU0NTA1NTl9.Qn8BJWJ_P6B-1MRiMO3TKr-8tCcw7uR4V3t1ZfmetCs  \" target=\"_blank\">Secure File Upload</a><br><br>You should see the following:<br>- User: mpubantz@dtl-computer.de <br>- Session ID: db760c6b-5c1b-49e7-bb69-411627b6a71a<br/><br><br><b>--- Customer (Michael Pubantz) ---</b><br>thre is no log file from Firewall call over ipv6 dont work<br/><br><br><b>--- AI Assistant ---</b><br>Thanks for clarifying, Michael! So just to make sure I understand correctly - you're trying to establish a VPN connection (either OpenSSL or Kerio VPN) over IPv6, and the firewall is not allowing the connection through IPv6. Is that right?<br><br>Let me ask a few questions to help narrow this down:<br><br><strong>Which VPN type are you trying to use</strong> - Kerio VPN client connecting to Kerio Control, or OpenVPN client connecting to the OpenVPN server on Kerio Control?<br/><br><br><b>--- Customer (Michael Pubantz) ---</b><br>jes <br/><br><br><b>--- AI Assistant ---</b><br>Thanks for confirming! <br><br>Just to clarify - which VPN type are you working with?<br><br>1. <strong>Kerio VPN</strong> (Kerio VPN client connecting to Kerio Control VPN server)<br>2. <strong>OpenVPN</strong> (OpenVPN client connecting to OpenVPN server on Kerio Control)<br><br>Or are you trying to get both working over IPv6?<br/><br><br><b>--- Customer (Michael Pubantz) ---</b><br>both testtet Kerio VPN i need<br/><br><br><b>--- AI Assistant ---</b><br>Got it! So you need <strong>Kerio VPN</strong> to work over IPv6. You've tested both Kerio VPN and OpenVPN, but Kerio VPN is what you need.<br><br>Let me help you with this. Based on what I'm seeing in our knowledge base, I need to understand your current setup a bit better:<br><br><strong>Can you tell me:</strong><br><br>1. <strong>What version of Kerio Control</strong> are you running?<br>2. <strong>Is IPv6 already enabled</strong> on your WAN and LAN interfaces in Kerio Control?<br>3. <strong>What exactly happens</strong> when you try to connect via Kerio VPN over IPv6? Do you get any specific error messages, or does the connection just fail/timeout?<br><br>The reason I'm asking is that Kerio Control does support IPv6 networking (as shown in <a href=\"https://support.keriocontrol.gfi.com/article/117859\" target=\"_blank\">Configuring IPv6 Networking in Kerio Control</a>), but I want to make sure your IPv6 configuration is properly set up first before we troubleshoot the VPN connection specifically.<br/><br><br><b>--- Customer (Michael Pubantz) ---</b><br><br>9.5.0 patch 3 build 9017<br/><br><br><b>--- AI Assistant ---</b><br>Thanks for providing the version - Kerio Control 9.5.0 patch 3 (build 9017).<br><br>Now, here's an important point I need to clarify with you: <strong>Kerio VPN server in Kerio Control currently only listens on IPv4 addresses, not IPv6</strong>. This means that even if you have IPv6 configured on your network interfaces, the Kerio VPN server itself doesn't bind to or accept connections on IPv6 addresses.<br><br>However, there are a couple of things we can explore:<br><br><strong>Option 1:</strong> If your client has both IPv4 and IPv6 connectivity, you can connect to the Kerio VPN server using its <strong>IPv4 address</strong> (even if the client is on an IPv6 network). The VPN tunnel itself would be established over IPv4, but once connected, IPv6 traffic can flow through the tunnel if properly configured.<br><br><strong>Option 2:</strong> If you absolutely need the VPN server to be reachable via IPv6, you might need to set up an IPv6-to-IPv4 proxy or use a dual-stack configuration where the connection initiates over IPv4.<br><br><strong>Can you tell me:</strong><br>- Does your VPN client have access to an IPv4 address to connect to the Kerio Control server?<br>- Or are you in a pure IPv6-only environment where IPv4 is not available?<br><br>This will help me guide you to the best solution for your situation.<br/><br><br><b>--- Customer (Michael Pubantz) ---</b><br>ok thats not fine need feature request for vpn Server bind to ip v6<br/><br><br><b>--- AI Assistant ---</b><br>I completely understand - you need the VPN server to bind to IPv6 addresses, and that's a valid requirement, especially as more networks move to IPv6-only environments.<br><br>I can definitely help you submit a feature request for this. Here's what I need to gather to make sure your request is properly documented:<br><br><strong>Feature Request Details:</strong><br><br>1. <strong>Your use case:</strong> Can you briefly describe why you need the Kerio VPN server to bind to IPv6? (For example: \"We have an IPv6-only network environment\" or \"We need to support remote clients connecting from IPv6-only ISPs\")<br><br>2. <strong>Priority for your organization:</strong> How critical is this feature for your deployment?<br><br>3. <strong>Any additional context:</strong> Are there specific scenarios or configurations where this would be particularly useful?<br><br>Once you provide these details, I'll make sure this feature request gets properly submitted to our support team, who will then route it to product management for review. <br><br>Just to set expectations: Feature requests are reviewed by the product management team, but there's no guarantee of implementation or timeline. However, your feedback is valuable and helps shape future development priorities.<br><br>Would you like to share those details so I can get this submitted for you?<br/><br><br><b>--- Customer (Michael Pubantz) ---</b><br>i have a costomer with a only ipv6 enviremont becaus his technikcan has errors in ipv4<br/><br><br><b>--- AI Assistant ---</b><br>Perfect, that's exactly the kind of real-world scenario that makes a strong case for this feature request!<br><br>So to summarize what I'll include in the feature request:<br><br><strong>Feature Request: Kerio VPN Server IPv6 Binding Support</strong><br><br>- <strong>Current Limitation:</strong> Kerio VPN server only binds to IPv4 addresses, making it impossible for clients in IPv6-only environments to establish VPN connections<br>- <strong>Use Case:</strong> Customer has an IPv6-only environment due to IPv4 configuration issues/errors by their technician<br>- <strong>Impact:</strong> Customer cannot use Kerio VPN functionality at all in their current network setup<br>- <strong>Requested Enhancement:</strong> Enable Kerio VPN server to bind to and accept connections on IPv6 addresses (dual-stack support would be ideal)<br><br>Before I submit this to our support team for routing to product management, let me ask:<br><br><strong>Have you tried the OpenVPN server feature</strong> that's available in your version (9.5.0 patch 3)? I'm curious if OpenVPN in Kerio Control has IPv6 binding support - it might be worth testing as a potential workaround while we wait for Kerio VPN to get IPv6 support. Did you test whether OpenVPN can bind to IPv6?<br><br>Once you confirm, I'll proceed with submitting this feature request through our support team.<br/><br><br><b>--- Customer (Michael Pubantz) ---</b><br>open vpn also dont work<br/><br><br><b>--- AI Assistant ---</b><br>Got it - so <strong>both Kerio VPN and OpenVPN</strong> are not working in the IPv6-only environment. That confirms the issue is broader than just Kerio VPN.<br><br>This makes the feature request even more critical since your customer essentially has <strong>no VPN solution available</strong> in their current IPv6-only setup.<br><br>Let me update the feature request to reflect this:<br><br><strong>Feature Request: VPN Server IPv6 Binding Support (Both Kerio VPN and OpenVPN)</strong><br><br>- <strong>Current Limitation:</strong> Neither Kerio VPN server nor OpenVPN server in Kerio Control bind to IPv6 addresses<br>- <strong>Use Case:</strong> Customer has an IPv6-only environment (IPv4 has configuration errors)<br>- <strong>Impact:</strong> Customer has NO working VPN solution - both Kerio VPN and OpenVPN are unusable<br>- <strong>Business Impact:</strong> Complete loss of VPN functionality for remote access<br>- <strong>Requested Enhancement:</strong> Enable both VPN servers (Kerio VPN and OpenVPN) to bind to and accept connections on IPv6 addresses<br><br>I'll now connect you with our support team who will create a ticket for this feature request and route it to product management for review.<br><br>Just to confirm - you understand that feature requests go through a review process and there's no guaranteed timeline for implementation, correct?<br><br>Let me transfer you now. \ud83d\ude80<br/><br><br><b>--- AI Assistant ---</b><br>Thank you for sharing that important detail! A human colleague will be happy to assist you further\u2014please feel free to choose from the available options to continue. \ud83d\ude0a<br/><br><br><b>--- Customer (Michael Pubantz) ---</b><br>thx bye<br/>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 1,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

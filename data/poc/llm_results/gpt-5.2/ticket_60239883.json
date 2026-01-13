@@ -1,0 +1,44 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI publicly states the Apache upgrade was \u201csuccessfully\u201d completed, but internal engineering commentary indicates the work may not have been appropriate/authorized (needs a spec), suggesting the AI may be overstating completion or making an unqualified promise of resolution.",
+    "evidence": [
+      "[2025-11-13T13:02:20+00:00] (AI) Cu Chulainn AI Manager: \"We are pleased to inform you that our Engineering team has successfully upgraded the Apache version in the GFI La\"",
+      "[2025-11-13T12:59:31Z] (Employee) anujkumar-df: \"This isn't part of maintenance, version upgrades always require a spec.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the AI repeatedly asking for the same information or preventing access to a human; the customer posts once and the AI proceeds to create an engineering issue and provide updates.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI does not request additional logs/screenshots or repeat questions already answered; it acknowledges the request and escalates to engineering.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket metadata indicates a very long delay to first human response and large gaps between responses (multiple days).",
+    "evidence": [
+      "Time to first human (hours): 67.0",
+      "Max gap between responses (hours): 64.4"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is marked closed, the interaction log does not show the customer waiting on promised follow-up at the time of closure or expressing that they are giving up; there is also a closing-type message indicating completion.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Despite high priority, the support action shown is escalation/creation of an engineering issue rather than generic end-user troubleshooting; no cache/firewall/VPN type scripts are present.",
+    "evidence": [
+      "[2025-11-10T18:02:48+00:00] (AI) CE Maintenance Bot: \"Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15431\"",
+      "[2025-11-10T18:02:54+00:00] (AI) Cu Chulainn AI Manager: \"We have contacted the Engineering team and will provide you with an update as soon as we receive more information\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI publicly states the Apache upgrade was \u201csuccessfully\u201d completed, but internal engineering commentary indicates the work may not have been appropriate/authorized (needs a spec), suggesting the AI may be overstating completion or making an unqualified promise of resolution.\",\n    \"evidence\": [\n      \"[2025-11-13T13:02:20+00:00] (AI) Cu Chulainn AI Manager: \\\"We are pleased to inform you that our Engineering team has successfully upgraded the Apache version in the GFI La\\\"\",\n      \"[2025-11-13T12:59:31Z] (Employee) anujkumar-df: \\\"This isn't part of maintenance, version upgrades always require a spec.\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of the AI repeatedly asking for the same information or preventing access to a human; the customer posts once and the AI proceeds to create an engineering issue and provide updates.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The AI does not request additional logs/screenshots or repeat questions already answered; it acknowledges the request and escalates to engineering.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"The ticket metadata indicates a very long delay to first human response and large gaps between responses (multiple days).\",\n    \"evidence\": [\n      \"Time to first human (hours): 67.0\",\n      \"Max gap between responses (hours): 64.4\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked closed, the interaction log does not show the customer waiting on promised follow-up at the time of closure or expressing that they are giving up; there is also a closing-type message indicating completion.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Despite high priority, the support action shown is escalation/creation of an engineering issue rather than generic end-user troubleshooting; no cache/firewall/VPN type scripts are present.\",\n    \"evidence\": [\n      \"[2025-11-10T18:02:48+00:00] (AI) CE Maintenance Bot: \\\"Opened engineering issue https://github.com/trilogy-group/eng-maintenance/issues/15431\\\"\",\n      \"[2025-11-10T18:02:54+00:00] (AI) Cu Chulainn AI Manager: \\\"We have contacted the Engineering team and will provide you with an update as soon as we receive more information\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60239883
+}

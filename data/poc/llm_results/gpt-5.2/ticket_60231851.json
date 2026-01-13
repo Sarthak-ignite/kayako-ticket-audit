@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI produced a long, generic template-style response that did not prevent the customer from feeling they were only getting automated replies and no real support, indicating low usefulness/quality for the situation.",
+    "evidence": [
+      "[2025-11-06T18:53:10+00:00] (Customer) \"Wow, Same automated message as the one below. Scroll down, exact same one and from same person\"",
+      "[2025-11-06T15:51:03+00:00] (Customer) \"Like I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative\"",
+      "[2025-10-31T13:51:24+00:00] (AI) ATLAS: \"Dear Ralph, Thank you for clarifying that your issue specifically involves the Information Store Protection page in GFI MailEssentials, rather\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer explicitly reports being stuck with bot-driven interactions and unable to reach a human support representative for days.",
+    "evidence": [
+      "[2025-11-06T15:49:34+00:00] (Customer) \"I\u2019ve been waiting for a support representative\"",
+      "[2025-11-06T15:51:03+00:00] (Customer) \"THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative\"",
+      "[2025-11-06T15:51:49+00:00] (Customer) \"STILL WAITING\u2026\"",
+      "[2025-11-12T18:21:01+00:00] (Customer) \"STILL WAITING FOR SUPPORT..\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer states they already clarified the issue is not about the whitelist and that they have been through steps before; the AI response immediately follows, suggesting earlier context wasn\u2019t properly incorporated.",
+    "evidence": [
+      "[2025-10-31T13:50:38+00:00] (Customer) \"My issues is not with the whitelist but with the Information Store Protection. We been though all these ste\"",
+      "[2025-10-31T13:51:24+00:00] (AI) ATLAS: \"Thank you for clarifying that your issue specifically involves the Information Store Protection page\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap before any human response, and the ticket metadata indicates very large delays (including time to first human and max response gap).",
+    "evidence": [
+      "[2025-10-31T14:49:23+00:00] (Customer) \"Once again\u2026 This is second time I requested support over the last 6 months\"",
+      "[2025-11-12T18:21:01+00:00] (Customer) \"STILL WAITING FOR SUPPORT..\"",
+      "[2025-11-17T14:17:45+00:00] (Employee) \"We apologize for the delay on this, I ve escalated it internally for faster resolution.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is marked closed, the provided interaction excerpts do not show a closure message or that it was closed while the customer was awaiting a promised update.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although this is high priority and there were delays, the visible human handling shows internal escalation and a dev build being provided; there is no clear evidence of inappropriate generic troubleshooting replacing escalation.",
+    "evidence": [
+      "[2025-11-17T14:17:45+00:00] (Employee) \"I ve escalated it internally for faster resolution.\"",
+      "[2025-11-18T01:51:19+00:00] (Employee) \"Our Development Team has prepared a new build\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI produced a long, generic template-style response that did not prevent the customer from feeling they were only getting automated replies and no real support, indicating low usefulness/quality for the situation.\",\n    \"evidence\": [\n      \"[2025-11-06T18:53:10+00:00] (Customer) \\\"Wow, Same automated message as the one below. Scroll down, exact same one and from same person\\\"\",\n      \"[2025-11-06T15:51:03+00:00] (Customer) \\\"Like I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative\\\"\",\n      \"[2025-10-31T13:51:24+00:00] (AI) ATLAS: \\\"Dear Ralph, Thank you for clarifying that your issue specifically involves the Information Store Protection page in GFI MailEssentials, rather\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer explicitly reports being stuck with bot-driven interactions and unable to reach a human support representative for days.\",\n    \"evidence\": [\n      \"[2025-11-06T15:49:34+00:00] (Customer) \\\"I\u2019ve been waiting for a support representative\\\"\",\n      \"[2025-11-06T15:51:03+00:00] (Customer) \\\"THIS WAS ALL done via the bot\u2026 Not helpful\u2026 Where is my support representative\\\"\",\n      \"[2025-11-06T15:51:49+00:00] (Customer) \\\"STILL WAITING\u2026\\\"\",\n      \"[2025-11-12T18:21:01+00:00] (Customer) \\\"STILL WAITING FOR SUPPORT..\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer states they already clarified the issue is not about the whitelist and that they have been through steps before; the AI response immediately follows, suggesting earlier context wasn\u2019t properly incorporated.\",\n    \"evidence\": [\n      \"[2025-10-31T13:50:38+00:00] (Customer) \\\"My issues is not with the whitelist but with the Information Store Protection. We been though all these ste\\\"\",\n      \"[2025-10-31T13:51:24+00:00] (AI) ATLAS: \\\"Thank you for clarifying that your issue specifically involves the Information Store Protection page\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a multi-day gap before any human response, and the ticket metadata indicates very large delays (including time to first human and max response gap).\",\n    \"evidence\": [\n      \"[2025-10-31T14:49:23+00:00] (Customer) \\\"Once again\u2026 This is second time I requested support over the last 6 months\\\"\",\n      \"[2025-11-12T18:21:01+00:00] (Customer) \\\"STILL WAITING FOR SUPPORT..\\\"\",\n      \"[2025-11-17T14:17:45+00:00] (Employee) \\\"We apologize for the delay on this, I ve escalated it internally for faster resolution.\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is marked closed, the provided interaction excerpts do not show a closure message or that it was closed while the customer was awaiting a promised update.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although this is high priority and there were delays, the visible human handling shows internal escalation and a dev build being provided; there is no clear evidence of inappropriate generic troubleshooting replacing escalation.\",\n    \"evidence\": [\n      \"[2025-11-17T14:17:45+00:00] (Employee) \\\"I ve escalated it internally for faster resolution.\\\"\",\n      \"[2025-11-18T01:51:19+00:00] (Employee) \\\"Our Development Team has prepared a new build\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5.2",
+  "_ticket_id": 60231851
+}

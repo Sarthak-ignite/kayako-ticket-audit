@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS provided largely relevant, product-specific troubleshooting and referenced appropriate KBs. There is no clear factual inaccuracy, broken-template behavior, unmet promise to send something, or explicit customer statement that the AI content was wrong/irrelevant (only that it did not resolve the issue).",
+    "evidence": [
+      "2025-10-10T07:49:27+00:00 // ATLAS: \"Based on your report... two main symptoms: (1) Virus Scanning Engine (VSE) failures... and (2) an 'unexpected error' in the configuration interface...\"",
+      "2025-10-10T09:23:11+00:00 // Customer: \"Please note that all the suggested steps have already been completed. Unfortunately, these actions did not resolve the issue\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer did not explicitly request a human while being kept with AI responses, and there is no clear repetition of the same specific information request by AI 2+ times. After escalation, humans responded and requested additional diagnostics.",
+    "evidence": [
+      "2025-10-10T09:23:11+00:00 // Customer: \"all the suggested steps have already been completed\"",
+      "2025-10-12T04:12:15+00:00 // Human (Aditi Garg): provides a specific workaround and states engineering identified a file issue"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer stated earlier steps were already completed, the visible follow-ups shift to different actions (engineering workaround, then a bug-fix build, then additional targeted data collection). There is not clear, unambiguous evidence that support asked for the same exact steps/logs multiple times after being told they were already done/sent.",
+    "evidence": [
+      "2025-10-12T04:12:15+00:00 // Aditi Garg: \"Our Engineering team has identified the issue... file \u2014 exploitdb.mdb \u2014 may not be copied... Temporary Workaround: ... Manually copy...\"",
+      "2025-10-18T14:12:57+00:00 // Arafat Bakhsh: directs to upgrade to a specific \"New_Release_Bug_Fix_22.2\" and only then requests tracing/logs if it persists"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a gap of 3+ calendar days between a customer update and the next support response.",
+    "evidence": [
+      "2025-10-15T09:54:31+00:00 // Customer: \"the suggested solution worked partially... the workaround helped only temporarily... Could you please clarify...\"",
+      "2025-10-18T14:12:57+00:00 // Support (Arafat Bakhsh): next public response with new version/fix instructions (3+ days later)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No evidence the ticket was actually closed while an unanswered customer request remained. The messages shown only mention a standard 'ticket will stay open for one week unless...' policy, but do not show an actual closure event.",
+    "evidence": [
+      "2025-10-12T04:12:15+00:00 // Aditi Garg: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\"",
+      "2025-10-20T13:36:00+00:00 // Pablo Ambram: repeats the same 'stay open for one week unless...' statement (still not a closure)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the customer impact is serious (\"without email protection\"), the explicit escalation/severity marker appears later and is acknowledged with priority adjustment. There is no clear evidence that, after being marked high severity, support only provided irrelevant/generic troubleshooting or failed to escalate.",
+    "evidence": [
+      "2025-10-20T12:24:30+00:00 // Internal: \"[customer_escalation] ... severity is: core_functionality_defect\"",
+      "2025-10-20T13:22:37+00:00 // Raymond Guirguis: \"Your escalation has been acknowledged, and the ticket's priority has been adjusted\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60218313
+}

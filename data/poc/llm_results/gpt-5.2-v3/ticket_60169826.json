@@ -1,0 +1,36 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Only the ATLAS chat intro and a request for the customer to describe the issue are present. There is no troubleshooting guidance, no factual claims about the product, and no customer feedback indicating incorrect or unhelpful responses.",
+    "evidence": [
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer asked for a human, no repeated requests for the same information, and no multiple back-and-forth messages showing the customer is trapped in a loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The ticket excerpt does not include any customer-provided problem details, attachments, or prior steps that support could have ignored. The only visible support message is an initial request for details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The log shows a single timestamped interaction and no customer follow-ups or support replies across days. There is no measurable customer-to-support response gap of 3+ days.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No ticket closure event is shown, and there is no sequence where a customer question/request goes unanswered followed by closure.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no explicit severity marker (P1/SEV1/Critical) and no indication of outage/production-down impact in the provided content, so mishandling cannot be evidenced.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60169826
+}

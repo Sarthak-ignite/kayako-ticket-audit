@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "No AI responses in the thread provide generic filler, incorrect information, or unkept promises; AI messages only set/removed hold states and do not make substantive claims.",
+    "evidence": [
+      "2025-10-08T08:31:58+00:00 Centralsupport-ai-acc: \"ticket was set to hold until 2025-10-08T08:30:17.000Z. Placing ticket back to open\"",
+      "2025-10-07T20:21:30+00:00 Centralsupport-ai-acc: \"Placing on hold for 12 hour(s)\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no sign the AI repeatedly asked for the same information or kept the customer trapped; human agents handled the interactions and the AI only changed ticket hold state.",
+    "evidence": [
+      "2025-10-08T08:31:58+00:00 Centralsupport-ai-acc: \"Placing ticket back to open\"",
+      "2025-10-07T20:21:30+00:00 Centralsupport-ai-acc: \"Placing on hold for 12 hour(s)\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While agents had some trouble reproducing the issue, there is no clear instance of repeatedly asking for information the customer already provided or explicitly ignoring provided context.",
+    "evidence": [
+      "2025-10-10T03:21:05+00:00 Alexandr Oliynyk: \"We were unable to reproduce the issue impersonating one of the admin accounts for COID 10\"",
+      "2025-10-10T13:42:53+00:00 Andrew Mugisha: \"The customer's email is Daniel.Soler@flhealth.gov\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multi-day gaps between customer messages and agent responses, consistent with the provided max gap of 25.5 hours and visible intervals of over a day in the timeline.",
+    "evidence": [
+      "2025-10-08T12:01:58+00:00 Raymond Guirguis (public) and then 2025-10-10T03:21:05+00:00 Alexandr Oliynyk (public) \u2014 > 36 hours gap",
+      "Customer reported issue 2025-10-10T13:42:53+00:00 and agent next public update 2025-10-11T12:22:00+00:00 \u2014 ~22.5 hours gap"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The agent marked the issue resolved and deployed shortly before a public explanation was posted; there is no clear evidence the ticket was closed while the customer was still waiting or had given up.",
+    "evidence": [
+      "2025-10-11T12:08:50+00:00 Raymond Guirguis (private): \"This is resolved and deployed now\"",
+      "2025-10-11T12:22:00+00:00 Raymond Guirguis (public): \"We identified that the issue was related to case sensitivity in the customer's\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked urgent, the support actions described are specific to onboarding/automation and debugging (case sensitivity, backend updates) rather than generic low-effort troubleshooting steps inappropriate for a P1.",
+    "evidence": [
+      "2025-10-08T12:01:58+00:00 Raymond Guirguis (public): \"We have updated the automation backend on our end to onboard the company: 104983\"",
+      "2025-10-11T11:05:06+00:00 Raymond Guirguis (private): \"im working on this.. it is a case sensitivity issue with the automation. will fix it in few minutes.\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"No AI responses in the thread provide generic filler, incorrect information, or unkept promises; AI messages only set/removed hold states and do not make substantive claims.\",\n    \"evidence\": [\n      \"2025-10-08T08:31:58+00:00 Centralsupport-ai-acc: \\\"ticket was set to hold until 2025-10-08T08:30:17.000Z. Placing ticket back to open\\\"\",\n      \"2025-10-07T20:21:30+00:00 Centralsupport-ai-acc: \\\"Placing on hold for 12 hour(s)\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no sign the AI repeatedly asked for the same information or kept the customer trapped; human agents handled the interactions and the AI only changed ticket hold state.\",\n    \"evidence\": [\n      \"2025-10-08T08:31:58+00:00 Centralsupport-ai-acc: \\\"Placing ticket back to open\\\"\",\n      \"2025-10-07T20:21:30+00:00 Centralsupport-ai-acc: \\\"Placing on hold for 12 hour(s)\\\"\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"While agents had some trouble reproducing the issue, there is no clear instance of repeatedly asking for information the customer already provided or explicitly ignoring provided context.\",\n    \"evidence\": [\n      \"2025-10-10T03:21:05+00:00 Alexandr Oliynyk: \\\"We were unable to reproduce the issue impersonating one of the admin accounts for COID 10\\\"\",\n      \"2025-10-10T13:42:53+00:00 Andrew Mugisha: \\\"The customer's email is Daniel.Soler@flhealth.gov\\\"\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are multi-day gaps between customer messages and agent responses, consistent with the provided max gap of 25.5 hours and visible intervals of over a day in the timeline.\",\n    \"evidence\": [\n      \"2025-10-08T12:01:58+00:00 Raymond Guirguis (public) and then 2025-10-10T03:21:05+00:00 Alexandr Oliynyk (public) \u2014 > 36 hours gap\",\n      \"Customer reported issue 2025-10-10T13:42:53+00:00 and agent next public update 2025-10-11T12:22:00+00:00 \u2014 ~22.5 hours gap\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The agent marked the issue resolved and deployed shortly before a public explanation was posted; there is no clear evidence the ticket was closed while the customer was still waiting or had given up.\",\n    \"evidence\": [\n      \"2025-10-11T12:08:50+00:00 Raymond Guirguis (private): \\\"This is resolved and deployed now\\\"\",\n      \"2025-10-11T12:22:00+00:00 Raymond Guirguis (public): \\\"We identified that the issue was related to case sensitivity in the customer's\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is marked urgent, the support actions described are specific to onboarding/automation and debugging (case sensitivity, backend updates) rather than generic low-effort troubleshooting steps inappropriate for a P1.\",\n    \"evidence\": [\n      \"2025-10-08T12:01:58+00:00 Raymond Guirguis (public): \\\"We have updated the automation backend on our end to onboard the company: 104983\\\"\",\n      \"2025-10-11T11:05:06+00:00 Raymond Guirguis (private): \\\"im working on this.. it is a case sensitivity issue with the automation. will fix it in few minutes.\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60214613
+}

@@ -1,0 +1,116 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "streetsmart",
+        "requester": {
+          "id": 60194419,
+          "uuid": "4113cfde-a96f-45b3-bfa6-43ec4ea4fc32",
+          "full_name": "Anthony Marlow",
+          "legacy_id": "17832776324882",
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/4113cfde-a96f-45b3-bfa6-43ec4ea4fc32?1766411416",
+          "agent_case_access": null,
+          "organization_case_access": "ORGANIZATION",
+          "organization": null,
+          "teams": [],
+          "emails": [
+            {
+              "id": 195954,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": "Europe/Istanbul",
+          "time_zone_offset": 10800,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "131.148.2.62",
+          "last_seen_at": "2025-12-22T13:50:16+00:00",
+          "last_active_at": "2025-12-22T13:50:16+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60194419",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@9703aef851fad642ad8a2509217da57cc76c0bb4",
+          "password_updated_at": "2025-09-29T14:01:25+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2025-12-22T13:50:16+00:00",
+          "last_activity_at": "2025-12-22T13:50:16+00:00",
+          "created_at": "2024-03-21T23:28:53+00:00",
+          "updated_at": "2025-12-22T13:50:16+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60194419"
+        },
+        "ticket_idt": 60209192
+      },
+      "interactions": [
+        [
+          "2025-09-30T06:53:48+00:00",
+          "Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: Dear Anthony,\n\nThank you for your patience.\n\nCould you please let us know what error you are getting while creating a location?\u00a0\nKindly send us a screenshot of the error and the fields that you have filled while creating a location.\u00a0\n\nIn case you are facing issues validating address, please follow the steps from the article Creating Locations [https://support.streetsmartmobile.com/article/63731-creating-locations] which includes a workaround.\u00a0\n\nBest regards,\nAlexandr Oliynyk\nStreetSmart Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-29T14:02:55+00:00",
+          "Kayako - ticket id 60209192 // Anthony Marlow commented privately: I am having an issue creating new locations"
+        ],
+        [
+          "2025-09-29T14:02:50+00:00",
+          "Kayako - ticket id 60209192 // ATLAS commented privately: Component could not be determined"
+        ],
+        [
+          "2025-09-29T14:02:21+00:00",
+          "Kayako - ticket id 60209192 // Anthony Marlow commented privately: Good Morning"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 4,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

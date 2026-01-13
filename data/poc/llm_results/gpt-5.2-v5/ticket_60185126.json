@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer explicitly states the support response was not useful and implies no analysis was performed, describing it as something they cannot relay to their customer. The public support reply mainly asks to wait/monitor and gather files later, without addressing whether the already-mentioned dump/logs were analyzed.",
+    "evidence": [
+      "Customer (private): \"We are very dissatisfied with your answer. Did you analyze the dump and logs from previous crashes?\"",
+      "Customer (private): \"But like this? What should we give the customer in response? That GFI is not able to analyze anything from the logs and dump?\"",
+      "Mike (public): \"At this stage, it will be important to monitor the system closely to see whether the crashes continue under this latest update.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer requested a human or complained about being stuck with AI, and a human agent (Mike Kebede) did respond publicly in the thread. No repetitive AI loop after the customer says information was already provided is shown.",
+    "evidence": [
+      "Mike Kebede commented publicly: \"Best regards, Mike Kebede\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support acknowledges the customer already collected a watchdog dump/logs, but the subsequent public response does not confirm any analysis of those prior materials and instead focuses on monitoring and collecting artifacts again if it happens in the future. The customer explicitly calls out that prior dumps/logs seemingly were not reviewed.",
+    "evidence": [
+      "ATLAS (public): \"I understand Kerio Control has been repeatedly crashing and that you\u2019ve already collected logs and a watchdog dump.\"",
+      "Customer (private): \"Did you analyze the dump and logs from previous crashes?\"",
+      "Mike (public): \"If you experience any further crashes or unexpected restarts, please collect and upload the following so we can proceed with deeper analysis\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long gap between the customer's Sep 4 message and the next public support response on Sep 24. Additionally, the customer explicitly complains that it took 2 days to get an answer.",
+    "evidence": [
+      "Customer (private): \"It took you 2 days to even answer!\"",
+      "Customer message timestamp: \"[2025-09-04T12:14:51+00:00]\" followed by next public support message timestamp: \"[2025-09-24T16:18:51+00:00]\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket includes standard auto-close warning language, but there is no explicit message indicating the ticket was actually closed/auto-closed while the issue remained unresolved.",
+    "evidence": [
+      "ATLAS (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Closed in the portal.\"",
+      "Mike (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "While the customer reports recurring crashes and a brief internet outage, there is no explicit P1/SEV1/critical language or clear evidence that support treated an explicitly-declared critical outage with inappropriate generic troubleshooting instead of escalation.",
+    "evidence": [
+      "Customer (private): \"The internet was unavailable for approx. 4 minutes.\"",
+      "Customer (private): \"Please analyze it, because the customer is already talking about replacing the technology.\""
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60185126
+}

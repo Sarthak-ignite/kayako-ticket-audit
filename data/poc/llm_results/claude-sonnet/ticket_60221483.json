@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is insufficient information to assess AI quality. The only interaction shown is a system-generated message confirming that an AI conversation occurred, but the actual AI conversation content is not provided in the transcript.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "Cannot determine if there was an AI loop since the actual AI conversation content is not included in the ticket interactions provided. Only a summary message exists.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There are no subsequent support interactions after the AI conversation summary that would demonstrate context being ignored.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Only one interaction timestamp is provided, and the max gap between responses is 0.0 hours, indicating no delays occurred during the ticket lifecycle.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed, there is no evidence of the customer waiting for promised information or expressing dissatisfaction. The ticket appears to have been resolved through the AI interaction.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This is a normal priority ticket, not P1/Sev1, so this pattern does not apply.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is insufficient information to assess AI quality. The only interaction shown is a system-generated message confirming that an AI conversation occurred, but the actual AI conversation content is not provided in the transcript.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"Cannot determine if there was an AI loop since the actual AI conversation content is not included in the ticket interactions provided. Only a summary message exists.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There are no subsequent support interactions after the AI conversation summary that would demonstrate context being ignored.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Only one interaction timestamp is provided, and the max gap between responses is 0.0 hours, indicating no delays occurred during the ticket lifecycle.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed, there is no evidence of the customer waiting for promised information or expressing dissatisfaction. The ticket appears to have been resolved through the AI interaction.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This is a normal priority ticket, not P1/Sev1, so this pattern does not apply.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-sonnet",
+  "_ticket_id": 60221483
+}

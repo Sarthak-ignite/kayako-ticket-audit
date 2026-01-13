@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are truncated and incomplete. Multiple ATLAS responses end abruptly mid-sentence without providing actual guidance or solutions to the customer's issue.",
+    "evidence": [
+      "2025-12-05T06:15:08+00:00 ATLAS: 'Thank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoro' - response cuts off mid-sentence",
+      "2025-12-05T06:13:52+00:00 ATLAS: 'Thank you for providing the additional details regarding the issue where users must refresh the page to reply to a post within yo' - response cuts off mid-word"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer is caught in an AI loop. After customer provides detailed information (Dec 5), AI responses remain generic and incomplete rather than progressing toward resolution or human escalation.",
+    "evidence": [
+      "2025-12-04T09:52:33+00:00 Cu Chulainn: 'could you kindly specify whi' - AI asks for clarification but cuts off",
+      "2025-12-05T06:13:52+00:00 ATLAS: Repeats acknowledgment without substantive action despite customer having already provided community URL and affected user information on 2025-12-05T06:10:37"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "AI continues requesting clarification and information despite customer already providing specific details including community URL, affected user profile, and issue description in the Dec 5 interaction.",
+    "evidence": [
+      "2025-12-04T09:52:33+00:00 Cu Chulainn: 'could you kindly specify whi[ch brand]' - requests brand specification",
+      "2025-12-05T06:10:37+00:00 Customer Karuna: Provides 'Community URL: https://community.se.com' and specific user affected",
+      "2025-12-05T06:13:52+00:00 ATLAS: Still providing generic acknowledgment rather than acting on the provided details"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a significant 20.3-hour gap between the customer's Dec 4 message and the next substantive interaction. The ticket also shows a 20+ hour gap between human customer input and automated responses.",
+    "evidence": [
+      "2025-12-04T09:51:12+00:00 Customer message",
+      "2025-12-05T06:10:37+00:00 Customer provides detailed information - approximately 20.3 hours gap noted in metadata"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Ticket is marked as closed but the timeline does not show explicit closure communication. However, insufficient evidence to confirm if customer initiated closure or ticket was closed prematurely without resolution.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket is marked as 'normal' priority, not high-priority/outage. This pattern does not apply to normal priority tickets.",
+    "evidence": []
+  },
+  "_raw_response": "```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are truncated and incomplete. Multiple ATLAS responses end abruptly mid-sentence without providing actual guidance or solutions to the customer's issue.\",\n    \"evidence\": [\n      \"2025-12-05T06:15:08+00:00 ATLAS: 'Thank you for outlining the situation where users are required to refresh the page to successfully post replies within your Khoro' - response cuts off mid-sentence\",\n      \"2025-12-05T06:13:52+00:00 ATLAS: 'Thank you for providing the additional details regarding the issue where users must refresh the page to reply to a post within yo' - response cuts off mid-word\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"Customer is caught in an AI loop. After customer provides detailed information (Dec 5), AI responses remain generic and incomplete rather than progressing toward resolution or human escalation.\",\n    \"evidence\": [\n      \"2025-12-04T09:52:33+00:00 Cu Chulainn: 'could you kindly specify whi' - AI asks for clarification but cuts off\",\n      \"2025-12-05T06:13:52+00:00 ATLAS: Repeats acknowledgment without substantive action despite customer having already provided community URL and affected user information on 2025-12-05T06:10:37\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"AI continues requesting clarification and information despite customer already providing specific details including community URL, affected user profile, and issue description in the Dec 5 interaction.\",\n    \"evidence\": [\n      \"2025-12-04T09:52:33+00:00 Cu Chulainn: 'could you kindly specify whi[ch brand]' - requests brand specification\",\n      \"2025-12-05T06:10:37+00:00 Customer Karuna: Provides 'Community URL: https://community.se.com' and specific user affected\",\n      \"2025-12-05T06:13:52+00:00 ATLAS: Still providing generic acknowledgment rather than acting on the provided details\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There is a significant 20.3-hour gap between the customer's Dec 4 message and the next substantive interaction. The ticket also shows a 20+ hour gap between human customer input and automated responses.\",\n    \"evidence\": [\n      \"2025-12-04T09:51:12+00:00 Customer message\",\n      \"2025-12-05T06:10:37+00:00 Customer provides detailed information - approximately 20.3 hours gap noted in metadata\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is marked as closed but the timeline does not show explicit closure communication. However, insufficient evidence to confirm if customer initiated closure or ticket was closed prematurely without resolution.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket is marked as 'normal' priority, not high-priority/outage. This pattern does not apply to normal priority tickets.\",\n    \"evidence\": []\n  }\n}\n```",
+  "_model": "claude-haiku-4-5",
+  "_ticket_id": 60256250
+}

@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The transcript contains only a brief AI comment recording the chat and no substantive advice, incorrect facts, or unkept promises to evaluate as quality failures.",
+    "evidence": [
+      "[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no repeated AI request or sequence of back-and-forth messages showing the customer being stuck in a loop\u2014only a single AI summary message is present.",
+    "evidence": [
+      "[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer messages or prior context are present in the transcript to show that the AI ignored provided information or asked for repeated data.",
+    "evidence": [
+      "[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The provided timeline shows only one AI entry and the ticket metadata indicates no multi-day gaps (Max gap between responses: 0.0), so there is no evidence of significant delays.",
+    "evidence": [
+      "[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:",
+      "Max gap between responses (hours): 0.0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is closed, there is no evidence in the interaction showing the customer was waiting for promised information or had abandoned the ticket prior to closure.",
+    "evidence": [
+      "[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:",
+      "Status: closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is marked normal priority and there is no emergency/outage exchange to assess escalation or inappropriate generic troubleshooting for a P1/Sev1.",
+    "evidence": [
+      "Priority: normal",
+      "[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The transcript contains only a brief AI comment recording the chat and no substantive advice, incorrect facts, or unkept promises to evaluate as quality failures.\",\n    \"evidence\": [\n      \"[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no repeated AI request or sequence of back-and-forth messages showing the customer being stuck in a loop\u2014only a single AI summary message is present.\",\n    \"evidence\": [\n      \"[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer messages or prior context are present in the transcript to show that the AI ignored provided information or asked for repeated data.\",\n    \"evidence\": [\n      \"[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The provided timeline shows only one AI entry and the ticket metadata indicates no multi-day gaps (Max gap between responses: 0.0), so there is no evidence of significant delays.\",\n    \"evidence\": [\n      \"[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\",\n      \"Max gap between responses (hours): 0.0\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Although the ticket is closed, there is no evidence in the interaction showing the customer was waiting for promised information or had abandoned the ticket prior to closure.\",\n    \"evidence\": [\n      \"[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\",\n      \"Status: closed\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is marked normal priority and there is no emergency/outage exchange to assess escalation or inappropriate generic troubleshooting for a P1/Sev1.\",\n    \"evidence\": [\n      \"Priority: normal\",\n      \"[2025-10-16T22:18:41+00:00] (AI) ATLAS: Kayako - ticket id 60223073 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60223073
+}

@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer explicitly reports the AI-driven support flow was not helpful and misrouted them (ticket with customer care instead of technical). This is a direct customer-facing complaint about AI quality/utility.",
+    "evidence": [
+      "Customer (public): \"Stop talking Hermes, I want to speak to a HUMAN.\"",
+      "Customer (public): \"The ATLAS AI opened a ticket with customer care, not with the technical department, and customer care said I have to open a ticket with the technical department\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer indicates they are blocked by the automated/AI channel and cannot reach a human or properly open a technical ticket due to the chat flow/button not working. Multiple customer-facing statements show frustration with being kept in an AI/automation loop.",
+    "evidence": [
+      "Customer (public): \"Stop talking Hermes, I want to speak to a HUMAN.\"",
+      "Customer (public): \"Right now I'm trying to open a ticket but the \\\"Start Chat\\\" button isn't working\"",
+      "Customer (public): \"I can't open a ticket because your system isn't working!\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "While the customer shared context and later expressed dissatisfaction, there is not a clear customer-facing instance of support asking them to re-provide the same information they already provided, or otherwise demonstrably ignoring specific prior details (per the detection criteria).",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Customer explicitly reports multi-day waiting with no reply, which is a STRONG signal of meaningful response delays. The ticket shows repeated follow-ups about lack of response.",
+    "evidence": [
+      "Customer (public): \"Three days later and still no reply.\"",
+      "Customer (private): \"Almost five days since I opened this ticket and still no response. NOT GOOD ENOUGH!\"",
+      "Customer (private): \"One hour later and no reply...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support includes an auto-closure warning while the issue is still unresolved, and the customer later confirms the problem persists. This meets the criterion of closure/auto-closure language despite an unresolved pending issue.",
+    "evidence": [
+      "Support (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Customer (public): \"The license you have provided is still failing to update:\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Customer expresses urgency and frustration, but there is no explicit P1/SEV1/critical outage language in customer-facing messages. The only severity indicator (\"core_functionality_defect\") appears in an internal/private note and is insufficient by itself to mark this as detected.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60069509
+}

@@ -1,0 +1,48 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI produced at least one clearly inappropriate/generic system action and used templated/generic messaging rather than substantive updates.",
+    "evidence": [
+      "\"[2025-10-24T04:04:01+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 9999 hour(s)\"",
+      "\"[2025-10-23T18:46:04+00:00] (AI) ATLAS: Kayako - ticket id 60227783 // ATLAS commented publicly: Dear Brad,\\n\\nThank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform (\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the AI repeatedly requested the same information or trapped the customer; interactions show an AI reply and later human posts.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No instance in the provided transcript shows the support asking for information the customer already provided or ignoring prior details.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant gaps between AI and human responses and a long time to first human response are present (multiple days).",
+    "evidence": [
+      "\"Time to first human (hours): 83.3\"",
+      "\"Max gap between responses (hours): 74.0\"",
+      "\"[2025-10-23T18:46:04+00:00] (AI) ATLAS...\" and next human/public employee post is at \"[2025-10-29T11:35:33+00:00] (Employee) Balaji Jayaraman\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket is closed, there is no clear evidence the ticket was closed while the customer was still awaiting promised information or that the customer explicitly gave up in the transcript provided.",
+    "evidence": [
+      "\"Status: closed\"",
+      "\"[2025-10-29T11:35:33+00:00] (Employee) Balaji Jayaraman: ... Please find attached the customer-facing RCA for the Khoros Care incident.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no recorded instance of the support team providing generic end-user troubleshooting steps for a high-severity outage; messages shown are incident responses and an RCA, not generic troubleshooting.",
+    "evidence": [
+      "\"[2025-10-23T18:46:04+00:00] (AI) ATLAS: ... Thank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform (\"",
+      "\"[2025-10-27T06:05:46+00:00] (Employee) Balaji Jayaraman: ... RCA : https://www.notion.so/...\""
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI produced at least one clearly inappropriate/generic system action and used templated/generic messaging rather than substantive updates.\",\n    \"evidence\": [\n      \"\\\"[2025-10-24T04:04:01+00:00] (AI) Centralsupport-ai-acc: ... Placing on hold for 9999 hour(s)\\\"\",\n      \"\\\"[2025-10-23T18:46:04+00:00] (AI) ATLAS: Kayako - ticket id 60227783 // ATLAS commented publicly: Dear Brad,\\\\n\\\\nThank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform (\\\"\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence the AI repeatedly requested the same information or trapped the customer; interactions show an AI reply and later human posts.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No instance in the provided transcript shows the support asking for information the customer already provided or ignoring prior details.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant gaps between AI and human responses and a long time to first human response are present (multiple days).\",\n    \"evidence\": [\n      \"\\\"Time to first human (hours): 83.3\\\"\",\n      \"\\\"Max gap between responses (hours): 74.0\\\"\",\n      \"\\\"[2025-10-23T18:46:04+00:00] (AI) ATLAS...\\\" and next human/public employee post is at \\\"[2025-10-29T11:35:33+00:00] (Employee) Balaji Jayaraman\\\"\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket is closed, there is no clear evidence the ticket was closed while the customer was still awaiting promised information or that the customer explicitly gave up in the transcript provided.\",\n    \"evidence\": [\n      \"\\\"Status: closed\\\"\",\n      \"\\\"[2025-10-29T11:35:33+00:00] (Employee) Balaji Jayaraman: ... Please find attached the customer-facing RCA for the Khoros Care incident.\\\"\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no recorded instance of the support team providing generic end-user troubleshooting steps for a high-severity outage; messages shown are incident responses and an RCA, not generic troubleshooting.\",\n    \"evidence\": [\n      \"\\\"[2025-10-23T18:46:04+00:00] (AI) ATLAS: ... Thank you for reaching out regarding the recent service disruption affecting your EMEA production instance of the Khoros platform (\\\"\",\n      \"\\\"[2025-10-27T06:05:46+00:00] (Employee) Balaji Jayaraman: ... RCA : https://www.notion.so/...\\\"\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60227783
+}

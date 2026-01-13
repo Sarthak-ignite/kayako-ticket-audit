@@ -1,0 +1,50 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI-generated/internal responses are generic and non-informative (no actionable guidance or follow-up), and the customer repeatedly reports not receiving a license or helpful feedback.",
+    "evidence": [
+      "[2025-11-07T12:49:08+00:00] (AI) ATLAS: Kayako - ticket id 60238295 // ATLAS commented privately: Action: l1",
+      "[2025-11-11T13:25:41+00:00] (AI) ADN Support: Kayako - ticket id 60238295 // ADN Support commented publicly: Hi support,\n\nI have not received a licence or any helpful feedback.\n\nAre you actually working on this?\u200b\n\nMit freundlichen Gr\u00fc\u00dfen \n\nLale E"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly asks whether support is working on the issue and requests updates, indicating they could not progress past automated/AI responses to a resolution or human engagement.",
+    "evidence": [
+      "[2025-11-11T13:25:41+00:00] (AI) ADN Support: Kayako - ticket id 60238295 // ADN Support commented publicly: Hi support,\n\nI have not received a licence or any helpful feedback.\n\nAre you actually working on this?\u200b",
+      "[2025-11-07T12:48:27+00:00] (AI) ADN Support: Kayako - ticket id 60238295 // ADN Support commented publicly: Hi support,\n\nI did as asked, but I can't track the message I've sent properly.\nWould you mind keeping us posted?\u200b"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear evidence that support asked for previously provided information again or ignored specific customer-provided logs/screenshots in the excerpts provided.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Large gaps between interactions and a very long time to first human response indicate significant delays.",
+    "evidence": [
+      "Ticket metadata: Time to first human (hours): 407.4, Max gap between responses (hours): 310.8",
+      "[2025-11-07T12:48:27+00:00] (AI) ADN Support ...",
+      "[2025-11-11T13:25:41+00:00] (AI) ADN Support ...",
+      "[2025-11-24T12:12:20+00:00] (Employee) Ciprian Nastase ...",
+      "[2025-11-24T12:15:38+00:00] (Employee) Ciprian Nastase ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Ticket is marked closed while the customer had explicitly stated they had not received a licence or helpful feedback and asked whether anyone was working on the issue, suggesting closure occurred before resolution.",
+    "evidence": [
+      "Ticket Context: Status: closed",
+      "[2025-11-11T13:25:41+00:00] (AI) ADN Support: Kayako - ticket id 60238295 // ADN Support commented publicly: Hi support,\n\nI have not received a licence or any helpful feedback.\n\nAre you actually working on this?\u200b"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal (not P1/SEV1), and there is no evidence of generic high-priority mishandling steps.",
+    "evidence": []
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI-generated/internal responses are generic and non-informative (no actionable guidance or follow-up), and the customer repeatedly reports not receiving a license or helpful feedback.\",\n    \"evidence\": [\n      \"[2025-11-07T12:49:08+00:00] (AI) ATLAS: Kayako - ticket id 60238295 // ATLAS commented privately: Action: l1\",\n      \"[2025-11-11T13:25:41+00:00] (AI) ADN Support: Kayako - ticket id 60238295 // ADN Support commented publicly: Hi support,\\n\\nI have not received a licence or any helpful feedback.\\n\\nAre you actually working on this?\u200b\\n\\nMit freundlichen Gr\u00fc\u00dfen \\n\\nLale E\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The customer repeatedly asks whether support is working on the issue and requests updates, indicating they could not progress past automated/AI responses to a resolution or human engagement.\",\n    \"evidence\": [\n      \"[2025-11-11T13:25:41+00:00] (AI) ADN Support: Kayako - ticket id 60238295 // ADN Support commented publicly: Hi support,\\n\\nI have not received a licence or any helpful feedback.\\n\\nAre you actually working on this?\u200b\",\n      \"[2025-11-07T12:48:27+00:00] (AI) ADN Support: Kayako - ticket id 60238295 // ADN Support commented publicly: Hi support,\\n\\nI did as asked, but I can't track the message I've sent properly.\\nWould you mind keeping us posted?\u200b\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no clear evidence that support asked for previously provided information again or ignored specific customer-provided logs/screenshots in the excerpts provided.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Large gaps between interactions and a very long time to first human response indicate significant delays.\",\n    \"evidence\": [\n      \"Ticket metadata: Time to first human (hours): 407.4, Max gap between responses (hours): 310.8\",\n      \"[2025-11-07T12:48:27+00:00] (AI) ADN Support ...\",\n      \"[2025-11-11T13:25:41+00:00] (AI) ADN Support ...\",\n      \"[2025-11-24T12:12:20+00:00] (Employee) Ciprian Nastase ...\",\n      \"[2025-11-24T12:15:38+00:00] (Employee) Ciprian Nastase ...\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": true,\n    \"reasoning\": \"Ticket is marked closed while the customer had explicitly stated they had not received a licence or helpful feedback and asked whether anyone was working on the issue, suggesting closure occurred before resolution.\",\n    \"evidence\": [\n      \"Ticket Context: Status: closed\",\n      \"[2025-11-11T13:25:41+00:00] (AI) ADN Support: Kayako - ticket id 60238295 // ADN Support commented publicly: Hi support,\\n\\nI have not received a licence or any helpful feedback.\\n\\nAre you actually working on this?\u200b\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal (not P1/SEV1), and there is no evidence of generic high-priority mishandling steps.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60238295
+}

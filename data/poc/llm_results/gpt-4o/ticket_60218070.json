@@ -1,0 +1,43 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no evidence of AI providing generic filler responses, wrong information, or making unkept promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer interacts multiple times, but there is no indication that they are trapped in an AI loop.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no evidence of support ignoring previously provided information or repeatedly asking for the same data.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant gaps between responses, notably a delay of 171.4 hours.",
+    "evidence": [
+      "Max gap between responses (hours): 171.4",
+      "[2025-10-11T22:12:09+00:00] (Employee) ...",
+      "[2025-10-13T17:33:00+00:00] (Customer) ..."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the customer confirmed everything was working as expected.",
+    "evidence": [
+      "[2025-10-22T17:34:06+00:00] (Customer) Matthew Hart: Thank you, you guys were great!"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket involved escalations and specific technical interactions rather than basic troubleshooting.",
+    "evidence": [
+      "Kayako - ticket id 60218070 // Matthew Hart commented privately: Guys, our current DNN licenses expire ..."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of AI providing generic filler responses, wrong information, or making unkept promises.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"The customer interacts multiple times, but there is no indication that they are trapped in an AI loop.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of support ignoring previously provided information or repeatedly asking for the same data.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There were significant gaps between responses, notably a delay of 171.4 hours.\",\n    \"evidence\": [\"Max gap between responses (hours): 171.4\", \"[2025-10-11T22:12:09+00:00] (Employee) ...\", \"[2025-10-13T17:33:00+00:00] (Customer) ...\"]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket was closed after the customer confirmed everything was working as expected.\",\n    \"evidence\": [\"[2025-10-22T17:34:06+00:00] (Customer) Matthew Hart: Thank you, you guys were great!\"]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket involved escalations and specific technical interactions rather than basic troubleshooting.\",\n    \"evidence\": [\"Kayako - ticket id 60218070 // Matthew Hart commented privately: Guys, our current DNN licenses expire ...\"]\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60218070
+}

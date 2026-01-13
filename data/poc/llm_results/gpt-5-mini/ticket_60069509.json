@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The thread contains human agent interactions and troubleshooting steps; there is no evidence of AI-generated responses that are generic filler, provide wrong information, or make broken promises.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication of an automated AI assistant repeatedly asking the customer the same things or preventing escalation to a human\u2014interactions are between human agents and the customer.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "There are instances where agents appear to miss or request information that the customer already provided, indicating ignored context.",
+    "evidence": [
+      "On 2025-06-11 Syed asked the customer to manually apply the attached license file.",
+      "On 2025-06-12 Alex later wrote privately: 'Also, where is the attached licence key? I'm using the one I've downloaded from the GFI website for that client.' \u2014 indicates the agent did not acknowledge the previously referenced attached license or the customer's note about which license they were using.",
+      "Multiple private notes reference the license and its status (e.g. 'The license is fine, i checked.' on 2025-06-13), yet the customer continues to be asked or to report failures, suggesting some context disconnect."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows multiple multi-day gaps between agent and customer messages, indicating significant delays in responses.",
+    "evidence": [
+      "Customer: 2025-06-12 21:27:14 \u2014 Alex replies late, citing being away sick; prior agent message was on 2025-06-11 13:48:03 (\u22481 day gap).",
+      "Agent Syed: 2025-06-13 06:46:48 followed by further messages only on 2025-06-16 and later \u2014 gaps of multiple days between communications.",
+      "Customer asked to keep ticket open on 2025-06-22 and noted a three day weekend as reason for delayed reply (2025-06-22 22:08:45), confirming multi-day delays exist."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The transcript does not show the ticket being closed while the customer was awaiting promised information or the customer abandoning the ticket; in fact the customer explicitly asked to keep the ticket open.",
+    "evidence": [
+      "Customer message on 2025-06-22: 'Please keep this ticket open.'",
+      "No interaction in the thread indicates the ticket was closed prematurely."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no explicit indication this was a P1/Sev1 incident (no priority label, no urgent escalation requested), nor clear evidence that a high-priority case was handled only with generic troubleshooting instead of immediate escalation.",
+    "evidence": []
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60069509
+}

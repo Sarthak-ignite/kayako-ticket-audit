@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no clear evidence that AI responses in the thread are generic filler, factually wrong, or containing broken promises. The AI (ATLAS) messages are brief operational notes (e.g., 'Action: Send to l1', transcript notice) but do not themselves demonstrate incorrect information or filler responses to the customer.",
+    "evidence": [
+      "2025-06-16T10:39:05+00:00 (AI) ATLAS: Action: Send to l1",
+      "2025-06-16T10:38:41+00:00 (AI) ATLAS: Here is a transcript of the customer's recent interaction with ATLAS chat: ..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear sign the customer is stuck repeatedly interacting only with AI and unable to reach a human. Human agents (multiple employees) respond in the ticket and the AI indicates escalation to L1, so no clear looping solely with AI.",
+    "evidence": [
+      "Multiple human agent interactions after the AI: Qasim Ali, Arafat Bakhsh, Christian Schmidt entries on 2025-06-16 and later.",
+      "2025-06-16T10:39:05+00:00 (AI) ATLAS: Action: Send to l1"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly stated that logs and screenshots were already in the ticket, yet support repeatedly requested the complete set of logs and asked for logs again. This indicates the support team ignored or failed to acknowledge the customer's prior statement and provided materials.",
+    "evidence": [
+      "2025-06-23T11:54:39+00:00 (Employee) Christian Schmidt: The logs and screenshots are already in the ticket!",
+      "2025-06-24T06:36:57+00:00 (Employee) Arafat Bakhsh (private): * We need the complete set of logs that should capture the entire mail flow.",
+      "2025-06-24T06:39:42+00:00 (Employee) Arafat Bakhsh (public): We will require the complete set of logs in order to investigate the matter further.",
+      "2025-06-24T14:04:26+00:00 (Employee) Qasim Ali (public): We reviewed the logs, and it appears that they start from June 23rd."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple multi-day gaps between messages from both customer and support staff (several days between June 16, June 23, June 24, and June 25), indicating notable response delays in the conversation.",
+    "evidence": [
+      "2025-06-16T10:38:34+00:00 (AI) ATLAS -> next human entries start on 2025-06-23 (seven-day gap).",
+      "2025-06-23T11:54:39+00:00 (Employee) Christian Schmidt -> 2025-06-24 entries (next day), then 2025-06-25 responses (another day).",
+      "Timeline shows multi-day spacing between several interactions (e.g., June 16 -> June 23)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no indication in the provided interactions that the ticket was closed prematurely, that the customer gave up, or that the ticket was marked resolved while the customer was still waiting for a promised deliverable.",
+    "evidence": [
+      "No 'ticket closed' or 'resolved' entries present in the interaction log.",
+      "2025-06-25T10:09:39+00:00 (Employee) Arafat Bakhsh: 'We look forward to the logs once the issue is reproduced with the new version.' (indicates ongoing work)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no explicit indication in the thread that this ticket was designated P1/Sev1, nor evidence that a high-priority issue was mishandled or given only generic troubleshooting instead of immediate escalation. The AI did indicate 'Send to l1', which suggests escalation was attempted.",
+    "evidence": [
+      "No priority/severity labels or language such as 'P1' or 'Sev1' appear in the transcript.",
+      "2025-06-16T10:39:05+00:00 (AI) ATLAS: Action: Send to l1 (shows escalation intent rather than mishandling)."
+    ]
+  },
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60078199
+}

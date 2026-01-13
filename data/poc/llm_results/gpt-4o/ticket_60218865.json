@@ -1,0 +1,37 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response contains a generic filler without specific follow-up actions or details.",
+    "evidence": [
+      "[2025-10-11T07:48:43+00:00] Ebenezer Lah Ampene: Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of repetitive requests for information or the customer being unable to reach a human.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The interaction does not show evidence of support ignoring previously provided customer information or referencing past tickets.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The record provided does not include any timestamps indicating a delay between customer and support interactions.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "There is no evidence to suggest the ticket was closed while awaiting customer input or without fulfilling promised actions.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This was not a high-priority or outage ticket; therefore, mishandling criteria for such circumstances do not apply.",
+    "evidence": []
+  },
+  "_raw_response": "\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI response contains a generic filler without specific follow-up actions or details.\",\n    \"evidence\": [\"[2025-10-11T07:48:43+00:00] Ebenezer Lah Ampene: Thanks for chatting earlier with our AI Support!\"]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence of repetitive requests for information or the customer being unable to reach a human.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"The interaction does not show evidence of support ignoring previously provided customer information or referencing past tickets.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"The record provided does not include any timestamps indicating a delay between customer and support interactions.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"There is no evidence to suggest the ticket was closed while awaiting customer input or without fulfilling promised actions.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This was not a high-priority or outage ticket; therefore, mishandling criteria for such circumstances do not apply.\",\n    \"evidence\": []\n  }\n}",
+  "_model": "gpt-4o",
+  "_ticket_id": 60218865
+}

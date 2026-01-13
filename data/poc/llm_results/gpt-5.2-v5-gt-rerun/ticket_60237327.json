@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ticket log only shows an internal/private transcript header and the customer\u2019s initial problem statement; the AI\u2019s actual troubleshooting/answer content is truncated, and there is no customer feedback indicating the AI was wrong or unhelpful.",
+    "evidence": [
+      "Kayako - ticket id 60237327 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!",
+      "One member has access to start an article on a blog that he has no permissions for"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no customer request for a human agent and no visible sequence of repeated AI messages that indicates the customer was stuck in a loop.",
+    "evidence": [
+      "If I'm unable to help you, I can patch you through to a Live agent, along with the information you supply to me during this session...",
+      "One member has access to start an article on a blog that he has no permissions for"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The record does not show support asking the customer to repeat information they already provided, nor does the customer complain that prior context was ignored.",
+    "evidence": [
+      "One member has access to start an article on a blog that he has no permissions for",
+      "Walk me through what's happening or select from the below frequent requests."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Structured timing indicates the ticket was created and solved/closed within about a minute, and there are no customer follow-ups indicating they were waiting.",
+    "evidence": [
+      "CSV: resolutionTime=65",
+      "CSV: Ticket Created=2025-11-06 11:05:35",
+      "CSV: Ticket Solved=2025-11-06 11:06:40",
+      "CSV: Ticket Closed=2025-11-06 11:06:41"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is marked closed in the CSV context, the interaction text does not include any customer-facing indication that the issue remained unresolved at the time of closure (no follow-up, no \u2018still not fixed\u2019 or \u2018waiting\u2019).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-06 11:06:41",
+      "One member has access to start an article on a blog that he has no permissions for"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer describes a permissions anomaly for a single member; there is no explicit P1/SEV1/outage language or broad production-down impact described.",
+    "evidence": [
+      "One member has access to start an article on a blog that he has no permissions for"
+    ]
+  },
+  "_model": "gpt-5.2-v5",
+  "_ticket_id": 60237327
+}

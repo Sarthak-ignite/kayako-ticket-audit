@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are repetitive, vague, and do not provide substantive solutions to the customer's issue.",
+    "evidence": [
+      "[2025-10-10T09:23:11+00:00] \u200bDear Support Team, Please note that all the suggested steps have already been completed. Unfortunately, th...",
+      "[2025-10-16T11:10:31+00:00] Hi GFI Support, our partner asked if we can plan a remote session together with one of your technicians. The customer has been without..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The AI is repeatedly asking for information or suggesting steps that have already been completed, preventing effective resolution.",
+    "evidence": [
+      "[2025-10-10T07:48:26+00:00] Mr Dederding reports that none of the knowledge base entries (KBs) provided by ADN solved the problem or applied to his case.",
+      "[2025-10-10T09:24:03+00:00] Thank you for your update and for confirming that all suggested troubleshooting steps have already been performed..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support responses suggest they are not fully reading or understanding the customer's previous communications and repeated attempts to resolve the issue.",
+    "evidence": [
+      "[2025-10-15T09:54:31+00:00] Hi Aditi, the suggested solution worked partially.",
+      "[2025-10-10T09:23:11+00:00] Please note that all the suggested steps have already been completed."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are significant gaps between customer interactions, with multiple days passing between responses.",
+    "evidence": [
+      "First AI interaction on [2025-10-10T11:46:34+00:00]",
+      "Last employee interaction on [2025-10-20T13:36:00+00:00]",
+      "Total ticket duration: approximately 10 days"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been actively worked on until a final resolution was attempted.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Despite being a high-priority ticket with a core functionality issue, the response involved repetitive troubleshooting steps instead of immediate escalation.",
+    "evidence": [
+      "[2025-10-10T07:48:26+00:00] Mr Dederding reports that none of the knowledge base entries (KBs) provided by ADN solved the problem or applied to his case.",
+      "[2025-10-18T14:12:57+00:00] Our Development Team has released a new version with the fix for the current issue..."
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are repetitive, vague, and do not provide substantive solutions to the customer's issue.\",\n    \"evidence\": [\n      \"[2025-10-10T09:23:11+00:00] \u200bDear Support Team, Please note that all the suggested steps have already been completed. Unfortunately, th...\",\n      \"[2025-10-16T11:10:31+00:00] Hi GFI Support, our partner asked if we can plan a remote session together with one of your technicians. The customer has been without...\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI is repeatedly asking for information or suggesting steps that have already been completed, preventing effective resolution.\",\n    \"evidence\": [\n      \"[2025-10-10T07:48:26+00:00] Mr Dederding reports that none of the knowledge base entries (KBs) provided by ADN solved the problem or applied to his case.\",\n      \"[2025-10-10T09:24:03+00:00] Thank you for your update and for confirming that all suggested troubleshooting steps have already been performed...\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"Support responses suggest they are not fully reading or understanding the customer's previous communications and repeated attempts to resolve the issue.\",\n    \"evidence\": [\n      \"[2025-10-15T09:54:31+00:00] Hi Aditi, the suggested solution worked partially.\",\n      \"[2025-10-10T09:23:11+00:00] Please note that all the suggested steps have already been completed.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"There are significant gaps between customer interactions, with multiple days passing between responses.\",\n    \"evidence\": [\n      \"First AI interaction on [2025-10-10T11:46:34+00:00]\",\n      \"Last employee interaction on [2025-10-20T13:36:00+00:00]\",\n      \"Total ticket duration: approximately 10 days\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket appears to have been actively worked on until a final resolution was attempted.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": true,\n    \"reasoning\": \"Despite being a high-priority ticket with a core functionality issue, the response involved repetitive troubleshooting steps instead of immediate escalation.\",\n    \"evidence\": [\n      \"[2025-10-10T07:48:26+00:00] Mr Dederding reports that none of the knowledge base entries (KBs) provided by ADN solved the problem or applied to his case.\",\n      \"[2025-10-18T14:12:57+00:00] Our Development Team has released a new version with the fix for the current issue...\"\n    ]\n  }\n}",
+  "_model": "claude-haiku",
+  "_ticket_id": 60218313
+}

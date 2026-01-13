@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The interactions are brief automated messages and do not contain clear generic filler, incorrect information, or unfulfilled promises; there is no evidence the AI provided wrong details.",
+    "evidence": [
+      "[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation",
+      "[2025-12-16T08:00:53+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented privately: Initial ticket creation."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There are only two automated messages and no repeated requests for the same information or signs the customer is stuck in an information loop.",
+    "evidence": [
+      "[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation",
+      "[2025-12-16T08:00:53+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented privately: Initial ticket creation."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer-provided context or prior details are present in the thread, and the automation did not request repeated information.",
+    "evidence": [
+      "[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation",
+      "[2025-12-16T08:00:53+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented privately: Initial ticket creation."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Both recorded interactions occurred within seconds of each other on the same timestamp minute, so there are no multi-day response delays.",
+    "evidence": [
+      "[2025-12-16T08:00:53+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented privately: Initial ticket creation.",
+      "[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket is closed but there is no customer message or evidence the customer was awaiting further action or that promised information was not delivered.",
+    "evidence": [
+      "[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation",
+      "[2025-12-16T08:00:53+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented privately: Initial ticket creation."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket is not marked as a high-priority outage and contains only automated comments; there is no evidence of improper generic troubleshooting or lack of escalation.",
+    "evidence": [
+      "Ticket Context: Priority: normal",
+      "[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation"
+    ]
+  },
+  "_raw_response": "{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"The interactions are brief automated messages and do not contain clear generic filler, incorrect information, or unfulfilled promises; there is no evidence the AI provided wrong details.\",\n    \"evidence\": [\n      \"[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation\",\n      \"[2025-12-16T08:00:53+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented privately: Initial ticket creation.\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"There are only two automated messages and no repeated requests for the same information or signs the customer is stuck in an information loop.\",\n    \"evidence\": [\n      \"[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation\",\n      \"[2025-12-16T08:00:53+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented privately: Initial ticket creation.\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No customer-provided context or prior details are present in the thread, and the automation did not request repeated information.\",\n    \"evidence\": [\n      \"[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation\",\n      \"[2025-12-16T08:00:53+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented privately: Initial ticket creation.\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Both recorded interactions occurred within seconds of each other on the same timestamp minute, so there are no multi-day response delays.\",\n    \"evidence\": [\n      \"[2025-12-16T08:00:53+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented privately: Initial ticket creation.\",\n      \"[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is closed but there is no customer message or evidence the customer was awaiting further action or that promised information was not delivered.\",\n    \"evidence\": [\n      \"[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation\",\n      \"[2025-12-16T08:00:53+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented privately: Initial ticket creation.\"\n    ]\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"This ticket is not marked as a high-priority outage and contains only automated comments; there is no evidence of improper generic troubleshooting or lack of escalation.\",\n    \"evidence\": [\n      \"Ticket Context: Priority: normal\",\n      \"[2025-12-16T08:00:55+00:00] (AI) Kayako Automations: Kayako - ticket id 60264202 // Kayako Automations commented publicly: Hi Team, Your requested report is attached. Best regards, Kayako Automation\"\n    ]\n  }\n}",
+  "_model": "gpt-5-mini",
+  "_ticket_id": 60264202
+}

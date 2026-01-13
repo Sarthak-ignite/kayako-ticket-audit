@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS produced a long, largely templated response that did not directly resolve the customer\u2019s core blocker (license registration/upload failing with apparent server-side/auth issues), and the customer later reports ATLAS routed the case to the wrong place (customer care vs technical). The AI flow also failed to handle the customer-reported token/auth failure preventing uploads.",
+    "evidence": [
+      "Customer: \"I need to talk to a human\" (immediately, but ATLAS continues workflow)",
+      "Customer: \"Token-based Authentication Failed. Please attempt to login with username/password instead\"",
+      "Customer: \"I can't upload them because the link says the authentication token has failed\"",
+      "ATLAS (public): \"Based on your description... This situation commonly occurs after hardware replacement, as the license file is bound to the specific hardware serial number...\" (generic diagnosis; does not address the customer\u2019s stated \"server is not responding\" / upload failure effectively)",
+      "Customer (public): \"The ATLAS AI opened a ticket with customer care, not with the technical department, and customer care said I have to open a ticket with the technical department\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "Customer repeatedly requested a human and described being blocked by the support intake process (chat button not working, can\u2019t call without a ticket), indicating they were stuck in an AI/self-service loop rather than being smoothly handed to a live agent.",
+    "evidence": [
+      "Customer: \"I need to talk to a human\"",
+      "Customer (public): \"Stop talking Hermes, I want to speak to a HUMAN.\"",
+      "Customer (public): \"Right now I'm trying to open a ticket but the 'Start Chat' button isn't working, and I can't call the phone number without an open ticket.\"",
+      "Customer (public): \"...but I can't open a ticket because your system isn't working!\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support did not effectively incorporate key context the customer provided (upload/auth token failure; repeated confirmation that attempted steps still fail). Additionally, support referenced an 'attached license.key' that the customer could not find, suggesting the agent did not verify what the customer actually received.",
+    "evidence": [
+      "Customer: \"When I try to re-register it with AppManager I see the error message 'Appliance does not have a valid license' but when I try to re-upload the license it says that 'The server is not responding'\"",
+      "Customer: \"I can't upload them because the link says the authentication token has failed\" (not addressed in subsequent troubleshooting)",
+      "Customer (public): \"Still not working.\" (after receiving repeated 'try again/manual apply' guidance)",
+      "Customer (private): \"Also, where is the attached licence key?\" (support instructed to use an attachment, but customer didn\u2019t have it)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows prolonged inactivity and missed expectations, including multi-day gaps that led to explicit customer complaints and an escalation.",
+    "evidence": [
+      "Customer: \"One hour later and no reply...\"",
+      "Customer: \"2.5 hours later, no reply...\"",
+      "Customer (public, 2025-06-08): \"Three days later and still no reply.\"",
+      "Customer (private, 2025-06-09): \"Almost five days since I opened this ticket and still no response. NOT GOOD ENOUGH!\"",
+      "System: \"[customer_escalation] ... severity is: core_functionality_defect\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "No clear evidence the ticket was closed while the customer was awaiting action. The latest entries show ongoing troubleshooting and a customer reply indicating the issue persists.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer had a core-functionality licensing failure after hardware replacement (firewall appliance unable to validate/register license). The case was escalated as core_functionality_defect, yet handling remained slow and process-heavy, with generic steps and no visible urgent escalation/ownership despite the customer being effectively blocked.",
+    "evidence": [
+      "Customer: \"The Product Registration wizard fails, and uploading the license also fails.\"",
+      "Customer: \"We replaced the firewall hardware.\"",
+      "Customer: \"Appliance does not have a valid license\" + \"The server is not responding\" (blocking appliance registration/licensing)",
+      "System: \"The severity is: core_functionality_defect\"",
+      "Customer (public): \"Almost five days since I opened this ticket and still no response.\" (urgency + impact, yet slow handling)"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60069509
+}

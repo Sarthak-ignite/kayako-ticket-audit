@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS\u2019 visible customer-facing behavior is limited to basic intake (license confirmation) and routing to human support. No clearly incorrect product info, broken promises, or irrelevant troubleshooting is shown.",
+    "evidence": [
+      "Chat Support: \"I have this license key on record: - License: 20339-1IJNI-357VC ... Just to make sure we're on the same page\"",
+      "Chat Support: \"Let me get some further help for you!\"",
+      "ATLAS (internal): \"Action: Send to l1\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer requested a human in chat and the interaction was routed to L1; there is no evidence of repeated AI questioning or the customer being trapped in repeated AI loops. Subsequent 'Skipping ticket due to tags' entries are internal and not customer-facing.",
+    "evidence": [
+      "Kris Cardona: \"human\"",
+      "Chat Support: \"I do understand some things are better handled by my human colleagues. Let me get some further help for you!\"",
+      "ATLAS (internal): \"Action: Send to l1\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support did not repeatedly ask for the same information that had already been provided, and the later request for a video is new (not something the customer had already supplied in the ticket). The main issue appears to be delay rather than ignoring previously provided details.",
+    "evidence": [
+      "Kris Cardona (provides details): \"RMA request: ... Kerio Control Box NG510 Series ... LNKR24070037\"",
+      "Ciprian Nastase: \"we will also need a video showcasing the issue\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a 3+ calendar day gap between customer updates (including 'link isn't working' and repeated follow-ups) and the next substantive support response. The customer explicitly complains about waiting, and support apologizes for the delay.",
+    "evidence": [
+      "Customer [2025-03-24T12:10:31+00:00]: \"Hi Jan, the link you sent isn't working. Can you send me another one ?\"",
+      "Customer [2025-03-26T10:54:16+00:00]: \"This is URGENT !\"",
+      "Customer [2025-03-27T14:20:47+00:00]: \"Hi Hermes, any updates ? It's becoming a bit ridiculous at this stage\"",
+      "Support [2025-03-28T10:22:44+00:00]: \"Please accept my sincere apologies for the delay in getting back to you\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although the ticket is closed without the customer explicitly confirming resolution, there is an internal note stating the DOA/RMA is being handled directly with the partner (Apligo) and 'no action is needed here.' This provides a plausible, documented reason for closure, so premature closure is not unambiguous.",
+    "evidence": [
+      "Jozef Kacala (internal): \"we are in contact with Kris and Apligo and Apligo is dealing with RMA directly as its DOA. so no action is needed here.\"",
+      "Ciprian Nastase (public): \"As far as I understand, you are already in contact with the GFI team for this DOA case. In light of this, we will proceed to close the ticket.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer labels the situation as urgent, but the ticket does not explicitly state SEV1/P1/Critical or a complete outage. The original report indicates HA is in place (one of two units failed), which reduces evidence of a full production-down scenario per the detection criteria.",
+    "evidence": [
+      "Initial issue: \"1 of the 2 units in HA failed\"",
+      "Customer: \"This is URGENT !\"",
+      "Support: \"I have now marked the ticket as urgent.\""
+    ]
+  },
+  "_model": "gpt-5.2-v3",
+  "_ticket_id": 60005331
+}

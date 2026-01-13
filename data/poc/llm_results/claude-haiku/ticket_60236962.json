@@ -1,0 +1,35 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "Insufficient interaction details to determine AI response quality.",
+    "evidence": []
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No evidence of AI interaction loop due to limited ticket information.",
+    "evidence": []
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No substantive interactions to assess context handling.",
+    "evidence": []
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Unable to calculate response delays with limited ticket data.",
+    "evidence": []
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Insufficient context to determine if closure was premature.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Ticket priority is normal, and no specific technical details are provided.",
+    "evidence": []
+  },
+  "_raw_response": "After carefully analyzing the provided ticket, I'll evaluate each pattern. However, there's a critical observation: the ticket interaction details are incomplete. The only visible interaction is an AI-generated summary ticket closure message, which doesn't provide sufficient context to fully assess quality issues.\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient interaction details to determine AI response quality.\",\n    \"evidence\": []\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": false,\n    \"reasoning\": \"No evidence of AI interaction loop due to limited ticket information.\",\n    \"evidence\": []\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": false,\n    \"reasoning\": \"No substantive interactions to assess context handling.\",\n    \"evidence\": []\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": false,\n    \"reasoning\": \"Unable to calculate response delays with limited ticket data.\",\n    \"evidence\": []\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"Insufficient context to determine if closure was premature.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"Ticket priority is normal, and no specific technical details are provided.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n- The ticket lacks customer interaction details\n- Only an AI summary closure message is present\n- Unable to definitively assess quality issues without more context\n\nTo properly analyze, I would need:\n1. Full customer initial request\n2. Complete interaction timeline\n3. Specific technical details discussed\n4. Customer's final resolution confirmation/feedback",
+  "_model": "claude-haiku",
+  "_ticket_id": 60236962
+}

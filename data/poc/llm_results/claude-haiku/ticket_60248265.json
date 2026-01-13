@@ -1,0 +1,45 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI responses are repetitive and provide no meaningful information, simply placing the ticket on hold multiple times without addressing the customer's specific request.",
+    "evidence": [
+      "[2025-11-26T09:15:37+00:00] Centralsupport-ai-acc: Placing on hold for 48 hour(s)",
+      "[2025-11-24T10:20:29+00:00] Centralsupport-ai-acc: Placing on hold for 48 hour(s)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The AI repeatedly places the ticket on hold without progressing the customer's request, creating a loop that prevents meaningful resolution.",
+    "evidence": [
+      "[2025-11-25T22:24:20+00:00] Antonio Orellano: Would like to follow-up this request.",
+      "[2025-11-26T09:15:37+00:00] Centralsupport-ai-acc: Placing on hold for 48 hour(s)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The support team references another ticket but doesn't provide a clear resolution or context to the customer's specific cloud migration inquiry.",
+    "evidence": [
+      "[2025-11-24T10:19:33+00:00] Andriy Rybalchenko: Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Significant gaps between customer follow-up and support responses, with multiple days passing without substantive communication.",
+    "evidence": [
+      "Time between customer follow-up [2025-11-25T22:24:20+00:00] and next response is over a day"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the ticket has quality issues, there's no clear evidence of premature closure as the ticket is still open.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket is not marked as a P1/Severity 1 issue, and appears to be a normal priority request.",
+    "evidence": []
+  },
+  "_raw_response": "Here's the analysis of the support ticket:\n\n```json\n{\n  \"AI_QUALITY_FAILURES\": {\n    \"detected\": true,\n    \"reasoning\": \"AI responses are repetitive and provide no meaningful information, simply placing the ticket on hold multiple times without addressing the customer's specific request.\",\n    \"evidence\": [\n      \"[2025-11-26T09:15:37+00:00] Centralsupport-ai-acc: Placing on hold for 48 hour(s)\",\n      \"[2025-11-24T10:20:29+00:00] Centralsupport-ai-acc: Placing on hold for 48 hour(s)\"\n    ]\n  },\n  \"AI_WALL_LOOPING\": {\n    \"detected\": true,\n    \"reasoning\": \"The AI repeatedly places the ticket on hold without progressing the customer's request, creating a loop that prevents meaningful resolution.\",\n    \"evidence\": [\n      \"[2025-11-25T22:24:20+00:00] Antonio Orellano: Would like to follow-up this request.\",\n      \"[2025-11-26T09:15:37+00:00] Centralsupport-ai-acc: Placing on hold for 48 hour(s)\"\n    ]\n  },\n  \"IGNORING_CONTEXT\": {\n    \"detected\": true,\n    \"reasoning\": \"The support team references another ticket but doesn't provide a clear resolution or context to the customer's specific cloud migration inquiry.\",\n    \"evidence\": [\n      \"[2025-11-24T10:19:33+00:00] Andriy Rybalchenko: Yes, similar question was sent to Csaba in https://central-supportdesk.kayako.com/agent/conversations/60248073\"\n    ]\n  },\n  \"RESPONSE_DELAYS\": {\n    \"detected\": true,\n    \"reasoning\": \"Significant gaps between customer follow-up and support responses, with multiple days passing without substantive communication.\",\n    \"evidence\": [\n      \"Time between customer follow-up [2025-11-25T22:24:20+00:00] and next response is over a day\"\n    ]\n  },\n  \"PREMATURE_CLOSURE\": {\n    \"detected\": false,\n    \"reasoning\": \"While the ticket has quality issues, there's no clear evidence of premature closure as the ticket is still open.\",\n    \"evidence\": []\n  },\n  \"P1_SEV1_MISHANDLING\": {\n    \"detected\": false,\n    \"reasoning\": \"The ticket is not marked as a P1/Severity 1 issue, and appears to be a normal priority request.\",\n    \"evidence\": []\n  }\n}\n```\n\nKey observations:\n1. The AI repeatedly places the ticket on hold without addressing the customer's specific request about cloud migration.\n2. There are significant delays in response, with days passing between interactions.\n3. The support team references another ticket but doesn't provide clear guidance to the customer.\n4. The ticket shows signs of poor handling, with minimal meaningful communication.",
+  "_model": "claude-haiku",
+  "_ticket_id": 60248265
+}

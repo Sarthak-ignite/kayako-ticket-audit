@@ -1,0 +1,171 @@
+{
+  "payload": {
+    "ticket": {
+      "metadata": {
+        "product": "aurea_mailessentials",
+        "requester": {
+          "id": 60334022,
+          "uuid": "948d6d7f-6053-5c24-956c-ecd72b67f305",
+          "full_name": "TAN Nguyen/TTSI - System Engineer",
+          "legacy_id": null,
+          "designation": null,
+          "is_enabled": true,
+          "is_mfa_enabled": false,
+          "role": {
+            "id": 4,
+            "resource_type": "role"
+          },
+          "avatar": "https://central-supportdesk.kayako.com/avatar/get/948d6d7f-6053-5c24-956c-ecd72b67f305?1767794309",
+          "agent_case_access": null,
+          "organization_case_access": "REQUESTED",
+          "organization": {
+            "id": 60058309,
+            "resource_type": "organization"
+          },
+          "teams": [],
+          "emails": [
+            {
+              "id": 335629,
+              "resource_type": "identity_email"
+            }
+          ],
+          "phones": [],
+          "twitter": [],
+          "facebook": [],
+          "external_identifiers": [],
+          "custom_fields": [
+            {
+              "field": {
+                "id": 1,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            },
+            {
+              "field": {
+                "id": 2,
+                "resource_type": "user_field"
+              },
+              "value": "",
+              "resource_type": "user_field_value"
+            }
+          ],
+          "pinned_notes_count": 0,
+          "locale": {
+            "id": 3,
+            "resource_type": "locale"
+          },
+          "time_zone": null,
+          "time_zone_offset": null,
+          "greeting": null,
+          "signature": null,
+          "status_message": null,
+          "last_seen_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+          "last_seen_ip": "115.79.29.96",
+          "last_seen_at": "2026-01-07T10:20:44+00:00",
+          "last_active_at": "2026-01-07T13:58:29+00:00",
+          "realtime_channel": "presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@v1_users_60334022",
+          "presence_channel": "user_presence-9813ca639d37d1518f54b0c65e3b4bef061d5c9eb084715329b7324d129bf437@c8605f0a40a91f2e9f6af5d5c4ca373f5f595b27",
+          "password_updated_at": "2025-05-12T09:26:40+00:00",
+          "avatar_updated_at": null,
+          "last_logged_in_at": "2026-01-07T04:14:13+00:00",
+          "last_activity_at": "2026-01-07T10:20:44+00:00",
+          "created_at": "2025-05-12T09:21:52+00:00",
+          "updated_at": "2026-01-07T13:58:29+00:00",
+          "resource_type": "user",
+          "resource_url": "https://central-supportdesk.kayako.com/api/v1/users/60334022"
+        },
+        "ticket_idt": 60195349
+      },
+      "interactions": [
+        [
+          "2025-09-19T09:30:19+00:00",
+          "Kayako - ticket id 60195349 // Andriy Rybalchenko commented publicly: Dear Tan,\nThank you for your follow-up.\nThe latest version of GFI MailEssentials currently available via the GFI CDN is version 22.0. You can download it directly using the following link:\n\n\t* GFI MailEssentials v22.0 Installer [https://cdndl.gfi.com/mailessentials.exe]\n\t* SpamTag Module (Optional) [https://cdndl.gfi.com/MailEssentialsSpamTag.exe]\n\nAdditionally, version 22.1 has been released but is not yet hosted on the official CDN. We would recommend proceeding with version 22.1, you can download it from the following temporary location:\n\n\t* GFI MailEssentials v22.1 (Google Drive) [https://drive.google.com/drive/u/0/folders/17YbBCyLbj2zW-JMu6PowUpvrQqALK5O8]\n\nPlease ensure that your license is updated and compatible with the selected version before installation. Let us know if you need assistance with the license upgrade or installation steps.\n\nBest regards,\nAndriy Rybalchenko\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-19T09:12:52+00:00",
+          "Kayako - ticket id 60195349 // TAN Nguyen/TTSI - System Engineer commented publicly:  \n\nDear Hermes,\n\n\u00a0\n\nThank you for your response and for recommending the latest version.\n\nTo be sure, could you please let me know the specific version number of the \"latest available version\" you are referring to?\n\nAdditionally, could you please provide me with a direct download link for that version?\n\n\u00a0\n\nThanks and Best Regards, \n\nTan Nguyen\n\nSystem Engineer\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n\nimage [https://ttsi.com.vn/]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0TOAN THANG SYSTEM INTEGRATION COMPANY LIMITED\n\nT:\u00a0 +84 28 2253 6218\n\nM: +84 85 669 1922\n\nE:\u00a0\u00a0 nxtan@ttsi.com.vn\u00a0 \n\nW: https://ttsi.com.vn [https://ttsi.com.vn/]\u00a0 \n\nA:\u00a0 5th Floor, Sakura Building, 62A Huynh Man Dat Street, Thanh My Tay Ward, HCMC, VietNam\n\nimage [https://www.facebook.com/TTSIVietnam/]\u00a0\u00a0image [https://www.linkedin.com/company/74151077]\u00a0\u00a0\n\n\u00a0\n\nThe content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-09-19T00:38:40+00:00",
+          "Kayako - ticket id 60195349 // TAN Nguyen/TTSI - System Engineer commented publicly:  \n\nDear Qasim Ali,\n\n\u00a0\n\nThank you for providing the link to the system prerequisites guide.\n\nI will perform a completely new, first-time installation of GFI MailEssentials on our Exchange 2019 server as per the guide.\n\nTo ensure a smooth process, could you please let me know which version of GFI MailEssentials you recommend we use for this first-time installation?\n\n\u00a0\n\nThanks and Best Regards, \n\nTan Nguyen\n\nSystem Engineer\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n\nimage [https://ttsi.com.vn/]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0TOAN THANG SYSTEM INTEGRATION COMPANY LIMITED\n\nT:\u00a0 +84 28 2253 6218\n\nM: +84 85 669 1922\n\nE:\u00a0\u00a0 nxtan@ttsi.com.vn\u00a0 \n\nW: https://ttsi.com.vn [https://ttsi.com.vn/]\u00a0 \n\nA:\u00a0 5th Floor, Sakura Building, 62A Huynh Man Dat Street, Thanh My Tay Ward, HCMC, VietNam\n\nimage [https://www.facebook.com/TTSIVietnam/]\u00a0\u00a0image [https://www.linkedin.com/company/74151077]\u00a0\u00a0\n\n\u00a0\n\nThe content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-09-18T10:26:33+00:00",
+          "Kayako - ticket id 60195349 // Qasim Ali commented publicly: Dear Tan,\n\nPlease find the compatibility guide here https://support.mailessentials.gfi.com/article/119127-gfi-mailessentials-system-prerequisites.\n\nIn case of issues, please share Windows Event logs [https://www.solarwinds.com/resources/it-glossary/windows-event-log], Installation logs, [https://support.mailessentials.gfi.com/article/118699-mailessentials-common-installation-errors]and a Screenshot of the issue. Also, as explained earlier, please upgrade your license before doing so. You can also check the detailed upgrade guide here [http://upgrade.gfi.com/check/gfi-mailessentials/218-build-20250412].\n\nBest regards,\nQasim Ali\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-18T09:54:44+00:00",
+          "Kayako - ticket id 60195349 // TAN Nguyen/TTSI - System Engineer commented publicly:  \n\nDear Arafat Bakhsh,\n\n\u00a0\n\nThank you for your response and the articles provided.\n\nI would like to clarify a key point regarding the \"Exchange Shell connection issue\" you mentioned. Before I attempted to install GFI MailEssentials, the Exchange Management Shell on our server was fully functional and accessible. The connection problem only started to occur immediately after the GFI installation failed.\n\nThis leads us to believe that the failed installation process itself may have caused the shell connectivity issue. Fortunately, we have since been able to resolve this connection problem.\n\nBefore we proceed with the installation again, could you please confirm which version of GFI MailEssentials we should use for full compatibility with our environment?\n\n \t* Server OS: Windows Server 2019\n\t* Exchange Version: Microsoft Exchange 2019 CU15\n\nWe want to ensure we are using the correct version to ensure a smooth installation process.\n\n\u00a0\n\n\u00a0\n\nThanks and Best Regards, \n\nTan Nguyen\n\nSystem Engineer\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n\nimage [https://ttsi.com.vn/]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0TOAN THANG SYSTEM INTEGRATION COMPANY LIMITED\n\nT:\u00a0 +84 28 2253 6218\n\nM: +84 85 669 1922\n\nE:\u00a0\u00a0 nxtan@ttsi.com.vn\u00a0 \n\nW: https://ttsi.com.vn [https://ttsi.com.vn/]\u00a0 \n\nA:\u00a0 5th Floor, Sakura Building, 62A Huynh Man Dat Street, Thanh My Tay Ward, HCMC, VietNam\n\nimage [https://www.facebook.com/TTSIVietnam/]\u00a0\u00a0image [https://www.linkedin.com/company/74151077]\u00a0\u00a0\n\n\u00a0\n\nThe content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-09-18T09:37:53+00:00",
+          "Kayako - ticket id 60195349 // Arafat Bakhsh commented publicly: Dear Customer,\n\nThank you for your patience.\n\nBased on the error in the screenshot, please apply the troubleshooting steps in the article: 'Installation Completed with Errors. Components Needed for Message Processing Could Not Be Installed' After Running Post Installation Wizard - GFI MailEssentials [https://support.mailessentials.gfi.com/article/118691-installation-completed-with-errors-components-needed-for-message-processing-could-not-be-installed-after-running-post-installation-wizard]. You will need to address the Exchange Shell connection issue. For more information, refer to the Microsoft article: About Remote Troubleshooting [http://technet.microsoft.com/en-us/library/hh847850.aspx].\n\nPlease also review the following article for the pre-requisites of installing MailEssentials on Microsoft Exchange 2019 - Microsoft Exchange Server Roles for GFI MailEssentials Installation - GFI MailEssentials [https://support.mailessentials.gfi.com/article/119125-microsoft-exchange-server-roles-for-gfi-mailessentials-installation]\n\nAdditionally, if you are planning on upgrading to version 22, please note that you will need to make sure you have the license key for this version as it is a major version upgrade from the 21.x versions. Please reach out to the GFI Customer Care Center [https://customercare.gfi.com/hc/en-us] for assistance in upgrading the license key if you plan on using version 22.\n\nBest regards,\nArafat Bakhsh\nGFI - MailEssentials Support Team\n\nThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal. We will write to you again to remind you."
+        ],
+        [
+          "2025-09-18T09:32:49+00:00",
+          "Kayako - ticket id 60195349 // Arafat Bakhsh commented privately: \t* We need to clarify that when installing version 22.0, the customer will need to have their license key upgraded as that would be a major version upgrade. \n\n \t* They will need to reach out to the GFI Customer Care Center [https://customercare.gfi.com/hc/en-us] \n\n\t* I don't see any mention regarding the review of the install logs. \n\n\t* Reviewed the logs \n\n\t* The logs provided do not indicate a failure to install MailEssentials on Exchange 2019. They show: \n\n \t* A successful uninstall, followed by\n \t* A successful install (status 0, \u201cinstalled successfully\u201d), with Exchange 2019 detected and the relevant components deployed\n\n\t* This KBA may or not help resolve the issue: 'Installation Completed with Errors. Components Needed for Message Processing Could Not Be Installed' After Running Post Installation Wizard - GFI MailEssentials [https://support.mailessentials.gfi.com/article/118691-installation-completed-with-errors-components-needed-for-message-processing-could-not-be-installed-after-running-post-installation-wizard] \n\n \t* The article is for Exchange 2013.\n\n \t* Cannot find any past tickets regarding the issue involving Exchange 2019.\n \t* Going with Zubair's proposed solution as it addresses the core issue.\n\n @Zubair Farooq Note the comment on the major version upgrade - not a fail. "
+        ],
+        [
+          "2025-09-18T08:21:50+00:00",
+          "Kayako - ticket id 60195349 // Zubair Farooq commented privately:  Instructions [https://docs.google.com/document/d/1w6pg-Lqz1Y5n8Gah7JXTRAnNEgnLGDgQn0p4EE_DdyU/edit#bookmark=id.nmtleyh2xrkb] \n\nWHAT IS YOUR PROPOSED ACTION?\n(REQUIRED: SELECT ONE, DELETE THE REST)\n\n \t* Send to customer\n\n =============================================================== \n\nWHAT IS THE PR TO THE CUSTOMER?\n\n Dear Customer, \n\n Thank you for contacting the MailEssentials Support Team. \n\n The error you shared indicate a connection problem on the Microsoft or network side and solving them does fall outside of the scope of GFI's technical support. You need to address the Exchange Shell connection issue. For more information, refer to the Microsoft article: About Remote Troubleshooting [http://technet.microsoft.com/en-us/library/hh847850.aspx]. \n\n Once the underlying connection issue has been resolved, run the Post Installation Wizard again. \n\n Best regards, \n Zubair Farooq \n Support Team "
+        ],
+        [
+          "2025-09-18T08:19:54+00:00",
+          "Kayako - ticket id 60195349 // Zubair Farooq commented privately:  The errir is documented in https://support.mailessentials.gfi.com/article/118691-installation-completed-with-errors-components-needed-for-message-processing-could-not-be-installed-after-running-post-installation-wizard "
+        ],
+        [
+          "2025-09-18T03:18:23+00:00",
+          "Kayako - ticket id 60195349 // TAN Nguyen/TTSI - System Engineer commented publicly:  \n\nDear Hermes,\n\n\u00a0\n\nThank you for the update.\n\nWe understand that the review takes time; however, we need a projected deadline from your end to manage our project timeline. Could you please let us know when we can expect a resolution or a more detailed update?\n\n\u00a0\n\nThanks and Best Regards, \n\nTan Nguyen\n\nSystem Engineer\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n\nimage [https://ttsi.com.vn/]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0TOAN THANG SYSTEM INTEGRATION COMPANY LIMITED\n\nT:\u00a0 +84 28 2253 6218\n\nM: +84 85 669 1922\n\nE:\u00a0\u00a0 nxtan@ttsi.com.vn\u00a0 \n\nW: https://ttsi.com.vn [https://ttsi.com.vn/]\u00a0 \n\nA:\u00a0 5th Floor, Sakura Building, 62A Huynh Man Dat Street, Thanh My Tay Ward, HCMC, VietNam\n\nimage [https://www.facebook.com/TTSIVietnam/]\u00a0\u00a0image [https://www.linkedin.com/company/74151077]\u00a0\u00a0\n\n\u00a0\n\nThe content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-09-17T06:43:56+00:00",
+          "Kayako - ticket id 60195349 // TAN Nguyen/TTSI - System Engineer commented publicly:  \n\nDear Hermes,\n\n\u00a0\n\nI look forward to hearing from you and the team with your findings.\n\n\u00a0\n\n\u00a0\n\nThanks and Best Regards, \n\nTan Nguyen\n\nSystem Engineer\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n\nimage [https://ttsi.com.vn/]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0TOAN THANG SYSTEM INTEGRATION COMPANY LIMITED\n\nT:\u00a0 +84 28 2253 6218\n\nM: +84 85 669 1922\n\nE:\u00a0\u00a0 nxtan@ttsi.com.vn\u00a0 \n\nW: https://ttsi.com.vn [https://ttsi.com.vn/]\u00a0 \n\nA:\u00a0 5th Floor, Sakura Building, 62A Huynh Man Dat Street, Thanh My Tay Ward, HCMC, VietNam\n\nimage [https://www.facebook.com/TTSIVietnam/]\u00a0\u00a0image [https://www.linkedin.com/company/74151077]\u00a0\u00a0\n\n\u00a0\n\nThe content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-09-15T08:29:49+00:00",
+          "Kayako - ticket id 60195349 // TAN Nguyen/TTSI - System Engineer commented publicly:  \n\nDear Hermes,\n\n\u00a0\n\nI look forward to hearing from you and the team with your findings.\n\n\u00a0\n\n\u00a0\n\nThanks and Best Regards, \n\nTan Nguyen\n\nSystem Engineer\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n\nimage [https://ttsi.com.vn/]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0TOAN THANG SYSTEM INTEGRATION COMPANY LIMITED\n\nT:\u00a0 +84 28 2253 6218\n\nM: +84 85 669 1922\n\nE:\u00a0\u00a0 nxtan@ttsi.com.vn\u00a0 \n\nW: https://ttsi.com.vn [https://ttsi.com.vn/]\u00a0 \n\nA:\u00a0 5th Floor, Sakura Building, 62A Huynh Man Dat Street, Thanh My Tay Ward, HCMC, VietNam\n\nimage [https://www.facebook.com/TTSIVietnam/]\u00a0\u00a0image [https://www.linkedin.com/company/74151077]\u00a0\u00a0\n\n\u00a0\n\nThe content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-09-12T02:19:22+00:00",
+          "Kayako - ticket id 60195349 // TAN Nguyen/TTSI - System Engineer commented publicly:  \n\nDear Hermes,\n\n\u00a0\n\nThank you for the update and for confirming receipt of the information.\n\n\u00a0\n\nI look forward to hearing from you and the team with your findings.\n\n\u00a0\n\n\u00a0\n\nThanks and Best Regards, \n\nTan Nguyen\n\nSystem Engineer\n\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \n\nimage [https://ttsi.com.vn/]\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0TOAN THANG SYSTEM INTEGRATION COMPANY LIMITED\n\nT:\u00a0 +84 28 2253 6218\n\nM: +84 85 669 1922\n\nE:\u00a0\u00a0 nxtan@ttsi.com.vn\u00a0 \n\nW: https://ttsi.com.vn [https://ttsi.com.vn/]\u00a0 \n\nA:\u00a0 5th Floor, Sakura Building, 62A Huynh Man Dat Street, Thanh My Tay Ward, HCMC, VietNam\n\nimage [https://www.facebook.com/TTSIVietnam/]\u00a0\u00a0image [https://www.linkedin.com/company/74151077]\u00a0\u00a0\n\n\u00a0\n\nThe content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\n \n"
+        ],
+        [
+          "2025-09-11T07:14:59+00:00",
+          "Kayako - ticket id 60195349 // TAN Nguyen/TTSI - System Engineer commented privately: This is log install GFI MailEssential 21.6 on Exchange 2019. Also I can not install GFI MailEssential version 22.0 on Exchange 2019"
+        ],
+        [
+          "2025-09-11T07:12:35+00:00",
+          "Kayako - ticket id 60195349 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:\n\nChat Support:\n\n Hi, TAN Nguyen/TTSI - System Engineer ! \ud83d\udc4b\n\nThis is the GFI MailEssentials ATLAS support chat.\n\n-------------------------\n\n Please note: ATLAS is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time. By chatting with him, you're agreeing to these terms and conditions [https://chatbotterms.trilogy.com/].\nIf you're unable to find a solution through our interaction, you will be guided through the steps to get additional support. \nTAN Nguyen/TTSI - System Engineer:\n\n undefined \nChat Support:\n\n Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\n\ud83d\udca1Getting the most out of GFI MailEssentials ATLAS Support Chat [https://support.mailessentials.gfi.com/article/120018]\n\ud83d\udca1Tip: Aim to give us a bit more context than just a quick It's not working. The more specific you can be, the faster we can get to a solution! \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udee0\ufe0f\nIf I'm not able to resolve your issue, I can connect you with one of our support specialists who will have all the information from our conversation, so you won't need to repeat yourself. \ud83d\udcaa \nTAN Nguyen/TTSI - System Engineer:\n\n I cannot \u00ednstall on exchange 2019 \nChat Support:\n\n I have this license key on record:\n- License: 6EK77qPGjwyeQincbN08C2-ci9WewUGmV-W-1009610\n- Expiry date: 2026-05-01.\n\nJust to make sure we're on the same page - is this the same system you're reaching out about today?\n\n\ud83d\udca1It's important to have to correct license file, as it could influence the resolution. \nTAN Nguyen/TTSI - System Engineer:\n\n \u00fde \nChat Support:\n\n I have this license key on record:\n- License: 6EK77qPGjwyeQincbN08C2-ci9WewUGmV-W-1009610\n- Expiry date: 2026-05-01.\n\nJust to make sure we're on the same page - is this the same system you're reaching out about today?\n\n\ud83d\udca1It's important to have to correct license file, as it could influence the resolution. \nTAN Nguyen/TTSI - System Engineer:\n\n correct \nChat Support:\n\n If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\n\n\u2139\ufe0f When you select to upload files, a new window will open to our secure portal allowing you to upload the attachments.\n\n\u2139\ufe0f When you are done uploading files, come back to this window to continue the flow.\n\n\ud83d\udca1 Depending on the size and filetype you upload, the analysis may take some time.\n\n\u2139\ufe0f In case it doesn't automatically open, here is the direct URL for it:\n\ud83d\udc49 Secure File Upload [https://files.eswsecuretransfers.com/customers?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX3V1aWQiOiI0NmYxZDk4Zi01YTE3LTQ1ZTgtYmNlZi0wNmFjZjdmMTZiNjciLCJzZXNzaW9uX3VpZCI6IjQ2ZjFkOThmLTVhMTctNDVlOC1iY2VmLTA2YWNmN2YxNmI2NyIsImVtYWlsIjoibnh0YW5AdHRzaS5jb20udm4iLCJjdXN0b21fcGFyc2VyIjp7fSwiY2FsbGJhY2siOnsiY2FsbGJhY2tfdXJsIjpudWxsLCJjYWxsYmFja19lbWFpbCI6ImNpcHJpYW4ubmFzdGFzZUB0cmlsb2d5LmNvbSJ9LCJwcm9kdWN0X3RhZyI6ImF1cmVhX21haWxlc3NlbnRpYWxzIiwicXVlcnkiOiIiLCJleHAiOjE3NTc1ODEzNTB9.qwBrOTvWBi6zuWHGbFhdc2R3ypd9916MuvnHCM_cQRw]\n\nYou should see the following:\n- User: nxtan@ttsi.com.vn\n- Session ID: 46f1d98f-5a17-45e8-bcef-06acf7f16b67 \nTAN Nguyen/TTSI - System Engineer:\n\n \ud83d\udcce I want to upload files \nChat Support:\n\n Thanks for uploading your files! I\u2019ve reviewed the initial analysis, and here\u2019s what I found:\n\n- The log file mainly shows successful installation of Windows Server features (like IIS and .NET Framework) using DISM commands\u2014no errors were detected in the log itself.\n- However, there\u2019s no direct information about the specific GFI MailEssentials installation issue or any error messages related to Exchange 2019 in the logs you provided.\n\nTo help you further, could you please clarify:\n- What exact error or issue are you experiencing when trying to install GFI MailEssentials on Exchange 2019? (For example: Does the installer fail with a specific message, or does it complete but the product doesn\u2019t work as expected?)\n- At what step in the installation process does the problem occur?\n- Have you seen any error codes or pop-up messages? If so, could you share the exact wording?\n\nIf you have any logs directly from the GFI MailEssentials installer or screenshots of the error, those would be very helpful as well.\n\nOnce I have a bit more detail, I\u2019ll be able to guide you with more targeted troubleshooting steps! \nTAN Nguyen/TTSI - System Engineer:\n\n I haved checked all component, but it not work \nChat Support:\n\n Thanks for letting me know. Just to make sure I understand\u2014when you say you\u2019ve \u201cchecked all component,\u201d do you mean you\u2019ve installed all the required Windows features (like IIS, .NET Framework, MSMQ, etc.) but GFI MailEssentials still won\u2019t install or work properly on your Exchange 2019 server?\n\nCould you help me with a bit more detail so I can guide you better:\n1. What exactly happens when you try to install GFI MailEssentials? (For example: Does the installer fail with an error, or does it finish but the product doesn\u2019t work?)\n2. Are you seeing any specific error messages or codes during installation? If yes, what do they say?\n3. Which version of GFI MailEssentials are you trying to install?\n4. Has GFI MailEssentials ever worked on this server before, or is this a first-time installation?\n\nThis info will help me pinpoint the issue and suggest the right next steps. If you have any screenshots or logs from the GFI MailEssentials installer, please upload them\u2014they can be very helpful! \nChat Support:\n\n I understand you'd like to open a technical support case. \ud83d\ude0a A human colleague will be happy to assist you further\u2014please feel free to choose from the available options to connect with them. \nTAN Nguyen/TTSI - System Engineer:\n\n \ud83d\udce9 Raise a ticket \nChat Support:\n\n Please provide any other additional details we might need to investigate and resolve your issue.\n\nYou can use Shift+Enter if you want to continue typing in a new line.\n\nFor now, I am unable to take any file uploads, so any relevant log files or attachments can be provided directly in the ticket once I create it for you.\n\n Please note: the ticket will get created only after you provide the above requested information or after a 5-minute timeout. \nTAN Nguyen/TTSI - System Engineer:\n\n I cannot Install on exchange 2019 \nChat Support:\n\n If you want to add additional \ud83d\udce7 email addresses in the ticket CC, please specify them below.\n\nYou can specify multiple email addresses, separated by a comma (for example: test@example.com, test2@example.com)\n\nOtherwise, just click the button \ud83d\udc47 \nTAN Nguyen/TTSI - System Engineer:\n\n ducvd@tdt-tanduc.com\npostsales@ttsi.com.vn \nChat Support:\n\n \ud83d\udc4c Got it!\n\nThese email addresses will be added to the ticket CC: ducvd@tdt-tanduc.com, postsales@ttsi.com.vn \nChat Support:\n\n I'm creating a ticket for you with the information you've provided.\n\nTicket subject: Cannot Install on Exchange 2019\n\nAllow me a few moments while I work on this \u23f3 \nChat Support:\n\n \ud83d\ude80 I've successfully created a ticket for you.\n\nYour ticket number is: 60195349\n\nYou can see it and update it in this link [https://support.mailessentials.gfi.com/conversation/view/60195349]\n\nFor a faster resolution, please be sure to include and attach to the ticket all relevant context such as screenshots, recordings, and logs.\n\nOur agents will work on it and you will receive a response in your email \ud83d\udce8: nxtan@ttsi.com.vn "
+        ],
+        [
+          "2025-09-11T07:12:30+00:00",
+          "Kayako - ticket id 60195349 // ATLAS commented privately: **Customer interacted with ATLAS-UPLOAD system during their ATLAS-chat interaction, which means that they may have uploaded some files for AI analysis.** Please login to UPLOAD using your Devfactory AD credentials to verify: https://files.eswsecuretransfers.com/agents/?user_id=nxtan@ttsi.com.vn&session_uuid=46f1d98f-5a17-45e8-bcef-06acf7f16b67"
+        ],
+        [
+          "2025-09-11T07:12:27+00:00",
+          "Kayako - ticket id 60195349 // ATLAS commented privately: --- Ticket generated by GFI MailEssentials AI chat on behalf of TAN Nguyen/TTSI - System Engineer ---<br>\n  <br>\n  <b>Issue description:</b><br>\n  * I cannot \u00ednstall on exchange 2019<br>\n  * I haved checked all component, but it not work<br>\n  * Please open case support ticket technical<br>\n  * I cannot Install on exchange 2019<br>\n  <br>"
+        ]
+      ],
+      "diagnostics": {
+        "kayako": {
+          "requester_ok": true,
+          "ticket_ok": true,
+          "ticket_has_custom_fields": true,
+          "ticket_translog_items": 17,
+          "side_conversation_items": 0
+        },
+        "jira": {
+          "link_present": false,
+          "link_value": ""
+        },
+        "github": {
+          "link_present": false,
+          "link_value": ""
+        }
+      }
+    },
+    "similar_tickets": []
+  }
+}

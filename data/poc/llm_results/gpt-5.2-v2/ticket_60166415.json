@@ -1,0 +1,61 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS largely responded with templated acknowledgments and log-collection requests rather than actionable diagnosis, and it asserted the case was flagged as priority without showing any concrete priority handling or next-step plan beyond \u201csend logs.\u201d",
+    "evidence": [
+      "ATLAS commented publicly: \"Thank you for reaching out... We recognize the urgency and have flagged your case as a priority.\"",
+      "ATLAS commented publicly: \"To investigate and resolve this quickly, please provide the following: - A LanGuard Console support log bundle... - Support log bundles from at least two affected agents...\"",
+      "ATLAS commented publicly: \"If you need more time to gather this information, the ticket will remain open for one additional week.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The interaction shows repeated cycles of 'requesting more information' and repeated follow-ups from the customer asking for updates, indicating the customer was stuck in a loop without forward progress for extended periods.",
+    "evidence": [
+      "ATLAS commented privately: \"Requesting more information\" (repeated)",
+      "Adam Bangash commented privately: \"Any update on this please? Client is waiting for the response\"",
+      "Adam Bangash commented privately: \"Any Updates?\"",
+      "Keyur Saxena commented publicly: \"No updates yet.\" (repeated on 2025-08-26, 2025-08-28, 2025-09-01)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support did not fully incorporate key context the customer provided (multi-machine impact, workaround already tried, need for scalable remediation), and repeatedly reverted to the same workaround guidance even after the customer reported it did not resolve the issue.",
+    "evidence": [
+      "Adam Bangash commented privately: \"The issue of automatic scanning still exist. The scan started again after replacing the XML file provided.\"",
+      "Keyur Saxena commented publicly: \"current workarounds include: - Disabling the scan schedule after correcting toolcfg_agent.xml - Correcting toolcfg_agent.xml repeatedly...\"",
+      "Adam Bangash commented privately: \"We already did that in multiple machines but issue is still there\"",
+      "Adam Bangash commented privately: \"Is there any process we can do it on all machines at once? because there are multiple machines in different branches.\"",
+      "Keyur Saxena commented publicly: \"You could create a custom script... The creation of the script would be outside our scope\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are multiple multi-day gaps where the customer had to chase support for updates, including explicit complaints about lack of response over several days.",
+    "evidence": [
+      "Adam Bangash commented privately: \"Its been 4 days and no response on this.\"",
+      "Timeline gap: 2025-08-21 (customer reports issue persists) \u2192 2025-08-25 (support responds with 'waiting for Development team')",
+      "Adam Bangash commented privately: \"Any update on this please? Client is waiting for the response\"",
+      "Adam Bangash commented privately: \"Any Updates?\" (repeated follow-ups on 2025-08-26, 2025-08-28, 2025-09-01)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket does not show an actual closure while the issue is unresolved; instead, it remains active with ongoing engineering investigation and customer follow-ups.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer clearly signaled urgent, widespread, business-critical impact (banking client, 300+ endpoints) yet support response cadence and handling remained standard (long waits, 'no updates yet', workaround-only guidance, refusal to provide real-time escalation support).",
+    "evidence": [
+      "Issue description: \"I want to raise a ticket on urgent priority\"",
+      "Issue description: \"Agent Based (Automatic) Scans... are running on many machines automatically\"",
+      "Adam Bangash commented privately: \"We are talking about a banking client here, with over 300+ endpoints deployed across multiple branches nationwide.\"",
+      "Adam Bangash commented privately: \"We need an immediate escalation to your higher technical team and a clear resolution plan without any delays.\"",
+      "Keyur Saxena commented publicly (repeated): \"No updates yet.\"",
+      "Matthew Mrosko commented publicly: \"We do not join sessions ad-hoc, and do not join sessions to explain an issue in person to a customer.\""
+    ]
+  },
+  "_model": "gpt-5.2-v2",
+  "_ticket_id": 60166415
+}

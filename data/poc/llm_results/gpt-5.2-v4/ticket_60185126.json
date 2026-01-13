@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided largely generic/process guidance (asking for steps, linking KB articles, talking generally about Watchdog/patches) instead of addressing the customer\u2019s explicit request: analyze the already-collected dump/logs and state findings (e.g., whether patch 3 fixed a known bug). The customer explicitly called the response unhelpful and suggested it communicated that GFI cannot analyze dumps/logs.",
+    "evidence": [
+      "Customer: \"Now I have Dump by Watchdog: https://prerov.comit.cz/files/Netopil/KerioFW/VHS/\"",
+      "Mike (human): \"At this stage, it will be important to monitor the system closely... If you experience any further crashes... please collect and upload...\" (no analysis of provided dump/logs)",
+      "Customer: \"We are very dissatisfied with your answer. Did you analyze the dump and logs from previous crashes?\"",
+      "Customer: \"What should we give the customer in response? That GFI is not able to analyze anything from the logs and dump?\"",
+      "ATLAS (later): \"According to the Kerio Control knowledge base regarding crash analysis...\" + KB links (generic explanation rather than reporting actual dump findings)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "A human agent (Mike) did respond and took over; there is no clear repeated back-and-forth where the customer is unable to reach a human or is repeatedly asked for the same info multiple times by AI in a loop. The main issue is quality/context and delays rather than an AI-only loop.",
+    "evidence": [
+      "Mike Kebede commented publicly (human response present)."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support did not acknowledge or act on the customer\u2019s already-provided watchdog dump link and crash details; instead they asked for the dump and other diagnostics again and shifted to \u201cmonitor after patch 3,\u201d which the customer perceived as ignoring the request to analyze the existing evidence.",
+    "evidence": [
+      "Customer: \"Now I have Dump by Watchdog: https://prerov.comit.cz/files/Netopil/KerioFW/VHS/\"",
+      "Customer: \"But we already have a dump created by the watchdog.\"",
+      "Mike: \"If you experience any further crashes... please collect and upload the following... The watchdog dump from /var/crash/winroute/ ...\"",
+      "Customer: \"Did you analyze the dump and logs from previous crashes?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long gap (20 days) between the customer's complaint about lack of analysis (Sep 4) and the next support response (Sep 24). This meets the 3+ calendar day threshold and likely worsened dissatisfaction for a stability/outage issue.",
+    "evidence": [
+      "Customer complaint timestamp: \"[2025-09-04T12:14:51+00:00]\"",
+      "Next support response timestamp: \"[2025-09-24T16:18:51+00:00]\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The provided transcript does not show the ticket being closed/resolved, nor an auto-closure occurring while a customer question was pending.",
+    "evidence": []
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue involves repeated firewall/service crashes causing internet unavailability and risk of customer churn (\u201creplacing the technology\u201d). Support handled it with standard monitoring/log-collection language and no visible escalation/urgent handling or direct analysis of the already-available dump/logs, despite the business impact.",
+    "evidence": [
+      "Customer: \"Kerio Control repeately crashed.\"",
+      "Customer: \"The internet was unavailable for approx. 4 minutes.\"",
+      "Customer: \"Please analyze it, because the customer is already talking about replacing the technology.\"",
+      "Mike: \"At this stage, it will be important to monitor the system closely... If you experience any further crashes... collect and upload...\" (no urgency/escalation indicated)"
+    ]
+  },
+  "_model": "gpt-5.2-v4",
+  "_ticket_id": 60185126
+}
