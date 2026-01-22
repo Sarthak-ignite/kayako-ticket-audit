@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no visible AI-generated reply content in this ticket thread to assess for correctness, relevance, or quality. The only visible message is the customer's request to reopen the ticket.",
+    "evidence": [
+      "Customer: \"Need this ticket reopened.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not mention being stuck with a bot, needing a human, or experiencing repetitive automated loops. The issue appears to be immediate closure rather than inability to reach an agent.",
+    "evidence": [
+      "Customer: \"Need this ticket reopened.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The ticket was closed essentially immediately after the customer explicitly requested it be reopened, suggesting the request/context was not acknowledged or acted upon. While we do not see agent messages, the timing strongly indicates the customer's stated need was ignored.",
+    "evidence": [
+      "Customer: \"Need this ticket reopened.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-10-15 21:23:14",
+      "CSV: Ticket Closed=2025-10-15 21:23:17",
+      "Customer timestamp: \"[2025-10-15T21:23:16+00:00]\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no evidence of a prolonged waiting period; the ticket lifecycle shows closure within seconds. The customer does not complain about delays in this ticket.",
+    "evidence": [
+      "CSV: resolutionTime=3",
+      "CSV: timeSpentOpenL1=0",
+      "CSV: Ticket Created=2025-10-15 21:23:14",
+      "CSV: Ticket Closed=2025-10-15 21:23:17"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed almost immediately (within ~3 seconds) despite the customer explicitly stating they still need action (reopen). This is strong evidence of closure while the customer still required assistance.",
+    "evidence": [
+      "Customer: \"Need this ticket reopened.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-10-15 21:23:17",
+      "CSV: Ticket Closed=2025-10-15 21:23:17",
+      "CSV: resolutionTime=3"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the forwarded subject references a 'scan issue with new servers', there is no explicit severity, outage impact, or urgent business-critical language in this ticket indicating a P1/SEV1 situation. Therefore, there is insufficient evidence of high-severity mishandling here.",
+    "evidence": [
+      "Forwarded subject line: \"Re: GFI LanGuard scan issue with new servers\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60222138
+}

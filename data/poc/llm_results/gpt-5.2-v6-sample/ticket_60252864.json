@@ -1,0 +1,67 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS initially misclassified the issue as a licensing/purchasing question and only corrected after the customer clarified \u201cNeed tech support.\u201d This indicates misunderstanding and low-quality routing for an urgent \u201cexpired license causing outage\u201d scenario (even if later corrected).",
+    "evidence": [
+      "ATLAS: \"Since it's a delicate topic, I want to make extra sure: are you seeking assistance with renewing/modifying/cancelling an existing license, or purchasing a new license...\"",
+      "Customer: \"Need tech support\"",
+      "ATLAS: \"\ud83d\ude33 Sorry about the misunderstanding, let's try again.\"",
+      "ATLAS: \"Got it! So you're experiencing a technical issue related to an expired license in Kerio Control.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly attempted to get attention for hours with multiple \u201cHi/Hello/Anyone there\u201d messages, suggesting they were not getting through to effective human help and experienced a loop-like experience (even though they did not explicitly request a human).",
+    "evidence": [
+      "Customer: \"Anyone there\"",
+      "Customer: \"Hi\"",
+      "Customer: \"Hello\"",
+      "Customer: \"Hi\"",
+      "Customer: \"[CHAT-END] Customer has ended the chat session\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The interaction shows the AI did not incorporate the customer\u2019s initial context (\u201cExpired license\u201d) correctly and forced a re-clarification, indicating context handling issues. Evidence is mainly in the ATLAS transcript; the later human reply does acknowledge the key details.",
+    "evidence": [
+      "Customer: \"Expired license\"",
+      "ATLAS: \"are you seeking assistance with renewing/modifying/cancelling an existing license, or purchasing a new license...\"",
+      "Customer: \"Need tech support\"",
+      "ATLAS: \"Sorry about the misunderstanding, let's try again.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a clear delay between the customer reporting services down/outage and the first meaningful public agent response the next day. The customer also explicitly pinged multiple times, indicating they were waiting without response.",
+    "evidence": [
+      "Customer (2025-11-29T21:03:39+00:00): \"Our license expired. Please issue us a temporary extension. Our services are down.\"",
+      "Customer (2025-11-29T23:34:53+00:00): \"We are facing total outage. Your assistance will be highly appreciated\"",
+      "Customer (2025-11-30T05:38:34+00:00): \"we require your assistance\"",
+      "Agent (2025-11-30T13:19:12+00:00): \"Dear Ashraaz, Thank you for contacting us...\"",
+      "CSV: Ticket Created=2025-11-29 21:02:32",
+      "CSV: Ticket Updated=2025-12-10 14:35:59"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The agent message includes a closure countdown (\u201cwill stay open for one week unless...\u201d), and the ticket is ultimately marked closed in the CSV. It\u2019s unclear if the customer confirmed resolution, so there is a reasonable risk the ticket was closed administratively without verifying the outage was resolved.",
+    "evidence": [
+      "Agent: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-10 14:35:59",
+      "CSV: Ticket Solved=2025-12-07 13:37:10"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly reported a \u201ctotal outage/services down,\u201d which is high-severity, yet the response arrived many hours later and focused on redirecting to Sales without visible urgent escalation or immediate mitigation guidance. Even if licensing is the constraint, the handling appears slow relative to stated impact.",
+    "evidence": [
+      "Customer: \"Our services are down.\"",
+      "Customer: \"We are facing total outage.\"",
+      "Customer: \"Please extend and allow us to renew in few days\"",
+      "Agent (next day): \"Kerio Support does not have the ability to issue temporary licenses or extend expired licenses... must be handled strictly through our Sales and Licensing channels.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60252864
+}

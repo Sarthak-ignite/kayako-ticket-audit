@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only public response appears to be an automated message with no substantive troubleshooting, clarification, or confirmation of what the customer needed. Because we cannot see any actual \u201cattached report\u201d content in the ticket text, it\u2019s possible the automation sent an irrelevant or insufficient response before closure (uncertain, but plausible given the extremely fast solve/close).",
+    "evidence": [
+      "Kayako Automations commented publicly: \"Hi Team, Your requested report is attached. Best regards, Kayako Automation\"",
+      "CSV: resolutionTime=3",
+      "CSV: Level Solved=L1 Agent"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence of the customer being stuck in an AI loop, asking for a human, or receiving repetitive automated prompts. The ticket shows a single automation message only.",
+    "evidence": [
+      "Kayako Automations commented publicly: \"Hi Team, Your requested report is attached. Best regards, Kayako Automation\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The provided ticket text does not include any customer description or prior context that could be ignored, aside from an implied request for a report. There is insufficient evidence that support forced repetition or failed to acknowledge details already provided.",
+    "evidence": [
+      "Kayako Automations commented privately: \"Initial ticket creation.\"",
+      "Kayako Automations commented publicly: \"Hi Team, Your requested report is attached. Best regards, Kayako Automation\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "Timelines show the ticket was responded to and solved within seconds, so there is no meaningful delay indicated by either logs or CSV timing fields.",
+    "evidence": [
+      "CSV: Ticket Created=2025-12-16 08:00:53",
+      "CSV: Ticket Solved=2025-12-16 08:00:56",
+      "CSV: resolutionTime=3"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved and closed almost immediately after creation, with only an automated message and no visible confirmation from the customer that the issue/request was satisfied. This is strong circumstantial evidence of premature closure/auto-closure behavior.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-12-16 08:00:53",
+      "CSV: Ticket Solved=2025-12-16 08:00:56",
+      "CSV: Ticket Closed=2025-12-16 08:00:57",
+      "Kayako Automations commented publicly: \"Hi Team, Your requested report is attached. Best regards, Kayako Automation\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of an outage, urgent business impact, or severity level in the ticket text or CSV fields. Without any P1/SEV1 signals, mishandling cannot be supported from the provided evidence.",
+    "evidence": [
+      "CSV: Product=Placeable",
+      "CSV: Level Solved=L1 Agent"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60264202
+}

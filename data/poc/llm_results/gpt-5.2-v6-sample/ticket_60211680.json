@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS appears to provide incorrect or low-quality guidance: it reported zero licenses/seats while internal notes indicate the company had many devices, and it failed to understand a clear request for a representative. This suggests misleading automation that did not properly reflect the account state or user intent.",
+    "evidence": [
+      "ATLAS: \"It seems your company is already using all of the licensed seats. Active Devices: 0 Total Licenses: 0\"",
+      "Internal note (Alexandr): \"104983 has a lot of devices. they moved from FFM.\"",
+      "ATLAS: \"Sorry, I didn\u2019t get that. Please try again.\" (after customer typed \"representative\")"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly asked for a representative and ATLAS did not route to a human, responding with a generic failure-to-understand message. This indicates friction in reaching a human and a potential loop/block at the AI layer.",
+    "evidence": [
+      "Customer: \"representative\"",
+      "ATLAS: \"Sorry, I didn\u2019t get that. Please try again.\"",
+      "Customer interaction options show escalation attempt: \"\ud83d\udde8\ufe0f Contact an Agent\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support\u2019s initial instruction required the customer to log into a COID they stated was not theirs, despite the customer repeatedly stating the number should be added to COID 104983. This suggests a mismatch/possible failure to incorporate the customer\u2019s stated context (ownership/access) before requesting action.",
+    "evidence": [
+      "Agent (Alexandr): \"Could you please login to COID 102817 and transition it to StreetSmart\"",
+      "Customer: \"102817 is not our company ID so I do not have the login for it. 7868153707 is our number which needs to be added to 104983.\"",
+      "Customer (earlier): \"Please add 7868153707 to Company ID 104983\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were meaningful delays and the customer explicitly escalated due to the request being open over a week. Timeline also shows multiple days between initial request and resolution steps, supporting a waiting/aging issue.",
+    "evidence": [
+      "Escalation note: \"The customer message is:Request has been opened over a week\"",
+      "CSV: Ticket Created=2025-10-01 16:35:30",
+      "CSV: Ticket Solved=2025-10-10 15:48:48",
+      "First substantive public agent reply appears on 2025-10-03 after creation on 2025-10-01."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the customer confirmed resolution and explicitly requested closure. While the agent mentioned an auto-close policy (\u201cstay open for one week\u201d), there is no sign the case was closed while the customer still needed help.",
+    "evidence": [
+      "Customer: \"This ticket can be closed\"",
+      "Agent: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The escalation was tagged with a high-impact category (\u201ccore_functionality_defect\u201d), yet the customer reported it had been open over a week, indicating potentially slow handling for something framed as severe. Severity labeling may be automated, so this is flagged with some uncertainty.",
+    "evidence": [
+      "Escalation note: \"The severity is: core_functionality_defect\"",
+      "Escalation note: \"The customer message is:Request has been opened over a week\"",
+      "CSV: Ticket Created=2025-10-01 16:35:30",
+      "CSV: Ticket Solved=2025-10-10 15:48:48"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60211680
+}

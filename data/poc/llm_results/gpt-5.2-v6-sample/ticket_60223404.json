@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provides a largely generic troubleshooting checklist (cache/cookies, try another browser, internet connection, extensions) for an intermittent 500 error affecting all users, without demonstrating concrete next steps like capturing server-side correlation IDs, attempting to reproduce internally, or initiating backend investigation. It also introduces an \u201cemergency\u201d framing and \u201cone additional week\u201d policy language that reads template-like rather than tailored to the reported production-impacting symptom.",
+    "evidence": [
+      "\u201cAccording to our knowledge base article on FogBugz On-Demand performance issues \u2026 Here are some steps\u2026 Clear your browser cache and cookies\u2026 Try accessing the filters from another browser\u2026 Ensure your internet connection does not have intermittent drops\u2026\u201d",
+      "\u201cTo assist you as efficiently as possible, could you please provide\u2026 The specific nature of the emergency\u2026 If you require additional time to gather these details, please note that your ticket will remain open for one additional week.\u201d",
+      "\u201cThis supports the likelihood of a temporary backend or database processing issue with filtering functionality.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly pushes back on the self-service/AI flow and requests that an agent log the ticket, indicating friction reaching a human. The interaction shown is entirely ATLAS-driven with no visible handoff to a live agent despite the customer\u2019s stated expectation.",
+    "evidence": [
+      "\u201clog a ticket with an agent this is not my responsibility to do\u201d",
+      "\u201cthe details ive givven are sufficient\u201d",
+      "CSV: Level Solved=L1 Agent"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS requests details that were already provided in the intake (time window, action causing error, scope, environment), suggesting the customer is being pushed to repeat context. The customer reiterates the same core point (\u201cwhen filtering\u201d) after the AI asks for more information.",
+    "evidence": [
+      "Customer intake: \u201cIntermittent internal server error 500 errors being recieved\u201d and \u201c2. Filtering 3. all users \u2026 5. on demand\u201d",
+      "ATLAS: \u201ccould you please provide\u2026 Any particular error messages or codes, aside from \u2018500 internal server error,\u2019 that have appeared.\u201d",
+      "Customer: \u201cInternal server errors being experienced when filtering\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket lifecycle indicates a long time to resolution/closure (about a week) which is significant given the report involves intermittent 500 errors impacting all users. Even if the first response was fast, the overall resolution time suggests delays in meaningful progress.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-17 13:36:58",
+      "CSV: Ticket Solved=2025-10-24 14:51:55",
+      "CSV: resolutionTime=609297"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "ATLAS states the ticket will remain open only one week unless the customer replies with explicit closure language, which can drive auto-closure independent of true resolution. The ticket is marked closed in CSV, and there is no customer confirmation of resolution in the provided interaction history, so premature/auto closure is plausible (uncertain due to missing later messages).",
+    "evidence": [
+      "\u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Closed in the portal.\u201d",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-27 15:37:07"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue description indicates intermittent 500 errors affecting all users in an on-demand environment, which can represent a high-severity service incident. The response focuses on end-user/browser troubleshooting and a status-page check, with no explicit escalation or incident handling steps shown; this suggests potential under-triage (severity uncertain because business impact details were not provided).",
+    "evidence": [
+      "Customer intake: \u201cIntermittent internal server error 500 errors being recieved\u201d and \u201call users\u201d",
+      "ATLAS file analysis: \u201cThe errors affect all users, not just specific individuals\u2026 FogBugz On-Demand (cloud-hosted).\u201d",
+      "ATLAS guidance: \u201cClear your browser cache and cookies\u2026 Try accessing the filters from another browser or device\u2026\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60223404
+}

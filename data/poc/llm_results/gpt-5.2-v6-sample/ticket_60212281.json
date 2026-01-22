@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI interaction appears to provide generic, templated guidance rather than addressing the customer\u2019s explicit request for a human. The assistant\u2019s response after the human request begins with irrelevant intake prompts (logs/screenshots), suggesting low usefulness and poor adaptation to the user\u2019s intent (though the response is truncated, so certainty is moderate).",
+    "evidence": [
+      "Customer (Bill Lynch): \"give me a real human\"",
+      "AI Assistant: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f ...[truncated]...\"",
+      "AI Assistant: \"Walk me through what's happening or select from the below options.\"",
+      "AI Assistant: \"Don't hold back on the details \u2013 the more you can share about the issue...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested a human, which is a strong indicator they felt blocked by the AI. The AI appears to continue with automated troubleshooting/intake instead of immediately routing to a live agent (based on the visible portion of the reply).",
+    "evidence": [
+      "Customer (Bill Lynch): \"give me a real human\"",
+      "AI Assistant: \"If I'm unable to help you, I can patch you through to a Live agent...\"",
+      "AI Assistant: \"Walk me through what's happening or select from the below options.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer\u2019s only stated need was to reach a human, but the AI appears to respond with generic requests for logs/details rather than acknowledging and acting on that request. Because the AI reply is truncated, there is slight uncertainty, but the visible text suggests the request was not directly honored.",
+    "evidence": [
+      "Customer (Bill Lynch): \"give me a real human\"",
+      "AI Assistant: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f ...[truncated]...\"",
+      "AI Assistant: \"Don't hold back on the details \u2013 the more you can share about the issue...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no evidence of long wait times or customer complaints about delays. The ticket lifecycle in the CSV shows it was solved/closed within about a minute.",
+    "evidence": [
+      "CSV: resolutionTime=62",
+      "CSV: Ticket Created=2025-10-02 11:26:36",
+      "CSV: Ticket Solved=2025-10-02 11:27:38",
+      "CSV: Ticket Closed=2025-10-02 11:27:39"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved and closed extremely quickly despite the customer explicitly asking for a human, with no clear evidence that a human handoff occurred or the request was satisfied. This strongly suggests the case may have been closed before the customer\u2019s need was addressed.",
+    "evidence": [
+      "Customer (Bill Lynch): \"give me a real human\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-10-02 11:27:38",
+      "CSV: Ticket Closed=2025-10-02 11:27:39",
+      "CSV: resolutionTime=62"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No outage/critical impact indicators, severity labels, or urgent business impact are present in the provided text or CSV context.",
+    "evidence": [
+      "CSV: Product=Khoros Classic Community"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60212281
+}

@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI transcript shows likely inaccuracies and an incomplete fulfillment of the requested action. It greets a different name than the ticket requester and promises to add a device but only gets as far as requesting a phone number, with no confirmation the device was actually created before the ticket is closed.",
+    "evidence": [
+      "Customer: Raymond Guirguis",
+      "\"Hi, Daniel Soler ! \ud83d\udc4b\"",
+      "\"Certainly. I will add a new Device to your Account.\"",
+      "\"It seems your company has available licenses. I'll proceed with the creation.\"",
+      "\"Please provide me with the phone number. Make sure to provide only 1 phone number at a time.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was stuck in a loop, repeatedly routed back to AI, or asked for a human agent. The transcript shows a single linear flow ending with the AI requesting a phone number.",
+    "evidence": [
+      "\"Please provide me with the phone number. Make sure to provide only 1 phone number at a time.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The interaction appears to ignore or mis-handle basic context about the requester identity, greeting a different person than the ticket\u2019s listed customer. This suggests the AI may be operating on mismatched account/user context or failing to align with the ticket details.",
+    "evidence": [
+      "Customer: Raymond Guirguis",
+      "\"Hi, Daniel Soler ! \ud83d\udc4b\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket lifecycle is extremely short (about a minute) and there are no customer complaints about waiting or visible long response gaps.",
+    "evidence": [
+      "CSV: resolutionTime=63",
+      "CSV: Ticket Created=2025-10-31 12:22:52",
+      "CSV: Ticket Solved=2025-10-31 12:23:55",
+      "CSV: Ticket Closed=2025-10-31 12:23:56"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved/closed almost immediately even though the last step in the flow is the AI asking the customer for a phone number to proceed, with no evidence of completion. This suggests the case may have been closed before confirming the requested device add was actually performed (some uncertainty: it\u2019s possible the customer never replied, but closure was near-instant).",
+    "evidence": [
+      "\"Please provide me with the phone number. Make sure to provide only 1 phone number at a time.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-10-31 12:23:55",
+      "CSV: Ticket Closed=2025-10-31 12:23:56",
+      "CSV: resolutionTime=63"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of an outage, urgent business impact, or severity designation that would require P1/Sev1 escalation. The request appears to be a routine \u201cadd new device\u201d workflow.",
+    "evidence": [
+      "\"Button selection: [\u2795 Add New Device]\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60233211
+}

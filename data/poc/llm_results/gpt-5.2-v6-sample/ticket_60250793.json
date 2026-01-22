@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no actual AI/customer conversation content included\u2014only an internal note stating that an AI chat occurred. Without the transcript, there\u2019s no evidence the AI gave incorrect, misleading, repetitive, or filler responses.",
+    "evidence": [
+      "ATLAS commented privately: Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket shows the customer interacted with AI support, but there is no evidence the customer was trapped in an AI loop or requested a human. The transcript that could confirm this is not present.",
+    "evidence": [
+      "ATLAS commented privately: Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No support responses or customer issue description are provided in the available text, so it\u2019s not possible to determine whether the agent/AI ignored previously provided context or forced repetition.",
+    "evidence": [
+      "Customer: teh shenkeem"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The structured timestamps indicate the ticket was created and closed within roughly a minute, and there are no customer complaints about waiting. This does not suggest meaningful response delays.",
+    "evidence": [
+      "CSV: Ticket Created=2025-11-26 09:12:13",
+      "CSV: Ticket Closed=2025-11-26 09:13:22",
+      "CSV: resolutionTime=69"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved/closed almost immediately after creation, and the only recorded content is an internal note about an AI chat record (without showing a resolution). This raises a reasonable suspicion of premature/auto-closure while the customer may still have needed help, though certainty is limited due to missing transcript details.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-11-26 09:12:13",
+      "CSV: Ticket Solved=2025-11-26 09:13:22",
+      "CSV: Ticket Closed=2025-11-26 09:13:22",
+      "ATLAS commented privately: Thanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of a P1/SEV1 outage or urgent business impact in the provided text or CSV fields, so mishandling of a high-severity issue cannot be supported.",
+    "evidence": [
+      "CSV: Product=DNN"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60250793
+}

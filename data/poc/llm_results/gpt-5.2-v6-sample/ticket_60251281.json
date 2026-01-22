@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS produced a fairly generic intake message and an automated closure-warning that may not fit a licensing request context. Additionally, Support told the customer G2 2011 is \u201cno longer supported\u201d and implied they may not be able to generate pre-2021 licenses, but the BU later produced \u201cPERMANENT 2011 licenses,\u201d suggesting earlier guidance may have been misleading or at least incomplete (though it may reflect Support\u2019s tooling limits rather than impossibility).",
+    "evidence": [
+      "Kayako - ticket id 60251281 // ATLAS commented publicly: \"To proceed... could you kindly provide the following required details: ... Version ... Type ... Expiration date ... Server name ...\"",
+      "Kayako - ticket id 60251281 // ATLAS commented publicly: \"This ticket will remain open for another week... This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"\"",
+      "Kayako - ticket id 60251281 // Harry Tasker commented publicly: \"The other 3 licenses are for G2 2011, which is no longer supported. I will request these license files from the BU, as we do not have the ability to create license files for versions prior to 2021.\"",
+      "Ignite Jira Gensym - issue key GENSYMBSE-28 // Dmitri Hrapof commented: \"attached dec.zip with the PERMANENT 2011 licenses.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly stated they could not log in and asked Support/AI to \u201cjust raise the ticket,\u201d which signals friction accessing a human/process and potential AI wall experience. While the ticket was ultimately created, the initial interaction shows the customer trying to bypass the AI/portal flow.",
+    "evidence": [
+      "Customer issue description: \"I can't login to the site. Can you please just raise the ticket?\"",
+      "Kayako - ticket id 60251281 // ATLAS commented publicly: \"To proceed... could you kindly provide the following required details...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer\u2019s initial request was simply to raise a replacement license ticket (and they indicated they had an authorization request and that it\u2019s covered by contract), but ATLAS responded with a broad troubleshooting-style request for many details and an upload prompt. This can be read as not fully adapting to the context that the customer mainly needed the request initiated due to login issues (though some details may be legitimately required for licensing).",
+    "evidence": [
+      "Customer issue description: \"Raise a ticket for a Gensym G2 license\"",
+      "Customer issue description: \"I have an authorization request and this is a replacement for an existing license\"",
+      "Customer issue description: \"I can't login to the site. Can you please just raise the ticket?\"",
+      "Kayako - ticket id 60251281 // ATLAS commented publicly: \"To proceed... could you kindly provide the following required details: - The current license information... - Server details...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows long overall resolution/closure time, and there are multi-day gaps during an urgent licensing request. The customer needed 2011 licenses and the process extended across weeks, with a particularly long tail between the licenses being sent (Dec 5) and ticket being solved/closed (Dec 25\u201328).",
+    "evidence": [
+      "CSV: resolutionTime=2468935",
+      "CSV: Ticket Created=2025-11-26 19:15:38",
+      "CSV: Ticket Solved=2025-12-25 09:04:33",
+      "CSV: Ticket Closed=2025-12-28 09:34:41",
+      "Kayako - ticket id 60251281 // Roger King commented privately: \"This ticket is set as Urgent\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "ATLAS introduced an automated \u201cclose in one week\u201d expectation early, which can be a premature-closure threat for a licensing fulfillment request that may require internal approvals. Later, the ticket was solved without an explicit customer confirmation after the final licenses were sent; while the request likely was completed, closure occurred after a long quiet period rather than clear customer acknowledgement (uncertain).",
+    "evidence": [
+      "Kayako - ticket id 60251281 // ATLAS commented publicly: \"This ticket will remain open for another week...\"",
+      "Kayako - ticket id 60251281 // ATLAS commented publicly: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"\"",
+      "Kayako - ticket id 60251281 // Muhammad Rizwan commented publicly: \"As Roger has already shared the license with you... we will now mark this ticket as Solved.\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Internal notes label the ticket as \u201cUrgent\u201d and there was a stated need to deliver licenses by Dec 4, but fulfillment required escalation to BU and took until Dec 5 for the remaining licenses. This may indicate some urgency handling gaps, though it\u2019s not clearly a production outage (so severity classification is uncertain).",
+    "evidence": [
+      "Kayako - ticket id 60251281 // Roger King commented privately: \"This ticket is set as Urgent\"",
+      "Ignite Jira Gensym - issue key GENSYMBSE-28 // Roger King commented: \"...we need to get these to Enbridge by tomorrow (4th December)\"",
+      "Kayako - ticket id 60251281 // Roger King commented publicly: \"Please find attached the remaining 3 subscription G2 licenses\" (dated 2025-12-05)"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60251281
+}

@@ -1,0 +1,61 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS\u2019 contribution appears largely generic (requesting uploads and offering standard guidance) and does not demonstrate meaningful triage or problem-specific troubleshooting before handing off. While not clearly \"wrong,\" it provides low diagnostic value for a recurring /var disk-full performance issue, so AI quality concerns are plausible (uncertain).",
+    "evidence": [
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\u201d",
+      "\u201cIf you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\u201d",
+      "\u201cIf I'm not able to resolve your issue, I can connect you with one of our support specialists\u2026\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was trapped in an AI loop or unable to reach a human; the thread shows human agents engaging, requesting commands/logs, and scheduling a live session.",
+    "evidence": [
+      "\u201cDear Eswaramoorthy, Thank you for the follow-up\u2026 I need you to run the following commands and provide the output\u2026\u201d",
+      "\u201cI am sending a meeting scheduler link.\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer asked for a shell license key even though the agent believed it had already been provided, suggesting the prior response was not clearly delivered/visible or the agent did not account for the customer\u2019s stated need. Additionally, the customer repeatedly reported that diagnostics/snapshots were auto-generating, but the response initially focused on manual deletion rather than directly addressing the recurring auto-generation behavior (some uncertainty).",
+    "evidence": [
+      "Customer: \u201cPlease provide us with the shell license key to execute these commands.\u201d",
+      "Agent: \u201cI am resending this last response, which did include the shell unlock key. I am sending a new key.\u201d",
+      "Customer: \u201cWe can see that the multiple diagnostic & snapshot files are automatically getting generated\u2026 Please let us know if we can have a Webex to check further.\u201d",
+      "Agent: \u201cYou can delete all of the diagnostic files that appear in your screenshot. You can also delete old snapshot files.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are explicit customer escalations asking for urgent updates (especially about the Webex) and an agent apology for delayed response. The CSV also indicates long response/resolution durations, supporting meaningful delays.",
+    "evidence": [
+      "Customer (via Monyah): \u201cPlease any update here? Can you provide the below request ASAP.\u201d",
+      "Customer (via Monyah): \u201cPlease can you get back to us ASAP on the requested Webex call?\u201d",
+      "Agent: \u201cI sincerely apologize for the delayed response on this ticket.\u201d",
+      "CSV: initialResponseTime=14388",
+      "CSV: resolutionTime=2419698"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support repeatedly used an auto-closure warning (\u201cstay open for one week unless\u2026\u201d) while the customer was still reporting an ongoing recurring issue (auto-generated logs/snapshots) and requesting a Webex. Although the ticket was ultimately solved later, the closure warning could reasonably be perceived as premature pressure (some uncertainty).",
+    "evidence": [
+      "Agent: \u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal.\u201d",
+      "Customer: \u201cWe can see that the multiple diagnostic & snapshot files are automatically getting generated\u2026 Please let us know if we can have a Webex to check further.\u201d",
+      "Agent (again): \u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\"\u2026\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer signaled urgency/criticality (\"critical stage\" and need to expedite) alongside a performance impact and disk space exhaustion, but handling included multi-day waits for keys/meeting coordination rather than clear severity-based escalation. Severity is not explicitly labeled P1/SEV1, so this assessment is somewhat uncertain.",
+    "evidence": [
+      "Customer (via Monyah): \u201cWe are at critical stage and must expediate all the tasks and activities\u2026\u201d",
+      "Ticket description: \u201cExinda Network Orchestrator Performance Issue and the disk space is full\u2026 the issue reoccurs and persists.\u201d",
+      "Agent: \u201cI sincerely apologize for the delayed response on this ticket.\u201d",
+      "Customer (via Monyah): \u201cPlease can you get back to us ASAP on the requested Webex call?\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60220701
+}

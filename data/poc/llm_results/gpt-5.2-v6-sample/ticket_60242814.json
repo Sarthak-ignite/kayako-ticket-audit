@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The ATLAS interaction appears to respond with generic troubleshooting prompts (requesting logs/screenshots) despite the customer asking an administrative/billing/porting policy question. This suggests the AI did not adapt well to the request context, though the transcript is truncated so certainty is moderate.",
+    "evidence": [
+      "ATLAS transcript: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time ...[truncated]...\"",
+      "Customer issue: \"My question: Is it possible to please port our numbers back to us. If there is a fee, how much would that be?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was trapped in an AI loop or requested a human and was blocked. The ticket moved to an L1 agent workflow and was answered by a human agent.",
+    "evidence": [
+      "Kayako: \"ATLAS commented privately: Action: l1\"",
+      "Agent reply: \"Carlos Encalada commented publicly: Dear Michael, ...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI appears to ignore the nature of the customer\u2019s porting/fee question by asking for troubleshooting artifacts (logs/screenshots), which are not relevant to the request. This is a light/partial form of ignoring context; the human agent later addressed the question directly.",
+    "evidence": [
+      "Customer: \"My question: Is it possible to please port our numbers back to us. If there is a fee, how much would that be?\"",
+      "ATLAS transcript: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly reported they still had not received an answer days after creating the ticket, and the substantive response appears to come much later. The CSV also shows a very long initial response time and overall resolution time, reinforcing significant delays.",
+    "evidence": [
+      "Customer (2025-11-18): \"Hello, I still have not received an answer to my question.\"",
+      "Ticket created 2025-11-13; first substantive agent answer appears 2025-11-30: \"Dear Michael, ... Yes \u2014 it is possible to port your fax numbers away...\"",
+      "CSV: initialResponseTime=85225",
+      "CSV: resolutionTime=2895763"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Agents repeatedly used auto-closure warnings/conditions (\u201creply with \u2018This ticket can be closed\u2019\u201d), and the ticket ultimately ended in closed status. While the customer didn\u2019t explicitly say the issue was unresolved at the end, the closure-pressure language plus closed status creates reasonable risk of premature closure (uncertain).",
+    "evidence": [
+      "Agent: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-20 11:37:42"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket concerns a planned future number port-out and fee inquiry, not an outage or urgent service-impacting incident. There is no evidence of a P1/Sev1 scenario requiring emergency handling or escalation.",
+    "evidence": [
+      "Customer: \"We would not need to port them over until early summer 2026.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60242814
+}

@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The ATLAS reply appears largely generic (standard port/NAT/SSL inspection guidance) and does not engage with the customer\u2019s core claim that the issue is version-dependent (v10 breaks, downgrade fixes) with no config changes. The customer explicitly states the proposed steps are \u201cnot to the point,\u201d indicating the AI response was not useful for the scenario described.",
+    "evidence": [
+      "ATLAS: \"Based on the log details provided\u2014especially the timeout... The most likely root cause relates to firewall or network routing...\"",
+      "ATLAS: \"Verify that port 80 (HTTP) and port 443 (HTTPS) are accessible from the internet...\"",
+      "Customer: \"all those steps are not to the point as update to v10 brakes it, downgrade to 9.5p3 fixes it. there are no config changes at all. Only version is chaning.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear indication the customer was trapped in an AI-only loop or repeatedly requested a human and was denied. The customer did not ask for escalation to a person; a human agent later responded.",
+    "evidence": [
+      "Kayako - ticket id 60210541 // Ciprian Nastase commented publicly: \"Dear Jozef, Thank you for contacting GFI - Kerio Control Support...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The initial response focused on firewall/NAT/port accessibility as if this were a standard external reachability issue, while the customer had already provided strong context that the same setup works on 9.5 SP3 and fails only after upgrading to v10 with no config changes and security features disabled. This suggests the response did not sufficiently acknowledge or incorporate key context already provided.",
+    "evidence": [
+      "Customer: \"after a downgrade to 9.5 SP3 it will solved.\"",
+      "Customer: \"the problem also occurred with all ips/geoip/antivirus/appfilter disabled.\"",
+      "ATLAS: \"The most likely root cause relates to firewall or network routing...\"",
+      "Customer: \"there are no config changes at all. Only version is chaning.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows a long overall resolution time and a substantial gap between the late-September customer follow-up and the next meaningful support response at the end of October. The CSV resolutionTime also indicates an unusually long time to resolve.",
+    "evidence": [
+      "CSV: resolutionTime=2678192",
+      "Customer (2025-09-30T15:55:22+00:00): \"all those steps are not to the point...\"",
+      "Ciprian Nastase (2025-10-31T13:59:15+00:00): \"can you please confirm if this issue wasn't actually related to the GFI Software Status - Kerio Control UDP Traffic Issue...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the agent mentioned an auto-close policy (\u201cstay open for one week\u201d), the customer then confirmed the issue was solved and agreed it could be considered resolved. Closure appears consistent with customer confirmation rather than premature closure while unresolved.",
+    "evidence": [
+      "Ciprian: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\"",
+      "Customer: \"yes, it was related... we can consider this as solved.\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The reported impact involves PBX/VoIP trunk issues across multiple appliances and a clear regression after upgrading to v10, which can represent business-critical outage behavior. Handling appears slow (about a month to connect it to a known status incident), suggesting possible under-triage/missed escalation, though severity is not explicitly stated (uncertain).",
+    "evidence": [
+      "Customer: \"we already had some reports on PBX issues... partner Walter having issues on  10 Kerio controls.\"",
+      "Ciprian: \"PBX C3X stops working after an upgrade to Kerio Control V10.\"",
+      "Ciprian (private note): \"I wonder if this has anything to do with  GFI Software Status - Kerio Control UDP Traffic Issue...\"",
+      "CSV: Ticket Created=2025-09-30 15:50:42",
+      "CSV: Ticket Solved=2025-10-31 15:47:14"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60210541
+}

@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses appear generic and repetitive, largely restating knowledge-base steps the customer had already tried, without adapting to the newly provided logs. This created low-value \u201cfiller\u201d guidance rather than progressing troubleshooting based on evidence.",
+    "evidence": [
+      "ATLAS: \"Since the standard manual update process did not resolve the issue, here are further troubleshooting steps and verifications...\"",
+      "Ond\u0159ej \u0160abata: \"none of the proposed solutions worked so far, here are the logs from both server and agent\"",
+      "Ond\u0159ej \u0160abata: \"Those steps are basically what was recommended in articles before.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer experience suggests being stuck in an AI-driven loop of repeating KB steps; the customer explicitly asks for someone to look at the logs rather than more article-based steps. This indicates difficulty getting beyond automated guidance to human analysis.",
+    "evidence": [
+      "Ond\u0159ej \u0160abata: \"Please have someone look at the logs\"",
+      "Ond\u0159ej \u0160abata: \"Those steps are basically what was recommended in articles before.\"",
+      "ATLAS: \"Based on the information provided and the relevant knowledge base articles, here are the most targeted next steps...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asked for agent logs after the customer had already provided logs from both server and agent, and continued to direct the customer to the same types of steps already stated as attempted. This indicates failure to incorporate prior ticket context and customer actions.",
+    "evidence": [
+      "Ond\u0159ej \u0160abata: \"none of the proposed solutions worked so far, here are the logs from both server and agent\"",
+      "Keyur Saxena: \"If the issue persists after the fix, please provide the agent logs for review\"",
+      "Ond\u0159ej \u0160abata: \"I have already sent them the article here... but performing the actions there has not resulted in any change.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The overall time to resolution/closure is long per CSV, and there is at least a full-day gap before a human response after the customer requested log review/urgency. The customer also signaled urgency (renewal risk), increasing the impact of any delays.",
+    "evidence": [
+      "CSV: resolutionTime=710427",
+      "Ond\u0159ej \u0160abata [2025-12-08T11:24:19+00:00]: \"Please have someone look at the logs\"",
+      "Keyur Saxena [2025-12-09T13:32:09+00:00]: \"Please force the updates...\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The agent message includes a closure countdown (\u201cstay open for one week unless...\u201d), and the ticket ultimately ends in closed status without any recorded customer confirmation that the issue was resolved. This is consistent with auto-closure risk while the customer may still be blocked.",
+    "evidence": [
+      "Keyur Saxena: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-19 14:38:35"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer indicates business-critical urgency (risk of losing renewal in two weeks) and an ongoing functional failure (missing patches scan error), yet responses remain routine and KB-driven rather than clearly escalating for log analysis. Severity isn\u2019t explicitly labeled as outage, so this is based on inferred urgency/impact.",
+    "evidence": [
+      "Ond\u0159ej \u0160abata: \"there's a high risk of losing the customer's renewal, which is in two weeks.\"",
+      "Customer issue description: \"they are consistently getting the error The patch detection data package is unavailable while performing missing patches scan.\"",
+      "Keyur Saxena: \"Please force the updates...\" (routine KB-driven steps despite stated urgency)"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60258400
+}

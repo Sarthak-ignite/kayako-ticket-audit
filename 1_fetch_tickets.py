@@ -9,41 +9,95 @@ Phase 0.2: Fetch all POC sample tickets from API
 import json
 import time
 import requests
-from pathlib import Path
 import pandas as pd
 
-# Paths
-SAMPLE_FILE = Path("data/poc/poc_sample.csv")
-OUTPUT_DIR = Path("data/poc/raw")
-ERRORS_FILE = Path("data/poc/fetch_errors.csv")
+from config import (
+    POC_SAMPLE_CSV as SAMPLE_FILE,
+    RAW_DIR as OUTPUT_DIR,
+    DATA_DIR,
+    TICKET_API_URL as API_URL,
+    TICKET_API_DELAY as DELAY_BETWEEN_REQUESTS,
+    ensure_dirs,
+)
 
-# API Config
-API_URL = "https://s42d56zhik.execute-api.us-east-1.amazonaws.com/Prod/handler"
+ERRORS_FILE = DATA_DIR / "fetch_errors.csv"
 HEADERS = {"Content-Type": "application/json"}
 
-# Rate limiting
-DELAY_BETWEEN_REQUESTS = 0.3  # seconds (faster for POC)
+
+class InvalidTicketResponseError(Exception):
+    """Raised when API returns an invalid or malformed ticket response."""
+    pass
+
+
+def validate_ticket_response(data: dict, ticket_id: int) -> None:
+    """
+    Validate that the API response has the expected structure.
+
+    Expected structure:
+    {
+        "payload": {
+            "ticket": {
+                "metadata": {...},
+                "interactions": [...]
+            }
+        }
+    }
+
+    Raises InvalidTicketResponseError if structure is invalid.
+    """
+    if not isinstance(data, dict):
+        raise InvalidTicketResponseError(f"Response is not a dict: {type(data)}")
+
+    # Check for API error responses
+    if "error" in data:
+        raise InvalidTicketResponseError(f"API returned error: {data.get('error')}")
+    if "message" in data and "error" in str(data.get("message", "")).lower():
+        raise InvalidTicketResponseError(f"API error message: {data.get('message')}")
+
+    # Validate expected structure
+    payload = data.get("payload")
+    if not isinstance(payload, dict):
+        raise InvalidTicketResponseError(f"Missing or invalid 'payload' field")
+
+    ticket = payload.get("ticket")
+    if not isinstance(ticket, dict):
+        raise InvalidTicketResponseError(f"Missing or invalid 'payload.ticket' field")
+
+    # Interactions should be a list (can be empty for some tickets)
+    interactions = ticket.get("interactions")
+    if interactions is not None and not isinstance(interactions, list):
+        raise InvalidTicketResponseError(f"'interactions' is not a list: {type(interactions)}")
 
 
 def fetch_ticket(ticket_id: int) -> dict:
-    """Fetch a single ticket from the API."""
+    """
+    Fetch a single ticket from the API.
+
+    Raises:
+        requests.exceptions.RequestException: On HTTP errors
+        InvalidTicketResponseError: If response structure is invalid
+    """
     payload = {
         "action_type": "get_ticket_360",
         "ticket_id": ticket_id
     }
-    
+
     response = requests.post(API_URL, headers=HEADERS, json=payload, timeout=30)
     response.raise_for_status()
-    return response.json()
+
+    data = response.json()
+    validate_ticket_response(data, ticket_id)
+
+    return data
 
 
 def main():
     print("=" * 60)
     print("Phase 0.2: Fetching POC Sample Tickets")
     print("=" * 60)
-    
+
     # Create output directory
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_dirs()
     
     # Load sample
     sample_df = pd.read_csv(SAMPLE_FILE)
@@ -82,20 +136,37 @@ def main():
             
         except requests.exceptions.RequestException as e:
             error_count += 1
+            error_type = type(e).__name__
             error_msg = str(e)
-            print(f"ERROR: {error_msg[:50]}")
+            print(f"HTTP ERROR: {error_msg[:60]}")
             errors.append({
                 'ticket_id': ticket_id,
-                'error': error_msg
+                'error_type': error_type,
+                'error': error_msg,
+                'http_status': getattr(e.response, 'status_code', None) if hasattr(e, 'response') else None,
             })
-        
-        except Exception as e:
+
+        except InvalidTicketResponseError as e:
             error_count += 1
             error_msg = str(e)
-            print(f"ERROR: {error_msg[:50]}")
+            print(f"INVALID RESPONSE: {error_msg[:60]}")
             errors.append({
                 'ticket_id': ticket_id,
-                'error': error_msg
+                'error_type': 'InvalidTicketResponseError',
+                'error': error_msg,
+                'http_status': None,
+            })
+
+        except Exception as e:
+            error_count += 1
+            error_type = type(e).__name__
+            error_msg = str(e)
+            print(f"ERROR ({error_type}): {error_msg[:50]}")
+            errors.append({
+                'ticket_id': ticket_id,
+                'error_type': error_type,
+                'error': error_msg,
+                'http_status': None,
             })
     
     # Save errors

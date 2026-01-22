@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response appears to contain formatting/truncation issues (broken HTML/list markup), which can reduce clarity and usefulness. It also makes strong assurances (\"completely normal\") without showing diagnostic validation in the visible text, which could be misleading if the situation differs. Evidence is partial due to the conversation record being truncated.",
+    "evidence": [
+      "AI Assistant: \"This is completely normal!\"",
+      "AI Assistant: \"Perfect! That's actually expected behavior - and restarting the server is a great idea.\"",
+      "Ticket log: \"...[truncated]...\"",
+      "AI Assistant: \"<ul>\\n        <\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer asked for a human, got stuck in a bot loop, or experienced barriers to reaching an agent. The interaction shown is a single AI recap and does not show repetitive handoffs or looping prompts.",
+    "evidence": [
+      "Private note: \"Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI appears to directly address the customer's stated observation (server shows updated downloads date while the endpoint diagnostics look outdated) and provides next steps to verify. No clear evidence shows the AI ignored provided details or forced repetition.",
+    "evidence": [
+      "Customer: \"I ran the diagnostics on the same computer and they were still outdated but the dowload for the updates was today's date.\"",
+      "AI Assistant: \"The server now has the updated definitions... but the agent on that computer ... still has the old definitions cached.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "CSV timing indicates the ticket was solved and closed within about a minute, with no meaningful wait or customer complaint about delays. The recorded timestamps are tightly clustered.",
+    "evidence": [
+      "CSV: resolutionTime=71",
+      "CSV: Ticket Created=2025-12-04 22:58:07",
+      "CSV: Ticket Solved=2025-12-04 22:59:18",
+      "CSV: Ticket Closed=2025-12-04 22:59:19"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed essentially immediately after the AI recap, while the customer\u2019s plan indicates they still needed to run overnight scans and verify results the next day. Although the customer said the prior step \"Completed successfully,\" closure before confirmation of the next-day verification may be premature (some uncertainty).",
+    "evidence": [
+      "Customer: \"I'm going to restart the server and let it run the scans over night and see how it looks tomorrow.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-12-04 22:59:18",
+      "CSV: Ticket Closed=2025-12-04 22:59:19"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No evidence suggests a P1/SEV1 outage, urgent business impact, or need for escalation. The conversation focuses on patch/definition updates and verification steps without indicating critical downtime.",
+    "evidence": [
+      "Customer: \"Completed successfully! ... I'm going to restart the server and let it run the scans over night\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60256854
+}

@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There are signals that the automated/AI-driven workflow produced low-quality or incomplete outcomes: an extremely long \u201con hold\u201d timer was applied, and an internal QC note explicitly states the root cause wasn\u2019t clearly documented and a requested runbook wasn\u2019t provided. Externally, support also promised further feedback from infrastructure but the ticket record does not show a concrete follow-up/RCA artifact being delivered to the customer.",
+    "evidence": [
+      "Kayako (private): \"Centralsupport-ai-acc commented privately: Placing on hold for 9999 hour(s)\"",
+      "SaaS Jira (private/QC): \"\u274c QC FAILED... However, the exact root cause is not clearly documented.\"",
+      "SaaS Jira (private/QC): \"Runbook Usage/Creation: A runbook was requested but not provided.\"",
+      "Agent (public): \"...we will let you know once we receive further feedback from them.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer does not report being trapped in an AI loop or being unable to reach a human; they successfully reached a person via the outage phone line and received human updates. While the customer addresses \u201cHermes,\u201d the interaction still proceeds with human agent responses rather than repetitive bot loops.",
+    "evidence": [
+      "Customer: \"I called the Outage Phone Line: +1 347-282-2200 and spoke to Deebanshu; he informed that the ticket is being escalated.\"",
+      "Deepanshu Dewan (public): \"As discussed, your ticket has been assigned to an agent. You will receive an update soon...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "There is some evidence of weak context handling: the customer explicitly asked for confirmation that the fix would prevent recurrence and referenced prior similar incidents, but the response stays high-level (monitoring/controls) without directly confirming whether the specific fix addresses the recurring pattern or tying back to the referenced history. This is somewhat subjective, but the response does not fully engage with the customer\u2019s request for assurance based on repeated occurrences.",
+    "evidence": [
+      "Customer: \"We have been encountering this issue repeatedly... Kindly confirm whether the fix you have implemented will prevent this issue from recurring in the future.\"",
+      "Agent (public): \"We\u2019re strengthening monitoring and controls to catch similar performance issues earlier... to prevent recurrence.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured metrics indicate a very slow initial response and a long overall resolution duration, even if some interaction happened earlier in the thread. Given the CSV is authoritative, this qualifies as response delay risk for the case.",
+    "evidence": [
+      "CSV: initialResponseTime=442",
+      "CSV: resolutionTime=689157",
+      "CSV: Ticket Created=2025-10-22 10:13:05",
+      "CSV: Ticket Solved=2025-10-30 09:39:02"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support communicated an intent to keep the ticket open for one week unless the customer confirms closure, yet the ticket ultimately shows as closed without any customer message explicitly approving closure. The customer previously expressed ongoing concern about recurrence, so closing without explicit customer confirmation can be considered premature/auto-closure risk.",
+    "evidence": [
+      "Agent (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"...\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-02 10:36:14",
+      "Customer: \"Kindly confirm whether the fix you have implemented will prevent this issue from recurring in the future.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The reported impact describes an effective production outage (unable to claim new chats, delayed chat arrival, manual refresh required), which is typically P1/Sev1. While escalation did occur, the authoritative metrics show a very high initial response time and the case was put on an extremely long hold timer, both of which are inconsistent with strict P1 handling; this detection is based on those signals.",
+    "evidence": [
+      "Customer: \"We are unable to view or claim any new incoming chats in Khoros Care Production.\"",
+      "Customer: \"new chats... are taking over 10 minutes to appear in the queue.\"",
+      "CSV: initialResponseTime=442",
+      "Kayako (private): \"Placing on hold for 9999 hour(s)\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60226631
+}

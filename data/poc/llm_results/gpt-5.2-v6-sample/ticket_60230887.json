@@ -1,0 +1,63 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The initial ATLAS reply appears generic and may be inaccurate/misaligned to the customer\u2019s situation (it references an EMEA incident while the customer is using an USW2 SFTP host and a specific file path). Several later updates are also mostly \u201cwe\u2019re coordinating\u201d filler without concrete next steps or timelines, despite prolonged impact. This constitutes potentially misleading and low-value AI-authored communication.",
+    "evidence": [
+      "ATLAS (public): \"ongoing incident affecting Community Analytics data for the EMEA region, which may be impacting your ability to access the csv data files via SFTP since October 21st, 2025.\"",
+      "Customer: \"The issue is still there we haven\u2019t been able to download the data... Not sure what you wanted from me..\"",
+      "Balaji (public): \"We are coordinating with our Professional Services team on this request and will provide an update as soon as we have meaningful progress to share.\"",
+      "Customer provided precise context: \"myHostname = sftp-2.usw2.prod.hosted.lithcloud.com\" and \"remoteFilePath = '/home/ciscosupport/communityexport/LITHCOMMDAILY.zip'\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The workflow shows repeated automated 'on hold' actions and a long period where the customer receives minimal progress updates, which can feel like being stuck in an automated loop. The customer repeatedly asks for updates over weeks/months, indicating difficulty getting actionable human resolution (though they did receive some human replies).",
+    "evidence": [
+      "Centralsupport-ai-acc (private): \"Placing on hold for 9999 hour(s)\"",
+      "Centralsupport-ai-acc (private): \"Placing on hold for 8888 hour(s)\"",
+      "Customer: \"Any update on the issue, on when we will have a resolution ??\"",
+      "Customer: \"Any eta on this request, it\u2019s been a while since we opened this ticket.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support responses did not directly engage with the customer\u2019s specific SFTP evidence (empty directory and exact path) and instead routed to a broad incident/status-page explanation. The customer explicitly signals confusion about what support needed, suggesting their provided context wasn\u2019t acknowledged or used effectively.",
+    "evidence": [
+      "Customer: \"Below steps is to show the directory is empty In the SFTP location.\" (followed by SFTP session showing empty folder)",
+      "ATLAS (public): \"please refer to our status page\" (without addressing the specific SFTP path/host troubleshooting details provided)",
+      "Customer: \"Not sure what you wanted from me..\"",
+      "Customer context: \"remoteFilePath = '/home/ciscosupport/communityexport/LITHCOMMDAILY.zip'\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are clear, prolonged delays with multiple customer follow-ups over ~2 months before restoration, and the customer explicitly escalates due to time elapsed. The structured data also shows an extremely long resolution time, supporting significant delay to meaningful resolution.",
+    "evidence": [
+      "CSV: resolutionTime=4733277",
+      "Customer (2025-12-08): \"Any eta on this request, it\u2019s been a while since we opened this ticket.\"",
+      "Centralsupport-ai-acc escalation note: \"issue not resolved from last 2 months\"",
+      "Timeline evidence: Missing since \"starting 10/20/2025\" and confirmation of file availability only on/after \"Dec 13\" (via internal/Jira note)."
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support messages include a closure countdown (\u201cstay open for one week unless\u2026\u201d) while the underlying issue was not yet resolved at that time, which can pressure closure prematurely. Although the ticket was not immediately closed then, the closure-threat language fits the pattern.",
+    "evidence": [
+      "ATLAS (public): \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Closed in the portal.\"",
+      "Customer (next day): \"The issue is still there we haven\u2019t been able to download the data\"",
+      "Balaji (public, later): \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer escalation flags the issue as core functionality defect and complains it has been unresolved for ~2 months, yet the case shows extended holding patterns and slow coordination with external teams. Even if not formally labeled P1, the combination of prolonged outage-like impact and slow handling suggests high-severity mishandling risk.",
+    "evidence": [
+      "Centralsupport-ai-acc (private): \"The customer escalated the Case... The severity is: core_functionality_defect\"",
+      "Centralsupport-ai-acc (private): \"The customer message is:issue not resolved from last 2 months\"",
+      "Repeated holds during prolonged impact: \"Placing on hold for 9999 hour(s)\"",
+      "Customer impact statement: \"csv data file is missing from the sftp location starting 10/20/2025\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60230887
+}

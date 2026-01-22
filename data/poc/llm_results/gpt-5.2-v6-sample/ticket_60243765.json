@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI misidentified the feature the customer was asking about (confusing \u201cRequest Moderator Assistance\u201d with \u201cReport Inappropriate Content\u201d), requiring customer correction. This indicates inaccurate guidance and weak understanding of the customer\u2019s request.",
+    "evidence": [
+      "Customer: \"it's not report inappropriate content, that is different. I'm talking about Request Moderator Assistance\"",
+      "AI Assistant: \"The feature you're referring to is \\\"Report Inappropriate Content\\\" (which may also appear as \\\"Request Moderator Assistance\\\"...)\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The interaction shown is an AI-only transcript with the AI offering to connect to a support agent, implying the customer may not have been routed to a human within the ticket itself. While the transcript is truncated, there is no evidence of a human agent engagement before closure.",
+    "evidence": [
+      "Kayako - ticket id 60243765 // ATLAS commented publicly: \"Thanks for chatting earlier with our AI Support! ... Here is a record of your conversation\"",
+      "AI Assistant: \"Would you like me to connect you with a support agent to get this set up?\"",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: Status=closed"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly clarified what the feature was not and what it was, but the AI still anchored on the incorrect feature equivalence. This suggests the AI did not properly incorporate the customer\u2019s corrections/context.",
+    "evidence": [
+      "Customer: \"it's not custom code, it exists in classic\"",
+      "Customer: \"it's not report inappropriate content, that is different. I'm talking about Request Moderator Assistance\"",
+      "AI Assistant: \"The feature you're referring to is \\\"Report Inappropriate Content\\\" (which may also appear as \\\"Request Moderator Assistance\\\"...)\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a non-trivial overall resolution time (about 1.6 hours) from ticket creation to solve/close, which can indicate delay in meaningful handling (especially if human follow-up was expected). No explicit customer complaint about waiting is shown, so this is based on timing signals only.",
+    "evidence": [
+      "CSV: Ticket Created=2025-11-14 21:57:36",
+      "CSV: Ticket Solved=2025-11-14 23:36:10",
+      "CSV: resolutionTime=5914"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears to have been solved/closed shortly after an AI transcript that ends with an offer to connect to a human, while the customer was still actively correcting the AI. Because the conversation is truncated and no human resolution is shown, closure may have occurred before the customer\u2019s issue was actually addressed.",
+    "evidence": [
+      "AI Assistant: \"Would you like me to connect you with a support agent to get this set up?\"",
+      "Customer: \"it's not report inappropriate content, that is different. I'm talking about Request Moderator Assistance\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-14 23:36:10"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No evidence indicates a P1/SEV1 outage or urgent business-critical impact. The topic appears to be a feature/configuration question rather than a service disruption.",
+    "evidence": [
+      "Customer: \"it's not custom code, it exists in classic\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60243765
+}

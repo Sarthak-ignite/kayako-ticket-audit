@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The ATLAS response is largely generic SSL/TLS guidance and KB links, and it does not directly address the reported issue (a certificate problem on a GFI-controlled redirect endpoint) with clear ownership, next steps, or confirmation of remediation. It suggests bypassing the warning as a workaround rather than stating that the certificate will be renewed/updated, which is weak for a central service certificate incident.",
+    "evidence": [
+      "Customer: \"today the certificate for https://redirects.gfikerioconnect.com/ has expired or changed? This leads to a security message... please fix this quickly!\"",
+      "ATLAS: \"This type of warning typically appears when a client detects that an SSL/TLS certificate is either expired or does not match expectations.\"",
+      "ATLAS: \"In the meantime, you may advise your users that this warning arises from an expired or untrusted certificate... As a workaround, users may be able to bypass the message... but this is not recommended for long-term use\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was stuck in an AI loop, asked for a human, or had difficulty reaching a person; only one AI response is shown.",
+    "evidence": [
+      "ATLAS commented publicly (single response shown in ticket)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly reports a certificate issue on a specific GFI redirect URL, implying a vendor-managed endpoint. The response pivots to general advice about users accessing services with valid certificates and guidance for 'your own Kerio Connect installation,' which does not engage with the core context: a likely server-side certificate renewal needed on redirects.gfikerioconnect.com.",
+    "evidence": [
+      "Customer: \"the certificate for https://redirects.gfikerioconnect.com/ has expired or changed?\"",
+      "ATLAS: \"If using your own Kerio Connect installation, periodically reviewing and renewing SSL certificates... ensure that your server utilizes a trusted CA certificate.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "While the initial response appears fairly quick, the overall time to solve/close is long relative to an urgent certificate/security warning impacting end users. The ticket was created on 2025-10-29 and not marked solved until 2025-11-05, indicating a multi-day resolution window.",
+    "evidence": [
+      "CSV: initialResponseTime=44",
+      "CSV: Ticket Created=2025-10-29 08:27:11",
+      "CSV: Ticket Solved=2025-11-05 08:38:52",
+      "CSV: resolutionTime=605501"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is closed, but the provided interaction history does not show confirmation that the certificate issue was fixed or that the customer agreed it was resolved. Given the limited evidence, this is uncertain, but closure without visible resolution/acknowledgment is a reasonable risk signal.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-08 09:40:54",
+      "Customer: \"please fix this quickly!\" (no shown confirmation of fix afterward)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "A certificate error on a central redirect endpoint causing security warnings for multiple users can be high severity, and the customer explicitly requests an urgent fix. The response provides generic troubleshooting/workaround guidance rather than indicating immediate escalation/ownership to renew the certificate, and resolution took several days per the CSV, suggesting possible mishandling of urgency.",
+    "evidence": [
+      "Customer: \"This leads to a security message for users... please fix this quickly!\"",
+      "ATLAS: \"In the meantime... As a workaround, users may be able to bypass the message\"",
+      "CSV: Ticket Created=2025-10-29 08:27:11",
+      "CSV: Ticket Solved=2025-11-05 08:38:52"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60231299
+}

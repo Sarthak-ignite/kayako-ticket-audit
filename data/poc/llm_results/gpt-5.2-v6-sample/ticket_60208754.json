@@ -1,0 +1,66 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses lean heavily on generic troubleshooting/checklists and knowledge-base links, without directly engaging the concrete symptoms described (e.g., silent Facebook ingestion stoppage in Care). ATLAS also overstates what the screenshot \u201cconfirms,\u201d conflating missing calendar items across a multi-week range with the customer\u2019s \u201cpast three days\u201d issue, which risks misleading diagnosis.",
+    "evidence": [
+      "ATLAS: \"To help us investigate and resolve the issue as quickly as possible, could you please provide the following details: ... Whether the issue occurs on multiple browsers ... internal IT or security settings might be blocking pop-ups or scripts.\"",
+      "ATLAS: \"Observations from your screenshot: The calendar in your screenshot shows a significant gap, with '0 items' displayed for each day from September 7 to September 28... This confirms your report that scheduled posts are missing or failing for the past three days\"",
+      "ATLAS: \"Potential Causes and Guidance: * Missing Scheduled Posts: ... make sure you are viewing the correct calendar filters ...\"",
+      "ATLAS: \"Instagram Post Failures (Despite Re-Authentication) ... can sometimes be due to issues with token expiry, changes to social account permissions...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested a human, and the AI stated it would connect them to live support, but the interaction still routed them into a ticket flow rather than an actual human chat. Later, when the customer requested a call, support declined unless a \u201cvery specific agenda\u201d was provided, which can feel like a barrier to human help.",
+    "evidence": [
+      "Customer: \"Can I talk with a human\"",
+      "AI Assistant: \"I'm connecting you with our live support team right now.\"",
+      "Customer (button): \"[\ud83d\udce9 Raise a ticket]\"",
+      "Customer: \"I\u2019d like to request a call with someone from your team... I\u2019m based in the Sydney timezone.\"",
+      "Agent (Jordan): \"We will unfortunately be unable to join a call without a very specific agenda for actions needing to be taken on our side.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "After the customer provided multiple concrete issue statements (missing scheduled posts, Instagram failures, and recurring Facebook disconnects), support still replied that there were not enough details to investigate, effectively pushing the customer to restate/expand without acknowledging what was already actionable. This suggests the interaction did not sufficiently incorporate the context already supplied in-ticket.",
+    "evidence": [
+      "Customer: \"We\u2019re currently experiencing several issues... 1. Scheduled posts are not appearing... 2. Instagram posts are failing... 3. Facebook keeps disconnecting from Khoros Care without any warning.\"",
+      "Agent (Jordan): \"If possible, could you please clarify the exact issues you're seeing as currently there are not enough details to investigate.\"",
+      "Customer: \"it doesn\u2019t show any indication that it has disconnected... It just suddenly stops pulling any Facebook tickets... I remove Facebook, reconnect it... This has happened over 10 times now.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket remained open for a long time per the CSV, indicating extended time-to-resolution overall. Additionally, after the customer\u2019s Oct 9 clarification of the persistent Facebook/Care issue, the provided transcript shows no subsequent support reply before closure in November, suggesting a potential meaningful response gap.",
+    "evidence": [
+      "CSV: resolutionTime=2625647",
+      "CSV: Ticket Created=2025-09-29 06:18:55",
+      "CSV: Ticket Solved=2025-10-29 15:39:42",
+      "CSV: Ticket Closed=2025-11-01 16:36:22",
+      "Customer (2025-10-09): \"This has happened over 10 times now.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in the CSV, yet the last visible customer update reports an unresolved, ongoing problem (Facebook silently stops pulling tickets, requiring repeated reconnects). With no subsequent resolution message shown after that last customer report, closure appears likely to have occurred while the customer still needed help (though the transcript is truncated, so there is some uncertainty).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-01 16:36:22",
+      "Customer (2025-10-09): \"it doesn\u2019t show any indication that it has disconnected... It just suddenly stops pulling any Facebook tickets... This has happened over 10 times now.\"",
+      "Agent (Jordan): \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reported major operational disruption across multiple critical functions (publishing failures and Care ingestion stopping), and specifically said it was a \u201cmajor disruption,\u201d which can indicate high severity. Support\u2019s guidance included continuing to reconnect accounts \u201cas needed\u201d and requests for more details, without clear expedited escalation/ownership; however, severity level and internal escalation steps are not fully visible, so this assessment is somewhat uncertain.",
+    "evidence": [
+      "Customer: \"Could you please let me know what\u2019s happening? These problems are causing a major disruption for us.\"",
+      "Customer: \"Facebook keeps disconnecting from Khoros Care without any warning. We simply stop receiving messages and tickets.\"",
+      "Agent (Jordan): \"In the meantime, please continue to reconnect the accounts as needed.\"",
+      "Agent (Jordan): \"If possible, could you please clarify the exact issues you're seeing as currently there are not enough details to investigate.\"",
+      "Agent (Jordan): \"The status page reflects our ongoing efforts here: https://status.khoros.com/incidents/87c8jw58m6db\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60208754
+}

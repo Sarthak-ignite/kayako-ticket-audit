@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "ATLAS is only referenced as an internal routing/action note and there is no AI-generated customer-facing content to evaluate for incorrectness, filler, or broken promises. The substantive replies appear to be from human agents (Keyur, Balaji).",
+    "evidence": [
+      "Kayako - ticket id 60219661 // ATLAS commented privately: Action: l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer was stuck in an AI loop or unable to reach a human. The customer received human responses and did not request escalation to a person.",
+    "evidence": [
+      "Kayako - ticket id 60219661 // Keyur Saxena commented publicly: Hello Daniel, I can see that https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg now loads up fine."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer\u2019s initial ask was to publish a specific version (6746575) that was not appearing in production, but the agent responses focus only on whether the URL currently returns 404 and then ask what is pending. This suggests the version-specific publishing context may not have been fully acknowledged/investigated (or at least not explained back to the customer).",
+    "evidence": [
+      "Customer: \"May I request publishing the following image in R1? 6746575 is the version number.\"",
+      "Customer: \"I uploaded the following version numbers altogether but strangely only 6746575 is not published in PRD.\"",
+      "Agent (Keyur): \"I can see that https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg is not returning 404. Can you clarify exactly what is pending for this request?\"",
+      "Agent private note (Keyur): \"I made 0 changes here, just checked the URL to see if it 404'd and it didn't\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured CSV shows an extremely long initial response time and resolution time, which is indicative of potential response-delay SLA issues (even though the visible thread shows a same-day reply). Given the instruction to treat CSV as authoritative, this should be flagged.",
+    "evidence": [
+      "CSV: initialResponseTime=272656",
+      "CSV: resolutionTime=272663",
+      "CSV: Ticket Created=2025-10-13 08:46:49",
+      "CSV: Ticket Solved=2025-10-16 12:31:12"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "While the agent included an auto-closure warning, the customer\u2019s last update indicates the issue was no longer occurring and support asked to report if it recurs. There is no clear evidence the ticket was closed while the customer still needed help.",
+    "evidence": [
+      "Agent (Keyur): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "Customer: \"Yesterday, it showed the 404 error message. So wired but thanks a lot to hear from you about this.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-19 12:35:56"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue is a 404 for a specific image asset in production, but the ticket does not indicate a widespread outage, major business impact, or an explicitly declared P1/Sev1. There is insufficient evidence that a high-severity incident was mishandled.",
+    "evidence": [
+      "Customer: \"But it shows \\\"HTTP Status 404-\\\" in https://r1.community.samsung.com/html/assets/Brazil_COMMUNITY_GALAXY-A_Hero.jpg\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60219661
+}

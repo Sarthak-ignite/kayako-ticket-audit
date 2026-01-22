@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS appears to repeatedly present the wrong license key and gets stuck, and the customer reports the chatbot \u201ccrashes\u201d when attempting to validate hardware details. This indicates poor AI response quality (repetition/incorrect data handling) and failure to progress the interaction effectively.",
+    "evidence": [
+      "ATLAS transcript: \"I have this license key on record: * License: 20339-8LMFV-3J3LZ ... Just to make sure we're on the same page - is this the same system...\" (repeated after customer provided 20339-1LQWD-4A2PV)",
+      "Customer: \"Hello the chatbot crashes because he cant check the serial number from my kerio ng120\"",
+      "Customer: \"I needed further assistance than Kerio Control ATLAS could provide.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly asks to create a ticket and indicates the chatbot cannot handle the RMA process, suggesting they were blocked in the AI flow and trying to reach a human/support process. Repeated requests to \u201ccreate me a ticket\u201d are consistent with an AI wall experience.",
+    "evidence": [
+      "Customer: \"I need a RMA for a Kerio NG120 you need to create me a ticket because you dont have the capabilities to create a RMA for a Kerio NG120\"",
+      "Customer: \"Please create me a ticket\"",
+      "Customer: \"Create me a ticket we aleready have all data you need\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "There are signs the system/AI did not incorporate information already provided (e.g., customer states video uploaded, yet the process continues to treat it as missing until later). ATLAS also appears to ignore the customer-provided license key and repeats a different one, forcing re-assertion of context.",
+    "evidence": [
+      "Customer (in chat log): \"Video uploaded\" followed by continued requests for video evidence",
+      "Internal summary: \"Video evidence is not attached to the ticket; customer stated 'Video uploaded' in chat, but no attachments found in Kayako.\"",
+      "ATLAS transcript: customer provides \"It is this: 20339-1LQWD-4A2PV\" but ATLAS repeats \"License: 20339-8LMFV-3J3LZ\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured data shows a long resolution cycle (multiple days) for what is described as an urgent outage. Even if early responses were fast, the overall time-to-solve/close suggests delay in completing the case lifecycle.",
+    "evidence": [
+      "CSV: resolutionTime=587884",
+      "CSV: Ticket Created=2025-11-12 13:43:24",
+      "CSV: Ticket Solved=2025-11-19 09:01:28",
+      "CSV: Ticket Closed=2025-11-22 09:42:30"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked solved/closed, but the visible interaction trail does not show a clear customer-facing resolution message after internal denial of RMA and recommendation to use rescue image 9072. This creates risk the ticket was closed without ensuring the customer received/confirmed the actual fix (uncertain due to truncated later interactions).",
+    "evidence": [
+      "CSV: Status=closed",
+      "Side conversation: \"RMA is NOT approved... stems from driver issues and was resolved in v10:9072\"",
+      "CSV: Ticket Closed=2025-11-22 09:42:30"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "This is effectively a firewall outage (\u201cwon\u2019t start\u201d), yet the handling initially proceeded down an RMA/hardware-failure path. Internal stakeholders later state RMA should NOT be approved because it is a known driver issue resolved by a specific rescue image, implying misdiagnosis and incorrect process path for a high-severity incident (at least initially).",
+    "evidence": [
+      "Customer: \"My Kerio NG120 wont start any more it crashes while booting\"",
+      "Internal summary: \"non-boot + failed recovery = likely storage/boot media failure\" (leading to RMA workflow)",
+      "Side conversation: \"RMA is NOT approved... stems from driver issues and was resolved in v10:9072\"",
+      "Side conversation: \"customer needs to use rescue image 9072 and deploy on the box, after that the issue will be resolved.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60241392
+}

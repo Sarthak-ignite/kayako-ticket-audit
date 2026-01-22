@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The available interaction log mainly shows standard AI intake steps (menu, priority selection, and instance URL confirmation). There is no clear evidence in the provided excerpt that the AI gave incorrect/misleading technical guidance or failed to deliver on a promised action.",
+    "evidence": [
+      "\u201cWhat's the priority of the issue?\u201d",
+      "\u201cI found an instance URL on file. Please confirm it's correct or provide a different one:\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The excerpt does not show the customer requesting a human, reporting being stuck, or experiencing repetitive loops. It appears to be a straightforward ticket-raising flow (at least in the portion provided).",
+    "evidence": [
+      "Customer: \u201cButton selection: [\ud83d\udce9 Raise a Ticket]\u201d",
+      "Customer: \u201cButton selection: [\ud83d\udfe2 Normal]\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Within the visible content, the AI asks for priority and confirms the instance URL, and the customer provides it. There is no clear sign that support ignored already-provided information or forced unnecessary repetition (based on the truncated excerpt).",
+    "evidence": [
+      "AI Assistant: \u201cI found an instance URL on file. Please confirm it's correct or provide a different one:\u201d",
+      "Customer: \u201chttp://resideo.response.lithium.com\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The structured timing indicates the ticket was created, solved, and closed within roughly a minute, with a short resolution time. There is no evidence of meaningful response gaps or customer complaints about waiting.",
+    "evidence": [
+      "CSV: resolutionTime=68",
+      "CSV: Ticket Created=2025-11-19 11:53:15",
+      "CSV: Ticket Closed=2025-11-19 11:54:24"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved and closed almost immediately after creation, and the provided interaction content shows only an AI intake transcript rather than a documented resolution. This pattern is consistent with a potentially premature close/auto-close, though the excerpt is truncated so it is not fully certain whether a complete problem statement or solution was captured later.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-11-19 11:53:15",
+      "CSV: Ticket Solved=2025-11-19 11:54:23",
+      "CSV: Ticket Closed=2025-11-19 11:54:24",
+      "CSV: resolutionTime=68",
+      "\u201cThanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer selected Normal priority, and there is no indication in the provided data of an outage or high-severity impact requiring escalation. Therefore there is no evidence of P1/SEV1 mishandling.",
+    "evidence": [
+      "Customer: \u201cButton selection: [\ud83d\udfe2 Normal]\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60246498
+}

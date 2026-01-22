@@ -1,0 +1,65 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is strong evidence that AI-driven analysis/content was incorrect and misleading. Engineering explicitly states the earlier claim about thousands of collectord segfaults was a hallucination with no log evidence, and the agent later told the customer the initial diagnosis was incorrect. This qualifies as poor AI quality because it drove an erroneous root-cause narrative and escalation.",
+    "evidence": [
+      "GHI Engineering (daniel-wachira): \"The above statement appears to be a hallucination. There is 0 evidence of any crashes in the log analysis output from what I can tell.\"",
+      "Agent (public): \"After reviewing the logs again, the initial diagnosis was incorrect.\"",
+      "Agent (public): \"The sysdump shows 3,851 segmentation faults where collectord repeatedly crashes and restarts\"",
+      "Agent (internal): \"I use a ps1 to export a report run on the Exinda logs folder, and somehow it pulled information that was not in this set of logs.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested a human/live agent due to business critical impact, but the chat indicated agents were unavailable and proceeded with ticket creation instead. The customer repeatedly questioned whether they were still dealing with a chatbot rather than real support, indicating an AI-wall experience.",
+    "evidence": [
+      "Customer: \"need human chat option\"",
+      "Customer: \"It's business critical & needs human support intervention\"",
+      "ATLAS transcript: \"Yes, I request a live agent transfer in this chat,\"",
+      "ATLAS transcript: \"Our agents are currently busy assisting other customers at the time, so we'll proceed with ticket creation\"",
+      "Customer: \"Is this so-called support still operated by the ChatBot?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "There are signs the support flow did not effectively incorporate prior context: the customer provided extensive details early (versions, model, CPU 100%, collectord) yet later the agent asked basic questions about why the upgrade was performed and whether there were errors during upgrade. This may be normal troubleshooting, but given the volume of already-provided narrative and repeated customer frustration about canned responses, it suggests some context was not fully leveraged.",
+    "evidence": [
+      "Customer (initial description): \"CPU utilization at 100%... Notice the high CPU as soon upgraded to v7.6.3\"",
+      "Customer: \"So many responses from your replies are saying \\\"feedback and the information you have shared will be carefully reviewed...\\\"\"",
+      "Agent (public): \"Prior to the upgrade, were you experiencing issues? Is this why you performed the upgrade?\"",
+      "Agent (public): \"Did you receive any errors or encounter any issues during the upgrade to v7.6.3?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer complained about no support response for 24+ hours on a critical case. The structured data also shows a very long initial response time and overall resolution time, which supports meaningful delay.",
+    "evidence": [
+      "Customer: \"The case was raised in Critical Priority, and no show for 24 hours.\"",
+      "Internal note (rshawver): \"the customer ticket sat in Critical status for over 24 hours\"",
+      "CSV: initialResponseTime=2727",
+      "CSV: resolutionTime=5384203"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in the CSV, and the agent message includes an auto-closure warning ('stay open for one week unless...') while the customer was still pushing back on the solution and expressing unresolved dissatisfaction. This indicates risk of closure before clear confirmation of resolution.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Agent (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed\"",
+      "Customer: \"Is the \\\" firmware downgrade\\\" the solution?... & lastly, worst ever support ever seen..\"",
+      "CSV: Ticket Closed=2026-01-03 16:36:02"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was described as business critical with CPU pegged at ~100%, yet the customer reports no response for 24 hours. This is consistent with mishandling of a P1/Sev1 scenario due to slow engagement/triage and delayed human intervention.",
+    "evidence": [
+      "ATLAS transcript (customer): \"It's business critical & needs human support intervention\"",
+      "Customer: \"The case was raised in Critical Priority, and no show for 24 hours.\"",
+      "Customer system alarm: \"Description: CPU 2 utilization threshold exceeded\" / \"Detected Value: 99\"",
+      "Internal note (rshawver): \"the customer ticket sat in Critical status for over 24 hours\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60232130
+}

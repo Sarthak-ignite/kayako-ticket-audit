@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS did not provide troubleshooting guidance and instead presented an irrelevant \"menu for internal employees,\" after which the customer escalated for further assistance. This suggests low usefulness/quality of the AI interaction in addressing the technical problem (though the ticket was then escalated appropriately).",
+    "evidence": [
+      "ATLAS: \"Welcome to the menu for internal employees. How can I help?\"",
+      "Customer: \"Hello, I needed further assistance than Jive ATLAS could provide. Could you assist me?\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly states they needed more help than ATLAS could provide, implying difficulty getting adequate support via AI and a need to reach human assistance. There is no explicit looping shown, but the request for further assistance is a reasonable signal of AI barrier/friction.",
+    "evidence": [
+      "Customer: \"Hello, I needed further assistance than Jive ATLAS could provide. Could you assist me?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS appears to start with a generic/incorrect flow (internal employee menu) rather than engaging with the customer\u2019s detailed add-on/webhook/OAuth context. While humans/engineering did use the provided context later, the initial AI experience suggests context was not properly handled.",
+    "evidence": [
+      "ATLAS: \"Welcome to the menu for internal employees.\"",
+      "Customer (detailed context): \"I have created an add-on... we use those access token to create webhook... once the webhook is created and we try to reconnect... it breaks with the following error.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket remained open for a long period (about 40 days) from creation to solve/close, consistent with a significant resolution delay while awaiting engineering work. Even if the root cause required a product fix, the elapsed time meets the pattern threshold.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-16 14:53:15",
+      "CSV: Ticket Solved=2025-11-25 14:53:14",
+      "CSV: resolutionTime=3455999",
+      "GHI Engineering: \"The fix is now released in Jive 12.7.\" (2025-11-25)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is closed shortly after informing the customer a fix exists and recommending an upgrade, without any recorded customer confirmation that the upgrade occurred or that the issue is resolved in their environment. This could be normal process, but recall-first it is a plausible premature/auto-closure signal.",
+    "evidence": [
+      "Kayako public update: \"The solution is now available in the Jive 12.7 release, and we recommend upgrading to this version...\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-28 15:38:02"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "Engineering labeled the linked issue as urgent, yet the overall time to deliver the fix was ~40 days, which may indicate slow handling for an urgent-impact defect. Severity/impact to the customer is not explicitly described as an outage, so this is flagged with some uncertainty.",
+    "evidence": [
+      "GHI Engineering - 14842 // not-lmrlima labeled as Priority:Urgent",
+      "CSV: resolutionTime=3455999",
+      "GHI Engineering: \"The fix is now released in Jive 12.7.\" (2025-11-25)"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60222765
+}

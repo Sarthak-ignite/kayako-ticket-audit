@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Customer reported a technical issue (StreetSmart app not opening), but the AI immediately pivoted to account/email verification and password reset without demonstrating that this would resolve the app launch problem. This is likely misleading or incomplete troubleshooting, and it risks resolving the wrong problem.",
+    "evidence": [
+      "The street smart application is not opening on our phones",
+      "You didn't provide an email address, it seems?",
+      "\u2139\ufe0f Note that I am only able to check if an email address already exists in the support instance, and trigger verification/password reset emails.",
+      "As far as I can see, your email address is already validated, so now you only need to reset your password."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The AI sets a constraint that it can only do email checks/resets and instructs the user to \"click Sign in\" to reach technical support, which can function as a gating step rather than directly routing/handling the issue. There is no explicit looping, but there is reasonable evidence of an AI wall for technical help.",
+    "evidence": [
+      "\u2139\ufe0f Note that I am only able to check if an email address already exists in the support instance, and trigger verification/password reset emails.",
+      "\ud83d\udca1If you need technical support, please click Sign in at the top and you will be through to support."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer clearly stated the app is not opening on phones, but the AI did not acknowledge or troubleshoot that symptom and instead requested an email address and initiated a password reset flow. This indicates the stated problem context was not used in the response path.",
+    "evidence": [
+      "The street smart application is not opening on our phones",
+      "Please provide me with your email address:",
+      "As far as I can see, your email address is already validated, so now you only need to reset your password."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No meaningful response gaps are visible; the ticket was created, updated, solved, and closed within seconds per CSV. There are also no customer complaints about waiting.",
+    "evidence": [
+      "CSV: Ticket Created=2025-12-26 13:36:38",
+      "CSV: Ticket Closed=2025-12-26 13:36:41",
+      "CSV: resolutionTime=3"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed almost immediately after the AI sent a password reset email, but the original issue (StreetSmart app not opening) is not explicitly confirmed as resolved. Closure at ~3 seconds strongly suggests premature resolution/auto-closure risk.",
+    "evidence": [
+      "The street smart application is not opening on our phones",
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-12-26 13:36:41",
+      "CSV: Ticket Closed=2025-12-26 13:36:41",
+      "CSV: resolutionTime=3"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The reported symptom suggests a potentially high-impact outage (app not opening on phones), yet it was handled as an account/password reset and closed within seconds with no escalation or technical triage. Severity is not explicitly stated, so this is flagged with uncertainty, but the handling appears inconsistent with a possible widespread access failure.",
+    "evidence": [
+      "The street smart application is not opening on our phones",
+      "As far as I can see, your email address is already validated, so now you only need to reset your password.",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: resolutionTime=3",
+      "CSV: Status=closed"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60270630
+}

@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI responds with very high confidence (\u201cexactly what I suspected\u201d / \u201csafe to handle\u201d) based only on the customer\u2019s observation, without noting any verification steps or risks. This could be misleading if the files are not actually harmless or if additional checks are required before deletion/migration. Evidence is limited because the AI response is truncated, so this is flagged with some uncertainty.",
+    "evidence": [
+      "AI Assistant: \"Perfect! You've found exactly what I suspected - orphaned files that got stuck over a year ago.\"",
+      "AI Assistant: \"These are leftover fragments from emails that were already processed, and they're safe to handle before your migration.\"",
+      "Customer: \"I'm still seeing 4 files in the D:\\Program Files\\GFI\\MailArchiver\\Core\\Queue directory... There are 2 .ICAL and 2 .BODY files.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer was stuck in an AI loop, asked for a human, or had difficulty reaching a human agent. The only recorded interaction is an AI-provided chat transcript.",
+    "evidence": [
+      "Private note: \"Thanks for chatting earlier with our AI Support! Here is a record of your conversation...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The AI appears to directly address the customer\u2019s stated context (old .ICAL/.BODY files in the Core\\Queue directory) and explains how those file types relate to processing. No explicit signs of forcing repetition or ignoring provided details are present in the snippet.",
+    "evidence": [
+      "Customer: \"I'm still seeing 4 files in the D:\\Program Files\\GFI\\MailArchiver\\Core\\Queue directory... There are 2 .ICAL and 2 .BODY files.\"",
+      "AI Assistant: \"The key point: If you only have .ICAL and .BODY files without their corresponding .eml and .envelope files, these are orphaned fragments...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The structured timing suggests the ticket was created, solved, and closed within roughly a minute, with no customer complaint about waiting. There is no evidence of a meaningful response gap.",
+    "evidence": [
+      "CSV: resolutionTime=68",
+      "CSV: Ticket Created=2025-11-20 14:01:26",
+      "CSV: Ticket Solved=2025-11-20 14:02:34",
+      "CSV: Ticket Closed=2025-11-20 14:02:35"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed almost immediately after the AI transcript was posted, with no evidence of customer confirmation that the guidance resolved their concern. Given the context (migration preparation), closing within ~1 minute can reasonably be premature/auto-closure risk.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Updated=2025-11-20 14:02:35",
+      "CSV: Ticket Closed=2025-11-20 14:02:35",
+      "Private note: \"Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Nothing indicates an outage, critical business impact, or urgent severity requiring escalation. The customer question appears to be routine pre-migration cleanup guidance.",
+    "evidence": [
+      "Customer: \"I deactivated the journaling mailbox in preparation for the migration. I'm still seeing 4 files...\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60247413
+}

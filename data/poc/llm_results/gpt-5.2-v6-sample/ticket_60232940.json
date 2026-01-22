@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There are signals of automation/AI-generated content that is heavy on boilerplate and not tailored (e.g., generic ATLAS prompts and templated closure warnings), and an inaccurate statement about ticket availability that the customer immediately disputed. While not all of this is definitively \u201cATLAS/Hermes wrong answers,\u201d the overall AI/automation quality appears inconsistent and at times unhelpful.",
+    "evidence": [
+      "\u201cWalk me through what's happening or select from the below options. Don't hold back on the details\u2026\u201d",
+      "\u201cThis ticket will stay open for one week unless you reply with \"This ticket can be closed\"\u2026\u201d",
+      "\u201cRegarding ticket #4389067, it has not been removed and remains available for your reference.\u201d",
+      "\u201cI can't view Ticket #4389067 now. Please check the following link. https://support.ignitetech.com/hc/requests/4389067\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The flow shows the ticket being routed through automation and then repeatedly put on hold while waiting for internal side-conversation replies, creating a loop-like experience with long periods of no visible progress to the customer. The customer did not explicitly ask for a human, so this is somewhat indirect, but the repeated automation/hold cycle suggests friction in reaching resolution.",
+    "evidence": [
+      "\u201cSending to automation\u201d",
+      "\u201cCentralsupport-ai-acc commented privately: Placing on hold for 90 hour(s)\u201d",
+      "\u201cKayako Automations\u2026 There has been no response in this SC\u2026 I am sending a follow-up in SC. Given the above, I have put the ticket on hold.\u201d",
+      "\u201cCentralsupport-ai-acc commented privately: Placing on hold for 168 hour(s)\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer repeatedly asked when ITPEF-413 would be fixed and later explicitly said they could not access the old Zendesk link, yet the agent initially asserted the old ticket was still available without acknowledging the access/migration issue. This suggests partial failure to incorporate the customer\u2019s stated context (access problem) before responding.",
+    "evidence": [
+      "\u201cWhen ITPEF-413(#4389067) will be fixed?\u201d",
+      "\u201cI was waiting for a solution to this issue, ITPEF-413. It is just difficult to accept your workaround.\u201d",
+      "\u201cRegarding ticket #4389067, it has not been removed and remains available for your reference.\u201d",
+      "\u201cI can't view Ticket #4389067 now. Please check the following link. https://support.ignitetech.com/hc/requests/4389067\u201d",
+      "\u201cI understand that your migration from Zendesk to Kayako is not perfect and there are omissions in the work.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "Response and resolution timelines are very long: the initial response time is ~23.7 hours and the overall resolution time is ~56 days, with multiple multi-day holds while awaiting internal updates. This indicates significant delays in providing meaningful progress to the customer.",
+    "evidence": [
+      "CSV: initialResponseTime=85289",
+      "CSV: resolutionTime=4837492",
+      "\u201cThank you for your patience. We are checking with the team internally\u2026\u201d (first substantive public reply is on 2025-11-27, weeks after creation)",
+      "\u201cPlacing on hold for 90 hour(s)\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed after the customer explicitly requested closure, and the final close message confirms it was done \u201cas requested.\u201d While agents used a standard warning about auto-closing after one week, there is no evidence it was actually closed while the customer still needed help.",
+    "evidence": [
+      "\u201cPlease close this ticket.\u201d",
+      "\u201cAs requested, we are closing this ticket.\u201d",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket concerns a feature request/status inquiry and access to historical ticket attachments, not a production outage or urgent P1/S1 incident. There is no indication of severe operational impact requiring emergency escalation.",
+    "evidence": [
+      "\u201cWhen ITPEF-413(#4389067) will be fixed?\u201d",
+      "\u201cI would like to review the attachments of ticket #4389067 as well.\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60232940
+}

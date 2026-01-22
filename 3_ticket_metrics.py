@@ -14,15 +14,22 @@ from pathlib import Path
 from typing import List, Dict, Optional
 import pandas as pd
 
-# Paths
-RAW_DIR = Path("data/poc/raw")
-OUTPUT_FILE = Path("data/poc/poc_ticket_metrics.csv")
-TAGGED_DIR = Path("data/poc/tagged")
+from config import (
+    RAW_DIR,
+    POC_TICKET_METRICS as OUTPUT_FILE,
+    TAGGED_DIR,
+    ensure_dirs,
+)
 
-# AI bot names (case-insensitive)
-AI_NAMES = {
+# AI bot names - two categories:
+# 1. Exact match names (short names that could appear in human names, use word boundaries)
+# 2. Substring match names (longer/unique names safe for substring matching)
+AI_NAMES_EXACT = {
     "atlas",
     "hermes",
+}
+
+AI_NAMES_SUBSTRING = {
     "centralsupport-ai-acc",
     "ce maintenance bot",
     "trilogy-taro[bot]",
@@ -33,8 +40,11 @@ AI_NAMES = {
     "hermes@trilogy.com",
     "saas portal",
     "kayako automations",
-    "adn support",  # Might be automation
+    "adn support",
 }
+
+# Pre-compiled regex patterns for exact AI name matching (word boundaries)
+AI_NAME_PATTERNS = [re.compile(rf"\b{re.escape(name)}\b", re.IGNORECASE) for name in AI_NAMES_EXACT]
 
 # Patterns to extract actor names from interaction text
 ACTOR_PATTERNS = [
@@ -57,39 +67,73 @@ def classify_actor(name: Optional[str], requester_email: Optional[str] = None, r
     """Classify an actor as AI, Employee, Customer, or General."""
     if not name:
         return "General"
-    
+
     name_lower = name.lower().strip()
-    
-    # Check if AI
-    for ai_name in AI_NAMES:
+
+    # Check if AI first (highest priority)
+    # 1. Check exact match names using word boundaries (prevents "Atlas Corp" -> AI)
+    for pattern in AI_NAME_PATTERNS:
+        if pattern.search(name_lower):
+            return "AI"
+    # 2. Check substring match names (longer/unique names safe for substring)
+    for ai_name in AI_NAMES_SUBSTRING:
         if ai_name in name_lower:
             return "AI"
-    
+
     # Check if customer (matches requester name or email)
+    # Stricter matching to avoid false positives with common names
     if requester_name:
         req_name_lower = requester_name.lower().strip()
-        # Check if names match (allowing for partial matches)
-        if req_name_lower == name_lower or req_name_lower in name_lower or name_lower in req_name_lower:
+        req_words = set(req_name_lower.split())
+        name_words = set(name_lower.split())
+
+        # Case 1: Exact full name match (always accept)
+        if req_name_lower == name_lower:
             return "Customer"
-    
+
+        # Case 2: Multi-word names with high overlap
+        # Require BOTH names to have 2+ words to prevent "John" matching "John Smith"
+        if len(req_words) >= 2 and len(name_words) >= 2:
+            overlap = len(req_words & name_words)
+            min_words = min(len(req_words), len(name_words))
+            if overlap >= 2 and overlap / min_words >= 0.8:
+                return "Customer"
+
     if requester_email:
         req_email_name = requester_email.split('@')[0].lower().replace('.', ' ')
-        if req_email_name in name_lower or name_lower in req_email_name:
+        req_words = set(req_email_name.split())
+        name_words = set(name_lower.split())
+
+        # Case 1: Exact match of email prefix (e.g., "john.smith" == "john smith")
+        if req_email_name == name_lower:
             return "Customer"
-    
+
+        # Case 2: Multi-word email prefix with high overlap
+        # Require 2+ words overlap to prevent single common names matching
+        if len(req_words) >= 2 and len(name_words) >= 2:
+            overlap = len(req_words & name_words)
+            min_words = min(len(req_words), len(name_words))
+            if overlap >= 2 and overlap / min_words >= 0.8:
+                return "Customer"
+
     # Default to Employee if has a real name pattern
     if len(name) > 2 and not name.startswith('['):
         return "Employee"
-    
+
     return "General"
 
 
 def get_ai_subtype(text: str) -> Optional[str]:
-    """Determine AI subtype (Atlas vs Hermes)."""
+    """Determine AI subtype (Atlas vs Hermes).
+
+    Uses word boundary matching to avoid false positives
+    (e.g., "Atlas Corporation" shouldn't trigger Atlas detection).
+    """
     text_lower = text.lower()
-    if 'atlas' in text_lower:
+    # Use word boundaries to match AI names precisely
+    if re.search(r'\batlas\b', text_lower):
         return 'Atlas'
-    if 'hermes' in text_lower:
+    if re.search(r'\bhermes\b', text_lower):
         return 'Hermes'
     return None
 
@@ -100,12 +144,19 @@ def parse_timestamp(ts_str: str) -> Optional[datetime]:
         return None
     try:
         # Remove timezone offset for parsing (we'll treat all as UTC)
-        ts_clean = ts_str.replace('+00:00', 'Z').replace('+0000', 'Z')
-        
-        # Try common formats
-        for fmt in ["%Y-%m-%dT%H:%M:%S.%fZ", "%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%S"]:
+        ts_clean = ts_str.strip()
+        # Handle common timezone formats
+        if ts_clean.endswith('+00:00'):
+            ts_clean = ts_clean[:-6]
+        elif ts_clean.endswith('+0000'):
+            ts_clean = ts_clean[:-5]
+        elif ts_clean.endswith('Z'):
+            ts_clean = ts_clean[:-1]  # Remove exactly one trailing Z
+
+        # Try common formats (without Z suffix since we stripped it)
+        for fmt in ["%Y-%m-%dT%H:%M:%S.%f", "%Y-%m-%dT%H:%M:%S", "%Y-%m-%d %H:%M:%S"]:
             try:
-                return datetime.strptime(ts_clean.rstrip('Z'), fmt.rstrip('Z'))
+                return datetime.strptime(ts_clean, fmt)
             except ValueError:
                 continue
         return None
@@ -254,14 +305,16 @@ def compute_interaction_metrics(interactions: List[Dict]) -> Dict:
             metrics['time_to_first_ai_seconds'] = delta.total_seconds()
         
         # Gap analysis
+        # Note: gaps_over_24h counts gaps BETWEEN 24h and 48h only
+        # gaps_over_48h counts gaps OVER 48h only (mutually exclusive)
         for i in range(1, len(sorted_by_time)):
             gap = (sorted_by_time[i]['timestamp'] - sorted_by_time[i-1]['timestamp']).total_seconds()
             if gap > metrics['max_gap_seconds']:
                 metrics['max_gap_seconds'] = gap
-            if gap > 24 * 3600:
-                metrics['gaps_over_24h'] += 1
             if gap > 48 * 3600:
                 metrics['gaps_over_48h'] += 1
+            elif gap > 24 * 3600:
+                metrics['gaps_over_24h'] += 1
         
         # AI before first human
         first_human_idx = next((i for i, x in enumerate(sorted_by_time) if x['actor_type'] == 'Employee'), len(sorted_by_time))
@@ -309,9 +362,9 @@ def main():
     print("=" * 60)
     print("Phase 0.4: Extract Ticket_360 Metrics")
     print("=" * 60)
-    
+
     # Create output directories
-    TAGGED_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_dirs()
     
     # Get all raw ticket files
     raw_files = list(RAW_DIR.glob("ticket_*.json"))

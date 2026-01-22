@@ -1,0 +1,65 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There are signs of low-quality automation/templated handling: generic escalation replies with no actionable next step during an outage, and a \u201cstep-by-step\u201d response that pivots to large log requests rather than addressing the immediate recovery need (rescue image / restore). The customer explicitly references \u201cHermes\u201d and perceives the system as reporting work that is not actually happening, suggesting unreliable automated status/updates. Some of this may be process/human-driven rather than purely AI, but the ticket contains multiple indicators of poor automated/templated experience.",
+    "evidence": [
+      "Customer: \"What resolution are you working on Hermes? If no one has been in contact with me?\"",
+      "Harry Tasker (public): \"We\u2019ve received your escalation ... and we are investigating the issue. You can expect an update from us as soon as we have more information...\"",
+      "Denis Spirin (public): \"We are actively working on it... reviewing the case... committed to following up as we progress.\"",
+      "Arafat Bakhsh (public): \"Please provide us with the following details... All items in the /var/gfiagent/appliances folder ... /opt/kerio/winroute/logs ... winroute.cfg ...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer repeatedly requested a live agent/manager call and reported inability to reach anyone by phone, indicating a perceived barrier to reaching a human and a looping escalation experience. Multiple escalations were logged but the customer still experienced no direct contact for some time.",
+    "evidence": [
+      "Initial issue list: \"Yes please connect me to a live agent. Thank you.\"",
+      "Customer (public): \"I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\"",
+      "Customer (private): \"Please have a manager call me immediately.\"",
+      "Customer (private): \"I AM WAITING FOR YOUR CALL>>>>>>>>>>\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asked for confirmations and repeated large evidence requests after the customer had already stated key context (downgrade already performed, device not booting, later restored via rescue image). The responses did not explicitly acknowledge the immediate emergency state and the customer\u2019s prior statements, leading to perceived repetition and missed context.",
+    "evidence": [
+      "Customer (private): \"We attempted to downgrade to 9.5.0 patch 3 build 9017 but now it appears the NG520 is not booting.\"",
+      "Support (public): \"Please confirm that the appliance has been upgraded to V10.\"",
+      "Customer (private): \"We have already downgraded.\"",
+      "Customer (private): \"We have restored with the rescue image, but AppManager still does not register the serial of the NG520 hardware.\"",
+      "Support (public, later): \"Please provide us with the following details after having reproduced the issue: ...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly complained about long waits and lack of response during an outage, and the overall resolution time in CSV is very long. There are also multi-hour gaps during the first day while the customer reports being down and repeatedly requests contact.",
+    "evidence": [
+      "Customer (public): \"I cannot reach you by telephone and no one is responding to escalation requests. Customer is completely down.\"",
+      "Customer (private): \"It is completely unacceptable in a network down emergency to be unable to reach anyone in your support team.\"",
+      "Customer (private): \"6 hours I asked the question about downgrading. The customer has been hard down this entire time.\"",
+      "CSV: resolutionTime=896282"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support repeatedly stated the ticket would stay open only one week unless the customer explicitly requests closure, which can create auto-closure pressure while issues remain. The CSV shows the ticket is closed, yet the last recorded interactions still show unresolved symptoms (UNKNOWN serial, update failures) and ongoing troubleshooting requests.",
+    "evidence": [
+      "Support (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed\"",
+      "Customer (private): \"This ticket needs to remain open until I speak with someone in your management team.\"",
+      "Customer (private): \"Serial number still reporting UNKNOWN> ... ALSO updates are reporting to fail> Kerio Control Update failed\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The case was escalated as a complete outage, and the customer stated the network/customer was completely down, yet the handling initially consisted mainly of acknowledgement messages and links rather than rapid live engagement. The customer repeatedly requested immediate contact and a manager call, indicating the response did not match SEV1 expectations.",
+    "evidence": [
+      "Centralsupport-ai-acc (private): \"The severity is: complete_outage\"",
+      "Customer (public): \"Customer is completely down.\"",
+      "Customer (private): \"Please have a manager call me immediately...\"",
+      "Support (public): \"We\u2019ve received your escalation ... we are investigating the issue. You can expect an update...\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60209553
+}

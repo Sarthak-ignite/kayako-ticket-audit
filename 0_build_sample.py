@@ -9,16 +9,18 @@ Phase 0.1: Build POC sample of ~100 tickets
 import pandas as pd
 import re
 import random
-from pathlib import Path
+
+from config import (
+    PATTERNS_CSV,
+    FULL_TICKET_DATA_CSV as FULL_DATA_CSV,
+    DATA_DIR as OUTPUT_DIR,
+    POC_SAMPLE_CSV as OUTPUT_FILE,
+    POC_TICKET_IDS_TXT,
+    ensure_dirs,
+)
 
 # Set random seed for reproducibility
 random.seed(42)
-
-# Paths
-PATTERNS_CSV = Path("IgniteTech_Khoros_GFI - Central Support Issues we see in tickets - Patterns.csv")
-FULL_DATA_CSV = Path("Full_Ticket_Data_1767638152669.csv")
-OUTPUT_DIR = Path("data/poc")
-OUTPUT_FILE = OUTPUT_DIR / "poc_sample.csv"
 
 def extract_ticket_ids_from_patterns():
     """Parse Patterns.csv and extract all ticket IDs by vertical.
@@ -127,21 +129,25 @@ def build_sample(seed_tickets, full_df, target_total=100):
     # Calculate how many random tickets to add
     remaining = target_total - len(sample_rows)
     if remaining > 0:
-        # Distribute evenly across verticals
+        # Distribute evenly across verticals, handling remainder
         verticals = ['IgniteTech', 'Khoros', 'GFI']
         per_vertical = remaining // len(verticals)
-        
-        for vertical in verticals:
+        extra = remaining % len(verticals)  # Distribute remainder to first verticals
+
+        for i, vertical in enumerate(verticals):
             # Get tickets from this vertical that aren't already seeds
             vertical_df = full_df[
-                (full_df['vertical'] == vertical) & 
+                (full_df['vertical'] == vertical) &
                 (~full_df['Ticket ID'].isin(all_seeds))
             ]
-            
+
+            # Add one extra ticket to first 'extra' verticals to reach exact target
+            n_for_this_vertical = per_vertical + (1 if i < extra else 0)
+
             # Random sample
-            n_to_add = min(per_vertical, len(vertical_df))
+            n_to_add = min(n_for_this_vertical, len(vertical_df))
             if n_to_add > 0:
-                random_sample = vertical_df.sample(n=n_to_add, random_state=42)
+                random_sample = vertical_df.sample(n=n_to_add, random_state=42 + i)
                 for _, row in random_sample.iterrows():
                     sample_rows.append({
                         'ticket_id': int(row['Ticket ID']),
@@ -157,9 +163,9 @@ def main():
     print("=" * 60)
     print("Phase 0.1: Building POC Sample")
     print("=" * 60)
-    
+
     # Create output directory
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_dirs()
     
     # Step 1: Extract seed ticket IDs from Patterns.csv
     print("\n1. Extracting seed tickets from Patterns.csv...")
@@ -196,11 +202,10 @@ def main():
     # Save
     sample_df.to_csv(OUTPUT_FILE, index=False)
     print(f"\n✓ Sample saved to: {OUTPUT_FILE}")
-    
+
     # Also save just the ticket IDs for easy reference
-    ticket_list_file = OUTPUT_DIR / "poc_ticket_ids.txt"
-    sample_df['ticket_id'].to_csv(ticket_list_file, index=False, header=False)
-    print(f"✓ Ticket ID list saved to: {ticket_list_file}")
+    sample_df['ticket_id'].to_csv(POC_TICKET_IDS_TXT, index=False, header=False)
+    print(f"✓ Ticket ID list saved to: {POC_TICKET_IDS_TXT}")
     
     return sample_df
 

@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI automation attempting to add the device appears to have failed with an unexpected backend/Lambda error, and the public-facing result was empty, requiring human/manual handling. This indicates an AI/process quality failure even though the human agent later told the customer it was completed.",
+    "evidence": [
+      "Cu Chulainn ... Operation Summary ... **Unexpected backend error during device addition.**",
+      "\u201cprivate_message indicates an unexpected error: 'Processed by Internal Lambda : Unexpected error, or Error parsing CompanyID or Phonelist... Exception: 'NoneType' object has no attribute 'get''; public_message was empty.\u201d",
+      "\u201cPlease review the ticket details and process the request manually.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped in an AI loop or unable to reach a human. The ticket shows human agent responses and back-and-forth with the customer via public comments.",
+    "evidence": [
+      "\u201cKayako - ticket id 60238514 // Shaquille De Lancy commented publicly: Dear David, ... We've completed this request ...\u201d",
+      "\u201cKayako - ticket id 60238514 // David OBrien commented publicly: I still need number 5512175899 reactivated...\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The agent acknowledged the customer\u2019s follow-up and investigated the discrepancy between two similar numbers, then asked for confirmation and acted based on the customer\u2019s reply. This suggests the agent was using prior context rather than ignoring it.",
+    "evidence": [
+      "\u201cWe've noticed that there is already a very similar number on your account: 5512175999 as opposed to 5512175899.\u201d",
+      "\u201cCould you please confirm which of the following is the correct number?\u201d",
+      "Customer: \u201cthe correct number is 5512175999\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a meaningful response gap after the customer\u2019s Nov 9 request, with the next agent reply coming the next day. Additionally, the overall resolution time spans multiple days per the CSV context.",
+    "evidence": [
+      "Customer (2025-11-09T20:44:55+00:00): \u201cI still need number 5512175899 reactivated and connected to Winston hosang\u201d",
+      "Agent response (2025-11-10T14:26:44+00:00): \u201cThank you for following up on this issue.\u201d",
+      "CSV: resolutionTime=256588"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was marked completed after the customer confirmed the correct phone number and the agent provided activation details and PIN. There is no evidence of additional unresolved customer needs after completion/closure.",
+    "evidence": [
+      "Customer (2025-11-10T14:30:09+00:00): \u201cthe correct number is 5512175999\u201d",
+      "Agent (2025-11-10T16:05:22+00:00): \u201cAs there are no further actions for the Support Team to take, I'll mark this ticket as completed.\u201d",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Although the ticket was labeled \u201cUrgent\u201d in the ATLAS flow, the underlying request appears to be a routine device/phone activation and user connection, not a confirmed outage or widespread service impact. The agent engaged and resolved within a reasonable operational timeframe without clear missed escalation criteria.",
+    "evidence": [
+      "ATLAS transcript: \u201cButton selection: [\ud83d\udd34 Urgent]\u201d",
+      "Issue description: \u201cPhone number to activate: 973 248 5786\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60238514
+}

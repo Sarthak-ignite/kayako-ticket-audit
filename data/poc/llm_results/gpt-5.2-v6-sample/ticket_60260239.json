@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS\u2019s guidance appears partially misaligned with the customer\u2019s stated goal (a new G2 license), prompting for logs/screenshots and a broad troubleshooting-style intake rather than focusing on license-transfer requirements. While it later asks for an authorization form and license/server details, the initial steps look like generic filler and may slow the path to the correct workflow (license issuance).",
+    "evidence": [
+      "Customer: \"I want to request new g2 license\"",
+      "ATLAS: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\"",
+      "ATLAS: \"To process your request efficiently, we kindly ask you to provide the following information: - Completed authorization form with all license details... - Current license details... - Server details...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped in an AI loop or asked repeatedly for the same action, and no request for a human/live agent is shown in the interactions provided.",
+    "evidence": [
+      "ATLAS: \"If I'm unable to help you, I can patch you through to a Live agent...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "After the customer clarified this was a license transfer without PO/Invoice and provided the requested license type/version, support routed the request for approval and ultimately generated and sent the license. No clear instance appears where agents forced repetition of already-provided details or ignored the stated constraints.",
+    "evidence": [
+      "Customer: \"This request is not new purchase but license transfer(free upgrade). So we don't have PO or INVOICE for this request.\"",
+      "Side conversation to sales: \"We have received a request for a new Gensym license under ticket 60260239...\" (includes the customer's provided details)",
+      "Agent: \"This is approved. Going to generate the license\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows a long overall resolution time (~26 days) and there is a substantial gap between the customer providing key details (Dec 10) and the next meaningful processing action (Dec 25 onward). This indicates delayed handling of the request even though it was eventually fulfilled.",
+    "evidence": [
+      "CSV: resolutionTime=2243647",
+      "Customer (2025-12-10): \"G2-2023 Standard 32bit License request Please issue it by January 7, 2026.\"",
+      "Side conversation (2025-12-25): \"We have received a request for a new Gensym license under ticket 60260239...\"",
+      "Public reply (2025-12-29): \"As requested, please find the license attached.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The customer never explicitly confirmed resolution, yet the process includes a one-week closure warning and the ticket is marked completed shortly after the license is sent. It may be a standard workflow, but from a recall-first perspective it still qualifies as potential premature/auto-closure without confirmed customer validation.",
+    "evidence": [
+      "ATLAS: \"If you need more time to provide this information, please note that the ticket will remain open for one additional week before further follow-up.\"",
+      "Agent (2025-12-29): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "CSV: Status=completed",
+      "CSV: Ticket Solved=2026-01-05 05:35:17"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket concerns a license request/transfer and does not describe an outage, production down, or other high-severity operational impact requiring P1/Sev1 escalation.",
+    "evidence": [
+      "Customer: \"I want to request new g2 license\"",
+      "Customer: \"This request is not new purchase but license transfer(free upgrade).\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60260239
+}

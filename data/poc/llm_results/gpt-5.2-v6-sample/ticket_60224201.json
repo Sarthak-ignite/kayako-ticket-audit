@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is direct evidence of an ATLAS AI classification failure (\u201cComponent could not be determined\u201d). While this is limited to routing/tagging quality (not a customer-facing response), it still indicates AI output that did not successfully interpret the case.",
+    "evidence": [
+      "Kayako - ticket id 60224201 // ATLAS commented privately: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The call transcript shows the caller being repeatedly replayed the same menu with an error message (\u201cYou can only press numbers from 1 to 9\u2026 Let me repeat the options\u2026\u201d). This indicates a looping automated gate that could prevent reaching a human; it\u2019s IVR-based rather than clearly an AI bot, but the customer experience matches a \u201cstuck in automation loop\u201d pattern.",
+    "evidence": [
+      "[ MESSAGE ] : (Machine to +14846034063) You can only press numbers from 1 to 9.... Let me repeat the options....",
+      "[ MESSAGE ] : (Machine to +14846034063) You can only press numbers from 1 to 9.... Let me repeat the options.... If you are calling to get support on Archiver, Press 1.... For LanGuard, Press 7...."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The ticket indicates the \u201ccomplete conversation\u201d would be uploaded shortly, but the visible record contains no actual customer issue details beyond IVR metadata, suggesting the case context may not have been captured/added before closure. This is indirect, but it points to missing/ignored context within the ticket artifact itself.",
+    "evidence": [
+      "The complete conversation with this customer will be uploaded to this ticket shortly.",
+      "This ticket was created for logging purposes."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket shows it was solved essentially immediately after creation, and there are no customer messages complaining about waiting. The timeline does not indicate a meaningful support response gap within the provided data.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-18 21:59:37",
+      "CSV: Ticket Solved=2025-10-18 22:00:01",
+      "CSV: timeSpentOpenL1=0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was marked solved within seconds and later closed, yet the record mainly contains a promise to upload the full conversation and IVR/call metadata rather than a documented resolution or customer confirmation. Even if intended as a logging ticket, the lack of problem/solution content makes premature closure plausible.",
+    "evidence": [
+      "CSV: Ticket Solved=2025-10-18 22:00:01",
+      "CSV: Status=closed",
+      "The complete conversation with this customer will be uploaded to this ticket shortly.",
+      "This ticket was created for logging purposes."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of outage/critical impact, no severity labeling, and no details about the underlying technical issue. With only IVR metadata and logging notes, P1/SEV1 mishandling cannot be substantiated.",
+    "evidence": [
+      "CSV: Product=LanGuard",
+      "This ticket was created for logging purposes."
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60224201
+}

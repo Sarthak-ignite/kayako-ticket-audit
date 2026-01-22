@@ -1,0 +1,52 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ticket content provided only includes an AI chat header/disclaimer and does not include the actual AI responses or any customer complaint about incorrect/misleading output. There is not enough evidence to conclude the AI gave low-quality or wrong guidance in this case.",
+    "evidence": [
+      "Customer private comment contains only: \"Thanks for chatting earlier with our AI Support! ... Here is a record of your conversation for easy reference:\" followed by the AI greeting/disclaimer."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer was stuck in an AI loop or requested escalation to a human; the only visible text is the AI introduction. Without further conversation content, this pattern cannot be substantiated.",
+    "evidence": [
+      "\"This is the DNN ATLAS support chat.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No agent/human replies or troubleshooting exchange is shown, so there is no observable instance of support ignoring provided context or forcing repetition.",
+    "evidence": [
+      "No additional interactions beyond the AI intro are present in the provided transcript."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured timestamps show the ticket remained open for about three days from creation to solve/close, which suggests a meaningful delay in resolution/response (even though the interaction text is missing). This is inferred from CSV timing rather than explicit customer complaints.",
+    "evidence": [
+      "CSV: Ticket Created=2025-11-26 13:31:43",
+      "CSV: Ticket Solved=2025-11-29 13:42:12",
+      "CSV: Ticket Closed=2025-11-29 13:42:12",
+      "CSV: resolutionTime=259829"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed with no visible evidence of an actual support resolution conversation or customer confirmation, raising the possibility it was closed without fully addressing the issue (or was auto-closed). This is a suspicion based on missing interaction content plus closure status, so confidence is low/medium.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: Ticket Closed=2025-11-29 13:42:12",
+      "Only visible interaction is an AI chat header/record notice, with no shown resolution steps."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no evidence the issue was a P1/SEV1 outage or urgent business impact, and no missed escalation indicators are present in the provided text/fields.",
+    "evidence": [
+      "No severity/impact information is provided in the transcript or CSV context."
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60250996
+}

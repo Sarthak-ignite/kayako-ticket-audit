@@ -1,0 +1,63 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "Early ATLAS responses strongly attributed the chatbot lag to third\u2011party telemetry scripts and recommended reducing trackers, but later internal investigation concluded a different root cause (VPN/proxy JavaScript injection). This makes the initial AI guidance at least partially misleading for the customer\u2019s situation. There are also explicit requests to stop AI responses, suggesting the AI output quality was not meeting expectations.",
+    "evidence": [
+      "ATLAS (public): \"we observed multiple telemetry and tracking requests\u2014primarily from monitoring scripts like New Relic ... which are creating frequent background XHR and image beacon requests... can contribute to client-side congestion and UI lag\"",
+      "Xavier A Villarroel (private): \"Root cause confirmed: Corporate VPN/proxy JavaScript injection interfering with widget XHR.\"",
+      "Monica Botey (private): \"stop the AI responses for this case.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer/participants explicitly pushed back on automated/AI handling and requested human engagement and escalation. This suggests a perceived barrier to getting a meaningful human response, consistent with an AI wall/loop experience.",
+    "evidence": [
+      "Monica Botey (private): \"stop the AI responses for this case.\"",
+      "Warren Cook (private): \"I would like to see a response in this case from a named individual from Khoros ASAP.\"",
+      "Warren Cook (private): \"That is unacceptable for a P1 case... What tests have been performed... What is the next step?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support (ATLAS) continued focusing on third\u2011party trackers even after the customer clarified they only run the BrandMessenger script and reported reproduction in incognito (reducing the likelihood of extensions being the cause). The customer also pointed to a similar prior incident and asked for infrastructure escalation, indicating key context had to be repeated/was not effectively incorporated at first.",
+    "evidence": [
+      "Don Kempt (public): \"Aamir, we only run the javascript provided from brandmessanger, please advise\"",
+      "Don Kempt (public): \"disabling extensions and running incognito locally has no effect. The issue persists\"",
+      "Monica Botey (public): \"This is being experienced from the customer side, same issue as we had in August (case 60164225)...\"",
+      "ATLAS (public): \"the evidence points to significant browser resource usage resulting from telemetry and monitoring scripts, such as those from New Relic...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are explicit complaints about slow/no updates during a P1 outage and the CSV shows a long initial response time. Customers noted hours without a meaningful update and requested more frequent/status detail.",
+    "evidence": [
+      "CSV: initialResponseTime=72",
+      "Don Kempt (public): \"Please note this case was opened as a P1 at 11am EST. This is 5hrs with out a working chat.\"",
+      "Monica Botey (private): \"Hello, checking again, it has been 2h since the last update.\"",
+      "Warren Cook (private): \"To date - This is what we have received - 'We are investigating the issue with the Infrastructure team.'\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is closed per the CSV, yet later comments show the customer still awaiting actions/confirmation and expressing lack of confidence in the proposed fix. Additionally, support messaged a closure countdown (\u201cstay open for one week unless\u2026\u201d), which can be premature if the issue isn\u2019t actually resolved.",
+    "evidence": [
+      "CSV: Status=closed",
+      "Harry Tasker (public): \"This ticket will stay open for one week unless you reply with 'This ticket can be closed'...\"",
+      "Warren Cook (private): \"We are still waiting for confirmation from IT if this can be done\"",
+      "Balaji Jayaraman (private): \"I am not convinced that this will resolve the issue.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer labeled the issue P1/complete outage affecting all customers, but reported hours without restoration and inadequate updates. The interaction shows delayed/insufficient P1 communications and the customer repeatedly had to push for escalation and accountability during an outage window.",
+    "evidence": [
+      "Customer (public): \"Please treat this as a P1 situation.\"",
+      "Centralsupport-ai-acc (private): \"severity is: complete_outage\"",
+      "Don Kempt (public): \"This is 5hrs with out a working chat.\"",
+      "Warren Cook (private): \"That is unacceptable for a P1 case where our chat has been non functional for the majority of the US business day.\"",
+      "Denis Spirin (public): \"We are investigating the issue with the Infrastructure team. We will update you once there is information available.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60238457
+}

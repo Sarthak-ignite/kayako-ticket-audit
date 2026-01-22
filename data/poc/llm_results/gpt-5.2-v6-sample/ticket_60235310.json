@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no substantive AI troubleshooting or guidance captured in the ticket content\u2014only an AI greeting and a general disclaimer\u2014so poor quality (wrong/misleading advice, repetition, unfulfilled promises) cannot be evidenced from the provided record.",
+    "evidence": [
+      "Kayako - ticket id 60235310 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!",
+      "\u201cPlease note: The AI Support Agent is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "No customer messages indicate they were stuck in an AI loop or requested a human, and there is no evidence of repeated AI responses or blocked escalation.",
+    "evidence": [
+      "Kayako - ticket id 60235310 // ATLAS commented privately: Thanks for chatting earlier with our AI Support!"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The ticket transcript does not include any customer problem description or prior details that could have been ignored; therefore, there is no observable evidence of the support flow forcing repetition or missing provided context.",
+    "evidence": [
+      "Customer: Rex Limbrick"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket was created, updated, solved, and closed within about a minute, and there are no customer complaints about waiting\u2014so there is no indication of response delays.",
+    "evidence": [
+      "CSV: resolutionTime=65",
+      "CSV: Ticket Created=2025-11-04 05:16:54",
+      "CSV: Ticket Closed=2025-11-04 05:17:59"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears to have been closed almost immediately after creation with only an internal note referencing an AI chat record and without any visible problem statement or resolution steps; this raises a reasonable risk of premature/auto-closure (uncertain because the underlying AI chat content is not included).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-11-04 05:16:54",
+      "CSV: Ticket Solved=2025-11-04 05:17:59",
+      "CSV: Ticket Closed=2025-11-04 05:17:59",
+      "Kayako - ticket id 60235310 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! Here is a record of your conversation for easy reference:"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of severity level, outage impact, or urgent business disruption in the provided content, so P1/SEV1 mishandling cannot be supported by evidence here.",
+    "evidence": [
+      "CSV: Product=Khoros Classic Community"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60235310
+}

@@ -1,0 +1,63 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided recommendations that appear inconsistent with the customer\u2019s provided configuration evidence (e.g., claiming a missing *.apple.com entry while the prior screenshot analysis indicates it exists). The AI responses also contain broad, speculative guidance rather than pinpointing a concrete product-side diagnostic path, which the customer found ineffective (multiple attempts did not change behavior).",
+    "evidence": [
+      "ATLAS (public): \"Most relevant Apple CDN and update domains are included ... but there is no broad *.apple.com entry.\"",
+      "ATLAS file analysis (private): \"Multiple Apple-related domains are included in the HTTPS exclusions IP address group: appldnld.apple.com, *.apple.com, apple.com, *.cdn-apple.com...\"",
+      "Customer: \"unfortunately, the Allow rule didn\u2019t resolve the issue.\"",
+      "Customer: \"We have already disabled both the HTTPS Inspector and HTTP Inspector... but unfortunately, that did not make any difference.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly asked for a technician/technical team to take a closer look after repeated troubleshooting suggestions did not work, suggesting difficulty progressing beyond scripted/AI-style guidance. There is also an attempt to divert the customer to a different (duplicate) ticket they couldn\u2019t access, creating additional friction before reaching effective human handling.",
+    "evidence": [
+      "Customer: \"Could a technician from your team please take a closer look at this issue?\"",
+      "Customer: \"Given that the customer has been experiencing this problem for over a week now, could someone from your technical team please take a closer look at this case?\"",
+      "Customer: \"It looks like a reply was sent to the ticket I unfortunately don\u2019t have access to.\"",
+      "Zubair (public): \"This ticket is a duplicate of ticket# 60216786... We will close this ticket...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS\u2019s recommendation to add *.apple.com appears to ignore/contradict the already-shared configuration evidence showing *.apple.com present in the exclusions group. Additionally, the customer stated they had already disabled HTTPS/HTTP inspection, yet earlier guidance continued to focus on inspection/exclusion concepts without acknowledging that those steps had been tried and failed.",
+    "evidence": [
+      "ATLAS file analysis (private): \"Multiple Apple-related domains are included... *.apple.com...\"",
+      "ATLAS (public): \"The absence of a blanket *.apple.com entry... Action: Add *.apple.com...\"",
+      "Customer: \"We have already disabled both the HTTPS Inspector and HTTP Inspector... but unfortunately, that did not make any difference.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There are clear customer complaints about long waiting times (\u201ctwo weeks since our last communication\u201d), and the structured data indicates a very long resolution cycle. This suggests meaningful response gaps before the issue was handled/escalated.",
+    "evidence": [
+      "Customer: \"It has now been two weeks since our last communication, and unfortunately, we have not received any concrete feedback\"",
+      "CSV: initialResponseTime=68",
+      "CSV: resolutionTime=1938365",
+      "CSV: Ticket Created=2025-10-14 08:44:24",
+      "CSV: Ticket Solved=2025-11-05 19:10:29"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support attempted to close the ticket as a duplicate while the customer still needed assistance and did not have access to the referenced ticket, which is a closure action before the customer\u2019s problem was resolved. Although the final closure was initiated by the customer, the earlier duplicate-closure attempt still constitutes premature closure behavior.",
+    "evidence": [
+      "Zubair (public): \"This ticket is a duplicate of ticket# 60216786... We will close this ticket\"",
+      "Customer: \"a reply was sent to the ticket I unfortunately don\u2019t have access to. Could you please close that ticket and continue the communication using Ticket #60220499\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was described as preventing effective use of the product (core functionality impact) and was explicitly escalated, yet the case appears to have experienced long delays before meaningful L2 escalation/structured data collection. The combination of high-impact symptoms and extended waiting suggests mishandling for a potentially high-severity incident.",
+    "evidence": [
+      "Centralsupport-ai-acc (private): \"severity is: core_functionality_defect\"",
+      "Customer: \"According to the partner, it is currently not possible to work with this product.\"",
+      "Customer: \"the customer has been experiencing this problem for over a week now\"",
+      "Customer: \"It has now been two weeks since our last communication\"",
+      "CSV: resolutionTime=1938365"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60220499
+}

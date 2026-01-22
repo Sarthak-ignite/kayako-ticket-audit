@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided largely generic, speculative troubleshooting (cache/extensions/session token expiry) without proposing a concrete investigation path (e.g., collecting console errors/HAR and escalating with findings). It also appears to have sent two very similar public replies back-to-back, suggesting repetition rather than progress. The responses include irrelevant filler (e.g., attachment features) relative to the reported blocking behavior.",
+    "evidence": [
+      "ATLAS: \"This issue could be caused by several factors, including browser caching, script conflicts, or session timeouts.\"",
+      "ATLAS: \"Session Token Expiry: Khoros Communities rely on an active session for posting replies...\"",
+      "ATLAS (two similar replies posted minutes apart): \"Thank you for providing the additional details...\" and later \"Thank you for outlining the situation...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was stuck in an AI-only loop or asked to reach a human agent. The ticket shows an initial info request and then troubleshooting guidance, but not repeated back-and-forth loops or refusal to escalate to a person.",
+    "evidence": [
+      "Cu Chulainn AI Manager: \"could you kindly specify which Khoros product... Additionally, please provide the exact community or instance URL\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "After the customer provided a specific community URL and an affected user profile, ATLAS responses remained broad and duplicated, with limited tailoring to the concrete example (no direct reference to the specific user/topic, and no clear next diagnostic step tied to the provided instance). The near-duplicate second ATLAS response suggests the system did not effectively build on the immediately prior response.",
+    "evidence": [
+      "Customer: \"Community URL:https://community.se.com ... Community Classic\"",
+      "Customer: \"User Affected: https://community.se.com/t5/user/viewprofilepage/user-id/27891\"",
+      "ATLAS (generic guidance): \"This issue could be caused by several factors, including browser caching, script conflicts, or session timeouts.\"",
+      "ATLAS (second, similar message): \"This behavior can be disrupted by several factors. Below are troubleshooting steps and technical explanations...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket shows a long time-to-resolution and a long span between the last customer message shown (Dec 5) and the solved/closed dates (Dec 12/15), suggesting meaningful delay in progressing or concluding the case. The CSV resolution time is very large, supporting extended handling duration.",
+    "evidence": [
+      "CSV: Ticket Created=2025-12-04 09:51:10",
+      "CSV: Ticket Solved=2025-12-12 06:38:47",
+      "CSV: Ticket Closed=2025-12-15 07:35:31",
+      "CSV: resolutionTime=679657"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The support message explicitly warns the ticket will remain open only one week unless the customer replies with a closure phrase, which can lead to auto-closure even if the issue persists. The ticket ultimately ended in closed status, and there is no visible confirmation from the customer that the problem was resolved or that closure was requested.",
+    "evidence": [
+      "Cu Chulainn AI Manager (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reported multiple users being blocked from replying and requested an ASAP check, which could indicate a high-impact community functionality degradation. The responses stayed at basic end-user troubleshooting and did not show urgency signals like severity assessment, incident routing, or escalation, so there is potential mishandling if this was widespread.",
+    "evidence": [
+      "Customer: \"Some of the users are facing issues white replying to the post and they are blocked to reply on a single click... Kidly check this asap.\"",
+      "Customer: \"I am unable to reply to the post unless I refresh the page... If I take too long... I get the message again and must refresh the page again.\"",
+      "ATLAS: \"Here are some ways users can attempt to resolve... Clear browser cache and cookies... Disable any ad blockers...\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60256250
+}

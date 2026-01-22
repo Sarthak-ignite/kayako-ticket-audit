@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS repeatedly asserted the blank graphs were \u201cnormal behavior\u201d due to no traffic in the selected period, despite the customer later stating there was traffic during those times. This likely misdiagnosed the issue (later internal note points to roll-up chain/services) and delayed the correct troubleshooting path.",
+    "evidence": [
+      "ATLAS (public, 2025-11-04): \"The 'Data not available for selected period' message occurs when no traffic has been recorded... This is a normal behavior in Exinda reporting. It does not indicate a malfunction...\"",
+      "Customer (private, 2025-11-07): \"there was traffic over the link on the mentioned period, but it was not present on exinda subnet report.\"",
+      "Rishi Singh (private, 2025-11-14): \"Because traffic is visible for certain periods but rolled-up time ranges (Last 24 Hours) are empty, the problem is almost certainly in the data-roll-up chain (datad / monitor / statisticsd) rather than capture.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested a call for troubleshooting and repeatedly escalated due to lack of progress, suggesting difficulty getting effective human engagement and being stuck in an asynchronous loop of requests. While humans did respond later, the experience indicates a looping/blocked path to real-time help.",
+    "evidence": [
+      "Customer (private, 2025-11-14): \"can you schedule a call because from last 1 month we are only sharing data for verification .\"",
+      "Customer (private, 2025-11-19): \"Kindly confirm are you able to initiate a call for troubleshooting or not .\"",
+      "Centralsupport-ai-acc (private, 2025-11-04): \"[customer_escalation] The customer escalated the Case.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support asked the customer to provide diagnostic/PDF artifacts again and questioned whether they were uploaded, leading the customer to complain about repeatedly providing the same data. This indicates prior context and previously shared information was not effectively tracked/used.",
+    "evidence": [
+      "Customer (private, 2025-11-19): \"can you tell us that how many times you need same data. Have you checked previous update on this ticket provides by us?\"",
+      "Randall Shawver (public, 2025-11-20): \"Did you previously upload these, as I do not see them attached to this ticket? If not, please provide these so we can continue the investigation.\"",
+      "Customer (private, 2025-11-14): \"from last 1 month we are only sharing data for verification.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were substantial gaps before meaningful support responses, with the customer explicitly stating they waited 6 days and later 1 month without solutions/updates. Ticket dates also show a long-open case timeframe.",
+    "evidence": [
+      "Customer (private, 2025-10-06): \"As we are waiting from last 6 days still, we have not received any updates regarding the same.\"",
+      "Customer (private, 2025-11-04): \"It has been now a month ago but still we haven't received any solution regarding the issue.\"",
+      "CSV: Ticket Created=2025-09-29 12:54:05",
+      "CSV: Ticket Updated=2026-01-05 10:55:52"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support included a time-boxed closure warning (\u201cstay open for one week unless\u2026\u201d) while the customer was still actively seeking troubleshooting and corrective action. This is a closure-threat pattern even though the ticket status is not shown as closed.",
+    "evidence": [
+      "Rishi Singh (public, 2025-11-14): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed\"",
+      "Syed Haider (public, 2025-11-27): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed\"",
+      "CSV: Status=hold"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The case was escalated with severity marked as \"data_loss\" and the customer reported prolonged lack of updates/solution over a month, which is inconsistent with urgent handling. While the true operational impact isn\u2019t fully proven in the text, the recorded severity plus delay indicates likely high-severity mishandling.",
+    "evidence": [
+      "Centralsupport-ai-acc (private, 2025-11-04): \"The severity is: data_loss\"",
+      "Centralsupport-ai-acc (private, 2025-11-14): \"The severity is: data_loss\"",
+      "Customer (private, 2025-11-04): \"Issue is dragging from 1 month but we have not received any update and solutions.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60209095
+}

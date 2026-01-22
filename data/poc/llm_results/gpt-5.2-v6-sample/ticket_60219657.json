@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided content mainly shows the AI agent\u2019s intro and the customer\u2019s initial question; the actual AI answer is truncated, so there isn\u2019t evidence that the AI gave incorrect/misleading guidance or failed to adapt. While the AI uses a lot of templated/filler language, that alone doesn\u2019t prove a quality failure in solving the request.",
+    "evidence": [
+      "\u201cWalk me through what's happening or select from the below frequent requests.\u201d",
+      "\u201cI'm wandering what the personalisation options are for e-mails in aurora\u201d",
+      "Customer transcript ends with: \u201c[truncated]\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no sign the customer was stuck in a loop, repeatedly redirected, or explicitly asking for a human. The text shown is only the initial intake and does not include back-and-forth indicating looping or inability to reach an agent.",
+    "evidence": [
+      "\u201cIf I'm unable to help you, I can patch you through to a Live agent\u2026\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The excerpt does not show the AI or agent ignoring information the customer already provided or forcing repetition. The only customer context shown is a single question, and the response content that would prove ignoring context is not present (truncated).",
+    "evidence": [
+      "\u201cI'm wandering what the personalisation options are for e-mails in aurora\u201d",
+      "Customer transcript ends with: \u201c[truncated]\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No waiting complaints or long gaps are visible, and the CSV timeline shows the ticket was opened, solved, and closed within about a minute.",
+    "evidence": [
+      "CSV: resolutionTime=59",
+      "CSV: Ticket Created=2025-10-13 08:41:41",
+      "CSV: Ticket Closed=2025-10-13 08:42:41"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved/closed extremely quickly (within ~1 minute) despite only showing the customer\u2019s initial question and no visible resolution/answer in the provided excerpt (the conversation is truncated). This creates a strong risk that the case was closed before confirming the customer\u2019s question was answered.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-10-13 08:42:40",
+      "CSV: Ticket Closed=2025-10-13 08:42:41",
+      "CSV: resolutionTime=59",
+      "\u201cI'm wandering what the personalisation options are for e-mails in aurora\u201d",
+      "Customer transcript ends with: \u201c[truncated]\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of an outage, high-severity impact, or urgent business disruption. The customer question appears to be informational (email personalization options), not a P1/SEV1 scenario.",
+    "evidence": [
+      "\u201cI'm wandering what the personalisation options are for e-mails in aurora\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60219657
+}

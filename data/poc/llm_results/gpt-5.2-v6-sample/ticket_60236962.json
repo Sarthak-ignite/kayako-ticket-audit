@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI appears to pivot away from the user\u2019s technical question into an eligibility/gating script (\u201cmandatory\u2026 check support eligibility\u201d) rather than directly answering how to find the ikelifetime setting via SSH. Because the conversation record is truncated, it\u2019s not fully provable that no answer was provided, but the visible portion suggests unhelpful/irrelevant content relative to the question.",
+    "evidence": [
+      "Customer: \"How do I find the ikelifetime setting in Kerio using SSH?\"",
+      "AI Assistant: \"Got it! \ud83d\udc4c\"",
+      "AI Assistant: \"Based on your stated intent, it is mandatory that we check the support eligibility...\"",
+      "Interactions note: \"Thanks for chatting earlier with our AI Support! Here is a record of your conversation... [truncated]\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was trapped in a loop, repeatedly prompted, or explicitly requested a human and was blocked. The visible transcript shows only the initial question and the AI\u2019s first response.",
+    "evidence": [
+      "Customer: \"How do I find the ikelifetime setting in Kerio using SSH?\"",
+      "AI Assistant: \"Please select from the below or give me a detailed description of what\u2019s happening.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer asked a specific, concrete question, and the AI response (as shown) does not acknowledge or use the provided context (the specific setting name and the SSH angle), instead shifting to eligibility checking. Due to truncation, this is somewhat uncertain, but the visible behavior suggests the AI is not engaging with the provided details.",
+    "evidence": [
+      "Customer: \"How do I find the ikelifetime setting in Kerio using SSH?\"",
+      "AI Assistant: \"Based on your stated intent, it is mandatory that we check the support eligibility...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No waiting complaints or large response gaps are shown, and the CSV indicates the ticket was created/updated/solved/closed within about a minute. This does not indicate response delay issues.",
+    "evidence": [
+      "CSV: Ticket Created=2025-11-05 21:43:10",
+      "CSV: Ticket Closed=2025-11-05 21:44:26",
+      "CSV: resolutionTime=75"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved and closed extremely quickly (about ~75 seconds) and the visible transcript does not show an actual solution being delivered to the customer\u2019s question. This strongly suggests the case may have been closed before confirming resolution (though the transcript is truncated, so there is some uncertainty).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-11-05 21:44:25",
+      "CSV: Ticket Closed=2025-11-05 21:44:26",
+      "CSV: resolutionTime=75",
+      "Customer: \"How do I find the ikelifetime setting in Kerio using SSH?\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of a P1/SEV1 event (no outage, critical business impact, or urgency signals). The request is a configuration/how-to question rather than an emergency incident.",
+    "evidence": [
+      "Customer: \"How do I find the ikelifetime setting in Kerio using SSH?\"",
+      "CSV: Product=Kerio Control"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60236962
+}

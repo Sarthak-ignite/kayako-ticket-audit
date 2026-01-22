@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS failed to classify/determine the component despite the ticket having an explicit product in the structured context. Additionally, the agent note promised the full conversation would be uploaded shortly, but the ticket content shown contains only call-metadata/IVR logs, suggesting the promised artifact was not delivered (or at least not present in this record).",
+    "evidence": [
+      "Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined",
+      "CSV: Product=LanGuard",
+      "Xavier A Villarroel commented privately: The complete conversation with this customer will be uploaded to this ticket shortly."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The call transcript shows the customer stuck interacting with an automated system that repeatedly rejects input and replays the same menu options, a classic \"loop\" experience and a barrier to reaching a human.",
+    "evidence": [
+      "[ MESSAGE ] : (Machine to +12394812391) Thank you for calling GFI Support Line.... If you are calling to get support on Archiver, Press 1.... For LanGuard, Press 7....",
+      "[ MESSAGE ] : (Machine to +12394812391) You can only press numbers from 1 to 9.... Let me repeat the options....",
+      "[ MESSAGE ] : (Machine to +12394812391) You can only press numbers from 1 to 9.... Let me repeat the options...."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS reported it could not determine the component even though the structured context clearly lists the product. Also, the ticket is described as being created for logging purposes with an upcoming upload, but no actual customer issue details appear in the visible ticket record, which suggests the provided/expected context was not incorporated into the case handling.",
+    "evidence": [
+      "CSV: Product=LanGuard",
+      "Kayako - ticket id 60231535 // ATLAS commented privately: Component could not be determined",
+      "Xavier A Villarroel commented privately: This ticket was created for logging purposes."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is an apparent multi-day gap between when the ticket was created/solved and when it was finally closed, suggesting delays in follow-through or case hygiene (even if the ticket was marked solved quickly). This is indirect evidence (no explicit customer complaint shown), but the timestamps indicate a lag in closure/updates.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-29 14:10:26",
+      "CSV: Ticket Solved=2025-10-29 14:10:51",
+      "CSV: Ticket Closed=2025-11-01 14:45:25"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was marked solved within seconds of creation and later closed, yet the record shown contains no customer problem description or documented resolution\u2014only an IVR/menu loop transcript and internal notes. This strongly suggests the case may have been closed without actually addressing the customer\u2019s support need (or without documenting it).",
+    "evidence": [
+      "CSV: Ticket Solved=2025-10-29 14:10:51",
+      "CSV: Status=closed",
+      "Xavier A Villarroel commented privately: The complete conversation with this customer will be uploaded to this ticket shortly.",
+      "Xavier A Villarroel commented privately: This ticket was created for logging purposes."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No evidence indicates a P1/SEV1 impact (e.g., outage, business-critical down, urgent escalation request) or that the case required emergency handling. The available content is primarily IVR metadata and internal logging notes.",
+    "evidence": [
+      "Xavier A Villarroel commented privately: This ticket was created for logging purposes.",
+      "CSV: Product=LanGuard"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60231535
+}

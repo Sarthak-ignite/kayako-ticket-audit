@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no visible AI-generated reply (ATLAS/Hermes) or any agent response content in the provided ticket interactions, so AI response quality cannot be evaluated from this data.",
+    "evidence": [
+      "CSV: Product=Khoros Care",
+      "CSV: Level Solved=L1 Agent"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket text does not show the customer interacting with an AI bot, being routed in a loop, or asking to reach a human. The only content provided is the customer's incident/bridge email.",
+    "evidence": [
+      "Customer message contains an incident bridge invite and impact statement, with no mention of bot/AI interactions."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The ticket was solved/closed almost immediately after creation with no agent-facing reply shown, despite the customer providing clear context (SSL validation error, user login impact, bridge link). This strongly suggests the provided context was not meaningfully acknowledged or acted on within the ticket (though the absence of agent messages introduces some uncertainty).",
+    "evidence": [
+      "Customer: \"Issue : SSL Certificate Validation Error for forum.virginplus.ca\"",
+      "Customer: \"Impact: Users won\u2019t be able to login virgin plus community forum\"",
+      "CSV: Ticket Created=2025-12-16 12:03:51",
+      "CSV: Ticket Solved=2025-12-16 12:03:55",
+      "CSV: Ticket Closed=2025-12-16 12:03:55"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no evidence of meaningful waiting time or customer complaints about delays; the ticket lifecycle is extremely short per the CSV timestamps.",
+    "evidence": [
+      "CSV: resolutionTime=4",
+      "CSV: Ticket Created=2025-12-16 12:03:51",
+      "CSV: Ticket Solved=2025-12-16 12:03:55"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears to have been closed within seconds of creation while describing an active incident with user impact, and no resolution/next steps are visible in the interaction log. This is consistent with premature closure (even if remediation occurred off-ticket, it is not evidenced here).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-12-16 12:03:51",
+      "CSV: Ticket Closed=2025-12-16 12:03:55",
+      "Customer: \"Impact: Users won\u2019t be able to login virgin plus community forum\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reports an SSL certificate validation error preventing users from logging in, which indicates a potentially high-severity service outage. Solving/closing the ticket almost immediately at L1 with no documented incident handling or escalation shown suggests possible P1/Sev1 mishandling (severity is inferred from impact, so some uncertainty remains).",
+    "evidence": [
+      "Customer: \"Issue : SSL Certificate Validation Error for forum.virginplus.ca\"",
+      "Customer: \"Impact: Users won\u2019t be able to login virgin plus community forum\"",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: Ticket Solved=2025-12-16 12:03:55",
+      "CSV: Ticket Closed=2025-12-16 12:03:55"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60264368
+}

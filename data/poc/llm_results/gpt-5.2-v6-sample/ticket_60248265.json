@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer asked for concrete information about the cloud migration process, support assistance, and professional services costs, but the final response did not provide those details and instead redirected to Sales and closed the ticket. While this may be the correct routing, it reads like a non-answer to the specific questions, which is a quality gap (uncertain if Sales truly owns all requested info).",
+    "evidence": [
+      "Centralsupport-ai-acc commented privately: \"The customer (Antonio Orellano) is requesting additional information about migrating their instance to the cloud. Specifically, he wants to understand what the migration process involves, what type of assistance we can provide during the migration, and whether there are any associated professional service costs.\"",
+      "Andriy Rybalchenko commented publicly: \"Please reach out directly to sales@ignitetech.com to proceed with the next steps, including feasibility and pricing discussions.\"",
+      "Andriy Rybalchenko commented publicly: \"As there are no actions left with the Support Team, we\u2019ll proceed with the ticket closure.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer was trapped in an AI loop or unable to reach a human; the customer received human-written public replies and did not request escalation to a human agent.",
+    "evidence": [
+      "Andriy Rybalchenko commented publicly: \"Dear Antonio, Thank you for your patience... We\u2019ll update you as soon as we get news to share.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The ticket context explicitly lists specific migration questions (process, support assistance, professional services costs), but the resolution message does not address them and effectively defers without acknowledging/answering the substance. This suggests the provided context was not fully acted on (or was bypassed) before closing.",
+    "evidence": [
+      "Centralsupport-ai-acc commented privately: \"...he wants to understand what the migration process involves, what type of assistance we can provide during the migration, and whether there are any associated professional service costs.\"",
+      "Andriy Rybalchenko commented publicly: \"Please reach out directly to sales@ignitetech.com to proceed with the next steps, including feasibility and pricing discussions.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were notable delays before meaningful customer-facing progress: the ticket was created on Nov 21, but the first public update appears on Nov 26, and the customer explicitly followed up asking for an update. The CSV also shows a long initial response time and multi-day resolution time.",
+    "evidence": [
+      "CSV: initialResponseTime=85485",
+      "CSV: resolutionTime=414328",
+      "Customer (Antonio Orellano) commented privately: \"Would like to follow-up this request.\"",
+      "Ticket timeline: created \"2025-11-21 14:50:41\" vs first public reply \"2025-11-26T09:15:17+00:00\" (multi-day gap)"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed after redirecting the customer to Sales, despite the original request being for information and assistance details; this can be premature if the customer still needed guidance from Support. The agent explicitly stated they would close because Support had no actions left, and the CSV confirms the ticket is closed.",
+    "evidence": [
+      "Andriy Rybalchenko commented publicly: \"As there are no actions left with the Support Team, we\u2019ll proceed with the ticket closure.\"",
+      "CSV: Status=closed",
+      "Centralsupport-ai-acc commented privately: \"...requesting additional information about migrating their instance to the cloud... what the migration process involves... what type of assistance... and whether there are any associated professional service costs.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The ticket concerns migration planning and pricing/feasibility, not an outage or urgent production impact, and there is no indication of P1/Sev1 severity or missed emergency escalation.",
+    "evidence": [
+      "Centralsupport-ai-acc commented privately: \"...requesting additional information about migrating their instance to the cloud...\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60248265
+}

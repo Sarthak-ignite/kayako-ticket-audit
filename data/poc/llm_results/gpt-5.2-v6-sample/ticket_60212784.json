@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response is generic and does not actually progress the customer\u2019s request beyond telling them to pick options. It also promises a human will assist, but the ticket appears to have been solved/closed shortly after with no further visible human follow-up in the provided interactions.",
+    "evidence": [
+      "Customer: \"I'd like to open a ticket\"",
+      "AI Assistant: \"A human colleague will be happy to assist you further\u2014please feel free to choose from the available options to continue.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-10-02 21:39:02"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer\u2019s intent is to reach support by opening a ticket, and the AI responds with a handoff-style message that requires the customer to \"choose from the available options\" without any visible path to a human in the transcript. This suggests potential AI-gating/friction to reaching a human, though the evidence is limited to a single exchange.",
+    "evidence": [
+      "Customer: \"I'd like to open a ticket\"",
+      "AI Assistant: \"A human colleague will be happy to assist you further\u2014please feel free to choose from the available options to continue.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is not enough context in the ticket beyond the single customer request, and the AI does acknowledge that the customer wants to open a ticket. No clear repetition demand or contradiction of provided details is shown.",
+    "evidence": [
+      "Customer: \"I'd like to open a ticket\"",
+      "AI Assistant: \"Thanks for letting me know you'd like to open a ticket!\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket remains open for ~79 minutes from creation to solve/close with no additional visible support interaction beyond the initial AI message. This can indicate a meaningful gap in agent response/engagement, although the transcript may be incomplete.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-02 20:19:29",
+      "CSV: Ticket Solved=2025-10-02 21:39:02",
+      "CSV: resolutionTime=4773"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved/closed shortly after the AI\u2019s generic handoff message, with no evidence in the provided interactions that the customer\u2019s request was fulfilled or that a human actually assisted. This strongly suggests closure occurred without resolution (or at least without documented resolution).",
+    "evidence": [
+      "AI Assistant: \"A human colleague will be happy to assist you further\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-02 21:39:02",
+      "CSV: Level Solved=L1 Agent"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No indication of an outage, urgent business impact, or severity level is present in the customer\u2019s message or CSV fields provided, so P1/SEV1 mishandling cannot be supported.",
+    "evidence": [
+      "Customer: \"I'd like to open a ticket\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60212784
+}

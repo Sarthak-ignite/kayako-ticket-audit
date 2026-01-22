@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response shown does not address the customer\u2019s reported functional problem (log/protocol unresponsive and 404 on Details) and instead pivots to a license-key confirmation. That is a likely relevance/quality failure, though the rest of the AI conversation is truncated so we can\u2019t confirm whether it later provided a correct fix.",
+    "evidence": [
+      "Customer: \"Das Protokoll ist gest\u00f6rt. Es reagiert nicht mehr auf Filtereingaben. Beim Klick auf \\\"Details\\\" erscheint \\\"404 not found\\\"\"",
+      "AI Assistant: \"I have this license key on record: ... Just to make sure we're on the same page - is this the same system you're reaching out about today?\"",
+      "Customer-facing log: \"Thanks for chatting earlier with our AI Support! ... Here is a record of your conversation\"",
+      "...[truncated]..."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence in the provided excerpt that the customer was stuck in a loop or asked for a human, nor that the AI refused escalation. The conversation is truncated, so looping could have occurred later, but it\u2019s not supported by the visible text.",
+    "evidence": [
+      "Customer-facing log: \"If I'm not able to resolve your issue, I can connect you with one of our support specialists...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer clearly reports a UI/feature failure (filters not responding; 404 on Details), but the next visible AI message focuses on license-key confirmation rather than acknowledging the specific symptoms or asking targeted diagnostic questions. This suggests the AI did not engage with the context already provided.",
+    "evidence": [
+      "Customer: \"Das Protokoll ist gest\u00f6rt. Es reagiert nicht mehr auf Filtereingaben. Beim Klick auf \\\"Details\\\" erscheint \\\"404 not found\\\"\"",
+      "AI Assistant: \"I have this license key on record... is this the same system you're reaching out about today?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There are no explicit customer complaints about waiting or visible long response gaps in the provided interaction excerpt. The CSV shows the ticket existed for ~2 hours, but that alone isn\u2019t strong evidence of response delays without message timestamps showing gaps or wait complaints.",
+    "evidence": [
+      "CSV: resolutionTime=7416",
+      "CSV: Ticket Created=2025-11-13 22:32:19",
+      "CSV: Ticket Closed=2025-11-14 00:35:55"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed shortly after creation, but the visible conversation shows a problem report with no shown resolution steps or confirmation of a fix. Because the chat transcript is truncated, this is somewhat uncertain, but recall-first suggests flagging the risk of closure without demonstrated resolution.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-11-13 22:32:19",
+      "CSV: Ticket Closed=2025-11-14 00:35:55",
+      "Customer: \"... erscheint \\\"404 not found\\\"\"",
+      "...[truncated]..."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reports core UI functionality degradation (log/protocol page not responding and returning 404), which could indicate a service-impacting defect. The only visible response is a license-key check rather than urgent triage/escalation, so there is a potential severity mishandling\u2014however, impact scope (single user vs. system-wide outage) is not confirmed in the excerpt.",
+    "evidence": [
+      "Customer: \"Das Protokoll ist gest\u00f6rt. Es reagiert nicht mehr auf Filtereingaben. Beim Klick auf \\\"Details\\\" erscheint \\\"404 not found\\\"\"",
+      "AI Assistant: \"I have this license key on record... is this the same system you're reaching out about today?\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60242868
+}

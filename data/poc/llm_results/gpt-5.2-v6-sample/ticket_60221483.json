@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The interaction shown is heavily generic/filler-like and does not demonstrate the AI actually addressing the user\u2019s specific request (Atlas access) before the ticket is closed. Because the transcript is truncated, it\u2019s possible the AI responded appropriately, but the available evidence suggests the user may not have received actionable help.",
+    "evidence": [
+      "\u201cWalk me through what's happening or select from the below frequent requests.\u201d",
+      "\u201cDon't hold back on the details\u2026 the better equipped I'll be to assist you.\u201d",
+      "Customer: \u201cI need access to Atlas. my email is zhaddad@graphisoft.com.\u201d",
+      "CSV: resolutionTime=59"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear indication the customer was stuck in a repetitive AI loop or that they requested escalation to a human and were blocked. The excerpt only shows the AI\u2019s initial intake prompt and the customer\u2019s first request.",
+    "evidence": [
+      "\u201cIf I'm unable to help you, I can patch you through to a Live agent\u2026\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer provides a clear, specific request (access to Atlas + email), but the ticket appears to be closed almost immediately, with no visible acknowledgment or next-step questions tied to that context. Because the transcript is truncated, this is somewhat uncertain, but the closure timing supports the possibility that the provided context wasn\u2019t acted upon.",
+    "evidence": [
+      "Customer: \u201cI need access to Atlas. my email is zhaddad@graphisoft.com.\u201d",
+      "CSV: Ticket Updated=2025-10-15 07:53:27",
+      "CSV: Ticket Closed=2025-10-15 07:53:27",
+      "CSV: resolutionTime=59"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no evidence of waiting or delays; the ticket lifecycle is extremely short and there are no customer complaints about response time. The CSV indicates resolution within about a minute.",
+    "evidence": [
+      "CSV: resolutionTime=59",
+      "CSV: timeSpentOpenL1=0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved/closed within ~1 minute, immediately after the customer requested Atlas access, with no visible resolution or confirmation that access was granted. This strongly suggests the ticket may have been closed before the customer\u2019s need was met (though the transcript truncation adds minor uncertainty).",
+    "evidence": [
+      "Customer: \u201cI need access to Atlas. my email is zhaddad@graphisoft.com.\u201d",
+      "CSV: Ticket Solved=2025-10-15 07:53:26",
+      "CSV: Ticket Closed=2025-10-15 07:53:27",
+      "CSV: Status=closed",
+      "CSV: resolutionTime=59"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "Nothing indicates a Sev1/P1 incident (e.g., outage, widespread impact, revenue-critical downtime). The request appears to be an access/provisioning issue rather than an urgent service disruption.",
+    "evidence": [
+      "Customer: \u201cI need access to Atlas\u2026\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60221483
+}

@@ -17,52 +17,20 @@ from __future__ import annotations
 import json
 import re
 from collections import Counter, defaultdict
-from pathlib import Path
 from typing import Any, Optional
 
 import pandas as pd
 
-
-REPO_ROOT = Path(__file__).resolve().parent
-
-PATTERNS_FILE = REPO_ROOT / "IgniteTech_Khoros_GFI - Central Support Issues we see in tickets - Patterns.csv"
-UNIVERSE_FILE = REPO_ROOT / "Full_Ticket_Data_1767638152669.csv"
-OVERRIDES_FILE = REPO_ROOT / "data/poc/ground_truth_overrides.json"
-
-OUT_CSV = REPO_ROOT / "data/poc/ground_truth_expected.csv"
-OUT_JSON = REPO_ROOT / "data/poc/ground_truth_expected.json"
-
-OUR_PATTERNS = [
-    "AI_QUALITY_FAILURES",
-    "AI_WALL_LOOPING",
-    "IGNORING_CONTEXT",
-    "RESPONSE_DELAYS",
-    "PREMATURE_CLOSURE",
-    "P1_SEV1_MISHANDLING",
-]
-
-# Fuzzy map from pattern text in Patterns.csv -> consolidated label
-PATTERN_MAPPING = {
-    "hermes answers are just a filler": "AI_QUALITY_FAILURES",
-    "ai (atlas/hermes) provides wrong information": "AI_QUALITY_FAILURES",
-    "ai is promissing": "AI_QUALITY_FAILURES",
-    "customer is expressing frustation": "AI_QUALITY_FAILURES",
-    "support agents are not checking past similar tickets": "IGNORING_CONTEXT",
-    "after customer provided all the information": "IGNORING_CONTEXT",
-    "feedback on shared patch": "IGNORING_CONTEXT",
-    "with multiple issue reported in single ticket": "IGNORING_CONTEXT",
-    "support does not recognize recurring issue patterns": "IGNORING_CONTEXT",
-    "customer get's locked in an \"ai wall\"": "AI_WALL_LOOPING",
-    "ai is requesting same information": "AI_WALL_LOOPING",
-    "tickets being closed  after 7 days": "PREMATURE_CLOSURE",
-    "chat conversations are closed prematuraly": "PREMATURE_CLOSURE",
-    "ai resolution is high because customer give up": "PREMATURE_CLOSURE",
-    "slow ai/agent resposnes with gaps": "RESPONSE_DELAYS",
-    "ticket automation malfunctioning": "RESPONSE_DELAYS",
-    "ai/atlas responds to sev1/p1 outages with generic": "P1_SEV1_MISHANDLING",
-    "support consistently begins with customer environment investigation": "P1_SEV1_MISHANDLING",
-    "sev1/p1 platform issues spend multiple days": "P1_SEV1_MISHANDLING",
-}
+from config import (
+    PATTERNS_CSV as PATTERNS_FILE,
+    FULL_TICKET_DATA_CSV as UNIVERSE_FILE,
+    GROUND_TRUTH_OVERRIDES as OVERRIDES_FILE,
+    GROUND_TRUTH_CSV as OUT_CSV,
+    GROUND_TRUTH_JSON as OUT_JSON,
+    OUR_PATTERNS,
+    PATTERN_TEXT_MAPPING as PATTERN_MAPPING,
+    ensure_dirs,
+)
 
 TICKET_ID_RE = re.compile(r"\b\d{6,9}\b")
 
@@ -77,10 +45,23 @@ def _clean(v: Any) -> Optional[str]:
 
 
 def map_pattern_to_label(pattern_text: str) -> Optional[str]:
+    """
+    Map a pattern description text to a canonical label.
+
+    Uses longest-match-first to avoid ambiguity when multiple needles
+    could match (e.g., "ai" vs "ai wall"). Sorted by needle length
+    descending ensures more specific patterns match first.
+
+    Returns None if no match found.
+    """
     p = (pattern_text or "").strip().lower()
     if not p:
         return None
-    for needle, label in PATTERN_MAPPING.items():
+
+    # Sort by needle length descending (longest match first) for determinism
+    sorted_mappings = sorted(PATTERN_MAPPING.items(), key=lambda x: len(x[0]), reverse=True)
+
+    for needle, label in sorted_mappings:
         if needle in p:
             return label
     return None
@@ -163,18 +144,61 @@ def main() -> None:
 
     # Apply overrides (keep/remove/add). If an override references a ticket in-universe
     # that wasn't seeded by Patterns.csv, we'll still include it with an empty base.
+    #
+    # Semantics:
+    # - "keep": Replace entire label set (mutually exclusive with remove/add)
+    # - "remove": Remove labels from current set
+    # - "add": Add labels to current set
+    #
+    # Validation: "keep" cannot be combined with "remove" or "add"
+    override_warnings: list[str] = []
+
     for tid, rule in overrides.items():
         if tid not in universe:
             continue
         if tid in excluded:
             continue
+
+        has_keep = "keep" in rule
+        has_remove = "remove" in rule
+        has_add = "add" in rule
+
+        # Validate: "keep" is mutually exclusive with "remove"/"add"
+        if has_keep and (has_remove or has_add):
+            override_warnings.append(
+                f"Ticket {tid}: 'keep' combined with 'remove'/'add' - using 'keep' only"
+            )
+            has_remove = False
+            has_add = False
+
         expected.setdefault(tid, set())
-        if "keep" in rule:
-            expected[tid] = set(rule["keep"])
-        if "remove" in rule:
-            expected[tid] -= set(rule["remove"])
-        if "add" in rule:
-            expected[tid] |= set(rule["add"])
+
+        if has_keep:
+            # Validate labels in "keep"
+            invalid_labels = set(rule["keep"]) - set(OUR_PATTERNS)
+            if invalid_labels:
+                override_warnings.append(
+                    f"Ticket {tid}: invalid labels in 'keep': {invalid_labels}"
+                )
+            expected[tid] = set(rule["keep"]) & set(OUR_PATTERNS)
+        else:
+            if has_remove:
+                expected[tid] -= set(rule["remove"])
+            if has_add:
+                # Validate labels in "add"
+                invalid_labels = set(rule["add"]) - set(OUR_PATTERNS)
+                if invalid_labels:
+                    override_warnings.append(
+                        f"Ticket {tid}: invalid labels in 'add': {invalid_labels}"
+                    )
+                expected[tid] |= set(rule["add"]) & set(OUR_PATTERNS)
+
+    if override_warnings:
+        print(f"\nWARNING: Override validation issues ({len(override_warnings)}):")
+        for w in override_warnings[:20]:
+            print(f"  - {w}")
+        if len(override_warnings) > 20:
+            print(f"  ... ({len(override_warnings) - 20} more)")
 
     # Build output
     rows = []

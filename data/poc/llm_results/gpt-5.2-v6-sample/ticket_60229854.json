@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no explicit evidence that an AI assistant (ATLAS/Hermes) produced low-quality, incorrect, repetitive, or promise-breaking responses in this ticket. The provided interaction content is entirely customer-authored and does not show an AI reply.",
+    "evidence": [
+      "Customer: \"Our previous request[#60169878] ... has been closed without resolution\"",
+      "CSV: resolutionTime=2"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer reports difficulty opening tickets via the portal and that the support phone number did not help, but there is no direct indication they were trapped in an AI chat loop or repeatedly blocked by an AI system. This appears to be an access/support-channel issue rather than an AI wall.",
+    "evidence": [
+      "Customer: \"we are currently unable to open a new ticket through the support portal. we\u2019re receiving an error\"",
+      "Customer: \"the phone number provided for DNN Technical Support (+1 972-587-7883) has not been helpful\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The ticket appears to have been solved/closed almost immediately after creation, despite the customer providing clear context about a prior unresolved ticket and inability to open a new case. This strongly suggests the content/context was not reviewed before closure (though the agent\u2019s actual response text is not shown).",
+    "evidence": [
+      "Customer: \"Our previous request[#60169878] ... has been closed without resolution\"",
+      "Customer: \"Could you please advise on the best way to reach your support team or reopen our existing case?\"",
+      "CSV: Ticket Created=2025-10-27 14:07:14",
+      "CSV: Ticket Solved=2025-10-27 14:07:16",
+      "CSV: Ticket Closed=2025-10-27 14:07:16"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no evidence of a meaningful response delay within this ticket; the lifecycle is effectively instantaneous per the CSV. While the customer references ongoing issues historically, they do not explicitly complain about waiting for a response in this specific ticket\u2019s timeline.",
+    "evidence": [
+      "CSV: resolutionTime=2",
+      "CSV: Ticket Created=2025-10-27 14:07:14",
+      "CSV: Ticket Closed=2025-10-27 14:07:16"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved and closed within seconds of being created, even though the customer is actively requesting help to reopen/escalate an unresolved prior case and cannot open new tickets. This is consistent with an auto-close or premature closure while the customer still needs support.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-10-27 14:07:14",
+      "CSV: Ticket Solved=2025-10-27 14:07:16",
+      "CSV: Ticket Closed=2025-10-27 14:07:16",
+      "Customer: \"has been closed without resolution\"",
+      "Customer: \"we are currently unable to open a new ticket\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer describes a support-access problem and a prior unresolved technical issue, but there is no clear indication of a production outage, safety/security incident, or explicitly stated critical business impact requiring P1/Sev1 handling. Severity/urgency signals are insufficient to label this as Sev1 mishandling.",
+    "evidence": [
+      "Customer: \"Still same issues, we appreciate if you could provide working session to resolve this issue.\"",
+      "Customer: \"Liquid Content Migration Request for Stage Environment\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60229854
+}

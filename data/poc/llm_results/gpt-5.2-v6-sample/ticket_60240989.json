@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer asked a straightforward question about the upgrade path from 9.2 to 9.5, but the AI immediately pivoted to license-key verification, which appears irrelevant to the question and may indicate poor adaptation to the customer\u2019s intent. Because the conversation is truncated, this is somewhat uncertain, but the visible response suggests misalignment.",
+    "evidence": [
+      "Customer: \"what is the correct upgrade path from version 9.2 to 9.5\"",
+      "AI Assistant: \"I have this license key on record... Just to make sure we're on the same page - is this the same system you're reaching out about today?\"",
+      "AI Assistant: \"It's important to have to correct license file, as it could influence the resolution.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The ticket record shows only the AI chat transcript and no evidence of a human agent interaction, while the ticket is marked solved/closed quickly with L1 timeSpentOpen at 0\u2014this can indicate the customer may have been effectively kept in an AI-only flow. There is no explicit customer request for a human in the visible text, so this is inferred/uncertain.",
+    "evidence": [
+      "CSV: timeSpentOpenL1=0",
+      "CSV: timeSpentOpenL2=0",
+      "Kayako - ticket id 60240989 // ATLAS commented publicly: \"Thanks for chatting earlier with our AI Support!... Here is a record of your conversation\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI response does not directly address the customer\u2019s stated need (upgrade path from 9.2 to 9.5) and instead asks about the license key/system identity. This suggests the AI may be ignoring or not properly using the context provided by the customer\u2019s question.",
+    "evidence": [
+      "Customer: \"what is the correct upgrade path from version 9.2 to 9.5\"",
+      "AI Assistant: \"I have this license key on record... is this the same system you're reaching out about today?\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket remained open for about 72 minutes (resolutionTime 4344 seconds). While not necessarily excessive, in a recall-first mode this qualifies as a potentially meaningful delay since we cannot see whether the customer was waiting for a human follow-up during that period.",
+    "evidence": [
+      "CSV: resolutionTime=4344",
+      "CSV: Ticket Created=2025-11-11 21:25:04",
+      "CSV: Ticket Closed=2025-11-11 22:37:28"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked solved/closed with no visible evidence that the customer received the requested upgrade-path answer or confirmed resolution. Additionally, timeSpentOpenL1/L2 are 0, which can indicate an auto-resolution/closure without substantive support engagement (uncertain due to truncated conversation).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-11-11 22:37:28",
+      "CSV: Ticket Closed=2025-11-11 22:37:28",
+      "CSV: timeSpentOpenL1=0",
+      "Customer: \"what is the correct upgrade path from version 9.2 to 9.5\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of a production outage, security incident, or other high-severity (P1/Sev1) impact in the provided text or CSV context; the request is informational about an upgrade path.",
+    "evidence": [
+      "Customer: \"what is the correct upgrade path from version 9.2 to 9.5\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60240989
+}

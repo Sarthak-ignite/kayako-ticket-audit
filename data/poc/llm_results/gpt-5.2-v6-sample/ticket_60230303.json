@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The only AI content shown is an intake/chat-to-ticket transcript that asks reasonable routing questions and captures the issue description. There is no clear evidence the AI provided incorrect, misleading, or repetitive guidance or made unfulfilled promises.",
+    "evidence": [
+      "Kayako - ticket id 60230303 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat:",
+      "AI Assistant: \"Thanks! To create the ticket, I\u2019ll need a few more details: * Are you raising this for yourself ... or on behalf of a customer? * Brief subject ... * Full description ...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer appears to have successfully raised a ticket through the AI flow without indicating they were stuck in a loop or unable to reach a human. No request for a human agent or complaints about being blocked by AI are present.",
+    "evidence": [
+      "Customer (Lucy Liu): Button selection: [\ud83d\udce9 Raise a Ticket]",
+      "Kayako - ticket id 60230303 // ATLAS commented privately: Action: l1"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support\u2019s visible response references actions consistent with the reported symptoms (restart, clear cache, reload plugins) and asks the requester to re-test. There is not enough evidence that the agent ignored prior details or forced unnecessary repetition.",
+    "evidence": [
+      "Santhosh M commented publicly: \"I\u2019ve restarted the Atlas production instance, cleared the backend cache, and reloaded the plugins. Please check and let us know if you\u2019re still able to reproduce the issue.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a substantial gap between ticket creation (Oct 28) and the first agent update/action (Nov 3), suggesting a delayed handling. The CSV also indicates a long overall resolution time, supporting that meaningful progress may have been slow.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-28 01:06:35",
+      "Santhosh M commented privately: \"Initiated a restart as a part of https://jira.dev.lithium.com/browse/PDR-151323.\" (timestamp 2025-11-03T13:05:08+00:00)",
+      "CSV: initialResponseTime=13431",
+      "CSV: resolutionTime=1171866"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The customer reported a remaining issue (moderation tab slow/not loading) after support\u2019s fix, but the ticket was later marked solved/closed with no additional support response shown to address the new/remaining problem. This suggests closure may have occurred while the customer still needed help.",
+    "evidence": [
+      "Customer commented publicly (2025-11-05T21:25:04+00:00): \"However the moderation tab takes a long while to load or not load at all. https://community.khoros.com/managecontent?tab=moderation\"",
+      "CSV: Ticket Solved=2025-11-10 14:37:41",
+      "CSV: Ticket Closed=2025-11-13 15:35:57",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was raised with high priority and describes production-impacting failures (pages not loading without reload, content sections blank), yet the timeline shows multi-day delays before action and a long overall resolution time. Severity level (true P1/SEV1) is not explicitly confirmed, so this is flagged with some uncertainty as potential mishandling given the impact described and response latency.",
+    "evidence": [
+      "Customer (via intake): \"It's happened consistently on pc and on mobile ... the recent posts is completely blank ... wouldn't appear until i reload the page.\"",
+      "Customer (via intake): \"The reload is a workaround but it is extremely taxing when you're trying to click into different forums\"",
+      "AI transcript: \"What's the priority of the issue?\" / Customer: \"[\ud83d\udfe0 High]\"",
+      "CSV: initialResponseTime=13431",
+      "CSV: resolutionTime=1171866"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60230303
+}

@@ -1,0 +1,64 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI interaction appears incomplete: it only collected priority and then asked the customer to pick an instance URL, with no captured follow-up, troubleshooting, or resolution. The ticket was then solved/closed almost immediately, suggesting the AI-led flow did not deliver a meaningful support outcome.",
+    "evidence": [
+      "ATLAS commented privately: \"Thanks for chatting earlier with our AI Support! ... Here is a record of your conversation\"",
+      "AI Assistant: \"What's the priority of the issue?\"",
+      "Customer button selection: \"[\ud83d\udfe0 High]\"",
+      "AI Assistant: \"I found instance URLs on file. Please select yours or provide a different one:\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The only recorded interaction is with the AI assistant and the ticket closes right after, with no evidence of a human agent taking over. While there is no explicit customer request for a human or repeated looping prompts, the flow may have effectively blocked escalation to a person (uncertain due to limited transcript).",
+    "evidence": [
+      "ATLAS commented privately: \"Thanks for chatting earlier with our AI Support!\"",
+      "AI Assistant: \"I found instance URLs on file. Please select yours or provide a different one:\"",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: Ticket Solved=2025-12-09 15:41:56",
+      "CSV: Ticket Closed=2025-12-09 15:41:57"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is not enough evidence that support ignored information already provided by the customer. The transcript is very short and does not show the customer providing details that were then disregarded.",
+    "evidence": [
+      "AI Assistant: \"What's the priority of the issue?\"",
+      "AI Assistant: \"I found instance URLs on file. Please select yours or provide a different one:\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No meaningful response delays are visible: the ticket lifecycle is roughly a minute, and there are no customer complaints about waiting.",
+    "evidence": [
+      "CSV: Ticket Created=2025-12-09 15:40:45",
+      "CSV: Ticket Closed=2025-12-09 15:41:57",
+      "CSV: resolutionTime=71"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved and closed within ~71 seconds with no captured resolution, and the only content is an AI transcript that ends mid-triage (instance URL selection). This strongly suggests closure occurred before the customer\u2019s issue was actually addressed.",
+    "evidence": [
+      "AI Assistant: \"I found instance URLs on file. Please select yours or provide a different one:\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-12-09 15:41:56",
+      "CSV: Ticket Closed=2025-12-09 15:41:57",
+      "CSV: resolutionTime=71"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer selected a high priority, yet the ticket was handled and closed almost immediately with no documented mitigation, escalation, or investigation. This may indicate high-severity handling was inadequate (uncertain because the actual impact/outage details are not provided).",
+    "evidence": [
+      "Customer button selection: \"[\ud83d\udfe0 High]\"",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: resolutionTime=71",
+      "CSV: Status=closed"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60259640
+}

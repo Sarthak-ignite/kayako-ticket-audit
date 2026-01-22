@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS gave irrelevant guidance (asking for logs/screenshots upload) for a vendor due diligence documentation request, and later sent repetitive, templated messages. The automation also repeatedly attempted to run a compliance-documents package that explicitly halted for this GFI product, indicating the AI workflow wasn\u2019t adapted to the ticket context.",
+    "evidence": [
+      "AI Assistant: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\" (for a due diligence docs request)",
+      "ATLAS (public): \"could you kindly clarify the name of the specific document(s) you require\" (sent despite the customer already requesting financial + cyber/data security policies)",
+      "ATLAS (public) sent essentially the same clarification request twice within minutes on 2025-12-03 (08:02 and 08:17)",
+      "Cu Chulainn Operation Summary: \"Execution completed. Error: This is a GFI ticket (GFI - FaxMaker Online), halting the execution.\" (repeated multiple times)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer encountered repeated AI-driven prompts for clarification and automation/hold cycles, which can feel like being stuck in a loop rather than progressing to resolution. While the customer did not explicitly request a human, the repeated ATLAS messages and on-hold cycles suggest a looped experience.",
+    "evidence": [
+      "ATLAS (public): \"could you please clarify the name(s) of the document(s) you specifically require\"",
+      "ATLAS (public) duplicated message on 2025-12-03 08:17: \"could you please clarify the name(s) of the document(s) you specifically require\"",
+      "Kayako Automations: \"Given the above, I have put the ticket on hold.\"",
+      "Centralsupport-ai-acc: \"Placing on hold for 168 hour(s)\" (multiple times)"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS requested the customer clarify which documents they needed even though the customer had already stated they needed financial reports and cyber/data security policies. This forced repetition and did not acknowledge the initial, explicit request content.",
+    "evidence": [
+      "Customer: \"We need GFI FaxMaker's financial report, Cyber and Data security policies and any other vendor due diligence they provide.\"",
+      "ATLAS (public): \"To proceed, could you kindly clarify the name of the specific document(s) you require for your due diligence?\"",
+      "ATLAS (public): \"could you please clarify the name(s) of the document(s) you specifically require\" (repeated again)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays and multiple customer follow-ups asking for updates. The structured metrics also show very long initial response and overall resolution times for a straightforward documentation request.",
+    "evidence": [
+      "Customer (2025-11-18): \"I am just checking in for an update on this ticket.\"",
+      "Customer (2025-11-24): \"Just checking in for an update on this ticket.\"",
+      "CSV: initialResponseTime=85290",
+      "CSV: resolutionTime=2138754"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The agent/AI messaging included a closure/auto-closure warning (\u201ckeep open for one more week\u201d / \u201cticket will stay open for one week unless\u2026\u201d) while the customer was still awaiting required vendor due diligence documentation. The ticket was ultimately closed only after the customer asked to close it, so this is more of a closure-pressure signal than a confirmed premature closure outcome.",
+    "evidence": [
+      "ATLAS (public): \"If you need additional time to gather these details, please note that we will keep this ticket open for one more week.\"",
+      "ATLAS (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Closed\"",
+      "Customer: \"Thank you. You can close out this ticket.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "This ticket concerns vendor due diligence/compliance documentation requests, not an outage or critical production incident. There is no indication of P1/Sev1 impact or missed urgent escalation for a service-down scenario.",
+    "evidence": [
+      "Customer: \"My company is preforming their vendor due diligence. We need GFI FaxMaker's financial report, Cyber and Data security policies...\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60243726
+}

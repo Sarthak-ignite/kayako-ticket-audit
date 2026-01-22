@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI interaction appears generic and potentially misaligned to the user, starting with an \"internal employees\" menu and boilerplate content rather than addressing an actual issue. While not provably incorrect, this can indicate low-quality or poorly targeted AI handling (uncertain due to limited transcript).",
+    "evidence": [
+      "\u201cWelcome to the menu for internal employees.\u201d",
+      "\u201cPlease note: The AI Support Agent is very smart and helpful, but like any GenAI assistant, he may provide incorrect responses from time to time.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The transcript shows a short intake flow (raise ticket \u2192 priority \u2192 request instance URL) with no evidence of repeated looping, refusal to route to a human, or the customer asking for a human.",
+    "evidence": [
+      "\u201cWhat's the priority of the issue?\u201d",
+      "\u201cCould you please provide the Khoros instance URL related to this issue?\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "There is no clear instance of support ignoring information already provided; the AI asked for the instance URL, and the customer had not provided it in the visible content.",
+    "evidence": [
+      "\u201cCould you please provide the Khoros instance URL related to this issue? This URL is necessary to properly identify and troubleshoot the problem.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket stayed open for ~1 hour 36 minutes (resolutionTime=5792 seconds). Given the customer selected High priority, this could indicate a meaningful delay/slow handling, though there are no explicit customer complaints (uncertain).",
+    "evidence": [
+      "CSV: resolutionTime=5792",
+      "CSV: Ticket Created=2025-11-14 12:23:21",
+      "CSV: Ticket Closed=2025-11-14 13:59:53",
+      "\u201cButton selection: [\ud83d\udfe0 High]\u201d"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed shortly after creation with no visible troubleshooting, resolution, or confirmation from the customer that the issue was solved. This strongly suggests closure occurred before the customer\u2019s need was addressed.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-11-14 12:23:21",
+      "CSV: Ticket Closed=2025-11-14 13:59:53",
+      "The only captured interaction is AI intake questions ending with: \u201cCould you please provide the Khoros instance URL related to this issue?\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer indicated High priority, but the ticket shows no evidence of expedited handling, escalation, or active troubleshooting before closure. This may reflect mishandling of a potentially high-severity issue, though true P1/SEV1 impact is not explicitly stated (uncertain).",
+    "evidence": [
+      "\u201cButton selection: [\ud83d\udfe0 High]\u201d",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-11-14 13:59:53"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60243234
+}

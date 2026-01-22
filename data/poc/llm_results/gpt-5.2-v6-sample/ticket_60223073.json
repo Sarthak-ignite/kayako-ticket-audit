@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The interaction shown is mostly boilerplate guidance and a request for more details, with no visible troubleshooting steps or resolution before the ticket is immediately solved/closed. Because the conversation is truncated, this is somewhat uncertain, but the extremely fast solve/close suggests the AI/support flow did not actually address the reported issue.",
+    "evidence": [
+      "Customer: \"I'm unable to open the license details tab on GFI Appmanager web\"",
+      "CSV: resolutionTime=59",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: Status=closed"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped in a loop, repeatedly prompted, or explicitly requested a human agent. The visible portion shows only an initial intake prompt.",
+    "evidence": [
+      "AI Assistant: \"Please select from the below or give me a detailed description of what\u2019s happening.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "In the visible content, the customer provides the issue once and there is no subsequent agent response that ignores it or asks them to repeat prior details. The record is too short/truncated to confirm context was ignored.",
+    "evidence": [
+      "Customer: \"I'm unable to open the license details tab on GFI Appmanager web\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No meaningful time gaps or complaints about waiting are present, and the ticket lifecycle is under a minute.",
+    "evidence": [
+      "CSV: resolutionTime=59",
+      "CSV: Ticket Created=2025-10-16 22:17:44",
+      "CSV: Ticket Closed=2025-10-16 22:18:44"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved and closed within ~1 minute despite the customer reporting an ongoing functional problem, and there is no visible evidence of a fix or confirmation from the customer. This strongly suggests the case was closed before ensuring resolution (possibly auto-closure after the AI chat record).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-10-16 22:17:44",
+      "CSV: Ticket Solved=2025-10-16 22:18:43",
+      "CSV: Ticket Closed=2025-10-16 22:18:44",
+      "Customer: \"I'm unable to open the license details tab on GFI Appmanager web\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer reports inability to open a specific tab, but there is no explicit indication of a full outage, production-down impact, or urgent severity requiring P1/Sev1 escalation.",
+    "evidence": [
+      "Customer: \"I'm unable to open the license details tab on GFI Appmanager web\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60223073
+}

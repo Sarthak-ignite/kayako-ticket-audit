@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The automated phone system appears to repeatedly reject the caller\u2019s input and replays the same options, suggesting poor automation behavior and failure to route the customer effectively. Additionally, the internal automation note indicates the system skipped handling due to tags, which may indicate low-quality automation/triage (uncertain whether this is strictly \u201cAI,\u201d but it is automated behavior impacting support quality).",
+    "evidence": [
+      "\"(Machine to +15705844508) You can only press numbers from 1 to 9.... Let me repeat the options....\"",
+      "\"(Machine to +15705844508) You can only press numbers from 1 to 9.... Let me repeat the options....\"",
+      "\"ATLAS commented privately: Skipping ticket due to tags\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The call transcript shows the caller repeatedly encountering the same automated menu/error message, consistent with being stuck in an automated loop and not successfully progressing to assistance/human routing.",
+    "evidence": [
+      "\"Thank you for calling GFI Support Line.... If you are calling to get support on Archiver, Press 1... For FaxMaker, Press 3...\"",
+      "\"You can only press numbers from 1 to 9.... Let me repeat the options....\"",
+      "\"You can only press numbers from 1 to 9.... Let me repeat the options....\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Internal notes indicate the full conversation would be uploaded but the ticket content provided does not include it, and an automation entry shows the ticket was skipped due to tags. This suggests the available context may not have been incorporated into handling/triage (some uncertainty because the record may be truncated).",
+    "evidence": [
+      "\"The complete conversation with this customer will be uploaded to this ticket shortly.\"",
+      "\"This ticket was created for logging purposes.\"",
+      "\"ATLAS commented privately: Skipping ticket due to tags\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been marked solved almost immediately after creation per CSV timestamps, with no visible customer-facing wait or complaint about delays in the provided content.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-20 19:34:39",
+      "CSV: Ticket Solved=2025-10-20 19:34:58",
+      "CSV: timeSpentOpenL1=0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved within seconds and later closed, yet it was explicitly noted that the full conversation would be uploaded later and the ticket was for logging. Closing a ticket with incomplete/absent conversation details can indicate premature closure/documentation completion issues (uncertain whether customer still needed help, but closure seems procedurally premature given the note).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-10-20 19:34:58",
+      "CSV: Ticket Closed=2025-10-23 20:36:51",
+      "\"The complete conversation with this customer will be uploaded to this ticket shortly.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of severity level, outage, or urgent business impact in the provided ticket content or CSV fields, so mishandling of a P1/SEV1 cannot be reasonably inferred.",
+    "evidence": [
+      "CSV: Product=FaxMaker",
+      "\"This ticket was created for logging purposes.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60225246
+}

@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS/AI failed to generate or locate the license even though the license/serial existed, causing the customer to be blocked and requiring manual intervention. An internal note explicitly questions why the chatbot could not find it.",
+    "evidence": [
+      "Customer: \"I can not use your AI chat for this as it says it can not locate a license for Serial number 45873.\"",
+      "Customer: \"Ive tried when i opened this and today for both emergency license and Demo license all with the same results.\"",
+      "Matthew Mrosko (private): \"No idea why the ATLAS chat one couldn't find it.  It's there.\"",
+      "Matthew Mrosko (private): \"It's weird, the request just ends after finding a partial match with the previous license.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer reports being unable to proceed via the AI channel because it could not locate the license, effectively blocking self-service and forcing escalation to get help. While the ticket was opened, the experience indicates the AI path was a dead-end for the needed action.",
+    "evidence": [
+      "ATLAS ticket generation: \"Unable to get an emergency license for 45873 for CGX with hardwareID XgIUlSoAqbLA.\"",
+      "Customer: \"I can not use your AI chat for this as it says it can not locate a license for Serial number 45873.\"",
+      "Issue description: \"open a ticket please\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer repeated the same detailed request multiple times over several days before action was taken, suggesting the provided context may not have been acted on promptly. This is somewhat indirect (could be backlog rather than explicit disregard), but the repeated identical messages indicate a likely failure to engage with already-provided details.",
+    "evidence": [
+      "Customer (2025-11-07): \"Can we please get an emergency license cut for CGX with serial number 45873 and hardwareID XgIUlSoAqbLA with 10 users on version 2023.6.1?\"",
+      "Customer (2025-11-10): \"Please, Please, Please can we get an emergency license for CGX with serial number 45873 and hardwareID XgIUlSoAqbLA with 10 users on version 2023.6.1?\"",
+      "Centralsupport-ai-acc: \"The customer message is:No Response\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There was a long gap between ticket creation and a meaningful support response, prompting the customer to complain of no response and escalate. The structured data also indicates a multi-day resolution time.",
+    "evidence": [
+      "CSV: Ticket Created=2025-11-03 16:39:45",
+      "CSV: Ticket Solved=2025-11-11 08:09:28",
+      "Centralsupport-ai-acc: \"The customer message is:No Response\"",
+      "Customer (2025-11-10): \"Please, Please, Please...\" (repeat request indicating waiting)",
+      "CSV: resolutionTime=660583"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket appears to have been solved by providing the requested emergency license key, and there is no evidence the customer reported ongoing issues after the solution. Closure occurred after the license details were delivered.",
+    "evidence": [
+      "Matthew Mrosko (public): \"Please find below the details for your new Xinet license key that you can start using immediately.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-14 08:43:23"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The case was escalated as a complete outage, yet it took about a week from creation to resolution, which is inconsistent with high-severity handling. The customer explicitly escalated due to no response.",
+    "evidence": [
+      "Centralsupport-ai-acc: \"The severity is: complete_outage\"",
+      "Centralsupport-ai-acc: \"The customer message is:No Response\"",
+      "CSV: Ticket Created=2025-11-03 16:39:45",
+      "CSV: Ticket Solved=2025-11-11 08:09:28"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60234884
+}

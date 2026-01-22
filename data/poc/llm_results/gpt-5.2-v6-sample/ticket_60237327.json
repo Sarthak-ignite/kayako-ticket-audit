@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided transcript is truncated before the AI provides any substantive troubleshooting or guidance, so there isn\u2019t enough evidence to conclude the AI gave wrong/misleading content or failed to deliver on promises. The visible content is mostly greeting/onboarding text.",
+    "evidence": [
+      "Kayako - ticket id 60237327 // ATLAS commented privately: Thanks for chatting earlier with our AI Support! ...",
+      "Walk me through what's happening or select from the below frequent requests."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no explicit evidence the customer was stuck in an AI loop, repeatedly redirected, or requested a human agent. The excerpt shows only the initial AI prompt and the customer\u2019s initial issue statement.",
+    "evidence": [
+      "If I'm unable to help you, I can patch you through to a Live agent...",
+      "--- Customer (Patrick OBrien) --- One member has access to start an article on a blog that he has no permissions for"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No agent responses are shown that would demonstrate the support flow ignored previously provided details or forced the customer to repeat information. The record cuts off before any back-and-forth occurs.",
+    "evidence": [
+      "--- Customer (Patrick OBrien) --- One member has access to start an article on a blog that he has no permissions for",
+      " ...[truncated]..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The CSV timestamps indicate the ticket was created, solved, and closed within about a minute, so there is no sign of waiting delays or long response gaps.",
+    "evidence": [
+      "CSV: Ticket Created=2025-11-06 11:05:35",
+      "CSV: Ticket Solved=2025-11-06 11:06:40",
+      "CSV: Ticket Closed=2025-11-06 11:06:41",
+      "CSV: resolutionTime=65"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears to have been solved/closed almost immediately after creation, while the only visible customer content is an initial problem statement and there is no visible resolution or confirmation. This strongly suggests the case may have been closed before the customer\u2019s access/permissions issue was actually addressed (uncertain due to truncation).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-11-06 11:05:35",
+      "CSV: Ticket Solved=2025-11-06 11:06:40",
+      "CSV: Ticket Closed=2025-11-06 11:06:41",
+      "--- Customer (Patrick OBrien) --- One member has access to start an article on a blog that he has no permissions for"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue described is a permissions/access anomaly affecting a specific member, not an outage or broadly service-impacting incident, and there is no evidence of urgent severity signals or missed escalation requirements.",
+    "evidence": [
+      "--- Customer (Patrick OBrien) --- One member has access to start an article on a blog that he has no permissions for",
+      "CSV: Product=Khoros Classic Community"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60237327
+}

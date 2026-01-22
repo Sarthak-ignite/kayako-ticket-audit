@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS appears to provide a generic troubleshooting suggestion (enabling HTTPS decryption) without context on prerequisites (e.g., certificate deployment) or potential side effects, which can lead to breakage and confusion. The customer reports that enabling decryption causes multiple sites and email to stop working, suggesting the AI guidance may have been incomplete or misleading (though this is somewhat uncertain because the full ATLAS transcript is truncated).",
+    "evidence": [
+      "Customer: \"donde veo esto? Ve a Configuration > SSL y verifica si tienes habilitado el HTTPS Decryption\"",
+      "Customer: \"active la opcion descifrar y filtrar trafico pero sigo pudiendo acceder\"",
+      "Customer: \"Regarding HTTPS filtering, if I activate the option that says \\\"decrypt and filter HTTPS traffic,\\\" many pages like itau.com.uy stop working for me, and the same happens when sending emails.\"",
+      "ATLAS transcript note: \"...[truncated]...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly asks to contact a person, indicating difficulty or dissatisfaction with the AI-only interaction and a desire to reach a human. This is a direct signal of an AI wall experience.",
+    "evidence": [
+      "Customer: \"puedo crear una solicitud de contacto con una persona?\"",
+      "Customer: \"si\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The human agent\u2019s responses generally build on the provided screenshots and then request specific logs/support info to continue. There is no clear evidence that support forced repetition of already-provided information or ignored explicit prior details within the ticket.",
+    "evidence": [
+      "Mike Kebede: \"Based on the screenshots you provided, the filtering rule is not being applied...\"",
+      "Mike Kebede: \"If the site is still accessible, I will need the Support Information File and a short Traffic Log sample...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a multi-day gap after the agent\u2019s last request for logs (Dec 4) until the ticket is marked solved/closed (Dec 11\u201314), indicating potential delay or stalled handling. The CSV also indicates a relatively long resolution time.",
+    "evidence": [
+      "Mike Kebede (2025-12-04): \"To continue the investigation, we need the Support Information file and a short set of Debug logs...\"",
+      "CSV: Ticket Updated=2025-12-14 15:35:34",
+      "CSV: Ticket Solved=2025-12-11 14:43:18",
+      "CSV: resolutionTime=775241"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support states the ticket will stay open for one week unless the customer replies, and the ticket ultimately closes without any evidence the customer confirmed resolution or provided the requested logs. This suggests the case may have been auto-closed or closed due to inactivity while the customer\u2019s issue could still be unresolved.",
+    "evidence": [
+      "Mike Kebede: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-14 15:35:35",
+      "Customer: \"I don't know where I can get the support file you mentioned.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue described is related to web/content filtering behavior and HTTPS inspection side effects, but it is not clearly presented as a P1/Sev1 outage requiring urgent escalation. No explicit business-critical downtime or emergency impact is stated.",
+    "evidence": [
+      "Customer: \"Las politicas no se estan aplicando...\"",
+      "Customer: \"many pages like itau.com.uy stop working for me, and the same happens when sending emails.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60254579
+}

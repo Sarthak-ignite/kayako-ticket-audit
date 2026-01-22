@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI does not begin troubleshooting the reported post-upgrade multi-server failure and instead pivots immediately to a licensing-eligibility check, which can be perceived as unhelpful or misprioritized given the technical symptom described. The interaction shown contains mostly boilerplate/intake language rather than problem-solving steps (the conversation is truncated, so this assessment is based on the visible portion).",
+    "evidence": [
+      "Customer: \"we recently updated mailessentials from 22.1 to 22.2 . our multi-server setup is not working now. im unable to set the slave server\"",
+      "AI Assistant: \"Based on your stated intent, it is mandatory that we check the support eligibility through the product license \ud83d\udd11 before moving forward\"",
+      "AI Assistant: \"Please select from the below or give me a detailed description of what\u2019s happening. Any error messages you\u2019ve seen or steps you\u2019ve already tried would be really helpful.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The visible interaction suggests the customer is engaging only with ATLAS and is being gated by a mandatory license check before any troubleshooting, which can create a 'stuck with AI' experience. There is no explicit customer request for a human in the provided excerpt, so this is flagged based on the gating behavior and lack of shown handoff.",
+    "evidence": [
+      "Kayako public log: \"Thanks for chatting earlier with our AI Support!... --- AI Assistant ---\"",
+      "AI Assistant: \"it is mandatory that we check the support eligibility through the product license... before moving forward\"",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: timeSpentOpenL1=0"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "After the customer clearly states the issue (multi-server setup broken after upgrade; cannot set slave server), the AI does not acknowledge or use those details to ask targeted diagnostic questions and instead changes course to license verification. This indicates the provided context is not being meaningfully acted upon in the shown portion.",
+    "evidence": [
+      "Customer: \"we recently updated mailessentials from 22.1 to 22.2 . our multi-server setup is not working now. im unable to set the slave server\"",
+      "AI Assistant: \"Based on your stated intent, it is mandatory that we check the support eligibility through the product license... before moving forward\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket remained open for ~108 minutes (resolutionTime 6491 seconds) from creation to closure, which may indicate delays in achieving resolution (no explicit wait complaint is shown). Given recall-first criteria, the duration alone is treated as potential evidence of response/handling delay.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-05 06:47:56",
+      "CSV: Ticket Closed=2025-10-05 08:36:07",
+      "CSV: resolutionTime=6491"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed, but in the visible conversation the customer reports a still-unresolved configuration break after upgrade and there is no shown troubleshooting outcome or confirmation of resolution before closure (the conversation is truncated, so this is flagged with uncertainty).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-05 08:36:07",
+      "Customer: \"our multi-server setup is not working now. im unable to set the slave server\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "A multi-server setup failure immediately after an upgrade can represent a high-severity service impact, yet the AI response shown prioritizes license eligibility gating rather than rapid containment/restoration steps or escalation. Severity is not explicitly stated, so this is flagged based on the potential impact implied by 'multi-server setup is not working.'",
+    "evidence": [
+      "Customer: \"our multi-server setup is not working now\"",
+      "Customer: \"im unable to set the slave server\"",
+      "AI Assistant: \"it is mandatory that we check the support eligibility through the product license... before moving forward\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60214082
+}

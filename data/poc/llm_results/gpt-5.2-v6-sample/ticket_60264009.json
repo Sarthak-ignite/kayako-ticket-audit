@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is evidence of ATLAS automation choosing not to process the ticket (\u201cskipping due to tags\u201d), which can indicate an automation/AI workflow failure to handle or triage the case. The ticket also appears to have been created to log a call but lacks the promised uploaded conversation, suggesting the automated/support process did not complete what was implied (uncertain if AI-related beyond ATLAS).",
+    "evidence": [
+      "Kayako - ticket id 60264009 // ATLAS commented privately: Skipping ticket due to tags",
+      "Kayako - ticket id 60264009 // Xavier A Villarroel commented privately: The complete conversation with this customer will be uploaded to this ticket shortly.",
+      "Kayako - ticket id 60264009 // Xavier A Villarroel commented privately: This ticket was created for logging purposes."
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The call flow shows repeated IVR prompts indicating the caller could not successfully input an option and was repeatedly replayed the menu, which is consistent with being stuck in a loop and difficulty reaching a human/support path.",
+    "evidence": [
+      "[ MESSAGE ] : (Machine to +14136293927) Thank you for calling GFI Support Line.... If you are calling to get support on Archiver, Press 1.... For LanGuard, Press 7....",
+      "[ MESSAGE ] : (Machine to +14136293927) You can only press numbers from 1 to 9.... Let me repeat the options....",
+      "[ MESSAGE ] : (Machine to +14136293927) You can only press numbers from 1 to 9.... Let me repeat the options...."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The ticket contains minimal substantive troubleshooting context beyond call metadata and an internal note about uploading a conversation. There is no clear agent response that ignores customer-provided details or asks the customer to repeat information already given.",
+    "evidence": [
+      "Kayako - ticket id 60264009 // Xavier A Villarroel commented privately: This ticket was created for logging purposes."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket shows essentially immediate 'solved' timing in the CSV and no customer-facing thread indicating waiting or delays. While the ticket remained in a closed state for several days, there is no evidence of delayed support interaction impacting the customer within this record.",
+    "evidence": [
+      "CSV: Ticket Created=2025-12-15 23:49:36",
+      "CSV: Ticket Solved=2025-12-15 23:49:59",
+      "CSV: timeSpentOpenL1=0"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was marked solved within seconds and later closed, yet the internal note says the full conversation would be uploaded 'shortly'\u2014which is not present in the provided record. This suggests the case may have been closed without completing the intended documentation/workflow (uncertain whether the underlying customer need was still open since the ticket is described as 'logging purposes').",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-12-15 23:49:59",
+      "Kayako - ticket id 60264009 // Xavier A Villarroel commented privately: The complete conversation with this customer will be uploaded to this ticket shortly.",
+      "CSV: resolutionTime=23"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No information indicates an outage, critical business impact, or severity level requiring P1/Sev1 handling. The content is primarily IVR/call metadata and logging notes without any stated urgent technical impact.",
+    "evidence": [
+      "CSV: Product=LanGuard",
+      "Kayako - ticket id 60264009 // Xavier A Villarroel commented privately: This ticket was created for logging purposes."
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60264009
+}

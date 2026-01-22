@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only visible AI content is generic onboarding/filler (tips, disclaimers, upload prompt) without any actual troubleshooting or resolution steps shown. Given the ticket was then closed by L1, this suggests the AI interaction may not have delivered meaningful help (though the transcript is truncated, so confidence is moderate).",
+    "evidence": [
+      "Customer: \"Button selection:\" [\ud83d\udd27 I need Technical Support]",
+      "AI Assistant: \"Walk me through what's happening or select from the below frequent requests.\"",
+      "AI Assistant: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no direct evidence that the customer was stuck in an AI loop or explicitly asked for a human agent. The provided interaction shows only the initial AI intake prompts and is truncated.",
+    "evidence": [
+      "AI Assistant: \"If I'm unable to help you, I can patch you through to a Live agent...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI asks for details (\u201cWalk me through what's happening\u201d) immediately after the customer selected \u201cI need Technical Support,\u201d but no evidence shows the AI leveraging any existing problem description or context before prompting again. Because the conversation is truncated, this is somewhat uncertain, but the visible behavior suggests context was not yet captured/used.",
+    "evidence": [
+      "Customer: \"Button selection:\" [\ud83d\udd27 I need Technical Support]",
+      "AI Assistant: \"Walk me through what's happening... Don't hold back on the details\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket\u2019s resolution time is ~5,174 seconds (~1h 26m), which indicates a non-trivial elapsed time before closure. Even though there are no explicit customer complaints about waiting in the visible text, the timing supports a potential delay signal (uncertain without full message timestamps).",
+    "evidence": [
+      "CSV: resolutionTime=5174",
+      "CSV: Ticket Created=2025-12-16 11:13:23",
+      "CSV: Ticket Solved=2025-12-16 12:39:37"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed quickly after an AI intake prompt, with no visible confirmation of issue resolution or customer acknowledgment. This strongly suggests the ticket may have been closed without completing troubleshooting (confidence moderate due to truncated conversation).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: Ticket Closed=2025-12-16 12:39:37",
+      "AI Assistant: \"Walk me through what's happening...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication in the provided content that this was a P1/Sev1 incident (no outage language, business-critical impact, or urgency cues). Therefore, mishandling of a high-severity case cannot be substantiated.",
+    "evidence": []
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60264386
+}

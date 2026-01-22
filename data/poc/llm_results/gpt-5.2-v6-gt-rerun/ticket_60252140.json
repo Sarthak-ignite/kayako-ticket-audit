@@ -1,0 +1,61 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The ticket was initially created via ATLAS, but the provided transcript mainly shows basic intake prompts and routing to L1 rather than clearly wrong/misleading technical guidance. Subsequent troubleshooting and conclusions were provided by human agents. There is not enough direct evidence that ATLAS produced poor-quality or incorrect troubleshooting in this case.",
+    "evidence": [
+      "Kayako - ticket id 60252140 // ATLAS commented privately: Here is a transcript of the customer's recent interaction with ATLAS chat: ... \"If I'm not able to resolve your issue, I can connect you with one of our support specialists...\"",
+      "Kayako - ticket id 60252140 // ATLAS commented privately: Action: l1"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested a remote session, indicating they were trying to move to more direct human help after providing many logs. Support repeatedly declined the remote session and redirected the customer back to gathering yet another fresh set of logs, which can reasonably feel like a loop (even if humans are responding).",
+    "evidence": [
+      "Customer: \"Hi keyur, can we request a remote session for this issue?\"",
+      "Customer: \"May we request a remote session so you can check and verify the issue directly?\"",
+      "Agent: \"Before we analyze the logs reproducing the issue and additional diagnostic data, a remote session is not needed and won't be productive.\"",
+      "Customer: \"HI, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support made at least one incorrect assumption about the customer's evidence and had to be corrected, suggesting they did not fully process the context provided. Additionally, the customer had already provided logs and was still repeatedly asked for more/another set, reinforcing a sense of not leveraging existing information (though some of this may be justified as requesting 'fresh' logs).",
+    "evidence": [
+      "Agent: \"Your video confirms these updates are installed in Windows Update.\"",
+      "Customer: \"Hi Ibiso, just to clarify, the video was taken on my machine, not on the client\u2019s machine. On the client\u2019s side... mentioned that the remediation was not successful.\"",
+      "Customer: \"Hi, I\u2019ve already uploaded the logs to the FTP folder. Kindly check them.\"",
+      "Agent: \"Please upload the same log archive in this SFTP location created specifically for this ticket...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were notable response gaps, and the customer explicitly followed up multiple times asking for updates. The CSV also shows a long initial response time and very long overall resolution time, supporting delayed handling.",
+    "evidence": [
+      "CSV: initialResponseTime=50884",
+      "CSV: resolutionTime=2341799",
+      "Customer: \"Hi is there any updates for this?\"",
+      "Customer: \"Hello, good day i just want to follow up this ticket\"",
+      "Customer: \"Hi, any update on this.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in the CSV, but the last visible exchanges show the customer still seeking additional assistance (remote session) and no explicit confirmation of resolution. Repeated \u201cticket will stay open for one week unless\u2026\u201d messages also function as closure pressure while the issue appears ongoing.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-28 08:35:02",
+      "Customer: \"HI, i already send a lot of logs here in the case ticket that's why the client want also to have a remote session if it's possible\"",
+      "Agent: \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue (deployment timeouts/incomplete status) is impactful, but there is no explicit indication of a P1/SEV1 outage (e.g., production down, broad service interruption, critical security incident requiring immediate action). The handling appears slow at times, but severity level and urgency are not evidenced as P1/SEV1 in the ticket content.",
+    "evidence": [
+      "Customer: \"GFI LanGuard deployment timeout for large package\"",
+      "Customer: \"Just to add, the auto-remediation is not working as well.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60252140
+}

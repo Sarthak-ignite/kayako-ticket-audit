@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only captured interaction is generic onboarding/filler from the AI agent with no problem diagnosis, troubleshooting, or resolution content. Given the ticket was solved/closed almost immediately afterward, this suggests the AI interaction did not meaningfully progress toward solving an issue (or at minimum, provides no actionable support in the record).",
+    "evidence": [
+      "\u201cWalk me through what's happening or select from the below frequent requests.\u201d",
+      "\u201cDon't hold back on the details \u2013 the more you can share about the issue... the better equipped I'll be to assist you.\u201d",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: resolutionTime=82"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped in an AI loop, asked for a human, or had difficulty reaching an agent. The transcript only shows the AI\u2019s initial prompt and an offer to patch through if needed, but no customer pushback is present.",
+    "evidence": [
+      "\u201cIf I'm unable to help you, I can patch you through to a Live agent...\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "No customer problem statement or context is visible in the ticket content provided, so it cannot be shown that support ignored previously provided details or forced repetition.",
+    "evidence": [
+      "\u201cWalk me through what's happening...\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The ticket lifecycle is extremely short (about ~82 seconds resolution time), and there are no customer complaints about waiting or visible response gaps.",
+    "evidence": [
+      "CSV: Ticket Created=2025-12-08 15:41:27",
+      "CSV: Ticket Solved=2025-12-08 15:42:49",
+      "CSV: resolutionTime=82"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved and closed almost immediately after creation with no documented troubleshooting, diagnosis, or customer confirmation of resolution in the visible conversation. This strongly suggests an auto-close or premature closure while the customer may still have needed help (uncertain due to missing customer messages, but closure timing is a red flag).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-12-08 15:41:27",
+      "CSV: Ticket Solved=2025-12-08 15:42:49",
+      "CSV: Ticket Closed=2025-12-08 15:42:50",
+      "CSV: resolutionTime=82"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of outage/critical impact, severity level, or urgency cues in the provided transcript/CSV context, so P1/SEV1 mishandling cannot be supported.",
+    "evidence": [
+      "CSV: Product=Khoros Flow"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60258751
+}

@@ -1,0 +1,57 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "The provided transcript is truncated right after the customer states the issue, so there isn\u2019t enough visible AI output to judge whether the AI gave an incorrect/misleading answer, repeated itself, or failed to deliver on promised help.",
+    "evidence": [
+      "Customer: \"When we receive a comment under one of our posts on tiktok that contains an image, that image does not flow through khoros care. Why?\"",
+      "Private note shows transcript is truncated: \"...[truncated]...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer tried to reach a human, complained about being stuck with the AI, or experienced looping/repetitive prompts. The excerpt only shows the AI intro and the customer\u2019s initial question.",
+    "evidence": [
+      "AI: \"If I'm unable to help you, I can patch you through to a Live agent...\"",
+      "Customer: \"...that image does not flow through khoros care. Why?\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The excerpt does not show any back-and-forth where support ignores previously provided details or forces repetition. Only the initial customer problem statement is visible.",
+    "evidence": [
+      "Customer: \"...comment...on tiktok that contains an image, that image does not flow through khoros care.\"",
+      "Transcript visibility issue: \"...[truncated]...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No waiting complaints or large gaps are visible, and the CSV indicates the ticket was opened and closed within about a minute. This suggests fast handling rather than delays.",
+    "evidence": [
+      "CSV: resolutionTime=64",
+      "CSV: Ticket Created=2025-10-31 14:56:33",
+      "CSV: Ticket Closed=2025-10-31 14:57:37"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears to have been solved/closed almost immediately after creation, while the only visible customer content is an unresolved \u201cWhy?\u201d question. Because the transcript is truncated, it\u2019s possible the AI resolved it, but the available evidence strongly suggests closure without demonstrated resolution.",
+    "evidence": [
+      "Customer: \"...that image does not flow through khoros care. Why?\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-10-31 14:56:33",
+      "CSV: Ticket Solved=2025-10-31 14:57:37",
+      "CSV: Ticket Closed=2025-10-31 14:57:37",
+      "Private note indicates incomplete visibility: \"...[truncated]...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue described (TikTok comment images not flowing into Khoros Care) could be impactful, but there is no evidence it was treated as an outage/urgent incident, no severity language, and no missed escalation signals in the provided excerpt/CSV.",
+    "evidence": [
+      "Customer: \"...image does not flow through khoros care.\"",
+      "CSV: Level Solved=L1 Agent"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60233341
+}

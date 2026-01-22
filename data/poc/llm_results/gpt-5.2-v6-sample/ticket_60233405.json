@@ -1,0 +1,56 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI response appears to introduce potentially risky/overreaching technical guidance (e.g., scraping configuration/store files via grep/PowerShell) and includes a long, generic \u201crevised solutions\u201d playbook that may not be appropriate or validated. While the core claim (domain-specific groups) may be correct, the workaround guidance quality is questionable based on what\u2019s shown.",
+    "evidence": [
+      "\u201cKerio Connect groups are domain-specific - you can't add users from different domains to a single group.\u201d",
+      "\u201cDepending on your OS, you can extract all email addresses from Kerio's configuration:\u201d",
+      "\u201cLinux: cd /opt/kerio/mailserver/store grep -r \"<loginName>\" . ... > all_users_emails.txt\u201d",
+      "\u201cWindows (PowerShell): cd \"C:\\Program Files\\Kerio\\MailServer\\store\" Select-String ... > all_users_emails.txt\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped in an AI loop, repeatedly routed back to AI, or explicitly requested a human agent. The ticket text only shows a single AI-chat transcript being posted to the ticket.",
+    "evidence": [
+      "\u201cThanks for chatting earlier with our AI Support!... Here is a record of your conversation for easy reference:\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI appears to assume additional context/requirements not stated by the customer in the visible ticket text (e.g., urgency and that the goal is sending a maintenance notification). This suggests the AI may be hallucinating or not strictly responding to the customer\u2019s stated problem about cross-domain group membership.",
+    "evidence": [
+      "Customer: \u201cI can't add users from a different domain to a group, the functionality isn't there!\u201d",
+      "AI: \u201cSince you need to send this maintenance notification soon, this is your quickest path:\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No customer complaint about waiting is present, and the ticket lifecycle appears to complete within a few hours. The provided timestamps do not strongly indicate a meaningful response delay.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-31 14:37:08",
+      "CSV: Ticket Closed=2025-10-31 16:54:35",
+      "CSV: resolutionTime=8247"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was marked solved and closed at essentially the same moment it was updated, with no visible confirmation from the customer that the provided information/workaround resolved their need. Given the only visible interaction is an AI transcript, closure may have occurred without validating resolution.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Updated=2025-10-31 16:54:34",
+      "CSV: Ticket Solved=2025-10-31 16:54:35",
+      "CSV: Ticket Closed=2025-10-31 16:54:35",
+      "\u201cThanks for chatting earlier with our AI Support!... record of your conversation...\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue described is a product limitation/feature behavior (cross-domain group membership) rather than a clear outage or severe production incident. There is no indication of widespread downtime, data loss, or urgent business-critical impact requiring escalation.",
+    "evidence": [
+      "Customer: \u201cI can't add users from a different domain to a group, the functionality isn't there!\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60233405
+}

@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responded to a billing/payment-reminder issue with generic troubleshooting prompts about uploading logs/screenshots, which appears irrelevant and unhelpful for the described finance inquiry. This suggests low-quality/templated AI behavior rather than a targeted billing support flow.",
+    "evidence": [
+      "Customer: \"received a mail about billing not being received\"",
+      "ATLAS: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was unable to reach a human, asked for a human, or got stuck in a repeated AI loop. The transcript shows ATLAS handing off to L1 actions, and a human ultimately replied publicly.",
+    "evidence": [
+      "ATLAS: \"If you're unable to find a solution through our interaction, you will be guided through the steps to get additional support.\"",
+      "Kayako // ATLAS commented privately: \"Action: l1\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The agent response aligns with the customer\u2019s stated issue (confirming payment/no pending invoices). No explicit signs appear that support asked the customer to repeat already-provided details or overlooked key context within the ticket.",
+    "evidence": [
+      "Private note (issue description): \"need to get in touch with sales or finance to validate\"",
+      "Agent (public): \"We can confirm that the payment has been received and you have no pending invoices from us.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a long gap between ticket creation (Sep 30) and the first substantive human response (Oct 28), suggesting a significant response delay. The overall resolution time in CSV is also very large, reinforcing slow handling.",
+    "evidence": [
+      "CSV: Ticket Created=2025-09-30 08:47:20",
+      "First public agent reply timestamp: \"[2025-10-28T12:04:02+00:00]\"",
+      "CSV: resolutionTime=3037707"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The agent message includes a closure condition (\u201cwill stay open for one week unless you reply...\u201d), and the ticket is marked closed in CSV with no customer confirmation shown. This may indicate auto-closure/closure-pressure without explicit customer sign-off (uncertain because we cannot see whether the customer was satisfied).",
+    "evidence": [
+      "Agent (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-07 13:36:26"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue is billing/payment reminder verification and does not indicate an outage, data loss, or mission-critical service interruption requiring P1/Sev1 escalation.",
+    "evidence": [
+      "Private note (issue description): \"received a mail about billing not being received\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60210131
+}

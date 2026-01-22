@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is evidence of low-quality guidance that was later contradicted internally as not addressing the real root cause (DLL replacement vs Outlook detection/MAPI). While it\u2019s not explicitly labeled as AI-generated, the incorrect/irrelevant remediation provided to the customer functioned as misleading support content. Additionally, a later reply to the customer was effectively filler and did not address the customer\u2019s reported failure or question.",
+    "evidence": [
+      "Toluwani (public): \"To resolve this issue, please complete the steps below: ... Extract the attached DLL files ... regsvr32.exe Redemption.dll ... Redemption64.dll\"",
+      "Amir (private): \"The suggestion solution about redemption.dll ... was already resolved with rchiver 14.2 and they are on much later 15.6.\"",
+      "Amir (private): \"The issue is NOT about Redemption DLLs! The logs reveal the real problem: ... Outlook detection.\"",
+      "Zubair (public): \"You can test and let us know if you have any more questions.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The ticket shows multiple human agents responding and troubleshooting, and there is no clear customer complaint about being unable to reach a human or being stuck in an AI loop. The initial ATLAS interaction escalated into an L1 action and then human handling. No explicit requests for \u201ca human/agent\u201d or signs of repeated AI gating are present.",
+    "evidence": [
+      "ATLAS (private): \"Action: l1\"",
+      "Toluwani (public): \"Thank you for contacting the GFI Archiver Support Team.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly stated earlier that they were already running imports from separate servers with Outlook installed and tried both 32-bit and 64-bit tools, but support responses did not fully incorporate that context, prompting the customer to restate it. There is also an internal acknowledgement that an agent likely missed the customer\u2019s latest message and replied inappropriately.",
+    "evidence": [
+      "Customer (private): \"I have 2 servers separate from the GFI application server that i am trying to do the import from, these servers have outlook 2019 installed on them\"",
+      "Customer (private): \"I stated in my previous pst that i am using 2 servers with outlook 2019 installed on them to do the import ... i have tried running the 32 bit and 64 bit\"",
+      "Amir (private): \"Howcome reply of this can be this, maybe Zubair didn't see the latest reply.\"",
+      "Zubair (public): \"You can test and let us know if you have any more questions.\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured data shows a very long initial response time, consistent with a significant delay before a meaningful agent response. This is supported by the timeline: ticket creation on 2025-12-19 and first substantive public support reply on 2025-12-20.",
+    "evidence": [
+      "CSV: initialResponseTime=115867",
+      "CSV: Ticket Created=2025-12-19 15:20:32",
+      "Toluwani (public) timestamp: \"[2025-12-20T23:31:39+00:00]\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Agents repeatedly included a one-week auto-closure warning while the customer was still actively troubleshooting and reporting failed results, which can function as premature closure pressure. There is also internal workflow discussion about changing status back due to \u201cno response\u201d even though the customer later responded and the issue remained unresolved.",
+    "evidence": [
+      "Toluwani (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"\"",
+      "Pavly (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\"\"",
+      "Sandeep (private): \"Not received any response from User, so kindly change the Status back to pending.\"",
+      "Customer (private): \"did not work\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue appears to be a PST import crash/problem with the Import/Export tool rather than a system-wide outage or critical business-stopping incident explicitly described as urgent. There is no stated production outage, revenue impact, or explicit request for emergency escalation that would indicate P1/SEV1 handling requirements.",
+    "evidence": [
+      "Customer: \"I am trying to import pst files into GFI and the import app is giving me errors\"",
+      "Customer: \"32 crashes after i select the pst file to add.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60267287
+}

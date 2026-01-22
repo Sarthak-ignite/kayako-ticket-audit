@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The only agent-side action is an ATLAS private note immediately closing the ticket as \u201cnon-billable,\u201d with no visible attempt to understand or respond to the customer-facing message. This may indicate low-quality handling/triage by automation, though the customer message itself is ambiguous and could be informational rather than a help request.",
+    "evidence": [
+      "Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: Status=closed"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no evidence the customer was trapped in an AI loop or asked to reach a human; the ticket contains a single customer comment and then closure.",
+    "evidence": [
+      "Customer: Aven Saren ... commented publicly: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The ticket appears to be closed without any public acknowledgement or action on the customer\u2019s message, which can be interpreted as ignoring the only context provided. However, the customer text reads like an unsubscribe instruction and may not have required support action, so this is somewhat uncertain.",
+    "evidence": [
+      "Customer: Aven Saren ... commented publicly: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com.",
+      "Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable",
+      "CSV: Status=closed"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "No meaningful delay is indicated; the ticket was created and closed within seconds, and there are no customer complaints about waiting.",
+    "evidence": [
+      "CSV: Ticket Created=2025-12-01 14:44:09",
+      "CSV: Ticket Closed=2025-12-01 14:44:34",
+      "CSV: resolutionTime=24"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed almost immediately after the customer\u2019s public comment, with only a private closure note and no visible public resolution/confirmation to the customer. This creates a reasonable risk of premature closure if the customer actually needed help (e.g., unsubscribing).",
+    "evidence": [
+      "Kayako - ticket id 60253689 // ATLAS commented privately: Closing as non-billable",
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-12-01 14:44:33",
+      "CSV: Ticket Closed=2025-12-01 14:44:34"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of an outage, high-severity incident, or urgent business impact in the provided ticket content or metadata.",
+    "evidence": [
+      "Customer: Aven Saren ... commented publicly: To unsubscribe from this group and stop receiving emails from it, send an email to support+unsubscribe@khoros.com."
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60253689
+}

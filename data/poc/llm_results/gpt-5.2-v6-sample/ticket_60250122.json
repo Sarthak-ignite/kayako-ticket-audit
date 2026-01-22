@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS provided long, generic troubleshooting content and then posted a second very similar response shortly after, which reads repetitive and not well-tailored. The guidance leans heavily on client-side/browser causes even though the customer later confirmed it reproduces in incognito and across multiple users/devices/networks, suggesting the initial AI direction may have been misleading or low-signal.",
+    "evidence": [
+      "ATLAS (public): \"This type of issue is likely related to basic authentication in staging environments... Browser Session/Cache Issues... Network or Proxy Settings...\"",
+      "ATLAS (public, ~1 minute later): \"Based on your description and the attached screenshot, here are several common causes and step-by-step troubleshooting suggestions... Browser Session and Cache Issues... Multiple Protected Resources...\"",
+      "Customer (private): \"the same issue occurs using incognito mode... multiple users are experiencing the same issue, all with different devices and connections.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer appears to have interacted primarily with ATLAS plus automation, with no clear human support engagement after the customer provided key troubleshooting results. The ticket was then placed on hold for an extreme duration (9999 hours), which can effectively trap the customer in an AI/automation-only flow without progress.",
+    "evidence": [
+      "Kayako: \"ATLAS commented publicly\" (multiple long replies) with no subsequent human public reply shown after customer\u2019s clarification",
+      "Customer (private): \"the same issue occurs using incognito mode... multiple users are experiencing the same issue\"",
+      "Centralsupport-ai-acc (private): \"Placing on hold for 9999 hour(s)\"",
+      "ATLAS (private): \"Skipping ticket due to tags\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "ATLAS posted two near-duplicate troubleshooting replies without incorporating any new context (and before gathering diagnostic specifics). After the customer provided direct answers that ruled out several suggested causes (incognito/cookies/multi-user), there is no visible tailored follow-up or acknowledgement addressing those points in the ticket timeline.",
+    "evidence": [
+      "ATLAS (public): \"Try accessing the site in an incognito/private browsing window... Check if the repeated prompt occurs across different browsers or devices.\"",
+      "Customer (private): \"the same issue occurs using incognito mode, cookies are enabled... multiple users are experiencing the same issue, all with different devices and connections.\"",
+      "No subsequent customer-facing message shown that addresses the customer\u2019s eliminations; instead automation: \"Placing on hold for 9999 hour(s)\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured data indicates a slow initial response time, and the ticket remained in a held state over a long span (from late Nov to late Dec) with automation updates but no clear customer-facing resolution. The long 'hold for 9999 hours' also indicates a major delay in meaningful progress.",
+    "evidence": [
+      "CSV: initialResponseTime=148",
+      "CSV: Ticket Created=2025-11-25 11:29:00",
+      "CSV: Ticket Updated=2025-12-27 07:31:18",
+      "Centralsupport-ai-acc (private): \"Placing on hold for 9999 hour(s)\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket itself is not shown as closed; the CSV status is 'hold' and there is no explicit closure message to the customer. A related/cloned JIRA item (AURORA-872) was closed, but the main linked issue (AURORA-840) remained the reference, so this is not clear evidence of the support ticket being prematurely closed.",
+    "evidence": [
+      "CSV: Status=hold",
+      "Santhosh M (private): \"The clone ... AURORA-872 seems to have been closed. Will link ticket with the correct LIA: ... AURORA-840\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reports the stage environment can become unusable for up to an hour due to repeated auth prompts, impacting multiple users, which could warrant urgent handling (even if stage). The handling shown is generic troubleshooting followed by long holds/queueing and multi-week elapsed time, suggesting potential under-triage or slow escalation for the described impact (uncertain severity classification).",
+    "evidence": [
+      "Customer (public): \"It's very frustrating when it won't load the page... it can continue requesting details for up to 1 hour at times.\"",
+      "Customer (private): \"multiple users are experiencing the same issue, all with different devices and connections.\"",
+      "SaaS Jira AURORA-840: \"intermittently unusable... blocked from accessing stage for up to an hour at a time.\"",
+      "Centralsupport-ai-acc (private): \"Placing on hold for 9999 hour(s)\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60250122
+}

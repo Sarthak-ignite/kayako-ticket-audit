@@ -1,0 +1,63 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is clear customer feedback that the AI guidance was not helpful and was perceived as repetitive/incorrect (e.g., focusing on whitelist when the issue was Information Store Protection). The customer also indicates the AI promised a human follow-up that did not occur, contributing to perceived low-quality support.",
+    "evidence": [
+      "Customer: \"My issues is not with the whitelist but with the Information Store Protection. We been though all these steps already with the AI bot?\"",
+      "Customer: \"The BOT AI is not helping\u2026\"",
+      "Customer: \"Wow, Same automated message as the one below. Scroll down, exact same one and from same person\"",
+      "ATLAS (public): references whitelist/blocklist KB for issue: \"Error: 'An unexpected error occurred in GFI MailEssentials configuration' when accessing the whitelist or blocklist\" while customer reports Information Store Protection page failing"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly requested to speak to a human multiple times and complained they were still interacting with AI/automation rather than a representative. This indicates the customer experienced an AI wall / difficulty reaching a human.",
+    "evidence": [
+      "Customer: \"So once again, CAN I SPEAK TO A HUMAN\u2026.This is getting tired some and going no where\u2026.\"",
+      "Customer: \"I\u2019ve been waiting for a support representative to reach out..\"",
+      "Customer: \"Not helpful\u2026 Where is my support representative who was suppose to contact me as AI said so\u2026.\"",
+      "Customer: \"STILL WAITING FOR SUPPORT..\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer repeatedly stated the problem area (Information Store Protection) and that prior steps were already done, yet the AI continued providing generic/overlapping guidance and initially anchored on a whitelist/blocklist article. This suggests the support flow did not fully incorporate the context already provided and forced repetition.",
+    "evidence": [
+      "Customer: \"My issues is not with the whitelist but with the Information Store Protection.\"",
+      "Customer: \"We been though all these steps already with the AI bot?\"",
+      "Customer: \"Like I\u2019ve stated\u2026. THIS WAS ALL done via the bot\u2026\"",
+      "ATLAS (public): \"As referenced in the article ... accessing the whitelist or blocklist\" (despite the reported failing page being isoptions.aspx / Information Store Protection)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There were significant delays and multiple customer complaints about waiting without human follow-up. The structured metrics also indicate a very long overall resolution time consistent with delayed progress/escalation.",
+    "evidence": [
+      "Customer (2025-11-06): \"So I guess support on this ticket is going to go nowhere like my last one. I\u2019ve been waiting for a support representative to reach out..\"",
+      "Customer (2025-11-12): \"STILL WAITING FOR SUPPORT..\"",
+      "Agent (2025-11-17): \"We apologize for the delay on this\"",
+      "CSV: initialResponseTime=44",
+      "CSV: resolutionTime=2493766"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The agent repeatedly used an auto-close warning ('stay open for one week unless...'), and the ticket ultimately closed without an explicit customer confirmation message like 'this can be closed' shown in the transcript. It\u2019s possible the issue was resolved, but the closure mechanism appears automated/assumptive based on the available text.",
+    "evidence": [
+      "Arafat (public): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-30 17:34:19",
+      "Customer (2025-11-20): \"Hopefully it works as expected and doesn't break what was fixed.\" (indicates ongoing monitoring rather than explicit closure approval)"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The customer stated that email flow was working and explicitly indicated they were not in a full down/outage situation, so there is insufficient evidence this was a P1/SEV1 that was mishandled. While delays occurred, the ticket content does not clearly demonstrate a production outage requiring emergency handling.",
+    "evidence": [
+      "Customer (issue description): \"Email seem to be flowing properly\"",
+      "Customer: \"Thank god I'm not in a down situation.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60231851
+}

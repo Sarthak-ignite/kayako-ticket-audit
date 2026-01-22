@@ -1,0 +1,61 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is direct customer-reported evidence that AI-based support responses were unhelpful in prior related attempts to get help, and that the chatbot was unavailable when trying to use the help center. While ATLAS did not provide customer-facing guidance in this thread (it mostly skipped), the customer experience described indicates AI support quality issues outside/around this ticket flow.",
+    "evidence": [
+      "Customer: \"She has already created tickets before and either they did not get created/no response/ or AI chatbot response that was not helpful\"",
+      "Customer: \"I finally access to this help center without receiving any help, because the chat bot is not available.\"",
+      "Interaction log: \"Kayako - ticket id 60250271 // ATLAS commented privately: Skipping ticket due to tags\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer reports difficulty getting support through normal channels, including tickets not being created, no response, and being routed to an unhelpful or unavailable chatbot. This suggests friction reaching effective human support and potential looping through automated/self-serve pathways.",
+    "evidence": [
+      "Customer: \"She has already created tickets before and either they did not get created/no response/ or AI chatbot response that was not helpful\"",
+      "Customer: \"it sent me to 'Khoros help center'. I finally access to this help center without receiving any help, because the chat bot is not available.\"",
+      "Agent: \"We sincerely apologize for the experience you had when attempting to raise a ticket.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Some responses appear to partially dismiss or under-weight the customer\u2019s prior incident history and symptoms by emphasizing \"no changes\" and implying the issue is solely on the customer side, even though the issue had recurred and the customer described a specific cross-product (Care vs Marketing) switching pattern. This is somewhat indirect, but there is enough evidence to suspect context was not fully incorporated early in the thread.",
+    "evidence": [
+      "Agent: \"I can confirm that the issue was previously resolved under case #60237228, and there have been no changes on the Khoros side...\"",
+      "Agent: \"To be clear: we did not apply any fix on our end during the last incident. The issue was resolved solely due to adjustments made by Briamel on their side\"",
+      "Customer: \"I tried to switch from Khoros Marketing to Khoros Care... finally can access to Care, then when I tried to access to Khoros Marketing ... it failed\"",
+      "Internal note: \"my current suspicion is with the Brand Key misdirecting to Care IF the customer's last access was to Care\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured metrics indicate a long overall resolution time and multi-day lifecycle before solve/close, which qualifies as a delay signal even though the customer did not explicitly complain about waiting within this thread. Given recall-first, the CSV duration is sufficient to flag potential delay risk.",
+    "evidence": [
+      "CSV: initialResponseTime=10098",
+      "CSV: resolutionTime=696807",
+      "CSV: Ticket Created=2025-11-25 15:09:16",
+      "CSV: Ticket Solved=2025-12-03 16:42:43",
+      "CSV: Ticket Closed=2025-12-06 17:37:11"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "The ticket was closed only after the customer explicitly requested closure, and there is no indication that the issue was still active at the time of closure. Although agents used standard language about closing after one week, the eventual closure aligns with customer confirmation.",
+    "evidence": [
+      "Customer (private): \"We can close this ticket.\"",
+      "Agent: \"Thank you for your message and for confirming that the issue is resolved. As requested, we are closing this ticket.\"",
+      "CSV: Status=closed"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The subject includes \"URGENT\" and the user could not log in, but the impact described appears limited to a specific user needing access (not a widespread outage). Support engaged the same day and performed iterative troubleshooting; there is not enough evidence of a true P1/SEV1 scenario being mishandled.",
+    "evidence": [
+      "Subject line: \"URGENT: Khoros Marketing Login issue\"",
+      "Customer: \"cannot login into Marketing instance\"",
+      "Agent response timing context: first public agent reply occurs on 2025-11-25 (same day as ticket creation)"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60250271
+}

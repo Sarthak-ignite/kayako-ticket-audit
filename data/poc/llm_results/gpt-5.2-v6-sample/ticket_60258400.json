@@ -1,0 +1,59 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses appear largely templated and repetitive, reiterating generic KB steps without adapting when the customer said those steps were already tried and asked for log review. This creates a \u201cfiller troubleshooting\u201d experience rather than progressing diagnosis from the provided logs.",
+    "evidence": [
+      "Customer: \"I have already sent them the article here: https://support.languard.gfi.com/article/123069... but performing the actions there has not resulted in any change.\"",
+      "ATLAS (public): \"Since the standard manual update process did not resolve the issue, here are further troubleshooting steps and verifications...\" (then repeats KB-style checks)",
+      "Customer: \"Those steps are basically what was recommended in articles before. Please have someone look at the logs\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer explicitly asked for someone to look at the logs after repeated KB-style steps, implying they were stuck in an automated/looping troubleshooting cycle. The interaction shows multiple ATLAS messages before a human agent reply, reinforcing the perception of an AI wall.",
+    "evidence": [
+      "Customer: \"Please have someone look at the logs\"",
+      "ATLAS (private): \"Action: l1\"",
+      "ATLAS (public): multiple long troubleshooting lists following the customer saying manual update steps didn\u2019t work"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support responses do not acknowledge key context: the customer already tried the manual update article and already provided logs, yet the next human reply again requests logs/KB steps. This indicates the agent did not incorporate existing ticket information and asked for repetition.",
+    "evidence": [
+      "Customer: \"performing the actions there has not resulted in any change.\"",
+      "Customer: \"here are the logs from both server and agent:\" (followed by two log links)",
+      "Agent (Keyur): \"If the issue persists after the fix, please provide the agent logs for review\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is a substantial gap between the customer escalation request and the next meaningful human response, and the overall resolution/closure timeline is long. The CSV resolutionTime is very large, supporting that the case took many days to resolve/close.",
+    "evidence": [
+      "Customer (2025-12-08T11:24:19+00:00): \"Please have someone look at the logs...\"",
+      "Agent reply not until (2025-12-09T13:32:09+00:00)",
+      "CSV: initialResponseTime=56",
+      "CSV: resolutionTime=710427"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The agent message includes a closure warning/auto-close policy, and the ticket ultimately shows as closed, but there is no evidence in the provided conversation that the customer confirmed resolution. This suggests potential closure while the customer may still have needed help (uncertain due to missing later thread).",
+    "evidence": [
+      "Agent (Keyur): \"This ticket will stay open for one week unless you reply with \\\"This ticket can be closed\\\" or update the status to Completed in the portal.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-19 14:38:35"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer indicated high business risk (renewal in two weeks) and a core product function failing (patch scan definitions unavailable), yet responses remained generic (KB links and re-asking for logs) with slow turnaround. This may represent under-triage of urgency and lack of timely escalation (severity inference is somewhat indirect).",
+    "evidence": [
+      "Customer: \"otherwise, there's a high risk of losing the customer's renewal, which is in two weeks.\"",
+      "Customer issue: \"they are consistently getting the error The patch detection data package is unavailable while performing missing patches scan.\"",
+      "Agent response pattern: \"Please force the updates\" (KB link) and then requests logs again despite logs already shared"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60258400
+}

@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The AI immediately presented a generic \u201cActive Incidents\u201d notice (AWS degraded) without any described customer issue, then followed up with a broad prompt. This reads as potentially irrelevant/filler and not tailored to the customer\u2019s need (especially since the customer response is just \".\").",
+    "evidence": [
+      "\u201c### \ud83d\udd25 Active Incidents for Kerio Connect \u2026 1. AWS Degraded \u2013 Multiple Services in US-East-1 Region\u201d",
+      "\u201cDid this help?\u201d",
+      "Customer: \u201c.\u201d",
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening.\u201d"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was stuck in an AI loop, asked for a human, or was prevented from reaching an agent. The visible snippet shows only initial AI prompts.",
+    "evidence": [
+      "\u201cPlease select from the below or give me a detailed description of what\u2019s happening.\u201d"
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "The customer did not provide substantive context (only a single \".\"), so there is nothing concrete to show the AI/agent ignored previously-provided details or forced repetition of meaningful information.",
+    "evidence": [
+      "Customer: \u201c.\u201d"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket lifecycle suggests a multi-day turnaround from creation to solve/close, which can indicate response delay even though detailed message timestamps beyond the initial AI transcript are not shown.",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-20 13:34:14",
+      "CSV: Ticket Solved=2025-10-23 14:38:50",
+      "CSV: resolutionTime=263076"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket ended in a closed state with no visible evidence in the provided transcript that the customer\u2019s underlying issue was identified or resolved; closure may have occurred without a confirmed resolution (uncertain due to truncated interaction history).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-23 14:38:50",
+      "\u201cDid this help?\u201d",
+      "Customer: \u201c.\u201d"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The AI flagged an active AWS degraded incident affecting multiple services (which could imply high-severity impact), but there\u2019s no evidence of prioritization, escalation guidance, or emergency handling in the visible snippet (uncertain because the ticket content is truncated and the customer did not describe impact).",
+    "evidence": [
+      "\u201cAWS Degraded \u2013 Multiple Services in US-East-1 Region\u201d",
+      "\u201cStatus: identified\u201d"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60224885
+}

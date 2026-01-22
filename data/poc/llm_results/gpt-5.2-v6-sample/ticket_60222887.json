@@ -1,0 +1,58 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer asked a straightforward question about the latest ObjectStore version, but the AI did not answer and instead responded with generic troubleshooting/filler guidance. This indicates poor relevance/adaptation to the customer\u2019s request.",
+    "evidence": [
+      "Customer: \"Hi. What is the latest version for Objectsore?\"",
+      "AI Assistant: \"Walk me through what's happening or select from the below options.\"",
+      "AI Assistant: \"Don't hold back on the details \u2013 the more you can share about the issue...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The interaction shows the AI routing the user into a generic menu/troubleshooting flow rather than addressing the simple version question, which can create a \u201cstuck with the bot\u201d experience. The provided excerpt is truncated, so looping is not fully confirmed, but there is reasonable indication of an AI gating pattern.",
+    "evidence": [
+      "AI Assistant: \"Welcome to the menu for internal employees. How can I help?\"",
+      "AI Assistant: \"Walk me through what's happening or select from the below options.\"",
+      "AI Assistant: \"If I'm unable to help you, I can patch you through to a Live agent...\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI did not acknowledge or respond to the specific context provided (the customer\u2019s question about the latest version) and instead asked for unrelated troubleshooting details, effectively forcing the customer to restate/justify the request.",
+    "evidence": [
+      "Customer: \"Hi. What is the latest version for Objectsore?\"",
+      "AI Assistant: \"Walk me through what's happening...\"",
+      "AI Assistant: \"...the more you can share about the issue, any error messages you're seeing, or steps you've already tried...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "There is no evidence of meaningful waiting time or customer complaints about delays. The structured timestamps show the ticket was opened and closed within about a minute.",
+    "evidence": [
+      "CSV: resolutionTime=59",
+      "CSV: Ticket Created=2025-10-16 17:36:38",
+      "CSV: Ticket Closed=2025-10-16 17:37:37"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed almost immediately and there is no visible evidence that the customer\u2019s question was answered or resolved before closure. Given the lack of a substantive solution in the interaction snippet, this appears consistent with premature closure (though the transcript is truncated, so there is some uncertainty).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-10-16 17:37:37",
+      "CSV: Ticket Closed=2025-10-16 17:37:37",
+      "Customer: \"Hi. What is the latest version for Objectsore?\"",
+      "AI Assistant: \"Walk me through what's happening or select from the below options.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No outage/critical-impact language or urgent severity indicators are present. The customer asked a general informational question (latest version), not a production-down scenario.",
+    "evidence": [
+      "Customer: \"Hi. What is the latest version for Objectsore?\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60222887
+}

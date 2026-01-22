@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS appears to respond with largely generic/possibly irrelevant content (active incident list) rather than addressing the stated license registration failure. Additionally, the case shows a likely AI-assisted misdiagnosis (treated as a license/customer-care issue) that was later corrected internally as a known/expected behavior requiring an AppManager agent reset (suggesting earlier guidance was misleading).",
+    "evidence": [
+      "ATLAS transcript: \"### \ud83d\udd25 Active Incidents for Kerio Control ... Did this help?\" (after customer: \"nefunguje registrace licence\")",
+      "Internal note (proposed customer response): \"The issue is clearly with the license registration itself... license file is still bound to the old hardware box's serial number\"",
+      "Internal note from Jozef: \"The issue is misclassification of tickets... is mistakenly treated as a license issue... Resolution: Reset the AppManager agent \u2014 this is the only valid fix.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer experience suggests being bounced between channels (Customer Care \u2192 ATLAS \u2192 Support \u2192 back to Customer Care), which can feel like an AI wall/loop even if humans later engaged. The customer explicitly references being sent to ATLAS and then redirected again, indicating difficulty getting direct, correct help initially.",
+    "evidence": [
+      "Customer (initial issue description): \"customer care send me to Atlas! please make from conversation support request for technician\"",
+      "Customer: \"I created ticket to this support before you and they saw that I have to create ticket on you and now back to license support. :(\"",
+      "ATLAS transcript header: \"This is the Kerio Control ATLAS support chat... If I'm not able to resolve your issue, I can connect you with one of our support specialists\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support initially anchored on license invalidity/hardware-binding despite the customer providing logs and confirming DNS/outbound connectivity and that appmanager.gfi.com was reachable via tools. The later internal clarification indicates the earlier handling ignored the key context (config restored/migrated) and treated a known expected message as a license problem.",
+    "evidence": [
+      "Customer: \"I sent you screenshots with log.\"",
+      "Customer: \"outbond access is ok, also from ssh terminal, lynx, curl.. open website appmanager.gfi.com ok\"",
+      "Agent: \"You've confirmed that DNS, outbound connectivity, and network access are all working properly. The issue is clearly with the license registration itself.\"",
+      "Internal note from Jozef: \"unable to contact AppManager... is mistakenly treated as a license issue... occurs when the configuration file is restored... Resolution: Reset the AppManager agent\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "There is evidence of customer follow-up asking for a solution (implying waiting), and the overall case duration is long (about 8 days to solve). Even if some gaps are modest, the ticket shows meaningful elapsed time and explicit prompting from the customer for an update.",
+    "evidence": [
+      "Customer (2025-10-22): \"Hello,do you have some solution for me?\"",
+      "CSV: resolutionTime=687439",
+      "CSV: Ticket Created=2025-10-20 19:28:11",
+      "CSV: Ticket Solved=2025-10-28 18:25:30"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": false,
+    "reasoning": "Although agents used standard language about the ticket staying open for one week unless the customer replies, the ticket was not closed while the customer still needed help; the issue was confirmed solved by the customer on 2025-10-28 and the ticket closed later. The closure appears aligned with resolution rather than premature.",
+    "evidence": [
+      "Customer (2025-10-28): \"your colleague solve this problem\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-31 18:35:25"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The case was flagged as a high-severity impact ('core_functionality_defect' / 'Limited services') but was handled through routine L1 steps and even misrouted to Customer Care before the correct technical fix was identified. The multi-day time to resolution and the internal acknowledgment of misclassification suggest suboptimal handling for an urgent-impact scenario.",
+    "evidence": [
+      "Internal escalation note: \"The customer message is:Limited services\"",
+      "Internal escalation note: \"The severity is: core_functionality_defect\"",
+      "Agent (misroute): \"You need to obtain an updated license file... Contact GFI Customer Care\"",
+      "CSV: Level Solved=L1 Agent",
+      "CSV: resolutionTime=687439"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60225231
+}

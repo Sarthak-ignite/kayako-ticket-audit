@@ -1,0 +1,62 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The automated agent outputs repetitive/templated content and appears to rely on OCR limitations as a blocker, leading to friction (customer insists the serial is readable). It also repeatedly requests extensive RMA artifacts (video, full details) even when the customer is dealing with a remote outage, which reads as low-adaptiveness and poor prioritization. Some conclusions (e.g., \u201cnot an obvious hardware failure\u201d) may be premature given recurring WAN/UI outages on a replacement unit, though this is partially process-driven.",
+    "evidence": [
+      "Customer: \"This in unacceptable. The unit is located remote and we cannot drive there every week to do some HW diagnostics tools.\"",
+      "AI Manager (public): \"Serial Number ... \u2014 the two SN photos were unreadable, so please either type the Serial Number in your message or send a close-up photo\"",
+      "Customer: \"SN is cleary readable from the photo - green sticker. Do you mean something else?\"",
+      "AI Manager (public): \"A video recording depicting the reported behavior ... will be sufficient\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no clear evidence the customer was unable to reach a human or explicitly requested a human agent. The conversation shows back-and-forth responses and does not show an explicit AI loop preventing escalation to a person.",
+    "evidence": [
+      "ATLAS transcript: \"If I'm not able to resolve your issue, I can connect you with one of our support specialists\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeatedly asked for information that was either already provided (license confirmed; later shipping/contact details provided) or available from the prior RMA reference, creating unnecessary repetition. After the customer provided shipping/contact details, internal notes still flagged key address elements as missing (e.g., ZIP), suggesting the process did not adapt to the information already supplied. The serial-number back-and-forth also indicates the agent did not effectively use the provided attachment/context.",
+    "evidence": [
+      "Customer: \"I have no idea SN. You can propably find it via last ticket 60235438 where was RMA located.\"",
+      "AI Manager (public): \"License key (if it differs from the one on record: 20339-1LKR4-8WJVB)\"",
+      "Customer: \"Shipping: ApSo spol. s r.o., Tomas Ruzicka V Lipkach 894/6, Hradce Kralove Czech republic tomas.ruzicka@apso.cz +420604915369\"",
+      "AI Manager (internal): \"Still missing for RMA package: typed Serial Number (exact as printed), ZIP code for the shipping address\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured metrics show a slow initial response and a very long overall resolution time, indicating significant delays in handling/closure. Even if some time was waiting on customer input, the ticket remained open/unsolved for weeks per the CSV.",
+    "evidence": [
+      "CSV: initialResponseTime=138",
+      "CSV: resolutionTime=1817053",
+      "CSV: Ticket Created=2025-12-04 07:55:47",
+      "CSV: Ticket Solved=2025-12-25 08:40:00",
+      "CSV: Ticket Closed=2025-12-28 09:34:44"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked solved/closed in the CSV, but the visible conversation focuses on requesting more diagnostics/RMA info and does not show a clear confirmation of resolution or RMA completion. Given the recurring outages on an RMA replacement device, closure without documented resolution suggests possible premature closure (uncertain due to truncated later interactions).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-12-25 08:40:00",
+      "CSV: Ticket Closed=2025-12-28 09:34:44",
+      "Customer: \"Unit failed today about 08:30.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reports loss of WAN and VPN access (business outage) at a remote site on a recently replaced hardware unit, but support primarily followed a routine RMA info-gathering and diagnostic checklist (video, factory reset/system recovery) rather than showing clear incident-style triage or immediate containment steps. Although the ticket was marked URGENT, the handling still appears process-heavy relative to the described impact.",
+    "evidence": [
+      "Customer: \"The webUI was unresponsive, WAN was not working - no VPN connection from our side and clients in the office could not reach the internet via WAN.\"",
+      "AI Manager (internal): \"Marked ticket as URGENT.\"",
+      "AI Manager (public): \"please perform ... 1) Run the Kerio Control hardware diagnostic tool ... 2) ... perform a factory reset and full system recovery\"",
+      "Customer: \"The unit is located remote and we cannot drive there every week\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60256173
+}

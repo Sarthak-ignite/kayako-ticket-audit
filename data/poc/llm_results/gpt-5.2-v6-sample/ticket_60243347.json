@@ -1,0 +1,53 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The customer asked a straightforward product/API question, but the AI response shown does not provide any actionable guidance or an API endpoint; instead it pivots to requesting uploads. This suggests low-quality/helpfulness for the use case (informational API request) and may be filler rather than a solution.",
+    "evidence": [
+      "Customer: \"API to fetch groups of which loggedin user is member of\"",
+      "AI Assistant: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting, now is the time to do it \ud83d\udcaa\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no explicit evidence the customer was blocked from reaching a human, asked for an agent, or experienced a repetitive AI loop. The transcript suggests the AI offered escalation in general terms, but we do not see the customer attempting to reach a human or getting stuck.",
+    "evidence": [
+      "AI Assistant: \"If I'm unable to help you, I can patch you through to a Live agent\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The AI appears to ignore the context that the customer is asking for an API to list groups for the logged-in user and responds with generic troubleshooting instructions about uploading logs/screenshots. This indicates the provided context was not acknowledged or used to tailor an answer.",
+    "evidence": [
+      "Customer: \"API to fetch groups of which loggedin user is member of\"",
+      "AI Assistant: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload to help with the troubleshooting\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket took ~1 hour 40 minutes end-to-end per CSV resolutionTime, which can indicate delay (even if the conversation log is truncated and does not show the gap directly). Given recall-first criteria, the duration is enough to flag a potential response delay.",
+    "evidence": [
+      "CSV: resolutionTime=6032",
+      "CSV: Ticket Created=2025-11-14 14:07:24",
+      "CSV: Ticket Solved=2025-11-14 15:47:56"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed/solved at L1, but the visible conversation does not show an actual answer or resolution to the API question\u2014only generic AI prompts. This creates reasonable concern the ticket may have been closed without addressing the customer\u2019s request (though the transcript is truncated, so there is some uncertainty).",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Level Solved=L1 Agent",
+      "Customer: \"API to fetch groups of which loggedin user is member of\"",
+      "AI Assistant: \"If you have any \ud83d\udcc3 log files or \ud83d\uddbc\ufe0f screenshots to upload...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "No indication of an outage, severe business impact, or urgent/severity language is present. The request appears to be a how-to/API inquiry rather than a P1/SEV1 scenario.",
+    "evidence": [
+      "Customer: \"API to fetch groups of which loggedin user is member of\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60243347
+}

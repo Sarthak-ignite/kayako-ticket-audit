@@ -8,12 +8,12 @@ Phase 0.3: Extract deterministic metrics from CSV for POC sample
 """
 
 import pandas as pd
-from pathlib import Path
 
-# Paths
-SAMPLE_FILE = Path("data/poc/poc_sample.csv")
-FULL_DATA_CSV = Path("Full_Ticket_Data_1767638152669.csv")
-OUTPUT_FILE = Path("data/poc/poc_csv_metrics.csv")
+from config import (
+    POC_SAMPLE_CSV as SAMPLE_FILE,
+    FULL_TICKET_DATA_CSV as FULL_DATA_CSV,
+    POC_CSV_METRICS as OUTPUT_FILE,
+)
 
 # Columns to extract from Full_Ticket_Data
 COLUMNS_TO_EXTRACT = [
@@ -68,35 +68,39 @@ COLUMNS_TO_EXTRACT = [
 
 def compute_derived_fields(df: pd.DataFrame) -> pd.DataFrame:
     """Add derived fields for stage boundary detection."""
-    
+
     # Normalize vertical
     brand_map = {'Ignite': 'IgniteTech', 'Khoros': 'Khoros', 'GFI': 'GFI'}
     df['vertical'] = df['Brand'].map(brand_map)
-    
+
     # Stage boundary: was ticket handed to BU/L2?
+    # Handle potential NaN in timeSpentOpenL2 for comparison
+    time_spent_l2 = pd.to_numeric(df['timeSpentOpenL2'], errors='coerce').fillna(0)
     df['was_handed_to_bu'] = (
-        df['firstL2AgentId'].notna() | 
-        (df['timeSpentOpenL2'] > 0) |
-        df['Level Solved'].str.contains('L2', case=False, na=False)
+        df['firstL2AgentId'].notna() |
+        (time_spent_l2 > 0) |
+        df['Level Solved'].astype(str).str.contains('L2', case=False, na=False)
     )
-    
+
     # Time in Central Support (L1)
-    df['time_in_central_seconds'] = df['timeSpentOpenL1'].fillna(0)
-    df['time_in_bu_seconds'] = df['timeSpentOpenL2'].fillna(0)
-    
+    df['time_in_central_seconds'] = pd.to_numeric(df['timeSpentOpenL1'], errors='coerce').fillna(0)
+    df['time_in_bu_seconds'] = pd.to_numeric(df['timeSpentOpenL2'], errors='coerce').fillna(0)
+
     # Convert time metrics to hours for readability
     df['time_in_central_hours'] = df['time_in_central_seconds'] / 3600
     df['time_in_bu_hours'] = df['time_in_bu_seconds'] / 3600
-    df['initial_response_hours'] = df['initialResponseTime'].fillna(0) / 3600
-    df['resolution_hours'] = df['resolutionTime'].fillna(0) / 3600
-    
+    df['initial_response_hours'] = pd.to_numeric(df['initialResponseTime'], errors='coerce').fillna(0) / 3600
+    df['resolution_hours'] = pd.to_numeric(df['resolutionTime'], errors='coerce').fillna(0) / 3600
+
     # Is this a P1/SEV1?
-    df['is_high_priority'] = (df['isSev1'] == 1) | (df['Priority'].str.lower() == 'urgent')
-    
+    # Convert Priority to string safely to avoid type errors on mixed types
+    priority_is_urgent = df['Priority'].astype(str).str.lower().str.strip() == 'urgent'
+    df['is_high_priority'] = (df['isSev1'] == 1) | priority_is_urgent
+
     # Has external team / Jira
-    df['has_external_team'] = df['externalTeam'].notna() & (df['externalTeam'] != '')
-    df['has_jira'] = df['jiraId'].notna() & (df['jiraId'] != '')
-    
+    df['has_external_team'] = df['externalTeam'].notna() & (df['externalTeam'].astype(str) != '')
+    df['has_jira'] = df['jiraId'].notna() & (df['jiraId'].astype(str) != '')
+
     return df
 
 
@@ -172,5 +176,6 @@ def main():
 
 if __name__ == "__main__":
     metrics = main()
+
 
 

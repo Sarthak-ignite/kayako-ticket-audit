@@ -1,0 +1,54 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": false,
+    "reasoning": "There is no visible AI-generated (ATLAS/Hermes) response in the ticket content to evaluate for correctness, repetition, or broken promises. The only message shown is from the customer.",
+    "evidence": [
+      "Customer: \"We had tried to reach out a few times now without a reply.\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer reports not receiving replies, but they do not explicitly mention an AI bot, being stuck in an automated loop, or requesting a human agent. Evidence points to non-response rather than an AI loop.",
+    "evidence": [
+      "Customer: \"We had tried to reach out a few times now without a reply.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The customer explicitly states they have attempted contact multiple times without a reply, and the ticket was closed almost immediately after creation. Closing without any visible acknowledgment suggests the customer\u2019s stated context/need was not engaged with (some uncertainty since internal notes are not shown).",
+    "evidence": [
+      "Customer: \"We had tried to reach out a few times now without a reply.\"",
+      "Customer: \"Usually when this happens, it means our products is not a priority right now. Is it safe for me to assume that\u2032s the case here?\"",
+      "CSV: Ticket Created=2025-11-06 08:30:20",
+      "CSV: Ticket Closed=2025-11-06 08:30:24"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The customer explicitly complains about repeated outreach without receiving any reply, indicating a meaningful response delay (even if this particular ticket instance was closed quickly).",
+    "evidence": [
+      "Customer: \"We had tried to reach out a few times now without a reply.\"",
+      "Customer: \"If you\u2032d rather we follow up in the future when you have more bandwidth, we are happy to do that as well.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket appears to have been solved/closed within seconds of creation despite the customer still seeking engagement and not indicating resolution. This strongly suggests an auto-close or premature closure while the customer still needed a response.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Created=2025-11-06 08:30:20",
+      "CSV: Ticket Solved=2025-11-06 08:30:24",
+      "CSV: Ticket Closed=2025-11-06 08:30:24",
+      "Customer: \"We had tried to reach out a few times now without a reply.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "There is no indication of an outage, system down event, security incident, or other P1/SEV1 impact. The message is a business inquiry/follow-up and does not describe urgent production impact.",
+    "evidence": [
+      "Customer: \"Do you import from China? Can l contact someone from your purchasing team?\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60237213
+}

@@ -1,0 +1,67 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "AI/templated responses appear generic and not well-adapted to the customer\u2019s stated situation (steps already done). Later guidance also downplays impact as \u201cUI-only\u201d despite the customer reporting loss of email security, which risks being misleading. Some AI responses include repetitive KB-driven troubleshooting without clear progress.",
+    "evidence": [
+      "Customer/ADN: \"Mr Dederding reports that none of the knowledge base entries (KBs) provided by ADN solved the problem or applied to his case.\"",
+      "ADN Support: \"Please note that all the suggested steps have already been completed. Unfortunately, these actions did not resolve the issue\"",
+      "ATLAS (public): \"This issue usually indicates that one of the antivirus engines failed to load properly... The following steps are recommended:\"",
+      "Pablo Ambram (public): \"From our review: Mail flow and scanning appear OK (no 'FailedMails for all' behavior). The issue seems UI-only\"",
+      "Internal note: \"[customer_escalation] ... The customer message is:No Mail Security\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "The customer/partner explicitly requested a remote session with a technician, suggesting difficulty progressing through async troubleshooting. While a human did respond later, the interaction pattern shows repeated instruction/requests for more data rather than direct hands-on support, consistent with a perceived 'support wall'.",
+    "evidence": [
+      "ADN Support (private): \"our partner asked if we can plan a remote session together with one of your technicians.\"",
+      "ADN Support (private): \"Could you please let us know when a technician would be available for a quick remote session?\"",
+      "Arafat Bakhsh (public): \"If the issue persists, please enable tracing, reproduce the issue and provide us with a fresh set of logs\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support provided initial troubleshooting that the customer then stated had already been completed, indicating the response did not sufficiently incorporate provided context. There is also later minimization as \u201cUI-only\u201d despite repeated customer statements of security functionality being down, suggesting incomplete alignment with stated impact.",
+    "evidence": [
+      "ATLAS (public): \"The following steps are recommended: ... Ensure that temporary folders... Add firewall exclusions...\"",
+      "ADN Support (public): \"Please note that all the suggested steps have already been completed.\"",
+      "ADN Support (private): \"The customer has been without email protection for about a week now\"",
+      "Internal note: \"The customer message is:No Mail Security\"",
+      "Pablo Ambram (public): \"The issue seems UI-only\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The overall ticket timeline is long (created Oct 10, closed Oct 30) and the CSV shows a very large resolutionTime, indicating slow progression. There is also a notable lag between the remote-session request (Oct 16) and the next substantive update (Oct 18).",
+    "evidence": [
+      "CSV: Ticket Created=2025-10-10 07:48:26",
+      "CSV: Ticket Closed=2025-10-30 15:37:59",
+      "CSV: resolutionTime=1493578",
+      "ADN Support (private, 2025-10-16): \"Could you please let us know when a technician would be available for a quick remote session?\"",
+      "Next substantive support update (2025-10-18): \"Our Development Team has released a new version with the fix for the current issue.\""
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in CSV, but the latest visible interaction (Oct 20) is still active troubleshooting requesting more logs and impact checks, with no explicit confirmation of resolution from the customer. Additionally, repeated messages warn the ticket will stay open only one week unless the customer asks to close, which can lead to closure before confirmed resolution.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-30 15:37:59",
+      "Pablo Ambram (public, 2025-10-20): \"Could you please share the following after reproducing the UI error once more?\"",
+      "Aditi Garg (public): \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Completed in the portal.\"",
+      "Arafat Bakhsh (public): \"This ticket will stay open for one week unless you reply with 'This ticket can be closed' or update the status to Completed in the portal.\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The issue was escalated with core functionality impact (\u201cNo Mail Security\u201d) and the customer reported being without email protection for about a week, indicating high severity. Handling still relied on routine troubleshooting/upgrade/log-collection and did not show immediate high-urgency measures (e.g., rapid remote session/clear mitigation), suggesting potential mishandling for a P1/S1 scenario.",
+    "evidence": [
+      "Internal note: \"[customer_escalation] ... The customer message is:No Mail Security ... The severity is: core_functionality_defect\"",
+      "ADN Support (private): \"The customer has been without email protection for about a week now\"",
+      "Raymond Guirguis (public): \"Your escalation has been acknowledged, and the ticket's priority has been adjusted\"",
+      "Arafat Bakhsh (public): \"Please apply the steps... to upgrade to the new version... If the issue persists, please enable tracing... provide us with a fresh set of logs\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60218313
+}

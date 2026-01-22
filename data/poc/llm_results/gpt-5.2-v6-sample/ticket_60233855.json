@@ -1,0 +1,60 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The automation produced contradictory and low-quality outputs: it first claimed it could not proceed without a custom field, then later completed the lookup and sent multiple near-duplicate public updates. It also explicitly reported an internal failure (andon cord) due to a redundant acknowledgement loop, indicating the AI workflow did not behave reliably.",
+    "evidence": [
+      "Cu Chulainn AI Manager (public): \"We were unable to proceed as the 'DS for Escalated Issue (only GHI!)' field is currently empty.\"",
+      "Cu Chulainn AI Manager (private): \"GHI lookup complete for issue 13744. Project: Khoros Community | Status: Done | Fix Release: 25.12. All Set.\"",
+      "Cu Chulainn AI Manager (private): \"Terminating loop: The automated release notification flow was completed successfully ... but the conversation entered a redundant acknowledge loop. ... Please review the ticket details and process the request manually.\"",
+      "Cu Chulainn AI Manager (public 2025-11-02 08:31): \"the solution is planned to be included in the Khoros Community release 25.12...\"",
+      "Cu Chulainn AI Manager (public 2025-11-02 09:42): \"The resolution will be included in the upcoming version 25.12...\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": true,
+    "reasoning": "There are strong signals the workflow got stuck in repetitive automation behavior (explicitly described as a redundant acknowledgement loop), along with repeated automated \u201cplacing on hold\u201d actions. While the customer did not explicitly ask for a human, the ticket history suggests an AI-driven loop that could impede reaching effective human handling.",
+    "evidence": [
+      "Cu Chulainn AI Manager (private): \"Terminating loop ... conversation entered a redundant acknowledge loop.\"",
+      "Centralsupport-ai-acc (private): \"Placing on hold for 1 hour(s)\"",
+      "Centralsupport-ai-acc (private): \"Placing on hold for 1 hour(s)\"",
+      "Centralsupport-ai-acc (private): \"Placing on hold for 1 hour(s)\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "The process initially told the customer it could not proceed due to a missing custom field, even though the broader ticket context includes the relevant GHI issue (13744) content/history. This may indicate the automation failed to use available context and forced unnecessary back-and-forth; however, it\u2019s somewhat uncertain because the customer\u2019s first Kayako message did not include the URL explicitly.",
+    "evidence": [
+      "Cu Chulainn AI Manager (public): \"We were unable to proceed as the 'DS for Escalated Issue (only GHI!)' field is currently empty. Kindly add the GitHub issue URL...\"",
+      "Cu Chulainn AI Manager (private): \"Unable to proceed with GHI lookup. The custom field 'DS for Escalated Issue (only GHI!)' is empty, so no GitHub issue URL was available...\"",
+      "Interactions context: \"GHI Engineering - 13744\" (multiple entries preceding the Kayako ticket creation)"
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": false,
+    "reasoning": "The visible interaction sequence shows rapid automated responses on Nov 1\u20132, with no clear customer complaint about waiting. Although the overall resolution time is ~1.6 days, that alone does not demonstrate a meaningful response gap in this ticket.",
+    "evidence": [
+      "CSV: initialResponseTime=141",
+      "CSV: resolutionTime=134904"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "Support told the customer the ticket would remain open until Jan 4, 2026 / until stage deployment for validation, but the ticket was closed on Nov 3, 2025. Closing far earlier than the stated plan is consistent with premature closure risk.",
+    "evidence": [
+      "Cu Chulainn AI Manager (public): \"We will keep this ticket open until January 4, 2026.\"",
+      "Cu Chulainn AI Manager (public): \"We will keep this ticket open until the stage deployment, allowing you to validate the fix.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-11-03 06:53:18"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue described is a GraphQL constraint defect with a planned fix release and rollout dates; there is no indication of an outage, major business-critical impact, or a declared P1/SEV1 requiring emergency handling.",
+    "evidence": [
+      "Issue Analysis: \"The GraphQL ancestorId constraint for boards returns zero results instead of the expected boards under a specified ancestor category.\"",
+      "Cu Chulainn AI Manager (public): \"The resolution will be included in the upcoming version 25.12...\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60233855
+}

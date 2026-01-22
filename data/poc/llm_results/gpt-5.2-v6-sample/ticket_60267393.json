@@ -1,0 +1,55 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "ATLAS responses are heavily templated and repetitive, largely restating what the customer already said and providing generic \u201cpotential causes\u201d without collecting key account-specific details (e.g., which Smart View/work queue each user is on, permissions, role config) or confirming next concrete actions/ownership. The second ATLAS reply mostly repeats the first, which can be experienced as filler rather than progress toward resolution.",
+    "evidence": [
+      "ATLAS: \"Potential Causes and Explanations: This behavior is most often caused by queue configuration settings or agent-specific filtering...\"",
+      "ATLAS: \"As a recap, the difference in conversation visibility... is most commonly related to differences in Smart View assignments, work queue selections, or filtering/sorting settings...\"",
+      "ATLAS: \"For your reference and whenever you resume troubleshooting, here is a summary of the recommended steps:\""
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no indication the customer struggled to reach a human, asked for escalation to a person, or got trapped in a repeated back-and-forth AI loop. The customer paused troubleshooting due to PTO rather than complaining about the support channel.",
+    "evidence": [
+      "Customer: \"Thanks for the response and troubleshooting advice. Right now, due to PTO, we are unable to troubleshoot.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "ATLAS acknowledges the screenshots and the stated discrepancy between the two agent views, and its guidance is framed around that specific context. While the replies are generic, they do not clearly ignore or contradict the provided details.",
+    "evidence": [
+      "ATLAS: \"Thank you for reaching out and for providing detailed screenshots illustrating the queue discrepancy between your agent view and your colleague's.\"",
+      "ATLAS: \"Your agent view (Liz Mech) shows Available (0/0)... Your colleague (Leanne Sangster) is able to see 11 conversations available...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The ticket remained open for an extended period (about 10\u201313 days from creation to solve/close), suggesting meaningful delay before resolution/closure. Even though the customer noted PTO, the long resolution/closure timings are still present in the record.",
+    "evidence": [
+      "CSV: Ticket Created=2025-12-19 17:27:03",
+      "CSV: Ticket Solved=2025-12-29 18:35:42",
+      "CSV: Ticket Closed=2026-01-01 06:06:35",
+      "CSV: resolutionTime=868119"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was solved/closed without any explicit customer confirmation that the issue was resolved; the last customer message said they could not troubleshoot until after the holidays. This creates a reasonable risk that the case was closed while the customer still needed help (uncertain, but supported by the interaction timeline).",
+    "evidence": [
+      "Customer: \"Right now, due to PTO, we are unable to troubleshoot. We will be able to dig in after the holidays.\"",
+      "CSV: Status=closed",
+      "CSV: Ticket Solved=2025-12-29 18:35:42",
+      "CSV: Ticket Closed=2026-01-01 06:06:35"
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue impacts an agent\u2019s ability to see conversations, but the ticket text does not indicate an outage, broad service failure, or explicit urgent/P1 severity. There is insufficient evidence that a high-severity incident required escalation and was mishandled.",
+    "evidence": [
+      "Customer: \"Leanne has 11 conversations in her queue, but I have none.\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60267393
+}

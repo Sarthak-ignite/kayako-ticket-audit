@@ -1,0 +1,51 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "There is evidence of an AI/automation attempt (ATLAS) failing to categorize the issue (\u201cComponent could not be determined\u201d). While this may be a minor internal quality issue, it still indicates low AI output quality for triage/classification.",
+    "evidence": [
+      "Kayako - ticket id 60209192 // ATLAS commented privately: Component could not be determined"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "The customer received a human agent response and there is no indication they were trapped in an automated loop or asked repeatedly to interact with AI. No requests for a human or complaints about automation are present.",
+    "evidence": [
+      "Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: Dear Anthony, Thank you for your patience. Could you please let us know what error you are getting..."
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": false,
+    "reasoning": "Support asked for additional details (error message, screenshots, fields used), which is consistent with normal troubleshooting given the customer\u2019s brief description. There is no clear instance of ignoring previously provided specifics, since none were provided beyond the general problem statement.",
+    "evidence": [
+      "Kayako - ticket id 60209192 // Anthony Marlow commented privately: I am having an issue creating new locations",
+      "Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: Could you please let us know what error you are getting while creating a location? Kindly send us a screenshot..."
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The first public support reply appears roughly ~17 hours after the customer reported the issue, and the overall resolution time is long (about 7.7 days) based on CSV. Even without explicit customer complaints, the long lifecycle suggests delay in progressing/resolving the ticket.",
+    "evidence": [
+      "CSV: Ticket Created=2025-09-29 14:02:21",
+      "Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: [2025-09-30T06:53:48+00:00] Dear Anthony, Thank you for your patience.",
+      "CSV: resolutionTime=668107"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket was closed despite the only visible support action being a request for more information; there is no shown customer confirmation of resolution. The agent message also includes an auto-closure condition (\u201cstay open for one week unless you reply\u2026\u201d), which can lead to closure without confirming the issue is solved.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-10-10 08:37:45",
+      "Kayako - ticket id 60209192 // Alexandr Oliynyk commented publicly: This ticket will stay open for one week unless you reply with \"This ticket can be closed\" or update the status to Completed in the portal."
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": false,
+    "reasoning": "The issue described (\u201chaving an issue creating new locations\u201d) is not explicitly framed as an outage, safety issue, or business-critical P1/Sev1 event. There is no evidence of widespread impact, escalation need, or urgent handling requirements in the provided text/CSV.",
+    "evidence": [
+      "Kayako - ticket id 60209192 // Anthony Marlow commented privately: I am having an issue creating new locations"
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60209192
+}

@@ -1,0 +1,66 @@
+{
+  "AI_QUALITY_FAILURES": {
+    "detected": true,
+    "reasoning": "The automated/AI-driven responses appear template-heavy and repetitive, repeatedly requesting the same RMA checklist despite the customer\u2019s constraints (remote site) and already-provided details. There is also a mismatch between what the customer says (serial clearly readable) and the AI response insisting it cannot read it, which degrades perceived quality. While some of this may be tooling/OCR limits, the interaction shows poor adaptation to the situation.",
+    "evidence": [
+      "Customer: \"This in unacceptable. The unit is located remote and we cannot drive there every week to do some HW diagnostics tools.\"",
+      "AI public reply: \"To proceed with warranty verification and a potential RMA, we kindly request the following details: ... Serial number ... A video recording ... Company name ... Contact phone number ... Shipping address...\"",
+      "AI public reply: \"Serial Number ... \u2014 the two SN photos were unreadable, so please either type the Serial Number\"",
+      "Customer: \"SN is cleary readable from the photo - green sticker. Do you mean something else?\"",
+      "Customer issue description contains duplicated bullet points: \"1. Installed 25.11... 2. Web UI unresponsive... 3. Reboot unit -> woring\" (repeated twice)"
+    ]
+  },
+  "AI_WALL_LOOPING": {
+    "detected": false,
+    "reasoning": "There is no explicit evidence the customer was blocked from reaching a human agent or repeatedly asked to use AI instead. The customer expresses frustration, but not about being stuck in an AI loop or requesting a human escalation.",
+    "evidence": [
+      "Customer: \"This in unacceptable. The unit is located remote and we cannot drive there every week to do some HW diagnostics tools.\""
+    ]
+  },
+  "IGNORING_CONTEXT": {
+    "detected": true,
+    "reasoning": "Support repeatedly asks for information already provided/confirmed (e.g., license key) and continues to demand the serial number in a typed format even after the customer supplied photos and stated it was readable. The customer also indicated shipping should be the same as the prior ticket, yet support continues to request full shipping/contact details again, indicating the prior context wasn\u2019t leveraged.",
+    "evidence": [
+      "Customer: \"I have no idea SN. You can propably find it via last ticket 60235438 where was RMA located.\"",
+      "AI public reply (after license already confirmed via ATLAS): \"License key (if it differs from the one on record: 20339-1LKR4-8WJVB)\"",
+      "Customer: \"SN is in attachment.\"",
+      "AI public reply: \"Serial Number ... \u2014 the two SN photos were unreadable, so please either type the Serial Number\"",
+      "Customer: \"We do all the IT issues for them. So the RMA shipping and all the thing is to our company address as in last ticket.\"",
+      "AI continues requesting full shipping/contact checklist multiple times: \"Company name ... Contact phone number ... Shipping Address...\""
+    ]
+  },
+  "RESPONSE_DELAYS": {
+    "detected": true,
+    "reasoning": "The structured metrics indicate a long overall resolution time (about 21 days) and a non-trivial initial response time. Even though the conversation excerpt is mainly on 2025-12-04, the CSV suggests prolonged time to solve/close, which is a reasonable signal of delay for this incident type.",
+    "evidence": [
+      "CSV: initialResponseTime=138",
+      "CSV: resolutionTime=1817053",
+      "CSV: Ticket Created=2025-12-04 07:55:47",
+      "CSV: Ticket Solved=2025-12-25 08:40:00",
+      "CSV: Ticket Closed=2025-12-28 09:34:44"
+    ]
+  },
+  "PREMATURE_CLOSURE": {
+    "detected": true,
+    "reasoning": "The ticket is marked closed in the CSV, but the provided interaction log does not show a clear customer-confirmed resolution or closure confirmation. Because the last visible exchanges still involve active troubleshooting/RMA prerequisites and scheduling questions, closure could be premature, though the evidence is incomplete due to truncated later interactions.",
+    "evidence": [
+      "CSV: Status=closed",
+      "CSV: Ticket Closed=2025-12-28 09:34:44",
+      "Customer (latest shown): \"Can the firebird be done via VPN... Are you 24/7 service or do we have some time window?\"",
+      "AI public reply (latest shown) still requesting missing items and next steps: \"Still missing for RMA package: typed Serial Number ... ZIP code ... video evidence...\""
+    ]
+  },
+  "P1_SEV1_MISHANDLING": {
+    "detected": true,
+    "reasoning": "The customer reports an outage condition (WAN down, no VPN access, users unable to reach the internet) which is consistent with a high-severity incident. Despite marking the ticket urgent, support focuses heavily on RMA intake requirements (video, full shipping checklist) and longer-cycle steps (factory reset/system recovery) rather than a clear immediate outage stabilization/escalation path; this may represent suboptimal handling for a site-down scenario.",
+    "evidence": [
+      "Customer: \"The webUI was unresponsive, WAN was not working - no VPN connection from our side and clients in the office could not reach the internet via WAN.\"",
+      "Customer: \"Unit failed today about 08:30.\"",
+      "AI internal note: \"Marked ticket as URGENT.\"",
+      "AI public guidance emphasizes extended steps: \"perform a factory reset and full system recovery, and then continue to monitor the situation\"",
+      "Customer highlights operational impact/remote constraints: \"The unit is located remote and we cannot drive there every week\""
+    ]
+  },
+  "_model": "gpt-5.2-v6",
+  "_ticket_id": 60256173
+}
