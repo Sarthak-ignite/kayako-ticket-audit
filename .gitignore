@@ -10,8 +10,9 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+# Only ignore root lib/ (not web/src/lib/)
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -50,3 +51,12 @@ Thumbs.db
 
 # Temporary test outputs
 test_output*.json
+
+# Sensitive data (raw ticket content, should be fetched via API)
+data/poc/raw/
+data/poc/tagged/
+data/poc/llm_results/
+
+# Source data files (too large / sensitive)
+Full_Ticket_Data_*.csv
+*.csv.gz
